@@ -1,0 +1,40 @@
+
+SS_demands = {
+	SS_himmler_wants_field_command = {
+
+		icon = generic_army_support
+		allowed = { original_tag = GER }
+		available = {
+			has_idea = heinrich_himmler
+			has_war = yes
+		}
+		visible = {
+			has_idea = heinrich_himmler
+			has_war = yes
+		}
+		cost = 25
+		fire_only_once = yes
+		complete_effect = {
+			create_field_marshal = {
+				name = "Heinrich Himmler"
+				picture = "Portrait_Germany_Heinrich_Himmler.dds"
+				traits = { politically_connected defective_geneseed infantry_leader }
+				skill = 4
+				attack_skill = 4
+				defense_skill = 4
+				planning_skill = 4
+				logistics_skill = 6
+			}
+			create_corps_commander = {
+				name = "Reinhard Heydrich"
+				gfx = "GFX_portrait_ger_reinhard_heydrich"
+				traits = { cavalry_leader trait_engineer politically_connected defective_geneseed }
+				skill = 4
+				attack_skill = 4
+				defense_skill = 2
+				planning_skill = 5
+				logistics_skill = 3
+			}
+		}
+	}
+}

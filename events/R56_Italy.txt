@@ -1,0 +1,45 @@
+﻿###########################
+# News Events
+###########################
+
+add_namespace = horsttool
+
+# Horst used a cheat
+news_event = {
+	id = horsttool.1
+	title = "Horsttool"
+
+	desc = " [From.Getname] gave [Root.cheat_selected] to [From.From.Owner.Getname]"
+	picture = GFX_news_event_001
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Okay..."
+		clear_variable=this.selected_cheat
+		clear_variable=this.target_country
+	}
+
+}
+
+news_event = {
+	id = horsttool.2
+	title = "Historical Focus"
+
+	desc = "A legendary .Heart Host. Historical focusses are not activated...    Time to rehost"
+	picture = GFX_news_event_001
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = "Wow..."
+	}
+
+}
+
+
+

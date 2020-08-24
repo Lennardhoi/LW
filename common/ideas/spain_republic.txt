@@ -1,0 +1,387 @@
+ideas = {
+	political_advisor = {
+		SPR_augusto_barcia_trelles = {
+
+			picture = SPR_augusto_barcia_trelles
+
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+
+			visible = {
+			}
+
+			available = {
+			}
+
+			traits = { leftist_freemason }
+
+			ai_will_do = {
+				base = 1
+				modifier = {
+					factor = 0
+
+				}
+			}
+		}
+	}
+
+	theorist = {
+	}
+	# MILITARY
+	army_chief = {
+		SPR_fransisco_franco_vanilla = {
+
+			name = SPR_fransisco_franco
+
+			picture = francisco_franco
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			available = {
+			}
+			traits = { army_chief_offensive_3 }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	air_chief = {
+	}
+
+	navy_chief = {
+	}
+
+
+	high_command = {
+
+		SPR_diego_hidalgo_duran_vanilla = {
+			ledger = army
+
+			name = SPR_diego_hidalgo_duran
+
+			picture = generic_army_europe_3
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			traits = { army_concealment_2 }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		### La Resistance ###
+
+		SPR_toribio_martinez_cabrera = { # Democratic
+			ledger = army
+
+			picture = SPR_toribio_martinez_cabrera
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			visible = {
+			}
+
+			available = {
+			}
+
+			traits = { army_artillery_2 }
+
+			ai_will_do = {
+			}
+		}
+	}
+
+
+	naval_manufacturer = {
+	}
+
+	aircraft_manufacturer = {
+
+		designer = yes
+
+		### Vanilla ###
+
+		casa_vanilla = {
+
+			name = casa
+
+			picture = generic_air_manufacturer_2
+
+
+			allowed = {
+				NOT = { has_dlc = "La Resistance" }
+				original_tag = SPR
+			}
+
+			research_bonus = {
+				air_equipment = 0.15
+			}
+
+			traits = { light_aircraft_manufacturer }
+
+			equipment_bonus = {
+				# capable of aerobatics, forward shooting machine guns, low number of crashes
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		### La Resistance ###
+
+		casa = {
+
+			picture = SPR_casa
+
+
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+
+			available = {
+			}
+
+			research_bonus = {
+				air_equipment = 0.15
+			}
+
+			traits = { medium_aircraft_manufacturer }
+
+			equipment_bonus = {
+				# capable of aerobatics, forward shooting machine guns, low number of crashes
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SPR_hispano_aviacion = {
+
+			picture = SPR_hispano_aviacion
+
+
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+
+			available = {
+			}
+
+			research_bonus = {
+				air_equipment = 0.15
+			}
+
+			traits = { light_aircraft_manufacturer }
+
+			equipment_bonus = {
+				# capable of aerobatics, forward shooting machine guns, low number of crashes
+			}
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	materiel_manufacturer = {
+
+		designer = yes
+
+		SPR_star_bonifacio_echeverria = {
+
+			picture = SPR_star_bonifacio_echeverria
+
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+
+			available = {
+			}
+
+			research_bonus = {
+				infantry_weapons = 0.15
+			}
+
+			traits = { infantry_equipment_manufacturer }
+
+			modifier = {
+			}
+		}
+
+		SPR_esperanza_y_cia = {
+
+			picture = SPR_esperanza_y_cia
+
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+
+			available = {
+			}
+
+			research_bonus = {
+				artillery = 0.15
+			}
+
+			traits = { artillery_manufacturer }
+
+			modifier = {
+			}
+		}
+
+		SPR_llama_gabilondo_y_cia = {
+
+			picture = SPR_llama_gabilondo_y_cia_sa
+
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+
+			available = {
+			}
+
+			research_bonus = {
+				support_tech = 0.10
+			}
+
+			traits = { support_equipment_manufacturer }
+
+			modifier = {
+			}
+		}
+
+		SPR_hispano_suiza = {
+
+			picture = SPR_hispano_suiza
+
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+
+			available = {
+			}
+
+			research_bonus = {
+				motorized_equipment = 0.15
+			}
+
+			traits = { motorized_equipment_manufacturer }
+
+			modifier = {
+			}
+		}
+
+	}
+
+
+	industrial_concern = {
+
+		SPR_compania_telefonica_nacional = {
+
+			picture = SPR_compania_telefonica_nacional
+
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+
+			available = {
+			}
+
+			research_bonus = {
+				electronics = 0.15
+			}
+
+			traits = { electronics_concern }
+
+			modifier = {
+			}
+		}
+
+		SPR_industria_de_guerra_de_cataluna = {
+
+			picture = SPR_industrias_de_guerra_de_cataluna
+
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+
+			available = {
+			}
+
+			research_bonus = {
+			}
+
+			traits = { construction_company }
+
+			modifier = {
+			}
+		}
+
+		SPR_altos_hornos_de_vizcaya = {
+
+			picture = SPR_altos_hornos_de_vizcaya
+
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+
+			available = {
+			}
+
+			research_bonus = {
+				industry = 0.15
+			}
+
+			traits = { industrial_concern }
+
+			modifier = {
+			}
+		}
+
+		SPR_campsa = {
+
+			picture = SPR_campsa
+
+			allowed = {
+				has_dlc = "La Resistance"
+				original_tag = SPR
+			}
+
+			available = {
+			}
+
+			research_bonus = {
+				synth_resources = 0.1
+				industry = 0.05
+			}
+
+			traits = { refinery_concern }
+
+			modifier = {
+			}
+		}
+
+	}
+}

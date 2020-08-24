@@ -1,0 +1,255 @@
+focus_tree = {
+	id = sweden_focus
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SWE
+
+		}
+	}
+
+	default = no
+
+
+	focus = {
+		id = NDA_anti_meme
+		icon = GFX_goal_generic_consumer_goods
+
+		x = 10
+		y = 0
+		cost = 28.5
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+			hidden_effect = {
+				anti_cross_faction_trade_all = yes
+
+				SPR = {
+					add_opinion_modifier = {
+						target = SOV
+						modifier = anti_cross_faction_trade
+					}
+				}
+			}
+
+			VEN = { set_rule = { can_join_factions = no }}
+
+			if = {
+				limit = { NOR = { is_ai = no }}
+				NOR = { set_rule = { can_join_factions = no }}
+			}
+		}
+	}
+
+
+
+	focus = {
+		id = NDA_resource4
+		icon = GFX_goal_generic_consumer_goods
+
+		x = 0
+		y = 1
+		cost = 24
+		prerequisite = { focus = NDA_anti_meme }
+		relative_position_id = NDA_anti_meme
+		available_if_capitulated = yes
+		completion_reward = {
+		}
+
+	}
+
+	focus = {
+		id = NDA_resource11
+		icon = GFX_goal_generic_consumer_goods
+
+		x = 0
+		y = 1
+		cost = 1
+		prerequisite = { focus = NDA_resource4 }
+		relative_position_id = NDA_resource4
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+			if = {
+				limit = { CHI = { is_ai = yes }}
+				CHI = { add_ideas = CHI_cheap_guns }
+			}
+		}
+	}
+
+	focus = {
+		id = NDA_resource5
+		icon = GFX_goal_generic_consumer_goods
+
+		x = 0
+		y = 1
+		cost = 10
+		prerequisite = { focus = NDA_resource11 }
+		relative_position_id = NDA_resource11
+		available_if_capitulated = yes
+
+
+	}
+
+
+	focus = {
+		id = NDA_resource3
+		icon = GFX_goal_generic_consumer_goods
+
+		x = 0
+		y = 1
+		cost = 40
+		prerequisite = { focus = NDA_resource5 }
+		relative_position_id = NDA_resource5
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = NDA_resource1337
+		icon = GFX_goal_generic_consumer_goods
+
+		x = 0
+		y = 1
+		cost = 37
+		prerequisite = { focus = NDA_resource3 }
+		relative_position_id = NDA_resource3
+		available_if_capitulated = yes
+
+
+	}
+
+	focus = {
+		id = NDA_resource1338
+		icon = GFX_goal_generic_consumer_goods
+
+		x = 0
+		y = 1
+		cost = 2
+		prerequisite = { focus = NDA_resource1337 }
+		relative_position_id = NDA_resource1337
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+			if = {
+				limit = {
+					SOV = {
+						focus_progress = {
+							focus = SOV_great_purge
+							progress > 0.001
+						}
+
+
+					}
+
+				}
+
+
+			}
+
+
+		}
+	}
+
+
+
+	focus = {
+		id = NDA_resource2
+		icon = GFX_goal_generic_consumer_goods
+
+		x = 0
+		y = 1
+		cost = 40
+		prerequisite = { focus = NDA_resource1338 }
+		relative_position_id = NDA_resource1338
+		available_if_capitulated = yes
+
+		completion_reward = {
+			TUR = { country_event = turkey.1 }
+			country_event = MTG_naval_treaty.10
+
+
+
+		}
+	}
+
+	focus = {
+		id = NDA_resource20
+		icon = GFX_goal_generic_consumer_goods
+
+		x = 0
+		y = 1
+		cost = 9
+		prerequisite = { focus = NDA_resource2 }
+		relative_position_id = NDA_resource2
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+	}
+
+
+
+
+	focus = {
+		id = NDA_resource
+		icon = GFX_goal_generic_consumer_goods
+
+		x = 0
+		y = 1
+		cost = 25.4
+		prerequisite = { focus = NDA_resource20 }
+		relative_position_id = NDA_resource20
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+		}
+
+	}
+
+	focus = {
+		id = NDA_iraq
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = NDA_resource }
+		x = 0
+		y = 1
+		cost = 20
+		relative_position_id = NDA_resource
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+
+
+
+
+			SOV = { country_event = news.37 }
+		}
+	}
+
+	focus = {
+		id = NDA_nothing
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = NDA_iraq }
+		x = 0
+		y = 1
+		cost = 126
+		relative_position_id = NDA_iraq
+		available_if_capitulated = yes
+
+		completion_reward = {
+		}
+
+	}
+
+}

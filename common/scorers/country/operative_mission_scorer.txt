@@ -1,0 +1,64 @@
+# Operative mission scorer
+#
+# Only countries which have a strategy enabling the mission (score >0) will run
+# the scorer for the enabled missions.
+#
+# Before traget_trigger runs, any potential target is first checked for the
+# gameplay requirements (e.g. quiet_network mission requires a network over the
+# target).
+#
+# A scorer has to yield a target or the mission will be ignored
+#
+# operative_mission_no_mission_scorer act as a dummy/example
+
+operative_mission_no_mission_scorer = {
+	# Valid example of mission scorer:
+	targets = {
+	}
+}
+
+operative_mission_build_intel_network_scorer = {
+	targets = {
+	}
+}
+
+
+operative_mission_quiet_network_scorer = {
+	targets = {
+	}
+}
+
+operative_mission_counter_intelligence_scorer = {
+	# Valid example of mission scorer:
+	targets = {
+	}
+}
+
+operative_mission_root_out_resistance_scorer = {
+	targets = {
+	}
+}
+
+operative_mission_boost_ideology_scorer = {
+	targets = {
+		# TODO
+	}
+}
+
+
+operative_mission_control_trade_scorer = {
+	targets = {
+		# TODO
+	}
+}
+
+operative_mission_diplomatic_pressure_scorer = {
+	targets = {
+		# TODO
+	}
+}
+
+operative_mission_propaganda_scorer = {
+	targets = {
+	}
+}

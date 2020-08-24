@@ -1,0 +1,532 @@
+﻿###########################
+# French Events
+###########################
+
+add_namespace = france
+
+# Japan demands Indochina
+country_event = {
+	id = france.1
+	title = france.1.t
+	desc = france.1.d
+	picture = GFX_report_event_japan_army_mountainside
+
+	is_triggered_only = yes
+
+	option = { # Accept demands
+		name = france.1.a
+		JAP = {
+			country_event = { days = 5 id = japan.6 }
+		}
+	}
+}
+
+
+country_event = {
+	id = france.12
+	title = france.12.t
+	desc = france.12.d
+	picture = GFX_report_event_german_parade_paris
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden=yes
+	option = { # Agree
+		name = france.12.a
+		add_timed_idea = {
+			idea = FRA_snakemodding
+			days = 45
+		}
+	}
+}
+
+country_event = {
+	id = france.10
+	title = france.10.t
+	desc = france.10.d
+	picture = GFX_report_event_worried_french
+	
+	is_triggered_only = yes
+		
+	fire_only_once = no 
+	
+	option = {
+		name = france.10.a
+		
+		
+	}
+	
+}
+country_event = {
+	id = france.11
+	title = france.11.t
+	desc = france.11.d
+	picture = GFX_report_event_worried_french
+	
+	is_triggered_only = yes
+		
+	fire_only_once = no 
+	
+	option = {
+		name = france.11.a
+		
+		
+	}
+	
+}
+
+country_event = {
+	id = france.13
+	title = france.13.t
+	desc = france.13.d
+	picture = GFX_report_event_german_parade_paris
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden=yes
+	option = { # Agree
+		FRA ={
+		remove_ideas = Phoney_War
+		}
+		EFR ={inherit_technology = FRA}
+		EFR ={transfer_state =20}
+		FRA = {set_equipment_fraction = 0}
+		GER = { country_event = {id=france.14 days=2} }
+	}
+}
+
+
+
+# France wants Armistice (Germany)
+country_event = {
+	id = france.14
+	title = france.14.t
+	desc = france.14.d
+	picture = GFX_report_event_german_parade_paris
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = { # Agree
+		name = france.14.a
+		set_global_flag = achievement_france_surrender
+		set_global_flag = fall_of_france
+		add_political_power = 100
+		add_timed_idea={idea=GER_triumph_in_france days=730}
+
+
+
+		GER={
+			set_variable={collabo=has_collaboration@FRA}
+			multiply_variable={collabo=100}
+
+		}
+		FRA={transfer_navy = {
+				target = VEN
+				}}
+		EFR ={annex_country = { target = FRA transfer_troops = no }}
+
+
+		EFR = {
+
+			every_state = {
+				limit = { is_core_of = FRA }
+				add_core_of = EFR
+			}
+			set_capital = 26
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
+			set_popularities = {
+				fascism = 100
+			}
+		}
+
+		EFR = {
+			add_ideas = EFR_neutrality_idea
+			diplomatic_relation = { country = ENG relation = non_aggression_pact }
+			diplomatic_relation = { country = USA relation = non_aggression_pact }
+			diplomatic_relation = { country = FRA relation = non_aggression_pact }
+			diplomatic_relation = { country = SAF relation = non_aggression_pact }
+			diplomatic_relation = { country = CAN relation = non_aggression_pact }
+			diplomatic_relation = { country = RAJ relation = non_aggression_pact }
+			diplomatic_relation = { country = AST relation = non_aggression_pact }
+			diplomatic_relation = { country = NZL relation = non_aggression_pact }
+			diplomatic_relation = { country = GER relation = non_aggression_pact }
+		}
+		if = {
+			limit = {Date < 1939.11.1}
+
+			ITA = {
+				transfer_state = 735
+				transfer_state = 32
+				transfer_state = 21
+				transfer_state = 1
+				transfer_state = 458
+				transfer_state = 665
+			}
+		}
+
+		JAP = {
+			EFR = { country_event = { id = france.1 } }
+			transfer_state = 286
+			transfer_state = 670
+			transfer_state = 671
+			transfer_state = 741
+			transfer_state = 728
+		}
+
+
+		GER = {
+
+			transfer_state = 28
+			transfer_state = 17
+			transfer_state = 18
+			transfer_state = 29
+			transfer_state = 785
+			transfer_state = 16
+			transfer_state = 15
+			transfer_state = 14
+			transfer_state = 23
+			transfer_state = 19
+			transfer_state = 24
+			transfer_state = 30
+			transfer_state = 27
+
+		}
+		FRA = {
+			change_tag_from = EFR
+		}
+
+		FRA = {
+			add_ideas = FRA_no_training_queue
+			add_ideas = FRA_defeatism
+			transfer_state = 539
+			transfer_state = 772
+			transfer_state = 773
+			transfer_state = 774
+			transfer_state = 660
+			transfer_state = 310
+			transfer_state = 635
+			transfer_state = 734
+			transfer_state = 641
+			transfer_state = 320
+			transfer_state = 694
+			transfer_state = 706
+			transfer_state = 713
+			transfer_state = 708
+			transfer_state = 295
+			transfer_state = 538
+			transfer_state = 718
+			transfer_state = 768
+			transfer_state = 769
+			set_cosmetic_tag = FRA_FREE
+			clr_country_flag = no_naval_base
+			remove_ideas = FRA_protected_by_the_maginot_line
+			set_country_flag = free_france
+			set_capital = 539
+
+			country_event = france.20
+		}
+		ENG = { add_to_faction = FRA }
+		GER ={
+			declare_war_on = {
+				target = FRA
+				type = annex_everything
+			}
+			every_owned_state = {
+				limit = {
+					is_core_of = FRA
+				}
+				add_compliance = GER.collabo
+			}
+		}
+		VEN={transfer_navy = {
+				target = FRA
+				}}
+		FRA = {set_equipment_fraction = 0}
+		FRA = { country_event = {id=france.187 days=10} }
+		GER = { country_event = {id=france.15 days=10} }
+	}
+}
+
+
+
+
+country_event = {
+	id = france.187
+	title = france.187.t
+	desc = france.187.d
+	picture = GFX_report_event_german_parade_paris
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+	option = {
+		FRA = {set_equipment_fraction = 0}
+
+	}
+}
+
+#Capital captured by non french faction
+country_event = {
+	id = france.15
+	title = france.15.t
+	desc = france.15.d
+	picture = GFX_report_event_german_parade_paris
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = france.15.a
+
+		GER = {
+
+			add_equipment_to_stockpile = {
+				type = artillery_equipment_1
+				amount = 3000
+				producer = FRA
+			}
+			add_equipment_to_stockpile = {
+				type = anti_air_equipment_1
+				amount = 2000
+				producer = FRA
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 30000
+				producer = FRA
+			}
+
+			add_equipment_to_stockpile = {
+				type = motorized_equipment_1
+				amount = 2000
+				producer = FRA
+			}
+			add_equipment_to_stockpile = {
+				type = anti_tank_equipment
+				amount = 2000
+				producer = FRA
+			}
+		}
+
+	}
+}
+
+#Capital captured by non french faction
+country_event = {
+	id = france.16
+	title = france.16.t
+	desc = france.16.d
+	picture = GFX_report_event_french_resistance_02
+
+	is_triggered_only = yes
+
+	option = {
+		name = france.16.a
+		remove_ideas = FRA_victors_of_wwi
+		remove_ideas = FRA_disjointed_government
+
+		set_country_flag = casablanca_capital
+
+		if = {
+			limit = { 461 = { is_owned_by = FRA }
+			}
+			set_capital = 461
+		}
+	}
+}
+country_event = {
+	id = france.20
+	title = france.20.t
+	desc = france.20.d
+	picture = GFX_report_event_degaulle_churchill
+
+	is_triggered_only = yes
+
+	option = {
+		custom_effect_tooltip = france.20.a_tt
+		set_country_flag = france_de_gaulle
+		hidden_effect =  {
+			create_country_leader = {
+				name = "Charles de Gaulle"
+				desc = "POLITICS_CHARLES_DE_GAULLE_DESC"
+				picture = "Portrait_France_Charles_De_Gaulle.dds"
+				expire = "1965.1.1"
+				ideology = conservatism
+				traits = {
+
+				}
+			}
+		}
+
+		name = france.20.a
+	}
+}
+# French strikes
+country_event = {
+	id = france.21
+	title = france.21.t
+	desc = france.21.d
+	picture = GFX_report_event_worker_protests
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		ai_chance = {
+			base = 15
+		}
+		name = france.21.a
+		add_timed_idea = {
+			idea = FRA_factory_strikes
+			days = 90
+		}
+		set_country_flag = france.21.a_chosen
+	}
+	option = {
+		ai_chance = {
+			base = 85
+		}
+		name = france.21.b
+		add_timed_idea = {
+			idea = FRA_matignon_agreements
+			days = 365
+		}
+		add_popularity = {
+			ideology = communism
+			popularity = 0.06
+		}
+	}
+}
+# Revoke Worker rights
+country_event = {
+	id = france.22
+	title = france.22.t
+	desc = france.22.d
+	picture = GFX_report_event_airplane_factory
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		ai_chance = {
+			factor = 2
+		}
+		add_stability = 0.05
+		name = france.22.a
+	}
+	option = {
+		name = france.22.b
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				communism > 0.4
+			}
+		}
+		remove_ideas =  FRA_matignon_agreements
+		add_popularity = {
+			ideology = communism
+			popularity = 0.04
+		}
+	}
+}
+
+
+news_event = {
+	id = france.34
+	title = france.34.title
+	desc = france.34.desc
+
+	picture = GFX_news_event_degaulle_churchill
+
+	is_triggered_only = yes
+
+	option = {
+		name = france.34.a
+		trigger = {
+			OR = {
+				tag = ENG
+				tag = FRA
+				is_in_faction_with = ENG
+				is_subject_of = ENG
+			}
+		}
+	}
+
+	option = {
+		name = france.34.b
+		trigger = {
+			NOT = {
+				OR = {
+					tag = ENG
+					tag = FRA
+					is_in_faction_with = ENG
+					is_subject_of = ENG
+				}
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = france.145
+	title = france.145.t
+	desc = france.145.d
+	picture = GFX_report_event_france_startup
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = france.145.a
+	}
+}
+
+
+country_event = {
+	id = france.146
+	title = france.146.t
+	desc = france.146.d
+	picture = GFX_report_event_fra_por_colony
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = france.146.a
+		RAJ = {
+			transfer_state = 321
+			321 = { add_extra_state_shared_building_slots = 1 }
+		}
+	}
+}
+
+country_event = {
+	id = france.147
+	title = france.147.t
+	desc = france.147.d
+	picture = GFX_report_event_fra_por_colony
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = france.147.a
+		SAF = {
+			transfer_state = 544
+			321 = { add_extra_state_shared_building_slots = 1 }
+		}
+	}
+}
+
+country_event = {
+	id = france.148
+	title = france.148.t
+	desc = france.148.d
+	picture = GFX_report_event_fra_por_colony
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = france.148.a
+		ENG = {
+			transfer_state = 702
+		}
+	}
+}

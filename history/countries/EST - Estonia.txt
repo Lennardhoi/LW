@@ -1,0 +1,39 @@
+capital = 13
+
+oob = "EST_1936"
+
+set_research_slots = 0
+
+add_ideas = {
+	limited_conscription
+}
+
+set_technology = {}
+add_ideas = no_training
+
+set_convoys = 1
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1932.5.21"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 20
+	fascism = 15
+	communism = 5
+	neutrality = 60
+}
+
+
+create_country_leader = {
+	name = "Konstantin Päts"
+	desc = "POLITICS_KONSTANTIN_PATS_DESC"
+	picture = "GFX_Portrait_estonia_konstantin_pats"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		#
+	}
+}

@@ -1,0 +1,482 @@
+on_actions = {
+	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
+	on_monthly={
+		effect={
+			if={limit={tag=ITA has_country_flag=ll_enabled}
+			
+				send_equipment = { equipment = fighter_equipment amount = 5000 target = GER }
+				send_equipment = { equipment = CAS_equipment amount = 5000 target = GER }
+				send_equipment = { equipment = nav_bomber_equipment amount = 5000 target = GER }
+				send_equipment = { equipment = tac_bomber_equipment amount = 5000 target = GER }
+				send_equipment = { equipment = heavy_fighter_equipment amount = 5000 target = GER }
+			
+			
+			}
+			if={limit = {is_in_faction_with = GER}
+				JAP={
+					share_intel_with_allies=yes
+
+				}
+				MAN={if={limit={country_exists=MAN}
+						share_intel_with_allies=yes
+						}}
+			}
+			if={limit = {is_in_faction_with = ENG}
+				SOV={
+					share_intel_with_allies=yes
+				}
+			}
+			}}
+
+	on_startup={
+		effect{
+			#161 = {
+			#	add_resource = {
+			#		type=aluminium
+			#		amount=30
+			#		days=1460
+			#	}
+			#}
+			#50 = {
+			#	add_resource = {
+			#		type=aluminium
+			#		amount=30
+			#		days=1460
+			#	}
+			#}
+			every_country={
+				limit={	has_country_flag=fuel_system_enabled}
+				add_to_array={GLOBAL.fuel_system_manager=THIS.id}
+			}
+		}
+	}
+	on_daily={
+		effect={
+			if={limit={tag=SWE}
+
+
+
+				for_each_scope_loop={
+					array=GLOBAL.fuel_system_manager
+					##
+					set_variable={GLOBAL.controllerscope=THIS.id}
+					##
+					for_each_scope_loop={
+						array = THIS.faction_members_array
+						##
+						set_variable={GLOBAL.currentscope=THIS.id}
+						##
+						if={
+							limit={check_variable={send_fuel_enabled >1}}
+							set_variable={fuelbedarf=min_fuel}
+							subtract_from_variable={fuelbedarf=fuel_ratio}
+							set_variable={fuelbedarfanteil=fuelbedarf}
+							multiply_variable={fuelbedarf=max_fuel_k}
+							set_variable={fuelbedarfvorzeichen=fuelbedarf}
+							multiply_variable={fuelbedarfvorzeichen=-1}
+							##
+							set_variable={fuelbedarf_k=fuelbedarf}
+							set_variable={fuelbedarfvorzeichen_k=fuelbedarfvorzeichen}
+							##
+							multiply_variable={fuelbedarfvorzeichen=1000}
+							multiply_variable={fuelbedarf=1000}
+
+							#log="[PREV.GetName]"
+							set_variable={PREV.fuelbedarf=PREV.min_fuel}
+							subtract_from_variable={PREV.fuelbedarf=PREV.fuel_ratio}
+							set_variable={PREV.fuelbedarfanteil=PREV.fuelbedarf}
+							multiply_variable={PREV.fuelbedarf=PREV.max_fuel_k}
+							set_variable={PREV.fuelbedarfvorzeichen=PREV.fuelbedarf}
+							multiply_variable={PREV.fuelbedarfvorzeichen=-1}
+							multiply_variable={PREV.fuelbedarfvorzeichen=1000}
+							multiply_variable={PREV.fuelbedarf=1000}
+							set_variable={PREV.free_stockpile=PREV.max_fuel_k}
+							subtract_from_variable={PREV.free_stockpile=PREV.fuel_k}
+							multiply_variable={PREV.free_stockpile=1000}
+							set_variable={PREV.free_stockpilenegativ=PREV.free_stockpile}
+							multiply_variable={PREV.free_stockpilenegativ=-1}
+
+							set_variable={countryfuelplus5=fuel_ratio}
+							add_to_variable={countryfuelplus5=0.05}
+							if={limit={ #fuel von prev zu this
+									check_variable={PREV.fuelbedarf <0} #hat prev mehr fuel als minimum?
+									check_variable={min_fuel > countryfuelplus5} # braucht this überhaupt fuel?
+								}
+								if={
+									limit={
+										check_variable={fuelbedarf >0}
+										check_variable={PREV.fuelbedarfvorzeichen >fuelbedarf}
+									}
+									set_temp_variable={PREV.mastergain=fuelbedarfvorzeichen}
+									set_temp_variable={subjectgain=fuelbedarf}
+									PREV={
+										add_fuel=mastergain
+									}
+									add_fuel=subjectgain
+									#log="CASE 1 [GLOBAL.GetDateText] [PREV.GetName] [?test2] to [THIS.GetName]"
+								}
+								else={
+
+									set_temp_variable={PREV.mastergain=fuelbedarfvorzeichen}
+									set_temp_variable={subjectgain=fuelbedarf}
+									PREV={
+										add_fuel=mastergain
+									}
+									add_fuel=subjectgain
+									set_temp_variable={PREV.test2=PREV.fuelbedarfvorzeichen}
+									#log="CASE 2 [GLOBAL.GetDateText] [PREV.GetName] [?test2] to [THIS.GetName]"
+								}
+							}
+							else_if={ #fuel von this zu prev
+								limit={
+									check_variable={fuelbedarf <0} #hat this mehr fuel als minimum?
+									check_variable={PREV.fuel_ratio <0.95} # hat PREV full_stockpile?
+								}
+								if={
+									limit={
+										check_variable={fuelbedarfvorzeichen <PREV.free_stockpile} # ist this free fuel kleiner als prev free stockpile?
+									}
+
+									set_temp_variable={PREV.mastergain=fuelbedarfvorzeichen}
+									set_temp_variable={subjectgain=fuelbedarf}
+									PREV={
+										add_fuel=mastergain
+									}
+									add_fuel=subjectgain
+
+									#log="CASE 3 [GLOBAL.GetDateText] [PREV.GetName] [?test2] to[THIS.GetName]"
+								}
+								else_if={limit={check_variable={PREV.free_stockpile>1000}}#no need to transfer fuel <1k
+
+									set_temp_variable={PREV.mastergain=PREV.free_stockpile}
+									set_temp_variable={subjectgain=PREV.free_stockpilenegativ}
+									PREV={
+										add_fuel=mastergain
+									}
+									add_fuel=subjectgain
+
+									#log="CASE 4 [GLOBAL.GetDateText] [PREV.GetName] [?test2] to [THIS.GetName]"
+								}
+							}
+							else_if={#this fills the subject fuel storage to 95% when major has full fuel
+								limit={
+									check_variable={fuel_ratio <0.95} #hat this free stockpile
+									check_variable={PREV.fuel_ratio >0.95} # hat PREV full_stockpile?
+								}
+								set_variable={free_stockpile=max_fuel_k}
+								subtract_from_variable={free_stockpile=fuel_k}
+								multiply_variable={free_stockpile=1000}
+								set_variable={free_stockpilenegativ=free_stockpile}
+								multiply_variable={free_stockpilenegativ=-1}
+								set_variable={master_spare_fuel=PREV.max_fuel_k}
+								multiply_variable={master_spare_fuel=0.03}
+								multiply_variable={master_spare_fuel=1000}
+								set_variable={master_spare_fuelnegativ=master_spare_fuel}
+								multiply_variable={master_spare_fuelnegativ=-1}
+								if={limit={check_variable={free_stockpile<mastersparefuel}}
+									set_temp_variable={PREV.mastergain=free_stockpilenegativ}
+									set_temp_variable={subjectgain=free_stockpile}}
+								else={
+									set_temp_variable={PREV.mastergain=master_spare_fuelnegativ}
+									set_temp_variable={subjectgain=master_spare_fuel}
+								}
+								PREV={
+									add_fuel=mastergain
+								}
+								add_fuel=subjectgain
+								#log="CASE 5 [GLOBAL.GetDateText] [?mastergain] FROM [PREV.GetName] [?subjectgain] to [THIS.GetName]"
+
+
+							}
+							#else={log="NOTHING [GLOBAL.GetDateText] [THIS.GetName]"}
+						}
+						}}
+			}
+			for_each_scope_loop={
+				array=GLOBAL.fuel_countries
+				set_temp_variable={currentfuel=fuel_ratio}
+				subtract_from_temp_variable={currentfuel=1}
+				multiply_temp_variable={currentfuel = 88}
+				set_variable={fuel_bar_fuel=currentfuel}
+			}
+		}
+
+	}
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+
+					FROM.FROM = {
+
+
+						OR = {
+							state = 219# moscow
+							state = 195 #Leningrad
+							state = 217 #Stalingrad
+							state = 202 #Kiev
+							state = 206 #Minsk
+						}
+
+
+					}
+				}
+
+
+				GER = {clear_variable=barb_factory_output
+					if={limit={NOT={SOV={controls_state = 202}}}
+						add_to_variable={barb_factory_output=0.025}
+					}
+
+					if={limit={NOT={SOV={controls_state = 206}}}
+						add_to_variable={barb_factory_output=0.025}
+					}
+
+					if={limit={NOT={SOV={controls_state = 195}}}
+						add_to_variable={barb_factory_output=0.05}
+					}
+
+					if={limit={NOT={SOV={controls_state = 217}}}
+						add_to_variable={barb_factory_output=0.05}
+					}
+
+					if={limit={NOT={SOV={controls_state = 219}}}
+						add_to_variable={barb_factory_output=0.10}
+					}
+
+				}
+				}}}
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						OR = {
+							tag = JAP
+							tag = MAN
+						}
+					}
+					FROM.FROM = {
+						AND = {
+							NOT = { has_state_flag = rubber_state_transfered }
+							OR = {
+								state = 623
+								state = 327
+								state = 625
+								state = 627
+								state = 333
+								state = 334
+								state = 672
+								state = 733
+								state = 422
+								state = 335
+								state = 667
+								state = 721
+								state = 673
+								state = 668
+								state = 669
+								state = 523
+								state = 737
+								state = 634
+								state = 635
+								state = 626
+								state = 628
+								state = 336
+								state = 624
+								state=738
+							}
+							USA = {
+								divisions_in_state = {
+									type = infantry
+									size < 1
+									state = FROM.FROM
+								}
+							}
+							NZL = {
+								divisions_in_state = {
+									type = infantry
+									size < 1
+									state = FROM.FROM
+								}
+							}
+							AST = {
+								divisions_in_state = {
+									type = infantry
+									size < 1
+									state = FROM.FROM
+								}
+							}
+							RAJ = {
+								divisions_in_state = {
+									type = infantry
+									size < 1
+									state = FROM.FROM
+								}
+							}
+							SAF = {
+								divisions_in_state = {
+									type = infantry
+									size < 1
+									state = FROM.FROM
+								}
+							}
+							CAN = {
+								divisions_in_state = {
+									type = infantry
+									size < 1
+									state = FROM.FROM
+								}
+							}
+							ENG = {
+								divisions_in_state = {
+									type = infantry
+									size < 1
+									state = FROM.FROM
+								}
+							}
+							FRA = {
+								divisions_in_state = {
+									type = infantry
+									size < 1
+									state = FROM.FROM
+								}
+							}
+						}
+					}
+				}
+				FROM.FROM = {
+					set_state_flag = rubber_state_transfered
+				}
+				JAP = { set_state_controller = FROM.FROM }
+			}
+		}
+	}
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					OR={
+						tag=BEL
+						tag=HOL
+						tag=DEN
+						tag=POL
+						tag=NOR
+						tag=LUX
+						}}
+				country_event={id=surrender.1 days=2}
+				if={limit={tag=POL}GER={country_event={id=germany.14 days=3}}}
+			}
+
+		}
+	}
+
+	on_declare_war={
+		effect={
+			if = {
+				limit = {
+					ROOT = {
+						TAG = GER
+					}
+					NOT = {
+						has_global_flag = GER_has_started_war
+					}
+				}
+				#FRA={activate_mission=FRA_Resistance}
+				set_global_flag = GER_has_started_war
+			}
+
+
+
+			if = {
+				limit = {
+					FROM = {
+						OR={
+							tag=BEL
+							tag=DEN
+							tag=POL
+							tag=NOR
+							tag=LUX
+							tag=GRE
+							tag=YUG
+
+						}
+					}
+				}
+				ENG={add_to_faction=FROM}
+			}
+			else_if = {
+				limit = {
+					FROM = {
+						tag=HOL
+
+					}
+				}
+				ENG={add_to_faction=FROM}
+				GER={
+					declare_war_on = {
+						target = INS
+						type = annex_everything
+					}
+				}
+			}
+
+		}
+	}
+	
+	on_startup = {
+		effect = {
+			GER = {
+				every_country = {
+					limit = {
+						NOT={tag=GER}
+						OR={is_in_faction_with = GER
+							AND={GER={tag=GER}tag=SPR}}
+						NOT = { is_in_array = { GER.faction_members_array = THIS.id } }
+					}
+					add_to_array = { GER.faction_members_array = THIS.id }
+				}
+				if = {
+					limit = {
+						any_of_scopes={array=GER.faction_members_array NOT={is_in_array={GLOBAL.fuel_countries=THIS.id}}}
+					}
+					for_each_scope_loop={
+						array=GER.faction_members_array
+						if={limit={NOT={is_in_array={GLOBAL.fuel_countries=THIS.id}}}
+							add_to_array={GLOBAL.fuel_countries=THIS.id}}
+					}
+				}
+				set_variable={send_fuel_enabled=2}
+				for_each_scope_loop={
+					array=GER.faction_members_array
+					set_variable={send_fuel_enabled=2}
+				}
+			}
+			ENG = {
+				every_country = {
+					limit = {
+						NOT={tag=ENG}
+						OR={is_in_faction_with = ENG
+							AND={ENG={tag=GER}tag=SPR}}
+						NOT = { is_in_array = { ENG.faction_members_array = THIS.id } }
+					}
+					add_to_array = { ENG.faction_members_array = THIS.id }
+				}
+				if = {
+					limit = {
+						any_of_scopes={array=ENG.faction_members_array NOT={is_in_array={GLOBAL.fuel_countries=THIS.id}}}
+					}
+					for_each_scope_loop={
+						array=ENG.faction_members_array
+						if={limit={NOT={is_in_array={GLOBAL.fuel_countries=THIS.id}}}
+							add_to_array={GLOBAL.fuel_countries=THIS.id}}
+					}
+				}
+				set_variable={send_fuel_enabled=2}
+				for_each_scope_loop={
+					array=ENG.faction_members_array
+					set_variable={send_fuel_enabled=2}
+				}
+			}
+		}
+	}
+}

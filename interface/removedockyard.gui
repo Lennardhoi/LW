@@ -1,0 +1,17 @@
+guiTypes = {
+    containerWindowType = {
+        name = "remove_dockyard_container"
+        position = { x = 190 y = 139 }
+        
+        fade_time = 300
+        fade_type = linear
+        
+        buttonType = {
+            name = "remove_dockyard"
+            spriteType = "GFX_cancel_conversion_button"
+            position = { x = 7 y = 9 }
+            scale = 1.0
+			pdx_tooltip = "DELETE_DOCK"
+        }
+    }    
+}

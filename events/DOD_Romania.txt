@@ -1,0 +1,32 @@
+﻿###########################
+# Hungarian Events
+###########################
+
+add_namespace = DOD_romania
+
+#Invite Foreign Motor Companies
+country_event = {
+	id = DOD_romania.120
+	title = DOD_romania.120.t
+	desc = DOD_romania.120.desc
+	picture = GFX_report_event_generic_truck
+
+	is_triggered_only = yes
+
+	option = {# Germany
+		name = DOD_romania.120.b
+		ai_chance = {
+			factor = 35
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+		set_country_flag = GER_mot_chosen
+		add_relation_modifier = {
+			target = GER
+			modifier = ROM_foreign_motor_company
+		}
+	}
+
+}

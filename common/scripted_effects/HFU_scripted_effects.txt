@@ -1,0 +1,130 @@
+share_intel_with_allies={
+	add_intel = {
+		target = PREV
+		civilian_intel = 200
+		army_intel = 200
+		navy_intel = 200
+		airforce_intel = 200
+	}
+	PREV = {
+		add_intel = {
+			target = PREV
+			civilian_intel = 200
+			army_intel = 200
+			navy_intel = 200
+			airforce_intel = 200
+		}
+	}
+}
+
+
+
+anti_cross_faction_trade_axis = {
+	add_opinion_modifier = {
+		target = GER
+		modifier = anti_cross_faction_trade
+	}
+	add_opinion_modifier = {
+		target = ITA
+		modifier = anti_cross_faction_trade
+	}
+	add_opinion_modifier = {
+		target = ROM
+		modifier = anti_cross_faction_trade
+	}
+	add_opinion_modifier = {
+		target = HUN
+		modifier = anti_cross_faction_trade
+	}
+	add_opinion_modifier = {
+		target = BUL
+		modifier = anti_cross_faction_trade
+	}
+	add_opinion_modifier = {
+		target = SPR
+		modifier = anti_cross_faction_trade
+	}
+}
+
+anti_cross_faction_trade_allies = {
+	add_opinion_modifier = {
+		target = USA
+		modifier = anti_cross_faction_trade
+	}
+	add_opinion_modifier = {
+		target = ENG
+		modifier = anti_cross_faction_trade
+	}
+	add_opinion_modifier = {
+		target = FRA
+		modifier = anti_cross_faction_trade
+	}
+	add_opinion_modifier = {
+		target = CAN
+		modifier = anti_cross_faction_trade
+	}
+	add_opinion_modifier = {
+		target = SAF
+		modifier = anti_cross_faction_trade
+	}
+	add_opinion_modifier = {
+		target = RAJ
+		modifier = anti_cross_faction_trade
+	}
+	add_opinion_modifier = {
+		target = AST
+		modifier = anti_cross_faction_trade
+	}
+	add_opinion_modifier = {
+		target = NZL
+		modifier = anti_cross_faction_trade
+	}
+	add_opinion_modifier = {
+		target = EFR
+		modifier = anti_cross_faction_trade_efr
+	}
+}
+
+
+anti_cross_faction_trade_all = {
+	ENG = {
+		anti_cross_faction_trade_axis = yes
+	}
+	FRA = {
+		anti_cross_faction_trade_axis = yes
+	}
+	USA = {
+		anti_cross_faction_trade_axis = yes
+	}
+	CAN = {
+		anti_cross_faction_trade_axis = yes
+	}
+	AST = {
+		anti_cross_faction_trade_axis = yes
+	}
+	NZL = {
+		anti_cross_faction_trade_axis = yes
+	}
+	SAF = {
+		anti_cross_faction_trade_axis = yes
+	}
+
+	GER = {
+		anti_cross_faction_trade_allies = yes
+	}
+	ITA = {
+		anti_cross_faction_trade_allies = yes
+	}
+	HUN = {
+		anti_cross_faction_trade_allies = yes
+	}
+	BUL = {
+		anti_cross_faction_trade_allies = yes
+	}
+	ROM = {
+		anti_cross_faction_trade_allies = yes
+	}
+	SPR = {
+		anti_cross_faction_trade_allies = yes
+	}
+}

@@ -1,0 +1,41 @@
+ideas={
+	country={
+		neutral_idea = {
+
+
+
+			allowed = {
+				always = no
+			}
+
+
+
+			cancel = {
+				has_war = yes
+			}
+
+			picture = neutrality_idea
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_gain = -2
+				enemy_justify_war_goal_time = 100.0
+				ai_get_ally_desire_factor = -100
+				consumer_goods_factor = 1
+
+			}
+		}
+		no_training = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			picture = neutrality_idea
+
+			modifier = {
+				training_time_factor = 1000
+			}
+		}
+	}

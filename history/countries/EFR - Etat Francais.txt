@@ -1,0 +1,260 @@
+﻿capital = 16
+
+oob = "EFR_1936"
+
+set_research_slots = 3
+set_stability = 0.6
+set_war_support = 0.15
+set_rule={can_join_factions=no}
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_recon = 1
+	tech_mountaineers = 1
+	motorised_infantry = 1
+	gw_artillery = 1
+	interwar_antiair = 1
+	gwtank = 1
+	basic_light_tank = 1
+	improved_light_tank = 1
+	early_fighter = 1
+	naval_bomber1 = 1
+	cv_early_fighter = 1
+	cv_naval_bomber1 = 1
+	early_bomber = 1
+	tactical_bomber1 = 1
+	CAS1 = 1
+	trench_warfare = 1
+	fleet_in_being = 1
+	fuel_silos = 1
+	fuel_refining = 1
+}
+if = {
+	limit = { not = { has_dlc = "Man the Guns" } }
+	set_technology = {
+		early_submarine = 1
+		basic_submarine = 1
+		early_destroyer = 1
+		basic_destroyer = 1
+		early_light_cruiser = 1
+		basic_light_cruiser = 1
+		early_heavy_cruiser = 1
+		basic_heavy_cruiser = 1
+		early_battleship = 1
+		early_battlecruiser = 1
+		basic_battlecruiser = 1
+		early_carrier = 1
+		transport = 1
+	}
+}
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+
+
+		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_submarine = 1
+		basic_ship_hull_submarine = 1
+		early_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
+		early_ship_hull_carrier = 1
+		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_torpedo = 1
+		basic_depth_charges = 1
+		basic_secondary_battery = 1
+		basic_heavy_armor_scheme = 1
+		mtg_transport = 1
+	}
+
+}
+
+set_convoys = 300
+
+
+set_politics = {
+	ruling_party = democratic
+	last_election = "1932.5.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+
+set_popularities = {
+	democratic = 69
+	fascism = 1
+	communism = 30
+}
+
+add_ideas = {
+
+}
+create_country_leader = {
+	name = "Philippe Pétain"
+	desc = "POLITICS_PHILIPPE_PÉTAIN_DESC"
+	picture = "Portrait_France_Philippe_Petain.dds"
+	expire = "1965.1.1"
+	ideology = fascism_ideology
+	traits = {
+
+	}
+}
+
+create_corps_commander = {
+	name = "Jean de Lattre de Tassigny"
+	picture = "Portrait_France_Jean_de_Lattre_de_Tassigny.dds"
+	traits = { trickster brilliant_strategist cavalry_officer war_hero }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Alphonse Juin"
+	picture = "Portrait_France_Alphonse_Juin.dds"
+	traits = { armor_officer trait_cautious  }
+	skill = 4
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+create_field_marshal = {
+	name = "Maurice Gamelin"
+	picture = "Portrait_France_Maurice_Gamelin.dds"
+	traits = { defensive_doctrine old_guard inflexible_strategist }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 1
+}
+
+create_field_marshal = {
+	name = "Maxime Weygand"
+	picture = "Portrait_France_Maxime_Weygand.dds"
+	traits = { defensive_doctrine old_guard inflexible_strategist }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 2
+}
+
+create_field_marshal = {
+	name = "Alphonse Georges"
+	picture = "Portrait_France_Alphonse_Joseph_Georges.dds"
+	traits = { defensive_doctrine old_guard trait_cautious }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Charles De Gaulle"
+	picture = "Portrait_France_Charles_De_Gaulle.dds"
+	traits = {  armor_officer harsh_leader media_personality }
+	skill = 4
+	attack_skill = 4
+	defense_skill = 4
+	planning_skill = 3
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Philippe Leclerc"
+	picture = "portrait_france_philippe_leclerc.dds"
+	traits = {  armor_officer trait_reckless }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 2
+	logistics_skill = 3
+}
+
+create_corps_commander = {
+	name = "Henri Giraud"
+	picture = "portrait_france_henri_giraud.dds"
+	traits = {  trickster trait_cautious infantry_officer }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 2
+}
+
+create_corps_commander = {
+	name = "Charles Huntziger"
+	picture = "portrait_france_charles_huntziger.dds"
+	traits = { old_guard infantry_officer }
+	skill = 3
+	attack_skill = 3
+	defense_skill = 1
+	planning_skill = 3
+	logistics_skill = 3
+}
+
+
+create_navy_leader = {
+	name = "François Darlan"
+	picture = "Portrait_France_Francois_Darlan.dds"
+	traits = { naval_lineage superior_tactician }
+	skill = 3
+	attack_skill = 4
+	defense_skill = 2
+	maneuvering_skill = 6
+	coordination_skill = 3
+}
+
+create_navy_leader = {
+	name = "Jean-Marie Charles Abrial"
+	picture = "Portrait_France_Jean-Marie_Charles_Abrial.dds"
+	traits = { chief_engineer superior_tactician }
+	skill = 3
+	attack_skill = 2
+	defense_skill = 3
+	maneuvering_skill = 3
+	coordination_skill = 2
+}
+
+create_navy_leader = {
+	name = "Jean-Pierre Esteva"
+	picture = "Portrait_France_Jean-Pierre_Esteva.dds"
+	traits = { }
+	skill = 2
+	attack_skill = 1
+	defense_skill = 2
+	maneuvering_skill = 2
+	coordination_skill = 2
+}
+
+create_navy_leader = {
+	name = "René-Émile Godfroy"
+	picture = "Portrait_France_Rene-Emile_Godfroy.dds"
+	traits = { gentlemanly battleship_adherent spotter }
+	skill = 2
+	attack_skill = 2
+	defense_skill = 1
+	maneuvering_skill = 2
+	coordination_skill = 2
+}
+
+create_navy_leader = {
+	name = "Jean de Laborde"
+	picture = "Portrait_France_Jean_de_Laborde.dds"
+	traits = { naval_lineage }
+	skill = 1
+	attack_skill = 1
+	defense_skill = 1
+	maneuvering_skill = 1
+	coordination_skill = 1
+}
