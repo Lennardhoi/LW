@@ -4257,7 +4257,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GER_two_options
+		id = GER_all_options
 		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = GER_naval_effort }
 		mutually_exclusive = { focus = GER_u_boat_effort focus = GER_plan_z }
@@ -4268,11 +4268,19 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
+		available={date>1940.1.1}
 		available_if_capitulated = yes
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			add_tech_bonus = {
+				name = ti_bonus
+				name = GER_all_options
+				bonus = 2.0
+				uses = 2
+				category = naval_doctrine
+			}
+			add_ideas = GER_all_options
 			random_owned_controlled_state = {
 				limit = {
 					dockyard > 0
@@ -4316,7 +4324,7 @@ focus_tree = {
 		id = GER_plan_z
 		icon = GFX_focus_GER_plan_z
 		prerequisite = { focus = GER_naval_effort }
-		mutually_exclusive = { focus = GER_u_boat_effort focus = GER_two_options }
+		mutually_exclusive = { focus = GER_u_boat_effort focus = GER_all_options }
 
 		x = -3
 		y = 1
@@ -4350,12 +4358,7 @@ focus_tree = {
 				}
 				set_state_flag = GER_plan_z_dockyards
 			}
-			add_tech_bonus = {
-				name = cv_bonus
-				bonus = 2.0
-				uses = 2
-				category = cv_tech
-			}
+			
 
 			set_technology = {
 				improved_ship_hull_heavy = 1
@@ -4416,8 +4419,8 @@ focus_tree = {
 		id = GER_u_boat_effort
 		icon = GFX_focus_GER_sub_plan
 		prerequisite = { focus = GER_naval_effort }
-		mutually_exclusive = { focus = GER_plan_z focus = GER_two_options}
-		available={date>1941.1.1}
+		mutually_exclusive = { focus = GER_plan_z focus = GER_all_options}
+		available={date>1940.1.1}
 		x = 3
 		y = 1
 		relative_position_id = GER_naval_effort
@@ -4471,8 +4474,8 @@ focus_tree = {
 	focus = {
 		id = GER_trade_interdiction
 		icon = GFX_goal_generic_wolf_pack
-		prerequisite = { focus = GER_u_boat_effort focus=GER_plan_z  }
-		x = -1
+		prerequisite = { focus = GER_u_boat_effort }
+		x = 1
 		y = 1
 		relative_position_id = GER_u_boat_effort
 		cost = 5
@@ -4490,12 +4493,13 @@ focus_tree = {
 				uses = 4
 				category = naval_doctrine
 			}
+			add_ideas=GER_trade_interdiction
 		}
 	}
 	focus = {
 		id = GER_graf_zeppelin
 		icon = GFX_goal_generic_wolf_pack
-		prerequisite = { focus=GER_plan_z  }
+		prerequisite = { focus=GER_plan_z focus=GER_all_options }
 		x = 1
 		y = 1
 		relative_position_id = GER_plan_z
@@ -4508,11 +4512,53 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_tech_bonus = {
-				name = ti_bonus
-				name = GER_trade_interdiction
+				name = cv_bonus
 				bonus = 2.0
-				uses = 4
-				category = naval_doctrine
+				uses = 1
+				category = cv_tech
+			}
+			set_technology = {
+				basic_ship_hull_carrier = 1
+				early_ship_hull_carrier = 1
+			}
+			create_equipment_variant = {
+				name = "Graf-Zeppelin-Klasse"
+				type = ship_hull_carrier_1
+				name_group = GER_CV_HISTORICAL
+				parent_version = 0
+				modules={
+					fixed_ship_engine_slot=carrier_ship_engine_2
+					fixed_ship_deck_slot_1=ship_deck_space
+					fixed_ship_deck_slot_2=ship_deck_space
+					front_1_custom_slot=ship_deck_space
+					fixed_ship_secondaries_slot=ship_secondaries_2
+					fixed_ship_anti_air_slot=ship_anti_air_2
+				}
+			}
+			custom_effect_tooltip = GER_carrier_tt
+			hidden_effect = {
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_carrier_1
+						creator = "GER"
+						version_name = "Graf-Zeppelin-Klasse"
+					}
+					name = "Graf Zeppelin"
+					requested_factories = 1
+					progress = 0.75
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_carrier_1
+						creator = "GER"
+						version_name = "Graf-Zeppelin-Klasse"
+					}
+					name = "Peter Strasser"
+					requested_factories = 1
+					progress = 0.5
+					amount = 1
+				}
 			}
 		}
 	}
@@ -4543,26 +4589,48 @@ focus_tree = {
 	focus = {
 		id = GER_recover_from_operation_chariot
 		icon = GFX_goal_generic_wolf_pack
-		prerequisite = { focus=GER_two_options  }
+		prerequisite = { focus=GER_all_options focus=GER_u_boat_effort focus=GER_plan_z }
 		x = 0
 		y = 1
-		relative_position_id = GER_two_options
+		
+		relative_position_id = GER_all_options
 		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
-
+		available={controls_state=30}
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			add_tech_bonus = {
-				name = ti_bonus
-				name = GER_trade_interdiction
-				bonus = 2.0
-				uses = 4
-				category = naval_doctrine
+			
+			30 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				add_building_construction = {
+						type = naval_base
+						province=11465
+						level = 10
+						instant_build = yes
+					}
+				add_building_construction = {
+						type = bunker
+						province=11465
+						level = 3
+						instant_build = yes
+					}
+				add_building_construction = {
+						type = coastal_bunker
+						province=11465
+						level = 5
+						instant_build = yes
+					}
 			}
 		}
+		
 	}
 	focus = {
 		id = GER_fjord_fleet_basing
@@ -4570,6 +4638,7 @@ focus_tree = {
 		prerequisite = { focus = GER_recover_from_operation_chariot  }
 		x = 0
 		y = 1
+		available={controls_state=144}
 		relative_position_id = GER_recover_from_operation_chariot
 		cost = 5
 		ai_will_do = {
@@ -4579,16 +4648,35 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = nav_bomber_bonus
-				bonus = 1.0
-				uses = 2
-				category = naval_bomber
+			144 = {
+				add_building_construction = {
+						type = naval_base
+						province=11050
+						level = 5
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = air_base
+						level = 5
+						instant_build = yes
+					}
+				add_building_construction = {
+						type = bunker
+						province=11050
+						level = 3
+						instant_build = yes
+					}
+				add_building_construction = {
+						type = coastal_bunker
+						province=11050
+						level = 3
+						instant_build = yes
+					}
 			}
 		}
 	}
 	focus = {
-		id = GER_germania_werft
+		id = GER_germaniawerft
 		icon = GFX_goal_generic_wolf_pack
 		prerequisite = { focus=GER_plan_z  }
 		x = -1
@@ -4602,22 +4690,24 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			add_tech_bonus = {
-				name = ti_bonus
-				name = GER_trade_interdiction
-				bonus = 2.0
-				uses = 4
-				category = naval_doctrine
-			}
+			58 = {
+			add_ideas=GER_germaniawerft
+			add_extra_state_shared_building_slots = 6
+				add_building_construction = {
+						type = dockyard
+						level = 6
+						instant_build = yes
+					}
+		}
 		}
 	}
 	focus = {
 		id = GER_h_class
 		icon = GFX_focus_ger_arado
-		prerequisite = { focus = GER_germania_werft  }
+		prerequisite = { focus = GER_germaniawerft  }
 		x = 0
 		y = 1
-		relative_position_id = GER_germania_werft
+		relative_position_id = GER_germaniawerft
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -4626,11 +4716,55 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = nav_bomber_bonus
-				bonus = 1.0
-				uses = 2
-				category = naval_bomber
+			set_technology = {
+				ship_hull_super_heavy = 1
+			}
+			create_equipment_variant = {
+				name = "H-Klasse"
+				type = ship_hull_super_heavy_1
+				name_group = GER_BB_HISTORICAL
+				parent_version = 0
+				modules = {
+					fixed_ship_battery_slot = ship_super_heavy_battery_1
+					fixed_ship_anti_air_slot = ship_anti_air_2
+					fixed_ship_fire_control_system_slot = ship_fire_control_system_3
+					fixed_ship_radar_slot = empty
+					fixed_ship_engine_slot = heavy_ship_engine_2
+					fixed_ship_secondaries_slot = ship_secondaries_2
+					fixed_ship_armor_slot = ship_armor_shbb
+					front_1_custom_slot = empty
+					front_2_custom_slot = ship_super_heavy_battery_1
+					mid_1_custom_slot = ship_anti_air_2
+					mid_2_custom_slot = ship_secondaries_2
+					mid_3_custom_slot = ship_secondaries_2
+					rear_1_custom_slot = ship_super_heavy_battery_1
+					rear_2_custom_slot = ship_airplane_launcher_2
+				}
+			}
+			custom_effect_tooltip = GER_h_class_tt
+			hidden_effect = {
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_super_heavy_1
+						creator = "GER"
+						version_name = "H-Klasse"
+					}
+					name = "Schlachtschiff H"
+					requested_factories = 1
+					progress = 0.75
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_super_heavy_1
+						creator = "GER"
+						version_name = "H-Klasse"
+					}
+					name = "Schlachtschiff J"
+					requested_factories = 1
+					progress = 0.5
+					amount = 1
+				}
 			}
 		}
 	}
@@ -4656,8 +4790,8 @@ focus_tree = {
 	focus = {
 		id = GER_u_boot_bunker
 		icon = GFX_focus_ger_arado
-		prerequisite = { focus = GER_u_boat_effort }
-		x = 1
+		prerequisite = { focus = GER_u_boat_effort focus=GER_all_options  }
+		x = -1
 		y = 1
 		relative_position_id =GER_u_boat_effort
 		cost = 5
@@ -4668,13 +4802,21 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = nav_bomber_bonus
-				bonus = 1.0
-				uses = 2
-				category = naval_bomber
+			58 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+						type = dockyard
+						level = 4
+						instant_build = yes
+					}
+				set_building_level = {
+						type = naval_base
+						province=6389
+						level = 20
+						instant_build = yes
+					}
 			}
-		}
+			}
 	}
 	focus = {
 		id = GER_u_boot_bunker2
@@ -4687,16 +4829,35 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
+		available={controls_state=19}
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			add_tech_bonus = {
-				name = ti_bonus
-				name = GER_trade_interdiction
-				bonus = 2.0
-				uses = 4
-				category = naval_doctrine
+			19 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+						type = dockyard
+						level = 4
+						instant_build = yes
+					}
+				set_building_level = {
+						type = naval_base
+						province=9737
+						level = 20
+						instant_build = yes
+					}
+				set_building_level = {
+						type = bunker
+						province=9737
+						level = 5
+						instant_build = yes
+					}
+				set_building_level = {
+						type = coastal_bunker
+						province=9737
+						level = 5
+						instant_build = yes
+					}
 			}
 		}
 	}
@@ -4712,16 +4873,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
+		available={date>1942.1.1}
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = nav_bomber_bonus
-				bonus = 1.0
-				uses = 2
-				category = naval_bomber
-			}
+			add_timed_idea = {idea = GER_operation_sealion days=70}
 		}
 	}
 	focus = {
@@ -4731,6 +4887,7 @@ focus_tree = {
 		prerequisite = { focus = GER_fjord_fleet_basing }
 		x = 0
 		y = 1
+		available={date>1941.6.1}
 		relative_position_id =GER_fjord_fleet_basing
 		cost = 5
 		ai_will_do = {
@@ -4740,12 +4897,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = nav_bomber_bonus
-				bonus = 1.0
-				uses = 2
-				category = naval_bomber
-			}
+			add_timed_idea = {idea = GER_atlantikschlacht days= 365}
 		}
 	}
 	focus = {
@@ -4753,8 +4905,9 @@ focus_tree = {
 		icon = GFX_focus_ger_arado
 		prerequisite = {  focus = GER_modular_construction }
 		prerequisite = { focus = GER_u_boot_bunker2 }
-		x = 1
+		x = -1
 		y = 1
+		available={date>1942.1.1}
 		relative_position_id =GER_modular_construction
 		cost = 5
 		ai_will_do = {
@@ -4762,14 +4915,9 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-
+		
 		completion_reward = {
-			add_tech_bonus = {
-				name = nav_bomber_bonus
-				bonus = 1.0
-				uses = 2
-				category = naval_bomber
-			}
+			add_ideas = GER_monsoon_boats
 		}
 	}
 
