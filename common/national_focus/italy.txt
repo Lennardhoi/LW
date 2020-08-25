@@ -1045,7 +1045,7 @@ focus_tree = {
 		completion_reward = {
 			add_resource = {
 				type = oil
-				amount = 8
+				amount = 30
 				state = 449
 			}
 		}
@@ -1074,12 +1074,23 @@ focus_tree = {
 		}
 		completion_reward = {
 
-
-			add_resource = {
-				type = oil
-				amount = 25
-				state = 449
+        2 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 3
+					instant_build = yes
+				}
 			}
+			161 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 3
+					instant_build = yes
+				}
+			}
+			
 		}
 
 
@@ -2556,7 +2567,7 @@ focus_tree = {
 
 		}
 
-		x = 2
+		x = 1
 		y = 2
 		relative_position_id = ITA_pact_of_steel
 		cost = 5
@@ -2573,6 +2584,46 @@ focus_tree = {
 
 	}
 
+focus = {
+		id = ITA_rommel
+		icon = GFX_focus_GER_army_inno_1
+		prerequisite = { focus = ITA_greece_war_goal }
+		available = {
+	
+	    date > 1941.6.1
+
+		}
+
+		x = 3
+		y = 2
+		relative_position_id = ITA_pact_of_steel
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+     GER = {remove_unit_leader = 4}
+
+
+
+			create_corps_commander = {
+	name = "Erwin Rommel"
+	picture = "Portrait_Germany_Erwin_Rommel.dds"
+	traits = { commando panzer_leader panzer_expert desert_fox trait_engineer }
+	skill = 5
+	id = 4
+	attack_skill = 6
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 4
+}
+
+
+
+
+		}
+
+	}
 
 
 
