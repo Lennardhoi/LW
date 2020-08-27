@@ -497,270 +497,14 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
-		id = GER_german_engineering
-		icon = GFX_focus_wonderweapons
-		prerequisite = { focus = GER_extra_tech_slot }
-		prerequisite = { focus = GER_strategic_bomber_effort }
-		prerequisite = { focus = GER_air_innovation_2}
-		prerequisite = { focus = GER_army_innovation_2 }
-		x = 4
-		y = 1
-		relative_position_id = GER_extra_tech_slot
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available = { date > 1941.1.1}
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_RESEARCH }
-
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = GER_flak_36
-		icon = GFX_goal_generic_air_defense
-		relative_position_id = GER_german_engineering
-		prerequisite = { focus = GER_german_engineering}
-		x = -3
-		y = 1
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			create_equipment_variant = {
-					name = "8.8 cm Flak 41"
-					type = anti_air_equipment_3
-					}
-			add_equipment_production = {
-					equipment = {
-
-						type = anti_air_equipment_3
-						creator = "GER"
-						version_name = "8.8 cm Flak 41"		}
-					requested_factories = 10
-					progress = 0.1
-					efficiency = 50
-				}
-			add_timed_idea = {
-				idea = ENG_goods
-				days = 30
-			}
-
-			66 = {
-				add_building_construction = {
-					type = anti_air_building
-					level = 3
-					instant_build = yes
-				}
-			}
-			68 = {
-				add_building_construction = {
-					type = anti_air_building
-					level = 3
-					instant_build = yes
-				}
-			}
-			54 = {
-				add_building_construction = {
-					type = anti_air_building
-					level = 3
-					instant_build = yes
-				}
-			}
-			51 = {
-				add_building_construction = {
-					type = anti_air_building
-					level = 3
-					instant_build = yes
-				}
-			}
-			42 = {
-				add_building_construction = {
-					type = anti_air_building
-					level = 3
-					instant_build = yes
-				}
-			}
-			56 = {
-				add_building_construction = {
-					type = anti_air_building
-					level = 3
-					instant_build = yes
-				}
-			}
-			59 = {
-				add_building_construction = {
-					type = anti_air_building
-					level = 3
-					instant_build = yes
-				}
-			}
-
-			58 = {
-				add_building_construction = {
-					type = anti_air_building
-					level = 3
-					instant_build = yes
-				}
-			}
-
-			61  = {
-				add_building_construction = {
-					type = anti_air_building
-					level = 3
-					instant_build = yes
-				}
-			}
-
-			62 = {
-				add_building_construction = {
-					type = anti_air_building
-					level = 3
-					instant_build = yes
-				}
-			}
-
-			63 = {
-				add_building_construction = {
-					type = anti_air_building
-					level = 3
-					instant_build = yes
-				}
-			}
-
-			57 = {
-				add_building_construction = {
-					type = anti_air_building
-					level = 3
-					instant_build = yes
-				}
-			}
-
-			64 = {
-				add_building_construction = {
-					type = anti_air_building
-					level = 5
-					instant_build = yes
-				}
-			}
-
-			65 = {
-				add_building_construction = {
-					type = anti_air_building
-					level = 3
-					instant_build = yes
-				}
-			}
-
-			60 = {
-				add_building_construction = {
-					type = anti_air_building
-					level = 3
-					instant_build = yes
-				}
-			}
-
-			55 = {
-				add_building_construction = {
-					type = anti_air_building
-					level = 3
-					instant_build = yes
-				}
-			}
-
-			51 = {
-				add_building_construction = {
-					type = anti_air_building
-					level = 3
-					instant_build = yes
-				}
-			}
-
-			42 = {
-				add_building_construction = {
-					type = anti_air_building
-					level = 3
-					instant_build = yes
-				}
-			}
-
-
-			50 = {
-				add_building_construction = {
-					type = anti_air_building
-					level = 3
-					instant_build = yes
-				}
-			}
-
-
-			52 = {
-				add_building_construction = {
-					type = anti_air_building
-					level = 3
-					instant_build = yes
-				}
-			}
-
-			53 = {
-				add_building_construction = {
-					type = anti_air_building
-					level = 3
-					instant_build = yes
-				}
-			}
-
-			153 = {
-				add_building_construction = {
-					type = anti_air_building
-					level = 3
-					instant_build = yes
-				}
-			}
-			152 = {
-				add_building_construction = {
-					type = anti_air_building
-					level = 3
-					instant_build = yes
-				}
-			}
-			4 = {
-				add_building_construction = {
-					type = anti_air_building
-					level = 3
-					instant_build = yes
-				}
-			}
-
-
-
-
-
-
-
-			add_tech_bonus = {
-				name = anti_air
-				bonus = 1
-				uses = 3
-				category = artillery
-			}
-
-		}
-	}
+	
 	focus = {
 		id = GER_assault_rifles
 		icon = GFX_focus_GER_four_year_plan
 		x = 0
 		y = 1
-		relative_position_id = GER_flak_36
-		prerequisite = { focus = GER_flak_36}
+		relative_position_id = GER_raseiniai
+		prerequisite = { focus = GER_raseiniai}
 		cost = 10
 		ai_will_do = {
 			factor = 12
@@ -819,7 +563,7 @@ focus_tree = {
 		}
 
 
-		x = 3
+		x = -3
 		y = 1
 		relative_position_id = GER_german_engineering
 		cost = 6
@@ -926,10 +670,10 @@ focus_tree = {
 	focus = {
 		id = GER_panzer_4_ausfg
 		icon = GFX_goal_generic_army_tanks
-		prerequisite = { focus = GER_raseiniai }
+		prerequisite = { focus = GER_army_innovation_2 }
 		x = 0
 		y = 1
-		relative_position_id = GER_raseiniai
+		relative_position_id = GER_army_innovation_2
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -979,10 +723,33 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = GER_king_tiger
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = GER_panther_massproduction }
+		prerequisite = { focus = GER_vampir }
+		x = -1
+		y = 1
+		relative_position_id = GER_panther_massproduction
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = { date > 1943.1.1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			set_technology = {
+					advanced_heavy_tank = 1
+				}
+
+		}
+	}
+	focus = {
 		id = GER_ural_bomber
 		icon = GFX_focus_rocketry
 		prerequisite = { focus = GER_german_engineering }
-		x = -1
+		x = 3
 		y = 1
 		relative_position_id = GER_german_engineering
 		cost = 5
@@ -997,7 +764,7 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = GER_fighter3
+		id = GER_fighter_3
 		icon = GFX_focus_rocketry
 		prerequisite = { focus = GER_ural_bomber }
 		x = 0
@@ -1011,16 +778,18 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			
+			set_technology = {
+				fighter3=1
+			}
 		}
 	}
 	focus = {
 		id = GER_rocket_interceptor
 		icon = GFX_focus_rocketry
-		prerequisite = { focus = GER_fighter3 }
+		prerequisite = { focus = GER_fighter_3 }
 		x = 0
 		y = 1
-		relative_position_id = GER_fighter3
+		relative_position_id = GER_fighter_3
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -1118,7 +887,7 @@ focus_tree = {
 		icon = GFX_focus_rocketry
 		prerequisite = { focus = GER_rocket_interceptor }
 		prerequisite = { focus = GER_v2 }
-		x = 1
+		x = -1
 		y = 1
 		relative_position_id = GER_rocket_interceptor
 		cost = 5
@@ -1129,7 +898,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			
+			set_technology = {
+				jet_fighter1= 1
+			}
 		}
 	}
 	focus = {
@@ -1635,7 +1406,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = land_doc_bonus
 				bonus = 1.0
-				uses = 2
+				uses = 1
 				category = land_doctrine
 			}
 			custom_effect_tooltip = available_chief_of_army
@@ -1661,7 +1432,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_army_innovation
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
@@ -1680,12 +1451,269 @@ focus_tree = {
 			add_tech_bonus = {
 				name = GER_soviet_treaty
 				bonus = 1.0
-				uses = 2
+				uses = 1
 				category = armor
 			}
 		}
 	}
+	focus = {
+		id = GER_german_engineering
+		icon = GFX_focus_wonderweapons
+		prerequisite = { focus = GER_extra_tech_slot }
+		prerequisite = { focus = GER_strategic_bomber_effort }
+		prerequisite = { focus = GER_air_innovation_2}
+		prerequisite = { focus = GER_flak_36 }
+		x = 4
+		y = 1
+		relative_position_id = GER_extra_tech_slot
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = { date > 1941.1.1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
 
+		completion_reward = {
+		add_ideas=GER_german_engineering
+			
+		}
+	}
+	focus = {
+		id = GER_flak_36
+		icon = GFX_goal_generic_air_defense
+		relative_position_id = GER_tank_innovation
+		prerequisite = { focus = GER_tank_innovation}
+		x = -1
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			create_equipment_variant = {
+					name = "8.8 cm Flak 41"
+					type = anti_air_equipment_3
+					}
+			add_equipment_production = {
+					equipment = {
+
+						type = anti_air_equipment_3
+						creator = "GER"
+						version_name = "8.8 cm Flak 41"		}
+					requested_factories = 10
+					progress = 0.1
+					efficiency = 50
+				}
+			add_timed_idea = {
+				idea = ENG_goods
+				days = 30
+			}
+
+			66 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 3
+					instant_build = yes
+				}
+			}
+			68 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 3
+					instant_build = yes
+				}
+			}
+			54 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 3
+					instant_build = yes
+				}
+			}
+			51 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 3
+					instant_build = yes
+				}
+			}
+			42 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 3
+					instant_build = yes
+				}
+			}
+			56 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 3
+					instant_build = yes
+				}
+			}
+			59 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 3
+					instant_build = yes
+				}
+			}
+
+			58 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 3
+					instant_build = yes
+				}
+			}
+
+			61  = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 3
+					instant_build = yes
+				}
+			}
+
+			62 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 3
+					instant_build = yes
+				}
+			}
+
+			63 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 3
+					instant_build = yes
+				}
+			}
+
+			57 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 3
+					instant_build = yes
+				}
+			}
+
+			64 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 5
+					instant_build = yes
+				}
+			}
+
+			65 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 3
+					instant_build = yes
+				}
+			}
+
+			60 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 3
+					instant_build = yes
+				}
+			}
+
+			55 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 3
+					instant_build = yes
+				}
+			}
+
+			51 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 3
+					instant_build = yes
+				}
+			}
+
+			42 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 3
+					instant_build = yes
+				}
+			}
+
+
+			50 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 3
+					instant_build = yes
+				}
+			}
+
+
+			52 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 3
+					instant_build = yes
+				}
+			}
+
+			53 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 3
+					instant_build = yes
+				}
+			}
+
+			153 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 3
+					instant_build = yes
+				}
+			}
+			152 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 3
+					instant_build = yes
+				}
+			}
+			4 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 3
+					instant_build = yes
+				}
+			}
+
+
+
+
+
+
+
+			add_tech_bonus = {
+				name = anti_air
+				bonus = 1
+				uses = 3
+				category = artillery
+			}
+
+		}
+	}
 	focus = {
 		id = GER_air_innovation_2
 		icon = GFX_goal_generic_air_fighter2
@@ -1734,15 +1762,76 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = GER_mech_innovation
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = GER_soviet_treaty }
+		x = -1
+		y = 1
+		relative_position_id = GER_soviet_treaty
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			army_experience = 50
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+			add_tech_bonus = {
+				name = mech_army_bonus
+				bonus = 1.0
+				uses = 1
+				technology = mechanised_infantry
+			}
+		}
+	}
+	focus = {
+		id = GER_tank_innovation
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = GER_soviet_treaty }
+		x = 1
+		y = 1
+		relative_position_id = GER_soviet_treaty
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			army_experience = 50
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+			add_tech_bonus = {
+				bonus = 1.5
+				uses = 1
+				name = tank_innovation_bonus
+				technology = improved_medium_tank
+
+			}
+		}
+	}
 
 	focus = {
 		id = GER_army_innovation_2
 		icon = GFX_goal_generic_army_tanks
-		prerequisite = { focus = GER_soviet_treaty }
-		x = 0
-		y = 2
-		relative_position_id = GER_soviet_treaty
-		cost = 10
+		prerequisite = { focus = GER_german_engineering }
+		x = -1
+		y = 1
+		relative_position_id = GER_german_engineering
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1755,15 +1844,8 @@ focus_tree = {
 			add_tech_bonus = {
 				name = land_doc_bonus
 				bonus = 1.0
-				uses = 2
-				category = land_doctrine
-			}
-			add_tech_bonus = {
-				name = mech_army_bonus
-
-				bonus = 1.0
 				uses = 1
-				technology = mechanised_infantry
+				category = land_doctrine
 			}
 			add_tech_bonus = {
 				name = mech_army_bonus
@@ -1776,8 +1858,6 @@ focus_tree = {
 				bonus = 1.5
 				uses = 1
 				name = mech_army_bonus
-				technology = basic_medium_tank
-				technology = improved_medium_tank
 				technology = advanced_medium_tank
 
 			}
@@ -1897,7 +1977,7 @@ focus_tree = {
 
 
 			add_ideas = GER_atlantikwall_idea
-			custom_effect_tooltip="Adds a Coastal Fort to every coastal provinces that doesnt have any coastal forts."
+			custom_effect_tooltip="Adds a Coastal Fort to every coastal provinces that have at least one coastal fort."
 			99 = {
 				add_building_construction = {
 					type = coastal_bunker
@@ -1905,7 +1985,7 @@ focus_tree = {
 					province = {
 						all_provinces = yes
 						limit_to_coastal = yes
-						level < 1
+						level > 1
 					}
 				}
 			}
@@ -1917,7 +1997,7 @@ focus_tree = {
 					province = {
 						all_provinces = yes
 						limit_to_coastal = yes
-						level < 1
+						level > 1
 					}
 				}
 			}
@@ -1929,7 +2009,7 @@ focus_tree = {
 					province = {
 						all_provinces = yes
 						limit_to_coastal = yes
-						level < 1
+						level > 1
 					}
 				}
 			}
@@ -1941,7 +2021,7 @@ focus_tree = {
 					province = {
 						all_provinces = yes
 						limit_to_coastal = yes
-						level < 1
+						level > 1
 					}
 				}
 			}
@@ -1953,7 +2033,7 @@ focus_tree = {
 					province = {
 						all_provinces = yes
 						limit_to_coastal = yes
-						level < 1
+						level > 1
 					}
 				}
 			}
@@ -1965,7 +2045,7 @@ focus_tree = {
 					province = {
 						all_provinces = yes
 						limit_to_coastal = yes
-						level < 1
+						level > 1
 					}
 				}
 			}
@@ -1977,7 +2057,7 @@ focus_tree = {
 					province = {
 						all_provinces = yes
 						limit_to_coastal = yes
-						level < 1
+						level > 1
 					}
 				}
 			}
@@ -1989,7 +2069,7 @@ focus_tree = {
 					province = {
 						all_provinces = yes
 						limit_to_coastal = yes
-						level < 1
+						level > 1
 					}
 				}
 			}
@@ -2001,7 +2081,7 @@ focus_tree = {
 					province = {
 						all_provinces = yes
 						limit_to_coastal = yes
-						level < 1
+						level > 1
 					}
 				}
 			}
@@ -2013,7 +2093,7 @@ focus_tree = {
 					province = {
 						all_provinces = yes
 						limit_to_coastal = yes
-						level < 1
+						level > 1
 					}
 				}
 			}
@@ -2025,7 +2105,7 @@ focus_tree = {
 					province = {
 						all_provinces = yes
 						limit_to_coastal = yes
-						level < 1
+						level > 1
 					}
 				}
 			}
@@ -2037,7 +2117,7 @@ focus_tree = {
 					province = {
 						all_provinces = yes
 						limit_to_coastal = yes
-						level < 1
+						level > 1
 					}
 				}
 			}
@@ -2049,7 +2129,7 @@ focus_tree = {
 					province = {
 						all_provinces = yes
 						limit_to_coastal = yes
-						level < 1
+						level > 1
 					}
 				}
 			}
@@ -2061,7 +2141,7 @@ focus_tree = {
 					province = {
 						all_provinces = yes
 						limit_to_coastal = yes
-						level < 1
+						level > 1
 					}
 				}
 			}
@@ -2074,7 +2154,7 @@ focus_tree = {
 					province = {
 						all_provinces = yes
 						limit_to_coastal = yes
-						level < 1
+						level > 1
 					}
 				}
 			}
@@ -2097,7 +2177,7 @@ focus_tree = {
 						province = {
 							all_provinces = yes
 							limit_to_coastal = yes
-							level < 1
+							level > 1
 						}
 					}
 				}
@@ -2121,7 +2201,7 @@ focus_tree = {
 						province = {
 							all_provinces = yes
 							limit_to_coastal = yes
-							level < 1
+							level > 1
 						}
 					}
 				}
@@ -2145,7 +2225,7 @@ focus_tree = {
 						province = {
 							all_provinces = yes
 							limit_to_coastal = yes
-							level < 1
+							level > 1
 						}
 					}
 				}
@@ -4273,6 +4353,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			add_ideas = GER_all_options
 			add_tech_bonus = {
 				name = ti_bonus
 				name = GER_all_options
@@ -4280,7 +4361,6 @@ focus_tree = {
 				uses = 2
 				category = naval_doctrine
 			}
-			add_ideas = GER_all_options
 			random_owned_controlled_state = {
 				limit = {
 					dockyard > 0
