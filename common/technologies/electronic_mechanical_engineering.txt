@@ -981,7 +981,37 @@ technologies = {
 			rocketry
 		}
 	}
+	
+	jet_engines = {
+	
+		folder = {
+			name = electronics_folder
+			position = { x = 2 y = 2 }
+		}
+		
+		start_year = 1944
+		research_cost = 2
 
+		folder = {
+			name = air_techs_folder
+			position = { x = 2 y = 11 }
+		}
+		
+		desc = "JET_ENGINES_SPECIAL"
+
+		on_research_complete = {
+			custom_effect_tooltip = JET_ENGINES_RESEARCHED
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			rocketry
+			jet_technology
+		}
+	}
 	improved_rocket_engines = {
 
 		show_equipment_icon = yes
