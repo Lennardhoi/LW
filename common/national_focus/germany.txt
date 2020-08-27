@@ -497,412 +497,7 @@ focus_tree = {
 			}
 		}
 	}
-	
-	focus = {
-		id = GER_assault_rifles
-		icon = GFX_focus_GER_four_year_plan
-		x = 0
-		y = 1
-		relative_position_id = GER_raseiniai
-		prerequisite = { focus = GER_raseiniai}
-		cost = 10
-		ai_will_do = {
-			factor = 12
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			create_equipment_variant = {
-					name = "MP 43"
-					type = infantry_equipment_3
-					}
-		add_equipment_production = {
-					equipment = {
 
-						type = infantry_equipment_3
-						creator = "GER"
-						version_name = "MP 43"		}
-					requested_factories = 10
-					progress = 0.1
-					efficiency = 50
-				}
-				hidden_effect= {set_technology = {
-					advanced_infantry_weapons = 1
-				}}
-		}
-	}
-	focus = {
-		id = GER_vampir
-		x = 0
-		y = 1
-		relative_position_id = GER_assault_rifles
-		prerequisite = { focus = GER_assault_rifles}
-		cost = 10
-		ai_will_do = {
-			factor = 12
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			set_technology = {
-					night_vision = 1
-				}
-		}
-	}
-	focus = {
-	
-		id = GER_raseiniai
-		icon = GFX_GER_mobile_fortresses
-		text="Battle of Raseiniai"
-		prerequisite = { focus = GER_german_engineering }
-
-
-		available = {
-			has_war_with = SOV
-			date>1941.9.1
-
-
-		}
-
-
-		x = -3
-		y = 1
-		relative_position_id = GER_german_engineering
-		cost = 6
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = no
-		completion_reward = {
-
-			custom_effect_tooltip = "Two fully equipped Tiger-Divisions will spawn in Königsberg. A designer can be used."
-
-
-			hidden_effect={
-
-				set_technology = {
-					improved_heavy_tank = 1
-				}
-
-				create_equipment_variant = {
-					name = "Tiger Panzer"
-					type = heavy_tank_equipment_2
-					upgrades = {
-						tank_gun_upgrade = 5
-						tank_reliability_upgrade = 5
-
-						}}
-				add_equipment_production = {
-					equipment = {
-
-						type = heavy_tank_equipment_2
-						creator = "GER"
-						version_name = "Tiger Panzer"		}
-					requested_factories = 10
-					progress = 0.1
-					efficiency = 50
-				}
-
-
-
-
-
-				division_template = {
-					name = "SS-Panzergrenadier"			# Rifle Division
-
-
-					regiments = {
-						heavy_armor = { x = 0 y = 0 }
-						heavy_armor = { x = 0 y = 1 }
-						heavy_armor = { x = 0 y = 2 }
-						heavy_armor = { x = 0 y = 3 }
-						heavy_armor = { x = 1 y = 0 }
-						heavy_armor = { x = 1 y = 1 }
-						heavy_armor = { x = 1 y = 2 }
-						heavy_armor = { x = 1 y = 3 }
-						heavy_armor = { x = 2 y = 0 }
-						heavy_armor = { x = 2 y = 1 }
-						heavy_armor = { x = 2 y = 2 }
-						heavy_armor = { x = 2 y = 3 }
-						motorized = { x = 3 y = 0 }
-						motorized = { x = 3 y = 1 }
-						motorized = { x = 3 y = 2 }
-						motorized = { x = 3 y = 3 }
-						motorized = { x = 4 y = 0 }
-						motorized = { x = 4 y = 1 }
-						motorized = { x = 4 y = 2 }
-						motorized = { x = 4 y = 3 }
-
-					}
-					support = {
-						recon = { x = 0 y = 0 } 		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and they seem rather OP. Could revisit if balance changes
-						engineer = { x = 0 y = 1 } 	# (semi-mot) Engineer bn
-						artillery = { x = 0 y = 2 }
-						logistics_company = { x = 0 y = 3 }
-						signal_company = { x = 0 y = 4 }	# Heavy Arty Regiment had 1x 152mm bn + 2x 122mm bn
-					}
-				}
-				763 = {
-					for_loop_effect = {
-						end = 2
-						create_unit = {
-							division = "name = \"SS-Panzergrenadier\" division_template = \"SS-Panzergrenadier\" start_experience_factor = 2.0"
-							owner = GER
-						}
-						}}
-			}
-
-
-			army_experience = 200
-
-
-			add_tech_bonus = {
-				name = at_bonus
-				bonus = 2.0
-				uses = 2
-				category = cat_anti_tank
-
-
-			}
-
-			}
-			}
-	
-	focus = {
-		id = GER_panzer_4_ausfg
-		icon = GFX_goal_generic_army_tanks
-		prerequisite = { focus = GER_army_innovation_2 }
-		x = 0
-		y = 1
-		relative_position_id = GER_army_innovation_2
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available = { date > 1942.1.1}
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_RESEARCH }
-
-		completion_reward = {
-			create_equipment_variant = {
-					name = "Panzer IV Ausf. G"
-					type = medium_tank_equipment_2
-					upgrades = {
-						tank_gun_upgrade = 7
-						tank_reliability_upgrade = 5
-
-						}}
-		}
-	}
-	focus = {
-		id = GER_panther_massproduction
-		icon = GFX_goal_generic_army_tanks
-		prerequisite = { focus = GER_panzer_4_ausfg }
-		x = 0
-		y = 1
-		relative_position_id = GER_panzer_4_ausfg
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available = { date > 1942.5.1}
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_RESEARCH }
-
-		completion_reward = {
-		custom_effect_tooltip="The VARIANT Panther A will go into mass production "
-			add_equipment_production = {
-					equipment = {
-
-						type = medium_tank_equipment_3
-						creator = "GER"
-						version_name = "Panther A"		}
-					requested_factories = 100
-					progress = 0.1
-					efficiency = 50
-				}
-		}
-	}
-	focus = {
-		id = GER_king_tiger
-		icon = GFX_goal_generic_army_tanks
-		prerequisite = { focus = GER_panther_massproduction }
-		prerequisite = { focus = GER_vampir }
-		x = -1
-		y = 1
-		relative_position_id = GER_panther_massproduction
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available = { date > 1943.1.1}
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_RESEARCH }
-
-		completion_reward = {
-			set_technology = {
-					advanced_heavy_tank = 1
-				}
-
-		}
-	}
-	focus = {
-		id = GER_ural_bomber
-		icon = GFX_focus_rocketry
-		prerequisite = { focus = GER_german_engineering }
-		x = 3
-		y = 1
-		relative_position_id = GER_german_engineering
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = GER_fighter_3
-		icon = GFX_focus_rocketry
-		prerequisite = { focus = GER_ural_bomber }
-		x = 0
-		y = 1
-		relative_position_id = GER_ural_bomber
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {
-			set_technology = {
-				fighter3=1
-			}
-		}
-	}
-	focus = {
-		id = GER_rocket_interceptor
-		icon = GFX_focus_rocketry
-		prerequisite = { focus = GER_fighter_3 }
-		x = 0
-		y = 1
-		relative_position_id = GER_fighter_3
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {
-			
-		}
-	}
-	focus = {
-		id = GER_rocketry_focus
-		icon = GFX_focus_rocketry
-		prerequisite = { focus = GER_german_engineering }
-		x = 1
-		y = 1
-		relative_position_id = GER_german_engineering
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {
-			add_ideas = GER_rocketry_idea
-			add_tech_bonus = {
-				name = GER_rocketry_focus
-				bonus = 1.0
-				uses = 2
-				category = rocketry
-			}
-			add_tech_bonus = {
-				name = GER_rocketry_focus
-				bonus = 1.0
-				uses = 2
-				category = jet_technology
-			}
-		}
-	}
-	focus = {
-		id = GER_stuka
-		icon = GFX_focus_rocketry
-		prerequisite = { focus = GER_rocketry_focus }
-		x = 0
-		y = 1
-		relative_position_id = GER_rocketry_focus
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {
-			set_technology = {
-				rocket_artillery4= 1
-				motorized_rocket_unit= 1
-			}
-		}
-	}
-		focus = {
-		id = GER_v2
-		icon = GFX_focus_rocketry
-		prerequisite = { focus =  GER_stuka }
-		x = 0
-		y = 1
-		relative_position_id =  GER_stuka
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {
-			add_ideas = GER_rocketry_idea
-			add_tech_bonus = {
-				name = GER_rocketry_focus
-				bonus = 1.0
-				uses = 2
-				category = rocketry
-			}
-			add_tech_bonus = {
-				name = GER_rocketry_focus
-				bonus = 1.0
-				uses = 2
-				category = jet_technology
-			}
-		}
-	}
-	focus = {
-		id = GER_jet_fighter
-		icon = GFX_focus_rocketry
-		prerequisite = { focus = GER_rocket_interceptor }
-		prerequisite = { focus = GER_v2 }
-		x = -1
-		y = 1
-		relative_position_id = GER_rocket_interceptor
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {
-			set_technology = {
-				jet_fighter1= 1
-			}
-		}
-	}
 	focus = {
 		id = GER_german_war_economy
 		icon = GFX_goal_generic_construct_mil_factory
@@ -1456,34 +1051,73 @@ focus_tree = {
 			}
 		}
 	}
+	
 	focus = {
-		id = GER_german_engineering
-		icon = GFX_focus_wonderweapons
-		prerequisite = { focus = GER_extra_tech_slot }
-		prerequisite = { focus = GER_strategic_bomber_effort }
-		prerequisite = { focus = GER_air_innovation_2}
-		prerequisite = { focus = GER_flak_36 }
-		x = 4
+		id = GER_mech_innovation
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = GER_soviet_treaty }
+		x = -1
 		y = 1
-		relative_position_id = GER_extra_tech_slot
+		relative_position_id = GER_soviet_treaty
 		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
-		available = { date > 1941.1.1}
+
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
-
 		completion_reward = {
-		add_ideas=GER_german_engineering
-			
+			army_experience = 50
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+			add_tech_bonus = {
+				name = mech_army_bonus
+				bonus = 1.0
+				uses = 1
+				technology = mechanised_infantry
+			}
+		}
+	}
+	focus = {
+		id = GER_tank_innovation
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = GER_soviet_treaty }
+		x = 1
+		y = 1
+		relative_position_id = GER_soviet_treaty
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			army_experience = 50
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+			add_tech_bonus = {
+				bonus = 1.5
+				uses = 1
+				name = tank_innovation_bonus
+				technology = improved_medium_tank
+
+			}
 		}
 	}
 	focus = {
 		id = GER_flak_36
 		icon = GFX_goal_generic_air_defense
 		relative_position_id = GER_tank_innovation
-		prerequisite = { focus = GER_tank_innovation}
+		prerequisite = { focus = GER_tank_innovation focus=GER_mech_innovation}
 		x = -1
 		y = 1
 		cost = 5
@@ -1508,10 +1142,6 @@ focus_tree = {
 					progress = 0.1
 					efficiency = 50
 				}
-			add_timed_idea = {
-				idea = ENG_goods
-				days = 30
-			}
 
 			66 = {
 				add_building_construction = {
@@ -1714,6 +1344,8 @@ focus_tree = {
 
 		}
 	}
+	
+	
 	focus = {
 		id = GER_air_innovation_2
 		icon = GFX_goal_generic_air_fighter2
@@ -1763,67 +1395,198 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = GER_mech_innovation
-		icon = GFX_goal_generic_army_tanks
-		prerequisite = { focus = GER_soviet_treaty }
-		x = -1
+		id = GER_german_engineering
+		icon = GFX_focus_wonderweapons
+		prerequisite = { focus = GER_extra_tech_slot }
+		prerequisite = { focus = GER_strategic_bomber_effort }
+		prerequisite = { focus = GER_air_innovation_2}
+		prerequisite = { focus = GER_flak_36 }
+		x = 4
 		y = 1
-		relative_position_id = GER_soviet_treaty
+		relative_position_id = GER_extra_tech_slot
 		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
-
+		available = { date > 1941.1.1}
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
+
 		completion_reward = {
-			army_experience = 50
-			add_tech_bonus = {
-				name = land_doc_bonus
-				bonus = 1.0
-				uses = 1
-				category = land_doctrine
+		add_ideas=GER_german_engineering
+			
+		}
+	}
+	##rase
+	focus = {
+	
+		id = GER_raseiniai
+		icon = GFX_GER_mobile_fortresses
+		text="Battle of Raseiniai"
+		prerequisite = { focus = GER_german_engineering }
+
+
+		available = {
+			has_war_with = SOV
+			date>1941.9.1
+
+
+		}
+
+
+		x = -3
+		y = 1
+		relative_position_id = GER_german_engineering
+		cost = 6
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = no
+		completion_reward = {
+
+			custom_effect_tooltip = "Two fully equipped Tiger-Divisions will spawn in Königsberg. A designer can be used."
+
+
+			hidden_effect={
+
+				set_technology = {
+					improved_heavy_tank = 1
+				}
+
+				create_equipment_variant = {
+					name = "Tiger Panzer"
+					type = heavy_tank_equipment_2
+					upgrades = {
+						tank_gun_upgrade = 5
+						tank_reliability_upgrade = 5
+
+						}}
+				add_equipment_production = {
+					equipment = {
+
+						type = heavy_tank_equipment_2
+						creator = "GER"
+						version_name = "Tiger Panzer"		}
+					requested_factories = 10
+					progress = 0.1
+					efficiency = 50
+				}
+
+
+
+
+
+				division_template = {
+					name = "SS-Panzergrenadier"			# Rifle Division
+
+
+					regiments = {
+						heavy_armor = { x = 0 y = 0 }
+						heavy_armor = { x = 0 y = 1 }
+						heavy_armor = { x = 0 y = 2 }
+						heavy_armor = { x = 0 y = 3 }
+						heavy_armor = { x = 1 y = 0 }
+						heavy_armor = { x = 1 y = 1 }
+						heavy_armor = { x = 1 y = 2 }
+						heavy_armor = { x = 1 y = 3 }
+						heavy_armor = { x = 2 y = 0 }
+						heavy_armor = { x = 2 y = 1 }
+						heavy_armor = { x = 2 y = 2 }
+						heavy_armor = { x = 2 y = 3 }
+						motorized = { x = 3 y = 0 }
+						motorized = { x = 3 y = 1 }
+						motorized = { x = 3 y = 2 }
+						motorized = { x = 3 y = 3 }
+						motorized = { x = 4 y = 0 }
+						motorized = { x = 4 y = 1 }
+						motorized = { x = 4 y = 2 }
+						motorized = { x = 4 y = 3 }
+
+					}
+					support = {
+						recon = { x = 0 y = 0 } 		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and they seem rather OP. Could revisit if balance changes
+						engineer = { x = 0 y = 1 } 	# (semi-mot) Engineer bn
+						artillery = { x = 0 y = 2 }
+						logistics_company = { x = 0 y = 3 }
+						signal_company = { x = 0 y = 4 }	# Heavy Arty Regiment had 1x 152mm bn + 2x 122mm bn
+					}
+				}
+				763 = {
+					for_loop_effect = {
+						end = 2
+						create_unit = {
+							division = "name = \"SS-Panzergrenadier\" division_template = \"SS-Panzergrenadier\" start_experience_factor = 2.0"
+							owner = GER
+						}
+						}}
 			}
+
+
+			army_experience = 200
+
+
 			add_tech_bonus = {
-				name = mech_army_bonus
-				bonus = 1.0
-				uses = 1
-				technology = mechanised_infantry
+				name = at_bonus
+				bonus = 2.0
+				uses = 2
+				category = cat_anti_tank
+
+
 			}
+
+			}
+	}
+	focus = {
+		id = GER_assault_rifles
+		icon = GFX_focus_GER_four_year_plan
+		x = 0
+		y = 1
+		relative_position_id = GER_raseiniai
+		prerequisite = { focus = GER_raseiniai}
+		cost = 10
+		ai_will_do = {
+			factor = 12
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			create_equipment_variant = {
+					name = "MP 43"
+					type = infantry_equipment_3
+					}
+		add_equipment_production = {
+					equipment = {
+
+						type = infantry_equipment_3
+						creator = "GER"
+						version_name = "MP 43"		}
+					requested_factories = 10
+					progress = 0.1
+					efficiency = 50
+				}
+				hidden_effect= {set_technology = {
+					advanced_infantry_weapons = 1
+				}}
 		}
 	}
 	focus = {
-		id = GER_tank_innovation
-		icon = GFX_goal_generic_army_tanks
-		prerequisite = { focus = GER_soviet_treaty }
-		x = 1
+		id = GER_vampir
+		x = 0
 		y = 1
-		relative_position_id = GER_soviet_treaty
-		cost = 5
+		relative_position_id = GER_assault_rifles
+		prerequisite = { focus = GER_assault_rifles}
+		cost = 10
 		ai_will_do = {
-			factor = 1
+			factor = 12
 		}
-
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_RESEARCH }
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			army_experience = 50
-			add_tech_bonus = {
-				name = land_doc_bonus
-				bonus = 1.0
-				uses = 1
-				category = land_doctrine
-			}
-			add_tech_bonus = {
-				bonus = 1.5
-				uses = 1
-				name = tank_innovation_bonus
-				technology = improved_medium_tank
-
-			}
+			set_technology = {
+					night_vision = 1
+				}
 		}
 	}
-
+	
 	focus = {
 		id = GER_army_innovation_2
 		icon = GFX_goal_generic_army_tanks
@@ -1864,7 +1627,242 @@ focus_tree = {
 			# REVISIT Might want to add bonuses to Soviet through event, since focus branches from treaty
 		}
 	}
+	focus = {
+		id = GER_panzer_4_ausfg
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = GER_army_innovation_2 }
+		x = 0
+		y = 1
+		relative_position_id = GER_army_innovation_2
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = { date > 1942.1.1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
 
+		completion_reward = {
+			create_equipment_variant = {
+					name = "Panzer IV Ausf. G"
+					type = medium_tank_equipment_2
+					upgrades = {
+						tank_gun_upgrade = 7
+						tank_reliability_upgrade = 5
+
+						}}
+		}
+	}
+	focus = {
+		id = GER_panther_massproduction
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = GER_panzer_4_ausfg }
+		x = 0
+		y = 1
+		relative_position_id = GER_panzer_4_ausfg
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = { date > 1942.5.1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+		custom_effect_tooltip="The VARIANT Panther A will go into mass production "
+			add_equipment_production = {
+					equipment = {
+
+						type = medium_tank_equipment_3
+						creator = "GER"
+						version_name = "Panther A"		}
+					requested_factories = 100
+					progress = 0.1
+					efficiency = 50
+				}
+		}
+	}
+	focus = {
+		id = GER_king_tiger
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = GER_panther_massproduction }
+		prerequisite = { focus = GER_vampir }
+		x = -1
+		y = 1
+		relative_position_id = GER_panther_massproduction
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = { date > 1943.1.1}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+
+		completion_reward = {
+			set_technology = {
+					advanced_heavy_tank = 1
+				}
+
+		}
+	}
+	focus = {
+		id = GER_ural_bomber
+		icon = GFX_focus_rocketry
+		prerequisite = { focus = GER_german_engineering }
+		x = 3
+		y = 1
+		relative_position_id = GER_german_engineering
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GER_fighter_3
+		icon = GFX_focus_rocketry
+		prerequisite = { focus = GER_ural_bomber }
+		x = 0
+		y = 1
+		relative_position_id = GER_ural_bomber
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			set_technology = {
+				fighter3=1
+			}
+		}
+	}
+	focus = {
+		id = GER_rocket_interceptor
+		icon = GFX_focus_rocketry
+		prerequisite = { focus = GER_fighter_3 }
+		x = 0
+		y = 1
+		relative_position_id = GER_fighter_3
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			
+		}
+	}
+	focus = {
+		id = GER_rocketry_focus
+		icon = GFX_focus_rocketry
+		prerequisite = { focus = GER_german_engineering }
+		x = 1
+		y = 1
+		relative_position_id = GER_german_engineering
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_ideas = GER_rocketry_idea
+			add_tech_bonus = {
+				name = GER_rocketry_focus
+				bonus = 1.0
+				uses = 2
+				category = rocketry
+			}
+			add_tech_bonus = {
+				name = GER_rocketry_focus
+				bonus = 1.0
+				uses = 2
+				category = jet_technology
+			}
+		}
+	}
+	focus = {
+		id = GER_stuka
+		icon = GFX_focus_rocketry
+		prerequisite = { focus = GER_rocketry_focus }
+		x = 0
+		y = 1
+		relative_position_id = GER_rocketry_focus
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			set_technology = {
+				rocket_artillery4= 1
+				motorized_rocket_unit= 1
+			}
+		}
+	}
+		focus = {
+		id = GER_v2
+		icon = GFX_focus_rocketry
+		prerequisite = { focus =  GER_stuka }
+		x = 0
+		y = 1
+		relative_position_id =  GER_stuka
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_ideas = GER_rocketry_idea
+			add_tech_bonus = {
+				name = GER_rocketry_focus
+				bonus = 1.0
+				uses = 2
+				category = rocketry
+			}
+			add_tech_bonus = {
+				name = GER_rocketry_focus
+				bonus = 1.0
+				uses = 2
+				category = jet_technology
+			}
+		}
+	}
+	focus = {
+		id = GER_jet_fighter
+		icon = GFX_focus_rocketry
+		prerequisite = { focus = GER_rocket_interceptor }
+		prerequisite = { focus = GER_v2 }
+		x = -1
+		y = 1
+		relative_position_id = GER_rocket_interceptor
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			set_technology = {
+				jet_fighter1= 1
+			}
+		}
+	}	
 	#focus = {
 	#	id = GER_rocketry_focus
 	#	icon = GFX_focus_rocketry
@@ -4774,9 +4772,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			58 = {
 			add_ideas=GER_germaniawerft
-			add_extra_state_shared_building_slots = 6
+			58 = {
+				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
 						type = dockyard
 						level = 6
