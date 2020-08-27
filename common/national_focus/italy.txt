@@ -1337,7 +1337,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_libyan_refineries }
 		available = {
 
-			date>1941.9.1
+			date>1941.1.1
 			ITA = {
 				AND = {controls_state = 661 controls_state = 2}
 
@@ -1356,16 +1356,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_resource = {
-				type = rubber
-				amount = 20
-				state = 2
-			}
-
-			add_resource = {
-				type = rubber
-				amount = -20
-				state = 661
+			modify_building_resources = {
+				building = synthetic_refinery
+				resource = rubber
+				amount = 2
 			}
 		}
 	}
@@ -1439,7 +1433,7 @@ focus_tree = {
 
 		available = {
 
-			date>1941.12.1
+			date>1941.09.1
 			ITA = {
 				AND = {controls_state = 661 controls_state = 2}
 
@@ -1464,11 +1458,6 @@ focus_tree = {
 				state = 2
 			}
 
-			add_resource = {
-				type = rubber
-				amount = -25
-				state = 661
-			}
 		}
 	}
 	focus = {
@@ -2189,11 +2178,11 @@ focus_tree = {
 		id = ITA_sea_wolves
 		icon = GFX_goal_generic_wolf_pack
 		prerequisite = { focus = ITA_submarine_effort }
-		prerequisite = { focus = ITA_german_millitary_cooperation }
+		
 		available = {
 		}
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = ITA_submarine_effort
 		cost = 5
 		ai_will_do = {
@@ -2228,7 +2217,7 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
-		x = 16
+		x = 18
 		y = 0
 		cost = 10
 		ai_will_do = {
@@ -2590,7 +2579,7 @@ focus = {
 		prerequisite = { focus = ITA_greece_war_goal }
 		available = {
 	
-	    date > 1941.6.1
+	    date > 1941.2.21
 
 		}
 
