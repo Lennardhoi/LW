@@ -13,7 +13,53 @@ focus_tree = {
 	default = no
 
 	continuous_focus_position = { x = 50 y = 1200 }
+    
+	focus = {
+		id = ITA_demand_balearic_islands
+		icon = GFX_goal_generic_territory_or_war
+		prerequisite = { focus = ITA_german_millitary_cooperation }
+		available = {
+			
+			if = {
+				SPR = {
+					has_war = no
+					owns_state = 177
+				}
+			}
+			
+		}
+		
+		x = 14
+		y = 5
+		cost = 10
+		search_filters = { FOCUS_FILTER_ANNEXATION }
 
+		completion_reward = {
+		SPR ={ 
+		       
+			 random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+						instant_build = yes
+					}
+				}}
+				
+				
+			random_owned_controlled_state = {
+				
+			limit = { industrial_complex > 1 }
+	         remove_building = { type = industrial_complex  level = 2 }		
+			}
+			random_other_country = {
+				limit = {
+					owns_state = 177
+				}
+				country_event = { id = italy.9 }
+			}
+		}
+	} 
 	focus = {
 		id = ITA_ethiopian_war_logistics
 		icon = GFX_goal_generic_position_armies
@@ -2021,6 +2067,7 @@ focus_tree = {
 		icon = GFX_goal_generic_build_airforce
 		text = air_innovation_2
 		prerequisite = { focus = ITA_bomber_effort focus = ITA_naval_air_effort }
+		available = {date >1941.6.1}
 		x = 1
 		y = 1
 		relative_position_id = ITA_bomber_effort
@@ -2041,8 +2088,8 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = air_doc_bonus
-				bonus = 1.0
-				uses = 2
+				bonus = 1000
+				uses = 8
 				category = air_doctrine
 			}
 		}
@@ -2522,7 +2569,6 @@ focus_tree = {
 
 
 
-
 			create_wargoal = {
 				type = take_state_focus
 				target = GRE
@@ -2553,7 +2599,6 @@ focus_tree = {
 			116={is_controlled_by_ROOT_or_ally = yes}
 			183={is_controlled_by_ROOT_or_ally = yes}
 			182={is_controlled_by_ROOT_or_ally = yes}
-
 		}
 
 		x = 1
@@ -2568,7 +2613,6 @@ focus_tree = {
 			add_ideas = ITA_roman
 
 
-
 		}
 
 	}
@@ -2578,9 +2622,10 @@ focus = {
 		icon = GFX_focus_GER_army_inno_1
 		prerequisite = { focus = ITA_greece_war_goal }
 		available = {
-	
-	    date > 1941.2.21
-
+	AND ={
+	    ITA={controls_state =448}
+		date > 1941.2.21
+          }
 		}
 
 		x = 3
@@ -2591,24 +2636,28 @@ focus = {
 			factor = 10
 		}
 		completion_reward = {
-     GER = {remove_unit_leader = 4}
 
+    
+	GER = {remove_unit_leader = 4}
+      
+      
 
-
-			create_corps_commander = {
+		ITA={	
+	country_event = { id = italy.187}
+	create_corps_commander = {
 	name = "Erwin Rommel"
 	picture = "Portrait_Germany_Erwin_Rommel.dds"
 	traits = { commando panzer_leader panzer_expert desert_fox trait_engineer }
 	skill = 5
-	id = 4
+	id = 1872
 	attack_skill = 6
-	defense_skill = 2
-	planning_skill = 4
-	logistics_skill = 4
+	defense_skill = 3
+	planning_skill = 1
+	logistics_skill = 6
 }
 
 
-
+}
 
 		}
 
