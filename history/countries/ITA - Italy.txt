@@ -7,6 +7,7 @@ set_stability = 0.6
 set_war_support = 0.75
 set_rule = {can_be_spymaster = no}
 add_ideas = {
+    alpine_forts
 	victor_emmanuel
 	vittoria_mutilata
 	limited_exports
@@ -97,10 +98,15 @@ if = {
 }
 
 
-set_convoys = 200
+set_convoys = 300
+add_equipment_to_stockpile = {
+	type = infantry_equipment_0
+	amount = 30000
+	producer = ITA
+}
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
-	amount = 25000
+	amount = 5000
 	producer = ITA
 }
 add_equipment_to_stockpile = {
