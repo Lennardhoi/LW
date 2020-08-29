@@ -2717,7 +2717,7 @@ focus_tree = {
 
 
 		cancel_if_invalid = no
-		x = 4
+		x = 3
 		y = 1
 		relative_position_id = GER_rhineland
 		cost = 10
@@ -2799,11 +2799,9 @@ focus_tree = {
 	focus = {
 		id = GER_demand_memel
 		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = GER_anschluss }
-		available = {}
-		x = -1
-		y = 1
-		relative_position_id = GER_anschluss
+		available = {date > 1938.1.1}
+		x = 19
+		y = 0
 		cost = 10
 		bypass = {
 			188 = { is_owned_by = GER }
@@ -2839,7 +2837,7 @@ focus_tree = {
 		id = GER_mol_rib_pact
 		icon = GFX_goal_molotov_ribbentrop_pact
 		prerequisite = { focus = GER_demand_memel }
-		prerequisite = { focus = GER_soviet_treaty }
+		relative_position_id = GER_demand_memel
 		available = {
 			date > 1939.5.30
 		}
@@ -2848,7 +2846,6 @@ focus_tree = {
 		cancel_if_invalid = no
 		x = 0
 		y = 1
-		relative_position_id = GER_demand_memel
 		cost = 1
 		ai_will_do = {
 			factor = 10
@@ -2937,9 +2934,7 @@ focus_tree = {
 					target = POL
 				}
 
-				add_state_core = 85
-				add_state_core = 762
-				add_state_core = 86
+			
 			}
 			POL = {
 				country_event = { id = germany.86 }
@@ -3197,10 +3192,13 @@ focus_tree = {
 	focus = {
 		id = GER_anti_comitern_pact
 		icon = GFX_goal_anti_comintern_pact
-		prerequisite = { focus = GER_danzig_or_war  }
-		x = 3
-		y = 1
-		relative_position_id = GER_danzig_or_war 
+		available = {
+			date > 1941.1.1
+		}
+		prerequisite = { focus = GER_Greater_Germany }
+		x = 0
+		y = 4
+		relative_position_id = GER_danzig_or_war
 		cost = 1
 		available = {
 		}
@@ -3987,7 +3985,7 @@ focus_tree = {
 		cancel = {
 		}
 		cancel_if_invalid = yes
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = GER_anschluss
 		cost = 10
@@ -4120,13 +4118,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GER_reintegrate_luxemburg_and_alsace_lorraine
+		id = GER_alta
 		icon = GFX_goal_generic_SS_focus
 		prerequisite = { focus = GER_around_maginot }
-		available = {
-			has_full_control_of_state = 8
-			has_full_control_of_state = 28
-		}
 		bypass = {
 		}
 		cancel_if_invalid = yes
@@ -4138,9 +4132,34 @@ focus_tree = {
 			factor = 10
 		}
 
+	}
+	
+	focus = {
+		id = GER_Greater_Germany
+		icon = GFX_goal_generic_SS_focus
+		prerequisite = { focus = GER_pressure_sweden focus = GER_alta }
+		available = {
+			has_full_control_of_state = 8
+			has_full_control_of_state = 28
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		x = 1
+		y = 2
+		relative_position_id = GER_around_maginot
+		cost = 1
+		ai_will_do = {
+			factor = 10
+		}
+
 		completion_reward = {
 			add_state_core = 8
 			add_state_core = 28
+			add_state_core = 85
+			add_state_core = 762
+			add_state_core = 86
+			
 			if = {
 				limit = {
 					NOT = { owns_state = 28 }
@@ -4148,8 +4167,15 @@ focus_tree = {
 				transfer_state = 28
 			}
 			28 = { set_state_name = "Elsass-Lothringen" }
+			86 = { set_state_name = "Posen" }
+			762 = { set_state_name = "Kattowitz" }
 			set_province_name = { id = 9503 name = "Strassburg" }
 			set_province_name = { id = 678 name = "Mulhausen" }
+			set_province_name = { id = 6558 name = "Posen" }
+			set_province_name = { id = 6464 name = "Kattowitz" }
+			
+			
+			
 			FRA = {
 				country_event = { id = wtt_germany.63 }
 			}
@@ -4179,7 +4205,7 @@ focus_tree = {
 	focus = {
 		id = GER_naval_rearmament
 		icon = GFX_focus_GER_naval_rearm
-		x = 25
+		x = 26
 		y = 0
 		cost = 5
 		ai_will_do = {
