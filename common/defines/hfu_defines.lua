@@ -280,12 +280,12 @@ NDefines.NResistance.GARRISON_LOG_MAX_MONTHS = 3
 
 NDefines.NCountry.MAX_PROPAGANDA_WAR_SUPPORT_IMPACT = 0		-- Max total penalty from operative performing the propaganda mission in a country
 NDefines.NCountry.PROPAGANDA_STABILITY_DAILY_DECAY = 0.002		-- Amount of stability recovered daily from propaganda effort
-NDefines.NCountry.INTEL_FROM_ALLIANCE_FACTOR = 0.6
+NDefines.NCountry.INTEL_FROM_ALLIANCE_FACTOR = 1 --was 0.6
 NDefines.NOperatives.OPERATIVE_BASE_BOOST_IDEOLOGY = 0				-- Base amount of daily ideology drift provoked by an operative
 NDefines.NOperatives.PROPAGANDA_COUNTRY_STACKING_FACTOR = 0.2
 NDefines.NOperatives.PROPAGANDA_OPERATIVE_STACKING_FACTOR = 0.2
-NDefines.NOperatives.AGENCY_CREATION_DAYS = 0						-- Number of days needed to create an intelligence agency
-NDefines.NOperatives.AGENCY_CREATION_FACTORIES = 0
+NDefines.NOperatives.AGENCY_CREATION_DAYS = 999						-- Number of days needed to create an intelligence agency
+NDefines.NOperatives.AGENCY_CREATION_FACTORIES = 999
 NDefines.NOperatives.AGENCY_UPGRADE_DAYS = 150						-- Number of days needed to upgrade an intelligence agency
 NDefines.NOperatives.BASE_COUNTER_INTELLIGENCE_RATING = 0.5						-- Number of days needed to upgrade an intelligence agency
 NDefines.NOperatives.BECOME_SPYMASTER_PP_COST = 0					-- Number of political power used to become Spy Master
