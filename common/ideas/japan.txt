@@ -103,7 +103,42 @@ ideas = {
 				research_speed_factor = 0.05
 			}
 		}
+		main_focus_set_idea = {
 
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+		}
+		JAP_non_aggresion_pact_with_sov = {
+
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_infantry_bonus
+
+			
+		}
 
 		# POLITICAL
 		student_mobilization_idea = {
