@@ -2,7 +2,34 @@ ideas = {
 	country = {
 		
 		
-		
+		desert_fox = {
+
+                picture = chi_incompetent_officers
+			allowed = {
+				original_tag = "ITA"
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+				NOT = {
+					any_other_country = {
+						original_tag = ITA
+						has_government = fascism
+					}
+				}
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				army_infantry_attack_factor = 0.05
+				army_infantry_defence_factor = 0.1
+                army_armor_attack_factor = 0.05
+				army_org_factor = 0.05
+			}
+		}
 		
 		alpine_forts = {
 

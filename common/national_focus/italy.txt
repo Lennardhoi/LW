@@ -2396,7 +2396,7 @@ focus_tree = {
 	focus = {
 		id = ITA_army_primacy
 		icon = GFX_goal_generic_axis_build_infantry
-		x = 5
+		x = 4
 		y = 0
 		cost = 10
 		ai_will_do = {
@@ -2524,7 +2524,7 @@ focus_tree = {
 		id = ITA_modernized_army
 		icon = GFX_focus_ITA_army
 		prerequisite = { focus = ITA_army_primacy }
-		x = -2
+		x = 2
 		y = 0
 		relative_position_id = ITA_modernized_artillery
 		cost = 10
@@ -2558,7 +2558,7 @@ focus_tree = {
 		id = ITA_armored_effort
 		icon = GFX_focus_ITA_tank
 		prerequisite = { focus = ITA_modernized_army focus = ITA_modernized_artillery }
-		x = -2
+		x = 0
 		y = 2
 		relative_position_id = ITA_army_primacy
 		cost = 10
@@ -2585,10 +2585,10 @@ focus_tree = {
 		id = ITA_air_innovation
 		icon = GFX_goal_generic_build_airforce
 		text = "Regia Aeronautica"
-		prerequisite = { focus = ITA_army_primacy }
-		x = 1
-		y = 1
-		relative_position_id = ITA_army_primacy
+		
+		x = 8
+		y = 0
+		
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -2622,11 +2622,11 @@ focus_tree = {
 	focus = {
 		id = ITA_bomber_effort
 		icon = GFX_goal_generic_air_bomber
-		prerequisite = { focus = ITA_army_primacy }
+		
 		prerequisite = { focus = ITA_air_innovation }
-		x = 0
-		y = 3
-		relative_position_id = ITA_army_primacy
+		x = -1
+		y = 2
+		relative_position_id = ITA_air_innovation
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -2691,12 +2691,12 @@ focus_tree = {
 			}
 		}
 	}
-
 	
 	focus = {
 		id = ITA_marines_and_landing_craft
 		icon = GFX_goal_generic_amphibious_assault
 		prerequisite = { focus = ITA_armored_effort }
+		mutually_exclusive = { focus = ITA_alpini}
 		x = 0
 		y = 1
 		relative_position_id = ITA_armored_effort
@@ -2704,7 +2704,6 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
@@ -3126,7 +3125,7 @@ focus_tree = {
 	focus = {
 		id = ITA_rome
 		icon = GFX_ITA_Mare_Nostrum
-		prerequisite = { focus = ITA_greece_war_goal }
+		prerequisite = { focus = ITA_egypt }
 		available = {
 
 			446={is_controlled_by_ROOT_or_ally = yes}
@@ -3135,9 +3134,9 @@ focus_tree = {
 			182={is_controlled_by_ROOT_or_ally = yes}
 		}
 
-		x = 1
-		y = 2
-		relative_position_id = ITA_pact_of_steel
+		x = 0
+		y = 1
+		relative_position_id = ITA_egypt
 		cost = 5
 		ai_will_do = {
 			factor = 10
@@ -3154,7 +3153,6 @@ focus_tree = {
 focus = {
 		id = ITA_rommel
 		icon = GFX_focus_GER_army_inno_1
-		prerequisite = { focus = ITA_greece_war_goal }
 		available = {
 	AND ={
 	    ITA={controls_state =448}
@@ -3162,9 +3160,9 @@ focus = {
           }
 		}
 
-		x = 3
-		y = 2
-		relative_position_id = ITA_pact_of_steel
+		x = 13
+		y = 7
+		
 		cost = 5
 		ai_will_do = {
 			factor = 10
@@ -3188,20 +3186,198 @@ focus = {
 	defense_skill = 3
 	planning_skill = 1
 	logistics_skill = 6
-}
+}}}}
 
 
-}
+focus = {
+		id = ITA_egypt
+		icon = GFX_focus_usa_guarantee_the_american_dream
+		prerequisite = { focus = ITA_rommel }
+		available = {
+	    ITA ={  controls_state=446  }
+		}
+      relative_position_id = ITA_rommel
+		x = -1
+		y = 1
+		
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+      add_manpower = 100000
+	  add_stability = 0.05
+	  add_war_support = 0.1
+	  
+	  452 = {
+				
+				set_building_level = {
+					type = infrastructure
+					level = 7
+					instant_build = yes
+				}
+				set_building_level = {
+					type = air_base
+					level = 10
+					instant_build = yes
+				}
+
+
+			}
+			
+		 446 = {
+				
+				set_building_level = {
+					type = infrastructure
+					level = 10
+					instant_build = yes
+				}
+				set_building_level = {
+					type = bunker
+					level = 3
+					province = 10031
+					instant_build = yes
+				}
+				set_building_level = {
+					type = bunker
+					level = 3
+					province = 1068
+					instant_build = yes
+				}
+				set_building_level = {
+					type = bunker
+					level = 3
+					province = 13242
+					instant_build = yes
+				}
+				set_building_level = {
+					type = bunker
+					level = 3
+					province = 4143
+					instant_build = yes
+				}
+
+			}
+   }}
+
+focus = {
+		id = ITA_desert_fox
+		icon = GFX_ITA_Mare_Nostrum
+		prerequisite = { focus = ITA_rommel }
+		available = {
+         NOT = { OR ={ has_full_control_of_state = 663 
+		               has_full_control_of_state = 451
+		}}}
+
+		x = 1
+		y = 1
+		relative_position_id = ITA_rommel
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+
+			add_timed_idea = { idea = desert_fox  days = 30 }
+          
 
 		}
 
 	}
 
+focus = {
+		id = ITA_sword_of_islam
+		icon = GFX_ITA_Mare_Nostrum
+		prerequisite = { focus = ITA_greece_war_goal }
+		cost = 5
+		available = {
+         
+		Date > 1942.1.1
+		has_full_control_of_state = 663
+		has_full_control_of_state = 451
+		has_full_control_of_state = 449
+		has_full_control_of_state = 661
+		has_full_control_of_state = 448
+		has_full_control_of_state = 450
+		  
+		}
 
+		x = 2
+		y = 1
+		relative_position_id = ITA_greece_war_goal
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
 
+		add_state_core = 663
+		add_state_core = 451
+		add_state_core = 449
+		add_state_core = 661
+		add_state_core = 448
+		add_state_core = 450
+		add_state_core = 273
+          
 
+		}
 
+	}
 
+focus = {
+		id = ITA_Illyricum
+		icon = GFX_ITA_Mare_Nostrum
+		prerequisite = { focus = ITA_greece_war_goal }
+		available = {
+		
+		}
+		x = 0
+		y = 1
+		relative_position_id = ITA_greece_war_goal
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+        add_stability = -0.05
+		add_political_power = -70
+		add_state_core = 103
+		add_state_core = 44
+		add_state_core = 163
 
+		}
+
+	}
+focus = {
+		id = ITA_alpini
+		icon = GFX_ITA_Mare_Nostrum
+		prerequisite = { focus = ITA_armored_effort }
+		cost = 10
+		mutually_exclusive = { focus = ITA_marines_and_landing_craft}
+		available = {
+         
+		}
+
+		x = 2
+		y = 1
+		relative_position_id = ITA_armored_effort
+		ai_will_do = {
+			factor = 10
+		}
+		completion_reward = {
+       add_tech_bonus = {
+				name = CAN_the_rocky_mountain_rangers
+				bonus = 1.00
+				uses = 1
+				category = mountaineers_tech
+			}
+        add_tech_bonus = {
+				name = RAJ_the_bangalore_torpedo
+				bonus = 1.0
+				uses = 1
+				category = engineers_tech
+			}
+		}
+
+	}
 
 }
