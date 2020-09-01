@@ -3085,7 +3085,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_pact_of_steel }
 		available = {
 
-			date>1939.1.1
+			date>1940.1.1
 
 		}
 		will_lead_to_war_with = GRE
@@ -3265,7 +3265,7 @@ focus = {
 		icon = GFX_ITA_Mare_Nostrum
 		prerequisite = { focus = ITA_rommel }
 		available = {
-         NOT = { OR ={ has_full_control_of_state = 663 
+          OR ={NOT = {has_full_control_of_state = 663 
 		               has_full_control_of_state = 451
 		}}}
 
