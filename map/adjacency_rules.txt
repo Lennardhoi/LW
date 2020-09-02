@@ -7,6 +7,42 @@
 #Rules needs linking from the straits that are affected by the rule ( adjacency_rule_id )
 
 #Name is how you refer to the rule in adjecencies.csv
+
+#Iran Canal
+adjacency_rule={
+	name = "IRAN_CANAL"
+
+	contested =	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	neutral = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	
+	required_provinces = { 4580 7982 }
+		
+	icon = 10837
+	offset = { 5 0 -6 }
+}
+
 #Spain Strait
 adjacency_rule
 {
