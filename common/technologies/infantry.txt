@@ -1037,7 +1037,328 @@ technologies = {
 		}
 
 	}
+    jaegers = {
 
+		enable_subunits = {
+			jaeger
+		}
+
+		on_research_complete = {
+			limit = {
+				NOT = {
+					has_template_containing_unit = jaeger
+				}
+			}
+			hidden_effect = {
+				load_oob = "unlock_jaegers"
+			}
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		}
+
+		path = {
+			leads_to_tech = jaegers2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 0.5
+		start_year = 1936
+		folder = {
+			name = infantry_folder
+			position = { x = 5 y = @1936 }
+		}
+
+		categories = {
+			infantry_tech
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	jaegers2 = {
+
+		jaeger = {
+			max_organisation = 5
+			soft_attack = 0.05
+		}
+		path = {
+			leads_to_tech = jaegers3
+			research_cost_coeff = 1
+		}
+
+
+		research_cost = 0.5
+		start_year = 1939
+		folder = {
+			name = infantry_folder
+			position = { x = 5 y = @1939 }
+		}
+
+		categories = {
+			infantry_tech
+		}
+	}
+
+	jaegers3 = {
+
+		jaeger = {
+			max_organisation = 5
+		}
+
+		research_cost = 1
+		start_year = 1943
+		folder = {
+			name = infantry_folder
+			position = { x = 5 y = @1943 }
+		}
+
+		categories = {
+			infantry_tech
+		}
+	}
+	
+	jungletroops = {
+
+		enable_subunits = {
+			jungletroop
+		}
+
+		on_research_complete = {
+			limit = {
+				NOT = {
+					has_template_containing_unit = jungletroop
+				}
+			}
+			hidden_effect = {
+				load_oob = "unlock_jungletroops"
+			}
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		}
+
+		path = {
+			leads_to_tech = jungletroops2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 0.5
+		start_year = 1936
+		folder = {
+			name = infantry_folder
+			position = { x = 5 y = @1936 }
+		}
+
+		categories = {
+			infantry_tech
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	jungletroops2 = {
+
+		jungletroop = {
+			max_organisation = 5
+			soft_attack = 0.05
+		}
+		path = {
+			leads_to_tech = jungletroops3
+			research_cost_coeff = 1
+		}
+
+
+		research_cost = 0.5
+		start_year = 1939
+		folder = {
+			name = infantry_folder
+			position = { x = 5 y = @1939 }
+		}
+
+		categories = {
+			infantry_tech
+		}
+	}
+
+	jungletroops3 = {
+
+		jungletroop = {
+			max_organisation = 5
+		}
+
+		research_cost = 1
+		start_year = 1943
+		folder = {
+			name = infantry_folder
+			position = { x = 5 y = @1943 }
+		}
+
+		categories = {
+			infantry_tech
+		}
+	}
+	shocktroops = {
+
+		enable_subunits = {
+			shocktroop
+		}
+
+		on_research_complete = {
+			limit = {
+				NOT = {
+					has_template_containing_unit = shocktroop
+				}
+			}
+			hidden_effect = {
+				load_oob = "unlock_shocktroop"
+			}
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		}
+
+		path = {
+			leads_to_tech = shocktroops2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 0.5
+		start_year = 1936
+		folder = {
+			name = infantry_folder
+			position = { x = 5 y = @1936 }
+		}
+
+		categories = {
+			infantry_tech
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	shocktroops2 = {
+
+		shocktroop = {
+			max_organisation = 5
+			soft_attack = 0.05
+		}
+		path = {
+			leads_to_tech = shocktroops3
+			research_cost_coeff = 1
+		}
+
+
+		research_cost = 0.5
+		start_year = 1939
+		folder = {
+			name = infantry_folder
+			position = { x = 5 y = @1939 }
+		}
+
+		categories = {
+			infantry_tech
+		}
+	}
+
+	shocktroops3 = {
+
+		shocktroop = {
+			max_organisation = 5
+		}
+
+		research_cost = 1
+		start_year = 1943
+		folder = {
+			name = infantry_folder
+			position = { x = 5 y = @1943 }
+		}
+
+		categories = {
+			infantry_tech
+		}
+	}
+	desertinfantry_at = {
+
+		enable_subunits = {
+			desertinfantry
+		}
+
+		on_research_complete = {
+			limit = {
+				NOT = {
+					has_template_containing_unit = desertinfantry
+				}
+			}
+			hidden_effect = {
+				load_oob = "unlock_desertinfantry"
+			}
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		}
+
+		path = {
+			leads_to_tech = desertinfantry_at2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 0.5
+		start_year = 1936
+		folder = {
+			name = infantry_folder
+			position = { x = 5 y = @1936 }
+		}
+
+		categories = {
+			infantry_tech
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	desertinfantry_at2 = {
+
+		desertinfantry = {
+			max_organisation = 5
+			soft_attack = 0.05
+		}
+		path = {
+			leads_to_tech = desertinfantry_at3
+			research_cost_coeff = 1
+		}
+
+
+		research_cost = 0.5
+		start_year = 1939
+		folder = {
+			name = infantry_folder
+			position = { x = 5 y = @1939 }
+		}
+
+		categories = {
+			infantry_tech
+		}
+	}
+
+	desertinfantry_at3 = {
+
+		desertinfantry = {
+			max_organisation = 5
+		}
+
+		research_cost = 1
+		start_year = 1943
+		folder = {
+			name = infantry_folder
+			position = { x = 5 y = @1943 }
+		}
+
+		categories = {
+			infantry_tech
+		}
+	}
+	
 	HUN_light_infantry_tech = {
 
 		research_cost = 1
