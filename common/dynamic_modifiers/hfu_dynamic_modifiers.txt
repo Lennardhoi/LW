@@ -3,6 +3,18 @@ Ostarbeiter = {
 	consumer_goods_factor=-0.1
 
 }
+POW_industry = {
+	icon = "GFX_idea_SPR_disbanded_army"
+	industrial_capacity_factory = pow_industrial_capacity
+	industrial_capacity_dockyard= pow_dockyard_capacity
+	local_resources_factor  = pow_resource_gain
+	production_speed_air_base_factor = pow_fortification
+	production_speed_infrastructure_factor = pow_infrastructure_speed
+	production_speed_bunker_factor = pow_fortification
+	production_speed_coastal_bunker_factor = pow_fortification
+	production_speed_anti_air_building_factor = pow_fortification
+
+}
 JAP_volunteer_workers_in_burma = {
 	state_production_speed_buildings_factor = 1.0
 

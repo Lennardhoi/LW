@@ -128,3 +128,47 @@ anti_cross_faction_trade_all = {
 		anti_cross_faction_trade_allies = yes
 	}
 }
+declare_war_on_enemy_faction = {
+	if = { 
+		limit = { NOT = { has_war_with = THIS.faction_leader } }
+		set_variable={GER.test1=THIS.faction_leader}
+		declare_war_on = { target = THIS.faction_leader type = annex_everything }
+		ROOT_call_all_allies_against_THIS = yes
+		THIS_call_all_allies_against_ROOT = yes
+	}
+}
+
+ROOT_call_allies_both_sides = {
+	ROOT_call_all_allies_against_THIS = yes
+	THIS_call_all_allies_against_ROOT = yes
+}
+
+ROOT_call_all_allies_against_THIS = {
+	set_variable={GER.test2=THIS} set_variable={GER.test3=PREV} set_variable={GER.test4=ROOT}
+	for_each_scope_loop = {
+		array = ROOT.faction_members
+		if = {
+			limit = { NOT = { OR={original_tag = ITA original_tag = ROOT}  }} 
+			add_to_war = {
+				targeted_alliance = ROOT
+				enemy = PREV
+			}
+		}
+
+	}
+}
+
+THIS_call_all_allies_against_ROOT = {
+	for_each_scope_loop = {
+	    array = THIS.faction_members
+
+		set_variable={test=THIS}
+		if = {
+			limit = { NOT = { OR = { original_tag = USA original_tag = FRA original_tag = PREV} } }
+			add_to_war = {
+				targeted_alliance = PREV
+				enemy = ROOT
+			}
+		}
+	}
+}

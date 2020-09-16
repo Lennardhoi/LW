@@ -32,20 +32,54 @@ on_actions = {
 
 	on_startup={
 		effect{
-			#161 = {
-			#	add_resource = {
-			#		type=aluminium
-			#		amount=30
-			#		days=1460
-			#	}
-			#}
-			#50 = {
-			#	add_resource = {
-			#		type=aluminium
-			#		amount=30
-			#		days=1460
-			#	}
-			#}
+			GER = {
+			set_temp_variable={core_pop = 0}
+			for_each_scope_loop ={
+			array=core_states
+			add_to_temp_variable ={PREV.core_pop=state_population_k}
+			}
+			multiply_temp_variable= {core_pop=0.001}
+			add_to_temp_variable={core_pop = 20}
+			set_variable = {pow_adjustment = 100}
+			divide_variable = {pow_adjustment=core_pop}
+			}
+			every_country={
+				limit={	OR = {
+				tag = SOV
+				tag = FRA
+				tag = JAP
+				tag = RAJ
+				tag = AST
+				tag = NZL
+				tag = MAN
+				tag = BUL
+				tag = ROM
+				tag = HUN
+				tag = SPR
+				tag = ITA
+				tag = ENG
+				tag = IRE
+				tag = SAF
+				tag = FIN
+				tag = USA
+				tag = CAN
+			}}
+			set_temp_variable={core_pop = 0}
+			for_each_scope_loop ={
+			array=core_states
+			add_to_temp_variable ={PREV.core_pop=state_population_k}
+			}
+			multiply_temp_variable= {core_pop=0.001}
+			add_to_temp_variable={core_pop = 20}
+			if={limit={tag=RAJ} add_to_temp_variable={core_pop = -300}}
+			set_variable = {pow_adjustment = 100}
+			divide_variable = {pow_adjustment=core_pop}
+			divide_variable = {pow_adjustment=GER.pow_adjustment}
+			}
+				
+			GER = {
+			set_variable = {pow_adjustment = 1}
+			}
 			every_country={
 				limit={	has_country_flag=fuel_system_enabled}
 				add_to_array={GLOBAL.fuel_system_manager=THIS.id}
