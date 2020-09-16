@@ -15,7 +15,7 @@ focus_tree = {
 	focus = {
 		id = SOV_finish_five_year_plan
 		icon = GFX_goal_generic_construct_civilian
-		x = 1
+		x = 4
 		y = 1
 		prerequisite = { focus = SOV_great_purge }
 		cost = 5
@@ -41,20 +41,20 @@ focus_tree = {
 		complete_tooltip = {
 			every_state = {
 				limit = { has_state_flag = SOV_finish_five_year_plan_2IC }
-				add_extra_state_shared_building_slots = 10
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = industrial_complex
-					level = 10
+					level = 5
 					instant_build = yes
 				}
 			}
 		}
 		completion_reward = {
-			217 = {
-				add_extra_state_shared_building_slots = 10
+			408 = {
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = industrial_complex
-					level = 10
+					level = 5
 					instant_build = yes
 				}
 				set_state_flag = SOV_finish_five_year_plan_2IC
@@ -65,7 +65,7 @@ focus_tree = {
 	focus = {
 		id = SOV_start_five_year_plan
 		icon = GFX_sov_stalin_writing
-		x = 1
+		x = 3
 		y = 2
 		prerequisite = { focus = SOV_finish_five_year_plan }
 		cost = 5
@@ -101,308 +101,136 @@ focus_tree = {
 					amount = 30
 					state = 582
 				}
-
 			}
 			}}
 	focus = {
-		id = SOV_move_industry_to_urals
-		icon = GFX_sov_stakhonovite
-		prerequisite = {focus =SOV_defense_of_leningrad focus =SOV_defense_of_stalingrad focus = SOV_defense_of_moscow}
-		x = 12
-		y = 5
-
-		cost = 1
+		id = SOV_capitals_of_socialism
+		icon = GFX_focus_GER_leningrad
+		x = 5
+		y = 2
+		prerequisite = { focus = SOV_finish_five_year_plan }
+		cost = 5
 		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				NOT = { has_war_with = GER }
-			}
+			factor = 5
 		}
-
-		available = {
-			OR={has_war_with = GER
-				date>1941.6.22
-				#hidden_trigger = {
-					VEN={has_completed_focus = VEN_hurensohn_sealion}
-					#}
-			}
-		}
-
-		bypass = {
-
-		}
-		select_effect = {
-			hidden_effect={activate_mission=SOV_relocation}
-		}
+		available_if_capitulated = yes		
 		completion_reward = {
-			custom_effect_tooltip="This will start the industry relocation. Every 10 days two civilian factories and two military factories will be moved from states at the front to the Ural."
-
-		}
-		completion_reward = {
-			remove_ideas = peace_training
-			add_ideas=Fast_Training
-			add_ideas = SOV_the_great_war
-			#add_political_power = 100
-
-		}
-	}
-
-	focus = {
-		id = SOV_great_figher
-		icon = GFX_Goal_Positive_heroism
-		relative_position_id = SOV_move_industry_to_urals
-		x = 0
-		y = 1.5
-		prerequisite = { focus = SOV_move_industry_to_urals }
-		cost = 16
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				NOT = { has_war_with = GER }
+			217 = {
+			set_building_level = {
+    type = infrastructure
+    level = 10
+    instant_build = yes
+}
+				add_extra_state_shared_building_slots = 15
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+				set_state_flag = SOV_finish_five_year_plan_2IC
 			}
-		}
-
-		completion_reward = {
-
-			add_timed_idea= {idea=Order_227 days=365}
-
-
-		}
-	}
-	focus = {
-		id = SOV_winter_offensive
-		icon = GFX_focus_attack_germany
-		relative_position_id = SOV_great_figher
-		mutually_exclusive = { focus = SOV_winter_defensive }
-		x = -1
-		y = 1
-		prerequisite = { focus = SOV_great_figher }
-		cost = 6
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				NOT = { has_war_with = GER }
+		   219 = {
+		   set_building_level = {
+    type = infrastructure
+    level = 10
+    instant_build = yes
+}
+				add_extra_state_shared_building_slots = 15
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+				set_state_flag = SOV_finish_five_year_plan_2IC
 			}
+		   195 = {
+		   set_building_level = {
+    type = infrastructure
+    level = 10
+    instant_build = yes
+}
+				add_extra_state_shared_building_slots = 15
+				add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+				}
+				set_state_flag = SOV_finish_five_year_plan_2IC
+			}
+		
+		
 		}
-
-		completion_reward = {
-
-			add_timed_idea= {idea=SOV_winter_offensive days=45}
-
-
-		}
-	}
-	focus = {
-		id = SOV_winter_defensive
-		icon = GFX_focus_chi_army_reform
-		relative_position_id = SOV_great_figher
-		mutually_exclusive = { focus = SOV_winter_offensive }
+		}	
+	
+focus = {
+		id = SOV_gulag
+		icon = GFX_SOV_nkvd_deportation_2
 		x = 1
 		y = 1
-		prerequisite = { focus = SOV_great_figher }
-		cost = 6
+		relative_position_id = SOV_capitals_of_socialism
+		prerequisite = { focus = SOV_capitals_of_socialism }
+		prerequisite = { focus = SOV_start_five_year_plan}
+		cost = 10
 		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				NOT = { has_war_with = GER }
-			}
+			factor = 5
 		}
-
+		available_if_capitulated = yes		
 		completion_reward = {
-			hidden_effect={
-				if={
-					limit={NOT={has_tech=mass_assault}}
-
-					division_template = {
-						name = "Winterskaya Diviziya"			# Rifle Division
-						division_names_group = SOV_MEC_01
-
-						regiments = {
-							infantry = { x = 0 y = 0 }
-							infantry= { x = 0 y = 1 }
-							infantry = { x = 0 y = 2 }
-							infantry = { x = 0 y = 3 }
-							infantry = { x = 0 y = 4 }
-							infantry = { x = 1 y = 0 }
-							infantry = { x = 1 y = 1 }
-							infantry = { x = 1 y = 2 }
-							infantry = { x = 1 y = 3 }
-							infantry = { x = 1 y = 4 }
-
-						}
-						support = {
-							anti_air = { x = 0 y = 0 }
-							engineer = { x = 0 y = 1 }
-							artillery = { x = 0 y = 2 }
-
-						}
-						}}
-				else={
-					division_template = {
-						name = "Winterskaya Diviziya"			# Rifle Division
-						division_names_group = SOV_MEC_01
-
-						regiments = {
-							infantry = { x = 0 y = 0 }
-							infantry= { x = 0 y = 1 }
-							infantry = { x = 0 y = 2 }
-							infantry = { x = 0 y = 3 }
-							infantry = { x = 0 y = 4 }
-							infantry = { x = 1 y = 0 }
-							infantry = { x = 1 y = 1 }
-							infantry = { x = 1 y = 2 }
-							infantry = { x = 1 y = 3 }
-							infantry = { x = 1 y = 4 }
-							cavalry = { x = 2 y = 0 }
-							cavalry = { x = 2 y = 1 }
-						}
-						support = {
-							anti_air = { x = 0 y = 0 }
-							engineer = { x = 0 y = 1 }
-							artillery = { x = 0 y = 2 }
-
-						}
-					}
-				}
-				249 = {
-					for_loop_effect = {
-						end = 30
-						create_unit = {
-							division = "name = \"Winterskaya Diviziya\" division_template = \"Winterskaya Diviziya\" start_experience_factor = 0.3"
-							owner = SOV
-						}
-						}}
-			}
-			custom_effect_tooltip="25 20w Infantry Divisions will spawn in Kazan "
-			add_timed_idea= {idea=SOV_winter_defensive days=60}
-
-
-
+		add_ideas = officers_purged_2
 		}
-	}
-	focus = {
-		id = SOV_great_patriotic_general
-		icon = GFX_anti_communism
-		relative_position_id = SOV_great_figher
-		prerequisite = { focus = SOV_winter_defensive focus = SOV_winter_offensive }
-		x = -2
-		y = 2
+			}	
 
-		cost = 5
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				NOT = { has_war_with = GER }
-			}
-		}
-
-		available = {
-
-			date>1942.3.1
-
-		}
-
-		bypass = {
-
-		}
-
-		completion_reward = {
-
-			SOV = { country_event = {
-					id = soviet.1488
-					hours = 10
-
-				}
-			}
-		}
-	}
-
-
-	focus = {
-		id = SOV_great_industry
-		icon = GFX_goal_wheat
-
-		relative_position_id = SOV_great_figher
-		x = 2
-		y = 2
-		prerequisite = { focus = SOV_winter_defensive focus = SOV_winter_offensive }
-		cost =5
-		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				NOT = { has_war_with = GER }
-			}
-		}
-
-		available = {
-
-
-		}
-
-		bypass = {
-
-		}
-
-		completion_reward = {
-
-
-
-			add_ideas = officers_purged_2
-
-		}
-	}
-
-
-
-	focus = {
-		id = SOV_modifiers
-		icon = GFX_Goal_Great_Purge2
-		relative_position_id = SOV_great_figher
+focus = {
+		id = SOV_production_targets
+		icon = GFX_SOV_tractor_factories
 		x = 0
-		y = 2
-		prerequisite = { focus = SOV_winter_defensive focus = SOV_winter_offensive }
+		y = 1
+		relative_position_id = SOV_gulag
+		prerequisite = { focus = SOV_gulag }
+		
 		cost = 5
 		ai_will_do = {
-			factor = 10
-			modifier = {
-				factor = 0
-				NOT = { has_war_with = GER }
+			factor = 5
+		}
+		available_if_capitulated = yes		
+		completion_reward = {
+		add_tech_bonus = {
+				name = sov_four_year_plan
+				bonus = 0.5
+				uses = 1
+				technology = advanced_machine_tools
+				technology = assembly_line_production
+				technology = streamlined_line
 			}
 		}
+			}	
+			
+	focus = {
+		id = SOV_peoples_commissariat
+		icon = GFX_goal_support_communism
+		prerequisite = {  focus = SOV_great_purge}
+		x = 17
+		y = 1
 
-		available = {
-			date>1942.1.1
-
+		cost = 10
+		ai_will_do = {
+			factor = 1
 		}
 
-		bypass = {
-
-		}
+		available_if_capitulated = yes
 
 		completion_reward = {
-
-
-			remove_ideas = officers_purged
-
+			add_ideas = peoples_commissariat_focus
 		}
 	}
-
-
-
-
 	focus = {
 		id = SOV_improve_stalin_line
 		icon = GFX_goal_generic_fortify_city
 		prerequisite = { focus = SOV_production_effort focus= SOV_southern_thrust}
+		relative_position_id = SOV_peoples_commissariat
 		available = { }
-		x = 12
-		y = 3
+		x = 0
+		y = 2
 
 		cost = 10
 		ai_will_do = {
@@ -525,15 +353,303 @@ focus_tree = {
 			}
 		}
 	}
+focus = {
+		id = SOV_move_industry_to_urals
+		icon = GFX_sov_stakhonovite
+		prerequisite = {focus =SOV_defense_of_leningrad focus =SOV_defense_of_stalingrad focus = SOV_defense_of_moscow}
+		relative_position_id = SOV_improve_stalin_line
+		x = 0
+		y = 2
+
+		cost = 1
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { has_war_with = GER }
+			}
+		}
+
+		available = {
+			OR={has_war_with = GER
+				date>1941.6.22
+				#hidden_trigger = {
+					VEN={has_completed_focus = VEN_hurensohn_sealion}
+					#}
+			}
+		}
+
+		bypass = {
+
+		}
+		select_effect = {
+			hidden_effect={activate_mission=SOV_relocation}
+		}
+		completion_reward = {
+			custom_effect_tooltip="This will start the industry relocation. Every 10 days two civilian factories and two military factories will be moved from states at the front to the Ural."
+
+		}
+		completion_reward = {
+			remove_ideas = peace_training
+			add_ideas=Fast_Training
+			add_ideas = SOV_the_great_war
+			#add_political_power = 100
+
+		}
+	}
+	focus = {
+		id = SOV_great_figher
+		icon = GFX_Goal_Positive_heroism
+		relative_position_id = SOV_move_industry_to_urals
+		x = 0
+		y = 1.5
+		prerequisite = { focus = SOV_move_industry_to_urals }
+		cost = 16
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { has_war_with = GER }
+			}
+		}
+
+		completion_reward = {
+
+			add_timed_idea= {idea=Order_227 days=365}
+
+
+		}
+	}
+	focus = {
+		id = SOV_winter_offensive
+		icon = GFX_focus_attack_germany
+		relative_position_id = SOV_great_figher
+		available = {date > 1941.11.01 date < 1942.03.1 }
+		x = 0
+		y = 1
+		prerequisite = { focus = SOV_great_figher }
+		cost = 1
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { has_war_with = GER }
+			}
+		}
+
+		completion_reward = {
+
+			add_timed_idea= {idea=SOV_winter_offensive days=45}
+
+
+		}
+	}
+	focus = {
+		id = SOV_winter_offensive_2
+		icon = GFX_focus_attack_germany
+		relative_position_id = SOV_great_figher
+		
+		x = -2
+		y = 1
+		prerequisite = { focus = SOV_great_figher }
+		cost = 5
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { has_war_with = GER }
+			}
+		}
+
+		completion_reward = {
+
+
+		}
+	}
+	focus = {
+		id = SOV_tankograd
+		icon = GFX_focus_chi_army_reform
+		relative_position_id = SOV_great_figher
+
+		x = 2
+		y = 1
+		prerequisite = { focus = SOV_great_figher }
+		cost = 5
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { has_war_with = GER }
+			}
+		}
+		completion_reward = {
+
+			add_ideas = SOV_tankograd
+
+		}
+	}
+	focus = {
+		id = SOV_great_patriotic_general
+		icon = GFX_anti_communism
+		relative_position_id = SOV_winter_offensive_2
+		prerequisite = { focus = SOV_winter_offensive_2 }
+		x = 0
+		y = 2
+
+		cost = 5
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { has_war_with = GER }
+			}
+		}
+
+		available = {
+         
+			
+		}
+
+		bypass = {
+
+		}
+
+		completion_reward = {
+
+			
+		}
+	}
+
+
+	focus = {
+		id = SOV_great_industry
+		icon = GFX_goal_generic_army_tanks
+
+		relative_position_id = SOV_move_industry_to_urals
+		x = 2
+		y = 1 
+		prerequisite = { focus = SOV_move_industry_to_urals}
+		cost =5
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { has_war_with = GER }
+			}
+		}
+
+		available = {
+         date > 1942.05.1
+
+		}
+
+		bypass = {
+
+		}
+       completion_reward = {
+            army_experience = 100
+			create_equipment_variant = {
+					name = "T-34/85"
+					type = medium_tank_equipment_2
+					upgrades = {
+						tank_gun_upgrade = 10
+						tank_reliability_upgrade = 5
+                        tank_engine_upgrade = 5
+						}}
+
+
+
+		}
+		
+	}
+
+
+
+	focus = {
+		id = SOV_modifiers
+		icon = GFX_Goal_Great_Purge2
+		relative_position_id = SOV_winter_offensive
+		x = 1
+		y = 1
+		prerequisite = { focus = SOV_great_figher }
+		cost = 5
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { has_war_with = GER }
+			}
+		}
+
+		available = {
+			date>1942.1.1
+
+		}
+
+		bypass = {
+
+		}
+
+		completion_reward = {
+
+
+			remove_ideas = officers_purged
+
+		}
+	}
+focus = {
+		id = SOV_hero_of_the_union
+		icon = GFX_Goal_Great_Purge2
+		relative_position_id = SOV_winter_offensive
+		x = -1
+		y = 1
+		prerequisite = { focus = SOV_great_figher }
+		cost = 5
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				NOT = { has_war_with = GER }
+			}
+		}
+
+		available = {
+			date>1942.1.1
+
+		}
+
+		bypass = {
+
+		}
+
+		completion_reward = {
+
+
+			SOV = { country_event = {
+					id = soviet.1488
+					hours = 10
+
+				}
+			}
+
+		}
+	}
+
+
+
+
+	
+	
 	focus = {
 		id = SOV_defense_of_leningrad
 		icon = GFX_focus_SOV_defense_of_moscow
 		prerequisite = { focus = SOV_improve_stalin_line }
+		relative_position_id = SOV_improve_stalin_line
 		available = {
 
 		}
-		x = 14
-		y = 4
+		x = -2
+		y = 1
 
 		cost = 5
 		ai_will_do = {
@@ -608,11 +724,12 @@ focus_tree = {
 		id = SOV_defense_of_stalingrad
 		icon = GFX_focus_SOV_defense_of_moscow
 		prerequisite = { focus = SOV_improve_stalin_line }
+		relative_position_id = SOV_improve_stalin_line
 		available = {
 
 		}
-		x = 10
-		y = 4
+		x = 0
+		y = 1
 
 		cost = 5
 		ai_will_do = {
@@ -692,11 +809,12 @@ focus_tree = {
 		id = SOV_defense_of_moscow
 		icon = GFX_focus_SOV_defense_of_moscow
 		prerequisite = { focus = SOV_improve_stalin_line }
+		relative_position_id = SOV_improve_stalin_line
 		available = {
 
 		}
-		x = 12
-		y = 4
+		x = 2
+		y = 1
 
 		cost = 5
 		ai_will_do = {
@@ -795,7 +913,7 @@ focus_tree = {
 		text = extra_tech_slot
 		relative_position_id = SOV_start_five_year_plan
 		prerequisite = { focus = SOV_start_five_year_plan }
-
+        prerequisite = { focus = SOV_capitals_of_socialism }
 
 		x = 1
 		y = 1
@@ -815,9 +933,10 @@ focus_tree = {
 		id = SOV_production_effort
 		text = production_effort
 		icon = GFX_goal_generic_construct_mil_factory
+		relative_position_id = SOV_peoples_commissariat
 		prerequisite = { focus = SOV_peoples_commissariat }
-		x = 11
-		y = 2
+		x = -1
+		y = 1
 
 		cost = 10
 		ai_will_do = {
@@ -964,7 +1083,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_infrastructure
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		relative_position_id = SOV_extra_tech_slot_early
 		prerequisite = { focus = SOV_extra_tech_slot_early }
 		ai_will_do = {
@@ -1007,29 +1126,13 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
-		id = SOV_peoples_commissariat
-		icon = GFX_goal_support_communism
-		prerequisite = {  focus = SOV_great_purge}
-		x = 12
-		y = 1
-
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_ideas = peoples_commissariat_focus
-		}
-	}
+	
 
 	focus = {
 		id = SOV_infrastructure_effort
 		icon = GFX_goal_generic_construct_infrastructure
 		prerequisite = { focus = SOV_start_five_year_plan }
+		prerequisite = { focus = SOV_capitals_of_socialism }
 		relative_position_id = SOV_start_five_year_plan
 		x = -1
 		y = 1
@@ -1111,7 +1214,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_infrastructure_effort
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 5
 		}
@@ -1133,7 +1236,7 @@ focus_tree = {
 		id = SOV_stalin_constitution
 		icon = GFX_focus_SOV_stalin
 		prerequisite = { focus = SOV_great_purge }
-		x = 6
+		x = 11
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -1173,7 +1276,7 @@ focus_tree = {
 		id = SOV_militarized_schools
 		icon = GFX_goal_generic_army_doctrines
 		prerequisite = { focus = SOV_workers_culture }
-		x = 4
+		x = 9
 		y = 4
 
 		cost = 5
@@ -1333,7 +1436,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = SOV_positive_heroism
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1384,7 +1487,7 @@ focus_tree = {
 		id = SOV_transpolar_flights
 		icon = GFX_goal_generic_air_fighter2
 		prerequisite = { focus = SOV_aviation_cult }
-		x = 8
+		x = 13
 		y = 4
 		cost = 5
 		ai_will_do = {
@@ -1414,7 +1517,7 @@ focus_tree = {
 		id = SOV_ocean_going_navy
 		icon = GFX_goal_generic_navy_battleship
 		prerequisite = { focus = SOV_great_purge }
-		x = 15
+		x = 20
 		y = 1
 		cost = 5
 		ai_will_do = {
@@ -1603,7 +1706,7 @@ focus_tree = {
 		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = SOV_great_purge }
 
-		x = 7
+		x = 12
 		y = 1
 		relative_position_id = SOV_great_purge
 		cost = 10
@@ -1666,7 +1769,7 @@ focus_tree = {
 		icon = GFX_goal_generic_military_deal
 		prerequisite = { focus = SOV_great_purge }
 
-		x = 9
+		x = 14
 		y = 1
 		relative_position_id = SOV_great_purge
 		cost = 5
@@ -1831,7 +1934,6 @@ focus_tree = {
 		}
 	}
 
-
 	focus = {
 		id = SOV_diversify_the_programme
 		icon = GFX_focus_SOV_rocket
@@ -1848,7 +1950,6 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = secret
@@ -1858,7 +1959,98 @@ focus_tree = {
 			}
 		}
 	}
+focus = {
+		id = SOV_barb_1
+		icon = GFX_focus_SOV_women_in_aviation
+		prerequisite = { focus = SOV_move_industry_to_urals }
+		available = {
 
+		}
+		x = -2
+		y = 1
+		relative_position_id = SOV_move_industry_to_urals
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = militarism_focus
+		}
+	}
+focus = {
+		id = SOV_barb_2
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = SOV_great_figher }
+		available = {
+
+		}
+		x = 2
+		y = 3
+		relative_position_id = SOV_great_figher
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			
+		}
+	}
+focus = {
+		id = SOV_uranus
+		icon = GFX_focus_SOV_rocket
+		prerequisite = { focus = SOV_great_patriotic_general }
+		prerequisite = { focus = SOV_barb_2 }
+		prerequisite = { focus = SOV_hero_of_the_union}
+		prerequisite = { focus = SOV_modifiers }
+		available = {
+         date > 1942.08.15
+		 date < 1942.11.23
+		}
+		x = 0
+		y = 5
+		relative_position_id = SOV_move_industry_to_urals
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_timed_idea= {idea=SOV_uranus days=60}
+			
+		}
+	}
+focus = {
+		id = SOV_bagration
+		icon = GFX_focus_SOV_rocket
+		prerequisite = { focus = SOV_uranus }
+		
+		available = {
+        NOT = {has_idea = SOV_uranus}
+		date > 1943.01.01
+		}
+		x = 0
+		y = 1
+		relative_position_id = SOV_uranus
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+		add_timed_idea= {idea= SOV_bagration days=50}
+		
+		}
+	}
 
 
 }

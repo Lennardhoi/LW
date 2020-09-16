@@ -1717,21 +1717,14 @@ focus = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-			army_experience = 5
+
 			add_tech_bonus = {
 				name = special_bonus
 				bonus = 1.0
 				uses = 1
-				technology = tech_recon
-				technology = tech_recon2
-				technology = tech_recon3
+				category = desert_tech
 			}
-			add_tech_bonus = {
-				name = land_doc_bonus
-				bonus = 1.0
-				uses = 2
-				category = land_doctrine
-			}
+			
 		}
 	}
 	
@@ -2325,6 +2318,7 @@ focus = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			
 			add_stability = 0.075
 			GER = {
 				country_event = { id = italy.5 days = 1 }
@@ -2334,17 +2328,22 @@ focus = {
 			effect_tooltip = {
 				add_tech_bonus = {
 					name = synth_bonus
-					bonus = 1.0
-					uses = 1
+					bonus = 3.0
+					uses = 2
 					category = synth_resources
 				}
 				# Balance research bonus to 2 techs in armor, also in event
 				add_tech_bonus = {
 					name = armor_bonus
 					bonus = 1.0
-					uses = 2
+					uses = 1
 					category = armor
 				}
+			}
+			modify_building_resources = {
+				building = synthetic_refinery
+				resource = rubber
+				amount = 2
 			}
 		}
 	}
@@ -2661,7 +2660,6 @@ focus = {
 				category = engineers_tech
 			}
 		}
-
 	}
 focus = {
 		id = ITA_alpini_2
@@ -2683,17 +2681,11 @@ focus = {
        add_tech_bonus = {
 				name = CAN_the_rocky_mountain_rangers
 				bonus = 1.00
-				uses = 1
-				category = mountaineers_tech
+				uses = 2
+				category = shock_tech
 			}
-        add_tech_bonus = {
-				name = RAJ_the_bangalore_torpedo
-				bonus = 1.0
-				uses = 1
-				category = engineers_tech
-			}
-		}
-
+         }
+ 
 	}
 
 focus = {

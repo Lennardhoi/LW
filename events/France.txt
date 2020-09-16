@@ -154,8 +154,7 @@ country_event = {
 		}
 		if = {
 			limit = {Date < 1939.11.1}
-
-			ITA = {
+            ITA = {
 				transfer_state = 735
 				transfer_state = 32
 				transfer_state = 21
@@ -163,8 +162,14 @@ country_event = {
 				transfer_state = 458
 				transfer_state = 665
 			}
+		
 		}
-
+        else = {
+      
+			ITA = {
+				transfer_state = 735
+			}
+       }
 		JAP = {
 			EFR = { country_event = { id = france.1 } }
 			transfer_state = 286

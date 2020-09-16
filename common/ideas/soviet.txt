@@ -16,13 +16,10 @@ ideas = {
 				industrial_capacity_dockyard = 0.15
 				production_speed_buildings_factor = 0.15
 				research_speed_factor = 0.15
-				consumer_goods_factor = 0.15
+				consumer_goods_factor = 0.25
 				production_factory_max_efficiency_factor = 0.1
 				production_factory_efficiency_gain_factor = -0.2
-				production_speed_arms_factory_factor = 0.2
-				production_speed_industrial_complex_factor = 0.1
-				conversion_cost_civ_to_mil_factor= -0.2
-				conversion_cost_mil_to_civ_factor = -0.2
+				production_speed_industrial_complex_factor = 0.5
 			}
 
 			allowed_to_remove = {
@@ -50,15 +47,22 @@ ideas = {
 				winter_attrition_factor = -1
 			}
 		}
-		SOV_winter_defensive = {
+		 SOV_uranus = {
 			modifier = {
-				army_infantry_defence_factor = 0.15
-				army_morale_factor=0.15
+				army_armor_attack_factor = 0.1
+				army_speed_factor=0.1
 				winter_attrition_factor = -1
 			}
 		}
-
-
+       SOV_bagration = {
+			modifier = {
+				army_armor_attack_factor = 0.3
+				army_infantry_attack_factor = 0.1
+				winter_attrition_factor = -1
+			}
+		}
+	  
+       
 
 		Fast_Training = {
 			modifier = {
@@ -181,8 +185,8 @@ ideas = {
 			picture = generic_manpower_bonus
 
 			modifier = {
-				consumer_goods_factor=-0.05
-				production_speed_arms_factory_factor = 0.15
+				consumer_goods_factor=-0.1
+				production_speed_arms_factory_factor = 0.1
 				industry_repair_factor = 1
 			}
 
@@ -334,7 +338,7 @@ ideas = {
 			}
 
 			modifier = {
-				production_speed_arms_factory_factor = 0.1
+				production_speed_arms_factory_factor = 0.2
 			}
 		}
 
@@ -354,6 +358,28 @@ ideas = {
 			modifier = {
 				land_reinforce_rate = 0.02
 				army_morale_factor = 0.10
+			}
+		}
+		SOV_tankograd = {
+			removal_cost = -1
+
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_morale_bonus
+
+			
+				equipment_bonus = {
+				medium_tank_equipment = {
+					
+					build_cost_ic = -0.1  instant = yes
+				}
+			
 			}
 		}
 
@@ -461,7 +487,7 @@ ideas = {
 			}
 
 			modifier = {
-				industrial_capacity_factory = 0.15
+				industrial_capacity_factory = 0.05
 			}
 		}
 		officers_purged_3 = {
@@ -839,7 +865,7 @@ ideas = {
 			}
 
 			equipment_bonus = {
-				infantry_equipment = {
+				anti_air_equipment = {
 					build_cost_ic = -0.1 instant = yes
 				}
 			}
