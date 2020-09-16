@@ -1,0 +1,160 @@
+scripted_gui = {
+	#variable TAG.pow_modifier decides how casualties are converted into pows. Base is 0.25. TAG.pow_modifier=0.05 -->30% pows TAG.pow_modifier=- 0.05-->20%
+	#important arrays 
+	#ROOT.pow_enemy_countries_casualties casualties array
+	#ROOT.pow_enemy_countries_numbers just numbers from 1 to x for scripted localization
+	#ROOT.pow_enemy_countries list of country tags same order used for localization
+	pow_decision_ui = {
+		context_type = decision_category
+		#context_type = player_context
+		window_name = "pow_decision_ui_window"
+		effects = {
+
+			refresh_click = { #prevent spam hidden idea for one day
+				# Coring List Window
+				#add_timed_idea= {idea=pow_refresh days=1}
+				clear_array=ROOT.pow_enemy_countries_casualties
+				clear_array=ROOT.pow_enemy_countries_numbers
+				clear_array=ROOT.pow_enemy_countries
+				clear_variable=ROOT.total_pows
+				every_enemy_country = {
+				limit={is_playable_country =yes}
+				add_to_array = {ROOT.pow_enemy_countries=THIS}
+				set_temp_variable= {casualties_against = 0}
+				while_loop_effect = {
+				limit = {
+						
+					
+						casualties_inflicted_by = {
+							opponent = ROOT
+							thousands > casualties_against
+					}
+				}
+				add_to_temp_variable = { casualties_against = 1000 }
+				}
+				if= {
+				limit = {
+					
+						casualties_inflicted_by = {
+							opponent = ROOT
+							thousands < casualties_against
+					}
+				}
+				add_to_temp_variable = { casualties_against = -1000 }
+				}
+				while_loop_effect = {
+				limit = {
+					
+						casualties_inflicted_by = {
+							opponent = ROOT
+							thousands > casualties_against
+					}
+				}
+				add_to_temp_variable = { casualties_against = 100 }
+				}
+				if= {
+				limit = {
+					
+						casualties_inflicted_by = {
+							opponent = ROOT
+							thousands < casualties_against
+					}
+				}
+				add_to_temp_variable = { casualties_against = -100 }
+				}
+				while_loop_effect = {
+				limit = {
+					
+						casualties_inflicted_by = {
+							opponent = ROOT
+							thousands > casualties_against
+					}
+				}
+				add_to_temp_variable = { casualties_against = 10 }
+				}
+				if= {
+				limit = {
+					
+						casualties_inflicted_by = {
+							opponent = ROOT
+							thousands < casualties_against
+					}
+				}
+				add_to_temp_variable = { casualties_against = -10}
+				}
+				while_loop_effect = {
+				limit = {
+					
+						casualties_inflicted_by = {
+							opponent = ROOT
+							thousands > casualties_against
+					}
+				}
+				add_to_temp_variable = { casualties_against = 1 }
+				}
+				if= {
+				limit = {
+					
+						casualties_inflicted_by = {
+							opponent = ROOT
+							thousands < casualties_against
+					}
+				}
+				#add_to_temp_variable = { casualties_against = -1}
+				}
+				set_temp_variable={pow_modifier_total=0.25}
+				add_to_temp_variable = {pow_modifier_total = pow_modifier}
+				multiply_temp_variable = { casualties_against = pow_modifier_total}
+				set_temp_variable = { idefix = ROOT.pow_enemy_countries_numbers^num}
+				add_to_temp_variable = { idefix = 1}
+				add_to_array = {ROOT.pow_enemy_countries_numbers = idefix}
+				
+				add_to_array = {ROOT.pow_enemy_countries_casualties = casualties_against}
+			
+			
+				
+			}
+			##total casualties calculator
+			for_each_loop = {
+			array=pow_enemy_countries_casualties
+			add_to_variable= {ROOT.total_pows  = v}
+			}
+			add_to_variable= {ROOT.total_pows = ROOT.pow_other_sources}
+			set_variable = {ROOT.total_pows_unassigned =ROOT.total_pows}
+			subtract_from_variable = {ROOT.total_pows_unassigned =ROOT.total_pows_assigned}
+			##total casualties calculator end
+			}
+			
+		}
+		#triggers={
+		#refresh_click_enabled = { 
+		#NOT={has_idea=pow_refresh}
+		#}
+		#}
+		dynamic_lists = {
+			
+			pow_enemy_countries_gridbox = {
+				array = pow_enemy_countries
+				entry_container = pow_enemy_countries_entry
+				change_scope = yes
+			}
+			pow_enemy_countries_casualties_gridbox = {
+				array = pow_enemy_countries_numbers
+				entry_container = pow_enemy_countries_casualties_entry
+				change_scope = yes
+			}
+			
+		}
+		#properties = {
+		#	senate_icon = {
+		#		frame = current_senate_icon_frame
+		#	}
+		#
+		#	house_icon = {
+		#		frame = current_house_icon_frame
+		#	}
+		#}
+	}
+	
+}
+

@@ -1,0 +1,38 @@
+POW = {
+	#icon = usa_congress
+	allowed = {
+			OR = {
+				tag = SOV
+				tag = SIA
+				tag = FRA
+				tag = JAP
+				tag = RAJ
+				tag = AST
+				tag = NZL
+				tag = MAN
+				tag = BUL
+				tag = ROM
+				tag = HUN
+				tag = SPR
+				tag = GER
+				tag = ITA
+				tag = ENG
+				tag = IRE
+				tag = SAF
+				tag = FIN
+				tag = USA
+				tag = CAN
+				tag = EFR
+			}
+		}
+		#available = {
+		#	has_war=yes
+		#}
+		visible= {
+			has_war=yes
+		}
+
+	scripted_gui = pow_decision_ui
+
+	priority = 85
+}
