@@ -48,7 +48,12 @@ operations = {
 		fire_only_once = yes
 		days_remove = 7
 		complete_effect = {
-
+            ITA = { transfer_state = 665
+					transfer_state = 1
+					transfer_state = 458
+					transfer_state = 32
+					transfer_state = 21
+				}
 			FRA = {transfer_state = 461
 				transfer_state = 462
 			}
@@ -79,23 +84,6 @@ operations = {
 
 		}
 		remove_effect = {
-			if = {
-				limit = {
-					665 = {is_fully_controlled_by = EFR}
-					1 = {is_fully_controlled_by = EFR}
-					458 = {is_fully_controlled_by = EFR}
-					32 = {is_fully_controlled_by = EFR}
-					21 = {is_fully_controlled_by = EFR}
-
-				}
-
-				ITA = { transfer_state = 665
-					transfer_state = 1
-					transfer_state = 458
-					transfer_state = 32
-					transfer_state = 21
-				}
-			}
 
 			GER = { puppet = EFR }
 			EFR = { remove_ideas = EFR_neutrality_idea}
