@@ -2,7 +2,34 @@
 operations = {
 
 
-
+    GER_iran = {
+	icon = generic_operation
+	fire_only_once = yes
+	allowed = { original_tag = GER }
+		visible = {
+			ENG = {NOT ={controls_state = 291}}
+		}
+        is_good = yes
+		available = {
+			Date > 1940.3.1
+		}
+        days_remove = 30
+ 
+		complete_effect = {
+			hidden_effect = {
+				every_enemy_country = {
+					country_event = {
+						id = news.iran
+						days = 0
+					}
+				}
+			}
+		}	
+	    remove_effect = {
+			SOV = { country_event = { id = iran.2}}
+			hidden_effect={every_country= { limit={NOT={tag=SOV}} country_event = { id = iran.3 } }}
+		}
+	}
 
 
 	GER_jaegernotprogramm = {

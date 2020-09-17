@@ -446,7 +446,15 @@ on_actions = {
 				}
 				news_event = { id = country_capitulated.0 days = 0 }
 			}
-
+            if = {
+				limit = { tag = ITA }
+				GER = { change_tag_from = ROOT }
+				GER = {annex_country = {
+                target = ITA
+                transfer_troops = yes
+                 }}
+				
+			}
 			if = {
 				limit = { tag = FRA }
 				set_global_flag = FRA_already_surrendered

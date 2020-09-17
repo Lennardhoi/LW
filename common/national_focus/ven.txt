@@ -14,32 +14,6 @@ focus_tree = {
 	default = no
 
 	focus = {
-		id = VEN_remove_Atlantikwall
-		icon = GFX_goal_generic_SS_focus
-		available = {
-			GER={has_completed_focus=GER_atlantikwall OR={date>1942.1.1 NOT={448={is_controlled_by = ITA}}}}
-
-
-
-		}
-
-		x = 1
-		y = 1
-		cost = 5
-
-		completion_reward = {
-
-				GER={every_owned_state={
-					limit={has_state_flag=atlantikwall}
-				
-				
-				add_state_modifier = {
-					modifier = { naval_invasion_penalty=-0.25 }
-					}}}
-
-		}
-	}
-	focus = {
 		id = VEN_hurensohn_sealion
 		icon = GFX_goal_generic_consumer_goods
 
