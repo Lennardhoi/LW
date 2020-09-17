@@ -208,7 +208,18 @@ is_controlled_by_ROOT_or_ally = {
 		}
 	}
 }
-
+is_controlled_by_ENG_or_ally = {
+	custom_trigger_tooltip = {
+		tooltip = is_controlled_by_ROOT_or_ally
+		CONTROLLER = {
+			OR = {
+				tag = ENG
+				is_subject_of = ENG
+				is_in_faction_with = ENG
+			}
+		}
+	}
+}
 is_csa_state = {
 	OR = {
 		state = 366
