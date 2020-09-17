@@ -4,6 +4,21 @@
 
 add_namespace = news
 
+news_event = {
+	id = news.iran
+	title = news.iran.t
+	desc = news.iran.d
+	picture = GFX_news_event_001
+	is_triggered_only = yes
+
+	option = {
+		name = news.iran.a
+	}
+	
+}
+
+
+
 # Marco Polo Bridge I
 news_event = {
 	id = news.1
