@@ -24,17 +24,17 @@ guiTypes = {
 	containerWindowType = {
 		name = "countrystateview"
 		position = { x=-416 y=-549}
-		show_position = { x=-6 y =-549 }
+		show_position = { x=-6 y =-599 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
 		animation_time = 300
 		orientation = lower_left
-		size = { width=436 height=496 }
+		size = { width=436 height=546 }
 		
 		containerWindowType = {
 			name = "state_info_window"
 			position = { x = 0 y = 0 }
-			size = { width=780 height=496 }
+			size = { width=780 height=546 }
 			
 			
 			background = {
@@ -65,7 +65,7 @@ guiTypes = {
 			
 			instantTextboxType = {
 				name = "shared_slot_count"
-				position = { x = 194 y = 147 }
+				position = { x = 194 y = 197 }
 				textureFile = ""
 				font = "hoi_18mbs"
 				text = "SLOTS"
@@ -76,12 +76,13 @@ guiTypes = {
 			
 			gridBoxType = {
 				name = "state_shared_slot_building_entries"
-				position = { x = 152 y = 168 }
+				position = { x = 152 y = 218 }
 				size = { width = 480 height = 90%% }
 				format = "UPPER_LEFT"
 				#slotsize = { width = 55 height = 46 }
 				slotsize = { width = 39.285 height = 32.857}
 				max_slots_horizontal = 7
+				max_slots_vertical = 7
 			}
 
 			iconType ={
@@ -161,7 +162,7 @@ guiTypes = {
 			
 			containerWindowType = {
 				name = "state_resources"
-				position = { x= 22 y=301}
+				position = { x= 22 y=351}
 				size = { width=135 height=63 }
 				
 				
@@ -274,7 +275,7 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "province_info_window"
-			position = { x = 5 y = 435 }
+			position = { x = 5 y = 485 }
 			size = { width=480 height=29%% }
 			
 			iconType = {
