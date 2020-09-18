@@ -318,50 +318,14 @@ focus_tree = {
 	}
 
 
-	focus = {
-		id = HUN_demand_southern_slovakia
-		icon = GFX_goal_generic_occupy_states_ongoing_war
-		prerequisite = { focus = HUN_reaffirm_territorial_claims }
-		x = 0
-		y = 1
-		relative_position_id = HUN_reaffirm_territorial_claims
-		will_lead_to_war_with = CZE
-		cost = 10
-
-		ai_will_do = {
-			factor = 80
-		}
-
-		available = {
-			#has_army_manpower = { size > 100000 }
-		}
-
-		bypass = {
-			owns_state = 664
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-		completion_reward = {
-			transfer_state = 664
-			CZE = { country_event = { id = DOD_hungary.80 } }
-		}
-	}
-
 
 	focus = {
 		id = HUN_proclaim_greater_hungary
 		icon = GFX_focus_proclaim_the_restauration_of_Austria_Hungary
-		prerequisite = { focus = HUN_demand_southern_slovakia }
+		prerequisite = { focus = HUN_reaffirm_territorial_claims }
 		x = 0
 		y = 1
-		relative_position_id = HUN_demand_southern_slovakia
+		relative_position_id = HUN_reaffirm_territorial_claims
 
 		cost = 10
 
@@ -401,6 +365,44 @@ focus_tree = {
 		}
 	}
 
+focus = {
+		id = HUN_demand_southern_slovakia
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = HUN_proclaim_greater_hungary }
+		x = 0
+		y = 1
+		relative_position_id = HUN_proclaim_greater_hungary
+		will_lead_to_war_with = CZE
+		cost = 10
+
+		ai_will_do = {
+			factor = 80
+		}
+
+		available = {
+			#has_army_manpower = { size > 100000 }
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		completion_reward = {
+			add_stability = -0.05
+			add_war_support = -0.05
+			HUN = {  add_state_core = 70 add_state_core = 71 
+			          transfer_state = 70 transfer_state = 71}
+			
+		}
+	}
 
 	############################
 	##### INDUSTRY BRANCH ######

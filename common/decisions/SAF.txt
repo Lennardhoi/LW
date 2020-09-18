@@ -79,9 +79,14 @@ SAF_secure = {
 		cost = 0
 
 		complete_effect = {
+			
 			SAF = { transfer_state = 546
 				transfer_state = 547
 				transfer_state = 548 }
+				every_owned_state={
+					
+					add_core_of = SAF
+				}
 		}
 
 	}

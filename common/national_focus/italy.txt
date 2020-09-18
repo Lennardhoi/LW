@@ -791,8 +791,8 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 
 		completion_reward = {
+		add_ideas = war_economy
 		
-		add_political_power = 150
 	} }
 	
 focus = {
@@ -810,7 +810,7 @@ focus = {
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 
 		completion_reward = {
-		add_ideas = war_economy
+		add_political_power = 150
 		}
 	} 
 
@@ -2325,7 +2325,7 @@ focus = {
 				custom_effect_tooltip = needs_approval
 			}
 			add_to_tech_sharing_group = axis_research
-			effect_tooltip = {
+			
 				add_tech_bonus = {
 					name = synth_bonus
 					bonus = 3.0
@@ -2339,7 +2339,7 @@ focus = {
 					uses = 1
 					category = armor
 				}
-			}
+			
 			modify_building_resources = {
 				building = synthetic_refinery
 				resource = rubber

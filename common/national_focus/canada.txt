@@ -175,10 +175,10 @@ focus_tree = {
 				limit = {
 					has_state_flag = CAN_national_housing_act_IC
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 4
 					instant_build = yes
 				}
 			}
@@ -193,10 +193,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 4
 					instant_build = yes
 				}
 				set_state_flag = CAN_national_housing_act_IC
@@ -999,10 +999,10 @@ focus_tree = {
 				limit = {
 					has_state_flag = CAN_alberta_coal_towns_IC
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 5
 					instant_build = yes
 				}
 			}
@@ -1014,14 +1014,14 @@ focus_tree = {
 				limit = {
 					free_building_slots = {
 						building = industrial_complex
-						size > 2
+						size > 4
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = industrial_complex
-					level = 3
+					level = 5
 					instant_build = yes
 				}
 				set_state_flag = CAN_alberta_coal_towns_IC
@@ -1666,42 +1666,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
-		complete_tooltip = {
-			remove_ideas = CAN_great_depression_2
-			random_state = {
-				limit = {
-					has_state_flag = CAN_war_fueled_economy_AF1
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_state = {
-				limit = {
-					has_state_flag = CAN_war_fueled_economy_AF2
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_state = {
-				limit = {
-					has_state_flag = CAN_war_fueled_economy_AF3
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
 
 		completion_reward = {
 			remove_ideas = CAN_great_depression_2
@@ -1709,15 +1673,15 @@ focus_tree = {
 				limit = {
 					is_in_home_area = yes
 					free_building_slots = {
-						building = arms_factory
-						size > 0
+						building = industrial_complex
+						size > 1
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = arms_factory
-					level = 1
+					type = industrial_complex
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = CAN_war_fueled_economy_AF1
@@ -1726,15 +1690,15 @@ focus_tree = {
 				limit = {
 					is_in_home_area = yes
 					free_building_slots = {
-						building = arms_factory
-						size > 0
+						building = industrial_complex
+						size > 1
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = arms_factory
-					level = 1
+					type = industrial_complex
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = CAN_war_fueled_economy_AF2
@@ -1743,15 +1707,15 @@ focus_tree = {
 				limit = {
 					is_in_home_area = yes
 					free_building_slots = {
-						building = arms_factory
-						size > 0
+						building = industrial_complex
+						size > 1
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-					type = arms_factory
-					level = 1
+					type = industrial_complex
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = CAN_war_fueled_economy_AF3

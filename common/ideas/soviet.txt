@@ -1236,7 +1236,7 @@ ideas = {
 		konstantin_rokossovsky = {
 			ledger = army
 			#Also unit leader: 402
-
+            
 			allowed = {
 				original_tag = SOV # Unlocked via focus
 				hidden_trigger = {
@@ -1264,7 +1264,34 @@ ideas = {
 				factor = 1
 			}
 		}
+        konstantin_rokossovsky_2 = {
+			ledger = army
+			#Also unit leader: 402
+            picture = idea_konstantin_rokossovsky
+			visible = { has_completed_focus = SOV_barb_2 }
+			allowed = {
+				original_tag = SOV # Unlocked via focus
+				hidden_trigger = {
+					NOT = {
+						any_other_country = {
+							has_war_with = SOV
+							original_tag = SOV
+							has_unit_leader = 403
+						}
+					}
+				}
+			}
+			available =
+			{
+				has_completed_focus = SOV_barb_2
+			}
 
+			traits = { army_armored_3 }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
 		pavel_zhigarev = {
 			ledger = air
 
