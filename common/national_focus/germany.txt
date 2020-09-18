@@ -1968,10 +1968,11 @@ focus_tree = {
 			every_owned_state= {
 				limit={is_coastal=yes is_on_continent = europe  OR={is_core_of=HOL is_core_of=BEL is_core_of=DEN is_core_of=FRA}
 				}
-				set_state_flag=atlantikwall
-				add_state_modifier = {
-					modifier = { naval_invasion_penalty=0.25 }
-					}}
+				#set_state_flag=atlantikwall
+				add_dynamic_modifier = {
+					modifier = Atlantikwall
+					}
+					}
 
 
 			add_ideas = GER_atlantikwall_idea

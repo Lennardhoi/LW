@@ -395,43 +395,7 @@ focus_tree = {
 
 
 
-	focus = {
-		id = JAP_bypass_the_philippines
-		icon = GFX_goal_generic_position_armies
-		prerequisite = { focus = JAP_modern_artillery }
-		prerequisite = { focus = JAP_national_research_policy }
-		x = -1
-		y = 1
-		relative_position_id = JAP_modern_artillery
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 3
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {
-			add_tech_bonus = {
-				name = JAP_bypass_the_philippines
-				bonus = 2.0
-				uses = 2
-				category = tp_tech
-			}
-		}
-	}
+	
 
 	
 
@@ -1289,7 +1253,43 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = JAP_bypass_the_philippines
+		icon = GFX_goal_generic_position_armies
+		prerequisite = { focus = JAP_modern_artillery }
+		prerequisite = { focus = JAP_national_research_policy }
+		x = -1
+		y = 1
+		relative_position_id = JAP_modern_artillery
 
+		cost = 10
+
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_tech_bonus = {
+				name = JAP_bypass_the_philippines
+				bonus = 2.0
+				uses = 2
+				category = tp_tech
+			}
+		}
+	}
 	focus = {
 		id = JAP_armored_divisions
 		icon = GFX_focus_JAP_armor
@@ -2404,6 +2404,8 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+		add_dynamic_modifier={modifier=pacific_war}
+		USA={add_dynamic_modifier={modifier=pacific_war}}
 			JAP = {
 				add_timed_idea = { idea = JAP_banzai days = 90 }
 				add_ideas = closed_economy
@@ -2415,9 +2417,10 @@ focus_tree = {
 					ENG={add_to_faction=USA}
 					GER={declare_war_on = { target = USA type = annex_everything }}
 				}
-
-				every_country={limit={is_in_faction_with=ENG}
-					JAP={declare_war_on = { target = PREV type = annex_everything }}
+				USA={declare_war_on_enemy_faction =yes}
+				every_country={
+				limit={is_in_faction_with=ENG NOT={original_tag=USA}}
+					add_dynamic_modifier={modifier=pacific_war_minor}
 				}
 				ENG={#dutch east indies states
 					transfer_state=672
@@ -2479,6 +2482,10 @@ focus_tree = {
 		}
 
 		available = {
+		naval_strength_ratio = { 
+			tag = USA 
+			ratio < 0.5 
+		}
 		}
 
 		bypass = {
@@ -2814,10 +2821,11 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-		hidden_effect={	add_timed_idea={idea=main_focus_set_idea=70}}
+		hidden_effect={add_timed_idea={idea=main_focus_set_idea days=70}}
 		every_state = {
 		limit={OR={state=638 state=737 state=634 state=635 state=639 state=725 state=643 state=642 state=636 state=726 state=523}}
-		add_dynamic_modifier = { modifier = JAP_attack days=90  }}
+		add_dynamic_modifier = { modifier = JAP_attack days=90  }
+		}
 		}
 	}
 	
@@ -2891,7 +2899,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-		hidden_effect={	add_timed_idea={idea=main_focus_set_idea=70}}
+		hidden_effect={	add_timed_idea={idea=main_focus_set_idea days=70}}
 		every_state = {
 		limit={OR={state=336 state=288 state = 640 state=426 state=434 state=432}} 
 		add_dynamic_modifier = { modifier = JAP_attack days=90  }}
@@ -2928,7 +2936,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-		hidden_effect={	add_timed_idea={idea=main_focus_set_idea=70}}
+		hidden_effect={	add_timed_idea={idea=main_focus_set_idea days=70}}
 		every_state = {
 		limit={OR={state=422 state=281 state = 640 state=710 state=712}} 
 		add_dynamic_modifier = { modifier = JAP_attack days=90  }}
@@ -2964,7 +2972,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-		hidden_effect={	add_timed_idea={idea=main_focus_set_idea=70}}
+		hidden_effect={	add_timed_idea={idea=main_focus_set_idea days=70}}
 		every_state = {
 		limit={OR={state=659 state=269 state = 559 state=710 state=712 state=712 state=547 state=543 state=719 state = 681}} 
 		add_dynamic_modifier = { modifier = JAP_attack days=90  }}
@@ -3001,7 +3009,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-		hidden_effect={	add_timed_idea={idea=main_focus_set_idea=70}}
+		hidden_effect={	add_timed_idea={idea=main_focus_set_idea days=70}}
 		every_state = {
 		limit={OR={state=430 state=431 state = 435 state=426}} 
 		add_dynamic_modifier = { modifier = JAP_attack days=90  }}
@@ -3089,7 +3097,8 @@ focus_tree = {
 		completion_reward = {
 		525 = { add_manpower = -100000}
 		527 = { add_manpower = -100000}
-		custom_effect_tooltip = "Factory output is increased by 10%"
+		custom_effect_tooltip = JAP_korean_guest_workers_tt
+		
 		}
 	}
 	
@@ -3167,7 +3176,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-		hidden_effect={	add_timed_idea={idea=main_focus_set_idea=70}}
+		hidden_effect={	add_timed_idea={idea=main_focus_set_idea days=70}}
 		every_state = {
 		limit={OR={state=672 state=335 state=673 state=669 state=523 state=333 state=778 state=334 state=668 }}
 		add_dynamic_modifier = { modifier = JAP_attack days=90  }}
@@ -3204,7 +3213,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-		hidden_effect={	add_timed_idea={idea=main_focus_set_idea=70}}
+		hidden_effect={	add_timed_idea={idea=main_focus_set_idea days=70}}
 		every_state = {
 		limit={OR={state=629 state=631 state=673 state=669 state=632 state=727 }}
 		add_dynamic_modifier = { modifier = JAP_attack days=90  }}
@@ -3242,7 +3251,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-		hidden_effect={	add_timed_idea={idea=main_focus_set_idea=70}}
+		hidden_effect={	add_timed_idea={idea=main_focus_set_idea days=70}}
 		every_state = {
 		limit={is_core_of=AST}
 		add_dynamic_modifier = { modifier = JAP_attack days=90  }}
@@ -3301,7 +3310,7 @@ focus_tree = {
 		add_state_modifier={
 			modifier={
 				local_supplies=3
-				state_production_speed_buildings_factor = 0.30
+				state_production_speed_buildings_factor = 0.50
 			}
 			}}
 		}
@@ -3359,7 +3368,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-		hidden_effect={	add_timed_idea={idea=main_focus_set_idea=70}}
+		hidden_effect={	add_timed_idea={idea=main_focus_set_idea days=70}}
 		every_state = {
 		limit={OR={state=672 state=335 state=673 state=669 state=523 state=333 state=778 state=334 state=668 }}
 		add_dynamic_modifier = { modifier = JAP_attack days=90  }}

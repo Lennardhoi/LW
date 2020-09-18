@@ -42,6 +42,15 @@ add_to_variable={GLOBAL.pacific_status=10}}
 }
 }
 }
+set_variable={JAP.pacific_status=GLOBAL.pacific_status}
+subtract_from_variable={JAP.pacific_status=91}
+multiply_variable={JAP.pacific_status=-30}
+divide_variable={JAP.pacific_status=10200}
+set_variable={USA.pacific_status=JAP.pacific_status}
+multiply_variable={USA.pacific_status=-1}
+set_variable={ENG.pacific_status=USA.pacific_status}
+multiply_variable={ENG.pacific_status=0.5}
+if={limit={JAP={has_completed_focus=JAP_korean_guest_workers}} add_to_variable={JAP.pacific_status=0.1}}
 }
 
 anti_cross_faction_trade_axis = {
@@ -155,9 +164,9 @@ anti_cross_faction_trade_all = {
 }
 declare_war_on_enemy_faction = {
 	if = { 
-		limit = { NOT = { has_war_with = THIS.faction_leader } }
-		set_variable={GER.test1=THIS.faction_leader}
-		declare_war_on = { target = THIS.faction_leader type = annex_everything }
+		limit = { NOT = { ROOT={has_war_with = THIS.faction_leader } }}
+		set_variable={GER.test1=15}
+		ROOT={declare_war_on = { target = PREV.faction_leader type = annex_everything }}
 		ROOT_call_all_allies_against_THIS = yes
 		THIS_call_all_allies_against_ROOT = yes
 	}
@@ -189,9 +198,9 @@ THIS_call_all_allies_against_ROOT = {
 
 		set_variable={test=THIS}
 		if = {
-			limit = { NOT = { OR = { original_tag = USA original_tag = FRA original_tag = PREV} } }
+			limit = { NOT = { OR = { original_tag = USA AND={original_tag = FRA has_global_flag=fall_of_france} original_tag = PREV} } }
 			add_to_war = {
-				targeted_alliance = PREV
+				targeted_alliance = ENG
 				enemy = ROOT
 			}
 		}

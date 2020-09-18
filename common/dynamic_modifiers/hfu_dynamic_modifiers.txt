@@ -23,11 +23,16 @@ JAP_attack = {
 	max_dig_in = -7.5
 
 }
-JAP_pacific_war = {
-	max_dig_in = -7.5
+pacific_war = {
+	icon = "GFX_idea_SPR_disbanded_army"
+	industrial_capacity_factory = pacific_status
 
 }
-Allies_pacific_war = {
-	max_dig_in = -7.5
+pacific_war_minor = {
+	icon = "GFX_idea_SPR_disbanded_army"
+	industrial_capacity_factory = ENG.pacific_status
 
+}
+Atlantikwall={
+naval_invasion_penalty=JAP.pacific_status
 }
