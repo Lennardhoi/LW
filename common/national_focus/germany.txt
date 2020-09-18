@@ -736,7 +736,7 @@ focus_tree = {
 		}
 	focus = {
 		id = GER_operation_margarethe
-		icon = GFX_focus_ger_align_hungary
+		icon = GFX_focus_GER_Greater_Hungary
 		prerequisite = { focus = GER_integrate_war_economies }
 		x = -1
 		y = 1
@@ -761,7 +761,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_operation_margarethe2
-		icon = GFX_focus_ger_align_hungary
+		icon = GFX_focus_GER_Greater_Hungary
 		prerequisite = { focus = GER_integrate_war_economies }
 		x = 1
 		y = 1
@@ -1396,7 +1396,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_german_engineering
-		icon = GFX_focus_wonderweapons
+		icon = GFX_focus_GER_Wunderwaffe
 		prerequisite = { focus = GER_extra_tech_slot }
 		prerequisite = { focus = GER_strategic_bomber_effort }
 		prerequisite = { focus = GER_air_innovation_2}
@@ -1629,7 +1629,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_panzer_4_ausfg
-		icon = GFX_goal_generic_army_tanks
+		icon = GFX_focus_GER_Schwerer_Panzer
 		prerequisite = { focus = GER_army_innovation_2 }
 		x = 0
 		y = 1
@@ -1655,7 +1655,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_panther_massproduction
-		icon = GFX_goal_generic_army_tanks
+		icon = GFX_focus_GER_Standardpanzer
 		prerequisite = { focus = GER_panzer_4_ausfg }
 		x = 0
 		y = 1
@@ -1707,7 +1707,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_ural_bomber
-		icon = GFX_focus_rocketry
+		icon = GFX_focus_GER_Amerika_Bomber
 		prerequisite = { focus = GER_german_engineering }
 		x = 3
 		y = 1
@@ -1763,7 +1763,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_rocketry_focus
-		icon = GFX_focus_rocketry
+		icon = GFX_focus_GER_New_Missile_Designs
 		prerequisite = { focus = GER_german_engineering }
 		x = 1
 		y = 1
@@ -1814,7 +1814,7 @@ focus_tree = {
 	}
 		focus = {
 		id = GER_v2
-		icon = GFX_focus_rocketry
+		icon = GFX_focus_GER_Vergeltungswaffen
 		prerequisite = { focus =  GER_stuka }
 		x = 0
 		y = 1
@@ -1844,7 +1844,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_jet_fighter
-		icon = GFX_focus_rocketry
+		icon = GFX_focus_GER_Me262
 		prerequisite = { focus = GER_rocket_interceptor }
 		prerequisite = { focus = GER_v2 }
 		x = -1
@@ -2236,7 +2236,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_albert_speer
-		icon = GFX_GER_albert_speer
+		icon = GFX_focus_GER_The_Genius_Organizer
 		relative_position_id = GER_summon_fritz_todt
 		prerequisite = { focus = GER_summon_fritz_todt }
 		x = 0
@@ -2683,7 +2683,7 @@ focus_tree = {
 
 	focus = { # Off-Map Factories
 		id = GER_exploit_occupied_territories
-		icon = GFX_GER_underground_factories
+		icon = GFX_focus_GER_money
 		prerequisite = { focus = GER_summon_fritz_todt }
 		relative_position_id = GER_summon_fritz_todt
 		x = 2
@@ -4137,7 +4137,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_Greater_Germany
-		icon = GFX_goal_generic_SS_focus
+		icon = GFX__focus_GER_germania
 		prerequisite = { focus = GER_pressure_sweden focus = GER_alta }
 		available = {
 			has_full_control_of_state = 8
