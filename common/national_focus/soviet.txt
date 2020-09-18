@@ -404,7 +404,7 @@ focus = {
 		x = 0
 		y = 1.5
 		prerequisite = { focus = SOV_move_industry_to_urals }
-		cost = 16
+		cost = 10
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -414,10 +414,7 @@ focus = {
 		}
 
 		completion_reward = {
-
-			add_timed_idea= {idea=Order_227 days=365}
-
-
+            add_ideas = order_227
 		}
 	}
 	focus = {
@@ -453,7 +450,7 @@ focus = {
 		x = -2
 		y = 1
 		prerequisite = { focus = SOV_great_figher }
-		cost = 5
+		cost = 6
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -517,7 +514,7 @@ focus = {
 		x = 2
 		y = 1
 		prerequisite = { focus = SOV_great_figher }
-		cost = 5
+		cost = 6
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -539,7 +536,7 @@ focus = {
 		x = 0
 		y = 2
 
-		cost = 5
+		cost = 6
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -615,7 +612,7 @@ focus = {
 		x = 1
 		y = 1
 		prerequisite = { focus = SOV_great_figher }
-		cost = 5
+		cost = 6
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -647,7 +644,7 @@ focus = {
 		x = -1
 		y = 1
 		prerequisite = { focus = SOV_great_figher }
-		cost = 5
+		cost = 6
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -2033,7 +2030,7 @@ focus = {
 		x = 2
 		y = 3
 		relative_position_id = SOV_great_figher
-		cost = 5
+		cost = 6
 		ai_will_do = {
 			factor = 1
 		}
