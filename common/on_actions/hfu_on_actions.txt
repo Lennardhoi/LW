@@ -1,7 +1,9 @@
 on_actions = {
 	
-	
-
+	on_monthly_SWE={
+	effect={
+	update_pacific_war=yes
+	}}
 	on_monthly={
 		effect={
 			if={limit={tag=ITA has_country_flag=ll_enabled}
@@ -32,7 +34,9 @@ on_actions = {
 
 	on_startup={
 		effect{
+			
 			GER = {
+			create_arrays_pacific=yes
 			set_temp_variable={core_pop = 0}
 			for_each_scope_loop ={
 			array=core_states

@@ -49,18 +49,21 @@ POW = {
 					}
 					}
 					if= {limit={has_idea=mutiny_2}
+					remove_ideas=mutiny_2
 					add_timed_idea = {
 						idea = mutiny_3
 						days = 30
 					}
 					}
 					else_if= {limit={has_idea=mutiny_1}
+					remove_ideas=mutiny_1
 					add_timed_idea = {
 						idea = mutiny_2
 						days = 30
 					}
 					}
 					else= {
+					
 					add_timed_idea = {
 						idea = mutiny_1
 						days = 30

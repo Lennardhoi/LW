@@ -19,3 +19,20 @@ JAP_volunteer_workers_in_burma = {
 	state_production_speed_buildings_factor = 1.0
 
 }
+JAP_attack = {
+	max_dig_in = -7.5
+
+}
+pacific_war = {
+	icon = "GFX_idea_SPR_disbanded_army"
+	industrial_capacity_factory = pacific_status
+
+}
+pacific_war_minor = {
+	icon = "GFX_idea_SPR_disbanded_army"
+	industrial_capacity_factory = ENG.pacific_status
+
+}
+Atlantikwall={
+naval_invasion_penalty=JAP.pacific_status
+}
