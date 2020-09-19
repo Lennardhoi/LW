@@ -40,7 +40,13 @@ ideas = {
 				industrial_capacity_factory=-0.1
 			}
 		}
-
+        
+		SOV_red_army = {
+			modifier = {
+				army_morale_factor = 0.1
+			}
+		}
+		
 		SOV_winter_offensive = {
 			modifier = {
 				army_armor_attack_factor = 0.1
@@ -1471,90 +1477,37 @@ ideas = {
 			}
 
 			equipment_bonus = {
-
 				medium_tank_equipment = {
-					reliability = 0.05
-					soft_attack = 0.15
+
 					hard_attack = 0.15
-
-					build_cost_ic = 0.1
+					soft_attack = 0.15
+					reliability = 0.05
+					build_cost_ic = 0.15
 				}
 
-				medium_tank_aa_equipment = {
-					reliability = 0.1
-					air_attack = 0.1
-
-					build_cost_ic = 0.1
-				}
 				medium_tank_destroyer_equipment = {
-					reliability = 0.1
-					hard_attack = 0.1
-
-					build_cost_ic = 0.1
+					reliability = 0.05
+					hard_attack = 0.2
+					ap_attack = 0.2
+					build_cost_ic = 0.15
 				}
 				medium_tank_artillery_equipment = {
-					reliability = 0.1
-					soft_attack = 0.1
-					build_cost_ic = 0.1
-				}
+					reliability = 0.05
 
-
-			}
-
-			traits = {  }
-
-			modifier = {
-			}
-		}
-
-
-
-		kirov_plant = {
-			cost = 100
-			allowed = {
-				original_tag = SOV
-			}
-
-			available = {
-
-			}
-
-			research_bonus = {
-				armor = 0.15
-			}
-
-			equipment_bonus = {
-				heavy_tank_equipment = {
-					reliability = -0.2
-					armor_value = 0.1
-					hard_attack = 0.2
 					soft_attack = 0.2
-					build_cost_ic = 0.10
+					build_cost_ic = 0.15
 				}
-				heavy_tank_destroyer_equipment = {
-					reliability = -0.2
-					armor_value = 0.1
-					hard_attack = 0.25
-					build_cost_ic = 0.10
+				medium_tank_aa_equipment = {
+					reliability = 0.05
+					air_attack = 0.15
+					build_cost_ic = 0.15
 				}
-				heavy_tank_artillery_equipment = {
-					reliability = -0.2
-					armor_value = 0.1
-					soft_attack = 0.25
-					build_cost_ic = 0.10
-				}
-
 			}
-
 			traits = {  }
 
 			modifier = {
 			}
 		}
-
-
-
-
 
 		dzerzhinsky_stalingrad_tractor_factory = { #Stalingrad Tank Factory
 			allowed = {
@@ -1574,47 +1527,34 @@ ideas = {
 			equipment_bonus = {
 
 				medium_tank_equipment = {
-					reliability = 0.05
-					soft_attack = 0.05
-					hard_attack = 0.05
-
-					build_cost_ic = -0.1
+					soft_attack = 0.1
+					hard_attack = 0.1
+					reliability = -0.1
+					build_cost_ic = 0.05
 				}
 
-			}
+				medium_tank_aa_equipment = {
+					air_attack = 0.1
+					reliability = 0.05
+					build_cost_ic = 0.05
+				}
 
+				medium_tank_artillery_equipment = {
+					soft_attack = 0.15
+					reliability = 0.05
+					build_cost_ic = 0.05
+				}
+
+
+
+
+			}
 			traits = { }
 
 			modifier = {
 			}
 		}
 
-		krasnoye_sormovo = { #T-34/85 designer
-			allowed = {
-				original_tag = SOV
-			}
-			cost = 100
-			available = {
-
-			}
-
-			research_bonus = {
-				armor = 0.15
-			}
-
-			equipment_bonus = {
-				medium_tank_equipment = {
-					soft_attack = 0.1
-					hard_attack = 0.1
-					build_cost_ic = -0.05
-				}
-			}
-
-			traits = {  }
-
-			modifier = {
-			}
-		}
 
 		ordzhonikidze_ural_heavy_machine_building_plant_UZTM = { #variant su-85 etc designer
 			allowed = {
@@ -1710,31 +1650,20 @@ ideas = {
 
 			equipment_bonus = {
 				medium_tank_equipment = {
-					reliability = 0.1
-					maximum_speed = 0.05
-					hard_attack = 0.15
-					build_cost_ic = 0.1
+					hard_attack = 0.15 soft_attack = 0.15 ap_attack = 0.1 build_cost_ic = 0.1  reliability = -0.05
 				}
+
+
+				medium_tank_aa_equipment = {
+					air_attack = 0.15 build_cost_ic = 0.05 reliability = -0.05
+				}
+
 				medium_tank_artillery_equipment = {
-					reliability = 0.1
-					soft_attack = 0.15
-					defense = 0.1
-					maximum_speed = 0.1
-					build_cost_ic = 0.05
+					soft_attack = 0.2  build_cost_ic = 0.05 reliability = -0.05
 				}
 
 				medium_tank_destroyer_equipment = {
-					hard_attack = 0.1
-					ap_attack = 0.1
-					reliability = 0.1
-					maximum_speed = 0.1
-					build_cost_ic = 0.05
-				}
-				medium_tank_aa_equipment = {
-					reliability = 0.1
-					air_attack = 0.1
-					maximum_speed = 0.1
-					build_cost_ic = 0.05
+					hard_attack = 0.2 ap_attack = 0.1 build_cost_ic = 0.05 reliability = -0.05
 				}
 			}
 

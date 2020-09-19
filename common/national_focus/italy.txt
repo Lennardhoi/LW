@@ -189,7 +189,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0.25
 		}
-		available={date>1940.1.1}
+		available={date>1939.7.1}
 		available_if_capitulated = yes
 
 		complete_tooltip = {
@@ -221,9 +221,9 @@ focus_tree = {
 			}
 
 			create_equipment_variant = {
-				name = "Bismarck-Klasse"
+				name = "Littorio-class"
 				type = ship_hull_heavy_3
-				name_group = GER_BB_HISTORICAL
+				name_group = ITA_BB_HISTORICAL
 				parent_version = 0
 				modules = {
 					fixed_ship_battery_slot = ship_heavy_battery_3
@@ -241,15 +241,15 @@ focus_tree = {
 
 				}
 			}
-			custom_effect_tooltip="Adds two Bismarck-Klasse Battleships to the production queue, at 85% and 90% complete, respectively."
+			custom_effect_tooltip="Adds two Vittorio Veneto Battleships to the production queue, at 85% and 90% complete, respectively."
 			hidden_effect = {
 				add_equipment_production = {
 					equipment = {
 						type = ship_hull_heavy_3
-						creator = "GER"
-						version_name = "Bismarck-Klasse"
+						creator = "ITA"
+						version_name = "Littorio-class"
 					}
-					name = "Bismarck"
+					name = "Vittorio Veneto"
 					requested_factories = 1
 					progress = 0.9
 					amount = 1
@@ -257,10 +257,10 @@ focus_tree = {
 				add_equipment_production = {
 					equipment = {
 						type = ship_hull_heavy_3
-						creator = "GER"
-						version_name = "Bismarck-Klasse"
+						creator = "ITA"
+						version_name = "Littorio-class"
 					}
-					name = "Tirpitz"
+					name = "Littorio"
 					requested_factories = 1
 					progress = 0.85
 					amount = 1
@@ -276,7 +276,7 @@ focus_tree = {
 		icon = GFX_goal_italy_cavagnari
 		prerequisite = { focus = ITA_naval_effort }
 		mutually_exclusive = { focus = ITA_plan_z}
-		available={date>1940.1.1}
+		available={date>1939.7.1}
 		x = 3
 		y = 1
 		relative_position_id = ITA_naval_effort
@@ -290,7 +290,7 @@ focus_tree = {
 		complete_tooltip = {
 			navy_experience = 25
 			every_state = {
-				limit = { has_state_flag = GER_u_boat_effort_2dockyards }
+				
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
@@ -320,7 +320,7 @@ focus_tree = {
 					level = 4
 					instant_build = yes
 				}
-				set_state_flag = GER_u_boat_effort_2dockyards
+				
 			}
 			set_technology={ improved_submarine=1}
 
@@ -370,52 +370,10 @@ focus_tree = {
 			add_tech_bonus = {
 				name = cv_bonus
 				bonus = 2.0
-				uses = 1
+				uses = 2
 				category = cv_tech
 			}
-			set_technology = {
-				basic_ship_hull_carrier = 1
-				early_ship_hull_carrier = 1
-			}
-			create_equipment_variant = {
-				name = "Graf-Zeppelin-Klasse"
-				type = ship_hull_carrier_1
-				name_group = GER_CV_HISTORICAL
-				parent_version = 0
-				modules={
-					fixed_ship_engine_slot=carrier_ship_engine_2
-					fixed_ship_deck_slot_1=ship_deck_space
-					fixed_ship_deck_slot_2=ship_deck_space
-					front_1_custom_slot=ship_deck_space
-					fixed_ship_secondaries_slot=ship_secondaries_2
-					fixed_ship_anti_air_slot=ship_anti_air_2
-				}
-			}
-			custom_effect_tooltip = GER_carrier_tt
-			hidden_effect = {
-				add_equipment_production = {
-					equipment = {
-						type = ship_hull_carrier_1
-						creator = "GER"
-						version_name = "Graf-Zeppelin-Klasse"
-					}
-					name = "Graf Zeppelin"
-					requested_factories = 1
-					progress = 0.75
-					amount = 1
-				}
-				add_equipment_production = {
-					equipment = {
-						type = ship_hull_carrier_1
-						creator = "GER"
-						version_name = "Graf-Zeppelin-Klasse"
-					}
-					name = "Peter Strasser"
-					requested_factories = 1
-					progress = 0.5
-					amount = 1
-				}
-			}
+			
 		}
 	}
 	focus = {
@@ -454,12 +412,13 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		available={controls_state=30}
+		available={controls_state=164}
+		bypass = {NOT={controls_state=164}}
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			
-			30 = {
+			164 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 						type = dockyard
@@ -468,22 +427,11 @@ focus_tree = {
 					}
 				add_building_construction = {
 						type = naval_base
-						province=11465
+						province=10007
 						level = 10
 						instant_build = yes
 					}
-				add_building_construction = {
-						type = bunker
-						province=11465
-						level = 3
-						instant_build = yes
-					}
-				add_building_construction = {
-						type = coastal_bunker
-						province=11465
-						level = 5
-						instant_build = yes
-					}
+				
 			}
 		}
 		
@@ -500,35 +448,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
+        
 		available_if_capitulated = yes
 
 		completion_reward = {
-			144 = {
-				add_building_construction = {
-						type = naval_base
-						province=11050
-						level = 5
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = air_base
-						level = 5
-						instant_build = yes
-					}
-				add_building_construction = {
-						type = bunker
-						province=11050
-						level = 3
-						instant_build = yes
-					}
-				add_building_construction = {
-						type = coastal_bunker
-						province=11050
-						level = 3
-						instant_build = yes
-					}
-			}
+			add_ideas = british_convoy_discount
 		}
 	}
 	focus = {
@@ -547,11 +471,11 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			add_ideas=GER_germaniawerft
-			58 = {
-				add_extra_state_shared_building_slots = 6
+			160 = {
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 						type = dockyard
-						level = 6
+						level = 5
 						instant_build = yes
 					}
 		}
@@ -576,9 +500,9 @@ focus_tree = {
 				ship_hull_super_heavy = 1
 			}
 			create_equipment_variant = {
-				name = "H-Klasse"
+				name = "Roma-Class"
 				type = ship_hull_super_heavy_1
-				name_group = GER_BB_HISTORICAL
+				name_group = ITA_BB_HISTORICAL
 				parent_version = 0
 				modules = {
 					fixed_ship_battery_slot = ship_super_heavy_battery_1
@@ -597,26 +521,16 @@ focus_tree = {
 					rear_2_custom_slot = ship_airplane_launcher_2
 				}
 			}
-			custom_effect_tooltip = GER_h_class_tt
+			
 			hidden_effect = {
+				
 				add_equipment_production = {
 					equipment = {
 						type = ship_hull_super_heavy_1
-						creator = "GER"
-						version_name = "H-Klasse"
+						creator = "ITA"
+						version_name = "Roma-Class"
 					}
-					name = "Schlachtschiff H"
-					requested_factories = 1
-					progress = 0.75
-					amount = 1
-				}
-				add_equipment_production = {
-					equipment = {
-						type = ship_hull_super_heavy_1
-						creator = "GER"
-						version_name = "H-Klasse"
-					}
-					name = "Schlachtschiff J"
+					name = "Roma"
 					requested_factories = 1
 					progress = 0.5
 					amount = 1
@@ -658,7 +572,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			58 = {
+			157 = {
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 						type = dockyard
@@ -667,7 +581,7 @@ focus_tree = {
 					}
 				set_building_level = {
 						type = naval_base
-						province=6389
+						province=925
 						level = 20
 						instant_build = yes
 					}
@@ -689,7 +603,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			19 = {
+			158 = {
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 						type = dockyard
@@ -697,20 +611,14 @@ focus_tree = {
 						instant_build = yes
 					}
 				set_building_level = {
-						type = naval_base
-						province=9737
-						level = 20
-						instant_build = yes
-					}
-				set_building_level = {
 						type = bunker
-						province=9737
+						province=6788
 						level = 5
 						instant_build = yes
 					}
 				set_building_level = {
 						type = coastal_bunker
-						province=9737
+						province=6788
 						level = 5
 						instant_build = yes
 					}
@@ -733,7 +641,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_timed_idea = {idea = GER_operation_sealion days=70}
+			add_timed_idea = {idea = ITA_operation_sealion days=70}
 		}
 	}
 	focus = {
@@ -753,7 +661,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_timed_idea = {idea = GER_atlantikschlacht days= 365}
+			add_timed_idea = {idea = ITA_atlantikschlacht days= 365}
 		}
 	}
 	focus = {

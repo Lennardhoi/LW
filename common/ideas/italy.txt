@@ -1,6 +1,45 @@
 ideas = {
 	country = {
-		
+		 
+		 
+		ITA_atlantikschlacht = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_navy_bonus 
+			modifier={naval_speed_factor = 0.1 navy_visibility = -0.1 navy_fuel_consumption_factor= -0.5
+			}
+			
+
+		}
+		ITA_operation_sealion = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_navy_bonus
+			modifier={
+			invasion_preparation = -0.3
+			amphibious_invasion = 0.10
+			naval_strike = 0.2
+				
+			}
+			
+
+		}
 		
 		corporations = {
 

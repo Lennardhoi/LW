@@ -799,6 +799,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+		date> 1938.6.1
+		}
 		prerequisite = { focus = GER_rhineland }
 		available_if_capitulated = yes
 
@@ -824,7 +827,9 @@ focus_tree = {
 
 
 			}
-
+            set_technology = {
+				fighter2 = 1
+			}
 			55 = {
 
 				set_building_level = {
@@ -4137,7 +4142,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_Greater_Germany
-		icon = GFX__focus_GER_germania
+		icon = GFX_focus_GER_germania
 		prerequisite = { focus = GER_pressure_sweden focus = GER_alta }
 		available = {
 			has_full_control_of_state = 8
