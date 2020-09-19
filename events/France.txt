@@ -44,34 +44,34 @@ country_event = {
 	title = france.10.t
 	desc = france.10.d
 	picture = GFX_report_event_worried_french
-	
+
 	is_triggered_only = yes
-		
-	fire_only_once = no 
-	
+
+	fire_only_once = no
+
 	option = {
 		name = france.10.a
-		
-		
+
+
 	}
-	
+
 }
 country_event = {
 	id = france.11
 	title = france.11.t
 	desc = france.11.d
 	picture = GFX_report_event_worried_french
-	
+
 	is_triggered_only = yes
-		
-	fire_only_once = no 
-	
+
+	fire_only_once = no
+
 	option = {
 		name = france.11.a
-		
-		
+
+
 	}
-	
+
 }
 
 country_event = {
@@ -84,7 +84,7 @@ country_event = {
 	hidden=yes
 	option = { # Agree
 		FRA ={
-		remove_ideas = Phoney_War
+			remove_ideas = Phoney_War
 		}
 		EFR ={inherit_technology = FRA}
 		EFR ={transfer_state =20}
@@ -154,7 +154,7 @@ country_event = {
 		}
 		if = {
 			limit = {Date < 1939.11.1}
-            ITA = {
+			ITA = {
 				transfer_state = 735
 				transfer_state = 32
 				transfer_state = 21
@@ -162,14 +162,14 @@ country_event = {
 				transfer_state = 458
 				transfer_state = 665
 			}
-		
+
 		}
-        else = {
-      
+		else = {
+
 			ITA = {
 				transfer_state = 735
 			}
-       }
+		}
 		JAP = {
 			EFR = { country_event = { id = france.1 } }
 			transfer_state = 286

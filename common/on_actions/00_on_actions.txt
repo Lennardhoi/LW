@@ -446,14 +446,14 @@ on_actions = {
 				}
 				news_event = { id = country_capitulated.0 days = 0 }
 			}
-            if = {
+			if = {
 				limit = { tag = ITA }
 				GER = { change_tag_from = ROOT }
 				GER = {annex_country = {
-                target = ITA
-                transfer_troops = yes
-                 }}
-				
+						target = ITA
+						transfer_troops = yes
+						}}
+
 			}
 			if = {
 				limit = { tag = FRA }
@@ -578,15 +578,15 @@ on_actions = {
 					}
 				}
 				every_country={
-				if={limit={is_in_faction_with=GER}
-				country_event = {hours = 2 id=france.10}
-				}
-				else={
-				country_event = {hours = 2 id=france.11}
-				}}
+					if={limit={is_in_faction_with=GER}
+						country_event = {hours = 2 id=france.10}
+					}
+					else={
+						country_event = {hours = 2 id=france.11}
+						}}
 				country_event = {days = 9 id=france.13}
 				FRA ={set_country_flag =lel}
-				
+
 			}
 			if = {
 				limit = {

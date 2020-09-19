@@ -113,14 +113,14 @@ focus_tree = {
 		ai_will_do = {
 			factor = 5
 		}
-		available_if_capitulated = yes		
+		available_if_capitulated = yes
 		completion_reward = {
 			217 = {
-			set_building_level = {
-    type = infrastructure
-    level = 10
-    instant_build = yes
-}
+				set_building_level = {
+					type = infrastructure
+					level = 10
+					instant_build = yes
+				}
 				add_extra_state_shared_building_slots = 15
 				add_building_construction = {
 					type = industrial_complex
@@ -129,12 +129,12 @@ focus_tree = {
 				}
 				set_state_flag = SOV_finish_five_year_plan_2IC
 			}
-		   219 = {
-		   set_building_level = {
-    type = infrastructure
-    level = 10
-    instant_build = yes
-}
+			219 = {
+				set_building_level = {
+					type = infrastructure
+					level = 10
+					instant_build = yes
+				}
 				add_extra_state_shared_building_slots = 15
 				add_building_construction = {
 					type = industrial_complex
@@ -143,12 +143,12 @@ focus_tree = {
 				}
 				set_state_flag = SOV_finish_five_year_plan_2IC
 			}
-		   195 = {
-		   set_building_level = {
-    type = infrastructure
-    level = 10
-    instant_build = yes
-}
+			195 = {
+				set_building_level = {
+					type = infrastructure
+					level = 10
+					instant_build = yes
+				}
 				add_extra_state_shared_building_slots = 15
 				add_building_construction = {
 					type = industrial_complex
@@ -157,12 +157,12 @@ focus_tree = {
 				}
 				set_state_flag = SOV_finish_five_year_plan_2IC
 			}
-		
-		
+
+
 		}
-		}	
-	
-focus = {
+	}
+
+	focus = {
 		id = SOV_gulag
 		icon = GFX_SOV_nkvd_deportation_2
 		x = 1
@@ -174,27 +174,27 @@ focus = {
 		ai_will_do = {
 			factor = 5
 		}
-		available_if_capitulated = yes		
+		available_if_capitulated = yes
 		completion_reward = {
-		add_ideas = officers_purged_2
+			add_ideas = officers_purged_2
 		}
-			}	
+	}
 
-focus = {
+	focus = {
 		id = SOV_production_targets
 		icon = GFX_SOV_tractor_factories
 		x = 0
 		y = 1
 		relative_position_id = SOV_gulag
 		prerequisite = { focus = SOV_gulag }
-		
+
 		cost = 5
 		ai_will_do = {
 			factor = 5
 		}
-		available_if_capitulated = yes		
+		available_if_capitulated = yes
 		completion_reward = {
-		add_tech_bonus = {
+			add_tech_bonus = {
 				name = sov_four_year_plan
 				bonus = 0.5
 				uses = 1
@@ -203,8 +203,8 @@ focus = {
 				technology = streamlined_line
 			}
 		}
-			}	
-			
+	}
+
 	focus = {
 		id = SOV_peoples_commissariat
 		icon = GFX_goal_support_communism
@@ -353,7 +353,7 @@ focus = {
 			}
 		}
 	}
-focus = {
+	focus = {
 		id = SOV_move_industry_to_urals
 		icon = GFX_sov_stakhonovite
 		prerequisite = {focus =SOV_defense_of_leningrad focus =SOV_defense_of_stalingrad focus = SOV_defense_of_moscow}
@@ -414,7 +414,7 @@ focus = {
 		}
 
 		completion_reward = {
-            add_ideas = order_227
+			add_ideas = order_227
 		}
 	}
 	focus = {
@@ -445,7 +445,7 @@ focus = {
 		id = SOV_winter_offensive_2
 		icon = GFX_SOV_lessons_of_the_winter_war
 		relative_position_id = SOV_great_figher
-		available = {219 = {is_fully_controlled_by = SOV}} 
+		available = {219 = {is_fully_controlled_by = SOV}}
 		bypass = {not = {219 = {is_fully_controlled_by = SOV}}}
 		x = -2
 		y = 1
@@ -460,49 +460,49 @@ focus = {
 		}
 
 		completion_reward = {
-		custom_effect_tooltip = "This focus will spawn 20 14x4 Divisions in Moscow"
-           division_template = {
-					name = "Red Guards"			# Rifle Division
+			custom_effect_tooltip = "This focus will spawn 20 14x4 Divisions in Moscow"
+			division_template = {
+				name = "Red Guards"			# Rifle Division
 
 
-					regiments = {
-						shocktroop = { x = 0 y = 0 }
-						shocktroop = { x = 0 y = 1 }
-						shocktroop = { x = 0 y = 2 }
-						shocktroop = { x = 0 y = 3 }
-						shocktroop = { x = 1 y = 0 }
-						shocktroop = { x = 1 y = 1 }
-						shocktroop = { x = 1 y = 2 }
-						shocktroop = { x = 1 y = 3 }
-						shocktroop = { x = 2 y = 0 }
-						shocktroop = { x = 2 y = 1 }
-						shocktroop = { x = 2 y = 2 }
-						shocktroop = { x = 2 y = 3 }
-						shocktroop = { x = 3 y = 0 }
-						shocktroop = { x = 3 y = 1 }
-						artillery_brigade = { x = 4 y = 0 }
-						artillery_brigade = { x = 4 y = 1 }
-						artillery_brigade = { x = 4 y = 2 }
-						artillery_brigade = { x = 4 y = 3 }
+				regiments = {
+					shocktroop = { x = 0 y = 0 }
+					shocktroop = { x = 0 y = 1 }
+					shocktroop = { x = 0 y = 2 }
+					shocktroop = { x = 0 y = 3 }
+					shocktroop = { x = 1 y = 0 }
+					shocktroop = { x = 1 y = 1 }
+					shocktroop = { x = 1 y = 2 }
+					shocktroop = { x = 1 y = 3 }
+					shocktroop = { x = 2 y = 0 }
+					shocktroop = { x = 2 y = 1 }
+					shocktroop = { x = 2 y = 2 }
+					shocktroop = { x = 2 y = 3 }
+					shocktroop = { x = 3 y = 0 }
+					shocktroop = { x = 3 y = 1 }
+					artillery_brigade = { x = 4 y = 0 }
+					artillery_brigade = { x = 4 y = 1 }
+					artillery_brigade = { x = 4 y = 2 }
+					artillery_brigade = { x = 4 y = 3 }
 
-					}
-					support = {
-						recon = { x = 0 y = 0 } 		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and they seem rather OP. Could revisit if balance changes
-						engineer = { x = 0 y = 1 } 	# (semi-mot) Engineer bn
-						artillery = { x = 0 y = 2 }
-						logistics_company = { x = 0 y = 3 }
-						signal_company = { x = 0 y = 4 }	# Heavy Arty Regiment had 1x 152mm bn + 2x 122mm bn
-					    anti_tank = {x = 0 y = 5}
-					}
 				}
-				219 = {
-					for_loop_effect = {
-						end = 20
-						create_unit = {
-							division = "name = \"Red Guards\" division_template = \"Red Guards\" start_experience_factor = 2.0"
-							owner = SOV
-						}
-						}}
+				support = {
+					recon = { x = 0 y = 0 } 		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and they seem rather OP. Could revisit if balance changes
+					engineer = { x = 0 y = 1 } 	# (semi-mot) Engineer bn
+					artillery = { x = 0 y = 2 }
+					logistics_company = { x = 0 y = 3 }
+					signal_company = { x = 0 y = 4 }	# Heavy Arty Regiment had 1x 152mm bn + 2x 122mm bn
+					anti_tank = {x = 0 y = 5}
+				}
+			}
+			219 = {
+				for_loop_effect = {
+					end = 20
+					create_unit = {
+						division = "name = \"Red Guards\" division_template = \"Red Guards\" start_experience_factor = 2.0"
+						owner = SOV
+					}
+					}}
 
 		}
 	}
@@ -546,8 +546,8 @@ focus = {
 		}
 
 		available = {
-         
-			
+
+
 		}
 
 		bypass = {
@@ -567,7 +567,7 @@ focus = {
 
 		relative_position_id = SOV_move_industry_to_urals
 		x = 2
-		y = 1 
+		y = 1
 		prerequisite = { focus = SOV_move_industry_to_urals}
 		cost =5
 		ai_will_do = {
@@ -579,28 +579,28 @@ focus = {
 		}
 
 		available = {
-         date > 1942.05.1
+			date > 1942.05.1
 
 		}
 
 		bypass = {
 
 		}
-       completion_reward = {
-            army_experience = 100
+		completion_reward = {
+			army_experience = 100
 			create_equipment_variant = {
-					name = "T-34/85"
-					type = medium_tank_equipment_2
-					upgrades = {
-						tank_gun_upgrade = 10
-						tank_reliability_upgrade = 5
-                        tank_engine_upgrade = 5
-						}}
+				name = "T-34/85"
+				type = medium_tank_equipment_2
+				upgrades = {
+					tank_gun_upgrade = 10
+					tank_reliability_upgrade = 5
+					tank_engine_upgrade = 5
+					}}
 
 
 
 		}
-		
+
 	}
 
 
@@ -637,7 +637,7 @@ focus = {
 
 		}
 	}
-focus = {
+	focus = {
 		id = SOV_hero_of_the_union
 		icon = GFX_georgy_zhukov_hero
 		relative_position_id = SOV_winter_offensive
@@ -678,8 +678,8 @@ focus = {
 
 
 
-	
-	
+
+
 	focus = {
 		id = SOV_defense_of_leningrad
 		icon = GFX_focus_SOV_defense_of_moscow
@@ -698,16 +698,16 @@ focus = {
 		completion_reward = {
 			army_experience = 20
 			351={set_building_level = {
-						type = air_base
-						level = 20
-						
-						instant_build = yes
+					type = air_base
+					level = 20
+
+					instant_build = yes
 					}}
 			248={set_building_level = {
-						type = air_base
-						level = 20
-						
-						instant_build = yes
+					type = air_base
+					level = 20
+
+					instant_build = yes
 					}}
 			195 = {
 				custom_effect_tooltip = SOV_defense_of_moscow_forts
@@ -778,22 +778,22 @@ focus = {
 		completion_reward = {
 			army_experience = 20
 			407={set_building_level = {
-						type = air_base
-						level = 20
-						
-						instant_build = yes
+					type = air_base
+					level = 20
+
+					instant_build = yes
 					}}
 			251={set_building_level = {
-						type = air_base
-						level = 20
-						
-						instant_build = yes
+					type = air_base
+					level = 20
+
+					instant_build = yes
 					}}
 			652={set_building_level = {
-						type = air_base
-						level = 20
-						
-						instant_build = yes
+					type = air_base
+					level = 20
+
+					instant_build = yes
 					}}
 			217 = {
 				custom_effect_tooltip = SOV_defense_of_moscow_forts
@@ -868,10 +868,10 @@ focus = {
 					instant_build = yes
 					}}
 			252={set_building_level = {
-						type = air_base
-						level = 20
-						
-						instant_build = yes
+					type = air_base
+					level = 20
+
+					instant_build = yes
 					}}
 			248={set_building_level = {
 					type = air_base
@@ -953,7 +953,7 @@ focus = {
 		text = extra_tech_slot
 		relative_position_id = SOV_start_five_year_plan
 		prerequisite = { focus = SOV_start_five_year_plan }
-        prerequisite = { focus = SOV_capitals_of_socialism }
+		prerequisite = { focus = SOV_capitals_of_socialism }
 
 		x = 1
 		y = 1
@@ -1166,7 +1166,7 @@ focus = {
 			}
 		}
 	}
-	
+
 
 	focus = {
 		id = SOV_infrastructure_effort
@@ -1999,7 +1999,7 @@ focus = {
 			}
 		}
 	}
-focus = {
+	focus = {
 		id = SOV_barb_1
 		icon = GFX_SOV_soviet_women
 		prerequisite = { focus = SOV_move_industry_to_urals }
@@ -2020,7 +2020,7 @@ focus = {
 			add_ideas = militarism_focus
 		}
 	}
-focus = {
+	focus = {
 		id = SOV_barb_2
 		icon = GFX_SOV_infantry_development
 		prerequisite = { focus = SOV_great_figher }
@@ -2039,12 +2039,12 @@ focus = {
 
 		completion_reward = {
 			swap_ideas = {
-    remove_idea = konstantin_rokossovsky
-    add_idea = konstantin_rokossovsky_2
-}
+				remove_idea = konstantin_rokossovsky
+				add_idea = konstantin_rokossovsky_2
+			}
+		}
 	}
-	}
-focus = {
+	focus = {
 		id = SOV_uranus
 		icon = GFX_SOV_protect_the_east
 		prerequisite = { focus = SOV_great_patriotic_general }
@@ -2052,8 +2052,8 @@ focus = {
 		prerequisite = { focus = SOV_hero_of_the_union}
 		prerequisite = { focus = SOV_modifiers }
 		available = {
-         date > 1942.08.15
-		 date < 1942.11.23
+			date > 1942.08.15
+			date < 1942.11.23
 		}
 		x = 0
 		y = 5
@@ -2067,17 +2067,17 @@ focus = {
 
 		completion_reward = {
 			add_timed_idea= {idea=SOV_uranus days=60}
-			
+
 		}
 	}
-focus = {
+	focus = {
 		id = SOV_bagration
 		icon = GFX_SOV_red_army
 		prerequisite = { focus = SOV_uranus }
-		
+
 		available = {
-        NOT = {has_idea = SOV_uranus}
-		date > 1943.06.01
+			NOT = {has_idea = SOV_uranus}
+			date > 1943.06.01
 		}
 		x = 0
 		y = 1
@@ -2090,8 +2090,8 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-		add_timed_idea= {idea= SOV_bagration days=50}
-		
+			add_timed_idea= {idea= SOV_bagration days=50}
+
 		}
 	}
 

@@ -19,6 +19,9 @@ technologies = {
 
 		research_cost = 1
 		start_year = 1936
+		categories = {
+			year_1936
+		}
 		folder = {
 			name = electronics_folder
 			position = { x = 0 y = 0 }
@@ -130,6 +133,9 @@ technologies = {
 
 		research_cost = 0.75
 		start_year = 1938
+		categories = {
+			year_1938
+		}
 		enable_equipment_modules = {
 			ship_radar_1
 		}
@@ -183,6 +189,9 @@ technologies = {
 
 		research_cost = 0.75
 		start_year = 1939
+		categories = {
+			year_1939
+		}
 
 		folder = {
 			name = electronics_folder
@@ -231,6 +240,9 @@ technologies = {
 
 		research_cost = 1
 		start_year = 1940
+		categories = {
+			year_1940
+		}
 
 		folder = {
 			name = electronics_folder
@@ -277,6 +289,9 @@ technologies = {
 
 		research_cost = 1
 		start_year = 1941
+		categories = {
+			year_1941
+		}
 
 		folder = {
 			name = electronics_folder
@@ -316,6 +331,9 @@ technologies = {
 
 		research_cost = 1
 		start_year = 1942
+		categories = {
+			year_1942
+		}
 
 		folder = {
 			name = electronics_folder
@@ -394,6 +412,9 @@ technologies = {
 		}
 		research_cost = 2.5
 		start_year = 1938
+		categories = {
+			year_1938
+		}
 
 		folder = {
 			name = electronics_folder
@@ -447,6 +468,9 @@ technologies = {
 
 		research_cost = 2.5
 		start_year = 1940
+		categories = {
+			year_1940
+		}
 
 		folder = {
 			name = electronics_folder
@@ -496,6 +520,9 @@ technologies = {
 
 		research_cost = 2.5
 		start_year = 1942
+		categories = {
+			year_1942
+		}
 
 		folder = {
 			name = electronics_folder
@@ -531,6 +558,9 @@ technologies = {
 
 		research_cost = 1
 		start_year = 1938
+		categories = {
+			year_1938
+		}
 		allow_branch = {
 			NOT = { has_dlc = "La Resistance" }
 		}
@@ -576,6 +606,9 @@ technologies = {
 		}
 		research_cost = 1
 		start_year = 1940
+		categories = {
+			year_1940
+		}
 		allow = {
 			OR={has_tech=basic_decryption
 				has_tech=improved_decryption
@@ -623,6 +656,9 @@ technologies = {
 		}
 		research_cost = 1
 		start_year = 1942
+		categories = {
+			year_1942
+		}
 		allow = {
 			OR={has_tech=basic_decryption
 				has_tech=improved_decryption
@@ -670,6 +706,9 @@ technologies = {
 		}
 		research_cost = 1.5
 		start_year = 1938
+		categories = {
+			year_1938
+		}
 
 		folder = {
 			name = electronics_folder
@@ -709,6 +748,9 @@ technologies = {
 		}
 		research_cost = 1.5
 		start_year = 1940
+		categories = {
+			year_1940
+		}
 
 		folder = {
 			name = electronics_folder
@@ -748,6 +790,9 @@ technologies = {
 		}
 		research_cost = 1.5
 		start_year = 1942
+		categories = {
+			year_1942
+		}
 
 		folder = {
 			name = electronics_folder
@@ -981,14 +1026,14 @@ technologies = {
 			rocketry
 		}
 	}
-	
+
 	jet_engines = {
-	
+
 		folder = {
 			name = electronics_folder
 			position = { x = 2 y = 2 }
 		}
-		
+
 		start_year = 1944
 		research_cost = 2
 
@@ -996,17 +1041,17 @@ technologies = {
 			name = air_techs_folder
 			position = { x = 2 y = 11 }
 		}
-		
+
 		desc = "JET_ENGINES_SPECIAL"
 
 		on_research_complete = {
 			custom_effect_tooltip = JET_ENGINES_RESEARCHED
 		}
-		
+
 		ai_will_do = {
 			factor = 1
 		}
-		
+
 		categories = {
 			rocketry
 			jet_technology
@@ -1109,6 +1154,9 @@ technologies = {
 		}
 
 		start_year = 1940
+		categories = {
+			year_1940
+		}
 		research_cost = 5
 
 		folder = {
@@ -1225,3 +1273,4 @@ technologies = {
 		################
 	}
 }
+

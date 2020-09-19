@@ -40,13 +40,13 @@ ideas = {
 				industrial_capacity_factory=-0.1
 			}
 		}
-        
+
 		SOV_red_army = {
 			modifier = {
 				army_morale_factor = 0.1
 			}
 		}
-		
+
 		SOV_winter_offensive = {
 			modifier = {
 				army_armor_attack_factor = 0.1
@@ -54,22 +54,22 @@ ideas = {
 				winter_attrition_factor = -1
 			}
 		}
-		 SOV_uranus = {
+		SOV_uranus = {
 			modifier = {
 				army_armor_attack_factor = 0.1
 				army_infantry_attack_factor = 0.1
 				winter_attrition_factor = -1
 			}
 		}
-       SOV_bagration = {
+		SOV_bagration = {
 			modifier = {
 				army_armor_attack_factor = 0.3
 				army_infantry_attack_factor = 0.1
 				winter_attrition_factor = -1
 			}
 		}
-	  
-       
+
+
 
 		Fast_Training = {
 			modifier = {
@@ -124,8 +124,8 @@ ideas = {
 			picture = generic_manpower_bonus
 
 			modifier = {
-			
-				
+
+
 				army_speed_factor = 0.1
 				supply_consumption_factor = -0.10
 				out_of_supply_factor = -0.40
@@ -380,13 +380,13 @@ ideas = {
 
 			picture = generic_morale_bonus
 
-			
-				equipment_bonus = {
+
+			equipment_bonus = {
 				medium_tank_equipment = {
-					
+
 					build_cost_ic = -0.1  instant = yes
 				}
-			
+
 			}
 		}
 
@@ -464,7 +464,7 @@ ideas = {
 			}
 
 			modifier = {
-                
+
 				army_defence_factor = -0.1
 				max_dig_in = -10
 				air_attack_factor =-0.15
@@ -1240,7 +1240,7 @@ ideas = {
 		konstantin_rokossovsky = {
 			ledger = army
 			#Also unit leader: 402
-            
+
 			allowed = {
 				original_tag = SOV # Unlocked via focus
 				hidden_trigger = {
@@ -1268,10 +1268,10 @@ ideas = {
 				factor = 1
 			}
 		}
-        konstantin_rokossovsky_2 = {
+		konstantin_rokossovsky_2 = {
 			ledger = army
 			#Also unit leader: 402
-            picture = idea_konstantin_rokossovsky
+			picture = idea_konstantin_rokossovsky
 			visible = { has_completed_focus = SOV_barb_2 }
 			allowed = {
 				original_tag = SOV # Unlocked via focus

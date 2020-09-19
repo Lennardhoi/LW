@@ -16,103 +16,103 @@ country_event = {
 
 	option = {
 		name = italy.187.a
-				set_technology = {
-					basic_medium_tank = 1
-					improved_medium_tank = 1
-				}	
-				division_template = {
-					name = "Afrikakorps"			# Rifle Division
+		set_technology = {
+			basic_medium_tank = 1
+			improved_medium_tank = 1
+		}
+		division_template = {
+			name = "Afrikakorps"			# Rifle Division
 
 
-					regiments = {
-						medium_armor = { x = 0 y = 0 }
-						medium_armor = { x = 0 y = 1 }
-						medium_armor = { x = 0 y = 2 }
-						medium_armor = { x = 0 y = 3 }
-						medium_armor = { x = 1 y = 0 }
-						medium_armor = { x = 1 y = 1 }
-						medium_armor = { x = 1 y = 2 }
-						medium_armor = { x = 1 y = 3 }
-						medium_armor = { x = 2 y = 0 }
-						medium_armor = { x = 2 y = 1 }
-						medium_armor = { x = 2 y = 2 }
-						medium_armor = { x = 2 y = 3 }
-						motorized = { x = 3 y = 0 }
-						motorized = { x = 3 y = 1 }
-						motorized = { x = 3 y = 2 }
-						motorized = { x = 3 y = 3 }
-						motorized = { x = 4 y = 0 }
-						motorized = { x = 4 y = 1 }
-						motorized = { x = 4 y = 2 }
-						motorized = { x = 4 y = 3 }
+			regiments = {
+				medium_armor = { x = 0 y = 0 }
+				medium_armor = { x = 0 y = 1 }
+				medium_armor = { x = 0 y = 2 }
+				medium_armor = { x = 0 y = 3 }
+				medium_armor = { x = 1 y = 0 }
+				medium_armor = { x = 1 y = 1 }
+				medium_armor = { x = 1 y = 2 }
+				medium_armor = { x = 1 y = 3 }
+				medium_armor = { x = 2 y = 0 }
+				medium_armor = { x = 2 y = 1 }
+				medium_armor = { x = 2 y = 2 }
+				medium_armor = { x = 2 y = 3 }
+				motorized = { x = 3 y = 0 }
+				motorized = { x = 3 y = 1 }
+				motorized = { x = 3 y = 2 }
+				motorized = { x = 3 y = 3 }
+				motorized = { x = 4 y = 0 }
+				motorized = { x = 4 y = 1 }
+				motorized = { x = 4 y = 2 }
+				motorized = { x = 4 y = 3 }
 
-					}
-					support = {
-						recon = { x = 0 y = 0 } 		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and they seem rather OP. Could revisit if balance changes
-						engineer = { x = 0 y = 1 } 	# (semi-mot) Engineer bn
-						artillery = { x = 0 y = 2 }
-						logistics_company = { x = 0 y = 3 }
-						signal_company = { x = 0 y = 4 }	# Heavy Arty Regiment had 1x 152mm bn + 2x 122mm bn
-					}
+			}
+			support = {
+				recon = { x = 0 y = 0 } 		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and they seem rather OP. Could revisit if balance changes
+				engineer = { x = 0 y = 1 } 	# (semi-mot) Engineer bn
+				artillery = { x = 0 y = 2 }
+				logistics_company = { x = 0 y = 3 }
+				signal_company = { x = 0 y = 4 }	# Heavy Arty Regiment had 1x 152mm bn + 2x 122mm bn
+			}
+		}
+		448 = {
+			for_loop_effect = {
+				end = 2
+				create_unit = {
+					division = "name = \"SS-Panzergrenadier\" division_template = \"Afrikakorps\" start_experience_factor = 2.0"
+					owner = ITA
 				}
-				448 = {
-					for_loop_effect = {
-						end = 2
-						create_unit = {
-							division = "name = \"SS-Panzergrenadier\" division_template = \"Afrikakorps\" start_experience_factor = 2.0"
-							owner = ITA
-						}
-						}}
-			}
-	
- option = {
-		name = italy.187.b
-					
-			GER ={	division_template = {
-					name = "Afrikakorps"			# Rifle Division
-
-
-					regiments = {
-						medium_armor = { x = 0 y = 0 }
-						medium_armor = { x = 0 y = 1 }
-						medium_armor = { x = 0 y = 2 }
-						medium_armor = { x = 0 y = 3 }
-						medium_armor = { x = 1 y = 0 }
-						medium_armor = { x = 1 y = 1 }
-						medium_armor = { x = 1 y = 2 }
-						medium_armor = { x = 1 y = 3 }
-						medium_armor = { x = 2 y = 0 }
-						medium_armor = { x = 2 y = 1 }
-						medium_armor = { x = 2 y = 2 }
-						medium_armor = { x = 2 y = 3 }
-						motorized = { x = 3 y = 0 }
-						motorized = { x = 3 y = 1 }
-						motorized = { x = 3 y = 2 }
-						motorized = { x = 3 y = 3 }
-						motorized = { x = 4 y = 0 }
-						motorized = { x = 4 y = 1 }
-						motorized = { x = 4 y = 2 }
-						motorized = { x = 4 y = 3 }
-
-					}
-					support = {
-						recon = { x = 0 y = 0 } 		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and they seem rather OP. Could revisit if balance changes
-						engineer = { x = 0 y = 1 } 	# (semi-mot) Engineer bn
-						artillery = { x = 0 y = 2 }
-						logistics_company = { x = 0 y = 3 }
-						signal_company = { x = 0 y = 4 }	# Heavy Arty Regiment had 1x 152mm bn + 2x 122mm bn
-					}
 				}}
-				 448 = {
-					for_loop_effect = {
-						end = 2
-						create_unit = {
-							division = "name = \"SS-Panzergrenadier\" division_template = \"Afrikakorps\" start_experience_factor = 2.0"
-							owner = GER
-						}
-						}}
-			}
-	
+	}
+
+	option = {
+		name = italy.187.b
+
+		GER ={	division_template = {
+				name = "Afrikakorps"			# Rifle Division
+
+
+				regiments = {
+					medium_armor = { x = 0 y = 0 }
+					medium_armor = { x = 0 y = 1 }
+					medium_armor = { x = 0 y = 2 }
+					medium_armor = { x = 0 y = 3 }
+					medium_armor = { x = 1 y = 0 }
+					medium_armor = { x = 1 y = 1 }
+					medium_armor = { x = 1 y = 2 }
+					medium_armor = { x = 1 y = 3 }
+					medium_armor = { x = 2 y = 0 }
+					medium_armor = { x = 2 y = 1 }
+					medium_armor = { x = 2 y = 2 }
+					medium_armor = { x = 2 y = 3 }
+					motorized = { x = 3 y = 0 }
+					motorized = { x = 3 y = 1 }
+					motorized = { x = 3 y = 2 }
+					motorized = { x = 3 y = 3 }
+					motorized = { x = 4 y = 0 }
+					motorized = { x = 4 y = 1 }
+					motorized = { x = 4 y = 2 }
+					motorized = { x = 4 y = 3 }
+
+				}
+				support = {
+					recon = { x = 0 y = 0 } 		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and they seem rather OP. Could revisit if balance changes
+					engineer = { x = 0 y = 1 } 	# (semi-mot) Engineer bn
+					artillery = { x = 0 y = 2 }
+					logistics_company = { x = 0 y = 3 }
+					signal_company = { x = 0 y = 4 }	# Heavy Arty Regiment had 1x 152mm bn + 2x 122mm bn
+				}
+				}}
+		448 = {
+			for_loop_effect = {
+				end = 2
+				create_unit = {
+					division = "name = \"SS-Panzergrenadier\" division_template = \"Afrikakorps\" start_experience_factor = 2.0"
+					owner = GER
+				}
+				}}
+	}
+
 }
 
 # Albania Yields

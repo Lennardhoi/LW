@@ -610,7 +610,7 @@ focus_tree = {
 		}
 
 		available = {
-		date> 1938.6.1
+			date> 1938.6.1
 		}
 
 		complete_tooltip = {
@@ -672,15 +672,15 @@ focus_tree = {
 			navy_experience = 10
 			air_experience = 10
 			add_ideas = ENG_chiefs_of_staff_committee_idea
-				create_corps_commander = {
-					name = "Miles Dempsey"
-					picture = "Portrait_Britain_Miles_Dempsey.dds"
-					traits = { brilliant_strategist infantry_leader naval_invader trickster }
-					skill = 7
-					attack_skill = 7
-					defense_skill = 4
-					planning_skill = 4
-					logistics_skill = 2
+			create_corps_commander = {
+				name = "Miles Dempsey"
+				picture = "Portrait_Britain_Miles_Dempsey.dds"
+				traits = { brilliant_strategist infantry_leader naval_invader trickster }
+				skill = 7
+				attack_skill = 7
+				defense_skill = 4
+				planning_skill = 4
+				logistics_skill = 2
 			}
 		}
 	}
@@ -1615,7 +1615,7 @@ focus_tree = {
 	}
 
 
-	
+
 	focus = {
 		id = uk_commonwealth_focus
 		prerequisite = { focus = uk_colonial_focus }
@@ -2432,7 +2432,7 @@ focus_tree = {
 		prerequisite = { focus = uk_new_zealand_focus }
 		prerequisite = { focus = uk_south_africa_focus }
 		prerequisite = { focus = uk_india_focus }
-		
+
 		available = {
 			date > 1938.3.1
 		}
@@ -2738,7 +2738,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = ENG_southern_thrust
 		icon = GFX_focus_ENG_attack_iran

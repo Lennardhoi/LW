@@ -365,7 +365,7 @@ focus_tree = {
 		}
 	}
 
-focus = {
+	focus = {
 		id = HUN_demand_southern_slovakia
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		prerequisite = { focus = HUN_proclaim_greater_hungary }
@@ -384,7 +384,7 @@ focus = {
 		}
 
 		bypass = {
-			
+
 		}
 
 		cancel_if_invalid = yes
@@ -398,9 +398,9 @@ focus = {
 		completion_reward = {
 			add_stability = -0.05
 			add_war_support = -0.05
-			HUN = {  add_state_core = 70 add_state_core = 71 
-			          transfer_state = 70 transfer_state = 71}
-			
+			HUN = {  add_state_core = 70 add_state_core = 71
+				transfer_state = 70 transfer_state = 71}
+
 		}
 	}
 
@@ -985,7 +985,7 @@ focus = {
 		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-		
+
 
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -1004,14 +1004,14 @@ focus = {
 				}
 				set_state_flag = HUN_domestic_arms_industry_AF1
 			}
-			
-			
+
+
 		}
 	}
 
 
 
-	
+
 
 
 	############################
@@ -1346,7 +1346,7 @@ focus = {
 		id = HUN_mobile_focus
 		icon = GFX_goal_generic_cavalry
 		prerequisite = { focus = HUN_army_maneuvers }
-	
+
 		x = -2
 		y = 1
 		relative_position_id = HUN_army_maneuvers
@@ -1414,7 +1414,7 @@ focus = {
 				bonus = 1.0
 				uses = 1
 				category = land_doctrine
-				
+
 			}
 		}
 	}
@@ -1609,7 +1609,7 @@ focus = {
 		id = HUN_home_defense
 		icon = GFX_goal_generic_fortify_city
 		prerequisite = { focus = HUN_army_maneuvers }
-		
+
 		x = 3
 		y = 1
 		relative_position_id = HUN_army_maneuvers
@@ -1639,7 +1639,7 @@ focus = {
 				bonus = 1.0
 				uses = 1
 				category = land_doctrine
-				
+
 			}
 		}
 	}
