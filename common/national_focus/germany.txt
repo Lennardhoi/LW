@@ -1059,7 +1059,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_mech_innovation
-		icon = GFX_goal_generic_army_tanks
+		icon = GFX_focus_GER_modern_infantry
 		prerequisite = { focus = GER_soviet_treaty }
 		x = -1
 		y = 1
@@ -1089,7 +1089,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_tank_innovation
-		icon = GFX_goal_generic_army_tanks
+		icon = GFX_focus_ger_achtung_panzer
 		prerequisite = { focus = GER_soviet_treaty }
 		x = 1
 		y = 1
@@ -1544,7 +1544,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_assault_rifles
-		icon = GFX_focus_GER_four_year_plan
+		icon = GFX_focus_GER_new_weapons
 		x = 0
 		y = 1
 		relative_position_id = GER_raseiniai
@@ -1730,7 +1730,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_fighter_3
-		icon = GFX_focus_rocketry
+		icon = GFX_focus_GER_peenemunde_research_facility
 		prerequisite = { focus = GER_ural_bomber }
 		x = 0
 		y = 1
@@ -1750,7 +1750,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_rocket_interceptor
-		icon = GFX_focus_rocketry
+		icon = GFX_focus_GER_peenemunde_research_jet_engine
 		prerequisite = { focus = GER_fighter_3 }
 		x = 0
 		y = 1
@@ -1931,7 +1931,7 @@ focus_tree = {
 	
 	focus = { #Fritz ist Tot# 
 		id = GER_summon_fritz_todt
-		icon = GFX_GER_summon_fritz_todt
+		icon = GFX_focus_GER_summon_fritz_todt
 		prerequisite = { focus = GER_german_war_economy }
 		x = 0
 		y = 1
@@ -2295,7 +2295,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_volkssturm
-		icon = GFX_GER_volksturm
+		icon = GFX_focus_GER_volkssturm
 		prerequisite = { focus = GER_totaler_krieg }
 		relative_position_id = GER_totaler_krieg
 		x = 0
@@ -2351,7 +2351,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_u_verlagerung 
-		icon = GFX_GER_panzerfausts_for_all
+		icon = GFX_focus_GER_underground_industry
 		prerequisite = { focus = GER_albert_speer }
 		relative_position_id = GER_albert_speer
 		x = -2
@@ -2408,7 +2408,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_nero
-		icon = GFX_GER_panzerfausts_for_all
+		icon = GFX_focus_GER_implement_scorched_earth_tactics
 		prerequisite = { focus = GER_albert_speer }
 		relative_position_id = GER_albert_speer
 		x = 1
@@ -2427,7 +2427,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_alpenfestung
-		icon = GFX_GER_panzerfausts_for_all
+		icon = GFX_focus_GER_festung_principle
 		prerequisite = { focus = GER_albert_speer }
 		relative_position_id = GER_albert_speer
 		x = -1
@@ -3411,7 +3411,7 @@ focus_tree = {
 		id = GER_winter_attack
 		mutually_exclusive = { focus = GER_winter_defense }
 		prerequisite = { focus = GER_moscow focus = GER_leningrad focus = GER_stalingrad}
-		icon = GFX_focus_ger_reichskommisariats
+		icon = GFX_focus_ger_final_crusade
 		available = {
 			
 
@@ -3435,7 +3435,7 @@ focus_tree = {
 
 		mutually_exclusive = { focus = GER_winter_attack }
 		prerequisite = { focus = GER_moscow focus = GER_leningrad focus = GER_stalingrad}
-		icon = GFX_focus_ger_reichskommisariats
+		icon = GFX_focus_GER_winter_of_1941
 		available = {
 			
 
