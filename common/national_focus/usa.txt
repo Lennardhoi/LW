@@ -168,9 +168,6 @@ focus_tree = {
 			factor = 1
 		}
 
-		available = {
-			date > 1938.1.1
-		}
 
 		bypass = {
 			not = {
@@ -201,11 +198,6 @@ focus_tree = {
 		prerequisite = { focus = USA_fair_labour_standards_act }
 		relative_position_id = USA_wpa
 		cost = 10
-
-
-		available = {
-			date > 1938.8.1
-		}
 
 		cancel_if_invalid = no
 		continue_if_invalid = yes
@@ -291,10 +283,10 @@ focus_tree = {
 	focus = {
 		id = USA_office_of_scientific_research_and_development
 		icon = GFX_focus_research
-		x = 2
+		prerequisite = { focus = USA_continue_the_new_deal }
+		relative_position_id = USA_continue_the_new_deal
+		x = 0
 		y = 1
-		prerequisite = { focus = USA_wpa }
-		relative_position_id = USA_wpa
 		cost = 10
 
 		ai_will_do = {
@@ -326,9 +318,9 @@ focus_tree = {
 		available = {
 
 		}
-		x = 2
-		y = 2
-		relative_position_id = USA_wpa
+		x = 0
+		y = 1
+		relative_position_id = USA_office_of_scientific_research_and_development
 		cost = 10
 		#ai_will_do = {
 			#	factor = 1
@@ -1181,12 +1173,14 @@ focus_tree = {
 	focus = {
 		id = USA_intervention_in_europe
 		icon = GFX_goal_generic_territory_or_war
-		x = -2
+		x = -1
 		y = 1
 		prerequisite = { focus = USA_war_plans_division }
 		relative_position_id = USA_war_plans_division
 		cost = 5
-
+		available = {
+			date > 1941.9.1
+		}
 		ai_will_do = {
 			factor = 1
 		}
@@ -1211,7 +1205,7 @@ focus_tree = {
 	focus = {
 		id = USA_war_plan_silver
 		icon = GFX_focus_attack_italy
-		x = -1
+		x = 0
 		y = 1
 		prerequisite = { focus = USA_intervention_in_europe }
 		relative_position_id = USA_intervention_in_europe
@@ -1240,7 +1234,7 @@ focus_tree = {
 	focus = {
 		id = USA_war_plan_black
 		icon = GFX_focus_attack_germany
-		prerequisite = { focus = USA_intervention_in_europe }
+		prerequisite = { focus = USA_war_plan_silver }
 		available = {
 
 			ITA ={ not ={has_full_control_of_state = 448}}
@@ -1249,9 +1243,9 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 
-		x = 1
+		x = 0
 		y = 1
-		relative_position_id = USA_intervention_in_europe
+		relative_position_id = USA_war_plan_silver
 		cost = 5
 		#ai_will_do = {
 			#	factor = 1
@@ -1265,7 +1259,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = USA_intervention_in_asia
+		id = USA_prepare_for_japan
 		icon = GFX_goal_generic_major_war
 		x = 1
 		y = 1
@@ -1305,7 +1299,7 @@ focus_tree = {
 	focus = {
 		id = USA_war_plan_orange
 		icon = GFX_focus_attack_japan
-		prerequisite = { focus = USA_intervention_in_asia }
+		prerequisite = { focus = USA_defense_of_the_pacific }
 		available = {
 
 		}
@@ -1314,7 +1308,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		relative_position_id = USA_intervention_in_asia
+		relative_position_id = USA_defense_of_the_pacific
 		cost = 5
 		#ai_will_do = {
 			#	factor = 1
@@ -1330,36 +1324,15 @@ focus_tree = {
 	}
 
 	focus = {
-		id = USA_war_with_japan
-		icon = GFX_focus_attack_japan
-		prerequisite = { focus = USA_war_plan_orange }
-		available = {
-			date > 1941.3.1
-		}
-		relative_position_id = USA_war_plan_orange
-		x = -1
-		y = 1
-		cost = 3
-		completion_reward = {
-			create_wargoal = {
-				type = take_state_focus
-				target = JAP
-				generator = { 645 }
-				expire = 0
-			}
-		}
-	}
-
-	focus = {
 		id = USA_defense_of_the_pacific
 		icon = GFX_goal_generic_occupy_states_coastal
-		prerequisite = { focus = USA_war_plan_orange }
+		prerequisite = { focus = USA_prepare_for_japan }
 		available = {
 		}
 		will_lead_to_war_with = JAP
-		x = 1
-		y = 2
-		relative_position_id = USA_intervention_in_asia
+		x = 0
+		y = 1
+		relative_position_id = USA_prepare_for_japan
 		cost = 2
 		#ai_will_do = {
 			#	factor = 1
@@ -1481,7 +1454,8 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = USA_war_department
+			army_experience = 50
+			air_experience = 50
 		}
 	}
 	focus = {
@@ -1887,38 +1861,7 @@ focus_tree = {
 			add_ideas = USA_the_pentagon
 		}
 	}
-	focus = {
-		id = USA_department_of_defense
-		icon = GFX_goal_generic_military_sphere
-		x = -1
-		y = 2
-		prerequisite = { focus = USA_build_the_pentagon }
-		relative_position_id = USA_war_department
-		cost = 2
 
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = USA_war_department
-				add_idea = USA_department_of_defense
-			}
-		}
-	}
 
 
 
@@ -1956,27 +1899,6 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = USA_air_support
-		icon = GFX_goal_generic_air_fighter
-		prerequisite = { focus = USA_air_war_plans_division }
-
-
-		x = -1
-		y = 1
-		relative_position_id = USA_air_war_plans_division
-		cost = 10
-		#ai_will_do = {
-			#	factor = 1
-			#}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			air_experience = 25
-			add_ideas = air_support_focus
-		}
-	}
 
 	focus = {
 		id = USA_TAC
@@ -2007,10 +1929,10 @@ focus_tree = {
 		id = USA_CAS
 		text = CAS_effort
 		icon = GFX_goal_generic_CAS
-		prerequisite = { focus = USA_air_support }
+		prerequisite = { focus = USA_air_war_plans_division }
 		x = -1
 		y = 1
-		relative_position_id = USA_air_support
+		relative_position_id = USA_air_war_plans_division
 		cost = 10
 		#ai_will_do = {
 			#	factor = 1
