@@ -607,32 +607,7 @@ focus_tree = {
 			add_to_tech_sharing_group = commonwealth_research
 		}
 	}
-	focus = {
-		id = USA_manhattan_project
-		icon = GFX_focus_wonderweapons
-		prerequisite = { focus = USA_the_giant_wakes }
-		available = {
-		date > 1941.6.1
-		}
-		x = -4
-		y = 1
-		relative_position_id = USA_the_giant_wakes
-		cost = 10
-		#ai_will_do = {
-			#	factor = 1
-			#}
 
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = USA_manhattan_project
-				bonus = 1.0
-				uses = 1
-				category = nuclear
-			}
-		}
-	}
 	focus = {
 		id = USA_the_giant_wakes
 		icon = GFX_goal_generic_construct_civ_factory
@@ -653,6 +628,8 @@ focus_tree = {
 		bypass = {
 			has_idea = USA_homeland_defense
 		}
+		
+		
 
 		completion_reward = {
 			add_offsite_building = { type = arms_factory level = 25 }
@@ -677,6 +654,153 @@ focus_tree = {
 			}
 		}
 	}
+	
+	focus = {
+		id = USA_advanced_research
+		icon = GFX_focus_wonderweapons
+		prerequisite = { focus = USA_the_giant_wakes }
+		available = {
+		date > 1941.6.1
+		}
+		x = -4
+		y = 1
+		relative_position_id = USA_the_giant_wakes
+		cost = 10
+		#ai_will_do = {
+			#	factor = 1
+			#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = USA_advanced_research
+				bonus = 1.0
+				uses = 1
+				category = nuclear
+				}
+			}
+		}
+	focus = {
+		id = USA_new_planes
+		icon = GFX_focus_wonderweapons
+		prerequisite = { focus = USA_advanced_research }
+		x = -1
+		y = 1
+		relative_position_id = USA_advanced_research
+		cost = 10
+		#ai_will_do = {
+			#	factor = 1
+			#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			}
+		}
+	focus = {
+		id = USA_begin_nuclear_research
+		icon = GFX_focus_wonderweapons
+		prerequisite = { focus = USA_advanced_research }
+		x = 1
+		y = 1
+		relative_position_id = USA_advanced_research
+		cost = 10
+		#ai_will_do = {
+			#	factor = 1
+			#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			}
+		}
+	focus = {
+		id = USA_army_research
+		icon = GFX_focus_wonderweapons
+		prerequisite = { focus = USA_new_planes }
+		x = -1
+		y = 2
+		relative_position_id = USA_advanced_research
+		cost = 10
+		#ai_will_do = {
+			#	factor = 1
+			#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			}
+		}
+		focus = {
+		id = USA_rocket_science
+		icon = GFX_focus_wonderweapons
+		prerequisite = { focus = USA_begin_nuclear_research }
+		x = 1
+		y = 2
+		relative_position_id = USA_advanced_research
+		cost = 10
+		#ai_will_do = {
+			#	factor = 1
+			#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			}
+		}
+		focus = {
+		id = USA_fund_experimental_research
+		icon = GFX_focus_wonderweapons
+		prerequisite = { focus = USA_army_research }
+		x = -1
+		y = 3
+		relative_position_id = USA_advanced_research
+		cost = 10
+		#ai_will_do = {
+			#	factor = 1
+			#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			}
+		}
+		focus = {
+		id = USA_nuclear_test
+		icon = GFX_focus_wonderweapons
+		prerequisite = { focus = USA_rocket_science }
+		x = 1
+		y = 3
+		relative_position_id = USA_advanced_research
+		cost = 10
+		#ai_will_do = {
+			#	factor = 1
+			#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			}
+		}
+		focus = {
+		id = USA_the_atomic_bomb
+		icon = GFX_focus_wonderweapons
+		prerequisite = { focus = USA_fund_experimental_research }
+		prerequisite = { focus = USA_nuclear_test }
+		x = 0
+		y = 4
+		relative_position_id = USA_advanced_research
+		cost = 10
+		#ai_will_do = {
+			#	factor = 1
+			#}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			}
+		}
 	focus = {
 		id = USA_office_of_strategic_services
 		icon = GFX_goal_generic_major_war
@@ -1236,6 +1360,26 @@ focus_tree = {
 			unlock_decision_tooltip = { decision = USA_execute_war_plan_black show_effect_tooltip = yes show_modifiers = yes }
 		}
 	}
+	focus = {
+		id = USA_final_crusade
+		icon = GFX_focus_attack_germany
+		prerequisite = { focus = USA_war_plan_black focus = USA_war_plan_orange }
+
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+
+		x = 1
+		y = 1
+		relative_position_id = USA_war_plan_black
+		cost = 5
+		#ai_will_do = {
+			#	factor = 1
+			#}
+		completion_reward = {
+			
+		}
+	}
+
 
 	focus = {
 		id = USA_prepare_for_japan
