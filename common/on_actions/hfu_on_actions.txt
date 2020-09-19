@@ -4,6 +4,20 @@ on_actions = {
 	effect={
 	update_pacific_war=yes
 	}}
+	on_monthly_ITA={
+		effect={
+			if={limit={has_country_flag=ll_enabled}
+			
+				send_equipment = { equipment = fighter_equipment amount = 5000 target = GER }
+				send_equipment = { equipment = CAS_equipment amount = 5000 target = GER }
+				send_equipment = { equipment = nav_bomber_equipment amount = 5000 target = GER }
+				send_equipment = { equipment = tac_bomber_equipment amount = 5000 target = GER }
+				send_equipment = { equipment = heavy_fighter_equipment amount = 5000 target = GER }
+			
+			
+			}
+		}
+	}
 	on_monthly={
 		effect={
 			if={limit={tag=ITA has_country_flag=ll_enabled}
@@ -90,9 +104,8 @@ on_actions = {
 			}
 		}
 	}
-	on_daily={
+	on_daily_SWE={
 		effect={
-			if={limit={tag=SWE}
 
 
 
@@ -239,7 +252,7 @@ on_actions = {
 				multiply_temp_variable={currentfuel = 88}
 				set_variable={fuel_bar_fuel=currentfuel}
 			}
-		}
+		
 
 	}
 	on_state_control_changed = {
