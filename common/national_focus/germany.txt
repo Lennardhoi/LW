@@ -16,7 +16,7 @@ focus_tree = {
 			tag = GER
 		}
 	}
-	
+
 	continuous_focus_position = { x = 50 y = 1680 }
 	default = no
 
@@ -74,7 +74,7 @@ focus_tree = {
 	}
 
 
-	
+
 
 
 
@@ -326,8 +326,8 @@ focus_tree = {
 
 		}
 	}
-	
-	
+
+
 	focus = {
 		id = GER_extra_tech_slot
 		icon = GFX_focus_research
@@ -423,7 +423,7 @@ focus_tree = {
 
 		completion_reward = {
 			#add_ideas = todt
-			
+
 			50 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
@@ -733,7 +733,7 @@ focus_tree = {
 				}
 			}
 		}
-		}
+	}
 	focus = {
 		id = GER_operation_margarethe
 		icon = GFX_focus_GER_Greater_Hungary
@@ -747,13 +747,13 @@ focus_tree = {
 		}
 
 		available = {
-			HUN = {is_ai=yes} 
+			HUN = {is_ai=yes}
 		}
 
 		available_if_capitulated = no
 
-		
-			
+
+
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 
@@ -772,13 +772,13 @@ focus_tree = {
 		}
 
 		available = {
-			HUN = {is_ai=yes} 
+			HUN = {is_ai=yes}
 		}
 
 		available_if_capitulated = no
 
-		
-			
+
+
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 
@@ -800,7 +800,7 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-		date> 1938.6.1
+			date> 1938.6.1
 		}
 		prerequisite = { focus = GER_rhineland }
 		available_if_capitulated = yes
@@ -827,7 +827,7 @@ focus_tree = {
 
 
 			}
-            set_technology = {
+			set_technology = {
 				fighter2 = 1
 			}
 			55 = {
@@ -917,7 +917,7 @@ focus_tree = {
 
 	focus = {
 		id = GER_strategic_bomber_effort
-		
+
 		icon = GFX_focus_ger_arado
 		prerequisite = { focus = GER_tactical_air_effort }
 		x = 0
@@ -1056,7 +1056,7 @@ focus_tree = {
 			}
 		}
 	}
-	
+
 	focus = {
 		id = GER_mech_innovation
 		icon = GFX_focus_GER_modern_infantry
@@ -1134,19 +1134,19 @@ focus_tree = {
 
 		completion_reward = {
 			create_equipment_variant = {
-					name = "8.8 cm Flak 41"
-					type = anti_air_equipment_3
-					}
+				name = "8.8 cm Flak 41"
+				type = anti_air_equipment_3
+			}
 			add_equipment_production = {
-					equipment = {
+				equipment = {
 
-						type = anti_air_equipment_3
-						creator = "GER"
-						version_name = "8.8 cm Flak 41"		}
-					requested_factories = 10
-					progress = 0.1
-					efficiency = 50
-				}
+					type = anti_air_equipment_3
+					creator = "GER"
+					version_name = "8.8 cm Flak 41"		}
+				requested_factories = 10
+				progress = 0.1
+				efficiency = 50
+			}
 
 			66 = {
 				add_building_construction = {
@@ -1349,8 +1349,8 @@ focus_tree = {
 
 		}
 	}
-	
-	
+
+
 	focus = {
 		id = GER_air_innovation_2
 		icon = GFX_goal_generic_air_fighter2
@@ -1358,8 +1358,8 @@ focus_tree = {
 		x = 0
 		y = 2
 		available = {
-		has_completed_focus=GER_tactical_air_effort
-		has_completed_focus=GER_soviet_treaty
+			has_completed_focus=GER_tactical_air_effort
+			has_completed_focus=GER_soviet_treaty
 		}
 		relative_position_id = GER_strategic_air_effort
 		cost = 5
@@ -1418,13 +1418,13 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-		add_ideas=GER_german_engineering
-			
+			add_ideas=GER_german_engineering
+
 		}
 	}
 	##rase
 	focus = {
-	
+
 		id = GER_raseiniai
 		icon = GFX_GER_mobile_fortresses
 		text="Battle of Raseiniai"
@@ -1540,7 +1540,7 @@ focus_tree = {
 
 			}
 
-			}
+		}
 	}
 	focus = {
 		id = GER_assault_rifles
@@ -1556,22 +1556,22 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			create_equipment_variant = {
-					name = "MP 43"
-					type = infantry_equipment_3
-					}
-		add_equipment_production = {
-					equipment = {
+				name = "MP 43"
+				type = infantry_equipment_3
+			}
+			add_equipment_production = {
+				equipment = {
 
-						type = infantry_equipment_3
-						creator = "GER"
-						version_name = "MP 43"		}
-					requested_factories = 10
-					progress = 0.1
-					efficiency = 50
-				}
-				hidden_effect= {set_technology = {
+					type = infantry_equipment_3
+					creator = "GER"
+					version_name = "MP 43"		}
+				requested_factories = 10
+				progress = 0.1
+				efficiency = 50
+			}
+			hidden_effect= {set_technology = {
 					advanced_infantry_weapons = 1
-				}}
+					}}
 		}
 	}
 	focus = {
@@ -1587,11 +1587,11 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			set_technology = {
-					night_vision = 1
-				}
+				night_vision = 1
+			}
 		}
 	}
-	
+
 	focus = {
 		id = GER_army_innovation_2
 		icon = GFX_goal_generic_army_tanks
@@ -1649,13 +1649,13 @@ focus_tree = {
 
 		completion_reward = {
 			create_equipment_variant = {
-					name = "Panzer IV Ausf. G"
-					type = medium_tank_equipment_2
-					upgrades = {
-						tank_gun_upgrade = 7
-						tank_reliability_upgrade = 5
+				name = "Panzer IV Ausf. G"
+				type = medium_tank_equipment_2
+				upgrades = {
+					tank_gun_upgrade = 7
+					tank_reliability_upgrade = 5
 
-						}}
+					}}
 		}
 	}
 	focus = {
@@ -1674,17 +1674,17 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-		custom_effect_tooltip="The VARIANT Panther A will go into mass production "
+			custom_effect_tooltip="The VARIANT Panther A will go into mass production "
 			add_equipment_production = {
-					equipment = {
+				equipment = {
 
-						type = medium_tank_equipment_3
-						creator = "GER"
-						version_name = "Panther A"		}
-					requested_factories = 100
-					progress = 0.1
-					efficiency = 50
-				}
+					type = medium_tank_equipment_3
+					creator = "GER"
+					version_name = "Panther A"		}
+				requested_factories = 100
+				progress = 0.1
+				efficiency = 50
+			}
 		}
 	}
 	focus = {
@@ -1705,8 +1705,8 @@ focus_tree = {
 
 		completion_reward = {
 			set_technology = {
-					advanced_heavy_tank = 1
-				}
+				advanced_heavy_tank = 1
+			}
 
 		}
 	}
@@ -1725,7 +1725,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			
+
 		}
 	}
 	focus = {
@@ -1763,7 +1763,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			
+
 		}
 	}
 	focus = {
@@ -1817,7 +1817,7 @@ focus_tree = {
 			}
 		}
 	}
-		focus = {
+	focus = {
 		id = GER_v2
 		icon = GFX_focus_GER_Vergeltungswaffen
 		prerequisite = { focus =  GER_stuka }
@@ -1867,38 +1867,38 @@ focus_tree = {
 				jet_fighter1= 1
 			}
 		}
-	}	
+	}
 	#focus = {
-	#	id = GER_rocketry_focus
-	#	icon = GFX_focus_rocketry
-	#	prerequisite = { focus = GER_extra_tech_slot }
-	#	prerequisite = { focus = GER_air_innovation_2 }
-	#	x = 2
-	#	y = 1
-	#	relative_position_id = GER_extra_tech_slot
-	#	cost = 5
-	#	ai_will_do = {
-	#		factor = 1
-	#	}
-	#
-	#	available_if_capitulated = yes
-	#	search_filters = { FOCUS_FILTER_RESEARCH }
-	#	completion_reward = {
-	#		add_ideas = GER_rocketry_idea
-	#		add_tech_bonus = {
-	#			name = GER_rocketry_focus
-	#			bonus = 1.0
-	#			uses = 2
-	#			category = rocketry
-	#		}
-	#		add_tech_bonus = {
-	#			name = GER_rocketry_focus
-	#			bonus = 1.0
-	#			uses = 2
-	#			category = jet_technology
-	#		}
-	#	}
-	#}
+		#	id = GER_rocketry_focus
+		#	icon = GFX_focus_rocketry
+		#	prerequisite = { focus = GER_extra_tech_slot }
+		#	prerequisite = { focus = GER_air_innovation_2 }
+		#	x = 2
+		#	y = 1
+		#	relative_position_id = GER_extra_tech_slot
+		#	cost = 5
+		#	ai_will_do = {
+			#		factor = 1
+			#	}
+		#
+		#	available_if_capitulated = yes
+		#	search_filters = { FOCUS_FILTER_RESEARCH }
+		#	completion_reward = {
+			#		add_ideas = GER_rocketry_idea
+			#		add_tech_bonus = {
+				#			name = GER_rocketry_focus
+				#			bonus = 1.0
+				#			uses = 2
+				#			category = rocketry
+				#		}
+			#		add_tech_bonus = {
+				#			name = GER_rocketry_focus
+				#			bonus = 1.0
+				#			uses = 2
+				#			category = jet_technology
+				#		}
+			#	}
+		#}
 
 	# focus = {
 		# id = GER_wunderwaffe
@@ -1910,7 +1910,7 @@ focus_tree = {
 		# cost = 5
 		# ai_will_do = {
 			# factor = 1
-		# }
+			# }
 		# available = { date > 1941.1.1}
 		# available_if_capitulated = yes
 		# search_filters = { FOCUS_FILTER_RESEARCH }
@@ -1925,11 +1925,11 @@ focus_tree = {
 
 
 
+				# }
 			# }
 		# }
-	# }
-	
-	focus = { #Fritz ist Tot# 
+
+	focus = { #Fritz ist Tot#
 		id = GER_summon_fritz_todt
 		icon = GFX_focus_GER_summon_fritz_todt
 		prerequisite = { focus = GER_german_war_economy }
@@ -1944,9 +1944,9 @@ focus_tree = {
 		available = {
 			date>1940.1.1
 		}
-		
+
 		completion_reward = {
-		custom_effect_tooltip = available_political_advisor
+			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = todt
 		}
 	}
@@ -1969,15 +1969,15 @@ focus_tree = {
 
 		completion_reward = {
 
-			
+
 			every_owned_state= {
 				limit={is_coastal=yes is_on_continent = europe  OR={is_core_of=HOL is_core_of=BEL is_core_of=DEN is_core_of=FRA}
 				}
 				#set_state_flag=atlantikwall
 				add_dynamic_modifier = {
 					modifier = Atlantikwall
-					}
-					}
+				}
+			}
 
 
 			add_ideas = GER_atlantikwall_idea
@@ -2257,14 +2257,14 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		
+
 		completion_reward = {
-			
+
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = joseph_goebbels
 			add_political_power = 150
-		} 
-	}	
+		}
+	}
 	focus = {
 		id = GER_totaler_krieg
 		icon = goal_ger_heer
@@ -2287,11 +2287,11 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			add_ideas = GER_totaler_krieg
-			
+
 
 		}
 	}
-	
+
 
 	focus = {
 		id = GER_volkssturm
@@ -2303,14 +2303,14 @@ focus_tree = {
 		cost = 5
 		available = {
 			SOV = {
-				surrender_progress < 0.05 
+				surrender_progress < 0.05
 			}
 		}
 		ai_will_do = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 100000 producer = GER }
 			hidden_effect={
@@ -2343,14 +2343,14 @@ focus_tree = {
 						owner = GER
 					}
 					}}
-		} 
-	}	
+		}
+	}
 
 
-	
+
 
 	focus = {
-		id = GER_u_verlagerung 
+		id = GER_u_verlagerung
 		icon = GFX_focus_GER_underground_industry
 		prerequisite = { focus = GER_albert_speer }
 		relative_position_id = GER_albert_speer
@@ -2358,22 +2358,22 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			
+
 		}
 		ai_will_do = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		
+
 		completion_reward = {
-		
-		} 
-	}	
+
+		}
+	}
 	focus = {
 		id = GER_mineraloelsicherungsplan
 		icon = GFX_focus_generic_rubber
 		prerequisite = { focus = GER_u_verlagerung }
-		relative_position_id = GER_u_verlagerung 
+		relative_position_id = GER_u_verlagerung
 		x = 0
 		y = 2
 		cost = 5
@@ -2403,8 +2403,8 @@ focus_tree = {
 			add_timed_idea={idea=GER_mineraloelsicherungsplan days=180}
 
 		}
-	}	
-	
+	}
+
 
 	focus = {
 		id = GER_nero
@@ -2420,10 +2420,10 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		
+
 		completion_reward = {
-		} 
-	}	
+		}
+	}
 
 	focus = {
 		id = GER_alpenfestung
@@ -2434,13 +2434,13 @@ focus_tree = {
 		y = 2
 		cost = 5
 		available = {
-			
+
 		}
 		ai_will_do = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			50 = {
 				add_building_construction = {
@@ -2468,7 +2468,7 @@ focus_tree = {
 					province = 6568
 					level = 5
 				}
-			}	
+			}
 			55 = {
 				add_building_construction = {
 					type = bunker
@@ -2622,12 +2622,12 @@ focus_tree = {
 					level = 5
 				}
 			}
-			42 = {	
+			42 = {
 				add_building_construction = {
 					type = bunker
 					province = 3558
 					level = 5
-				}		
+				}
 				add_building_construction = {
 					type = bunker
 					province = 563
@@ -2644,11 +2644,11 @@ focus_tree = {
 					level = 5
 				}
 			}
-		} 
-	}	
-	
+		}
+	}
+
 	focus = {
-		id = GER_endsieg 
+		id = GER_endsieg
 		icon = GFX_praisegermania
 		prerequisite = { focus = GER_mineraloelsicherungsplan }
 		prerequisite = { focus = GER_alpenfestung }
@@ -2674,7 +2674,7 @@ focus_tree = {
 			factor = 5
 		}
 		available_if_capitulated = no
-		
+
 		completion_reward = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
@@ -2684,7 +2684,7 @@ focus_tree = {
 			add_ideas = all_adults_serve
 			add_ideas = tot_economic_mobilisation
 		}
-	}	
+	}
 
 	focus = { # Off-Map Factories
 		id = GER_exploit_occupied_territories
@@ -2694,23 +2694,23 @@ focus_tree = {
 		x = 2
 		y = 1
 		cost = 8
-		
+
 		ai_will_do = {
-			factor = 1 
+			factor = 1
 		}
-		
+
 		completion_reward = {
-			
+
 		}
 	}
-	
 
 
 
 
 
 
-	
+
+
 
 
 
@@ -2924,13 +2924,13 @@ focus_tree = {
 				JAP = { add_ideas = war_in_our_neigbour }
 			}
 			army_experience=70
-			
+
 			add_resource = {
 				type=rubber
 				amount=-20
 				state=64
 			}
-			
+
 			add_named_threat = { threat = 5 name = GER_danzig_or_war }
 
 			GER = {
@@ -2940,7 +2940,7 @@ focus_tree = {
 					target = POL
 				}
 
-			
+
 			}
 			POL = {
 				country_event = { id = germany.86 }
@@ -3272,7 +3272,7 @@ focus_tree = {
 				target = SOV
 			}
 			SOV={remove_ideas=Fast_Training }
-			
+
 			GER = {
 				add_timed_idea = { idea = GER_barbarossa days = 100 }
 				add_dynamic_modifier = { modifier = Ostarbeiter scope=GER }
@@ -3344,7 +3344,7 @@ focus_tree = {
 		prerequisite = { focus = GER_ussr_war_goal }
 		icon = GFX_focus_GER_leningrad
 		available = {
-			
+
 
 
 		}
@@ -3367,7 +3367,7 @@ focus_tree = {
 		prerequisite = { focus = GER_ussr_war_goal }
 		icon = GFX_focus_GER_moscow
 		available = {
-			
+
 
 
 		}
@@ -3390,7 +3390,7 @@ focus_tree = {
 		prerequisite = { focus = GER_ussr_war_goal }
 		icon = GFX_focus_GER_Manstein
 		available = {
-			
+
 
 
 		}
@@ -3413,7 +3413,7 @@ focus_tree = {
 		prerequisite = { focus = GER_moscow focus = GER_leningrad focus = GER_stalingrad}
 		icon = GFX_focus_ger_final_crusade
 		available = {
-			
+
 
 
 		}
@@ -3437,7 +3437,7 @@ focus_tree = {
 		prerequisite = { focus = GER_moscow focus = GER_leningrad focus = GER_stalingrad}
 		icon = GFX_focus_GER_winter_of_1941
 		available = {
-			
+
 
 
 		}
@@ -3905,14 +3905,14 @@ focus_tree = {
 
 
 	}
-	
+
 	focus = {
 		id = GER_north
 		mutually_exclusive = { focus = GER_south }
 		prerequisite = { focus = GER_blau}
 		icon = GFX_focus_ger_reichskommisariats
 		available = {
-			
+
 
 
 		}
@@ -3929,14 +3929,14 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
-	
-		focus = {
+
+	focus = {
 		id = GER_south
 		mutually_exclusive = { focus = GER_north }
 		prerequisite = { focus = GER_blau}
 		icon = GFX_focus_ger_reichskommisariats
 		available = {
-			
+
 
 
 		}
@@ -3973,9 +3973,9 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 
-			}
 		}
-	
+	}
+
 
 
 	focus = {
@@ -4139,7 +4139,7 @@ focus_tree = {
 		}
 
 	}
-	
+
 	focus = {
 		id = GER_Greater_Germany
 		icon = GFX_focus_GER_germania
@@ -4165,7 +4165,7 @@ focus_tree = {
 			add_state_core = 85
 			add_state_core = 762
 			add_state_core = 86
-			
+
 			if = {
 				limit = {
 					NOT = { owns_state = 28 }
@@ -4179,9 +4179,9 @@ focus_tree = {
 			set_province_name = { id = 678 name = "Mulhausen" }
 			set_province_name = { id = 6558 name = "Posen" }
 			set_province_name = { id = 6464 name = "Kattowitz" }
-			
-			
-			
+
+
+
 			FRA = {
 				country_event = { id = wtt_germany.63 }
 			}
@@ -4472,7 +4472,7 @@ focus_tree = {
 				}
 				set_state_flag = GER_plan_z_dockyards
 			}
-			
+
 
 			set_technology = {
 				improved_ship_hull_heavy = 1
@@ -4706,7 +4706,7 @@ focus_tree = {
 		prerequisite = { focus=GER_all_options focus=GER_u_boat_effort focus=GER_plan_z }
 		x = 0
 		y = 1
-		
+
 		relative_position_id = GER_all_options
 		cost = 5
 		ai_will_do = {
@@ -4716,35 +4716,35 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			
+
 			30 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
-						type = dockyard
-						level = 2
-						instant_build = yes
-					}
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
 				add_building_construction = {
-						type = naval_base
-						province=11465
-						level = 10
-						instant_build = yes
-					}
+					type = naval_base
+					province=11465
+					level = 10
+					instant_build = yes
+				}
 				add_building_construction = {
-						type = bunker
-						province=11465
-						level = 3
-						instant_build = yes
-					}
+					type = bunker
+					province=11465
+					level = 3
+					instant_build = yes
+				}
 				add_building_construction = {
-						type = coastal_bunker
-						province=11465
-						level = 5
-						instant_build = yes
-					}
+					type = coastal_bunker
+					province=11465
+					level = 5
+					instant_build = yes
+				}
 			}
 		}
-		
+
 	}
 	focus = {
 		id = GER_fjord_fleet_basing
@@ -4764,28 +4764,28 @@ focus_tree = {
 		completion_reward = {
 			144 = {
 				add_building_construction = {
-						type = naval_base
-						province=11050
-						level = 5
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = air_base
-						level = 5
-						instant_build = yes
-					}
+					type = naval_base
+					province=11050
+					level = 5
+					instant_build = yes
+				}
 				add_building_construction = {
-						type = bunker
-						province=11050
-						level = 3
-						instant_build = yes
-					}
+					type = air_base
+					level = 5
+					instant_build = yes
+				}
 				add_building_construction = {
-						type = coastal_bunker
-						province=11050
-						level = 3
-						instant_build = yes
-					}
+					type = bunker
+					province=11050
+					level = 3
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province=11050
+					level = 3
+					instant_build = yes
+				}
 			}
 		}
 	}
@@ -4808,11 +4808,11 @@ focus_tree = {
 			58 = {
 				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
-						type = dockyard
-						level = 6
-						instant_build = yes
-					}
-		}
+					type = dockyard
+					level = 6
+					instant_build = yes
+				}
+			}
 		}
 	}
 	focus = {
@@ -4919,18 +4919,18 @@ focus_tree = {
 			58 = {
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
-						type = dockyard
-						level = 4
-						instant_build = yes
-					}
+					type = dockyard
+					level = 4
+					instant_build = yes
+				}
 				set_building_level = {
-						type = naval_base
-						province=6389
-						level = 20
-						instant_build = yes
-					}
+					type = naval_base
+					province=6389
+					level = 20
+					instant_build = yes
+				}
 			}
-			}
+		}
 	}
 	focus = {
 		id = GER_u_boot_bunker2
@@ -4950,28 +4950,28 @@ focus_tree = {
 			19 = {
 				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
-						type = dockyard
-						level = 4
-						instant_build = yes
-					}
+					type = dockyard
+					level = 4
+					instant_build = yes
+				}
 				set_building_level = {
-						type = naval_base
-						province=9737
-						level = 20
-						instant_build = yes
-					}
+					type = naval_base
+					province=9737
+					level = 20
+					instant_build = yes
+				}
 				set_building_level = {
-						type = bunker
-						province=9737
-						level = 5
-						instant_build = yes
-					}
+					type = bunker
+					province=9737
+					level = 5
+					instant_build = yes
+				}
 				set_building_level = {
-						type = coastal_bunker
-						province=9737
-						level = 5
-						instant_build = yes
-					}
+					type = coastal_bunker
+					province=9737
+					level = 5
+					instant_build = yes
+				}
 			}
 		}
 	}
@@ -5029,13 +5029,13 @@ focus_tree = {
 		}
 
 		available_if_capitulated = yes
-		
+
 		completion_reward = {
 			add_ideas = GER_monsoon_boats
 		}
 	}
 
-	
+
 	focus = {
 		id = GER_ardennenoffensive
 
@@ -5099,8 +5099,8 @@ focus_tree = {
 
 
 
-	
 
 
-	
+
+
 

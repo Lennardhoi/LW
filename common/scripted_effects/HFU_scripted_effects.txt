@@ -17,40 +17,40 @@ share_intel_with_allies={
 	}
 }
 create_arrays_pacific={
-clear_array=GLOBAL.pacific_states
-every_state={
-limit={OR={state=285 state=327 state= 645 state= 648 state=734 state=439 state=284 state=288 state=333 state=334 state=335 state=336 state=422 state=523 state=623 state=624 state=625 state=626 state=627 state=628 state=629 state=630 state=631 state=632 state=633 state=634 state=635 state=636 state=638 state=639 state=640 state=642 state=643 state=646 state=647 state=667 state=668 state=669 state=672 state=673 state=684 state=721 state=725 state=726 state=727 state=737 state=738 state=798}}
-add_to_array={GLOBAL.pacific_states=THIS}
-}
+	clear_array=GLOBAL.pacific_states
+	every_state={
+		limit={OR={state=285 state=327 state= 645 state= 648 state=734 state=439 state=284 state=288 state=333 state=334 state=335 state=336 state=422 state=523 state=623 state=624 state=625 state=626 state=627 state=628 state=629 state=630 state=631 state=632 state=633 state=634 state=635 state=636 state=638 state=639 state=640 state=642 state=643 state=646 state=647 state=667 state=668 state=669 state=672 state=673 state=684 state=721 state=725 state=726 state=727 state=737 state=738 state=798}}
+		add_to_array={GLOBAL.pacific_states=THIS}
+	}
 }
 update_pacific_war = {
-clear_variable=GLOBAL.pacific_status
-for_each_scope_loop={
-array=GLOBAL.pacific_states
-if={
-limit={is_controlled_by_ENG_or_ally=yes }
-if={
-limit={NOT={OR={state=672 state=333 state=335 state=336 state=523 state=422 state= 629 state=669 state=285 state=284 state=439}}}
-add_to_variable={GLOBAL.pacific_status=1}
-else_if={
-limit={NOT={OR={state=439 state=284 state=439}}}
-add_to_variable={GLOBAL.pacific_status=5}
-}
-else={
+	clear_variable=GLOBAL.pacific_status
+	for_each_scope_loop={
+		array=GLOBAL.pacific_states
+		if={
+			limit={is_controlled_by_ENG_or_ally=yes }
+			if={
+				limit={NOT={OR={state=672 state=333 state=335 state=336 state=523 state=422 state= 629 state=669 state=285 state=284 state=439}}}
+				add_to_variable={GLOBAL.pacific_status=1}
+				else_if={
+					limit={NOT={OR={state=439 state=284 state=439}}}
+					add_to_variable={GLOBAL.pacific_status=5}
+				}
+				else={
 
-add_to_variable={GLOBAL.pacific_status=10}}
-}
-}
-}
-set_variable={JAP.pacific_status=GLOBAL.pacific_status}
-subtract_from_variable={JAP.pacific_status=91}
-multiply_variable={JAP.pacific_status=-30}
-divide_variable={JAP.pacific_status=10200}
-set_variable={USA.pacific_status=JAP.pacific_status}
-multiply_variable={USA.pacific_status=-1}
-set_variable={ENG.pacific_status=USA.pacific_status}
-multiply_variable={ENG.pacific_status=0.5}
-if={limit={JAP={has_completed_focus=JAP_korean_guest_workers}} add_to_variable={JAP.pacific_status=0.1}}
+					add_to_variable={GLOBAL.pacific_status=10}}
+			}
+		}
+	}
+	set_variable={JAP.pacific_status=GLOBAL.pacific_status}
+	subtract_from_variable={JAP.pacific_status=91}
+	multiply_variable={JAP.pacific_status=-30}
+	divide_variable={JAP.pacific_status=10200}
+	set_variable={USA.pacific_status=JAP.pacific_status}
+	multiply_variable={USA.pacific_status=-1}
+	set_variable={ENG.pacific_status=USA.pacific_status}
+	multiply_variable={ENG.pacific_status=0.5}
+	if={limit={JAP={has_completed_focus=JAP_korean_guest_workers}} add_to_variable={JAP.pacific_status=0.1}}
 }
 
 anti_cross_faction_trade_axis = {
@@ -163,7 +163,7 @@ anti_cross_faction_trade_all = {
 	}
 }
 declare_war_on_enemy_faction = {
-	if = { 
+	if = {
 		limit = { NOT = { ROOT={has_war_with = THIS.faction_leader } }}
 		set_variable={GER.test1=15}
 		ROOT={declare_war_on = { target = PREV.faction_leader type = annex_everything }}
@@ -182,7 +182,7 @@ ROOT_call_all_allies_against_THIS = {
 	for_each_scope_loop = {
 		array = ROOT.faction_members
 		if = {
-			limit = { NOT = { OR={original_tag = ITA original_tag = ROOT}  }} 
+			limit = { NOT = { OR={original_tag = ITA original_tag = ROOT}  }}
 			add_to_war = {
 				targeted_alliance = ROOT
 				enemy = PREV
@@ -194,7 +194,7 @@ ROOT_call_all_allies_against_THIS = {
 
 THIS_call_all_allies_against_ROOT = {
 	for_each_scope_loop = {
-	    array = THIS.faction_members
+		array = THIS.faction_members
 
 		set_variable={test=THIS}
 		if = {

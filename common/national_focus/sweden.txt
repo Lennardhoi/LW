@@ -37,11 +37,11 @@ focus_tree = {
 			}
 
 			every_country={
-			limit={is_playable_country=yes}
-			add_ideas=research_37
+				limit={is_playable_country=yes}
+				add_ideas=research_37
 			}
 
-			
+
 		}
 	}
 
@@ -58,15 +58,15 @@ focus_tree = {
 		relative_position_id = NDA_anti_meme
 		available_if_capitulated = yes
 		completion_reward = {
-		every_country={
-			limit={is_playable_country=yes}
-			swap_ideas={
-	remove_idea = research_37
-    add_idea = research_38
-	}
+			every_country={
+				limit={is_playable_country=yes}
+				swap_ideas={
+					remove_idea = research_37
+					add_idea = research_38
+				}
 			}
 		}
-		
+
 
 	}
 
@@ -82,13 +82,13 @@ focus_tree = {
 		available_if_capitulated = yes
 
 
-			completion_reward = {
-		every_country={
-			limit={is_playable_country=yes}
-			swap_ideas={
-	remove_idea = research_38
-    add_idea = research_39
-	}
+		completion_reward = {
+			every_country={
+				limit={is_playable_country=yes}
+				swap_ideas={
+					remove_idea = research_38
+					add_idea = research_39
+				}
 			}
 		}
 	}
@@ -103,14 +103,14 @@ focus_tree = {
 		prerequisite = { focus = NDA_resource11 }
 		relative_position_id = NDA_resource11
 		available_if_capitulated = yes
-		
+
 		completion_reward = {
-		every_country={
-			limit={is_playable_country=yes}
-			swap_ideas={
-	remove_idea = research_39
-    add_idea = research_40
-	}
+			every_country={
+				limit={is_playable_country=yes}
+				swap_ideas={
+					remove_idea = research_39
+					add_idea = research_40
+				}
 			}
 		}
 
@@ -129,12 +129,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-		every_country={
-			limit={is_playable_country=yes}
-			swap_ideas={
-	remove_idea = research_40
-    add_idea = research_41
-	}
+			every_country={
+				limit={is_playable_country=yes}
+				swap_ideas={
+					remove_idea = research_40
+					add_idea = research_41
+				}
 			}
 		}
 	}
@@ -150,12 +150,12 @@ focus_tree = {
 		relative_position_id = NDA_resource3
 		available_if_capitulated = yes
 		completion_reward = {
-		every_country={
-			limit={is_playable_country=yes}
-			swap_ideas={
-	remove_idea = research_41
-    add_idea = research_42
-	}
+			every_country={
+				limit={is_playable_country=yes}
+				swap_ideas={
+					remove_idea = research_41
+					add_idea = research_42
+				}
 			}
 		}
 
@@ -173,12 +173,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-		every_country={
-			limit={is_playable_country=yes}
-			swap_ideas={
-	remove_idea = research_42
-    add_idea = research_43
-	}
+			every_country={
+				limit={is_playable_country=yes}
+				swap_ideas={
+					remove_idea = research_42
+					add_idea = research_43
+				}
 			}
 		}
 	}

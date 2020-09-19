@@ -9,57 +9,57 @@ set_variable = {
 }
 create_intelligence_agency = yes
 GER={
-add_relation_modifier = { target = ITA modifier = tradeback_is_cancer }
-add_relation_modifier = { target = SPR modifier = tradeback_is_cancer }
-add_relation_modifier = { target = HUN modifier = tradeback_is_cancer }
-add_relation_modifier = { target = JAP modifier = tradeback_is_cancer }
-add_relation_modifier = { target = ROM modifier = tradeback_is_cancer }
-add_relation_modifier = { target = BUL modifier = tradeback_is_cancer }
-add_timed_idea ={idea=tradeback_is_cancer days=1460}
+	add_relation_modifier = { target = ITA modifier = tradeback_is_cancer }
+	add_relation_modifier = { target = SPR modifier = tradeback_is_cancer }
+	add_relation_modifier = { target = HUN modifier = tradeback_is_cancer }
+	add_relation_modifier = { target = JAP modifier = tradeback_is_cancer }
+	add_relation_modifier = { target = ROM modifier = tradeback_is_cancer }
+	add_relation_modifier = { target = BUL modifier = tradeback_is_cancer }
+	add_timed_idea ={idea=tradeback_is_cancer days=1460}
 }
 ITA={
-add_relation_modifier = { target = GER modifier = tradeback_is_cancer }
-add_relation_modifier = { target = SPR modifier = tradeback_is_cancer }
-add_relation_modifier = { target = HUN modifier = tradeback_is_cancer }
-add_relation_modifier = { target = JAP modifier = tradeback_is_cancer }
-add_relation_modifier = { target = ROM modifier = tradeback_is_cancer }
-add_relation_modifier = { target = BUL modifier = tradeback_is_cancer }
-add_timed_idea ={idea=tradeback_is_cancer days=1460}
+	add_relation_modifier = { target = GER modifier = tradeback_is_cancer }
+	add_relation_modifier = { target = SPR modifier = tradeback_is_cancer }
+	add_relation_modifier = { target = HUN modifier = tradeback_is_cancer }
+	add_relation_modifier = { target = JAP modifier = tradeback_is_cancer }
+	add_relation_modifier = { target = ROM modifier = tradeback_is_cancer }
+	add_relation_modifier = { target = BUL modifier = tradeback_is_cancer }
+	add_timed_idea ={idea=tradeback_is_cancer days=1460}
 }
 SPR={
-add_relation_modifier = { target = GER modifier = tradeback_is_cancer }
-add_relation_modifier = { target = ITA modifier = tradeback_is_cancer }
-add_relation_modifier = { target = HUN modifier = tradeback_is_cancer }
-add_relation_modifier = { target = JAP modifier = tradeback_is_cancer }
-add_relation_modifier = { target = ROM modifier = tradeback_is_cancer }
-add_relation_modifier = { target = BUL modifier = tradeback_is_cancer }
-add_timed_idea ={idea=tradeback_is_cancer days=1461}
+	add_relation_modifier = { target = GER modifier = tradeback_is_cancer }
+	add_relation_modifier = { target = ITA modifier = tradeback_is_cancer }
+	add_relation_modifier = { target = HUN modifier = tradeback_is_cancer }
+	add_relation_modifier = { target = JAP modifier = tradeback_is_cancer }
+	add_relation_modifier = { target = ROM modifier = tradeback_is_cancer }
+	add_relation_modifier = { target = BUL modifier = tradeback_is_cancer }
+	add_timed_idea ={idea=tradeback_is_cancer days=1461}
 }
 HUN={
-add_relation_modifier = { target = GER modifier = tradeback_is_cancer }
-add_relation_modifier = { target = SPR modifier = tradeback_is_cancer }
-add_relation_modifier = { target = ITA modifier = tradeback_is_cancer }
-add_relation_modifier = { target = JAP modifier = tradeback_is_cancer }
-add_relation_modifier = { target = ROM modifier = tradeback_is_cancer }
-add_relation_modifier = { target = BUL modifier = tradeback_is_cancer }
-add_timed_idea ={idea=tradeback_is_cancer days=1461}
+	add_relation_modifier = { target = GER modifier = tradeback_is_cancer }
+	add_relation_modifier = { target = SPR modifier = tradeback_is_cancer }
+	add_relation_modifier = { target = ITA modifier = tradeback_is_cancer }
+	add_relation_modifier = { target = JAP modifier = tradeback_is_cancer }
+	add_relation_modifier = { target = ROM modifier = tradeback_is_cancer }
+	add_relation_modifier = { target = BUL modifier = tradeback_is_cancer }
+	add_timed_idea ={idea=tradeback_is_cancer days=1461}
 }
 
 ROM={add_relation_modifier = { target = GER modifier = tradeback_is_cancer }
-add_relation_modifier = { target = SPR modifier = tradeback_is_cancer }
-add_relation_modifier = { target = HUN modifier = tradeback_is_cancer }
-add_relation_modifier = { target = JAP modifier = tradeback_is_cancer }
-add_relation_modifier = { target = ITA modifier = tradeback_is_cancer }
-add_relation_modifier = { target = BUL modifier = tradeback_is_cancer }
-add_timed_idea ={idea=tradeback_is_cancer days=1459}
+	add_relation_modifier = { target = SPR modifier = tradeback_is_cancer }
+	add_relation_modifier = { target = HUN modifier = tradeback_is_cancer }
+	add_relation_modifier = { target = JAP modifier = tradeback_is_cancer }
+	add_relation_modifier = { target = ITA modifier = tradeback_is_cancer }
+	add_relation_modifier = { target = BUL modifier = tradeback_is_cancer }
+	add_timed_idea ={idea=tradeback_is_cancer days=1459}
 }
 BUL={add_relation_modifier = { target = GER modifier = tradeback_is_cancer }
-add_relation_modifier = { target = SPR modifier = tradeback_is_cancer }
-add_relation_modifier = { target = HUN modifier = tradeback_is_cancer }
-add_relation_modifier = { target = JAP modifier = tradeback_is_cancer }
-add_relation_modifier = { target = ROM modifier = tradeback_is_cancer }
-add_relation_modifier = { target = ITA modifier = tradeback_is_cancer }
-add_timed_idea ={idea=tradeback_is_cancer days=1458}
+	add_relation_modifier = { target = SPR modifier = tradeback_is_cancer }
+	add_relation_modifier = { target = HUN modifier = tradeback_is_cancer }
+	add_relation_modifier = { target = JAP modifier = tradeback_is_cancer }
+	add_relation_modifier = { target = ROM modifier = tradeback_is_cancer }
+	add_relation_modifier = { target = ITA modifier = tradeback_is_cancer }
+	add_timed_idea ={idea=tradeback_is_cancer days=1458}
 }
 add_ideas = peace_training
 add_to_tech_sharing_group = axis_research

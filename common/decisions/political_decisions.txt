@@ -10,25 +10,25 @@
 				# tag = HUN
 				# tag = FIN
 				# tag = EFR
+				# }
 			# }
-		# }
 		# available = {
 			# fascism < 0.9
 			# democratic < 0.9
 			# communism < 0.9
 			# neutrality < 0.9
-		# }
+			# }
 
 		# visible = {
 			# has_idea_with_trait = fascist_demagogue
 			# NOT = { has_country_flag = open_up_political_discourse_fascism }
 			# NOT = { has_government = fascism }
 			# check_has_focus_tree_to_switch_to_fascism = yes
-		# }
+			# }
 
 		# remove_trigger = {
 			# has_government = fascism
-		# }
+			# }
 
 		# fire_only_once = yes
 
@@ -36,12 +36,12 @@
 
 		# complete_effect = {
 			# set_country_flag = open_up_political_discourse_fascism
-		# }
+			# }
 
 		# ai_will_do = {
 			# factor = 1
+			# }
 		# }
-	# }
 
 	# hold_the_fascist_national_referendum = {
 
@@ -53,23 +53,23 @@
 				# tag = HUN
 				# tag = FIN
 				# tag = EFR
-			# }
+				# }
 			# }		available = {
 			# fascism > 0.5
-		# }
+			# }
 
 		# visible = {
 			# NOT = { has_government = fascism }
 			# OR = {
 				# fascism > 0.6
 				# has_country_flag = open_up_political_discourse_fascism
-			# }
+				# }
 			# check_has_focus_tree_to_switch_to_fascism = yes
-		# }
+			# }
 
 		# remove_trigger = {
 			# has_government = fascism
-		# }
+			# }
 
 		# fire_only_once = yes
 
@@ -79,18 +79,18 @@
 			# set_politics = {
 				# ruling_party = fascism
 				# elections_allowed = no
+				# }
 			# }
-		# }
 
 		# ai_will_do = {
 			# factor = 210
 			# modifier = {
 				# fascism > 0.6
 				# factor = 10
+				# }
 			# }
 		# }
 	# }
-# }
 
 #democratic_on_the_rise = {
 
@@ -103,17 +103,17 @@
 			# democratic < 0.9
 			# communism < 0.9
 			# neutrality < 0.9
-		# }
+			# }
 
 		# visible = {
 			# has_idea_with_trait = democratic_reformer
 			# NOT = { has_government = democratic }
 			# check_has_focus_tree_to_switch_to_democratic = yes
-		# }
+			# }
 
 		# remove_trigger = {
 			# has_government = democratic
-		# }
+			# }
 
 		# fire_only_once = yes
 
@@ -121,12 +121,12 @@
 
 		# complete_effect = {
 			# set_country_flag = open_up_political_discourse_democratic
-		# }
+			# }
 
 		# ai_will_do = {
 			# factor = 1
+			# }
 		# }
-	# }
 
 	# hold_the_democratic_national_referendum = {
 		# allowed = { always = no }
@@ -134,7 +134,7 @@
 
 		# available = {
 			# democratic > 0.5
-		# }
+			# }
 
 		# visible = {
 			# NOT = { has_government = democratic }
@@ -142,12 +142,12 @@
 			# OR = {
 				# democratic > 0.6
 				# has_country_flag = open_up_political_discourse_democratic
+				# }
 			# }
-		# }
 
 		# remove_trigger = {
 			# has_government = democratic
-		# }
+			# }
 
 		# fire_only_once = yes
 
@@ -157,18 +157,18 @@
 			# set_politics = {
 				# ruling_party = democratic
 				# elections_allowed = no
+				# }
 			# }
-		# }
 
 		# ai_will_do = {
 			# factor = 210
 			# modifier = {
 				# democratic > 0.6
 				# factor = 10
+				# }
 			# }
 		# }
-	# }
-#}
+	#}
 
 #communism_on_the_rise = {
 
@@ -181,17 +181,17 @@
 			# democratic < 0.9
 			# communism < 0.9
 			# neutrality < 0.9
-		# }
+			# }
 
 		# visible = {
 			# has_idea_with_trait = communist_revolutionary
 			# NOT = { has_government = communism }
 			# check_has_focus_tree_to_switch_to_communism = yes
-		# }
+			# }
 
 		# remove_trigger = {
 			# has_government = communism
-		# }
+			# }
 
 		# fire_only_once = yes
 
@@ -199,12 +199,12 @@
 
 		# complete_effect = {
 			# set_country_flag = open_up_political_discourse_communist
-		# }
+			# }
 
 		# ai_will_do = {
 			# factor = 1
+			# }
 		# }
-	# }
 
 	# hold_the_communist_national_referendum = {
 
@@ -212,20 +212,20 @@
 		# allowed = { always = no }
 		# available = {
 			# communism > 0.5
-		# }
+			# }
 
 		# visible = {
 			# NOT = { has_government = communism }
 			# OR = {
 				# communism > 0.6
 				# has_country_flag = open_up_political_discourse_communist
-			# }
+				# }
 			# check_has_focus_tree_to_switch_to_communism = yes
-		# }
+			# }
 
 		# remove_trigger = {
 			# has_government = communism
-		# }
+			# }
 
 		# fire_only_once = yes
 
@@ -235,18 +235,18 @@
 			# set_politics = {
 				# ruling_party = communism
 				# elections_allowed = no
+				# }
 			# }
-		# }
 
 		# ai_will_do = {
 			# factor = 210
 			# modifier = {
 				# communism > 0.6
 				# factor = 10
+				# }
 			# }
 		# }
-	# }
-#}
+	#}
 
 political_actions = {
 	give_refuge_ger = {
@@ -529,26 +529,26 @@ political_actions = {
 				# tag = USA
 				# tag = CAN
 				# tag = EFR
+				# }
 			# }
-		# }
 		# available = {
 			# fascism < 0.2
-		# }
+			# }
 
 		# visible = {
 			# NOT = { has_government = fascism }
 			# fascism > 0
-		# }
+			# }
 
 		# remove_trigger = {
 			# hidden_trigger = {
 				# has_government = fascism
+				# }
 			# }
-		# }
 
 		# modifier = {
 			# fascism_drift = -0.05
-		# }
+			# }
 
 		# days_remove = -1
 		# cost = 25
@@ -558,32 +558,32 @@ political_actions = {
 				# set_temp_variable = {
 					# var = ban_ideology_var
 					# value = party_popularity@fascism
-				# }
+					# }
 				# multiply_temp_variable = {
 					# var = ban_ideology_var
 					# value = -1
-				# }
+					# }
 				# set_temp_variable = {
 					# var = ban_ideology_var_stab
 					# value = ban_ideology_var
-				# }
+					# }
 				# multiply_temp_variable = {
 					# var = ban_ideology_var_stab
 					# value = 0.2
-				# }
+					# }
 				# add_popularity = {
 					# ideology = fascism
 					# popularity = ban_ideology_var
-				# }
+					# }
 				# multiply_temp_variable = {
 					# var = ban_ideology_var
 					# value = 0.66
+					# }
 				# }
-			# }
 			# custom_effect_tooltip = ban_fascist_party_tt
 			# add_stability = ban_ideology_var_stab
+			# }
 		# }
-	# }
 
 	# ban_democratic_party = {
 
@@ -610,26 +610,26 @@ political_actions = {
 				# tag = USA
 				# tag = CAN
 				# tag = EFR
+				# }
 			# }
-		# }
 		# available = {
 			# democratic < 0.2
-		# }
+			# }
 
 		# visible = {
 			# NOT = { has_government = democratic }
 			# democratic > 0
-		# }
+			# }
 
 		# remove_trigger = {
 			# hidden_trigger = {
 				# has_government = democratic
+				# }
 			# }
-		# }
 
 		# modifier = {
 			# democratic_drift = -0.05
-		# }
+			# }
 
 		# days_remove = -1
 		# cost = 25
@@ -639,32 +639,32 @@ political_actions = {
 				# set_temp_variable = {
 					# var = ban_ideology_var
 					# value = party_popularity@democratic
-				# }
+					# }
 				# multiply_temp_variable = {
 					# var = ban_ideology_var
 					# value = -1
-				# }
+					# }
 				# set_temp_variable = {
 					# var = ban_ideology_var_stab
 					# value = ban_ideology_var
-				# }
+					# }
 				# multiply_temp_variable = {
 					# var = ban_ideology_var_stab
 					# value = 0.2
-				# }
+					# }
 				# add_popularity = {
 					# ideology = democratic
 					# popularity = ban_ideology_var
-				# }
+					# }
 				# multiply_temp_variable = {
 					# var = ban_ideology_var
 					# value = 0.66
+					# }
 				# }
-			# }
 			# custom_effect_tooltip = ban_democratic_party_tt
 			# add_stability = ban_ideology_var_stab
+			# }
 		# }
-	# }
 
 	# ban_communist_party = {
 
@@ -691,26 +691,26 @@ political_actions = {
 				# tag = USA
 				# tag = CAN
 				# tag = EFR
+				# }
 			# }
-		# }
 		# available = {
 			# communism < 0.2
-		# }
+			# }
 
 		# visible = {
 			# NOT = { has_government = communism }
 			# communism > 0
-		# }
+			# }
 
 		# remove_trigger = {
 			# hidden_trigger = {
 				# has_government = communism
+				# }
 			# }
-		# }
 
 		# modifier = {
 			# communism_drift = -0.05
-		# }
+			# }
 
 		# days_remove = -1
 		# cost = 25
@@ -720,36 +720,36 @@ political_actions = {
 				# set_temp_variable = {
 					# var = ban_ideology_var
 					# value = party_popularity@communism
-				# }
+					# }
 				# multiply_temp_variable = {
 					# var = ban_ideology_var
 					# value = -1
-				# }
+					# }
 				# set_temp_variable = {
 					# var = ban_ideology_var_stab
 					# value = ban_ideology_var
-				# }
+					# }
 				# multiply_temp_variable = {
 					# var = ban_ideology_var_stab
 					# value = 0.2
-				# }
+					# }
 				# add_popularity = {
 					# ideology = communism
 					# popularity = ban_ideology_var
-				# }
+					# }
 				# multiply_temp_variable = {
 					# var = ban_ideology_var
 					# value = 0.66
+					# }
 				# }
-			# }
 			# custom_effect_tooltip = ban_communist_party_tt
 			# add_stability = ban_ideology_var_stab
-		# }
+			# }
 
 		# ai_will_do = {
 			# factor = 0
+			# }
 		# }
-	# }
 
 	# institute_press_censorship_fascist_state = {
 
@@ -776,26 +776,26 @@ political_actions = {
 				# tag = USA
 				# tag = CAN
 				# tag = EFR
+				# }
 			# }
-		# }
 		# visible = {
 			# has_government = fascism
-		# }
+			# }
 
 		# modifier = {
 			# communism_drift = -0.01
 			# fascism_drift = 0.03
 			# democratic_drift = -0.01
 			# neutrality_drift = -0.01
-		# }
+			# }
 
 		# days_remove = 360
 		# cost = 50
 
 		# ai_will_do = {
 			# factor = 0
+			# }
 		# }
-	# }
 
 	# institute_press_censorship_democratic_state = {
 
@@ -822,26 +822,26 @@ political_actions = {
 				# tag = USA
 				# tag = CAN
 				# tag = EFR
+				# }
 			# }
-		# }
 		# visible = {
 			# has_government = democratic
-		# }
+			# }
 
 		# modifier = {
 			# communism_drift = -0.01
 			# fascism_drift = -0.01
 			# democratic_drift = 0.03
 			# neutrality_drift = -0.01
-		# }
+			# }
 
 		# days_remove = 360
 		# cost = 50
 
 		# ai_will_do = {
 			# factor = 0
+			# }
 		# }
-	# }
 
 	# institute_press_censorship_communist_state = {
 
@@ -868,26 +868,26 @@ political_actions = {
 				# tag = USA
 				# tag = CAN
 				# tag = EFR
+				# }
 			# }
-		# }
 		# visible = {
 			# has_government = communism
-		# }
+			# }
 
 		# modifier = {
 			# communism_drift = 0.03
 			# fascism_drift = -0.01
 			# democratic_drift = -0.01
 			# neutrality_drift = -0.01
-		# }
+			# }
 
 		# days_remove = 360
 		# cost = 50
 
 		# ai_will_do = {
 			# factor = 0
+			# }
 		# }
-	# }
 
 	# institute_press_censorship_neutrality_state = {
 
@@ -914,24 +914,24 @@ political_actions = {
 				# tag = USA
 				# tag = CAN
 				# tag = EFR
+				# }
 			# }
-		# }
 		# visible = {
 			# has_government = neutrality
-		# }
+			# }
 
 		# modifier = {
 			# communism_drift = -0.01
 			# fascism_drift = -0.01
 			# democratic_drift = -0.01
 			# neutrality_drift = 0.03
-		# }
+			# }
 
 		# days_remove = 360
 		# cost = 50
 
 		# ai_will_do = {
 			# factor = 0
+			# }
 		# }
-	# }
 }

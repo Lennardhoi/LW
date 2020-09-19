@@ -65,20 +65,20 @@ scripted_gui = {
 				set_variable = { ROOT.taker = this}
 				var:taker = {owner={set_variable={Root.target_country = this}
 						if={limit={check_variable={Root.selected_cheat=1}} add_tech_bonus={name=armor_bonus bonus=1 uses=1 category=armor}}
-						if={limit={check_variable={Root.selected_cheat=2}} 
-						#add_tech_bonus={name=armor_bonus bonus=200 uses=1 category=armor}
-						if={
-						limit={ROOT={has_idea=speed3}
-						}
-						every_country={
-							remove_ideas=speed3
-						}
-						}
-						else={
-						every_country={
-							add_ideas=speed3
-						}
-						}
+						if={limit={check_variable={Root.selected_cheat=2}}
+							#add_tech_bonus={name=armor_bonus bonus=200 uses=1 category=armor}
+							if={
+								limit={ROOT={has_idea=speed3}
+								}
+								every_country={
+									remove_ideas=speed3
+								}
+							}
+							else={
+								every_country={
+									add_ideas=speed3
+								}
+							}
 						}
 						if={limit={check_variable={Root.selected_cheat=3}} add_tech_bonus={name=armor_bonus ahead_reduction = 2 uses=1 category=armor}}
 						if={limit={check_variable={Root.selected_cheat=4}} add_tech_bonus={name=air_equipment bonus=1 uses=1 category = air_equipment}}

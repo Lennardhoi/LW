@@ -3,14 +3,14 @@ defined_text = { # global
 	text = {
 		trigger = {
 			check_variable= {POW_recruit_soldiers_cost >0}
-			
+
 		}
 		localization_key =  POW_recruit_soldiers_tt1_1
 	}
 	text = {
 		trigger = {
 			check_variable= {POW_recruit_soldiers_cost = 0}
-			
+
 		}
 		localization_key = POW_recruit_soldiers_tt1_2
 	}
@@ -20,14 +20,14 @@ defined_text = { # global
 	text = {
 		trigger = {
 			check_variable= {POW_recruit_soldiers_cost >0}
-			
+
 		}
 		localization_key =  POW_recruit_soldiers_tt2_1
 	}
 	text = {
 		trigger = {
 			check_variable= {POW_recruit_soldiers_cost = 0}
-			
+
 		}
 		localization_key = POW_recruit_soldiers_tt2_2
 	}
@@ -37,14 +37,14 @@ defined_text = { # global
 	text = {
 		trigger = {
 			check_variable= {POW_recruit_workers_cost >0}
-			
+
 		}
 		localization_key =  POW_recruit_workers_tt1_1
 	}
 	text = {
 		trigger = {
 			check_variable= {POW_recruit_workers_cost = 0}
-			
+
 		}
 		localization_key = POW_recruit_workers_tt1_2
 	}
@@ -54,14 +54,14 @@ defined_text = { # global
 	text = {
 		trigger = {
 			check_variable= {POW_recruit_workers_cost >0}
-			
+
 		}
 		localization_key =  POW_recruit_workers_tt2_1
 	}
 	text = {
 		trigger = {
 			check_variable= {POW_recruit_workers_cost = 0}
-			
+
 		}
 		localization_key = POW_recruit_workers_tt2_2
 	}
@@ -71,14 +71,14 @@ defined_text = { # global
 	text = {
 		trigger = {
 			check_variable= {POW_free_prisoners_cost >0}
-			
+
 		}
 		localization_key =  POW_free_prisoners_tt1_1
 	}
 	text = {
 		trigger = {
 			check_variable= {POW_free_prisoners_cost = 0}
-			
+
 		}
 		localization_key = POW_free_prisoners_tt1_2
 	}
@@ -88,14 +88,14 @@ defined_text = { # global
 	text = {
 		trigger = {
 			check_variable= {POW_free_prisoners_cost >0}
-			
+
 		}
 		localization_key =  POW_free_prisoners_tt2_1
 	}
 	text = {
 		trigger = {
 			check_variable= {POW_free_prisoners_cost = 0}
-			
+
 		}
 		localization_key = POW_free_prisoners_tt2_2
 	}
@@ -105,75 +105,75 @@ defined_text = { # global
 	text = {
 		trigger = {
 			state=1
-			
+
 		}
 		localization_key = "[?ROOT.pow_enemy_countries_casualties^0|0W]K"
 	}
 	text = {
 		trigger = {
 			state=2
-			
+
 		}
 		localization_key = "[?ROOT.pow_enemy_countries_casualties^1|0W]K"
 	}
 	text = {
 		trigger = {
 			state=3
-			
+
 		}
 		localization_key = "[?ROOT.pow_enemy_countries_casualties^2|0W]K"
 	}
 	text = {
 		trigger = {
 			state=4
-			
+
 		}
 		localization_key = "[?ROOT.pow_enemy_countries_casualties^3|0W]K"
 	}
 	text = {
 		trigger = {
 			state=5
-			
+
 		}
 		localization_key = "[?ROOT.pow_enemy_countries_casualties^4|0W]K"
 	}
 	text = {
 		trigger = {
 			state=6
-			
+
 		}
 		localization_key = "[?ROOT.pow_enemy_countries_casualties^5|0W]K"
 	}
-	
+
 	text = {
 		trigger = {
 			state=7
-			
+
 		}
 		localization_key = "[?ROOT.pow_enemy_countries_casualties^6|0W]K"
 	}
 	text = {
 		trigger = {
 			state=8
-			
+
 		}
 		localization_key = "[?ROOT.pow_enemy_countries_casualties^7|0W]K"
 	}
 	text = {
 		trigger = {
 			state=9
-			
+
 		}
 		localization_key = "[?ROOT.pow_enemy_countries_casualties^8|0W]K"
 	}
 	text = {
 		trigger = {
 			state=10
-			
+
 		}
 		localization_key = "[?ROOT.pow_enemy_countries_casualties^9|0W]K"
 	}
-}	
+}
 
 
 }

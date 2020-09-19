@@ -1,90 +1,90 @@
 #Category only allowed for GER
 operations = {
 
-	GER_fall_weiss = { 
+	GER_fall_weiss = {
 		icon = ger_reichskommissariats
-		#fire_only_once = yes		
-		allowed = { tag = GER }	
-		available = { always=yes	}		
+		#fire_only_once = yes
+		allowed = { tag = GER }
+		available = { always=yes	}
 		cost = 0
-		complete_effect = {		
-		ENG={USA={add_to_war = {
-				targeted_alliance = POL
-				enemy = ROOT
-			}}}
-		
-		hidden_effect = { 		
-		ENG = { add_to_faction = POL }  }
-                    declare_war_on = {
-                        target = POL
-                        type = annex_everything
-                    }
-		
-				hidden_effect = { 
+		complete_effect = {
+			ENG={USA={add_to_war = {
+						targeted_alliance = POL
+						enemy = ROOT
+						}}}
+
+			hidden_effect = {
+				ENG = { add_to_faction = POL }  }
+			declare_war_on = {
+				target = POL
+				type = annex_everything
+			}
+
+			hidden_effect = {
 				POL={declare_war_on_enemy_faction =yes}
-				#country_event = { id = germany.110 days = 3 }   
-				 }
+				#country_event = { id = germany.110 days = 3 }
+			}
 
 
 		}
 	}
-	GER_fall_barb= { 
+	GER_fall_barb= {
 		icon = ger_reichskommissariats
-		#fire_only_once = yes		
-		allowed = { tag = GER }	
-		available = { always=yes	}		
+		#fire_only_once = yes
+		allowed = { tag = GER }
+		available = { always=yes	}
 		cost = 0
-		complete_effect = {		
-		
-		
-		hidden_effect = {
-                    declare_war_on = {
-                        target = SOV
-                        type = annex_everything
-                    }
-		
-				hidden_effect = { 
-				SOV={declare_war_on_enemy_faction =yes}
-				#country_event = { id = germany.110 days = 3 }   
-				 }
+		complete_effect = {
 
-		}
-	}}
-			GER_fall_rot = {
+
+			hidden_effect = {
+				declare_war_on = {
+					target = SOV
+					type = annex_everything
+				}
+
+				hidden_effect = {
+					SOV={declare_war_on_enemy_faction =yes}
+					#country_event = { id = germany.110 days = 3 }
+				}
+
+			}
+			}}
+	GER_fall_rot = {
 		icon = ger_reichskommissariats
-		fire_only_once = yes		
-		allowed = {  tag = GER }	
-		available = {  has_war_with = ENG }		
+		fire_only_once = yes
+		allowed = {  tag = GER }
+		available = {  has_war_with = ENG }
 		visible = { NOT = { has_war_with = FRA }}
 		cost = 0
-		complete_effect = {		
-                    declare_war_on = {
-                        target = FRA
-                        type = annex_everything
-                    }	
-		hidden_effect = { 		
-		FRA = { add_to_war = { targeted_alliance = ENG enemy = SPR } }
-			FRA = { add_to_war = { targeted_alliance = ENG enemy = ROM } }
-			FRA = { add_to_war = { targeted_alliance = ENG enemy = HUN } }	
+		complete_effect = {
+			declare_war_on = {
+				target = FRA
+				type = annex_everything
 			}
-					
-		
-				}
-			}	
+			hidden_effect = {
+				FRA = { add_to_war = { targeted_alliance = ENG enemy = SPR } }
+				FRA = { add_to_war = { targeted_alliance = ENG enemy = ROM } }
+				FRA = { add_to_war = { targeted_alliance = ENG enemy = HUN } }
+			}
 
-    GER_iran = {
-	icon = generic_operation
-	fire_only_once = yes
-	allowed = { original_tag = GER }
+
+		}
+	}
+
+	GER_iran = {
+		icon = generic_operation
+		fire_only_once = yes
+		allowed = { original_tag = GER }
 		visible = {
 			ENG = {NOT ={controls_state = 291}}
 		}
-        is_good = yes
+		is_good = yes
 		available = {
 			Date > 1940.3.1
 		}
-        days_remove = 30
- 
+		days_remove = 30
+
 		complete_effect = {
 			hidden_effect = {
 				every_enemy_country = {
@@ -94,8 +94,8 @@ operations = {
 					}
 				}
 			}
-		}	
-	    remove_effect = {
+		}
+		remove_effect = {
 			SOV = { country_event = { id = iran.2}}
 			hidden_effect={every_country= { limit={NOT={tag=SOV}} country_event = { id = iran.3 } }}
 		}
@@ -193,7 +193,7 @@ operations = {
 		}
 
 		available = {
-			
+
 			has_completed_focus=GER_pressure_sweden
 			NOR_axis=yes
 			NOT={has_global_flag=GER_resource_rights_swe}
@@ -225,13 +225,13 @@ operations = {
 
 
 		available = {
-			
+
 			AND={EFR = { has_war_with = ENG }
-			
-			date > 1942.3.1}
-			
-			
-			
+
+				date > 1942.3.1}
+
+
+
 
 		}
 
