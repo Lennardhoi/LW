@@ -19,7 +19,7 @@ focus_tree = {
 
 		x = 10
 		y = 0
-		cost = 28.5
+		cost =52.2
 
 		available_if_capitulated = yes
 
@@ -36,12 +36,12 @@ focus_tree = {
 				}
 			}
 
-			VEN = { set_rule = { can_join_factions = no }}
-
-			if = {
-				limit = { NOR = { is_ai = no }}
-				NOR = { set_rule = { can_join_factions = no }}
+			every_country={
+			limit={is_playable_country=yes}
+			add_ideas=research_37
 			}
+
+			
 		}
 	}
 
@@ -53,12 +53,20 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 24
+		cost = 52.2
 		prerequisite = { focus = NDA_anti_meme }
 		relative_position_id = NDA_anti_meme
 		available_if_capitulated = yes
 		completion_reward = {
+		every_country={
+			limit={is_playable_country=yes}
+			swap_ideas={
+	remove_idea = research_37
+    add_idea = research_38
+	}
+			}
 		}
+		
 
 	}
 
@@ -68,16 +76,19 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 1
+		cost = 52.2
 		prerequisite = { focus = NDA_resource4 }
 		relative_position_id = NDA_resource4
 		available_if_capitulated = yes
 
-		completion_reward = {
 
-			if = {
-				limit = { CHI = { is_ai = yes }}
-				CHI = { add_ideas = CHI_cheap_guns }
+			completion_reward = {
+		every_country={
+			limit={is_playable_country=yes}
+			swap_ideas={
+	remove_idea = research_38
+    add_idea = research_39
+	}
 			}
 		}
 	}
@@ -88,11 +99,20 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 10
+		cost = 52.2
 		prerequisite = { focus = NDA_resource11 }
 		relative_position_id = NDA_resource11
 		available_if_capitulated = yes
-
+		
+		completion_reward = {
+		every_country={
+			limit={is_playable_country=yes}
+			swap_ideas={
+	remove_idea = research_39
+    add_idea = research_40
+	}
+			}
+		}
 
 	}
 
@@ -103,12 +123,19 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 40
+		cost = 52.2
 		prerequisite = { focus = NDA_resource5 }
 		relative_position_id = NDA_resource5
 		available_if_capitulated = yes
 
 		completion_reward = {
+		every_country={
+			limit={is_playable_country=yes}
+			swap_ideas={
+	remove_idea = research_40
+    add_idea = research_41
+	}
+			}
 		}
 	}
 
@@ -118,11 +145,19 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 37
+		cost = 52.2
 		prerequisite = { focus = NDA_resource3 }
 		relative_position_id = NDA_resource3
 		available_if_capitulated = yes
-
+		completion_reward = {
+		every_country={
+			limit={is_playable_country=yes}
+			swap_ideas={
+	remove_idea = research_41
+    add_idea = research_42
+	}
+			}
+		}
 
 	}
 
@@ -132,30 +167,19 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 2
+		cost = 52.2
 		prerequisite = { focus = NDA_resource1337 }
 		relative_position_id = NDA_resource1337
 		available_if_capitulated = yes
 
 		completion_reward = {
-
-			if = {
-				limit = {
-					SOV = {
-						focus_progress = {
-							focus = SOV_great_purge
-							progress > 0.001
-						}
-
-
-					}
-
-				}
-
-
+		every_country={
+			limit={is_playable_country=yes}
+			swap_ideas={
+	remove_idea = research_42
+    add_idea = research_43
+	}
 			}
-
-
 		}
 	}
 
@@ -167,7 +191,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 40
+		cost = 52.2
 		prerequisite = { focus = NDA_resource1338 }
 		relative_position_id = NDA_resource1338
 		available_if_capitulated = yes
@@ -206,7 +230,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		cost = 25.4
+		cost = 52.2
 		prerequisite = { focus = NDA_resource20 }
 		relative_position_id = NDA_resource20
 		available_if_capitulated = yes
@@ -223,7 +247,7 @@ focus_tree = {
 		prerequisite = { focus = NDA_resource }
 		x = 0
 		y = 1
-		cost = 20
+		cost = 52.2
 		relative_position_id = NDA_resource
 		available_if_capitulated = yes
 
