@@ -591,7 +591,7 @@ focus_tree = {
 		id = USA_scientist_haven
 		icon = GFX_focus_research
 		prerequisite = { focus = USA_arsenal_of_democracy }
-		x = -2
+		x = -1
 		y = 1
 		relative_position_id = USA_arsenal_of_democracy
 		cost = 10
@@ -608,38 +608,16 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = USA_black_chamber
-		icon = GFX_goal_generic_military_deal
-		prerequisite = { focus = USA_scientist_haven}
-		available = { }
-		x = -2
-		y = 1
-		relative_position_id = USA_scientist_haven
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		completion_reward = {
-			add_ideas = USA_black_chamber
-			add_tech_bonus = {
-				name = USA_black_chamber
-				bonus = 1.0
-				uses = 2
-				category = encryption_tech
-				category = decryption_tech
-			}
-		}
-	}
-	focus = {
 		id = USA_manhattan_project
 		icon = GFX_focus_wonderweapons
-		prerequisite = { focus = USA_scientist_haven }
-
-		x = 0
+		prerequisite = { focus = USA_the_giant_wakes }
+		available = {
+		date > 1941.6.1
+		}
+		x = -4
 		y = 1
-		relative_position_id = USA_scientist_haven
-		cost = 5
+		relative_position_id = USA_the_giant_wakes
+		cost = 10
 		#ai_will_do = {
 			#	factor = 1
 			#}
@@ -658,14 +636,13 @@ focus_tree = {
 	focus = {
 		id = USA_the_giant_wakes
 		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = USA_arsenal_of_democracy }
 		available = {OR={
 				date > 1940.1.1 has_war=yes}
 		}
 		continue_if_invalid = yes
-		x = 0
-		y = 2
-		relative_position_id = USA_arsenal_of_democracy
+		x = 15
+		y = 6
+
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -800,7 +777,7 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 
-		x = 2
+		x = 1
 		y = 1
 		relative_position_id = USA_arsenal_of_democracy
 		cost = 10
@@ -1137,8 +1114,10 @@ focus_tree = {
 	focus = {
 		id = USA_war_plans_division
 		icon = GFX_goal_generic_position_armies
-		x = 15
-		y = 0
+		prerequisite = { focus = USA_the_giant_wakes }
+		relative_position_id = USA_the_giant_wakes
+		x = 4
+		y = 1
 		offset = {
 			x = -26
 			y = 0
@@ -1198,7 +1177,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_ideas = USA_intervention_in_europe
+			remove_ideas = Pacific_focus
 		}
 	}
 
@@ -1307,8 +1286,8 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		x = 0
-		y = 1
-		relative_position_id = USA_defense_of_the_pacific
+		y = 2
+		relative_position_id = USA_prepare_for_japan
 		cost = 5
 		#ai_will_do = {
 			#	factor = 1
@@ -1426,7 +1405,7 @@ focus_tree = {
 	focus = {
 		id = USA_war_department
 		icon = GFX_goal_generic_army_doctrines
-		x = 28
+		x = 20
 		y = 0
 		offset = {
 			x = -26
