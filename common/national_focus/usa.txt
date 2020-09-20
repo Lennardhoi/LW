@@ -1363,12 +1363,12 @@ focus_tree = {
 	focus = {
 		id = USA_final_crusade
 		icon = GFX_focus_attack_germany
-		prerequisite = { focus = USA_war_plan_black focus = USA_war_plan_orange }
+		prerequisite = { focus = USA_war_plan_black }
 
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = USA_war_plan_black
 		cost = 5
@@ -1384,7 +1384,7 @@ focus_tree = {
 	focus = {
 		id = USA_prepare_for_japan
 		icon = GFX_goal_generic_major_war
-		x = 1
+		x = 4
 		y = 1
 		prerequisite = { focus = USA_war_plans_division }
 		relative_position_id = USA_war_plans_division
@@ -1411,18 +1411,18 @@ focus_tree = {
 				name = "Alexander Vandegrift"
 				gfx = GFX_portrait_usa_alexander_vandegrift
 				skill = 3
-				attack_skill = 3
-				defense_skill = 1
-				planning_skill = 3
-				logistics_skill = 3
-				traits = { naval_invader }
+				attack_skill = 5
+				defense_skill = 4
+				planning_skill = 5
+				logistics_skill = 6
+				traits = { naval_invader infantry_leader}
 			}
 		}
 	}
 	focus = {
 		id = USA_war_plan_orange
 		icon = GFX_focus_attack_japan
-		prerequisite = { focus = USA_defense_of_the_pacific }
+		prerequisite = { focus = USA_a_date_which_will_live_in_infamy }
 		available = {
 
 		}
@@ -1430,7 +1430,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		x = 0
-		y = 2
+		y = 4
 		relative_position_id = USA_prepare_for_japan
 		cost = 5
 		#ai_will_do = {
@@ -1447,12 +1447,11 @@ focus_tree = {
 	}
 
 	focus = {
-		id = USA_defense_of_the_pacific
+		id = USA_a_date_which_will_live_in_infamy
 		icon = GFX_goal_generic_occupy_states_coastal
 		prerequisite = { focus = USA_prepare_for_japan }
 		available = {
 		}
-		will_lead_to_war_with = JAP
 		x = 0
 		y = 1
 		relative_position_id = USA_prepare_for_japan
@@ -1536,6 +1535,186 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+		}
+	}
+	
+	focus = {
+		id = USA_reinforce_oceania
+		icon = GFX_goal_generic_major_war
+		x = 3
+		y = 1
+		prerequisite = { focus = USA_a_date_which_will_live_in_infamy }
+		relative_position_id = USA_a_date_which_will_live_in_infamy
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		has_war_with = JAP
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_Lend_Lease_to_Raj
+		icon = GFX_goal_generic_major_war
+		x = -3
+		y = 1
+		prerequisite = { focus = USA_a_date_which_will_live_in_infamy }
+		relative_position_id = USA_a_date_which_will_live_in_infamy
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		has_war_with = JAP
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_retake_the_philippines
+		icon = GFX_goal_generic_major_war
+		x = 2
+		y = 2
+		prerequisite = { focus = USA_a_date_which_will_live_in_infamy }
+		relative_position_id = USA_a_date_which_will_live_in_infamy
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		has_war_with = JAP
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_retake_the_east_indies
+		icon = GFX_goal_generic_major_war
+		x = -2
+		y = 2
+		prerequisite = { focus = USA_a_date_which_will_live_in_infamy }
+		relative_position_id = USA_a_date_which_will_live_in_infamy
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		has_war_with = JAP
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_?
+		icon = GFX_goal_generic_major_war
+		x = 1
+		y = 1
+		prerequisite = { focus = USA_a_date_which_will_live_in_infamy }
+		relative_position_id = USA_a_date_which_will_live_in_infamy
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		has_war_with = JAP
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
+		}
+	}
+	
+	focus = {
+		id = USA_?
+		icon = GFX_goal_generic_major_war
+		x = -1
+		y = 1
+		prerequisite = { focus = USA_a_date_which_will_live_in_infamy }
+		relative_position_id = USA_a_date_which_will_live_in_infamy
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		has_war_with = JAP
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		
 		}
 	}
 
