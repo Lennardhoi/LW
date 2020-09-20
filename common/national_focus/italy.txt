@@ -442,7 +442,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_recover_from_operation_chariot  }
 		x = 0
 		y = 1
-		available={controls_state=144}
+		
 		relative_position_id = ITA_recover_from_operation_chariot
 		cost = 5
 		ai_will_do = {
@@ -599,7 +599,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		available={controls_state=19}
+		available={controls_state=158}
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -1330,26 +1330,6 @@ focus_tree = {
 				}
 			}
 			449 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = anti_air_building
-						level = 2
-						instant_build = yes
-					}
-					set_building_level = {
-						type = air_base
-						level = 10
-						instant_build = yes
-					}
-				}
-			}
-			451 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
@@ -2487,7 +2467,6 @@ focus_tree = {
 
 			Date > 1942.1.1
 			has_full_control_of_state = 663
-			has_full_control_of_state = 451
 			has_full_control_of_state = 449
 			has_full_control_of_state = 661
 			has_full_control_of_state = 448
@@ -2504,7 +2483,6 @@ focus_tree = {
 		completion_reward = {
 
 			add_state_core = 663
-			add_state_core = 451
 			add_state_core = 449
 			add_state_core = 661
 			add_state_core = 448
@@ -3023,19 +3001,11 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = ITA_fortification_effort_2 }
 		cost = 5
-		available = {  ITA = {controls_state =663}      ITA = {controls_state =451}     }
+		available = {  ITA = {controls_state =663} }
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			451 = {
-				add_building_construction = {
-					type = bunker
-					level = 2
-					province = 10120
-					instant_build = yes
-				}
-			}
 			663 = {
 				add_building_construction = {
 					type = bunker
@@ -3043,6 +3013,13 @@ focus_tree = {
 					province = 4060
 					instant_build = yes
 				}
+			    add_building_construction = {
+					type = bunker
+					level = 2
+					province = 10120
+					instant_build = yes
+				}
+			
 			}
 			663 = {
 				add_building_construction = {
