@@ -315,6 +315,14 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			62 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 3
+					instant_build = yes
+				}
+			}
 			68 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
@@ -800,7 +808,7 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			date> 1938.6.1
+		
 		}
 		prerequisite = { focus = GER_rhineland }
 		available_if_capitulated = yes
@@ -810,7 +818,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 
-			air_experience = 25
+			air_experience = 475
 
 			add_tech_bonus = {
 				name = air_sup_bonus
@@ -821,15 +829,13 @@ focus_tree = {
 			add_tech_bonus = {
 				name = fighter_command_focus
 				bonus = 1.0
-				uses = 1
+				uses = 2
 				category = light_fighter
 				category = cat_heavy_fighter
 
 
 			}
-			set_technology = {
-				fighter2 = 1
-			}
+			
 			55 = {
 
 				set_building_level = {
