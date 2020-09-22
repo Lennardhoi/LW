@@ -1,6 +1,11 @@
 --Horst defines:
 
 --------------------------------------------------------------
+---nukes
+NDefines.NMilitary.NUKE_MIN_DAMAGE_PERCENT =0
+NDefines.NMilitary.NUKE_MAX_DAMAGE_PERCENT =0.1
+NDefines.NMilitary.NUKE_DELAY_HOURS =12
+---
 --new graphics
 NDefines.NGraphics.COUNTRY_COLOR_SATURATION_MODIFIER = 0.9 -- 0.6
 NDefines.NGraphics.COUNTRY_COLOR_BRIGHTNESS_MODIFIER = 0.9 -- 0.8
@@ -213,6 +218,9 @@ NDefines.NMilitary.UNIT_EXP_LEVELS = { 0.2, 0.3, 0.4, 0.6 }
 NDefines.NMilitary.HOURLY_ORG_MOVEMENT_IMPACT = -0.15
 NDefines.NMilitary.ZERO_ORG_MOVEMENT_MODIFIER = -0.6
 NDefines.NMilitary.RECON_SKILL_IMPACT = 7
+NDefines.NMilitary.LEND_LEASE_FIELD_EXPERIENCE_SCALE = 0.1
+NDefines.NMilitary.FIELD_EXPERIENCE_SCALE = 0.005
+NDefines.NMilitary.FIELD_EXPERIENCE_MAX_PER_DAY = 3
 NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.1
 NDefines.NMilitary.COMBAT_MINIMUM_TIME = 2
 NDefines.NCountry.REINFORCEMENT_EQUIPMENT_DELIVERY_SPEED = 0.6

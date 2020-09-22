@@ -418,9 +418,7 @@ ideas = {
 				}
 			}
 		}
-
-		limited_exports = {
-
+		limited_exports_axis = {
 
 			available = {
 
@@ -446,7 +444,84 @@ ideas = {
 						}
 					}
 				}
+				
 
+				if = {
+					limit = {
+						original_tag = CHI
+						has_dlc = "Waking the Tiger"
+					}
+					NOT = { has_idea = CHI_nine_power_treaty }
+				}
+			}
+			visible = {
+
+
+
+				OR = {
+					original_tag=ITA
+					original_tag=GER
+					}
+					
+				
+
+			}
+			cost = 150
+			removal_cost = -1
+
+			modifier = {
+				min_export = 0.25
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = 0.05
+				civilian_intel_to_others = 20.0
+				navy_intel_to_others = 10.0
+			}
+
+			cancel_if_invalid = no
+
+			
+		}
+		limited_exports = {
+
+			visible = {
+
+
+
+				NOT={OR = {
+					original_tag=ITA
+					original_tag=GER
+					}
+					}
+				
+
+			}
+			available = {
+
+
+
+				OR = {
+					AND = {
+						has_government = democratic
+						has_war = yes
+						any_enemy_country = {
+							ic_ratio = {
+								tag = ROOT
+								ratio > 0.2
+							}
+						}
+					}
+					AND = {
+						NOT = { has_government = democratic }
+						OR = {
+							has_idea = partial_economic_mobilisation
+							has_idea = war_economy
+							has_idea = tot_economic_mobilisation
+						}
+					}
+				}
+				
 
 				if = {
 					limit = {
