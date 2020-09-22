@@ -164,9 +164,6 @@ technologies = {
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
 
-		xor={
-			armored_spearhead
-		}
 		motorized = {
 			maximum_speed = 0.1
 			default_morale = 0.2
@@ -374,9 +371,6 @@ technologies = {
 		enable_tactic = tactic_blitz
 
 
-		xor = {
-			mobile_infantry
-		}
 
 		path = {
 			leads_to_tech = schwerpunk
@@ -753,10 +747,6 @@ technologies = {
 
 		doctrine = yes
 		research_cost = 4.25
-		start_year = 1941
-		categories = {
-			year_1941
-		}
 		categories = {
 			land_doctrine
 			cat_mobile_warfare
@@ -801,10 +791,6 @@ technologies = {
 
 
 		doctrine = yes
-		start_year = 1942
-		categories = {
-			year_1942
-		}
 		research_cost = 4.25
 
 		categories = {
@@ -839,7 +825,6 @@ technologies = {
 		conscription = 0.005
 		#enable_tactic = tactic_guerrilla_tactics
 		doctrine = yes
-		start_year = 1943
 		research_cost = 4.25
 
 		categories = {
@@ -1008,10 +993,7 @@ technologies = {
 		xp_research_type = army
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
-		xor={
-			dispersed_support
-		}
-
+		
 
 		category_support_battalions = {
 			max_organisation = 10
@@ -1104,9 +1086,7 @@ technologies = {
 		xp_research_type = army
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
-		xor = {
-			intergrated_support
-		}
+
 
 		category_line_artillery = {
 			default_morale = 0.2
@@ -1250,9 +1230,7 @@ technologies = {
 		xp_research_type = army
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
-		xor = {
-			centralized_fire_control
-		}
+
 
 		category_army = {
 			hard_attack = 0.10
@@ -1431,9 +1409,7 @@ technologies = {
 		xp_research_type = army
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
-		xor = {
-			concentrated_fire_plans
-		}
+
 
 		category_all_infantry = {
 			soft_attack = 0.05
@@ -1828,9 +1804,7 @@ technologies = {
 		xp_research_type = army
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
-		xor = {
-			infantry_offensive
-		}
+
 
 		motorized = {
 			max_organisation = 5
@@ -2124,9 +2098,7 @@ technologies = {
 		xp_research_type = army
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
-		xor = {
-			grand_mechanized_offensive
-		}
+
 		category_light_infantry = {
 			max_organisation = 5
 			breakthrough = 0.1
@@ -2546,9 +2518,6 @@ technologies = {
 		xp_research_type = army
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
-		xor = {
-			peoples_army
-		}
 
 
 		category_all_infantry = {
@@ -2915,9 +2884,6 @@ technologies = {
 
 	peoples_army = {
 
-		xor = {
-			large_front_operations
-		}
 
 		xp_research_type = army
 		xp_research_cost = 100

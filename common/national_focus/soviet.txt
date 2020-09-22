@@ -1502,7 +1502,8 @@ focus_tree = {
 				name = air_bonus
 				bonus = 2.0
 				uses = 2
-				category = light_air
+				technology= fighter2 
+				technology= cas2
 
 			}
 
@@ -1549,11 +1550,6 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_tech_bonus = {
-				bonus = 3.0
-				uses = 6
-				category = air_doctrine
-			}
 			add_tech_bonus = {
 				name = aa
 				bonus = 1
@@ -1866,7 +1862,7 @@ focus_tree = {
 
 					}
 					support = {
-						recon = { x = 0 y = 0 } 		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and they seem rather OP. Could revisit if balance changes
+						mot_recon = { x = 0 y = 0 } 		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and they seem rather OP. Could revisit if balance changes
 						engineer = { x = 0 y = 1 } 	# (semi-mot) Engineer bn
 						artillery = { x = 0 y = 2 }
 						logistics_company = { x = 0 y = 3 }

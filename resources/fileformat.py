@@ -17,6 +17,7 @@ import sys
 ###
 ### usage: hoi4Formatter.py [-h] [-r] [--extensions [EXTENSIONS [EXTENSIONS ...]]]
 ###                         input
+###CMD
 ###next line requires python>=3.5
 ###C:\Users\Lennard\AppData\Local\Programs\Python\Python38-32\python.exe "C:\Users\Lennard\Documents\Paradox Interactive\Hearts of Iron IV\mod\LW\resources\fileformat.py" --recursive "C:\Users\Lennard\Documents\Paradox Interactive\Hearts of Iron IV\mod\LW"   
 ### Given a file or folder, format files to follow proper PDX-style indentation. Only indentation is changed.
