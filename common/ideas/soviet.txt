@@ -16,11 +16,13 @@ ideas = {
 				industrial_capacity_dockyard = 0.15
 				production_speed_buildings_factor = 0.15
 				research_speed_factor = 0.15
-				consumer_goods_factor = 0.25
+				consumer_goods_factor = 0.2
 				production_factory_max_efficiency_factor = 0.1
 				production_factory_efficiency_gain_factor = -0.2
-				production_speed_industrial_complex_factor = 0.5
-				production_speed_arms_factory_factor = 0.1
+				production_speed_arms_factory_factor = 0.2
+				production_speed_industrial_complex_factor = 0.1
+				conversion_cost_civ_to_mil_factor= -0.2
+				conversion_cost_mil_to_civ_factor = -0.2
 			}
 
 			allowed_to_remove = {
@@ -127,9 +129,8 @@ ideas = {
 
 
 				army_speed_factor = 0.1
-				supply_consumption_factor = -0.10
-				out_of_supply_factor = -0.40
-				no_supply_grace = 48
+				out_of_supply_factor = -0.5
+				no_supply_grace = 72
 
 			}
 		}
@@ -345,7 +346,7 @@ ideas = {
 			}
 
 			modifier = {
-				production_speed_arms_factory_factor = 0.2
+				production_speed_arms_factory_factor = 0.1
 			}
 		}
 

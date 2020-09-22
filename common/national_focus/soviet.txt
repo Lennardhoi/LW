@@ -1941,12 +1941,7 @@ focus_tree = {
 
 		completion_reward = {
 			army_experience = 50
-			add_tech_bonus = {
-				name = armor_bonus
-				bonus = 1.5
-				uses = 1
-				category = armor
-			}
+			
 			add_tech_bonus = {
 				name = armor_bonus
 				bonus = 1.0
@@ -2035,7 +2030,7 @@ focus_tree = {
 	focus = {
 		id = SOV_barb_2
 		icon = GFX_SOV_infantry_development
-		prerequisite = { focus = SOV_great_figher }
+		prerequisite = { focus = SOV_tankograd}
 		available = {
 
 		}
