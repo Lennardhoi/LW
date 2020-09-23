@@ -2851,14 +2851,14 @@ focus_tree = {
 		prerequisite = { focus = GER_demand_memel }
 		relative_position_id = GER_demand_memel
 		available = {
-			date > 1939.5.30
+			date > 1939.6.1
 		}
 		cancel = {
 		}
 		cancel_if_invalid = no
 		x = 0
 		y = 1
-		cost = 1
+		cost = 10
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -2892,7 +2892,7 @@ focus_tree = {
 				add_political_power = -150
 				country_event = soviet.141
 			}
-		}
+	    }
 	}
 	focus = {
 		id = GER_danzig_or_war
@@ -2900,7 +2900,7 @@ focus_tree = {
 		prerequisite = { focus = GER_mol_rib_pact }
 		will_lead_to_war_with = POL
 		available = {
-			date > 1939.6.1
+			date > 1939.8.1
 		}
 
 		bypass = {
@@ -2910,13 +2910,18 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_mol_rib_pact
-		cost = 10
+		cost = 1
 		ai_will_do = {
 			factor = 10
 
 		}
 		completion_reward = {
+			custom_effect_tooltip="Unlocks a decision to declare war after 1.September 1939"
 			hidden_effect = {
+			POL = {
+				country_event = { id = germany.86 }
+			}
+			add_named_threat = { threat = 5 name = GER_danzig_or_war }	
 				GER = {
 					add_intel = {
 						target = POL
@@ -2928,29 +2933,17 @@ focus_tree = {
 				}
 				SOV = { add_ideas = war_in_our_neigbour }
 				JAP = { add_ideas = war_in_our_neigbour }
-			}
 			army_experience=70
-
 			add_resource = {
 				type=rubber
 				amount=-20
 				state=64
 			}
-
-			add_named_threat = { threat = 5 name = GER_danzig_or_war }
-
-			GER = {
-				create_wargoal = {
-					type = take_state
-					generator = { 85 }
-					target = POL
-				}
-
-
 			}
-			POL = {
-				country_event = { id = germany.86 }
-			}
+			
+
+		
+			
 			hidden_effect = {
 
 				ENG = {
@@ -2992,12 +2985,12 @@ focus_tree = {
 		prerequisite = { focus = GER_danzig_or_war }
 		will_lead_to_war_with = DEN
 		will_lead_to_war_with = NOR
-
+ 
 		bypass = {
 		}
 
 		available = {
-			has_war_with = ENG
+			
 		}
 
 		x = 1
@@ -3013,6 +3006,8 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+		custom_effect_tooltip="Unlocks a decision to declare war on Denmark and Norway
+		"
 			161 = {
 				add_resource = {
 					type=aluminium
@@ -3025,32 +3020,6 @@ focus_tree = {
 					amount=-30
 				}
 			}
-
-			if = {
-				limit = {
-					NOT = { DEN = { is_in_faction_with = GER } }
-					country_exists = DEN
-				}
-				create_wargoal = {
-					type = take_state_focus
-					target = DEN
-					generator = { 37 }
-				}
-			}
-
-
-			if = {
-				limit = {
-					NOT = { NOR = { is_in_faction_with = GER } }
-					country_exists = NOR
-				}
-				create_wargoal = {
-					type = take_state_focus
-					target = NOR
-					generator = { 110 }
-				}
-			}
-
 			add_tech_bonus = {
 				name = tp_bonus
 				bonus = 1.0
@@ -3104,33 +3073,12 @@ focus_tree = {
 		id = GER_around_maginot
 		icon = GFX_goal_generic_attack_allies
 		prerequisite = { focus = GER_danzig_or_war }
-
 		available = {
-			has_war_with = ENG
+			
 		}
 
 		bypass = {
-			HOL = {
-				OR = {
-					exists = no
-					is_in_faction_with = GER
-					has_war_with = ROOT
-				}
-			}
-			BEL = {
-				OR = {
-					exists = no
-					is_in_faction_with = GER
-					has_war_with = ROOT
-				}
-			}
-			LUX = {
-				OR = {
-					exists = no
-					is_in_faction_with = GER
-					has_war_with = ROOT
-				}
-			}
+		
 		}
 
 		historical_ai = {
@@ -3146,56 +3094,7 @@ focus_tree = {
 		ai_will_do = {
 		}
 		completion_reward = {
-			#limit wargoals to when it makes sense to give them. No faction, war or non exist
-			if = {
-				limit = {
-					country_exists = BEL
-					NOT = { BEL = { is_in_faction_with = GER } }
-					NOT = { has_war_with = BEL }
-				}
-				create_wargoal = {
-					type = take_state_focus
-					target = BEL
-					generator = { 6 }
-				}
-			}
-			if =  {
-				limit = {
-					country_exists = HOL
-					NOT = { HOL = { is_in_faction_with = GER } }
-					NOT = { has_war_with = HOL }
-					NOT = { HOL = { has_completed_focus = HOL_cave_to_the_germans } }
-				}
-				create_wargoal = {
-					type = take_state_focus
-					target = HOL
-					generator = { 7 }
-				}
-			}
-			if =  {
-				limit = {
-					country_exists = HOL
-					NOT = { HOL = { is_in_faction_with = GER } }
-					NOT = { has_war_with = HOL }
-					HOL = { has_completed_focus = HOL_cave_to_the_germans }
-					NOT = { HOL = { has_completed_focus = HOL_the_netherlands_first } }
-				}
-				HOL = {
-					country_event = { id = mtg_germany.1 hours = 6 }
-				}
-			}
-			if = {
-				limit = {
-					country_exists = LUX
-					NOT = { LUX = { is_in_faction_with = GER } }
-					NOT = { has_war_with = LUX }
-				}
-				create_wargoal = {
-					type = take_state_focus
-					target = LUX
-					generator = { 8 }
-				}
-			}
+	     custom_effect_tooltip="Unlocks a decision to declare war"
 			hidden_effect = {
 				news_event = { hours = 6 id = news.234 }
 			}
@@ -3248,43 +3147,41 @@ focus_tree = {
 		}
 	}
 
-
 	focus = {
 		id = GER_ussr_war_goal
 		icon = GFX_focus_generic_attack_communists
 		prerequisite = { focus = GER_anti_comitern_pact }
 		will_lead_to_war_with = SOV
 
-		cancel = {
-			NOT = { country_exists = SOV }
-		}
 		x = 0
 		y = 1
 
 		available = {
-			date > 1941.6.22
+			date > 1941.6.1
 		}
 
 		relative_position_id = GER_anti_comitern_pact
 		cost = 2
 
 		bypass = {
-			has_war_with = SOV
+			
 		}
 
 		completion_reward = {
-			create_wargoal = {
-				type = annex_everything
-				target = SOV
+	    custom_effect_tooltip="Unlocks a decision to declare war on the Soviet Union
+		"
+			
+
+			hidden_effect={
+			every_country={
+				add_ideas = speed3
+			}
+			ENG={
+				remove_ideas=stiff_upper_lip
+				add_timed_idea={idea=stiff_upper_lip days=150}
+
 			}
 			SOV={remove_ideas=Fast_Training }
-
-			GER = {
-				add_timed_idea = { idea = GER_barbarossa days = 100 }
-				add_dynamic_modifier = { modifier = Ostarbeiter scope=GER }
-			}
-
-
 			ROM = {
 				add_timed_idea = { idea = GER_barbarossa_inf days = 100 }
 			}
@@ -3298,8 +3195,6 @@ focus_tree = {
 			SPR = {
 				add_timed_idea = { idea = GER_barbarossa days = 100 }
 			}
-
-			hidden_effect={
 				every_country={
 					add_ideas=speed3
 				}
@@ -3325,24 +3220,7 @@ focus_tree = {
 							}}
 
 					}}
-
-
-			#custom_effect_tooltip = GER_barbarossa_others_text
-			ENG={
-				remove_ideas=stiff_upper_lip
-				add_timed_idea={idea=stiff_upper_lip days=150}
-
-			}
-
-
-
-
 		}
-
-
-
-
-
 	}
 	focus = {
 		id = GER_leningrad
@@ -4106,6 +3984,7 @@ focus_tree = {
 		icon = GFX_goal_generic_SS_focus
 		prerequisite = { focus = GER_around_maginot }
 		bypass = {
+		NOT = {FRA = {has_full_control_of_state =16}}
 		}
 		cancel_if_invalid = yes
 		x = 0
@@ -4115,7 +3994,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-
+     completion_reward = {
+	 add_timed_idea = {
+    idea = GER_fall_rot
+    days = 30
+}
+	 }
 	}
 
 	focus = {

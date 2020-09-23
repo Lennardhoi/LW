@@ -374,7 +374,31 @@ ideas = {
 
 		}
 
+        GER_fall_rot = {
+		 allowed = {
+				always = no
+			}
+		 
+		 allowed_civil_war = {
+				has_government = fascism
+			}
+		 removal_cost = -1
+		 
+		
 
+		  targeted_modifier = {
+				tag = FRA
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+		   }
+
+
+			
+		 
+		 
+		 
+		 
+		 }
 		GER_barbarossa = {
 			allowed = {
 				always = no

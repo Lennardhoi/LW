@@ -1,77 +1,97 @@
 #Category only allowed for GER
 operations = {
+   
+   
+   
+    GER_operation_weserubung = {
+		icon = ger_reichskommissariats
+		fire_only_once = yes
+		allowed = { tag = GER }
+		available = { has_completed_focus = GER_weserubung	}
+		cost = 0
+		complete_effect = {
+		
+		    hidden_effect = {
+				DEN = { add_to_war = { targeted_alliance = ENG enemy = GER } }
+				NOR = { add_to_war = { targeted_alliance = ENG enemy = GER } }
+				
+			}
 
+
+		}
+	}
+	
 	GER_fall_weiss = {
 		icon = ger_reichskommissariats
 		fire_only_once = yes
 		allowed = { tag = GER }
-		available = { always=yes	}
+		available = { has_completed_focus = GER_danzig_or_war date > 1939.08.1	}
 		cost = 0
 		complete_effect = {
-			ENG={USA={add_to_war = {
-						targeted_alliance = POL
-						enemy = ROOT
-						}}}
-
+		
 			hidden_effect = {
-				ENG = { add_to_faction = POL }  }
+		    ENG = { add_to_faction = POL }  
 			declare_war_on = {
 				target = POL
 				type = annex_everything
 			}
-
-			hidden_effect = {
-				POL={declare_war_on_enemy_faction =yes}
-				#country_event = { id = germany.110 days = 3 }
+            POL={declare_war_on_enemy_faction =yes}
+	
 			}
 
 
 		}
 	}
-	GER_fall_barb= {
-		icon = ger_reichskommissariats
-		fire_only_once = yes
-		allowed = { tag = GER }
-		available = { has_completed_focus = GER_ussr_war_goal	}
-		cost = 0
-		complete_effect = {
-
-
-			hidden_effect = {
-				declare_war_on = {
-					target = SOV
-					type = annex_everything
-				}
-
-				hidden_effect = {
-					SOV={declare_war_on_enemy_faction =yes}
-					#country_event = { id = germany.110 days = 3 }
-				}
-
-			}
-			}}
-	GER_fall_rot = {
+			   		
+	GER_fall_gelb = {
 		icon = ger_reichskommissariats
 		fire_only_once = yes
 		allowed = {  tag = GER }
-		available = {  has_war_with = ENG }
-		visible = { NOT = { has_war_with = FRA }}
+		available = {  POL = {has_capitulated =yes }GER = {has_completed_focus =GER_around_maginot}  }
 		cost = 0
 		complete_effect = {
-			declare_war_on = {
-				target = FRA
-				type = annex_everything
-			}
+			
 			hidden_effect = {
-				FRA = { add_to_war = { targeted_alliance = ENG enemy = SPR } }
-				FRA = { add_to_war = { targeted_alliance = ENG enemy = ROM } }
-				FRA = { add_to_war = { targeted_alliance = ENG enemy = HUN } }
+				LUX = { add_to_war = { targeted_alliance = ENG enemy = GER } }
+				HOL = { add_to_war = { targeted_alliance = ENG enemy = GER } }
+				BEL = { add_to_war = { targeted_alliance = ENG enemy = GER } }
 			}
 
 
 		}
 	}
+GER_fall_barb = {
+		icon = ger_reichskommissariats
+		fire_only_once = yes
+		allowed = { tag = GER }
+		available = { has_completed_focus = GER_ussr_war_goal date > 1941.06.21	}
+		cost = 0
+		complete_effect = {
+		
+		
+			hidden_effect={
+			SOV={declare_war_on_enemy_faction =yes}
+			GER = {
+				add_timed_idea = { idea = GER_barbarossa days = 100 }
+				add_dynamic_modifier = { modifier = Ostarbeiter scope=GER }
+			}
+			
+			ROM = {
+				add_timed_idea = { idea = GER_barbarossa_inf days = 100 }
+			}
+			HUN = {
+				add_timed_idea = { idea = GER_barbarossa days = 100 }
+			}
+			BUL = {
+				add_timed_idea = { idea = GER_barbarossa_inf days = 100 }
+			}
 
+			SPR = {
+				add_timed_idea = { idea = GER_barbarossa days = 100 }
+			}
+			
+			}}}
+			  
 	GER_iran = {
 		icon = generic_operation
 		fire_only_once = yes
