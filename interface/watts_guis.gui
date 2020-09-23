@@ -1,0 +1,45 @@
+
+guiTypes = {
+	
+	containerWindowType = {
+		name = "ger_reichswerke_decision_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 92 }
+
+		buttonType = {
+			name ="steel_mil_icon"
+			spriteType = "GFX_decision_steel"
+			position = { x= 125 y = 40 }
+			clicksound = click_default
+			oversound = ui_menu_over
+			scale = 1.5
+		}
+		
+		buttonType = {
+			name ="aluminum_mil_icon"
+			spriteType = "GFX_decision_aluminium"
+			position = { x= 175 y = 40 }
+			clicksound = click_default
+			oversound = ui_menu_over
+			scale = 1.5
+		}
+		
+		buttonType = {
+			name ="synthetic_refinery_icon"
+			spriteType = "GFX_decision_rubber"
+			position = { x= 225 y = 40 }
+			clicksound = click_default
+			oversound = ui_menu_over
+			scale = 1.5
+		}
+		
+		buttonType = {
+			name ="fuel_silo_icon"
+			spriteType = "GFX_decision_oil"
+			position = { x= 275 y = 40 }
+			clicksound = click_default
+			oversound = ui_menu_over
+			scale = 1.5
+		}
+	}
+}
