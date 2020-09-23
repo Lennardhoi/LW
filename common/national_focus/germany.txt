@@ -1731,7 +1731,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-
+add_tech_bonus = {
+				name = GER_ural_bomber
+				bonus = 3.0
+				uses = 3
+				category = cat_strategic_bomber
+			}
 		}
 	}
 	focus = {
@@ -1769,7 +1774,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-
+         set_technology = { advanced_rocket_engines = 1}
 		}
 	}
 	focus = {
@@ -1838,19 +1843,13 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			add_ideas = GER_rocketry_idea
-			add_tech_bonus = {
-				name = GER_rocketry_focus
-				bonus = 1.0
-				uses = 2
-				category = rocketry
-			}
-			add_tech_bonus = {
-				name = GER_rocketry_focus
-				bonus = 1.0
-				uses = 2
-				category = jet_technology
-			}
+			set_technology = {
+					rocket_engines = 1
+					improved_rocket_engines = 1
+					jet_engines = 1
+					
+				}
+			
 		}
 	}
 	focus = {
