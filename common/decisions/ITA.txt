@@ -71,12 +71,12 @@ foreign_politics = {
 
 		available = {
 			BUL = { is_ai = yes }
-			date>1939.1.1
+			#date>1939.1.1
 
 		}
 
 		allowed = {
-			tag = ROM
+			tag = ITA
 		}
 
 
@@ -88,18 +88,15 @@ foreign_politics = {
 		}
 
 		complete_effect = {
-			BUL = {
-				every_owned_state={
-					limit={is_core_of=PREV}
-					add_core_of = ROM
-				}
-			}
-			ROM = {
-				annex_country = {
-					target = BUL
-					transfer_troops = yes
-				}
-			}
+		SWE={add_research_slot=1}
+		add_equipment_to_stockpile = {
+   			 type = fighter_equipment_2
+    		  	 amount = 1000
+    			 producer = SWE
+		}
+				
+
+			
 		}
 	}
 }
