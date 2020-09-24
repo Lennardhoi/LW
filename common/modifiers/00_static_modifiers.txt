@@ -559,3 +559,16 @@ japan_armor_sharing = {
 	license_production_speed = 0.20 #speed  increase for being a license
 	license_tech_difference_speed = 0.5 #less cost increase for each tech level between the license and own tech level
 }
+ita_air_sharing = {
+	valid_relation_trigger = {
+		date<1936.3.1
+		FROM = {
+			NOT = { has_war_with = ROOT }
+		}
+	}
+
+	license_air_purchase_cost = -1 #base cost reduction
+	license_armor_purchase_cost = 20 #base cost reduction
+	license_production_speed = 0.20 #speed  increase for being a license
+	license_tech_difference_speed = 0.5 #less cost increase for each tech level between the license and own tech level
+}

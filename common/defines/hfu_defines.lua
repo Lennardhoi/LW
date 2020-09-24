@@ -54,7 +54,7 @@ NDefines.NPolitics.DEFAULT_OCCUPATION_POLICY = 4                   --HARSHEST
 ---------------------------------------------------------------
 NDefines.NProduction.MIN_LICENSE_ACTIVE_DAYS = 1                 -- License can be cancelled at any time now, down from 30 |                  -- Was 1, reduced to counter early game boosting, particularly cancerous Germany builds that force Bulgaria players to build a battleship in the black sea for "shore bombardment" via license and imported steel from Germany
 NDefines.NTechnology.LICENSE_PRODUCTION_TECH_BONUS = 0	-- License production tech bonus
-NDefines.NProduction.BASE_LICENSE_IC_COST = 0			-- Base IC cost for lended license
+NDefines.NProduction.BASE_LICENSE_IC_COST = 0.4			-- Base IC cost for lended license
 NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0	-- IC cost equipment for every year of equipment after 1936
 
 NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 5000000

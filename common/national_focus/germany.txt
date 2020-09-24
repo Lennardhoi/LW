@@ -1265,6 +1265,7 @@ focus_tree = {
 				name = "8.8 cm Flak 41"
 				type = anti_air_equipment_3
 			}
+			
 			add_equipment_production = {
 				equipment = {
 
@@ -1471,8 +1472,14 @@ focus_tree = {
 			add_tech_bonus = {
 				name = anti_air
 				bonus = 1
-				uses = 3
-				category = artillery
+				uses = 2
+				category = cat_anti_air
+			}
+			add_tech_bonus = {
+				name = anti_air
+				bonus = 1
+				uses = 1
+				category = cat_artillery
 			}
 
 		}
@@ -1638,7 +1645,7 @@ focus_tree = {
 
 					}
 					support = {
-						recon = { x = 0 y = 0 } 		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and they seem rather OP. Could revisit if balance changes
+						light_tank_recon = { x = 0 y = 0 } 		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and they seem rather OP. Could revisit if balance changes
 						engineer = { x = 0 y = 1 } 	# (semi-mot) Engineer bn
 						artillery = { x = 0 y = 2 }
 						logistics_company = { x = 0 y = 3 }

@@ -157,7 +157,16 @@ ideas = {
 			}
 
 			removal_cost = -1
+			equipment_bonus = {
 
+				fighter_equipment = {
+					air_agility = 0.2
+					air_attack = 0.2
+					maximum_speed = 0.2
+					instant=yes
+				}
+
+			}
 			modifier = {
 				stability_factor = 0.05
 			}
@@ -814,7 +823,10 @@ ideas = {
 
 
 			allowed = {
-				original_tag = ITA
+				OR = {
+					original_tag = ITA
+					original_tag = SWE
+				}
 			}
 			cost = 100
 
@@ -866,7 +878,10 @@ ideas = {
 		piaggio = {
 
 			allowed = {
-				original_tag = ITA
+				OR = {
+					original_tag = ITA
+					original_tag = SWE
+				}
 			}
 			cost = 100
 
