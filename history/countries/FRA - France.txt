@@ -23,8 +23,11 @@ add_timed_idea = {
 	idea = FRA_civs
 	days = 365
 }
-add_ideas = Phoney_War
 
+add_timed_idea = {
+	idea = Phoney_War
+	days = 1460
+}
 
 set_country_flag=no_naval_base
 # Starting tech
@@ -115,7 +118,7 @@ add_equipment_to_stockpile = {
 }
 add_equipment_to_stockpile = {
 	type = infantry_equipment_0
-	amount = 4200
+	amount = 10000
 	producer = FRA
 }
 add_equipment_to_stockpile = {
