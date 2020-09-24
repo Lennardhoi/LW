@@ -2209,7 +2209,7 @@ news_event = {
 	title = news.109.t
 	desc = news.109.d
 	picture = GFX_news_event_042
-
+    hidden = yes
 	major = yes
 
 	trigger = {
@@ -2224,6 +2224,13 @@ news_event = {
 		set_global_flag = fall_of_cairo
 		GER={add_ideas={GER_triumph_in_africa}}
 		ITA={add_ideas={GER_triumph_in_africa}}
+		ENG={add_ideas={ENG_lose_in_africa}}
+		FRA={add_ideas={ENG_lose_in_africa}}
+		CAN={add_ideas={ENG_lose_in_africa}}
+		SAF={add_ideas={ENG_lose_in_africa}}
+		NZL={add_ideas={ENG_lose_in_africa}}
+		AST={add_ideas={ENG_lose_in_africa}}
+		RAJ={add_ideas={ENG_lose_in_africa}}
 	}
 
 	mean_time_to_happen = {
@@ -2384,7 +2391,7 @@ news_event = {
 	title = news.109.t
 	desc = news.113.d
 	picture = GFX_news_event_italian_tank_desert
-
+    hidden = yes
 	major = yes
 
 	trigger = {
@@ -2399,6 +2406,13 @@ news_event = {
 		set_global_flag = fall_of_cairo_ita
 		GER={add_ideas={GER_triumph_in_africa}}
 		ITA={add_ideas={GER_triumph_in_africa}}
+		ENG={add_ideas={ENG_lose_in_africa}}
+		FRA={add_ideas={ENG_lose_in_africa}}
+		CAN={add_ideas={ENG_lose_in_africa}}
+		SAF={add_ideas={ENG_lose_in_africa}}
+		NZL={add_ideas={ENG_lose_in_africa}}
+		AST={add_ideas={ENG_lose_in_africa}}
+		RAJ={add_ideas={ENG_lose_in_africa}}
 	}
 
 	mean_time_to_happen = {
