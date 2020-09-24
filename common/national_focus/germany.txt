@@ -16,7 +16,7 @@ focus_tree = {
 			tag = GER
 		}
 	}
-
+	 
 	continuous_focus_position = { x = 50 y = 1680 }
 	default = no
 
@@ -741,7 +741,129 @@ focus_tree = {
 				}
 			}
 		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+          random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+
+			}
+
+
+			HUN = { country_event = { id = wtt_germany.72 }
+				if = {
+					limit = {
+						has_dlc = "Death or Dishonor"
+						is_subject = no
+					}
+					GER =  { set_autonomy = { target = HUN autonomy_state = autonomy_satellite } }
+				}
+
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+
+				}
+
+			}
+			
+
+			ROM = { country_event = { id = wtt_germany.72 }
+				if = {
+					limit = {
+						has_dlc = "Death or Dishonor"
+						is_subject = no
+					}
+					GER =  { set_autonomy = { target = ROM autonomy_state = autonomy_satellite } }
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+
+				}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+
+				}
+			}
+
+
+			BUL = {
+				country_event = { id = wtt_germany.72 }
+				if = {
+					limit = {
+						has_dlc = "Death or Dishonor"
+						is_subject = no
+					}
+					GER =  { set_autonomy = { target = BUL autonomy_state = autonomy_satellite } }		}
+				random_owned_controlled_state = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+
+				}
+			}
+		}
+
 	}
+
 	focus = {
 		id = GER_operation_margarethe
 		icon = GFX_focus_GER_Greater_Hungary
@@ -3181,19 +3303,7 @@ add_tech_bonus = {
 
 			}
 			SOV={remove_ideas=Fast_Training }
-			ROM = {
-				add_timed_idea = { idea = GER_barbarossa_inf days = 100 }
-			}
-			HUN = {
-				add_timed_idea = { idea = GER_barbarossa days = 100 }
-			}
-			BUL = {
-				add_timed_idea = { idea = GER_barbarossa_inf days = 100 }
-			}
-
-			SPR = {
-				add_timed_idea = { idea = GER_barbarossa days = 100 }
-			}
+			
 				every_country={
 					add_ideas=speed3
 				}
@@ -3332,7 +3442,14 @@ add_tech_bonus = {
 
 		available_if_capitulated = no
 		completion_reward = {
-		}
+		217 = {
+				add_province_modifier = {
+					static_modifiers = { soviet_hero_city }
+					province = {
+						id =498 id =520 id =3503 id =3517 id =3529 id =3555 id =6479 id =6503 id =6527 id =6541 id =6575 id =9442 id =9459 id =9474 id =9504 id =9530 id =11395 id =11447 id =11474 id =11484
+					}
+				
+		}}}
 	}
 	focus = {
 		id = GER_winter_attack
@@ -3341,7 +3458,7 @@ add_tech_bonus = {
 		icon = GFX_focus_ger_final_crusade
 		available = {
 
-
+          NOT = {has_idea = GER_barbarossa}
 
 		}
 		relative_position_id = GER_moscow
@@ -3355,8 +3472,15 @@ add_tech_bonus = {
 
 		available_if_capitulated = no
 		completion_reward = {
-		}
+		add_timed_idea={ idea = GER_barbarossa_2 days = 30}
+		hidden_effect = {
+		ROM = {add_timed_idea={ idea = GER_barbarossa_2 days = 30}}
+		HUN = {add_timed_idea={ idea = GER_barbarossa_2 days = 30}}
+		BUL = {add_timed_idea={ idea = GER_barbarossa_2 days = 30}}
+		SPR = {add_timed_idea={ idea = GER_barbarossa_2 days = 30}}
+		}}
 	}
+
 	focus = {
 		id = GER_winter_defense
 
@@ -3364,8 +3488,7 @@ add_tech_bonus = {
 		prerequisite = { focus = GER_moscow focus = GER_leningrad focus = GER_stalingrad}
 		icon = GFX_focus_GER_winter_of_1941
 		available = {
-
-
+         NOT = {has_idea = GER_barbarossa}
 
 		}
 		relative_position_id = GER_moscow
@@ -3379,6 +3502,13 @@ add_tech_bonus = {
 
 		available_if_capitulated = no
 		completion_reward = {
+		add_timed_idea={ idea = GER_barbarossa_3 days = 50}
+		hidden_effect = {
+		ROM = {add_timed_idea={ idea = GER_barbarossa_3 days = 30}}
+		HUN = {add_timed_idea={ idea = GER_barbarossa_3 days = 30}}
+		BUL = {add_timed_idea={ idea = GER_barbarossa_3 days = 30}}
+		SPR = {add_timed_idea={ idea = GER_barbarossa_3 days = 30}}
+		}
 		}
 	}
 	focus = {
@@ -3805,25 +3935,23 @@ add_tech_bonus = {
 		completion_reward = {
 
 			GER = {
-				add_timed_idea = { idea = GER_blau days = 70 }
+				add_timed_idea = { idea = GER_blau days = 85 }
 			}
 			hidden_effect={  ROM = {
-					add_timed_idea = { idea = GER_blau days = 70 }
+					add_timed_idea = { idea = GER_blau days = 85 }
 				}
 				HUN = {
-					add_timed_idea = { idea = GER_blau days = 70 }
+					add_timed_idea = { idea = GER_blau days = 85 }
 				}
 				BUL = {
-					add_timed_idea = { idea = GER_blau days = 70 }
+					add_timed_idea = { idea = GER_blau days = 85 }
 				}
-				FIN = {
-					add_timed_idea = { idea = GER_blau days = 70 }
-				}
+				
 				ITA = {
-					add_timed_idea = { idea = GER_blau days = 70 }
+					add_timed_idea = { idea = GER_blau days = 85 }
 				}
 				SPR = {
-					add_timed_idea = { idea = GER_blau days = 70 }
+					add_timed_idea = { idea = GER_blau days = 85 }
 					}}
 			custom_effect_tooltip = GER_barbarossa_others_text
 
@@ -3886,6 +4014,7 @@ add_tech_bonus = {
 		prerequisite = { focus = GER_north focus = GER_south}
 		icon = GFX_focus_ger_reichskommisariats
 		available = {
+		date > 1943.5.15
 		}
 		#allow_branch={always=no}
 		x = 1
@@ -3899,7 +4028,23 @@ add_tech_bonus = {
 
 		available_if_capitulated = no
 		completion_reward = {
-
+        add_timed_idea = { idea = GER_zitadelle days = 70 }
+		hidden_effect={  ROM = {
+					add_timed_idea = { idea = GER_zitadelle days = 70 }
+				}
+				HUN = {
+					add_timed_idea = { idea = GER_zitadelle days = 70 }
+				}
+				BUL = {
+					add_timed_idea = { idea = GER_zitadelle days = 70 }
+				}
+				
+				ITA = {
+					add_timed_idea = { idea = GER_zitadelle days = 70 }
+				}
+				SPR = {
+					add_timed_idea = { idea = GER_zitadelle days = 70 }
+					}}
 		}
 	}
 

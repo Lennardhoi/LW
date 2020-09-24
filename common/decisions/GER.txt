@@ -68,26 +68,26 @@ GER_fall_barb = {
 		cost = 0
 		complete_effect = {
 		
-		
+	
 			hidden_effect={
 			SOV={declare_war_on_enemy_faction =yes}
 			GER = {
-				add_timed_idea = { idea = GER_barbarossa days = 100 }
+				add_timed_idea = { idea = GER_barbarossa days = 175 }
 				add_dynamic_modifier = { modifier = Ostarbeiter scope=GER }
 			}
 			
 			ROM = {
-				add_timed_idea = { idea = GER_barbarossa_inf days = 100 }
+				add_timed_idea = { idea = GER_barbarossa_inf days = 175 }
 			}
 			HUN = {
-				add_timed_idea = { idea = GER_barbarossa days = 100 }
+				add_timed_idea = { idea = GER_barbarossa days = 175 }
 			}
 			BUL = {
-				add_timed_idea = { idea = GER_barbarossa_inf days = 100 }
+				add_timed_idea = { idea = GER_barbarossa_inf days = 175 }
 			}
 
 			SPR = {
-				add_timed_idea = { idea = GER_barbarossa days = 100 }
+				add_timed_idea = { idea = GER_barbarossa days = 175 }
 			}
 			
 			}}}

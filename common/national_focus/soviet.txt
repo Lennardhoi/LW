@@ -436,7 +436,7 @@ focus_tree = {
 
 		completion_reward = {
 
-			add_timed_idea= {idea=SOV_winter_offensive days=45}
+			add_timed_idea= {idea=SOV_winter_offensive days=50}
 
 
 		}
@@ -2080,7 +2080,7 @@ focus_tree = {
 
 		available = {
 			NOT = {has_idea = SOV_uranus}
-			date > 1943.06.01
+			date > 1943.08.01
 		}
 		x = 0
 		y = 1
@@ -2093,7 +2093,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			add_timed_idea= {idea= SOV_bagration days=50}
+			add_timed_idea= {idea= SOV_bagration days=100}
 
 		}
 	}
