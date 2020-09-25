@@ -1734,42 +1734,12 @@ focus_tree = {
 		}
 	}
 
-
-
-
-
-
-	
-	focus = {
-		id = ITA_priortize_macchi
-		icon = GFX_goal_generic_military_deal
-		
-		prerequisite = { focus = ITA_air_innovation }
-		mutually_exclusive={focus=ITA_german_air_cooperation}
-		x = -1
-		y = 1
-		relative_position_id = ITA_air_innovation
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			show_ideas_tooltip = macchi
-			show_ideas_tooltip = savoia_marchetti
-			show_ideas_tooltip = piaggio
-
-		}
-	}
 	focus = {
 		id = ITA_german_air_cooperation
 		icon = GFX_goal_generic_military_deal
-		mutually_exclusive={focus=ITA_priortize_macchi}
 		prerequisite = { focus = ITA_air_innovation }
 
-		x = 1
+		x = 0
 		y = 1
 		relative_position_id = ITA_air_innovation
 		cost = 10
@@ -1780,11 +1750,12 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+		
 			add_relation_modifier = {
 				target = GER
 				modifier = ita_air_sharing
 			}
-
+		custom_effect_tooltip=ITA_german_air_cooperation_tt
 		}
 	}
 	focus = {
@@ -1792,9 +1763,9 @@ focus_tree = {
 		icon = GFX_goal_generic_air_naval_bomber
 		text = naval_air_effort
 		
-		prerequisite = { focus = ITA_german_air_cooperation focus = ITA_priortize_macchi}
+		prerequisite = { focus = ITA_german_air_cooperation }
 
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = ITA_german_air_cooperation
 		cost = 10
@@ -1902,15 +1873,21 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			hidden_effect={
+		activate_decision=ITA_disable_ll
+		}
+		set_technology={
+		fighter2_alt=1
+		}
 			add_tech_bonus = {
 				name = fighter_bonus
-				bonus = 10
+				bonus = 2
 				uses = 1
 				technology=fighter2
 			}
 			add_tech_bonus = {
 				name = fighter_bonus
-				bonus = 10
+				bonus = 2
 				uses = 1
 				technology=cas2
 			}
@@ -1935,9 +1912,8 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-		effect_tooltip = {
-    add_equipment_to_stockpile = {
-   			 type = fighter_equipment
+		add_equipment_to_stockpile = {
+   			 type = fighter_equipment_alt_2
     		  	 amount = 2500
     			 producer = ITA
 		}
@@ -1946,18 +1922,7 @@ focus_tree = {
     		  	 amount = 500
     			 producer = ITA
 		}
-}
-		hidden_effect={add_equipment_to_stockpile = {
-   			 type = fighter_equipment_2
-    		  	 amount = 2500
-    			 producer = SWE
-		}
-		add_equipment_to_stockpile = {
-   			 type = cas_equipment_2
-    		  	 amount = 500
-    			 producer = SWE
-		}
-		}
+
 			# Caproni Campini N.1
 			add_tech_bonus = {
 				name = fighter_bonus

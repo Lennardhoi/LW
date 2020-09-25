@@ -7,7 +7,14 @@ sub_units = {
 		need = { fighter_equipment = 1 }
 		categories = { category_fighter }
 	}
-
+	fighter_alt = {
+		sprite = light_plane
+		priority = 1
+		active = yes
+		type = { fighter }
+		need = { fighter_equipment_alt = 1 }
+		categories = { category_fighter }
+	}
 	scout_plane = {
 		sprite = light_plane
 		priority = 1

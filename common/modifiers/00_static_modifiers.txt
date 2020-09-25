@@ -561,10 +561,7 @@ japan_armor_sharing = {
 }
 ita_air_sharing = {
 	valid_relation_trigger = {
-		date<1936.3.1
-		FROM = {
-			NOT = { has_war_with = ROOT }
-		}
+		date<1941.6.1
 	}
 
 	license_air_purchase_cost = -1 #base cost reduction
