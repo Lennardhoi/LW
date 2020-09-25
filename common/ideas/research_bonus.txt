@@ -61,6 +61,10 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
+			modifier={
+			production_factory_efficiency_gain_factor = 0.1
+			training_time_factor = -0.1
+			}
 			research_bonus = {
 				year_1918=0.25
 				year_1936=0.2
@@ -80,6 +84,10 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
+			modifier={
+			production_factory_efficiency_gain_factor = 0.2
+			training_time_factor = -0.15
+			}
 			research_bonus = {
 				year_1918=0.3
 				year_1936=0.25
@@ -95,7 +103,9 @@ ideas = {
 			allowed = {
 				always = no
 			}
-
+			modifier={production_factory_efficiency_gain_factor = 0.3
+			training_time_factor = -0.2
+			}
 			removal_cost = -1
 			allowed_civil_war = {
 				always = yes
@@ -119,6 +129,9 @@ ideas = {
 			removal_cost = -1
 			allowed_civil_war = {
 				always = yes
+			}
+			modifier={production_factory_efficiency_gain_factor = 0.4
+			training_time_factor = -0.3
 			}
 			research_bonus = {
 				year_1918=0.4
