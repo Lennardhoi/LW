@@ -1238,7 +1238,7 @@ focus_tree = {
 				category = land_doctrine
 			}
 			add_tech_bonus = {
-				bonus = 1.5
+				bonus = 1.2
 				uses = 1
 				name = tank_innovation_bonus
 				technology = improved_medium_tank
@@ -1807,7 +1807,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		available = { date > 1942.5.1}
+		available = { 
+			date > 1942.5.1
+			has_tech=advanced_medium_tank
+		}
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
