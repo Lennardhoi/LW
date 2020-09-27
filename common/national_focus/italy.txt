@@ -442,7 +442,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_recover_from_operation_chariot  }
 		x = 0
 		y = 1
-		
+
 		relative_position_id = ITA_recover_from_operation_chariot
 		cost = 5
 		ai_will_do = {
@@ -1708,22 +1708,22 @@ focus_tree = {
 		completion_reward = {
 			air_experience = 50
 			114 = {	add_building_construction = {
-							type = air_base
-							level = 3
-							instant_build = yes
-						}
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
 			}
 			115 = {	add_building_construction = {
-							type = air_base
-							level = 5
-							instant_build = yes
-						}
+					type = air_base
+					level = 5
+					instant_build = yes
+				}
 			}
 			164 = {	add_building_construction = {
-							type = air_base
-							level = 3
-							instant_build = yes
-						}
+					type = air_base
+					level = 3
+					instant_build = yes
+				}
 			}
 			add_tech_bonus = {
 				name = air_doc_bonus
@@ -1750,19 +1750,19 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-		
+
 			add_relation_modifier = {
 				target = GER
 				modifier = ita_air_sharing
 			}
-		custom_effect_tooltip=ITA_german_air_cooperation_tt
+			custom_effect_tooltip=ITA_german_air_cooperation_tt
 		}
 	}
 	focus = {
 		id = ITA_naval_air_effort
 		icon = GFX_goal_generic_air_naval_bomber
 		text = naval_air_effort
-		
+
 		prerequisite = { focus = ITA_german_air_cooperation }
 
 		x = 0
@@ -1874,11 +1874,11 @@ focus_tree = {
 
 		completion_reward = {
 			hidden_effect={
-		activate_decision=ITA_disable_ll
-		}
-		set_technology={
-		fighter2_alt=1
-		}
+				activate_decision=ITA_disable_ll
+			}
+			set_technology={
+				fighter2_alt=1
+			}
 			add_tech_bonus = {
 				name = fighter_bonus
 				bonus = 2
@@ -1891,7 +1891,7 @@ focus_tree = {
 				uses = 1
 				technology=cas2
 			}
-			
+
 		}
 	}
 
@@ -1912,16 +1912,16 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
-		add_equipment_to_stockpile = {
-   			 type = fighter_equipment_alt_2
-    		  	 amount = 2500
-    			 producer = ITA
-		}
-		add_equipment_to_stockpile = {
-   			 type = cas_equipment
-    		  	 amount = 500
-    			 producer = ITA
-		}
+			add_equipment_to_stockpile = {
+				type = fighter_equipment_alt_2
+				amount = 2500
+				producer = ITA
+			}
+			add_equipment_to_stockpile = {
+				type = cas_equipment
+				amount = 500
+				producer = ITA
+			}
 
 			# Caproni Campini N.1
 			add_tech_bonus = {
@@ -2159,7 +2159,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 
 		completion_reward = {
-			
+
 			random_other_country = {
 				limit = {
 					owns_state = 177
@@ -3017,13 +3017,14 @@ focus_tree = {
 					province = 4060
 					instant_build = yes
 				}
+
 			    set_building_level = {
 					type = bunker
 					level = 2
 					province = 10120
 					instant_build = yes
 				}
-			
+
 			}
 			663 = {
 				set_building_level = {

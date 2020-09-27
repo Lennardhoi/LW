@@ -2820,6 +2820,24 @@ guiTypes = {
 			}
 				
 			gridboxtype = {
+				name = "mobile_l_tree"
+				position = { x=-300 y=1400 }
+				size = { width = 1000 height = 1350 }
+				slotsize = { width=60 height= 60 }
+				format = "UP"
+
+							
+			}	
+			gridboxtype = {
+				name = "mobile_tree"
+				position = { x=80 y=172 }
+				size = { width = 478 height = 1350 }
+				slotsize = { width=60 height= 60 }
+				format = "UP"
+
+							
+			}
+			gridboxtype = {
 				name = "mobile_warfare_tree"
 				position = { x=80 y=172 }
 				size = { width = 478 height = 1350 }
@@ -2846,7 +2864,16 @@ guiTypes = {
 					position = { x=0 y=-150 }					
 				}									
 			}
-
+			gridboxtype = {
+				name = "superior_tree"
+				position = { x=560 y=172 }
+				size = { width = 480 height = 1350 }
+				slotsize = { width=60 height= 60 }
+				format = "UP"
+				
+												
+			}
+			
 			gridboxtype = {
 				name = "trench_warfare_tree"
 				position = { x=1040 y=172 }
@@ -2861,7 +2888,17 @@ guiTypes = {
 				}					
 				
 			}
-
+			
+			gridboxtype = {
+				name = "grand_tree"
+				position = { x=1040 y=172 }
+				size = { width = 480 height = 1350 }
+				slotsize = { width=60 height= 60 }
+				format = "UP"
+				
+				
+				
+			}
 			gridboxtype = {
 				name = "mass_assault_tree"
 				position = { x=1520 y=172 }
@@ -2874,6 +2911,15 @@ guiTypes = {
 					quadTextureSprite ="GFX_fullborder_tiled"
 					position = { x=0 y=-150 }					
 				}					
+				
+			}
+			gridboxtype = {
+				name = "mass_ass_tree"
+				position = { x=1520 y=172 }
+				size = { width = 480 height = 1350 }
+				slotsize = { width=60 height= 60 }
+				format = "UP"
+								
 				
 			}
 		}

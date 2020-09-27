@@ -1,0 +1,302 @@
+technologies = {
+	mobile = {
+		amphibious_mechanized = {
+			max_organisation = 5
+
+		}
+		armored_car = {
+			breakthrough = 0.2
+			default_morale = 0.3
+			max_organisation = 17
+
+		}
+		army_speed_factor = 0.1
+		category_all_armor = {
+			breakthrough = 0.2
+			default_morale = 0.4
+			maximum_speed = 0.1
+
+		}
+		category_all_infantry = {
+			default_morale = 0.25
+			max_organisation = 30
+			maximum_speed = 0.1
+			soft_attack = 0.05
+
+		}
+		category_army = {
+			breakthrough = 0.05
+
+		}
+		category_light_infantry = {
+			max_organisation = 5
+
+		}
+		category_line_artillery = {
+			soft_attack = 0.1
+			hard_attack = 0.1
+
+		}
+		category_line_infantry = {
+			max_organisation = 5
+			defense = 0.1
+
+		}
+		category_mobile_artillery = {
+			default_morale = 0.05
+			max_organisation = 5
+			maximum_speed = 0.1
+
+		}
+		category_mobile_infantry = {
+			max_organisation = 5
+			defense = 0.1
+
+		}
+		category_support_battalions = {
+			max_organisation = 25
+
+		}
+		category_tanks = {
+			breakthrough = 0.1
+			max_organisation = 17
+
+		}
+		conscription = 0.015
+		dig_in_speed_factor = 0.3
+
+		doctrine = yes
+
+		folder = {name = land_doctrine_folder
+			position = { x = 0 y = 18 }
+
+			}	land_reinforce_rate = 0.02
+		mechanized = {
+			max_organisation = 5
+
+		}
+		motorized = {
+			max_organisation = 5
+
+		}
+		path = {
+			research_cost_coeff = 14
+
+		}
+		planning_speed = 0.7
+		research_cost = 63.75
+		resistance_damage_to_garrison_on_our_occupied_states = 0.1
+
+	}
+	superior = {
+		army_bonus_air_superiority_factor = 0.2
+		category_all_armor = {
+			hard_attack = 0.1
+			soft_attack = 0.1
+			breakthrough = 0.1
+
+		}
+		category_all_infantry = {
+			defense = 0.1
+
+		}
+		category_anti_air = {
+			air_attack = 0.1
+
+		}
+		category_army = {
+			hard_attack = 0.1
+			soft_attack = 0.1
+			breakthrough = 0.1
+
+		}
+		category_artillery = {
+			ap_attack = 0.05
+			soft_attack = 0.15
+
+		}
+		category_light_infantry = {
+			default_morale = 0.05
+			max_organisation = 20
+
+		}
+		category_line_infantry = {
+			soft_attack = 0.05
+
+		}
+		category_mobile_infantry = {
+			max_organisation = 10
+
+		}
+		category_recon = {
+			recon = 1
+
+		}
+		category_support_battalions = {
+			max_organisation = 20
+			soft_attack = 0.5
+
+		}
+
+		doctrine = yes
+		field_hospital = {
+			casualty_trickleback = 0.1
+
+		}
+
+		folder = {name = land_doctrine_folder
+			position = { x = 0 y = 18 }
+
+			}	land_reinforce_rate = 0.04
+		path = {
+			research_cost_coeff = 14
+
+		}
+		research_cost = 63.75
+		signal_company = {
+			initiative = 0.05
+
+		}
+
+	}
+	grand = {
+		amphibious_mechanized = {
+			max_organisation = 5
+
+		}
+		armored_car = {
+			default_morale = 0.1
+			max_organisation = 11
+
+		}
+		category_all_armor = {
+			default_morale = 0.1
+
+		}
+		category_all_infantry = {
+			defense = 0.1
+			max_organisation = 27
+
+		}
+		category_army = {
+			maximum_speed = 0.1
+			breakthrough = 0.2
+			max_organisation = 7
+			soft_attack = 0.1
+
+		}
+		category_light_infantry = {
+			max_organisation = 5
+			breakthrough = 0.1
+
+		}
+		category_recon = {
+			recon = 1
+
+		}
+		category_tanks = {
+			max_organisation = 13
+
+		}
+		dig_in_speed_factor = 0.25
+
+		doctrine = yes
+
+		folder = {name = land_doctrine_folder
+			position = { x = 0 y = 18 }
+
+			}	land_night_attack = 0.25
+		land_reinforce_rate = 0.25
+		max_dig_in = 10
+		max_planning = 0.3
+		mechanized = {
+			max_organisation = 5
+
+		}
+		motorized = {
+			max_organisation = 5
+
+		}
+		path = {
+			research_cost_coeff = 14
+
+		}
+		research_cost = 63.75
+
+	}
+	mass_ass = {
+		amphibious_mechanized = {
+			max_organisation = 10
+			default_morale = 0.1
+
+		}
+		armored_car = {
+			breakthrough = 0.1
+			default_morale = 0.1
+			max_organisation = 8
+
+		}
+		army_core_attack_factor = 0.2
+		army_core_defence_factor = 0.2
+		category_all_armor = {
+			default_morale = 0.2
+
+		}
+		category_all_infantry = {
+			breakthrough = 0.1
+			default_morale = 0.15
+			defense = 0.1
+			max_organisation = 30
+
+		}
+		category_army = {
+			default_morale = 0.35
+
+		}
+		category_light_infantry = {
+			max_organisation = 5
+
+		}
+		category_support_battalions = {
+			max_organisation = 15
+
+		}
+		category_tanks = {
+			max_organisation = 7
+
+		}
+		conscription = 0.05
+
+		doctrine = yes
+
+		folder = {name = land_doctrine_folder
+			position = { x = 0 y = 18 }
+
+			}		infantry = {
+			default_morale = 0.3
+			max_strength = 8
+
+		}
+		land_reinforce_rate = 0.37
+		max_dig_in = 5
+		mechanized = {
+			max_organisation = 10
+			default_morale = 0.1
+
+		}
+		motorized = {
+			max_strength = 4
+			max_organisation = 10
+			default_morale = 0.1
+
+		}
+		no_supply_grace = 48
+		path = {
+			research_cost_coeff = 13
+
+		}
+		research_cost = 59.5
+		resistance_damage_to_garrison_on_our_occupied_states = 0.1
+		resistance_growth_on_our_occupied_states = 0.25
+
+	}
