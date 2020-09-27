@@ -1448,7 +1448,7 @@ technologies = {
 		sub_technologies = {
 			basic_heavy_td
 			basic_heavy_art
-			basic_medium_spaa
+			basic_heavy_spaa
 		}
 
 		ai_will_do = {
@@ -1548,32 +1548,32 @@ technologies = {
 	}
 
 
-	# basic_heavy_spaa = {
+	basic_heavy_spaa = {
 
-		# enable_equipments = {
-			# heavy_tank_aa_equipment_1
-		# }
-		# enable_subunits = {
-			# heavy_sp_anti_air_brigade
-		# }
+		enable_equipments = {
+			medium_tank_aa_equipment_1
+		}
+		enable_subunits = {
+			medium_sp_anti_air_brigade
+		}
 
-		# research_cost = 0.3
-		# start_year = 1934
+		research_cost = 0.3
+		start_year = 1934
 
-		# ai_will_do = {
-			# factor = 0
+		ai_will_do = {
+			factor = 0
 
-			# modifier = {
-				# factor = 0
-				# OR = {
-					# has_tech = improved_heavy_spaa
-					# can_research = improved_heavy_spaa
-					# is_researching_technology = improved_heavy_tank
-				# }
-			# }
-		# }
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = improved_heavy_spaa
+					can_research = improved_heavy_spaa
+					is_researching_technology = improved_heavy_tank
+				}
+			}
+		}
 
-	# }
+	}
 
 	improved_heavy_tank = { #Tiger
 
@@ -1633,7 +1633,7 @@ technologies = {
 		sub_technologies = {
 			improved_heavy_td
 			improved_heavy_art
-			improved_medium_spaa
+			improved_heavy_spaa
 		}
 
 		ai_will_do = {
@@ -1726,32 +1726,32 @@ technologies = {
 	}
 
 
-	# improved_heavy_spaa = {
+	improved_heavy_spaa = {
 
-		# enable_equipments = {
-			# heavy_tank_aa_equipment_2
-		# }
+		enable_equipments = {
+			medium_tank_aa_equipment_2
+		}
 
-		# research_cost = 0.3
-		# start_year = 1941
-		# categories = {
-			# year_1941
-		# }
+		research_cost = 0.3
+		start_year = 1941
+		categories = {
+			year_1941
+		}
 
-		# ai_will_do = {
-			# factor = 0
+		ai_will_do = {
+			factor = 0
 
-			# modifier = {
-				# factor = 0
-				# OR = {
-					# has_tech = advanced_heavy_spaa
-					# can_research = advanced_heavy_spaa
-					# is_researching_technology = advanced_heavy_tank
-				# }
-			# }
-		# }
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = advanced_heavy_spaa
+					can_research = advanced_heavy_spaa
+					is_researching_technology = advanced_heavy_tank
+				}
+			}
+		}
 
-	# }
+	}
 
 	advanced_heavy_tank = { #King Tiger
 
@@ -1781,7 +1781,7 @@ technologies = {
 		sub_technologies = {
 			advanced_heavy_td
 			advanced_heavy_art
-			advanced_medium_spaa
+			advanced_heavy_spaa
 		}
 
 		ai_will_do = {
@@ -1855,28 +1855,28 @@ technologies = {
 		}
 	}
 
-	# advanced_heavy_spaa = {
+	advanced_heavy_spaa = {
 
-		# enable_equipments = {
-			# heavy_tank_aa_equipment_3
-		# }
+		enable_equipments = {
+			medium_tank_aa_equipment_3
+		}
 
-		# research_cost = 0.3
-		# start_year = 1943
+		research_cost = 0.3
+		start_year = 1943
 
-		# ai_will_do = {
-			# factor = 0
+		ai_will_do = {
+			factor = 0
 
-			# modifier = {
-				# factor = 0
-				# OR = {
-					# has_tech = modern_spaa
-					# can_research = modern_spaa
-					# is_researching_technology = main_battle_tank
-				# }
-			# }
-		# }
-	# }
+			modifier = {
+				factor = 0
+				OR = {
+					has_tech = modern_spaa
+					can_research = modern_spaa
+					is_researching_technology = main_battle_tank
+				}
+			}
+		}
+	}
 
 	super_heavy_tank = { #Maus
 
