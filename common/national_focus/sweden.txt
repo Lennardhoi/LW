@@ -19,7 +19,7 @@ focus_tree = {
 
 		x = 10
 		y = 0
-		cost =52.2
+		cost =52
 
 		available_if_capitulated = yes
 
@@ -58,15 +58,6 @@ focus_tree = {
 		relative_position_id = NDA_anti_meme
 		available_if_capitulated = yes
 		completion_reward = {
-		create_equipment_variant = {
-				name = "C.202 Folgore C"
-				type = fighter_equipment_2
-				upgrades = {
-					plane_range_upgrade=5
-					plane_engine_upgrade=5
-				}
-			}
-	 	add_ideas=piaggio
 			every_country={
 				limit={is_playable_country=yes}
 				swap_ideas={
@@ -92,14 +83,7 @@ focus_tree = {
 
 
 		completion_reward = {
-		create_equipment_variant = {
-				name = "Breda Ba.88 Lince"
-				type = cas_equipment_2
-				upgrades = {
-					plane_range_upgrade=5
-					plane_cas_upgrade=5
-				}
-			}
+		
 			every_country={
 				limit={is_playable_country=yes}
 				swap_ideas={

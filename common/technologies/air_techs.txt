@@ -182,7 +182,9 @@ technologies = {
 			leads_to_tech = fighter2
 			research_cost_coeff = 1
 		}
-
+		path = {
+			research_cost_coeff = 1
+		}
 		research_cost = 2
 		start_year = 1936
 		categories = {
@@ -285,12 +287,15 @@ technologies = {
 		enable_equipments = {
 			fighter_equipment_2
 		}
-
+		on_research_complete= { 
+		if={limit={OR={tag=USA tag=ITA}}
+		set_technology={fighter2_alt=1}
+		}
+		}
 		path = {
 			leads_to_tech = fighter3
 			research_cost_coeff = 1
 		}
-
 
 		research_cost = 2
 		start_year = 1940
@@ -355,7 +360,62 @@ technologies = {
 			}
 		}
 	}
+	fighter2_alt = {
 
+		enable_equipments = {
+			fighter_equipment_alt_2
+		}
+
+		allow = {
+			always = no
+		}
+		research_cost = 2
+		start_year = 1940
+		categories = {
+			year_1940
+		}
+		
+
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+
+		# sub_technologies = {
+			# cv_fighter2
+			# }
+
+		
+	}
+	fighter3_alt = {
+
+		enable_equipments = {
+			fighter_equipment_alt_3
+		}
+
+		allow = {
+			always = no
+		}
+		research_cost = 2
+		start_year = 1940
+		categories = {
+			year_1940
+		}
+		
+
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+
+		# sub_technologies = {
+			# cv_fighter2
+			# }
+
+		
+	}
 	# cv_fighter2 = {
 
 		# enable_equipments = {
@@ -423,7 +483,11 @@ technologies = {
 			leads_to_tech = jet_fighter1
 			research_cost_coeff = 1
 		}
-
+		on_research_complete= { 
+		if={limit={OR={tag=USA tag=ITA}}
+		set_technology={fighter3_alt=1}
+		}
+		}
 
 
 		research_cost = 2

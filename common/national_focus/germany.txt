@@ -1238,7 +1238,7 @@ focus_tree = {
 				category = land_doctrine
 			}
 			add_tech_bonus = {
-				bonus = 1.5
+				bonus = 1.2
 				uses = 1
 				name = tank_innovation_bonus
 				technology = improved_medium_tank
@@ -1564,7 +1564,7 @@ focus_tree = {
 		icon = GFX_GER_mobile_fortresses
 		text="Battle of Raseiniai"
 		prerequisite = { focus = GER_german_engineering }
-
+		
 
 		available = {
 			has_war_with = SOV
@@ -1680,6 +1680,8 @@ focus_tree = {
 	focus = {
 		id = GER_assault_rifles
 		icon = GFX_focus_GER_new_weapons
+		
+		available={date>1942.1.1}
 		x = 0
 		y = 1
 		relative_position_id = GER_raseiniai
@@ -1713,6 +1715,7 @@ focus_tree = {
 		id = GER_vampir
 		x = 0
 		y = 1
+		available={date>1942.6.1}
 		relative_position_id = GER_assault_rifles
 		prerequisite = { focus = GER_assault_rifles}
 		cost = 10
@@ -1804,7 +1807,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		available = { date > 1942.5.1}
+		available = { 
+			date > 1942.5.1
+			has_tech=advanced_medium_tank
+		}
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
@@ -1871,6 +1877,7 @@ add_tech_bonus = {
 	focus = {
 		id = GER_fighter_3
 		icon = GFX_focus_GER_peenemunde_research_facility
+		available={date>1942.1.1}
 		prerequisite = { focus = GER_ural_bomber }
 		x = 0
 		y = 1
@@ -1892,6 +1899,7 @@ add_tech_bonus = {
 		id = GER_rocket_interceptor
 		icon = GFX_focus_GER_peenemunde_research_jet_engine
 		prerequisite = { focus = GER_fighter_3 }
+		available={date>1942.6.1}
 		x = 0
 		y = 1
 		relative_position_id = GER_fighter_3
@@ -1909,6 +1917,7 @@ add_tech_bonus = {
 	focus = {
 		id = GER_rocketry_focus
 		icon = GFX_focus_GER_New_Missile_Designs
+		available={date>1941.6.1}
 		prerequisite = { focus = GER_german_engineering }
 		x = 1
 		y = 1
@@ -1921,6 +1930,10 @@ add_tech_bonus = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+		set_technology = {
+					rocket_engines = 1
+					
+				}
 			add_ideas = GER_rocketry_idea
 			add_tech_bonus = {
 				name = GER_rocketry_focus
@@ -1942,6 +1955,7 @@ add_tech_bonus = {
 		prerequisite = { focus = GER_rocketry_focus }
 		x = 0
 		y = 1
+		available={date>1941.6.1}
 		relative_position_id = GER_rocketry_focus
 		cost = 5
 		ai_will_do = {
@@ -1964,6 +1978,7 @@ add_tech_bonus = {
 		x = 0
 		y = 1
 		relative_position_id =  GER_stuka
+		available={date>1942.1.1}
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -1973,7 +1988,6 @@ add_tech_bonus = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			set_technology = {
-					rocket_engines = 1
 					improved_rocket_engines = 1
 					jet_engines = 1
 					
@@ -1986,6 +2000,7 @@ add_tech_bonus = {
 		icon = GFX_focus_GER_Me262
 		prerequisite = { focus = GER_rocket_interceptor }
 		prerequisite = { focus = GER_v2 }
+		available={date>1943.5.1}
 		x = -1
 		y = 1
 		relative_position_id = GER_rocket_interceptor

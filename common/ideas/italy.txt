@@ -141,7 +141,7 @@ ideas = {
 
 
 			allowed = {
-				original_tag = "ITA"
+				original_tag = ITA
 			}
 
 			allowed_civil_war = {
@@ -157,16 +157,7 @@ ideas = {
 			}
 
 			removal_cost = -1
-			equipment_bonus = {
-
-				fighter_equipment = {
-					air_agility = 0.2
-					air_attack = 0.2
-					maximum_speed = 0.2
-					instant=yes
-				}
-
-			}
+			
 			modifier = {
 				stability_factor = 0.05
 			}
@@ -813,8 +804,6 @@ ideas = {
 			traits = { artillery_manufacturer }
 		}
 	}
-
-
 	aircraft_manufacturer = {
 
 		designer = yes
@@ -835,9 +824,16 @@ ideas = {
 			}
 
 			equipment_bonus = {
-
+				fighter_equipment_alt = {
+					instant = yes
+					build_cost_ic = -0.2
+					air_agility = 0.1
+					air_attack = 0.1
+					maximum_speed = 0.1
+					
+				}
 				fighter_equipment = {
-					build_cost_ic = -0.12
+					build_cost_ic = -0.10
 					air_agility = 0.1
 					air_attack = 0.1
 					maximum_speed = 0.1

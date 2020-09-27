@@ -6,7 +6,7 @@ foreign_politics = {
 		available = {
 			GER={has_war=yes}
 			NOT={has_country_flag=ll_enabled}
-
+			
 
 		}
 
@@ -24,25 +24,54 @@ foreign_politics = {
 		fire_only_once = no
 		complete_effect = {
 			custom_effect_tooltip="This will activate a monthly lendlease of the following equipment on the first day of a month."
-			hidden_effect={set_country_flag=ll_enabled}
-			effect_tooltip={
-				send_equipment = { equipment = fighter_equipment amount = 5000 target = GER }
-				send_equipment = { equipment = CAS_equipment amount = 5000 target = GER }
-				send_equipment = { equipment = nav_bomber_equipment amount = 5000 target = GER }
-				send_equipment = { equipment = tac_bomber_equipment amount = 5000 target = GER }
-				send_equipment = { equipment = heavy_fighter_equipment amount = 5000 target = GER }
-			}
+				hidden_effect={set_country_flag=ll_enabled}
+				effect_tooltip={
+					send_equipment = { equipment = fighter_equipment amount = 5000 target = GER }
+					send_equipment = { equipment = CAS_equipment amount = 5000 target = GER }
+					send_equipment = { equipment = nav_bomber_equipment amount = 5000 target = GER }
+					send_equipment = { equipment = tac_bomber_equipment amount = 5000 target = GER }
+					send_equipment = { equipment = heavy_fighter_equipment amount = 5000 target = GER }
+				}
 		}
 	}
-
-	ITA_disable_ll = {
+	ITA_support_luftwaffe = {
 		icon = generic_operation
 
 
 		available = {
+			GER={has_war_with=SOV}
+			has_equipment = {
+			fighter_equipment_alt > 599
+		}
 
+		}
+
+		allowed = {
+			tag = ITA
+		}
+
+
+		days_remove = 90
+		cost = 0
+
+		visible = {
+			always=yes
+		}
+		fire_only_once = no
+		complete_effect = {
+				GER={add_equipment_to_stockpile={type = fighter_equipment amount = 600 }}
+				add_equipment_to_stockpile={type = fighter_equipment_alt amount = -500 }
+				
+		}
+	}
+ITA_disable_ll = {
+		icon = generic_operation
+
+
+		available = {
+			
 			has_country_flag=ll_enabled
-
+			
 
 		}
 
@@ -56,13 +85,13 @@ foreign_politics = {
 
 		visible = {
 			always=yes
-
+			
 		}
 		fire_only_once = no
 		complete_effect = {
 			custom_effect_tooltip="This will deactivate the monthly lendlease of the following equipment on the first day of a month."
-			hidden_effect={clr_country_flag=ll_enabled}
-
+				hidden_effect={clr_country_flag=ll_enabled}
+				
 		}
 	}
 	ITA_annex_bul = {
@@ -71,12 +100,12 @@ foreign_politics = {
 
 		available = {
 			BUL = { is_ai = yes }
-			#date>1939.1.1
+			date>1939.1.1
 
 		}
 
 		allowed = {
-			tag = ITA
+			tag = ROM
 		}
 
 
@@ -86,17 +115,20 @@ foreign_politics = {
 		visible = {
 			BUL = { is_ai = yes }
 		}
-
+		fire_only_once = yes
 		complete_effect = {
-		SWE={add_research_slot=1}
-		add_equipment_to_stockpile = {
-   			 type = fighter_equipment_2
-    		  	 amount = 1000
-    			 producer = SWE
-		}
-				
-
-			
+			BUL = {
+				every_owned_state={
+					limit={is_core_of=PREV}
+					add_core_of = ROM
+				}
+			}
+			ROM = {
+				annex_country = {
+					target = BUL
+					transfer_troops = yes
+				}
+			}
 		}
 	}
 }
