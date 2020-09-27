@@ -28,6 +28,103 @@ ideas = {
 
 
 		}
+		
+		blood_toil_tears_sweat = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_start_efficiency_factor = 0.1
+			}
+
+			picture = eng_the_sun_never_sets
+			
+			removal_cost = -1	
+
+		}
+		ENG_appeasement = {
+			allowed = {
+				always = yes
+			}
+          
+			removal_cost = -1
+			picture = HUN_treaty_of_triannon
+
+			modifier = {
+			global_building_slots_factor = 0.10
+			min_export = -0.05
+
+			}
+			}
+		
+		ENG_compass = {
+			allowed = {
+				always = yes
+			}
+          
+			removal_cost = -1
+			picture =  eng_the_sun_never_sets
+
+			modifier = {
+			army_attack_factor = 0.05
+			army_speed_factor = 0.05
+			}
+			}
+			
+		ENG_crusader = {
+			allowed = {
+				always = yes
+			}
+          
+			removal_cost = -1
+			picture = eng_the_sun_never_sets
+
+			modifier = {
+			army_armor_attack_factor = 0.1
+			army_infantry_attack_factor = 0.05
+			army_infantry_defence_factor = 0.05
+			}
+			}
+		
+		ENG_the_sun_never_sets_idea = {
+
+			name = ENG_the_sun_never_sets
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			equipment_bonus = {
+				screen_ship = {
+					naval_speed = 0.1 naval_range = 0.25
+				}
+				carrier = {
+					naval_speed = 0.1 naval_range = 0.25
+				}
+				capital_ship = {
+					naval_speed = 0.1 naval_range = 0.25
+				}
+				submarine = {
+					naval_speed = 0.1 naval_range = 0.25
+				}
+			}
+
+			picture = eng_the_sun_never_sets
+			
+			removal_cost = -1	
+
+		}
 		ENG_lose_in_africa = {
 			allowed = {
 				always = yes
@@ -36,8 +133,7 @@ ideas = {
 			removal_cost = -1
 			cancel={
 			
-					446={is_controlled_by = eng}
-					454={is_controlled_by = eng}
+					
 					452={is_controlled_by = eng}
 				
 				
@@ -1051,7 +1147,7 @@ ideas = {
 				original_tag = ENG
 			}
 
-			traits = { armaments_organizer }
+			traits = { captain_of_industry  }
 		}
 
 		ENG_ernest_bevin = {

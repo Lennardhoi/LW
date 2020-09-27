@@ -363,7 +363,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = limited_rearmament_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -381,7 +381,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = shadow_scheme_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -406,7 +406,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = uk_industrial_focus
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -487,6 +487,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = uk_industrial_focus }
 		icon = GFX_goal_generic_construct_mil_factory
+		mutually_exclusive = {focus = royal_navy_focus}
 		x = -1
 		y = 2
 		relative_position_id = uk_industrial_focus
@@ -539,34 +540,68 @@ focus_tree = {
 					instant_build = yes
 				}
 				set_state_flag = royal_ordinance_focus_2AF
-			}
-		}
+	 	}
+	 }
 	}
-
 	focus = {
-		id = uk_small_arms_focus
-		prerequisite = { focus = royal_ordinance_focus }
-		icon = GFX_goal_generic_production2
+		id = royal_navy_focus
+		available = {
+		}
+		prerequisite = { focus = uk_industrial_focus }
+		icon = GFX_goal_generic_construct_naval_dockyard
+		mutually_exclusive = {focus = royal_ordinance_focus }
 		x = 1
-		y = 1
-		relative_position_id = royal_ordinance_focus
+		y = 2
+		relative_position_id = uk_industrial_focus
 		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
 
-		available_if_capitulated = yes
+		continue_if_invalid = yes
 
+		bypass = {
+
+		}
+		
 		completion_reward = {
-			add_ideas = british_arms_discount
+			127 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = royal_ordinance_focus_2AF
+			}
+			131 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = royal_ordinance_focus_2AF
+			}
+			121 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = royal_ordinance_focus_2AF
+			}
 		}
 	}
+
+	
 	focus = {
 		id = UK_secret_focus
-		prerequisite = { focus = royal_ordinance_focus }
+		
 		prerequisite = { focus = maud_focus }
 		icon = GFX_goal_generic_secret_weapon
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = royal_ordinance_focus
 		cost = 10
@@ -1347,7 +1382,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = uk_service_focus
-		cost = 10
+		cost = 5
 		completion_reward = {
 			if = {
 				limit = {
@@ -2623,7 +2658,281 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = ENG_global_defense
+		prerequisite = { focus = ENG_steady_as_she_goes }
+		
 
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		available = {
+
+		}
+
+		continue_if_invalid = yes
+
+		icon = GFX_focus_eng_global_defense
+		x = 5
+		y = 1
+		relative_position_id = ENG_steady_as_she_goes
+		cost = 5
+		ai_will_do = {
+			factor = 1
+			
+		}	
+		completion_reward = {
+			add_ideas = SPA_foreign_training_staff
+		}
+	}
+
+	focus = {
+		id = ENG_the_sun_never_sets
+		prerequisite = { focus = ENG_global_defense }
+		available = { 
+			
+		}
+
+		continue_if_invalid = yes
+
+		icon = GFX_focus_eng_the_sun_never_sets
+		x = -1
+		y = 1
+		relative_position_id = ENG_global_defense
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			
+			add_ideas = ENG_the_sun_never_sets_idea
+			custom_effect_tooltip = ENG_the_sun_never_sets_tt
+		}
+	}
+
+
+
+	focus = {
+		id = ENG_no_further_appeasement
+		prerequisite = { focus = ENG_global_defense }
+		
+		available = { 
+			GER = {controls_state = 9}
+		}
+
+		continue_if_invalid = yes
+
+		icon = GFX_focus_generic_strike_at_democracy1
+		x = 1
+		y = 1
+		relative_position_id = ENG_global_defense
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+		add_ideas = ENG_appeasement	
+		}
+	}
+	focus = {
+		id = ENG_motion_of_no_confidence
+		
+		prerequisite = { focus = ENG_the_sun_never_sets }
+		prerequisite = { focus = ENG_no_further_appeasement }
+		available = { 
+			has_country_leader =  {
+				name = "Winston Churchill"
+				ruling_only = yes
+			}
+		}
+		
+
+		
+
+		icon = GFX_focus_eng_motion_of_no_confidence
+		x = -1
+		y = 1
+		
+		relative_position_id = ENG_no_further_appeasement
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+		add_timed_idea = {idea = blood_toil_tears_sweat days = 185}
+		}
+	}
+focus = {
+		id = uk_small_arms_focus
+		prerequisite = { focus = ENG_motion_of_no_confidence }
+		icon = GFX_goal_generic_production2
+		x = 2
+		y = 1
+		relative_position_id = ENG_motion_of_no_confidence
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = british_arms_discount
+		}
+	}
+
+	focus = {
+		id = ENG_kickstart_the_war_industry
+		prerequisite = { focus = ENG_motion_of_no_confidence }
+		available = { 
+			
+		}
+
+		continue_if_invalid = yes
+
+		icon = GFX_goal_generic_construct_mil_factory
+		x = -2
+		y = 1
+		relative_position_id = ENG_motion_of_no_confidence
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}	
+		complete_tooltip = {
+			every_state = {
+				limit = { has_state_flag = kickstart_the_war_industry_2AF }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			
+		}
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = kickstart_the_war_industry_2AF
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = kickstart_the_war_industry_2AF
+			}
+		}
+	}
+
+	
+
+	focus = {
+		id = ENG_compass
+		prerequisite = { focus = ENG_motion_of_no_confidence }
+		
+		available = { 
+			NOT = {has_full_control_of_state =446}
+		}
+		bypass = {
+			date > 1941.1.1
+		}
+
+		continue_if_invalid = yes
+
+		icon = GFX_focus_chi_british_cooperation
+		x = 0
+		y = 1
+		relative_position_id = ENG_motion_of_no_confidence
+		cost = 0
+		ai_will_do = {
+			factor = 10
+		}
+		search_filters = {FOCUS_FILTER_RESEARCH}	
+		completion_reward = {
+			add_timed_idea = {idea = ENG_compass days = 60}
+			hidden_effect = {
+			
+			FRA = {add_timed_idea = {idea = ENG_compass days = 60}}
+			SAF = {add_timed_idea = {idea = ENG_compass days = 60}}
+			RAJ = {add_timed_idea = {idea = ENG_compass days = 60}}
+			NZL = {add_timed_idea = {idea = ENG_compass days = 60}}
+			CAN = {add_timed_idea = {idea = ENG_compass days = 60}}
+			AST = {add_timed_idea = {idea = ENG_compass days = 60}}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			}
+		}
+	}
+	
+	focus = {
+		id = ENG_crusader
+		prerequisite = { focus = ENG_compass }
+		available = { 
+		date > 1941.08.1
+		}
+        Hidden_effect = {bypass ={NOT ={ITA ={controls_state = 448 controls_state = 661}}}}
+		continue_if_invalid = yes
+
+		icon = GFX_goal_generic_major_war
+		x = 0
+		y = 1
+		relative_position_id = ENG_compass
+		cost = 0
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+			add_timed_idea = {idea = ENG_crusader days = 45}
+			hidden_effect = {
+			
+			FRA = {add_timed_idea = {idea = ENG_crusader days = 45}}
+			SAF = {add_timed_idea = {idea = ENG_crusader days = 45}}
+			RAJ = {add_timed_idea = {idea = ENG_crusader days = 45}}
+			NZL = {add_timed_idea = {idea = ENG_crusader days = 45}}
+			CAN = {add_timed_idea = {idea = ENG_crusader days = 45}}
+			AST = {add_timed_idea = {idea = ENG_crusader days = 45}}
+			
+			
+
+			}
+		}
+	}
+
+	
 	# START IRAQ/IRAN/USSR INTERVENTION #
 
 

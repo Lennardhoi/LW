@@ -16,7 +16,7 @@ focus_tree = {
 			tag = GER
 		}
 	}
-	 
+ 
 	continuous_focus_position = { x = 50 y = 1680 }
 	default = no
 
@@ -2095,6 +2095,7 @@ add_tech_bonus = {
 		}
 
 		completion_reward = {
+		    add_political_power = 150
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = todt
 		}

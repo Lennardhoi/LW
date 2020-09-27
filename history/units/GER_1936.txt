@@ -51,25 +51,37 @@ division_template = {
 }
 
 division_template = {
-	name = "Garnison"
+	name = "SS-Division"
 
 	division_names_group = GER_Inf_01
 
 	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 0 y = 3 }
-		infantry = { x = 0 y = 4 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-		infantry = { x = 1 y = 3 }
-		infantry = { x = 1 y = 4 }
+		heavy_armor = { x = 0 y = 0 }
+		heavy_armor = { x = 0 y = 1 }
+		heavy_armor = { x = 0 y = 2 }
+		heavy_armor = { x = 0 y = 3 }
+		heavy_armor = { x = 1 y = 0 }
+		heavy_armor = { x = 1 y = 1 }
+		heavy_armor = { x = 1 y = 2 }
+		heavy_armor = { x = 1 y = 3 }
+		heavy_armor = { x = 2 y = 0 }
+		heavy_armor = { x = 2 y = 1 }
+		heavy_armor = { x = 2 y = 2 }
+		heavy_armor = { x = 2 y = 3 }
+		motorized = { x = 3 y = 0 }
+		motorized = { x = 3 y = 1 }
+		motorized = { x = 3 y = 2 }
+		motorized = { x = 3 y = 3 }
+		motorized = { x = 4 y = 0 }
+		motorized = { x = 4 y = 1 }
+		motorized = { x = 4 y = 2 }
+		motorized = { x = 4 y = 3 }
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
-		anti_air = { x = 0 y = 1  }
+		recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		anti_air = { x = 0 y = 3  }
 	}
 	priority = 0
 }
@@ -106,33 +118,34 @@ division_template = {
 		recon = { x = 0 y = 1 }
 		artillery = { x = 0 y = 2 }
 		anti_air = { x = 0 y = 3  }
+		
 	}
 }
 
 
 division_template = {
-	name = "SS-Division"
+	name = "Brandenburgers"
 
 	division_names_group = GER_Inf_01
 	is_locked = yes
 	regiments = {
-		mountaineers = { x = 0 y = 0 }
-		mountaineers = { x = 0 y = 1 }
-		mountaineers = { x = 0 y = 2 }
-		mountaineers = { x = 0 y = 3 }
+		shocktroop = { x = 0 y = 0 }
+		shocktroop = { x = 0 y = 1 }
+		shocktroop = { x = 0 y = 2 }
+		shocktroop = { x = 0 y = 3 }
 		artillery_brigade = { x = 0 y = 4 }
-		mountaineers = { x = 1 y = 0 }
-		mountaineers = { x = 1 y = 1 }
-		mountaineers = { x = 1 y = 2 }
-		mountaineers = { x = 1 y = 3 }
+		shocktroop = { x = 1 y = 0 }
+		shocktroop = { x = 1 y = 1 }
+		shocktroop = { x = 1 y = 2 }
+		shocktroop = { x = 1 y = 3 }
 		artillery_brigade = { x = 1 y = 4 }
-		mountaineers = { x = 2 y = 0 }
-		mountaineers = { x = 2 y = 1 }
-		mountaineers = { x = 2 y = 2 }
+		shocktroop = { x = 2 y = 0 }
+		shocktroop = { x = 2 y = 1 }
+		shocktroop = { x = 2 y = 2 }
 		artillery_brigade = { x = 2 y = 3 }
-		mountaineers = { x = 3 y = 0 }
-		mountaineers = { x = 3 y = 1 }
-		mountaineers = { x = 3 y = 2 }
+		shocktroop = { x = 3 y = 0 }
+		shocktroop = { x = 3 y = 1 }
+		shocktroop = { x = 3 y = 2 }
 		artillery_brigade = { x = 3 y = 3 }
 	}
 	support = {
@@ -140,7 +153,7 @@ division_template = {
 		artillery = { x = 0 y = 1 }
 		recon = { x = 0 y = 2 }
 		anti_air = { x = 0 y = 3  }
-		logistics_company = { x = 0 y = 4  }
+		anti_tank = { x = 0 y = 4  }
 		signal_company = { x = 0 y = 5  }
 	}
 	priority = 2
@@ -153,38 +166,38 @@ units = {
 	division= {
 		name = "SS-Division Leibstandarte SS Adolf Hitler"
 		location = 6334
-		division_template = "SS-Division"
+		division_template = "Brandenburgers"
 		start_experience_factor = 1
 	}
 	division= {
 		name = "SS-Division Totenkopf"
 		location = 6334
-		division_template = "SS-Division"
+		division_template = "Brandenburgers"
 		start_experience_factor = 1
 	}
 	division= {
 		name = "SS-Division Das Reich"
 
 		location = 6334
-		division_template = "SS-Division"
+		division_template = "Brandenburgers"
 		start_experience_factor = 1
 	}
 	division= {
 		name = "SS-Division Wiking"
 		location = 6334
-		division_template = "SS-Division"
+		division_template = "Brandenburgers"
 		start_experience_factor = 1
 	}
 	division= {
 		name = "SS-Division Nibelungen"
 		location = 6334
-		division_template = "SS-Division"
+		division_template = "Brandenburgers"
 		start_experience_factor = 1
 	}
 	division= {
 		name = "SS-Division Polizei"
 		location = 6334
-		division_template = "SS-Division"
+		division_template = "Brandenburgers"
 		start_experience_factor = 1
 	}
 	division= {
@@ -267,6 +280,16 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = light_tank_equipment_2
+			creator = "GER"
+		}
+		requested_factories = 2
+		progress = 0.4
+		efficiency = 50
+	}
+	
+	add_equipment_production = {
+		equipment = {
+			type = heavy_tank_equipment_1
 			creator = "GER"
 		}
 		requested_factories = 2

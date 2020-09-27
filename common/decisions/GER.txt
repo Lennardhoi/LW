@@ -12,6 +12,8 @@ operations = {
 		complete_effect = {
 		
 		    hidden_effect = {
+			    ENG = { add_to_faction = DEN }  
+				ENG = { add_to_faction = NOR }  
 				DEN = { add_to_war = { targeted_alliance = ENG enemy = GER } }
 				NOR = { add_to_war = { targeted_alliance = ENG enemy = GER } }
 				
@@ -47,11 +49,14 @@ operations = {
 		icon = ger_reichskommissariats
 		fire_only_once = yes
 		allowed = {  tag = GER }
-		available = {  POL = {has_capitulated =yes }GER = {has_completed_focus =GER_around_maginot}  }
+		available = {  GER = { controls_state = 10 }GER = {has_completed_focus =GER_around_maginot}  }
 		cost = 0
 		complete_effect = {
 			
 			hidden_effect = {
+			    ENG = { add_to_faction = LUX}  
+				ENG = { add_to_faction = HOL }  
+				ENG = { add_to_faction = BEL }  
 				LUX = { add_to_war = { targeted_alliance = ENG enemy = GER } }
 				HOL = { add_to_war = { targeted_alliance = ENG enemy = GER } }
 				BEL = { add_to_war = { targeted_alliance = ENG enemy = GER } }

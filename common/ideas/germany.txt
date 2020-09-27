@@ -13,6 +13,7 @@ ideas = {
 
 			modifier = {
 				stability_factor = 0.1
+				war_support_factor = 0.1
 				consumer_goods_factor = 0.05
 
 				}}
@@ -935,7 +936,7 @@ ideas = {
 				has_completed_focus = GER_west_wall
 			}
 
-			traits = { fortification_engineer }
+			traits = { fortification_engineer quartermaster_general	}
 
 			ai_will_do = {
 				factor = 0.5
@@ -987,7 +988,7 @@ ideas = {
 
 		joseph_goebbels = {
 
-
+                
 			allowed = {
 				original_tag = GER
 			}
@@ -1011,7 +1012,7 @@ ideas = {
 
 		rudolf_hess = {
 
-
+            cost = 50
 			allowed = {
 				original_tag = GER
 			}
@@ -1042,8 +1043,8 @@ ideas = {
 		}
 
 		martin_bormann = {
-
-
+            
+            cost = 75
 			allowed = {
 				original_tag = GER
 			}

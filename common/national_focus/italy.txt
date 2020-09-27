@@ -1069,7 +1069,7 @@ focus_tree = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
 						type = infrastructure
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -1079,7 +1079,7 @@ focus_tree = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
 						type = infrastructure
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -1089,7 +1089,7 @@ focus_tree = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
 						type = infrastructure
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -1099,7 +1099,7 @@ focus_tree = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
 						type = infrastructure
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -1109,7 +1109,7 @@ focus_tree = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
 						type = infrastructure
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -1119,7 +1119,7 @@ focus_tree = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
 						type = infrastructure
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -1129,7 +1129,7 @@ focus_tree = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
 						type = infrastructure
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -1139,7 +1139,7 @@ focus_tree = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
 						type = infrastructure
-						level = 2
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -2594,73 +2594,73 @@ focus_tree = {
 			158 = {
 				custom_effect_tooltip = ITA_fortification_effort_forts
 				hidden_effect = {
-					add_building_construction = {
+					set_building_level = {
 						type = bunker
 						level = 3
 						province = 611
 						instant_build = yes
 					}
-					add_building_construction = {
+					set_building_level = {
 						type = bunker
 						level = 3
 						province = 6780
 						instant_build = yes
 					}
-					add_building_construction = {
+					set_building_level = {
 						type = bunker
 						level = 3
 						province = 9738
 						instant_build = yes
 					}
-					add_building_construction = {
+					set_building_level = {
 						type = bunker
 						level = 3
 						province = 11721
 						instant_build = yes
 					}
-					add_building_construction = {
+					set_building_level = {
 						type = bunker
 						level = 3
 						province = 11891
 						instant_build = yes
 					}
-					add_building_construction = {
+					set_building_level = {
 						type = bunker
 						level = 3
 						province = 6675
 						instant_build = yes
 					}
-					add_building_construction = {
+					set_building_level = {
 						type = bunker
 						level = 3
 						province = 9630
 						instant_build = yes
 					}
-					add_building_construction = {
+					set_building_level = {
 						type = bunker
 						level = 3
 						province = 11615
 						instant_build = yes
 					}
-					add_building_construction = {
+					set_building_level = {
 						type = bunker
 						level = 3
 						province = 3657
 						instant_build = yes
 					}
-					add_building_construction = {
+					set_building_level = {
 						type = bunker
 						level = 3
 						province = 9613
 						instant_build = yes
 					}
-					add_building_construction = {
+					set_building_level = {
 						type = bunker
 						level = 3
 						province = 11595
 						instant_build = yes
 					}
-					add_building_construction = {
+					set_building_level = {
 						type = bunker
 						level = 3
 						province = 6626
@@ -2685,7 +2685,7 @@ focus_tree = {
 		completion_reward = {
 			# Dodecanese
 			164 = {
-				add_building_construction = {
+				set_building_level = {
 					type = coastal_bunker
 					level = 3
 					province = 10007
@@ -2694,7 +2694,7 @@ focus_tree = {
 			}
 			# Sardinia
 			114 = {
-				add_building_construction = {
+				set_building_level = {
 					type = coastal_bunker
 					level = 2
 					province = 9863
@@ -2702,7 +2702,7 @@ focus_tree = {
 				}
 			}
 			114 = {
-				add_building_construction = {
+				set_building_level = {
 					type = coastal_bunker
 					level = 2
 					province = 6891
@@ -2710,7 +2710,7 @@ focus_tree = {
 				}
 			}
 			114 = {
-				add_building_construction = {
+				set_building_level = {
 					type = coastal_bunker
 					level = 2
 					province = 9772
@@ -2718,7 +2718,7 @@ focus_tree = {
 				}
 			}
 			114 = {
-				add_building_construction = {
+				set_building_level = {
 					type = coastal_bunker
 					level = 2
 					province = 11824
@@ -2726,7 +2726,7 @@ focus_tree = {
 				}
 			}
 			114 = {
-				add_building_construction = {
+				set_building_level = {
 					type = coastal_bunker
 					level = 2
 					province = 11874
@@ -2734,7 +2734,7 @@ focus_tree = {
 				}
 			}
 			114 = {
-				add_building_construction = {
+				set_building_level = {
 					type = coastal_bunker
 					level = 2
 					province = 11773
@@ -2742,7 +2742,7 @@ focus_tree = {
 				}
 			}
 			114 = {
-				add_building_construction = {
+				set_building_level = {
 					type = coastal_bunker
 					level = 2
 					province = 902
@@ -2750,7 +2750,7 @@ focus_tree = {
 				}
 			}
 			114 = {
-				add_building_construction = {
+				set_building_level = {
 					type = coastal_bunker
 					level = 2
 					province = 11755
@@ -2762,7 +2762,7 @@ focus_tree = {
 
 			# Sicily
 			115 = {
-				add_building_construction = {
+				set_building_level = {
 					type = coastal_bunker
 					level = 1
 					province = 4159
@@ -2770,7 +2770,7 @@ focus_tree = {
 				}
 			}
 			115 = {
-				add_building_construction = {
+				set_building_level = {
 					type = coastal_bunker
 					level = 1
 					province = 4014
@@ -2778,7 +2778,7 @@ focus_tree = {
 				}
 			}
 			115 = {
-				add_building_construction = {
+				set_building_level = {
 					type = coastal_bunker
 					level = 1
 					province = 1009
@@ -2786,7 +2786,7 @@ focus_tree = {
 				}
 			}
 			115 = {
-				add_building_construction = {
+				set_building_level = {
 					type = coastal_bunker
 					level = 1
 					province = 7147
@@ -2794,7 +2794,7 @@ focus_tree = {
 				}
 			}
 			115 = {
-				add_building_construction = {
+				set_building_level = {
 					type = coastal_bunker
 					level = 1
 					province = 7059
@@ -2802,7 +2802,7 @@ focus_tree = {
 				}
 			}
 			115 = {
-				add_building_construction = {
+				set_building_level = {
 					type = coastal_bunker
 					level = 1
 					province = 10074
@@ -2810,7 +2810,7 @@ focus_tree = {
 				}
 			}
 			115 = {
-				add_building_construction = {
+				set_building_level = {
 					type = coastal_bunker
 					level = 1
 					province = 3857
@@ -2818,7 +2818,7 @@ focus_tree = {
 				}
 			}
 			115 = {
-				add_building_construction = {
+				set_building_level = {
 					type = coastal_bunker
 					level = 1
 					province = 1156
@@ -2843,7 +2843,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			2 = {
-				add_building_construction = {
+				set_building_level = {
 					type = bunker
 					level = 2
 					province = 923
@@ -2851,7 +2851,7 @@ focus_tree = {
 				}
 			}
 			2 = {
-				add_building_construction = {
+				set_building_level = {
 					type = bunker
 					level = 2
 					province = 11882
@@ -2859,7 +2859,7 @@ focus_tree = {
 				}
 			}
 			2 = {
-				add_building_construction = {
+				set_building_level = {
 					type = bunker
 					level = 2
 					province = 9904
@@ -2868,7 +2868,7 @@ focus_tree = {
 			}
 
 			157 = {
-				add_building_construction = {
+				set_building_level = {
 					type = bunker
 					level = 2
 					province = 3923
@@ -2876,7 +2876,7 @@ focus_tree = {
 				}
 			}
 			157 = {
-				add_building_construction = {
+				set_building_level = {
 					type = bunker
 					level = 2
 					province = 963
@@ -2884,7 +2884,7 @@ focus_tree = {
 				}
 			}
 			157 = {
-				add_building_construction = {
+				set_building_level = {
 					type = bunker
 					level = 2
 					province = 3910
@@ -2892,7 +2892,7 @@ focus_tree = {
 				}
 			}
 			157 = {
-				add_building_construction = {
+				set_building_level = {
 					type = bunker
 					level = 2
 					province = 11790
@@ -2900,7 +2900,7 @@ focus_tree = {
 				}
 			}
 			157 = {
-				add_building_construction = {
+				set_building_level = {
 					type = bunker
 					level = 2
 					province = 9838
@@ -2908,7 +2908,7 @@ focus_tree = {
 				}
 			}
 			157 = {
-				add_building_construction = {
+				set_building_level = {
 					type = bunker
 					level = 2
 					province = 925
@@ -2931,7 +2931,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			157 = {
-				add_building_construction = {
+				set_building_level = {
 					type = bunker
 					level = 5
 					province = 967
@@ -2939,7 +2939,7 @@ focus_tree = {
 				}
 			}
 			157 = {
-				add_building_construction = {
+				set_building_level = {
 					type = bunker
 					level = 5
 					province = 11861
@@ -2947,7 +2947,7 @@ focus_tree = {
 				}
 			}
 			162 = {
-				add_building_construction = {
+				set_building_level = {
 					type = bunker
 					level = 5
 					province = 9879
@@ -2955,7 +2955,7 @@ focus_tree = {
 				}
 			}
 			162 = {
-				add_building_construction = {
+				set_building_level = {
 					type = bunker
 					level = 5
 					province = 9907
@@ -2963,7 +2963,7 @@ focus_tree = {
 				}
 			}
 			162 = {
-				add_building_construction = {
+				set_building_level = {
 					type = bunker
 					level = 5
 					province = 11889
@@ -2971,7 +2971,7 @@ focus_tree = {
 				}
 			}
 			162 = {
-				add_building_construction = {
+				set_building_level = {
 					type = bunker
 					level = 5
 					province = 1616
@@ -2979,7 +2979,7 @@ focus_tree = {
 				}
 			}
 			162 = {
-				add_building_construction = {
+				set_building_level = {
 					type = bunker
 					level = 5
 					province = 6973
@@ -2987,7 +2987,7 @@ focus_tree = {
 				}
 			}
 			161 = {
-				add_building_construction = {
+				set_building_level = {
 					type = bunker
 					level = 5
 					province = 9924
@@ -3011,13 +3011,13 @@ focus_tree = {
 		}
 		completion_reward = {
 			663 = {
-				add_building_construction = {
+				set_building_level = {
 					type = bunker
 					level = 2
 					province = 4060
 					instant_build = yes
 				}
-			    add_building_construction = {
+			    set_building_level = {
 					type = bunker
 					level = 2
 					province = 10120
@@ -3026,7 +3026,7 @@ focus_tree = {
 			
 			}
 			663 = {
-				add_building_construction = {
+				set_building_level = {
 					type = bunker
 					level = 2
 					province = 13239
@@ -3034,7 +3034,7 @@ focus_tree = {
 				}
 			}
 			663 = {
-				add_building_construction = {
+				set_building_level = {
 					type = bunker
 					level = 2
 					province = 1060
