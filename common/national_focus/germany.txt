@@ -16,7 +16,7 @@ focus_tree = {
 			tag = GER
 		}
 	}
-	 
+
 	continuous_focus_position = { x = 50 y = 1680 }
 	default = no
 
@@ -744,7 +744,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-          random_owned_controlled_state = {
+			random_owned_controlled_state = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
@@ -811,7 +811,7 @@ focus_tree = {
 				}
 
 			}
-			
+
 
 			ROM = { country_event = { id = wtt_germany.72 }
 				if = {
@@ -886,7 +886,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-       annex_country = { target = HUN transfer_troops = yes }
+			annex_country = { target = HUN transfer_troops = yes }
 		}
 	}
 	focus = {
@@ -912,7 +912,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 
-     annex_country = { target = ROM transfer_troops = yes }
+			annex_country = { target = ROM transfer_troops = yes }
 		}
 	}
 
@@ -930,7 +930,7 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-		
+
 		}
 		prerequisite = { focus = GER_rhineland }
 		available_if_capitulated = yes
@@ -957,7 +957,7 @@ focus_tree = {
 
 
 			}
-			
+
 			55 = {
 
 				set_building_level = {
@@ -1265,7 +1265,7 @@ focus_tree = {
 				name = "8.8 cm Flak 41"
 				type = anti_air_equipment_3
 			}
-			
+
 			add_equipment_production = {
 				equipment = {
 
@@ -1564,7 +1564,7 @@ focus_tree = {
 		icon = GFX_GER_mobile_fortresses
 		text="Battle of Raseiniai"
 		prerequisite = { focus = GER_german_engineering }
-		
+
 
 		available = {
 			has_war_with = SOV
@@ -1680,7 +1680,7 @@ focus_tree = {
 	focus = {
 		id = GER_assault_rifles
 		icon = GFX_focus_GER_new_weapons
-		
+
 		available={date>1942.1.1}
 		x = 0
 		y = 1
@@ -1807,7 +1807,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		available = { 
+		available = {
 			date > 1942.5.1
 			has_tech=advanced_medium_tank
 		}
@@ -1866,7 +1866,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-add_tech_bonus = {
+			add_tech_bonus = {
 				name = GER_ural_bomber
 				bonus = 3.0
 				uses = 3
@@ -1911,7 +1911,7 @@ add_tech_bonus = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-         set_technology = { advanced_rocket_engines = 1}
+			set_technology = { advanced_rocket_engines = 1}
 		}
 	}
 	focus = {
@@ -1930,10 +1930,10 @@ add_tech_bonus = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-		set_technology = {
-					rocket_engines = 1
-					
-				}
+			set_technology = {
+				rocket_engines = 1
+
+			}
 			add_ideas = GER_rocketry_idea
 			add_tech_bonus = {
 				name = GER_rocketry_focus
@@ -1988,11 +1988,11 @@ add_tech_bonus = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			set_technology = {
-					improved_rocket_engines = 1
-					jet_engines = 1
-					
-				}
-			
+				improved_rocket_engines = 1
+				jet_engines = 1
+
+			}
+
 		}
 	}
 	focus = {
@@ -2808,7 +2808,7 @@ add_tech_bonus = {
 		y = 1
 		cost = 5
 		available = {
-			
+
 
 			or = { 763 = { is_controlled_by = Sov  }
 				15 = { is_controlled_by = FRA }
@@ -3035,7 +3035,7 @@ add_tech_bonus = {
 				add_political_power = -150
 				country_event = soviet.141
 			}
-	    }
+		}
 	}
 	focus = {
 		id = GER_danzig_or_war
@@ -3061,10 +3061,10 @@ add_tech_bonus = {
 		completion_reward = {
 			custom_effect_tooltip="Unlocks a decision to declare war after 1.September 1939"
 			hidden_effect = {
-			POL = {
-				country_event = { id = germany.86 }
-			}
-			add_named_threat = { threat = 5 name = GER_danzig_or_war }	
+				POL = {
+					country_event = { id = germany.86 }
+				}
+				add_named_threat = { threat = 5 name = GER_danzig_or_war }
 				GER = {
 					add_intel = {
 						target = POL
@@ -3076,17 +3076,17 @@ add_tech_bonus = {
 				}
 				SOV = { add_ideas = war_in_our_neigbour }
 				JAP = { add_ideas = war_in_our_neigbour }
-			army_experience=70
-			add_resource = {
-				type=rubber
-				amount=-20
-				state=64
+				army_experience=70
+				add_resource = {
+					type=rubber
+					amount=-20
+					state=64
+				}
 			}
-			}
-			
 
-		
-			
+
+
+
 			hidden_effect = {
 
 				ENG = {
@@ -3128,12 +3128,12 @@ add_tech_bonus = {
 		prerequisite = { focus = GER_danzig_or_war }
 		will_lead_to_war_with = DEN
 		will_lead_to_war_with = NOR
- 
+
 		bypass = {
 		}
 
 		available = {
-			
+
 		}
 
 		x = 1
@@ -3149,8 +3149,8 @@ add_tech_bonus = {
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-		custom_effect_tooltip="Unlocks a decision to declare war on Denmark and Norway
-		"
+			custom_effect_tooltip="Unlocks a decision to declare war on Denmark and Norway
+			"
 			161 = {
 				add_resource = {
 					type=aluminium
@@ -3217,11 +3217,11 @@ add_tech_bonus = {
 		icon = GFX_goal_generic_attack_allies
 		prerequisite = { focus = GER_danzig_or_war }
 		available = {
-			
+
 		}
 
 		bypass = {
-		
+
 		}
 
 		historical_ai = {
@@ -3237,7 +3237,7 @@ add_tech_bonus = {
 		ai_will_do = {
 		}
 		completion_reward = {
-	     custom_effect_tooltip="Unlocks a decision to declare war"
+			custom_effect_tooltip="Unlocks a decision to declare war"
 			hidden_effect = {
 				news_event = { hours = 6 id = news.234 }
 			}
@@ -3307,25 +3307,25 @@ add_tech_bonus = {
 		cost = 2
 
 		bypass = {
-			
+
 		}
 
 		completion_reward = {
-	    custom_effect_tooltip="Unlocks a decision to declare war on the Soviet Union
-		"
-			
+			custom_effect_tooltip="Unlocks a decision to declare war on the Soviet Union
+			"
+
 
 			hidden_effect={
-			every_country={
-				add_ideas = speed3
-			}
-			ENG={
-				remove_ideas=stiff_upper_lip
-				add_timed_idea={idea=stiff_upper_lip days=150}
+				every_country={
+					add_ideas = speed3
+				}
+				ENG={
+					remove_ideas=stiff_upper_lip
+					add_timed_idea={idea=stiff_upper_lip days=150}
 
-			}
-			SOV={remove_ideas=Fast_Training }
-			
+				}
+				SOV={remove_ideas=Fast_Training }
+
 				every_country={
 					add_ideas=speed3
 				}
@@ -3374,7 +3374,7 @@ add_tech_bonus = {
 
 		available_if_capitulated = no
 		completion_reward = {
-		195 = {
+			195 = {
 				add_province_modifier = {
 					static_modifiers = { soviet_hero_city }
 					province = {
@@ -3387,7 +3387,7 @@ add_tech_bonus = {
 						id = 11278
 					}
 				}
-			}}
+				}}
 	}
 	focus = {
 		id = GER_moscow
@@ -3410,7 +3410,7 @@ add_tech_bonus = {
 
 		available_if_capitulated = no
 		completion_reward = {
-		219 = {
+			219 = {
 				add_province_modifier = {
 					static_modifiers = { soviet_hero_city }
 					province = {
@@ -3440,8 +3440,8 @@ add_tech_bonus = {
 						id = 11282
 						id = 11330
 					}
-				
-			}}}
+
+					}}}
 	}
 	focus = {
 		id = GER_stalingrad
@@ -3464,14 +3464,14 @@ add_tech_bonus = {
 
 		available_if_capitulated = no
 		completion_reward = {
-		217 = {
+			217 = {
 				add_province_modifier = {
 					static_modifiers = { soviet_hero_city }
 					province = {
 						id =498 id =520 id =3503 id =3517 id =3529 id =3555 id =6479 id =6503 id =6527 id =6541 id =6575 id =9442 id =9459 id =9474 id =9504 id =9530 id =11395 id =11447 id =11474 id =11484
 					}
-				
-		}}}
+
+					}}}
 	}
 	focus = {
 		id = GER_winter_attack
@@ -3480,7 +3480,7 @@ add_tech_bonus = {
 		icon = GFX_focus_ger_final_crusade
 		available = {
 
-          NOT = {has_idea = GER_barbarossa}
+			NOT = {has_idea = GER_barbarossa}
 
 		}
 		relative_position_id = GER_moscow
@@ -3494,13 +3494,13 @@ add_tech_bonus = {
 
 		available_if_capitulated = no
 		completion_reward = {
-		add_timed_idea={ idea = GER_barbarossa_2 days = 30}
-		hidden_effect = {
-		ROM = {add_timed_idea={ idea = GER_barbarossa_2 days = 30}}
-		HUN = {add_timed_idea={ idea = GER_barbarossa_2 days = 30}}
-		BUL = {add_timed_idea={ idea = GER_barbarossa_2 days = 30}}
-		SPR = {add_timed_idea={ idea = GER_barbarossa_2 days = 30}}
-		}}
+			add_timed_idea={ idea = GER_barbarossa_2 days = 30}
+			hidden_effect = {
+				ROM = {add_timed_idea={ idea = GER_barbarossa_2 days = 30}}
+				HUN = {add_timed_idea={ idea = GER_barbarossa_2 days = 30}}
+				BUL = {add_timed_idea={ idea = GER_barbarossa_2 days = 30}}
+				SPR = {add_timed_idea={ idea = GER_barbarossa_2 days = 30}}
+				}}
 	}
 
 	focus = {
@@ -3510,7 +3510,7 @@ add_tech_bonus = {
 		prerequisite = { focus = GER_moscow focus = GER_leningrad focus = GER_stalingrad}
 		icon = GFX_focus_GER_winter_of_1941
 		available = {
-         NOT = {has_idea = GER_barbarossa}
+			NOT = {has_idea = GER_barbarossa}
 
 		}
 		relative_position_id = GER_moscow
@@ -3524,13 +3524,13 @@ add_tech_bonus = {
 
 		available_if_capitulated = no
 		completion_reward = {
-		add_timed_idea={ idea = GER_barbarossa_3 days = 50}
-		hidden_effect = {
-		ROM = {add_timed_idea={ idea = GER_barbarossa_3 days = 30}}
-		HUN = {add_timed_idea={ idea = GER_barbarossa_3 days = 30}}
-		BUL = {add_timed_idea={ idea = GER_barbarossa_3 days = 30}}
-		SPR = {add_timed_idea={ idea = GER_barbarossa_3 days = 30}}
-		}
+			add_timed_idea={ idea = GER_barbarossa_3 days = 50}
+			hidden_effect = {
+				ROM = {add_timed_idea={ idea = GER_barbarossa_3 days = 30}}
+				HUN = {add_timed_idea={ idea = GER_barbarossa_3 days = 30}}
+				BUL = {add_timed_idea={ idea = GER_barbarossa_3 days = 30}}
+				SPR = {add_timed_idea={ idea = GER_barbarossa_3 days = 30}}
+			}
 		}
 	}
 	focus = {
@@ -3968,7 +3968,7 @@ add_tech_bonus = {
 				BUL = {
 					add_timed_idea = { idea = GER_blau days = 85 }
 				}
-				
+
 				ITA = {
 					add_timed_idea = { idea = GER_blau days = 85 }
 				}
@@ -4036,7 +4036,7 @@ add_tech_bonus = {
 		prerequisite = { focus = GER_north focus = GER_south}
 		icon = GFX_focus_ger_reichskommisariats
 		available = {
-		date > 1943.5.15
+			date > 1943.5.15
 		}
 		#allow_branch={always=no}
 		x = 1
@@ -4050,8 +4050,8 @@ add_tech_bonus = {
 
 		available_if_capitulated = no
 		completion_reward = {
-        add_timed_idea = { idea = GER_zitadelle days = 70 }
-		hidden_effect={  ROM = {
+			add_timed_idea = { idea = GER_zitadelle days = 70 }
+			hidden_effect={  ROM = {
 					add_timed_idea = { idea = GER_zitadelle days = 70 }
 				}
 				HUN = {
@@ -4060,7 +4060,7 @@ add_tech_bonus = {
 				BUL = {
 					add_timed_idea = { idea = GER_zitadelle days = 70 }
 				}
-				
+
 				ITA = {
 					add_timed_idea = { idea = GER_zitadelle days = 70 }
 				}
@@ -4094,7 +4094,7 @@ add_tech_bonus = {
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-             HUN = {
+			HUN = {
 				country_event = { id = germany.51 }
 				add_opinion_modifier = { target = GER modifier = GER_first_vienna_award_GER }
 				transfer_state = 664
@@ -4136,7 +4136,7 @@ add_tech_bonus = {
 		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { focus = GER_demand_sudetenland}
 		available = {
-		
+
 		}
 
 		bypass = {
@@ -4194,7 +4194,7 @@ add_tech_bonus = {
 		icon = GFX_goal_generic_SS_focus
 		prerequisite = { focus = GER_around_maginot }
 		bypass = {
-		NOT = {FRA = {has_full_control_of_state =16}}
+			NOT = {FRA = {has_full_control_of_state =16}}
 		}
 		cancel_if_invalid = yes
 		x = 0
@@ -4204,12 +4204,12 @@ add_tech_bonus = {
 		ai_will_do = {
 			factor = 10
 		}
-     completion_reward = {
-	 add_timed_idea = {
-    idea = GER_fall_rot
-    days = 30
-}
-	 }
+		completion_reward = {
+			add_timed_idea = {
+				idea = GER_fall_rot
+				days = 30
+			}
+		}
 	}
 
 	focus = {

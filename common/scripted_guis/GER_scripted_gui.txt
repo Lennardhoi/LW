@@ -3,54 +3,54 @@ scripted_gui = {
 	ger_reichswerke_decision_ui = {
 		window_name = "ger_reichswerke_decision_ui_window"
 		context_type = decision_category
-			
+
 		visible = {
 			original_tag = GER
-        }
-		
+		}
+
 		effects = {
-            steel_mil_icon_click = {
-                set_country_flag = GER_reichswerke_steel_decisions
-            }
-            steel_mil_icon_right_click = {
-                clr_country_flag = GER_reichswerke_steel_decisions
-            }
-			
+			steel_mil_icon_click = {
+				set_country_flag = GER_reichswerke_steel_decisions
+			}
+			steel_mil_icon_right_click = {
+				clr_country_flag = GER_reichswerke_steel_decisions
+			}
+
 			aluminum_mil_icon_click = {
-                set_country_flag = GER_reichswerke_aluminum_decisions
-            }
-            aluminum_mil_icon_right_click = {
-                clr_country_flag = GER_reichswerke_aluminum_decisions
-            }
-			
+				set_country_flag = GER_reichswerke_aluminum_decisions
+			}
+			aluminum_mil_icon_right_click = {
+				clr_country_flag = GER_reichswerke_aluminum_decisions
+			}
+
 			synthetic_refinery_icon_click = {
-                set_country_flag = GER_reichswerke_refinery_decisions
-            }
-            synthetic_refinery_icon_right_click = {
-                clr_country_flag = GER_reichswerke_refinery_decisions
-            }
-			
+				set_country_flag = GER_reichswerke_refinery_decisions
+			}
+			synthetic_refinery_icon_right_click = {
+				clr_country_flag = GER_reichswerke_refinery_decisions
+			}
+
 			fuel_silo_icon_click = {
-                set_country_flag = GER_reichswerke_silo_decisions
-            }
-            fuel_silo_icon_right_click = {
-                clr_country_flag = GER_reichswerke_silo_decisions
-            }
-        }
-        
-        triggers = {
-            #<element>_click_enabled = {
-            #    <triggers>
-            #}
-            #<element>_visible = {
-            #    <triggers>
-            #}
-        }
-		
+				set_country_flag = GER_reichswerke_silo_decisions
+			}
+			fuel_silo_icon_right_click = {
+				clr_country_flag = GER_reichswerke_silo_decisions
+			}
+		}
+
+		triggers = {
+			#<element>_click_enabled = {
+				#    <triggers>
+				#}
+			#<element>_visible = {
+				#    <triggers>
+				#}
+		}
+
 		properties = {
-			
+
 		}
 	}
-	
+
 }
 

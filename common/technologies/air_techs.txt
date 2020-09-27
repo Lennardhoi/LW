@@ -287,10 +287,10 @@ technologies = {
 		enable_equipments = {
 			fighter_equipment_2
 		}
-		on_research_complete= { 
-		if={limit={OR={tag=USA tag=ITA}}
-		set_technology={fighter2_alt=1}
-		}
+		on_research_complete= {
+			if={limit={OR={tag=USA tag=ITA}}
+				set_technology={fighter2_alt=1}
+			}
 		}
 		path = {
 			leads_to_tech = fighter3
@@ -374,7 +374,7 @@ technologies = {
 		categories = {
 			year_1940
 		}
-		
+
 
 		categories = {
 			light_air
@@ -386,7 +386,7 @@ technologies = {
 			# cv_fighter2
 			# }
 
-		
+
 	}
 	fighter3_alt = {
 
@@ -402,7 +402,7 @@ technologies = {
 		categories = {
 			year_1940
 		}
-		
+
 
 		categories = {
 			light_air
@@ -414,7 +414,7 @@ technologies = {
 			# cv_fighter2
 			# }
 
-		
+
 	}
 	# cv_fighter2 = {
 
@@ -483,10 +483,10 @@ technologies = {
 			leads_to_tech = jet_fighter1
 			research_cost_coeff = 1
 		}
-		on_research_complete= { 
-		if={limit={OR={tag=USA tag=ITA}}
-		set_technology={fighter3_alt=1}
-		}
+		on_research_complete= {
+			if={limit={OR={tag=USA tag=ITA}}
+				set_technology={fighter3_alt=1}
+			}
 		}
 
 
