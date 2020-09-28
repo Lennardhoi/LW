@@ -238,10 +238,18 @@ equipments = {
 		visual_level = 0
 		archetype = ship_hull_carrier
 		priority = 1100
-		can_convert_from = { ship_hull_heavy_1 ship_hull_heavy_2 ship_hull_heavy_3 ship_hull_heavy_4 ship_hull_super_heavy_1 }
+		can_convert_from = { ship_hull_pre_dreadnought ship_hull_heavy_1 ship_hull_heavy_2 ship_hull_heavy_3 ship_hull_heavy_4 ship_hull_super_heavy_1 }
 		module_slots = {
-			fixed_ship_deck_slot_1 = inherit
-			fixed_ship_deck_slot_2 = inherit
+			fixed_ship_deck_slot_1 = {
+				required = yes
+				allowed_module_categories = { ship_deck_space_small }
+				gfx = ship_deck_space_slot
+			}
+			fixed_ship_deck_slot_2 = {
+				required = yes
+				allowed_module_categories = { ship_deck_space_small }
+				gfx = ship_deck_space_slot
+			}
 			fixed_ship_anti_air_slot = inherit
 			fixed_ship_radar_slot = inherit
 			fixed_ship_engine_slot = {
@@ -252,16 +260,18 @@ equipments = {
 			mid_1_custom_slot = {
 				required = no
 				allowed_module_categories = {
-					ship_secondaries
-					ship_deck_space
-					ship_carrier_armor
+					ship_secondaries 
+					ship_anti_air 
+					ship_airplane_launcher
 				}
 			}
 		}
 
 		default_modules = {
+			fixed_ship_deck_slot_1 = ship_deck_space_small 
+			fixed_ship_deck_slot_2 = ship_deck_space_small 
 			fixed_ship_engine_slot = heavy_ship_engine_1
-			mid_1_custom_slot = empty
+			mid_1_custom_slot = ship_anti_air_2
 		}
 		naval_range = 4000
 		reliability = 0.65
@@ -269,7 +279,7 @@ equipments = {
 		naval_speed = 23
 
 
-		build_cost_ic = 2700
+		build_cost_ic = 3200
 		resources = {
 			steel = 4
 			chromium = 1
@@ -284,21 +294,28 @@ equipments = {
 		priority = 1200
 		can_convert_from = { ship_hull_cruiser_1 ship_hull_cruiser_2 ship_hull_cruiser_3 ship_hull_cruiser_4 ship_hull_cruiser_panzerschiff }
 		module_slots = {
-			fixed_ship_deck_slot_1 = inherit
-			fixed_ship_deck_slot_2 = inherit
-			fixed_ship_anti_air_slot = inherit
-			fixed_ship_radar_slot = inherit
+			fixed_ship_deck_slot_1 = {
+				required = yes
+				allowed_module_categories = { ship_deck_space_small }
+				gfx = ship_deck_space_slot
+			}
+			
+			fixed_ship_deck_slot_2 = {
+				allowed_module_categories = { ship_secondaries ship_anti_air ship_airplane_launcher}
+				gfx = ship_deck_space_slot
+			}
 			fixed_ship_engine_slot = {
 				required = yes
 				allowed_module_categories = { cruiser_ship_engine carrier_ship_engine }
 			}
+			fixed_ship_radar_slot = inherit
+			
 			fixed_ship_secondaries_slot = inherit
 		}
 
 		default_modules = {
-			fixed_ship_deck_slot_1 = empty
-			fixed_ship_deck_slot_2 = empty
-			fixed_ship_anti_air_slot = empty
+			fixed_ship_deck_slot_1 = ship_deck_space_small
+			fixed_ship_deck_slot_2 = ship_anti_air_2
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = cruiser_ship_engine_1
 			fixed_ship_secondaries_slot = empty
@@ -309,7 +326,7 @@ equipments = {
 
 		reliability = 0.65
 		naval_speed = 20
-		build_cost_ic = 2700
+		build_cost_ic = 3000
 		resources = {
 			steel = 3
 		}

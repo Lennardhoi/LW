@@ -1341,7 +1341,10 @@ equipment_modules = {
 			naval_speed = 0.2
 			reliability = -0.2
 		}
-
+		can_convert_from = {
+			module = cruiser_ship_engine_1
+			convert_cost_ic = 250
+		}
 		can_convert_from = {
 			module_category = carrier_ship_engine
 			convert_cost_ic = 2500
@@ -1364,7 +1367,14 @@ equipment_modules = {
 			naval_speed = 0.3
 			reliability = -0.2
 		}
-
+		can_convert_from = {
+			module = cruiser_ship_engine_2
+			convert_cost_ic = 250
+		}
+		can_convert_from = {
+			module = cruiser_ship_engine_1
+			convert_cost_ic = 1250
+		}
 		can_convert_from = {
 			module_category = carrier_ship_engine
 			convert_cost_ic = 2500
@@ -1857,7 +1867,32 @@ equipment_modules = {
 		}
 		dismantle_cost_ic = 700
 	}
+	ship_deck_space_small = {
+		category = ship_deck_space_small
+		gfx = ship_deck_space
 
+		add_equipment_type = capital_ship
+		add_stats = {
+			carrier_size = 15
+			build_cost_ic = 1000
+		}
+		manpower = 375 #outside the add_stats section for code reasons
+		multiply_stats = {
+			naval_speed = -0.025
+		}
+		can_convert_from = {
+			module_category = ship_heavy_battery
+			convert_cost_ic = 700
+		}
+		can_convert_from = {
+			module_category = ship_medium_battery
+			convert_cost_ic = 500
+		}
+		build_cost_resources = {
+			steel = 1
+		}
+		dismantle_cost_ic = 700
+	}
 	### #  # ### #       ###  ##  #  # # #  ##
 	#   #  # #   #        #  #  # ## # # # #
 	##  #  # ##  #        #  #### # ## ##   #
