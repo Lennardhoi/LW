@@ -2,6 +2,148 @@
 
 #Category only allowed for SOV
 
+debug_decisions = {
+
+	Test_Soviet_Front_Debug_Full_Infra_Damage = {
+		icon = generic_prepare_civil_war
+		allowed={ tag = sov }
+		available = {
+			is_ai = no
+		}
+		
+		cost = 0
+		fire_only_once = yes
+		visible = {
+			is_ai = no
+		}
+
+		complete_effect = {
+			SOV = { 
+				transfer_state = 96
+				transfer_state = 95
+				transfer_state = 94
+				transfer_state = 93
+				transfer_state = 91
+				transfer_state = 97
+				transfer_state = 89
+				transfer_state = 784
+				transfer_state = 766
+				transfer_state = 78
+				
+				annex_country = { target = LAT }
+				annex_country = { target = EST }
+				annex_country = { target = LIT }
+			}
+			GER = {
+				declare_war_on = {
+					target = SOV
+					type = annex_everything
+				}
+				annex_country = { target = POL }
+			}
+			every_state = {
+				limit = { 
+					is_core_of = SOV
+					NOT = { has_state_flag = scorched_infrastructure_done }
+				}
+				damage_building = {
+					type = infrastructure
+					damage = 5
+				}
+				set_state_flag = scorched_infrastructure_done
+			}
+		}
+	}
+	Test_Soviet_Front_Debug_Partial_Infra_Damage = {
+		icon = generic_prepare_civil_war
+		allowed={ tag = sov }
+		available = {
+			is_ai = no
+		}
+		
+		cost = 0
+		fire_only_once = yes
+		visible = {
+			is_ai = no
+		}
+
+		complete_effect = {
+			SOV = { 
+				transfer_state = 96
+				transfer_state = 95
+				transfer_state = 94
+				transfer_state = 93
+				transfer_state = 91
+				transfer_state = 97
+				transfer_state = 89
+				transfer_state = 784
+				transfer_state = 766
+				transfer_state = 78
+				
+				annex_country = { target = LAT }
+				annex_country = { target = EST }
+				annex_country = { target = LIT }
+			}
+			GER = {
+				declare_war_on = {
+					target = SOV
+					type = annex_everything
+				}
+				annex_country = { target = POL }
+			}
+			every_state = {
+				limit = { 
+					is_core_of = SOV
+					NOT = { has_state_flag = scorched_infrastructure_done }
+				}
+				damage_building = {
+					type = infrastructure
+					damage = 2
+				}
+				set_state_flag = scorched_infrastructure_done
+			}
+		}
+	}
+	Test_Soviet_Front_Debug_NO_Infra_Damage = {
+		icon = generic_prepare_civil_war
+		allowed={ tag = sov }
+		available = {
+			is_ai = no
+		}
+		
+		cost = 0
+		fire_only_once = yes
+		visible = {
+			is_ai = no
+		}
+
+		complete_effect = {
+			SOV = { 
+				transfer_state = 96
+				transfer_state = 95
+				transfer_state = 94
+				transfer_state = 93
+				transfer_state = 91
+				transfer_state = 97
+				transfer_state = 89
+				transfer_state = 784
+				transfer_state = 766
+				transfer_state = 78
+				
+				annex_country = { target = LAT }
+				annex_country = { target = EST }
+				annex_country = { target = LIT }
+			}
+			GER = {
+				declare_war_on = {
+					target = SOV
+					type = annex_everything
+				}
+				annex_country = { target = POL }
+			}
+		}
+	}
+}
 
 operations = {
 	sov_spawn = {
@@ -128,6 +270,50 @@ SOV_mrp = {
 
 
 SOV_great_patriotic_war = {
+
+	SOV_scorched_earth_mission = {
+
+		icon = revolt
+		priority = 100
+		allowed = {
+			original_tag = SOV
+		}
+
+		#Fail trigger
+		available = {
+			has_war = no
+		}
+
+		days_mission_timeout = 30
+
+		fire_only_once = yes
+
+		is_good = yes
+
+		activation = {
+			has_war_with = GER
+		}
+
+		#Success
+		timeout_effect = {
+			every_state = {
+				limit = { 
+					is_core_of = SOV
+					NOT = { is_fully_controlled_by = SOV }
+					NOT = { has_state_flag = scorched_infrastructure_done }
+				}
+				damage_building = {
+					type = infrastructure
+					damage = 5
+				}
+				set_state_flag = scorched_infrastructure_done
+			}			
+		}
+		#Fail
+		complete_effect = {
+			
+		}
+	}
 
 	SOV_move_capital_kazan={
 		icon = generic_civil_support
@@ -395,6 +581,7 @@ SOV_great_patriotic_war = {
 					province = {
 						id = 3515
 						id = 149
+						id = 11091
 					}
 				}
 			}

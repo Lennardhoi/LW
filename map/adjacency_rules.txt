@@ -42,48 +42,718 @@ adjacency_rule={
 	icon = 10837
 	offset = { 5 0 -6 }
 }
+########################
+####Crazy Train Shit##
+#####################
+
+adjacency_rule={
+	name = "BRZESC_KIEV_CANAL"
+
+	contested =	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	neutral = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+
+	required_provinces = { 525 }
+}
+
+adjacency_rule={
+	name = "LWOW_KIEV_CANAL"
+
+	contested =	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	neutral = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+
+	required_provinces = { 11479 }
+}
+
+adjacency_rule={
+	name = "KIEV_KURSK_CANAL"
+
+	contested =	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	neutral = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+
+	required_provinces = { 525 }
+	
+}
+
+adjacency_rule={
+
+	name = "ODESSA_DNIPROPETROVSK_CANAL"
+
+	contested =	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	neutral = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+
+	required_provinces = { 11670 }
+
+}
+
+adjacency_rule={
+
+	name = "DNIPROPETROVSK_ROSTOV_CANAL"
+
+	contested =	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	neutral = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+
+	required_provinces = { 11437 }	
+}
+
+adjacency_rule={
+	name = "ROSTOV_STALINGRAD_CANAL"
+
+	contested =	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	neutral = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+
+	required_provinces = { 9417 }
+}
+
+adjacency_rule={
+	name = "STALINGRAD_ASTRAKHAN_CANAL"
+
+	contested =	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	neutral = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+
+	required_provinces = { 11474 }
+}
+
+adjacency_rule={
+	name = "STALINGRAD_BAKU_CANAL"
+
+	contested =	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	neutral = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+
+	required_provinces = { 9753 }
+
+}
+
+adjacency_rule={
+	name = "KURSK_TULA_CANAL"
+
+	contested =	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	neutral = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+
+	required_provinces = { 6262 }
+}
+
+adjacency_rule={
+	name = "TULA_MOSCOW_CANAL"
+
+	contested =	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	neutral = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+
+	required_provinces = { 6262 }
+
+}
+
+adjacency_rule={
+	name = "MOSCOW_SMOLENSK_CANAL"
+
+	contested =	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	neutral = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+
+	required_provinces = { 6380 }
+
+}
+adjacency_rule={
+	name = "SMOLENSK_MINSK_CANAL"
+
+	contested =	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	neutral = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+
+	required_provinces = { 306 }
+
+}
+
+adjacency_rule={
+	name = "MINSK_BRZESC_CANAL"
+
+	contested =	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	neutral = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+
+	required_provinces = { 11370 }
+
+}
+
+adjacency_rule={
+	name = "WARSAW_BRZESC_CANAL"
+
+	contested =	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	neutral = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+
+	required_provinces = { 3392 }
+}
+
+adjacency_rule={
+	name = "WARSAW_LWOW_CANAL"
+
+	contested =	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	neutral = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+
+	required_provinces = { 3544 }
+
+}
+
+###
+
+adjacency_rule={
+	name = "PRUSSIA_RIGA_CANAL"
+
+	contested =	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	neutral = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+
+	required_provinces = { 6332 }
+
+}
+
+adjacency_rule={
+	name = "RIGA_LENINGRAD_CANAL"
+
+	contested =	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	neutral = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+
+	required_provinces = { 3151 }
+
+}
+
+adjacency_rule={
+	name = "MOSCOW_LENINGRAD_CANAL"
+
+	contested =	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	neutral = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+
+	required_provinces = { 6380 }
+
+}
+
+adjacency_rule={
+	name = "RIGA_MINSK_CANAL"
+
+	contested =	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	neutral = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+
+	required_provinces = { 11370 }
+
+}
+
+adjacency_rule={
+	name = "BUCHAREST_ODESSA_CANAL"
+
+	contested =	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	neutral = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+
+	required_provinces = { 9617 }
+
+}
+
+adjacency_rule={
+	name = "LWOW_ODESSA_CANAL"
+
+	contested =	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	neutral = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+
+	required_provinces = { 11670 }
+
+}
+
+#######
+######
+#####
+###
+##
+#
 
 #Spain Strait
-adjacency_rule
-{
+adjacency_rule={
 	name = "Berlin-Madrid"
 
-	contested =
-	{
+	contested = {
 		army = no
 		navy = no
 		submarine = yes
 		trade = no
 	}
-	enemy =
-	{
+	enemy = {
 		army = no
 		navy = no
 		submarine = yes
 		trade = no
 	}
-	friend =
-	{
+	friend = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-	neutral =
-	{
+	neutral = {
 		army = yes
 		navy = yes
 		submarine = yes
 		trade = yes
 	}
-
 	required_provinces = { 3938 }
 	is_disabled = {
 		NOT = {
 			tag=SPR
-
 		}
-
 	}
 }
 
