@@ -2335,7 +2335,7 @@ technologies = {
 
 
 		land_reinforce_rate = 0.02
-		minimum_training_level = -0.2
+		minimum_training_level = -0.1
 
 		doctrine = yes
 		research_cost = 0.00001
@@ -2372,8 +2372,7 @@ technologies = {
 		xp_research_bonus = 1.00
 		#reduced pocketed combat penalty and/or reduces the out of supply penalty or increases time before moving to worse penalty
 		no_supply_grace = 48 # more hours before supply penalty changes
-		out_of_supply_factor = -0.50
-		supply_consumption_factor = -0.25
+		out_of_supply_factor = -0.10
 
 		path = {
 			leads_to_tech = defence_in_depth
@@ -2800,11 +2799,6 @@ technologies = {
 		enable_tactic = tactic_backhand_blow
 		infantry = {
 			max_strength = 8
-		}
-		motorized_rocket_brigade = {
-			max_organisation = 50
-			default_morale = 0.1
-			max_strength = 20
 		}
 		doctrine = yes
 		research_cost = 4.25
