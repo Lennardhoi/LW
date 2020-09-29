@@ -47,6 +47,37 @@ adjacency_rule={
 #####################
 
 adjacency_rule={
+	name = "BERLIN_WARSAW_CANAL"
+
+	contested =	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	neutral = {
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+
+	required_provinces = { 6521 }
+}
+
+adjacency_rule={
 	name = "BRZESC_KIEV_CANAL"
 
 	contested =	{
