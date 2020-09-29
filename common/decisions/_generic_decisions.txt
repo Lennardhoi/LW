@@ -35,21 +35,20 @@ political_actions = {
 			always = yes
 		}
 
-		fire_only_once = no
+		fire_only_once = yes
 
 		modifier = {
-			stability_weekly = 0.005
+			stability_factor = 0.05
 			consumer_goods_factor = 0.03
-			industrial_capacity_factory = -0.1
+			conscription = -0.01
 		}
 
-		days_remove = 180
-		days_re_enable = 540
+		days_remove = -1
 
 		cost = 100
 
 		complete_effect = {
-			custom_effect_tooltip = "Gives 12.85% Stability in total"
+			
 		}
 
 		ai_will_do = {
@@ -104,7 +103,7 @@ political_actions = {
 			has_war_support < 0.05
 		}
 
-		fire_only_once = no
+		fire_only_once = yes
 
 		modifier = {
 			stability_weekly = 0.005
@@ -113,7 +112,7 @@ political_actions = {
 		}
 
 		days_remove = 90
-		days_re_enable = 360
+		days_re_enable = -1
 
 		cost = 25
 
@@ -515,16 +514,21 @@ war_measures = {
 		}
 		cost = 100
 		days_remove = -1
+		
 		remove_trigger = {
 			OR = {
 				has_war = no
 				not = { has_idea = tot_economic_mobilisation }
 			}
 		}
+		
 		modifier = {
 			conscription = 0.03
 			stability_factor = -0.05
+			industrial_capacity_factory = -0.05
+			industrial_capacity_dockyard = -0.05
 		}
+		
 		ai_will_do = {
 			factor = 1
 
@@ -533,6 +537,7 @@ war_measures = {
 				has_manpower < 100000
 			}
 		}
+		
 		complete_effect = {
 			if = {
 				limit = {
@@ -542,6 +547,7 @@ war_measures = {
 			}
 		}
 	}
+	
 	war_bonds_cancel = {
 
 		icon = generic_industry

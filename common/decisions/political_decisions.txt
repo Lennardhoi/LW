@@ -249,6 +249,172 @@
 	#}
 
 political_actions = {
+
+	strikes_negotiations_1 = {
+
+		icon = generic_decision
+		priority = 10
+
+		allowed = {
+			always = yes
+		}
+
+		available = {
+			has_active_mission = strikes_mission
+			has_stability < 0.5
+		}
+
+		cost = 100
+		days_remove = 30
+		
+		ai_will_do = {
+			factor = 1
+			
+		}
+
+		visible = {
+			has_active_mission = strikes_mission
+		}
+	
+		modifier = {
+			stability_weekly_factor = 0.005
+			consumer_goods_factor = 0.05
+			conscription = -0.01
+		}
+
+		complete_effect = {
+			set_country_flag = { flag = no_strikes_please days = 365 }	
+		}
+		remove_effect = {
+            
+        }
+	}
+	
+	strikes_negotiations_2 = {
+
+		icon = generic_break_treaty
+		priority = 10
+
+		allowed = {
+			always = yes
+		}
+
+		available = {
+			has_active_mission = strikes_mission
+			has_stability < 0.5
+		}
+
+		cost = 50
+		days_remove = 30
+		
+		ai_will_do = {
+			factor = 1
+			
+		}
+
+		visible = {
+			has_active_mission = strikes_mission
+		}
+
+		modifier = {
+			stability_weekly_factor = -0.001
+			industrial_capacity_factory = -0.05
+			industrial_capacity_dockyard = -0.05
+		}
+
+		complete_effect = {
+			set_country_flag = { flag = no_strikes_please days = 180 }	
+		}
+		remove_effect = {
+            
+        }
+
+	}
+	
+	strikes_negotiations_3 = {
+
+		icon = oppression
+		priority = 10
+
+		allowed = {
+			NOT = { has_government = democratic }
+		}
+
+		available = {
+			has_active_mission = strikes_mission
+			has_stability < 0.5
+			NOT = { has_government = democratic }
+		}
+
+		cost = 25
+		
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			has_active_mission = strikes_mission
+			NOT = { has_government = democratic }
+		}
+		
+		complete_effect = {
+			set_country_flag = { flag = no_strikes_please days = 365 }
+			add_stability = -0.05
+		}
+		remove_effect = {
+            
+        }
+	}
+	
+	draft_dodging_negotiations = {
+
+		icon = generic_nationalism
+		priority = 10
+
+		allowed = {
+			OR = {
+				tag = SOV
+				tag = SIA
+				tag = FRA
+				tag = JAP
+				tag = RAJ
+				tag = AST
+				tag = NZL
+				tag = MAN
+				tag = BUL
+				tag = ROM
+				tag = HUN
+				tag = SPR
+				tag = GER
+				tag = ITA
+				tag = ENG
+				tag = IRE
+				tag = SAF
+				tag = FIN
+				tag = USA
+				tag = CAN
+				tag = EFR
+			}
+		}
+
+		available = {
+			
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 1
+		}
+
+		visible = {
+			
+		}
+
+		complete_effect = {
+			
+		}
+	}
+
 	give_refuge_ger = {
 
 		icon = generic_research
@@ -330,25 +496,7 @@ political_actions = {
 		allowed = {
 			OR = {
 				tag = SOV
-				tag = FRA
-				tag = JAP
 				tag = RAJ
-				tag = AST
-				tag = NZL
-				tag = MAN
-				tag = BUL
-				tag = ROM
-				tag = HUN
-				tag = SPR
-				tag = GER
-				tag = ITA
-				tag = ENG
-				tag = IRE
-				tag = SAF
-				tag = FIN
-				tag = USA
-				tag = CAN
-				tag = EFR
 			}
 		}
 		visible = {
@@ -398,11 +546,8 @@ political_actions = {
 		allowed = {
 			OR = {
 				tag = SOV
-				tag = FRA
 				tag = JAP
 				tag = RAJ
-				tag = AST
-				tag = NZL
 				tag = MAN
 				tag = BUL
 				tag = ROM
@@ -410,12 +555,8 @@ political_actions = {
 				tag = SPR
 				tag = GER
 				tag = ITA
-				tag = ENG
-				tag = IRE
 				tag = SAF
 				tag = FIN
-				tag = USA
-				tag = CAN
 				tag = EFR
 			}
 		}
@@ -451,12 +592,8 @@ political_actions = {
 	anti_communist_raids = {
 		allowed = {
 			OR = {
-				tag = SOV
-				tag = FRA
 				tag = JAP
 				tag = RAJ
-				tag = AST
-				tag = NZL
 				tag = MAN
 				tag = BUL
 				tag = ROM
@@ -464,12 +601,7 @@ political_actions = {
 				tag = SPR
 				tag = GER
 				tag = ITA
-				tag = ENG
-				tag = IRE
-				tag = SAF
 				tag = FIN
-				tag = USA
-				tag = CAN
 				tag = EFR
 			}
 		}
@@ -504,434 +636,344 @@ political_actions = {
 		}
 	}
 
-	# ban_fascist_party = {
+	ban_fascist_party = {
 
-		# icon = generic_civil_support
-		# allowed = {
-			# OR = {
-				# tag = SOV
-				# tag = FRA
-				# tag = JAP
-				# tag = RAJ
-				# tag = AST
-				# tag = NZL
-				# tag = MAN
-				# tag = BUL
-				# tag = ROM
-				# tag = HUN
-				# tag = SPR
-				# tag = GER
-				# tag = ITA
-				# tag = ENG
-				# tag = IRE
-				# tag = SAF
-				# tag = FIN
-				# tag = USA
-				# tag = CAN
-				# tag = EFR
-				# }
-			# }
-		# available = {
-			# fascism < 0.2
-			# }
+		icon = generic_civil_support
+		allowed = {
+			OR = {
+				tag = SOV
+				tag = FRA
+				tag = RAJ
+				tag = SAF
+			}
+		}
+		available = {
+			fascism < 0.2
+		}
 
-		# visible = {
-			# NOT = { has_government = fascism }
-			# fascism > 0
-			# }
+		visible = {
+			NOT = { has_government = fascism }
+			fascism > 0
+		}
 
-		# remove_trigger = {
-			# hidden_trigger = {
-				# has_government = fascism
-				# }
-			# }
+		remove_trigger = {
+			hidden_trigger = {
+				has_government = fascism
+			}
+		}
 
-		# modifier = {
-			# fascism_drift = -0.05
-			# }
+		modifier = {
+			fascism_drift = -0.05
+		}
 
-		# days_remove = -1
-		# cost = 25
+		days_remove = -1
+		cost = 25
 
-		# complete_effect = {
-			# hidden_effect = {
-				# set_temp_variable = {
-					# var = ban_ideology_var
-					# value = party_popularity@fascism
-					# }
-				# multiply_temp_variable = {
-					# var = ban_ideology_var
-					# value = -1
-					# }
-				# set_temp_variable = {
-					# var = ban_ideology_var_stab
-					# value = ban_ideology_var
-					# }
-				# multiply_temp_variable = {
-					# var = ban_ideology_var_stab
-					# value = 0.2
-					# }
-				# add_popularity = {
-					# ideology = fascism
-					# popularity = ban_ideology_var
-					# }
-				# multiply_temp_variable = {
-					# var = ban_ideology_var
-					# value = 0.66
-					# }
-				# }
-			# custom_effect_tooltip = ban_fascist_party_tt
-			# add_stability = ban_ideology_var_stab
-			# }
-		# }
+		complete_effect = {
+			hidden_effect = {
+				set_temp_variable = {
+					var = ban_ideology_var
+					value = party_popularity@fascism
+					}
+				multiply_temp_variable = {
+					var = ban_ideology_var
+					value = -1
+					}
+				set_temp_variable = {
+					var = ban_ideology_var_stab
+					value = ban_ideology_var
+					}
+				multiply_temp_variable = {
+					var = ban_ideology_var_stab
+					value = 0.2
+					}
+				add_popularity = {
+					ideology = fascism
+					popularity = ban_ideology_var
+					}
+				multiply_temp_variable = {
+					var = ban_ideology_var
+					value = 0.66
+					}
+				}
+			custom_effect_tooltip = ban_fascist_party_tt
+			add_stability = ban_ideology_var_stab
+		}
+	}
 
-	# ban_democratic_party = {
+	ban_democratic_party = {
 
-		# icon = generic_civil_support
-		# allowed = {
-			# OR = {
-				# tag = SOV
-				# tag = FRA
-				# tag = JAP
-				# tag = RAJ
-				# tag = AST
-				# tag = NZL
-				# tag = MAN
-				# tag = BUL
-				# tag = ROM
-				# tag = HUN
-				# tag = SPR
-				# tag = GER
-				# tag = ITA
-				# tag = ENG
-				# tag = IRE
-				# tag = SAF
-				# tag = FIN
-				# tag = USA
-				# tag = CAN
-				# tag = EFR
-				# }
-			# }
-		# available = {
-			# democratic < 0.2
-			# }
+		icon = generic_civil_support
+		allowed = {
+			OR = {
+				tag = SOV
+				tag = JAP
+				tag = RAJ
+				tag = MAN
+				tag = BUL
+				tag = ROM
+				tag = HUN
+				tag = SPR
+				tag = GER
+				tag = ITA
+				tag = SAF
+				tag = FIN
+				tag = EFR
+				}
+			}
+		available = {
+			democratic < 0.2
+			}
 
-		# visible = {
-			# NOT = { has_government = democratic }
-			# democratic > 0
-			# }
+		visible = {
+			NOT = { has_government = democratic }
+			democratic > 0
+			}
 
-		# remove_trigger = {
-			# hidden_trigger = {
-				# has_government = democratic
-				# }
-			# }
+		remove_trigger = {
+			hidden_trigger = {
+				has_government = democratic
+				}
+			}
 
-		# modifier = {
-			# democratic_drift = -0.05
-			# }
+		modifier = {
+			democratic_drift = -0.05
+			}
 
-		# days_remove = -1
-		# cost = 25
+		days_remove = -1
+		cost = 25
 
-		# complete_effect = {
-			# hidden_effect = {
-				# set_temp_variable = {
-					# var = ban_ideology_var
-					# value = party_popularity@democratic
-					# }
-				# multiply_temp_variable = {
-					# var = ban_ideology_var
-					# value = -1
-					# }
-				# set_temp_variable = {
-					# var = ban_ideology_var_stab
-					# value = ban_ideology_var
-					# }
-				# multiply_temp_variable = {
-					# var = ban_ideology_var_stab
-					# value = 0.2
-					# }
-				# add_popularity = {
-					# ideology = democratic
-					# popularity = ban_ideology_var
-					# }
-				# multiply_temp_variable = {
-					# var = ban_ideology_var
-					# value = 0.66
-					# }
-				# }
-			# custom_effect_tooltip = ban_democratic_party_tt
-			# add_stability = ban_ideology_var_stab
-			# }
-		# }
+		complete_effect = {
+			hidden_effect = {
+				set_temp_variable = {
+					var = ban_ideology_var
+					value = party_popularity@democratic
+					}
+				multiply_temp_variable = {
+					var = ban_ideology_var
+					value = -1
+					}
+				set_temp_variable = {
+					var = ban_ideology_var_stab
+					value = ban_ideology_var
+					}
+				multiply_temp_variable = {
+					var = ban_ideology_var_stab
+					value = 0.2
+					}
+				add_popularity = {
+					ideology = democratic
+					popularity = ban_ideology_var
+					}
+				multiply_temp_variable = {
+					var = ban_ideology_var
+					value = 0.66
+					}
+				}
+			custom_effect_tooltip = ban_democratic_party_tt
+			add_stability = ban_ideology_var_stab
+			}
+		}
 
-	# ban_communist_party = {
+	ban_communist_party = {
 
-		# icon = generic_civil_support
-		# allowed = {
-			# OR = {
-				# tag = SOV
-				# tag = FRA
-				# tag = JAP
-				# tag = RAJ
-				# tag = AST
-				# tag = NZL
-				# tag = MAN
-				# tag = BUL
-				# tag = ROM
-				# tag = HUN
-				# tag = SPR
-				# tag = GER
-				# tag = ITA
-				# tag = ENG
-				# tag = IRE
-				# tag = SAF
-				# tag = FIN
-				# tag = USA
-				# tag = CAN
-				# tag = EFR
-				# }
-			# }
-		# available = {
-			# communism < 0.2
-			# }
+		icon = generic_civil_support
+		allowed = {
+			OR = {
+				tag = JAP
+				tag = RAJ
+				tag = MAN
+				tag = BUL
+				tag = ROM
+				tag = HUN
+				tag = SPR
+				tag = GER
+				tag = ITA
+				tag = SAF
+				tag = EFR
+			}
+		}	
+		available = {
+			communism < 0.2
+			}
 
-		# visible = {
-			# NOT = { has_government = communism }
-			# communism > 0
-			# }
+		visible = {
+			NOT = { has_government = communism }
+			communism > 0
+		}
 
-		# remove_trigger = {
-			# hidden_trigger = {
-				# has_government = communism
-				# }
-			# }
+		remove_trigger = {
+			hidden_trigger = {
+				has_government = communism
+			}
+		}
 
-		# modifier = {
-			# communism_drift = -0.05
-			# }
+		modifier = {
+			communism_drift = -0.05
+		}
 
-		# days_remove = -1
-		# cost = 25
+		days_remove = -1
+		cost = 25
 
-		# complete_effect = {
-			# hidden_effect = {
-				# set_temp_variable = {
-					# var = ban_ideology_var
-					# value = party_popularity@communism
-					# }
-				# multiply_temp_variable = {
-					# var = ban_ideology_var
-					# value = -1
-					# }
-				# set_temp_variable = {
-					# var = ban_ideology_var_stab
-					# value = ban_ideology_var
-					# }
-				# multiply_temp_variable = {
-					# var = ban_ideology_var_stab
-					# value = 0.2
-					# }
-				# add_popularity = {
-					# ideology = communism
-					# popularity = ban_ideology_var
-					# }
-				# multiply_temp_variable = {
-					# var = ban_ideology_var
-					# value = 0.66
-					# }
-				# }
-			# custom_effect_tooltip = ban_communist_party_tt
-			# add_stability = ban_ideology_var_stab
-			# }
+		complete_effect = {
+			hidden_effect = {
+				set_temp_variable = {
+					var = ban_ideology_var
+					value = party_popularity@communism
+					}
+				multiply_temp_variable = {
+					var = ban_ideology_var
+					value = -1
+					}
+				set_temp_variable = {
+					var = ban_ideology_var_stab
+					value = ban_ideology_var
+					}
+				multiply_temp_variable = {
+					var = ban_ideology_var_stab
+					value = 0.2
+					}
+				add_popularity = {
+					ideology = communism
+					popularity = ban_ideology_var
+					}
+				multiply_temp_variable = {
+					var = ban_ideology_var
+					value = 0.66
+					}
+				}
+			custom_effect_tooltip = ban_communist_party_tt
+			add_stability = ban_ideology_var_stab
+			}
 
-		# ai_will_do = {
-			# factor = 0
-			# }
-		# }
+		ai_will_do = {
+			factor = 0
+		}
+	}
 
-	# institute_press_censorship_fascist_state = {
+	institute_press_censorship_fascist_state = {
 
-		# icon = generic_political_discourse
-		# allowed = {
-			# OR = {
-				# tag = SOV
-				# tag = FRA
-				# tag = JAP
-				# tag = RAJ
-				# tag = AST
-				# tag = NZL
-				# tag = MAN
-				# tag = BUL
-				# tag = ROM
-				# tag = HUN
-				# tag = SPR
-				# tag = GER
-				# tag = ITA
-				# tag = ENG
-				# tag = IRE
-				# tag = SAF
-				# tag = FIN
-				# tag = USA
-				# tag = CAN
-				# tag = EFR
-				# }
-			# }
-		# visible = {
-			# has_government = fascism
-			# }
+		icon = generic_political_discourse
+		allowed = {
+			OR = {
+				tag = JAP
+				tag = MAN
+				tag = BUL
+				tag = ROM
+				tag = HUN
+				tag = SPR
+				tag = GER
+				tag = ITA
+				tag = FIN
+				tag = EFR
+			}
+		}
+		visible = {
+			has_government = fascism
+		}
 
-		# modifier = {
-			# communism_drift = -0.01
-			# fascism_drift = 0.03
-			# democratic_drift = -0.01
-			# neutrality_drift = -0.01
-			# }
+		modifier = {
+			communism_drift = -0.01
+			fascism_drift = 0.03
+			democratic_drift = -0.01
+			neutrality_drift = -0.01
+		}
 
-		# days_remove = 360
-		# cost = 50
+		days_remove = 360
+		cost = 50
 
-		# ai_will_do = {
-			# factor = 0
-			# }
-		# }
+		ai_will_do = {
+			factor = 0
+		}
+	}
 
-	# institute_press_censorship_democratic_state = {
+	institute_press_censorship_democratic_state = {
 
-		# icon = generic_political_discourse
-		# allowed = {
-			# OR = {
-				# tag = SOV
-				# tag = FRA
-				# tag = JAP
-				# tag = RAJ
-				# tag = AST
-				# tag = NZL
-				# tag = MAN
-				# tag = BUL
-				# tag = ROM
-				# tag = HUN
-				# tag = SPR
-				# tag = GER
-				# tag = ITA
-				# tag = ENG
-				# tag = IRE
-				# tag = SAF
-				# tag = FIN
-				# tag = USA
-				# tag = CAN
-				# tag = EFR
-				# }
-			# }
-		# visible = {
-			# has_government = democratic
-			# }
+		icon = generic_political_discourse
+		allowed = {
+			OR = {
+				tag = FRA
+				tag = RAJ
+				tag = AST
+				tag = NZL
+				tag = ENG
+				tag = IRE
+				tag = SAF
+				tag = USA
+				tag = CAN
+				}
+			}
+		visible = {
+			has_government = democratic
+			}
 
-		# modifier = {
-			# communism_drift = -0.01
-			# fascism_drift = -0.01
-			# democratic_drift = 0.03
-			# neutrality_drift = -0.01
-			# }
+		modifier = {
+			communism_drift = -0.01
+			fascism_drift = -0.01
+			democratic_drift = 0.03
+			neutrality_drift = -0.01
+			}
 
-		# days_remove = 360
-		# cost = 50
+		days_remove = 360
+		cost = 50
 
-		# ai_will_do = {
-			# factor = 0
-			# }
-		# }
+		ai_will_do = {
+			factor = 0
+			}
+		}
 
-	# institute_press_censorship_communist_state = {
+	institute_press_censorship_communist_state = {
 
-		# icon = generic_political_discourse
-		# allowed = {
-			# OR = {
-				# tag = SOV
-				# tag = FRA
-				# tag = JAP
-				# tag = RAJ
-				# tag = AST
-				# tag = NZL
-				# tag = MAN
-				# tag = BUL
-				# tag = ROM
-				# tag = HUN
-				# tag = SPR
-				# tag = GER
-				# tag = ITA
-				# tag = ENG
-				# tag = IRE
-				# tag = SAF
-				# tag = FIN
-				# tag = USA
-				# tag = CAN
-				# tag = EFR
-				# }
-			# }
-		# visible = {
-			# has_government = communism
-			# }
+		icon = generic_political_discourse
+		allowed = {
+			tag = SOV
+		}
+		visible = {
+			has_government = communism
+		}
 
-		# modifier = {
-			# communism_drift = 0.03
-			# fascism_drift = -0.01
-			# democratic_drift = -0.01
-			# neutrality_drift = -0.01
-			# }
+		modifier = {
+			communism_drift = 0.03
+			fascism_drift = -0.01
+			democratic_drift = -0.01
+			neutrality_drift = -0.01
+		}
 
-		# days_remove = 360
-		# cost = 50
+		days_remove = 360
+		cost = 50
 
-		# ai_will_do = {
-			# factor = 0
-			# }
-		# }
+		ai_will_do = {
+			factor = 0
+		}
+	}
 
-	# institute_press_censorship_neutrality_state = {
+	institute_press_censorship_neutrality_state = {
 
-		# icon = generic_political_discourse
-		# allowed = {
-			# OR = {
-				# tag = SOV
-				# tag = FRA
-				# tag = JAP
-				# tag = RAJ
-				# tag = AST
-				# tag = NZL
-				# tag = MAN
-				# tag = BUL
-				# tag = ROM
-				# tag = HUN
-				# tag = SPR
-				# tag = GER
-				# tag = ITA
-				# tag = ENG
-				# tag = IRE
-				# tag = SAF
-				# tag = FIN
-				# tag = USA
-				# tag = CAN
-				# tag = EFR
-				# }
-			# }
-		# visible = {
-			# has_government = neutrality
-			# }
+		icon = generic_political_discourse
+		allowed = {
+			OR = {
+				tag = RAJ
+				tag = AST
+				tag = SAF
+				tag = EFR
+			}
+		}
+		visible = {
+			has_government = neutrality
+		}
 
-		# modifier = {
-			# communism_drift = -0.01
-			# fascism_drift = -0.01
-			# democratic_drift = -0.01
-			# neutrality_drift = 0.03
-			# }
+		modifier = {
+			communism_drift = -0.01
+			fascism_drift = -0.01
+			democratic_drift = -0.01
+			neutrality_drift = 0.03
+		}
 
-		# days_remove = 360
-		# cost = 50
+		days_remove = 360
+		cost = 50
 
-		# ai_will_do = {
-			# factor = 0
-			# }
-		# }
+		ai_will_do = {
+			factor = 0
+		}
+	}
 }

@@ -1,151 +1,5 @@
 crisis = {
 
-	draft_dodging = {
-
-		icon = generic_civil_support
-
-		allowed = {
-			OR = {
-				tag = SOV
-				tag = SIA
-				tag = FRA
-				tag = JAP
-				tag = RAJ
-				tag = AST
-				tag = NZL
-				tag = MAN
-				tag = BUL
-				tag = ROM
-				tag = HUN
-				tag = SPR
-				tag = GER
-				tag = ITA
-				tag = ENG
-				tag = IRE
-				tag = SAF
-				tag = FIN
-				tag = USA
-				tag = CAN
-				tag = EFR
-			}
-		}
-
-		available = {
-			OR = {
-				has_civil_war = yes
-				has_country_flag = crisis_in_progress
-			}
-			NOT = {
-				has_country_flag = crisis_solution_in_progress
-			}
-			OR = {
-				has_idea = draft_dodging
-				has_idea = draft_dodging_2
-				has_idea = draft_dodging_3
-			}
-		}
-
-		cost = 0
-		ai_will_do = {
-			factor = 1
-		}
-
-		visible = {
-			OR = {
-				has_civil_war = yes
-				has_country_flag = crisis_in_progress
-			}
-			NOT = {
-				has_country_flag = crisis_solution_in_progress
-			}
-			OR = {
-				has_idea = draft_dodging
-				has_idea = draft_dodging_2
-				has_idea = draft_dodging_3
-			}
-
-		}
-
-		complete_effect = {
-			country_event = stability.21
-		}
-	}
-
-	strikes_1 = {
-
-		icon = generic_civil_support
-
-		allowed = {
-			OR = {
-				tag = SOV
-				tag = SIA
-				tag = FRA
-				tag = JAP
-				tag = RAJ
-				tag = AST
-				tag = NZL
-				tag = MAN
-				tag = BUL
-				tag = ROM
-				tag = HUN
-				tag = SPR
-				tag = GER
-				tag = ITA
-				tag = ENG
-				tag = IRE
-				tag = SAF
-				tag = FIN
-				tag = USA
-				tag = CAN
-				tag = EFR
-			}
-		}
-
-		available = {
-			OR = {
-				has_civil_war = yes
-				has_country_flag = crisis_in_progress
-			}
-			NOT = {
-				has_country_flag = crisis_solution_in_progress
-			}
-			OR = {
-				has_idea = strikes_1
-				has_idea = strikes_2
-				has_idea = strikes_3
-			}
-		}
-
-		cost = 0
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				has_idea = strikes_3
-				factor = 500
-			}
-		}
-
-		visible = {
-			OR = {
-				has_idea = strikes_1
-				has_idea = strikes_2
-				has_idea = strikes_3
-			}
-			OR = {
-				has_country_flag = crisis_in_progress
-				has_civil_war = yes
-			}
-			NOT = {
-				has_country_flag = crisis_solution_in_progress
-			}
-		}
-
-
-		complete_effect = {
-			country_event = stability.22
-		}
-	}
-
 	draft_dodging_mission = {
 
 		icon = generic_civil_support
@@ -175,443 +29,70 @@ crisis = {
 			}
 		}
 		available = {
-			NOT = {
-				OR = {
-					has_idea = draft_dodging
-					has_idea = draft_dodging_2
-					has_idea = draft_dodging_3
-				}
-			}
+			
 		}
-
-		days_mission_timeout = 90
 
 		activation = {
-			OR = {
-				has_idea = draft_dodging
-				has_idea = draft_dodging_2
-				has_idea = draft_dodging_3
-			}
+			
 		}
+		
 		visible = {
-			OR = {
-				has_idea = draft_dodging
-				has_idea = draft_dodging_2
-				has_idea = draft_dodging_3
-			}
+		
 		}
+		
+		days_mission_timeout = 180
+		
+		modifier = {
+			
+		}
+		
 		complete_effect = {
 
 		}
+		
 		timeout_effect = {
-			if = {
-				limit = {
-					has_idea = draft_dodging_3
-					has_stability < 0.21
-					NOT = {
-						has_government = communism
-					}
-				}
-				start_civil_war = {
-					ideology = communism
-				}
-			}
-			if = {
-				limit = {
-					has_idea = draft_dodging_3
-					has_stability < 0.21
-					has_government = communism
-
-				}
-				start_civil_war = {
-					ideology = democratic
-				}
-			}
-			if = {
-				limit = {
-					has_idea = draft_dodging_3
-					has_stability < 0.41
-					NOT = {
-						has_government = communism
-					}
-				}
-				add_popularity = { ideology = communism popularity = 0.1}
-			}
-			if = {
-				limit = {
-					has_idea = draft_dodging_3
-					has_stability < 0.41
-					has_government = communism
-
-				}
-				add_popularity = { ideology = democratic popularity = 0.1}
-			}
-			if = {
-				limit = {
-					has_idea = draft_dodging_3
-					has_stability > 0.4
-				}
-				add_stability = -0.1
-			}
-			if = {
-				limit = {
-					has_idea = draft_dodging_2
-				}
-				swap_ideas = {
-					remove_idea = draft_dodging_2
-					add_idea = draft_dodging_3
-				}
-			}
-			if = {
-				limit = {
-					has_idea = draft_dodging
-				}
-				swap_ideas = {
-					remove_idea = draft_dodging
-					add_idea = draft_dodging_2
-				}
-			}
+			
 		}
 	}
+	
 	strikes_mission = {
 
 		icon = generic_civil_support
+		
 		allowed = {
-			OR = {
-				tag = SOV
-				tag = SIA
-				tag = FRA
-				tag = JAP
-				tag = RAJ
-				tag = AST
-				tag = NZL
-				tag = MAN
-				tag = BUL
-				tag = ROM
-				tag = HUN
-				tag = SPR
-				tag = GER
-				tag = ITA
-				tag = ENG
-				tag = IRE
-				tag = SAF
-				tag = FIN
-				tag = USA
-				tag = CAN
-				tag = EFR
-			}
+			always = yes
 		}
 		available = {
-			NOT = {
-				OR = {
-					has_idea = strikes_1
-					has_idea = strikes_2
-					has_idea = strikes_3
-				}
-				has_country_flag = crisis_in_progress
-			}
+			has_country_flag = no_strikes_please
+			has_stability > 0.5
 		}
 
-		days_mission_timeout = 90
-
+		days_mission_timeout = 60
+		days_remove = 90
+		is_good = no
+		
 		activation = {
-			OR = {
-				has_idea = strikes_1
-				has_idea = strikes_2
-				has_idea = strikes_3
-			}
-			OR = {
-				has_country_flag = crisis_in_progress #needed to avoid doubling up with demob strikes
-				has_civil_war = yes
-			}
+			NOT = { has_country_flag = no_strikes_please }
+			has_stability < 0.5
 		}
-		visible = {
-			OR = {
-				has_idea = strikes_1
-				has_idea = strikes_2
-				has_idea = strikes_3
-			}
-			OR = {
-				has_country_flag = crisis_in_progress
-				has_civil_war = yes
-			}
+
+		modifier = {
+			production_speed_buildings_factor = -0.25
+			industrial_capacity_factory = -0.25
+			industrial_capacity_dockyard = -0.25
 		}
+		
 		complete_effect = {
 
 		}
+		
 		timeout_effect = {
-			if = {
-				limit = {
-					has_idea = strikes_3
-					has_stability < 0.21
-					NOT = {
-						has_government = communism
-					}
-				}
-				start_civil_war = {
-					ideology = communism
-				}
-			}
-			if = {
-				limit = {
-					has_idea = strikes_3
-					has_stability < 0.21
-					has_government = communism
-
-				}
-				start_civil_war = {
-					ideology = democratic
-				}
-			}
-			if = {
-				limit = {
-					has_idea = strikes_3
-					has_stability < 0.41
-					NOT = {
-						has_government = communism
-					}
-				}
-				add_popularity = { ideology = communism popularity = 0.1}
-			}
-			if = {
-				limit = {
-					has_idea = strikes_3
-					has_stability < 0.41
-					has_government = communism
-
-				}
-				add_popularity = { ideology = democratic popularity = 0.1}
-			}
-			if = {
-				limit = {
-					has_idea = strikes_3
-					has_stability > 0.4
-				}
-				add_stability = -0.1
-			}
-			if = {
-				limit = {
-					has_idea = strikes_2
-				}
-				swap_ideas = {
-					remove_idea = strikes_2
-					add_idea = strikes_3
-				}
-			}
-			if = {
-				limit = {
-					has_idea = strikes_1
-				}
-				swap_ideas = {
-					remove_idea = strikes_1
-					add_idea = strikes_2
-				}
-			}
-		}
-	}
-	mutiny_1 = {
-
-		icon = generic_civil_support
-
-		allowed = {
-			OR = {
-				tag = SOV
-				tag = SIA
-				tag = FRA
-				tag = JAP
-				tag = RAJ
-				tag = AST
-				tag = NZL
-				tag = MAN
-				tag = BUL
-				tag = ROM
-				tag = HUN
-				tag = SPR
-				tag = GER
-				tag = ITA
-				tag = ENG
-				tag = IRE
-				tag = SAF
-				tag = FIN
-				tag = USA
-				tag = CAN
-				tag = EFR
-			}
-		}
-
-		available = {
-			OR = {
-				has_country_flag = crisis_in_progress #needed to avoid doubling up with demob strikes
-				has_civil_war = yes
-			}
-			OR = {
-				has_idea = mutiny_1
-				has_idea = mutiny_2
-				has_idea = mutiny_3
-			}
-		}
-
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-
-		visible = {
-			OR = {
-				has_country_flag = crisis_in_progress #needed to avoid doubling up with demob strikes
-				has_civil_war = yes
-			}
-			NOT = {
-				has_country_flag = crisis_solution_in_progress
-			}
-			OR = {
-				has_idea = mutiny_1
-				has_idea = mutiny_2
-				has_idea = mutiny_3
-			}
-		}
-
-		complete_effect = {
-			country_event = stability.23
-		}
-	}
-	mutiny_mission = {
-
-		icon = generic_civil_support
-		allowed = {
-			OR = {
-				tag = SOV
-				tag = SIA
-				tag = FRA
-				tag = JAP
-				tag = RAJ
-				tag = AST
-				tag = NZL
-				tag = MAN
-				tag = BUL
-				tag = ROM
-				tag = HUN
-				tag = SPR
-				tag = GER
-				tag = ITA
-				tag = ENG
-				tag = IRE
-				tag = SAF
-				tag = FIN
-				tag = USA
-				tag = CAN
-				tag = EFR
-			}
-		}
-		available = {
-			NOT = {
-				OR = {
-					has_idea = mutiny_1
-					has_idea = mutiny_2
-					has_idea = mutiny_3
-				}
-				has_country_flag = crisis_in_progress
-			}
-		}
-
-		days_mission_timeout = 90
-
-		activation = {
-			OR = {
-				has_idea = mutiny_1
-				has_idea = mutiny_2
-				has_idea = mutiny_3
-			}
-			OR = {
-				has_country_flag = crisis_in_progress #needed to avoid doubling up with demob strikes
-				has_civil_war = yes
-			}
-		}
-		visible = {
-			OR = {
-				has_idea = mutiny_1
-				has_idea = mutiny_2
-				has_idea = mutiny_3
-			}
-			OR = {
-				has_country_flag = crisis_in_progress #needed to avoid doubling up with demob strikes
-				has_civil_war = yes
-			}
-		}
-		complete_effect = {
-
-		}
-		timeout_effect = {
-			if = {
-				limit = {
-					has_idea = mutiny_3
-					has_stability < 0.21
-					NOT = {
-						has_government = communism
-					}
-				}
-				start_civil_war = {
-					ideology = communism
-				}
-			}
-			if = {
-				limit = {
-					has_idea = mutiny_3
-					has_stability < 0.21
-					has_government = communism
-
-				}
-				start_civil_war = {
-					ideology = democratic
-				}
-			}
-			if = {
-				limit = {
-					has_idea = mutiny_3
-					has_stability < 0.41
-					NOT = {
-						has_government = communism
-					}
-				}
-				add_popularity = { ideology = communism popularity = 0.1}
-			}
-			if = {
-				limit = {
-					has_idea = mutiny_3
-					has_stability < 0.41
-					has_government = communism
-
-				}
-				add_popularity = { ideology = democratic popularity = 0.1}
-			}
-			if = {
-				limit = {
-					has_idea = mutiny_3
-					has_stability > 0.4
-				}
-				add_stability = -0.1
-			}
-			if = {
-				limit = {
-					has_idea = mutiny_2
-				}
-				swap_ideas = {
-					remove_idea = mutiny_2
-					add_idea = mutiny_3
-				}
-			}
-			if = {
-				limit = {
-					has_idea = mutiny_1
-				}
-				swap_ideas = {
-					remove_idea = mutiny_1
-					add_idea = mutiny_2
-				}
-			}
+			set_country_flag = { flag = no_strikes_please days = 365 }
 		}
 	}
 }
+
+
 demobilization = {
 	demobilization_economic = {
 		allowed = {
@@ -707,6 +188,7 @@ demobilization = {
 		}
 
 	}
+
 	demob_economic_mission = {
 		available = {
 			OR = {
@@ -849,6 +331,7 @@ demobilization = {
 			}
 		}
 	}
+	
 	demobilization_manpower = {
 
 		icon = generic_prepare_civil_war
@@ -924,6 +407,7 @@ demobilization = {
 
 
 	}
+	
 	demob_manpower_mission = {
 
 		icon = revolt
