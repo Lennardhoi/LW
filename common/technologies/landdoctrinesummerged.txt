@@ -1,5 +1,6 @@
 technologies = {
 	mobile = {
+		air_cas_present_factor = 0.25
 		amphibious_mechanized = {
 			max_organisation = 5
 
@@ -29,17 +30,13 @@ technologies = {
 
 		}
 		category_light_infantry = {
-			max_organisation = 5
+			defense = 0.1
+			max_organisation = 10
 
 		}
 		category_line_artillery = {
 			soft_attack = 0.1
 			hard_attack = 0.1
-
-		}
-		category_line_infantry = {
-			max_organisation = 5
-			defense = 0.1
 
 		}
 		category_mobile_artillery = {
@@ -118,9 +115,6 @@ technologies = {
 		category_light_infantry = {
 			default_morale = 0.05
 			max_organisation = 20
-
-		}
-		category_line_infantry = {
 			soft_attack = 0.05
 
 		}
@@ -160,29 +154,32 @@ technologies = {
 
 	}
 	grand = {
-		amphibious_mechanized = {
-			max_organisation = 5
+		amphibious = {
+			attack = 0.1
+			defence = 0.1
 
 		}
 		armored_car = {
 			default_morale = 0.1
-			max_organisation = 11
+			max_organisation = 9
 
 		}
+		cas_damage_reduction = 0.2
 		category_all_armor = {
-			default_morale = 0.1
+			hard_attack = 0.1
+			ap_attack = 0.1
 
 		}
 		category_all_infantry = {
 			defense = 0.1
-			max_organisation = 27
+			max_organisation = 15
+			maximum_speed = 0.1
 
 		}
 		category_army = {
-			maximum_speed = 0.1
-			breakthrough = 0.2
+			breakthrough = 0.1
+			soft_attack = 0.05
 			max_organisation = 7
-			soft_attack = 0.1
 
 		}
 		category_light_infantry = {
@@ -190,15 +187,28 @@ technologies = {
 			breakthrough = 0.1
 
 		}
+		category_mobile_artillery = {
+			soft_attack = 0.1
+
+		}
+		category_mobile_infantry = {
+			max_organisation = 20
+
+		}
 		category_recon = {
 			recon = 1
+
+		}
+		category_special_forces = {
+			breakthrough = 0.1
+			soft_attack = 0.1
 
 		}
 		category_tanks = {
 			max_organisation = 13
 
 		}
-		dig_in_speed_factor = 0.25
+		dig_in_speed_factor = 0.5
 
 		doctrine = yes
 
@@ -206,47 +216,33 @@ technologies = {
 			position = { x = 0 y = 18 }
 
 			}	land_night_attack = 0.25
-		land_reinforce_rate = 0.25
+		land_reinforce_rate = 0.12
 		max_dig_in = 10
-		max_planning = 0.3
-		mechanized = {
-			max_organisation = 5
-
-		}
-		motorized = {
-			max_organisation = 5
-
-		}
+		max_planning = 0.4
+		no_supply_grace = 48
 		path = {
 			research_cost_coeff = 14
 
 		}
 		research_cost = 63.75
+		soft_attack = 0.1
+		terrain_penalty_reduction = 0.1
 
 	}
 	mass_ass = {
-		amphibious_mechanized = {
-			max_organisation = 10
-			default_morale = 0.1
-
-		}
 		armored_car = {
 			breakthrough = 0.1
 			default_morale = 0.1
-			max_organisation = 8
+			max_organisation = 6
 
 		}
-		army_core_attack_factor = 0.2
-		army_core_defence_factor = 0.2
+		army_fuel_capacity_factor = 1
 		category_all_armor = {
 			default_morale = 0.2
 
 		}
-		category_all_infantry = {
-			breakthrough = 0.1
-			default_morale = 0.15
-			defense = 0.1
-			max_organisation = 30
+		category_armor = {
+			fuel_capacity = 0.5
 
 		}
 		category_army = {
@@ -254,7 +250,17 @@ technologies = {
 
 		}
 		category_light_infantry = {
-			max_organisation = 5
+			defense = 0.1
+			breakthrough = 0.1
+			default_morale = 0.3
+			max_organisation = 25
+
+		}
+		category_mobile_infantry = {
+			breakthrough = 0.1
+			default_morale = 0.2
+			defense = 0.1
+			max_organisation = 30
 
 		}
 		category_support_battalions = {
@@ -265,32 +271,16 @@ technologies = {
 			max_organisation = 7
 
 		}
-		conscription = 0.05
+		conscription = 0.03
 
 		doctrine = yes
 
 		folder = {name = land_doctrine_folder
 			position = { x = 0 y = 18 }
 
-			}		infantry = {
-			default_morale = 0.3
-			max_strength = 8
-
-		}
-		land_reinforce_rate = 0.37
+			}	land_reinforce_rate = 0.2
 		max_dig_in = 5
-		mechanized = {
-			max_organisation = 10
-			default_morale = 0.1
-
-		}
-		motorized = {
-			max_strength = 4
-			max_organisation = 10
-			default_morale = 0.1
-
-		}
-		no_supply_grace = 48
+		no_supply_grace = 96
 		path = {
 			research_cost_coeff = 13
 
@@ -300,3 +290,5 @@ technologies = {
 		resistance_growth_on_our_occupied_states = 0.25
 
 	}
+
+}
