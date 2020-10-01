@@ -156,10 +156,12 @@ technologies = {
 
 	}
 	grand = {
-		amphibious = {
-			attack = 0.1
-			defence = 0.1
-
+		amphibious_armor = {
+			soft_attack = 0.1
+			amphibious = {
+				attack = 0.1
+				defence = 0.10
+			}
 		}
 		armored_car = {
 			default_morale = 0.1
@@ -227,7 +229,7 @@ technologies = {
 
 		}
 		research_cost = 63.75
-		soft_attack = 0.1
+		
 		terrain_penalty_reduction = 0.1
 
 	}

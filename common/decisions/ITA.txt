@@ -23,7 +23,7 @@ foreign_politics = {
 		}
 		fire_only_once = no
 		complete_effect = {
-			custom_effect_tooltip="This will activate a monthly lendlease of the following equipment on the first day of a month."
+			custom_effect_tooltip=ITA_enable_ll_tt
 			hidden_effect={set_country_flag=ll_enabled}
 			effect_tooltip={
 				send_equipment = { equipment = fighter_equipment amount = 5000 target = GER }
@@ -59,8 +59,8 @@ foreign_politics = {
 		}
 		fire_only_once = no
 		complete_effect = {
-			GER={add_equipment_to_stockpile={type = fighter_equipment amount = 600 }}
-			add_equipment_to_stockpile={type = fighter_equipment_alt amount = -500 }
+			GER={add_equipment_to_stockpile={type = fighter_equipment amount = 500 }}
+			add_equipment_to_stockpile={type = fighter_equipment_alt amount = -600 }
 
 		}
 	}

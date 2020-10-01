@@ -26,7 +26,7 @@ equipments = {
 
 		#Offensive Abilities
 		soft_attack = 27
-		hard_attack = 2
+		hard_attack = 3
 		ap_attack = 5
 		air_attack = 0
 
@@ -42,7 +42,7 @@ equipments = {
 
 	artillery_equipment_1 = {
 		year = 1934
-
+		
 		archetype = artillery_equipment
 		priority = 50
 		visual_level = 0
@@ -50,7 +50,7 @@ equipments = {
 
 	artillery_equipment_2 = {
 		year = 1939
-
+		
 		archetype = artillery_equipment
 		parent = artillery_equipment_1
 		priority = 50
@@ -59,7 +59,7 @@ equipments = {
 		defense = 18
 		breakthrough = 5
 		soft_attack = 35
-
+		hard_attack = 5
 		build_cost_ic = 3.35
 		resources = {
 			tungsten = 1
@@ -78,7 +78,7 @@ equipments = {
 		defense = 21
 		breakthrough = 6
 		soft_attack = 42
-
+		hard_attack = 7
 		build_cost_ic = 3.75
 		resources = {
 			tungsten = 1
@@ -105,8 +105,8 @@ equipments = {
 		reliability = 0.5
 		maximum_speed = 4
 		#Defensive Abilities
-		defense = 4
-		breakthrough = 7
+		defense = 5
+		breakthrough = 15
 		hardness = 0
 		armor_value = 0
 
@@ -140,7 +140,7 @@ equipments = {
 		visual_level = 1
 
 		defense = 6
-		breakthrough = 10
+		breakthrough = 20
 		soft_attack = 60
 
 		build_cost_ic = 5

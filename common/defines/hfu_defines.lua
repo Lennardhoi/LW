@@ -258,7 +258,9 @@ NDefines.NAir.COMBAT_MULTIPLANE_CAP = 2                          --vanilla 3
 NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.11						-- Vanilla 0,10
 NDefines.NAir.DISRUPTION_FACTOR = 5
 NDefines.NAir.ESCORT_FACTOR = 2.5 		
-        
+NDefines.NAir.FIELD_EXPERIENCE_SCALE = 0.002 --0.001 in vanilla
+NDefines.NAir.FIELD_EXPERIENCE_MAX_PER_DAY = 3 --2 in vanilla
+NDefines.NAir.BOMBING_TARGETING_RANDOM_FACTOR = 0.75  --0.001 in vanilla
 NDefines.NAir.AIR_WING_COUNTRY_XP_FROM_TRAINING_FACTOR = 0.0025 --Vanilla 0,005
 
 NDefines.NAir.EFFICIENCY_REGION_CHANGE_PENALTY_FACTOR = 1.0				-- Penalty applied for changing region
