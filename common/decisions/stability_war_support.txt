@@ -4,36 +4,16 @@ crisis = {
 
 		icon = generic_civil_support
 		allowed = {
-			OR = {
-				tag = SOV
-				tag = SIA
-				tag = FRA
-				tag = JAP
-				tag = RAJ
-				tag = AST
-				tag = NZL
-				tag = MAN
-				tag = BUL
-				tag = ROM
-				tag = HUN
-				tag = SPR
-				tag = GER
-				tag = ITA
-				tag = ENG
-				tag = IRE
-				tag = SAF
-				tag = FIN
-				tag = USA
-				tag = CAN
-				tag = EFR
-			}
+			always = yes
 		}
 		available = {
-
+			
 		}
 
 		activation = {
-
+			NOT = { has_country_flag = no_dodging_please }
+			has_war_support < 0.5
+			has_war = yes
 		}
 
 		visible = {
@@ -41,9 +21,11 @@ crisis = {
 		}
 
 		days_mission_timeout = 180
-
+		days_remove = 180
+		is_good = no
+		
 		modifier = {
-
+			conscription = -0.01
 		}
 
 		complete_effect = {
@@ -51,7 +33,7 @@ crisis = {
 		}
 
 		timeout_effect = {
-
+			set_country_flag = { flag = no_dodging_please days = 365 }
 		}
 	}
 
@@ -74,6 +56,7 @@ crisis = {
 		activation = {
 			NOT = { has_country_flag = no_strikes_please }
 			has_stability < 0.5
+			date > 1937.6.1
 		}
 
 		modifier = {

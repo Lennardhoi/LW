@@ -2404,7 +2404,7 @@ technologies = {
 		xp_research_bonus = 1.00
 		#reduced pocketed combat penalty and/or reduces the out of supply penalty or increases time before moving to worse penalty
 		no_supply_grace = 48 # more hours before supply penalty changes
-		out_of_supply_factor = -0.10
+		out_of_supply_factor = -0.15
 
 		path = {
 			leads_to_tech = defence_in_depth
@@ -2553,6 +2553,7 @@ technologies = {
 			defense = 0.10
 		}
 		pocket_penalty = -0.2
+		out_of_supply_factor = -0.15
 		xp_research_type = army
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
@@ -2745,7 +2746,7 @@ technologies = {
 		xp_research_type = army
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
-
+		
 		category_all_armor = {
 			default_morale = 0.1
 		}
@@ -2753,7 +2754,7 @@ technologies = {
 			max_organisation = 3
 			default_morale = 0.1
 		}
-
+		out_of_supply_factor = -0.20
 		category_mobile_infantry= {
 			max_organisation = 10
 			default_morale = 0.1
@@ -2803,6 +2804,12 @@ technologies = {
 		land_reinforce_rate = 0.03
 		category_army = {
 			default_morale = 0.15
+		}
+		motorized_rocket_brigade = {
+			max_organisation = 50
+			default_morale = 0.1
+			max_strength = 20
+			combat_width = -1
 		}
 
 		army_fuel_capacity_factor = 1
@@ -3036,7 +3043,7 @@ technologies = {
 		xp_research_type = army
 		xp_research_cost = 100
 		xp_research_bonus = 1.00
-		out_of_supply_factor = -0.30
+		out_of_supply_factor = -0.25
 		category_army = {
 			default_morale = 0.2
 		}
