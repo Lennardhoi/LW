@@ -540,8 +540,8 @@ focus_tree = {
 					instant_build = yes
 				}
 				set_state_flag = royal_ordinance_focus_2AF
-	 	}
-	 }
+			}
+		}
 	}
 	focus = {
 		id = royal_navy_focus
@@ -563,7 +563,7 @@ focus_tree = {
 		bypass = {
 
 		}
-		
+
 		completion_reward = {
 			127 = {
 				add_extra_state_shared_building_slots = 3
@@ -595,10 +595,10 @@ focus_tree = {
 		}
 	}
 
-	
+
 	focus = {
 		id = UK_secret_focus
-		
+
 		prerequisite = { focus = maud_focus }
 		icon = GFX_goal_generic_secret_weapon
 		x = -2
@@ -2661,7 +2661,7 @@ focus_tree = {
 	focus = {
 		id = ENG_global_defense
 		prerequisite = { focus = ENG_steady_as_she_goes }
-		
+
 
 		allow_branch = {
 			has_dlc = "Man the Guns"
@@ -2680,8 +2680,8 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			factor = 1
-			
-		}	
+
+		}
 		completion_reward = {
 			add_ideas = SPA_foreign_training_staff
 		}
@@ -2690,8 +2690,8 @@ focus_tree = {
 	focus = {
 		id = ENG_the_sun_never_sets
 		prerequisite = { focus = ENG_global_defense }
-		available = { 
-			
+		available = {
+
 		}
 
 		continue_if_invalid = yes
@@ -2705,7 +2705,7 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			
+
 			add_ideas = ENG_the_sun_never_sets_idea
 			custom_effect_tooltip = ENG_the_sun_never_sets_tt
 		}
@@ -2716,8 +2716,8 @@ focus_tree = {
 	focus = {
 		id = ENG_no_further_appeasement
 		prerequisite = { focus = ENG_global_defense }
-		
-		available = { 
+
+		available = {
 			GER = {controls_state = 9}
 		}
 
@@ -2730,30 +2730,30 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			factor = 1
-		}	
+		}
 		completion_reward = {
-		add_ideas = ENG_appeasement	
+			add_ideas = ENG_appeasement
 		}
 	}
 	focus = {
 		id = ENG_motion_of_no_confidence
-		
+
 		prerequisite = { focus = ENG_the_sun_never_sets }
 		prerequisite = { focus = ENG_no_further_appeasement }
-		available = { 
+		available = {
 			has_country_leader =  {
 				name = "Winston Churchill"
 				ruling_only = yes
 			}
 		}
-		
 
-		
+
+
 
 		icon = GFX_focus_eng_motion_of_no_confidence
 		x = -1
 		y = 1
-		
+
 		relative_position_id = ENG_no_further_appeasement
 		cost = 5
 		ai_will_do = {
@@ -2761,10 +2761,10 @@ focus_tree = {
 		}
 
 		completion_reward = {
-		add_timed_idea = {idea = blood_toil_tears_sweat days = 185}
+			add_timed_idea = {idea = blood_toil_tears_sweat days = 185}
 		}
 	}
-focus = {
+	focus = {
 		id = uk_small_arms_focus
 		prerequisite = { focus = ENG_motion_of_no_confidence }
 		icon = GFX_goal_generic_production2
@@ -2786,8 +2786,8 @@ focus = {
 	focus = {
 		id = ENG_kickstart_the_war_industry
 		prerequisite = { focus = ENG_motion_of_no_confidence }
-		available = { 
-			
+		available = {
+
 		}
 
 		continue_if_invalid = yes
@@ -2799,7 +2799,7 @@ focus = {
 		cost = 5
 		ai_will_do = {
 			factor = 1
-		}	
+		}
 		complete_tooltip = {
 			every_state = {
 				limit = { has_state_flag = kickstart_the_war_industry_2AF }
@@ -2810,7 +2810,7 @@ focus = {
 					instant_build = yes
 				}
 			}
-			
+
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
@@ -2851,13 +2851,13 @@ focus = {
 		}
 	}
 
-	
+
 
 	focus = {
 		id = ENG_compass
 		prerequisite = { focus = ENG_motion_of_no_confidence }
-		
-		available = { 
+
+		available = {
 			NOT = {has_full_control_of_state =446}
 		}
 		bypass = {
@@ -2874,37 +2874,37 @@ focus = {
 		ai_will_do = {
 			factor = 10
 		}
-		search_filters = {FOCUS_FILTER_RESEARCH}	
+		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			add_timed_idea = {idea = ENG_compass days = 60}
 			hidden_effect = {
-			
-			FRA = {add_timed_idea = {idea = ENG_compass days = 60}}
-			SAF = {add_timed_idea = {idea = ENG_compass days = 60}}
-			RAJ = {add_timed_idea = {idea = ENG_compass days = 60}}
-			NZL = {add_timed_idea = {idea = ENG_compass days = 60}}
-			CAN = {add_timed_idea = {idea = ENG_compass days = 60}}
-			AST = {add_timed_idea = {idea = ENG_compass days = 60}}
-			
-			
-			
-			
-			
-			
-			
-			
-			
+
+				FRA = {add_timed_idea = {idea = ENG_compass days = 60}}
+				SAF = {add_timed_idea = {idea = ENG_compass days = 60}}
+				RAJ = {add_timed_idea = {idea = ENG_compass days = 60}}
+				NZL = {add_timed_idea = {idea = ENG_compass days = 60}}
+				CAN = {add_timed_idea = {idea = ENG_compass days = 60}}
+				AST = {add_timed_idea = {idea = ENG_compass days = 60}}
+
+
+
+
+
+
+
+
+
 			}
 		}
 	}
-	
+
 	focus = {
 		id = ENG_crusader
 		prerequisite = { focus = ENG_compass }
-		available = { 
-		date > 1941.08.1
+		available = {
+			date > 1941.08.1
 		}
-        Hidden_effect = {bypass ={NOT ={ITA ={controls_state = 448 controls_state = 661}}}}
+		Hidden_effect = {bypass ={NOT ={ITA ={controls_state = 448 controls_state = 661}}}}
 		continue_if_invalid = yes
 
 		icon = GFX_goal_generic_major_war
@@ -2914,25 +2914,25 @@ focus = {
 		cost = 0
 		ai_will_do = {
 			factor = 1
-		}	
+		}
 		completion_reward = {
 			add_timed_idea = {idea = ENG_crusader days = 45}
 			hidden_effect = {
-			
-			FRA = {add_timed_idea = {idea = ENG_crusader days = 45}}
-			SAF = {add_timed_idea = {idea = ENG_crusader days = 45}}
-			RAJ = {add_timed_idea = {idea = ENG_crusader days = 45}}
-			NZL = {add_timed_idea = {idea = ENG_crusader days = 45}}
-			CAN = {add_timed_idea = {idea = ENG_crusader days = 45}}
-			AST = {add_timed_idea = {idea = ENG_crusader days = 45}}
-			
-			
+
+				FRA = {add_timed_idea = {idea = ENG_crusader days = 45}}
+				SAF = {add_timed_idea = {idea = ENG_crusader days = 45}}
+				RAJ = {add_timed_idea = {idea = ENG_crusader days = 45}}
+				NZL = {add_timed_idea = {idea = ENG_crusader days = 45}}
+				CAN = {add_timed_idea = {idea = ENG_crusader days = 45}}
+				AST = {add_timed_idea = {idea = ENG_crusader days = 45}}
+
+
 
 			}
 		}
 	}
 
-	
+
 	# START IRAQ/IRAN/USSR INTERVENTION #
 
 

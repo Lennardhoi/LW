@@ -304,16 +304,6 @@ ideas = {
 
 	political_advisor = {
 
-		HUN_kalman_kanya = {
-
-			picture = generic_political_advisor_europe_1
-
-			allowed = {
-				original_tag = HUN
-			}
-
-			traits = { compassionate_gentleman }
-		}
 
 		HUN_lajos_remenyi_schneller = {
 
@@ -338,16 +328,6 @@ ideas = {
 
 		}
 
-		HUN_kalman_daranyi = {
-
-			picture = generic_political_advisor_europe_2
-
-			allowed = {
-				original_tag = HUN
-			}
-
-			traits = { smooth_talking_charmer }
-		}
 
 		HUN_zoltan_tildy = {
 
@@ -360,41 +340,8 @@ ideas = {
 			traits = { silent_workhorse }
 		}
 
-		HUN_laszlo_rajk = {
 
-			picture = generic_communist_revolutionary_western_european_2d
 
-			allowed = {
-				original_tag = HUN
-			}
-
-			available = {
-				if = {
-					limit = { has_dlc = "Man the Guns" }
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
-			}
-
-			traits = { communist_revolutionary }
-		}
-
-		HUN_jozsef_szell = {
-
-			picture = generic_democratic_reformer_western_european_2d
-
-			allowed = {
-				original_tag = HUN
-			}
-
-			available = {
-				if = {
-					limit = { has_dlc = "Man the Guns" }
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
-			}
-
-			traits = { democratic_reformer }
-		}
 
 		HUN_gyula_gombos_de_jakfa = {
 
@@ -411,7 +358,7 @@ ideas = {
 				}
 			}
 
-			traits = { fascist_demagogue }
+			traits = { fascist_demagogue propaganda_expert}
 		}
 	}
 

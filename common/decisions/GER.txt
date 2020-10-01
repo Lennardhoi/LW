@@ -7,14 +7,23 @@ operations = {
 		icon = ger_reichskommissariats
 		fire_only_once = yes
 		allowed = { tag = GER }
-		available = { has_completed_focus = GER_weserubung	}
+		available = { has_completed_focus = GER_weserubung	has_war=yes}
 		cost = 0
 		complete_effect = {
+			effect_tooltip = {
+				declare_war_on = {
+					target = NOR
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = DEN
+					type = annex_everything
+				}
+			}
 
-		
-		    hidden_effect = {
-			    ENG = { add_to_faction = DEN }  
-				ENG = { add_to_faction = NOR }  
+			hidden_effect = {
+				ENG = { add_to_faction = DEN }
+				ENG = { add_to_faction = NOR }
 
 				DEN = { add_to_war = { targeted_alliance = ENG enemy = GER } }
 				NOR = { add_to_war = { targeted_alliance = ENG enemy = GER } }
@@ -29,10 +38,16 @@ operations = {
 		icon = ger_reichskommissariats
 		fire_only_once = yes
 		allowed = { tag = GER }
-		available = { has_completed_focus = GER_danzig_or_war date > 1939.08.1	}
+		available = { has_completed_focus = GER_danzig_or_war date > 1939.09.1	}
 		cost = 0
 		complete_effect = {
+			effect_tooltip = {
+				declare_war_on = {
+					target = POL
+					type = annex_everything
+				}
 
+			}
 			hidden_effect = {
 				ENG = { add_to_faction = POL }
 				declare_war_on = {
@@ -54,11 +69,24 @@ operations = {
 		available = {  GER = { controls_state = 10 }GER = {has_completed_focus =GER_around_maginot}  }
 		cost = 0
 		complete_effect = {
-
+			effect_tooltip = {
+				declare_war_on = {
+					target = HOL
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = LUX
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = BEL
+					type = annex_everything
+				}
+			}
 			hidden_effect = {
-			    ENG = { add_to_faction = LUX}  
-				ENG = { add_to_faction = HOL }  
-				ENG = { add_to_faction = BEL }  
+				ENG = { add_to_faction = LUX}
+				ENG = { add_to_faction = HOL }
+				ENG = { add_to_faction = BEL }
 				LUX = { add_to_war = { targeted_alliance = ENG enemy = GER } }
 				HOL = { add_to_war = { targeted_alliance = ENG enemy = GER } }
 				BEL = { add_to_war = { targeted_alliance = ENG enemy = GER } }
@@ -76,13 +104,13 @@ operations = {
 		complete_effect = {
 
 
-			hidden_effect={
-				SOV={declare_war_on_enemy_faction =yes}
-				GER = {
-					add_timed_idea = { idea = GER_barbarossa days = 175 }
-					add_dynamic_modifier = { modifier = Ostarbeiter scope=GER }
-				}
 
+			SOV={declare_war_on_enemy_faction =yes}
+			GER = {
+				add_timed_idea = { idea = GER_barbarossa days = 175 }
+				add_dynamic_modifier = { modifier = Ostarbeiter scope=GER }
+			}
+			hidden_effect={
 				ROM = {
 					add_timed_idea = { idea = GER_barbarossa_inf days = 175 }
 				}
@@ -97,17 +125,19 @@ operations = {
 					add_timed_idea = { idea = GER_barbarossa days = 175 }
 				}
 
-				}}}
+				}}
+	}
 
 	GER_iran = {
 		icon = generic_operation
 		fire_only_once = yes
 		allowed = { original_tag = GER }
 		visible = {
-			ENG = {NOT ={controls_state = 291}}
+			ENG = {NOT ={controls_state = 446}}
 		}
 		is_good = yes
 		available = {
+			ENG = {NOT ={controls_state = 291}}
 			Date > 1940.3.1
 		}
 		days_remove = 30
@@ -385,12 +415,40 @@ GER_military_buildup = {
 }
 
 special_projects = {
+	GER_exploit_occupied_territories = {
+		allowed = {
+			original_tag = GER
+		}
+		fixed_random_seed=no
+		available = {
+			#tag=POL
+			all_controlled_state = {
+				OR={is_core_of=GER
+					OR={arms_factory>0 industrial_complex>0}
+					}}
+		}
+		activation = {has_completed_focus=GER_exploit_occupied_territories}
+		is_good = yes
+		days_mission_timeout = 30
+		timeout_effect = {
+			activate_mission=GER_exploit_occupied_territories
+			exploit_occupied_territories=yes
+			exploit_occupied_territories=yes
+			exploit_occupied_territories=yes
+			exploit_occupied_territories=yes
+		}
+		complete_effect = { set_global_flag = GER_heavy_water_production_underway }
+	}
 	GER_begin_heavy_water_production = {
 		allowed = {
 			original_tag = GER
 			has_dlc = "La Resistance"
 		}
 		available = {
+
+
+
+
 			110 = {
 				CONTROLLER = {
 					OR = {
@@ -658,121 +716,69 @@ special_projects = {
 
 GER_reichswerke_four_year_plan = {
 
-	GER_four_year_plan_steel = {
+	GER_underground_mills = {
 
-		icon = steel
-
-		allowed = {
-			original_tag = GER
-		}
-		available = {
-			FROM = {
-				infrastructure > 7
-				has_resources_amount = {
-					resource = steel
-					amount > 0
-				}
-			}
-			ROOT = { num_of_civilian_factories > 3 }
-		}
-		visible = {
-			original_tag = GER
-			has_country_flag = GER_reichswerke_steel_decisions
-			FROM = {
-				infrastructure > 7
-				has_resources_amount = {
-					resource = steel
-					amount > 0
-				}
-			}
-		}
-
-		state_target = yes
-		target_array = controlled_states
-
-		highlight_state_targets = { state = FROM }
-		on_map_mode = map_and_decisions_view
-
-		cost = 10
-		days_remove = 10
-
-		is_good = yes
-		fire_only_once = no
-
-		modifier = {
-			civilian_factory_use = 3
-		}
-
-		complete_effect = {
-
-		}
-		remove_effect = {
-			add_resource = {
-				type = steel
-				amount = 5
-				state = FROM
-			}
-		}
-	}
-
-	GER_four_year_plan_aluminum = {
-
-		icon = aluminium
+		icon = arms_factory
 
 		allowed = {
 			original_tag = GER
 		}
 		available = {
 			FROM = {
-				infrastructure > 7
-				has_resources_amount = {
-					resource = aluminium
-					amount > 0
-				}
+				arms_factory>0
 			}
 			ROOT = { num_of_civilian_factories > 3 }
 		}
 		visible = {
-			original_tag = GER
-			has_country_flag = GER_reichswerke_aluminum_decisions
 			FROM = {
-				infrastructure > 7
-				has_resources_amount = {
-					resource = aluminium
-					amount > 0
-				}
+				arms_factory>0
 			}
+			has_completed_focus = GER_u_verlagerung
+
 		}
 
 		state_target = yes
-		target_array = controlled_states
+		target_array = core_states
 
 		highlight_state_targets = { state = FROM }
 		on_map_mode = map_and_decisions_view
 
 		cost = 10
-		days_remove = 10
+		days_remove = 30
 
 		is_good = yes
 		fire_only_once = no
 
 		modifier = {
-			civilian_factory_use = 3
+			civilian_factory_use = 5
 		}
 
 		complete_effect = {
-
-		}
-		remove_effect = {
-			add_resource = {
-				type = aluminium
-				amount = 5
-				state = FROM
+			FROM = {if = {limit= {arms_factory>2}
+					remove_building = {
+						type =arms_factory
+						level = 3
+					}
+					ROOT={add_offsite_building = { type = arms_factory level = 3 }}
+				}
+				else_if = {limit= {arms_factory>1}
+					remove_building = {
+						type =arms_factory
+						level = 2
+					}
+					ROOT={add_offsite_building = { type = arms_factory level = 2 }}
+				}
+				else_if = {limit= {arms_factory>0}
+					remove_building = {
+						type =arms_factory
+						level = 1
+					}
+					ROOT={add_offsite_building = { type = arms_factory level = 1 }}
+				}
 			}
 		}
 	}
-
-	GER_four_year_plan_synthetic = {
+	GER_underground_refs = {
 
 		icon = rubber
 
@@ -781,84 +787,57 @@ GER_reichswerke_four_year_plan = {
 		}
 		available = {
 			FROM = {
-				infrastructure > 9
-				synthetic_refinery < 3
+				synthetic_refinery>0
 			}
+			ROOT = { num_of_civilian_factories > 3 }
 		}
 		visible = {
-			original_tag = GER
-			has_country_flag = GER_reichswerke_refinery_decisions
 			FROM = {
-				infrastructure > 9
-				synthetic_refinery < 3
+				synthetic_refinery>0
 			}
+			has_completed_focus = GER_u_verlagerung
+
 		}
 
 		state_target = yes
-		target_array = controlled_states
+		target_array = core_states
 
 		highlight_state_targets = { state = FROM }
 		on_map_mode = map_and_decisions_view
 
 		cost = 10
+		days_remove = 30
 
 		is_good = yes
 		fire_only_once = no
 
+		modifier = {
+			civilian_factory_use = 5
+		}
+
 		complete_effect = {
-			FROM = {
-				add_building_construction = {
-					type = synthetic_refinery
-					level = 1
-					instant_build = yes
+			FROM = {if = {limit= {synthetic_refinery>0}
+					remove_building = {
+						type =synthetic_refinery
+						level = 1
+					}
+					add_resource = {
+						type = oil
+						amount = 2
+					}
+					add_resource = {
+						type = rubber
+						amount = 2
+					}
 				}
+
+
 			}
 		}
 	}
 
-	GER_four_year_plan_silos = {
 
-		icon = oil
 
-		allowed = {
-			original_tag = GER
-		}
-		available = {
-			FROM = {
-				infrastructure > 5
-				fuel_silo < 3
-			}
-		}
-		visible = {
-			original_tag = GER
-			has_country_flag = GER_reichswerke_silo_decisions
-			FROM = {
-				infrastructure > 5
-				fuel_silo < 3
-			}
-		}
-
-		state_target = yes
-		target_array = controlled_states
-
-		highlight_state_targets = { state = FROM }
-		on_map_mode = map_and_decisions_view
-
-		cost = 10
-
-		is_good = yes
-		fire_only_once = no
-
-		complete_effect = {
-			FROM = {
-				add_building_construction = {
-					type = fuel_silo
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
 
 	GER_plan_z = {
 

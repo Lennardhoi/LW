@@ -1733,41 +1733,16 @@ focus_tree = {
 			}
 		}
 	}
-
-	focus = {
-		id = ITA_german_air_cooperation
-		icon = GFX_goal_generic_military_deal
-		prerequisite = { focus = ITA_air_innovation }
-
-		x = 0
-		y = 1
-		relative_position_id = ITA_air_innovation
-		cost = 10
-		ai_will_do = {
-			factor = 1
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-
-			add_relation_modifier = {
-				target = GER
-				modifier = ita_air_sharing
-			}
-			custom_effect_tooltip=ITA_german_air_cooperation_tt
-		}
-	}
 	focus = {
 		id = ITA_naval_air_effort
 		icon = GFX_goal_generic_air_naval_bomber
 		text = naval_air_effort
+		prerequisite = { focus = ITA_air_innovation }
 
-		prerequisite = { focus = ITA_german_air_cooperation }
 
 		x = 0
 		y = 1
-		relative_position_id = ITA_german_air_cooperation
+		relative_position_id = ITA_air_innovation
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -1792,6 +1767,31 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = ITA_german_air_cooperation
+		icon = GFX_goal_generic_military_deal
+		prerequisite = { focus = ITA_naval_air_effort }
+
+		x = 0
+		y = 1
+		relative_position_id = ITA_naval_air_effort
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+
+			add_relation_modifier = {
+				target = GER
+				modifier = ita_air_sharing
+			}
+			custom_effect_tooltip=ITA_german_air_cooperation_tt
+		}
+	}
+
 
 	focus = {
 		id = ITA_marines_and_landing_craft
@@ -1859,11 +1859,11 @@ focus_tree = {
 		id = ITA_air_innovation_2
 		icon = GFX_goal_generic_build_airforce
 		text = air_innovation_2
-		prerequisite = {  focus = ITA_naval_air_effort }
+		prerequisite = {  focus = ITA_german_air_cooperation }
 		available = {date >1941.1.1}
 		x = 0
 		y = 1
-		relative_position_id = ITA_naval_air_effort
+		relative_position_id = ITA_german_air_cooperation
 		cost = 10
 		ai_will_do = {
 			factor = 1
@@ -3018,7 +3018,7 @@ focus_tree = {
 					instant_build = yes
 				}
 
-			    set_building_level = {
+				set_building_level = {
 					type = bunker
 					level = 2
 					province = 10120

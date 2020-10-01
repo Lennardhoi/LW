@@ -29,36 +29,36 @@ crisis = {
 			}
 		}
 		available = {
-			
+
 		}
 
 		activation = {
-			
+
 		}
-		
+
 		visible = {
-		
+
 		}
-		
+
 		days_mission_timeout = 180
-		
+
 		modifier = {
-			
+
 		}
-		
+
 		complete_effect = {
 
 		}
-		
+
 		timeout_effect = {
-			
+
 		}
 	}
-	
+
 	strikes_mission = {
 
 		icon = generic_civil_support
-		
+
 		allowed = {
 			always = yes
 		}
@@ -70,7 +70,7 @@ crisis = {
 		days_mission_timeout = 60
 		days_remove = 90
 		is_good = no
-		
+
 		activation = {
 			NOT = { has_country_flag = no_strikes_please }
 			has_stability < 0.5
@@ -81,11 +81,11 @@ crisis = {
 			industrial_capacity_factory = -0.25
 			industrial_capacity_dockyard = -0.25
 		}
-		
+
 		complete_effect = {
 
 		}
-		
+
 		timeout_effect = {
 			set_country_flag = { flag = no_strikes_please days = 365 }
 		}
@@ -331,7 +331,7 @@ demobilization = {
 			}
 		}
 	}
-	
+
 	demobilization_manpower = {
 
 		icon = generic_prepare_civil_war
@@ -407,7 +407,7 @@ demobilization = {
 
 
 	}
-	
+
 	demob_manpower_mission = {
 
 		icon = revolt

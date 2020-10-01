@@ -79,7 +79,7 @@ division_template = {
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 }
+		mot_recon = { x = 0 y = 1 }
 		artillery = { x = 0 y = 2 }
 		anti_air = { x = 0 y = 3  }
 	}
@@ -118,7 +118,7 @@ division_template = {
 		recon = { x = 0 y = 1 }
 		artillery = { x = 0 y = 2 }
 		anti_air = { x = 0 y = 3  }
-		
+
 	}
 }
 
@@ -203,7 +203,7 @@ units = {
 	division= {
 		name = "SS-Division Nord"
 		location = 6334
-		division_template = "SS-Division"
+		division_template = "Brandenburgers"
 		start_experience_factor = 1
 	}
 	division= {
@@ -286,7 +286,7 @@ instant_effect = {
 		progress = 0.4
 		efficiency = 50
 	}
-	
+
 	add_equipment_production = {
 		equipment = {
 			type = heavy_tank_equipment_1

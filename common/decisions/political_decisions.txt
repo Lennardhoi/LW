@@ -266,16 +266,16 @@ political_actions = {
 
 		cost = 100
 		days_remove = 30
-		
+
 		ai_will_do = {
 			factor = 1
-			
+
 		}
 
 		visible = {
 			has_active_mission = strikes_mission
 		}
-	
+
 		modifier = {
 			stability_weekly_factor = 0.005
 			consumer_goods_factor = 0.05
@@ -283,13 +283,13 @@ political_actions = {
 		}
 
 		complete_effect = {
-			set_country_flag = { flag = no_strikes_please days = 365 }	
+			set_country_flag = { flag = no_strikes_please days = 365 }
 		}
 		remove_effect = {
-            
-        }
+
+		}
 	}
-	
+
 	strikes_negotiations_2 = {
 
 		icon = generic_break_treaty
@@ -306,10 +306,10 @@ political_actions = {
 
 		cost = 50
 		days_remove = 30
-		
+
 		ai_will_do = {
 			factor = 1
-			
+
 		}
 
 		visible = {
@@ -323,21 +323,21 @@ political_actions = {
 		}
 
 		complete_effect = {
-			set_country_flag = { flag = no_strikes_please days = 180 }	
+			set_country_flag = { flag = no_strikes_please days = 180 }
 		}
 		remove_effect = {
-            
-        }
+
+		}
 
 	}
-	
+
 	strikes_negotiations_3 = {
 
 		icon = oppression
 		priority = 10
 
 		allowed = {
-			NOT = { has_government = democratic }
+			always=yes
 		}
 
 		available = {
@@ -347,7 +347,7 @@ political_actions = {
 		}
 
 		cost = 25
-		
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -356,16 +356,16 @@ political_actions = {
 			has_active_mission = strikes_mission
 			NOT = { has_government = democratic }
 		}
-		
+
 		complete_effect = {
 			set_country_flag = { flag = no_strikes_please days = 365 }
 			add_stability = -0.05
 		}
 		remove_effect = {
-            
-        }
+
+		}
 	}
-	
+
 	draft_dodging_negotiations = {
 
 		icon = generic_nationalism
@@ -398,7 +398,7 @@ political_actions = {
 		}
 
 		available = {
-			
+
 		}
 
 		cost = 0
@@ -407,11 +407,11 @@ political_actions = {
 		}
 
 		visible = {
-			
+
 		}
 
 		complete_effect = {
-			
+
 		}
 	}
 
@@ -674,28 +674,28 @@ political_actions = {
 				set_temp_variable = {
 					var = ban_ideology_var
 					value = party_popularity@fascism
-					}
+				}
 				multiply_temp_variable = {
 					var = ban_ideology_var
 					value = -1
-					}
+				}
 				set_temp_variable = {
 					var = ban_ideology_var_stab
 					value = ban_ideology_var
-					}
+				}
 				multiply_temp_variable = {
 					var = ban_ideology_var_stab
 					value = 0.2
-					}
+				}
 				add_popularity = {
 					ideology = fascism
 					popularity = ban_ideology_var
-					}
+				}
 				multiply_temp_variable = {
 					var = ban_ideology_var
 					value = 0.66
-					}
 				}
+			}
 			custom_effect_tooltip = ban_fascist_party_tt
 			add_stability = ban_ideology_var_stab
 		}
@@ -719,26 +719,26 @@ political_actions = {
 				tag = SAF
 				tag = FIN
 				tag = EFR
-				}
 			}
+		}
 		available = {
 			democratic < 0.2
-			}
+		}
 
 		visible = {
 			NOT = { has_government = democratic }
 			democratic > 0
-			}
+		}
 
 		remove_trigger = {
 			hidden_trigger = {
 				has_government = democratic
-				}
 			}
+		}
 
 		modifier = {
 			democratic_drift = -0.05
-			}
+		}
 
 		days_remove = -1
 		cost = 25
@@ -748,32 +748,32 @@ political_actions = {
 				set_temp_variable = {
 					var = ban_ideology_var
 					value = party_popularity@democratic
-					}
+				}
 				multiply_temp_variable = {
 					var = ban_ideology_var
 					value = -1
-					}
+				}
 				set_temp_variable = {
 					var = ban_ideology_var_stab
 					value = ban_ideology_var
-					}
+				}
 				multiply_temp_variable = {
 					var = ban_ideology_var_stab
 					value = 0.2
-					}
+				}
 				add_popularity = {
 					ideology = democratic
 					popularity = ban_ideology_var
-					}
+				}
 				multiply_temp_variable = {
 					var = ban_ideology_var
 					value = 0.66
-					}
 				}
+			}
 			custom_effect_tooltip = ban_democratic_party_tt
 			add_stability = ban_ideology_var_stab
-			}
 		}
+	}
 
 	ban_communist_party = {
 
@@ -792,10 +792,10 @@ political_actions = {
 				tag = SAF
 				tag = EFR
 			}
-		}	
+		}
 		available = {
 			communism < 0.2
-			}
+		}
 
 		visible = {
 			NOT = { has_government = communism }
@@ -820,31 +820,31 @@ political_actions = {
 				set_temp_variable = {
 					var = ban_ideology_var
 					value = party_popularity@communism
-					}
+				}
 				multiply_temp_variable = {
 					var = ban_ideology_var
 					value = -1
-					}
+				}
 				set_temp_variable = {
 					var = ban_ideology_var_stab
 					value = ban_ideology_var
-					}
+				}
 				multiply_temp_variable = {
 					var = ban_ideology_var_stab
 					value = 0.2
-					}
+				}
 				add_popularity = {
 					ideology = communism
 					popularity = ban_ideology_var
-					}
+				}
 				multiply_temp_variable = {
 					var = ban_ideology_var
 					value = 0.66
-					}
 				}
+			}
 			custom_effect_tooltip = ban_communist_party_tt
 			add_stability = ban_ideology_var_stab
-			}
+		}
 
 		ai_will_do = {
 			factor = 0
@@ -901,26 +901,26 @@ political_actions = {
 				tag = SAF
 				tag = USA
 				tag = CAN
-				}
 			}
+		}
 		visible = {
 			has_government = democratic
-			}
+		}
 
 		modifier = {
 			communism_drift = -0.01
 			fascism_drift = -0.01
 			democratic_drift = 0.03
 			neutrality_drift = -0.01
-			}
+		}
 
 		days_remove = 360
 		cost = 50
 
 		ai_will_do = {
 			factor = 0
-			}
 		}
+	}
 
 	institute_press_censorship_communist_state = {
 

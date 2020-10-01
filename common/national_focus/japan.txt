@@ -2414,11 +2414,17 @@ focus_tree = {
 			custom_effect_tooltip = tooltip_jap_war
 			add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 90 }
 			hidden_effect={
-				if={limit={NOT={USA={has_war=yes}}}
+				if={limit={USA={has_war=no}}
 					ENG={add_to_faction=USA}
 					GER={declare_war_on = { target = USA type = annex_everything }}
+
 				}
+
 				USA={declare_war_on_enemy_faction =yes}
+				USA= {add_to_war = {
+						targeted_alliance = ENG
+						enemy = ROOT
+						}}
 				every_country={
 					limit={is_in_faction_with=ENG NOT={original_tag=USA}}
 					add_dynamic_modifier={modifier=pacific_war_minor}

@@ -28,7 +28,7 @@ ideas = {
 
 
 		}
-		
+
 		blood_toil_tears_sweat = {
 
 			allowed = {
@@ -45,54 +45,54 @@ ideas = {
 			}
 
 			picture = eng_the_sun_never_sets
-			
-			removal_cost = -1	
+
+			removal_cost = -1
 
 		}
 		ENG_appeasement = {
 			allowed = {
 				always = yes
 			}
-          
+
 			removal_cost = -1
 			picture = HUN_treaty_of_triannon
 
 			modifier = {
-			global_building_slots_factor = 0.10
-			min_export = -0.05
+				global_building_slots_factor = 0.10
+				min_export = -0.05
 
 			}
-			}
-		
+		}
+
 		ENG_compass = {
 			allowed = {
 				always = yes
 			}
-          
+
 			removal_cost = -1
 			picture =  eng_the_sun_never_sets
 
 			modifier = {
-			army_attack_factor = 0.05
-			army_speed_factor = 0.05
+				army_attack_factor = 0.05
+				army_speed_factor = 0.05
 			}
-			}
-			
+		}
+
 		ENG_crusader = {
 			allowed = {
 				always = yes
 			}
-          
+
 			removal_cost = -1
 			picture = eng_the_sun_never_sets
 
 			modifier = {
-			army_armor_attack_factor = 0.1
-			army_infantry_attack_factor = 0.05
-			army_infantry_defence_factor = 0.05
+				army_armor_attack_factor = 0.1
+				army_infantry_attack_factor = 0.05
+				army_infantry_defence_factor = 0.05
 			}
-			}
-		
+		}
+
 		ENG_the_sun_never_sets_idea = {
 
 			name = ENG_the_sun_never_sets
@@ -121,8 +121,8 @@ ideas = {
 			}
 
 			picture = eng_the_sun_never_sets
-			
-			removal_cost = -1	
+
+			removal_cost = -1
 
 		}
 		ENG_lose_in_africa = {
@@ -132,9 +132,9 @@ ideas = {
 
 			removal_cost = -1
 			cancel={
-		
-					452={is_controlled_by = eng}
-			
+
+				452={is_controlled_by = eng}
+
 
 
 			}

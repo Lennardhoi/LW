@@ -10,7 +10,7 @@ debug_decisions = {
 		available = {
 			is_ai = no
 		}
-		
+
 		cost = 0
 		fire_only_once = yes
 		visible = {
@@ -18,7 +18,7 @@ debug_decisions = {
 		}
 
 		complete_effect = {
-			SOV = { 
+			SOV = {
 				transfer_state = 96
 				transfer_state = 95
 				transfer_state = 94
@@ -29,7 +29,7 @@ debug_decisions = {
 				transfer_state = 784
 				transfer_state = 766
 				transfer_state = 78
-				
+
 				annex_country = { target = LAT }
 				annex_country = { target = EST }
 				annex_country = { target = LIT }
@@ -42,7 +42,7 @@ debug_decisions = {
 				annex_country = { target = POL }
 			}
 			every_state = {
-				limit = { 
+				limit = {
 					is_core_of = SOV
 					NOT = { has_state_flag = scorched_infrastructure_done }
 				}
@@ -60,7 +60,7 @@ debug_decisions = {
 		available = {
 			is_ai = no
 		}
-		
+
 		cost = 0
 		fire_only_once = yes
 		visible = {
@@ -68,7 +68,7 @@ debug_decisions = {
 		}
 
 		complete_effect = {
-			SOV = { 
+			SOV = {
 				transfer_state = 96
 				transfer_state = 95
 				transfer_state = 94
@@ -79,7 +79,7 @@ debug_decisions = {
 				transfer_state = 784
 				transfer_state = 766
 				transfer_state = 78
-				
+
 				annex_country = { target = LAT }
 				annex_country = { target = EST }
 				annex_country = { target = LIT }
@@ -92,7 +92,7 @@ debug_decisions = {
 				annex_country = { target = POL }
 			}
 			every_state = {
-				limit = { 
+				limit = {
 					is_core_of = SOV
 					NOT = { has_state_flag = scorched_infrastructure_done }
 				}
@@ -110,7 +110,7 @@ debug_decisions = {
 		available = {
 			is_ai = no
 		}
-		
+
 		cost = 0
 		fire_only_once = yes
 		visible = {
@@ -118,7 +118,7 @@ debug_decisions = {
 		}
 
 		complete_effect = {
-			SOV = { 
+			SOV = {
 				transfer_state = 96
 				transfer_state = 95
 				transfer_state = 94
@@ -129,7 +129,7 @@ debug_decisions = {
 				transfer_state = 784
 				transfer_state = 766
 				transfer_state = 78
-				
+
 				annex_country = { target = LAT }
 				annex_country = { target = EST }
 				annex_country = { target = LIT }
@@ -297,7 +297,7 @@ SOV_great_patriotic_war = {
 		#Success
 		timeout_effect = {
 			every_state = {
-				limit = { 
+				limit = {
 					is_core_of = SOV
 					NOT = { is_fully_controlled_by = SOV }
 					NOT = { has_state_flag = scorched_infrastructure_done }
@@ -307,11 +307,11 @@ SOV_great_patriotic_war = {
 					damage = 5
 				}
 				set_state_flag = scorched_infrastructure_done
-			}			
+			}
 		}
 		#Fail
 		complete_effect = {
-			
+
 		}
 	}
 
