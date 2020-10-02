@@ -951,8 +951,9 @@ focus_tree = {
 			add_tech_bonus = {
 				name = fighter_command_focus
 				bonus = 1.0
-				uses = 1
-				technology = fighter2
+				uses = 2
+				category = light_fighter
+				category = cat_heavy_fighter
 
 
 			}
@@ -3384,7 +3385,7 @@ focus_tree = {
 		completion_reward = {
 			195 = {
 				add_province_modifier = {
-					static_modifiers = { soviet_hero_city }
+					static_modifiers = { german_OWK_plan }
 					province = {
 						id =  79
 						id =  149
@@ -3420,7 +3421,7 @@ focus_tree = {
 		completion_reward = {
 			219 = {
 				add_province_modifier = {
-					static_modifiers = { soviet_hero_city }
+					static_modifiers = { german_OWK_plan }
 					province = {
 						id = 301
 						id = 350
@@ -3474,7 +3475,7 @@ focus_tree = {
 		completion_reward = {
 			217 = {
 				add_province_modifier = {
-					static_modifiers = { soviet_hero_city }
+					static_modifiers = { german_OWK_plan }
 					province = {
 						id =498 id =520 id =3503 id =3517 id =3529 id =3555 id =6479 id =6503 id =6527 id =6541 id =6575 id =9442 id =9459 id =9474 id =9504 id =9530 id =11395 id =11447 id =11474 id =11484
 					}
