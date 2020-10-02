@@ -4013,6 +4013,10 @@ focus_tree = {
 
 		available_if_capitulated = no
 		completion_reward = {
+		every_state = {
+				limit={OR={state=263 state=246 state=247 state=264 state=351 state=216 state=214 state=215 state=210 state =208 state=209 }}
+				add_dynamic_modifier = { modifier = JAP_attack days=90  }
+			}
 		}
 	}
 
@@ -4038,6 +4042,10 @@ focus_tree = {
 
 		available_if_capitulated = no
 		completion_reward = {
+		every_state = {
+				limit={OR={state=218 state=245 state=217 state=234 state=238 state=237 state=236 state=232 state=235 }}
+				add_dynamic_modifier = { modifier = JAP_attack days=90  }
+			}
 		}
 	}
 	focus = {
