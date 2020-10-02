@@ -372,36 +372,17 @@ political_actions = {
 		priority = 10
 
 		allowed = {
-			OR = {
-				tag = SOV
-				tag = SIA
-				tag = FRA
-				tag = JAP
-				tag = RAJ
-				tag = AST
-				tag = NZL
-				tag = MAN
-				tag = BUL
-				tag = ROM
-				tag = HUN
-				tag = SPR
-				tag = GER
-				tag = ITA
-				tag = ENG
-				tag = IRE
-				tag = SAF
-				tag = FIN
-				tag = USA
-				tag = CAN
-				tag = EFR
-			}
+			always = yes
 		}
 
 		available = {
-
+			has_active_mission = draft_dodging_mission
+			has_war_support < 0.5
+			has_war = yes
 		}
 
 		cost = 0
+		days_remove = 90
 		ai_will_do = {
 			factor = 1
 		}
@@ -409,9 +390,14 @@ political_actions = {
 		visible = {
 
 		}
+		
+		modifier = {
+			war_support_weekly = 0.005
+			stability_weekly_factor = -0.005
+		}
 
 		complete_effect = {
-
+			set_country_flag = { flag = no_dodging_please days = 365 }
 		}
 	}
 
@@ -648,7 +634,7 @@ political_actions = {
 			}
 		}
 		available = {
-			fascism < 0.2
+			fascism < 0.1
 		}
 
 		visible = {
@@ -670,34 +656,7 @@ political_actions = {
 		cost = 25
 
 		complete_effect = {
-			hidden_effect = {
-				set_temp_variable = {
-					var = ban_ideology_var
-					value = party_popularity@fascism
-				}
-				multiply_temp_variable = {
-					var = ban_ideology_var
-					value = -1
-				}
-				set_temp_variable = {
-					var = ban_ideology_var_stab
-					value = ban_ideology_var
-				}
-				multiply_temp_variable = {
-					var = ban_ideology_var_stab
-					value = 0.2
-				}
-				add_popularity = {
-					ideology = fascism
-					popularity = ban_ideology_var
-				}
-				multiply_temp_variable = {
-					var = ban_ideology_var
-					value = 0.66
-				}
-			}
-			custom_effect_tooltip = ban_fascist_party_tt
-			add_stability = ban_ideology_var_stab
+			
 		}
 	}
 
@@ -722,7 +681,7 @@ political_actions = {
 			}
 		}
 		available = {
-			democratic < 0.2
+			democratic < 0.1
 		}
 
 		visible = {
@@ -744,34 +703,7 @@ political_actions = {
 		cost = 25
 
 		complete_effect = {
-			hidden_effect = {
-				set_temp_variable = {
-					var = ban_ideology_var
-					value = party_popularity@democratic
-				}
-				multiply_temp_variable = {
-					var = ban_ideology_var
-					value = -1
-				}
-				set_temp_variable = {
-					var = ban_ideology_var_stab
-					value = ban_ideology_var
-				}
-				multiply_temp_variable = {
-					var = ban_ideology_var_stab
-					value = 0.2
-				}
-				add_popularity = {
-					ideology = democratic
-					popularity = ban_ideology_var
-				}
-				multiply_temp_variable = {
-					var = ban_ideology_var
-					value = 0.66
-				}
-			}
-			custom_effect_tooltip = ban_democratic_party_tt
-			add_stability = ban_ideology_var_stab
+			
 		}
 	}
 
@@ -794,7 +726,7 @@ political_actions = {
 			}
 		}
 		available = {
-			communism < 0.2
+			communism < 0.1
 		}
 
 		visible = {
@@ -816,34 +748,7 @@ political_actions = {
 		cost = 25
 
 		complete_effect = {
-			hidden_effect = {
-				set_temp_variable = {
-					var = ban_ideology_var
-					value = party_popularity@communism
-				}
-				multiply_temp_variable = {
-					var = ban_ideology_var
-					value = -1
-				}
-				set_temp_variable = {
-					var = ban_ideology_var_stab
-					value = ban_ideology_var
-				}
-				multiply_temp_variable = {
-					var = ban_ideology_var_stab
-					value = 0.2
-				}
-				add_popularity = {
-					ideology = communism
-					popularity = ban_ideology_var
-				}
-				multiply_temp_variable = {
-					var = ban_ideology_var
-					value = 0.66
-				}
-			}
-			custom_effect_tooltip = ban_communist_party_tt
-			add_stability = ban_ideology_var_stab
+		
 		}
 
 		ai_will_do = {
@@ -873,6 +778,7 @@ political_actions = {
 		}
 
 		modifier = {
+			stability_weekly = 0.005
 			communism_drift = -0.01
 			fascism_drift = 0.03
 			democratic_drift = -0.01
@@ -908,6 +814,7 @@ political_actions = {
 		}
 
 		modifier = {
+			stability_weekly = 0.005
 			communism_drift = -0.01
 			fascism_drift = -0.01
 			democratic_drift = 0.03
@@ -933,6 +840,7 @@ political_actions = {
 		}
 
 		modifier = {
+			stability_weekly = 0.005
 			communism_drift = 0.03
 			fascism_drift = -0.01
 			democratic_drift = -0.01
@@ -963,6 +871,7 @@ political_actions = {
 		}
 
 		modifier = {
+			stability_weekly = 0.005
 			communism_drift = -0.01
 			fascism_drift = -0.01
 			democratic_drift = -0.01
