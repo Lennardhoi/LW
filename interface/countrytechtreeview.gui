@@ -1805,7 +1805,30 @@ guiTypes = {
 				}				
 				
 			}
-
+			instantTextBoxType = {
+					name = "datelock_research_lock"
+					position = { x = 1450 y = 620 }
+					textureFile = ""
+					font = "hoi_36header"
+					borderSize = {x = 0 y = 4}
+					text = "Datelocked 1940"
+					maxWidth = 600
+					maxHeight = 62
+					format = center
+					Orientation = "UPPER_LEFT"
+				}
+				instantTextBoxType = {
+					name = "armour_subtitle_medium_research_lock"
+					position = { x = -20 y = 550 }
+					textureFile = ""
+					font = "hoi_36header"
+					borderSize = {x = -100 y = 4}
+					text = "-----------------------------------------------------------------------------------------"
+					maxWidth = 2000
+					maxHeight = 62
+					format = center
+					Orientation = "UPPER_LEFT"
+				}
 			instantTextBoxType = {
 				name = "airtech_year2"
 				position = { x = 30 y = 160 }

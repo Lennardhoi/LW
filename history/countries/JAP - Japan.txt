@@ -260,9 +260,9 @@ create_field_marshal = {
 create_field_marshal = {
 	name = "Shunroku Hata"
 		picture = "Portrait_Japan_Shunroku_Hata.dds"
-	traits = { offensive_doctrine JAP_samurai_lineage panzer_leader }
-	skill = 4
-	attack_skill = 4
+	traits = { offensive_doctrine trait_engineer JAP_samurai_lineage panzer_leader }
+	skill = 5
+	attack_skill = 5
 	defense_skill = 4
 	planning_skill = 2
 	logistics_skill = 4
@@ -304,12 +304,12 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Yasuji Okamura"
 		picture = "Portrait_Japan_Yasuji_Okamura.dds"
-	traits = { trait_reckless }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
+	traits = {  infantry_leader naval_invader commando  }
+	skill = 4
+	attack_skill = 6
+	defense_skill = 3
+	planning_skill = 2
+	logistics_skill = 4
 }
 
 create_corps_commander = {
@@ -318,7 +318,7 @@ create_corps_commander = {
 	traits = { brilliant_strategist infantry_leader }
 	skill = 3
 	attack_skill = 5
-	defense_skill = 2
+	defense_skill = 3
 	planning_skill = 3
 	logistics_skill = 2
 }
@@ -326,12 +326,12 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Rikichi Ando" #Ando
 		picture = "Portrait_Japan_Rikichi_Ando.dds"
-	traits = { }
+	traits = { brilliant_strategist infantry_leader }
 	skill = 3
-	attack_skill = 1
+	attack_skill = 5
 	defense_skill = 3
 	planning_skill = 3
-	logistics_skill = 3
+	logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -370,12 +370,12 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Kenji Doihara"
 		picture = "Portrait_Japan_Kenji_Doihara.dds"
-	traits = { substance_abuser }
-	skill = 1 
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
+	traits = { substance_abuser brilliant_strategist infantry_leader }
+	skill = 3
+	attack_skill = 5
+	defense_skill = 3
+	planning_skill = 3
+	logistics_skill = 2
 }
 
 create_corps_commander = {
@@ -392,12 +392,12 @@ create_corps_commander = {
 create_corps_commander = {
 	name = "Shigeru Honjo"
 		picture = "Portrait_Japan_Shigeru_Honjo.dds"
-	traits = { old_guard war_hero }
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
+	traits = { panzer_leader trait_engineer naval_invader}
+	skill = 4
+	attack_skill = 5
+	defense_skill = 2
+	planning_skill = 4
+	logistics_skill = 4
 }
 
 create_corps_commander = {
