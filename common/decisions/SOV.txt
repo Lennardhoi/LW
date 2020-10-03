@@ -141,6 +141,10 @@ debug_decisions = {
 				}
 				annex_country = { target = POL }
 			}
+		every_owned_state = {
+			limit= {always=yes}
+			add_state_modifier={modifier={local_supplies = 1.5}}
+			}
 		}
 	}
 }
