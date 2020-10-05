@@ -1,9 +1,91 @@
 ideas = {
+hidden_ideas = {
+USA_agents = {
+			picture = generic_infantry_bonus
+			allowed = {
+				always = no
+			}
 
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				operative_slot = 2
+				agency_upgrade_time = -0.30
+			}
+		}
+
+
+}
 	country = {
 
+        
+		USA_labour = {
+			picture = generic_war_preparation
 
+			allowed = {
+				always = no
+			}
 
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+			    production_factory_max_efficiency_factor = -0.05
+				production_factory_efficiency_gain_factor = 0.12
+				production_factory_start_efficiency_factor = 0.12
+				
+			}
+			
+		}
+		
+		USA_first_deal = {
+			picture = generic_war_preparation
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+			    consumer_goods_factor = 0.1
+				production_speed_infrastructure_factor = 0.2
+				stability_factor = 0.10
+				
+			}
+			
+		}
+		
+		
+        USA_second_deal = {
+			picture = generic_war_preparation
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+			    consumer_goods_factor = 0.05
+				production_speed_industrial_complex_factor = 0.4
+				production_speed_infrastructure_factor = 0.2
+				stability_factor = 0.10
+				
+			}
+			
+		}
+		
 		USA_war_plans_1 = {
 			picture = generic_war_preparation
 
@@ -120,8 +202,11 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
+			
 				political_power_cost = 1
 				consumer_goods_factor = 0.3
+				industrial_capacity_factory = -0.3
+				industrial_capacity_dockyard = -0.2
 			}
 		}
 		great_depression_2 = {
@@ -140,6 +225,8 @@ ideas = {
 			modifier = {
 				political_power_cost = 0.65
 				consumer_goods_factor = 0.25
+				industrial_capacity_factory = -0.2
+				industrial_capacity_dockyard = -0.1
 			}
 		}
 		great_depression_3 = {
@@ -158,6 +245,8 @@ ideas = {
 			modifier = {
 				political_power_cost = 0.25
 				consumer_goods_factor = 0.175
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.05
 			}
 		}
 		USA_limited_intervention = {
@@ -498,6 +587,20 @@ ideas = {
 				conscription_factor = 0.2
 			}
 		}
+		USA_segregation = {
+			picture = saf_history_of_segregation
+			allowed = {
+				always = no
+			}
+
+
+			removal_cost = -1
+
+			modifier = {
+				conscription = -0.005
+				conscription_factor = -0.2
+			}
+		}
 		USA_worker_management_act = {
 			picture = generic_production_bonus
 
@@ -673,24 +776,7 @@ ideas = {
 				mobilization_speed = 0.2
 			}
 		}
-		new_deal = {
-
-
-			allowed = {
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = democratic
-			}
-
-			removal_cost = -1
-
-			modifier = {
-				production_speed_infrastructure_factor = 0.2
-				stability_factor = 0.10
-			}
-		}
+		
 
 		wilkies_new_deal = {
 
@@ -1097,8 +1183,7 @@ ideas = {
 			modifier = {
 				min_export = -0.3
 				global_building_slots_factor = 1
-				operative_slot = 2
-				agency_upgrade_time = -0.30
+				
 			}
 		}
 
@@ -1332,113 +1417,168 @@ ideas = {
 
 
 	political_advisor = {
-		harold_ickes = {
-
-
+		
+		
+		victor_perlo = {
+			
+			picture = generic_political_advisor_europe_1
 			allowed = {
 				original_tag = "USA"
 			}
-
+			
 			available = {
-				if = {
-					limit = { has_dlc = "Man the Guns" }
-					NOT = { has_autonomy_state = autonomy_supervised_state }
-				}
+				
+					has_completed_focus = USA_reach_out_to_the_ware_group
+				
+			}
+			visible = { has_dlc = "Man the Guns" }
+			
+			traits = { technocrat }
+			cost = 150
+			do_effect = {
+		
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		whittaker_chambers = {
+			
+			picture = USA_whittaker_chambers
+			allowed = {
+				original_tag = "USA"
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			available = {
+					has_completed_focus = USA_reach_out_to_the_ware_group
+			}
+			visible = { has_dlc = "Man the Guns" }
+			
+			traits = { editor }
+			cost = 150
+			do_effect = {
+		
+			}
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		USA_william_regnery = {
+			
+			picture = generic_political_advisor_europe_2
+			allowed = {
+				original_tag = "USA"
+			}
+			available = {
+				has_completed_focus = USA_reach_out_to_the_ware_group
 			}
 
+			visible = { has_dlc = "Man the Guns" }
+			traits = { captain_of_industry }
+			cost = 50
+			do_effect = {
+		
+			}
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		harold_ickes = {
+			
+			
+			allowed = {
+				original_tag = "USA"
+			}
+			
+			available = {
+				has_completed_focus = USA_reach_out_to_the_ware_group
+			}
+			
 			traits = { democratic_reformer }
-
+	
 			do_effect = {
 				NOT = {
 					has_government = democratic
 				}
 			}
-
+			
 			ai_will_do = {
 				factor = 0
 			}
 		}
-
+		
+		
 
 		USA_robert_taft = {
-
+			
 			picture = generic_political_advisor_europe_1
-
+			
 			allowed = {
 				original_tag = USA
 			}
-
+			
 			traits = { silent_workhorse }
 		}
+		
 
-		USA_john_winant = {
-
-			picture = generic_political_advisor_europe_5
-
-			allowed = {
-				original_tag = USA
-			}
-
-			traits = { compassionate_gentleman }
-		}
-
-		USA_cordell_hull = {
-
-			picture = generic_political_advisor_europe_6
-
-			allowed = {
-				original_tag = USA
-			}
-
-			traits = { smooth_talking_charmer }
-		}
 
 		USA_henry_morgenthau = {
 			picture = generic_political_advisor_europe_6
-
+			
 			allowed = {
 				original_tag = USA
 			}
 			available = {
+				
 			}
-
+			
 			traits = { financial_expert }
 		}
 
 		USA_henry_stimson = {
-
+			
 			picture = generic_political_advisor_europe_2
-
+			available = {
+				has_completed_focus = USA_reach_out_to_the_ware_group
+			}
 			allowed = {
 				original_tag = USA
 			}
-
+			
 			traits = { war_industrialist }
 		}
 
 		USA_donald_nelson = {
-
+			
 			picture = generic_political_advisor_europe_3
-
+			available = {
+				has_completed_focus = USA_reach_out_to_the_ware_group
+			}
 			allowed = {
 				original_tag = USA
 			}
-
+			
 			traits = { armaments_organizer }
 		}
-
+		
 		usa_william_donovan = {
-
+		
 			available = {
 				has_intelligence_agency = yes
 				threat > 0.5
 			}
-
+			
 			allowed = {
 				original_tag = USA
 				has_dlc = "La Resistance"
 			}
-
+			
 			traits = { head_of_intelligence }
 
 		}
@@ -2236,7 +2376,7 @@ ideas = {
 				original_tag = USA
 			}
 			available = {
-				has_completed_focus = USA_wartime_industry
+				
 			}
 
 
@@ -2247,9 +2387,7 @@ ideas = {
 
 			traits = { industrial_concern }
 
-			modifier = {
-				industrial_capacity_factory = 0.05
-			}
+			
 		}
 	}
 

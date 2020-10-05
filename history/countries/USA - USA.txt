@@ -9,13 +9,12 @@ if = {
 }
 set_rule = {can_be_spymaster = no}
 add_ideas = USA_naval_neutrality
+add_ideas = disarmed_nation
 add_ideas = reliance_on_natural_rubber
 add_ideas = peace_training
 add_ideas = Pacific_focus
-add_timed_idea = {
-	idea = USA_wasteful_navy
-	days = 1096
-}
+add_ideas = USA_agents
+
 set_variable = {
 	var = min_fuel
 	value = 0.800
@@ -173,10 +172,10 @@ set_popularities = {
 
 add_ideas = {
 	undisturbed_isolation
+	USA_first_deal
 	great_depression
-	disarmed_nation
 	free_trade
-	home_of_the_free
+	USA_segregation
 }
 
 
