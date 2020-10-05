@@ -63,8 +63,6 @@ ideas = {
 				amphibious_invasion = 0.5
 				invasion_preparation = -0.5
 				land_reinforce_rate = 0.1
-				special_forces_attack_factor = 0.20
-				special_forces_defence_factor = 0.2
 				army_core_attack_factor = 0.5
 				army_core_defence_factor = 0.5
 
@@ -808,7 +806,7 @@ ideas = {
 
 			picture = jap_supremacy_of_technology
 
-			modifier={research_speed_factor=0.1}
+			modifier={research_speed_factor=0.15}
 		}
 
 		JAP_superior_will = {
@@ -849,7 +847,7 @@ ideas = {
 			}
 			equipment_bonus = {
 				category_special_forces = {
-					breakthrough = 0.10
+					default_morale = 0.10
 
 
 				}

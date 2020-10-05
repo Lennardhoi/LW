@@ -47,7 +47,11 @@ on_actions = {
 
 	on_startup={
 		effect{
-
+			SOV={every_state = {
+			limit= {is_core_of=SOV}
+			add_state_modifier={modifier={local_supplies = 2}}
+			}
+			}
 			GER = {
 				create_arrays_pacific=yes
 				set_temp_variable={core_pop = 0}

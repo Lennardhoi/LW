@@ -95,7 +95,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_purge_the_kodoha_faction
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 2
@@ -590,29 +590,14 @@ focus_tree = {
 		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-		complete_tooltip = {
-			random_state = {
-				limit = {
-					has_state_flag = JAP_zaibatsus_factories
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			swap_ideas = {
-				remove_idea = JAP_zaibatsus
-				add_idea = JAP_guide_the_zaibatsus
-			}
-		}
+		
 
 		completion_reward = {
 			532 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 6
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 6
 					instant_build = yes
 				}
 				set_state_flag = JAP_zaibatsus_factories
@@ -628,7 +613,6 @@ focus_tree = {
 		id = JAP_nationalize_war_industry
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = JAP_guide_the_zaibatsus }
-		prerequisite = { focus = JAP_national_mobilization_law }
 		x = -1
 		y = 1
 		relative_position_id = JAP_guide_the_zaibatsus
@@ -755,6 +739,7 @@ focus_tree = {
 		id = JAP_national_defense_state
 		icon = GFX_focus_JAP_total_mob
 		prerequisite = { focus = JAP_nationalize_war_industry }
+		prerequisite = { focus = JAP_national_mobilization_law }
 		relative_position_id = JAP_nationalize_war_industry
 		x = 0
 		y = 1
@@ -779,21 +764,8 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
-			if = {
-				limit = {
-					has_war_support < 0.8
-				}
-				add_war_support = 0.1
-			}
-			else_if = {
-				limit = {
-					has_idea = tot_economic_mobilisation
-				}
-				add_political_power = 150
-			}
-			else = {
-				add_ideas = tot_economic_mobilisation
-			}
+			add_political_power= 100
+			add_ideas = tot_economic_mobilisation
 		}
 	}
 
@@ -805,7 +777,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_national_defense_state
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 4
@@ -930,7 +902,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_the_manchurian_project
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 2
@@ -1035,9 +1007,7 @@ focus_tree = {
 		}
 
 		available = {
-			MAN = {
-				is_ai = no
-			}
+			
 		}
 
 		bypass = {
@@ -1679,12 +1649,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			remove_ideas = JAP_duplicate_research_efforts
-			add_tech_bonus = {
-				name = strat_dest_bonus
-				bonus = 1.5
-				uses = 6
-				category = air_doctrine
-			}
+			air_experience = 250
 		}
 	}
 

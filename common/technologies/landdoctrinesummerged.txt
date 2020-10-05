@@ -83,7 +83,7 @@ technologies = {
 
 		}
 		planning_speed = 0.7
-		research_cost = 63.75
+		research_cost = 60
 		resistance_damage_to_garrison_on_our_occupied_states = 0.1
 
 	}
@@ -96,6 +96,7 @@ technologies = {
 
 		}
 		category_all_infantry = {
+			default_morale = 0.1
 			defense = 0.1
 
 		}
@@ -110,7 +111,6 @@ technologies = {
 
 		}
 		category_artillery = {
-			ap_attack = 0.05
 			soft_attack = 0.15
 
 		}
@@ -118,6 +118,10 @@ technologies = {
 			default_morale = 0.05
 			max_organisation = 20
 			soft_attack = 0.05
+
+		}
+		category_line_artillery = {
+			ap_attack = 0.05
 
 		}
 		category_mobile_infantry = {
@@ -148,7 +152,7 @@ technologies = {
 			research_cost_coeff = 14
 
 		}
-		research_cost = 63.75
+		research_cost = 60
 		signal_company = {
 			initiative = 0.05
 
@@ -156,12 +160,10 @@ technologies = {
 
 	}
 	grand = {
-		amphibious_armor = {
-			soft_attack = 0.1
-			amphibious = {
-				attack = 0.1
-				defence = 0.10
-			}
+		amphibious = {
+			attack = 0.1
+			defence = 0.1
+
 		}
 		armored_car = {
 			default_morale = 0.1
@@ -228,8 +230,8 @@ technologies = {
 			research_cost_coeff = 14
 
 		}
-		research_cost = 63.75
-		
+		research_cost = 60
+		soft_attack = 0.1
 		terrain_penalty_reduction = 0.1
 
 	}
@@ -246,7 +248,7 @@ technologies = {
 
 		}
 		category_army = {
-			default_morale = 0.35
+			default_morale = 0.25
 
 		}
 		category_light_infantry = {
@@ -280,12 +282,18 @@ technologies = {
 
 			}	land_reinforce_rate = 0.2
 		max_dig_in = 5
+		motorized_rocket_brigade = {
+			max_organisation = 50
+			default_morale = 0.1
+			max_strength = 20
+
+		}
 		no_supply_grace = 96
 		path = {
 			research_cost_coeff = 13
 
 		}
-		research_cost = 59.5
+		research_cost = 56
 		resistance_damage_to_garrison_on_our_occupied_states = 0.1
 		resistance_growth_on_our_occupied_states = 0.25
 

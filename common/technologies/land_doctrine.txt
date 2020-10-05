@@ -54,7 +54,7 @@ technologies = {
 	delay = {
 
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 
 		category_all_infantry = {
@@ -71,7 +71,7 @@ technologies = {
 
 
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 
 		categories = {
 			land_doctrine
@@ -103,7 +103,7 @@ technologies = {
 
 		land_reinforce_rate = 0.02
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 
 		category_tanks = {
@@ -131,7 +131,7 @@ technologies = {
 
 
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 
 		categories = {
 			land_doctrine
@@ -161,7 +161,7 @@ technologies = {
 	mobile_infantry = { #Branch focuses on infantry, included Motorised and Mechanised.
 
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 
 		category_all_infantry = {
@@ -176,7 +176,7 @@ technologies = {
 
 
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 
 		categories = {
 			land_doctrine
@@ -212,7 +212,7 @@ technologies = {
 
 	mass_motorization = {
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 
 		category_all_infantry = {
@@ -255,7 +255,7 @@ technologies = {
 		on_research_complete = {custom_effect_tooltip = "Each Motorized Batallion requires 20 less Motorized Equipment"
 			custom_effect_tooltip = "Each Motorized Artillery requires Batallion 25 less Motorized Equipment"}
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 
 		categories = {
 			land_doctrine
@@ -285,7 +285,7 @@ technologies = {
 
 	mechanised_offensive = {
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 
 		category_mobile_artillery	= {
@@ -304,7 +304,7 @@ technologies = {
 
 
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 
 		categories = {
 			land_doctrine
@@ -337,7 +337,7 @@ technologies = {
 
 	armored_spearhead = { #Branch focused on Tanks
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 		category_tanks = {
 			max_organisation = 3
@@ -355,7 +355,7 @@ technologies = {
 
 
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 
 		categories = {
 			land_doctrine
@@ -389,7 +389,7 @@ technologies = {
 
 	schwerpunk = {
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 		category_tanks = {
 			max_organisation = 2
@@ -407,7 +407,7 @@ technologies = {
 
 
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 
 		categories = {
 			land_doctrine
@@ -439,7 +439,7 @@ technologies = {
 
 	blitzkrieg = {
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 		category_tanks = {
 			max_organisation = 1
@@ -475,7 +475,7 @@ technologies = {
 
 
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 
 		categories = {
 			land_doctrine
@@ -507,7 +507,7 @@ technologies = {
 
 	kampfgruppe = {
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 		category_all_infantry = {
 			default_morale = 0.2
@@ -532,7 +532,7 @@ technologies = {
 
 
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 
 		categories = {
 			land_doctrine
@@ -563,7 +563,7 @@ technologies = {
 
 	firebrigades = { #Branch focused on mobile warfares
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 
 
@@ -582,7 +582,7 @@ technologies = {
 
 
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 
 		categories = {
 			land_doctrine
@@ -614,7 +614,7 @@ technologies = {
 	backhand_blow = {
 
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 		enable_tactic = tactic_backhand_blow
 
@@ -630,7 +630,7 @@ technologies = {
 			max_organisation = 5
 		}
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 
 		categories = {
 			land_doctrine
@@ -655,7 +655,7 @@ technologies = {
 
 	modern_blitzkrieg = {
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 		category_tanks = {
 			#max_organisation = 3
@@ -674,7 +674,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 		air_cas_present_factor = 0.25
 		categories = {
 			land_doctrine
@@ -705,7 +705,7 @@ technologies = {
 
 	volkssturm = {
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 		category_army = {
 			breakthrough = 0.05
@@ -727,7 +727,7 @@ technologies = {
 
 
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 		categories = {
 			land_doctrine
 			cat_mobile_warfare
@@ -761,7 +761,7 @@ technologies = {
 
 	nd_conscription = {
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 		conscription = 0.005
 
@@ -779,7 +779,7 @@ technologies = {
 			defense = 0.1
 		}
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 
 		categories = {
 			land_doctrine
@@ -805,7 +805,7 @@ technologies = {
 	werwolf_guerillas = {
 
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 
 		resistance_damage_to_garrison_on_our_occupied_states = 0.1
@@ -813,7 +813,7 @@ technologies = {
 		conscription = 0.005
 		#enable_tactic = tactic_guerrilla_tactics
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 
 		categories = {
 			land_doctrine
@@ -887,7 +887,7 @@ technologies = {
 
 	sup_delay = {
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 		category_light_infantry = {
 			max_organisation = 10
@@ -901,7 +901,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 
 		categories = {
 			land_doctrine
@@ -930,7 +930,7 @@ technologies = {
 
 	mobile_defence = {
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 		category_all_infantry = {
 			defense = 0.10
@@ -950,7 +950,7 @@ technologies = {
 
 
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 
 		categories = {
 			land_doctrine
@@ -980,7 +980,7 @@ technologies = {
 
 	intergrated_support = { #This Branch is focused on boosting stuff in the support column
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 		category_support_battalions = {
 			max_organisation = 10
@@ -994,7 +994,7 @@ technologies = {
 
 
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 
 		categories = {
 			land_doctrine
@@ -1025,7 +1025,7 @@ technologies = {
 
 	regimental_combat_teams = {
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 		category_support_battalions = {
 			max_organisation = 10
@@ -1038,7 +1038,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 
 		categories = {
 			land_doctrine
@@ -1069,7 +1069,7 @@ technologies = {
 
 	dispersed_support = { # Branch is focused on support units as part of the regular brigades
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 
 
@@ -1084,12 +1084,15 @@ technologies = {
 		field_hospital = {
 			casualty_trickleback = 0.1
 		}
-		category_artillery = {
+		category_line_artillery = {
 			ap_attack = 0.05
+		}
+		category_all_infantry = {
+			default_morale = 0.05
 		}
 
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 
 		categories = {
 			land_doctrine
@@ -1120,12 +1123,14 @@ technologies = {
 
 	overwhelming_firepower = {
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 		category_anti_air = {
 			air_attack = 0.10
 		}
-
+		category_all_infantry = {
+			default_morale = 0.05
+		}
 		enable_tactic = tactic_overwhelming_fire
 
 		path = {
@@ -1135,7 +1140,7 @@ technologies = {
 
 
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 
 		categories = {
 			land_doctrine
@@ -1166,7 +1171,7 @@ technologies = {
 
 	sup_mechanized_offensive = {
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 		category_army = {
 			hard_attack = 0.10
@@ -1187,7 +1192,7 @@ technologies = {
 
 
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 
 		categories = {
 			land_doctrine
@@ -1218,7 +1223,7 @@ technologies = {
 
 	concentrated_fire_plans = {
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 
 
@@ -1233,7 +1238,7 @@ technologies = {
 
 
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 
 		categories = {
 			land_doctrine
@@ -1264,7 +1269,7 @@ technologies = {
 
 	combined_arms = {
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 
 		category_all_armor = {
@@ -1281,7 +1286,7 @@ technologies = {
 
 
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 
 		categories = {
 			land_doctrine
@@ -1312,7 +1317,7 @@ technologies = {
 
 	tactical_control = {
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 		land_reinforce_rate = 0.02
 
@@ -1325,7 +1330,7 @@ technologies = {
 
 
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 
 		categories = {
 			land_doctrine
@@ -1356,7 +1361,7 @@ technologies = {
 
 	air_land_battle = {
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 		category_mobile_infantry= {
 			max_organisation = 10
@@ -1366,7 +1371,7 @@ technologies = {
 		army_bonus_air_superiority_factor = 0.20
 
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 
 		categories = {
 			land_doctrine
@@ -1397,7 +1402,7 @@ technologies = {
 
 	centralized_fire_control = {
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 
 
@@ -1414,7 +1419,7 @@ technologies = {
 
 
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 
 		categories = {
 			land_doctrine
@@ -1447,7 +1452,7 @@ technologies = {
 
 		land_reinforce_rate = 0.02
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 
 		path = {
@@ -1459,7 +1464,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 
 		categories = {
 			land_doctrine
@@ -1490,7 +1495,7 @@ technologies = {
 
 	advanced_firebases = {
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 		category_light_infantry = {
 			max_organisation = 10
@@ -1504,7 +1509,7 @@ technologies = {
 
 
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 
 		categories = {
 			land_doctrine
@@ -1535,7 +1540,7 @@ technologies = {
 
 	shock_and_awe = {
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 
 
@@ -1545,7 +1550,7 @@ technologies = {
 		enable_tactic = tactic_breakthrough
 
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 
 		categories = {
 			land_doctrine
@@ -1629,7 +1634,7 @@ technologies = {
 	grand_battle_plan = {
 
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 		path = {
 			leads_to_tech = prepared_defense
@@ -1641,7 +1646,7 @@ technologies = {
 		planning_speed = -0.5
 
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 
 		categories = {
 			land_doctrine
@@ -1679,12 +1684,11 @@ technologies = {
 
 	prepared_defense = {
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 		category_all_infantry = {
 			defense = 0.10
 			max_organisation = 10
-			default_morale = -0.1
 		}
 		dig_in_speed_factor = 0.25
 		path = {
@@ -1693,7 +1697,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 
 		categories = {
 			land_doctrine
@@ -1724,7 +1728,7 @@ technologies = {
 
 	grand_assault = {
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 		category_army = {
 			breakthrough = 0.10
@@ -1744,7 +1748,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 
 		categories = {
 			land_doctrine
@@ -1775,7 +1779,7 @@ technologies = {
 	}
 	central_planning = {
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 		max_planning = 0.10
 		terrain_penalty_reduction = 0.1
@@ -1786,7 +1790,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 
 		categories = {
 			land_doctrine
@@ -1817,7 +1821,7 @@ technologies = {
 	}
 	grand_mechanized_offensive = {
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 
 
@@ -1840,7 +1844,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 
 		categories = {
 			land_doctrine
@@ -1874,7 +1878,7 @@ technologies = {
 
 	branch_interoperation = {
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 		category_mobile_infantry = {
 			max_organisation = 10
@@ -1892,7 +1896,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 
 		categories = {
 			land_doctrine
@@ -1924,7 +1928,7 @@ technologies = {
 
 	armored_operations = {
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 		category_tanks = {
 			max_organisation = 2
@@ -1947,7 +1951,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 
 		categories = {
 			land_doctrine
@@ -1979,7 +1983,7 @@ technologies = {
 
 	assault_concentration = {
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 		category_all_armor = {
 			hard_attack = 0.10
@@ -1993,7 +1997,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 
 		categories = {
 			land_doctrine
@@ -2027,7 +2031,7 @@ technologies = {
 
 	c3i_theory = {
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 		land_reinforce_rate = 0.05
 		category_mobile_infantry= {
@@ -2041,7 +2045,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 
 		categories = {
 			land_doctrine
@@ -2073,7 +2077,7 @@ technologies = {
 
 	infantry_offensive = {
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 		infantry= {
 			need = {infantry_equipment = -10}
@@ -2091,7 +2095,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 
 		categories = {
 			land_doctrine
@@ -2124,7 +2128,7 @@ technologies = {
 
 	night_assault_tactics = {
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 		#reduce land night combat penalty
 		land_night_attack = 0.25 # negates half of base penalty
@@ -2138,7 +2142,7 @@ technologies = {
 
 
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 
 		categories = {
 			land_doctrine
@@ -2172,7 +2176,7 @@ technologies = {
 	infiltration_assault = {
 
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 		supply_consumption_factor = -0.10
 		category_all_infantry = {
@@ -2183,7 +2187,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 		categories = {
 			land_doctrine
 			cat_grand_battle_plan
@@ -2213,7 +2217,7 @@ technologies = {
 	}
 	assault_breakthrough = {
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 		category_special_forces = {
 			breakthrough = 0.10
@@ -2230,7 +2234,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 
 		categories = {
 			land_doctrine
@@ -2264,7 +2268,7 @@ technologies = {
 
 	attritional_containment = {
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 		category_all_infantry = {
 			max_organisation = 5
@@ -2281,7 +2285,7 @@ technologies = {
 		}
 		cas_damage_reduction = 0.20
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 
 		categories = {
 			land_doctrine
@@ -2313,7 +2317,7 @@ technologies = {
 
 	infiltration_in_depth = {
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 		land_reinforce_rate = 0.07
 
@@ -2322,7 +2326,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 
 		categories = {
 			land_doctrine
@@ -2400,11 +2404,10 @@ technologies = {
 	pocket_defence = {
 
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 		#reduced pocketed combat penalty and/or reduces the out of supply penalty or increases time before moving to worse penalty
 		no_supply_grace = 48 # more hours before supply penalty changes
-		out_of_supply_factor = -0.15
 
 		path = {
 			leads_to_tech = defence_in_depth
@@ -2412,7 +2415,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 
 		categories = {
 			land_doctrine
@@ -2442,7 +2445,7 @@ technologies = {
 
 	defence_in_depth = {
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 		max_dig_in = 5
 
@@ -2461,7 +2464,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 
 		categories = {
 			land_doctrine
@@ -2491,7 +2494,7 @@ technologies = {
 
 	large_front_operations = {
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 		supply_consumption_factor = -0.20
 
@@ -2504,7 +2507,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 
 		categories = {
 			land_doctrine
@@ -2552,10 +2555,10 @@ technologies = {
 		category_mobile_infantry = {
 			defense = 0.10
 		}
-		pocket_penalty = -0.2
+		pocket_penalty = -0.15
 		out_of_supply_factor = -0.15
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 		enable_tactic = tactic_blitz
 		enable_tactic = tactic_default_blitz
@@ -2566,7 +2569,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 
 		categories = {
 			land_doctrine
@@ -2597,7 +2600,7 @@ technologies = {
 
 	operational_concentration = {
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 		category_mobile_infantry = {
 			max_organisation = 10
@@ -2616,7 +2619,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 
 		categories = {
 			land_doctrine
@@ -2647,7 +2650,7 @@ technologies = {
 
 	vast_offensives = {
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 		no_supply_grace = 48
 		attrition = -0.1 #take 10% less attrition losses
@@ -2660,7 +2663,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 
 		categories = {
 			land_doctrine
@@ -2691,7 +2694,7 @@ technologies = {
 
 	breakthrough_priority = {
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 
 		category_mobile_infantry = {
@@ -2710,7 +2713,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 
 		categories = {
 			land_doctrine
@@ -2744,9 +2747,9 @@ technologies = {
 			max_organisation = 5
 		}
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
-		
+
 		category_all_armor = {
 			default_morale = 0.1
 		}
@@ -2766,7 +2769,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 
 		categories = {
 			land_doctrine
@@ -2798,12 +2801,12 @@ technologies = {
 
 	continuous_offensive = {
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 		org_loss_when_moving = -0.1
 		land_reinforce_rate = 0.03
 		category_army = {
-			default_morale = 0.15
+			default_morale = 0.05
 		}
 		motorized_rocket_brigade = {
 			max_organisation = 50
@@ -2816,7 +2819,7 @@ technologies = {
 		enable_tactic = tactic_backhand_blow
 
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 
 		categories = {
 			land_doctrine
@@ -2844,7 +2847,7 @@ technologies = {
 
 
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 
 		#Increased Partisan effect on your land occupied by others
@@ -2855,9 +2858,26 @@ technologies = {
 		enable_tactic = tactic_human_wave_tactics
 
 		infantry = {
-			need = {infantry_equipment= -30}
+			need = {infantry_equipment= -20}
 		}
-		on_research_complete = {custom_effect_tooltip = "Each Infantry Batallion requires 30 less Infantry Equipment"}
+		artillery_brigade={
+			need = {
+				artillery_equipment = -7
+			}
+		}
+		anti_tank_brigade={
+			need = {
+				anti_tank_equipment  = -7
+			}
+		}
+		anti_tank_brigade={
+			need = {
+				anti_air_equipment = -6
+			}
+		}
+		on_research_complete = {custom_effect_tooltip = "Each Infantry/Artillery/Anti-Tank and Anti-Air Batallion requires 20% less Equipment"
+
+		}
 
 
 		path = {
@@ -2866,7 +2886,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 
 		categories = {
 			land_doctrine
@@ -2901,7 +2921,7 @@ technologies = {
 
 	human_infantry_offensive = {
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 
 		land_reinforce_rate = 0.05
@@ -2916,7 +2936,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 
 		categories = {
 			land_doctrine
@@ -2946,7 +2966,7 @@ technologies = {
 
 	large_front_offensive = {
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 		category_light_infantry = {
 			max_organisation = 10
@@ -2965,7 +2985,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 
 		categories = {
 			land_doctrine
@@ -2997,7 +3017,7 @@ technologies = {
 
 		conscription = 0.03
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 		category_light_infantry = {
 			defense = 0.10
@@ -3010,7 +3030,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 
 		categories = {
 			land_doctrine
@@ -3041,7 +3061,7 @@ technologies = {
 
 	guerilla_warfare = {
 		xp_research_type = army
-		xp_research_cost = 100
+		xp_research_cost = 75
 		xp_research_bonus = 1.00
 		out_of_supply_factor = -0.25
 		category_army = {
@@ -3053,7 +3073,7 @@ technologies = {
 		enable_tactic = tactic_guerrilla_tactics
 
 		doctrine = yes
-		research_cost = 4.25
+		research_cost = 4.00
 
 		categories = {
 			land_doctrine

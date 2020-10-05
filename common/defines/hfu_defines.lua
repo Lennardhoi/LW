@@ -229,11 +229,12 @@ NDefines.NCountry.REINFORCEMENT_MANPOWER_CHUNK = 0.08
 NDefines.NCountry.AIR_SUPPLY_CONVERSION_SCALE = 0.10
 
 NDefines.NBuildings.INFRA_TO_SUPPLY = 2
-NDefines.NCountry.VP_TO_SUPPLY_BASE = 2
+NDefines.NCountry.VP_TO_SUPPLY_BASE = 0
+NDefines.NCountry.VP_TO_SUPPLY_BONUS_CONVERSION = 1
 NDefines.NCountry.SUPPLY_FROM_DAMAGED_INFRA = 0.2
 NDefines.NCountry.SUPPLY_PATH_MAX_DISTANCE = 8
 
---NDefines.NCountry.SUPPLY_BONUS_FROM_INPUT = 0.6 --not sure yet
+--NDefines.NCountry.SUPPLY_BONUS_FROM_INPUT = 0 --not sure yet
 
 NDefines.NMilitary.EXPERIENCE_LOSS_FACTOR = 0.01
 NDefines.NMilitary.SLOWEST_SPEED = 2 --back to 4
