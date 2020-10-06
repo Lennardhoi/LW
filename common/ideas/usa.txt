@@ -31,7 +31,6 @@ USA_agents = {
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
 			modifier = {
 			    production_factory_max_efficiency_factor = -0.05
@@ -43,7 +42,7 @@ USA_agents = {
 		}
 		
 		USA_first_deal = {
-			picture = generic_war_preparation
+			picture = home_of_the_free_2
 
 			allowed = {
 				always = no
@@ -65,7 +64,7 @@ USA_agents = {
 		
 		
         USA_second_deal = {
-			picture = generic_war_preparation
+			picture = home_of_the_free_2
 
 			allowed = {
 				always = no
@@ -505,7 +504,9 @@ USA_agents = {
 			removal_cost = -1
 
 			modifier = {
-				industrial_capacity_dockyard = 0.2
+				
+				refit_speed = 0.1
+				repair_speed_factor = 0.1
 			}
 		}
 		USA_us_air_force = {
@@ -597,8 +598,8 @@ USA_agents = {
 			removal_cost = -1
 
 			modifier = {
-				conscription = -0.005
-				conscription_factor = -0.2
+				conscription = -0.007
+				conscription_factor = -0.3
 			}
 		}
 		USA_worker_management_act = {
@@ -833,7 +834,8 @@ USA_agents = {
 			picture = generic_production_bonus
 
 			modifier = {
-				production_factory_efficiency_gain_factor = 0.1
+				consumer_goods_factor = -0.1
+				production_factory_max_efficiency_factor = 0.1
 			}
 		}
 		bureau_of_ships_focus = {
