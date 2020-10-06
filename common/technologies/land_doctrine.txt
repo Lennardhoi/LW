@@ -252,8 +252,10 @@ technologies = {
 				motorized_equipment = -25
 			}
 		}
-		on_research_complete = {custom_effect_tooltip = "Each Motorized Batallion requires 20 less Motorized Equipment"
-			custom_effect_tooltip = "Each Motorized Artillery requires Batallion 25 less Motorized Equipment"}
+		on_research_complete = {
+			custom_effect_tooltip = "Each Motorized Batallion requires 20 less Motorized Equipment"
+			custom_effect_tooltip = "Each Motorized Artillery requires Batallion 25 less Motorized Equipment"
+		}
 		doctrine = yes
 		research_cost = 4.00
 
@@ -288,7 +290,7 @@ technologies = {
 		xp_research_cost = 75
 		xp_research_bonus = 1.00
 
-		category_mobile_artillery	= {
+		category_mobile_artillery = {
 			default_morale = 0.05
 			max_organisation = 5
 			maximum_speed = 0.1
@@ -454,17 +456,11 @@ technologies = {
 
 		enable_tactic = tactic_breakthrough
 
-		motorized = {
+		category_mobile_infantry = {
 			max_organisation = 5
 		}
 		armored_car = {
 			max_organisation = 7
-		}
-		mechanized = {
-			max_organisation = 5
-		}
-		amphibious_mechanized = {
-			max_organisation = 5
 		}
 
 
@@ -1589,7 +1585,7 @@ technologies = {
 
 		xor = { mobile_warfare superior_firepower mass_assault }
 
-		max_dig_in = 10
+		max_dig_in = 7
 		dig_in_speed_factor = 0.25 #25% bonus
 
 		on_research_complete = {
@@ -1642,7 +1638,7 @@ technologies = {
 		}
 
 		#planning max bonus increase
-		max_planning = 0.20
+		max_planning = 0.10
 		planning_speed = -0.5
 
 		doctrine = yes
@@ -1732,7 +1728,6 @@ technologies = {
 		xp_research_bonus = 1.00
 		category_army = {
 			breakthrough = 0.10
-			soft_attack = 0.05
 			max_organisation = 7
 		}
 		max_planning = 0.1
@@ -2086,7 +2081,9 @@ technologies = {
 			max_organisation = 5
 			breakthrough = 0.1
 		}
-		on_research_complete = {custom_effect_tooltip = "Each Infantry Batallion requires 10 less Infantry Equipment"}
+		on_research_complete = {
+			custom_effect_tooltip = "Each Infantry Batallion requires 10 less Infantry Equipment"
+		}
 		enable_tactic = tactic_infantry_charge
 
 		path = {
@@ -2180,7 +2177,11 @@ technologies = {
 		xp_research_bonus = 1.00
 		supply_consumption_factor = -0.10
 		category_all_infantry = {
-			maximum_speed = 0.1}
+			maximum_speed = 0.1
+		}
+		category_line_artillery = {
+			maximum_speed = 0.1
+		}
 		path = {
 			leads_to_tech = assault_breakthrough
 			research_cost_coeff = 1
@@ -2221,7 +2222,6 @@ technologies = {
 		xp_research_bonus = 1.00
 		category_special_forces = {
 			breakthrough = 0.10
-			soft_attack = 0.10
 		}
 		no_supply_grace = 48
 		enable_tactic = tactic_breakthrough
@@ -2875,7 +2875,8 @@ technologies = {
 				anti_air_equipment = -6
 			}
 		}
-		on_research_complete = {custom_effect_tooltip = "Each Infantry/Artillery/Anti-Tank and Anti-Air Batallion requires 20% less Equipment"
+		on_research_complete = {
+			custom_effect_tooltip = "Each Infantry/Artillery/Anti-Tank and Anti-Air Batallion requires 20% less Equipment"
 
 		}
 

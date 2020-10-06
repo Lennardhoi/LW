@@ -1,10 +1,8 @@
 technologies = {
 	mobile = {
 		air_cas_present_factor = 0.25
-		amphibious_mechanized = {
-			max_organisation = 5
 
-		}
+		allow_branch = {is_debug = yes}
 		armored_car = {
 			breakthrough = 0.2
 			default_morale = 0.3
@@ -12,7 +10,11 @@ technologies = {
 
 		}
 		army_speed_factor = 0.1
-		category_all_armor = {
+
+		categories = {cat_mobile_warfare
+			land_doctrine
+
+			}		category_all_armor = {
 			breakthrough = 0.2
 			default_morale = 0.4
 			maximum_speed = 0.1
@@ -48,8 +50,8 @@ technologies = {
 
 		}
 		category_mobile_infantry = {
-			max_organisation = 5
 			defense = 0.1
+			max_organisation = 10
 
 		}
 		category_support_battalions = {
@@ -70,12 +72,39 @@ technologies = {
 			position = { x = 0 y = 18 }
 
 			}	land_reinforce_rate = 0.02
-		mechanized = {
-			max_organisation = 5
+		mot_anti_air_brigade = {
+			need = {
+				motorized_equipment = -15
+
+			}
+
+		}
+		mot_anti_tank_brigade = {
+			need = {
+				motorized_equipment = -25
+
+			}
+
+		}
+		mot_artillery_brigade = {
+			need = {
+				motorized_equipment = -25
+
+			}
+
+		}
+		mot_rocket_artillery_brigade = {
+			need = {
+				motorized_equipment = -25
+
+			}
 
 		}
 		motorized = {
-			max_organisation = 5
+			need = {
+				motorized_equipment = -20
+
+			}
 
 		}
 		path = {
@@ -88,8 +117,14 @@ technologies = {
 
 	}
 	superior = {
+
+		allow_branch = {is_debug = yes}
 		army_bonus_air_superiority_factor = 0.2
-		category_all_armor = {
+
+		categories = {cat_superior_firepower
+			land_doctrine
+
+			}		category_all_armor = {
 			hard_attack = 0.1
 			soft_attack = 0.1
 			breakthrough = 0.1
@@ -160,9 +195,15 @@ technologies = {
 
 	}
 	grand = {
-		amphibious = {
-			attack = 0.1
-			defence = 0.1
+
+		allow_branch = {is_debug = yes}
+		amphibious_armor = {
+			soft_attack = 0.1
+			amphibious = {
+				attack = 0.1
+				defence = 0.1
+
+			}
 
 		}
 		armored_car = {
@@ -171,7 +212,11 @@ technologies = {
 
 		}
 		cas_damage_reduction = 0.2
-		category_all_armor = {
+
+		categories = {cat_grand_battle_plan
+			land_doctrine
+
+			}		category_all_armor = {
 			hard_attack = 0.1
 			ap_attack = 0.1
 
@@ -184,13 +229,16 @@ technologies = {
 		}
 		category_army = {
 			breakthrough = 0.1
-			soft_attack = 0.05
 			max_organisation = 7
 
 		}
 		category_light_infantry = {
 			max_organisation = 5
 			breakthrough = 0.1
+
+		}
+		category_line_artillery = {
+			maximum_speed = 0.1
 
 		}
 		category_mobile_artillery = {
@@ -207,7 +255,6 @@ technologies = {
 		}
 		category_special_forces = {
 			breakthrough = 0.1
-			soft_attack = 0.1
 
 		}
 		category_tanks = {
@@ -221,21 +268,37 @@ technologies = {
 		folder = {name = land_doctrine_folder
 			position = { x = 0 y = 18 }
 
-			}	land_night_attack = 0.25
+			}		infantry = {
+			need = {
+				infantry_equipment = -10
+
+			}
+
+		}
+		land_night_attack = 0.25
 		land_reinforce_rate = 0.12
-		max_dig_in = 10
-		max_planning = 0.4
+		max_dig_in = 7
+		max_planning = 0.3
 		no_supply_grace = 48
 		path = {
 			research_cost_coeff = 14
 
 		}
 		research_cost = 60
-		soft_attack = 0.1
 		terrain_penalty_reduction = 0.1
 
 	}
 	mass_ass = {
+
+		allow_branch = {is_debug = yes}
+		anti_tank_brigade = {
+			need = {
+				anti_tank_equipment = -7
+				anti_air_equipment = -6
+
+			}
+
+		}
 		armored_car = {
 			breakthrough = 0.1
 			default_morale = 0.1
@@ -243,7 +306,18 @@ technologies = {
 
 		}
 		army_fuel_capacity_factor = 1
-		category_all_armor = {
+		artillery_brigade = {
+			need = {
+				artillery_equipment = -7
+
+			}
+
+		}
+
+		categories = {cat_mass_assault
+			land_doctrine
+
+			}		category_all_armor = {
 			default_morale = 0.2
 
 		}
@@ -271,6 +345,10 @@ technologies = {
 
 		}
 		category_support_battalions = {
+			need = {
+				support_equipment = -5
+
+			}
 			max_organisation = 15
 
 		}
@@ -285,7 +363,14 @@ technologies = {
 		folder = {name = land_doctrine_folder
 			position = { x = 0 y = 18 }
 
-			}	land_reinforce_rate = 0.2
+			}		infantry = {
+			need = {
+				infantry_equipment = -20
+
+			}
+
+		}
+		land_reinforce_rate = 0.2
 		max_dig_in = 5
 		motorized_rocket_brigade = {
 			max_organisation = 50
