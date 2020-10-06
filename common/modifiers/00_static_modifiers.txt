@@ -315,6 +315,8 @@ stability_good_modifier = {
 	#army_core_defence_factor = 0.1
 	consumer_goods_factor = -0.05
 	political_power_factor = 0.1
+	industrial_capacity_factory = 0.1
+	industrial_capacity_dockyard = 0.1
 }
 
 # applies when stability < 50%
@@ -323,23 +325,25 @@ stability_bad_modifier = {
 	#army_core_attack_factor = -0.1
 	#army_core_defence_factor = -0.1
 	political_power_factor = -0.2
+	industrial_capacity_factory = -0.1
+	industrial_capacity_dockyard = -0.1
 }
 
 war_support_good_modifier = {
 	mobilization_speed = 0.30 #in 1/1000 of 1 %
 	#industrial_capacity_factory = 0.25
 	#industrial_capacity_dockyard = 0.25
-	#army_attack_factor = 0.1
-	#army_defence_factor = 0.1
+	army_attack_factor = 0.05
+	army_defence_factor = 0.05
+	resistance_target = -0.1
 	command_power_gain_mult = 0.5
 }
 
 war_support_bad_modifier = {
 	mobilization_speed = -0.500 # Reduce mobilization speed by half.
-	#industrial_capacity_factory = -0.25
-	#industrial_capacity_dockyard = -0.25
-	#army_attack_factor = -0.10  # Attacking or defending on non-core takes a huge penalty.
-	#army_defence_factor = -0.10
+	resistance_target = 0.2
+	army_attack_factor = -0.05  # Attacking or defending on non-core takes a huge penalty.
+	army_defence_factor = -0.05
 	command_power_gain_mult = -0.95
 	surrender_limit = -0.5
 }
@@ -482,7 +486,7 @@ active_decryption_modifier = {
 	defense_bonus_against = 0.05
 	breakthrough_bonus_against = 0.05
 	naval_invasion_prep_speed = 0.2
-	naval_invasion_penalty = -0.10
+	naval_invasion_penalty = -0.05
 	planning_speed = 0.3
 	civilian_intel_decryption_bonus = 30
 	army_intel_decryption_bonus = 10

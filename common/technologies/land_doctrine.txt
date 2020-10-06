@@ -1171,6 +1171,7 @@ technologies = {
 		xp_research_bonus = 1.00
 		category_army = {
 			hard_attack = 0.10
+			max_organisation = 5
 		}
 
 
@@ -1222,7 +1223,9 @@ technologies = {
 		xp_research_cost = 75
 		xp_research_bonus = 1.00
 
-
+		category_tanks = {
+			max_organisation = 10
+		}
 		category_all_armor = {
 			breakthrough = 0.10
 		}
@@ -1360,9 +1363,9 @@ technologies = {
 		xp_research_cost = 75
 		xp_research_bonus = 1.00
 		category_mobile_infantry= {
-			max_organisation = 10
+			max_organisation = 15
 		}
-
+		
 		#combat advantage when air superior
 		army_bonus_air_superiority_factor = 0.20
 
@@ -1727,7 +1730,6 @@ technologies = {
 		xp_research_cost = 75
 		xp_research_bonus = 1.00
 		category_army = {
-			breakthrough = 0.10
 			max_organisation = 7
 		}
 		max_planning = 0.1
@@ -1927,6 +1929,7 @@ technologies = {
 		xp_research_bonus = 1.00
 		category_tanks = {
 			max_organisation = 2
+			breakthrough = 0.10
 		}
 		category_mobile_artillery= {
 			soft_attack = 0.1
