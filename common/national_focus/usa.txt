@@ -213,7 +213,6 @@ focus = {
 		}
 
 		available = {
-        
 		}
 
 		bypass = {
@@ -232,7 +231,7 @@ focus = {
 
 		completion_reward = {
 			USA_great_depression_level_down = yes
-			set_country_flag = { flag = USA_great_depression_cooldown value = 1 days = 210 }
+			set_country_flag = { flag = USA_great_depression_cooldown value = 1 days = 365 }
 			USA_congress_medium_opposition = yes
 			custom_effect_tooltip = USA_great_depression_cooldown_tt
 			unlock_decision_tooltip = { decision = USA_pay_farm_subsidies show_effect_tooltip = yes }
@@ -241,14 +240,14 @@ focus = {
 				    is_core_of = USA
 					free_building_slots = {
 						building = industrial_complex
-						size > 9
+						size > 4
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 10
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = industrial_complex
-					level = 10
+					level = 5
 					instant_build = yes
 				}
 				
@@ -258,14 +257,14 @@ focus = {
 				is_core_of = USA
 					free_building_slots = {
 						building = industrial_complex
-						size > 9
+						size > 4
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 10
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = industrial_complex
-					level = 10
+					level = 5
 					instant_build = yes
 				}
 				
@@ -275,14 +274,14 @@ focus = {
 				is_core_of = USA
 					free_building_slots = {
 						building = industrial_complex
-						size > 9
+						size > 4
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 10
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = industrial_complex
-					level = 10
+					level = 5
 					instant_build = yes
 				}
 				
@@ -301,7 +300,7 @@ focus = {
 		ai_will_do = {
 			factor = 1
 		}
-        available = {OR = {JAP = {has_completed_focus = JAP_intervene_in_china } date > 1937.10.1}}
+        available = {NOT={has_country_flag=USA_great_depression_cooldown} }
 
 		bypass = {
 			
@@ -313,7 +312,7 @@ focus = {
 
 		completion_reward = {
 			USA_great_depression_level_down = yes
-			set_country_flag = { flag = USA_great_depression_cooldown value = 1 days = 210 }
+			set_country_flag = { flag = USA_great_depression_cooldown value = 1 days = 365 }
 			custom_effect_tooltip = USA_great_depression_cooldown_tt
 			USA_congress_medium_opposition = yes
 			random_owned_controlled_state = {
@@ -321,14 +320,14 @@ focus = {
 				    is_core_of = USA
 					free_building_slots = {
 						building = industrial_complex
-						size > 9
+						size > 4
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 10
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = industrial_complex
-					level = 10
+					level = 5
 					instant_build = yes
 				}
 				
@@ -338,14 +337,14 @@ focus = {
 				is_core_of = USA
 					free_building_slots = {
 						building = industrial_complex
-						size > 9
+						size > 4
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 10
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = industrial_complex
-					level = 10
+					level = 5
 					instant_build = yes
 				}
 				
@@ -355,14 +354,14 @@ focus = {
 				is_core_of = USA
 					free_building_slots = {
 						building = industrial_complex
-						size > 9
+						size > 4
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 10
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = industrial_complex
-					level = 10
+					level = 5
 					instant_build = yes
 				}
 				
@@ -377,7 +376,7 @@ focus = {
 		prerequisite = { focus = USA_fair_labour_standards_act }
 		relative_position_id = USA_wpa
 		cost = 10
-        available = {GER = {has_completed_focus = GER_end_of_czechoslovakia  }}
+        available = {NOT={has_country_flag=USA_great_depression_cooldown} }
 		cancel_if_invalid = no
 		continue_if_invalid = yes
 		available_if_capitulated = no
@@ -397,14 +396,14 @@ focus = {
 				    is_core_of = USA
 					free_building_slots = {
 						building = industrial_complex
-						size > 9
+						size > 4
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 10
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = industrial_complex
-					level = 10
+					level = 5
 					instant_build = yes
 				}
 				
@@ -414,14 +413,14 @@ focus = {
 				is_core_of = USA
 					free_building_slots = {
 						building = industrial_complex
-						size > 9
+						size > 4
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 10
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = industrial_complex
-					level = 10
+					level = 5
 					instant_build = yes
 				}
 				
@@ -431,14 +430,14 @@ focus = {
 				is_core_of = USA
 					free_building_slots = {
 						building = industrial_complex
-						size > 9
+						size > 4
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 10
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = industrial_complex
-					level = 10
+					level = 5
 					instant_build = yes
 				}
 				
@@ -449,10 +448,10 @@ focus = {
 	focus = {
 		id = USA_office_of_scientific_research_and_development
 		icon = GFX_focus_research
-		x = 2
+		x = -1
 		y = 1
-		prerequisite = { focus = USA_wpa }
-		relative_position_id = USA_wpa
+		prerequisite = { focus = USA_continue_the_new_deal }
+		relative_position_id = USA_continue_the_new_deal
 		cost = 5
 
 		ai_will_do = {
@@ -481,11 +480,11 @@ focus = {
 		icon = GFX_focus_generic_rubber
 		prerequisite = { focus = USA_office_of_scientific_research_and_development }
 		available = {
-			
+		has_tech=synth_oil_experiments
 		}
-		x = 2
-		y = 2
-		relative_position_id = USA_wpa
+		x = 0
+		y = 1
+		relative_position_id = USA_office_of_scientific_research_and_development
 		cost = 5
 		#ai_will_do = {
 		#	factor = 1
@@ -504,7 +503,51 @@ focus = {
 		}
 	}
 
+	focus = {
+		id = USA_synthetic_rubber
+		icon = GFX_focus_GER_synthetic_rubber
+		prerequisite = { focus = USA_rubber_reserve_company }
+		x = 0
+		y = 1
+		relative_position_id = USA_rubber_reserve_company
+		cost = 5
+		ai_will_do = {
+			factor = 4
+		}
+		available= {
+		date>1941.2.1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_coal_liquidization
+				bonus = 1
+				uses = 1
+				category = synth_resources
+			}
+			381 = {
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 3
+					instant_build = yes
+				}
+			}
+			388 = {
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 3
+					instant_build = yes
+				}
+			}
+			384 = {
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 3
+					instant_build = yes
+				}
+			}
 
+		}
+	}
 
 	#   ### #   # ### ### ### ###      ### #  # ### ### ###  #   # ### #  # ### ###  ##  #  #
 	#    #  ## ##  #   #  #   #  #      #  ## #  #  #   #  # #   # #   ## #  #   #  #  # ## #
@@ -573,19 +616,44 @@ focus = {
 					type = tungsten
 					amount = 69
 				}
+			}
+			261 = {
 				add_resource = {
 					type = steel
-					amount = 187
+					amount = 87
 				}
+			}
+			362 = {
+				add_resource = {
+					type = steel
+					amount = 50
+				}
+			}
+			392 = {
+				add_resource = {
+					type = steel
+					amount = 50
+				}
+			}
+			382 = {
 				add_resource = {
 					type = chromium
 					amount = 14
 				}
+			}
+			378 = {
 				add_resource = {
 					type = aluminium
-					amount = 88
+					amount = 40
 				}
 			}
+			358 = {
+				add_resource = {
+					type = aluminium
+					amount = 40
+				}
+			}
+			
 		}
 	}
 focus = {
@@ -676,14 +744,14 @@ focus = {
 				    is_core_of = USA
 					free_building_slots = {
 						building = industrial_complex
-						size > 9
+						size > 4
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 10
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = industrial_complex
-					level = 10
+					level = 5
 					instant_build = yes
 				}
 				
@@ -693,14 +761,14 @@ focus = {
 				is_core_of = USA
 					free_building_slots = {
 						building = industrial_complex
-						size > 9
+						size > 4
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 10
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = industrial_complex
-					level = 10
+					level = 5
 					instant_build = yes
 				}
 				
@@ -710,14 +778,14 @@ focus = {
 				is_core_of = USA
 					free_building_slots = {
 						building = industrial_complex
-						size > 9
+						size > 4
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 10
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = industrial_complex
-					level = 10
+					level = 5
 					instant_build = yes
 				}
 				
@@ -740,7 +808,7 @@ focus = {
 		}
 
 		available = {
-			date>1939.1.1
+			date>1938.6.1
 		}
 
 		bypass = {
@@ -1017,7 +1085,10 @@ focus = {
 		id = USA_american_dream
 		icon = GFX_goal_generic_construct_civ_factory
 		available = {
+		date>1940.1.1
 		}
+		prerequisite = { focus = USA_natural_2}
+		prerequisite = { focus = USA_federal_housing_act}
 		prerequisite = { focus = USA_arsenal_of_democracy}
 		relative_position_id = USA_arsenal_of_democracy
 		continue_if_invalid = yes
@@ -1038,7 +1109,7 @@ focus = {
 
 
 		completion_reward = {
-				add_political_power = 100
+				add_ideas=partial_economic_mobilisation
 		}
 	}
 
@@ -1061,7 +1132,16 @@ focus = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-			add_stability = 0.3
+			add_equipment_to_stockpile = {
+				type = fighter_equipment_alt
+				amount = 1000
+				producer = USA
+			}
+			add_equipment_to_stockpile = {
+				type = cas_equipment
+				amount = 500
+				producer = USA
+			}
 		}
 	}
 
@@ -1097,8 +1177,11 @@ focus = {
 	focus = {
 		id = USA_the_giant_wakes
 		icon = GFX_goal_generic_construct_civ_factory
-		available = {OR={
-				date > 1941.1.1 has_war=yes}
+		available = {
+			OR={
+				date > 1941.1.1 
+				has_war=yes
+			}
 		}
 		prerequisite = { focus = USA_american_dream}
 		relative_position_id = USA_american_dream
@@ -1120,7 +1203,7 @@ focus = {
 			
 			
 				add_political_power = 100
-				add_ideas = tot_economic_mobilisation
+				add_ideas = war_economy
 				set_country_flag = USA_the_giant_wakes_added_civ_eco
 		}
 	}
@@ -1133,7 +1216,7 @@ focus = {
 		relative_position_id = USA_the_giant_wakes
 		cost = 4
 		available = {
-		date > 1941.7.1
+		date > 1942.1.1
 		}
 		ai_will_do = {
 			factor = 1
@@ -1397,10 +1480,10 @@ focus = {
 		complete_tooltip = {
 			every_state = {
 				limit = { has_state_flag = USA_USACE_projects_3AF }
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = arms_factory
-					level = 3
+					level = 5
 					instant_build = yes
 				}
 			}
@@ -1899,7 +1982,7 @@ focus = {
 		icon = GFX_focus_attack_japan
 		prerequisite = { focus = USA_war_plans_division }
 		available = {
-
+		date>1942.6.1
 		}
 		continue_if_invalid = yes
 		available_if_capitulated = yes
@@ -1929,13 +2012,7 @@ focus = {
 		relative_position_id = USA_prepare_for_japan
 		x = 0
 		y = 1
-		offset = {
-			x = -26
-			y = 0
-			trigger = {
-				not = { has_dlc = "Man the Guns" }
-			}
-		}
+		
 
 		cost = 5
 
@@ -1952,6 +2029,8 @@ focus = {
 		}
 
 		completion_reward = {
+			custom_effect_tooltip=USA_war_plans_division_tt
+		
           division_template = {
 					name = "US-Marines"			# Rifle Division
 
@@ -2010,7 +2089,8 @@ focus = {
 		}
 
 		available = {
-			has_war_with = JAP
+			date>1941.6.1
+			285={is_controlled_by_ROOT_or_ally=yes}
 		}
 
 		bypass = {
@@ -2021,13 +2101,58 @@ focus = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
+		
 		completion_reward = {
+			custom_effect_tooltip=USA_reinforce_oceania_tt
+		
+          division_template = {
+					name = "US-Marines"			# Rifle Division
 
+
+					regiments = {
+					marine = { x = 0 y = 0 }
+					marine = { x = 0 y = 1 }
+					marine = { x = 0 y = 2 }
+					marine = { x = 0 y = 3 }
+					marine = { x = 1 y = 0 }
+					marine = { x = 1 y = 1 }
+					marine = { x = 1 y = 2 }
+					marine = { x = 1 y = 3 }
+					marine = { x = 2 y = 0 }
+					marine = { x = 2 y = 1 }
+					marine = { x = 2 y = 2 }
+					marine = { x = 2 y = 3 }
+					marine = { x = 3 y = 0 }
+					marine = { x = 3 y = 1 }
+					artillery_brigade = { x = 4 y = 0 }
+					artillery_brigade = { x = 4 y = 1 }
+					artillery_brigade = { x = 4 y = 2 }
+					artillery_brigade = { x = 4 y = 3 }
+
+				}
+				support = {
+					recon = { x = 0 y = 0 } 		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and they seem rather OP. Could revisit if balance changes
+					engineer = { x = 0 y = 1 } 	# (semi-mot) Engineer bn
+					artillery = { x = 0 y = 2 }
+					logistics_company = { x = 0 y = 3 }
+					signal_company = { x = 0 y = 4 }	# Heavy Arty Regiment had 1x 152mm bn + 2x 122mm bn
+					anti_tank = {x = 0 y = 5}
+				}
+				}
+				285 = {
+					for_loop_effect = {
+						end = 8
+						create_unit = {
+							division = "name = \"US-Marines\" division_template = \"US-Marines\" start_experience_factor = 2.0 start_equipment_factor = 0.25"
+							owner = USA
+						}
+						}}
 		}
+		
 	}
 
 	focus = {
-		id = USA_Lend_Lease_to_Raj
+		id = USA_lend_lease_to_raj
 		icon = GFX_goal_generic_major_war
 		x = -3
 		y = 1
@@ -2052,8 +2177,11 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-
-		}
+		RAJ={add_equipment_to_stockpile = { type = infantry_equipment amount = 10000 producer = USA }
+				add_equipment_to_stockpile = { type = artillery_equipment amount = 1200 producer = USA }
+				add_equipment_to_stockpile = { type = anti_air_equipment amount = 200 producer = USA }
+				add_equipment_to_stockpile = { type = support_equipment amount = 300 producer = USA }
+		}}
 	}
 
 	focus = {
@@ -2070,7 +2198,11 @@ focus = {
 		}
 
 		available = {
-			has_war_with = JAP
+			647={is_controlled_by_ROOT_or_ally=yes}
+			684={is_controlled_by_ROOT_or_ally=yes}
+			638={is_controlled_by_ROOT_or_ally=yes}
+			646 ={is_controlled_by_ROOT_or_ally=yes}
+			684={is_controlled_by_ROOT_or_ally=yes}	
 		}
 
 		bypass = {
@@ -2082,7 +2214,9 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-
+		every_state = {
+				limit={OR={state=623 state=624 state=625 state=628 state=626 state=627 state=327 }}
+				add_dynamic_modifier = { modifier = JAP_attack days=90  }}
 		}
 	}
 
@@ -2100,7 +2234,7 @@ focus = {
 		}
 
 		available = {
-			has_war_with = JAP
+			date>1942.1.1
 		}
 
 		bypass = {
@@ -2112,12 +2246,14 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-
+		every_state = {
+				limit={OR={state=672 state=335 state=673 state=669 state=523 state=333 state=778 state=334 state=668 }}
+				add_dynamic_modifier = { modifier = JAP_attack days=90  }}
 		}
 	}
 
 	focus = {
-		id = USA_?
+		id = USA_island_hopping
 		icon = GFX_goal_generic_major_war
 		x = 1
 		y = 1
@@ -2130,7 +2266,7 @@ focus = {
 		}
 
 		available = {
-			has_war_with = JAP
+		date>1941.6.1
 		}
 
 		bypass = {
@@ -2142,12 +2278,12 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-
+		add_ideas=USA_island_hopping
 		}
 	}
 
 	focus = {
-		id = USA_?
+		id = USA_navy_recovery
 		icon = GFX_goal_generic_major_war
 		x = -1
 		y = 1
@@ -2160,7 +2296,10 @@ focus = {
 		}
 
 		available = {
-			has_war_with = JAP
+			naval_strength_ratio = {
+				tag = JAP
+				ratio < 0.5
+			}
 		}
 
 		bypass = {
@@ -2172,7 +2311,7 @@ focus = {
 		available_if_capitulated = no
 
 		completion_reward = {
-
+		add_timed_idea={idea=USA_navy_recovery days=180}
 		}
 	}
 
@@ -2186,7 +2325,7 @@ focus = {
 	focus = {
 		id = USA_war_department
 		icon = GFX_goal_generic_army_doctrines
-		x = 26
+		x = 22
 		y = 0
 		offset = {
 			x = -26
@@ -2667,15 +2806,14 @@ focus = {
 		prerequisite = { focus = USA_war_department }
 		relative_position_id = USA_war_department
 		available_if_capitulated = yes
-        available ={date > 1939.1.1}
+        available ={date > 1938.1.1}
 		completion_reward = {
 			air_experience = 150
 			add_tech_bonus = {
 				name = fighter_command_focus
 				bonus = 1.0
-				uses = 2
-				category = light_fighter
-				category = cat_heavy_fighter
+				uses = 1
+				technology= fighter2
 
 
 			}
@@ -2699,7 +2837,7 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			air_experience = 25
+			air_experience = 50
 			add_tech_bonus = {
 				name = USA_TAC
 				uses = 1
@@ -2725,6 +2863,7 @@ focus = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			air_experience = 100
 			add_tech_bonus = {
 				name = CAS_effort
 				uses = 1
@@ -2782,7 +2921,7 @@ focus = {
 		}
 
 		available = {
-
+		date>1941.1.1
 		}
 
 		bypass = {
@@ -2795,10 +2934,12 @@ focus = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = USA_us_army_airforce
-				uses = 2
+				name = fighter_command_focus
 				bonus = 1.0
-				category = air_doctrine
+				uses = 1
+				technology= fighter3
+
+
 			}
 		}
 	}
