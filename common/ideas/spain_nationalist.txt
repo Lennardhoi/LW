@@ -645,7 +645,14 @@ ideas = {
 			allowed = {
 				original_tag = SPR
 			}
-
+			cancel={
+				tag = ITA
+				NOT={controls_state=448
+ 					controls_state=450 
+					controls_state=458 
+				controls_state=663
+			}
+			}	
 			allowed_civil_war = {
 				always = yes
 			}

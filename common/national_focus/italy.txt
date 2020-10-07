@@ -795,24 +795,24 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = ITA_autarky
-		icon = GFX_goal_generic_construction
-		prerequisite = { focus = ITA_mili }
-		relative_position_id = ITA_mili
-		available = {
+	# focus = {
+		# id = ITA_autarky
+		# icon = GFX_goal_generic_construction
+		# prerequisite = { focus = ITA_mili }
+		# relative_position_id = ITA_mili
+		# available = {
 
-		}
+		# }
 
-		x = 0
-		y = 2
-		cost = 5
-		search_filters = { FOCUS_FILTER_ANNEXATION }
+		# x = 0
+		# y = 2
+		# cost = 5
+		# search_filters = { FOCUS_FILTER_ANNEXATION }
 
-		completion_reward = {
-			add_ideas = { FRA_global_investments }
-		}
-	}
+		# completion_reward = {
+			# add_ideas = { FRA_global_investments }
+		# }
+	# }
 
 	focus = {
 		id = ITA_moder
