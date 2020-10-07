@@ -633,7 +633,7 @@
 
 		available = {
 			FRA = {
-				controls_state = 553
+				controls_state = 554
 			}
 		}
 
@@ -650,7 +650,7 @@
 			random_state = {
 				limit = {
 					OR = {
-						state = 553
+						state = 554
 					}
 					OWNER = { is_owned_or_subject_trigger = yes }
 					NOT = {
@@ -2415,14 +2415,14 @@
 			factor = 1
 		}
 		available = {
-			553 = {
+			554 = {
 				is_controlled_by = EFR
 			}
 		}
 
 		bypass = {
 			NOT = {
-				553 = {
+				554 = {
 					is_controlled_by = EFR
 				}
 			}

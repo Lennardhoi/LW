@@ -316,7 +316,6 @@ operations = {
 				exists = yes
 			}
 			EFR = {
-				owns_state = 553
 				owns_state = 554
 				owns_state = 680
 				owns_state = 677
@@ -348,13 +347,10 @@ operations = {
 		}
 
 		remove_effect = {
-			transfer_state = 553
 			transfer_state = 554
 			transfer_state = 680
 			transfer_state = 677
-			553 = {
-				set_demilitarized_zone = no
-			}
+			
 			554 = {
 				set_demilitarized_zone = no
 			}
