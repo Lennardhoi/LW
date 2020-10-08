@@ -15,7 +15,11 @@ USA_agents = {
 				agency_upgrade_time = -0.30
 			}
 		}
-USA_island_hopping = {
+
+}
+	country = {
+
+        USA_island_hopping = {
 			picture = generic_infantry_bonus
 			allowed = {
 				always = no
@@ -27,6 +31,27 @@ USA_island_hopping = {
 			}
 			modifier = {
 				invasion_preparation = -0.5
+			}
+		}
+USA_guadalcanal = {
+			picture = generic_infantry_bonus
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			targeted_modifier = {
+				tag = JAP
+				attack_bonus_against = 0.2
+			}
+			modifier = {
+				naval_coordination = 0.05
+				naval_speed_factor = 0.05
+				sortie_efficiency = 0.1
+				spotting_chance = 0.1
 			}
 		}
 USA_navy_recovery = {
@@ -49,10 +74,6 @@ USA_navy_recovery = {
 			}
 		}
 
-}
-	country = {
-
-        
 		USA_labour = {
 			picture = generic_war_preparation
 
