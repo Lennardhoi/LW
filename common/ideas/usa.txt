@@ -19,7 +19,43 @@ USA_agents = {
 }
 	country = {
 
-        USA_island_hopping = {
+USA_overlord = {
+			picture = generic_infantry_bonus
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			targeted_modifier = { tag = JAP attack_bonus_against = -0.2 defense_bonus_against = -0.2 }
+			modifier = {
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+				supply_consumption_factor = -0.1
+				special_forces_attack_factor = 0.1
+				special_forces_defence_factor = 0.1
+			}
+		}
+
+USA_flying_fortress = {
+			picture = goe
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				air_strategic_bomber_bombing_factor = 0.1
+			}
+		}
+
+
+USA_island_hopping = {
 			picture = generic_infantry_bonus
 			allowed = {
 				always = no

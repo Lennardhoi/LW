@@ -1581,7 +1581,7 @@ focus = {
 
 	focus = {
 		id = USA_intervention_in_europe
-		icon = GFX_goal_generic_territory_or_war
+		icon = GFX_focus_USA_new_war_coming
 		x = -5
 		y = 1
 		prerequisite = { focus = USA_american_dream }
@@ -1613,7 +1613,7 @@ focus = {
 
 	focus = {
 		id = USA_war_plan_silver
-		icon = 
+		icon = GFX_focus_USA_war_changed
 		x = 0
 		y = 1
 		prerequisite = { focus = USA_intervention_in_europe }
@@ -1742,11 +1742,10 @@ create_field_marshal = {
 	}
 	focus = {
 		id = USA_ger1
-		icon = GFX_focus_attack_germany
+		icon = GFX_focus_USA_long_range_strat
 		prerequisite = { focus = USA_war_plan_black }
 		available = {
-
-		
+		date > 1941.06.15
 		}
 
 		continue_if_invalid = yes
@@ -1760,7 +1759,7 @@ create_field_marshal = {
 			#	factor = 1
 			#}
 		completion_reward = {
-			
+			add_ideas = USA_flying_fortress
 		}
 	}
 	focus = {
@@ -1784,7 +1783,51 @@ create_field_marshal = {
 			#	factor = 1
 			#}
 		completion_reward = {
+		461 = {
+				set_building_level = {
+					type = naval_base
+					level = 20
+					province = 7069
+					instant_build = yes
+				}
+				set_building_level = {
+					type = air_base
+					level = 20
+					instant_build = yes
+				}
+			}	
+		
+		462 = {
+				set_building_level = {
+					type = air_base
+					level = 10
+					instant_build = yes
+				}
+				
 			
+		}
+		459 = {
+
+				
+				set_building_level = {
+					type = air_base
+					level = 10
+					instant_build = yes
+				}
+				
+				
+		}
+		513 = {
+
+				
+				set_building_level = {
+					type = air_base
+					level = 10
+					instant_build = yes
+				}
+				
+			}	
+		
 		}
 	}
 	
@@ -1811,8 +1854,11 @@ create_field_marshal = {
 			#	factor = 1
 			#}
 		completion_reward = {
-	
+	    every_state = {
+				limit={OR={state=460 state=665 state=458 state=513}}
+				add_dynamic_modifier = { modifier = JAP_attack days=60  }}
 		}
+		
 	}
 	focus = {
 		id = USA_ger4
@@ -1834,7 +1880,9 @@ create_field_marshal = {
 			#	factor = 1
 			#}
 		completion_reward = {
-			
+			 every_state = {
+				limit={OR={state=142 state=143}}
+				add_dynamic_modifier = { modifier = JAP_attack days=60  }}
 		}
 	}
 	
@@ -1857,7 +1905,9 @@ create_field_marshal = {
 			#	factor = 1
 			#}
 		completion_reward = {
-			
+			 every_state = {
+				limit={OR={state=1 state=114 state=115 state=156 state=117 }}
+				add_dynamic_modifier = { modifier = JAP_attack days=120  }}
 		}
 	}
 	focus = {
@@ -1879,7 +1929,9 @@ create_field_marshal = {
 			#	factor = 1
 			#}
 		completion_reward = {
-		
+		 every_state = {
+				limit={OR={state=21 state=735 state=115 state=156 state=117 }}
+				add_dynamic_modifier = { modifier = JAP_attack days=120  }}
 		}
 	}
 	focus = {
@@ -1893,12 +1945,22 @@ create_field_marshal = {
 		x = 0
 		y = 3
 		relative_position_id = USA_war_plan_black
-		cost = 2
+		cost = 1
 		#ai_will_do = {
 			#	factor = 1
 			#}
 		completion_reward = {
-
+         add_timed_idea={idea= USA_overlord days=60}
+		hidden_effect ={
+		ENG = add_timed_idea={idea= USA_overlord days=60}
+		FRA = add_timed_idea={idea= USA_overlord days=60}
+		SAF = add_timed_idea={idea= USA_overlord days=60}
+		CAN = add_timed_idea={idea= USA_overlord days=60}
+		NZL = add_timed_idea={idea= USA_overlord days=60}
+		AST = add_timed_idea={idea= USA_overlord days=60}
+		RAJ = add_timed_idea={idea= USA_overlord days=60}
+		
+		}
 		}
 	}
 
