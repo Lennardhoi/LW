@@ -2,33 +2,38 @@
 state={
 	id=192
 	name="STATE_192"
-	manpower = 1469986
-
-	state_category = city
 
 	history={
 		owner = SOV
 		victory_points = {
-			11670 10
+			11670 10 
 		}
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
 			air_base = 5
-			11670 ={
+			11670 = {
 				naval_base = 3
 				coastal_bunker = 1
+
 			}
+
 		}
 		add_core_of = SOV
 		1939.1.1 = {
 			buildings = {
 				industrial_complex = 2
+
 			}
+
 		}
+
 	}
 
 	provinces={
-		741 754 3575 3738 3757 9698 9714 11670 11703
+		741 754 3575 3738 3757 9698 9714 11670 11703 13261 13262 
 	}
+	manpower=1469986
+	buildings_max_level_factor=1.000
+	state_category=city
 }
