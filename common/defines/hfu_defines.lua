@@ -23,7 +23,7 @@ NDefines.NTechnology.MAX_SUBTECHS = 4
 NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 6
 NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 300
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 100
-NDefines.NGame.GAME_SPEED_SECONDS = { 2.0, 0.5, 0.2, 0.05, 0.035  } -- game speeds for each level. Must be 5 entries with last one 0 for unbound
+NDefines.NGame.GAME_SPEED_SECONDS = { 2.0, 0.5, 0.2, 0.05, 0  } -- game speeds for each level. Must be 5 entries with last one 0 for unbound
  -- game speeds for each level. Must be 5 entries with last one 0 for unbound
 
 
@@ -206,6 +206,9 @@ NDefines.NBuildings.MAX_BUILDING_LEVELS=20
 NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.13 -- -0.12
 NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 100
 NDefines.NBuildings.NAVALBASE_REPAIR_MULT = 0.075
+NDefines.NNavy.RESOURCE_EXPORT_PRIORITY = 3 --swapped prio so imports go first
+NDefines.NNavy.RESOURCE_LENDLEASE_PRIORITY = 3
+NDefines.NNavy.RESOURCE_ORIGIN_PRIORITY = 3
 -------------------------------------
 --Combat 
 
@@ -275,17 +278,34 @@ NDefines.NNavy.ANTI_AIR_TARGETTING_TO_CHANCE = 0.1				--Vanilla 0,2
 NDefines.NNavy.ANTI_AIR_ATTACK_TO_AMOUNT = 0.005					-- Vanilla 0,1
 NDefines.NNavy.ANTI_AIR_TARGETING = 0.7 
                        
-NDefines.NMilitary.ANTI_AIR_TARGETTING_TO_CHANCE = 0.02
-NDefines.NMilitary.ANTI_AIR_ATTACK_TO_AMOUNT = 0.0001
-
+NDefines.NMilitary.ANTI_AIR_TARGETTING_TO_CHANCE = 0.00875 --linear NDefines.NAir.ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR*air_attack*thisdefine=casreduction
+NDefines.NMilitary.ANTI_AIR_ATTACK_TO_AMOUNT = 0
+NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane to create a mission
+		0.0, -- AIR_SUPERIORITY
+		0.0, -- CAS		
+		0.0, -- INTERCEPTION	
+		0.0, -- STRATEGIC_BOMBER
+		0.0, -- NAVAL_BOMBER	
+		0.0, -- DROP_NUKE		
+		0.0, -- PARADROP		
+		0.0, -- NAVAL_KAMIKAZE	
+        0.0, -- PORT_STRIKE		
+		0.0, -- AIR_SUPPLY		
+		0.0, -- TRAINING
+		0.0, -- NAVAL_MINES_PLANTING
+		0.0, -- NAVAL_MINES_SWEEPING
+		0.0, -- Mission Recon
+	}
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT = -0.3    --Vanilla 0.3
-NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT = -0.45          --Vanilla -0.35
+NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT = -0.35          --Vanilla -0.35 
+NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE_STEEPNESS = 50 --see plot in mod/resources
+NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE = 0.333
 NDefines.NAir.AIR_MORE_GROUND_CREWS_COST = 400.0
 NDefines.NAir.AIR_WING_COUNTRY_XP_FROM_TRAINING_FACTOR = 0.000 
 
 NDefines.NAir.ANTI_AIR_PLANE_DAMAGE_FACTOR = 0.5                --Vanilla 0.8	
-NDefines.NAir.ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR = 2.0
-NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.60	-- Vanilla 0,75
+NDefines.NAir.ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR = 1.0
+NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.70	-- Vanilla 0,75
 NDefines.NMilitary.UNIT_LEADER_MODIFIER_COOLDOWN_ON_GROUP_CHANGE = 1
 
 NDefines.NGame.MISSION_REMOVE_FROM_INTERFACE_DEFAULT=7
