@@ -146,57 +146,6 @@ debug_decisions = {
 	}
 }
 
-operations = {
-	sov_spawn = {
-		icon = eng_blackshirt_march
-		fire_only_once = yes
-		allowed = {tag = SOV}
-		available = {
-			has_war = no
-			date > 1941.1.1
-		}
-		visible = {
-		}
-		complete_effect = {
-			hidden_effect = {
-				division_template = {
-					name = "Filler"
-					regiments = {
-						infantry = { x = 0 y = 0 }
-					}
-				}
-				load_oob = "sov_spawn"
-			}
-			custom_effect_tooltip = "Spawns a 2w division in every province between Moscow and the Axis front. g
-			They would require 6.5M manpower and 650K guns to fully equip as 20w"
-		}
-	}
-	sov_spawn2 = {
-		icon = eng_blackshirt_march
-		fire_only_once = yes
-		allowed = {tag = SOV}
-		available = {
-			has_war = no
-			date > 1941.1.1
-		}
-		visible = {
-		}
-		complete_effect = {
-			hidden_effect = {
-				division_template = {
-					name = "Filler"
-					regiments = {
-						infantry = { x = 0 y = 0 }
-					}
-				}
-				load_oob = "sov_spawn"
-			}
-			custom_effect_tooltip = "Spawns a 2w division in every province between Moscow and the Axis front. g
-			They would require 6.5M manpower and 650K guns to fully equip as 20w"
-		}
-	}
-}
-
 SOV_mrp = {
 
 	SOV_prepare_finland = {
@@ -369,159 +318,6 @@ SOV_great_patriotic_war = {
 		}
 	}
 
-
-	#217 "Stalingrad"
-	SOV_hold_stalingrad = {
-
-		icon = generic_civil_support
-
-		allowed = {
-			original_tag = SOV
-		}
-
-		#Fail trigger
-		available = {
-			NOT = { controls_state = 217 }
-		}
-
-		days_mission_timeout = 180
-
-		fire_only_once = yes
-
-		is_good = yes
-
-		activation = {
-			has_war_with = GER
-			has_civil_war = no
-			217 = {
-				is_controlled_by = ROOT
-				OR = {
-					any_neighbor_state = {
-						CONTROLLER = {
-							has_war_with = ROOT
-						}
-						OWNER = { tag = ROOT }
-					}
-					NOT = { is_fully_controlled_by = ROOT }
-				}
-			}
-		}
-
-		#Success
-		timeout_effect = {
-			add_stability = 0.05
-			add_war_support = 0.05
-			217 = { save_event_target_as = state }
-			country_event = wtt_soviet_hold_city.1
-		}
-		#Fail
-		complete_effect = {
-			217 = { save_event_target_as = state }
-			country_event = wtt_soviet_hold_city.2
-		}
-	}
-
-	#195 "Leningrad"
-	SOV_hold_leningrad = {
-
-		icon = generic_civil_support
-
-		allowed = {
-			original_tag = SOV
-		}
-
-		#Fail trigger
-		available = {
-			NOT = { controls_state = 195 }
-		}
-
-		days_mission_timeout = 180
-
-		fire_only_once = yes
-
-		is_good = yes
-
-		activation = {
-			has_war_with = GER
-			has_civil_war = no
-			195 = {
-				is_controlled_by = ROOT
-				OR = {
-					any_neighbor_state = {
-						CONTROLLER = {
-							has_war_with = ROOT
-						}
-						OWNER = { tag = ROOT }
-					}
-					NOT = { is_fully_controlled_by = ROOT }
-				}
-			}
-		}
-
-		#Success
-		timeout_effect = {
-			add_stability = 0.05
-			add_war_support = 0.05
-			195 = { save_event_target_as = state }
-			country_event = wtt_soviet_hold_city.3
-		}
-		#Fail
-		complete_effect = {
-			195 = { save_event_target_as = state }
-			country_event = wtt_soviet_hold_city.4
-		}
-	}
-
-	#219 "Moscow"
-	SOV_hold_moscow = {
-
-		icon = generic_civil_support
-
-		allowed = {
-			original_tag = SOV
-		}
-
-		#Fail trigger
-		available = {
-			NOT = { controls_state = 219 }
-		}
-
-		days_mission_timeout = 180
-
-		fire_only_once = yes
-
-		is_good = yes
-
-		activation = {
-			has_war_with = GER
-			has_civil_war = no
-			219 = {
-				is_controlled_by = ROOT
-				OR = {
-					any_neighbor_state = {
-						CONTROLLER = {
-							has_war_with = ROOT
-						}
-						OWNER = { tag = ROOT }
-					}
-					NOT = { is_fully_controlled_by = ROOT }
-				}
-			}
-		}
-
-		#Success
-		timeout_effect = {
-			add_stability = 0.05
-			add_war_support = 0.05
-			219 = { save_event_target_as = state }
-			country_event = wtt_soviet_hold_city.5
-		}
-		#Fail
-		complete_effect = {
-			219 = { save_event_target_as = state }
-			country_event = wtt_soviet_hold_city.6
-		}
-	}
 	
 	SOV_hero_city_brzesc_litewski = {
 
@@ -579,6 +375,8 @@ SOV_great_patriotic_war = {
 					static_modifiers = { soviet_hero_city }
 					province = {
 						id = 11670
+						id = 13261
+						id = 13262
 					}
 				}
 			}
@@ -612,6 +410,10 @@ SOV_great_patriotic_war = {
 					static_modifiers = { soviet_hero_city }
 					province = {
 						id = 525
+						id = 13255
+						id = 13257
+						id = 13258
+						id = 13256
 					}
 				}
 			}
@@ -688,6 +490,7 @@ SOV_great_patriotic_war = {
 					static_modifiers = { soviet_hero_city }
 					province = {
 						id = 9288
+						id = 13267
 					}
 				}
 			}
@@ -754,6 +557,7 @@ SOV_great_patriotic_war = {
 					static_modifiers = { soviet_hero_city }
 					province = {
 						id = 418
+						id = 13266
 					}
 				}
 			}
@@ -822,6 +626,7 @@ SOV_great_patriotic_war = {
 						id = 3151
 						id = 149
 						id = 11091
+						id = 11278
 					}
 				}
 			}
@@ -857,6 +662,10 @@ SOV_great_patriotic_war = {
 						id = 3529
 						id = 11474
 						id = 498
+						id = 13247
+						id = 13248
+						id = 13250
+						id = 13249
 					}
 				}
 			}
@@ -890,6 +699,7 @@ SOV_great_patriotic_war = {
 					static_modifiers = { soviet_hero_city }
 					province = {
 						id = 11370
+						id = 13268
 					}
 				}
 			}
@@ -958,6 +768,7 @@ SOV_great_patriotic_war = {
 					static_modifiers = { soviet_hero_city }
 					province = {
 						id = 11241
+						id = 13270
 					}
 				}
 			}
@@ -966,6 +777,7 @@ SOV_great_patriotic_war = {
 					static_modifiers = { soviet_hero_city }
 					province = {
 						id = 306
+						id = 13269
 					}
 				}
 			}
@@ -999,6 +811,8 @@ SOV_great_patriotic_war = {
 					static_modifiers = { soviet_hero_city }
 					province = {
 						id = 3686
+						id = 13259
+						id = 13260
 					}
 				}
 			}
@@ -1032,6 +846,9 @@ SOV_great_patriotic_war = {
 					static_modifiers = { soviet_hero_city }
 					province = {
 						id = 9417
+						id = 13265
+						id = 13264
+						id = 13263
 					}
 				}
 			}
@@ -1163,9 +980,11 @@ SOV_great_patriotic_war = {
 				add_province_modifier = {
 					static_modifiers = { soviet_hero_city }
 					province = {
-						id = 6414
+						id = 13253
+						id = 13254
 						id = 6380
-						id = 301
+						id = 13252
+						id = 13251
 					}
 				}
 			}
