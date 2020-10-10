@@ -36,7 +36,7 @@ NDefines.NTrade.BASE_LAND_TRADE_RANGE = 350
 ---------------------------------------------------------------
 NDefines.NAir.AIR_WING_MAX_SIZE = 1600                            -- this can be halved 4 times into 100 stacks (very convinient), up from 1600 | 
 NDefines.NAir.AIR_DEPLOYMENT_DAYS = 0                              -- Down from 3 | Makes AC player much more responsive
-
+NDefines.NAir.AIR_WING_BOMB_DAMAGE_FACTOR = 5
 ----------------------------------------------------------------------------------------------------------------------------
 NDefines.NDiplomacy.NUM_DAYS_TO_ENABLE_KICKING_NEW_MEMBERS_OF_FACTION = 14	-- down from 90 | Number of days before being able to kick a new member of faction 
 NDefines.NDiplomacy.NUM_DAYS_TO_ENABLE_REINVITE_KICKED_NATIONS = 14		-- down from 90 | Number of days before being able to re invite a kicked 
@@ -240,6 +240,8 @@ NDefines.NCountry.SUPPLY_PATH_MAX_DISTANCE = 8
 
 NDefines.NMilitary.EXPERIENCE_LOSS_FACTOR = 0.01
 NDefines.NMilitary.SLOWEST_SPEED = 2 --back to 4
+NDefines.NMilitary.REINFORCEMENT_REQUEST_DAYS_FREQUENCY = 10
+NDefines.NMilitary.REINFORCEMENT_REQUEST_MAX_WAITING_DAYS = 20
 NDefines.NMilitary.TRAINING_ATTRITION = 0.01
 NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 9999
 NDefines.NMilitary.MAX_AIR_EXPERIENCE = 9999

@@ -388,7 +388,7 @@ political_actions = {
 		}
 
 		visible = {
-
+		has_active_mission = draft_dodging_mission
 		}
 		
 		modifier = {
@@ -778,14 +778,14 @@ political_actions = {
 		}
 
 		modifier = {
-			stability_weekly = 0.005
+			stability_weekly = 0.0025
 			communism_drift = -0.01
 			fascism_drift = 0.03
 			democratic_drift = -0.01
 			neutrality_drift = -0.01
 		}
 
-		days_remove = 360
+		days_remove = 120
 		cost = 50
 
 		ai_will_do = {
@@ -814,14 +814,14 @@ political_actions = {
 		}
 
 		modifier = {
-			stability_weekly = 0.005
+			stability_weekly = 0.0025
 			communism_drift = -0.01
 			fascism_drift = -0.01
 			democratic_drift = 0.03
 			neutrality_drift = -0.01
 		}
 
-		days_remove = 360
+		days_remove = 120
 		cost = 50
 
 		ai_will_do = {
@@ -840,14 +840,14 @@ political_actions = {
 		}
 
 		modifier = {
-			stability_weekly = 0.005
+			stability_weekly = 0.0025
 			communism_drift = 0.03
 			fascism_drift = -0.01
 			democratic_drift = -0.01
 			neutrality_drift = -0.01
 		}
 
-		days_remove = 360
+		days_remove = 120
 		cost = 50
 
 		ai_will_do = {

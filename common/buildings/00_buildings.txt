@@ -17,6 +17,7 @@ buildings = {
 	}
 
 	arms_factory = {
+		damage_factor = 3
 		show_on_map = 6
 		base_cost = 7200
 		base_cost_conversion = 4400
@@ -29,6 +30,7 @@ buildings = {
 	}
 
 	industrial_complex = {
+		damage_factor = 3
 		show_on_map = 6
 		base_cost = 10800
 		base_cost_conversion = 9900
@@ -41,6 +43,7 @@ buildings = {
 	}
 
 	air_base = {
+		damage_factor = 0.05
 		show_on_map = 1
 		base_cost = 700
 		icon_frame = 5
@@ -51,6 +54,7 @@ buildings = {
 	}
 
 	naval_base = {
+		damage_factor = 0.05
 		show_on_map = 1
 		show_on_map_meshes = 3
 		always_shown = yes
@@ -128,7 +132,7 @@ buildings = {
 		shares_slots = no
 		value = 5
 		infrastructure_construction_effect = yes
-		damage_factor = 0.5 
+		damage_factor = 0.05 
 		show_modifier = yes
 		fuel_gain_from_states = 6.5 #per hour
 	}

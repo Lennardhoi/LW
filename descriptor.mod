@@ -1,4 +1,5 @@
 version="1.9.3"
+picture="thumbnail.png"
 tags={
 	"Balance"
 }
@@ -22,3 +23,4 @@ replace_path="common/units/names_ships"
 replace_path="events"
 name="LW"
 supported_version="1.9.3"
+remote_file_id="2244725577"
