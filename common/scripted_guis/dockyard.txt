@@ -12,16 +12,19 @@ scripted_gui = {
 
 		effects = {
 			remove_dockyard_click = {
-				damage_building = {
-    type = infrastructure
-    damage = 1
-}
+				remove_building = {
+					type = dockyard
+					level = 1
+				}
 			}
 		}
 
 		triggers = {
 
-			
+			remove_dockyard_click_enabled = {
+				is_owned_and_controlled_by = ROOT
+				dockyard > 0
+			}
 
 
 		}
