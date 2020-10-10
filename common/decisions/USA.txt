@@ -1,5 +1,77 @@
 war_measures = {
+	USA_support_raf = {
+		icon = generic_operation
 
+
+		available = {
+			NOT= { has_decision=USA_support_sov }	
+			has_war=yes
+			has_equipment = {
+				fighter_equipment_alt > 599
+			}
+			has_deployed_air_force_size = { 
+			size> 999
+			type=fighter
+			}
+						
+			
+
+		}
+
+		allowed = {
+			tag = USA
+		}
+
+
+		days_remove = 90
+		cost = 0
+
+		visible = {
+			always=yes
+		}
+		fire_only_once = no
+		complete_effect = {
+			ENG={add_equipment_to_stockpile={type = fighter_equipment amount = 500 }}
+			add_equipment_to_stockpile={type = fighter_equipment_alt amount = -600 }
+
+		}
+	}
+	USA_support_sov = {
+		icon = generic_operation
+
+
+		available = {
+			has_war=yes
+			has_equipment = {
+				fighter_equipment_alt > 599
+			}
+			has_deployed_air_force_size = { 
+			size> 999
+			type=fighter
+			}
+		NOT= { has_decision=USA_support_raf }				
+			
+
+		}
+
+		allowed = {
+			tag = USA
+		}
+
+
+		days_remove = 90
+		cost = 0
+
+		visible = {
+			always=yes
+		}
+		fire_only_once = no
+		complete_effect = {
+			SOV={add_equipment_to_stockpile={type = fighter_equipment amount = 500 }}
+			add_equipment_to_stockpile={type = fighter_equipment_alt amount = -600 }
+
+		}
+	}
 	USA_homeland_defense = {
 
 		icon = generic_prepare_civil_war
