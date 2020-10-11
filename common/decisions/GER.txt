@@ -111,6 +111,9 @@ operations = {
 				add_dynamic_modifier = { modifier = Ostarbeiter scope=GER }
 			}
 			hidden_effect={
+				every_country={
+					add_ideas = speed3
+				}
 				ROM = {
 					add_timed_idea = { idea = GER_barbarossa_inf days = 175 }
 				}
