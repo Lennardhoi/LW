@@ -2271,7 +2271,9 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			give_resource_rights = { receiver = JAP state = 655 }
+			SOV = {
+				give_resource_rights = { receiver = JAP state = 655 }
+			}
 			add_timed_idea={idea=JAP_non_aggression_pact_with_sov days=730}
 		}
 	}
