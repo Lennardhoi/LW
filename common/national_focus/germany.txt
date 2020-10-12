@@ -30,16 +30,18 @@ focus_tree = {
 			factor = 12
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+		
 		completion_reward = {
-			add_tech_bonus = {
+		
+		add_tech_bonus = {
 				name = GER_four_year_plan
 				bonus = 1.0
 				uses = 2
 				category = industry
 			}
-			#add_ideas = schacht
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = hjalmar_schacht
+			
 		}
 	}
 
@@ -64,7 +66,7 @@ focus_tree = {
 			51 = { set_demilitarized_zone = no }
 			add_political_power = 120
 			add_war_support = 0.1
-			army_experience = 5
+			army_experience = 100
 			add_named_threat = { threat = 5 name = GER_rhineland
 				hidden_effect = {
 					news_event = { hours = 6 id = news.25 }
@@ -589,7 +591,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = GER_four_year_plan
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -606,7 +608,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = GER_grosraumwirtschaft
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -615,45 +617,26 @@ focus_tree = {
 		}
 
 		bypass = {
-			HUN = {
-				OR = {
-					exists = no
-					is_subject = yes
-					AND = {
-						is_subject = no
-						is_in_faction_with = ROOT
-					}
-				}
-			}
+			
 		}
 
 		completion_reward = {
-			if = {
-				limit = {
-					has_government = fascism
-				}
+			
 				HUN = {
-					add_timed_idea = { idea = GER_align_hungary days = 730 }
+					add_timed_idea = { idea = GER_align_hungary days = 60 }
 				}
-			}
-
-			if = {
-				limit = {
-					has_government = fascism
-				}
+			
+			
 				ROM = {
-					add_timed_idea = { idea = GER_align_hungary days = 730 }
+					add_timed_idea = { idea = GER_align_hungary days = 60 }
 				}
-			}
+			
 
-			if = {
-				limit = {
-					has_government = fascism
-				}
+			
 				BUL = {
-					add_timed_idea = { idea = GER_align_hungary days = 730 }
+					add_timed_idea = { idea = GER_align_hungary days = 60 }
 				}
-			}
+			
 
 		}
 	}
@@ -1032,7 +1015,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = GER_long_range_escorts
-				bonus = 1.0
+				bonus = 2.0
 				uses = 2
 				category = cat_heavy_fighter
 			}
@@ -1244,6 +1227,13 @@ focus_tree = {
 				uses = 1
 				name = tank_innovation_bonus
 				technology = improved_medium_tank
+
+			}
+			add_tech_bonus = {
+				bonus = 1.2
+				uses = 1
+				name = tank_innovation_bonus
+				technology = improved_heavy_tank
 
 			}
 		}

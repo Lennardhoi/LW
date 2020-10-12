@@ -91,8 +91,8 @@ sub_units = {
 
 
 		marsh = {
-			attack = 0.05
-			defence = 0.05
+			attack = 0.1
+			defence = 0.1
 			movement = 0.1
 		}
 		forest = {
@@ -196,18 +196,14 @@ sub_units = {
 		weight = 0.5
 		supply_consumption = 0.07
 		breakthrough = 0.36
-
 		need = {
 			infantry_equipment = 250
 		}
-
-
-
 		urban = {
-			attack = 0.1
+			attack = 0.2
 			movement = 0.1
 			defence = 0.1
-			#Please dont use these to guard coastal urban tiles or I will take this away
+			
 		}
 		fort = {
 			attack = 0.2
