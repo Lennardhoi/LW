@@ -2499,7 +2499,7 @@ technologies = {
 		xp_research_type = army
 		xp_research_cost = 75
 		xp_research_bonus = 1.00
-		supply_consumption_factor = -0.20
+		supply_consumption_factor = -0.10
 
 
 		enable_tactic = tactic_relentless_assault
@@ -2811,11 +2811,18 @@ technologies = {
 		category_army = {
 			default_morale = 0.05
 		}
-		motorized_rocket_brigade = {
-			max_organisation = 50
-			default_morale = 0.1
-			max_strength = 20
-			combat_width = -1
+		motorized = {
+			need = {
+			motorized_rocket_equipment = 10	
+			}
+		}
+		mechanized = {
+			need = {
+			motorized_rocket_equipment = 10	
+			}
+		}
+		on_research_complete= {
+		custom_effect_tooltip = continuous_offensive_tt
 		}
 
 		army_fuel_capacity_factor = 1
