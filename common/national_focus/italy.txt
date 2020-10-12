@@ -714,7 +714,7 @@ focus_tree = {
 
 		x = -2
 		y = 1
-		cost = 10
+		cost = 5
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 
 		completion_reward = {
@@ -1864,7 +1864,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = ITA_german_air_cooperation
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1907,7 +1907,7 @@ focus_tree = {
 		y = 1
 		available = {date >1941.4.1}
 		relative_position_id = ITA_air_innovation_2
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -2215,8 +2215,16 @@ focus_tree = {
 
 			add_stability = 0.075
 			GER = {
-				country_event = { id = italy.5 days = 1 }
-				custom_effect_tooltip = needs_approval
+				add_tech_bonus = {
+					bonus = 1.0
+					uses = 1
+					technology = tech_mountaineers2
+				}
+				add_tech_bonus = {
+					bonus = 1.0
+					uses = 2
+					category = naval_doctrine
+				}
 			}
 			add_to_tech_sharing_group = axis_research
 
@@ -2226,13 +2234,18 @@ focus_tree = {
 				uses = 2
 				category = synth_resources
 			}
+		
+		add_tech_bonus = {
+			name = armor_bonus
+			bonus = 1.0
+			uses = 2
+			category = armor
+		}
+		ITA = {
+			add_opinion_modifier = { target = GER modifier = ger_ita_tech_treaty }
+		}
 			# Balance research bonus to 2 techs in armor, also in event
-			add_tech_bonus = {
-				name = armor_bonus
-				bonus = 1.0
-				uses = 1
-				category = armor
-			}
+			
 
 			modify_building_resources = {
 				building = synthetic_refinery
