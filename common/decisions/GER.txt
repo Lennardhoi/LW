@@ -102,14 +102,16 @@ operations = {
 		available = { has_completed_focus = GER_ussr_war_goal date > 1941.06.21	}
 		cost = 0
 		complete_effect = {
-
+	
 
 
 			SOV={declare_war_on_enemy_faction =yes}
 			GER = {
 				add_timed_idea = { idea = GER_barbarossa days = 175 }
 				add_dynamic_modifier = { modifier = Ostarbeiter scope=GER }
+				every_country={set_country_flag = big_event_custom_barbarossa}
 			}
+			
 			hidden_effect={
 				every_country={
 					add_ideas = speed3

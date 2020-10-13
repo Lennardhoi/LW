@@ -36,7 +36,7 @@ NDefines.NTrade.BASE_LAND_TRADE_RANGE = 350
 ---------------------------------------------------------------
 NDefines.NAir.AIR_WING_MAX_SIZE = 1600                            -- this can be halved 4 times into 100 stacks (very convinient), up from 1600 | 
 NDefines.NAir.AIR_DEPLOYMENT_DAYS = 0                              -- Down from 3 | Makes AC player much more responsive
-NDefines.NAir.AIR_WING_BOMB_DAMAGE_FACTOR = 5
+NDefines.NAir.AIR_WING_BOMB_DAMAGE_FACTOR = 2 --controlls strat bombing damage was too strong on 5 but might need to be high to actually damage something
 ----------------------------------------------------------------------------------------------------------------------------
 NDefines.NDiplomacy.NUM_DAYS_TO_ENABLE_KICKING_NEW_MEMBERS_OF_FACTION = 14	-- down from 90 | Number of days before being able to kick a new member of faction 
 NDefines.NDiplomacy.NUM_DAYS_TO_ENABLE_REINVITE_KICKED_NATIONS = 14		-- down from 90 | Number of days before being able to re invite a kicked 
@@ -66,7 +66,6 @@ NDefines.NCountry.NUM_DAYS_TO_FULLY_DELETE_STOCKPILED_EQUIPMENT = 999
 
 NDefines.NCountry.GIE_ESCAPING_DIVISIONS_TRANSFER_DAYS = 1 			--  WAS 30 | days to transfer escaping divisions to host nation
 NDefines.NCountry.GIE_CONVOY_ON_CREATION = 50						-- WAS 10
-NDefines.NCountry.BASE_FUEL_GAIN = 30.0							-- base amount of fuel gained hourly, independent of excess oil
 
 NDefines.NCountry.COUNTRY_SCORE_MULTIPLIER = 0				-- Weight of the country score.
 NDefines.NCountry.ARMY_SCORE_MULTIPLIER = 0					-- Based on number of armies.
@@ -237,7 +236,13 @@ NDefines.NCountry.SUPPLY_FROM_DAMAGED_INFRA = 0.2
 NDefines.NCountry.SUPPLY_PATH_MAX_DISTANCE = 8
 
 --NDefines.NCountry.SUPPLY_BONUS_FROM_INPUT = 0 --not sure yet
-
+--Halving overall fuel
+NDefines.NMilitary.ARMY_FUEL_COST_MULT = 0.2 --0.5
+NDefines.NAir.FUEL_COST_MULT = 0.14 --0.35
+NDefines.NNavy.FUEL_COST_MULT = 0.04 --0.1
+NDefines.NCountry.BASE_FUEL_GAIN = 12		--was 30 before					-- base amount of fuel gained hourly, independent of excess oil
+NDefines.NCountry.BASE_FUEL_GAIN_PER_OIL = 0.8 --vanilla 2
+NDefines.NCountry.BASE_FUEL_CAPACITY = 50000 --vanilla same
 NDefines.NMilitary.EXPERIENCE_LOSS_FACTOR = 0.01
 NDefines.NMilitary.SLOWEST_SPEED = 2 --back to 4
 NDefines.NMilitary.REINFORCEMENT_REQUEST_DAYS_FREQUENCY = 10

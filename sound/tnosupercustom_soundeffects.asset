@@ -1,0 +1,22 @@
+soundeffect = { # SOUND EFFECTS, THE GUI USES THIS AND THIS USES SOUNDS, DO NOT MISTAKE ONE FOR THE # OTHER
+	name = barbarossa_bigevent
+	loop = no
+	sounds = {
+		sound = barbarossa_bigevent_sound
+		}
+	is3d = no # do not use this shit, it caused me to only hear on the left ear
+	max_audible = 1 #no idea what this is, but keep it as is so you dont have problems
+	max_audible_behaviour = fail #same as above
+	volume = 1.5
+}
+soundeffect = { 
+	name = berlin_bigevent
+	loop = no
+	sounds = {
+		sound = berlin_bigevent_sound
+		}
+	is3d = no # do not use this shit, it caused me to only hear on the left ear
+	max_audible = 1 #no idea what this is, but keep it as is so you dont have problems
+	max_audible_behaviour = fail #same as above
+	volume = 1.5
+}
