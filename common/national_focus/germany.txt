@@ -1754,7 +1754,7 @@ focus_tree = {
 				technology = mechanised_infantry2
 			}
 			add_tech_bonus = {
-				bonus = 1
+				bonus = 1.5
 				uses = 1
 				name = mech_army_bonus
 				technology = advanced_medium_tank
@@ -2101,13 +2101,14 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = GER_summon_fritz_todt
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
 			date > 1940.9.1
+			NOT= {has_war_with = SOV }
 		}
 
 		completion_reward = {
@@ -2123,7 +2124,7 @@ focus_tree = {
 					}}
 
 
-			add_ideas = GER_atlantikwall_idea
+			add_timed_idea = {idea=GER_atlantikwall_idea days=30}
 			custom_effect_tooltip="Adds a Coastal Fort to every coastal provinces that have at least one coastal fort."
 			99 = {
 				add_building_construction = {
@@ -2887,7 +2888,6 @@ focus_tree = {
 			hidden_effect = {
 				set_global_flag = form_greater_german_reich_flag
 			}
-			add_research_slot = 1
 			army_experience = 10
 			add_political_power = 75
 			add_war_support = 0.1
@@ -3518,7 +3518,7 @@ focus_tree = {
 
 		available_if_capitulated = no
 		completion_reward = {
-			add_timed_idea={ idea = GER_barbarossa_3 days = 50}
+			add_timed_idea={ idea = GER_barbarossa_3 days = 60}
 			hidden_effect = {
 				ROM = {add_timed_idea={ idea = GER_barbarossa_3 days = 30}}
 				HUN = {add_timed_idea={ idea = GER_barbarossa_3 days = 30}}
