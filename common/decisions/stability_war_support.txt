@@ -57,6 +57,7 @@ crisis = {
 			NOT = { has_country_flag = no_strikes_please }
 			has_stability < 0.5
 			date > 1937.6.1
+			is_ai = no
 		}
 
 		modifier = {
@@ -81,7 +82,6 @@ demobilization = {
 		allowed = {
 			OR = {
 				tag = SOV
-				tag = SIA
 				tag = FRA
 				tag = JAP
 				tag = RAJ
@@ -95,12 +95,9 @@ demobilization = {
 				tag = GER
 				tag = ITA
 				tag = ENG
-				tag = IRE
 				tag = SAF
-				tag = FIN
 				tag = USA
 				tag = CAN
-				tag = EFR
 			}
 		}
 		icon = generic_industry
@@ -182,7 +179,6 @@ demobilization = {
 		allowed = {
 			OR = {
 				tag = SOV
-				tag = SIA
 				tag = FRA
 				tag = JAP
 				tag = RAJ
@@ -196,12 +192,11 @@ demobilization = {
 				tag = GER
 				tag = ITA
 				tag = ENG
-				tag = IRE
 				tag = SAF
-				tag = FIN
+
 				tag = USA
 				tag = CAN
-				tag = EFR
+				
 			}
 		}
 		activation = {
@@ -330,7 +325,6 @@ demobilization = {
 		allowed = {
 			OR = {
 				tag = SOV
-				tag = SIA
 				tag = FRA
 				tag = JAP
 				tag = RAJ
@@ -344,12 +338,10 @@ demobilization = {
 				tag = GER
 				tag = ITA
 				tag = ENG
-				tag = IRE
 				tag = SAF
-				tag = FIN
 				tag = USA
 				tag = CAN
-				tag = EFR
+				
 			}
 		}
 
@@ -405,7 +397,6 @@ demobilization = {
 		allowed = {
 			OR = {
 				tag = SOV
-				tag = SIA
 				tag = FRA
 				tag = JAP
 				tag = RAJ
@@ -419,12 +410,9 @@ demobilization = {
 				tag = GER
 				tag = ITA
 				tag = ENG
-				tag = IRE
 				tag = SAF
-				tag = FIN
 				tag = USA
 				tag = CAN
-				tag = EFR
 			}
 		}
 		activation = {
