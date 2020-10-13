@@ -5,7 +5,7 @@ scripted_gui = {
 		window_name = "TNO_SG_big_event_barbarossa_custom_window"
 
 		visible = {
-			has_global_flag = big_event_custom_barbarossa ### this country flag triggers the #superevent
+			has_country_flag = big_event_custom_barbarossa ### this country flag triggers the #superevent
 		}
 	}
 
@@ -14,14 +14,14 @@ scripted_gui = {
 		window_name = "TNO_SG_big_event_frame_barbarossa_custom"
 
 		visible = {
-			has_global_flag = big_event_custom_barbarossa
+			has_country_flag = big_event_custom_barbarossa
 		}
 
 		effects = {
 			Option_click = {
-				clr_global_flag = big_event_custom_barbarossa ### this disables the country flag #that fires the superevent (so the superevent actually goes away)
+				clr_country_flag = big_event_custom_barbarossa ### this disables the country flag #that fires the superevent (so the superevent actually goes away)
 			}
 		}
 	}
 }
-#set_global_flag big_event_custom_barbarossa ## quick command for testing
+#set_country_flag big_event_custom_barbarossa ## quick command for testing

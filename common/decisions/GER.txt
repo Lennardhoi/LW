@@ -109,8 +109,9 @@ operations = {
 			GER = {
 				add_timed_idea = { idea = GER_barbarossa days = 175 }
 				add_dynamic_modifier = { modifier = Ostarbeiter scope=GER }
-				set_global_flag = big_event_custom_barbarossa
+				every_country={set_country_flag = big_event_custom_barbarossa}
 			}
+			
 			hidden_effect={
 				every_country={
 					add_ideas = speed3
