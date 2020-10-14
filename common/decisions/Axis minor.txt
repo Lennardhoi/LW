@@ -1,0 +1,58 @@
+#Category only allowed for GER
+operations = {
+
+
+
+	
+	fall_barb_inf= {
+		icon = ger_reichskommissariats
+		fire_only_once = no
+		allowed = { 
+			OR={
+				tag = HUN
+				tag = SPR
+				tag = BUL
+				tag = ROM
+			}
+		}
+		available = {  
+		custom_trigger_tooltip= {
+			tooltip="Infantry Barbarossa buff not selected"
+			NOT={has_country_flag=inf_barb_buff}	
+		}}
+		visible = {  has_war=yes NOT={has_war_with=SOV}	}
+		cost = 0
+		complete_effect = {
+			custom_effect_tooltip="You will get the infantry Barbarossa buff ONCE Germany declares war on the Soviet Union."
+			effect_tooltip= {add_ideas = GER_barbarossa_inf}
+			set_country_flag = inf_barb_buff
+			clr_country_flag = armor_barb_buff
+			}
+	}
+	fall_barb_armor = {
+		icon = ger_reichskommissariats
+		fire_only_once = no
+		allowed = { 
+			OR={
+				tag = HUN
+				tag = SPR
+				tag = BUL
+				tag = ROM
+			}
+		}
+		available = {  
+		custom_trigger_tooltip= {
+			tooltip="Armor Barbarossa buff not selected"
+			NOT={has_country_flag=armor_barb_buff}	
+		}}
+		visible = {  has_war=yes NOT={has_war_with=SOV}	}
+		cost = 0
+		complete_effect = {
+			custom_effect_tooltip="You will get the following armor Barbarossa buff ONCE Germany declares war on the Soviet Union."
+			effect_tooltip= {add_ideas = GER_barbarossa}
+			clr_country_flag = inf_barb_buff
+			set_country_flag = armor_barb_buff
+			}
+	}
+
+}	

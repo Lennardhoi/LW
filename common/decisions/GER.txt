@@ -116,21 +116,55 @@ operations = {
 				every_country={
 					add_ideas = speed3
 				}
+			
 				ROM = {
+					if = { limit= { has_country_flag=inf_barb_buff } 
 					add_timed_idea = { idea = GER_barbarossa_inf days = 175 }
+					}
+					else_if = { limit= { has_country_flag=armor_barb_buff } 
+					add_timed_idea = { idea = GER_barbarossa days = 175 }
+					}
+					else={
+					add_timed_idea = { idea = GER_barbarossa_inf days = 175 }
+					}
 				}
 				HUN = {
+					if = { limit= { has_country_flag=inf_barb_buff } 
+					add_timed_idea = { idea = GER_barbarossa_inf days = 175 }
+					}
+					else_if = { limit= { has_country_flag=armor_barb_buff } 
 					add_timed_idea = { idea = GER_barbarossa days = 175 }
+					}
+					else={
+					add_timed_idea = { idea = GER_barbarossa days = 175 }
+					}
 				}
 				BUL = {
+					if = { limit= { has_country_flag=inf_barb_buff } 
 					add_timed_idea = { idea = GER_barbarossa_inf days = 175 }
+					}
+					else_if = { limit= { has_country_flag=armor_barb_buff } 
+					add_timed_idea = { idea = GER_barbarossa days = 175 }
+					}
+					else={
+					add_timed_idea = { idea = GER_barbarossa_inf days = 175 }
+					}
 				}
 
 				SPR = {
+					if = { limit= { has_country_flag=inf_barb_buff } 
+					add_timed_idea = { idea = GER_barbarossa_inf days = 175 }
+					}
+					else_if = { limit= { has_country_flag=armor_barb_buff } 
 					add_timed_idea = { idea = GER_barbarossa days = 175 }
+					}
+					else={
+					add_timed_idea = { idea = GER_barbarossa days = 175 }
+					}
 				}
 
-				}}
+				}
+				}
 	}
 
 	GER_iran = {
@@ -264,6 +298,7 @@ operations = {
 		days_remove=30
 		remove_effect = {
 			SWE = {
+				remove_resource_rights = 666
 				give_resource_rights = { receiver = GER state = 666 }
 
 			}

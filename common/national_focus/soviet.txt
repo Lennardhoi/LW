@@ -495,11 +495,12 @@ focus_tree = {
 					anti_tank = {x = 0 y = 5}
 				}
 			}
+			
 			219 = {
 				for_loop_effect = {
 					end = 20
 					create_unit = {
-						division = "name = \"Red Guards\" division_template = \"Red Guards\" start_experience_factor = 2.0"
+						division = "name = \"Red Guards\" division_template = \"Red Guards\" start_experience_factor = 0.3"
 						owner = SOV
 					}
 					}}
@@ -654,7 +655,7 @@ focus_tree = {
 		}
 
 		available = {
-			date>1942.1.1
+			date>1942.6.1
 
 		}
 
