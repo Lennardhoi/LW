@@ -3,7 +3,7 @@ scripted_gui = {
 	speeches_checkbox_ui= {
 		context_type = player_category
 		window_name = "speeches_checkbox_window"
-		parent_window_token = decision_tab
+		parent_window_name = "event_header"
 		visible = {
 			always=yes
 		}
@@ -35,7 +35,7 @@ scripted_gui = {
 	super_events_ui= {
 		context_type = player_category
 		window_name = "super_events_window"
-		parent_window_token = decision_tab
+		parent_window_name = "event_header"
 		visible = {
 			always=yes
 		}

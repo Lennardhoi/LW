@@ -1365,7 +1365,7 @@ technologies = {
 		category_mobile_infantry= {
 			max_organisation = 15
 		}
-		
+
 		#combat advantage when air superior
 		army_bonus_air_superiority_factor = 0.20
 
@@ -2450,7 +2450,12 @@ technologies = {
 		xp_research_type = army
 		xp_research_cost = 75
 		xp_research_bonus = 1.00
-		max_dig_in = 5
+		category_all_infantry = {
+			soft_attack = -0.1
+		}
+		engineer = {
+			entrenchment  = 5
+		}
 
 		category_light_infantry = {
 			max_organisation = 5
@@ -2552,9 +2557,7 @@ technologies = {
 		armored_car = {
 			max_organisation = 2
 		}
-		category_all_armor = {
-			default_morale = 0.1
-		}
+
 		category_mobile_infantry = {
 			defense = 0.10
 		}
@@ -2813,16 +2816,16 @@ technologies = {
 		}
 		motorized = {
 			need = {
-			motorized_rocket_equipment = 10	
+				motorized_rocket_equipment = 10
 			}
 		}
 		mechanized = {
 			need = {
-			motorized_rocket_equipment = 10	
+				motorized_rocket_equipment = 10
 			}
 		}
 		on_research_complete= {
-		custom_effect_tooltip = continuous_offensive_tt
+			custom_effect_tooltip = continuous_offensive_tt
 		}
 
 		army_fuel_capacity_factor = 1
@@ -2983,7 +2986,19 @@ technologies = {
 			max_organisation = 10
 		}
 
-		category_support_battalions = {
+		field_hospital = {
+			need = {support_equipment = -5}
+		}
+		engineer = {
+			need = {support_equipment = -5}
+		}
+		category_recon = {
+			need = {support_equipment = -5}
+		}
+		signal_company = {
+			need = {support_equipment = -5}
+		}
+		maintenance_company = {
 			need = {support_equipment = -5}
 		}
 		on_research_complete = {
