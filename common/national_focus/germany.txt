@@ -2417,13 +2417,13 @@ focus_tree = {
 
 
 		available = {
-			Date > 1942.1.1
+			
 
 		}
 		x = 2
 		y = 1
 
-		cost = 5
+		cost = 3
 		ai_will_do = {
 			factor = 1
 		}
@@ -2448,7 +2448,7 @@ focus_tree = {
 		relative_position_id = GER_totaler_krieg
 		x = 0
 		y = 2
-		cost = 5
+		cost = 3
 		available = {
 			SOV = {
 				surrender_progress < 0.05
@@ -2504,7 +2504,7 @@ focus_tree = {
 		relative_position_id = GER_albert_speer
 		x = -2
 		y = 1
-		cost = 5
+		cost = 3
 		available = {
 
 		}
@@ -2525,13 +2525,9 @@ focus_tree = {
 		relative_position_id = GER_u_verlagerung
 		x = 0
 		y = 2
-		cost = 5
-		cost = 5
+		cost =3
 		available = {
-			or = {	has_war_with = SOV
-
-				date > 1941.1.1
-			}
+			
 
 		}
 
@@ -2562,7 +2558,7 @@ focus_tree = {
 		relative_position_id = GER_albert_speer
 		x = 1
 		y = 2
-		cost = 5
+		cost = 3
 		available = {
 		}
 		ai_will_do = {
@@ -2581,7 +2577,7 @@ focus_tree = {
 		relative_position_id = GER_albert_speer
 		x = -1
 		y = 2
-		cost = 5
+		cost = 3
 		available = {
 
 		}
@@ -2798,15 +2794,15 @@ focus_tree = {
 
 	focus = {
 		id = GER_endsieg
-		icon = GFX_praisegermania
-		prerequisite = { focus = GER_mineraloelsicherungsplan }
-		prerequisite = { focus = GER_alpenfestung }
+		icon = GFX_GER_endsieg
+		prerequisite = { focus = GER_mineraloelsicherungsplan focus = GER_volkssturm }
+		prerequisite = { focus = GER_alpenfestung  }
 		prerequisite = { focus = GER_nero }
-		prerequisite = { focus = GER_volkssturm }
+
 		relative_position_id = GER_mineraloelsicherungsplan
 		x = 2
 		y = 1
-		cost = 5
+		cost = 2
 		available = {
 
 
@@ -2825,13 +2821,8 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = 30000
-				producer = GER
-			}
-			add_ideas = all_adults_serve
-			add_ideas = tot_economic_mobilisation
+		
+			
 		}
 	}
 
