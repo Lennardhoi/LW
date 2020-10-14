@@ -802,7 +802,7 @@ focus_tree = {
 		# relative_position_id = ITA_mili
 		# available = {
 
-		# }
+			# }
 
 		# x = 0
 		# y = 2
@@ -811,8 +811,8 @@ focus_tree = {
 
 		# completion_reward = {
 			# add_ideas = { FRA_global_investments }
+			# }
 		# }
-	# }
 
 	focus = {
 		id = ITA_moder
@@ -1184,7 +1184,7 @@ focus_tree = {
 		relative_position_id = ITA_highway
 		icon = GFX_focus_GER_summon_fritz_todt
 		available = {
-         date > 1938.04.1
+			date > 1938.04.1
 		}
 
 		x = 1
@@ -2242,18 +2242,18 @@ focus_tree = {
 				uses = 2
 				category = synth_resources
 			}
-		
-		add_tech_bonus = {
-			name = armor_bonus
-			bonus = 1.0
-			uses = 2
-			category = armor
-		}
-		ITA = {
-			add_opinion_modifier = { target = GER modifier = ger_ita_tech_treaty }
-		}
+
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 2
+				category = armor
+			}
+			ITA = {
+				add_opinion_modifier = { target = GER modifier = ger_ita_tech_treaty }
+			}
 			# Balance research bonus to 2 techs in armor, also in event
-			
+
 
 			modify_building_resources = {
 				building = synthetic_refinery
