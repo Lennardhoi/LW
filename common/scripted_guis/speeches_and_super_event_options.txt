@@ -1,0 +1,67 @@
+scripted_gui = {
+
+	speeches_checkbox_ui= {
+		context_type = player_category
+		window_name = "speeches_checkbox_window"
+		parent_window_token = decision_tab
+		visible = {
+			always=yes
+		}
+
+		effects = {
+			speeches_checkbox_click = {
+				if = {
+					limit = { ROOT = { NOT = { check_variable = { speeches_enabled > 0 } } } }
+					ROOT = { set_variable = { speeches_enabled = 2 } }
+				}
+				else = {
+					ROOT = { clear_variable = speeches_enabled }
+				}
+			}
+		}
+		triggers = {
+			speeches_checkbox_click_enabled = {
+				always = yes
+			}
+		}
+		properties = {
+			speeches_checkbox={
+				frame = speeches_enabled
+			}
+
+
+		}
+	}
+	super_events_ui= {
+		context_type = player_category
+		window_name = "super_events_window"
+		parent_window_token = decision_tab
+		visible = {
+			always=yes
+		}
+
+		effects = {
+			super_events_checkbox_click = {
+				if = {
+					limit = { ROOT = { NOT = { check_variable = { super_events_enabled > 0 } } } }
+					ROOT = { set_variable = { super_events_enabled = 2 } }
+				}
+				else = {
+					ROOT = { clear_variable = super_events_enabled }
+				}
+			}
+		}
+		triggers = {
+			super_events_checkbox_click_enabled = {
+				always = yes
+			}
+		}
+		properties = {
+			super_events_checkbox={
+				frame = super_events_enabled
+			}
+
+
+		}
+	}
+}
