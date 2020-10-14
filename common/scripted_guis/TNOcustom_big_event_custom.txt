@@ -5,7 +5,13 @@ scripted_gui = {
 		window_name = "TNO_SG_big_event_barbarossa_custom_window"
 
 		visible = {
-			has_country_flag = big_event_custom_barbarossa ### this country flag triggers the #superevent
+			check_variable={super_event>0}
+			NOT={has_country_flag=super_events_disabled}
+		}
+		properties = {
+			super_event_image = {
+                image = "[THIS.GetSuperEventPicture]"
+			}
 		}
 	}
 
@@ -14,40 +20,14 @@ scripted_gui = {
 		window_name = "TNO_SG_big_event_frame_barbarossa_custom"
 
 		visible = {
-			has_country_flag = big_event_custom_barbarossa
+			check_variable={super_event>0}
+			NOT={has_country_flag=super_events_disabled}
 		}
 
 		effects = {
 			Option_click = {
-				clr_country_flag = big_event_custom_barbarossa ### this disables the country flag #that fires the superevent (so the superevent actually goes away)
+				clear_variable = super_event
 			}
 		}
 	}
 	
-	TNO_SG_big_event_berlin_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
-		context_type = player_context
-		window_name = "TNO_SG_big_event_berlin_custom_window"
-
-		visible = {
-			has_global_flag = big_event_custom_berlin ### this country flag triggers the #superevent
-		}
-	}
-
-	TNO_SG_big_event_frame_berlin_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME #NAME AS IN THE TNO_SG_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
-		context_type = player_context
-		window_name = "TNO_SG_big_event_frame_berlin_custom"
-
-		visible = {
-			has_global_flag = big_event_custom_berlin
-		}
-
-		effects = {
-			Option_click = {
-				clr_global_flag = big_event_custom_berlin ### this disables the country flag #that fires the superevent (so the superevent actually goes away)
-			}
-		}
-	}
-}
-
-#set_country_flag big_event_custom_barbarossa ## quick command for testing
-#set_global_flag big_event_custom_berlin ## quick command for testing

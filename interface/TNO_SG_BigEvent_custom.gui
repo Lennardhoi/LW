@@ -8,7 +8,6 @@ guiTypes = { ######## THE DESCRIPTION AND THE TITLE ARE IN THE LOCALISATION FILE
 		Orientation = center
 		Origo = center
 		clipping = no
-		show_sound = barbarossa_bigevent ### SOUND EFFECT GOES HERE, MAKE SURE YOU'RE USING SOUND #EFFECT AND NOT SOUND!!!!!
 
 		background = {
 			name = "Background"
@@ -20,15 +19,15 @@ guiTypes = { ######## THE DESCRIPTION AND THE TITLE ARE IN THE LOCALISATION FILE
 			position = { x = 0 y = 20 }
 			font = "aldrich_18_outline"
 			borderSize = {x = 0 y = 0}
-			text = "BE_BARBAROSSA_T" ###### HERE GOES THE TITLE ########
+			text = [THIS.GetSuperEventTitle]
 			maxWidth = 220
 			maxHeight = 24
 			format = centre
 		}
 
 		iconType = {
-			name ="image"
-			spriteType = "GFX_superevent_custom_barbarossa"
+			name ="super_event_image"
+			#spriteType = "GFX_superevent_custom_barbarossa"
 			position = { x= -286 y = -18 }
 			Orientation = center
 			alwaystransparent = yes
@@ -43,7 +42,6 @@ guiTypes = { ######## THE DESCRIPTION AND THE TITLE ARE IN THE LOCALISATION FILE
 		Orientation = center
 		Origo = center
 		clipping = no
-
 		background = {
 			name = "Background"
 			quadTextureSprite ="GFX_tiled_window_bigevent_border"
@@ -51,7 +49,7 @@ guiTypes = { ######## THE DESCRIPTION AND THE TITLE ARE IN THE LOCALISATION FILE
 
 		buttonType = {
 			name = "Option"
-			text = "BE_BARBAROSSA_A"  ############## OPTION
+			text =  [THIS.GetSuperEventButtonText]
 			shortcut = "ESCAPE"
 			position = { x = -110 y = 183 }
 			quadTextureSprite ="GFX_button_221x34"
@@ -71,7 +69,7 @@ guiTypes = { ######## THE DESCRIPTION AND THE TITLE ARE IN THE LOCALISATION FILE
 			name = "text"
 			position = {  x= 120 y = -195 }
 			font = "Bomb_24"
-			text = "BE_BARBAROSSA_D" ######## HERE GOES THE DESCRIPTION ###########
+			text = [THIS.GetSuperEventText]
 			maxWidth = 455
 			maxHeight = 173
 			fixedsize = yes
@@ -80,82 +78,4 @@ guiTypes = { ######## THE DESCRIPTION AND THE TITLE ARE IN THE LOCALISATION FILE
 		}
 	}
 	
-	containerWindowType = {
-		name = "TNO_SG_big_event_berlin_custom_window"
-		size = { width = 220 height = 128 }
-		position = { x=0 y=-210 }
-		Orientation = center
-		Origo = center
-		clipping = no
-		show_sound = berlin_bigevent ### SOUND EFFECT GOES HERE, MAKE SURE YOU'RE USING SOUND #EFFECT AND NOT SOUND!!!!!
-
-		background = {
-			name = "Background"
-			quadTextureSprite ="GFX_tiled_window_1b_border"
-		}
-
-		instantTextBoxType = {
-			name = "Title"
-			position = { x = 0 y = 20 }
-			font = "aldrich_18_outline"
-			borderSize = {x = 0 y = 0}
-			text = "BE_berlin_T" ###### HERE GOES THE TITLE ########
-			maxWidth = 220
-			maxHeight = 24
-			format = centre
-		}
-
-		iconType = {
-			name ="image"
-			spriteType = "GFX_superevent_custom_berlin"
-			position = { x= -286 y = -18 }
-			Orientation = center
-			alwaystransparent = yes
-		}
-
-	}
-
-	containerWindowType = {
-		name = "TNO_SG_big_event_frame_berlin_custom"
-		size = { width = 588 height = 465 }
-		position = { x=0 y=0 }
-		Orientation = center
-		Origo = center
-		clipping = no
-
-		background = {
-			name = "Background"
-			quadTextureSprite ="GFX_tiled_window_bigevent_border"
-		}
-
-		buttonType = {
-			name = "Option"
-			text = "BE_berlin_A"  ############## OPTION
-			shortcut = "ESCAPE"
-			position = { x = -110 y = 183 }
-			quadTextureSprite ="GFX_button_221x34"
-			buttonFont = "Bomb_24"
-			Orientation = center
-		}
-
-		iconType = {
-			name ="underlay"
-			spriteType = "GFX_superevent_text_underlay"
-			position = { x= 30 y = -200 }
-			Orientation = lower_left
-			alwaystransparent = yes
-		}
-
-		instantTextBoxType = {
-			name = "text"
-			position = {  x= 120 y = -195 }
-			font = "Bomb_24"
-			text = "BE_berlin_D" ######## HERE GOES THE DESCRIPTION ###########
-			maxWidth = 455
-			maxHeight = 173
-			fixedsize = yes
-			format = right
-			Orientation = lower_left
-		}
-	}
 }
