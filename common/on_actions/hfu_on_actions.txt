@@ -447,6 +447,18 @@ on_actions = {
 				add_offsite_building = { type = dockyard level = 10 }
 
 			}
+			
+			if = {limit = {tag=ger}
+			set_variable={Global.super_event=2}
+			show_super_event=yes}
+			
+			if = {limit = {tag=jap}
+			set_variable={Global.super_event=7}
+			show_super_event=yes}
+			
+			if = {limit = {tag=eng}
+			set_variable={Global.super_event=5}
+			show_super_event=yes}
 		}
 	}
 
@@ -464,9 +476,21 @@ on_actions = {
 				#FRA={activate_mission=FRA_Resistance}
 				set_global_flag = GER_has_started_war
 			}
-
-
-
+			
+			if = {
+				limit = {
+					ROOT = {
+						TAG = ita
+					}
+					FROM = {
+						TAG = eng
+					}
+				}
+			set_variable={Global.super_event=3}
+			show_super_event=yes
+			}
+			
+		
 			if = {
 				limit = {
 					FROM = {
