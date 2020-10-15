@@ -201,7 +201,7 @@ NDefines.NMilitary.AIR_EQUIPMENT_RAMP_COST = 5
 
 --industry
 NDefines.NBuildings.MAX_SHARED_SLOTS = 99 --max building slots in a state
-NDefines.NBuildings.MAX_BUILDING_LEVELS=20
+NDefines.NBuildings.MAX_BUILDING_LEVELS=40
 NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.13 -- -0.12
 NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 100
 NDefines.NBuildings.NAVALBASE_REPAIR_MULT = 0.075
@@ -279,7 +279,7 @@ NDefines.NAir.ACE_WING_SIZE_MAX_BONUS = 1                        -- WAS 10, lowe
 NDefines.NAir.ACE_DEATH_CHANCE_BASE = 0
 NDefines.NAir.ACE_EARN_CHANCE_BASE = 0.003 
 NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.15
-
+NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 2
 NDefines.NNavy.ANTI_AIR_TARGETTING_TO_CHANCE = 0.1				--Vanilla 0,2
 NDefines.NNavy.ANTI_AIR_ATTACK_TO_AMOUNT = 0.005					-- Vanilla 0,1
 NDefines.NNavy.ANTI_AIR_TARGETING = 0.7 
