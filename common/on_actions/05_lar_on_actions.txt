@@ -325,10 +325,7 @@ on_actions = {
 
 
 	# ROOT is capitulated country, FROM is winner
-	on_capitulation = {
-		effect = {
-		}
-	}
+	
 
 	# called a country fully decrypts cipher of a target country
 	# scope is the target country that its cipher is decrypted
@@ -347,16 +344,5 @@ on_actions = {
 
 	# called when a country send volunteers to another
 	# ROOT is sender, FROM is receiver
-	on_send_volunteers = {
-		effect = {
-			if = {
-				limit = {
-					SPR_scw_in_progress = yes
-					FROM = { tag = SPA }
-				}
-				set_country_flag = SPR_sent_volunteers_to_SPA_flag
-			}
-		}
-	}
 	#THIS is country that has just gotten into a war
 }
