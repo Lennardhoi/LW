@@ -1,6 +1,6 @@
 ideas = {
-hidden_ideas = {
-USA_agents = {
+	hidden_ideas = {
+		USA_agents = {
 			picture = generic_infantry_bonus
 			allowed = {
 				always = no
@@ -16,10 +16,10 @@ USA_agents = {
 			}
 		}
 
-}
+	}
 	country = {
 
-USA_overlord = {
+		USA_overlord = {
 			picture = generic_infantry_bonus
 			allowed = {
 				always = no
@@ -39,7 +39,7 @@ USA_overlord = {
 			}
 		}
 
-USA_flying_fortress = {
+		USA_flying_fortress = {
 			picture = goe
 			allowed = {
 				always = no
@@ -55,7 +55,7 @@ USA_flying_fortress = {
 		}
 
 
-USA_island_hopping = {
+		USA_island_hopping = {
 			picture = generic_infantry_bonus
 			allowed = {
 				always = no
@@ -69,7 +69,7 @@ USA_island_hopping = {
 				invasion_preparation = -0.5
 			}
 		}
-USA_guadalcanal = {
+		USA_guadalcanal = {
 			picture = generic_infantry_bonus
 			allowed = {
 				always = no
@@ -90,7 +90,7 @@ USA_guadalcanal = {
 				spotting_chance = 0.1
 			}
 		}
-USA_navy_recovery = {
+		USA_navy_recovery = {
 
 			picture = generic_infantry_bonus
 			allowed = {
@@ -122,14 +122,14 @@ USA_navy_recovery = {
 			}
 			removal_cost = -1
 			modifier = {
-			    production_factory_max_efficiency_factor = -0.05
+				production_factory_max_efficiency_factor = -0.05
 				production_factory_efficiency_gain_factor = 0.12
 				production_factory_start_efficiency_factor = 0.12
-				
+
 			}
-			
+
 		}
-		
+
 		USA_first_deal = {
 			picture = home_of_the_free_2
 
@@ -143,16 +143,16 @@ USA_navy_recovery = {
 
 			removal_cost = -1
 			modifier = {
-			    consumer_goods_factor = 0.1
+				consumer_goods_factor = 0.1
 				production_speed_infrastructure_factor = 0.2
 				stability_factor = 0.10
-				
+
 			}
-			
+
 		}
-		
-		
-        USA_second_deal = {
+
+
+		USA_second_deal = {
 			picture = home_of_the_free_2
 
 			allowed = {
@@ -165,15 +165,15 @@ USA_navy_recovery = {
 
 			removal_cost = -1
 			modifier = {
-			    consumer_goods_factor = 0.05
+				consumer_goods_factor = 0.05
 				production_speed_industrial_complex_factor = 0.5
 				production_speed_infrastructure_factor = 0.2
 				stability_factor = 0.10
-				
+
 			}
-			
+
 		}
-		
+
 		USA_war_plans_1 = {
 			picture = generic_war_preparation
 
@@ -290,7 +290,7 @@ USA_navy_recovery = {
 			removal_cost = -1
 
 			modifier = {
-			
+
 				political_power_cost = 1
 				consumer_goods_factor = 0.3
 				industrial_capacity_factory = -0.2
@@ -593,7 +593,7 @@ USA_navy_recovery = {
 			removal_cost = -1
 
 			modifier = {
-				
+
 				refit_speed = 0.1
 				repair_speed_factor = 0.1
 			}
@@ -866,7 +866,7 @@ USA_navy_recovery = {
 				mobilization_speed = 0.2
 			}
 		}
-		
+
 
 		wilkies_new_deal = {
 
@@ -1273,7 +1273,7 @@ USA_navy_recovery = {
 			modifier = {
 				min_export = -0.3
 				global_building_slots_factor = 1
-				
+
 			}
 		}
 
@@ -1507,34 +1507,34 @@ USA_navy_recovery = {
 
 
 	political_advisor = {
-		
-		
+
+
 		victor_perlo = {
-			
+
 			picture = generic_political_advisor_europe_1
 			allowed = {
 				original_tag = "USA"
 			}
-			
+
 			available = {
-				
-					has_completed_focus = USA_reach_out_to_the_ware_group
-				
+
+				has_completed_focus = USA_reach_out_to_the_ware_group
+
 			}
 			visible = { has_dlc = "Man the Guns" }
-			
+
 			traits = { technocrat }
 			cost = 150
 			do_effect = {
-		
+
 			}
-			
+
 			ai_will_do = {
 				factor = 0
 			}
 		}
 		whittaker_chambers = {
-			
+
 			picture = USA_whittaker_chambers
 			allowed = {
 				original_tag = "USA"
@@ -1543,23 +1543,23 @@ USA_navy_recovery = {
 				has_government = communism
 			}
 			available = {
-					has_completed_focus = USA_reach_out_to_the_ware_group
+				has_completed_focus = USA_reach_out_to_the_ware_group
 			}
 			visible = { has_dlc = "Man the Guns" }
-			
+
 			traits = { editor }
 			cost = 150
 			do_effect = {
-		
+
 			}
-			
+
 			ai_will_do = {
 				factor = 0
 			}
 		}
-		
+
 		USA_william_regnery = {
-			
+
 			picture = generic_political_advisor_europe_2
 			allowed = {
 				original_tag = "USA"
@@ -1572,67 +1572,67 @@ USA_navy_recovery = {
 			traits = { captain_of_industry }
 			cost = 50
 			do_effect = {
-		
+
 			}
-			
+
 			ai_will_do = {
 				factor = 1
 			}
 		}
 		harold_ickes = {
-			
-			
+
+
 			allowed = {
 				original_tag = "USA"
 			}
-			
+
 			available = {
 				has_completed_focus = USA_reach_out_to_the_ware_group
 			}
-			
+
 			traits = { democratic_reformer }
-	
+
 			do_effect = {
 				NOT = {
 					has_government = democratic
 				}
 			}
-			
+
 			ai_will_do = {
 				factor = 0
 			}
 		}
-		
-		
+
+
 
 		USA_robert_taft = {
-			
+
 			picture = generic_political_advisor_europe_1
-			
+
 			allowed = {
 				original_tag = USA
 			}
-			
+
 			traits = { silent_workhorse }
 		}
-		
+
 
 
 		USA_henry_morgenthau = {
 			picture = generic_political_advisor_europe_6
-			
+
 			allowed = {
 				original_tag = USA
 			}
 			available = {
-				
+
 			}
-			
+
 			traits = { financial_expert }
 		}
 
 		USA_henry_stimson = {
-			
+
 			picture = generic_political_advisor_europe_2
 			available = {
 				has_completed_focus = USA_reach_out_to_the_ware_group
@@ -1640,12 +1640,12 @@ USA_navy_recovery = {
 			allowed = {
 				original_tag = USA
 			}
-			
+
 			traits = { war_industrialist }
 		}
 
 		USA_donald_nelson = {
-			
+
 			picture = generic_political_advisor_europe_3
 			available = {
 				has_completed_focus = USA_reach_out_to_the_ware_group
@@ -1653,22 +1653,22 @@ USA_navy_recovery = {
 			allowed = {
 				original_tag = USA
 			}
-			
+
 			traits = { armaments_organizer }
 		}
-		
+
 		usa_william_donovan = {
-		
+
 			available = {
 				has_intelligence_agency = yes
 				threat > 0.5
 			}
-			
+
 			allowed = {
 				original_tag = USA
 				has_dlc = "La Resistance"
 			}
-			
+
 			traits = { head_of_intelligence }
 
 		}
@@ -2466,7 +2466,7 @@ USA_navy_recovery = {
 				original_tag = USA
 			}
 			available = {
-				
+
 			}
 
 
@@ -2477,7 +2477,7 @@ USA_navy_recovery = {
 
 			traits = { industrial_concern }
 
-			
+
 		}
 	}
 

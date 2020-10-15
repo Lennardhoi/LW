@@ -590,7 +590,7 @@ focus_tree = {
 		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-		
+
 
 		completion_reward = {
 			532 = {
@@ -1007,7 +1007,7 @@ focus_tree = {
 		}
 
 		available = {
-			
+
 		}
 
 		bypass = {
@@ -2372,7 +2372,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-			
+
 			add_dynamic_modifier={modifier=pacific_war}
 			USA={add_dynamic_modifier={modifier=pacific_war}}
 			JAP = {
@@ -2382,7 +2382,7 @@ focus_tree = {
 			custom_effect_tooltip = tooltip_jap_war
 			add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 90 }
 			hidden_effect={
-			sound_effect = sp_jap_banzai
+				sound_effect = sp_jap_banzai
 				if={limit={USA={has_war=no}}
 					ENG={add_to_faction=USA}
 					GER={declare_war_on = { target = USA type = annex_everything }}

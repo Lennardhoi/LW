@@ -30,10 +30,10 @@ focus_tree = {
 			factor = 12
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
-		
+
 		completion_reward = {
-		
-		add_tech_bonus = {
+
+			add_tech_bonus = {
 				name = GER_four_year_plan
 				bonus = 1.0
 				uses = 2
@@ -41,7 +41,7 @@ focus_tree = {
 			}
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = hjalmar_schacht
-			
+
 		}
 	}
 
@@ -617,26 +617,26 @@ focus_tree = {
 		}
 
 		bypass = {
-			
+
 		}
 
 		completion_reward = {
-			
-				HUN = {
-					add_timed_idea = { idea = GER_align_hungary days = 60 }
-				}
-			
-			
-				ROM = {
-					add_timed_idea = { idea = GER_align_hungary days = 60 }
-				}
-			
 
-			
-				BUL = {
-					add_timed_idea = { idea = GER_align_hungary days = 60 }
-				}
-			
+			HUN = {
+				add_timed_idea = { idea = GER_align_hungary days = 60 }
+			}
+
+
+			ROM = {
+				add_timed_idea = { idea = GER_align_hungary days = 60 }
+			}
+
+
+
+			BUL = {
+				add_timed_idea = { idea = GER_align_hungary days = 60 }
+			}
+
 
 		}
 	}
@@ -2417,7 +2417,7 @@ focus_tree = {
 
 
 		available = {
-			
+
 
 		}
 		x = 2
@@ -2433,10 +2433,10 @@ focus_tree = {
 			add_ideas = GER_totaler_krieg
 
 			hidden_effect = {
-			
-           sound_effect = "sp_ger_goebbels"
+
+				sound_effect = "sp_ger_goebbels"
 			}
-			
+
 		}
 	}
 
@@ -2527,7 +2527,7 @@ focus_tree = {
 		y = 2
 		cost =3
 		available = {
-			
+
 
 		}
 
@@ -2821,8 +2821,8 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-		
-			
+
+
 		}
 	}
 
@@ -3307,7 +3307,7 @@ focus_tree = {
 
 
 			hidden_effect={
-				
+
 				ENG={
 					remove_ideas=stiff_upper_lip
 					add_timed_idea={idea=stiff_upper_lip days=150}
@@ -3993,7 +3993,7 @@ focus_tree = {
 
 		available_if_capitulated = no
 		completion_reward = {
-		every_state = {
+			every_state = {
 				limit={OR={state=263 state=246 state=247 state=264 state=351 state=216 state=214 state=215 state=210 state =208 state=209 }}
 				add_dynamic_modifier = { modifier = JAP_attack days=90  }
 			}
@@ -4022,7 +4022,7 @@ focus_tree = {
 
 		available_if_capitulated = no
 		completion_reward = {
-		every_state = {
+			every_state = {
 				limit={OR={state=218 state=245 state=217 state=234 state=238 state=237 state=236 state=232 state=235 }}
 				add_dynamic_modifier = { modifier = JAP_attack days=90  }
 			}

@@ -19,7 +19,7 @@ scripted_gui = {
 				clear_variable=ROOT.total_pows
 				every_enemy_country = {
 					limit={is_playable_country =yes
-					OR = { NOT = { original_tag = FRA } has_global_flag = fall_of_france } }
+						OR = { NOT = { original_tag = FRA } has_global_flag = fall_of_france } }
 					add_to_array = {ROOT.pow_enemy_countries=THIS }
 					set_temp_variable= {casualties_against = 0 }
 					while_loop_effect = {

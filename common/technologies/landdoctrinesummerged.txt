@@ -141,6 +141,7 @@ technologies = {
 		}
 		category_army = {
 			hard_attack = 0.1
+			max_organisation = 5
 			soft_attack = 0.1
 			breakthrough = 0.1
 
@@ -160,7 +161,7 @@ technologies = {
 
 		}
 		category_mobile_infantry = {
-			max_organisation = 10
+			max_organisation = 15
 
 		}
 		category_recon = {
@@ -170,6 +171,10 @@ technologies = {
 		category_support_battalions = {
 			max_organisation = 20
 			soft_attack = 0.5
+
+		}
+		category_tanks = {
+			max_organisation = 10
 
 		}
 
@@ -228,7 +233,6 @@ technologies = {
 
 		}
 		category_army = {
-			breakthrough = 0.1
 			max_organisation = 7
 
 		}
@@ -254,10 +258,11 @@ technologies = {
 
 		}
 		category_special_forces = {
-			breakthrough = 0.1
+			soft_attack = 0.1
 
 		}
 		category_tanks = {
+			breakthrough = 0.1
 			max_organisation = 13
 
 		}
@@ -318,7 +323,7 @@ technologies = {
 			land_doctrine
 
 			}		category_all_armor = {
-			default_morale = 0.2
+			default_morale = 0.1
 
 		}
 		category_army = {
@@ -344,11 +349,14 @@ technologies = {
 			max_organisation = 30
 
 		}
-		category_support_battalions = {
+		category_recon = {
 			need = {
 				support_equipment = -5
 
 			}
+
+		}
+		category_support_battalions = {
 			max_organisation = 15
 
 		}
@@ -359,6 +367,21 @@ technologies = {
 		conscription = 0.03
 
 		doctrine = yes
+		engineer = {
+			need = {
+				support_equipment = -5
+
+			}
+			entrenchment = 5
+
+		}
+		field_hospital = {
+			need = {
+				support_equipment = -5
+
+			}
+
+		}
 
 		folder = {name = land_doctrine_folder
 			position = { x = 0 y = 18 }
@@ -371,11 +394,25 @@ technologies = {
 
 		}
 		land_reinforce_rate = 0.2
-		max_dig_in = 5
-		motorized_rocket_brigade = {
-			max_organisation = 50
-			default_morale = 0.1
-			max_strength = 20
+		maintenance_company = {
+			need = {
+				support_equipment = -5
+
+			}
+
+		}
+		mechanized = {
+			need = {
+				motorized_rocket_equipment = 10
+
+			}
+
+		}
+		motorized = {
+			need = {
+				motorized_rocket_equipment = 10
+
+			}
 
 		}
 		no_supply_grace = 96
@@ -386,6 +423,13 @@ technologies = {
 		research_cost = 56
 		resistance_damage_to_garrison_on_our_occupied_states = 0.1
 		resistance_growth_on_our_occupied_states = 0.25
+		signal_company = {
+			need = {
+				support_equipment = -5
+
+			}
+
+		}
 
 	}
 

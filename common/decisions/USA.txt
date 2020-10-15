@@ -4,17 +4,17 @@ war_measures = {
 
 
 		available = {
-			NOT= { has_decision=USA_support_sov }	
+			NOT= { has_decision=USA_support_sov }
 			has_war=yes
 			has_equipment = {
 				fighter_equipment_alt > 599
 			}
-			has_deployed_air_force_size = { 
-			size> 999
-			type=fighter
+			has_deployed_air_force_size = {
+				size> 999
+				type=fighter
 			}
-						
-			
+
+
 
 		}
 
@@ -45,12 +45,12 @@ war_measures = {
 			has_equipment = {
 				fighter_equipment_alt > 599
 			}
-			has_deployed_air_force_size = { 
-			size> 999
-			type=fighter
+			has_deployed_air_force_size = {
+				size> 999
+				type=fighter
 			}
-		NOT= { has_decision=USA_support_raf }				
-			
+			NOT= { has_decision=USA_support_raf }
+
 
 		}
 
