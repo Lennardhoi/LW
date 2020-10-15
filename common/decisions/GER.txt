@@ -103,8 +103,8 @@ operations = {
 		cost = 0
 		complete_effect = {
 
-
-
+			set_variable={Global.super_event=1}
+			show_super_event=yes
 			SOV={declare_war_on_enemy_faction =yes}
 			GER = {
 				add_timed_idea = { idea = GER_barbarossa days = 175 }

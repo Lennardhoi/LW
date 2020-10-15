@@ -2431,10 +2431,12 @@ focus_tree = {
 		available_if_capitulated = no
 		completion_reward = {
 			add_ideas = GER_totaler_krieg
-
+			set_variable={Global.super_event=6}
+			show_super_event=yes
 			hidden_effect = {
-
-				sound_effect = "sp_ger_goebbels"
+				every_country = {limit = {check_variable= { speeches_enabled > 0} is_in_faction_with = GER }
+				scoped_sound_effect = "sp_ger_goebbels"
+				}
 			}
 
 		}

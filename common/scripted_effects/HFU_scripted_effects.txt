@@ -1,13 +1,13 @@
 show_super_event={
-	every_country={
-		limit={
-			is_playable_country=yes
-			check_variable = { super_events_enabled > 0 }
+	hidden_effect = {every_country={
+			limit={
+				is_playable_country=yes
+				check_variable = { super_events_enabled > 0 }
+			}
+			set_variable={super_event=Global.super_event}
+
 		}
-		set_variable={super_event=Global.super_event}
-
 	}
-
 }
 
 share_intel_with_allies={
