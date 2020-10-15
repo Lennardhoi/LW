@@ -2372,7 +2372,13 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			set_variable={Global.super_event=4}
+			show_super_event=yes
+			hidden_effect = {
 
+				every_country = {limit = {check_variable= { speeches_enabled > 0} }
+				scoped_sound_effect = "sp_jap_banzai"
+				}
 			add_dynamic_modifier={modifier=pacific_war}
 			USA={add_dynamic_modifier={modifier=pacific_war}}
 			JAP = {
