@@ -2300,34 +2300,20 @@ focus_tree = {
 		prerequisite = { focus = ITA_pact_of_steel }
 		available = {
 
-			date>1940.1.1
+			date>1939.12.30
 
 		}
 		will_lead_to_war_with = GRE
 		x = 3
 		y = 1
 		relative_position_id = ITA_pact_of_steel
-		cost = 1
+		cost = 0
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
-
-
-
-
-
-			create_wargoal = {
-				type = take_state_focus
-				target = GRE
-				generator = { 47 } # Athens
-			}
-			create_wargoal = {
-				type = take_state_focus
-				target = YUG
-				generator = { 103 } # Dalmatia
-			}
-
+		
+		    unlock_decision_tooltip=ITA_join_war
 			hidden_effect = {
 				news_event = { hours = 6 id = news.186 }
 				102 = {	add_claim_by  = GER}

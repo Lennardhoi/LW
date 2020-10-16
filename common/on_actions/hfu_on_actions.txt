@@ -476,21 +476,6 @@ on_actions = {
 				#FRA={activate_mission=FRA_Resistance}
 				set_global_flag = GER_has_started_war
 			}
-			
-			if = {
-				limit = {
-					ROOT = {
-						TAG = ita
-					}
-					FROM = {
-						TAG = eng
-					}
-				}
-			set_variable={Global.super_event=3}
-			show_super_event=yes
-			}
-			
-		
 			if = {
 				limit = {
 					FROM = {

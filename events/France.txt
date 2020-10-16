@@ -292,7 +292,8 @@ country_event = {
 		name = france.15.a
 
 		GER = {
-
+            add_ideas = GER_africa_hp
+		    set_technology = { africa_hp = 1 popup = no } 
 			add_equipment_to_stockpile = {
 				type = artillery_equipment_1
 				amount = 3000

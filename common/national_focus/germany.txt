@@ -3254,6 +3254,10 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
+			hidden_effect = {  
+			  set_technology = { africa_hp_off = 1 popup = no } 
+			  remove_ideas = GER_africa_hp
+		    }
 			SOV = { add_opinion_modifier = { target = ROOT modifier = pact_against_us } }
 			add_named_threat = { threat = 2 name = GER_anti_comitern_pact }
 			every_other_country = {

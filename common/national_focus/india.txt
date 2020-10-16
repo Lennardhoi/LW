@@ -1297,48 +1297,10 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-			random_state = {
-				limit = {
-					has_state_flag = RAJ_great_indian_peninsula_railway_Inf1
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_state = {
-				limit = {
-					has_state_flag = RAJ_great_indian_peninsula_railway_Inf2
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_state = {
-				limit = {
-					has_state_flag = RAJ_great_indian_peninsula_railway_Inf3
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
+		
 
 		completion_reward = {
-			random_owned_controlled_state = {
-				prioritize = { 433 }
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 1
-					}
-				}
+			420 ={
 				add_building_construction = {
 					type = infrastructure
 					level = 2
@@ -1346,14 +1308,7 @@ focus_tree = {
 				}
 				set_state_flag = RAJ_great_indian_peninsula_railway_Inf1
 			}
-			random_owned_controlled_state = {
-				prioritize = { 438 429 }
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 1
-					}
-				}
+			439 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 2
@@ -1361,14 +1316,7 @@ focus_tree = {
 				}
 				set_state_flag = RAJ_great_indian_peninsula_railway_Inf2
 			}
-			random_owned_controlled_state = {
-				prioritize = { 443 427 }
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 1
-					}
-				}
+			435 ={
 				add_building_construction = {
 					type = infrastructure
 					level = 2
@@ -2100,54 +2048,19 @@ focus_tree = {
 		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-		complete_tooltip = {
-			random_state = {
-				limit = {
-					has_state_flag = RAJ_east_india_railways_Inf1
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_state = {
-				limit = {
-					has_state_flag = RAJ_east_india_railways_Inf2
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
+		
 
 		completion_reward = {
-			random_owned_controlled_state = {
-				prioritize = { 640 288 }
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 1
-					}
-				}
-				add_building_construction = {
+			
+			440 = {	add_building_construction = {
 					type = infrastructure
 					level = 2
 					instant_build = yes
 				}
 				set_state_flag = RAJ_east_india_railways_Inf1
 			}
-			random_owned_controlled_state = {
-				prioritize = { 432 430 }
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 1
-					}
-				}
-				add_building_construction = {
+			
+			431 = {	add_building_construction = {
 					type = infrastructure
 					level = 2
 					instant_build = yes
@@ -2184,54 +2097,19 @@ focus_tree = {
 		available_if_capitulated = no
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-		complete_tooltip = {
-			random_state = {
-				limit = {
-					has_state_flag = RAJ_integrate_princely_railways_Inf1
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_state = {
-				limit = {
-					has_state_flag = RAJ_integrate_princely_railways_Inf2
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
+		
 
 		completion_reward = {
-			random_owned_controlled_state = {
-				prioritize = { 427 }
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 1
-					}
-				}
-				add_building_construction = {
+			
+			438 = {	add_building_construction = {
 					type = infrastructure
 					level = 2
 					instant_build = yes
 				}
 				set_state_flag = RAJ_integrate_princely_railways_Inf1
 			}
-			random_owned_controlled_state = {
-				prioritize = { 436 }
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 1
-					}
-				}
-				add_building_construction = {
+			
+			430 = {	add_building_construction = {
 					type = infrastructure
 					level = 2
 					instant_build = yes
