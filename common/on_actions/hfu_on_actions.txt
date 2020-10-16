@@ -262,6 +262,40 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
+					FROM = {
+						OR = {
+							tag = JAP
+							tag = MAN
+						}
+					}
+					FROM.FROM = {
+						OWNER={tag=INS}
+					}
+				}
+				if = {
+				limit = {
+					INS={
+						has_resources_amount = {
+							resource = rubber
+							amount > 0
+						}
+					}
+				}
+				INS={
+					country_event = {
+						id = japan.444
+						days=1
+					}
+				}
+				
+				}
+				}
+		}
+	}
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
 
 					FROM.FROM = {
 
