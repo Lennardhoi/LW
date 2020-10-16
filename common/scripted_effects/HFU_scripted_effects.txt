@@ -254,9 +254,9 @@ THIS_call_all_allies_against_ROOT = {
 	for_each_scope_loop = {
 		array = THIS.faction_members
 
-		set_variable={test=THIS}
+		
 		if = {
-			limit = { NOT = { OR = { AND={original_tag = USA has_war=no} AND={original_tag = FRA has_global_flag=fall_of_france} original_tag = PREV} } }
+			limit = { NOT = { OR = { AND={original_tag = USA has_war=no} AND={original_tag = FRA NOT={has_global_flag=fall_of_france}} original_tag = PREV} } }
 			add_to_war = {
 				targeted_alliance = ENG
 				enemy = ROOT

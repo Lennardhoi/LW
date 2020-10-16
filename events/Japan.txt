@@ -17,7 +17,24 @@ country_event = {
 		name = japan.1.a
 	}
 }
-
+country_event = {
+	id = japan.444
+	title = china.1.t
+	desc = japan.1.d
+	picture = GFX_report_event_chinese_soldiers_01
+	hidden=yes
+	is_triggered_only = yes
+	immediate={
+	every_state={
+			limit={ is_owned_by = INS}
+			 if = { limit = { NOT={ is_core_of=INS } }add_compliance = 100 }
+			 INS={
+			 give_resource_rights = { receiver = ENG state = PREV }
+			 }
+			 }
+	}
+	
+}
 # Soviets Push Back And Win
 country_event = {
 	id = japan.3

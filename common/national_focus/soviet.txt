@@ -435,7 +435,11 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			hidden_effect = {sound_effect = "sp_sov_stalin"}
+			hidden_effect = {
+				every_country = { limit= {is_playable_country=yes check_variable = {speeches_enabled > 0 }}
+					scoped_sound_effect = "sp_sov_stalin"
+				}
+			}
 			add_timed_idea= {idea=SOV_winter_offensive days=50}
 
 

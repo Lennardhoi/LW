@@ -2405,7 +2405,37 @@ focus_tree = {
 					limit={is_in_faction_with=ENG NOT={original_tag=USA}}
 					add_dynamic_modifier={modifier=pacific_war_minor}
 				}
-				ENG={#dutch east indies states
+				if= {limit={USA={has_completed_focus=USA_swpa}}
+				USA = {
+			set_autonomy = {
+				target = INS
+				autonomy_state = autonomy_dominion
+			}
+			INS={
+			set_cosmetic_tag=MAL_UK
+			transfer_state=333
+			transfer_state=336
+			transfer_state=725
+			transfer_state=639
+			transfer_state=643
+			transfer_state=711
+			transfer_state=712
+			transfer_state=733
+			transfer_state=422
+			transfer_state=281
+			transfer_state=710
+			transfer_state=270
+			transfer_state=326
+			add_ideas = ins_idea
+			set_technology={infantry_weapons=1 popup=no}
+			country_event = {
+			id = japan.444
+			days=1
+			}
+			}
+			}
+				}
+				else={ENG={#dutch east indies states
 					transfer_state=672
 					transfer_state=669
 					transfer_state=738
@@ -2445,7 +2475,7 @@ focus_tree = {
 				798 = {
 					add_compliance = 100
 				}
-			}
+			}}
 		}
 
 	}

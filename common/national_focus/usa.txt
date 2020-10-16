@@ -1144,7 +1144,53 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = USA_swpa
+		icon = GFX_goal_generic_defence
+		prerequisite = { focus = USA_american_dream }
+		available = {
 
+		}
+		x = 3
+		y = 1
+		relative_position_id = USA_american_dream
+		cost = 0
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			custom_effect_tooltip= USA_swpa_tt
+			effect_tooltip = {
+			set_autonomy = {
+				target = INS
+				autonomy_state = autonomy_dominion
+			}
+			INS={
+			set_cosmetic_tag=MAL_UK
+			transfer_state=333
+			transfer_state=336
+			transfer_state=725
+			transfer_state=639
+			transfer_state=643
+			transfer_state=711
+			transfer_state=712
+			transfer_state=733
+			transfer_state=422
+			transfer_state=281
+			transfer_state=710
+			transfer_state=270
+			transfer_state=326
+			add_ideas = ins_idea
+			every_owned_state={
+			INS={
+			give_resource_rights = { receiver = ENG state = PREV }
+			}
+			}
+			}
+			}
+		}
+	}
 	focus = {
 		id = USA_magic
 		icon = GFX_goal_generic_radar
