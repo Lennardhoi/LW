@@ -2434,7 +2434,7 @@ focus_tree = {
 			set_variable={Global.super_event=6}
 			show_super_event=yes
 			hidden_effect = {
-				every_country = {limit = {check_variable= { speeches_enabled > 0} is_in_faction_with = GER }
+				every_country = {limit = {check_variable= { speeches_enabled > 0}  }
 				scoped_sound_effect = "sp_ger_goebbels"
 				}
 			}
@@ -3033,7 +3033,6 @@ focus_tree = {
 		id = GER_danzig_or_war
 		icon = GFX_focus_GER_danzig
 		prerequisite = { focus = GER_mol_rib_pact }
-		will_lead_to_war_with = POL
 		available = {
 			date > 1939.8.1
 		}
@@ -3118,8 +3117,6 @@ focus_tree = {
 		id = GER_weserubung
 		icon = GFX_focus_ger_weserubung2
 		prerequisite = { focus = GER_danzig_or_war }
-		will_lead_to_war_with = DEN
-		will_lead_to_war_with = NOR
 
 		bypass = {
 		}
@@ -3220,10 +3217,6 @@ focus_tree = {
 
 		historical_ai = {
 		}
-		will_lead_to_war_with = BEL
-		will_lead_to_war_with = HOL
-		will_lead_to_war_with = LUX
-		will_lead_to_war_with = FRA
 		x = -1
 		y = 1
 		relative_position_id = GER_danzig_or_war
@@ -3292,7 +3285,6 @@ focus_tree = {
 		id = GER_ussr_war_goal
 		icon = GFX_praisegermania
 		prerequisite = { focus = GER_anti_comitern_pact }
-		will_lead_to_war_with = SOV
 
 		x = 0
 		y = 1
@@ -4080,8 +4072,6 @@ focus_tree = {
 		id = GER_demand_sudetenland
 		icon = GFX_goal_demand_sudetenland
 		prerequisite = { focus = GER_anschluss }
-		will_lead_to_war_with = CZE
-		will_lead_to_war_with = FRA
 		available = {
 		}
 		bypass = {

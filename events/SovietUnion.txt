@@ -538,64 +538,6 @@ country_event = {
 
 
 
-country_event ={
-	id=soviet.1488
-	title = soviet.1488.t
-	desc = soviet.1488.d
-	picture = GFX_report_soviet.1488
-	fire_only_once = yes
-	is_triggered_only = yes
-
-	immediate = {
-		SOV = {
-			country_event = { id = soviet.1488 days = 10 }
-		}
-	}
-	option = {
-		name = soviet.1488.a
-		create_field_marshal = {
-			name = "Konstantin Rokossovsky"
-			id = 1488
-			picture = "Portrait_Soviet_Konstantin_Rokossovsky.dds"
-			traits = {  winter_specialist  brilliant_strategist panzer_leader panzer_expert ranger organizer  logistics_wizard aggressive_assaulter organisational_leader inspirational_leader }
-			skill = 7
-
-			attack_skill = 6
-			defense_skill = 4
-			planning_skill = 3
-			logistics_skill = 6
-		}
-		create_field_marshal = {
-			name = "Georgy Zhukov"
-			id = 1489
-			picture = "Portrait_Soviet_Gregory_Zhukov.dds"
-			traits = { winter_specialist panzer_leader panzer_expert winter_expert trickster expert_improviser scavenger ranger }
-			skill = 7
-			attack_skill = 6
-			defense_skill = 3
-			planning_skill = 3
-			logistics_skill = 5
-		}
-		create_field_marshal = {
-			name = "Aleksandr Vasilevsky"
-			id = 1487
-			picture = "Portrait_Soviet_Aleksandr_Vasilevsky.dds"
-			traits = { winter_specialist winter_expert ranger infantry_leader infantry_expert scavenger trickster skilled_staffer }
-			skill = 7
-
-			attack_skill = 3
-			defense_skill = 6
-			planning_skill = 3
-			logistics_skill = 6
-		}
-
-
-		remove_unit_leader = 410
-		remove_unit_leader = 402
-		remove_unit_leader = 407
-
-	}
-}
 
 
 country_event = {

@@ -24,8 +24,10 @@ operations = {
 			}
 
 			hidden_effect = {
-			 
-			   sound_effect= "sp_ita_musso"
+				
+				every_country = {limit = {check_variable= { speeches_enabled > 0}  }
+					scoped_sound_effect = "sp_ita_musso"
+				}
 			   set_variable={Global.super_event=3}
 			   show_super_event=yes
 			   YUG = { add_to_war = { targeted_alliance = ENG enemy = GER } }
@@ -36,6 +38,26 @@ operations = {
 	    remove_effect = {
             GRE = { add_to_war = { targeted_alliance = ENG enemy = GER } }
 			ENG = { add_to_faction = GRE }
+		}
+	}
+		ITA_give_germany_marsa_matruh = {
+		icon = ger_reichskommissariats
+		fire_only_once = no
+		allowed = { tag = ITA }
+		available = { controls_state=452}
+		visible={has_war=yes}
+		cost = 0
+		complete_effect = {
+			GER={set_state_owner=452}
+			452= {
+				set_state_province_controller = { 
+					controller = GER
+					limit = { 
+					is_in_faction_with=GER # most random scope ever apparently the province controller is the scope
+					} 
+				}
+			}
+		
 		}
 	}
 }

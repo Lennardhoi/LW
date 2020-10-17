@@ -99,7 +99,7 @@ political_actions = {
 			has_war_support < 0.05
 		}
 
-		fire_only_once = yes
+		fire_only_once = no
 
 		modifier = {
 			stability_weekly = 0.005
@@ -252,25 +252,15 @@ operations = {
 			OR = {tag = ENG tag = GER tag = ITA }
 		}
 		available = {
-			controls_state = 446
-			controls_state = 453
-			OR = {
-				NOT = {
-					owns_state = 446
-					owns_state = 453
+			446= { is_controlled_by_ROOT_or_ally = yes }
+			454 = { is_controlled_by_ROOT_or_ally = yes }
+			
+				if = {limit ={tag=ENG }
+					NOT = {controls_state = 452 }
+					
 				}
-				any_country = {
-					has_war_with = ROOT
-					OR = {
-						controls_state = 452
-						controls_state = 447
-						controls_state = 456
-						controls_state = 457
-						controls_state = 454
-						controls_state = 455
-					}
-				}
-			}
+				
+			
 		}
 
 		visible = {
@@ -319,8 +309,8 @@ operations = {
 			if = {
 				limit = {
 					OR = {
-						has_full_control_of_state = 446
-						has_full_control_of_state = 453
+						controls_state = 446
+						has_full_control_of_state = 454
 					}
 				}
 				set_country_flag = blew_up_suez
@@ -340,40 +330,7 @@ operations = {
 				}
 			}
 		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0 # Don't blow the canal when you've got troops needing supplies in the Horn of Africa, and no land route has been established there
-				any_country = {
-					is_in_faction_with = ROOT
-					NOT = {
-						OR = {
-							has_full_control_of_state = 457
-							has_full_control_of_state = 456
-						}
-					}
-					NOT = { has_full_control_of_state = 551 }
-					OR = {
-						divisions_in_state = { state = 550 size > 0 }
-						divisions_in_state = { state = 268 size > 0 }
-						divisions_in_state = { state = 269 size > 0 }
-						divisions_in_state = { state = 559 size > 0 }
-					}
-				}
-			}
-			modifier = {
-				factor = 200 # Try to cut the enemy off from the mediterranean if you also occupy Gibraltar
-				OR = {
-					has_full_control_of_state = 118
-					any_other_country = {
-						is_in_faction_with = ROOT
-						has_full_control_of_state = 118
-					}
-				}
-				has_war = yes
-				NOT = { tag = ENG }
-			}
-		}
+		
 	}
 
 
@@ -417,13 +374,14 @@ special_projects = {
 			}
 			any_country = {
 				is_in_faction_with = ROOT
-				has_full_control_of_state = 453
+				has_full_control_of_state = 454
 			}
 			num_of_civilian_factories > 15
 		}
 
 		visible = {
 			has_global_flag = SUEZ_CANAL_BLOCKED
+			NOT={has_global_flag=suez_rebuild_in_progress}
 		}
 
 		fire_only_once = no
@@ -435,7 +393,7 @@ special_projects = {
 		modifier = {
 			civilian_factory_use = 10
 		}
-
+		complete_effect= {set_global_flag=suez_rebuild_in_progress}
 		remove_effect = {
 			if = {
 				limit = {
@@ -445,11 +403,12 @@ special_projects = {
 					}
 					any_country = {
 						is_in_faction_with = ROOT
-						has_full_control_of_state = 453
+						has_full_control_of_state = 454
 					}
 				}
 				set_country_flag = rebuilt_suez
 				clr_global_flag = SUEZ_CANAL_BLOCKED
+				clr_global_flag = suez_rebuild_in_progress
 				country_event = { id = wtt_news.42 hours = 6}
 			}
 		}

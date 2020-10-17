@@ -255,7 +255,6 @@ focus_tree = {
 			has_global_flag = ven_claims_abc_islands
 		}
 		prerequisite = { focus = HOL_antilles_defenses }
-		will_lead_to_war_with = VEN
 		icon = GFX_goal_demand_sudetenland
 		x = -1
 		y = 1
@@ -4052,8 +4051,6 @@ focus_tree = {
 			has_full_control_of_state = 8
 		}
 		prerequisite = { focus = HOL_join_germany focus = HOL_the_netherlands_first }
-		will_lead_to_war_with = BEL
-		will_lead_to_war_with = LUX
 		icon = GFX_focus_hol_united_netherlands
 		x = 1
 		y = 1
@@ -4096,9 +4093,6 @@ focus_tree = {
 			has_full_control_of_state = 422
 		}
 		prerequisite = { focus = HOL_the_united_netherlands }
-		will_lead_to_war_with = FRA
-		will_lead_to_war_with = ENG
-		will_lead_to_war_with = SAF
 		icon = GFX_goal_generic_position_armies
 		x = 0
 		y = 2
@@ -4152,7 +4146,6 @@ focus_tree = {
 		}
 
 		prerequisite = { focus = HOL_taking_back_our_old_colonies }
-		will_lead_to_war_with = USA
 		icon = GFX_goal_generic_territory_or_war
 		x = 0
 		y = 2
@@ -4406,7 +4399,6 @@ focus_tree = {
 			has_war_with = GER
 		}
 		prerequisite = { focus = HOL_soviet_technical_teams }
-		will_lead_to_war_with = GER
 		icon = GFX_focus_attack_germany
 		x = 0
 		y = 2
@@ -4709,8 +4701,7 @@ focus_tree = {
 			has_full_control_of_state = 8
 		}
 		prerequisite = { focus = HOL_bastion_of_true_communism focus = HOL_join_the_french focus = HOL_affirm_loyalty_to_moscow }
-		will_lead_to_war_with = BEL
-		will_lead_to_war_with = LUX
+
 		icon = GFX_goal_generic_war_with_comintern
 		x = -1
 		y = 1
@@ -4783,9 +4774,6 @@ focus_tree = {
 			}
 		}
 		prerequisite = { focus = HOL_french_military_mission focus = HOL_enemies_on_all_fronts }
-		will_lead_to_war_with = ENG
-		will_lead_to_war_with = FRA
-		will_lead_to_war_with = USA
 		icon = GFX_goal_generic_occupy_start_war
 		x = 1
 		y = 1
@@ -5994,8 +5982,6 @@ focus_tree = {
 			NOT = { is_in_faction_with = ENG }
 		}
 		prerequisite = { focus = HOL_foundations_for_a_european_union }
-		will_lead_to_war_with = GER
-		will_lead_to_war_with = ENG
 		icon = GFX_goal_generic_major_war
 		x = 1
 		y = 1

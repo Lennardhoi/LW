@@ -36,7 +36,6 @@ country_event = {
 				medium_armor = { x = 2 y = 0 }
 				medium_armor = { x = 2 y = 1 }
 				medium_armor = { x = 2 y = 2 }
-				medium_armor = { x = 2 y = 3 }
 				motorized = { x = 3 y = 0 }
 				motorized = { x = 3 y = 1 }
 				motorized = { x = 3 y = 2 }
@@ -45,10 +44,12 @@ country_event = {
 				motorized = { x = 4 y = 1 }
 				motorized = { x = 4 y = 2 }
 				motorized = { x = 4 y = 3 }
+				mot_anti_air_brigade= { x = 3 y = 4 }
+				mot_anti_air_brigade = { x = 4 y = 4 }
 
 			}
 			support = {
-				recon = { x = 0 y = 0 } 		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and they seem rather OP. Could revisit if balance changes
+				mot_recon = { x = 0 y = 0 } 		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and they seem rather OP. Could revisit if balance changes
 				engineer = { x = 0 y = 1 } 	# (semi-mot) Engineer bn
 				artillery = { x = 0 y = 2 }
 				logistics_company = { x = 0 y = 3 }
@@ -84,7 +85,6 @@ country_event = {
 					medium_armor = { x = 2 y = 0 }
 					medium_armor = { x = 2 y = 1 }
 					medium_armor = { x = 2 y = 2 }
-					medium_armor = { x = 2 y = 3 }
 					motorized = { x = 3 y = 0 }
 					motorized = { x = 3 y = 1 }
 					motorized = { x = 3 y = 2 }
@@ -93,10 +93,12 @@ country_event = {
 					motorized = { x = 4 y = 1 }
 					motorized = { x = 4 y = 2 }
 					motorized = { x = 4 y = 3 }
+					mot_anti_air_brigade= { x = 3 y = 4 }
+					mot_anti_air_brigade = { x = 4 y = 4 }
 
 				}
 				support = {
-					recon = { x = 0 y = 0 } 		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and they seem rather OP. Could revisit if balance changes
+					mot_recon = { x = 0 y = 0 } 		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and they seem rather OP. Could revisit if balance changes
 					engineer = { x = 0 y = 1 } 	# (semi-mot) Engineer bn
 					artillery = { x = 0 y = 2 }
 					logistics_company = { x = 0 y = 3 }

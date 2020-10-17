@@ -125,7 +125,6 @@ focus_tree = {
 		id = JAP_intervene_in_china
 		icon = GFX_goal_generic_occupy_states_ongoing_war
 		prerequisite = { focus = JAP_liaison_conference }
-		will_lead_to_war_with = CHI
 		x = 0
 		y = 1
 		relative_position_id = JAP_liaison_conference
@@ -2333,8 +2332,6 @@ focus_tree = {
 		prerequisite = { focus = JAP_coal_liquification focus = JAP_non_aggression_pact_with_sov }
 		relative_position_id = JAP_coal_liquification
 
-		will_lead_to_war_with = ENG
-		will_lead_to_war_with = INS
 
 		cost = 0.1
 
@@ -3446,7 +3443,6 @@ focus_tree = {
 		id = JAP_ussr_war_goal
 		icon = GFX_focus_generic_attack_communists
 		prerequisite = { focus = JAP_develop_the_bejing_area}
-		will_lead_to_war_with = SOV
 
 		x = 0
 		y = 1
