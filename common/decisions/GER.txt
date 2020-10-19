@@ -22,6 +22,277 @@ operations = {
 		
 		}
 	}
+	GER_atlantikwall = {
+		icon = ger_reichskommissariats
+		allowed = { tag = GER }
+		available = { always=no}
+		visible={has_war=yes}
+		activation = {      
+			always=no   
+        }
+		is_good=yes
+		days_mission_timeout=30
+		timeout_effect = {
+			
+			custom_effect_tooltip="Adds a Coastal Fort to every coastal provinces that have at least one coastal fort."
+			99 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+						level > 0
+					}
+				}
+			}
+
+			58 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+						level > 0
+					}
+				}
+			}
+
+			59 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+						level > 0
+					}
+				}
+			}
+
+			56 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+						level > 0
+					}
+				}
+			}
+
+			36 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+						level > 0
+					}
+				}
+			}
+
+			7 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+						level > 0
+					}
+				}
+			}
+
+			35 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+						level > 0
+					}
+				}
+			}
+
+			6 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+						level > 0
+					}
+				}
+			}
+
+			29 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+						level > 0
+					}
+				}
+			}
+
+			785 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+						level > 0
+					}
+				}
+			}
+
+			15 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+						level > 0
+					}
+				}
+			}
+
+			14 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+						level > 0
+					}
+				}
+			}
+
+			30 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+						level > 0
+					}
+				}
+			}
+
+			23 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+						level > 0
+					}
+				}
+			}
+
+
+			19 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+						level > 0
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					any_country = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER
+						}
+						has_full_control_of_state = 142
+					}
+				}
+
+				142 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 1
+						province = {
+							all_provinces = yes
+							limit_to_coastal = yes
+							level > 0
+						}
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					any_country = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER
+						}
+						has_full_control_of_state = 143
+					}
+				}
+
+				143 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 1
+						province = {
+							all_provinces = yes
+							limit_to_coastal = yes
+							level > 0
+						}
+					}
+				}
+			}
+
+			if = {
+				limit = {
+					any_country = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER
+						}
+						has_full_control_of_state = 144
+					}
+				}
+
+				144 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 1
+						province = {
+							all_provinces = yes
+							limit_to_coastal = yes
+							level > 0
+						}
+					}
+				}
+			}
+
+		
+		
+		}
+		
+	}
 	GER_operation_weserubung = {
 		icon = ger_reichskommissariats
 		fire_only_once = yes
@@ -627,7 +898,7 @@ special_projects = {
 					province = {
 						all_provinces = yes
 						limit_to_border = no
-						level > 1
+						level > 0
 					}
 				}
 			}
@@ -638,7 +909,7 @@ special_projects = {
 					province = {
 						all_provinces = yes
 						limit_to_border = no
-						level > 1
+						level > 0
 					}
 				}
 			}
@@ -649,7 +920,7 @@ special_projects = {
 					province = {
 						all_provinces = yes
 						limit_to_border = no
-						level > 1
+						level > 0
 					}
 				}
 			}
@@ -660,7 +931,7 @@ special_projects = {
 					province = {
 						all_provinces = yes
 						limit_to_border = no
-						level > 1
+						level > 0
 					}
 				}
 			}
@@ -690,7 +961,7 @@ special_projects = {
 						province = {
 							all_provinces = yes
 							limit_to_border = no
-							level > 1
+							level > 0
 						}
 					}
 				}
@@ -701,7 +972,7 @@ special_projects = {
 						province = {
 							all_provinces = yes
 							limit_to_border = no
-							level > 1
+							level > 0
 						}
 					}
 				}
@@ -724,7 +995,7 @@ special_projects = {
 						province = {
 							all_provinces = yes
 							limit_to_border = no
-							level > 1
+							level > 0
 						}
 					}
 				}
@@ -755,7 +1026,7 @@ special_projects = {
 						province = {
 							all_provinces = yes
 							limit_to_border = no
-							level > 1
+							level > 0
 						}
 					}
 				}
@@ -766,7 +1037,7 @@ special_projects = {
 						province = {
 							all_provinces = yes
 							limit_to_border = no
-							level > 1
+							level > 0
 						}
 					}
 				}
