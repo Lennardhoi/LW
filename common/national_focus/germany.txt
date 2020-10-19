@@ -2615,7 +2615,7 @@ focus_tree = {
 						light_tank_recon = { x = 0 y = 0 } 		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and they seem rather OP. Could revisit if balance changes
 						engineer = { x = 0 y = 1 } 	# (semi-mot) Engineer bn
 						artillery = { x = 0 y = 2 }
-						anti_air = {x = 0 y = 3} = { x = 0 y = 4 }	# Heavy Arty Regiment had 1x 152mm bn + 2x 122mm bn
+						anti_air = {x = 0 y = 3} # Heavy Arty Regiment had 1x 152mm bn + 2x 122mm bn
 						anti_tank = {x = 0 y = 4}
 						
 					}
@@ -2702,7 +2702,7 @@ focus_tree = {
 						light_tank_recon = { x = 0 y = 0 } 		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and they seem rather OP. Could revisit if balance changes
 						engineer = { x = 0 y = 1 } 	# (semi-mot) Engineer bn
 						artillery = { x = 0 y = 2 }
-						anti_air = {x = 0 y = 3} = { x = 0 y = 4 }	# Heavy Arty Regiment had 1x 152mm bn + 2x 122mm bn
+						anti_air = {x = 0 y = 3}	# Heavy Arty Regiment had 1x 152mm bn + 2x 122mm bn
 						anti_tank = {x = 0 y = 4}
 						
 					}
@@ -2890,10 +2890,7 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 10
-			modifier = {
-				factor = 0
-				NOT = { has_completed_focus = GER_anti_comitern_pact }
-			}
+			
 		}
 		completion_reward = {
 			# REVISIT Rework event series to fit new design or retain old design
@@ -2934,6 +2931,7 @@ focus_tree = {
 		bypass = {
 
 		}
+		
 		cancel_if_invalid = no
 		x = 0
 		y = 1

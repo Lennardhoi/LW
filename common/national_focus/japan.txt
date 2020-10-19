@@ -134,19 +134,15 @@ focus_tree = {
 		available = {
 			date > 1937.1.1
 		}
-
-
-
-
+       
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 
 		ai_will_do = {
 			factor = 10
-			factor = 0
 			modifier = {
-				date < 1937.1.1
+				date > 1937.1.1
 			}
 		}
 
@@ -276,7 +272,10 @@ focus_tree = {
 		cost = 5
 
 		ai_will_do = {
-			factor = 4
+			factor = 10
+			modifier = {
+				date > 1939.1.1
+			}
 		}
 
 		available = {
