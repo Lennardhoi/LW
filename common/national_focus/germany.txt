@@ -2806,23 +2806,168 @@ focus_tree = {
 		y = 1
 		cost = 2
 		available = {
-
-
-			or = { 763 = { is_controlled_by = Sov  }
-				15 = { is_controlled_by = FRA }
-				16 = { is_controlled_by = FRA }
-				29 = { is_controlled_by = FRA }
-				2 = { not ={ is_controlled_by = ITA}}
+			count_triggers={
+				amount=4
+				14= {is_controlled_by_ROOT_or_ally=no}
+				30= {is_controlled_by_ROOT_or_ally=no}
+				16= {is_controlled_by_ROOT_or_ally=no}
+				15= {is_controlled_by_ROOT_or_ally=no}
+				6= {is_controlled_by_ROOT_or_ally=no}
+				29= {is_controlled_by_ROOT_or_ally=no}
+				35= {is_controlled_by_ROOT_or_ally=no}
+				36= {is_controlled_by_ROOT_or_ally=no}
+				7= {is_controlled_by_ROOT_or_ally=no}
+				785= {is_controlled_by_ROOT_or_ally=no}
+				763= {is_controlled_by_ROOT_or_ally=no}
+				46= {is_controlled_by_ROOT_or_ally=no}
+				2= {is_controlled_by_ROOT_or_ally=no}
+				10= {is_controlled_by_ROOT_or_ally=no}
+				
 			}
-
-
 		}
+
+		
 		ai_will_do = {
 			factor = 5
 		}
 		available_if_capitulated = no
 
+		
 		completion_reward = {
+         custom_effect_tooltip = "Deploys the last reserves of the Reich"
+		 hidden_effect ={
+		 division_template = {
+					name = "SS-Panzergrenadier"			# Rifle Division
+					regiments = {
+						heavy_armor = { x = 0 y = 0 }
+						heavy_armor = { x = 0 y = 1 }
+						heavy_armor = { x = 0 y = 2 }
+						heavy_armor = { x = 0 y = 3 }
+						heavy_armor = { x = 1 y = 0 }
+						heavy_armor = { x = 1 y = 1 }
+						heavy_armor = { x = 1 y = 2 }
+						heavy_armor = { x = 1 y = 3 }
+						heavy_armor = { x = 2 y = 0 }
+						heavy_armor = { x = 2 y = 1 }
+						heavy_armor = { x = 2 y = 2 }
+						motorized = { x = 3 y = 0 }
+						motorized = { x = 3 y = 1 }
+						motorized = { x = 3 y = 2 }
+						motorized = { x = 3 y = 3 }
+						motorized = { x = 4 y = 0 }
+						motorized = { x = 4 y = 1 }
+						motorized = { x = 4 y = 2 }
+						motorized = { x = 4 y = 3 }
+						mot_anti_air_brigade = { x = 4 y = 4 }
+						mot_anti_air_brigade = { x = 4 y = 5 }
+
+					}
+					support = {
+						light_tank_recon = { x = 0 y = 0 } 		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and they seem rather OP. Could revisit if balance changes
+						engineer = { x = 0 y = 1 } 	# (semi-mot) Engineer bn
+						artillery = { x = 0 y = 2 }
+						anti_air = {x = 0 y = 3} = { x = 0 y = 4 }	# Heavy Arty Regiment had 1x 152mm bn + 2x 122mm bn
+						anti_tank = {x = 0 y = 4}
+						
+					}
+				}
+				64 = {
+					for_loop_effect = {
+						end = 1
+						create_unit = {
+							division = "name = \"SS-Panzergrenadier\" division_template = \"SS-Panzergrenadier\" start_experience_factor = 2.0"
+							owner = GER
+						}
+						}
+						}
+				division_template = {
+					name = "Panzergrenadiere"			# Rifle Division
+					regiments = {
+						mechanized = { x = 0 y = 0 }
+						mechanized = { x = 0 y = 1 }
+						mechanized = { x = 0 y = 2 }
+						mechanized = { x = 0 y = 3 }
+						mechanized = { x = 1 y = 0 }
+						mechanized = { x = 1 y = 1 }
+						mechanized = { x = 1 y = 2 }
+						mechanized = { x = 1 y = 3 }
+						mechanized = { x = 2 y = 0 }
+						mechanized = { x = 2 y = 1 }
+						mechanized = { x = 2 y = 2 }
+						mechanized = { x = 2 y = 3 }
+						mot_anti_air_brigade = { x = 3 y = 0 }
+						mot_anti_air_brigade = { x = 3 y = 1 }
+						mot_anti_tank_brigade = { x = 3  y = 2}
+						mot_anti_tank_brigade = { x = 3 y = 3}
+						mot_artillery_brigade = { x = 4 y = 0 }
+						mot_artillery_brigade = { x = 4 y = 1 }
+						mot_artillery_brigade = { x = 4 y = 2 }
+						mot_artillery_brigade = { x = 4 y = 3 }
+
+					}
+					support = {
+						light_tank_recon = { x = 0 y = 0 } 		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and they seem rather OP. Could revisit if balance changes
+						engineer = { x = 0 y = 1 } 	# (semi-mot) Engineer bn
+						artillery = { x = 0 y = 2 }
+						anti_air = {x = 0 y = 3}
+						anti_tank = {x = 0 y = 4}
+						signal_company = {x = 0 y = 5}
+					}
+				}
+				64 = {
+					for_loop_effect = {
+						end = 15
+						create_unit = {
+							division = "name = \"Panzergrenadiere\" division_template = \"Panzergrenadiere\" start_experience_factor = 2.0"
+							owner = GER
+						}
+						}
+				}
+				 division_template = {
+					name = "Panzerjagd-Division"			# Rifle Division
+					regiments = {
+						medium_armor = { x = 0 y = 0 }
+						medium_armor = { x = 0 y = 1 }
+						medium_armor = { x = 0 y = 2 }
+						medium_armor = { x = 0 y = 3 }
+						medium_armor = { x = 1 y = 0 }
+						medium_armor = { x = 1 y = 1 }
+						medium_armor = { x = 1 y = 2 }
+						medium_armor = { x = 1 y = 3 }
+						medium_armor = { x = 2 y = 0 }
+						medium_armor = { x = 2 y = 1 }
+						medium_armor = { x = 2 y = 2 }
+						motorized = { x = 3 y = 0 }
+						motorized = { x = 3 y = 1 }
+						motorized = { x = 3 y = 2 }
+						motorized = { x = 3 y = 3 }
+						motorized = { x = 4 y = 0 }
+						motorized = { x = 4 y = 1 }
+						motorized = { x = 4 y = 2 }
+						motorized = { x = 4 y = 3 }
+						mot_anti_air_brigade = { x = 4 y = 4 }
+						mot_anti_air_brigade = { x = 4 y = 5 }
+
+					}
+					support = {
+						light_tank_recon = { x = 0 y = 0 } 		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and they seem rather OP. Could revisit if balance changes
+						engineer = { x = 0 y = 1 } 	# (semi-mot) Engineer bn
+						artillery = { x = 0 y = 2 }
+						anti_air = {x = 0 y = 3} = { x = 0 y = 4 }	# Heavy Arty Regiment had 1x 152mm bn + 2x 122mm bn
+						anti_tank = {x = 0 y = 4}
+						
+					}
+				}
+				64 = {
+					for_loop_effect = {
+						end = 6
+						create_unit = {
+							division = "name = \"Panzerjagd-Division\" division_template = \"Panzerjagd-Division\" start_experience_factor = 2.0"
+							owner = GER
+						}
+						}
+						}
+		    }
 
 
 		}
