@@ -6,7 +6,6 @@ operations = {
 		allowed = { tag = ITA }
 		available = { has_completed_focus = ITA_greece_war_goal}
 		cost = 0
-		days_remove = 30
 		complete_effect = {
 			effect_tooltip = {
 				declare_war_on = {
@@ -33,12 +32,11 @@ operations = {
 			   YUG = { add_to_war = { targeted_alliance = ENG enemy = GER } }
 			   ITA = { add_to_war = { targeted_alliance = GER enemy = ENG } }
 			   ENG = { add_to_faction = YUG }
+			   GRE = { add_to_war = { targeted_alliance = ENG enemy = GER } }
+			   ENG = { add_to_faction = GRE }
 			}
 		}
-	    remove_effect = {
-            GRE = { add_to_war = { targeted_alliance = ENG enemy = GER } }
-			ENG = { add_to_faction = GRE }
-		}
+	   
 	}
 		ITA_give_germany_marsa_matruh = {
 		icon = ger_reichskommissariats
