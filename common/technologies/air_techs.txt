@@ -1,6 +1,6 @@
 technologies = {
 	scout_plane1 = {
-
+		allow_branch={NOT={tag=EFR}}
 		enable_equipments = {
 			scout_plane_equipment_1
 		}
@@ -94,7 +94,7 @@ technologies = {
 		enable_equipments = {
 			fighter_equipment_0
 		}
-
+		allow_branch={NOT={tag=EFR}}
 		path = {
 			leads_to_tech = fighter1
 			research_cost_coeff = 1
@@ -1280,7 +1280,7 @@ technologies = {
 		enable_equipments = {
 			tac_bomber_equipment_0
 		}
-
+		allow_branch={NOT={tag=EFR}}
 		path = {
 			leads_to_tech = heavy_fighter1
 			research_cost_coeff = 1
@@ -1648,7 +1648,7 @@ technologies = {
 
 
 	strategic_bomber1 = {
-
+		allow_branch={NOT={tag=EFR}}
 		enable_equipments = {
 			strat_bomber_equipment_1
 		}

@@ -381,12 +381,18 @@ operations = {
 					target = BEL
 					type = annex_everything
 				}
+				declare_war_on = {
+					target = FRA
+					type = annex_everything
+				}
 			}
 			hidden_effect = {
 				ENG = { add_to_faction = LUX}
 				ENG = { add_to_faction = HOL }
 				ENG = { add_to_faction = BEL }
+				ENG = { add_to_faction = FRA }
 				LUX = { add_to_war = { targeted_alliance = ENG enemy = GER } }
+				FRA = { add_to_war = { targeted_alliance = ENG enemy = GER } }
 				HOL = { add_to_war = { targeted_alliance = ENG enemy = GER } }
 				BEL = { add_to_war = { targeted_alliance = ENG enemy = GER } }
 			}

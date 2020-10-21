@@ -37,7 +37,13 @@ country_event = {
 						local_building_slots_factor = 0.5
 					}
 				}
-				GER={set_state_owner=PREV}}
+				GER={
+					set_state_owner=PREV
+					if = {limit={is_controlled_by_ROOT_or_ally=yes}
+					set_state_controller=PREV
+					}
+				}
+				}
 			if={limit={tag=DEN}USA = { transfer_state = 101}
 				ENG = { transfer_state =  100
 					transfer_state = 337 }

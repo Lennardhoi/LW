@@ -129,6 +129,10 @@ anti_cross_faction_trade_axis = {
 		modifier = anti_cross_faction_trade
 	}
 	add_opinion_modifier = {
+		target = EFR
+		modifier = anti_cross_faction_trade
+	}
+	add_opinion_modifier = {
 		target = BUL
 		modifier = anti_cross_faction_trade
 	}
@@ -171,10 +175,10 @@ anti_cross_faction_trade_allies = {
 		target = NZL
 		modifier = anti_cross_faction_trade
 	}
-	add_opinion_modifier = {
-		target = EFR
-		modifier = anti_cross_faction_trade_efr
-	}
+	#add_opinion_modifier = {
+	#	target = EFR
+	#	modifier = anti_cross_faction_trade_efr
+	#}
 }
 
 
@@ -200,10 +204,6 @@ anti_cross_faction_trade_all = {
 	SAF = {
 		anti_cross_faction_trade_axis = yes
 	}
-	EFR = {
-		anti_cross_faction_trade_axis = yes
-	}
-
 	GER = {
 		anti_cross_faction_trade_allies = yes
 	}

@@ -2222,15 +2222,15 @@ news_event = {
 
 	immediate = {
 		set_global_flag = fall_of_cairo
-		GER={add_ideas={GER_triumph_in_africa}}
-		ITA={add_ideas={GER_triumph_in_africa}}
-		ENG={add_ideas={ENG_lose_in_africa}}
-		FRA={add_ideas={ENG_lose_in_africa}}
-		CAN={add_ideas={ENG_lose_in_africa}}
-		SAF={add_ideas={ENG_lose_in_africa}}
-		NZL={add_ideas={ENG_lose_in_africa}}
-		AST={add_ideas={ENG_lose_in_africa}}
-		RAJ={add_ideas={ENG_lose_in_africa}}
+		GER={ add_ideas = { GER_triumph_in_africa } }
+		ITA = { add_ideas= { GER_triumph_in_africa } }
+		ENG = { add_timed_idea = { idea=ENG_lose_in_africa days=180 } }
+		FRA = { add_timed_idea = { idea=ENG_lose_in_africa days=180 } }
+		CAN = { add_timed_idea = { idea=ENG_lose_in_africa days=180 } }
+		SAF = { add_timed_idea = { idea=ENG_lose_in_africa days=180 } }
+		NZL = { add_timed_idea = { idea=ENG_lose_in_africa days=180 } }
+		AST = { add_timed_idea = { idea=ENG_lose_in_africa days=180 } }
+		RAJ = { add_timed_idea = { idea=ENG_lose_in_africa days=180 } }
 	}
 
 	mean_time_to_happen = {

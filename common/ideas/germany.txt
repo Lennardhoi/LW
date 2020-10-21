@@ -164,7 +164,6 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				air_attack_factor=0.1
 				army_org_Factor = 0.1
 				army_morale_factor=0.1
 				agency_upgrade_time = -0.30
@@ -189,7 +188,7 @@ ideas = {
 			picture = generic_air_bonus
 			modifier= {
 				air_ace_generation_chance_factor = 2
-				air_cas_present_factor = 0.2}
+				air_cas_present_factor = 0.1	}
 			research_bonus = {
 				air_doctrine = 0.25
 				jet_technology = 0.10
@@ -1547,7 +1546,7 @@ ideas = {
 			equipment_bonus = {
 
 				fighter_equipment = {
-					build_cost_ic = -0.12
+					build_cost_ic = -0.1
 					air_agility = 0.1
 					air_attack = 0.1
 					maximum_speed = 0.1
