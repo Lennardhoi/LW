@@ -34,10 +34,10 @@ POW = {
 			subtract_from_variable={total_pows_unassigned =25}
 			random_list= {
 				70 = {
-					add_manpower = 5000
+					add_manpower = 15000
 				}
 				10 = {
-					add_manpower = 15000
+					add_manpower = 25000
 
 
 				}
@@ -87,32 +87,40 @@ POW = {
 		fixed_random_seed = no
 		is_good = yes
 		available={
-			custom_trigger_tooltip= {
-				tooltip=[POW_recruit_workers_tt1]
-
+			
 				if={
-					limit={check_variable={POW_recruit_workers_cost>0}}
-					check_variable ={total_pows_unassigned>POW_recruit_workers_cost}
+					limit={check_variable={POW_recruit_workers_for_army_production_cost>0}}
+					custom_trigger_tooltip= {
+						tooltip= POW_recruit_workers_for_army_production_tt1
+						check_variable ={total_pows_unassigned>POW_recruit_workers_for_army_production_cost}
+					}
 				}
 				else ={
-					check_variable ={total_pows_unassigned>25}}
-			}
+				custom_trigger_tooltip= {
+						tooltip= POW_recruit_workers_for_army_production_tt2
+						check_variable ={total_pows_unassigned>pow_base_cost}}
+				}	
+			
 		}
 		complete_effect = {
-			custom_effect_tooltip = [POW_recruit_workers_tt2]
-			if={limit={check_variable={POW_recruit_workers_cost=0}}
-				add_to_variable={total_pows_assigned = 50}
-				subtract_from_variable={total_pows_unassigned =50}
-				add_to_variable={POW_recruit_workers_cost = 75}
+			if={limit={check_variable={POW_recruit_workers_for_army_production_cost=0}}
+				add_to_variable={total_pows_assigned = pow_base_cost
+				tooltip=pow_assignment_tt}
+				subtract_from_variable={total_pows_unassigned =pow_base_cost}
+				set_temp_variable= {increase = pow_base_cost}
+				multiply_temp_variable = {increase = 0.5}
+				add_to_variable={POW_recruit_workers_for_army_production_cost = pow_base_cost}
+				add_to_variable={POW_recruit_workers_for_army_production_cost = increase}
 			}
 			else={
-				add_to_variable={total_pows_assigned = POW_recruit_workers_cost}
-				subtract_from_variable={total_pows_unassigned =POW_recruit_workers_cost}
-				add_to_variable={POW_recruit_workers_cost = 25}
+				add_to_variable={total_pows_assigned = POW_recruit_workers_for_army_production_cost
+				tooltip=pow_assignment_tt}
+				subtract_from_variable={total_pows_unassigned =POW_recruit_workers_for_army_production_cost}
+				set_temp_variable= {increase = pow_base_cost}
+				multiply_temp_variable = {increase = 0.5}
+				add_to_variable={POW_recruit_workers_for_army_production_cost = increase}
 			}
-			set_temp_variable={pow_fortification_pre = pow_adjustment}
-			multiply_temp_variable = {pow_fortification_pre = 0.025}
-			add_to_variable = {pow_industrial_capacity =pow_fortification_pre}
+			add_to_variable = {pow_industrial_capacity =0.025}
 			custom_effect_tooltip = POW_recruit_workers_tt5
 			hidden_effect={if={limit={NOT={has_dynamic_modifier = { modifier = POW_industry }}}
 					add_dynamic_modifier = { modifier = POW_industry }
@@ -131,37 +139,45 @@ POW = {
 		allowed = {
 			is_playable_country =yes
 		}
-		fixed_random_seed = no
-		fire_only_once = no
 
+		fire_only_once = no
+		fixed_random_seed = no
 		is_good = yes
 		available={
-			custom_trigger_tooltip= {
-				tooltip=[POW_recruit_workers_tt1]
-
+			
 				if={
-					limit={check_variable={POW_recruit_workers_cost>0}}
-					check_variable ={total_pows_unassigned>POW_recruit_workers_cost}
+					limit={check_variable={POW_recruit_workers_for_navy_production_cost>0}}
+					custom_trigger_tooltip= {
+						tooltip= POW_recruit_workers_for_navy_production_tt1
+						check_variable ={total_pows_unassigned>POW_recruit_workers_for_navy_production_cost}
+					}
 				}
 				else ={
-					check_variable ={total_pows_unassigned>25}}
-			}
+				custom_trigger_tooltip= {
+						tooltip= POW_recruit_workers_for_navy_production_tt2
+						check_variable ={total_pows_unassigned>pow_base_cost}}
+				}	
+			
 		}
 		complete_effect = {
-			custom_effect_tooltip = [POW_recruit_workers_tt2]
-			if={limit={check_variable={POW_recruit_workers_cost=0}}
-				add_to_variable={total_pows_assigned = 50}
-				subtract_from_variable={total_pows_unassigned =50}
-				add_to_variable={POW_recruit_workers_cost = 75}
+			if={limit={check_variable={POW_recruit_workers_for_navy_production_cost=0}}
+				add_to_variable={total_pows_assigned = pow_base_cost
+				tooltip=pow_assignment_tt}
+				subtract_from_variable={total_pows_unassigned =pow_base_cost}
+				set_temp_variable= {increase = pow_base_cost}
+				multiply_temp_variable = {increase = 0.5}
+				add_to_variable={POW_recruit_workers_for_navy_production_cost = pow_base_cost}
+				add_to_variable={POW_recruit_workers_for_navy_production_cost = increase}
 			}
 			else={
-				add_to_variable={total_pows_assigned = POW_recruit_workers_cost}
-				subtract_from_variable={total_pows_unassigned =POW_recruit_workers_cost}
-				add_to_variable={POW_recruit_workers_cost = 25}
+				add_to_variable={total_pows_assigned = POW_recruit_workers_for_navy_production_cost
+				tooltip=pow_assignment_tt}
+				subtract_from_variable={total_pows_unassigned =POW_recruit_workers_for_navy_production_cost}
+				set_temp_variable= {increase = pow_base_cost}
+				multiply_temp_variable = {increase = 0.5}
+				add_to_variable={POW_recruit_workers_for_navy_production_cost = increase}
 			}
-			set_temp_variable={pow_fortification_pre = pow_adjustment}
-			multiply_temp_variable = {pow_fortification_pre = 0.025}
-			add_to_variable = {pow_dockyard_capacity =pow_fortification_pre}
+			add_to_variable = {pow_dockyard_capacity =0.025}
 			custom_effect_tooltip = POW_recruit_workers_tt4
 			hidden_effect={if={limit={NOT={has_dynamic_modifier = { modifier = POW_industry }}}
 					add_dynamic_modifier = { modifier = POW_industry }
@@ -173,10 +189,10 @@ POW = {
 			}
 		}
 	}
-	POW_recruit_workers_for_resource_extraction = {
-		cost=50
-		icon = generic_civil_support
+	POW_recruit_workers_for_resource_extraction= {
 
+		icon = generic_civil_support
+		cost=50
 		allowed = {
 			is_playable_country =yes
 		}
@@ -185,89 +201,101 @@ POW = {
 		fixed_random_seed = no
 		is_good = yes
 		available={
-			custom_trigger_tooltip= {
-				tooltip=[POW_recruit_workers_tt1]
-
+			
 				if={
-					limit={check_variable={POW_recruit_workers_cost>0}}
-					check_variable ={total_pows_unassigned>POW_recruit_workers_cost}
+					limit={check_variable={POW_recruit_workers_for_resource_extraction_cost>0}}
+					custom_trigger_tooltip= {
+						tooltip= POW_recruit_workers_for_resource_extraction_tt1
+						check_variable ={total_pows_unassigned>POW_recruit_workers_for_resource_extraction_cost}
+					}
 				}
 				else ={
-					check_variable ={total_pows_unassigned>25}}
-			}
+				custom_trigger_tooltip= {
+						tooltip= POW_recruit_workers_for_resource_extraction_tt2
+						check_variable ={total_pows_unassigned>pow_base_cost}}
+				}	
+			
 		}
 		complete_effect = {
-			custom_effect_tooltip = [POW_recruit_workers_tt2]
-			if={limit={check_variable={POW_recruit_workers_cost=0}}
-				add_to_variable={total_pows_assigned = 50}
-				subtract_from_variable={total_pows_unassigned =50}
-				add_to_variable={POW_recruit_workers_cost = 75}
+			if={limit={check_variable={POW_recruit_workers_for_resource_extraction_cost=0}}
+				add_to_variable={total_pows_assigned = pow_base_cost
+				tooltip=pow_assignment_tt}
+				subtract_from_variable={total_pows_unassigned =pow_base_cost}
+				set_temp_variable= {increase = pow_base_cost}
+				multiply_temp_variable = {increase = 0.5}
+				add_to_variable={POW_recruit_workers_for_resource_extraction_cost = pow_base_cost}
+				add_to_variable={POW_recruit_workers_for_resource_extraction_cost = increase}
 			}
 			else={
-				add_to_variable={total_pows_assigned = POW_recruit_workers_cost}
-				subtract_from_variable={total_pows_unassigned =POW_recruit_workers_cost}
-				add_to_variable={POW_recruit_workers_cost = 25}
+				add_to_variable={total_pows_assigned = POW_recruit_workers_for_resource_extraction_cost
+				tooltip=pow_assignment_tt}
+				subtract_from_variable={total_pows_unassigned =POW_recruit_workers_for_resource_extraction_cost}
+				set_temp_variable= {increase = pow_base_cost}
+				multiply_temp_variable = {increase = 0.5}
+				add_to_variable={POW_recruit_workers_for_resource_extraction_cost = increase}
 			}
-			set_temp_variable={pow_fortification_pre = pow_adjustment}
-			multiply_temp_variable = {pow_fortification_pre = 0.03}
-			add_to_variable = {pow_resource_gain =pow_fortification_pre}
-			custom_effect_tooltip = POW_recruit_workers_tt3
-
+			add_to_variable = {pow_resource_gain =0.05}
+			custom_effect_tooltip =  POW_recruit_workers_tt3
+			hidden_effect={if={limit={NOT={has_dynamic_modifier = { modifier = POW_industry }}}
+					add_dynamic_modifier = { modifier = POW_industry }
+					}}
 			random_list= {
 				80 = {}
 				10 = {add_stability=-0.01 }
 				10 = { add_war_support = -0.01}
 			}
-			hidden_effect={if={limit={NOT={has_dynamic_modifier = { modifier = POW_industry }}}
-					add_dynamic_modifier = { modifier = POW_industry }
-					}}
 		}
 	}
-	POW_recruit_workers_for_construction_projects = {
-		cost=50
-		icon = generic_civil_support
+	POW_recruit_workers_for_construction_projects= {
 
+		icon = generic_civil_support
+		cost=50
 		allowed = {
 			is_playable_country =yes
 		}
-		fixed_random_seed = no
-		fire_only_once = no
 
+		fire_only_once = no
+		fixed_random_seed = no
 		is_good = yes
 		available={
-			custom_trigger_tooltip= {
-				tooltip=[POW_recruit_workers_tt1]
-
+			
 				if={
-					limit={check_variable={POW_recruit_workers_cost>0}}
-					check_variable ={total_pows_unassigned>POW_recruit_workers_cost}
+					limit={check_variable={POW_recruit_workers_for_construction_projects_cost>0}}
+					custom_trigger_tooltip= {
+						tooltip= POW_recruit_workers_for_construction_projects_tt1
+						check_variable ={total_pows_unassigned>POW_recruit_workers_for_construction_projects_cost}
+					}
 				}
 				else ={
-					check_variable ={total_pows_unassigned>25}}
-			}
+				custom_trigger_tooltip= {
+						tooltip= POW_recruit_workers_for_construction_projects_tt2
+						check_variable ={total_pows_unassigned>pow_base_cost}}
+				}	
+			
 		}
 		complete_effect = {
-			custom_effect_tooltip = [POW_recruit_workers_tt2]
-			if={limit={check_variable={POW_recruit_workers_cost=0}}
-				add_to_variable={total_pows_assigned = 50}
-				subtract_from_variable={total_pows_unassigned =50}
-				add_to_variable={POW_recruit_workers_cost = 75}
+			if={limit={check_variable={POW_recruit_workers_for_construction_projects_cost=0}}
+				add_to_variable={total_pows_assigned = pow_base_cost
+				tooltip=pow_assignment_tt}
+				subtract_from_variable={total_pows_unassigned =pow_base_cost}
+				set_temp_variable= {increase = pow_base_cost}
+				multiply_temp_variable = {increase = 0.5}
+				add_to_variable={POW_recruit_workers_for_construction_projects_cost = pow_base_cost}
+				add_to_variable={POW_recruit_workers_for_construction_projects_cost = increase}
 			}
 			else={
-				add_to_variable={total_pows_assigned = POW_recruit_workers_cost}
-				subtract_from_variable={total_pows_unassigned =POW_recruit_workers_cost}
-				add_to_variable={POW_recruit_workers_cost = 25}
+				add_to_variable={total_pows_assigned = POW_recruit_workers_for_construction_projects_cost
+				tooltip=pow_assignment_tt}
+				subtract_from_variable={total_pows_unassigned =POW_recruit_workers_for_construction_projects_cost}
+				set_temp_variable= {increase = pow_base_cost}
+				multiply_temp_variable = {increase = 0.5}
+				add_to_variable={POW_recruit_workers_for_construction_projects_cost = increase}
 			}
-			set_temp_variable={pow_fortification_pre = pow_adjustment}
-			multiply_temp_variable = {pow_fortification_pre = 0.05}
-			add_to_variable = {pow_infrastructure_speed =pow_fortification_pre}
-			custom_effect_tooltip = POW_recruit_workers_tt6
-			set_temp_variable={pow_fortification_pre = pow_adjustment}
-			multiply_temp_variable = {pow_fortification_pre = 0.05}
-			add_to_variable = {pow_fortification =pow_fortification_pre} #coastal bunker bunker and aa
-			custom_effect_tooltip = POW_recruit_workers_tt7
-			custom_effect_tooltip = POW_recruit_workers_tt8
-			custom_effect_tooltip = POW_recruit_workers_tt9
+			add_to_variable = {pow_fortification =0.05}
+			custom_effect_tooltip =  POW_recruit_workers_tt6
+			custom_effect_tooltip =  POW_recruit_workers_tt7
+			custom_effect_tooltip =  POW_recruit_workers_tt8
+			custom_effect_tooltip =  POW_recruit_workers_tt9
 			hidden_effect={if={limit={NOT={has_dynamic_modifier = { modifier = POW_industry }}}
 					add_dynamic_modifier = { modifier = POW_industry }
 					}}
@@ -301,7 +329,7 @@ POW = {
 					check_variable ={total_pows_unassigned>POW_free_prisoners_cost}
 				}
 				else ={
-					check_variable ={total_pows_unassigned>25}}
+					check_variable ={total_pows_unassigned>15}}
 			}
 		}
 		fire_only_once = no
@@ -310,9 +338,8 @@ POW = {
 		fixed_random_seed = no
 		complete_effect = {
 			custom_effect_tooltip = [POW_free_prisoners_tt2]
-			#add_to_variable={POW_free_prisoners_cost = 25}
-			#add_to_variable={total_pows_assigned = POW_free_prisoners_cost}
-			subtract_from_variable={total_pows_unassigned =POW_free_prisoners_cost}
+			add_to_variable={total_pows_assigned = 15}
+			subtract_from_variable={total_pows_unassigned =15}
 			random_list= {
 				50 = {
 					if = {
