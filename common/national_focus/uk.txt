@@ -1517,8 +1517,6 @@ focus_tree = {
 			#}
 
 		completion_reward = {
-
-
 			455 = {
 
 
@@ -1530,7 +1528,6 @@ focus_tree = {
 
 
 			}
-
 			454 = {
 
 
@@ -1542,8 +1539,6 @@ focus_tree = {
 
 
 			}
-
-
 			454 = {
 				set_building_level = {
 					type = bunker
@@ -1581,8 +1576,33 @@ focus_tree = {
 			}
 		}
 	}
+focus = {
+		id = uk_khar_focus
+		prerequisite = { focus = uk_rock_focus }
+		available = {
+			551 = { is_owned_and_controlled_by = ENG }
+		}
+		icon = GFX_goal_generic_construct_military
+		x = -1
+		y = 1
+		relative_position_id = uk_rock_focus
+		cost = 5
+		completion_reward = {
+			551 = {
+				set_building_level = {
+					type = infrastructure
+					level = 10
+					instant_build = yes
+				}
+				set_building_level = {
+					type = air_base
+					level = 40
+					instant_build = yes
+				}
 
-
+			}
+		}
+	}
 	focus = {
 		id = uk_malta_focus
 		prerequisite = { focus = uk_mediterranean_focus }
@@ -1633,7 +1653,53 @@ focus_tree = {
 			}
 		}
 	}
+focus = {
+		id = uk_home_focus
+		prerequisite = { focus = uk_malta_focus }
+		icon = GFX_goal_generic_construct_military
+		x = 1
+		y = 1
+		relative_position_id = uk_malta_focus
+		cost = 5
+		completion_reward = {
+			126 = {
+				
+				set_building_level = {
+					type = air_base
+					level = 20
+					instant_build = yes
+				}
 
+			}
+			127 = {
+				
+				set_building_level = {
+					type = air_base
+					level = 20
+					instant_build = yes
+				}
+
+			}
+			123 = {
+				
+				set_building_level = {
+					type = air_base
+					level = 20
+					instant_build = yes
+				}
+
+			}
+			338 = {
+				
+				set_building_level = {
+					type = air_base
+					level = 20
+					instant_build = yes
+				}
+
+			}
+		}
+	}
 	focus = {
 		id = uk_colonial_focus
 		prerequisite = { focus = uk_service_focus }
@@ -2916,14 +2982,14 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			add_timed_idea = {idea = ENG_crusader days = 45}
+			add_timed_idea = {idea = ENG_crusader days = 100}
 			hidden_effect = {
-				FRA = {add_timed_idea = {idea = ENG_crusader days = 60}}
-				SAF = {add_timed_idea = {idea = ENG_crusader days = 60}}
-				RAJ = {add_timed_idea = {idea = ENG_crusader days = 60}}
-				NZL = {add_timed_idea = {idea = ENG_crusader days = 60}}
-				CAN = {add_timed_idea = {idea = ENG_crusader days = 60}}
-				AST = {add_timed_idea = {idea = ENG_crusader days = 60}}
+				FRA = {add_timed_idea = {idea = ENG_crusader days = 100}}
+				SAF = {add_timed_idea = {idea = ENG_crusader days = 100}}
+				RAJ = {add_timed_idea = {idea = ENG_crusader days = 100}}
+				NZL = {add_timed_idea = {idea = ENG_crusader days = 100}}
+				CAN = {add_timed_idea = {idea = ENG_crusader days = 100}}
+				AST = {add_timed_idea = {idea = ENG_crusader days = 100}}
 
 
 

@@ -3076,7 +3076,7 @@ leader_traits = {
 
 	army_logistics_1 = {  # Ground units suffer 4% less attrition
 		sprite = 6
-		attrition = -0.04
+		supply_consumption_factor = -0.03
 
 		ai_will_do = {
 			factor = 2
@@ -3085,7 +3085,7 @@ leader_traits = {
 
 	army_logistics_2 = {  # Ground units suffer 8% less attrition
 		sprite = 6
-		attrition = -0.08
+		supply_consumption_factor = -0.05
 
 		ai_will_do = {
 			factor = 4
@@ -3094,7 +3094,7 @@ leader_traits = {
 
 	army_logistics_3 = {  # Ground units suffer 12% less attrition
 		sprite = 6
-		attrition = -0.12
+		supply_consumption_factor = -0.1
 
 		ai_will_do = {
 			factor = 6

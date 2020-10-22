@@ -1190,23 +1190,7 @@ ideas = {
 			allowed = {
 				original_tag = SOV
 			}
-			available =
-			{
-				NOT = { has_country_flag = counter_purge }
-				custom_trigger_tooltip = {
-					tooltip = SOV_konev_civil_war
-					NOT = {
-						any_other_country = {
-							has_war_with = SOV
-							original_tag = SOV
-							has_unit_leader = 408
-						}
-					}
-				}
-			}
-
-
-
+	
 			traits = { army_infantry_1 }
 			# Almost certainly a psychopath
 
@@ -1223,22 +1207,7 @@ ideas = {
 				original_tag = SOV
 
 			}
-			available =
-			{
-				NOT = { has_country_flag = purge_2_group_b }
-				hidden_trigger = {
-					NOT = {
-						any_other_country = {
-							has_war_with = SOV
-							original_tag = SOV
-							has_unit_leader = 407
-						}
-					}
-				}
-			}
-
-
-
+			
 			traits = { army_regrouping_2 }
 
 			ai_will_do = {
@@ -1315,12 +1284,12 @@ ideas = {
 			}
 			available =
 			{
-				NOT = { has_country_flag = counter_purge }
+				
 			}
 
 
 
-			traits = { air_airborne_1 }
+			traits = { army_concealment_1 }
 
 			ai_will_do = {
 				factor = 1
@@ -1337,104 +1306,20 @@ ideas = {
 			}
 			available =
 			{
-				NOT = { has_country_flag = purge_2_group_b }
+				
 			}
 
 
 
 			# Purged, but post-war
-			traits = { air_close_air_support_2 }
+			traits = { army_logistics_1 }
 
 			ai_will_do = {
 				factor = 1
 			}
 		}
 
-		stepan_krasovsky = {
-			ledger = air
-
-
-			allowed = {
-				original_tag = SOV
-
-			}
-			available =
-			{
-				NOT = { has_country_flag = counter_purge }
-			}
-
-
-
-			traits = { air_air_combat_training_2 }
-
-			ai_will_do = {
-				factor = 1
-			}
-		}
-
-		vladimir_kasatonov = {
-			ledger = navy
-			#Also unit leader: 403
-
-			allowed = {
-				original_tag = SOV
-
-			}
-			available =
-			{
-				NOT = { has_country_flag = purge_1_group_b }
-				hidden_trigger = {
-					NOT = {
-						any_other_country = {
-							has_war_with = SOV
-							original_tag = SOV
-							has_unit_leader = 403
-						}
-					}
-				}
-			}
-
-
-
-			traits = { navy_submarine_2 }
-
-			ai_will_do = {
-				factor = 0.2
-			}
-		}
-
-		gordey_levchenko = {
-			ledger = navy
-			#Also unit leader: 406
-
-			allowed = {
-				original_tag = SOV
-
-			}
-			available =
-			{
-				NOT = { has_country_flag = purge_2_group_a }
-				hidden_trigger = {
-					NOT = {
-						any_other_country = {
-							has_war_with = SOV
-							original_tag = SOV
-							has_unit_leader = 406
-						}
-					}
-				}
-			}
-
-
-
-			# Not purged, but arrested and released
-			traits = { navy_capital_ship_2 }
-
-			ai_will_do = {
-				factor = 0.2
-			}
-		}
-
+		
 		arseniy_golovko = {
 			ledger = army
 			#Also unit leader: 409
@@ -1443,22 +1328,7 @@ ideas = {
 				original_tag = SOV
 
 			}
-			available =
-			{
-				NOT = { has_country_flag = counter_purge }
-				hidden_trigger = {
-					NOT = {
-						any_other_country = {
-							has_war_with = SOV
-							original_tag = SOV
-							has_unit_leader = 409
-						}
-					}
-				}
-			}
-
-
-
+	
 			traits = { navy_amphibious_assault_2 }
 
 			ai_will_do = {
@@ -1620,26 +1490,25 @@ ideas = {
 
 
 			equipment_bonus = {
-				light_tank_equipment = {
-					build_cost_ic = -0.075
-
-					soft_attack = 0.1
-					reliability = -0.1
-				}
-				light_tank_destroyer_equipment = {
-					build_cost_ic = -0.075
-
-					hard_attack = 0.05
-					ap_attack = 0.1
-					reliability = -0.1
-				}
-				light_tank_artillery_equipment = {
-					build_cost_ic = -0.075
-
-					soft_attack = 0.1
-					reliability = -0.1
+				medium_tank_equipment = {
+					reliability = 0.1
+					build_cost_ic = -0.1
 				}
 
+				medium_tank_aa_equipment = {
+					
+					reliability = 0.1
+					build_cost_ic = -0.1
+				}
+
+				medium_tank_artillery_equipment = {
+					
+					reliability = 0.1
+					build_cost_ic = -0.1
+				}
+                medium_tank_destroyer_equipment = {
+					build_cost_ic = -0.1  reliability = 0.1
+				}
 			}
 		}
 
