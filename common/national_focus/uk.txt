@@ -2828,6 +2828,8 @@ focus = {
 
 		completion_reward = {
 			add_timed_idea = {idea = blood_toil_tears_sweat days = 185}
+			hidden_effect ={every_country = {limit = {check_variable= { speeches_enabled > 0}}}
+	        scoped_sound_effect="sp_uk_chur"}
 		}
 	}
 	focus = {
