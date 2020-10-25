@@ -47,6 +47,11 @@ on_actions = {
 
 	on_startup={
 		effect{
+			118 = {add_province_modifier = {  static_modifiers = { dont_take_gibraltar }
+			province = {
+				all_provinces = yes
+				}}
+			}
 			SOV={every_state = {
 					limit= {is_core_of=SOV}
 					add_state_modifier={modifier={local_supplies = 1}}
