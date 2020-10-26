@@ -1,10 +1,8 @@
 ﻿division_template = {
-	name = "Pesadijska Divizija"	# Infantry Division
-	# Note: infantry divisions were all at low reserve levels even just prior to Axis
-	#	invasion of 1941
+	name = "Pesadijska Divizija"
+
 
 	division_names_group = YUG_INF_01
-
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -22,14 +20,10 @@
 		artillery = { x = 0 y = 1 }
 	}
 }
-
 units = {
-	}  # Neboja if we get font support
+}
 
 
-###### Vazduhoplovstvo Vojske Kraljevine Jugoslavije (VVKJ) ######
-
-### Starting Production ###
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
@@ -49,5 +43,5 @@ instant_effect = {
 		progress = 0.76
 		efficiency = 100
 	}
-
 }
+

@@ -1,15 +1,12 @@
 ﻿add_namespace = wtt_manchukou
 
-#First five year plan
 country_event = {
 	id = wtt_manchukou.11
 	title = wtt_manchukou.11.t
 	desc = wtt_manchukou.11.desc
 	picture = GFX_report_event_generic_factory
-
 	is_triggered_only = yes
 
-	#Air
 	option = {
 		name = wtt_manchukou.11.a
 		if = {
@@ -17,7 +14,7 @@ country_event = {
 			add_timed_idea = { days = 1825 idea = MAN_five_year_plan_air }
 		}
 	}
-	#Tank
+
 	option = {
 		name = wtt_manchukou.11.b
 		if = {
@@ -25,7 +22,7 @@ country_event = {
 			add_timed_idea = { days = 1825 idea = MAN_five_year_plan_tank }
 		}
 	}
-	#Industry
+
 	option = {
 		name = wtt_manchukou.11.c
 		if = {
@@ -35,24 +32,20 @@ country_event = {
 	}
 }
 
-###   ##  #  # ###  ### ###      ##  ##  ###   ##  ###  ##   ##  ###
-#  # #  # ## # #  #  #   #      #   #  # #  # #  #  #  #  # #    #
-###  #### # ## #  #  #   #       #  #### ###  #  #  #  #### # ## ##
-#  # #  # #  # #  #  #   #        # #  # #  # #  #  #  #  # #  # #
-###  #  # #  # ###  ###  #      ##  #  # ###   ##   #  #  #  ##  ###
+
+
+
 
 add_namespace = wtt_manchukou_bandit_sabotage
-#Bandit sabotage - factory sabotaged
+
 country_event = {
 	id = wtt_manchukou_bandit_sabotage.21
 	title = wtt_manchukou_bandit_sabotage.21.t
 	desc = wtt_manchukou_bandit_sabotage.21.desc
 	picture = GFX_report_event_generic_ruins
-
 	is_triggered_only = yes
-
 	option = {
-		name = wtt_manchukou_bandit_sabotage.21.a #okay
+		name = wtt_manchukou_bandit_sabotage.21.a
 		random_owned_state = {
 			limit = {
 				is_fully_controlled_by = MAN
@@ -66,17 +59,14 @@ country_event = {
 	}
 }
 
-#Bandit sabotage - civilian factory sabotaged
 country_event = {
 	id = wtt_manchukou_bandit_sabotage.22
 	title = wtt_manchukou_bandit_sabotage.22.t
 	desc = wtt_manchukou_bandit_sabotage.21.desc
 	picture = GFX_report_event_generic_ruins
-
 	is_triggered_only = yes
-
 	option = {
-		name = wtt_manchukou_bandit_sabotage.21.a #okay
+		name = wtt_manchukou_bandit_sabotage.21.a
 		random_owned_state = {
 			limit = {
 				is_fully_controlled_by = MAN
@@ -90,17 +80,14 @@ country_event = {
 	}
 }
 
-#Bandit sabotage - bridge blown
 country_event = {
 	id = wtt_manchukou_bandit_sabotage.23
 	title = wtt_manchukou_bandit_sabotage.23.t
 	desc = wtt_manchukou_bandit_sabotage.23.desc
 	picture = GFX_report_event_generic_train
-
 	is_triggered_only = yes
-
 	option = {
-		name = wtt_manchukou_bandit_sabotage.21.a #okay
+		name = wtt_manchukou_bandit_sabotage.21.a
 		random_owned_state = {
 			limit = {
 				is_fully_controlled_by = MAN
@@ -113,3 +100,4 @@ country_event = {
 		}
 	}
 }
+

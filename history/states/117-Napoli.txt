@@ -1,32 +1,29 @@
-
 state={
 	id=117
-	name="STATE_117" # Campania
+	name="STATE_117"
 	manpower = 5333611
-
 	state_category = city
 	resources={
-		chromium=10 # was: 16
-		steel = 40 # was: 24
+		chromium=10
+		steel = 40
 	}
-
 	history={
 		owner = ITA
 		victory_points = {
-			819 20
+			815 20
 		}
 		buildings = {
 			infrastructure = 6
 			arms_factory = 1
 			industrial_complex = 2
 			air_base = 3
-			851 = {
+			847 = {
 				naval_base = 2
 			}
-			883 = {
+			876 = {
 				naval_base = 3
 			}
-			819 = {
+			815 = {
 				naval_base = 6
 			}
 		}
@@ -38,8 +35,8 @@ state={
 			}
 		}
 	}
-
 	provinces={
-		819 851 883 955 3958 3968 6843 6939 6972 6980 9826 11803
+		815 847 876 940 3815 3822 6544 6625 6653 6658 9323 11107
 	}
 }
+

@@ -1,8 +1,6 @@
 ﻿division_template = {
-	name = "Gyalogdandár"				# Infantry Brigade
-
+	name = "Gyalogdandár"
 	division_names_group = HUN_INF_02
-
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -16,12 +14,9 @@
 		infantry = { x = 1 y = 4 }
 	}
 }
-
 division_template = {
-	name = "Gyaloghadosztály"				# Infantry Brigade
-
+	name = "Gyaloghadosztály"
 	division_names_group = HUN_INF_02
-
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -48,22 +43,17 @@ division_template = {
 		recon = { x = 0 y = 2 }
 	}
 }
-
-
 units = {
 	division= {
 		name = "This is here so you can look at your generals"
-		location = 9660
+		location =9168
 		division_template = "Gyalogdandár"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 }
 
-### Magyar Légiero ###
 
-
-### Starting Production ###
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
@@ -111,3 +101,4 @@ instant_effect = {
 		efficiency = 50
 	}
 }
+

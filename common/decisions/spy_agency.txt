@@ -8,22 +8,18 @@ spy_agency = {
 				tag = ITA
 				tag = ENG
 				tag = USA
-
 			}
 		}
 		visible = {
 			NOT = { has_country_flag = no_agency_warning }
 		}
-
 		fire_only_once = no
+		complete_effect = {
 
-		complete_effect = {		
-		
 			hidden_effect = {
 				set_country_flag = no_agency_warning
 			}
 		}
-
 		ai_will_do = {
 			base = 0
 		}
@@ -42,22 +38,18 @@ spy_agency = {
 		visible = {
 			has_country_flag = no_agency_warning
 		}
-
 		fire_only_once = no
-
 		complete_effect = {
 			hidden_effect = {
 				clr_country_flag = no_agency_warning
 			}
 		}
-
 		ai_will_do = {
 			base = 0
 		}
 	}
 	spy_agency_upgrade = {
 		icon = generic_industry
-
 		allowed = {
 			always = no
 		}
@@ -71,18 +63,14 @@ spy_agency = {
 		}
 		activation = {
 		}
-
 		fire_only_once = no
-
 		days_mission_timeout = 14
-
 		timeout_effect = {
 			activate_mission = spy_agency_upgrade2
 		}
 	}
 	spy_agency_upgrade2 = {
 		icon = generic_industry
-
 		allowed = {
 			always = no
 		}
@@ -96,13 +84,11 @@ spy_agency = {
 		}
 		activation = {
 		}
-
 		fire_only_once = no
-
 		days_mission_timeout = 14
-
 		timeout_effect = {
 			activate_mission = spy_agency_upgrade
 		}
 	}
 }
+

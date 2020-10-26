@@ -1,29 +1,22 @@
 ﻿add_namespace = wtt_germany
 
-#Notification event for Hungary and Romania for Integrate War Economies
 country_event = {
 	id = wtt_germany.7
 	title = wtt_germany.7.t
 	desc = wtt_germany.7.d
 	picture = GFX_report_event_tank_factory
-
 	is_triggered_only = yes
-
 	option = {
 		name = wtt_germany.7.a
 	}
 }
 
-
-# Reintegration remove cores for Alsace and notification for France
 country_event = {
 	id = wtt_germany.63
 	title = wtt_germany.63.t
 	desc = wtt_germany.63.desc
 	picture = GFX_report_event_generic_peaceful_annexation
-
 	is_triggered_only = yes
-
 	option = {
 		name = wtt_germany.63.a
 		effect_tooltip = {
@@ -35,15 +28,12 @@ country_event = {
 	}
 }
 
-# Reintegration notification for Luxemburg
 country_event = {
 	id = wtt_germany.64
 	title = wtt_germany.64.t
 	desc = wtt_germany.63.desc
 	picture = GFX_report_event_generic_peaceful_annexation
-
 	is_triggered_only = yes
-
 	option = {
 		name = wtt_germany.64.a
 		effect_tooltip = {
@@ -55,17 +45,13 @@ country_event = {
 	}
 }
 
-
-# Event asking whether HUN/ROM want to become puppet in return for factories.
 country_event = {
 	id = wtt_germany.72
 	title = wtt_germany.72.t
 	desc = wtt_germany.72.desc
 	picture = GFX_report_event_generic_read_write
-
 	is_triggered_only = yes
-
-	option = { # Yaplx
+	option = {
 		name = wtt_germany.72.a
 		custom_effect_tooltip = wtt_germany.72_tt
 		FROM = {
@@ -74,18 +60,14 @@ country_event = {
 	}
 }
 
-# Event for GER saying HUN/ROM accepted
 country_event = {
 	id = wtt_germany.73
 	title = wtt_germany.73.t
 	desc = wtt_germany.73.desc
 	picture = GFX_report_event_generic_read_write
-
 	is_triggered_only = yes
-
 	option = {
 		name = wtt_germany.73.a
-
-
 	}
 }
+

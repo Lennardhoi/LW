@@ -1,18 +1,14 @@
-﻿###########################
-# Exile leader events
-###########################
+﻿
+
 
 add_namespace = mtg_exile_leader_added
 add_namespace = mtg_exile_government
 
-#unit leader offers his service
 unit_leader_event = {
 	id = mtg_exile_leader_added.1
 	title = mtg_exile_leader_added.1.t
 	desc = mtg_exile_leader_added.1.desc
-
 	is_triggered_only = yes
-
 	option = {
 		name = mtg_exile_leader_added.1.a
 		ai_chance = {
@@ -21,20 +17,14 @@ unit_leader_event = {
 	}
 }
 
-# Government in Exile requests permission from host to return home via decision
-
 country_event = {
 	id = mtg_exile_government.2
 	title = mtg_exile_government.2.title
 	desc = mtg_exile_government.2.desc
-
 	picture = GFX_report_event_canadian_soldiers
-
 	is_triggered_only = yes
-
 	option = {
 		name = mtg_exile_government.2.a
-
 		FROM = {
 			add_opinion_modifier = {
 				target = ROOT
@@ -43,27 +33,21 @@ country_event = {
 		}
 		end_exile = FROM
 	}
-
 	option = {
 		name = mtg_exile_government.2.b
-
 		FROM = {
 			add_legitimacy = -10
 		}
 	}
 }
 
-# Host nation requesting navy from GiE
 country_event = {
 	id = mtg_exile_government.3
 	title = mtg_exile_government.3.title
 	desc = mtg_exile_government.3.desc
-
 	picture = GFX_report_event_destroyers
-
 	is_triggered_only = yes
 
-	# Yes we will
 	option = {
 		name = mtg_exile_government.3.a
 		ai_chance = {
@@ -85,35 +69,30 @@ country_event = {
 		}
 	}
 
-	# No ty
-	#option = {
-		#	name = mtg_exile_government.3.b
-		#	ai_chance = {
-			#		factor = 1
-			#		modifier = {
-				#			factor = 0
-				#			has_navy_size = {
-					#			    size < 25
-					#			}
-				#		}
-			#	}
-		#	FROM = {
-			#		country_event = { id = mtg_exile_government.5 hours = 6 }
-			#	}
-		#}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
-# Notification event for host nation that GiE transfers navy
 country_event = {
 	id = mtg_exile_government.4
 	title = mtg_exile_government.4.title
 	desc = mtg_exile_government.4.desc
-
 	picture = GFX_report_event_destroyers
-
 	is_triggered_only = yes
 
-	# Good
 	option = {
 		name = excellent
 		effect_tooltip = {
@@ -127,6 +106,5 @@ country_event = {
 	}
 }
 
-
-# generic events
 add_namespace = mtg_generic
+

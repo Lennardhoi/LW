@@ -1,17 +1,14 @@
-#Adjacency rules are special rules for adjacencies
-#If smbd who is at war fights over canal/strait it is considered closed
-#Enemy status is considered if any of sides controlling the chanel is at war with country
-#Friend status is considered non of sides controlling the chanel is at war with country and one of controllers is ally of giving military access
-#Every one else is considered as neutral according to canal/strait
-#Military access considered as being friend
-#Rules needs linking from the straits that are affected by the rule ( adjacency_rule_id )
 
-#Name is how you refer to the rule in adjecencies.csv
 
-#Iran Canal
+
+
+
+
+
+
+
 adjacency_rule={
 	name = "IRAN_CANAL"
-
 	contested =	{
 		army = no
 		navy = no
@@ -36,17 +33,13 @@ adjacency_rule={
 		submarine = no
 		trade = yes
 	}
-
-	required_provinces = { 4580 7982 }
-
-	icon = 10837
+	required_provinces = {4419 7595}
+	icon =10240
 	offset = { 5 0 -6 }
 }
 
-#Spain Strait
 adjacency_rule={
 	name = "Berlin-Madrid"
-
 	contested = {
 		army = no
 		navy = no
@@ -71,7 +64,7 @@ adjacency_rule={
 		submarine = yes
 		trade = yes
 	}
-	required_provinces = { 3938 }
+	required_provinces = {3797}
 	is_disabled = {
 		NOT = {
 			tag=SPR
@@ -79,11 +72,9 @@ adjacency_rule={
 	}
 }
 
-#Spain Strait2
 adjacency_rule
 {
 	name = "Vienna-Madrid"
-
 	contested =
 	{
 		army = no
@@ -112,21 +103,17 @@ adjacency_rule
 		submarine = yes
 		trade = yes
 	}
-
-	required_provinces = { 896 }
+	required_provinces = {887}
 	is_disabled = {
 		NOT = {
 			tag=SPR
-
 		}
-
 	}
 }
-#Vladistrait
+
 adjacency_rule
 {
 	name = "Amur-Khabarovsk"
-
 	contested =
 	{
 		army = no
@@ -155,23 +142,17 @@ adjacency_rule
 		submarine = yes
 		trade = yes
 	}
-
-	required_provinces = { 12657 }
+	required_provinces = {11891}
 	is_disabled = {
 		NOT = {
 			tag=SOV
-
 		}
-
 	}
 }
 
-
-#Suez Canal
 adjacency_rule
 {
 	name = "SUEZ_CANAL"
-
 	contested =
 	{
 		army = no
@@ -200,9 +181,7 @@ adjacency_rule
 		submarine = no
 		trade = yes
 	}
-
-	required_provinces = { 12049 1155 4073 9947 }
-
+	required_provinces = {1135 3922 9428 11335}
 	is_disabled = {
 		OR = {
 			has_global_flag = SUEZ_CANAL_BLOCKED
@@ -214,16 +193,13 @@ adjacency_rule
 		}
 		tooltip = disable_canal_tt
 	}
-
-	icon = 12049
+	icon =11335
 	offset = { 1 0 -6 }
 }
 
-#Gibraltar Strait
 adjacency_rule
 {
 	name = "GIBRALTAR_STRAIT"
-
 	contested =
 	{
 		army = no
@@ -252,10 +228,8 @@ adjacency_rule
 		submarine = yes
 		trade = yes
 	}
-
-	required_provinces = { 4135 13235}
-
-	icon = 13235
+	required_provinces = {3982 12337}
+	icon =12337
 	offset = { 2.0 0.0 -4.0 }
 	is_disabled = {
 		OR= {
@@ -271,11 +245,9 @@ adjacency_rule
 	}
 }
 
-#Øresund - (Østersøen <-> Kattegat/Skagerak/Nordsøen)
 adjacency_rule
 {
 	name = "DANISH_BELTS_STRAIT"
-
 	contested =
 	{
 		army = no
@@ -304,18 +276,14 @@ adjacency_rule
 		submarine = yes
 		trade = yes
 	}
-
-	required_provinces = { 6287 3277 3325 3260 394 }
-
-	icon = 2455
+	required_provinces = {392 3148 3165 3213 5996}
+	icon =2343
 	offset = { -26 0 -13 }
 }
 
-#Panama Canal
 adjacency_rule
 {
 	name = "PANAMA_CANAL"
-
 	contested =
 	{
 		army = no
@@ -344,9 +312,7 @@ adjacency_rule
 		submarine = no
 		trade = yes
 	}
-
-	required_provinces = { 4624 7617 }
-
+	required_provinces = {4456 7268}
 	is_disabled = {
 		OR = {
 			has_global_flag = PANAMA_CANAL_BLOCKED
@@ -354,16 +320,13 @@ adjacency_rule
 		}
 		tooltip = disable_canal_tt
 	}
-
-	icon = 7617
+	icon =7268
 	offset = { -3 0 -2 }
 }
 
-#Turkish Straits
 adjacency_rule
 {
 	name = "BOSPHORUS_STRAIT"
-
 	contested =
 	{
 		army = no
@@ -392,18 +355,14 @@ adjacency_rule
 		submarine = no
 		trade = yes
 	}
-
-	required_provinces = { 9833 11829 }
-
-	icon = 9833
+	required_provinces = {9329 11129}
+	icon =9329
 	offset = { -2 0 -9 }
 }
 
-#Kiel Canal
 adjacency_rule
 {
 	name = "KIEL_CANAL"
-
 	contested =
 	{
 		army = no
@@ -432,9 +391,8 @@ adjacency_rule
 		submarine = no
 		trade = yes
 	}
-
-	required_provinces = { 11366 317 3231 }
-
-	icon = 11366
+	required_provinces = {316 3119 10686}
+	icon =10686
 	offset = { 5 0 -6 }
 }
+

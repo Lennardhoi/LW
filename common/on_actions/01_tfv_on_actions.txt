@@ -11,10 +11,8 @@ on_actions = {
 				set_cosmetic_tag = FRA_FREE
 			}
 		}
-
 	}
 
-	#ROOT is subject FROM is previous overlord
 	on_subject_free = {
 		effect = {
 			if = {
@@ -22,20 +20,18 @@ on_actions = {
 					NOT = {
 						AND = {
 							TAG = SAF
-							has_government = communism #communist SAF gets cosmetic tag to allow recruitment of black generals. If they go communist before breaking free, they would lose the cosmetic tag.
+							has_government = communism
 						}
 					}
 				}
 				drop_cosmetic_tag = yes
 			}
-
 			if = {
 				limit = {
 					TAG = INS
 				}
 				retire_country_leader = yes
 			}
-
 			if = {
 				limit = {
 					original_tag = RAJ
@@ -53,10 +49,9 @@ on_actions = {
 		}
 	}
 
-	#ROOT is subject FROM is overlord
 	on_subject_autonomy_level_change = {
 		effect = {
-			#Add to commonwealth tech group
+
 			if = {
 				limit = {
 					OR = {
@@ -70,13 +65,10 @@ on_actions = {
 		}
 	}
 
-	#ROOT is subject FROM is overlord
 	on_subject_annexed = {
-
 	}
 
-	#used when puppeting in a peace conference
-	#ROOT = nation being puppeted, FROM = overlord
+
 	on_puppet = {
 		effect = {
 			if = {
@@ -84,7 +76,7 @@ on_actions = {
 					has_dlc = "Death or Dishonor"
 					tag = HUN
 					FROM = {
-						has_country_flag = HUN_ROM_puppet_war #Romania only
+						has_country_flag = HUN_ROM_puppet_war
 					}
 				}
 				ROM = { set_country_flag = ROM_HUN_aligned }
@@ -99,7 +91,7 @@ on_actions = {
 						SOV = { has_idea = SOV_molotov_ribbentrop_pact }
 					}
 				}
-				SOV = { remove_ideas = SOV_molotov_ribbentrop_pact } #the pact is OFF if one of them is a puppet
+				SOV = { remove_ideas = SOV_molotov_ribbentrop_pact }
 			}
 			if = {
 				limit = {
@@ -123,7 +115,7 @@ on_actions = {
 					NOT = { has_dlc = "Together for Victory" }
 				}
 				CAN = {
-					set_cosmetic_tag = CAN_ALY # I don't know why the distinction is important but it's like this in the history file for Canada
+					set_cosmetic_tag = CAN_ALY
 				}
 			}
 			if = {
@@ -141,8 +133,7 @@ on_actions = {
 		}
 	}
 
-	#used when puppeting through the occupied territories menu during peace time (or when releasing from non-core but owned territory, f.e. Britain releasing Egypt)
-	#ROOT = nation being released, FROM = overlord
+
 	on_release_as_puppet = {
 		effect = {
 			if = {
@@ -150,7 +141,7 @@ on_actions = {
 					has_dlc = "Death or Dishonor"
 					tag = HUN
 					FROM = {
-						has_country_flag = HUN_ROM_puppet_war #Romania only
+						has_country_flag = HUN_ROM_puppet_war
 					}
 				}
 				ROM = { set_country_flag = ROM_HUN_aligned }
@@ -177,7 +168,7 @@ on_actions = {
 					NOT = { has_dlc = "Together for Victory" }
 				}
 				CAN = {
-					set_cosmetic_tag = CAN_ALY # I don't know why the distinction is important but it's like this in the history file for Canada
+					set_cosmetic_tag = CAN_ALY
 				}
 			}
 			if = {
@@ -195,7 +186,6 @@ on_actions = {
 		}
 	}
 
-	#ROOT is free nation FROM is releaser
 	on_release_as_free = {
 		effect = {
 			if = {
@@ -220,7 +210,7 @@ on_actions = {
 					NOT = { has_dlc = "Together for Victory" }
 				}
 				CAN = {
-					set_cosmetic_tag = CAN_ALY # I don't know why the distinction is important but it's like this in the history file for Canada
+					set_cosmetic_tag = CAN_ALY
 				}
 			}
 			if = {
@@ -237,5 +227,5 @@ on_actions = {
 			}
 		}
 	}
-
 }
+

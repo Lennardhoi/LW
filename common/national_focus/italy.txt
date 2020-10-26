@@ -1,19 +1,14 @@
 focus_tree = {
 	id = italian_focus
-
 	country = {
 		factor = 0
-
 		modifier = {
 			add = 10
 			tag = ITA
 		}
 	}
-
 	default = no
-
 	continuous_focus_position = { x = 50 y = 1200 }
-
 	focus = {
 		id = ITA_naval_rearmament
 		icon = GFX_focus_GER_naval_rearm
@@ -23,9 +18,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
 		available_if_capitulated = yes
-
 		bypass = {
 			custom_trigger_tooltip =  {
 				tooltip = naval_effort_tt
@@ -40,7 +33,6 @@ focus_tree = {
 				}
 			}
 		}
-
 		complete_tooltip = {
 			every_state = {
 				limit = {	has_state_flag = GER_naval_rearmament_2dockyards }
@@ -99,7 +91,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = ITA_naval_effort
 		text = naval_effort
@@ -112,9 +103,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
 		available_if_capitulated = yes
-
 		complete_tooltip = {
 			navy_experience = 25
 			every_state = {
@@ -140,7 +129,6 @@ focus_tree = {
 				category = ca_tech
 			}
 		}
-
 		completion_reward = {
 			navy_experience = 25
 			random_owned_controlled_state = {
@@ -175,13 +163,11 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = ITA_plan_z
 		icon = GFX_goal_italy_campioni
 		prerequisite = { focus = ITA_naval_effort }
 		mutually_exclusive = { focus = ITA_u_boat_effort }
-
 		x = -3
 		y = 1
 		relative_position_id = ITA_naval_effort
@@ -191,7 +177,6 @@ focus_tree = {
 		}
 		available={date>1939.7.1}
 		available_if_capitulated = yes
-
 		complete_tooltip = {
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
@@ -214,12 +199,9 @@ focus_tree = {
 				}
 				set_state_flag = GER_plan_z_dockyards
 			}
-
-
 			set_technology = {
 				improved_ship_hull_heavy = 1
 			}
-
 			create_equipment_variant = {
 				name = "Littorio-class"
 				type = ship_hull_heavy_3
@@ -238,7 +220,6 @@ focus_tree = {
 					mid_2_custom_slot = ship_anti_air_3
 					mid_3_custom_slot = ship_heavy_battery_3
 					rear_1_custom_slot = ship_heavy_battery_3
-
 				}
 			}
 			custom_effect_tooltip="Adds two Vittorio Veneto Battleships to the production queue, at 85% and 90% complete, respectively."
@@ -266,11 +247,8 @@ focus_tree = {
 					amount = 1
 				}
 			}
-
 		}
-
 	}
-
 	focus = {
 		id = ITA_u_boat_effort
 		icon = GFX_goal_italy_cavagnari
@@ -284,13 +262,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
 		available_if_capitulated = yes
-
 		complete_tooltip = {
 			navy_experience = 25
 			every_state = {
-
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
@@ -299,9 +274,7 @@ focus_tree = {
 				}
 			}
 			set_technology={ improved_submarine=1}
-
 		}
-
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			navy_experience = 25
@@ -320,13 +293,10 @@ focus_tree = {
 					level = 4
 					instant_build = yes
 				}
-
 			}
 			set_technology={ improved_submarine=1}
-
 		}
 	}
-
 	focus = {
 		id = ITA_trade_interdiction
 		icon = GFX_goal_generic_wolf_pack
@@ -338,7 +308,6 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -363,7 +332,6 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -373,7 +341,6 @@ focus_tree = {
 				uses = 2
 				category = cv_tech
 			}
-
 		}
 	}
 	focus = {
@@ -388,9 +355,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = nav_bomber_bonus
@@ -406,7 +371,6 @@ focus_tree = {
 		prerequisite = { focus=ITA_u_boat_effort focus=ITA_plan_z }
 		x = 3
 		y = 1
-
 		relative_position_id = ITA_plan_z
 		cost = 5
 		ai_will_do = {
@@ -417,7 +381,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-
 			164 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -427,14 +390,12 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = naval_base
-					province=10007
+					province=9487
 					level = 10
 					instant_build = yes
 				}
-
 			}
 		}
-
 	}
 	focus = {
 		id = ITA_fjord_fleet_basing
@@ -442,15 +403,12 @@ focus_tree = {
 		prerequisite = { focus = ITA_recover_from_operation_chariot  }
 		x = 0
 		y = 1
-
 		relative_position_id = ITA_recover_from_operation_chariot
 		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_ideas = british_convoy_discount
 		}
@@ -466,7 +424,6 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -492,9 +449,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			set_technology = {
 				ship_hull_super_heavy = 1
@@ -521,9 +476,7 @@ focus_tree = {
 					rear_2_custom_slot = ship_airplane_launcher_2
 				}
 			}
-
 			hidden_effect = {
-
 				add_equipment_production = {
 					equipment = {
 						type = ship_hull_super_heavy_1
@@ -549,10 +502,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-
 		completion_reward = {
 			add_ideas = GER_modular_construction
 		}
@@ -568,9 +519,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			157 = {
 				add_extra_state_shared_building_slots = 4
@@ -581,7 +530,7 @@ focus_tree = {
 				}
 				set_building_level = {
 					type = naval_base
-					province=925
+					province=911
 					level = 20
 					instant_build = yes
 				}
@@ -612,13 +561,13 @@ focus_tree = {
 				}
 				set_building_level = {
 					type = bunker
-					province=6788
+					province=6493
 					level = 5
 					instant_build = yes
 				}
 				set_building_level = {
 					type = coastal_bunker
-					province=6788
+					province=6493
 					level = 5
 					instant_build = yes
 				}
@@ -639,7 +588,6 @@ focus_tree = {
 		}
 		available={date>1942.1.1}
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_timed_idea = {idea = ITA_operation_sealion days=70}
 		}
@@ -657,9 +605,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_timed_idea = {idea = ITA_atlantikschlacht days= 365}
 		}
@@ -677,65 +623,49 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_ideas = GER_monsoon_boats
 		}
 	}
-
 	focus = {
 		id = ITA_eco
 		icon = GFX_goal_generic_construction
 		available = {
-
-
 		}
-
 		x = 4
 		y = 0
 		cost = 10
 		search_filters = { FOCUS_FILTER_ANNEXATION }
-
 		completion_reward = {
 			add_ideas = war_economy
-
 			} }
-
 	focus = {
 		id = ITA_iri
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = ITA_eco }
 		relative_position_id = ITA_eco
 		available = {
-
 		}
-
 		x = -2
 		y = 1
 		cost = 5
 		search_filters = { FOCUS_FILTER_ANNEXATION }
-
 		completion_reward = {
 			add_political_power = 150
 		}
 	}
-
 	focus = {
 		id = ITA_stab
 		icon = GFX_focus_usa_reestablish_the_gold_standard
 		prerequisite = { focus = ITA_iri }
 		relative_position_id = ITA_iri
 		available = {
-
 		}
-
 		x = -1
 		y = 1
 		cost = 5
 		search_filters = { FOCUS_FILTER_ANNEXATION }
-
 		completion_reward = {
 			add_ideas = SPA_the_duty_to_work
 		}
@@ -747,33 +677,26 @@ focus_tree = {
 		relative_position_id = ITA_iri
 		mutually_exclusive = { focus = ITA_corp}
 		available = {
-
 		}
-
 		x = 1
 		y = 1
 		cost = 10
 		search_filters = { FOCUS_FILTER_ANNEXATION }
-
 		completion_reward = {
 			add_ideas = GER_autarky_idea
 		}
 	}
-
 	focus = {
 		id = ITA_mili
 		icon = GFX_goal_generic_production2
 		prerequisite = { focus = ITA_stab }
 		relative_position_id = ITA_stab
 		available = {
-
 		}
-
 		x = 0
 		y = 1
 		cost = 5
 		search_filters = { FOCUS_FILTER_ANNEXATION }
-
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -790,29 +713,23 @@ focus_tree = {
 					level = 4
 					instant_build = yes
 				}
-
 			}
 		}
 	}
 
-	# focus = {
-		# id = ITA_autarky
-		# icon = GFX_goal_generic_construction
-		# prerequisite = { focus = ITA_mili }
-		# relative_position_id = ITA_mili
-		# available = {
 
-			# }
 
-		# x = 0
-		# y = 2
-		# cost = 5
-		# search_filters = { FOCUS_FILTER_ANNEXATION }
 
-		# completion_reward = {
-			# add_ideas = { FRA_global_investments }
-			# }
-		# }
+
+
+
+
+
+
+
+
+
+
 
 	focus = {
 		id = ITA_moder
@@ -821,14 +738,11 @@ focus_tree = {
 		prerequisite = { focus = ITA_stab }
 		relative_position_id = ITA_nat
 		available = {
-
 		}
-
 		x = 0
 		y = 1
 		cost = 10
 		search_filters = { FOCUS_FILTER_ANNEXATION }
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = ITA_four_year_plan
@@ -838,41 +752,32 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = ITA_research
 		icon = GFX_focus_research
 		prerequisite = { focus = ITA_moder  }
 		relative_position_id = ITA_moder
 		available = {
-
 		}
-
 		x = -1
 		y = 1
 		cost = 5
 		search_filters = { FOCUS_FILTER_ANNEXATION }
-
 		completion_reward = {
 			add_research_slot = 1
 		}
 	}
-
 	focus = {
 		id = ITA_buro
 		prerequisite = { focus = ITA_eco  }
 		icon = GFX_goal_generic_construct_civ_factory
 		relative_position_id = ITA_eco
 		available = {
-
 		}
-
 		x = 2
 		y = 1
 		cost = 5
 		search_filters = { FOCUS_FILTER_ANNEXATION }
-
-
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -889,7 +794,6 @@ focus_tree = {
 					level = 2
 					instant_build = yes
 				}
-
 			}
 			random_owned_controlled_state = {
 				limit = {
@@ -906,14 +810,9 @@ focus_tree = {
 					level = 2
 					instant_build = yes
 				}
-
 			}
-
 		}
-
 	}
-
-
 	focus = {
 		id = ITA_corp
 		prerequisite = { focus = ITA_buro  }
@@ -921,33 +820,26 @@ focus_tree = {
 		mutually_exclusive = { focus = ITA_nat}
 		icon = GFX_focus_SOV_worker_cluture
 		available = {
-
 		}
-
 		x = -1
 		y = 1
 		cost = 10
 		search_filters = { FOCUS_FILTER_ANNEXATION }
-
 		completion_reward = {
 			add_ideas = corporations
 		}
 	}
-
 	focus = {
 		id = ITA_mono
 		icon = GFX_focus_hol_prepare_the_inundation_lines
 		prerequisite = { focus = ITA_buro  }
 		relative_position_id = ITA_buro
 		available = {
-
 		}
-
 		x = 1
 		y = 1
 		cost = 5
 		search_filters = { FOCUS_FILTER_ANNEXATION }
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = ITA_four_year_plan
@@ -957,40 +849,32 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = ITA_synd
 		prerequisite = { focus = ITA_corp  }
 		relative_position_id = ITA_corp
 		icon = GFX_focus_generic_self_management
 		available = {
-
 		}
-
 		x = 2
 		y = 1
 		cost = 5
 		search_filters = { FOCUS_FILTER_ANNEXATION }
-
 		completion_reward = {
 			add_timed_idea = { idea = syndicalism  days = 180}
 		}
 	}
-
 	focus = {
 		id = ITA_faire
 		prerequisite = { focus = ITA_corp  }
 		relative_position_id = ITA_corp
 		icon = GFX_focus_generic_tank_production
 		available = {
-
 		}
-
 		x = 0
 		y = 1
 		cost = 10
 		search_filters = { FOCUS_FILTER_ANNEXATION }
-
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -1007,7 +891,6 @@ focus_tree = {
 					level = 4
 					instant_build = yes
 				}
-
 			}
 			random_owned_controlled_state = {
 				limit = {
@@ -1024,46 +907,36 @@ focus_tree = {
 					level = 4
 					instant_build = yes
 				}
-
 			}
 		}
 	}
-
 	focus = {
 		id = ITA_research_2
 		prerequisite = { focus = ITA_faire  }
 		relative_position_id = ITA_faire
 		icon = GFX_focus_research
 		available = {
-
 		}
-
 		x = 1
 		y = 1
 		cost = 5
 		search_filters = { FOCUS_FILTER_ANNEXATION }
-
 		completion_reward = {
 			add_research_slot = 1
 		}
 	}
-
 	focus = {
 		id = ITA_highway
 		prerequisite = { focus = ITA_faire focus = ITA_moder }
 		relative_position_id = ITA_faire
 		icon = GFX_goal_generic_construct_infrastructure
 		available = {
-
 		}
-
 		x = -1
 		y = 1
 		cost = 5
 		search_filters = { FOCUS_FILTER_ANNEXATION }
-
 		completion_reward = {
-
 			117 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
@@ -1144,10 +1017,8 @@ focus_tree = {
 					}
 				}
 			}
-
 		}
 	}
-
 	focus = {
 		id = ITA_oil
 		prerequisite = { focus = ITA_highway }
@@ -1167,7 +1038,6 @@ focus_tree = {
 		y = 1
 		cost = 5
 		search_filters = { FOCUS_FILTER_ANNEXATION }
-
 		completion_reward = {
 			add_resource = {
 				type = oil
@@ -1176,8 +1046,6 @@ focus_tree = {
 			}
 		}
 	}
-
-
 	focus = {
 		id = ITA_road_rome
 		prerequisite = { focus = ITA_highway }
@@ -1186,12 +1054,10 @@ focus_tree = {
 		available = {
 			date > 1938.04.1
 		}
-
 		x = 1
 		y = 1
 		cost = 5
 		search_filters = { FOCUS_FILTER_ANNEXATION }
-
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -1208,7 +1074,6 @@ focus_tree = {
 					level = 4
 					instant_build = yes
 				}
-
 			}
 			random_state = {
 				limit = {
@@ -1225,11 +1090,9 @@ focus_tree = {
 					level = 4
 					instant_build = yes
 				}
-
 			}
 		}
 	}
-
 	focus = {
 		id = ITA_refs
 		prerequisite = { focus = ITA_oil }
@@ -1240,14 +1103,11 @@ focus_tree = {
 				controls_state = 448
 			}
 		}
-
 		x = 0
 		y = 1
 		cost = 5
 		search_filters = { FOCUS_FILTER_ANNEXATION }
-
 		completion_reward = {
-
 			2 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
@@ -1272,24 +1132,19 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-
 		}
 	}
-
 	focus = {
 		id = ITA_libya
 		prerequisite = { focus = ITA_oil }
 		relative_position_id = ITA_oil
 		icon = GFX_goal_generic_construct_civilian
 		available = {
-
 		}
-
 		x = 2
 		y = 1
 		cost = 5
 		search_filters = { FOCUS_FILTER_ANNEXATION }
-
 		completion_reward = {
 			450  = {
 				if = {
@@ -1312,7 +1167,7 @@ focus_tree = {
 					add_building_construction = {
 						type = naval_base
 						level = 6
-						province = 11954
+						province =11240
 						instant_build = yes
 					}
 				}
@@ -1377,18 +1232,8 @@ focus_tree = {
 					}
 				}
 			}
-
 		}
 	}
-
-
-
-
-
-
-
-
-
 	focus = {
 		id = ITA_army_primacy
 		icon = GFX_goal_generic_axis_build_infantry
@@ -1398,12 +1243,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0.25
 		}
-
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
-
 		completion_reward = {
-
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = ITA
@@ -1438,7 +1280,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-
 			if = {
 				limit = {
 					NOT = {
@@ -1485,8 +1326,6 @@ focus_tree = {
 			}
 		}
 	}
-
-
 	focus = {
 		id = ITA_modernized_army
 		icon = GFX_ITA_Regio_Esercito_2
@@ -1498,12 +1337,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
-
 		completion_reward = {
-
 			add_tech_bonus = {
 				name = special_bonus
 				bonus = 1.0
@@ -1531,10 +1367,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = arty_bonus
@@ -1555,19 +1389,15 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
-
 		completion_reward = {
 			add_tech_bonus = {
-
 				bonus = 1.0
 				uses = 1
 				category = infantry_weapons
 			}
 			add_tech_bonus = {
-
 				bonus = 1.0
 				uses = 1
 				technology = support_weapons
@@ -1588,15 +1418,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
-
 		completion_reward = {
 			army_experience = 100
 		}
 	}
-
 	focus = {
 		id = ITA_desert_warfare
 		icon = GFX_focus_eng_imperial_federation
@@ -1608,22 +1435,17 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
-
 		completion_reward = {
-
 			add_tech_bonus = {
 				name = special_bonus
 				bonus = 1.0
 				uses = 1
 				category = desert_tech
 			}
-
 		}
 	}
-
 	focus = {
 		id = ITA_desert_warfare_2
 		icon = GFX_goal_generic_special_forces
@@ -1635,16 +1457,12 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
-
 		completion_reward = {
 			add_ideas = ENG_special_air_service_idea
 		}
 	}
-
-
 	focus = {
 		id = ITA_motorized
 		icon = GFX_focus_ITA_tank
@@ -1656,10 +1474,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = armor_bonus
@@ -1670,7 +1486,6 @@ focus_tree = {
 			custom_effect_tooltip = "Applies on Mechanized"
 		}
 	}
-
 	focus = {
 		id = ITA_armored_effort
 		icon = GFX_goal_generic_army_tanks
@@ -1682,10 +1497,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
-
 		completion_reward = {
 			army_experience = 5
 			add_tech_bonus = {
@@ -1696,23 +1509,18 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = ITA_air_innovation
 		icon = GFX_goal_generic_build_airforce
 		text = "Regia Aeronautica"
-
 		x = 20
 		y = 0
-
 		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
-
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
-
 		completion_reward = {
 			air_experience = 50
 			114 = {	add_building_construction = {
@@ -1746,8 +1554,6 @@ focus_tree = {
 		icon = GFX_goal_generic_air_naval_bomber
 		text = naval_air_effort
 		prerequisite = { focus = ITA_air_innovation }
-
-
 		x = 0
 		y = 1
 		relative_position_id = ITA_air_innovation
@@ -1755,12 +1561,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			air_experience = 100
-
 			set_technology = {naval_bomber2 = 1
 			}
 			create_equipment_variant = {
@@ -1779,7 +1582,6 @@ focus_tree = {
 		id = ITA_german_air_cooperation
 		icon = GFX_focus_ITA_german_air_cooperation
 		prerequisite = { focus = ITA_naval_air_effort }
-
 		x = 0
 		y = 1
 		relative_position_id = ITA_naval_air_effort
@@ -1787,11 +1589,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
 		available_if_capitulated = yes
-
 		completion_reward = {
-
 			add_relation_modifier = {
 				target = GER
 				modifier = ita_air_sharing
@@ -1799,13 +1598,10 @@ focus_tree = {
 			custom_effect_tooltip=ITA_german_air_cooperation_tt
 		}
 	}
-
-
 	focus = {
 		id = ITA_marines_and_landing_craft
 		icon = GFX_goal_generic_amphibious_assault
 		prerequisite = { focus = ITA_pan_med  }
-
 		x = -2
 		y = 1
 		relative_position_id = ITA_pan_med
@@ -1815,7 +1611,6 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = ITA_marines_and_landing_craft
@@ -1834,13 +1629,10 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = ITA_from_the_skys
-
 		icon = GFX_focus_generic_paratrooper
 		prerequisite = { focus = ITA_marines_and_landing_craft  }
-
 		x = 0
 		y = 1
 		relative_position_id = ITA_marines_and_landing_craft
@@ -1850,19 +1642,14 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
-
 		completion_reward = {
-
-
 			add_tech_bonus = {
 				bonus = 1.0
 				uses = 2
 				category = para_tech
-
 			}
 		}
 	}
-
 	focus = {
 		id = ITA_air_innovation_2
 		icon = GFX_goal_generic_build_airforce
@@ -1876,10 +1663,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
-
 		completion_reward = {
 			hidden_effect={
 				activate_decision=ITA_disable_ll
@@ -1903,10 +1688,8 @@ focus_tree = {
 				uses = 1
 				technology=cas2
 			}
-
 		}
 	}
-
 	focus = {
 		id = ITA_air_innovation_3
 		icon = GFX_focus_rocketry
@@ -1919,10 +1702,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
-
 		completion_reward = {
 			add_equipment_to_stockpile = {
 				type = fighter_equipment_alt
@@ -1935,7 +1716,6 @@ focus_tree = {
 				producer = ITA
 			}
 
-			# Caproni Campini N.1
 			add_tech_bonus = {
 				name = fighter_bonus
 				bonus = 1.0
@@ -1950,19 +1730,12 @@ focus_tree = {
 			}
 		}
 	}
-
-
-
-
-
 	focus = {
 		id = ITA_victoryinETH
 		icon = GFX_focus_ita_ethiopia
 		available = {
 		}
-
 		available_if_capitulated = yes
-
 		x = 37
 		y = 0
 		cost = 10
@@ -1970,13 +1743,11 @@ focus_tree = {
 			factor = 1
 		}
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT}
-
 		completion_reward = {
 			add_stability = 0.1
 			add_war_support = 0.1
 		}
 	}
-
 	focus = {
 		id = ITA_slovenia_dalmatia_claims
 		icon = GFX_goal_generic_demand_territory
@@ -1988,11 +1759,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
 		bypass = {
 			NOT = { country_exists = YUG }
 		}
-
 		completion_reward = {
 			add_state_claim = 102
 			add_state_claim = 103
@@ -2027,14 +1796,11 @@ focus_tree = {
 					}
 				}
 			}
-
 			hidden_effect = {
 				news_event = { hours = 6 id = news.192 }
 			}
 		}
 	}
-
-
 	focus = {
 		id = ITA_bulgaria_friend
 		icon = GFX_goal_generic_improve_relations
@@ -2066,11 +1832,7 @@ focus_tree = {
 				add_opinion_modifier = { target = GER modifier = pact_of_steel_opinion_hidden }
 			}
 		}
-
 	}
-
-
-
 	focus = {
 		id = ITA_pact_of_steel
 		icon = GFX_goal_generic_major_alliance
@@ -2083,29 +1845,21 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			factor = 10
-
 			modifier = {
 				factor = 0.5
 				ai_irrationality > 20
 			}
-
 			modifier = {
 				factor = 0.5
 				ai_irrationality > 25
 			}
-
 			modifier = {
 				factor = 0.1
 				ai_irrationality > 30
 			}
-
 		}
 		completion_reward = {
-
 			ALB = { country_event = { id = italy.3 } }
-
-
-
 			add_threat = 7
 			BUL = {
 				if = {
@@ -2122,19 +1876,14 @@ focus_tree = {
 				}
 				country_event = { id = generic.1 }
 			}
-
 		}
 	}
-
-
 	focus = {
 		id = ITA_german_millitary_cooperation
 		icon = GFX_goal_generic_military_deal
 		prerequisite = { focus = ITA_pact_of_steel }
-
 		available = {
 		}
-
 		x = -1
 		y = 1
 		relative_position_id = ITA_pact_of_steel
@@ -2143,35 +1892,28 @@ focus_tree = {
 			factor = 10
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
-
 		completion_reward = {
 			add_ideas = ITA_german_millitary_cooperation_focus
 		}
 	}
-
 	focus = {
 		id = ITA_demand_balearic_islands
 		icon = GFX_goal_generic_territory_or_war
 		prerequisite = { focus = ITA_german_millitary_cooperation }
 		relative_position_id = ITA_german_millitary_cooperation
 		available = {
-
 			if = {
 				SPR = {
 					has_war = no
 					owns_state = 177
 				}
 			}
-
 		}
-
 		x = -1
 		y = 1
 		cost = 5
 		search_filters = { FOCUS_FILTER_ANNEXATION }
-
 		completion_reward = {
-
 			random_other_country = {
 				limit = {
 					owns_state = 177
@@ -2193,14 +1935,10 @@ focus_tree = {
 		}
 		available = {
 		}
-
-
 		completion_reward = {
 			add_ideas = military_youth_focus
-
 		}
 	}
-
 	focus = {
 		id = ITA_german_rd_treaty
 		icon = GFX_goal_generic_scientific_exchange
@@ -2215,12 +1953,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
-
 		completion_reward = {
-
 			add_stability = 0.075
 			GER = {
 				add_tech_bonus = {
@@ -2235,14 +1970,12 @@ focus_tree = {
 				}
 			}
 			add_to_tech_sharing_group = axis_research
-
 			add_tech_bonus = {
 				name = synth_bonus
 				bonus = 3.0
 				uses = 2
 				category = synth_resources
 			}
-
 			add_tech_bonus = {
 				name = armor_bonus
 				bonus = 1.0
@@ -2252,8 +1985,6 @@ focus_tree = {
 			ITA = {
 				add_opinion_modifier = { target = GER modifier = ger_ita_tech_treaty }
 			}
-			# Balance research bonus to 2 techs in armor, also in event
-
 
 			modify_building_resources = {
 				building = synthetic_refinery
@@ -2262,7 +1993,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = ITA_secret_weapons
 		icon = GFX_goal_generic_secret_weapon
@@ -2277,10 +2007,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = secret_bonus
@@ -2292,16 +2020,12 @@ focus_tree = {
 			}
 		}
 	}
-
-
 	focus = {
 		id = ITA_greece_war_goal
 		icon = GFX_focus_ITA_balkan
 		prerequisite = { focus = ITA_pact_of_steel }
 		available = {
-
 			date>1939.12.30
-
 		}
 		x = 3
 		y = 1
@@ -2311,16 +2035,14 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-		
-		    unlock_decision_tooltip=ITA_join_war
+
+			unlock_decision_tooltip=ITA_join_war
 			hidden_effect = {
 				news_event = { hours = 6 id = news.186 }
 				102 = {	add_claim_by  = GER}
 			}
 		}
-
 	}
-
 	focus = {
 		id = ITA_rommel
 		icon = GFX_focus_GER_army_inno_1
@@ -2334,18 +2056,12 @@ focus_tree = {
 		prerequisite= {focus=ITA_armored_effort}
 		x = 0
 		y = 1
-
 		cost = 5
 		ai_will_do = {
 			factor = 10
 		}
 		completion_reward = {
-
-
 			GER = {remove_unit_leader = 4}
-
-
-
 			ITA={
 				country_event = { id = italy.187}
 				create_corps_commander = {
@@ -2353,7 +2069,7 @@ focus_tree = {
 					picture = "Portrait_Germany_Erwin_Rommel.dds"
 					traits = { commando panzer_leader panzer_expert desert_fox trait_engineer }
 					skill = 5
-					id = 1872
+					id =1826
 					attack_skill = 6
 					defense_skill = 3
 					planning_skill = 1
@@ -2372,14 +2088,9 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
 			add_timed_idea = { idea = desert_fox  days = 30 }
-
-
 		}
-
 	}
-
 	focus = {
 		id = ITA_desert_fox_2
 		icon = GFX_ITA_appoint_ambrosio
@@ -2393,12 +2104,8 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
 			add_timed_idea = { idea = desert_fox_2  days = 60 }
-
-
 		}
-
 	}
 	focus = {
 		id = ITA_egypt
@@ -2410,7 +2117,6 @@ focus_tree = {
 		relative_position_id = ITA_desert_fox
 		x = -1
 		y = 1
-
 		cost = 5
 		ai_will_do = {
 			factor = 10
@@ -2419,33 +2125,28 @@ focus_tree = {
 			add_manpower = 100000
 			add_stability = 0.1
 			add_war_support = 0.1
-
 			452 = {
 				if = {
-					limit = { 
+					limit = {
 						is_controlled_by_ROOT_or_ally = yes
 						infrastructure<7
-					
+
 					}
-						
-					
-				set_building_level = {
-					type = infrastructure
-					level = 7
-					instant_build = yes
-				}
+
+
+					set_building_level = {
+						type = infrastructure
+						level = 7
+						instant_build = yes
+					}
 				}
 				set_building_level = {
 					type = air_base
 					level = 10
 					instant_build = yes
 				}
-
-
 			}
-
 			446 = {
-
 				set_building_level = {
 					type = infrastructure
 					level = 10
@@ -2454,47 +2155,42 @@ focus_tree = {
 				set_building_level = {
 					type = bunker
 					level = 3
-					province = 10031
+					province =9511
 					instant_build = yes
 				}
 				set_building_level = {
 					type = bunker
 					level = 3
-					province = 1068
+					province =1048
 					instant_build = yes
 				}
 				set_building_level = {
 					type = bunker
 					level = 3
-					province = 13242
+					province =12344
 					instant_build = yes
 				}
 				set_building_level = {
 					type = bunker
 					level = 3
-					province = 4143
+					province =3990
 					instant_build = yes
 				}
-
 			}
 			}}
-
 	focus = {
 		id = ITA_sword_of_islam
 		icon = GFX_ITA_Generic_Ultranat_Eagle
 		prerequisite = { focus = ITA_greece_war_goal }
 		cost = 5
 		available = {
-
 			Date > 1942.1.1
 			has_full_control_of_state = 663
 			has_full_control_of_state = 449
 			has_full_control_of_state = 661
 			has_full_control_of_state = 448
 			has_full_control_of_state = 450
-
 		}
-
 		x = 1
 		y = 1
 		relative_position_id = ITA_greece_war_goal
@@ -2502,24 +2198,19 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-
 			add_state_core = 663
 			add_state_core = 449
 			add_state_core = 661
 			add_state_core = 448
 			add_state_core = 450
 			add_state_core = 273
-
-
 		}
 	}
-
 	focus = {
 		id = ITA_Illyricum
 		icon = GFX_ITA_Mare_Nostrum
 		prerequisite = { focus = ITA_greece_war_goal }
 		available = {
-
 		}
 		x = -1
 		y = 1
@@ -2534,7 +2225,6 @@ focus_tree = {
 			add_state_core = 103
 			add_state_core = 44
 			add_state_core = 163
-
 		}
 	}
 	focus = {
@@ -2542,11 +2232,8 @@ focus_tree = {
 		icon = GFX_goal_generic_allies_build_infantry
 		prerequisite = { focus = ITA_pan_med }
 		cost = 5
-
 		available = {
-
 		}
-
 		x = 2
 		y = 1
 		relative_position_id = ITA_pan_med
@@ -2573,11 +2260,8 @@ focus_tree = {
 		icon = GFX_focus_RAJ_lions_of_the_great_war
 		prerequisite = { focus = ITA_alpini }
 		cost = 5
-
 		available = {
-
 		}
-
 		x = 0
 		y = 1
 		relative_position_id = ITA_alpini
@@ -2592,9 +2276,7 @@ focus_tree = {
 				category = shock_tech
 			}
 		}
-
 	}
-
 	focus = {
 		id = ITA_fortification_effort
 		icon = GFX_goal_generic_construct_military
@@ -2602,91 +2284,89 @@ focus_tree = {
 		prerequisite = { focus = ITA_modernized_artillery_2 }
 		x = 0
 		y = 1
-
 		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
 		completion_reward = {
-			# French border
+
 			158 = {
 				custom_effect_tooltip = ITA_fortification_effort_forts
 				hidden_effect = {
 					set_building_level = {
 						type = bunker
 						level = 3
-						province = 611
+						province =609
 						instant_build = yes
 					}
 					set_building_level = {
 						type = bunker
 						level = 3
-						province = 6780
+						province =6485
 						instant_build = yes
 					}
 					set_building_level = {
 						type = bunker
 						level = 3
-						province = 9738
+						province =9246
 						instant_build = yes
 					}
 					set_building_level = {
 						type = bunker
 						level = 3
-						province = 11721
+						province =11035
 						instant_build = yes
 					}
 					set_building_level = {
 						type = bunker
 						level = 3
-						province = 11891
+						province =11180
 						instant_build = yes
 					}
 					set_building_level = {
 						type = bunker
 						level = 3
-						province = 6675
+						province =6381
 						instant_build = yes
 					}
 					set_building_level = {
 						type = bunker
 						level = 3
-						province = 9630
+						province =9139
 						instant_build = yes
 					}
 					set_building_level = {
 						type = bunker
 						level = 3
-						province = 11615
+						province =10931
 						instant_build = yes
 					}
 					set_building_level = {
 						type = bunker
 						level = 3
-						province = 3657
+						province =3540
 						instant_build = yes
 					}
 					set_building_level = {
 						type = bunker
 						level = 3
-						province = 9613
+						province =9125
 						instant_build = yes
 					}
 					set_building_level = {
 						type = bunker
 						level = 3
-						province = 11595
+						province =10913
 						instant_build = yes
 					}
 					set_building_level = {
 						type = bunker
 						level = 3
-						province = 6626
+						province =6333
 						instant_build = yes
 					}
 				}
 			}
-
 		}
 	}
 	focus = {
@@ -2701,81 +2381,26 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			# Dodecanese
+
 			164 = {
 				set_building_level = {
 					type = coastal_bunker
 					level = 3
 					instant_build = yes
 					province = {
-					id=10007
-					level<3
+						id=9487
+						level<3
 					}
 				}
 			}
-			# Sardinia
+
 			114 = {
 				set_building_level = {
 					type = coastal_bunker
 					level = 2
 					province = {
-					id=9863
-					level<2
-					}
-					instant_build = yes
-				}
-			}
-			114 = {
-				set_building_level = {
-					type = coastal_bunker
-					level = 2
-					province = {
-					id=6891
-					level<2
-					}		
-					instant_build = yes
-				}
-			}
-			114 = {
-				set_building_level = {
-					type = coastal_bunker
-					level = 2
-					province = {
-					id=9772
-					level<2
-					}	
-					instant_build = yes
-				}
-			}
-			114 = {
-				set_building_level = {
-					type = coastal_bunker
-					level = 2
-					province = {
-					id=11824
-					level<2
-					}	
-					instant_build = yes
-				}
-			}
-			114 = {
-				set_building_level = {
-					type = coastal_bunker
-					level = 2
-					province = {
-					id=11874
-					level<2
-					}	
-					instant_build = yes
-				}
-			}
-			114 = {
-				set_building_level = {
-					type = coastal_bunker
-					level = 2
-					province = {
-					id=11773
-					level<2
+						id=9355
+						level<2
 					}
 					instant_build = yes
 				}
@@ -2785,8 +2410,8 @@ focus_tree = {
 					type = coastal_bunker
 					level = 2
 					province = {
-					id=902
-					level<2
+						id=6587
+						level<2
 					}
 					instant_build = yes
 				}
@@ -2796,23 +2421,75 @@ focus_tree = {
 					type = coastal_bunker
 					level = 2
 					province = {
-					id=11755
-					level<2
+						id=9276
+						level<2
+					}
+					instant_build = yes
+				}
+			}
+			114 = {
+				set_building_level = {
+					type = coastal_bunker
+					level = 2
+					province = {
+						id=11125
+						level<2
+					}
+					instant_build = yes
+				}
+			}
+			114 = {
+				set_building_level = {
+					type = coastal_bunker
+					level = 2
+					province = {
+						id=11167
+						level<2
+					}
+					instant_build = yes
+				}
+			}
+			114 = {
+				set_building_level = {
+					type = coastal_bunker
+					level = 2
+					province = {
+						id=11081
+						level<2
+					}
+					instant_build = yes
+				}
+			}
+			114 = {
+				set_building_level = {
+					type = coastal_bunker
+					level = 2
+					province = {
+						id=893
+						level<2
+					}
+					instant_build = yes
+				}
+			}
+			114 = {
+				set_building_level = {
+					type = coastal_bunker
+					level = 2
+					province = {
+						id=11065
+						level<2
 					}
 					instant_build = yes
 				}
 			}
 
-
-
-			# Sicily
 			115 = {
 				set_building_level = {
 					type = coastal_bunker
 					level = 1
 					province = {
-					id=4159
-					level<1
+						id=4006
+						level<1
 					}
 					instant_build = yes
 				}
@@ -2822,8 +2499,8 @@ focus_tree = {
 					type = coastal_bunker
 					level = 1
 					province = {
-					id=4014
-					level<1
+						id=3863
+						level<1
 					}
 					instant_build = yes
 				}
@@ -2833,8 +2510,8 @@ focus_tree = {
 					type = coastal_bunker
 					level = 1
 					province = {
-					id=1009
-					level<1
+						id=989
+						level<1
 					}
 					instant_build = yes
 				}
@@ -2844,8 +2521,8 @@ focus_tree = {
 					type = coastal_bunker
 					level = 1
 					province = {
-					id=7147
-					level<1
+						id=6819
+						level<1
 					}
 					instant_build = yes
 				}
@@ -2855,8 +2532,8 @@ focus_tree = {
 					type = coastal_bunker
 					level = 1
 					province = {
-					id=7059
-					level<1
+						id=6732
+						level<1
 					}
 					instant_build = yes
 				}
@@ -2866,8 +2543,8 @@ focus_tree = {
 					type = coastal_bunker
 					level = 1
 					province = {
-					id=10074
-					level<1
+						id=9552
+						level<1
 					}
 					instant_build = yes
 				}
@@ -2877,8 +2554,8 @@ focus_tree = {
 					type = coastal_bunker
 					level = 1
 					province = {
-					id=3857
-					level<1
+						id=3731
+						level<1
 					}
 					instant_build = yes
 				}
@@ -2886,18 +2563,16 @@ focus_tree = {
 			115 = {
 				set_building_level = {
 					type = coastal_bunker
-					level = 1 
+					level = 1
 					province = {
-					id=1156
-					level<1
+						id=1136
+						level<1
 					}
 					instant_build = yes
 				}
 			}
-
 		}
 	}
-
 	focus = {
 		id = ITA_fortification_effort_3
 		icon = GFX_goal_generic_construct_military
@@ -2915,7 +2590,7 @@ focus_tree = {
 				set_building_level = {
 					type = bunker
 					level = 2
-					province = 923
+					province =910
 					instant_build = yes
 				}
 			}
@@ -2923,7 +2598,7 @@ focus_tree = {
 				set_building_level = {
 					type = bunker
 					level = 2
-					province = 11882
+					province =11173
 					instant_build = yes
 				}
 			}
@@ -2931,16 +2606,7 @@ focus_tree = {
 				set_building_level = {
 					type = bunker
 					level = 2
-					province = 9904
-					instant_build = yes
-				}
-			}
-
-			157 = {
-				set_building_level = {
-					type = bunker
-					level = 2
-					province = 3923
+					province =9388
 					instant_build = yes
 				}
 			}
@@ -2948,7 +2614,7 @@ focus_tree = {
 				set_building_level = {
 					type = bunker
 					level = 2
-					province = 963
+					province =3784
 					instant_build = yes
 				}
 			}
@@ -2956,7 +2622,7 @@ focus_tree = {
 				set_building_level = {
 					type = bunker
 					level = 2
-					province = 3910
+					province =946
 					instant_build = yes
 				}
 			}
@@ -2964,7 +2630,7 @@ focus_tree = {
 				set_building_level = {
 					type = bunker
 					level = 2
-					province = 11790
+					province =3773
 					instant_build = yes
 				}
 			}
@@ -2972,7 +2638,7 @@ focus_tree = {
 				set_building_level = {
 					type = bunker
 					level = 2
-					province = 9838
+					province =11097
 					instant_build = yes
 				}
 			}
@@ -2980,7 +2646,15 @@ focus_tree = {
 				set_building_level = {
 					type = bunker
 					level = 2
-					province = 925
+					province =9334
+					instant_build = yes
+				}
+			}
+			157 = {
+				set_building_level = {
+					type = bunker
+					level = 2
+					province =911
 					instant_build = yes
 				}
 			}
@@ -3003,7 +2677,7 @@ focus_tree = {
 				set_building_level = {
 					type = bunker
 					level = 5
-					province = 967
+					province =950
 					instant_build = yes
 				}
 			}
@@ -3011,7 +2685,7 @@ focus_tree = {
 				set_building_level = {
 					type = bunker
 					level = 5
-					province = 11861
+					province =11156
 					instant_build = yes
 				}
 			}
@@ -3019,7 +2693,7 @@ focus_tree = {
 				set_building_level = {
 					type = bunker
 					level = 5
-					province = 9879
+					province =9367
 					instant_build = yes
 				}
 			}
@@ -3027,7 +2701,7 @@ focus_tree = {
 				set_building_level = {
 					type = bunker
 					level = 5
-					province = 9907
+					province =9391
 					instant_build = yes
 				}
 			}
@@ -3035,7 +2709,7 @@ focus_tree = {
 				set_building_level = {
 					type = bunker
 					level = 5
-					province = 11889
+					province =11178
 					instant_build = yes
 				}
 			}
@@ -3043,7 +2717,7 @@ focus_tree = {
 				set_building_level = {
 					type = bunker
 					level = 5
-					province = 1616
+					province =1591
 					instant_build = yes
 				}
 			}
@@ -3051,7 +2725,7 @@ focus_tree = {
 				set_building_level = {
 					type = bunker
 					level = 5
-					province = 6973
+					province =6654
 					instant_build = yes
 				}
 			}
@@ -3059,11 +2733,10 @@ focus_tree = {
 				set_building_level = {
 					type = bunker
 					level = 5
-					province = 9924
+					province =9406
 					instant_build = yes
 				}
 			}
-
 		}
 	}
 	focus = {
@@ -3083,23 +2756,13 @@ focus_tree = {
 				set_building_level = {
 					type = bunker
 					level = 2
-					province = 4060
+					province =3909
 					instant_build = yes
 				}
-
 				set_building_level = {
 					type = bunker
 					level = 2
-					province = 10120
-					instant_build = yes
-				}
-
-			}
-			663 = {
-				set_building_level = {
-					type = bunker
-					level = 2
-					province = 13239
+					province =9598
 					instant_build = yes
 				}
 			}
@@ -3107,13 +2770,19 @@ focus_tree = {
 				set_building_level = {
 					type = bunker
 					level = 2
-					province = 1060
+					province =12341
 					instant_build = yes
 				}
 			}
-
-
+			663 = {
+				set_building_level = {
+					type = bunker
+					level = 2
+					province =1040
+					instant_build = yes
+				}
+			}
 		}
-
 	}
 }
+

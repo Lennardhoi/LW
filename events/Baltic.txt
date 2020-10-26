@@ -1,19 +1,15 @@
-﻿###########################
-# Baltic Events
-###########################
+﻿
+
 
 add_namespace = baltic
 
-# Soviet Ultimatum (Estonia)
 country_event = {
 	id = baltic.1
 	title = baltic.1.t
 	desc = baltic.1.d
 	picture = GFX_report_event_soviet_soldiers
-
 	is_triggered_only = yes
-
-	option = { # Accept demands
+	option = {
 		name = baltic.1.a
 		SOV = {
 			country_event = { days = 5 id = soviet.6 }
@@ -22,52 +18,41 @@ country_event = {
 	}
 }
 
-# Soviet Ultimatum (Latvia)
 country_event = {
 	id = baltic.2
 	title = baltic.1.t
 	desc = baltic.1.d
 	picture = GFX_report_event_soviet_soldiers
-
 	is_triggered_only = yes
-
-	option = { # Accept demands
+	option = {
 		name = baltic.1.a
-
 		SOV = {
 			country_event = { days = 5 id = soviet.8 }
 		}
 	}
 }
 
-# Soviet Ultimatum (Lithuania)
 country_event = {
 	id = baltic.3
 	title = baltic.1.t
 	desc = baltic.1.d
 	picture = GFX_report_event_soviet_soldiers
-
 	is_triggered_only = yes
-
-	option = { # Accept demands
+	option = {
 		name = baltic.1.a
-
 		SOV = {
 			country_event = { days = 5 id = soviet.10 }
 		}
 	}
 }
 
-# Germany Claims Memel (Lithuania)
 country_event = {
 	id = baltic.4
 	title = baltic.4.t
 	desc = baltic.4.d
 	picture = GFX_report_event_generic_read_write
-
 	is_triggered_only = yes
-
-	option = { # Accept demands
+	option = {
 		name = baltic.4.a
 		GER = {
 			country_event = { days = 1 id = germany.22 }
@@ -75,17 +60,13 @@ country_event = {
 	}
 }
 
-
-# Hidden event to be annexed. Needed because of problem with FROM and events in annexed countries (JH)
 country_event = {
 	id = baltic.6
-
 	hidden = yes
-
 	is_triggered_only = yes
-
 	immediate = {
 		news_event = { id = news.69 }
 		news_event = { id = news.71 hours = 1 }
 	}
 }
+

@@ -1,6 +1,5 @@
-﻿###########################
-# Ace pilots Events
-###########################
+﻿
+
 
 add_namespace = ace_promoted
 add_namespace = ace_died
@@ -8,7 +7,6 @@ add_namespace = ace_killed_by_ace
 add_namespace = ace_killed_other_ace
 add_namespace = aces_killed_each_other
 
-# New ace has been promoted
 country_event = {
 	id = ace_promoted.1
 	title = ace_promoted.1.t
@@ -41,13 +39,11 @@ country_event = {
 	picture = GFX_report_event_ace_promoted
 	hidden = yes
 	is_triggered_only = yes
-
 	option = {
 		name = ace_promoted.1.a
 		if={limit={date>1938.1.1} add_war_support = 0.02}
 	}
 }
-
 country_event = {
 	id = ace_promoted.2
 	title = ace_promoted.2.t
@@ -78,7 +74,6 @@ country_event = {
 		}
 	}
 	picture = GFX_report_event_ace_promoted
-
 	is_triggered_only = yes
 	hidden = yes
 	option = {
@@ -87,7 +82,6 @@ country_event = {
 	}
 }
 
-# Ace died
 country_event = {
 	id = ace_died.1
 	title = ace_died.1.t
@@ -118,7 +112,6 @@ country_event = {
 		}
 	}
 	picture = GFX_report_event_ace_died
-
 	is_triggered_only = yes
 	hidden = yes
 	option = {
@@ -127,13 +120,12 @@ country_event = {
 	}
 }
 
-# Ace killed by other Ace
 country_event = {
 	id = ace_killed_by_ace.1
 	title = ace_killed_by_ace.1.t
 	desc = {
 		text = ace_killed_by_ace.1.d
-		#Don't show equipment name for countried with default names, e.g. Fighter I
+
 		trigger = {
 			OR = {
 				NOT = {
@@ -171,7 +163,7 @@ country_event = {
 	}
 	desc = {
 		text = ace_killed_by_ace.1.d_major
-		#We're only showing wing name for the countries that have nicely named planes
+
 		trigger = {
 			PREV = {
 				OWNER = {
@@ -202,7 +194,6 @@ country_event = {
 		}
 	}
 	picture = GFX_report_event_ace_died
-
 	is_triggered_only = yes
 	hidden = yes
 	option = {
@@ -211,13 +202,12 @@ country_event = {
 	}
 }
 
-# Ace killed other nations Ace
 country_event = {
 	id = ace_killed_other_ace.1
 	title = ace_killed_other_ace.1.t
 	desc = {
 		text = ace_killed_other_ace.1.d
-		#Don't show equipment name for countried with default names, e.g. Fighter I
+
 		trigger = {
 			OR = {
 				NOT = {
@@ -255,7 +245,7 @@ country_event = {
 	}
 	desc = {
 		text = ace_killed_other_ace.1.d_major
-		#We're only showing wing name for the countries that have nicely named planes
+
 		trigger = {
 			PREV = {
 				OWNER = {
@@ -286,7 +276,6 @@ country_event = {
 		}
 	}
 	picture = GFX_report_event_ace_died
-
 	is_triggered_only = yes
 	hidden = yes
 	option = {
@@ -295,13 +284,12 @@ country_event = {
 	}
 }
 
-# Ace killed eachother
 country_event = {
 	id = aces_killed_each_other.1
 	title = aces_killed_each_other.1.t
 	desc = {
 		text = aces_killed_each_other.1.d
-		#Don't show equipment name for countried with default names, e.g. Fighter I
+
 		trigger = {
 			OR = {
 				NOT = {
@@ -339,7 +327,7 @@ country_event = {
 	}
 	desc = {
 		text = aces_killed_each_other.1.d_major
-		#We're only showing wing name for the countries that have nicely named planes
+
 		trigger = {
 			PREV = {
 				OWNER = {
@@ -372,9 +360,9 @@ country_event = {
 	picture = GFX_report_event_ace_died
 	hidden = yes
 	is_triggered_only = yes
-
 	option = {
 		name = aces_killed_each_other.1.a
 		add_war_support = -0.01
 	}
 }
+

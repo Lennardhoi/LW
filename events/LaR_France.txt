@@ -1,5 +1,4 @@
 ﻿add_namespace = lar_fra_inefficient_economy
-
 country_event = {
 	id = lar_fra_inefficient_economy.1
 	hidden = yes
@@ -21,11 +20,9 @@ country_event = {
 		}
 	}
 	option = {
-
 	}
 }
 add_namespace = lar_appeal_to_overseas_territories
-
 country_event = {
 	id = lar_appeal_to_overseas_territories.1
 	hidden = yes
@@ -33,15 +30,15 @@ country_event = {
 	immediate = {
 		if = {
 			limit = { has_legitimacy < 80 }
-			country_event = { id = lar_appeal_to_overseas_territories.4 days = 6 } #syria remains with Vichy
+			country_event = { id = lar_appeal_to_overseas_territories.4 days = 6 }
 			} else = {
-			country_event = { id = lar_appeal_to_overseas_territories.5 days = 6 } #syria switches sides
+			country_event = { id = lar_appeal_to_overseas_territories.5 days = 6 }
 		}
 		if = {
 			limit = { has_legitimacy < 60 }
-			country_event = { id = lar_appeal_to_overseas_territories.10 days = 4 } #madagascar remains with Vichy
+			country_event = { id = lar_appeal_to_overseas_territories.10 days = 4 }
 			} else = {
-			country_event = { id = lar_appeal_to_overseas_territories.11 days = 4 } #madagascar switches sides
+			country_event = { id = lar_appeal_to_overseas_territories.11 days = 4 }
 			add_resource = {
 				type = rubber
 				amount = 30
@@ -50,19 +47,15 @@ country_event = {
 		}
 		if = {
 			limit = { has_legitimacy < 40 }
-			country_event = { id = lar_appeal_to_overseas_territories.8 days = 2 } #western africa remains with Vichy
+			country_event = { id = lar_appeal_to_overseas_territories.8 days = 2 }
 			} else = {
-			country_event = { id = lar_appeal_to_overseas_territories.9 days = 2 } #western africa switches sides
+			country_event = { id = lar_appeal_to_overseas_territories.9 days = 2 }
 		}
-
 	}
-
 	option = {
-
 	}
 }
 
-# syria remains with Vichy France
 country_event = {
 	id = lar_appeal_to_overseas_territories.4
 	title = lar_appeal_to_overseas_territories.4.t
@@ -70,13 +63,13 @@ country_event = {
 	picture = GFX_report_event_france_parade
 	is_triggered_only = yes
 	option = {
-		name = lar_appeal_to_overseas_territories.2.a #agree
+		name = lar_appeal_to_overseas_territories.2.a
 		ai_chance = {
 			factor = 100
 		}
 	}
 }
-#syria switches sides
+
 country_event = {
 	id = lar_appeal_to_overseas_territories.5
 	title = lar_appeal_to_overseas_territories.5.t
@@ -84,7 +77,7 @@ country_event = {
 	picture = GFX_report_event_felix_eboue
 	is_triggered_only = yes
 	option = {
-		name = lar_appeal_to_overseas_territories.3.a #agree
+		name = lar_appeal_to_overseas_territories.3.a
 		ai_chance = {
 			factor = 80
 		}
@@ -94,7 +87,6 @@ country_event = {
 	}
 }
 
-# western africa remains with Vichy France
 country_event = {
 	id = lar_appeal_to_overseas_territories.8
 	title = lar_appeal_to_overseas_territories.8.t
@@ -102,13 +94,13 @@ country_event = {
 	picture = GFX_report_event_france_parade
 	is_triggered_only = yes
 	option = {
-		name = lar_appeal_to_overseas_territories.6.a #agree
+		name = lar_appeal_to_overseas_territories.6.a
 		ai_chance = {
 			factor = 100
 		}
 	}
 }
-#western africa switches sides
+
 country_event = {
 	id = lar_appeal_to_overseas_territories.9
 	title = lar_appeal_to_overseas_territories.9.t
@@ -116,7 +108,7 @@ country_event = {
 	picture = GFX_report_event_felix_eboue
 	is_triggered_only = yes
 	option = {
-		name = lar_appeal_to_overseas_territories.3.a #agree
+		name = lar_appeal_to_overseas_territories.3.a
 		ai_chance = {
 			factor = 80
 		}
@@ -132,7 +124,6 @@ country_event = {
 	}
 }
 
-# madagascar remains with Vichy France
 country_event = {
 	id = lar_appeal_to_overseas_territories.10
 	title = lar_appeal_to_overseas_territories.10.t
@@ -140,13 +131,13 @@ country_event = {
 	picture = GFX_report_event_france_parade
 	is_triggered_only = yes
 	option = {
-		name = lar_appeal_to_overseas_territories.2.a #agree
+		name = lar_appeal_to_overseas_territories.2.a
 		ai_chance = {
 			factor = 100
 		}
 	}
 }
-#madagascar switches sides
+
 country_event = {
 	id = lar_appeal_to_overseas_territories.11
 	title = lar_appeal_to_overseas_territories.11.t
@@ -154,10 +145,11 @@ country_event = {
 	picture = GFX_report_event_felix_eboue
 	is_triggered_only = yes
 	option = {
-		name = lar_appeal_to_overseas_territories.3.a #agree
+		name = lar_appeal_to_overseas_territories.3.a
 		ai_chance = {
 			factor = 80
 		}
 		FRA = { transfer_state = 543 }
 	}
 }
+

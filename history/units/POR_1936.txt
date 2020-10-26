@@ -1,0 +1,251 @@
+﻿division_template = {
+	name = "Divisão de Infantaria"
+	division_names_group = POR_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Força de Caçadores"
+	division_names_group = POR_CAC_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+	}
+	priority = 2
+}
+division_template = {
+	name = "Brigada de Cavalaria"
+	division_names_group = POR_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+units = {
+
+
+	division = {
+		name = "Governo Militar Portugues"
+		location =795
+		division_template = "Divisão de Infantaria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location =795
+		division_template = "Brigada de Cavalaria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location =795
+		division_template = "Força de Caçadores"
+		start_experience_factor = 0.3
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location =720
+		division_template = "Divisão de Infantaria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location =720
+		division_template = "Brigada de Cavalaria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location =720
+		division_template = "Força de Caçadores"
+		start_experience_factor = 0.3
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location =795
+		division_template = "Divisão de Infantaria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location =795
+		division_template = "Força de Caçadores"
+		start_experience_factor = 0.3
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location =840
+		division_template = "Divisão de Infantaria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location =840
+		division_template = "Força de Caçadores"
+		start_experience_factor = 0.3
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location =840
+		division_template = "Divisão de Infantaria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location =840
+		division_template = "Brigada de Cavalaria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location =840
+		division_template = "Força de Caçadores"
+		start_experience_factor = 0.3
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location =1716
+		division_template = "Força de Caçadores"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 22
+		}
+		location =1531
+		division_template = "Força de Caçadores"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 23
+		}
+		location =1531
+		division_template = "Força de Caçadores"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 24
+		}
+		location =2044
+		division_template = "Força de Caçadores"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 25
+		}
+		location =2044
+		division_template = "Força de Caçadores"
+		start_experience_factor = 0.3
+	}
+}
+
+air_wings = {
+	112 = {
+
+		tac_bomber_equipment_0 = {
+			owner = "POR"
+			amount = 12
+		}
+
+		CAS_equipment_1 = {
+			owner = "POR"
+			amount = 12
+		}
+	}
+}
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "POR"
+		}
+		requested_factories = 1
+		progress = 0.47
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "POR"
+		}
+		requested_factories = 1
+		progress = 0.74
+		efficiency = 100
+	}
+}
+

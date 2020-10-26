@@ -1,5 +1,4 @@
 
-# Increase Imperial Defense spirit
 ENG_imperial_conference_defense_level_up = {
 	if = {
 		limit = {
@@ -49,7 +48,6 @@ ENG_imperial_conference_defense_level_up = {
 	}
 }
 
-# Increase Imperial Economy spirit
 ENG_imperial_conference_economy_level_up = {
 	if = {
 		limit = {
@@ -99,7 +97,6 @@ ENG_imperial_conference_economy_level_up = {
 	}
 }
 
-# Set amount of subjects in variable
 ENG_imperial_conference_set_subject_counter = {
 	set_variable = {
 		var = ENG_imperial_conference_number_of_subjects
@@ -167,7 +164,6 @@ ENG_imperial_conference_set_subject_counter = {
 	}
 }
 
-# Clear Imperial Conference flags
 ENG_imperial_conference_clear_in_progress_flags = {
 	if = {
 		limit = {
@@ -209,8 +205,5 @@ ENG_imperial_conference_clear_in_progress_flags = {
 		clr_country_flag = ENG_extensive_diplomatic_pressure_flag
 		clr_country_flag = ENG_imperial_appeasement_flag
 	}
-
 }
-
-
 

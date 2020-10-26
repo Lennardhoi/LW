@@ -1,4 +1,4 @@
-#Add to scripted triggers if more levels of hyper inflation is added
+
 CHI_hyper_inflation_clear_all = {
 	remove_ideas = {
 		CHI_hyper_inflation_1
@@ -9,9 +9,8 @@ CHI_hyper_inflation_clear_all = {
 	}
 }
 
-#Important to put HIGHEST first
 CHI_hyper_inflation_level_up = {
-	# level 5 not relevant. Cannot go above.
+
 	custom_effect_tooltip = CHI_inflation_up_tt
 	if = {
 		limit = { has_idea = CHI_hyper_inflation_4 }
@@ -47,12 +46,11 @@ CHI_hyper_inflation_level_up = {
 	}
 }
 
-#Important to put LOWEST first
 CHI_hyper_inflation_level_down = {
 	custom_effect_tooltip = CHI_inflation_down_tt
 	if = {
 		limit = { has_idea = CHI_hyper_inflation_1 }
-		#Makes the tooltip clearer if player looks at the effect early in the game
+
 		effect_tooltip = {
 			swap_ideas = {
 				remove_idea = CHI_hyper_inflation_1
@@ -90,8 +88,6 @@ CHI_hyper_inflation_level_down = {
 		}
 	}
 }
-
-# CHI_integrating_warlords #
 
 CHI_warlord_integration_up = {
 	if = {
@@ -134,8 +130,6 @@ CHI_warlord_integration_up = {
 		add_ideas = CHI_warlord_integration_1
 	}
 }
-
-
 CHI_warlord_integration_down = {
 	if = {
 		limit = {
@@ -177,7 +171,6 @@ CHI_warlord_integration_down = {
 		remove_ideas = CHI_warlord_integration_1
 	}
 }
-
 CHI_unity_level_up = {
 	if = {
 		limit = {
@@ -210,7 +203,6 @@ CHI_unity_level_up = {
 		add_ideas = CHI_chinese_unity_1
 	}
 }
-
 CHI_unity_level_down = {
 	if = {
 		limit = {
@@ -237,7 +229,6 @@ CHI_unity_level_down = {
 		remove_ideas = CHI_chinese_unity_1
 	}
 }
-
 CHI_set_ally_strat_on_current_leader = {
 	if = {
 		limit = {
@@ -252,7 +243,6 @@ CHI_set_ally_strat_on_current_leader = {
 		}
 	}
 }
-
 CHI_negative_spirit_transfer = {
 	if = {
 		limit = {
@@ -327,3 +317,4 @@ CHI_negative_spirit_transfer = {
 		add_ideas = CHI_hyper_inflation_5
 	}
 }
+

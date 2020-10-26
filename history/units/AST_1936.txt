@@ -1,9 +1,7 @@
 ﻿division_template = {
-	name = "District Force"		# Military District Forces (reserve/garrison forces)
-	# Note: all forces at reserve levels in 1936
+	name = "District Force"
 
 	division_names_group = AST_INF_01
-
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -20,12 +18,9 @@
 		engineer = { x = 0 y = 0 }
 	}
 }
-
 division_template = {
 	name = "Infantry Division"
-
 	division_names_group = AST_INF_01
-
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -53,12 +48,9 @@ division_template = {
 		anti_air = { x = 0 y = 3 }
 	}
 }
-
 division_template = {
 	name = "Armoured Division"
-
 	division_names_group = AST_ARM_01
-
 	regiments = {
 		light_armor = { x = 0 y = 0 }
 		light_armor = { x = 0 y = 1 }
@@ -87,17 +79,16 @@ division_template = {
 		recon = { x = 0 y = 2 }
 	}
 }
-
 units = {
 	division= {
 		name = "This is here so you can look at your generals"
-		location = 7859
+		location =7486
 		division_template = "District Force"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 }
-##### Starting Production #####
+
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
@@ -145,3 +136,4 @@ instant_effect = {
 		efficiency = 50
 	}
 }
+

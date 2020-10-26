@@ -1,21 +1,20 @@
-# this one is called for nightly tests
-ai_test_startup_effect = {
-	# if = {
-		# 	limit = { is_major = yes }
-		# 	#enable crypto agency in ~2.5 years
-		# 	country_event = { id = generic_debug.42 days = 900 }
-		# }
-	# if = {
-		# 	limit = {
-			# 		OR = {
-				# 			tag = ENG
-				# 		}
-			# 	}
-		# 	#give usa access to france & england in ~4 year
-		# 	country_event = { id = generic_debug.43 days = 1500 }
-		# }
-}
 
+ai_test_startup_effect = {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
 d_collaboration = {
 	if = {
 		limit = { tag = FROM }
@@ -32,10 +31,7 @@ d_collaboration = {
 		}
 	}
 }
-
-
 d_add_intel = {
-
 	if = {
 		limit = { tag = FROM }
 		log = "Error:"
@@ -43,7 +39,6 @@ d_add_intel = {
 		log = " "
 	}
 	set_temp_variable = { default_val = args^0?10 }
-
 	FROM = {
 		add_intel = {
 			target = PREV
@@ -54,10 +49,9 @@ d_add_intel = {
 		}
 	}
 }
-
 d_add_fake_armies = {
 	if = {
-		# create template if not exist
+
 		limit = {
 			not = {
 				has_country_flag = fake_intel_template_created
@@ -65,7 +59,6 @@ d_add_fake_armies = {
 		}
 		division_template = {
 			name = "Fake Intel Division"
-
 			is_fake_intel_division = yes
 			is_locked = yes
 			regiments = {
@@ -75,7 +68,6 @@ d_add_fake_armies = {
 		set_country_flag = fake_intel_template_created
 	}
 
-	# give it an id and store id & current date so it can be deleted later
 	if = {
 		limit = { NOT = { has_variable = fake_intel_id } }
 		set_variable = { fake_intel_id = 1000 }
@@ -87,7 +79,6 @@ d_add_fake_armies = {
 	}
 	set_variable = { num_days_for_fake_intel_id@var:id_to_set = global.num_days }
 
-	# minimum of 0.25 of current armies or 24
 	set_temp_variable = { num_to_create = num_armies }
 	multiply_temp_variable = { num_to_create = 0.25 }
 	round_temp_variable = num_to_create
@@ -97,7 +88,6 @@ d_add_fake_armies = {
 		min = 24
 	}
 
-	# create actual units
 	capital_scope = {
 		create_unit = {
 			division = "division_template = \"Fake Intel Division\" start_experience_factor = 0.5"
@@ -107,6 +97,6 @@ d_add_fake_armies = {
 		}
 	}
 
-	# will delete them after 90 days
 	country_event = { id = lar_fake_intel_units.1 days = 90 }
 }
+

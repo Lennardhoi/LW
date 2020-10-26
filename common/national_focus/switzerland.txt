@@ -1,40 +1,32 @@
 focus_tree = {
 	id = swi_focus
-
 	country = {
 		factor = 0
 		modifier = {
 			add = 100
 			tag = SWI
-
 		}
 	}
 	default = no
 	continuous_focus_position = { x = 10000 y = 1600 }
-
-
 	focus = {
 		id = SWI_Vanilla
 		icon = missing
-
 		x = 10
 		y = 1
 		cost = 1
 		ai_will_do = {
 			factor = 1
 		}
-
 		available = {
 			always = no
 		}
-
 		completion_reward = {
 		}
 	}
 	focus = {
 		id = SWI_STFU
 		icon = missing
-
 		prerequisite = { focus = SWI_Vanilla }
 		x = -6
 		y = 1
@@ -43,17 +35,14 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
 		available = {
 		}
-
 		completion_reward = {
 		}
 	}
 	focus = {
 		id = SWI_PFU
 		icon = missing
-
 		prerequisite = { focus = SWI_Vanilla }
 		x = -4
 		y = 1
@@ -62,17 +51,14 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
 		available = {
 		}
-
 		completion_reward = {
 		}
 	}
 	focus = {
 		id = SWI_SpeedKat
 		icon = missing
-
 		prerequisite = { focus = SWI_PFU }
 		x = 0
 		y = 1
@@ -81,17 +67,14 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
 		available = {
 		}
-
 		completion_reward = {
 		}
 	}
 	focus = {
 		id = SWI_JFU
 		icon = missing
-
 		prerequisite = { focus = SWI_SpeedKat }
 		x = 0
 		y = 1
@@ -100,17 +83,14 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
 		available = {
 		}
-
 		completion_reward = {
 		}
 	}
 	focus = {
 		id = SWI_DSFU
 		icon = missing
-
 		prerequisite = { focus = SWI_JFU }
 		x = -1
 		y = 1
@@ -119,17 +99,14 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
 		available = {
 		}
-
 		completion_reward = {
 		}
 	}
 	focus = {
 		id = SWI_CFU
 		icon = missing
-
 		prerequisite = { focus = SWI_JFU }
 		x = 1
 		y = 1
@@ -138,17 +115,14 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
 		available = {
 		}
-
 		completion_reward = {
 		}
 	}
 	focus = {
 		id = SWI_CCDS
 		icon = missing
-
 		prerequisite = { focus = SWI_CFU }
 		x = -2
 		y = 1
@@ -157,17 +131,14 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
 		available = {
 		}
-
 		completion_reward = {
 		}
 	}
 	focus = {
 		id = SWI_GDU
 		icon = missing
-
 		prerequisite = { focus = SWI_CFU }
 		x = 0
 		y = 1
@@ -176,17 +147,14 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
 		available = {
 		}
-
 		completion_reward = {
 		}
 	}
 	focus = {
 		id = SWI_BZKFU
 		icon = missing
-
 		prerequisite = { focus = SWI_CFU }
 		x = 2
 		y = 1
@@ -195,17 +163,14 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
 		available = {
 		}
-
 		completion_reward = {
 		}
 	}
 	focus = {
 		id = SWI_Watts
 		icon = missing
-
 		prerequisite = { focus = SWI_Vanilla }
 		x = -2
 		y = 1
@@ -214,17 +179,14 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
 		available = {
 		}
-
 		completion_reward = {
 		}
 	}
 	focus = {
 		id = SWI_PFW
 		icon = missing
-
 		prerequisite = { focus = SWI_Vanilla }
 		x = 0
 		y = 1
@@ -233,17 +195,14 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
 		available = {
 		}
-
 		completion_reward = {
 		}
 	}
 	focus = {
 		id = SWI_Mercs
 		icon = missing
-
 		prerequisite = { focus = SWI_Vanilla }
 		x = 2
 		y = 1
@@ -252,17 +211,14 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
 		available = {
 		}
-
 		completion_reward = {
 		}
 	}
 	focus = {
 		id = SWI_BFU
 		icon = missing
-
 		prerequisite = { focus = SWI_Mercs }
 		x = 0
 		y = 1
@@ -271,17 +227,14 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
 		available = {
 		}
-
 		completion_reward = {
 		}
 	}
 	focus = {
 		id = SWI_Mercs2
 		icon = missing
-
 		prerequisite = { focus = SWI_BFU }
 		x = 0
 		y = 1
@@ -290,17 +243,14 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
 		available = {
 		}
-
 		completion_reward = {
 		}
 	}
 	focus = {
 		id = SWI_Spot
 		icon = missing
-
 		prerequisite = { focus = SWI_Vanilla }
 		x = 5
 		y = 1
@@ -309,17 +259,14 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
 		available = {
 		}
-
 		completion_reward = {
 		}
 	}
 	focus = {
 		id = SWI_Spot_Optimisation
 		icon = missing
-
 		prerequisite = { focus = SWI_Spot }
 		x = -1
 		y = 1
@@ -328,17 +275,14 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
 		available = {
 		}
-
 		completion_reward = {
 		}
 	}
 	focus = {
 		id = SWI_Copes
 		icon = missing
-
 		prerequisite = { focus = SWI_Vanilla }
 		x = 8
 		y = 1
@@ -347,17 +291,14 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
 		available = {
 		}
-
 		completion_reward = {
 		}
 	}
 	focus = {
 		id = SWI_Horst
 		icon = missing
-
 		prerequisite = { focus = SWI_Copes }
 		x = -1
 		y = 1
@@ -366,17 +307,14 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
 		available = {
 		}
-
 		completion_reward = {
 		}
 	}
 	focus = {
 		id = SWI_HFU
 		icon = missing
-
 		prerequisite = { focus = SWI_Horst }
 		prerequisite = { focus = SWI_Spot }
 		x = -1
@@ -386,17 +324,14 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
 		available = {
 		}
-
 		completion_reward = {
 		}
 	}
 	focus = {
 		id = SWI_Fake_STFU
 		icon = missing
-
 		prerequisite = { focus = SWI_Copes }
 		x = 1
 		y = 1
@@ -405,11 +340,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
 		available = {
 		}
-
 		completion_reward = {
 		}
 	}
 }
+

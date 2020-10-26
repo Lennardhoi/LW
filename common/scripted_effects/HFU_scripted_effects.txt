@@ -5,11 +5,9 @@ show_super_event={
 				check_variable = { super_events_enabled > 0 }
 			}
 			set_variable={super_event=Global.super_event}
-
 		}
 	}
 }
-
 share_intel_with_allies={
 	add_intel = {
 		target = PREV
@@ -44,9 +42,7 @@ exploit_occupied_territories={
 			remove_building = {
 				type = arms_factory
 				level = 1
-
 			}
-
 			ROOT={random_owned_state={
 					limit={is_core_of=GER free_building_slots = { building = arms_factory size > 1 include_locked=yes}}
 					add_manpower = 25000
@@ -55,7 +51,6 @@ exploit_occupied_territories={
 						type = arms_factory
 						level = 1
 						instant_build = yes
-
 					}
 				}
 			}
@@ -64,9 +59,7 @@ exploit_occupied_territories={
 			remove_building = {
 				type = industrial_complex
 				level = 1
-
 			}
-
 			ROOT={random_owned_state={
 					add_manpower = 25000
 					limit={NOT={state=28 state=8}is_core_of=GER free_building_slots = { building = industrial_complex size > 1 include_locked=yes}}
@@ -75,7 +68,6 @@ exploit_occupied_territories={
 						type = industrial_complex
 						level = 1
 						instant_build = yes
-
 					}
 				}
 				}}
@@ -95,7 +87,6 @@ update_pacific_war = {
 					add_to_variable={GLOBAL.pacific_status=5}
 				}
 				else={
-
 					add_to_variable={GLOBAL.pacific_status=10}}
 			}
 		}
@@ -110,7 +101,6 @@ update_pacific_war = {
 	multiply_variable={ENG.pacific_status=0.5}
 	if={limit={JAP={has_completed_focus=JAP_korean_guest_workers}} add_to_variable={JAP.pacific_status=0.1}}
 }
-
 anti_cross_faction_trade_axis = {
 	add_opinion_modifier = {
 		target = GER
@@ -141,7 +131,6 @@ anti_cross_faction_trade_axis = {
 		modifier = anti_cross_faction_trade
 	}
 }
-
 anti_cross_faction_trade_allies = {
 	add_opinion_modifier = {
 		target = USA
@@ -175,13 +164,11 @@ anti_cross_faction_trade_allies = {
 		target = NZL
 		modifier = anti_cross_faction_trade
 	}
-	#add_opinion_modifier = {
-	#	target = EFR
-	#	modifier = anti_cross_faction_trade_efr
-	#}
+
+
+
+
 }
-
-
 anti_cross_faction_trade_all = {
 	ENG = {
 		anti_cross_faction_trade_axis = yes
@@ -232,12 +219,10 @@ declare_war_on_enemy_faction = {
 		THIS_call_all_allies_against_ROOT = yes
 	}
 }
-
 ROOT_call_allies_both_sides = {
 	ROOT_call_all_allies_against_THIS = yes
 	THIS_call_all_allies_against_ROOT = yes
 }
-
 ROOT_call_all_allies_against_THIS = {
 	set_variable={GER.test2=THIS} set_variable={GER.test3=PREV} set_variable={GER.test4=ROOT}
 	for_each_scope_loop = {
@@ -249,15 +234,12 @@ ROOT_call_all_allies_against_THIS = {
 				enemy = PREV
 			}
 		}
-
 	}
 }
-
 THIS_call_all_allies_against_ROOT = {
 	for_each_scope_loop = {
 		array = THIS.faction_members
 
-		
 		if = {
 			limit = { NOT = { OR = { AND={original_tag = USA has_war=no} AND={original_tag = FRA NOT={has_global_flag=fall_of_france}} original_tag = PREV} } }
 			add_to_war = {
@@ -265,6 +247,6 @@ THIS_call_all_allies_against_ROOT = {
 				enemy = ROOT
 			}
 		}
-
 	}
 }
+

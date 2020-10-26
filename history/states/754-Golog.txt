@@ -2,23 +2,21 @@ state={
 	id=754
 	name="STATE_754"
 	provinces={
-		1882 4536 4888 7270 10490 10817 11448 12732 12815
+		1836 4379 4695 6942 9947 10225 10767 11953 12013
 	}
 	manpower=400000
 	buildings_max_level_factor=1.000
 	state_category = rural
 	history={
 		owner = CHI
-
 		add_core_of = CHI
 		victory_points = {
-			12732 3
+			11953 3
 		}
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1
 			arms_factory = 1
-
 		}
 		1938.10.25 = {
 			if = {
@@ -26,13 +24,12 @@ state={
 					NOT = {
 						has_dlc = "Waking the Tiger"
 					}
-
 				}
 				CHI = {
 					transfer_state = PREV
-
 				}
 			}
 		}
 	}
 }
+

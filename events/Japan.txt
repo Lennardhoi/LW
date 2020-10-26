@@ -1,18 +1,14 @@
-﻿###########################
-# Japanese Events
-###########################
+﻿
+
 
 add_namespace = japan
 
-# Chinese Refuse Concessions
 country_event = {
 	id = japan.1
 	title = china.1.t
 	desc = japan.1.d
 	picture = GFX_report_event_chinese_soldiers_01
-
 	is_triggered_only = yes
-
 	option = {
 		name = japan.1.a
 	}
@@ -25,58 +21,50 @@ country_event = {
 	hidden=yes
 	is_triggered_only = yes
 	immediate={
-	every_state={
+		every_state={
 			limit={ is_owned_by = INS}
-			 if = { limit = { NOT={ is_core_of=INS } }add_compliance = 100 }
-			 INS={
-			 give_resource_rights = { receiver = ENG state = PREV }
-			 }
-			 }
+			if = { limit = { NOT={ is_core_of=INS } }add_compliance = 100 }
+			INS={
+				give_resource_rights = { receiver = ENG state = PREV }
+			}
+		}
 	}
-	
+
 }
-# Soviets Push Back And Win
+
 country_event = {
 	id = japan.3
 	title = japan.3.t
 	desc = japan.3.d
 	picture = GFX_report_event_soviet_soldiers_tank
-
 	is_triggered_only = yes
-
 	option = {
 		if = {
 			limit = {
 				original_tag = JAP
 			}
 			714 = { add_manpower = -30000 }
-
 			army_experience = 5
 			add_tech_bonus = {
-				name = japan.3.t #test_the_ussr_focus
+				name = japan.3.t
 				bonus = 1.0
 				uses = 1
 				category = cat_anti_tank
 			}
-
-
 		}
-
 		name = japan.3.a
 		SOV = {
 			country_event = { id = soviet.2 }
 		}
 	}
 }
-# Soviets Push Back And Lose
+
 country_event = {
 	id = japan.4
 	title = japan.4.t
 	desc = japan.4.d
 	picture = GFX_report_event_japanese_soldiers_01
-
 	is_triggered_only = yes
-
 	option = {
 		name = japan.4.a
 		if = {
@@ -84,34 +72,26 @@ country_event = {
 				original_tag = JAP
 			}
 			714 = { add_manpower = -20000 }
-
-
 			army_experience = 15
 			add_tech_bonus = {
-				name = japan.4.t #test_the_ussr_focus
+				name = japan.4.t
 				bonus = 1.0
 				uses = 1
 				category = cat_grand_battle_plan
 			}
-
-
 		}
-
 		SOV = {
 			country_event = { id = soviet.3 }
 		}
 	}
 }
 
-# Soviets Yield
 country_event = {
 	id = japan.5
 	title = japan.5.t
 	desc = japan.5.d
 	picture = GFX_report_event_soviet_soldiers_tank
-
 	is_triggered_only = yes
-
 	option = {
 		name = japan.5.a
 		if = {
@@ -126,15 +106,12 @@ country_event = {
 	}
 }
 
-# French Accept Demands
 country_event = {
 	id = japan.6
 	title = japan.6.t
 	desc = japan.6.d
 	picture = GFX_report_event_japanese_soldiers_02
-
 	is_triggered_only = yes
-
 	option = {
 		name = japan.6.a
 		USA = { set_country_flag = { flag = USA_indochina_window days = 60 value = 1 } }
@@ -142,33 +119,26 @@ country_event = {
 			news_event = { days = 5 id = news.5 }
 		}
 		add_named_threat = { threat = 3 name = france.1.t }
-
 	}
 }
 
-# Germany Agrees to Withdraw Falkenhausen
 country_event = {
 	id = japan.8
 	title = japan.8.t
 	desc = japan.8.d
 	picture = GFX_report_event_german_detained_china
-
 	is_triggered_only = yes
-
 	option = {
 		name = japan.8.a
 	}
 }
 
-# USA condemns our war
 country_event = {
 	id = japan.10
 	title = japan.10.t
 	desc = japan.10.d
 	picture = GFX_report_event_FDR_speech
-
 	is_triggered_only = yes
-
 	option = {
 		name = japan.10.a
 		USA = {
@@ -176,16 +146,12 @@ country_event = {
 		}
 	}
 }
-
-
 country_event = {
 	id = japan.144
 	title = japan.144.t
 	desc = japan.144.d
 	picture = GFX_tora
-
 	is_triggered_only = yes
-
 	option = {
 		name = japan.144.a
 		if = {
@@ -196,7 +162,6 @@ country_event = {
 			}
 		}
 		}}
-
 country_event = {
 	id = japan.145
 	title = japan.145.t
@@ -208,19 +173,16 @@ country_event = {
 		name = japan.145.a
 	}
 }
-
 country_event = {
 	id = japan.146
 	title = japan.146.7
 	desc = japan.146.d
 	hidden = yes
 	is_triggered_only = yes
-
 	immediate = {
 		JAP = { give_resource_rights = { receiver = GER state = 724 } }
 	}
-
 	option = {
 	}
-
 }
+

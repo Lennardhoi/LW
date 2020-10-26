@@ -1,8 +1,7 @@
-﻿##### Division Templates #####
+﻿
 division_template = {
-	name = "Katyusha Diviziya"			# Rifle Division
+	name = "Katyusha Diviziya"
 	division_names_group = SOV_MEC_01
-
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
@@ -21,85 +20,65 @@ division_template = {
 		motorized_rocket_brigade= { x = 3 y = 3 }
 		mot_anti_air_brigade= { x = 3 y = 4 }
 		mot_anti_air_brigade= { x = 3 y = 0 }
-
 	}
 	support = {
-		recon = { x = 0 y = 0 } 		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and they seem rather OP. Could revisit if balance changes
-		engineer = { x = 0 y = 1 } 	# (semi-mot) Engineer bn
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
 		artillery = { x = 0 y = 2 }
 		logistics_company = { x = 0 y = 3 }
-		signal_company = { x = 0 y = 4 }	# Heavy Arty Regiment had 1x 152mm bn + 2x 122mm bn
+		signal_company = { x = 0 y = 4 }
 	}
 }
 
 
 
-### Note: OOB abstracts away the following:
-#	Marine Brigade (3x marine bn), 2 Brigades: Leningrad, Sevastopol
-#	Airborne Brigade (3x paratrooper bn), 1 Brigade: Moscow
 
-
-##### OOB #####
 units = {
-
 	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 1}
-		location = 6380
+		location =6088
 		division_template = "Katyusha Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
-
 	}
 	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2}
-		location = 6380
+		location =6088
 		division_template = "Katyusha Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
-
 		}division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 3}
-		location = 6380
+		location =6088
 		division_template = "Katyusha Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
-
 		}division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 4}
-		location = 6380
+		location =6088
 		division_template = "Katyusha Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
-
 		}division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 5}
-		location = 6380
+		location =6088
 		division_template = "Katyusha Diviziya"
 		start_experience_factor = 0.2
 		start_equipment_factor = 1
-
 	}
 
-
-
-	# Subordinate to VO
-
-
 }
-
 instant_effect = {
-
-
 	add_equipment_production = {
 		equipment = {
 			type = motorized_rocket_equipment_1
@@ -109,7 +88,6 @@ instant_effect = {
 		progress = 0.1
 		efficiency = 50
 	}
-
-
 }
-#####################
+
+

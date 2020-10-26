@@ -1,28 +1,25 @@
-
 state={
 	id=131
 	name="STATE_131"
 	manpower = 2128860
-
 	state_category = city
 	resources={
-		steel=38 # was: 60
-		aluminium=5 # was: 8
+		steel=38
+		aluminium=5
 	}
-
 	history={
 		owner = ENG
 		victory_points = {
-			351 10
+			350 10
 		}
 		buildings = {
 			infrastructure = 6
 			dockyard = 4
 			air_base = 6
-			351 = {
+			350 = {
 				naval_base = 6
 			}
-			3311 = {
+			3199 = {
 				naval_base = 1
 			}
 		}
@@ -34,8 +31,8 @@ state={
 			}
 		}
 	}
-
 	provinces={
-		219 351 3311 6399 9285 11270 11299 11332
+		219 350 3199 6107 8804 10594 10621 10653
 	}
 }
+

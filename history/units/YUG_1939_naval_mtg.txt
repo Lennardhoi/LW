@@ -1,0 +1,24 @@
+﻿
+units= {
+
+
+	fleet = {
+		name = "Kraljevska Mornarica"
+		naval_base =3785
+		task_force = {
+			name = "Kraljevska Mornarica"
+			location =3785
+			ship = { name = "KB Dalmacija" definition = light_cruiser equipment = { ship_hull_cruiser_coastal_defense_ship = { amount = 1 owner = YUG version_name = "Dalmacija Class" } } }
+			ship = { name = "KB Dubrovnik" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = YUG version_name = "Dubrovnik Class" } } }
+			ship = { name = "KB Beograd" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = YUG version_name = "Beograd Class" } } }
+			ship = { name = "KB Zagrb" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = YUG version_name = "Beograd Class" } } }
+			ship = { name = "KB Ljubljana" definition = destroyer equipment = { ship_hull_light_2 = { amount = 1 owner = YUG version_name = "Beograd Class" } } }
+
+			ship = { name = "KB Hrabri" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = YUG version_name = "Hrabri Class" } } }
+			ship = { name = "KB Nebojsa" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = YUG version_name = "Hrabri Class" } } }
+			ship = { name = "KB Smeli" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = YUG version_name = "Hrabri Class" } } }
+			ship = { name = "KB Osvetnik" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = YUG version_name = "Hrabri Class" } } }
+		}
+	}
+}
+

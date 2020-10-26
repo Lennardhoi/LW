@@ -1,11 +1,10 @@
 on_actions = {
 
-	#Root is exile
-	#From is new host
-	#FromFrom is old host
+
+
 	on_host_changed_from_capitulation = {
 		effect = {
-			#Transfer exile leaders to new host
+
 			From.From = {
 				every_army_leader = {
 					limit = { is_exiled_leader_from = Root }
@@ -15,8 +14,7 @@ on_actions = {
 		}
 	}
 
-	#Root is exile
-	#From is old host
+
 	on_exile_government_reinstated = {
 		effect = {
 			From = {
@@ -34,14 +32,12 @@ on_actions = {
 			}
 		}
 	}
-
 	on_unit_leader_created = {
 		effect = {
 			if = {
 				limit = { is_exiled_leader = yes }
 				From.From = { save_event_target_as = exile_nation }
 				add_unit_leader_trait = exiled_leader
-
 				add_random_trait = {
 					old_guard
 					brilliant_strategist
@@ -55,7 +51,6 @@ on_actions = {
 					cavalry_officer
 					armor_officer
 				}
-
 				add_random_trait = {
 					organizer
 					panzer_leader
@@ -67,16 +62,14 @@ on_actions = {
 					skilled_staffer
 					trickster
 				}
-
 				unit_leader_event = { id = mtg_exile_leader_added.1 }
 			}
 		}
 	}
 
-	#ROOT is winner #FROM gets annexed - This will also fire on_annex
 	on_civil_war_end = {
 		effect = {
-			# Give back MEX focus tree to rebel MEX if they win a civil war.
+
 			if = {
 				limit = {
 					has_dlc = "Man the Guns"
@@ -88,15 +81,12 @@ on_actions = {
 				}
 				load_focus_tree = { tree = mexico_focus_tree keep_completed = yes }
 			}
-
 			delete_unit_template_and_units = { division_template = "Anti-Exploit Punitive Brigade" }
 		}
 	}
-
-
 	on_declare_war = {
 		effect = {
-			# In case of HOL being declared war on and still having Shell-shocked Spectator of the Great War, remove the spirit
+
 			if = {
 				limit = {
 					FROM = {
@@ -120,7 +110,7 @@ on_actions = {
 					}
 				}
 			}
-			# In case of HOL being declared war on and still having Aloof Neutrality, remove the spirit
+
 			if = {
 				limit = {
 					FROM = {
@@ -134,7 +124,7 @@ on_actions = {
 					}
 				}
 			}
-			# In case of HOL being declared war on and having taken the "Share intelligence" decision, they get a temporary buff to defense and attack
+
 			if = {
 				limit = {
 					tag = FRA
@@ -195,7 +185,7 @@ on_actions = {
 					FROM = { add_timed_idea = { idea = HOL_shared_intelligence_ger_eng days = 180 } }
 				}
 			}
-			# In case of GER/ENG/FRA going to war they get a minor buff if they shared intelligence
+
 			if = {
 				limit = {
 					tag = FRA
@@ -244,7 +234,7 @@ on_actions = {
 				}
 				hidden_effect = { add_timed_idea = { idea = HOL_shared_intelligence_hol_ger days = 180 } }
 			}
-			# In case of HOL being declared war on and having taken the "draw up shared staff plan" decision, they get a temporary buff to core defense and max entrenchment
+
 			if = {
 				limit = {
 					OR = {
@@ -278,7 +268,7 @@ on_actions = {
 				}
 				hidden_effect = { FROM = { add_timed_idea = { idea = HOL_staff_plan_ger days = 180 } } }
 			}
-			# In case of Turkish civil war with field marshal Ataturk out on the field
+
 			if = {
 				limit = {
 					original_tag = TUR
@@ -304,7 +294,6 @@ on_actions = {
 			}
 		}
 	}
-
 	on_government_exiled = {
 		effect = {
 			if = {
@@ -317,24 +306,16 @@ on_actions = {
 		}
 	}
 
-	#ROOT = nation being puppeted, FROM = overlord
 	on_puppet = {
 	}
-
 	on_startup = {
 	}
 
-	# ROOT is capitulated country, FROM is winner
 	on_capitulation = {
-
 	}
 
-
-	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
 	on_state_control_changed = {
-
 	}
-
 	on_nuke_drop = {
 		effect = {
 			if = {
@@ -349,16 +330,11 @@ on_actions = {
 		}
 	}
 
-	# FROM is the sinker, ROOT is the owner of the ship being sunk
 	on_pride_of_the_fleet_sunk = {
-
 	}
-
 	on_leave_faction = {
-
 	}
 
-	# ROOT is the new faction leader FROM is the old faction leader
 	on_assume_faction_leadership = {
 		effect = {
 			if = {
@@ -388,3 +364,4 @@ on_actions = {
 		}
 	}
 }
+

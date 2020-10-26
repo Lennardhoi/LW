@@ -1,0 +1,1143 @@
+﻿division_template = {
+	name = "Hohei Shidan"
+	division_names_group = JAP_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Chugata Hohei Shidan"
+	division_names_group = JAP_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Dokuritsu Konsei Ryodan"
+	division_names_group = JAP_IMB_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		light_armor = { x= 2 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Kihei Shidan"
+	division_names_group = JAP_CAV_01
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+}
+division_template = {
+	name = "Jidousha Shidan"
+	division_names_group = JAP_MOT_01
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+		motorized = { x = 3 y = 0 }
+		motorized = { x = 3 y = 1 }
+		motorized = { x = 3 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		mot_recon = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Senshadan"
+	division_names_group = JAP_ARM_01
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Rikusentai"
+	division_names_group = JAP_MAR_01
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 1 y = 0 }
+		marine = { x = 1 y = 1 }
+		marine = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+	priority = 2
+}
+division_template = {
+	name = "Chuton-chi Shidan"
+	division_names_group = JAP_GAR_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	priority = 0
+}
+units = {
+
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location =11687
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 201
+		}
+		location =11709
+		division_template = "Dokuritsu Konsei Ryodan"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Ominato Kichi Kaiheidan"
+		location =9353
+		division_template = "Chuton-chi Shidan"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division = {
+		name = "Ominato Kichi Shubitai"
+		location =4043
+		division_template = "Chuton-chi Shidan"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+	}
+	division = {
+		name = "Ominato Kichi Shubitai"
+		location =1035
+		division_template = "Chuton-chi Shidan"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 601
+		}
+		location =1162
+		division_template = "Jidousha Shidan"
+		start_experience_factor = 0.5
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location =6760
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Yokosuka Kichi Kaiheidan"
+		location =9478
+		division_template = "Chuton-chi Shidan"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location =9431
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location =1072
+		division_template = "Chugata Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 16
+		}
+		location =3951
+		division_template = "Chugata Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Kure Kichi Kaiheidan"
+		location =1072
+		division_template = "Chuton-chi Shidan"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division = {
+		name = "Sasebo Kichi Kaiheidan"
+		location =9431
+		division_template = "Chuton-chi Shidan"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+
+
+	division = {
+		name = "Taiwan Kichi Shubitai"
+		location =11354
+		division_template = "Chuton-chi Shidan"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 19
+		}
+		location =3901
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.2
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 20
+		}
+		location =6798
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "Chinkai Kichi Kaiheidan"
+		location =3905
+		division_template = "Chuton-chi Shidan"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+
+	division = {
+		name = "Okinawa Kichi Shubitai"
+		location =11218
+		division_template = "Chuton-chi Shidan"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+
+
+	division = {
+		name = "Saipan Kichi Shubitai"
+		location =3845
+		division_template = "Chuton-chi Shidan"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division = {
+		name = "Iwoto Kichi Shubitai"
+		location =12147
+		division_template = "Chuton-chi Shidan"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+
+	division = {
+		name = "Palau Kichi Shubitai"
+		location =4204
+		division_template = "Chuton-chi Shidan"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division = {
+		name = "Truk Kichi Shubitai"
+		location =2377
+		division_template = "Chuton-chi Shidan"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division = {
+		name = "Yappu Kichi Shubitai"
+		location =12150
+		division_template = "Chuton-chi Shidan"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division = {
+		name = "Satawan Kichi Shubitai"
+		location =12157
+		division_template = "Chuton-chi Shidan"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+
+	division = {
+		name = "Kwajalein Kichi Shubitai"
+		location =12163
+		division_template = "Chuton-chi Shidan"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division = {
+		name = "Eniwetok Kichi Shubitai"
+		location =12168
+		division_template = "Chuton-chi Shidan"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division = {
+		name = "Ponape Kichi Shubitai"
+		location =12158
+		division_template = "Chuton-chi Shidan"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division = {
+		name = "Mili Kichi Shubitai"
+		location =12162
+		division_template = "Chuton-chi Shidan"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location =11079
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 15
+		}
+		location =9894
+		division_template = "Dokuritsu Konsei Ryodan"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Ryojun Kichi Shubitai"
+		location =1130
+		division_template = "Chuton-chi Shidan"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+
+	division = {
+		name = "Manshu Tetsudo Shubitai"
+		location =11079
+		division_template = "Chuton-chi Shidan"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "Kantogun Shureibu Keibitai"
+		location =4413
+		division_template = "Chuton-chi Shidan"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location =9840
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.2
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 12
+		}
+		location =10131
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "1 Senshadan"
+		location =10131
+		division_template = "Senshadan"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "1 Kokkyou Keibitai"
+		location =1698
+		division_template = "Chuton-chi Shidan"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location =9991
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "2 Senshadan"
+		location =9991
+		division_template = "Senshadan"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "5 Kokkyou Keibitai"
+		location =10111
+		division_template = "Chuton-chi Shidan"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "6 Kokkyou Keibitai"
+		location =7476
+		division_template = "Chuton-chi Shidan"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "7 Kokkyou Keibitai"
+		location =7461
+		division_template = "Chuton-chi Shidan"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "8 Kokkyou Keibitai"
+		location =1662
+		division_template = "Chuton-chi Shidan"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "13 Kokkyou Keibitai"
+		location =11794
+		division_template = "Chuton-chi Shidan"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location =3803
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "3 Senshadan"
+		location =3803
+		division_template = "Senshadan"
+		start_experience_factor = 0.2
+	}
+	division = {
+		name = "2 Kokkyou Keibitai"
+		location =6511
+		division_template = "Chuton-chi Shidan"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "3 Kokkyou Keibitai"
+		location =806
+		division_template = "Chuton-chi Shidan"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "4 Kokkyou Keibitai"
+		location =3719
+		division_template = "Chuton-chi Shidan"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "9 Kokkyou Keibitai"
+		location =5137
+		division_template = "Chuton-chi Shidan"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "10 Kokkyou Keibitai"
+		location =9300
+		division_template = "Chuton-chi Shidan"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "11 Kokkyou Keibitai"
+		location =11753
+		division_template = "Chuton-chi Shidan"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "12 Kokkyou Keibitai"
+		location =9972
+		division_template = "Chuton-chi Shidan"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 14
+		}
+		location =10055
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.2
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 23
+		}
+		location =7339
+		division_template = "Chugata Hohei Shidan"
+		start_experience_factor = 0.2
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 35
+		}
+		location =6802
+		division_template = "Chugata Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 41
+		}
+		location =9418
+		division_template = "Chugata Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 110
+		}
+		location =7227
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.2
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location =1498
+		division_template = "Dokuritsu Konsei Ryodan"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location =4466
+		division_template = "Dokuritsu Konsei Ryodan"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location =1553
+		division_template = "Dokuritsu Konsei Ryodan"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location =9576
+		division_template = "Dokuritsu Konsei Ryodan"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location =9557
+		division_template = "Kihei Shidan"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Hankow Kichi Shubitai"
+		location =4451
+		division_template = "Chuton-chi Shidan"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 36
+		}
+		location =4451
+		division_template = "Chugata Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 37
+		}
+		location =6839
+		division_template = "Chugata Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 40
+		}
+		location =4463
+		division_template = "Chugata Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location =4005
+		division_template = "Dokuritsu Konsei Ryodan"
+		start_experience_factor = 0.4
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location =9922
+		division_template = "Dokuritsu Konsei Ryodan"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location =4451
+		division_template = "Dokuritsu Konsei Ryodan"
+		start_experience_factor = 0.3
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location =9438
+		division_template = "Chugata Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 27
+		}
+		location =6621
+		division_template = "Chugata Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 32
+		}
+		location =11217
+		division_template = "Chugata Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 114
+		}
+		location =3963
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.2
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location =1553
+		division_template = "Dokuritsu Konsei Ryodan"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location =984
+		division_template = "Dokuritsu Konsei Ryodan"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location =9438
+		division_template = "Dokuritsu Konsei Ryodan"
+		start_experience_factor = 0.3
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 26
+		}
+		location =4033
+		division_template = "Chugata Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location =9960
+		division_template = "Dokuritsu Konsei Ryodan"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 101
+		}
+		location =11583
+		division_template = "Kihei Shidan"
+		start_experience_factor = 0.2
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 102
+		}
+		location =4021
+		division_template = "Kihei Shidan"
+		start_experience_factor = 0.2
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 103
+		}
+		location =9911
+		division_template = "Kihei Shidan"
+		start_experience_factor = 0.2
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 104
+		}
+		location =3312
+		division_template = "Kihei Shidan"
+		start_experience_factor = 0.2
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 105
+		}
+		location =10249
+		division_template = "Kihei Shidan"
+		start_experience_factor = 0.2
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 106
+		}
+		location =1910
+		division_template = "Kihei Shidan"
+		start_experience_factor = 0.2
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 107
+		}
+		location =10070
+		division_template = "Kihei Shidan"
+		start_experience_factor = 0.2
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 108
+		}
+		location =12059
+		division_template = "Kihei Shidan"
+		start_experience_factor = 0.2
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 34
+		}
+		location =4020
+		division_template = "Chugata Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 39
+		}
+		location =11223
+		division_template = "Chugata Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Shanghai Kichi Shubitai"
+		location =6688
+		division_template = "Chuton-chi Shidan"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location =6688
+		division_template = "Rikusentai"
+		start_experience_factor = 0.5
+	}
+	division = {
+		name = "1 Yokosuka Rikustentai"
+		location =3872
+		division_template = "Rikusentai"
+		start_experience_factor = 0.5
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location =6744
+		division_template = "Rikusentai"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location =11274
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.4
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location =7298
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.4
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 13
+		}
+		location =4032
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 33
+		}
+		location =3887
+		division_template = "Chugata Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 101
+		}
+		location =1133
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.2
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 106
+		}
+		location =3842
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.2
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 15
+		}
+		location =9494
+		division_template = "Chugata Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 17
+		}
+		location =11277
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 22
+		}
+		location =6731
+		division_template = "Chugata Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 116
+		}
+		location =9454
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.2
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location =11227
+		division_template = "Jidousha Shidan"
+		start_experience_factor = 0.4
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 18
+		}
+		location =1182
+		division_template = "Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 38
+		}
+		location =11224
+		division_template = "Chugata Hohei Shidan"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 204
+		}
+		location =9419
+		division_template = "Dokuritsu Konsei Ryodan"
+		start_experience_factor = 0.3
+	}
+}
+
+air_wings = {
+
+	282 = {
+
+		fighter_equipment_1 = { owner = "JAP" amount = 144 }
+
+		CAS_equipment_1 =  { owner = "JAP" amount = 54 }
+	}
+	716 = {
+
+		fighter_equipment_1 = { owner = "JAP" amount = 72 }
+		CAS_equipment_1 =  { owner = "JAP" amount = 54 }
+		tac_bomber_equipment_1 =  { owner = "JAP" amount = 54 }
+	}
+	597 = {
+
+		CAS_equipment_1 =  { owner = "JAP" amount = 54 }
+		tac_bomber_equipment_1 =  { owner = "JAP" amount = 54 }
+	}
+	524 = {
+
+		CAS_equipment_1 =  { owner = "JAP" amount = 54 }
+		fighter_equipment_1 =  { owner = "JAP" amount = 144 }
+
+
+		cv_CAS_equipment_1 = { owner = "JAP" amount = 60 }
+		nav_bomber_equipment_1 = { owner = "JAP" amount = 144 }
+
+	}
+	591 = {
+
+
+		cv_fighter_equipment_1 = { owner = "JAP" amount = 156 }
+
+
+		cv_nav_bomber_equipment_1 = { owner = "JAP" amount = 72 }
+
+		nav_bomber_equipment_1 = { owner = "JAP" amount = 144 }
+
+	}
+}
+
+
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "JAP"
+		}
+		requested_factories = 8
+		progress = 0.1
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "JAP"
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "JAP"
+		}
+		requested_factories = 2
+		progress = 0.4
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_equipment_1
+			creator = "JAP"
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = cv_fighter_equipment_1
+			creator = "JAP"
+		}
+		requested_factories = 1
+		progress = 0.15
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = cv_nav_bomber_equipment_1
+			creator = "JAP"
+		}
+		requested_factories = 2
+		progress = 0.2
+		efficiency = 100
+	}
+}
+

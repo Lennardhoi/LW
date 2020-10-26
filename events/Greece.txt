@@ -1,14 +1,11 @@
-﻿###########################
-# Greek Events
-###########################
+﻿
+
 
 add_namespace = greece
 
-# German demands to hand over territory to friends or self
 country_event = {
 	id = greece.2
 	title = greece.2.t
-
 	desc = {
 		text = greece.2.d_GER_demand
 		trigger = {
@@ -19,7 +16,6 @@ country_event = {
 			}
 		}
 	}
-
 	desc = {
 		text = greece.2.d_ITA
 		trigger = {
@@ -31,7 +27,6 @@ country_event = {
 			NOT = { has_global_flag = GER_second_ljubljana_award_BUL_184 }
 		}
 	}
-
 	desc = {
 		text = greece.2.d_BUL
 		trigger = {
@@ -41,7 +36,6 @@ country_event = {
 			has_global_flag = GER_second_ljubljana_award_BUL_184
 		}
 	}
-
 	desc = {
 		text = greece.2.d_ITA_BUL
 		trigger = {
@@ -53,23 +47,18 @@ country_event = {
 			has_global_flag = GER_second_ljubljana_award_BUL_184
 		}
 	}
-
 	picture = GFX_report_event_generic_sign_treaty2
-
 	is_triggered_only = yes
-
-	option = { # Accept demands
+	option = {
 		name = greece.2.a
 		ai_chance = {
 			modifier = {
 				factor = 0
 				OR = {
 					any_other_country = {
-
 						has_guaranteed = GRE
 					}
 					any_other_country = {
-
 						is_in_faction_with = GRE
 					}
 				}
@@ -80,7 +69,6 @@ country_event = {
 			}
 			factor = 100
 		}
-
 		hidden_effect = {
 			news_event = { id = news.170 hours = 2}
 		}
@@ -90,7 +78,6 @@ country_event = {
 			}
 			BUL = { transfer_state = 184 }
 		}
-
 		if = {
 			limit = {
 				has_global_flag = GER_second_ljubljana_award_ITA_185
@@ -109,7 +96,6 @@ country_event = {
 			}
 			ITA = { transfer_state = 47 }
 		}
-
 		if = {
 			limit = {
 				has_global_flag = GER_second_ljubljana_award_GER_731
@@ -132,8 +118,7 @@ country_event = {
 			GER = { transfer_state = 47 }
 		}
 	}
-
-	option = { # Refuse
+	option = {
 		name = greece.2.b
 		ai_chance = {
 			modifier = {
@@ -141,11 +126,9 @@ country_event = {
 				NOT = {
 					OR = {
 						any_other_country = {
-
 							has_guaranteed = GRE
 						}
 						any_other_country = {
-
 							is_in_faction_with = GRE
 						}
 					}
@@ -166,27 +149,22 @@ country_event = {
 	}
 }
 
-# Germany demands Greece become puppet
 country_event = {
 	id = greece.3
 	title = greece.3.t
 	desc = greece.3.d
 	picture = GFX_report_event_generic_sign_treaty2
-
 	is_triggered_only = yes
-
-	option = { # Accept demands
+	option = {
 		name = greece.3.a
 		ai_chance = {
 			modifier = {
 				factor = 0
 				OR = {
 					any_other_country = {
-
 						has_guaranteed = GRE
 					}
 					any_other_country = {
-
 						is_in_faction_with = GRE
 					}
 				}
@@ -198,8 +176,7 @@ country_event = {
 			news_event = { id = news.172 hours = 2 }
 		}
 	}
-
-	option = { # Refuse
+	option = {
 		name = greece.3.b
 		ai_chance = {
 			modifier = {
@@ -207,11 +184,9 @@ country_event = {
 				NOT = {
 					OR = {
 						any_other_country = {
-
 							has_guaranteed = GRE
 						}
 						any_other_country = {
-
 							is_in_faction_with = GRE
 						}
 					}
@@ -230,3 +205,4 @@ country_event = {
 		}
 	}
 }
+

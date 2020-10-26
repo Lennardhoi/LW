@@ -1,5 +1,4 @@
 operations = {
-
 	ITA_join_war = {
 		icon = ger_reichskommissariats
 		fire_only_once = yes
@@ -22,25 +21,24 @@ operations = {
 					type = annex_everything
 				}
 			}
-
 			hidden_effect = {
-				
+
 				every_country = {limit = {check_variable= { speeches_enabled > 0}  }
 					scoped_sound_effect = "sp_ita_musso"
 				}
-			   set_variable={Global.super_event=3}
-			   show_super_event=yes
-			   YUG = { add_to_war = { targeted_alliance = ENG enemy = GER } }
-			   ITA = { add_to_war = { targeted_alliance = GER enemy = ENG } }
-			   ENG = { add_to_faction = YUG }
+				set_variable={Global.super_event=3}
+				show_super_event=yes
+				YUG = { add_to_war = { targeted_alliance = ENG enemy = GER } }
+				ITA = { add_to_war = { targeted_alliance = GER enemy = ENG } }
+				ENG = { add_to_faction = YUG }
 			}
 		}
-	    remove_effect = {
-            GRE = { add_to_war = { targeted_alliance = ENG enemy = GER } }
+		remove_effect = {
+			GRE = { add_to_war = { targeted_alliance = ENG enemy = GER } }
 			ENG = { add_to_faction = GRE }
 		}
 	}
-		ITA_give_germany_marsa_matruh = {
+	ITA_give_germany_marsa_matruh = {
 		icon = ger_reichskommissariats
 		fire_only_once = no
 		allowed = { tag = ITA }
@@ -50,39 +48,28 @@ operations = {
 		complete_effect = {
 			GER={set_state_owner=452}
 			452= {
-				set_state_province_controller = { 
+				set_state_province_controller = {
 					controller = GER
-					limit = { 
-					is_in_faction_with=GER # most random scope ever apparently the province controller is the scope
-					} 
+					limit = {
+						is_in_faction_with=GER
+					}
 				}
 			}
-		
+
 		}
 	}
 }
-
-
 foreign_politics = {
 	ITA_enable_ll = {
 		icon = generic_operation
-
-
 		available = {
 			GER={has_war=yes}
 			NOT={has_country_flag=ll_enabled}
-
-
 		}
-
 		allowed = {
 			tag = ITA
 		}
-
-
-
 		cost = 0
-
 		visible = {
 			always=yes
 		}
@@ -101,8 +88,6 @@ foreign_politics = {
 	}
 	ITA_support_luftwaffe = {
 		icon = generic_operation
-
-
 		available = {
 			GER={has_war_with=SOV}
 			has_equipment = {
@@ -112,19 +97,12 @@ foreign_politics = {
 				size> 1999
 				type=fighter
 			}
-
-
-
 		}
-
 		allowed = {
 			tag = ITA
 		}
-
-
 		days_remove = 90
 		cost = 0
-
 		visible = {
 			always=yes
 		}
@@ -132,57 +110,36 @@ foreign_politics = {
 		complete_effect = {
 			GER={add_equipment_to_stockpile={type = fighter_equipment amount = 500 }}
 			add_equipment_to_stockpile={type = fighter_equipment_alt amount = -600 }
-
 		}
 	}
 	ITA_disable_ll = {
 		icon = generic_operation
-
-
 		available = {
-
 			has_country_flag=ll_enabled
-
-
 		}
-
 		allowed = {
 			tag = ITA
 		}
-
-
-
 		cost = 0
-
 		visible = {
 			always=yes
-
 		}
 		fire_only_once = no
 		complete_effect = {
 			custom_effect_tooltip="This will deactivate the monthly lendlease of the following equipment on the first day of a month."
 			hidden_effect={clr_country_flag=ll_enabled}
-
 		}
 	}
 	ITA_annex_bul = {
 		icon = generic_operation
-
-
 		available = {
 			BUL = { is_ai = yes }
 			date>1939.1.1
-
 		}
-
 		allowed = {
 			tag = ROM
 		}
-
-
-
 		cost = 0
-
 		visible = {
 			BUL = { is_ai = yes }
 		}
@@ -203,9 +160,4 @@ foreign_politics = {
 		}
 	}
 }
-
-
-
-
-
 

@@ -1,20 +1,17 @@
-#	Example:
-#
-#	example_effect = {
-	#		add_political_power = 66
-	#		add_popularity = {
-		#			ideology = fascism
-		#			popularity = 0.33
-		#		}
-	#	}
-#
-#
-#	In a script file:
-#
-#	effect = {
-	#		example_effect = yes
-	#	}
-#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -28,7 +25,6 @@ remove_worker_shortage_effect = {
 		remove_ideas = FRA_full_employment
 	}
 }
-
 remove_occupation_cost_effect = {
 	if = {
 		limit = { has_idea = FRA_occupation_costs_1 }
@@ -53,7 +49,6 @@ remove_occupation_cost_effect = {
 		remove_ideas = FRA_occupation_costs_4
 	}
 }
-
 reduce_occupation_cost_effect = {
 	if = {
 		limit = { has_idea = FRA_occupation_costs_1 }
@@ -87,7 +82,6 @@ reduce_occupation_cost_effect = {
 		}
 	}
 }
-
 increase_occupation_cost_effect = {
 	if = {
 		limit = {
@@ -128,7 +122,6 @@ increase_occupation_cost_effect = {
 		add_ideas = FRA_occupation_costs_1
 	}
 }
-
 FRA_congress_of_paris_italian_claims_setup_effect = {
 	add_state_claim = 452
 	add_state_claim = 447
@@ -142,7 +135,6 @@ FRA_congress_of_paris_italian_claims_setup_effect = {
 	add_state_claim = 548
 	add_state_claim = 546
 }
-
 FRA_congress_of_paris_portugese_claims_setup_effect = {
 	add_state_claim = 295
 	add_state_claim = 771
@@ -154,7 +146,6 @@ FRA_congress_of_paris_portugese_claims_setup_effect = {
 	add_state_claim = 275
 	add_state_claim = 719
 }
-
 FRA_right_wing_riot_effect = {
 	if = {
 		limit = {
@@ -171,9 +162,7 @@ FRA_communism_riot_effect = {
 		country_event = lar_france_political_violence.2
 	}
 }
-
 FRA_transfer_indochina_effect = {
-
 	if = {
 		limit = {
 			671 = { CONTROLLER = { original_tag = FRA } }
@@ -182,22 +171,16 @@ FRA_transfer_indochina_effect = {
 		transfer_state = 671
 		transfer_state = 286
 	}
-
 	if = {
 		limit = { 741 = { CONTROLLER = { original_tag = FRA } } }
 		transfer_state = 741
 	}
-
 	if = {
 		limit = { 670 = { CONTROLLER = { original_tag = FRA } } }
 		transfer_state = 670
 	}
 }
-
 FRA_transfer_syria_effect = {
-
-
-
 	if = {
 		limit = {
 			680 = { CONTROLLER = { original_tag = FRA } }
@@ -209,9 +192,7 @@ FRA_transfer_syria_effect = {
 		transfer_state = 554
 	}
 }
-
 FRA_transfer_north_africa_effect = {
-
 	if = {
 		limit = {
 			458 = { CONTROLLER = { original_tag = FRA } }
@@ -220,7 +201,6 @@ FRA_transfer_north_africa_effect = {
 		transfer_state = 458
 		transfer_state = 665
 	}
-
 	if = {
 		limit = {
 			461 = { CONTROLLER = { original_tag = FRA } }
@@ -229,7 +209,6 @@ FRA_transfer_north_africa_effect = {
 		transfer_state = 461
 		transfer_state = 462
 	}
-
 	if = {
 		limit = {
 			513 = { CONTROLLER = { original_tag = FRA } }
@@ -241,37 +220,31 @@ FRA_transfer_north_africa_effect = {
 		transfer_state = 460
 	}
 }
-
 FRA_transfer_central_africa_effect = {
-
 	if = {
 		limit = {
 			772 = { CONTROLLER = { original_tag = FRA } }
 		}
 		transfer_state = 772
 	}
-
 	if = {
 		limit = {
 			539 = { CONTROLLER = { original_tag = FRA } }
 		}
 		transfer_state = 539
 	}
-
 	if = {
 		limit = {
 			660 = { CONTROLLER = { original_tag = FRA } }
 		}
 		transfer_state = 660
 	}
-
 	if = {
 		limit = {
 			773 = { CONTROLLER = { original_tag = FRA } }
 		}
 		transfer_state = 773
 	}
-
 	if = {
 		limit = {
 			774 = { CONTROLLER = { original_tag = FRA } }
@@ -286,56 +259,48 @@ FRA_transfer_western_africa_effect = {
 		}
 		transfer_state = 781
 	}
-
 	if = {
 		limit = {
 			776 = { CONTROLLER = { original_tag = FRA } }
 		}
 		transfer_state = 776
 	}
-
 	if = {
 		limit = {
 			777 = { CONTROLLER = { original_tag = FRA } }
 		}
 		transfer_state = 777
 	}
-
 	if = {
 		limit = {
 			778 = { CONTROLLER = { original_tag = FRA } }
 		}
 		transfer_state = 778
 	}
-
 	if = {
 		limit = {
 			779 = { CONTROLLER = { original_tag = FRA } }
 		}
 		transfer_state = 779
 	}
-
 	if = {
 		limit = {
 			556 = { CONTROLLER = { original_tag = FRA } }
 		}
 		transfer_state = 556
 	}
-
 	if = {
 		limit = {
 			780 = { CONTROLLER = { original_tag = FRA } }
 		}
 		transfer_state = 780
 	}
-
 	if = {
 		limit = {
 			272 = { CONTROLLER = { original_tag = FRA } }
 		}
 		transfer_state = 272
 	}
-
 	if = {
 		limit = {
 			557 = { CONTROLLER = { original_tag = FRA } }
@@ -343,3 +308,4 @@ FRA_transfer_western_africa_effect = {
 		transfer_state = 557
 	}
 }
+

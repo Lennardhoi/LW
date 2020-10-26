@@ -1,6 +1,5 @@
 focus_tree = {
 	id = albania_focus
-
 	country = {
 		factor = 0
 		modifier = {
@@ -8,42 +7,16 @@ focus_tree = {
 			OR={tag = ALB
 				tag = LUX
 				tag=AUS}
-
 		}
 	}
-
 	default = no
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	focus = {
 		id = alb_industrial_effort
 		icon = GFX_goal_generic_production
 		x = 13
 		y = 0
 		cost = 5
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = industrial_bonus
@@ -52,13 +25,10 @@ focus_tree = {
 				category = industry
 			}
 		}
-
 		ai_will_do = {
 			factor = 3
-
 		}
 	}
-
 	focus = {
 		id = alb_construction_effort
 		icon = GFX_goal_generic_construct_civ_factory
@@ -67,15 +37,10 @@ focus_tree = {
 		y = 1
 		relative_position_id = alb_industrial_effort
 		cost = 5
-
 		available_if_capitulated = yes
-
-
-
 		ai_will_do = {
 			factor = 2
 		}
-
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = construction_effort_tt
@@ -88,7 +53,6 @@ focus_tree = {
 				}
 			}
 		}
-
 		complete_tooltip = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
@@ -97,7 +61,6 @@ focus_tree = {
 				instant_build = yes
 			}
 		}
-
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -131,7 +94,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = alb_production_effort
 		icon = GFX_goal_generic_construct_mil_factory
@@ -140,14 +102,10 @@ focus_tree = {
 		y = 1
 		relative_position_id = alb_industrial_effort
 		cost = 5
-
 		available_if_capitulated = yes
-
-
 		ai_will_do = {
 			factor = 2
 		}
-
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = production_effort_tt
@@ -160,7 +118,6 @@ focus_tree = {
 				}
 			}
 		}
-
 		complete_tooltip = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
@@ -169,7 +126,6 @@ focus_tree = {
 				instant_build = yes
 			}
 		}
-
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -203,7 +159,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = alb_construction_effort_2
 		icon = GFX_goal_generic_construct_civ_factory
@@ -212,14 +167,10 @@ focus_tree = {
 		y = 1
 		relative_position_id = alb_construction_effort
 		cost = 5
-
 		available_if_capitulated = yes
-
-
 		ai_will_do = {
 			factor = 2
 		}
-
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = construction_effort_tt
@@ -232,7 +183,6 @@ focus_tree = {
 				}
 			}
 		}
-
 		complete_tooltip = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
@@ -241,7 +191,6 @@ focus_tree = {
 				instant_build = yes
 			}
 		}
-
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -275,7 +224,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = alb_production_effort_2
 		icon = GFX_goal_generic_construct_mil_factory
@@ -284,14 +232,10 @@ focus_tree = {
 		y = 1
 		relative_position_id = alb_production_effort
 		cost = 5
-
 		available_if_capitulated = yes
-
-
 		ai_will_do = {
 			factor = 2
 		}
-
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = production_effort_tt
@@ -304,7 +248,6 @@ focus_tree = {
 				}
 			}
 		}
-
 		complete_tooltip = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
@@ -313,7 +256,6 @@ focus_tree = {
 				instant_build = yes
 			}
 		}
-
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -347,7 +289,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = alb_infrastructure_effort
 		icon = GFX_goal_generic_construct_infrastructure
@@ -356,9 +297,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = alb_construction_effort_2
 		cost = 5
-
 		available_if_capitulated = yes
-
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = infrastructure_effort_tt
@@ -370,7 +309,6 @@ focus_tree = {
 				}
 			}
 		}
-
 		complete_tooltip = {
 			add_building_construction = {
 				type = infrastructure
@@ -383,7 +321,6 @@ focus_tree = {
 				instant_build = yes
 			}
 		}
-
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -441,7 +378,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = alb_production_effort_3
 		icon = GFX_goal_generic_construct_mil_factory
@@ -450,14 +386,10 @@ focus_tree = {
 		y = 1
 		relative_position_id = alb_production_effort_2
 		cost = 5
-
 		available_if_capitulated = yes
-
-
 		ai_will_do = {
 			factor = 2
 		}
-
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = production_effort_tt
@@ -470,7 +402,6 @@ focus_tree = {
 				}
 			}
 		}
-
 		complete_tooltip = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
@@ -479,7 +410,6 @@ focus_tree = {
 				instant_build = yes
 			}
 		}
-
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -513,7 +443,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = alb_infrastructure_effort_2
 		icon = GFX_goal_generic_construct_infrastructure
@@ -522,9 +451,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = alb_infrastructure_effort
 		cost = 5
-
 		available_if_capitulated = yes
-
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = infrastructure_effort_tt
@@ -536,7 +463,6 @@ focus_tree = {
 				}
 			}
 		}
-
 		complete_tooltip = {
 			add_building_construction = {
 				type = infrastructure
@@ -549,7 +475,6 @@ focus_tree = {
 				instant_build = yes
 			}
 		}
-
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -607,7 +532,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = alb_construction_effort_3
 		icon = GFX_goal_generic_construct_civ_factory
@@ -616,14 +540,10 @@ focus_tree = {
 		y = 1
 		relative_position_id = alb_infrastructure_effort
 		cost = 5
-
 		available_if_capitulated = yes
-
-
 		ai_will_do = {
 			factor = 2
 		}
-
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = construction_effort_tt
@@ -636,7 +556,6 @@ focus_tree = {
 				}
 			}
 		}
-
 		complete_tooltip = {
 			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
@@ -645,7 +564,6 @@ focus_tree = {
 				instant_build = yes
 			}
 		}
-
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -679,10 +597,5 @@ focus_tree = {
 			}
 		}
 	}
-
-
-
-
-
-
 }
+

@@ -1,14 +1,10 @@
 form_greater_german_reich_category = {
-
 	form_greater_german_reich = {
-
 		icon = generic_form_nation
-
 		allowed = {
 			original_tag = GER
 			has_dlc = "Waking the Tiger"
 		}
-
 		available = {
 			is_subject = no
 			has_full_control_of_state = 85
@@ -22,12 +18,10 @@ form_greater_german_reich_category = {
 			has_full_control_of_state = 153
 			has_full_control_of_state = 28
 			has_full_control_of_state = 8
-
 			all_owned_state = {
 				is_fully_controlled_by = ROOT
 			}
 		}
-
 		visible = {
 			AND = {
 				original_tag = GER
@@ -46,7 +40,6 @@ form_greater_german_reich_category = {
 				}
 			}
 		}
-
 		complete_effect = {
 			set_cosmetic_tag = GER_greater_german_reich
 			hidden_effect = {

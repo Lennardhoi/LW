@@ -1,11 +1,7 @@
 on_actions = {
-
 	on_startup = {
 		effect = {
 			if={limit={NOT={is_historical_focus_on=yes}} every_country={news_event={id=horsttool.2}}}
-
-
-
 			if = {
 				limit = {has_game_rule = {rule = horst_host_country option = GER}}
 				set_variable={host = GER.id}
@@ -18,7 +14,6 @@ on_actions = {
 				limit = {has_game_rule = {rule = horst_host_country option = ROM}}
 				set_variable={host = ROM.id}
 			}
-
 			else_if = {
 				limit = {has_game_rule = {rule = horst_host_country option = HUN}}
 				set_variable={host = HUN.id}
@@ -43,7 +38,6 @@ on_actions = {
 				limit = {has_game_rule = {rule = horst_host_country option = SAF}}
 				set_variable={host = SAF.id}
 			}
-
 			else_if = {
 				limit = {has_game_rule = {rule = horst_host_country option = RAJ}}
 				set_variable={host = RAJ.id}
@@ -84,7 +78,6 @@ on_actions = {
 				limit = {has_game_rule = {rule = horst_host_country option = IRE}}
 				set_variable={host = IRE.id}
 			}
-
 			else_if = {
 				limit = {has_game_rule = {rule = horst_host_country option = SPR}}
 				set_variable={host = SPR.id}
@@ -94,7 +87,6 @@ on_actions = {
 				set_country_flag = host
 			}
 		}
-
 	}
 }
 

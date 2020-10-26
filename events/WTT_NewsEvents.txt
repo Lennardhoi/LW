@@ -1,18 +1,12 @@
 ﻿add_namespace = wtt_news
 
-
-
-# Germany democratically annexes Austria
 news_event = {
 	id = wtt_news.18
 	title = wtt_news.18.t
 	desc = wtt_news.18.desc
 	picture = GFX_news_event_election_vote
-
 	major = yes
-
 	is_triggered_only = yes
-
 	option = {
 		name = wtt_news.18.a
 		trigger = {
@@ -27,15 +21,12 @@ news_event = {
 	}
 }
 
-# News event for Japan taking European colonies
 news_event = {
 	id = wtt_news.25
 	title = wtt_news.25.t
 	desc = wtt_news.25.desc
 	picture = GFX_news_event_generic_read_write
-
 	is_triggered_only = yes
-
 	option = {
 		name = wtt_news.25.a
 		trigger = {
@@ -71,15 +62,12 @@ news_event = {
 	}
 }
 
-# China - Flying Tigers sent to China
 news_event = {
 	id = wtt_news.34
 	title = wtt_news.34.t
 	desc = wtt_news.34.desc
 	picture = GFX_news_event_china_flying_tigers
-
 	is_triggered_only = yes
-
 	option = {
 		name = wtt_news.34.a
 		trigger = {
@@ -109,7 +97,7 @@ news_event = {
 		}
 	}
 }
-# Canals - Suez Canal Blown
+
 news_event = {
 	id = wtt_news.40
 	title = wtt_news.40.t
@@ -138,9 +126,7 @@ news_event = {
 		}
 	}
 	picture = GFX_news_event_020
-
 	is_triggered_only = yes
-
 	option = {
 		name = wtt_news.40.a
 		trigger = {
@@ -261,7 +247,6 @@ news_event = {
 	}
 }
 
-# Canals - Panama Canal Blown
 news_event = {
 	id = wtt_news.41
 	title = wtt_news.41.t
@@ -286,9 +271,7 @@ news_event = {
 		}
 	}
 	picture = GFX_news_event_020
-
 	is_triggered_only = yes
-
 	option = {
 		name = wtt_news.41.a
 		trigger = {
@@ -401,15 +384,12 @@ news_event = {
 	}
 }
 
-# Canals - Suez Canal Rebuilt
 news_event = {
 	id = wtt_news.42
 	title = wtt_news.42.t
 	desc = wtt_news.42.desc
 	picture = GFX_news_event_020
-
 	is_triggered_only = yes
-
 	option = {
 		name = wtt_news.42.a
 		trigger = {
@@ -466,15 +446,12 @@ news_event = {
 	}
 }
 
-# Canals - Panama Canal Rebuilt
 news_event = {
 	id = wtt_news.43
 	title = wtt_news.43.t
 	desc = wtt_news.43.desc
 	picture = GFX_news_event_020
-
 	is_triggered_only = yes
-
 	option = {
 		name = wtt_news.43.a
 		trigger = {
@@ -531,15 +508,12 @@ news_event = {
 	}
 }
 
-# Manchukuo - Emperor declares himself Emperor
 news_event = {
 	id = wtt_news.44
 	title = wtt_news.44.t
 	desc = wtt_news.44.desc
 	picture = GFX_news_event_japanese_army_parade
-
 	is_triggered_only = yes
-
 	option = {
 		name = wtt_news.44.a
 		trigger = {
@@ -584,15 +558,12 @@ news_event = {
 	}
 }
 
-# China - Transition of Power after Power Struggle
 news_event = {
 	id = wtt_news.45
 	title = wtt_news.45.t
 	desc = wtt_news.45.desc
 	picture = GFX_news_event_generic_rally_3
-
 	is_triggered_only = yes
-
 	option = {
 		name = wtt_news.45.a
 		trigger = {
@@ -623,15 +594,12 @@ news_event = {
 	}
 }
 
-# China - Overlordship over Indochina
 news_event = {
 	id = wtt_news.47
 	title = wtt_news.47.t
 	desc = wtt_news.47.desc
 	picture = GFX_news_event_polish_army
-
 	is_triggered_only = yes
-
 	option = {
 		name = wtt_news.47.a
 		trigger = {
@@ -669,15 +637,13 @@ news_event = {
 		}
 	}
 }
-# manchukuo - Independence War
+
 news_event = {
 	id = wtt_news.48
 	title = wtt_news.48.t
 	desc = wtt_news.48.desc
 	picture = GFX_news_event_japanese_parade
-
 	is_triggered_only = yes
-
 	option = {
 		name = wtt_news.48.a
 		trigger = {
@@ -708,15 +674,12 @@ news_event = {
 	}
 }
 
-# Germany - Hitler assassinated by Wehrmacht officers
 news_event = {
 	id = wtt_news.50
 	title = wtt_news.50.t
 	desc = wtt_news.50.desc
 	picture = GFX_news_event_generic_ruins
-
 	is_triggered_only = yes
-
 	option = {
 		name = wtt_news.50.a
 		trigger = {
@@ -753,15 +716,13 @@ news_event = {
 		}
 	}
 }
-# Germany - assassination attempt on Hitler by Wehrmacht officers
+
 news_event = {
 	id = wtt_news.51
 	title = wtt_news.51.t
 	desc = wtt_news.51.desc
 	picture = GFX_news_event_generic_ruins
-
 	is_triggered_only = yes
-
 	option = {
 		name = wtt_news.50.a
 		trigger = {
@@ -799,15 +760,12 @@ news_event = {
 	}
 }
 
-# Germany - Hitler assassinated by SS
 news_event = {
 	id = wtt_news.52
 	title = wtt_news.51.t
 	desc = wtt_news.52.desc
 	picture = GFX_news_event_generic_ruins
-
 	is_triggered_only = yes
-
 	option = {
 		name = wtt_news.50.a
 		trigger = {
@@ -845,16 +803,12 @@ news_event = {
 	}
 }
 
-
-# Formation of Rattanakosin Kingdom
 news_event = {
 	id = wtt_news.69
 	title = wtt_news.69.t
 	desc = wtt_news.69.desc
 	picture = GFX_news_event_generic_parliament
-
 	is_triggered_only = yes
-
 	option = {
 		name = wtt_news.69.a
 		trigger = {
@@ -879,17 +833,13 @@ news_event = {
 	}
 }
 
-###############
 news_event = {
 	id = wtt_news.1000
 	title = wtt_germany.1001.t
 	desc = wtt_news.1000.desc
 	picture = GFX_news_event_japanese_parade
-
 	is_triggered_only = yes
-
 	fire_for_sender = no
-
 	option = {
 		name = wtt_news.1000.a
 		trigger = {
@@ -897,17 +847,13 @@ news_event = {
 		}
 	}
 }
-
 news_event = {
 	id = wtt_news.1001
 	title = wtt_germany.1001.t
 	desc = wtt_news.1001.desc
 	picture = GFX_news_event_japanese_parade
-
 	is_triggered_only = yes
-
 	fire_for_sender = no
-
 	option = {
 		name = wtt_news.1001.a
 		trigger = {
@@ -915,3 +861,4 @@ news_event = {
 		}
 	}
 }
+

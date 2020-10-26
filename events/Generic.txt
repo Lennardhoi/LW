@@ -1,10 +1,8 @@
-﻿###########################
-# turkey Events
-###########################
+﻿
+
 
 add_namespace = generic
 
-# President dies
 country_event = {
 	id = generic.1
 	title = generic.1.t
@@ -21,9 +19,7 @@ country_event = {
 		}
 	}
 	picture = GFX_report_event_generic_read_write
-
 	is_triggered_only = yes
-
 	option = {
 		name = generic.1.a
 		trigger = {
@@ -38,48 +34,37 @@ country_event = {
 	}
 }
 
-# Enemy attempting to destroy Suez
 country_event = {
 	id = generic.12
 	title = generic.12.t
 	desc = generic.12.d
-
 	picture = GFX_report_event_merchant_ship_01
-
 	is_triggered_only = yes
-
 	option = {
 		name = generic.12.a
 		custom_effect_tooltip = canals_tt
 	}
 }
 
-# Enemy attempting to destroy Panama
 country_event = {
 	id = generic.13
 	title = generic.13.t
 	desc = generic.13.d
-
 	picture = GFX_report_event_merchant_ship_01
-
 	is_triggered_only = yes
-
 	option = {
 		name = generic.12.a
 		custom_effect_tooltip = canals_tt
 	}
 }
 
-# Notification event that leader has gotten sick
 unit_leader_event = {
 	id = generic.17
 	title = generic.17.t
 	desc = generic.17.d
-
 	picture = GFX_report_event_military_planning
 	hidden=yes
 	is_triggered_only = yes
-
 	immediate = {
 		hidden_effect = {
 			FROM = {
@@ -91,7 +76,6 @@ unit_leader_event = {
 			}
 		}
 	}
-
 	option = {
 		name = unfortunate
 		effect_tooltip = {
@@ -105,14 +89,11 @@ unit_leader_event = {
 	}
 }
 
-# Notification event that leader has been wounded
 country_event = {
 	id = generic.18
 	title = generic.18.t
 	desc = generic.18.d
-
 	picture = GFX_report_event_military_planning
-
 	is_triggered_only = yes
 	hidden=yes
 	option = {
@@ -128,16 +109,12 @@ country_event = {
 	}
 }
 
-# Notification event that FROM has sent industrial support
 country_event = {
 	id = generic.19
 	title = generic.19.t
 	desc = generic.19.d
-
 	picture = GFX_report_event_generic_factory
-
 	is_triggered_only = yes
-
 	option = {
 		name = excellent
 		effect_tooltip = {
@@ -146,7 +123,6 @@ country_event = {
 	}
 }
 
-#Become a puppet
 country_event = {
 	id = generic.20
 	title = generic.20.t
@@ -171,9 +147,7 @@ country_event = {
 		}
 	}
 	picture = GFX_report_event_generic_read_write
-
 	is_triggered_only = yes
-
 	option = {
 		name = generic.20.a
 		trigger = {
@@ -223,7 +197,6 @@ country_event = {
 			FROM = { country_event = { id = generic.21 hours = 6 } }
 		}
 	}
-
 	option = {
 		name = generic.20.b
 		trigger = {
@@ -271,7 +244,6 @@ country_event = {
 			FROM = { country_event = { id = generic.21 hours = 6 } }
 		}
 	}
-
 	option = {
 		name = generic.20.c
 		ai_chance = {
@@ -298,18 +270,14 @@ country_event = {
 			FROM = { country_event = { id = generic.22 hours = 6 } }
 		}
 	}
-
 }
 
-#Became puppet
 country_event = {
 	id = generic.21
 	title = generic.21.t
 	desc = generic.21.d
 	picture = GFX_report_event_generic_read_write
-
 	is_triggered_only = yes
-
 	option = {
 		name = generic.21.a
 		ai_chance = {
@@ -329,18 +297,14 @@ country_event = {
 			}
 		}
 	}
-
 }
 
-#Denied puppet
 country_event = {
 	id = generic.22
 	title = generic.22.t
 	desc = generic.22.d
 	picture = GFX_report_event_generic_read_write
-
 	is_triggered_only = yes
-
 	option = {
 		name = generic.22.a
 		ai_chance = {
@@ -353,24 +317,19 @@ country_event = {
 			}
 		}
 	}
-
 }
 
-# generic event for demanding territory
 country_event = {
 	id = generic.23
 	title = generic.23.t
 	desc = generic.23.d
-
 	picture = GFX_report_event_czech_soldiers_01
-
 	is_triggered_only = yes
-
 	option = {
 		name = generic.23.a
 		ai_chance = {
 			factor = 90
-			modifier = { # If they stand a chance they will fight
+			modifier = {
 				factor = 0
 				strength_ratio = {
 					tag = FROM
@@ -384,15 +343,15 @@ country_event = {
 				}
 			}
 			modifier = {
-				factor = 0 #if you lead a faction, fight
+				factor = 0
 				is_faction_leader = yes
 			}
 			modifier = {
-				factor = 0.5 #if you are in a faction, maybe fight
+				factor = 0.5
 				is_faction_leader = no
 				is_in_faction = yes
 			}
-			modifier = { # Increase it again if other bordering nations are in the enemy faction
+			modifier = {
 				any_neighbor_country = {
 					NOT = { tag = FROM }
 					is_in_faction_with = FROM
@@ -413,7 +372,6 @@ country_event = {
 			FROM = { country_event = generic.24 }
 		}
 	}
-
 	option = {
 		name = generic.23.b
 		ai_chance = {
@@ -433,16 +391,12 @@ country_event = {
 	}
 }
 
-# accepted demands
 country_event = {
 	id = generic.24
 	title = generic.24.t
 	desc = generic.24.d
-
 	picture = GFX_report_event_czech_soldiers_01
-
 	is_triggered_only = yes
-
 	option = {
 		name = excellent
 		THIS = { transfer_state = event_target:demanded_prov_target }
@@ -459,16 +413,12 @@ country_event = {
 	}
 }
 
-# accepted demands
 country_event = {
 	id = generic.25
 	title = generic.25.t
 	desc = generic.25.d
-
 	picture = GFX_report_event_czech_soldiers_01
-
 	is_triggered_only = yes
-
 	option = {
 		name = generic.25.a
 		ai_chance = {
@@ -481,3 +431,4 @@ country_event = {
 		hidden_effect = { clear_global_event_target = demanded_prov_target }
 	}
 }
+

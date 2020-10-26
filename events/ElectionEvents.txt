@@ -1,32 +1,25 @@
-﻿###########################
-# Election Events
-###########################
+﻿
+
 
 add_namespace = election
 
-# Test Election Event
 country_event = {
 	id = election.1
 	title = election.1.t
 	desc = election.1.d
 	picture = GFX_report_event_election_vote
-
 	is_triggered_only = yes
-
 	option = {
 		name = election.1.a
 	}
 }
 
-# Public Opposes Rearmament
 country_event = {
 	id = election.2
 	title = election.2.t
 	desc = election.2.d
 	picture = GFX_report_event_airplane_factory
-
 	is_triggered_only = yes
-
 	trigger = {
 		NOT = {
 			AND = {
@@ -49,14 +42,12 @@ country_event = {
 		}
 		has_idea = partial_economic_mobilisation
 	}
-
 	option = {
 		ai_chance = {
 			base = 1
 		}
 		name = election.2.a
 	}
-
 	option = {
 		name = election.2.b
 		ai_chance = {
@@ -69,16 +60,12 @@ country_event = {
 	}
 }
 
-
-# Public Demands Rearmament
 country_event = {
 	id = election.3
 	title = election.3.t
 	desc = election.3.d
 	picture = GFX_report_event_tank_factory
-
 	is_triggered_only = yes
-
 	trigger = {
 		NOT = {
 			AND = {
@@ -106,7 +93,6 @@ country_event = {
 			has_idea = disarmed_nation
 		}
 	}
-
 	option = {
 		name = election.3.a
 		if = {
@@ -135,7 +121,6 @@ country_event = {
 		}
 		add_war_support = 0.05
 	}
-
 	option = {
 		name = election.3.b
 		ai_chance = {
@@ -145,15 +130,12 @@ country_event = {
 	}
 }
 
-# Wartime Exception
 country_event = {
 	id = election.14
 	title = election.14.t
 	desc = election.14.d
 	picture = GFX_report_event_tank_factory
-
 	is_triggered_only = yes
-
 	trigger = {
 		NOT = {
 			AND = {
@@ -165,7 +147,6 @@ country_event = {
 		has_government = democratic
 		has_war = yes
 	}
-
 	option = {
 		name = election.14.a
 		ai_chance = {
@@ -177,7 +158,6 @@ country_event = {
 		}
 		add_stability = -0.05
 	}
-
 	option = {
 		ai_chance = {
 			base = 0
@@ -204,15 +184,12 @@ country_event = {
 	}
 }
 
-# Government Contested
 country_event = {
 	id = election.15
 	title = election.15.t
 	desc = election.15.d
 	picture = GFX_report_event_gathering_protest
-
 	is_triggered_only = yes
-
 	trigger = {
 		NOT = {
 			AND = {
@@ -225,7 +202,6 @@ country_event = {
 		has_war = yes
 		any_war_score < 20
 	}
-
 	option = {
 		ai_chance = {
 			base = 0
@@ -238,7 +214,6 @@ country_event = {
 		add_political_power = -50
 		add_stability = -0.05
 	}
-
 	option = {
 		name = election.15.b
 		ai_chance = {
@@ -264,3 +239,4 @@ country_event = {
 		}
 	}
 }
+

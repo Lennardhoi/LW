@@ -1,56 +1,50 @@
-
 state={
 	id=47
-	name="STATE_47" # Thessaly
+	name="STATE_47"
 	manpower=2312500
 	resources={
-		#steel=3 # was: 4      moved to Campania
-		#chromium=12 # moved to South Tyrol
-		aluminium=26 # was: 58
-		tungsten = 10 # was: 20
+
+
+		aluminium=26
+		tungsten = 10
 	}
-
 	state_category = city
-
 	history={
 		owner = GRE
 		victory_points = {
-			4109 20
+			3958 20
 		}
 		victory_points = {
-			3973 3
+			3826 3
 		}
-		#victory_points = {
-			#	863 1
-			#}
-		#victory_points = {
-			#	3864 3
-			#}
-		#victory_points = {
-			#	976 1
-			#}
+
+
+
+
+
+
+
+
+
 		victory_points = {
-			7127 3
+			6800 3
 		}
 		victory_points = {
-			3988 1
+			3838 1
 		}
 		buildings = {
 			infrastructure = 5
 			arms_factory = 2
 			industrial_complex = 4
 			air_base = 4
-			4109 = {
+			3958 = {
 				naval_base = 9
-
 			}
-
 		}
 		add_core_of = GRE
-
 	}
-
 	provinces={
-		863 976 1109 3401 3864 3973 3988 4109 6930 7127
+		858 958 1089 3286 3736 3826 3838 3958 6619 6800
 	}
 }
+

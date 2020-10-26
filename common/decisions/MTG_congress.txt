@@ -1,30 +1,21 @@
 USA_congress = {
 	USA_depression_cooldown = {
-
 		icon = generic_civil_support
-
 		allowed = {
 			original_tag = USA
 		}
-
 		available = {
 			NOT={has_country_flag = USA_great_depression_cooldown}
 		}
-
 		days_mission_timeout = 364
-
 		activation = {
 			has_country_flag = USA_great_depression_cooldown
 		}
-
 		fire_only_once = no
-
 		is_good = no
-
 		timeout_effect = {
 		}
 	}
-
 	USA_small_lobby_effort = {
 		icon = generic_political_discourse
 		available = {
@@ -118,7 +109,6 @@ USA_congress = {
 			USA_congress_small_support = yes
 		}
 	}
-
 	USA_pay_farm_subsidies = {
 		icon = ger_mefo_bills
 		available = {
@@ -143,7 +133,6 @@ USA_congress = {
 			USA_congress_small_support = yes
 		}
 	}
-
 	USA_amend_the_budget = {
 		icon = ger_mefo_bills
 		available = {
@@ -215,7 +204,6 @@ USA_congress = {
 				clr_state_flag = USA_congress_build_factory
 				clear_variable = factory_goal
 			}
-
 			USA_congress_small_opposition = yes
 			clr_country_flag = USA_congress_investment
 		}
@@ -231,7 +219,6 @@ USA_congress = {
 				USA_congress_medium_support = yes
 				clr_country_flag = USA_congress_investment
 			}
-
 		}
 	}
 	USA_invest_in_state_arms_factory = {
@@ -263,7 +250,6 @@ USA_congress = {
 				clr_state_flag = USA_congress_build_arms_factory
 				clear_variable = arms_factory_goal
 			}
-
 			USA_congress_small_opposition = yes
 			clr_country_flag = USA_congress_investment
 		}
@@ -279,7 +265,6 @@ USA_congress = {
 				USA_congress_medium_support = yes
 				clr_country_flag = USA_congress_investment
 			}
-
 		}
 	}
 	USA_invest_in_state_dockyard = {
@@ -357,7 +342,6 @@ USA_congress = {
 				clr_state_flag = USA_congress_build_infrastructure
 				clear_variable = infrastructure_goal
 			}
-
 			USA_congress_small_opposition = yes
 			clr_country_flag = USA_congress_investment
 		}
@@ -373,7 +357,6 @@ USA_congress = {
 				USA_congress_medium_support = yes
 				clr_country_flag = USA_congress_investment
 			}
-
 		}
 	}
 	USA_statehood_for_alaska = {
@@ -467,3 +450,4 @@ USA_congress = {
 		}
 	}
 }
+

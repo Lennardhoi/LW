@@ -1,46 +1,32 @@
 crisis = {
-
 	draft_dodging_mission = {
-
 		icon = generic_civil_support
 		allowed = {
 			always = yes
 		}
 		available = {
-
 		}
-
 		activation = {
 			NOT = { has_country_flag = no_dodging_please }
 			has_war_support < 0.5
 			has_war = yes
 		}
-
 		visible = {
-
 		}
-
 		days_mission_timeout = 180
 		days_remove = 180
 		is_good = no
-
 		modifier = {
 			conscription = -0.01
 		}
-
 		complete_effect = {
-
 		}
-
 		timeout_effect = {
 			set_country_flag = { flag = no_dodging_please days = 365 }
 		}
 	}
-
 	strikes_mission = {
-
 		icon = generic_civil_support
-
 		allowed = {
 			always = yes
 		}
@@ -48,35 +34,27 @@ crisis = {
 			has_country_flag = no_strikes_please
 			has_stability < 0.5
 		}
-
 		days_mission_timeout = 60
 		days_remove = 90
 		is_good = no
-
 		activation = {
 			NOT = { has_country_flag = no_strikes_please }
 			has_stability < 0.5
 			date > 1937.6.1
 			is_ai = no
 		}
-
 		modifier = {
 			production_speed_buildings_factor = -0.25
 			industrial_capacity_factory = -0.25
 			industrial_capacity_dockyard = -0.25
 		}
-
 		complete_effect = {
-
 		}
-
 		timeout_effect = {
 			set_country_flag = { flag = no_strikes_please days = 365 }
 		}
 	}
 }
-
-
 demobilization = {
 	demobilization_economic = {
 		allowed = {
@@ -101,20 +79,16 @@ demobilization = {
 			}
 		}
 		icon = generic_industry
-
 		is_good = no
-
 		available = {
 			has_unsupported_economic_law = yes
 			has_war = no
 		}
-
 		activation = {
 			has_unsupported_economic_law = yes
 			has_war = no
 		}
 		cost = 50
-
 		visible = {
 			has_war = no
 			has_unsupported_economic_law = yes
@@ -164,11 +138,9 @@ demobilization = {
 			}
 		}
 		ai_will_do = {
-			factor = 500 #should really get on this
+			factor = 500
 		}
-
 	}
-
 	demob_economic_mission = {
 		available = {
 			OR = {
@@ -193,10 +165,8 @@ demobilization = {
 				tag = ITA
 				tag = ENG
 				tag = SAF
-
 				tag = USA
 				tag = CAN
-
 			}
 		}
 		activation = {
@@ -245,7 +215,6 @@ demobilization = {
 					has_idea = strikes_3
 					has_stability < 0.21
 					has_government = communism
-
 				}
 				start_civil_war = {
 					ideology = democratic
@@ -266,7 +235,6 @@ demobilization = {
 					has_idea = strikes_3
 					has_stability < 0.41
 					has_government = communism
-
 				}
 				add_popularity = { ideology = democratic popularity = 0.1}
 			}
@@ -309,19 +277,14 @@ demobilization = {
 			}
 		}
 	}
-
 	demobilization_manpower = {
-
 		icon = generic_prepare_civil_war
-
 		icon = revolt
 		is_good = no
-
 		available = {
 			has_unsupported_manpower_law = yes
 			has_war = no
 		}
-
 		allowed = {
 			OR = {
 				tag = SOV
@@ -341,16 +304,12 @@ demobilization = {
 				tag = SAF
 				tag = USA
 				tag = CAN
-
 			}
 		}
-
 		cost = 50
 		ai_will_do = {
 			factor = 500
 		}
-
-
 		visible = {
 			has_unsupported_manpower_law = yes
 			has_war = no
@@ -378,13 +337,8 @@ demobilization = {
 				add_ideas = service_by_requirement
 			}
 		}
-
-
-
 	}
-
 	demob_manpower_mission = {
-
 		icon = revolt
 		is_good = no
 		days_mission_timeout = 120
@@ -459,3 +413,4 @@ demobilization = {
 		}
 	}
 }
+

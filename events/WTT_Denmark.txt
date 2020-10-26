@@ -1,18 +1,14 @@
-﻿###########################
-# Danish Events
-###########################
+﻿
+
 
 add_namespace = wtt_denmark
 
-# Icelandic De Facto Independence
 country_event = {
 	id = wtt_denmark.1
 	title = wtt_denmark.1.t
 	desc = wtt_denmark.1.d
 	picture = GFX_report_event_generic_sign_treaty1
-
 	is_triggered_only = yes
-
 	option = {
 		name = wtt_denmark.1.a
 		USA = { transfer_state = 101}
@@ -23,3 +19,4 @@ country_event = {
 		}
 	}
 }
+

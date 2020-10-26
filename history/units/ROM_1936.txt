@@ -1,9 +1,7 @@
 ﻿division_template = {
-	name = "Divizia de Infanterie"			# Infantry Division
-	# Note: also Fortress divisions
+	name = "Divizia de Infanterie"
 
 	division_names_group = ROM_INF_01
-
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -31,10 +29,8 @@
 	}
 }
 division_template = {
-	name = "Divizia de Munte"				# Mountain Brigade
-
+	name = "Divizia de Munte"
 	division_names_group = ROM_MTN_01
-
 	regiments = {
 		mountaineers = { x = 0 y = 0 }
 		mountaineers = { x = 0 y = 1 }
@@ -61,10 +57,9 @@ division_template = {
 		recon = { x = 0 y = 2 }
 	}
 }
-
 division_template = {
-	name = "Regimentul de Blindate" 				# Armor Regiment
-	# Note: 2nd regiment created and merged with motorized inf to create Armor Division in 1940
+	name = "Regimentul de Blindate"
+
 	division_names_group = ROM_ARM_01
 	regiments = {
 		light_armor = { x = 0 y = 0 }
@@ -94,18 +89,16 @@ division_template = {
 		artillery = { x = 0 y = 2 }
 	}
 }
-
 units = {
 	division= {
 		name = "This is here so you can look at your generals"
-		location = 9617
+		location =9129
 		division_template = "Divizia de Infanterie"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 }
 
-### Starting Production ###
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
@@ -162,3 +155,4 @@ instant_effect = {
 		efficiency = 50
 	}
 }
+

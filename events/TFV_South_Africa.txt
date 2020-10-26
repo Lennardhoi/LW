@@ -1,20 +1,15 @@
-﻿###########################
-# South-African TFV events Events
-###########################
+﻿
+
 
 add_namespace = tfv_south_africa
-
 country_event = {
 	id = tfv_south_africa.133
 	title = tfv_south_africa.133.t
-	desc = tfv_south_africa.133.d		#
-	picture = GFX_report_event_saf_soldiers					#
-
+	desc = tfv_south_africa.133.d
+	picture = GFX_report_event_saf_soldiers
 	is_triggered_only = yes
-
 	option = {
 		name = tfv_south_africa.133.a
-
 		retire_country_leader = yes
 		create_country_leader = {
 			name = "Jan Smuts"
@@ -23,17 +18,9 @@ country_event = {
 			expire = "1965.1.1"
 			ideology = conservatism
 			traits = {
-				#
+
 			}
 		}
-
 	}
 }
-
-
-
-
-
-
-
 

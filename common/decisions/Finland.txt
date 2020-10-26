@@ -1,52 +1,23 @@
-
 foreign_politics = {
-
-
 	FIN_surrender_fin = {
 		available = {
 			FIN={surrender_progress> 0.25}
 		}
-
 		allowed = {
-
 			tag = FIN
-
 		}
-
-
 		fire_only_once = yes
-
 		cost = 0
-
 		visible = {
 			FIN = { has_war_with = SOV }
 		}
-
 		complete_effect = {
 			SOV = { white_peace = FIN }
 			FIN = { white_peace = SOV }
 			SOV = {transfer_state = 146
 				transfer_state= 147}
 			SOV = { country_event = { id = finland.8 } }
-
 		}
-
 	}
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
 

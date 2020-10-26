@@ -1,16 +1,12 @@
 ﻿add_namespace = wtt_britain
 
-
-# Emergency Arms Deliveries
 country_event = {
 	id = wtt_britain.30
 	title = wtt_britain.30.t
 	desc = wtt_britain.30.d
 	picture = GFX_report_event_generic_factory
-
 	is_triggered_only = yes
 
-	#Praise the Americans!
 	option = {
 		name = wtt_britain.30.a
 		if = {
@@ -22,27 +18,21 @@ country_event = {
 			}
 		}
 	}
-
 }
 
-#   ###  ##   ## ###      ##  ###  ##  ###  ###  ##
-#   #   #  # #   #       #  #   # #  # #  # #   #
-#   ##  ####  #  ##      ####  #  #  # ###  ##   #
-#   #   #  #   # #       #  # #   #  # #  # #     #
-### ### #  # ##  ###     #  # ###  ##  #  # ### ##
+
+
+
 
 add_namespace = wtt_britain_lease_azores
 
-# England request lease of Azore from POR
 country_event = {
 	id = wtt_britain_lease_azores.1
 	title = wtt_britain_lease_azores.1.t
 	desc = wtt_britain_lease_azores.1.desc
 	picture = GFX_report_event_degaulle_churchill
-
 	is_triggered_only = yes
 
-	#Accept lease
 	option = {
 		name = wtt_britain_lease_azores.1.a
 		ai_chance = {
@@ -55,16 +45,14 @@ country_event = {
 	}
 }
 
-# Answer from POR - yes
 country_event = {
 	id = wtt_britain_lease_azores.2
 	title = wtt_britain_lease_azores.2.t
 	desc = wtt_britain_lease_azores.2.desc
 	picture = GFX_report_event_usa_heavy_cruiser
-
 	is_triggered_only = yes
-
 	option = {
 		name = wtt_britain_lease_azores.2.a
 	}
 }
+

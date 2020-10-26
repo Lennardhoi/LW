@@ -1,0 +1,168 @@
+﻿start_equipment_factor = 0.2
+division_template = {
+	name = "Infanteriet Divisjon"
+	division_names_group = NOR_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Binær Divisjon"
+	division_names_group = NOR_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Dragonregiment"
+	division_names_group = NOR_CAV_01
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+	}
+}
+units = {
+
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location =5824
+		division_template = "Infanteriet Divisjon"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division = {
+		name = "1. Dragonregiment"
+		location =5824
+		division_template = "Dragonregiment"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location =8678
+		division_template = "Binær Divisjon"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division = {
+		name = "2. Dragonregiment"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location =8678
+		division_template = "Dragonregiment"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location =8815
+		division_template = "Binær Divisjon"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location =122
+		division_template = "Binær Divisjon"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location =2910
+		division_template = "Binær Divisjon"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division = {
+		name = "3. Dragonregiment"
+		location =2910
+		division_template = "Dragonregiment"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location =192
+		division_template = "Binær Divisjon"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division = {
+		name = "Finnmark Brigaden"
+		location =8637
+		division_template = "Binær Divisjon"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+}
+air_wings = {
+
+	110 = {
+		fighter_equipment_0 =  { owner = "NOR" amount = 15 }
+		tac_bomber_equipment_0 =  { owner = "NOR" amount = 15 }
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "NOR"
+		}
+		requested_factories = 1
+		progress = 0.28
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "NOR"
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 100
+	}
+}
+

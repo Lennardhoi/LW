@@ -1,22 +1,16 @@
 focus_tree = {
 	id = ven_focus
-
 	country = {
 		factor = 0
 		modifier = {
 			add = 10
 			tag = VEN
-
 		}
 	}
-
-
 	default = no
-
 	focus = {
 		id = VEN_hurensohn_sealion
 		icon = GFX_goal_generic_consumer_goods
-
 		x = 10
 		y = 0
 		cost = 1
@@ -24,7 +18,6 @@ focus_tree = {
 			factor = 1
 		}
 		available_if_capitulated = yes
-
 		available = {
 			or = {
 				ENG = {NOT = {has_full_control_of_state = 126 }}
@@ -33,12 +26,8 @@ focus_tree = {
 				ENG = {NOT = {has_full_control_of_state = 338 }}
 				ENG = {NOT = {has_full_control_of_state = 129 }}
 			}
-
 		}
-
 		completion_reward = {
-
-
 			CAN = {add_ideas =  tot_economic_mobilisation}
 			SAF = {add_ideas =  tot_economic_mobilisation}
 			AST = {add_ideas =  tot_economic_mobilisation}
@@ -46,11 +35,6 @@ focus_tree = {
 			ENG = {add_ideas =  tot_economic_mobilisation}
 			USA = {add_ideas =  tot_economic_mobilisation}
 			FRA = {add_ideas =  tot_economic_mobilisation}
-
-
-
 		}
-
-
-
 	}
+

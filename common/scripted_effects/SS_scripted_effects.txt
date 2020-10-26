@@ -1,20 +1,19 @@
-#	Example:
-#
-#	example_effect = {
-	#		add_political_power = 66
-	#		add_popularity = {
-		#			ideology = fascism
-		#			popularity = 0.33
-		#		}
-	#	}
-#
-#
-#	In a script file:
-#
-#	effect = {
-	#		example_effect = yes
-	#	}
-#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 SS_set_templates = {
 	if = {
@@ -99,7 +98,6 @@ SS_set_templates = {
 		SS_armored_division_late = yes
 	}
 }
-
 SS_motorised_division = {
 	set_country_flag = SS_motorised_division
 	division_template = {
@@ -111,11 +109,9 @@ SS_motorised_division = {
 			motorized = { x = 0 y = 0 }
 			motorized = { x = 0 y = 1 }
 			motorized = { x = 0 y = 2 }
-
 			motorized = { x = 1 y = 0 }
 			motorized = { x = 1 y = 1 }
 			motorized = { x = 1 y = 2 }
-
 			motorized = { x = 2 y = 0 }
 			motorized = { x = 2 y = 1 }
 			motorized = { x = 2 y = 2 }
@@ -138,11 +134,9 @@ SS_mechanised_division_early = {
 			mechanized = { x = 0 y = 0 }
 			mechanized = { x = 0 y = 1 }
 			mechanized = { x = 0 y = 2 }
-
 			mechanized = { x = 1 y = 0 }
 			mechanized = { x = 1 y = 1 }
 			mechanized = { x = 1 y = 2 }
-
 			mechanized = { x = 2 y = 0 }
 			mechanized = { x = 2 y = 1 }
 			mechanized = { x = 2 y = 2 }
@@ -154,7 +148,6 @@ SS_mechanised_division_early = {
 		}
 	}
 }
-
 SS_mechanised_division_late = {
 	set_country_flag = SS_mechanised_division_late
 	division_template = {
@@ -166,11 +159,9 @@ SS_mechanised_division_late = {
 			mechanized = { x = 0 y = 0 }
 			mechanized = { x = 0 y = 1 }
 			mechanized = { x = 0 y = 2 }
-
 			mechanized = { x = 1 y = 0 }
 			mechanized = { x = 1 y = 1 }
 			mechanized = { x = 1 y = 2 }
-
 			medium_tank_destroyer_brigade = { x = 2 y = 0 }
 			medium_sp_artillery_brigade= { x = 2 y = 1 }
 			medium_sp_artillery_brigade = { x = 2 y = 2 }
@@ -182,7 +173,6 @@ SS_mechanised_division_late = {
 		}
 	}
 }
-
 SS_armored_division_early = {
 	set_country_flag = SS_armored_division_early
 	division_template = {
@@ -195,11 +185,9 @@ SS_armored_division_early = {
 			light_armor = { x = 0 y = 1 }
 			light_armor = { x = 0 y = 2 }
 			light_armor = { x = 0 y = 3 }
-
 			motorized = { x = 1 y = 0 }
 			motorized = { x = 1 y = 1 }
 			motorized = { x = 1 y = 2 }
-
 			motorized = { x = 2 y = 0 }
 			motorized = { x = 2 y = 1 }
 			motorized = { x = 2 y = 2 }
@@ -211,7 +199,6 @@ SS_armored_division_early = {
 		}
 	}
 }
-
 SS_armored_division_improved = {
 	set_country_flag = SS_armored_division_improved
 	division_template = {
@@ -224,11 +211,9 @@ SS_armored_division_improved = {
 			medium_armor = { x = 0 y = 1 }
 			medium_armor = { x = 0 y = 2 }
 			medium_armor = { x = 0 y = 3 }
-
 			motorized = { x = 1 y = 0 }
 			motorized = { x = 1 y = 1 }
 			motorized = { x = 1 y = 2 }
-
 			motorized = { x = 2 y = 0 }
 			motorized = { x = 2 y = 1 }
 			motorized = { x = 2 y = 2 }
@@ -252,11 +237,9 @@ SS_armored_division_late = {
 			medium_armor = { x = 0 y = 1 }
 			medium_armor = { x = 0 y = 2 }
 			medium_armor = { x = 0 y = 3 }
-
 			mechanized = { x = 1 y = 0 }
 			mechanized = { x = 1 y = 1 }
 			mechanized = { x = 1 y = 2 }
-
 			mechanized = { x = 2 y = 0 }
 			mechanized = { x = 2 y = 1 }
 			mechanized = { x = 2 y = 2 }
@@ -279,11 +262,9 @@ SS_infantry_division = {
 			infantry = { x = 0 y = 0 }
 			infantry = { x = 0 y = 1 }
 			infantry = { x = 0 y = 2 }
-
 			infantry = { x = 1 y = 0 }
 			infantry = { x = 1 y = 1 }
 			infantry = { x = 1 y = 2 }
-
 			artillery_brigade = { x = 2 y = 0 }
 			artillery_brigade = { x = 2 y = 1 }
 			infantry = { x = 2 y = 2 }
@@ -304,7 +285,7 @@ SS_resolve_effects_wehrmacht = {
 			}
 		}
 		random_list = {
-			50 = { country_event = { id = ss_recruitment_event.10 days = 1 } } #generals protest
+			50 = { country_event = { id = ss_recruitment_event.10 days = 1 } }
 			50 = {}
 		}
 	}
@@ -316,8 +297,8 @@ SS_resolve_effects_wehrmacht = {
 			}
 		}
 		random_list = {
-			50 = { country_event = { id = ss_recruitment_event.10 days = 1 } } #generals protest
-			25 = { country_event = { id = ss_recruitment_event.11 days = 1 } } #general resigns in protest
+			50 = { country_event = { id = ss_recruitment_event.10 days = 1 } }
+			25 = { country_event = { id = ss_recruitment_event.11 days = 1 } }
 			25 = {}
 		}
 	}
@@ -329,9 +310,9 @@ SS_resolve_effects_wehrmacht = {
 			}
 		}
 		random_list = {
-			50 = { country_event = { id = ss_recruitment_event.10 days = 1 } } #generals protest
-			25 = { country_event = { id = ss_recruitment_event.11 days = 1 } } #general resigns in protest
-			25 = { country_event = { id = ss_recruitment_event.12 days = 1 } } #generals plot
+			50 = { country_event = { id = ss_recruitment_event.10 days = 1 } }
+			25 = { country_event = { id = ss_recruitment_event.11 days = 1 } }
+			25 = { country_event = { id = ss_recruitment_event.12 days = 1 } }
 		}
 	}
 	if = {
@@ -342,9 +323,9 @@ SS_resolve_effects_wehrmacht = {
 			}
 		}
 		random_list = {
-			35 = { country_event = { id = ss_recruitment_event.10 days = 1 } } #generals protest
-			35 = { country_event = { id = ss_recruitment_event.11 days = 1 } } #general resign
-			30 = { country_event = { id = ss_recruitment_event.12 days = 1 } } #generals plot
+			35 = { country_event = { id = ss_recruitment_event.10 days = 1 } }
+			35 = { country_event = { id = ss_recruitment_event.11 days = 1 } }
+			30 = { country_event = { id = ss_recruitment_event.12 days = 1 } }
 		}
 	}
 	if = {
@@ -355,8 +336,8 @@ SS_resolve_effects_wehrmacht = {
 			}
 		}
 		random_list = {
-			35 = { country_event = { id = ss_recruitment_event.11 days = 1 } } #general resigns
-			55 = { country_event = { id = ss_recruitment_event.12 days = 1 } } #generals plot
+			35 = { country_event = { id = ss_recruitment_event.11 days = 1 } }
+			55 = { country_event = { id = ss_recruitment_event.12 days = 1 } }
 			10 = {
 				modifier = {
 					NOT = {
@@ -367,7 +348,7 @@ SS_resolve_effects_wehrmacht = {
 					factor = 0
 				}
 				country_event = { id = ss_recruitment_event.13 days = 1 }
-				} #assassination attempt
+			}
 		}
 	}
 	if = {
@@ -378,7 +359,7 @@ SS_resolve_effects_wehrmacht = {
 			}
 		}
 		random_list = {
-			75 = { country_event = { id = ss_recruitment_event.12 days = 1 } } #generals plot
+			75 = { country_event = { id = ss_recruitment_event.12 days = 1 } }
 			15 = {
 				modifier = {
 					NOT = {
@@ -389,8 +370,8 @@ SS_resolve_effects_wehrmacht = {
 					factor = 0
 				}
 				country_event = { id = ss_recruitment_event.13 days = 1 }
-				} #assassination attempt
-			10 = { country_event = { id = ss_recruitment_event.14 days = 1 } } #civil war
+			}
+			10 = { country_event = { id = ss_recruitment_event.14 days = 1 } }
 		}
 	}
 	if = {
@@ -408,12 +389,11 @@ SS_resolve_effects_wehrmacht = {
 					factor = 0
 				}
 				country_event = { id = ss_recruitment_event.13 days = 1 }
-				} #assassination attempt
-			10 = { country_event = { id = ss_recruitment_event.14 days = 1 } } #civil war
+			}
+			10 = { country_event = { id = ss_recruitment_event.14 days = 1 } }
 		}
 	}
 }
-
 SS_resolve_effects_ss = {
 	if = {
 		limit = {
@@ -423,7 +403,7 @@ SS_resolve_effects_ss = {
 			}
 		}
 		random_list = {
-			50 = { country_event = { id = ss_recruitment_event.20 days = 1 } } #Himmler protests
+			50 = { country_event = { id = ss_recruitment_event.20 days = 1 } }
 			50 = {}
 		}
 	}
@@ -435,8 +415,8 @@ SS_resolve_effects_ss = {
 			}
 		}
 		random_list = {
-			50 = { country_event = { id = ss_recruitment_event.20 days = 1 } } #Himmler protest
-			25 = { country_event = { id = ss_recruitment_event.21 days = 1 } } #secret meeting of SS officers
+			50 = { country_event = { id = ss_recruitment_event.20 days = 1 } }
+			25 = { country_event = { id = ss_recruitment_event.21 days = 1 } }
 			25 = {}
 		}
 	}
@@ -448,9 +428,9 @@ SS_resolve_effects_ss = {
 			}
 		}
 		random_list = {
-			50 = { country_event = { id = ss_recruitment_event.20 days = 1 } } #Himmler protest
-			25 = { country_event = { id = ss_recruitment_event.21 days = 1 } } #SS officials meet
-			25 = { country_event = { id = ss_recruitment_event.22 days = 1 } } #SS reroutes factory output
+			50 = { country_event = { id = ss_recruitment_event.20 days = 1 } }
+			25 = { country_event = { id = ss_recruitment_event.21 days = 1 } }
+			25 = { country_event = { id = ss_recruitment_event.22 days = 1 } }
 		}
 	}
 	if = {
@@ -461,9 +441,9 @@ SS_resolve_effects_ss = {
 			}
 		}
 		random_list = {
-			35 = { country_event = { id = ss_recruitment_event.21 days = 1 } } #SS officials meet
-			35 = { country_event = { id = ss_recruitment_event.22 days = 1 } } #SS reroutes factory output
-			30 = { country_event = { id = ss_recruitment_event.23 days = 1 } } #Himmler plots plot
+			35 = { country_event = { id = ss_recruitment_event.21 days = 1 } }
+			35 = { country_event = { id = ss_recruitment_event.22 days = 1 } }
+			30 = { country_event = { id = ss_recruitment_event.23 days = 1 } }
 		}
 	}
 	if = {
@@ -474,9 +454,9 @@ SS_resolve_effects_ss = {
 			}
 		}
 		random_list = {
-			35 = { country_event = { id = ss_recruitment_event.21 days = 1 } } #SS officials meet
-			55 = { country_event = { id = ss_recruitment_event.23 days = 1 } } #Himmler plots
-			10 = { country_event = { id = ss_recruitment_event.24 days = 1 } } #assassination attempt - SS
+			35 = { country_event = { id = ss_recruitment_event.21 days = 1 } }
+			55 = { country_event = { id = ss_recruitment_event.23 days = 1 } }
+			10 = { country_event = { id = ss_recruitment_event.24 days = 1 } }
 		}
 	}
 	if = {
@@ -487,9 +467,9 @@ SS_resolve_effects_ss = {
 			}
 		}
 		random_list = {
-			75 = { country_event = { id = ss_recruitment_event.23 days = 1 } } #Himmler plots
-			15 = { country_event = { id = ss_recruitment_event.24 days = 1 } } #assassination attempt - SS
-			10 = { country_event = { id = ss_recruitment_event.25 days = 1 } } #fascist on fascist violence
+			75 = { country_event = { id = ss_recruitment_event.23 days = 1 } }
+			15 = { country_event = { id = ss_recruitment_event.24 days = 1 } }
+			10 = { country_event = { id = ss_recruitment_event.25 days = 1 } }
 		}
 	}
 	if = {
@@ -497,8 +477,9 @@ SS_resolve_effects_ss = {
 			check_variable = { var = SS_anger value = 60 compare = greater_than_or_equals }
 		}
 		random_list = {
-			15 = { country_event = { id = ss_recruitment_event.24 days = 1 } } #assassination attempt - SS
-			10 = { country_event = { id = ss_recruitment_event.25 days = 1 } } #fascist on fascist violence
+			15 = { country_event = { id = ss_recruitment_event.24 days = 1 } }
+			10 = { country_event = { id = ss_recruitment_event.25 days = 1 } }
 		}
 	}
 }
+

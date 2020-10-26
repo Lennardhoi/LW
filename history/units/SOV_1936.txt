@@ -1,4 +1,4 @@
-﻿##### Division Templates #####
+﻿
 division_template = {
 	name = "Suppression"
 	regiments = {
@@ -18,9 +18,8 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Strelkovaya Diviziya"			# Rifle Division
+	name = "Strelkovaya Diviziya"
 	division_names_group = SOV_INF_01
-
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -42,17 +41,15 @@ division_template = {
 		artillery_brigade = { x = 3 y = 3 }
 	}
 	support = {
-		recon = { x = 0 y = 1 } 		# Recon bn had 16 L tanks, 10 ACs, 1x mot inf co #Eng and recon removed and they seem rather OP. Could revisit if balance changes
-		engineer = { x = 0 y = 0 } 	# (semi-mot) Engineer bn
-		artillery = { x = 0 y = 2 } 	# Heavy Arty Regiment had 1x 152mm bn + 2x 122mm bn
+		recon = { x = 0 y = 1 }
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 2 }
 		anti_air = { x = 0 y = 3 }
 	}
 }
-
 division_template = {
-	name = "Gornostrelkovaya Diviziya"		# Mountain Division
+	name = "Gornostrelkovaya Diviziya"
 	division_names_group = SOV_MNT_01
-
 	regiments = {
 		mountaineers = { x = 0 y = 0 }
 		mountaineers = { x = 0 y = 1 }
@@ -74,16 +71,14 @@ division_template = {
 		artillery_brigade = { x = 3 y = 3 }
 	}
 	support = {
-		engineer = { x = 0 y = 0 } 		# Engineer bn
+		engineer = { x = 0 y = 0 }
 		artillery = { x = 0 y = 1 }
 		recon = { x = 0 y = 2 }
 	}
 }
-
 division_template = {
-	name = "NKVD Pogranichnaya Diviziya"			# NKVD Border Guard Division - Garrison units (older experience, older equipment)
+	name = "NKVD Pogranichnaya Diviziya"
 	division_names_group = SOV_GAR_01
-
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -99,10 +94,10 @@ division_template = {
 	priority = 0
 }
 division_template = {
-	name = "Mekhanizirovaniy Korpus" 				# Represents regular mechanized corps (4 existed in 1935-38);
+	name = "Mekhanizirovaniy Korpus"
 	division_names_group = SOV_MEC_01
-	# Also represents groups of independent tank, mech brigades of the time, though groups are best represented by tank bge
-	# (2x M/L tank + 1x mot), and 2x mech bge (2x L tank + 1x mot)
+
+
 	regiments = {
 		light_armor = { x = 0 y = 0 }
 		light_armor = { x = 0 y = 1 }
@@ -132,129 +127,106 @@ division_template = {
 	}
 }
 
-### Note: OOB abstracts away the following:
-#	Marine Brigade (3x marine bn), 2 Brigades: Leningrad, Sevastopol
-#	Airborne Brigade (3x paratrooper bn), 1 Brigade: Moscow
 
 
-##### OOB #####
+
 units = {
-
-	division= {	# "77ya 'Azerbaidzhan.' Gornostrelk. Div."
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 77
 		}
-		location = 6380
+		location =6088
 		division_template = "Gornostrelkovaya Diviziya"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
-
 	}
-	division= {	# "77ya 'Azerbaidzhan.' Gornostrelk. Div."
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 77
 		}
-		location = 6380
+		location =6088
 		division_template = "Gornostrelkovaya Diviziya"
 		force_equipment_variants = { infantry_equipment_0 = { owner = "SOV" } }
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
-
 	}
-
-	division= {	# "77ya 'Azerbaidzhan.' Gornostrelk. Div."
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 50
 		}
-		location = 6380
+		location =6088
 		division_template = "Gornostrelkovaya Diviziya"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
-
 	}
-	division= {	# "77ya 'Azerbaidzhan.' Gornostrelk. Div."
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 51
 		}
-		location = 6380
+		location =6088
 		division_template = "Gornostrelkovaya Diviziya"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
-
 	}
 
-	# Subordinate to AG
-	division= {	# "28ya 'Vyatskaya' Gornostrelk. Div."
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 28
 		}
-		location = 6380
+		location =6088
 		division_template = "Gornostrelkovaya Diviziya"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
-
 	}
-
-	division= {	# "68ya 'Turkestan.' Gornostrelk. Div."
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 68
 		}
-		location = 6380
+		location =6088
 		division_template = "Gornostrelkovaya Diviziya"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
-
 	}
-	division= {	# "83ya 'Turkestan.' Gornostrelk. Div."
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 83
 		}
-		location = 6380
+		location =6088
 		division_template = "Gornostrelkovaya Diviziya"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
-
 	}
-	division= {	# "83ya 'Turkestan.' Gornostrelk. Div."
+	division= {
 		division_name = {
 			is_name_ordered = yes
 			name_order = 84
 		}
-		location = 6380
+		location =6088
 		division_template = "Gornostrelkovaya Diviziya"
 		force_equipment_variants = { infantry_equipment_1 = { owner = "SOV" } }
 		start_experience_factor = 0.3
 		start_equipment_factor = 1
-
 	}
-
-	# Subordinate to VO
-
 
 }
 
 
-### Air Wings
 
-#########################
-## STARTING PRODUCTION ##
-#########################
+
 instant_effect = {
-
-
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_1
@@ -264,7 +236,6 @@ instant_effect = {
 		progress = 0.1
 		efficiency = 50
 	}
-
 	add_equipment_production = {
 		equipment = {
 			type = support_equipment_1
@@ -274,7 +245,6 @@ instant_effect = {
 		progress = 0.3
 		efficiency = 50
 	}
-
 	add_equipment_production = {
 		equipment = {
 			type = artillery_equipment_1
@@ -284,7 +254,6 @@ instant_effect = {
 		progress = 0.3
 		efficiency = 50
 	}
-
 	add_equipment_production = {
 		equipment = {
 			type = light_tank_equipment_2
@@ -294,7 +263,6 @@ instant_effect = {
 		progress = 0.4
 		efficiency = 50
 	}
-
 	add_equipment_production = {
 		equipment = {
 			type = motorized_equipment_1
@@ -331,8 +299,6 @@ instant_effect = {
 		progress = 0.2
 		efficiency = 50
 	}
-
-
-
 }
-#####################
+
+

@@ -1,31 +1,18 @@
 search_filter_prios = {
 	FOCUS_FILTER_POLITICAL = 1010
-
-
-
-
-
 	FOCUS_FILTER_RESEARCH = 522
-
-
 	FOCUS_FILTER_INDUSTRY = 509
-
 }
-
 focus_tree = {
 	id = generic_focus
-
 	country = {
 		factor = 5
 	}
-
 	default = yes
 	reset_on_civilwar = no
-
 	initial_show_position = {
 		focus = industrial_effort
 	}
-
 	focus = {
 		id = army_effort
 		icon = GFX_goal_generic_allies_build_infantry
@@ -33,9 +20,7 @@ focus_tree = {
 		y = 0
 		cost = 10
 		search_filters = {  FOCUS_FILTER_RESEARCH }
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			army_experience = 5
 			add_tech_bonus = {
@@ -46,7 +31,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = equipment_effort
 		icon = GFX_goal_generic_small_arms
@@ -55,11 +39,8 @@ focus_tree = {
 		y = 1
 		relative_position_id = army_effort
 		cost = 10
-
 		search_filters = {  FOCUS_FILTER_RESEARCH }
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = infantry_artillery_bonus
@@ -70,7 +51,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = motorization_effort
 		icon = GFX_goal_generic_army_motorized
@@ -80,11 +60,8 @@ focus_tree = {
 		y = 1
 		relative_position_id = army_effort
 		cost = 10
-
 		search_filters = {  FOCUS_FILTER_RESEARCH }
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = motorized_bonus
@@ -93,7 +70,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = doctrine_effort
 		icon = GFX_goal_generic_army_doctrines
@@ -102,11 +78,8 @@ focus_tree = {
 		y = 2
 		relative_position_id = army_effort
 		cost = 10
-
 		search_filters = {  FOCUS_FILTER_RESEARCH }
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			army_experience = 5
 			add_tech_bonus = {
@@ -117,7 +90,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = equipment_effort_2
 		icon = GFX_goal_generic_army_artillery
@@ -126,11 +98,8 @@ focus_tree = {
 		y = 2
 		relative_position_id = equipment_effort
 		cost = 10
-
 		search_filters = {  FOCUS_FILTER_RESEARCH }
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = infantry_artillery_bonus
@@ -141,7 +110,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = mechanization_effort
 		icon = GFX_goal_generic_build_tank
@@ -150,11 +118,8 @@ focus_tree = {
 		y = 2
 		relative_position_id = motorization_effort
 		cost = 10
-
 		search_filters = {  FOCUS_FILTER_RESEARCH }
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = motorized_bonus
@@ -164,7 +129,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = doctrine_effort_2
 		icon = GFX_goal_generic_army_doctrines
@@ -173,11 +137,8 @@ focus_tree = {
 		y = 2
 		relative_position_id = doctrine_effort
 		cost = 10
-
 		search_filters = {  FOCUS_FILTER_RESEARCH }
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			army_experience = 5
 			add_tech_bonus = {
@@ -188,7 +149,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = equipment_effort_3
 		icon = GFX_goal_generic_army_artillery2
@@ -197,11 +157,8 @@ focus_tree = {
 		y = 2
 		relative_position_id = equipment_effort_2
 		cost = 10
-
 		search_filters = {  FOCUS_FILTER_RESEARCH }
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = infantry_artillery_bonus
@@ -212,7 +169,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = armor_effort
 		icon = GFX_goal_generic_army_tanks
@@ -221,11 +177,8 @@ focus_tree = {
 		y = 2
 		relative_position_id = mechanization_effort
 		cost = 10
-
 		search_filters = {  FOCUS_FILTER_RESEARCH }
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = armor_bonus
@@ -235,7 +188,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = special_forces
 		icon = GFX_goal_generic_special_forces
@@ -246,11 +198,8 @@ focus_tree = {
 		y = 1
 		relative_position_id = equipment_effort_3
 		cost = 10
-
 		search_filters = { FOCUS_FILTER_RESEARCH }
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_ideas = special_forces
 			add_tech_bonus = {
@@ -266,19 +215,14 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = aviation_effort
 		icon = GFX_goal_generic_build_airforce
 		x = 5
 		y = 0
 		cost = 10
-
 		search_filters = {   FOCUS_FILTER_RESEARCH }
-
 		available_if_capitulated = yes
-
-
 		complete_tooltip = {
 			air_experience = 25
 			if = { limit = { has_country_flag = aviation_effort_AB }
@@ -295,10 +239,8 @@ focus_tree = {
 				category = air_doctrine
 			}
 		}
-
 		completion_reward = {
 			air_experience = 25
-
 			if = {
 				limit = {
 					capital_scope = {
@@ -351,7 +293,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = fighter_focus
 		icon = GFX_goal_generic_air_fighter
@@ -361,11 +302,8 @@ focus_tree = {
 		y = 1
 		relative_position_id = aviation_effort
 		cost = 10
-
 		search_filters = {  FOCUS_FILTER_RESEARCH }
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = fighter_bonus
@@ -379,7 +317,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = bomber_focus
 		icon = GFX_goal_generic_air_bomber
@@ -389,11 +326,8 @@ focus_tree = {
 		y = 1
 		relative_position_id = aviation_effort
 		cost = 10
-
 		search_filters = {  FOCUS_FILTER_RESEARCH }
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = bomber_bonus
@@ -406,7 +340,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = aviation_effort_2
 		icon = GFX_goal_generic_air_doctrine
@@ -415,12 +348,8 @@ focus_tree = {
 		y = 1
 		relative_position_id = bomber_focus
 		cost = 10
-
 		search_filters = {   FOCUS_FILTER_RESEARCH }
-
 		available_if_capitulated = yes
-
-
 		complete_tooltip = {
 			air_experience = 25
 			if = { limit = { has_country_flag = aviation_effort_2_AB }
@@ -495,7 +424,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = CAS_effort
 		icon = GFX_goal_generic_CAS
@@ -505,11 +433,8 @@ focus_tree = {
 		y = 1
 		relative_position_id = aviation_effort_2
 		cost = 10
-
 		search_filters = {  FOCUS_FILTER_RESEARCH }
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = CAS_bonus
@@ -520,7 +445,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = rocket_effort
 		icon = GFX_focus_rocketry
@@ -530,11 +454,8 @@ focus_tree = {
 		y = 2
 		relative_position_id = aviation_effort_2
 		cost = 10
-
 		search_filters = {  FOCUS_FILTER_RESEARCH }
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = jet_rocket_bonus
@@ -544,7 +465,6 @@ focus_tree = {
 				category = jet_technology
 			}
 		}
-
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -553,7 +473,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = NAV_effort
 		icon = GFX_goal_generic_air_naval_bomber
@@ -563,11 +482,8 @@ focus_tree = {
 		y = 1
 		relative_position_id = aviation_effort_2
 		cost = 10
-
 		search_filters = {  FOCUS_FILTER_RESEARCH }
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = nav_bomber_bonus
@@ -578,26 +494,20 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = naval_effort
 		icon = GFX_goal_generic_construct_naval_dockyard
 		x = 9
 		y = 0
 		cost = 10
-
 		search_filters = {  FOCUS_FILTER_INDUSTRY }
-
 		available_if_capitulated = yes
-
-
 		available = {
 			any_state = {
 				is_coastal = yes
 				is_controlled_by = ROOT
 			}
 		}
-
 		ai_will_do = {
 			factor = 10
 		}
@@ -610,7 +520,6 @@ focus_tree = {
 				instant_build = yes
 			}
 		}
-
 		completion_reward = {
 			navy_experience = 25
 			if = {
@@ -709,7 +618,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = flexible_navy
 		icon = GFX_goal_generic_build_navy
@@ -719,12 +627,8 @@ focus_tree = {
 		y = 1
 		relative_position_id = naval_effort
 		cost = 10
-
 		search_filters = {  FOCUS_FILTER_RESEARCH }
-
 		available_if_capitulated = yes
-
-
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -737,7 +641,6 @@ focus_tree = {
 				}
 			}
 		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = sub_op_bonus
@@ -751,7 +654,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = large_navy
 		icon = GFX_goal_generic_navy_doctrines_tactics
@@ -761,12 +663,8 @@ focus_tree = {
 		y = 1
 		relative_position_id = naval_effort
 		cost = 10
-
 		search_filters = {   FOCUS_FILTER_RESEARCH }
-
 		available_if_capitulated = yes
-
-
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -779,7 +677,6 @@ focus_tree = {
 				}
 			}
 		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = fleet_in_being_bonus
@@ -789,7 +686,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = submarine_effort
 		icon = GFX_goal_generic_navy_submarine
@@ -798,12 +694,8 @@ focus_tree = {
 		y = 1
 		relative_position_id = flexible_navy
 		cost = 10
-
 		search_filters = {  FOCUS_FILTER_RESEARCH }
-
 		available_if_capitulated = yes
-
-
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -816,7 +708,6 @@ focus_tree = {
 				}
 			}
 		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = ss_bonus
@@ -827,7 +718,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = cruiser_effort
 		icon = GFX_goal_generic_navy_cruiser
@@ -836,12 +726,8 @@ focus_tree = {
 		y = 1
 		relative_position_id = large_navy
 		cost = 10
-
 		search_filters = {  FOCUS_FILTER_RESEARCH }
-
 		available_if_capitulated = yes
-
-
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -854,7 +740,6 @@ focus_tree = {
 				}
 			}
 		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = cr_bonus
@@ -866,7 +751,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = destroyer_effort
 		icon = GFX_goal_generic_wolf_pack
@@ -875,12 +759,8 @@ focus_tree = {
 		y = 1
 		relative_position_id = submarine_effort
 		cost = 10
-
 		search_filters = {  FOCUS_FILTER_RESEARCH }
-
 		available_if_capitulated = yes
-
-
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -893,7 +773,6 @@ focus_tree = {
 				}
 			}
 		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = dd_bonus
@@ -904,7 +783,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = capital_ships_effort
 		icon = GFX_goal_generic_navy_battleship
@@ -913,11 +791,8 @@ focus_tree = {
 		y = 1
 		relative_position_id = cruiser_effort
 		cost = 10
-
 		search_filters = {  FOCUS_FILTER_RESEARCH }
-
 		available_if_capitulated = yes
-
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -930,7 +805,6 @@ focus_tree = {
 				}
 			}
 		}
-
 		completion_reward = {
 			navy_experience = 25
 			add_tech_bonus = {
@@ -944,16 +818,13 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = industrial_effort
 		icon = GFX_goal_generic_production
 		x = 13
 		y = 0
 		cost = 10
-
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
-
 		available_if_capitulated = yes
 		ai_will_do = {
 			factor = 10
@@ -966,23 +837,21 @@ focus_tree = {
 				category = industry
 			}
 		}
-
 		ai_will_do = {
 			factor = 3
 			modifier = {
 				factor = 0
 				date < 1939.1.1
 				OR = {
-					# we dont want chinese minors to go crazy on slots early since they get eaten
+
 					tag = BEL
 					tag = LUX
 					tag = HOL
-					#tag = DEN
+
 				}
 			}
 		}
 	}
-
 	focus = {
 		id = construction_effort
 		icon = GFX_goal_generic_construct_civ_factory
@@ -991,17 +860,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = industrial_effort
 		cost = 10
-
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
-
 		available_if_capitulated = yes
-
-
-
 		ai_will_do = {
 			factor = 10
 		}
-
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = construction_effort_tt
@@ -1014,7 +877,6 @@ focus_tree = {
 				}
 			}
 		}
-
 		complete_tooltip = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
@@ -1023,7 +885,6 @@ focus_tree = {
 				instant_build = yes
 			}
 		}
-
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -1057,7 +918,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = production_effort
 		icon = GFX_goal_generic_construct_mil_factory
@@ -1066,16 +926,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = industrial_effort
 		cost = 10
-
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
-
 		available_if_capitulated = yes
-
-
 		ai_will_do = {
 			factor = 10
 		}
-
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = production_effort_tt
@@ -1088,7 +943,6 @@ focus_tree = {
 				}
 			}
 		}
-
 		complete_tooltip = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
@@ -1097,7 +951,6 @@ focus_tree = {
 				instant_build = yes
 			}
 		}
-
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -1131,7 +984,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = construction_effort_2
 		icon = GFX_goal_generic_construct_civ_factory
@@ -1140,16 +992,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = construction_effort
 		cost = 10
-
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
-
 		available_if_capitulated = yes
-
-
 		ai_will_do = {
 			factor = 10
 		}
-
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = construction_effort_tt
@@ -1162,7 +1009,6 @@ focus_tree = {
 				}
 			}
 		}
-
 		complete_tooltip = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
@@ -1171,7 +1017,6 @@ focus_tree = {
 				instant_build = yes
 			}
 		}
-
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -1205,7 +1050,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = production_effort_2
 		icon = GFX_goal_generic_construct_mil_factory
@@ -1214,16 +1058,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = production_effort
 		cost = 10
-
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
-
 		available_if_capitulated = yes
-
-
 		ai_will_do = {
 			factor = 10
 		}
-
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = production_effort_tt
@@ -1236,7 +1075,6 @@ focus_tree = {
 				}
 			}
 		}
-
 		complete_tooltip = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
@@ -1245,7 +1083,6 @@ focus_tree = {
 				instant_build = yes
 			}
 		}
-
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -1279,7 +1116,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = infrastructure_effort
 		icon = GFX_goal_generic_construct_infrastructure
@@ -1288,11 +1124,8 @@ focus_tree = {
 		y = 1
 		relative_position_id = construction_effort_2
 		cost = 10
-
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-
 		available_if_capitulated = yes
-
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = infrastructure_effort_tt
@@ -1319,7 +1152,6 @@ focus_tree = {
 				instant_build = yes
 			}
 		}
-
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -1377,7 +1209,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = production_effort_3
 		icon = GFX_goal_generic_construct_mil_factory
@@ -1386,16 +1217,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = production_effort_2
 		cost = 10
-
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
-
 		available_if_capitulated = yes
-
-
 		ai_will_do = {
 			factor = 10
 		}
-
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = production_effort_tt
@@ -1408,7 +1234,6 @@ focus_tree = {
 				}
 			}
 		}
-
 		complete_tooltip = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
@@ -1417,7 +1242,6 @@ focus_tree = {
 				instant_build = yes
 			}
 		}
-
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -1451,7 +1275,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = infrastructure_effort_2
 		icon = GFX_goal_generic_construct_infrastructure
@@ -1460,11 +1283,8 @@ focus_tree = {
 		y = 1
 		relative_position_id = infrastructure_effort
 		cost = 10
-
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-
 		available_if_capitulated = yes
-
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = infrastructure_effort_tt
@@ -1491,7 +1311,6 @@ focus_tree = {
 				instant_build = yes
 			}
 		}
-
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -1549,7 +1368,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = construction_effort_3
 		icon = GFX_goal_generic_construct_civ_factory
@@ -1558,16 +1376,11 @@ focus_tree = {
 		y = 1
 		relative_position_id = infrastructure_effort
 		cost = 10
-
 		search_filters = { FOCUS_FILTER_INDUSTRY  }
-
 		available_if_capitulated = yes
-
-
 		ai_will_do = {
 			factor = 2
 		}
-
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = construction_effort_tt
@@ -1580,7 +1393,6 @@ focus_tree = {
 				}
 			}
 		}
-
 		complete_tooltip = {
 			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
@@ -1589,11 +1401,9 @@ focus_tree = {
 				instant_build = yes
 			}
 		}
-
 		ai_will_do = {
 			factor = 10
 		}
-
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -1627,7 +1437,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = nuclear_effort
 		icon = GFX_focus_wonderweapons
@@ -1636,11 +1445,8 @@ focus_tree = {
 		y = 1
 		relative_position_id = infrastructure_effort_2
 		cost = 10
-
 		search_filters = { FOCUS_FILTER_RESEARCH }
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = nuclear_bonus
@@ -1648,7 +1454,6 @@ focus_tree = {
 				category = nuclear
 			}
 		}
-
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -1657,7 +1462,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = extra_tech_slot
 		icon = GFX_focus_research
@@ -1666,16 +1470,12 @@ focus_tree = {
 		y = 1
 		relative_position_id = infrastructure_effort_2
 		cost = 10
-
 		search_filters = { FOCUS_FILTER_RESEARCH }
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_research_slot = 1
 		}
 	}
-
 	focus = {
 		id = extra_tech_slot_2
 		icon = GFX_focus_research
@@ -1689,16 +1489,12 @@ focus_tree = {
 		y = 1
 		relative_position_id = extra_tech_slot
 		cost = 10
-
 		search_filters = { FOCUS_FILTER_RESEARCH }
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_research_slot = 1
 		}
 	}
-
 	focus = {
 		id = secret_weapons
 		icon = GFX_goal_generic_secret_weapon
@@ -1707,11 +1503,8 @@ focus_tree = {
 		y = 1
 		relative_position_id = infrastructure_effort_2
 		cost = 10
-
 		search_filters = { FOCUS_FILTER_RESEARCH }
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = secret_bonus
@@ -1722,7 +1515,6 @@ focus_tree = {
 				category = rocketry
 			}
 		}
-
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -1731,26 +1523,21 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = political_effort
 		icon = GFX_goal_generic_demand_territory
 		x = 19
 		y = 0
 		cost = 10
-
 		search_filters = { FOCUS_FILTER_POLITICAL }
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_political_power = 120
 		}
 	}
-
 	focus = {
 		id = collectivist_ethos
-		icon = GFX_goal_generic_national_unity #icon = GFX_goal_tripartite_pact
+		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = political_effort }
 		mutually_exclusive = { focus = liberty_ethos}
 		available = {
@@ -1764,12 +1551,8 @@ focus_tree = {
 		y = 1
 		relative_position_id = political_effort
 		cost = 10
-
 		search_filters = { FOCUS_FILTER_POLITICAL   }
-
 		available_if_capitulated = yes
-
-
 		ai_will_do = {
 			factor = 5
 			modifier = {
@@ -1783,15 +1566,13 @@ focus_tree = {
 				}
 			}
 		}
-
 		completion_reward = {
 			add_timed_idea = { idea = collectivist_ethos_focus days = 1095 }
 		}
 	}
-
 	focus = {
 		id = nationalism_focus
-		icon = GFX_goal_support_fascism #icon = GFX_goal_tripartite_pact
+		icon = GFX_goal_support_fascism
 		prerequisite = { focus = collectivist_ethos }
 		mutually_exclusive = { focus = internationalism_focus }
 		available = {
@@ -1804,12 +1585,8 @@ focus_tree = {
 		y = 1
 		relative_position_id = collectivist_ethos
 		cost = 10
-
 		search_filters = { FOCUS_FILTER_POLITICAL  }
-
 		available_if_capitulated = yes
-
-
 		ai_will_do = {
 			factor = 5
 			modifier = {
@@ -1827,7 +1604,6 @@ focus_tree = {
 				}
 			}
 		}
-
 		completion_reward = {
 			add_timed_idea = {
 				idea = nationalism
@@ -1835,10 +1611,9 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = internationalism_focus
-		icon = GFX_goal_support_communism #icon = GFX_goal_tripartite_pact
+		icon = GFX_goal_support_communism
 		prerequisite = { focus = collectivist_ethos }
 		mutually_exclusive = { focus = nationalism_focus }
 		available = {
@@ -1857,12 +1632,8 @@ focus_tree = {
 		y = 1
 		relative_position_id = collectivist_ethos
 		cost = 10
-
 		search_filters = { FOCUS_FILTER_POLITICAL  }
-
 		available_if_capitulated = yes
-
-
 		ai_will_do = {
 			factor = 5
 			modifier = {
@@ -1880,7 +1651,6 @@ focus_tree = {
 				}
 			}
 		}
-
 		completion_reward = {
 			add_timed_idea = {
 				idea = internationalism
@@ -1888,7 +1658,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = liberty_ethos
 		icon = GFX_goal_support_democracy
@@ -1904,12 +1673,8 @@ focus_tree = {
 		y = 1
 		relative_position_id = political_effort
 		cost = 10
-
 		search_filters = { FOCUS_FILTER_POLITICAL }
-
 		available_if_capitulated = yes
-
-
 		ai_will_do = {
 			factor = 95
 			modifier = {
@@ -1929,12 +1694,10 @@ focus_tree = {
 				}
 			}
 		}
-
 		completion_reward = {
 			add_ideas = liberty_ethos_focus
 		}
 	}
-
 	focus = {
 		id = militarism
 		icon = GFX_goal_generic_political_pressure
@@ -1943,11 +1706,8 @@ focus_tree = {
 		y = 1
 		relative_position_id = nationalism_focus
 		cost = 10
-
 		search_filters = { FOCUS_FILTER_POLITICAL  }
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			if = {
 				limit = { has_idea = neutrality_idea }
@@ -1958,7 +1718,6 @@ focus_tree = {
 			set_rule = { can_send_volunteers = yes }
 		}
 	}
-
 	focus = {
 		id = political_correctness
 		icon = GFX_goal_generic_dangerous_deal
@@ -1967,11 +1726,8 @@ focus_tree = {
 		y = 1
 		relative_position_id = internationalism_focus
 		cost = 10
-
 		search_filters = { FOCUS_FILTER_POLITICAL  }
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			if = {
 				limit = { has_idea = neutrality_idea }
@@ -1981,7 +1737,6 @@ focus_tree = {
 			add_ideas = idea_political_correctness
 		}
 	}
-
 	focus = {
 		id = neutrality_focus
 		icon = GFX_goal_generic_neutrality_focus
@@ -1991,11 +1746,8 @@ focus_tree = {
 		y = 1
 		relative_position_id = liberty_ethos
 		cost = 10
-
 		search_filters = { FOCUS_FILTER_POLITICAL }
-
 		available_if_capitulated = yes
-
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -2003,7 +1755,6 @@ focus_tree = {
 				tag = AUS
 			}
 		}
-
 		completion_reward = {
 			if = {
 				limit = { NOT = { has_idea = neutrality_idea } }
@@ -2012,7 +1763,6 @@ focus_tree = {
 			add_political_power = 150
 		}
 	}
-
 	focus = {
 		id = interventionism_focus
 		icon = GFX_goal_generic_political_pressure
@@ -2022,12 +1772,8 @@ focus_tree = {
 		y = 1
 		relative_position_id = liberty_ethos
 		cost = 10
-
 		search_filters = { FOCUS_FILTER_POLITICAL }
-
 		available_if_capitulated = yes
-
-
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -2035,7 +1781,6 @@ focus_tree = {
 				has_idea = neutrality_idea
 			}
 		}
-
 		completion_reward = {
 			if = {
 				limit = { has_idea = neutrality_idea }
@@ -2045,7 +1790,6 @@ focus_tree = {
 			add_political_power = 150
 		}
 	}
-
 	focus = {
 		id = military_youth
 		icon = GFX_goal_generic_more_territorial_claims
@@ -2054,11 +1798,8 @@ focus_tree = {
 		y = 1
 		relative_position_id = militarism
 		cost = 10
-
 		search_filters = { FOCUS_FILTER_POLITICAL  }
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_ideas = military_youth_focus
 			if = {
@@ -2077,7 +1818,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = deterrence
 		icon = GFX_goal_generic_defence
@@ -2086,16 +1826,12 @@ focus_tree = {
 		y = 1
 		relative_position_id = neutrality_focus
 		cost = 10
-
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_INDUSTRY }
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_ideas = deterrence
 		}
 	}
-
 	focus = {
 		id = volunteer_corps
 		icon = GFX_goal_generic_allies_build_infantry
@@ -2104,16 +1840,12 @@ focus_tree = {
 		y = 1
 		relative_position_id = interventionism_focus
 		cost = 10
-
 		search_filters = { FOCUS_FILTER_POLITICAL }
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_ideas = volunteer_corps_focus
 		}
 	}
-
 	focus = {
 		id = paramilitarism
 		icon = GFX_goal_generic_military_sphere
@@ -2122,16 +1854,12 @@ focus_tree = {
 		y = 1
 		relative_position_id = military_youth
 		cost = 10
-
 		search_filters = { FOCUS_FILTER_POLITICAL  }
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_ideas = paramilitarism_focus
 		}
 	}
-
 	focus = {
 		id = indoctrination_focus
 		icon = GFX_goal_generic_propaganda
@@ -2140,17 +1868,13 @@ focus_tree = {
 		y = 1
 		relative_position_id = political_correctness
 		cost = 10
-
 		search_filters = { FOCUS_FILTER_POLITICAL  }
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_ideas = indoctrination_focus
 			add_political_power = 150
 		}
 	}
-
 	focus = {
 		id = foreign_expeditions
 		icon = GFX_goal_generic_more_territorial_claims
@@ -2159,16 +1883,12 @@ focus_tree = {
 		y = 1
 		relative_position_id = volunteer_corps
 		cost = 10
-
 		search_filters = { FOCUS_FILTER_POLITICAL }
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_ideas = foreign_expeditions_focus
 		}
 	}
-
 	focus = {
 		id = why_we_fight
 		icon = GFX_goal_generic_propaganda
@@ -2179,22 +1899,16 @@ focus_tree = {
 				has_defensive_war = yes
 			}
 		}
-
 		continue_if_invalid = yes
-
 		x = -2
 		y = 1
 		relative_position_id = foreign_expeditions
 		cost = 10
-
 		search_filters = { FOCUS_FILTER_POLITICAL }
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_ideas = why_we_fight_focus
 			custom_effect_tooltip = why_we_fight_effect
-
 		}
 	}
 	focus = {
@@ -2207,11 +1921,8 @@ focus_tree = {
 		y = 1
 		relative_position_id = indoctrination_focus
 		cost = 10
-
 		search_filters = { FOCUS_FILTER_POLITICAL  }
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_ideas = political_commissars_focus
 			if = {
@@ -2231,7 +1942,6 @@ focus_tree = {
 			add_political_power = 200
 		}
 	}
-
 	focus = {
 		id = ideological_fanaticism
 		icon = GFX_goal_generic_demand_territory
@@ -2240,16 +1950,12 @@ focus_tree = {
 		y = 1
 		relative_position_id = paramilitarism
 		cost = 10
-
 		search_filters = { FOCUS_FILTER_POLITICAL }
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_ideas = ideological_fanaticism_focus
 		}
 	}
-
 	focus = {
 		id = technology_sharing
 		icon = GFX_goal_generic_scientific_exchange
@@ -2269,11 +1975,8 @@ focus_tree = {
 		y = 1
 		relative_position_id = ideological_fanaticism
 		cost = 10
-
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH }
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			if = {
 				limit = {
@@ -2298,7 +2001,7 @@ focus_tree = {
 					category = industry
 				}
 				add_tech_bonus = {
-					name = infantry_artillery_bonus #@#
+					name = infantry_artillery_bonus
 					bonus = 1.0
 					uses = 1
 					category = infantry_weapons
@@ -2308,3 +2011,4 @@ focus_tree = {
 		}
 	}
 }
+

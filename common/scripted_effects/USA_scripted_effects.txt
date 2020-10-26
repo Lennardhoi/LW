@@ -1,4 +1,4 @@
-#Add to scripted triggers if more levels of hyper inflation is added
+
 USA_depression_clear_all = {
 	remove_ideas = {
 		great_depression
@@ -7,9 +7,8 @@ USA_depression_clear_all = {
 	}
 }
 
-#Important to put HIGHEST first
 USA_great_depression_level_up = {
-	# level 5 not relevant. Cannot go above.
+
 	custom_effect_tooltip = USA_great_depression_up_tt
 	if = {
 		limit = { has_idea = great_depression_2 }
@@ -25,10 +24,8 @@ USA_great_depression_level_up = {
 			add_idea = great_depression_2
 		}
 	}
-
 }
 
-#Important to put LOWEST first
 USA_great_depression_level_down = {
 	if = {
 		limit = { has_idea = great_depression_3 }
@@ -52,7 +49,6 @@ USA_great_depression_level_down = {
 		}
 	}
 }
-
 USA_congress_get_quorum = {
 	set_variable = { var = quorum_low value = senators_total }
 	multiply_variable = { var = quorum_low value = 0.4 }
@@ -84,17 +80,14 @@ USA_congress_small_opposition = {
 	hidden_effect = {
 		USA_senate_small_opposition = yes
 		USA_house_small_opposition = yes
-
 	}
 }
-
 USA_senate_small_opposition = {
 	custom_effect_tooltip = mtg_usa_senate_small_opposition_tt
 	add_to_variable = { senators_support = -2 }
 	clamp_variable = { var = senators_support max = senators_total min = 0 }
 	USA_recalc_congress_icon_frames = yes
 }
-
 USA_house_small_opposition = {
 	custom_effect_tooltip = mtg_usa_house_small_opposition_tt
 	add_to_variable = { representatives_support = -10 }
@@ -107,21 +100,18 @@ USA_senate_small_support = {
 	clamp_variable = { var = senators_support max = senators_total min = 0 }
 	USA_recalc_congress_icon_frames = yes
 }
-
 USA_house_small_support = {
 	custom_effect_tooltip = mtg_usa_house_small_support_tt
 	add_to_variable = { representatives_support = 15 }
 	clamp_variable = { var = representatives_support max = representatives_total min = 0 }
 	USA_recalc_congress_icon_frames = yes
 }
-
 USA_senate_medium_opposition = {
 	custom_effect_tooltip = mtg_usa_senate_medium_opposition_tt
 	add_to_variable = { senators_support = -5 }
 	clamp_variable = { var = senators_support max = senators_total min = 0 }
 	USA_recalc_congress_icon_frames = yes
 }
-
 USA_house_medium_opposition = {
 	custom_effect_tooltip = mtg_usa_house_medium_opposition_tt
 	add_to_variable = { representatives_support = -25 }
@@ -134,7 +124,6 @@ USA_senate_medium_support = {
 	clamp_variable = { var = senators_support max = senators_total min = 0 }
 	USA_recalc_congress_icon_frames = yes
 }
-
 USA_house_medium_support = {
 	custom_effect_tooltip = mtg_usa_house_medium_support_tt
 	add_to_variable = { representatives_support = 30 }
@@ -147,7 +136,6 @@ USA_senate_large_opposition = {
 	clamp_variable = { var = senators_support max = senators_total min = 0 }
 	USA_recalc_congress_icon_frames = yes
 }
-
 USA_house_large_opposition = {
 	custom_effect_tooltip = mtg_usa_house_large_opposition_tt
 	add_to_variable = { representatives_support = -70 }
@@ -160,7 +148,6 @@ USA_senate_large_support = {
 	clamp_variable = { var = senators_support max = senators_total min = 0 }
 	USA_recalc_congress_icon_frames = yes
 }
-
 USA_house_large_support = {
 	custom_effect_tooltip = mtg_usa_house_large_support_tt
 	add_to_variable = { representatives_support = 100 }
@@ -172,16 +159,13 @@ USA_congress_medium_opposition = {
 	hidden_effect = {
 		USA_senate_medium_opposition = yes
 		USA_house_medium_opposition = yes
-
 	}
 }
-
 USA_congress_large_opposition = {
 	custom_effect_tooltip = mtg_usa_congress_large_opposition_tt
 	hidden_effect = {
 		USA_senate_large_opposition = yes
 		USA_house_large_opposition = yes
-
 	}
 }
 USA_congress_small_support = {
@@ -189,16 +173,13 @@ USA_congress_small_support = {
 	hidden_effect = {
 		USA_senate_small_support = yes
 		USA_house_small_support = yes
-
 	}
 }
-
 USA_congress_medium_support = {
 	custom_effect_tooltip = mtg_usa_congress_medium_support_tt
 	hidden_effect = {
 		USA_senate_medium_support = yes
 		USA_house_medium_support = yes
-
 	}
 }
 USA_congress_large_support = {
@@ -206,11 +187,10 @@ USA_congress_large_support = {
 	hidden_effect = {
 		USA_senate_large_support = yes
 		USA_house_large_support = yes
-
 	}
 }
 USA_election_senate = {
-	set_variable = { var = senators_for_reelection value = senators_total } #not temp because needed for events
+	set_variable = { var = senators_for_reelection value = senators_total }
 	multiply_variable = { senators_for_reelection = 0.3 }
 	multiply_variable = { senators_for_reelection = 0.3 }
 	multiply_variable = { senators_for_reelection = election_factor }
@@ -228,7 +208,7 @@ USA_election_senate = {
 	USA_recalc_congress_icon_frames = yes
 }
 USA_election_house = {
-	set_variable = { var = representatives_for_reelection value = representatives_total } #not temp because needed for events
+	set_variable = { var = representatives_for_reelection value = representatives_total }
 	multiply_variable = { representatives_for_reelection = 0.5 }
 	multiply_variable = { representatives_for_reelection = 0.3 }
 	multiply_variable = { representatives_for_reelection = election_factor }
@@ -247,14 +227,14 @@ USA_election_house = {
 	clamp_variable = { var = senators_support max = representatives_total min = 0 }
 	USA_recalc_congress_icon_frames = yes
 }
-USA_return_majority = { #for communist/fascist
+USA_return_majority = {
 	custom_effect_tooltip = USA_return_majority_tt
 	set_variable = { var = goal_value_senators value = senators_total }
 	multiply_variable = { var = goal_value_senators value = 0.7 }
 	round_variable = goal_value_senators
 	if = {
 		limit = {
-			check_variable = { var = senators_support value = goal_value_senators compare = less_than } #shouldn't punish player
+			check_variable = { var = senators_support value = goal_value_senators compare = less_than }
 		}
 		set_variable = { var = senators_support value = goal_value_senators }
 	}
@@ -263,7 +243,7 @@ USA_return_majority = { #for communist/fascist
 	round_variable = goal_value_representatives
 	if = {
 		limit = {
-			check_variable = { var = representatives_support value = goal_value_representatives compare = less_than } #shouldn't punish player
+			check_variable = { var = representatives_support value = goal_value_representatives compare = less_than }
 		}
 		set_variable = { var = representatives_support value = goal_value_representatives }
 	}
@@ -278,9 +258,7 @@ USA_flip_support = {
 	set_variable = { representatives_support = representatives_temp }
 	USA_recalc_congress_icon_frames = yes
 }
-
 USA_recalc_congress_icon_frames = {
-
 	set_temp_variable = { senators_temp = senators_support }
 	divide_temp_variable = { senators_temp = senators_total }
 	multiply_temp_variable = { senators_temp = 21 }
@@ -296,7 +274,6 @@ USA_recalc_congress_icon_frames = {
 		set_temp_variable = { senators_temp = 1 }
 	}
 	set_variable = { current_senate_icon_frame = senators_temp }
-
 	set_temp_variable = { house_temp = representatives_support }
 	divide_temp_variable = { house_temp = representatives_total }
 	multiply_temp_variable = { house_temp = 21 }
@@ -330,7 +307,6 @@ USA_calc_stars = {
 		set_cosmetic_tag = USA_49
 	}
 }
-
 USA_set_president_effect = {
 	if = {
 		limit = {
@@ -357,7 +333,6 @@ USA_set_president_effect = {
 			expire = "1965.1.1"
 			ideology = oligarchism
 			traits = {
-
 			}
 		}
 	}
@@ -372,8 +347,8 @@ USA_set_president_effect = {
 			expire = "1965.1.1"
 			ideology = oligarchism
 			traits = {
-
 			}
 		}
 	}
 }
+

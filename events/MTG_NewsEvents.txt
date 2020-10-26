@@ -1,21 +1,13 @@
 ﻿add_namespace = mtg_news
 
 
-#ID mtg_news 1-10: USA
-
-
-
-# US Pursues Neutrality
 news_event = {
 	id = mtg_news.3
 	title = mtg_news.3.t
 	desc = mtg_news.3.desc
 	picture = GFX_news_event_generic_usa_treaty
-
 	major = yes
-
 	is_triggered_only = yes
-
 	option = {
 		name = mtg_news.3.a
 		trigger = {
@@ -61,17 +53,14 @@ news_event = {
 		}
 	}
 }
-# US goes Interventionist
+
 news_event = {
 	id = mtg_news.4
 	title = mtg_news.4.t
 	desc = mtg_news.4.desc
 	picture = GFX_news_event_generic_usa_treaty
-
 	major = yes
-
 	is_triggered_only = yes
-
 	option = {
 		name = mtg_news.4.a
 		trigger = {
@@ -103,17 +92,14 @@ news_event = {
 		}
 	}
 }
-# US war powers act
+
 news_event = {
 	id = mtg_news.5
 	title = mtg_news.5.t
 	desc = mtg_news.5.desc
 	picture = GFX_news_event_generic_usa_treaty
-
 	major = yes
-
 	is_triggered_only = yes
-
 	option = {
 		name = mtg_news.5.a
 		trigger = {
@@ -122,17 +108,13 @@ news_event = {
 	}
 }
 
-# HOL caves to the Germans
 news_event = {
 	id = mtg_news.10
 	title = mtg_news.10.t
 	desc = mtg_news.10.desc
 	picture = GFX_news_event_generic_sign_treaty1
-
 	major = yes
-
 	is_triggered_only = yes
-
 	option = {
 		name = mtg_news.10.a
 		trigger = {
@@ -162,17 +144,13 @@ news_event = {
 	}
 }
 
-# HOL caves to the British
 news_event = {
 	id = mtg_news.11
 	title = mtg_news.11.t
 	desc = mtg_news.11.desc
 	picture = GFX_news_event_generic_sign_treaty1
-
 	major = yes
-
 	is_triggered_only = yes
-
 	option = {
 		name = mtg_news.10.b
 		trigger = {
@@ -202,19 +180,15 @@ news_event = {
 	}
 }
 
-# HOL maintains trade neutrality
 news_event = {
 	id = mtg_news.12
 	title = mtg_news.12.t
 	desc = mtg_news.12.desc
 	picture = GFX_news_event_generic_sign_treaty3
-
 	major = yes
-
 	is_triggered_only = yes
-
 	option = {
-		name = mtg_news.12.a # Direct 1939/1940 quote by Roger Makins, Deputy Head of the Foreign Office Central Department: "A people whose 'inherent desire for personal gain' rates their burning sympathy for Finland at one ambulance and who select as leaders in an emergency M. de Geer and M. van Kleffens deserve to be overrun and enslaved."
+		name = mtg_news.12.a
 		trigger = {
 			original_tag = ENG
 		}
@@ -241,17 +215,13 @@ news_event = {
 	}
 }
 
-# UK Imperial Conference
 news_event = {
 	id = mtg_news.13
 	title = mtg_britain.82.t
 	desc = mtg_news.13.desc
 	picture = GFX_news_event_imperial_conference
-
 	major = yes
-
 	is_triggered_only = yes
-
 	option = {
 		name = mtg_news.13.a
 		trigger = {
@@ -290,24 +260,19 @@ news_event = {
 		}
 	}
 }
-
 news_event = {
 	id = mtg_news.55
 	title = mtg_news.55.t
 	desc = mtg_news.55.desc
 	picture = GFX_news_event_generic_funeral
-
 	major = yes
-
 	is_triggered_only = yes
-
 	option = {
 		name = mtg_news.55.a
 		trigger = {
 			original_tag = ENG
 		}
 	}
-
 	option = {
 		name = mtg_news.55.b
 		trigger = {
@@ -315,24 +280,19 @@ news_event = {
 		}
 	}
 }
-
 news_event = {
 	id = mtg_news.59
 	title = mtg_news.59.t
 	desc = mtg_news.59.desc
 	picture = GFX_news_event_generic_funeral
-
 	major = yes
-
 	is_triggered_only = yes
-
 	option = {
 		name = mtg_news.59.a
 		trigger = {
 			original_tag = ENG
 		}
 	}
-
 	option = {
 		name = mtg_news.55.b
 		trigger = {
@@ -341,17 +301,13 @@ news_event = {
 	}
 }
 
-#London naval treaty is dead
 news_event = {
 	id = mtg_news.60
 	title = MTG_naval_treaty.8.t
 	desc = MTG_naval_treaty.8.desc
 	picture = GFX_news_event_generic_naval_treaty
-
 	major = yes
-
 	is_triggered_only = yes
-
 	option = {
 		name = MTG_naval_treaty.8.a
 		trigger = {
@@ -373,3 +329,4 @@ news_event = {
 		}
 	}
 }
+

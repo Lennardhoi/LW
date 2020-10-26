@@ -1,0 +1,248 @@
+﻿start_equipment_factor = 0.25
+division_template = {
+	name = "Pekhotna Divizija"
+	division_names_group = BUL_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Konna Divizija"
+	division_names_group = BUL_CAV_01
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 0 y = 3 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+	}
+}
+division_template = {
+	name = "Tankov Polk"
+	division_names_group = BUL_ARM_01
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+units = {
+
+	division = {
+
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location =934
+		division_template = "Konna Divizija"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division = {
+
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location =934
+		division_template = "Konna Divizija"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division = {
+		name = "Nezavisim Tankov Polk"
+		location =934
+		division_template = "Tankov Polk"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+
+	division = {
+
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location =934
+		division_template = "Pekhotna Divizija"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division = {
+
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location =934
+		division_template = "Pekhotna Divizija"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+
+	division = {
+
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location =6614
+		division_template = "Pekhotna Divizija"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division = {
+
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location =6614
+		division_template = "Pekhotna Divizija"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division = {
+
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location =6614
+		division_template = "Pekhotna Divizija"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+
+	division = {
+
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location =9286
+		division_template = "Pekhotna Divizija"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division = {
+
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location =9286
+		division_template = "Pekhotna Divizija"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+
+	division = {
+
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location =9122
+		division_template = "Pekhotna Divizija"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division = {
+
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location =9122
+		division_template = "Pekhotna Divizija"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division = {
+
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location =9122
+		division_template = "Pekhotna Divizija"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+}
+air_wings = {
+
+	48 = {
+		tac_bomber_equipment_1 =  { owner = "BUL" creator = "SOV" amount = 36 }
+		tac_bomber_equipment_0 =  { owner = "BUL" creator = "FRA" amount = 12 }
+		CAS_equipment_1 =  { owner = "BUL" creator = "POL" version_name = "PZL P.43" amount = 36 }
+		fighter_equipment_0 =  { owner = "BUL" creator = "POL" version_name = "PZL P.24" amount = 36 }
+		fighter_equipment_1 =  { owner = "BUL" amount = 72 }
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "BUL"
+		}
+		requested_factories = 1
+		progress = 0.48
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "BUL"
+		}
+		requested_factories = 1
+		progress = 0.69
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_equipment_1
+			creator = "BUL"
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "BUL"
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_1
+			creator = "BUL"
+		}
+		requested_factories = 1
+		progress = 0.55
+		efficiency = 100
+	}
+}
+

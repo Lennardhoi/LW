@@ -1,29 +1,25 @@
-#	Example:
-#
-#	example_effect = {
-	#		add_political_power = 66
-	#		add_popularity = {
-		#			ideology = fascism
-		#			popularity = 0.33
-		#		}
-	#	}
-#
-#
-#	In a script file:
-#
-#	effect = {
-	#		example_effect = yes
-	#	}
-#
 
-#####################################
-### emergency_factory_conversion ####
-#####################################
 
-#This is going to give misleading and ugly tooltips. Making it nice will take effort. TODO_WTT_CD make nice or ignore and remove comment. Easiest solution is just making a custom tooltip that says "5 civilian factories will be converted to military factories" and ignore telling the player the states where it will happen.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 replace_civ_with_arms_factories = {
-
 	random_owned_controlled_state = {
 		limit = {
 			is_fully_controlled_by = ROOT
@@ -39,7 +35,6 @@ replace_civ_with_arms_factories = {
 			instant_build = yes
 		}
 	}
-
 	random_owned_controlled_state = {
 		limit = {
 			is_fully_controlled_by = ROOT
@@ -55,7 +50,6 @@ replace_civ_with_arms_factories = {
 			instant_build = yes
 		}
 	}
-
 	random_owned_controlled_state = {
 		limit = {
 			is_fully_controlled_by = ROOT
@@ -71,7 +65,6 @@ replace_civ_with_arms_factories = {
 			instant_build = yes
 		}
 	}
-
 	random_owned_controlled_state = {
 		limit = {
 			is_fully_controlled_by = ROOT
@@ -87,7 +80,6 @@ replace_civ_with_arms_factories = {
 			instant_build = yes
 		}
 	}
-
 	random_owned_controlled_state = {
 		limit = {
 			is_fully_controlled_by = ROOT
@@ -105,7 +97,6 @@ replace_civ_with_arms_factories = {
 	}
 }
 
-#Country scope
 ROOT_inherit_current_scope_wars_effect = {
 	custom_effect_tooltip = ROOT_inherit_current_scope_wars_effect
 	hidden_effect = {
@@ -123,16 +114,12 @@ ROOT_inherit_current_scope_wars_effect = {
 		}
 	}
 }
-
-
-
 print_variable_log_effect = {
 	print_variables = {
 		file = variables_yug
 		append = yes
 	}
 }
-
 remove_naval_treaty_effect = {
 	if = {
 		limit = {
@@ -160,9 +147,8 @@ remove_naval_treaty_effect = {
 	}
 	set_country_flag = MTG_naval_treaty_abandoned
 }
-
 civil_war_anti_exploiter_punitive_action = {
-	# Anti-exploiter punitive brigades! BET YA DIDN'T SEE THAT COMING DID YA?!
+
 	if = {
 		limit = {
 			has_army_size = {
@@ -178,11 +164,9 @@ civil_war_anti_exploiter_punitive_action = {
 				infantry = { x = 0 y = 0 }
 				infantry = { x = 0 y = 1 }
 				infantry = { x = 0 y = 2 }
-
 				infantry = { x = 1 y = 0 }
 				infantry = { x = 1 y = 1 }
 				infantry = { x = 1 y = 2 }
-
 				infantry = { x = 2 y = 0 }
 				artillery_brigade = { x = 2 y = 1 }
 				artillery_brigade = { x = 2 y = 2 }
@@ -305,7 +289,6 @@ civil_war_anti_exploiter_punitive_action = {
 		}
 	}
 }
-
 clear_sabotaged_resources_if_necesary = {
 	if = {
 		limit = {
@@ -315,7 +298,6 @@ clear_sabotaged_resources_if_necesary = {
 				}
 			}
 		}
-
 		clear_variable = sabotaged_oil
 		clear_variable = sabotaged_aluminium
 		clear_variable = sabotaged_rubber
@@ -324,7 +306,6 @@ clear_sabotaged_resources_if_necesary = {
 		clear_variable = sabotaged_chromium
 	}
 }
-
 remove_from_allowed_party = {
 	if = {
 		limit = { has_government = democratic }
@@ -344,10 +325,8 @@ remove_from_allowed_party = {
 	}
 }
 
-#expectes a temp variable country_to_initiate which should contain original_tag to instantiate as a collabration government
 instantiate_collaboration_government = {
 }
-
 abandon_colony_tag = {
 	if = {
 		limit = {
@@ -432,12 +411,9 @@ abandon_colony_tag = {
 		}
 	}
 }
-
-
 on_daily = {
-
 }
 
-#on_daily_USA = {
-	#	# you can specify an on daily action for a specific country
-	#}
+
+
+

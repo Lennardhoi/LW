@@ -1,9 +1,7 @@
 state={
 	id=146
 	name="STATE_146"
-
 	state_category = town
-
 	history={
 		owner = FIN
 		add_core_of = FIN
@@ -12,27 +10,24 @@ state={
 			infrastructure = 5
 			industrial_complex = 2
 
-			#Mannerheim Line
-			9100 = {
+			8621 = {
 				bunker = 2
 			}
-			9105 = {
+			8626 = {
 				bunker = 2
 			}
-			9206 = {
+			8727 = {
 				coastal_bunker = 1
 			}
 		}
 		victory_points = {
-			9206 3
+			8727 3
 		}
-
-
 	}
-
 	provinces={
-		2332 3050 3060 3133 3187 6052 6150 6153 9100 9105 9150 9176 9206 11046 11156 11162
+		2220 2938 2948 3021 3075 5761 5859 5862 8621 8626 8671 8697 8727 10373 10483 10489
 	}
 	manpower=418635
 	buildings_max_level_factor=1.000
 }
+

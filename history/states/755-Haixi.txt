@@ -2,19 +2,17 @@ state={
 	id=755
 	name="STATE_755"
 	provinces={
-		2053 2099 7997 10750 10796 10834 10865 12846 12890 13146
+		1991 2026 7606 10173 10208 10238 10259 12038 12068 12255
 	}
 	manpower=1000004
 	buildings_max_level_factor=1.000
 	state_category = pastoral
 	history={
 		owner = CHI
-
 		add_core_of = CHI
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1
-
 		}
 		1938.10.25 = {
 			if = {
@@ -22,16 +20,12 @@ state={
 					NOT = {
 						has_dlc = "Waking the Tiger"
 					}
-
 				}
 				CHI = {
 					transfer_state = PREV
-
 				}
-
 			}
-
 		}
-
 	}
 }
+

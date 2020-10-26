@@ -1,32 +1,24 @@
 focus_tree = {
 	id = TheSpot_FinlandFocus
-
 	country = {
 		factor = 0
-
 		modifier = {
 			add = 10
 			tag = FIN
 		}
 	}
-
 	default = no
-
-
 	focus = {
 		id = fin_situational_awareness
 		icon = GFX_goal_flag_finland
 		x = 9
 		y = 0
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_political_power = 120
 		}
 	}
-
 	focus = {
 		id = fin_expand_Pieksamaki
 		icon = GFX_goal_generic_construct_infrastructure
@@ -34,9 +26,7 @@ focus_tree = {
 		x = 5
 		y = 1
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			150 = {
 				add_extra_state_shared_building_slots = 1
@@ -56,7 +46,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = fin_cattlefarms
 		icon = GFX_goal_generic_construct_civ_factory
@@ -65,9 +54,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			149 = {
 				add_extra_state_shared_building_slots = 1
@@ -79,7 +66,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = fin_logging
 		icon = GFX_goal_generic_construct_civ_factory
@@ -88,9 +74,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			150 = {
 				add_extra_state_shared_building_slots = 1
@@ -102,7 +86,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = fin_industrialize_Helsinki
 		icon = GFX_goal_generic_construct_civ_factory
@@ -111,9 +94,7 @@ focus_tree = {
 		x = -1
 		y = 3
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			111 = {
 				add_extra_state_shared_building_slots = 2
@@ -125,7 +106,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = fin_Swedish_arms
 		icon = GFX_goal_generic_construct_mil_factory
@@ -134,14 +114,11 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_offsite_building = { type = arms_factory level = 1 }
 		}
 	}
-
 	focus = {
 		id = fin_German_arms
 		icon = GFX_focus_ger_oppose_hitler
@@ -150,14 +127,11 @@ focus_tree = {
 		x = 1
 		y = 2
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_offsite_building = { type = arms_factory level = 1 }
 		}
 	}
-
 	focus = {
 		id = fin_national_armory
 		icon = GFX_goal_generic_construct_mil_factory
@@ -166,9 +140,7 @@ focus_tree = {
 		x = 1
 		y = 3
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			111 = {
 				add_extra_state_shared_building_slots = 1
@@ -180,7 +152,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = fin_industrial_focus
 		icon = GFX_goal_generic_production
@@ -189,9 +160,7 @@ focus_tree = {
 		x = -2
 		y = 4
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = industrial_bonus
@@ -201,7 +170,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = fin_secret_weapons
 		icon = GFX_goal_generic_secret_weapon
@@ -210,9 +178,7 @@ focus_tree = {
 		x = 2
 		y = 4
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = secret_bonus
@@ -222,9 +188,7 @@ focus_tree = {
 				category = rocketry
 			}
 		}
-
 	}
-
 	focus = {
 		id = fin_extra_tech_slot
 		icon = GFX_focus_research
@@ -233,14 +197,11 @@ focus_tree = {
 		x = 0
 		y = 4
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_research_slot = 1
 		}
 	}
-
 	focus = {
 		id = fin_extra_tech_slot_2
 		icon = GFX_focus_research
@@ -254,14 +215,11 @@ focus_tree = {
 		x = 0
 		y = 5
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_research_slot = 1
 		}
 	}
-
 	focus = {
 		id = fin_aviation_effort
 		icon = GFX_goal_generic_build_airforce
@@ -269,12 +227,9 @@ focus_tree = {
 		x = -5
 		y = 1
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			air_experience = 25
-
 			111 = {
 				add_building_construction = {
 					type = air_base
@@ -282,8 +237,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-
-
 			add_tech_bonus = {
 				name = air_doc_bonus
 				bonus = 1
@@ -292,7 +245,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = fin_license_German_fighters
 		icon = GFX_goal_generic_air_fighter
@@ -302,9 +254,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = fin_aviation_effort
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = fighter_bonus
@@ -318,7 +268,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = fin_license_German_CAS
 		icon = GFX_goal_generic_CAS
@@ -328,9 +277,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = fin_aviation_effort
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = CAS_bonus
@@ -340,7 +287,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = fin_aviation_effort_2
 		icon = GFX_goal_generic_build_airforce
@@ -349,14 +295,9 @@ focus_tree = {
 		x = 0
 		y = 2
 		cost = 10
-
 		available_if_capitulated = yes
-
-
-
 		completion_reward = {
 			air_experience = 25
-
 			111 = {
 				add_building_construction = {
 					type = air_base
@@ -364,8 +305,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-
-
 			add_tech_bonus = {
 				name = air_doc_bonus
 				bonus = 1
@@ -374,7 +313,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = fin_rocket_effort
 		icon = GFX_focus_rocketry
@@ -383,9 +321,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = fin_aviation_effort_2
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = jet_rocket_bonus
@@ -394,9 +330,7 @@ focus_tree = {
 				category = rocketry
 			}
 		}
-
 	}
-
 	focus = {
 		id = fin_naval_effort
 		icon = GFX_goal_generic_construct_naval_dockyard
@@ -404,9 +338,7 @@ focus_tree = {
 		x = -9
 		y = 1
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			navy_experience = 25
 			111 = {
@@ -417,10 +349,8 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-
 		}
 	}
-
 	focus = {
 		id = fin_baltic_fleet
 		icon = GFX_goal_generic_build_navy
@@ -429,9 +359,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = sub_op_bonus
@@ -445,7 +373,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = fin_expand_baltic_fleet
 		prerequisite = { focus = fin_naval_effort }
@@ -454,9 +381,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			navy_experience = 25
 			add_tech_bonus = {
@@ -467,10 +392,8 @@ focus_tree = {
 				technology = improved_light_cruiser
 				technology = improved_heavy_cruiser
 			}
-
 		}
 	}
-
 	focus = {
 		id = fin_democracy
 		icon = GFX_goal_support_democracy
@@ -479,27 +402,20 @@ focus_tree = {
 		x = 1
 		y = 1
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_stability = 0.15
-
 		}
 	}
-
 	focus = {
 		id = fin_armed_and_ready
 		icon = GFX_goal_generic_defence
 		prerequisite = { focus = fin_democracy }
 		relative_position_id = fin_situational_awareness
-
 		x = 1
 		y = 2
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_ideas = deterrence
 			111 = {
@@ -508,30 +424,23 @@ focus_tree = {
 					type = arms_factory
 					level = 2
 					instant_build = yes
-
 				}
 			}
-
 		}
 	}
-
 	focus = {
 		id = fin_authoritarianism
 		prerequisite = { focus = fin_situational_awareness }
 		icon = GFX_goal_support_fascism
 		relative_position_id = fin_situational_awareness
-
 		x = -1
 		y = 1
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_ideas = nationalism
 		}
 	}
-
 	focus = {
 		id = fin_militarism
 		prerequisite = { focus = fin_authoritarianism }
@@ -540,14 +449,11 @@ focus_tree = {
 		x = -1
 		y = 2
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_ideas = military_youth_focus
 		}
 	}
-
 	focus = {
 		id = fin_whiteguard
 		prerequisite = { focus = fin_armed_and_ready focus = fin_militarism }
@@ -556,14 +462,11 @@ focus_tree = {
 		x = 0
 		y = 3
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_ideas = fin_continuation_war
 		}
 	}
-
 	focus = {
 		id = fin_mannerheim_line
 		prerequisite = { focus = fin_whiteguard }
@@ -572,36 +475,31 @@ focus_tree = {
 		x = 0
 		y = 4
 		cost = 3
-
 		available_if_capitulated = yes
-
 		bypass = {
 			NOT = { 146 = { is_controlled_by = FIN }
 			}
 		}
-
 		available = {
 			146 = { is_controlled_by = FIN }
 		}
-
 		completion_reward = {
 			146 = {
 				add_building_construction = {
 					type = bunker
 					level = 2
-					province = 9105
+					province =8626
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = bunker
 					level = 2
-					province = 9100
+					province =8621
 					instant_build = yes
 				}
 			}
 		}
 	}
-
 	focus = {
 		id = fin_continuation_war
 		prerequisite = { focus = fin_mannerheim_line }
@@ -610,28 +508,23 @@ focus_tree = {
 		x = 0
 		y = 5
 		cost = 0
-
 		available_if_capitulated = yes
-
 		available = {
 			GER = {
 				has_war_with = SOV
 			}
 		}
-
 		bypass = {
 			FIN = {
 				is_in_faction_with = GER
 			}
 		}
-
 		completion_reward = {
 			GER = {
 				add_to_faction = ROOT
 			}
 		}
 	}
-
 	focus = {
 		id = fin_greater_dream
 		prerequisite = { focus = fin_continuation_war }
@@ -640,25 +533,17 @@ focus_tree = {
 		x = 0
 		y = 6
 		cost = 1
-
 		available_if_capitulated = yes
-
 		completion_reward = {
-
-
 		}
 	}
-
-
 	focus = {
 		id = fin_Motti_tactics
 		icon = GFX_goal_generic_allies_build_infantry
 		x = 21
 		y = 1
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			army_experience = 5
 			add_tech_bonus = {
@@ -669,7 +554,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = fin_Ski_troops
 		icon = GFX_goal_generic_allies_build_infantry
@@ -678,9 +562,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			army_experience = 5
 			add_tech_bonus = {
@@ -691,7 +573,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = fin_improvisation
 		icon = GFX_goal_generic_allies_build_infantry
@@ -700,9 +581,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			army_experience = 5
 			add_tech_bonus = {
@@ -713,8 +592,6 @@ focus_tree = {
 			}
 		}
 	}
-
-
 	focus = {
 		id = fin_equipment_effort
 		icon = GFX_goal_generic_small_arms
@@ -723,9 +600,7 @@ focus_tree = {
 		relative_position_id = fin_Motti_tactics
 		prerequisite = { focus = fin_Motti_tactics }
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = infantry_artillery_bonus
@@ -736,7 +611,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = fin_equipment_effort_2
 		icon = GFX_goal_generic_army_artillery
@@ -745,9 +619,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = fin_Motti_tactics
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = infantry_artillery_bonus
@@ -758,7 +630,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = fin_equipment_effort_3
 		icon = GFX_goal_generic_army_artillery2
@@ -767,9 +638,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = fin_Motti_tactics
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = infantry_artillery_bonus
@@ -780,7 +649,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = fin_motorization_effort
 		icon = GFX_goal_generic_army_motorized
@@ -790,9 +658,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = fin_Motti_tactics
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = motorized_bonus
@@ -801,7 +667,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = fin_armor_effort
 		icon = GFX_goal_generic_army_tanks
@@ -810,9 +675,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = fin_Motti_tactics
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = armor_bonus
@@ -831,7 +694,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = fin_armor_effort_2
 		icon = GFX_goal_generic_army_tanks
@@ -840,9 +702,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = fin_Motti_tactics
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = armor_bonus
@@ -861,5 +721,5 @@ focus_tree = {
 			}
 		}
 	}
-
 }
+

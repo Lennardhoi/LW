@@ -1,12 +1,10 @@
 ﻿add_namespace = mtg_britain
 
-# Abdication Crisis Edward VIII
 country_event = {
 	id = mtg_britain.1
 	title = mtg_britain.1.t
 	desc = mtg_britain.1.d
 	picture = GFX_report_event_eng_edward_and_wallis
-
 	trigger = {
 		tag = ENG
 		has_country_flag = ENG_king_died
@@ -14,11 +12,8 @@ country_event = {
 		NOT = { has_country_flag = ENG_edward_abdicating }
 		has_dlc = "Man the Guns"
 	}
-
 	fire_only_once = yes
-
 	mean_time_to_happen = { days = 14 }
-
 	option = {
 		name = mtg_britain.1.c
 		add_stability = 0.05
@@ -26,22 +21,18 @@ country_event = {
 		country_event = { id = mtg_britain.14 days = 5 random_days = 5 }
 	}
 }
-
 country_event = {
 	id = mtg_britain.14
 	title = britain.17.t
 	desc = britain.17.d
 	picture = GFX_report_event_generic_sign_treaty2
-
 	is_triggered_only = yes
-
 	immediate = {
 		hidden_effect = {
 			remove_ideas = ENG_king_edward
 			add_ideas = ENG_george_vi
 		}
 	}
-
 	option = {
 		name = britain.17.a
 		effect_tooltip = {
@@ -51,16 +42,13 @@ country_event = {
 	}
 }
 
-# Motion of No Confidence event
 country_event = {
 	id = mtg_britain.22
 	title = mtg_britain.22.t
 	desc = mtg_britain.22.d
 	picture = GFX_report_event_generic_parliament
-
 	is_triggered_only = yes
 
-	# Ok
 	option = {
 		name = mtg_britain.22.a
 		retire_country_leader = yes
@@ -77,16 +65,13 @@ country_event = {
 	}
 }
 
-# Event for ENG and Dominions notifying of Imperial Conference
 country_event = {
 	id = mtg_britain.82
 	title = mtg_britain.82.t
 	desc = mtg_britain.82.d
 	picture = GFX_report_event_imperial_conference
-
 	is_triggered_only = yes
 
-	# Ok
 	option = {
 		name = mtg_britain.82.a
 		trigger = {
@@ -124,7 +109,6 @@ country_event = {
 		}
 	}
 
-	# Ok
 	option = {
 		name = mtg_britain.82.b
 		trigger = {
@@ -134,22 +118,18 @@ country_event = {
 	}
 }
 
-# Event for ENG beginning discussions on Imperial Defense
 country_event = {
 	id = mtg_britain.83
 	title = mtg_britain.83.t
 	desc = mtg_britain.83.d
 	picture = GFX_report_event_generic_conference
-
 	is_triggered_only = yes
-
 	immediate = {
 		hidden_effect = {
 			set_country_flag = ENG_imperial_defense_flag
 		}
 	}
 
-	# Ask them if they want to agree to commit
 	option = {
 		name = mtg_britain.83.a
 		every_country = {
@@ -181,19 +161,15 @@ country_event = {
 		}
 		ENG_imperial_conference_set_subject_counter = yes
 	}
-
 }
 
-# Event for Dominions asking for vote on Imperial Defense
 country_event = {
 	id = mtg_britain.84
 	title = mtg_britain.83.t
 	desc = mtg_britain.84.d
 	picture = GFX_report_event_generic_conference
-
 	is_triggered_only = yes
 
-	# Accept
 	option = {
 		name = mtg_britain.84.a
 		ai_chance = {
@@ -236,19 +212,15 @@ country_event = {
 			}
 		}
 	}
-
 }
 
-# Event for ENG telling FROM voted yes on Imperial Defense
 country_event = {
 	id = mtg_britain.85
 	title = mtg_britain.85.t
 	desc = mtg_britain.85.d
 	picture = GFX_report_event_generic_read_write
-
 	is_triggered_only = yes
 
-	# Ok
 	option = {
 		name = mtg_britain.85.a
 		effect_tooltip = {
@@ -285,22 +257,18 @@ country_event = {
 	}
 }
 
-# Event for ENG beginning discussions on Imperial Trade
 country_event = {
 	id = mtg_britain.87
 	title = mtg_britain.87.t
 	desc = mtg_britain.87.d
 	picture = GFX_report_event_generic_conference
-
 	is_triggered_only = yes
-
 	immediate = {
 		hidden_effect = {
 			set_country_flag = ENG_imperial_trade_flag
 		}
 	}
 
-	# Ask them if they want to agree to commit
 	option = {
 		name = mtg_britain.83.a
 		every_country = {
@@ -332,19 +300,15 @@ country_event = {
 		}
 		ENG_imperial_conference_set_subject_counter = yes
 	}
-
 }
 
-# Event for Dominions asking for vote on Imperial Trade
 country_event = {
 	id = mtg_britain.88
 	title = mtg_britain.87.t
 	desc = mtg_britain.88.d
 	picture = GFX_report_event_generic_conference
-
 	is_triggered_only = yes
 
-	# Accept
 	option = {
 		name = mtg_britain.88.a
 		ai_chance = {
@@ -367,7 +331,6 @@ country_event = {
 		FROM = { country_event = { id = mtg_britain.89 } }
 	}
 
-	# Reject
 	option = {
 		name = mtg_britain.88.b
 		ai_chance = {
@@ -393,16 +356,13 @@ country_event = {
 	}
 }
 
-# Event for ENG telling FROM voted yes on Imperial Trade
 country_event = {
 	id = mtg_britain.89
 	title = mtg_britain.89.t
 	desc = mtg_britain.89.d
 	picture = GFX_report_event_generic_read_write
-
 	is_triggered_only = yes
 
-	# Ok
 	option = {
 		name = mtg_britain.89.a
 		effect_tooltip = {
@@ -438,16 +398,13 @@ country_event = {
 	}
 }
 
-# Event for ENG telling FROM voted no on Imperial Trade
 country_event = {
 	id = mtg_britain.90
 	title = mtg_britain.90.t
 	desc = mtg_britain.90.d
 	picture = GFX_report_event_generic_read_write
-
 	is_triggered_only = yes
 
-	# Ok
 	option = {
 		name = mtg_britain.90.a
 		if = {
@@ -473,22 +430,18 @@ country_event = {
 	}
 }
 
-# Event for ENG beginning discussions on Imperial Economy
 country_event = {
 	id = mtg_britain.91
 	title = mtg_britain.91.t
 	desc = mtg_britain.91.d
 	picture = GFX_report_event_generic_conference
-
 	is_triggered_only = yes
-
 	immediate = {
 		hidden_effect = {
 			set_country_flag = ENG_imperial_economy_flag
 		}
 	}
 
-	# Ask them if they want to agree to commit
 	option = {
 		name = mtg_britain.83.a
 		every_country = {
@@ -522,16 +475,13 @@ country_event = {
 	}
 }
 
-# Event for Dominions asking for vote on Imperial Economy
 country_event = {
 	id = mtg_britain.92
 	title = mtg_britain.91.t
 	desc = mtg_britain.92.d
 	picture = GFX_report_event_generic_conference
-
 	is_triggered_only = yes
 
-	# Accept
 	option = {
 		name = mtg_britain.92.a
 		ai_chance = {
@@ -576,16 +526,13 @@ country_event = {
 	}
 }
 
-# Event for ENG telling FROM voted yes on Imperial Economy
 country_event = {
 	id = mtg_britain.93
 	title = mtg_britain.93.t
 	desc = mtg_britain.93.d
 	picture = GFX_report_event_generic_read_write
-
 	is_triggered_only = yes
 
-	# Ok
 	option = {
 		name = mtg_britain.93.a
 		effect_tooltip = {
@@ -622,22 +569,18 @@ country_event = {
 	}
 }
 
-# Event for ENG beginning discussions on Appeasement
 country_event = {
 	id = mtg_britain.95
 	title = mtg_britain.95.t
 	desc = mtg_britain.95.d
 	picture = GFX_report_event_generic_conference
-
 	is_triggered_only = yes
-
 	immediate = {
 		hidden_effect = {
 			set_country_flag = ENG_imperial_appeasement_flag
 		}
 	}
 
-	# Ask them if they want to agree to commit
 	option = {
 		name = mtg_britain.83.a
 		every_country = {
@@ -671,16 +614,13 @@ country_event = {
 	}
 }
 
-# Event for Dominions asking for vote on Appeasement
 country_event = {
 	id = mtg_britain.96
 	title = mtg_britain.95.t
 	desc = mtg_britain.96.d
 	picture = GFX_report_event_generic_conference
-
 	is_triggered_only = yes
 
-	# Accept
 	option = {
 		name = mtg_britain.96.a
 		ai_chance = {
@@ -705,16 +645,13 @@ country_event = {
 	}
 }
 
-# Event for ENG telling FROM voted yes on Appeasement
 country_event = {
 	id = mtg_britain.97
 	title = mtg_britain.97.t
 	desc = mtg_britain.97.d
 	picture = GFX_report_event_generic_read_write
-
 	is_triggered_only = yes
 
-	# Ok
 	option = {
 		name = mtg_britain.97.a
 		effect_tooltip = {
@@ -750,6 +687,4 @@ country_event = {
 		ENG_imperial_conference_clear_in_progress_flags = yes
 	}
 }
-
-
 

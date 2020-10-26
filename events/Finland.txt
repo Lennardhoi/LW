@@ -1,19 +1,15 @@
-﻿###########################
-# Finland Events
-###########################
+﻿
+
 
 add_namespace = finland
 
-# Soviet Ultimatum
 country_event = {
 	id = finland.1
 	title = finland.1.t
 	desc = finland.1.d
 	picture = GFX_report_event_soviet_tanks_snow
-
 	is_triggered_only = yes
-
-	option = { # Refuse
+	option = {
 		name = finland.1.b
 		ai_chance = { factor = 75 }
 		SOV = {
@@ -28,16 +24,12 @@ country_event = {
 		}
 	}
 }
-
-
 country_event = {
 	id = finland.5
 	title = finland.5.t
 	desc = finland.5.d
 	picture = GFX_report_event_swedish_soldier
-
 	is_triggered_only = yes
-
 	option = {
 		name = finland.5.a
 		if = {
@@ -60,18 +52,14 @@ country_event = {
 	}
 }
 
-#Surrender when Soviet has taken too much land
 
-#Soviet response to Finish surrender
 country_event = {
 	id = finland.8
 	title = finland.8.t
 	desc = finland.8.d
 	picture = GFX_report_event_finnish_soldiers_snow
-
 	is_triggered_only = yes
 
-	#Accept surrender
 	option = {
 		name = finland.8.a
 		ai_chance = {
@@ -81,27 +69,15 @@ country_event = {
 		transfer_state = 146
 		transfer_state = 147
 	}
-
 }
-
-
-
 country_event = {
 	id = finland.21
 	title = finland.21.t
 	desc = finland.21.d
 	picture = GFX_report_event_finnish_soldiers_snow
-
 	is_triggered_only = yes
-
-
 	option = {
 		name = finland.21.a
-
 	}
-
 }
-
-
-
 

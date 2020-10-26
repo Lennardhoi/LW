@@ -1,5 +1,4 @@
 JAP_interservice_rivalry_towards_army = {
-
 	if = {
 		limit = {  has_idea = JAP_interservice_rivalry_army_strengthened }
 		swap_ideas = {
@@ -7,7 +6,6 @@ JAP_interservice_rivalry_towards_army = {
 			add_idea = JAP_interservice_rivalry_army_dominant
 		}
 	}
-
 	if = {
 		limit = { has_idea = JAP_interservice_rivalry_balanced }
 		swap_ideas = {
@@ -15,7 +13,6 @@ JAP_interservice_rivalry_towards_army = {
 			add_idea = JAP_interservice_rivalry_army_strengthened
 		}
 	}
-
 	if = {
 		limit = { has_idea = JAP_interservice_rivalry_navy_strengthened }
 		swap_ideas = {
@@ -23,7 +20,6 @@ JAP_interservice_rivalry_towards_army = {
 			add_idea = JAP_interservice_rivalry_balanced
 		}
 	}
-
 	if = {
 		limit = { has_idea = JAP_interservice_rivalry_navy_dominant }
 		swap_ideas = {
@@ -31,11 +27,8 @@ JAP_interservice_rivalry_towards_army = {
 			add_idea = JAP_interservice_rivalry_navy_strengthened
 		}
 	}
-
 }
-
 JAP_interservice_rivalry_towards_navy = {
-
 	if = {
 		limit = { has_idea = JAP_interservice_rivalry_navy_strengthened }
 		swap_ideas = {
@@ -64,18 +57,12 @@ JAP_interservice_rivalry_towards_navy = {
 			add_idea = JAP_interservice_rivalry_army_strengthened
 		}
 	}
-
-
-
 }
-
 JAP_intervene_in_china_level_down = {
-
 	if = {
 		limit = { has_idea = JAP_intervene_in_china_1 }
 		remove_ideas = JAP_intervene_in_china_1
 	}
-
 	if = {
 		limit = { has_idea = JAP_intervene_in_china_2 }
 		swap_ideas = {
@@ -83,7 +70,6 @@ JAP_intervene_in_china_level_down = {
 			add_idea = JAP_intervene_in_china_1
 		}
 	}
-
 	if = {
 		limit = { has_idea = JAP_intervene_in_china_3 }
 		swap_ideas = {
@@ -91,7 +77,6 @@ JAP_intervene_in_china_level_down = {
 			add_idea = JAP_intervene_in_china_2
 		}
 	}
-
 	if = {
 		limit = { has_idea = JAP_intervene_in_china_4 }
 		swap_ideas = {
@@ -99,7 +84,6 @@ JAP_intervene_in_china_level_down = {
 			add_idea = JAP_intervene_in_china_3
 		}
 	}
-
 	if = {
 		limit = { has_idea = JAP_intervene_in_china_5 }
 		swap_ideas = {
@@ -108,24 +92,19 @@ JAP_intervene_in_china_level_down = {
 		}
 	}
 }
-
 JAP_intervene_in_china_remove = {
-
 	if = {
 		limit = { has_idea = JAP_intervene_in_china_5 }
 		remove_ideas = JAP_intervene_in_china_5
 	}
-
 	if = {
 		limit = { has_idea = JAP_intervene_in_china_4 }
 		remove_ideas = JAP_intervene_in_china_4
 	}
-
 	if = {
 		limit = { has_idea = JAP_intervene_in_china_3 }
 		remove_ideas = JAP_intervene_in_china_3
 	}
-
 	if = {
 		limit = { has_idea = JAP_intervene_in_china_2 }
 		remove_ideas = JAP_intervene_in_china_2
@@ -134,3 +113,4 @@ JAP_intervene_in_china_remove = {
 		remove_ideas = JAP_intervene_in_china_1
 	}
 }
+

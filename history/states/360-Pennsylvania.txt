@@ -1,16 +1,11 @@
-
 state={
 	id=360
 	name="STATE_360"
 	manpower = 9631346
-
 	state_category = USA_state
-
 	resources={
-		steel=44 # was: 80
+		steel=44
 	}
-
-
 	history={
 		owner = USA
 		buildings = {
@@ -18,17 +13,16 @@ state={
 			industrial_complex = 3
 			dockyard = 7
 			air_base = 2
-			6845 = {
+			6546 = {
 				naval_base = 8
-
 			}
 		}
 		add_core_of = USA
 		victory_points = {
-			6845 20
+			6546 20
 		}
 		victory_points = {
-			11800 15
+			11104 15
 		}
 		1939.1.1 = {
 			buildings = {
@@ -36,10 +30,9 @@ state={
 				dockyard = 8
 			}
 		}
-
 	}
-
 	provinces={
-		702 822 847 862 880 891 894 3687 3697 3802 3824 3847 3850 3880 3897 6705 6845 6869 6872 6885 6899 9662 9789 9804 9820 9836 11648 11758 11769 11785 11789 11799 11800 11817 12405
+		698 818 843 857 873 882 885 3568 3578 3679 3700 3722 3725 3749 3763 6410 6546 6570 6572 6582 6594 9170 9291 9306 9318 9332 10963 11068 11077 11092 11096 11103 11104 11118 11673
 	}
 }
+

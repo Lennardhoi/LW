@@ -1,11 +1,10 @@
-﻿####### Division Templates #######
+﻿
 division_template = {
 	name = "Divisione di Fanteria"
 	division_names_group = ITA_INF_01
 
-	# Represents nearly all infantry divisions
-	# In later years, CC.NN. Brigade added to INF Division (1x2 MIL/INF regiments)
-	# Also represent semi-mountain divisions (1st, 2nd, 3rd, 4th, 6th Divisions)
+
+
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -33,11 +32,9 @@ division_template = {
 		anti_air = { x = 0 y = 3 }
 	}
 }
-
 division_template = {
 	name = "Divisione Alpina"
 	division_names_group = ITA_MNT_01
-
 	regiments = {
 		mountaineers = { x = 0 y = 0 }
 		mountaineers = { x = 0 y = 1 }
@@ -62,14 +59,11 @@ division_template = {
 		engineer = { x = 0 y = 0 }
 		artillery = { x = 0 y = 1 }
 	}
-
 }
-
 division_template = {
 	name = "Divisione Coloniale"
 	division_names_group = ITA_COL_01
 
-	# Represents lesser-equipped colonial units
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -82,14 +76,11 @@ division_template = {
 		infantry = { x = 1 y = 3 }
 		infantry = { x = 1 y = 4 }
 	}
-
 	priority = 0
 }
-
 division_template = {
 	name = "Divisione Celere"
 	division_names_group = ITA_CAV_02
-
 	regiments = {
 		light_armor = { x = 0 y = 0 }
 		light_armor = { x = 0 y = 1 }
@@ -112,15 +103,13 @@ division_template = {
 		motorized = { x = 4 y = 2 }
 		motorized = { x = 4 y = 3 }
 	}
-
 	priority = 2
 }
 
-####### OOB #######
 units = {
 	division= {
 		name = "This is here so you can look at your generals"
-		location = 9904
+		location =9388
 		division_template = "Divisione di Fanteria"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
@@ -128,66 +117,51 @@ units = {
 }
 
 
-
-##### AIR WINGS #####
-
-
-####### Starting Production Queue #######
 instant_effect = {
 	if = {
 		limit = { is_tutorial = no }
 
-		##### Equipments #####
 		add_equipment_production = {
 			equipment = {
 				type = infantry_equipment_1
 				creator = "ITA"
 			}
-
 			requested_factories = 4
 			progress = 0.1
 			efficiency = 50
 		}
-
 		add_equipment_production = {
 			equipment = {
 				type = support_equipment_1
 				creator = "ITA"
 			}
-
 			requested_factories = 1
 			progress = 0.3
 			efficiency = 50
 		}
-
 		add_equipment_production = {
 			equipment = {
 				type = light_tank_equipment_1
 				creator = "ITA"
 			}
-
 			requested_factories = 1
 			progress = 0.4
 			efficiency = 50
 		}
-
 		add_equipment_production = {
 			equipment = {
 				type = motorized_equipment_1
 				creator = "ITA"
 			}
-
 			requested_factories = 2
 			progress = 0.4
 			efficiency = 50
 		}
-
 		add_equipment_production = {
 			equipment = {
 				type = CAS_equipment_1
 				creator = "ITA"
 			}
-
 			requested_factories = 1
 			progress = 0.2
 			efficiency = 50
@@ -197,7 +171,6 @@ instant_effect = {
 				type = fighter_equipment_1
 				creator = "ITA"
 			}
-
 			requested_factories = 1
 			progress = 0.2
 			efficiency = 50
@@ -207,7 +180,6 @@ instant_effect = {
 				type = anti_air_equipment_1
 				creator = "ITA"
 			}
-
 			requested_factories = 1
 			progress = 0.2
 			efficiency = 50
@@ -217,7 +189,6 @@ instant_effect = {
 				type = artillery_equipment_1
 				creator = "ITA"
 			}
-
 			requested_factories = 1
 			progress = 0.2
 			efficiency = 50
@@ -227,10 +198,10 @@ instant_effect = {
 				type = nav_bomber_equipment_1
 				creator = "ITA"
 			}
-
 			requested_factories = 1
 			progress = 0.2
 			efficiency = 50
 		}
 	}
 }
+

@@ -1,23 +1,20 @@
-﻿###########################
-# Hungarian Events
-###########################
+﻿
+
 
 add_namespace = DOD_hungary
 
-#Demand Southern Slovakia event chain - initial event for CZE or SLO, depending on time frame
 country_event = {
 	id = DOD_hungary.80
 	title = DOD_hungary.80.t
 	desc = DOD_hungary.80.desc
 	picture = GFX_report_event_generic_rally2
-
 	is_triggered_only = yes
 	immediate = {
 		hidden_effect = {
 			news_event = { id = news.303 }
 		}
 	}
-	option = {# fold
+	option = {
 		name = DOD_hungary.80.a
 		ai_chance = {
 			factor = 75
@@ -26,35 +23,27 @@ country_event = {
 		hidden_effect = {
 			news_event = { id = news.304 days = 1 }
 		}
-
 	}
 }
 
-#Demand Southern Slovakia event chain - CZE/SLO folds
 country_event = {
 	id = DOD_hungary.81
 	title = DOD_hungary.81.t
 	desc = DOD_hungary.81.desc
 	picture = GFX_report_event_german_polish_border
-
 	is_triggered_only = yes
-
-	option = {# great
+	option = {
 		name = DOD_hungary.81.a
-
 	}
 }
 
-#Demand Southern Slovakia event chain - CZE left to hang
 country_event = {
 	id = DOD_hungary.86
 	title = DOD_hungary.86.t
 	desc = DOD_hungary.86.desc
 	picture = GFX_report_event_hitler_croatia_handshake
-
 	is_triggered_only = yes
-
-	option = {# fold
+	option = {
 		name = DOD_hungary.86.a
 		ai_chance = {
 			factor = 90
@@ -63,3 +52,4 @@ country_event = {
 		add_opinion_modifier = { target = FROM modifier = western_betrayal }
 	}
 }
+

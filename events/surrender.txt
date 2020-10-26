@@ -1,6 +1,5 @@
 add_namespace = surrender
 
-# Spanish Civil War
 country_event = {
 	id = surrender.1
 	title = surrender.1.t
@@ -8,7 +7,6 @@ country_event = {
 	picture = GFX_report_event_spain_civil_war_soldiers
 	hidden=yes
 	fire_only_once = no
-
 	is_triggered_only = yes
 	immediate = {
 		if={limit={ENG={has_war=no}}
@@ -26,11 +24,8 @@ country_event = {
 					tag=HOL
 					tag=DEN
 					tag=NOR
-
-
 					}}
 			transfer_navy={target=ENG}
-
 			every_owned_state={limit={is_core_of=ROOT}
 				add_state_modifier = {
 					modifier = {
@@ -40,24 +35,23 @@ country_event = {
 				GER={
 					set_state_owner=PREV
 					if = {limit={is_controlled_by_ROOT_or_ally=yes}
-					set_state_controller=PREV
+						set_state_controller=PREV
 					}
 				}
-				}
+			}
 			if={limit={tag=DEN}USA = { transfer_state = 101}
 				ENG = { transfer_state =  100
 					transfer_state = 337 }
-				GER={set_province_controller=6361}
+				GER={set_province_controller=6069}
 			}
 			ENG={annex_country={target=ROOT transfer_troops=yes}}
 			if={limit={tag=HOL}
-				ENG={	set_state_controller=309#suriname
-					set_state_controller=695#curacao
+				ENG={	set_state_controller=309
+					set_state_controller=695
 					add_to_faction=INS
 				}
 			}
 		}
-
 		else_if={limit = {
 				tag=BEL
 			}
@@ -70,19 +64,18 @@ country_event = {
 				}
 				GER={set_state_owner=PREV}}
 			FRA={annex_country={target=ROOT transfer_troops=yes}
-				set_state_controller=538#congo sometimes goes to GER on cap
+				set_state_controller=538
 				set_state_controller=718
 				set_state_controller=295
 				set_state_controller=768
 				set_state_controller=769
 			}
-
 		}
 		else_if={limit = {
 				OR={tag=POL tag=LUX
 					}}
 			transfer_navy={target=ENG}
-			transfer_state=270 #Pitcairn Island West of Chile
+			transfer_state=270
 			every_owned_state={limit={is_core_of=ROOT}
 				add_state_modifier = {
 					modifier = {
@@ -94,3 +87,4 @@ country_event = {
 		}
 	}
 }
+

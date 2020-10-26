@@ -1,8 +1,6 @@
 ﻿division_template = {
-	name = "Pekhotna Divizija"			# Infantry Division
-
+	name = "Pekhotna Divizija"
 	division_names_group = BUL_INF_01
-
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -29,12 +27,9 @@
 		recon = { x = 0 y = 2 }
 	}
 }
-
 division_template = {
-	name = "pekhotna brigada" 			# Cavalry Division
-
+	name = "pekhotna brigada"
 	division_names_group = BUL_INF_01
-
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -52,13 +47,13 @@ division_template = {
 units = {
 	division= {
 		name = "This is here so you can look at your generals"
-		location = 949
+		location =934
 		division_template = "Pekhotna Divizija"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 }
-### Starting Production ###
+
 instant_effect = {
 	add_equipment_production = {
 		equipment = {
@@ -97,3 +92,4 @@ instant_effect = {
 		efficiency = 100
 	}
 }
+

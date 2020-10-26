@@ -1,32 +1,21 @@
 war_measures = {
-
-
 	Manpower = {
-
 		icon = generic_industry
-
 		allowed = {
 			OR={tag=CAN tag=SAF tag=NZL tag=AST tag=IRE}
 		}
-
 		available = {
 			has_war = yes
 			has_manpower<10000
 			OR={has_idea=extensive_conscription has_idea=service_by_requirement has_idea=all_adults_serve}
-
 		}
 		visible = {
 			has_war = yes
 		}
-
 		fire_only_once = no
-
 		days_re_enable = 60
 		complete_effect={add_manpower=10000}
-
 		cost = 50
-
-
 	}
 }
 

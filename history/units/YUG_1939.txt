@@ -1,0 +1,409 @@
+﻿division_template = {
+ name = "Pesadijska Divizija"
+ 
+ 
+ division_names_group = YUG_INF_01
+ regiments = {
+ infantry = { x = 0 y = 0 }
+ infantry = { x = 0 y = 1 }
+ infantry = { x = 0 y = 2 }
+ infantry = { x = 1 y = 0 }
+ infantry = { x = 1 y = 1 }
+ infantry = { x = 1 y = 2 }
+ infantry = { x = 2 y = 0 }
+ infantry = { x = 2 y = 1 }
+ infantry = { x = 2 y = 2 }
+ }
+ support = {
+ engineer = { x = 0 y = 0 }
+ artillery =  { x = 0 y = 1 }
+ }
+ }
+ division_template = {
+ name = "Gorska Pesadija"
+ division_names_group = YUG_MTN_01
+ regiments = {
+ mountaineers = { x = 0 y = 0 }
+ mountaineers = { x = 0 y = 1 }
+ mountaineers = { x = 0 y = 2 }
+ }
+ }
+ division_template = {
+ name = "Konjička Divizija"
+ 
+ division_names_group = YUG_CAV_01
+ regiments = {
+ cavalry = { x = 0 y = 0 }
+ cavalry = { x = 0 y = 1 }
+ cavalry = { x = 0 y = 2 }
+ cavalry = { x = 1 y = 0 }
+ cavalry = { x = 1 y = 1 }
+ cavalry = { x = 1 y = 2 }
+ }
+ }
+ division_template = {
+ name = "Tenkovski Bataljon"
+ 
+ 
+ division_names_group = YUG_ARM_01
+ regiments = {
+ light_armor = { x = 0 y = 0 }
+ infantry = { x = 1 y = 0 }
+ infantry = { x = 1 y = 1 }
+ infantry = { x = 1 y = 2 }
+ }
+ }
+ units = {
+ 
+ 
+ division = {
+ 
+ division_name = {
+ is_name_ordered = yes
+ name_order = 4
+ }
+ location =10905
+ division_template = "Pesadijska Divizija"
+ start_experience_factor = 0.3
+ }
+ division = {
+ 
+ division_name = {
+ is_name_ordered = yes
+ name_order = 1
+ }
+ location =10905
+ division_template = "Pesadijska Divizija"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ division = {
+ 
+ division_name = {
+ is_name_ordered = yes
+ name_order = 33
+ }
+ location =10905
+ division_template = "Pesadijska Divizija"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ division = {
+ name = "1. Bataljon Bornih Kola"
+ location =10905
+ division_template = "Tenkovski Bataljon"
+ start_experience_factor = 0.3
+ start_equipment_factor = 1
+ force_equipment_variants = { gw_tank_equipment = { owner = "YUG" creator = "FRA" } }
+ }
+ 
+ division = {
+ 
+ division_name = {
+ is_name_ordered = yes
+ name_order = 12
+ }
+ location =3785
+ division_template = "Pesadijska Divizija"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ 
+ division = {
+ 
+ division_name = {
+ is_name_ordered = yes
+ name_order = 8
+ }
+ location =897
+ division_template = "Pesadijska Divizija"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ division = {
+ 
+ division_name = {
+ is_name_ordered = yes
+ name_order = 9
+ }
+ location =11162
+ division_template = "Pesadijska Divizija"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ division = {
+ 
+ division_name = {
+ is_name_ordered = yes
+ name_order = 34
+ }
+ location =897
+ division_template = "Pesadijska Divizija"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ division = {
+ 
+ division_name = {
+ is_name_ordered = yes
+ name_order = 2
+ }
+ location =11176
+ division_template = "Konjička Divizija"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ 
+ division = {
+ 
+ division_name = {
+ is_name_ordered = yes
+ name_order = 3
+ }
+ location =3498
+ division_template = "Pesadijska Divizija"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ 
+ 
+ division = {
+ 
+ division_name = {
+ is_name_ordered = yes
+ name_order = 27
+ }
+ location =10900
+ division_template = "Pesadijska Divizija"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ 
+ division = {
+ 
+ division_name = {
+ is_name_ordered = yes
+ name_order = 32
+ }
+ location =3515
+ division_template = "Pesadijska Divizija"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ division = {
+ 
+ division_name = {
+ is_name_ordered = yes
+ name_order = 1
+ }
+ location =3515
+ division_template = "Gorska Pesadija"
+ start_experience_factor = 0.3
+ start_equipment_factor = 0.7
+ }
+ division = {
+ 
+ division_name = {
+ is_name_ordered = yes
+ name_order = 2
+ }
+ location =9109
+ division_template = "Gorska Pesadija"
+ start_experience_factor = 0.3
+ start_equipment_factor = 0.7
+ }
+ division = {
+ 
+ division_name = {
+ is_name_ordered = yes
+ name_order = 1
+ }
+ location =9136
+ division_template = "Konjička Divizija"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ 
+ 
+ division = {
+ 
+ division_name = {
+ is_name_ordered = yes
+ name_order = 7
+ }
+ location =6350
+ division_template = "Pesadijska Divizija"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ division = {
+ 
+ division_name = {
+ is_name_ordered = yes
+ name_order = 3
+ }
+ location =612
+ division_template = "Konjička Divizija"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ 
+ division = {
+ 
+ division_name = {
+ is_name_ordered = yes
+ name_order = 10
+ }
+ location =3511
+ division_template = "Pesadijska Divizija"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ division = {
+ 
+ division_name = {
+ is_name_ordered = yes
+ name_order = 17
+ }
+ location =3507
+ division_template = "Pesadijska Divizija"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ division = {
+ 
+ division_name = {
+ is_name_ordered = yes
+ name_order = 30
+ }
+ location =3507
+ division_template = "Pesadijska Divizija"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ 
+ 
+ division = {
+ 
+ division_name = {
+ is_name_ordered = yes
+ name_order = 13
+ }
+ location =829
+ division_template = "Pesadijska Divizija"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ division = {
+ 
+ division_name = {
+ is_name_ordered = yes
+ name_order = 15
+ }
+ location =6607
+ division_template = "Pesadijska Divizija"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ division = {
+ 
+ division_name = {
+ is_name_ordered = yes
+ name_order = 25
+ }
+ location =9310
+ division_template = "Pesadijska Divizija"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ division = {
+ 
+ division_name = {
+ is_name_ordered = yes
+ name_order = 31
+ }
+ location =829
+ division_template = "Pesadijska Divizija"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ 
+ division = {
+ 
+ division_name = {
+ is_name_ordered = yes
+ name_order = 5
+ }
+ location =3709
+ division_template = "Pesadijska Divizija"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ division = {
+ 
+ division_name = {
+ is_name_ordered = yes
+ name_order = 20
+ }
+ location =11152
+ division_template = "Pesadijska Divizija"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ division = {
+ 
+ division_name = {
+ is_name_ordered = yes
+ name_order = 22
+ }
+ location =3751
+ division_template = "Pesadijska Divizija"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ }
+ 
+ air_wings = {
+ 107 = {
+ fighter_equipment_1 = { owner = "YUG" amount = 48 }
+ tac_bomber_equipment_1 = { owner = "YUG" amount = 60 }
+ }
+ 104 = {
+ heavy_fighter_equipment_1 = { owner = "YUG" creator = "ENG" amount = 48 }
+ tac_bomber_equipment_1 = { owner = "YUG" amount = 40 }
+ }
+ 106 = {
+ fighter_equipment_1 = { owner = "YUG" creator = "ENG" amount = 40 }
+ }
+ }
+ 
+ instant_effect = {
+ add_equipment_production = {
+ equipment = {
+ type = infantry_equipment_1
+ creator = "YUG"
+ }
+ requested_factories = 1
+ progress = 0.60
+ efficiency = 100
+ }
+ add_equipment_production = {
+ equipment = {
+ type = support_equipment_1
+ creator = "YUG"
+ }
+ requested_factories = 1
+ progress = 0.80
+ efficiency = 100
+ }
+ add_equipment_production = {
+ equipment = {
+ type = fighter_equipment_1
+ creator = "YUG"
+ }
+ requested_factories = 1
+ progress = 0.30
+ efficiency = 100
+ }
+ }
+

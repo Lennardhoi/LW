@@ -17,9 +17,8 @@
 	}
 }
 division_template = {
-	name = "Infantry Division"			# 1st - 5th divisions = fully equipped, others = reserve divisions
+	name = "Infantry Division"
 	division_names_group = ENG_INF_01
-
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -50,7 +49,6 @@ division_template = {
 division_template = {
 	name = "Mountaineer Division"
 	division_names_group = ENG_INF_01
-
 	regiments = {
 		mountaineers = { x = 0 y = 0 }
 		mountaineers = { x = 0 y = 1 }
@@ -77,11 +75,9 @@ division_template = {
 		recon = { x = 0 y = 2 }
 	}
 }
-
 division_template = {
 	name = "Cavalry Brigade"
 	division_names_group = ENG_CAV_02
-
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
@@ -132,7 +128,6 @@ division_template = {
 division_template = {
 	name = "Colonial Garrison"
 	division_names_group = ENG_COL_01
-
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -150,23 +145,19 @@ division_template = {
 	}
 	priority = 0
 }
-
 units = {
 	division= {
 		name = "This is here so you can look at your generals"
-		location = 6103
+		location =5812
 		division_template = "Infantry Division"
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.01
 	}
 }
 
-#########################
-## STARTING PRODUCTION ##
-#########################
+
+
 instant_effect = {
-
-
 	add_equipment_production = {
 		equipment = {
 			type = infantry_equipment_1
@@ -185,7 +176,6 @@ instant_effect = {
 		progress = 0.1
 		efficiency = 50
 	}
-
 	add_equipment_production = {
 		equipment = {
 			type = support_equipment_1
@@ -195,7 +185,6 @@ instant_effect = {
 		progress = 0.3
 		efficiency = 50
 	}
-
 	add_equipment_production = {
 		equipment = {
 			type = light_tank_equipment_2
@@ -205,7 +194,6 @@ instant_effect = {
 		progress = 0.4
 		efficiency = 50
 	}
-
 	add_equipment_production = {
 		equipment = {
 			type = fighter_equipment_1
@@ -215,7 +203,6 @@ instant_effect = {
 		progress = 0.15
 		efficiency = 50
 	}
-
 	add_equipment_production = {
 		equipment = {
 			type = tac_bomber_equipment_1
@@ -270,6 +257,6 @@ instant_effect = {
 		progress = 0.3
 		efficiency = 50
 	}
-
 }
-#####################
+
+

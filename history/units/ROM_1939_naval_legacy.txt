@@ -1,0 +1,112 @@
+﻿
+units= {
+
+	fleet = {
+		name = "Flota Romania de Mare"
+		naval_base =655
+		task_force = {
+			name = "Flota Romania de Mare"
+			location =655
+			ship = { name = "NMS Marasti" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ROM } } }
+			ship = { name = "NMS Marasesti" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ROM } } }
+			ship = { name = "NMS Regele Ferdinand" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ROM version_name = "Regele Ferdinand Class" } } }
+			ship = { name = "NMS Regina Maria" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ROM version_name = "Regele Ferdinand Class" } } }
+			ship = { name = "NMS Delfinul" definition = submarine equipment = { submarine_2 = { amount = 1 owner = ROM } } }
+		}
+	}
+}
+
+
+
+instant_effect = {
+
+
+
+
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "SOV"
+			version_name = "Gnevnyy Class"
+		}
+		requested_factories = 1
+		progress = 0.90
+		amount = 13
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_3
+			creator = "SOV"
+			version_name = "Soobrazitelnyi Class"
+		}
+		requested_factories = 1
+		progress = 0.80
+		amount = 13
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_light_2
+			creator = "SOV"
+			version_name = "Leningrad
+			Minsk Class"
+		}
+		requested_factories = 1
+		progress = 0.70
+		amount = 2
+	}
+
+
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_submarine_2
+			creator = "SOV"
+			version_name = "Series IX Srednyaya"
+		}
+		requested_factories = 1
+		progress = 0.80
+		amount = 9
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_submarine_2
+			creator = "SOV"
+			version_name = "Series IX Srednyaya"
+		}
+		requested_factories = 1
+		progress = 0.80
+		amount = 8
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_submarine_3
+			creator = "SOV"
+			version_name = "Series XIV K-Class"
+		}
+		requested_factories = 1
+		progress = 0.80
+		amount = 8
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_cruiser_1
+			creator = "SOV"
+			version_name = "Kirov Class"
+		}
+		requested_factories = 1
+		progress = 0.70
+		amount = 2
+	}
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_cruiser_1
+			creator = "SOV"
+			version_name = "Kirov Class"
+		}
+		requested_factories = 1
+		progress = 0.30
+		amount = 1
+	}
+}
+
+

@@ -1,14 +1,12 @@
-﻿###########################
-# Capitulation Events
-###########################
+﻿
+
 
 add_namespace = country_capitulated
 
-# 	# FROM.FROM is winner
 news_event = {
 	id = country_capitulated.0
 	title = country_capitulated.0.t
-	#Good news
+
 	desc = {
 		text = country_capitulated.0.d_positive_collab_diff_ideology
 		trigger = {
@@ -119,7 +117,7 @@ news_event = {
 			FROM = { FROM = { any_allied_country = { has_war_with = ROOT } } }
 		}
 	}
-	#Bad news
+
 	desc = {
 		text = country_capitulated.0.d_negative_collab_diff_ideology
 		trigger = {
@@ -210,7 +208,7 @@ news_event = {
 			FROM = { FROM = { any_allied_country = { has_war_with = ROOT } } }
 		}
 	}
-	#Neutral news
+
 	desc = {
 		text = country_capitulated.0.d_neutral_both_no_faction
 		trigger = {
@@ -266,17 +264,11 @@ news_event = {
 			FROM = { FROM = { any_allied_country = { has_war_with = ROOT } } }
 		}
 	}
-
 	picture = GFX_news_event_generic_sign_treaty2
-
 	major = yes
-
 	is_triggered_only = yes
-
 	hidden = no
-
 	fire_only_once = no
-
 	option = {
 		name = country_capitulated.0.a
 		trigger = {
@@ -308,3 +300,4 @@ news_event = {
 		}
 	}
 }
+

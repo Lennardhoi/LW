@@ -1,6 +1,4 @@
-
 SOV_industry_relocation = {
-
 	SOV_relocation= {
 		allowed = {
 			original_tag=SOV
@@ -9,14 +7,11 @@ SOV_industry_relocation = {
 		available = {
 			tag=Gay
 		}
-
 		days_mission_timeout = 10
-
 		fire_only_once = no
 		is_good = yes
 		activation = {
 			always=no}
-
 		timeout_effect = {
 			SOV_relocate_mil=yes
 			SOV_relocate_mil=yes
@@ -38,8 +33,6 @@ SOV_industry_relocation = {
 			}
 			set_variable={reloceatedmil=0}
 			set_variable={reloceatedciv=0}
-
-
 			if={
 				limit={check_variable = {relocation<50}}
 				activate_mission=SOV_relocation2
@@ -47,7 +40,6 @@ SOV_industry_relocation = {
 				else={clear_variable=relocation}
 				}}
 		complete_effect = {
-
 		}
 	}
 	SOV_relocation2= {
@@ -58,31 +50,23 @@ SOV_industry_relocation = {
 		available = {
 			tag=Gay
 		}
-
 		days_mission_timeout = 10
-
 		fire_only_once = no
 		is_good = yes
 		activation = {
 			always=no}
-
 		timeout_effect = {
 			SOV_relocate_mil=yes
 			SOV_relocate_mil=yes
 			SOV_relocate_civ=yes
 			SOV_relocate_civ=yes
-
-
-
 			if={
 				limit={check_variable = {relocation<50}}
 				activate_mission=SOV_relocation3
 				add_to_variable= {relocation = 1}
 				else={clear_variable=relocation}
 				}}
-
 		complete_effect = {
-
 		}
 	}
 	SOV_relocation3= {
@@ -93,31 +77,23 @@ SOV_industry_relocation = {
 		available = {
 			tag=Gay
 		}
-
 		days_mission_timeout = 10
-
 		fire_only_once = no
 		is_good = yes
 		activation = {
 			always=no}
-
 		timeout_effect = {
 			SOV_relocate_mil=yes
 			SOV_relocate_mil=yes
 			SOV_relocate_civ=yes
 			SOV_relocate_civ=yes
-
-
-
 			if={
 				limit={check_variable = {relocation<50}}
 				activate_mission=SOV_relocation4
 				add_to_variable= {relocation = 1}
 				else={clear_variable=relocation}
 				}}
-
 		complete_effect = {
-
 		}
 	}
 	SOV_relocation4= {
@@ -128,31 +104,23 @@ SOV_industry_relocation = {
 		available = {
 			tag=Gay
 		}
-
 		days_mission_timeout = 10
-
 		fire_only_once = no
 		is_good = yes
 		activation = {
 			always=no}
-
 		timeout_effect = {
 			SOV_relocate_mil=yes
 			SOV_relocate_mil=yes
 			SOV_relocate_civ=yes
 			SOV_relocate_civ=yes
-
-
-
 			if={
 				limit={check_variable = {relocation<50}}
 				activate_mission=SOV_relocation5
 				add_to_variable= {relocation = 1}
 				else={clear_variable=relocation}
 				}}
-
 		complete_effect = {
-
 		}
 	}
 	SOV_relocation5= {
@@ -163,9 +131,7 @@ SOV_industry_relocation = {
 		available = {
 			tag=Gay
 		}
-
 		days_mission_timeout = 10
-
 		fire_only_once = no
 		is_good = yes
 		activation = {
@@ -175,18 +141,13 @@ SOV_industry_relocation = {
 			SOV_relocate_mil=yes
 			SOV_relocate_civ=yes
 			SOV_relocate_civ=yes
-
-
-
 			if={
 				limit={check_variable = {relocation<50}}
 				activate_mission=SOV_relocation
 				add_to_variable= {relocation = 1}
 				else={clear_variable=relocation}
 				}}
-
 		complete_effect = {
-
 		}
 	}
 }

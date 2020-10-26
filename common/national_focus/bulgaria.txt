@@ -1,18 +1,14 @@
 focus_tree = {
 	id = bulgarian_focus
-
 	country = {
 		factor = 0
-
 		modifier = {
 			add = 10
 			tag = BUL
 		}
 	}
-
-	default = no#was yes
+	default = no
 	reset_on_civilwar = no
-
 	focus = {
 		id = BUL_Monarch_Speech
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
@@ -23,12 +19,10 @@ focus_tree = {
 			factor = 2
 		}
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_political_power = 150
 		}
 	}
-
 	focus = {
 		id = BUL_Radar_Testing
 		prerequisite = { focus = BUL_Monarch_Speech }
@@ -40,7 +34,6 @@ focus_tree = {
 			factor = 2
 		}
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = BUL_Radar_Testing
@@ -50,7 +43,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = BUL_University_Of_Sofia
 		prerequisite = { focus = BUL_Radar_Testing }
@@ -61,15 +53,12 @@ focus_tree = {
 		x = 7
 		y = 2
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_research_slot = 1
 			add_to_tech_sharing_group = axis_research
 		}
 	}
-
 	focus = {
 		id = BUL_Invest_In_Electronics
 		icon = GFX_goal_generic_production2
@@ -80,9 +69,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 5
 		}
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = BUL_Invest_In_Electronics
@@ -93,7 +80,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = BUL_Break_Western_Ties
 		icon = GFX_focus_RAJ_clamp_down_on_corruption
@@ -106,9 +92,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		cost = 5
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_political_power = 50
 			set_politics = {
@@ -117,7 +101,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = BUL_Inspire_A_Generation
 		icon = GFX_goal_generic_propaganda
@@ -125,9 +108,7 @@ focus_tree = {
 		x = 2
 		y = 2
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_ideas = militarism_focus
 			add_popularity = {
@@ -136,7 +117,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = BUL_Geological_Survey
 		icon = GFX_goal_generic_position_armies
@@ -148,7 +128,6 @@ focus_tree = {
 			factor = 2
 		}
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = BUL_Geological_Survey
@@ -158,7 +137,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = BUL_Highway_Development
 		icon = GFX_goal_generic_construct_infrastructure
@@ -167,10 +145,8 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 10
-
 		}
 		available_if_capitulated = yes
-
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = infrastructure_effort_tt
@@ -182,7 +158,6 @@ focus_tree = {
 				}
 			}
 		}
-
 		complete_tooltip = {
 			add_building_construction = {
 				type = infrastructure
@@ -195,7 +170,6 @@ focus_tree = {
 				instant_build = yes
 			}
 		}
-
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -262,17 +236,12 @@ focus_tree = {
 		relative_position_id = BUL_Highway_Development
 		cost = 10
 		ai_will_do = {
-
 			factor = 10
 		}
 		available_if_capitulated = yes
-
-
-
 		ai_will_do = {
 			factor = 10
 		}
-
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = construction_effort_tt
@@ -285,7 +254,6 @@ focus_tree = {
 				}
 			}
 		}
-
 		complete_tooltip = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
@@ -294,7 +262,6 @@ focus_tree = {
 				instant_build = yes
 			}
 		}
-
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -336,13 +303,10 @@ focus_tree = {
 		y = 1
 		relative_position_id = BUL_Begin_2_Year_Plan
 		cost = 10
-
 		available_if_capitulated = yes
-
 		ai_will_do = {
 			factor = 4
 		}
-
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = construction_effort_tt
@@ -355,7 +319,6 @@ focus_tree = {
 				}
 			}
 		}
-
 		complete_tooltip = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
@@ -364,7 +327,6 @@ focus_tree = {
 				instant_build = yes
 			}
 		}
-
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -405,21 +367,15 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = BUL_Build_It_Better
-
 		cost = 10
-
 		ai_will_do = {
 			factor = 4
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
 		complete_tooltip = {
-
 		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = BUL_Heavy_Machines
@@ -429,7 +385,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = BUL_Fuel_Our_Industry
 		icon = GFX_goal_generic_construct_civ_factory
@@ -438,14 +393,10 @@ focus_tree = {
 		y = 1
 		relative_position_id = BUL_Heavy_Machines
 		cost = 10
-
 		available_if_capitulated = yes
-
-
 		ai_will_do = {
 			factor = 4
 		}
-
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = construction_effort_tt
@@ -458,7 +409,6 @@ focus_tree = {
 				}
 			}
 		}
-
 		complete_tooltip = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
@@ -467,7 +417,6 @@ focus_tree = {
 				instant_build = yes
 			}
 		}
-
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -501,7 +450,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = BUL_Finnish_2_Year_Plan
 		icon = GFX_goal_generic_construct_civilian
@@ -510,13 +458,10 @@ focus_tree = {
 		y = 1
 		relative_position_id = BUL_Fuel_Our_Industry
 		cost = 10
-
 		available_if_capitulated = yes
-
 		ai_will_do = {
 			factor = 4
 		}
-
 		bypass =
 		{
 			custom_trigger_tooltip =
@@ -533,7 +478,6 @@ focus_tree = {
 				}
 			}
 		}
-
 		complete_tooltip =
 		{
 			add_extra_state_shared_building_slots = 2
@@ -544,7 +488,6 @@ focus_tree = {
 				instant_build = yes
 			}
 		}
-
 		completion_reward =	{
 			random_owned_controlled_state =
 			{
@@ -591,13 +534,10 @@ focus_tree = {
 		id = BUL_Expand_Western_Mines
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = BUL_Geological_Survey }
-
 		x = 5
 		y = 4
 		cost = 5
-
 		available_if_capitulated = yes
-
 		ai_will_do = {
 			factor = 1
 		}
@@ -614,12 +554,10 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = BUL_Dig_Deep
 		icon = GFX_goal_generic_construction
 		prerequisite = { focus = BUL_Geological_Survey }
-
 		x = 7
 		y = 4
 		cost = 5
@@ -627,7 +565,6 @@ focus_tree = {
 			factor = 2
 		}
 		available_if_capitulated = yes
-
 		ai_will_do = {
 			factor = 1
 		}
@@ -655,9 +592,7 @@ focus_tree = {
 		x = 6
 		y = 5
 		cost = 5
-
 		available_if_capitulated = yes
-
 		ai_will_do = {
 			factor = 1
 		}
@@ -668,17 +603,14 @@ focus_tree = {
 	}
 	focus = {
 		id = BUL_Nationalism
-		icon = GFX_goal_support_fascism #icon = GFX_goal_tripartite_pact
+		icon = GFX_goal_support_fascism
 		prerequisite = { focus = BUL_Monarch_Speech }
 		available = {
 		}
 		x = 5
 		y = 1
 		cost = 10
-
 		available_if_capitulated = yes
-
-
 		ai_will_do = {
 			factor = 5
 			modifier = {
@@ -689,24 +621,19 @@ focus_tree = {
 				}
 			}
 		}
-
 		completion_reward = {
 			add_ideas = nationalism
 		}
 	}
-
 	focus = {
 		id = BUL_German_Advisors
 		icon = GFX_goal_generic_improve_relations
 		prerequisite = { focus = BUL_Break_Western_Ties }
 		prerequisite = { focus = BUL_Nationalism }
-
 		x = 4
 		y = 2
 		cost = 5
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			army_experience = 10
 			add_tech_bonus = {
@@ -717,11 +644,6 @@ focus_tree = {
 			}
 		}
 	}
-
-
-
-
-
 	focus = {
 		id = BUL_Arms_Expansion
 		icon = GFX_goal_generic_construct_mil_factory
@@ -730,14 +652,10 @@ focus_tree = {
 		y = 1
 		relative_position_id = BUL_Highway_Development
 		cost = 10
-
 		available_if_capitulated = yes
-
-
 		ai_will_do = {
 			factor = 2
 		}
-
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = production_effort_tt
@@ -750,7 +668,6 @@ focus_tree = {
 				}
 			}
 		}
-
 		complete_tooltip = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
@@ -759,7 +676,6 @@ focus_tree = {
 				instant_build = yes
 			}
 		}
-
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -793,7 +709,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = BUL_Efficient_Designs
 		prerequisite = { focus = BUL_Arms_Expansion }
@@ -805,7 +720,6 @@ focus_tree = {
 		ai_will_do = {
 			factor = 2
 		}
-
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = production_effort_tt
@@ -818,7 +732,6 @@ focus_tree = {
 				}
 			}
 		}
-
 		complete_tooltip = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
@@ -827,7 +740,6 @@ focus_tree = {
 				instant_build = yes
 			}
 		}
-
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -861,7 +773,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = BUL_War_Production
 		icon = GFX_goal_generic_construct_mil_factory
@@ -870,16 +781,12 @@ focus_tree = {
 		y = 1
 		relative_position_id = BUL_Efficient_Designs
 		cost = 10
-
 		available_if_capitulated = yes
-
 		available = {
 		}
-
 		ai_will_do = {
 			factor = 2
 		}
-
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = production_effort_tt
@@ -892,7 +799,6 @@ focus_tree = {
 				}
 			}
 		}
-
 		complete_tooltip = {
 			add_extra_state_shared_building_slots = 1
 			add_building_construction = {
@@ -901,7 +807,6 @@ focus_tree = {
 				instant_build = yes
 			}
 		}
-
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -943,16 +848,12 @@ focus_tree = {
 		y = 1
 		relative_position_id = BUL_War_Production
 		cost = 5
-
 		available_if_capitulated = yes
-
 		available = {
 		}
-
 		ai_will_do = {
 			factor = 2
 		}
-
 		bypass = {
 			custom_trigger_tooltip = {
 				tooltip = production_effort_tt
@@ -965,9 +866,6 @@ focus_tree = {
 				}
 			}
 		}
-
-
-
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -977,8 +875,6 @@ focus_tree = {
 						include_locked = yes
 					}
 					is_core_of = ROOT
-
-
 				}
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
@@ -990,7 +886,6 @@ focus_tree = {
 		}
 	}
 
-	#new begin
 	focus = {
 		id = bul_naval_effort
 		icon = GFX_goal_generic_construct_naval_dockyard
@@ -1003,15 +898,12 @@ focus_tree = {
 			factor = 2
 		}
 		available_if_capitulated = yes
-
-
 		available = {
 			any_state = {
 				is_coastal = yes
 				is_controlled_by = ROOT
 			}
 		}
-
 		complete_tooltip = {
 			navy_experience = 25
 			add_extra_state_shared_building_slots = 3
@@ -1021,7 +913,6 @@ focus_tree = {
 				instant_build = yes
 			}
 		}
-
 		completion_reward = {
 			navy_experience = 25
 			if = {
@@ -1120,8 +1011,6 @@ focus_tree = {
 			}
 		}
 	}
-	#new end
-
 
 	focus = {
 		id = BUL_Naval_Aviation
@@ -1145,10 +1034,6 @@ focus_tree = {
 			}
 		}
 	}
-
-
-
-
 	focus = {
 		id = BUL_military_training
 		icon = GFX_goal_generic_allies_build_infantry
@@ -1159,7 +1044,6 @@ focus_tree = {
 			factor = 1
 		}
 		available_if_capitulated = yes
-
 		completion_reward = {
 			army_experience = 50
 			add_tech_bonus = {
@@ -1178,9 +1062,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = BUL_military_training
 		cost = 5
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = infantry_weapons_bonus
@@ -1191,7 +1073,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = BUL_Infantry_Support
 		icon = GFX_goal_generic_allies_build_infantry
@@ -1199,29 +1080,19 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = BUL_Infantry_Weapons
-
 		cost = 5
-
 		ai_will_do = {
 			factor = 1
 		}
-
 		available = {
-
 		}
-
 		bypass = {
-
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
 		complete_tooltip = {
-
 		}
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = SAF_sa_engineer_corps
@@ -1231,7 +1102,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = BUL_Mobile_Army
 		icon = GFX_goal_generic_army_motorized
@@ -1240,9 +1110,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = BUL_military_training
 		cost = 5
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = SAF_mechanization_effort
@@ -1252,7 +1120,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = BUL_Mobile_Support
 		icon = GFX_goal_generic_build_tank
@@ -1264,9 +1131,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			army_experience = 5
 			add_tech_bonus = {
@@ -1293,7 +1158,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = BUL_Tank_Development
 		icon = GFX_goal_generic_army_tanks
@@ -1303,9 +1167,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = BUL_Mobile_Support
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			army_experience = 75
 			add_tech_bonus = {
@@ -1324,9 +1186,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = BUL_Tank_Development
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = secret_bonus
@@ -1347,25 +1207,17 @@ focus_tree = {
 		relative_position_id = BUL_Mobile_Support
 		mutually_exclusive = { focus = BUL_Tank_Development }
 		cost = 10
-
 		ai_will_do = {
 			factor = 1
 		}
-
 		available = {
 			GER = { has_completed_focus = GER_integrate_war_economies }
-
 		}
-
 		bypass = {
-
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-
 		completion_reward = {
 			add_relation_modifier = {
 				target = GER
@@ -1381,9 +1233,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = BUL_Infantry_Support
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = arty_bonus
@@ -1400,26 +1250,17 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id =BUL_Advanced_Artillery
-
 		cost = 5
-
 		ai_will_do = {
 			factor = 1
 		}
-
 		available = {
-
 		}
-
 		bypass = {
-
 		}
-
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = yes
-
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = SAF_sa_engineer_corps
@@ -1440,7 +1281,6 @@ focus_tree = {
 			factor = 0
 		}
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = special_forces_bonus
@@ -1453,7 +1293,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = BUL_Marine_Specialization
 		icon = GFX_goal_generic_amphibious_assault
@@ -1464,9 +1303,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = BUL_Special_Forces
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = special_forces_bonus
@@ -1477,7 +1314,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = BUL_Airborne_Specialization
 		icon = GFX_goal_generic_CAS
@@ -1488,9 +1324,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = BUL_Special_Forces
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = special_forces_bonus
@@ -1501,7 +1335,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = BUL_Mountain_Specialization
 		icon = GFX_goal_generic_army_doctrines
@@ -1512,9 +1345,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = BUL_Special_Forces
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			add_tech_bonus = {
 				name = special_forces_bonus
@@ -1525,7 +1356,6 @@ focus_tree = {
 			}
 		}
 	}
-
 	focus = {
 		id = BUL_S.B.F._Tactics
 		icon = GFX_goal_generic_army_doctrines
@@ -1539,9 +1369,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = BUL_Airborne_Specialization
 		cost = 10
-
 		available_if_capitulated = yes
-
 		completion_reward = {
 			army_experience = 10
 			add_tech_bonus = {
@@ -1553,3 +1381,4 @@ focus_tree = {
 		}
 	}
 }
+

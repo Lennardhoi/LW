@@ -1,0 +1,34 @@
+﻿
+division_template = {
+	name = "Infantry Division"
+	division_names_group = BRENGL_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+}
+units = {
+
+}
+
+
+
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "ZIM"
+		}
+		requested_factories = 2
+		progress = 0.1
+		efficiency = 50
+	}
+}
+
+

@@ -42,8 +42,8 @@ operations = {
 		ai_will_do = {
 			factor = 1
 		}
-		activation = {                          # The mission appears and starts counting down under these circumstances:
-			has_war_with = GER                       # War with Germany
+		activation = {
+			has_war_with = GER
 		}
 		fire_only_once = yes
 		days_remove = 7
@@ -79,15 +79,10 @@ operations = {
 				}
 			}
 			custom_effect_tooltip = "Vichy France goes to war with everyone in the allies"
-
-
-
 		}
 		remove_effect = {
-
 			GER = { puppet = EFR }
 			EFR = { remove_ideas = EFR_neutrality_idea}
-
 		}
 	}
 	EFR_joining_faction = {
@@ -112,3 +107,4 @@ operations = {
 		}
 	}
 }
+

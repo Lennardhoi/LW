@@ -1,36 +1,26 @@
-﻿###########################
-# RAJ TFV events Events
-###########################
+﻿
+
 
 add_namespace = tfv_raj
 
 
-#RAJ gets famine - Trigger/randomness event
 
-#RAJ gets famine - Actual event
 
-##################################################
-#Quit India movement resistance events
-##################################################
+
 country_event = {
 	id = tfv_raj.210
 	title = tfv_raj.210.t
 	desc = tfv_raj.210.desc
 	picture = GFX_report_event_generic_ruins
-
 	is_triggered_only = yes
-
 	trigger = {
 		has_completed_focus = RAJ_quit_india_movement
 		is_puppet = yes
 	}
-
 	option = {
 		name = tfv_raj.210.a
-
 		random_owned_controlled_state = {
-			prioritize = { 431 } #West Bengal
-
+			prioritize = { 431 }
 			limit = {
 				industrial_complex > 0
 			}
@@ -39,32 +29,25 @@ country_event = {
 				damage = 0.6
 			}
 		}
-
 		hidden_effect = {
 			country_event = { id = tfv_raj.211 days = 20 random_days = 40 }
 		}
 	}
 }
-
 country_event = {
 	id = tfv_raj.211
 	title = tfv_raj.211.t
 	desc = tfv_raj.211.desc
 	picture = GFX_report_event_generic_ruins
-
 	is_triggered_only = yes
-
 	trigger = {
 		has_completed_focus = RAJ_quit_india_movement
 		is_puppet = yes
 	}
-
 	option = {
 		name = tfv_raj.211.a
-
 		random_owned_controlled_state = {
-			prioritize = { 426 } #Orissa
-
+			prioritize = { 426 }
 			limit = {
 				arms_factory > 0
 			}
@@ -73,32 +56,25 @@ country_event = {
 				damage = 0.7
 			}
 		}
-
 		hidden_effect = {
 			country_event = { id = tfv_raj.212 days = 20 random_days = 40 }
 		}
 	}
 }
-
 country_event = {
 	id = tfv_raj.212
 	title = tfv_raj.212.t
 	desc = tfv_raj.212.desc
 	picture = GFX_report_event_generic_ruins
-
 	is_triggered_only = yes
-
 	trigger = {
 		has_completed_focus = RAJ_quit_india_movement
 		is_puppet = yes
 	}
-
 	option = {
 		name = tfv_raj.212.a
-
 		random_owned_controlled_state = {
-			prioritize = { 429 } #Bombay
-
+			prioritize = { 429 }
 			limit = {
 				industrial_complex > 0
 			}
@@ -109,3 +85,4 @@ country_event = {
 		}
 	}
 }
+

@@ -1,20 +1,15 @@
-﻿###########################
-# Yugoslavian Events
-###########################
+﻿
+
 
 add_namespace = DOD_yugoslavia
 
-
-#Yugoslavia wants to buy planes - event for GER,FRA,ENG,ITA
 country_event = {
 	id = DOD_yugoslavia.20
 	title = DOD_yugoslavia.20.t
 	desc = DOD_yugoslavia.20.desc
 	picture = GFX_report_event_fighters
-
 	is_triggered_only = yes
-
-	option = { # send some fighters
+	option = {
 		name = DOD_yugoslavia.20.a
 		ai_chance = {
 			factor = 70
@@ -29,9 +24,8 @@ country_event = {
 			amount = 50
 		}
 		add_timed_idea = { idea = YUG_air_payment days = 180 }
-
 	}
-	option = { # send some bombers
+	option = {
 		name = DOD_yugoslavia.20.b
 		ai_chance = {
 			factor = 70
@@ -46,10 +40,8 @@ country_event = {
 			amount = 25
 		}
 		add_timed_idea = { idea = YUG_air_payment days = 180 }
-
 	}
-
-	option = { # divert some fighters from production
+	option = {
 		name = DOD_yugoslavia.20.d
 		ai_chance = {
 			factor = 70
@@ -60,10 +52,8 @@ country_event = {
 		}
 		add_timed_idea = { idea = YUG_air_payment days = 180 }
 		add_timed_idea = { idea = YUG_fighter_production_diverted days = 120 }
-
 	}
-
-	option = { # divert some bombers from production
+	option = {
 		name = DOD_yugoslavia.20.e
 		ai_chance = {
 			factor = 70
@@ -74,14 +64,12 @@ country_event = {
 		}
 		add_timed_idea = { idea = YUG_air_payment days = 180 }
 		add_timed_idea = { idea = YUG_bomber_production_diverted days = 120 }
-
 	}
-	option = { # no
+	option = {
 		name = DOD_yugoslavia.20.c
 		ai_chance = {
 			factor = 30
 		}
 	}
-
-
 }
+
