@@ -402,7 +402,7 @@ focus_tree = {
 					scoped_sound_effect = "sp_sov_stalin"
 				}
 			}
-			add_timed_idea= {idea=SOV_winter_offensive days=50}
+			add_timed_idea= {idea=SOV_winter_offensive days=60}
 		}
 	}
 	focus = {
@@ -660,13 +660,13 @@ focus_tree = {
 					}
 					add_building_construction = {
 						type = bunker
-						level = 5
+						level = 10
 						province =10602
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = bunker
-						level = 5
+						level = 10
 						province =10418
 						instant_build = yes
 					}
@@ -743,6 +743,12 @@ focus_tree = {
 			217 = {
 				custom_effect_tooltip = SOV_defense_of_moscow_forts
 				hidden_effect = {
+				    add_building_construction = {
+						type = bunker
+						level = 5
+						province =12350
+						instant_build = yes
+					}
 					add_building_construction = {
 						type = bunker
 						level = 5
@@ -759,6 +765,24 @@ focus_tree = {
 						type = bunker
 						level = 5
 						province =496
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province =12349
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province =12352
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province =12351
 						instant_build = yes
 					}
 					add_building_construction = {
@@ -827,6 +851,30 @@ focus_tree = {
 			219 = {
 				custom_effect_tooltip = SOV_defense_of_moscow_forts
 				hidden_effect = {
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province =12353
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province =12354
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province =12355
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province =12356
+						instant_build = yes
+					}
 					add_building_construction = {
 						type = bunker
 						level = 5
