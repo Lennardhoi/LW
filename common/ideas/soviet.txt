@@ -33,10 +33,25 @@ ideas = {
 	}
 
 
+	hidden_ideas = {
+		SOV_snakemodding = {
+			picture = generic_production_bonus
+			allowed = {
+				original_tag = SOV
+				always = no
+			}
 
+			
 
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = 1
+			}
+		}
+	}
 	country = {
-
+	
 		SOV_kazanspawnin = {
 			modifier = {
 				industrial_capacity_factory=-0.1
@@ -870,9 +885,6 @@ ideas = {
 			}
 
 			equipment_bonus = {
-				infantry_equipment = {
-					max_strength = 5 instant = yes
-				}
 				infantry_equipment = {
 					instant = yes
 					build_cost_ic = -0.2
