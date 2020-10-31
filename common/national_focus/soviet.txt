@@ -1767,19 +1767,13 @@ focus_tree = {
 		y = 1
 		relative_position_id = SOV_nkvd_divisions
 		cost = 10
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 1000
-				any_claim = yes
-				has_war = yes
-			}
-		}
 		available_if_capitulated = yes
 		completion_reward = {
-			army_experience = 50
+		    set_technology = { soviet_hp = 1 popup = no }
+			army_experience = 100
+			add_ideas = SOV_one_gun
 			add_tech_bonus = {
-				name = armor_bonus
+				name = land_doctrine_bonus
 				bonus = 1.0
 				uses = 2
 				category = land_doctrine
@@ -1792,7 +1786,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_lessons_of_war }
 		available = {
 		}
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = SOV_lessons_of_war
 		cost = 5
@@ -1803,8 +1797,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = nuclear_bonus
-				bonus = 1.0
-				uses = 1
+				bonus = 2.0
+				uses = 3
 				category = nuclear
 			}
 		}
@@ -1812,12 +1806,12 @@ focus_tree = {
 	focus = {
 		id = SOV_diversify_the_programme
 		icon = GFX_focus_SOV_rocket
-		prerequisite = { focus = SOV_research_city_experiment }
+		prerequisite = { focus = SOV_lessons_of_war }
 		available = {
 		}
-		x = 0
+		x = 1
 		y = 1
-		relative_position_id = SOV_research_city_experiment
+		relative_position_id = SOV_lessons_of_war
 		cost = 5
 		ai_will_do = {
 			factor = 1

@@ -239,29 +239,24 @@ country_event = {
 			add_ideas = GER_africa_hp
 			set_technology = { africa_hp = 1 popup = no }
 			add_equipment_to_stockpile = {
-				type = artillery_equipment_1
-				amount = 3000
-				producer = FRA
+				type = infantry_equipment
+				amount = 50000
+				producer = GER
 			}
 			add_equipment_to_stockpile = {
-				type = anti_air_equipment_1
-				amount = 2000
-				producer = FRA
+				type = artillery_equipment
+				amount = 6000
+				producer = GER
 			}
 			add_equipment_to_stockpile = {
-				type = infantry_equipment_1
-				amount = 30000
-				producer = FRA
-			}
-			add_equipment_to_stockpile = {
-				type = motorized_equipment_1
-				amount = 2000
-				producer = FRA
+				type = anti_air_equipment
+				amount = 1000
+				producer = GER
 			}
 			add_equipment_to_stockpile = {
 				type = anti_tank_equipment
-				amount = 2000
-				producer = FRA
+				amount = 1000
+				producer = GER
 			}
 		}
 	}
