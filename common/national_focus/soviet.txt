@@ -403,7 +403,6 @@ focus_tree = {
 				}
 			}
 			add_timed_idea= {idea=SOV_winter_offensive days=60}
-			add_timed_idea= {idea=SOV_snakemodding days=60}
 		}
 	}
 	focus = {
@@ -1770,7 +1769,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		completion_reward = {
-		    set_technology = { soviet_hp = 1 popup = no }
+		    
 			army_experience = 100
 			add_ideas = SOV_one_gun
 			add_tech_bonus = {
