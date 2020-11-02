@@ -919,9 +919,10 @@ focus_tree = {
 			}
 		}
 	}
+	
 	focus = {
-		id = SAF_equipment_effort
-		icon = GFX_goal_generic_army_artillery
+		id = SAF_armor_effort
+		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = SAF_expand_the_south_african_artillery focus = SAF_sa_engineer_corps }
 		x = 0
 		y = 4
@@ -936,21 +937,20 @@ focus_tree = {
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = yes
+		available_if_capitulated = no
 		completion_reward = {
 			add_tech_bonus = {
-				name = SAF_equipment_effort
+				name = SAF_armor_effort
 				bonus = 1.0
-				uses = 1
-				category = infantry_weapons
-				category = artillery
+				uses = 2
+				category = armor
 			}
 		}
 	}
 	focus = {
 		id = SAF_mechanization_effort
 		icon = GFX_goal_generic_build_tank
-		prerequisite = { focus = SAF_equipment_effort }
+		prerequisite = { focus = SAF_armor_effort }
 		x = -1
 		y = 5
 		relative_position_id = SAF_special_service_battalion
@@ -977,7 +977,7 @@ focus_tree = {
 	focus = {
 		id = SAF_south_african_special_forces
 		icon = GFX_goal_generic_special_forces
-		prerequisite = { focus = SAF_equipment_effort focus = SAF_sa_engineer_corps }
+		prerequisite = { focus = SAF_armor_effort focus = SAF_sa_engineer_corps }
 		x = 1
 		y = 5
 		relative_position_id = SAF_special_service_battalion
@@ -1003,9 +1003,11 @@ focus_tree = {
 			}
 		}
 	}
+	
+#here#
 	focus = {
-		id = SAF_armor_effort
-		icon = GFX_goal_generic_army_tanks
+		id = SAF_equipment_effort
+		icon = GFX_goal_generic_army_artillery
 		prerequisite = { focus = SAF_south_african_special_forces focus = SAF_mechanization_effort }
 		x = 0
 		y = 6
@@ -1020,23 +1022,22 @@ focus_tree = {
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 		completion_reward = {
 			add_tech_bonus = {
-				name = SAF_armor_effort
+				name = SAF_equipment_effort
 				bonus = 1.0
-				uses = 2
-				category = armor
+				uses = 1
+				category = infantry_weapons
+				category = artillery
 			}
 		}
 	}
 
-
-
 	focus = {
 		id = SAF_commit_to_the_five_year_plan
 		icon = GFX_goal_generic_build_airforce
-		x = 17
+		x = 21
 		y = 0
 		cost = 5
 		ai_will_do = {
@@ -1269,7 +1270,7 @@ focus_tree = {
 	focus = {
 		id = SAF_seaward_defence_force
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		x = 21
+		x = 17
 		y = 0
 		cost = 5
 		ai_will_do = {
