@@ -172,7 +172,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = HUN_renounce_the_treaty_of_trianon
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 80
 		}
@@ -185,11 +185,12 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			43 = {
+			50 = {
 				add_resource = {
 					type = aluminium
-					amount = 16
-				}
+					amount = 25
+				}	
+				
 			}
 		}
 	}
@@ -610,11 +611,12 @@ focus_tree = {
 	focus = {
 		id = HUN_invite_foreign_investors
 		icon = GFX_goal_generic_intelligence_exchange
+		prerequisite = { focus = HUN_joint_aluminum_mining_company}
 		prerequisite = { focus = HUN_civilian_industry }
 		x = -2
 		y = 1
 		relative_position_id = HUN_civilian_industry
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 70
 		}
@@ -713,7 +715,11 @@ focus_tree = {
 		completion_reward = {
 			43 = {
 				add_resource = {
-					type = aluminium
+					type = tungsten
+					amount = 16
+				}	
+				add_resource = {
+					type = chromium
 					amount = 16
 				}
 			}
@@ -851,19 +857,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-		complete_tooltip = {
-			random_state = {
-				limit = {
-					has_state_flag = HUN_synthetic_industry_AF1
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = synthetic_refinery
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
+		
 		completion_reward = {
 			if = {
 				limit = { NOT = { has_tech = synth_oil_experiments } }
@@ -877,10 +871,9 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = synthetic_refinery
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = HUN_synthetic_industry_AF1

@@ -10,14 +10,12 @@ on_actions = {
 				set_temp_variable={airxp=num_equipment@fighter_equipment}
 				add_to_temp_variable={airxp=num_equipment@CAS_equipment}
 				add_to_temp_variable={airxp=num_equipment@CAS_equipment}
-				add_to_temp_variable={airxp=num_equipment@nav_bomber_equipment}
 				add_to_temp_variable={airxp=num_equipment@tac_bomber_equipment}
 				add_to_temp_variable={airxp=num_equipment@heavy_fighter_equipment}
 				multiply_temp_variable = {airxp=0.1}
 				air_experience = airxp
 				send_equipment = { equipment = fighter_equipment amount = 5000 target = GER }
 				send_equipment = { equipment = CAS_equipment amount = 5000 target = GER }
-				send_equipment = { equipment = nav_bomber_equipment amount = 5000 target = GER }
 				send_equipment = { equipment = tac_bomber_equipment amount = 5000 target = GER }
 				send_equipment = { equipment = heavy_fighter_equipment amount = 5000 target = GER }
 			}
