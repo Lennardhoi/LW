@@ -36,7 +36,7 @@ NDefines.NTrade.BASE_LAND_TRADE_RANGE = 350
 ---------------------------------------------------------------
 NDefines.NAir.AIR_WING_MAX_SIZE = 1600                            -- this can be halved 4 times into 100 stacks (very convinient), up from 1600 | 
 NDefines.NAir.AIR_DEPLOYMENT_DAYS = 0                              -- Down from 3 | Makes AC player much more responsive
-NDefines.NAir.AIR_WING_BOMB_DAMAGE_FACTOR = 2 --controlls strat bombing damage was too strong on 5 but might need to be high to actually damage something
+NDefines.NAir.AIR_WING_BOMB_DAMAGE_FACTOR = 1.8 --controlls strat bombing damage was too strong on 5 but might need to be high to actually damage something
 ----------------------------------------------------------------------------------------------------------------------------
 NDefines.NDiplomacy.NUM_DAYS_TO_ENABLE_KICKING_NEW_MEMBERS_OF_FACTION = 14	-- down from 90 | Number of days before being able to kick a new member of faction 
 NDefines.NDiplomacy.NUM_DAYS_TO_ENABLE_REINVITE_KICKED_NATIONS = 14		-- down from 90 | Number of days before being able to re invite a kicked 
@@ -213,6 +213,7 @@ NDefines.NNavy.RESOURCE_ORIGIN_PRIORITY = 3
 --Combat 
 NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.052   -- global damage modifier... but some equipment is returned at end of battles see : EQUIPMENT_COMBAT_LOSS_FACTOR
 NDefines.NMilitary.LAND_COMBAT_ORG_DAMAGE_MODIFIER = 0.04
+NDefines.NMilitary.LAND_COMBAT_COLLATERAL_FACTOR = 0.003 -- vanilla is 0.005
 NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.04    -- air global damage modifier
 NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.025    -- global damage modifier
 NDefines.NNavy.AMPHIBIOUS_LANDING_PENALTY = -0.75 --vanilla 
@@ -234,7 +235,7 @@ NDefines.NCountry.AIR_SUPPLY_CONVERSION_SCALE = 0.10
 NDefines.NBuildings.INFRA_TO_SUPPLY = 1.9
 NDefines.NCountry.VP_TO_SUPPLY_BASE = 0
 NDefines.NCountry.VP_TO_SUPPLY_BONUS_CONVERSION = 1
-NDefines.NCountry.SUPPLY_FROM_DAMAGED_INFRA = 0.4
+NDefines.NCountry.SUPPLY_FROM_DAMAGED_INFRA = 0.8
 NDefines.NCountry.SUPPLY_PATH_MAX_DISTANCE = 8
 
 --NDefines.NCountry.SUPPLY_BONUS_FROM_INPUT = 0 --not sure yet
