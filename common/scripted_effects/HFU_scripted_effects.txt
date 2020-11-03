@@ -1,247 +1,247 @@
 show_super_event={
- hidden_effect = {every_country={
- limit={
- is_playable_country=yes
- check_variable = { super_events_enabled > 0 }
- }
- set_variable={super_event=Global.super_event}
- }
- }
- }
- share_intel_with_allies={
- add_intel = {
- target = PREV
- civilian_intel = 200
- army_intel = 200
- navy_intel = 200
- airforce_intel = 200
- }
- PREV = {
- add_intel = {
- target = PREV
- civilian_intel = 200
- army_intel = 200
- navy_intel = 200
- airforce_intel = 200
- }
- }
- }
- create_arrays_pacific={
- clear_array=GLOBAL.pacific_states
- every_state={
- limit={OR={state=285 state=327 state= 645 state= 648 state=734 state=439 state=284 state=288 state=333 state=334 state=335 state=336 state=422 state=523 state=623 state=624 state=625 state=626 state=627 state=628 state=629 state=630 state=631 state=632 state=633 state=634 state=635 state=636 state=638 state=639 state=640 state=642 state=643 state=646 state=647 state=667 state=668 state=669 state=672 state=673 state=684 state=721 state=725 state=726 state=727 state=737 state=738 state=798}}
- add_to_array={GLOBAL.pacific_states=THIS}
- }
- }
- exploit_occupied_territories={
- random_owned_state={
- limit={NOT={is_core_of=GER} OR = {arms_factory>0 industrial_complex>0}}
- add_compliance = -10
- add_manpower = -25000
- if = {limit={arms_factory>0}
- remove_building = {
- type = arms_factory
- level = 1
- }
- ROOT={random_owned_state={
- limit={is_core_of=GER free_building_slots = { building = arms_factory size > 1 include_locked=yes}}
- add_manpower = 25000
- add_extra_state_shared_building_slots = 1
- add_building_construction = {
- type = arms_factory
- level = 1
- instant_build = yes
- }
- }
- }
- }
- else_if = {limit={industrial_complex>0}
- remove_building = {
- type = industrial_complex
- level = 1
- }
- ROOT={random_owned_state={
- add_manpower = 25000
- limit={NOT={state=28 state=8}is_core_of=GER free_building_slots = { building = industrial_complex size > 1 include_locked=yes}}
- add_extra_state_shared_building_slots = 1
- add_building_construction = {
- type = industrial_complex
- level = 1
- instant_build = yes
- }
- }
- }}
- }
- }
- update_pacific_war = {
- clear_variable=GLOBAL.pacific_status
- for_each_scope_loop={
- array=GLOBAL.pacific_states
- if={
- limit={is_controlled_by_ENG_or_ally=yes }
- if={
- limit={NOT={OR={state=672 state=333 state=335 state=336 state=523 state=422 state= 629 state=669 state=285 state=284 state=439}}}
- add_to_variable={GLOBAL.pacific_status=1}
- else_if={
- limit={NOT={OR={state=439 state=284 state=439}}}
- add_to_variable={GLOBAL.pacific_status=5}
- }
- else={
- add_to_variable={GLOBAL.pacific_status=10}}
- }
- }
- }
- set_variable={JAP.pacific_status=GLOBAL.pacific_status}
- subtract_from_variable={JAP.pacific_status=91}
- multiply_variable={JAP.pacific_status=-30}
- divide_variable={JAP.pacific_status=10200}
- set_variable={USA.pacific_status=JAP.pacific_status}
- multiply_variable={USA.pacific_status=-1}
- set_variable={ENG.pacific_status=USA.pacific_status}
- multiply_variable={ENG.pacific_status=0.5}
- if={limit={JAP={has_completed_focus=JAP_korean_guest_workers}} add_to_variable={JAP.pacific_status=0.1}}
- }
- anti_cross_faction_trade_axis = {
- add_opinion_modifier = {
- target = GER
- modifier = anti_cross_faction_trade
- }
- add_opinion_modifier = {
- target = ITA
- modifier = anti_cross_faction_trade
- }
- add_opinion_modifier = {
- target = ROM
- modifier = anti_cross_faction_trade
- }
- add_opinion_modifier = {
- target = HUN
- modifier = anti_cross_faction_trade
- }
- add_opinion_modifier = {
- target = EFR
- modifier = anti_cross_faction_trade
- }
- add_opinion_modifier = {
- target = BUL
- modifier = anti_cross_faction_trade
- }
- add_opinion_modifier = {
- target = SPR
- modifier = anti_cross_faction_trade
- }
- }
- anti_cross_faction_trade_allies = {
- add_opinion_modifier = {
- target = USA
- modifier = anti_cross_faction_trade
- }
- add_opinion_modifier = {
- target = ENG
- modifier = anti_cross_faction_trade
- }
- add_opinion_modifier = {
- target = FRA
- modifier = anti_cross_faction_trade
- }
- add_opinion_modifier = {
- target = CAN
- modifier = anti_cross_faction_trade
- }
- add_opinion_modifier = {
- target = SAF
- modifier = anti_cross_faction_trade
- }
- add_opinion_modifier = {
- target = RAJ
- modifier = anti_cross_faction_trade
- }
- add_opinion_modifier = {
- target = AST
- modifier = anti_cross_faction_trade
- }
- add_opinion_modifier = {
- target = NZL
- modifier = anti_cross_faction_trade
- }
- }
- anti_cross_faction_trade_all = {
- ENG = {
- anti_cross_faction_trade_axis = yes
- }
- FRA = {
- anti_cross_faction_trade_axis = yes
- }
- USA = {
- anti_cross_faction_trade_axis = yes
- }
- CAN = {
- anti_cross_faction_trade_axis = yes
- }
- AST = {
- anti_cross_faction_trade_axis = yes
- }
- NZL = {
- anti_cross_faction_trade_axis = yes
- }
- SAF = {
- anti_cross_faction_trade_axis = yes
- }
- GER = {
- anti_cross_faction_trade_allies = yes
- }
- ITA = {
- anti_cross_faction_trade_allies = yes
- }
- HUN = {
- anti_cross_faction_trade_allies = yes
- }
- BUL = {
- anti_cross_faction_trade_allies = yes
- }
- ROM = {
- anti_cross_faction_trade_allies = yes
- }
- SPR = {
- anti_cross_faction_trade_allies = yes
- }
- }
- declare_war_on_enemy_faction = {
- if = {
- limit = { NOT = { ROOT={has_war_with = THIS.faction_leader } }}
- set_variable={GER.test1=15}
- ROOT={declare_war_on = { target = PREV.faction_leader type = annex_everything }}
- ROOT_call_all_allies_against_THIS = yes
- THIS_call_all_allies_against_ROOT = yes
- }
- }
- ROOT_call_allies_both_sides = {
- ROOT_call_all_allies_against_THIS = yes
- THIS_call_all_allies_against_ROOT = yes
- }
- ROOT_call_all_allies_against_THIS = {
- set_variable={GER.test2=THIS} set_variable={GER.test3=PREV} set_variable={GER.test4=ROOT}
- for_each_scope_loop = {
- array = ROOT.faction_members
- if = {
- limit = { NOT = { OR={AND={original_tag = ITA has_war=no} original_tag = ROOT}  }}
- add_to_war = {
- targeted_alliance = ROOT
- enemy = PREV
- }
- }
- }
- }
- THIS_call_all_allies_against_ROOT = {
- for_each_scope_loop = {
- array = THIS.faction_members
- if = {
- limit = { NOT = { OR = { AND={original_tag = USA has_war=no} AND={original_tag = FRA NOT={has_global_flag=fall_of_france}} original_tag = PREV} } }
- add_to_war = {
- targeted_alliance = ENG
- enemy = ROOT
- }
- }
- }
- }
+  hidden_effect = {every_country={
+  limit={
+  is_playable_country=yes
+  check_variable = { super_events_enabled > 0 }
+  }
+  set_variable={super_event=Global.super_event}
+  }
+  }
+  }
+  share_intel_with_allies={
+  add_intel = {
+  target = PREV
+  civilian_intel = 200
+  army_intel = 200
+  navy_intel = 200
+  airforce_intel = 200
+  }
+  PREV = {
+  add_intel = {
+  target = PREV
+  civilian_intel = 200
+  army_intel = 200
+  navy_intel = 200
+  airforce_intel = 200
+  }
+  }
+  }
+  create_arrays_pacific={
+  clear_array=GLOBAL.pacific_states
+  every_state={
+  limit={OR={state=273 state=294 state= 566 state= 569 state=652 state=405 state=272 state=275 state=300 state=301 state=302 state=303 state=388 state=450 state=544 state=545 state=546 state=547 state=548 state=549 state=550 state=551 state=552 state=553 state=554 state=555 state=556 state=557 state=559 state=560 state=561 state=563 state=564 state=567 state=568 state=586 state=587 state=588 state=591 state=592 state=603 state=639 state=643 state=644 state=645 state=655 state=656 state=711}}
+  add_to_array={GLOBAL.pacific_states=THIS}
+  }
+  }
+  exploit_occupied_territories={
+  random_owned_state={
+  limit={NOT={is_core_of=GER} OR = {arms_factory>0 industrial_complex>0}}
+  add_compliance = -10
+  add_manpower = -25000
+  if = {limit={arms_factory>0}
+  remove_building = {
+  type = arms_factory
+  level = 1
+  }
+  ROOT={random_owned_state={
+  limit={is_core_of=GER free_building_slots = { building = arms_factory size > 1 include_locked=yes}}
+  add_manpower = 25000
+  add_extra_state_shared_building_slots = 1
+  add_building_construction = {
+  type = arms_factory
+  level = 1
+  instant_build = yes
+  }
+  }
+  }
+  }
+  else_if = {limit={industrial_complex>0}
+  remove_building = {
+  type = industrial_complex
+  level = 1
+  }
+  ROOT={random_owned_state={
+  add_manpower = 25000
+  limit={NOT={state=28 state=8}is_core_of=GER free_building_slots = { building = industrial_complex size > 1 include_locked=yes}}
+  add_extra_state_shared_building_slots = 1
+  add_building_construction = {
+  type = industrial_complex
+  level = 1
+  instant_build = yes
+  }
+  }
+  }}
+  }
+  }
+  update_pacific_war = {
+  clear_variable=GLOBAL.pacific_status
+  for_each_scope_loop={
+  array=GLOBAL.pacific_states
+  if={
+  limit={is_controlled_by_ENG_or_ally=yes }
+  if={
+  limit={NOT={OR={state=591 state=300 state=302 state=303 state=450 state=388 state= 550 state=588 state=273 state=272 state=405}}}
+  add_to_variable={GLOBAL.pacific_status=1}
+  else_if={
+  limit={NOT={OR={state=405 state=272 state=405}}}
+  add_to_variable={GLOBAL.pacific_status=5}
+  }
+  else={
+  add_to_variable={GLOBAL.pacific_status=10}}
+  }
+  }
+  }
+  set_variable={JAP.pacific_status=GLOBAL.pacific_status}
+  subtract_from_variable={JAP.pacific_status=91}
+  multiply_variable={JAP.pacific_status=-30}
+  divide_variable={JAP.pacific_status=10200}
+  set_variable={USA.pacific_status=JAP.pacific_status}
+  multiply_variable={USA.pacific_status=-1}
+  set_variable={ENG.pacific_status=USA.pacific_status}
+  multiply_variable={ENG.pacific_status=0.5}
+  if={limit={JAP={has_completed_focus=JAP_korean_guest_workers}} add_to_variable={JAP.pacific_status=0.1}}
+  }
+  anti_cross_faction_trade_axis = {
+  add_opinion_modifier = {
+  target = GER
+  modifier = anti_cross_faction_trade
+  }
+  add_opinion_modifier = {
+  target = ITA
+  modifier = anti_cross_faction_trade
+  }
+  add_opinion_modifier = {
+  target = ROM
+  modifier = anti_cross_faction_trade
+  }
+  add_opinion_modifier = {
+  target = HUN
+  modifier = anti_cross_faction_trade
+  }
+  add_opinion_modifier = {
+  target = EFR
+  modifier = anti_cross_faction_trade
+  }
+  add_opinion_modifier = {
+  target = BUL
+  modifier = anti_cross_faction_trade
+  }
+  add_opinion_modifier = {
+  target = SPR
+  modifier = anti_cross_faction_trade
+  }
+  }
+  anti_cross_faction_trade_allies = {
+  add_opinion_modifier = {
+  target = USA
+  modifier = anti_cross_faction_trade
+  }
+  add_opinion_modifier = {
+  target = ENG
+  modifier = anti_cross_faction_trade
+  }
+  add_opinion_modifier = {
+  target = FRA
+  modifier = anti_cross_faction_trade
+  }
+  add_opinion_modifier = {
+  target = CAN
+  modifier = anti_cross_faction_trade
+  }
+  add_opinion_modifier = {
+  target = SAF
+  modifier = anti_cross_faction_trade
+  }
+  add_opinion_modifier = {
+  target = RAJ
+  modifier = anti_cross_faction_trade
+  }
+  add_opinion_modifier = {
+  target = AST
+  modifier = anti_cross_faction_trade
+  }
+  add_opinion_modifier = {
+  target = NZL
+  modifier = anti_cross_faction_trade
+  }
+  }
+  anti_cross_faction_trade_all = {
+  ENG = {
+  anti_cross_faction_trade_axis = yes
+  }
+  FRA = {
+  anti_cross_faction_trade_axis = yes
+  }
+  USA = {
+  anti_cross_faction_trade_axis = yes
+  }
+  CAN = {
+  anti_cross_faction_trade_axis = yes
+  }
+  AST = {
+  anti_cross_faction_trade_axis = yes
+  }
+  NZL = {
+  anti_cross_faction_trade_axis = yes
+  }
+  SAF = {
+  anti_cross_faction_trade_axis = yes
+  }
+  GER = {
+  anti_cross_faction_trade_allies = yes
+  }
+  ITA = {
+  anti_cross_faction_trade_allies = yes
+  }
+  HUN = {
+  anti_cross_faction_trade_allies = yes
+  }
+  BUL = {
+  anti_cross_faction_trade_allies = yes
+  }
+  ROM = {
+  anti_cross_faction_trade_allies = yes
+  }
+  SPR = {
+  anti_cross_faction_trade_allies = yes
+  }
+  }
+  declare_war_on_enemy_faction = {
+  if = {
+  limit = { NOT = { ROOT={has_war_with = THIS.faction_leader } }}
+  set_variable={GER.test1=15}
+  ROOT={declare_war_on = { target = PREV.faction_leader type = annex_everything }}
+  ROOT_call_all_allies_against_THIS = yes
+  THIS_call_all_allies_against_ROOT = yes
+  }
+  }
+  ROOT_call_allies_both_sides = {
+  ROOT_call_all_allies_against_THIS = yes
+  THIS_call_all_allies_against_ROOT = yes
+  }
+  ROOT_call_all_allies_against_THIS = {
+  set_variable={GER.test2=THIS} set_variable={GER.test3=PREV} set_variable={GER.test4=ROOT}
+  for_each_scope_loop = {
+  array = ROOT.faction_members
+  if = {
+  limit = { NOT = { OR={AND={original_tag = ITA has_war=no} original_tag = ROOT}  }}
+  add_to_war = {
+  targeted_alliance = ROOT
+  enemy = PREV
+  }
+  }
+  }
+  }
+  THIS_call_all_allies_against_ROOT = {
+  for_each_scope_loop = {
+  array = THIS.faction_members
+  if = {
+  limit = { NOT = { OR = { AND={original_tag = USA has_war=no} AND={original_tag = FRA NOT={has_global_flag=fall_of_france}} original_tag = PREV} } }
+  add_to_war = {
+  targeted_alliance = ENG
+  enemy = ROOT
+  }
+  }
+  }
+  }
 

@@ -1,93 +1,93 @@
 spy_agency = {
- dont_show_agency_warning = {
- allowed = {
- OR = {
- tag = SOV
- tag = JAP
- tag = GER
- tag = ITA
- tag = ENG
- tag = USA
- }
- }
- visible = {
- NOT = { has_country_flag = no_agency_warning }
- }
- fire_only_once = no
- complete_effect = {
- hidden_effect = {
- set_country_flag = no_agency_warning
- }
- }
- ai_will_do = {
- base = 0
- }
- }
- show_agency_warning = {
- allowed = {
- OR = {
- tag = SOV
- tag = JAP
- tag = GER
- tag = ITA
- tag = ENG
- tag = USA
- }
- }
- visible = {
- has_country_flag = no_agency_warning
- }
- fire_only_once = no
- complete_effect = {
- hidden_effect = {
- clr_country_flag = no_agency_warning
- }
- }
- ai_will_do = {
- base = 0
- }
- }
- spy_agency_upgrade = {
- icon = generic_industry
- allowed = {
- always = no
- }
- available = {
- hidden_trigger = {
- OR = {
- ROOT = {check_variable = {modifier@ai_license_acceptance < -500}}
- has_country_flag = no_agency_warning
- }
- }
- }
- activation = {
- }
- fire_only_once = no
- days_mission_timeout = 14
- timeout_effect = {
- activate_mission = spy_agency_upgrade2
- }
- }
- spy_agency_upgrade2 = {
- icon = generic_industry
- allowed = {
- always = no
- }
- available = {
- hidden_trigger = {
- OR = {
- ROOT = {check_variable = {modifier@ai_license_acceptance < -500}}
- has_country_flag = no_agency_warning
- }
- }
- }
- activation = {
- }
- fire_only_once = no
- days_mission_timeout = 14
- timeout_effect = {
- activate_mission = spy_agency_upgrade
- }
- }
- }
+  dont_show_agency_warning = {
+  allowed = {
+  OR = {
+  tag = SOV
+  tag = JAP
+  tag = GER
+  tag = ITA
+  tag = ENG
+  tag = USA
+  }
+  }
+  visible = {
+  NOT = { has_country_flag = no_agency_warning }
+  }
+  fire_only_once = no
+  complete_effect = {
+  hidden_effect = {
+  set_country_flag = no_agency_warning
+  }
+  }
+  ai_will_do = {
+  base = 0
+  }
+  }
+  show_agency_warning = {
+  allowed = {
+  OR = {
+  tag = SOV
+  tag = JAP
+  tag = GER
+  tag = ITA
+  tag = ENG
+  tag = USA
+  }
+  }
+  visible = {
+  has_country_flag = no_agency_warning
+  }
+  fire_only_once = no
+  complete_effect = {
+  hidden_effect = {
+  clr_country_flag = no_agency_warning
+  }
+  }
+  ai_will_do = {
+  base = 0
+  }
+  }
+  spy_agency_upgrade = {
+  icon = generic_industry
+  allowed = {
+  always = no
+  }
+  available = {
+  hidden_trigger = {
+  OR = {
+  ROOT = {check_variable = {modifier@ai_license_acceptance < -500}}
+  has_country_flag = no_agency_warning
+  }
+  }
+  }
+  activation = {
+  }
+  fire_only_once = no
+  days_mission_timeout = 14
+  timeout_effect = {
+  activate_mission = spy_agency_upgrade2
+  }
+  }
+  spy_agency_upgrade2 = {
+  icon = generic_industry
+  allowed = {
+  always = no
+  }
+  available = {
+  hidden_trigger = {
+  OR = {
+  ROOT = {check_variable = {modifier@ai_license_acceptance < -500}}
+  has_country_flag = no_agency_warning
+  }
+  }
+  }
+  activation = {
+  }
+  fire_only_once = no
+  days_mission_timeout = 14
+  timeout_effect = {
+  activate_mission = spy_agency_upgrade
+  }
+  }
+  }
 

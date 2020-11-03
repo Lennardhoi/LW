@@ -1,0 +1,34 @@
+state={
+  id=270
+  name="STATE_283"
+  resources={
+  tungsten=1.000
+  }
+  history={
+  owner = CHI
+  add_core_of = CHI
+  buildings = {
+  infrastructure = 3
+  industrial_complex = 1
+  }
+  1938.10.25 = {
+  if = {
+  limit = {
+  NOT = {
+  has_dlc = "Waking the Tiger"
+  }
+  }
+  CHI = {
+  transfer_state = PREV
+  }
+  }
+  }
+  }
+  provinces={
+ 495 520 1548 1561 1801 1841 1866 3453 3979 4591 6064 6781 7232 11491 11548
+  }
+  manpower=3705400
+  buildings_max_level_factor=1.000
+  state_category=rural
+  }
+

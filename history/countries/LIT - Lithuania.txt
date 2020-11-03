@@ -1,38 +1,32 @@
-﻿capital = 11
+capital = 11
+ oob = "LIT_1936"
+ set_research_slots = 0
+ add_ideas = {
+ 	limited_conscription
+ }
+ set_technology = {}
+ add_ideas = no_training
+ set_convoys = 1
+ set_politics = {
+ 	ruling_party = neutrality
+ 	last_election = "1926.5.8"
+ 	election_frequency = 120
+ 	elections_allowed = no
+ }
+ set_popularities = {
+ 	democratic = 30
+ 	fascism = 15
+ 	communism = 15
+ 	neutrality = 40
+ }
+ create_country_leader = {
+ 	name = "Antanas Smetona"
+ 	desc = "POLITICS_ANTANAS_SMETONA_DESC"
+ 	picture = "GFX_Portrait_lithuania_antanas_smetona"
+ 	expire = "1965.1.1"
+ 	ideology = oligarchism
+ 	traits = {
+ 		#
+ 	}
+ }
 
-oob = "LIT_1936"
-
-set_research_slots = 0
-
-add_ideas = {
-	limited_conscription
-}
-
-set_technology = {}
-add_ideas = no_training
-
-set_convoys = 1
-
-set_politics = {
-	ruling_party = neutrality
-	last_election = "1926.5.8"
-	election_frequency = 120
-	elections_allowed = no
-}
-set_popularities = {
-	democratic = 30
-	fascism = 15
-	communism = 15
-	neutrality = 40
-}
-
-create_country_leader = {
-	name = "Antanas Smetona"
-	desc = "POLITICS_ANTANAS_SMETONA_DESC"
-	picture = "GFX_Portrait_lithuania_antanas_smetona"
-	expire = "1965.1.1"
-	ideology = oligarchism
-	traits = {
-		#
-	}
-}

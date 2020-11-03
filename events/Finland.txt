@@ -1,77 +1,76 @@
-﻿
  add_namespace = finland
- country_event = {
- id = finland.1
- title = finland.1.t
- desc = finland.1.d
- picture = GFX_report_event_soviet_tanks_snow
- is_triggered_only = yes
- option = {
- name = finland.1.b
- ai_chance = { factor = 75 }
- SOV = {
- country_event = { days = 5 id = soviet.13 }
- effect_tooltip = {
- create_wargoal = {
- type = take_state
- target = FIN
- generator = { 146 }
- }
- }
- }
- }
- }
- country_event = {
- id = finland.5
- title = finland.5.t
- desc = finland.5.d
- picture = GFX_report_event_swedish_soldier
- is_triggered_only = yes
- option = {
- name = finland.5.a
- if = {
- limit = { tag = FIN }
- add_manpower = 8402
- SWE = {
- add_manpower = -8402
- send_equipment = {
- target = FIN
- type = infantry_equipment
- amount = 500
- }
- send_equipment = {
- target = FIN
- type = artillery_equipment
- amount = 250
- }
- }
- }
- }
- }
- country_event = {
- id = finland.8
- title = finland.8.t
- desc = finland.8.d
- picture = GFX_report_event_finnish_soldiers_snow
- is_triggered_only = yes
- option = {
- name = finland.8.a
- ai_chance = {
- base = 9
- }
- white_peace = FIN
- transfer_state = 146
- transfer_state = 147
- }
- }
- country_event = {
- id = finland.21
- title = finland.21.t
- desc = finland.21.d
- picture = GFX_report_event_finnish_soldiers_snow
- is_triggered_only = yes
- option = {
- name = finland.21.a
- }
- }
+  country_event = {
+  id = finland.1
+  title = finland.1.t
+  desc = finland.1.d
+  picture = GFX_report_event_soviet_tanks_snow
+  is_triggered_only = yes
+  option = {
+  name = finland.1.b
+  ai_chance = { factor = 75 }
+  SOV = {
+  country_event = { days = 5 id = soviet.13 }
+  effect_tooltip = {
+  create_wargoal = {
+  type = take_state
+  target = FIN
+  generator = { 146 }
+  }
+  }
+  }
+  }
+  }
+  country_event = {
+  id = finland.5
+  title = finland.5.t
+  desc = finland.5.d
+  picture = GFX_report_event_swedish_soldier
+  is_triggered_only = yes
+  option = {
+  name = finland.5.a
+  if = {
+  limit = { tag = FIN }
+  add_manpower = 8402
+  SWE = {
+  add_manpower = -8402
+  send_equipment = {
+  target = FIN
+  type = infantry_equipment
+  amount = 500
+  }
+  send_equipment = {
+  target = FIN
+  type = artillery_equipment
+  amount = 250
+  }
+  }
+  }
+  }
+  }
+  country_event = {
+  id = finland.8
+  title = finland.8.t
+  desc = finland.8.d
+  picture = GFX_report_event_finnish_soldiers_snow
+  is_triggered_only = yes
+  option = {
+  name = finland.8.a
+  ai_chance = {
+  base = 9
+  }
+  white_peace = FIN
+  transfer_state = 146
+  transfer_state = 147
+  }
+  }
+  country_event = {
+  id = finland.21
+  title = finland.21.t
+  desc = finland.21.d
+  picture = GFX_report_event_finnish_soldiers_snow
+  is_triggered_only = yes
+  option = {
+  name = finland.21.a
+  }
+  }
 

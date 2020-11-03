@@ -1,29 +1,23 @@
 #################
-#### GERMANY ####
-#################
+ #### GERMANY ####
+ #################
+ GER_military_buildup = {
+ 	icon = generic_political_actions
+ 	allowed = {
+ 		original_tag = GER
+ 	}
+ 	visible = {
+ 	}
+ }
+ GER_reichswerke_four_year_plan = {
+ 	icon = ger_reichskommissariats
+ 	priority = 90
+ 	picture = GFX_decision_cat_generic_mefo_bills
+ 	visible_when_empty = no
+ 	visibility_type = map_and_decisions_view
+ 	allowed = {
+ 		original_tag = GER
+ 	}
+ 	scripted_gui = ger_reichswerke_decision_ui
+ }
 
-
-
-GER_military_buildup = {
-	icon = generic_political_actions
-
-	allowed = {
-		original_tag = GER
-	}
-	visible = {
-
-	}
-}
-
-GER_reichswerke_four_year_plan = {
-	icon = ger_reichskommissariats
-	priority = 90
-	picture = GFX_decision_cat_generic_mefo_bills
-	visible_when_empty = no
-	visibility_type = map_and_decisions_view
-	allowed = {
-		original_tag = GER
-	}
-
-	scripted_gui = ger_reichswerke_decision_ui
-}

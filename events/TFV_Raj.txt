@@ -1,81 +1,80 @@
-﻿
  add_namespace = tfv_raj
- country_event = {
- id = tfv_raj.210
- title = tfv_raj.210.t
- desc = tfv_raj.210.desc
- picture = GFX_report_event_generic_ruins
- is_triggered_only = yes
- trigger = {
- has_completed_focus = RAJ_quit_india_movement
- is_puppet = yes
- }
- option = {
- name = tfv_raj.210.a
- random_owned_controlled_state = {
- prioritize = { 431 }
- limit = {
- industrial_complex > 0
- }
- damage_building = {
- type = industrial_complex
- damage = 0.6
- }
- }
- hidden_effect = {
- country_event = { id = tfv_raj.211 days = 20 random_days = 40 }
- }
- }
- }
- country_event = {
- id = tfv_raj.211
- title = tfv_raj.211.t
- desc = tfv_raj.211.desc
- picture = GFX_report_event_generic_ruins
- is_triggered_only = yes
- trigger = {
- has_completed_focus = RAJ_quit_india_movement
- is_puppet = yes
- }
- option = {
- name = tfv_raj.211.a
- random_owned_controlled_state = {
- prioritize = { 426 }
- limit = {
- arms_factory > 0
- }
- damage_building = {
- type = arms_factory
- damage = 0.7
- }
- }
- hidden_effect = {
- country_event = { id = tfv_raj.212 days = 20 random_days = 40 }
- }
- }
- }
- country_event = {
- id = tfv_raj.212
- title = tfv_raj.212.t
- desc = tfv_raj.212.desc
- picture = GFX_report_event_generic_ruins
- is_triggered_only = yes
- trigger = {
- has_completed_focus = RAJ_quit_india_movement
- is_puppet = yes
- }
- option = {
- name = tfv_raj.212.a
- random_owned_controlled_state = {
- prioritize = { 429 }
- limit = {
- industrial_complex > 0
- }
- damage_building = {
- type = industrial_complex
- damage = 0.4
- }
- }
- }
- }
+  country_event = {
+  id = tfv_raj.210
+  title = tfv_raj.210.t
+  desc = tfv_raj.210.desc
+  picture = GFX_report_event_generic_ruins
+  is_triggered_only = yes
+  trigger = {
+  has_completed_focus = RAJ_quit_india_movement
+  is_puppet = yes
+  }
+  option = {
+  name = tfv_raj.210.a
+  random_owned_controlled_state = {
+  prioritize = { 397 }
+  limit = {
+  industrial_complex > 0
+  }
+  damage_building = {
+  type = industrial_complex
+  damage = 0.6
+  }
+  }
+  hidden_effect = {
+  country_event = { id = tfv_raj.211 days = 20 random_days = 40 }
+  }
+  }
+  }
+  country_event = {
+  id = tfv_raj.211
+  title = tfv_raj.211.t
+  desc = tfv_raj.211.desc
+  picture = GFX_report_event_generic_ruins
+  is_triggered_only = yes
+  trigger = {
+  has_completed_focus = RAJ_quit_india_movement
+  is_puppet = yes
+  }
+  option = {
+  name = tfv_raj.211.a
+  random_owned_controlled_state = {
+  prioritize = { 392 }
+  limit = {
+  arms_factory > 0
+  }
+  damage_building = {
+  type = arms_factory
+  damage = 0.7
+  }
+  }
+  hidden_effect = {
+  country_event = { id = tfv_raj.212 days = 20 random_days = 40 }
+  }
+  }
+  }
+  country_event = {
+  id = tfv_raj.212
+  title = tfv_raj.212.t
+  desc = tfv_raj.212.desc
+  picture = GFX_report_event_generic_ruins
+  is_triggered_only = yes
+  trigger = {
+  has_completed_focus = RAJ_quit_india_movement
+  is_puppet = yes
+  }
+  option = {
+  name = tfv_raj.212.a
+  random_owned_controlled_state = {
+  prioritize = { 395 }
+  limit = {
+  industrial_complex > 0
+  }
+  damage_building = {
+  type = industrial_complex
+  damage = 0.4
+  }
+  }
+  }
+  }
 
