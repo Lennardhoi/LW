@@ -1,29 +1,29 @@
 foreign_politics = {
- AST_annex_nzl = {
- icon = generic_operation
- allowed = {
- tag = AST
- }
- available = {
- tag = AST
- NZL = { is_ai = yes }
- date > 1940.3.1
- }
- fire_only_once = yes
- cost = 0
- visible = {
- country_exists = NZL
- }
- complete_effect = {
- add_state_core = 723
- add_state_core = 284
- AST = {
- annex_country = {
- target = NZL
- transfer_troops = yes
- }
- }
- }
- }
- }
+  AST_annex_nzl = {
+  icon = generic_operation
+  allowed = {
+  tag = AST
+  }
+  available = {
+  tag = AST
+  NZL = { is_ai = yes }
+  date > 1940.3.1
+  }
+  fire_only_once = yes
+  cost = 0
+  visible = {
+  country_exists = NZL
+  }
+  complete_effect = {
+  add_state_core = 641
+  add_state_core = 272
+  AST = {
+  annex_country = {
+  target = NZL
+  transfer_troops = yes
+  }
+  }
+  }
+  }
+  }
 

@@ -1,313 +1,313 @@
 focus_tree = {
- id = iran_focus
- country = {
- factor = 0
- modifier = {
- add = 10
- tag = PER
- }
- }
- default = no
- focus = {
- id = per_industrial_effort
- icon = GFX_goal_generic_production
- x = 5
- y = 0
- cost = 10
- available_if_capitulated = yes
- completion_reward = {
- add_tech_bonus = {
- name = industrial_bonus
- bonus = 1.0
- uses = 1
- category = industry
- }
- }
- ai_will_do = {
- factor = 3
- modifier = {
- factor = 1
- OR = {
- tag = BEL
- tag = LUX
- tag = HOL
- tag = DEN
- num_of_controlled_states < 2
- }
- }
- }
- }
- focus = {
- id = per_construction_effort
- icon = GFX_goal_generic_construct_civ_factory
- prerequisite = { focus = per_industrial_effort }
- x = -1
- y = 1
- relative_position_id = per_industrial_effort
- cost = 10
- available_if_capitulated = yes
- ai_will_do = {
- factor = 2
- }
- bypass = {
- }
- complete_tooltip = {
- }
- completion_reward = {
- 417 = {
- add_extra_state_shared_building_slots = 2
- add_building_construction = {
- type = industrial_complex
- level = 1
- instant_build = yes
- }
- }
- }
- }
- focus = {
- id = per_production_effort
- icon = GFX_goal_generic_construct_mil_factory
- prerequisite = { focus = per_industrial_effort }
- x = 1
- y = 1
- relative_position_id = per_industrial_effort
- cost = 10
- available_if_capitulated = yes
- ai_will_do = {
- factor = 2
- }
- bypass = {
- }
- complete_tooltip = {
- add_extra_state_shared_building_slots = 2
- add_building_construction = {
- type = arms_factory
- level = 2
- instant_build = yes
- }
- }
- completion_reward = {
- 419 = {
- add_extra_state_shared_building_slots = 2
- add_building_construction = {
- type = arms_factory
- level = 2
- instant_build = yes
- }
- }
- }
- }
- focus = {
- id = per_construction_effort_2
- icon = GFX_goal_generic_construct_civ_factory
- prerequisite = { focus = per_construction_effort }
- x = 0
- y = 1
- relative_position_id = per_construction_effort
- cost = 10
- available_if_capitulated = yes
- ai_will_do = {
- factor = 2
- }
- bypass = {
- }
- complete_tooltip = {
- }
- completion_reward = {
- 419 = {
- add_extra_state_shared_building_slots = 1
- add_building_construction = {
- type = industrial_complex
- level = 1
- instant_build = yes
- }
- }
- }
- }
- focus = {
- id = per_production_effort_2
- icon = GFX_goal_generic_construct_mil_factory
- prerequisite = { focus = per_production_effort }
- x = 0
- y = 1
- relative_position_id = per_production_effort
- cost = 10
- available_if_capitulated = yes
- ai_will_do = {
- factor = 2
- }
- bypass = {
- }
- complete_tooltip = {
- }
- completion_reward = {
- 421 = {
- add_extra_state_shared_building_slots = 2
- add_building_construction = {
- type = arms_factory
- level = 2
- instant_build = yes
- }
- }
- }
- }
- focus = {
- id = per_infrastructure_effort
- icon = GFX_goal_generic_construct_infrastructure
- prerequisite = { focus = per_construction_effort_2 }
- x = 0
- y = 1
- relative_position_id = per_construction_effort_2
- cost = 10
- available_if_capitulated = yes
- bypass = {
- custom_trigger_tooltip = {
- tooltip = infrastructure_effort_tt
- all_owned_state = {
- free_building_slots = {
- building = infrastructure
- size < 1
- }
- }
- }
- }
- complete_tooltip = {
- }
- completion_reward = {
- 412 = {
- add_building_construction = {
- type = infrastructure
- level = 6
- instant_build = yes
- }
- }
- }
- }
- focus = {
- id = per_construction_effort_3
- icon = GFX_goal_generic_construct_civ_factory
- prerequisite = { focus = per_infrastructure_effort }
- x = 2
- y = 1
- relative_position_id = per_infrastructure_effort
- cost = 10
- available_if_capitulated = yes
- ai_will_do = {
- factor = 2
- }
- bypass = {
- }
- complete_tooltip = {
- }
- completion_reward = {
- 413 = {
- add_extra_state_shared_building_slots = 3
- add_building_construction = {
- type = industrial_complex
- level = 3
- instant_build = yes
- }
- }
- }
- }
- focus = {
- id = per_political_effort
- icon = GFX_goal_generic_demand_territory
- x = 8
- y = 0
- cost = 10
- available_if_capitulated = yes
- completion_reward = {
- add_political_power = 120
- }
- }
- focus = {
- id = per_neutrality_focus
- icon = GFX_goal_generic_neutrality_focus
- prerequisite = { focus = per_political_effort }
- x = 0
- y = 1
- relative_position_id = per_political_effort
- cost = 10
- available_if_capitulated = yes
- ai_will_do = {
- factor = 1
- modifier = {
- factor = 0
- tag = AUS
- }
- }
- completion_reward = {
- if = {
- limit = { NOT = { has_idea = neutrality_idea2 } }
- add_ideas = neutrality_idea2
- }
- add_political_power = 150
- }
- }
- focus = {
- id = per_deterrence
- icon = GFX_goal_generic_defence
- prerequisite = { focus = per_neutrality_focus }
- x = 0
- y = 1
- relative_position_id = per_neutrality_focus
- cost = 10
- available_if_capitulated = yes
- completion_reward = {
- add_ideas = deterrence
- }
- }
- focus = {
- id = per_why_we_fight
- icon = GFX_goal_generic_propaganda
- prerequisite = { focus = per_deterrence }
- available = {
- OR = {
- threat > 0.75
- has_defensive_war = yes
- }
- }
- continue_if_invalid = yes
- x = 0
- y = 1
- relative_position_id = per_deterrence
- cost = 10
- available_if_capitulated = yes
- completion_reward = {
- add_ideas = why_we_fight_focus
- custom_effect_tooltip = why_we_fight_effect
- hidden_effect = {
- if = {
- limit = { NOT = { has_idea = neutrality_idea } }
- set_rule = { can_create_factions = yes }
- }
- }
- }
- }
- focus = {
- id = per_technology_sharing
- icon = GFX_goal_generic_scientific_exchange
- prerequisite = { focus = per_why_we_fight }
- available = {
- has_war = yes
- is_in_faction = yes
- OR = {
- num_of_factories > 50
- any_other_country = {
- is_in_faction_with = ROOT
- num_of_factories > 50
- }
- }
- }
- x = 0
- y = 1
- relative_position_id = per_why_we_fight
- cost = 10
- available_if_capitulated = yes
- completion_reward = {
- add_research_slot = 1
- }
- }
- }
+  id = iran_focus
+  country = {
+  factor = 0
+  modifier = {
+  add = 10
+  tag = PER
+  }
+  }
+  default = no
+  focus = {
+  id = per_industrial_effort
+  icon = GFX_goal_generic_production
+  x = 5
+  y = 0
+  cost = 10
+  available_if_capitulated = yes
+  completion_reward = {
+  add_tech_bonus = {
+  name = industrial_bonus
+  bonus = 1.0
+  uses = 1
+  category = industry
+  }
+  }
+  ai_will_do = {
+  factor = 3
+  modifier = {
+  factor = 1
+  OR = {
+  tag = BEL
+  tag = LUX
+  tag = HOL
+  tag = DEN
+  num_of_controlled_states < 2
+  }
+  }
+  }
+  }
+  focus = {
+  id = per_construction_effort
+  icon = GFX_goal_generic_construct_civ_factory
+  prerequisite = { focus = per_industrial_effort }
+  x = -1
+  y = 1
+  relative_position_id = per_industrial_effort
+  cost = 10
+  available_if_capitulated = yes
+  ai_will_do = {
+  factor = 2
+  }
+  bypass = {
+  }
+  complete_tooltip = {
+  }
+  completion_reward = {
+  383 = {
+  add_extra_state_shared_building_slots = 2
+  add_building_construction = {
+  type = industrial_complex
+  level = 1
+  instant_build = yes
+  }
+  }
+  }
+  }
+  focus = {
+  id = per_production_effort
+  icon = GFX_goal_generic_construct_mil_factory
+  prerequisite = { focus = per_industrial_effort }
+  x = 1
+  y = 1
+  relative_position_id = per_industrial_effort
+  cost = 10
+  available_if_capitulated = yes
+  ai_will_do = {
+  factor = 2
+  }
+  bypass = {
+  }
+  complete_tooltip = {
+  add_extra_state_shared_building_slots = 2
+  add_building_construction = {
+  type = arms_factory
+  level = 2
+  instant_build = yes
+  }
+  }
+  completion_reward = {
+  385 = {
+  add_extra_state_shared_building_slots = 2
+  add_building_construction = {
+  type = arms_factory
+  level = 2
+  instant_build = yes
+  }
+  }
+  }
+  }
+  focus = {
+  id = per_construction_effort_2
+  icon = GFX_goal_generic_construct_civ_factory
+  prerequisite = { focus = per_construction_effort }
+  x = 0
+  y = 1
+  relative_position_id = per_construction_effort
+  cost = 10
+  available_if_capitulated = yes
+  ai_will_do = {
+  factor = 2
+  }
+  bypass = {
+  }
+  complete_tooltip = {
+  }
+  completion_reward = {
+  385 = {
+  add_extra_state_shared_building_slots = 1
+  add_building_construction = {
+  type = industrial_complex
+  level = 1
+  instant_build = yes
+  }
+  }
+  }
+  }
+  focus = {
+  id = per_production_effort_2
+  icon = GFX_goal_generic_construct_mil_factory
+  prerequisite = { focus = per_production_effort }
+  x = 0
+  y = 1
+  relative_position_id = per_production_effort
+  cost = 10
+  available_if_capitulated = yes
+  ai_will_do = {
+  factor = 2
+  }
+  bypass = {
+  }
+  complete_tooltip = {
+  }
+  completion_reward = {
+  387 = {
+  add_extra_state_shared_building_slots = 2
+  add_building_construction = {
+  type = arms_factory
+  level = 2
+  instant_build = yes
+  }
+  }
+  }
+  }
+  focus = {
+  id = per_infrastructure_effort
+  icon = GFX_goal_generic_construct_infrastructure
+  prerequisite = { focus = per_construction_effort_2 }
+  x = 0
+  y = 1
+  relative_position_id = per_construction_effort_2
+  cost = 10
+  available_if_capitulated = yes
+  bypass = {
+  custom_trigger_tooltip = {
+  tooltip = infrastructure_effort_tt
+  all_owned_state = {
+  free_building_slots = {
+  building = infrastructure
+  size < 1
+  }
+  }
+  }
+  }
+  complete_tooltip = {
+  }
+  completion_reward = {
+  379 = {
+  add_building_construction = {
+  type = infrastructure
+  level = 6
+  instant_build = yes
+  }
+  }
+  }
+  }
+  focus = {
+  id = per_construction_effort_3
+  icon = GFX_goal_generic_construct_civ_factory
+  prerequisite = { focus = per_infrastructure_effort }
+  x = 2
+  y = 1
+  relative_position_id = per_infrastructure_effort
+  cost = 10
+  available_if_capitulated = yes
+  ai_will_do = {
+  factor = 2
+  }
+  bypass = {
+  }
+  complete_tooltip = {
+  }
+  completion_reward = {
+  380 = {
+  add_extra_state_shared_building_slots = 3
+  add_building_construction = {
+  type = industrial_complex
+  level = 3
+  instant_build = yes
+  }
+  }
+  }
+  }
+  focus = {
+  id = per_political_effort
+  icon = GFX_goal_generic_demand_territory
+  x = 8
+  y = 0
+  cost = 10
+  available_if_capitulated = yes
+  completion_reward = {
+  add_political_power = 120
+  }
+  }
+  focus = {
+  id = per_neutrality_focus
+  icon = GFX_goal_generic_neutrality_focus
+  prerequisite = { focus = per_political_effort }
+  x = 0
+  y = 1
+  relative_position_id = per_political_effort
+  cost = 10
+  available_if_capitulated = yes
+  ai_will_do = {
+  factor = 1
+  modifier = {
+  factor = 0
+  tag = AUS
+  }
+  }
+  completion_reward = {
+  if = {
+  limit = { NOT = { has_idea = neutrality_idea2 } }
+  add_ideas = neutrality_idea2
+  }
+  add_political_power = 150
+  }
+  }
+  focus = {
+  id = per_deterrence
+  icon = GFX_goal_generic_defence
+  prerequisite = { focus = per_neutrality_focus }
+  x = 0
+  y = 1
+  relative_position_id = per_neutrality_focus
+  cost = 10
+  available_if_capitulated = yes
+  completion_reward = {
+  add_ideas = deterrence
+  }
+  }
+  focus = {
+  id = per_why_we_fight
+  icon = GFX_goal_generic_propaganda
+  prerequisite = { focus = per_deterrence }
+  available = {
+  OR = {
+  threat > 0.75
+  has_defensive_war = yes
+  }
+  }
+  continue_if_invalid = yes
+  x = 0
+  y = 1
+  relative_position_id = per_deterrence
+  cost = 10
+  available_if_capitulated = yes
+  completion_reward = {
+  add_ideas = why_we_fight_focus
+  custom_effect_tooltip = why_we_fight_effect
+  hidden_effect = {
+  if = {
+  limit = { NOT = { has_idea = neutrality_idea } }
+  set_rule = { can_create_factions = yes }
+  }
+  }
+  }
+  }
+  focus = {
+  id = per_technology_sharing
+  icon = GFX_goal_generic_scientific_exchange
+  prerequisite = { focus = per_why_we_fight }
+  available = {
+  has_war = yes
+  is_in_faction = yes
+  OR = {
+  num_of_factories > 50
+  any_other_country = {
+  is_in_faction_with = ROOT
+  num_of_factories > 50
+  }
+  }
+  }
+  x = 0
+  y = 1
+  relative_position_id = per_why_we_fight
+  cost = 10
+  available_if_capitulated = yes
+  completion_reward = {
+  add_research_slot = 1
+  }
+  }
+  }
 

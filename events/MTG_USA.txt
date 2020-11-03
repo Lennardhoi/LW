@@ -1,71 +1,70 @@
-﻿
  add_namespace = panay_incident
- country_event = {
- id = panay_incident.1
- hidden = yes
- is_triggered_only = yes
- fire_only_once = yes
- immediate = {
- hidden_effect = {
- USA = {
- country_event = { id = panay_incident.2 days = 1 }
- }
- news_event = { id = news.334 }
- }
- }
- option = {}
- }
- country_event = {
- id = panay_incident.2
- title = panay_incident.2.t
- desc = {
- text = panay_incident.2.d
- trigger = {
- USA = { has_war_support < 0.5 }
- }
- }
- desc = {
- text = panay_incident.2.e
- trigger = {
- USA = { has_war_support > 0.49 }
- }
- }
- picture = GFX_report_event_panay_incident
- is_triggered_only = yes
- option = {
- name = panay_incident.2.b
- custom_effect_tooltip = panay_incident.2.b.tt
- ai_chance = { factor = 85 }
- add_war_support = 0.05
- set_country_flag = { flag = USA_panay_window days = 90 value = 1 }
- hidden_effect = { JAP = { country_event = { id = panay_incident.3 days = 2 } } }
- add_opinion_modifier = { target = JAP modifier = panay_inc_opinion_modifier }
- }
- }
- country_event = {
- id = panay_incident.3
- title = panay_incident.3.t
- desc = panay_incident.3.d
- picture = GFX_report_event_us_panay_demands
- is_triggered_only = yes
- option = {
- name = panay_incident.3.b
- custom_effect_tooltip = panay_incident.3.b.tt
- add_political_power = 100
- hidden_effect = { USA = { country_event = { id = panay_incident.5 days = 2 } } }
- }
- }
- country_event = {
- id = panay_incident.5
- title = panay_incident.5.t
- desc = panay_incident.5.d
- picture = GFX_report_event_japanese_reply
- is_triggered_only = yes
- option = {
- name =  panay_incident.5.b
- add_political_power = -10
- add_war_support = -0.02
- add_stability = 0.05
- }
- }
+  country_event = {
+  id = panay_incident.1
+  hidden = yes
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+  hidden_effect = {
+  USA = {
+  country_event = { id = panay_incident.2 days = 1 }
+  }
+  news_event = { id = news.334 }
+  }
+  }
+  option = {}
+  }
+  country_event = {
+  id = panay_incident.2
+  title = panay_incident.2.t
+  desc = {
+  text = panay_incident.2.d
+  trigger = {
+  USA = { has_war_support < 0.5 }
+  }
+  }
+  desc = {
+  text = panay_incident.2.e
+  trigger = {
+  USA = { has_war_support > 0.49 }
+  }
+  }
+  picture = GFX_report_event_panay_incident
+  is_triggered_only = yes
+  option = {
+  name = panay_incident.2.b
+  custom_effect_tooltip = panay_incident.2.b.tt
+  ai_chance = { factor = 85 }
+  add_war_support = 0.05
+  set_country_flag = { flag = USA_panay_window days = 90 value = 1 }
+  hidden_effect = { JAP = { country_event = { id = panay_incident.3 days = 2 } } }
+  add_opinion_modifier = { target = JAP modifier = panay_inc_opinion_modifier }
+  }
+  }
+  country_event = {
+  id = panay_incident.3
+  title = panay_incident.3.t
+  desc = panay_incident.3.d
+  picture = GFX_report_event_us_panay_demands
+  is_triggered_only = yes
+  option = {
+  name = panay_incident.3.b
+  custom_effect_tooltip = panay_incident.3.b.tt
+  add_political_power = 100
+  hidden_effect = { USA = { country_event = { id = panay_incident.5 days = 2 } } }
+  }
+  }
+  country_event = {
+  id = panay_incident.5
+  title = panay_incident.5.t
+  desc = panay_incident.5.d
+  picture = GFX_report_event_japanese_reply
+  is_triggered_only = yes
+  option = {
+  name =  panay_incident.5.b
+  add_political_power = -10
+  add_war_support = -0.02
+  add_stability = 0.05
+  }
+  }
 

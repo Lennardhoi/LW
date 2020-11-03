@@ -1,149 +1,149 @@
-﻿add_namespace = lar_fra_inefficient_economy
- country_event = {
- id = lar_fra_inefficient_economy.1
- hidden = yes
- is_triggered_only = yes
- fire_only_once = yes
- immediate = {
- if = {
- limit = { has_idea = FRA_inefficient_economy_2 }
- swap_ideas = {
- remove_idea = FRA_inefficient_economy_2
- add_idea = FRA_inefficient_economy_1
- }
- }
- else_if = {
- limit = {
- has_idea = FRA_inefficient_economy_1
- }
- remove_ideas = FRA_inefficient_economy_1
- }
- }
- option = {
- }
- }
- add_namespace = lar_appeal_to_overseas_territories
- country_event = {
- id = lar_appeal_to_overseas_territories.1
- hidden = yes
- is_triggered_only = yes
- immediate = {
- if = {
- limit = { has_legitimacy < 80 }
- country_event = { id = lar_appeal_to_overseas_territories.4 days = 6 }
- } else = {
- country_event = { id = lar_appeal_to_overseas_territories.5 days = 6 }
- }
- if = {
- limit = { has_legitimacy < 60 }
- country_event = { id = lar_appeal_to_overseas_territories.10 days = 4 }
- } else = {
- country_event = { id = lar_appeal_to_overseas_territories.11 days = 4 }
- add_resource = {
- type = rubber
- amount = 30
- state = 543
- }
- }
- if = {
- limit = { has_legitimacy < 40 }
- country_event = { id = lar_appeal_to_overseas_territories.8 days = 2 }
- } else = {
- country_event = { id = lar_appeal_to_overseas_territories.9 days = 2 }
- }
- }
- option = {
- }
- }
- country_event = {
- id = lar_appeal_to_overseas_territories.4
- title = lar_appeal_to_overseas_territories.4.t
- desc = lar_appeal_to_overseas_territories.4.desc
- picture = GFX_report_event_france_parade
- is_triggered_only = yes
- option = {
- name = lar_appeal_to_overseas_territories.2.a
- ai_chance = {
- factor = 100
- }
- }
- }
- country_event = {
- id = lar_appeal_to_overseas_territories.5
- title = lar_appeal_to_overseas_territories.5.t
- desc = lar_appeal_to_overseas_territories.5.desc
- picture = GFX_report_event_felix_eboue
- is_triggered_only = yes
- option = {
- name = lar_appeal_to_overseas_territories.3.a
- ai_chance = {
- factor = 80
- }
- FRA = { transfer_state = 554 }
- FRA = { transfer_state = 680 }
- FRA = { transfer_state = 677 }
- }
- }
- country_event = {
- id = lar_appeal_to_overseas_territories.8
- title = lar_appeal_to_overseas_territories.8.t
- desc = lar_appeal_to_overseas_territories.8.desc
- picture = GFX_report_event_france_parade
- is_triggered_only = yes
- option = {
- name = lar_appeal_to_overseas_territories.6.a
- ai_chance = {
- factor = 100
- }
- }
- }
- country_event = {
- id = lar_appeal_to_overseas_territories.9
- title = lar_appeal_to_overseas_territories.9.t
- desc = lar_appeal_to_overseas_territories.9.desc
- picture = GFX_report_event_felix_eboue
- is_triggered_only = yes
- option = {
- name = lar_appeal_to_overseas_territories.3.a
- ai_chance = {
- factor = 80
- }
- FRA = { transfer_state = 776 }
- FRA = { transfer_state = 777 }
- FRA = { transfer_state = 781 }
- FRA = { transfer_state = 778 }
- FRA = { transfer_state = 556 }
- FRA = { transfer_state = 779 }
- FRA = { transfer_state = 780 }
- FRA = { transfer_state = 272 }
- FRA = { transfer_state = 557 }
- }
- }
- country_event = {
- id = lar_appeal_to_overseas_territories.10
- title = lar_appeal_to_overseas_territories.10.t
- desc = lar_appeal_to_overseas_territories.10.desc
- picture = GFX_report_event_france_parade
- is_triggered_only = yes
- option = {
- name = lar_appeal_to_overseas_territories.2.a
- ai_chance = {
- factor = 100
- }
- }
- }
- country_event = {
- id = lar_appeal_to_overseas_territories.11
- title = lar_appeal_to_overseas_territories.11.t
- desc = lar_appeal_to_overseas_territories.11.desc
- picture = GFX_report_event_felix_eboue
- is_triggered_only = yes
- option = {
- name = lar_appeal_to_overseas_territories.3.a
- ai_chance = {
- factor = 80
- }
- FRA = { transfer_state = 543 }
- }
- }
+add_namespace = lar_fra_inefficient_economy
+  country_event = {
+  id = lar_fra_inefficient_economy.1
+  hidden = yes
+  is_triggered_only = yes
+  fire_only_once = yes
+  immediate = {
+  if = {
+  limit = { has_idea = FRA_inefficient_economy_2 }
+  swap_ideas = {
+  remove_idea = FRA_inefficient_economy_2
+  add_idea = FRA_inefficient_economy_1
+  }
+  }
+  else_if = {
+  limit = {
+  has_idea = FRA_inefficient_economy_1
+  }
+  remove_ideas = FRA_inefficient_economy_1
+  }
+  }
+  option = {
+  }
+  }
+  add_namespace = lar_appeal_to_overseas_territories
+  country_event = {
+  id = lar_appeal_to_overseas_territories.1
+  hidden = yes
+  is_triggered_only = yes
+  immediate = {
+  if = {
+  limit = { has_legitimacy < 80 }
+  country_event = { id = lar_appeal_to_overseas_territories.4 days = 6 }
+  } else = {
+  country_event = { id = lar_appeal_to_overseas_territories.5 days = 6 }
+  }
+  if = {
+  limit = { has_legitimacy < 60 }
+  country_event = { id = lar_appeal_to_overseas_territories.10 days = 4 }
+  } else = {
+  country_event = { id = lar_appeal_to_overseas_territories.11 days = 4 }
+  add_resource = {
+  type = rubber
+  amount = 30
+  state = 469
+  }
+  }
+  if = {
+  limit = { has_legitimacy < 40 }
+  country_event = { id = lar_appeal_to_overseas_territories.8 days = 2 }
+  } else = {
+  country_event = { id = lar_appeal_to_overseas_territories.9 days = 2 }
+  }
+  }
+  option = {
+  }
+  }
+  country_event = {
+  id = lar_appeal_to_overseas_territories.4
+  title = lar_appeal_to_overseas_territories.4.t
+  desc = lar_appeal_to_overseas_territories.4.desc
+  picture = GFX_report_event_france_parade
+  is_triggered_only = yes
+  option = {
+  name = lar_appeal_to_overseas_territories.2.a
+  ai_chance = {
+  factor = 100
+  }
+  }
+  }
+  country_event = {
+  id = lar_appeal_to_overseas_territories.5
+  title = lar_appeal_to_overseas_territories.5.t
+  desc = lar_appeal_to_overseas_territories.5.desc
+  picture = GFX_report_event_felix_eboue
+  is_triggered_only = yes
+  option = {
+  name = lar_appeal_to_overseas_territories.3.a
+  ai_chance = {
+  factor = 80
+  }
+  FRA = { transfer_state = 554 }
+  FRA = { transfer_state = 680 }
+  FRA = { transfer_state = 677 }
+  }
+  }
+  country_event = {
+  id = lar_appeal_to_overseas_territories.8
+  title = lar_appeal_to_overseas_territories.8.t
+  desc = lar_appeal_to_overseas_territories.8.desc
+  picture = GFX_report_event_france_parade
+  is_triggered_only = yes
+  option = {
+  name = lar_appeal_to_overseas_territories.6.a
+  ai_chance = {
+  factor = 100
+  }
+  }
+  }
+  country_event = {
+  id = lar_appeal_to_overseas_territories.9
+  title = lar_appeal_to_overseas_territories.9.t
+  desc = lar_appeal_to_overseas_territories.9.desc
+  picture = GFX_report_event_felix_eboue
+  is_triggered_only = yes
+  option = {
+  name = lar_appeal_to_overseas_territories.3.a
+  ai_chance = {
+  factor = 80
+  }
+  FRA = { transfer_state = 776 }
+  FRA = { transfer_state = 777 }
+  FRA = { transfer_state = 781 }
+  FRA = { transfer_state = 778 }
+  FRA = { transfer_state = 556 }
+  FRA = { transfer_state = 779 }
+  FRA = { transfer_state = 780 }
+  FRA = { transfer_state = 272 }
+  FRA = { transfer_state = 557 }
+  }
+  }
+  country_event = {
+  id = lar_appeal_to_overseas_territories.10
+  title = lar_appeal_to_overseas_territories.10.t
+  desc = lar_appeal_to_overseas_territories.10.desc
+  picture = GFX_report_event_france_parade
+  is_triggered_only = yes
+  option = {
+  name = lar_appeal_to_overseas_territories.2.a
+  ai_chance = {
+  factor = 100
+  }
+  }
+  }
+  country_event = {
+  id = lar_appeal_to_overseas_territories.11
+  title = lar_appeal_to_overseas_territories.11.t
+  desc = lar_appeal_to_overseas_territories.11.desc
+  picture = GFX_report_event_felix_eboue
+  is_triggered_only = yes
+  option = {
+  name = lar_appeal_to_overseas_territories.3.a
+  ai_chance = {
+  factor = 80
+  }
+  FRA = { transfer_state = 543 }
+  }
+  }
 

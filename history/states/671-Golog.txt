@@ -1,0 +1,35 @@
+state={
+  id=671
+  name="STATE_754"
+  provinces={
+ 1756 4194 4487 6657 9560 9817 10292 11445 11502
+  }
+  manpower=400000
+  buildings_max_level_factor=1.000
+  state_category = rural
+  history={
+  owner = CHI
+  add_core_of = CHI
+  victory_points = {
+ 11445 3
+  }
+  buildings = {
+  infrastructure = 1
+  industrial_complex = 1
+  arms_factory = 1
+  }
+  1938.10.25 = {
+  if = {
+  limit = {
+  NOT = {
+  has_dlc = "Waking the Tiger"
+  }
+  }
+  CHI = {
+  transfer_state = PREV
+  }
+  }
+  }
+  }
+  }
+

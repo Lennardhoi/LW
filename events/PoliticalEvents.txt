@@ -1,28 +1,27 @@
-﻿
  add_namespace = political
- country_event = {
- id = political.30
- title = political.30.t
- desc = political.30.d
- picture = GFX_report_event_startup_picture
- is_triggered_only = yes
- option = {
- name = political.30.a
- }
- option = {
- name = political.30.b
- ROOT = {
- country_event = political.31
- }
- }
- }
- country_event = {
- id = political.31
- title = political.31.t
- desc = political.31.d
- is_triggered_only = yes
- option = {
- name = political.31.a
- }
- }
+  country_event = {
+  id = political.30
+  title = political.30.t
+  desc = political.30.d
+  picture = GFX_report_event_startup_picture
+  is_triggered_only = yes
+  option = {
+  name = political.30.a
+  }
+  option = {
+  name = political.30.b
+  ROOT = {
+  country_event = political.31
+  }
+  }
+  }
+  country_event = {
+  id = political.31
+  title = political.31.t
+  desc = political.31.d
+  is_triggered_only = yes
+  option = {
+  name = political.31.a
+  }
+  }
 

@@ -1,0 +1,37 @@
+state={
+  id=517
+  name="STATE_594"
+  manpower = 6550000
+  state_category = town
+  resources={
+  }
+  history={
+  owner = CHI
+  add_core_of = CHI
+  buildings = {
+  infrastructure = 3
+  industrial_complex = 1
+  }
+  victory_points = {
+ 6525 10
+  }
+  1938.10.25 = {
+  if = {
+  limit = {
+  NOT = { has_dlc = "Waking the Tiger" }
+  }
+  remove_core_of = GXC
+  CHI = { transfer_state = PREV }
+  }
+  JAP = {
+  set_province_controller = 1018
+  set_province_controller = 4023
+  set_province_controller = 10004
+  }
+  }
+  }
+  provinces={
+ 957 3696 3793 3846 6433 6525 6579 9103 9146 9200 10731 10788 10826
+  }
+  }
+
