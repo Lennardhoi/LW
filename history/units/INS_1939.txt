@@ -1,108 +1,108 @@
 ﻿division_template = {
- name = "Infanterie Divisie"
- division_names_group = INS_INF_01
- regiments = {
- infantry = { x = 0 y = 0 }
- infantry = { x = 0 y = 1 }
- infantry = { x = 0 y = 2 }
- infantry = { x = 1 y = 0 }
- infantry = { x = 1 y = 1 }
- infantry = { x = 1 y = 2 }
- infantry = { x = 2 y = 0 }
- infantry = { x = 2 y = 1 }
- infantry = { x = 2 y = 2 }
- }
- }
- division_template = {
- name = "KNIL Koloniaal Garnizoen"
- division_names_group = INS_GAR_01
- regiments = {
- infantry = { x = 0 y = 0 }
- infantry = { x = 0 y = 1 }
- infantry = { x = 0 y = 2 }
- }
- }
- units = {
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 3
- }
- location =9413
- division_template = "KNIL Koloniaal Garnizoen"
- start_experience_factor = 0.0
- start_equipment_factor = 0.3
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 1
- }
- location =11147
- division_template = "KNIL Koloniaal Garnizoen"
- start_experience_factor = 0.0
- start_equipment_factor = 0.3
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 2
- }
- location =4360
- division_template = "KNIL Koloniaal Garnizoen"
- start_experience_factor = 0.0
- start_equipment_factor = 0.3
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 4
- }
- location =9439
- division_template = "KNIL Koloniaal Garnizoen"
- start_experience_factor = 0.0
- start_equipment_factor = 0.3
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 1
- }
- location =4320
- division_template = "Infanterie Divisie"
- start_experience_factor = 0.2
- start_equipment_factor = 0.3
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 2
- }
- location =7076
- division_template = "Infanterie Divisie"
- start_experience_factor = 0.2
- start_equipment_factor = 0.3
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 3
- }
- location =6844
- division_template = "Infanterie Divisie"
- start_experience_factor = 0.2
- start_equipment_factor = 0.3
- }
- }
- instant_effect = {
- add_equipment_production = {
- equipment = {
- type = infantry_equipment_0
- creator = "INS"
- }
- requested_factories = 2
- progress = 0.1
- efficiency = 50
- }
- }
+	name = "Infanterie Divisie"
+	division_names_group = INS_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+division_template = {
+	name = "KNIL Koloniaal Garnizoen"
+	division_names_group = INS_GAR_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+}
+units = {
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location =9413
+		division_template = "KNIL Koloniaal Garnizoen"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location =11147
+		division_template = "KNIL Koloniaal Garnizoen"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location =4360
+		division_template = "KNIL Koloniaal Garnizoen"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location =9439
+		division_template = "KNIL Koloniaal Garnizoen"
+		start_experience_factor = 0.0
+		start_equipment_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location =4320
+		division_template = "Infanterie Divisie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location =7076
+		division_template = "Infanterie Divisie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location =6844
+		division_template = "Infanterie Divisie"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+}
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "INS"
+		}
+		requested_factories = 2
+		progress = 0.1
+		efficiency = 50
+	}
+}
 

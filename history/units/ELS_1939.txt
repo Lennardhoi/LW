@@ -1,50 +1,50 @@
 ﻿division_template = {
- name = "Brigada de Infanteria"
- division_names_group = SPAN_INFB_02
- regiments = {
- infantry = { x = 0 y = 0 }
- infantry = { x = 0 y = 1 }
- infantry = { x = 0 y = 2 }
- }
- }
- units = {
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 1
- }
- location =11595
- division_template = "Brigada de Infanteria"
- start_experience_factor = 0.2
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 2
- }
- location =11595
- division_template = "Brigada de Infanteria"
- start_experience_factor = 0.2
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 3
- }
- location =11595
- division_template = "Brigada de Infanteria"
- start_experience_factor = 0.2
- }
- }
- instant_effect = {
- add_equipment_production = {
- equipment = {
- type = infantry_equipment_1
- creator = "ELS"
- }
- requested_factories = 1
- progress = 0.71
- efficiency = 100
- }
- }
+	name = "Brigada de Infanteria"
+	division_names_group = SPAN_INFB_02
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+}
+units = {
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location =11595
+		division_template = "Brigada de Infanteria"
+		start_experience_factor = 0.2
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location =11595
+		division_template = "Brigada de Infanteria"
+		start_experience_factor = 0.2
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location =11595
+		division_template = "Brigada de Infanteria"
+		start_experience_factor = 0.2
+	}
+}
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "ELS"
+		}
+		requested_factories = 1
+		progress = 0.71
+		efficiency = 100
+	}
+}
 

@@ -1,68 +1,68 @@
 add_namespace = wtt_germany
-  country_event = {
-  id = wtt_germany.7
-  title = wtt_germany.7.t
-  desc = wtt_germany.7.d
-  picture = GFX_report_event_tank_factory
-  is_triggered_only = yes
-  option = {
-  name = wtt_germany.7.a
-  }
-  }
-  country_event = {
-  id = wtt_germany.63
-  title = wtt_germany.63.t
-  desc = wtt_germany.63.desc
-  picture = GFX_report_event_generic_peaceful_annexation
-  is_triggered_only = yes
-  option = {
-  name = wtt_germany.63.a
-  effect_tooltip = {
-  GER = {
-  add_state_core = 8
-  add_state_core = 28
-  }
-  }
-  }
-  }
-  country_event = {
-  id = wtt_germany.64
-  title = wtt_germany.64.t
-  desc = wtt_germany.63.desc
-  picture = GFX_report_event_generic_peaceful_annexation
-  is_triggered_only = yes
-  option = {
-  name = wtt_germany.64.a
-  effect_tooltip = {
-  GER = {
-  add_state_core = 8
-  add_state_core = 28
-  }
-  }
-  }
-  }
-  country_event = {
-  id = wtt_germany.72
-  title = wtt_germany.72.t
-  desc = wtt_germany.72.desc
-  picture = GFX_report_event_generic_read_write
-  is_triggered_only = yes
-  option = {
-  name = wtt_germany.72.a
-  custom_effect_tooltip = wtt_germany.72_tt
-  FROM = {
-  country_event = { id = wtt_germany.73 days = 1 }
-  }
-  }
-  }
-  country_event = {
-  id = wtt_germany.73
-  title = wtt_germany.73.t
-  desc = wtt_germany.73.desc
-  picture = GFX_report_event_generic_read_write
-  is_triggered_only = yes
-  option = {
-  name = wtt_germany.73.a
-  }
-  }
+country_event = {
+	id = wtt_germany.7
+	title = wtt_germany.7.t
+	desc = wtt_germany.7.d
+	picture = GFX_report_event_tank_factory
+	is_triggered_only = yes
+	option = {
+		name = wtt_germany.7.a
+	}
+}
+country_event = {
+	id = wtt_germany.63
+	title = wtt_germany.63.t
+	desc = wtt_germany.63.desc
+	picture = GFX_report_event_generic_peaceful_annexation
+	is_triggered_only = yes
+	option = {
+		name = wtt_germany.63.a
+		effect_tooltip = {
+			GER = {
+				add_state_core = 8
+				add_state_core = 28
+			}
+		}
+	}
+}
+country_event = {
+	id = wtt_germany.64
+	title = wtt_germany.64.t
+	desc = wtt_germany.63.desc
+	picture = GFX_report_event_generic_peaceful_annexation
+	is_triggered_only = yes
+	option = {
+		name = wtt_germany.64.a
+		effect_tooltip = {
+			GER = {
+				add_state_core = 8
+				add_state_core = 28
+			}
+		}
+	}
+}
+country_event = {
+	id = wtt_germany.72
+	title = wtt_germany.72.t
+	desc = wtt_germany.72.desc
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = wtt_germany.72.a
+		custom_effect_tooltip = wtt_germany.72_tt
+		FROM = {
+			country_event = { id = wtt_germany.73 days = 1 }
+		}
+	}
+}
+country_event = {
+	id = wtt_germany.73
+	title = wtt_germany.73.t
+	desc = wtt_germany.73.desc
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = wtt_germany.73.a
+	}
+}
 

@@ -1,776 +1,776 @@
 ﻿division_template = {
- name = "Dywizja Piechoty"
- division_names_group = POL_INF_01
- regiments = {
- infantry = { x = 0 y = 0 }
- infantry = { x = 0 y = 1 }
- infantry = { x = 0 y = 2 }
- infantry = { x = 1 y = 0 }
- infantry = { x = 1 y = 1 }
- infantry = { x = 1 y = 2 }
- infantry = { x = 2 y = 0 }
- infantry = { x = 2 y = 1 }
- infantry = { x = 2 y = 2 }
- }
- support = {
- recon = { x = 0 y = 0 }
- }
- }
- division_template = {
- name = "Dywizja Piechoty Górskiej"
- division_names_group = POL_MNT_01
- regiments = {
- mountaineers = { x = 0 y = 0 }
- mountaineers = { x = 0 y = 1 }
- mountaineers = { x = 0 y = 2 }
- mountaineers = { x = 1 y = 0 }
- mountaineers = { x = 1 y = 1 }
- mountaineers = { x = 1 y = 2 }
- mountaineers = { x = 2 y = 0 }
- mountaineers = { x = 2 y = 1 }
- mountaineers = { x = 2 y = 2 }
- }
- support = {
- recon = { x = 0 y = 0 }
- }
- }
- division_template = {
- name = "Brygada Piechoty Górskiej"
- division_names_group = POL_MNT_01
- regiments = {
- mountaineers = { x = 0 y = 0 }
- mountaineers = { x = 0 y = 1 }
- mountaineers = { x = 0 y = 2 }
- infantry = { x = 1 y = 0 }
- infantry = { x = 1 y = 1 }
- infantry = { x = 1 y = 2 }
- }
- }
- division_template = {
- name = "Brygada Kawalerii"
- division_names_group = POL_CAV_01
- regiments = {
- cavalry = { x = 0 y = 0 }
- cavalry = { x = 0 y = 1 }
- cavalry = { x = 0 y = 2 }
- }
- support = {
- recon = { x = 0 y = 0 }
- }
- }
- division_template = {
- name = "Brygada Motorowej"
- division_names_group = POL_MOT_01
- regiments = {
- motorized = { x = 0 y = 0 }
- motorized = { x = 0 y = 1 }
- }
- support = {
- recon = { x = 0 y = 0 }
- engineer = { x = 0 y = 1 }
- }
- }
- division_template = {
- name = "Grupa Pancerna"
- division_names_group = POL_CAV_01
- regiments = {
- light_armor = { x = 0 y = 0 }
- light_armor = { x = 0 y = 1 }
- }
- support = {
- engineer = { x = 0 y = 0 }
- }
- }
- division_template = {
- name = "Brygada Ochrony Pogranicza"
- division_names_group = POL_GAR_01
- regiments = {
- infantry = { x = 0 y = 0 }
- infantry = { x = 0 y = 1 }
- infantry = { x = 0 y = 2 }
- infantry = { x = 1 y = 0 }
- infantry = { x = 1 y = 1 }
- infantry = { x = 1 y = 2 }
- }
- priority = 0
- }
- units = {
- division= {
- name = "Nadbrzezne Grupa Obrony"
- location =330
- division_template = "Dywizja Piechoty"
- start_experience_factor = 0.2
- start_equipment_factor = 0.3
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 9
- }
- location =354
- division_template = "Dywizja Piechoty"
- start_experience_factor = 0.3
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 15
- }
- location =3108
- division_template = "Dywizja Piechoty"
- start_experience_factor = 0.3
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 27
- }
- location =3079
- division_template = "Dywizja Piechoty"
- start_experience_factor = 0.2
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 4
- }
- location =302
- division_template = "Dywizja Piechoty"
- start_experience_factor = 0.3
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 16
- }
- location =251
- division_template = "Dywizja Piechoty"
- start_experience_factor = 0.3
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 107
- }
- location =8501
- division_template = "Brygada Kawalerii"
- force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
- start_experience_factor = 0.2
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 8
- }
- location =302
- division_template = "Brygada Ochrony Pogranicza"
- force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
- start_experience_factor = 0.2
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 14
- }
- location =353
- division_template = "Dywizja Piechoty"
- start_experience_factor = 0.3
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 17
- }
- location =10176
- division_template = "Dywizja Piechoty"
- start_experience_factor = 0.3
- start_equipment_factor = 0.7
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 25
- }
- location =3309
- division_template = "Dywizja Piechoty"
- start_experience_factor = 0.2
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 26
- }
- location =8756
- division_template = "Dywizja Piechoty"
- start_experience_factor = 0.2
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 106
- }
- location =353
- division_template = "Brygada Kawalerii"
- force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
- start_experience_factor = 0.2
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 109
- }
- location =3237
- division_template = "Brygada Kawalerii"
- force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
- start_experience_factor = 0.2
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 9
- }
- location =6062
- division_template = "Brygada Ochrony Pogranicza"
- force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
- start_experience_factor = 0.1
- start_equipment_factor = 0.3
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 2
- }
- location =8770
- division_template = "Dywizja Piechoty"
- start_experience_factor = 0.3
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 10
- }
- location =8732
- division_template = "Dywizja Piechoty"
- start_experience_factor = 0.3
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 28
- }
- location =8732
- division_template = "Dywizja Piechoty"
- start_experience_factor = 0.2
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 102
- }
- location =10486
- division_template = "Brygada Kawalerii"
- force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
- start_experience_factor = 0.2
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 30
- }
- location =549
- division_template = "Dywizja Piechoty"
- start_experience_factor = 0.2
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 111
- }
- location =549
- division_template = "Brygada Kawalerii"
- force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
- start_experience_factor = 0.2
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 6
- }
- location =471
- division_template = "Dywizja Piechoty"
- start_experience_factor = 0.3
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 7
- }
- location =5969
- division_template = "Dywizja Piechoty"
- start_experience_factor = 0.3
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 11
- }
- location =8791
- division_template = "Dywizja Piechoty"
- start_experience_factor = 0.3
- }
- division= {
- name = "10 Brygada Motorowej"
- location =10326
- division_template = "Brygada Motorowej"
- start_experience_factor = 0.3
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 101
- }
- location =471
- division_template = "Brygada Kawalerii"
- force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
- start_experience_factor = 0.2
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 23
- }
- location =8636
- division_template = "Dywizja Piechoty"
- start_experience_factor = 0.2
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 55
- }
- location =8636
- division_template = "Dywizja Piechoty"
- start_experience_factor = 0.1
- start_equipment_factor = 0.5
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 21
- }
- location =8775
- division_template = "Dywizja Piechoty Górskiej"
- start_experience_factor = 0.3
- }
- division= {
- name = "1 Brygada Piechoty Górskiej"
- location =8775
- division_template = "Brygada Piechoty Górskiej"
- start_experience_factor = 0.2
- start_equipment_factor = 0.7
- }
- division= {
- name = "2 Brygada Piechoty Górskiej"
- location =382
- division_template = "Brygada Piechoty Górskiej"
- start_experience_factor = 0.2
- start_equipment_factor = 0.7
- }
- division= {
- name = "3 Brygada Piechoty Górskiej"
- location =3188
- division_template = "Brygada Piechoty Górskiej"
- start_experience_factor = 0.2
- start_equipment_factor = 0.7
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 17
- }
- location =431
- division_template = "Brygada Ochrony Pogranicza"
- force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
- start_experience_factor = 0.1
- start_equipment_factor = 0.3
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 8
- }
- location =8526
- division_template = "Dywizja Piechoty"
- start_experience_factor = 0.3
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 20
- }
- location =5832
- division_template = "Dywizja Piechoty"
- start_experience_factor = 0.3
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 104
- }
- location =8548
- division_template = "Brygada Kawalerii"
- force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
- start_experience_factor = 0.2
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 103
- }
- location =5856
- division_template = "Brygada Kawalerii"
- force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
- start_experience_factor = 0.2
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 7
- }
- location =8526
- division_template = "Brygada Ochrony Pogranicza"
- force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
- start_experience_factor = 0.1
- start_equipment_factor = 0.3
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 18
- }
- location =10261
- division_template = "Dywizja Piechoty"
- start_experience_factor = 0.3
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 33
- }
- location =10288
- division_template = "Dywizja Piechoty"
- force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
- start_experience_factor = 0.1
- start_equipment_factor = 0.2
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 108
- }
- location =365
- division_template = "Brygada Kawalerii"
- force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
- start_experience_factor = 0.2
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 105
- }
- location =3039
- division_template = "Brygada Kawalerii"
- force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
- start_experience_factor = 0.2
- }
- division= {
- name = "Grupa Pancerna Prusy"
- location =10460
- division_template = "Grupa Pancerna"
- start_experience_factor = 0.3
- start_equipment_factor = 0.5
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 13
- }
- location =10460
- division_template = "Dywizja Piechoty"
- start_experience_factor = 0.3
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 19
- }
- location =10460
- division_template = "Dywizja Piechoty"
- start_experience_factor = 0.3
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 29
- }
- location =10460
- division_template = "Dywizja Piechoty"
- start_experience_factor = 0.2
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 44
- }
- location =10460
- division_template = "Dywizja Piechoty"
- start_experience_factor = 0.1
- start_equipment_factor = 0.2
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 110
- }
- location =10460
- division_template = "Brygada Kawalerii"
- force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
- start_experience_factor = 0.2
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 3
- }
- location =10358
- division_template = "Dywizja Piechoty"
- start_experience_factor = 0.3
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 12
- }
- location =10358
- division_template = "Dywizja Piechoty"
- start_experience_factor = 0.3
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 36
- }
- location =10358
- division_template = "Dywizja Piechoty"
- start_experience_factor = 0.1
- start_equipment_factor = 0.2
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 39
- }
- location =3321
- division_template = "Dywizja Piechoty"
- start_experience_factor = 0.1
- start_equipment_factor = 0.2
- }
- division= {
- name = "Brygada Motorowej Warszawska"
- location =3321
- division_template = "Brygada Motorowej"
- start_experience_factor = 0.3
- start_equipment_factor = 0.3
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 5
- }
- location =10420
- division_template = "Dywizja Piechoty"
- start_experience_factor = 0.3
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 24
- }
- location =10420
- division_template = "Dywizja Piechoty"
- start_experience_factor = 0.2
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 22
- }
- location =527
- division_template = "Dywizja Piechoty Górskiej"
- start_experience_factor = 0.3
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 38
- }
- location =527
- division_template = "Dywizja Piechoty"
- start_experience_factor = 0.1
- start_equipment_factor = 0.2
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 1
- }
- location =489
- division_template = "Dywizja Piechoty"
- start_experience_factor = 0.3
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 35
- }
- location =489
- division_template = "Dywizja Piechoty"
- start_experience_factor = 0.1
- start_equipment_factor = 0.2
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 41
- }
- location =489
- division_template = "Dywizja Piechoty"
- start_experience_factor = 0.1
- start_equipment_factor = 0.5
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 16
- }
- location =403
- division_template = "Brygada Ochrony Pogranicza"
- force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
- start_experience_factor = 0.1
- start_equipment_factor = 0.3
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 11
- }
- location =5940
- division_template = "Brygada Ochrony Pogranicza"
- force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
- start_experience_factor = 0.1
- start_equipment_factor = 0.3
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 15
- }
- location =8538
- division_template = "Brygada Ochrony Pogranicza"
- force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
- start_experience_factor = 0.1
- start_equipment_factor = 0.3
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 13
- }
- location =3104
- division_template = "Brygada Ochrony Pogranicza"
- force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
- start_experience_factor = 0.1
- start_equipment_factor = 0.3
- }
- }
- air_wings = {
- 10 = {
- fighter_equipment_0 =  { owner = "POL" amount = 54 }
- }
- 92 = {
- tac_bomber_equipment_1 =  { owner = "POL" amount = 36 }
- CAS_equipment_1 =  { owner = "POL" amount = 50 }
- }
- 85 = {
- fighter_equipment_0 =  { owner = "POL" amount = 22 }
- }
- 86 = {
- fighter_equipment_0 =  { owner = "POL" amount = 22 }
- }
- 87 = {
- fighter_equipment_0 =  { owner = "POL" amount = 22 }
- }
- 88 = {
- fighter_equipment_0 =  { owner = "POL" amount = 22 }
- }
- 97 = {
- fighter_equipment_0 =  { owner = "POL" amount = 22 }
- }
- }
- instant_effect = {
- add_equipment_production = {
- equipment = {
- type = infantry_equipment_1
- creator = "POL"
- }
- requested_factories = 3
- progress = 0.1
- efficiency = 100
- }
- add_equipment_production = {
- equipment = {
- type = support_equipment_1
- creator = "POL"
- }
- requested_factories = 1
- progress = 0.3
- efficiency = 100
- }
- add_equipment_production = {
- equipment = {
- type = light_tank_equipment_1
- creator = "POL"
- }
- requested_factories = 1
- progress = 0.4
- efficiency = 100
- }
- add_equipment_production = {
- equipment = {
- type = motorized_equipment_1
- creator = "POL"
- }
- requested_factories = 1
- progress = 0.4
- efficiency = 100
- }
- add_equipment_production = {
- equipment = {
- type = fighter_equipment_0
- creator = "POL"
- }
- requested_factories = 1
- progress = 0.15
- efficiency = 100
- }
- add_equipment_production = {
- equipment = {
- type = CAS_equipment_1
- creator = "POL"
- }
- requested_factories = 1
- progress = 0.2
- efficiency = 100
- }
- }
+	name = "Dywizja Piechoty"
+	division_names_group = POL_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Dywizja Piechoty Górskiej"
+	division_names_group = POL_MNT_01
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+		mountaineers = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Brygada Piechoty Górskiej"
+	division_names_group = POL_MNT_01
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+division_template = {
+	name = "Brygada Kawalerii"
+	division_names_group = POL_CAV_01
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Brygada Motorowej"
+	division_names_group = POL_MOT_01
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Grupa Pancerna"
+	division_names_group = POL_CAV_01
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Brygada Ochrony Pogranicza"
+	division_names_group = POL_GAR_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	priority = 0
+}
+units = {
+	division= {
+		name = "Nadbrzezne Grupa Obrony"
+		location =330
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location =354
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 15
+		}
+		location =3108
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 27
+		}
+		location =3079
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.2
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location =302
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 16
+		}
+		location =251
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 107
+		}
+		location =8501
+		division_template = "Brygada Kawalerii"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
+		start_experience_factor = 0.2
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location =302
+		division_template = "Brygada Ochrony Pogranicza"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
+		start_experience_factor = 0.2
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 14
+		}
+		location =353
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 17
+		}
+		location =10176
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 25
+		}
+		location =3309
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.2
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 26
+		}
+		location =8756
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.2
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 106
+		}
+		location =353
+		division_template = "Brygada Kawalerii"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
+		start_experience_factor = 0.2
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 109
+		}
+		location =3237
+		division_template = "Brygada Kawalerii"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
+		start_experience_factor = 0.2
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location =6062
+		division_template = "Brygada Ochrony Pogranicza"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location =8770
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location =8732
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 28
+		}
+		location =8732
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.2
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 102
+		}
+		location =10486
+		division_template = "Brygada Kawalerii"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
+		start_experience_factor = 0.2
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 30
+		}
+		location =549
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.2
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 111
+		}
+		location =549
+		division_template = "Brygada Kawalerii"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
+		start_experience_factor = 0.2
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location =471
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location =5969
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location =8791
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "10 Brygada Motorowej"
+		location =10326
+		division_template = "Brygada Motorowej"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 101
+		}
+		location =471
+		division_template = "Brygada Kawalerii"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
+		start_experience_factor = 0.2
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 23
+		}
+		location =8636
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.2
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 55
+		}
+		location =8636
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location =8775
+		division_template = "Dywizja Piechoty Górskiej"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "1 Brygada Piechoty Górskiej"
+		location =8775
+		division_template = "Brygada Piechoty Górskiej"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {
+		name = "2 Brygada Piechoty Górskiej"
+		location =382
+		division_template = "Brygada Piechoty Górskiej"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {
+		name = "3 Brygada Piechoty Górskiej"
+		location =3188
+		division_template = "Brygada Piechoty Górskiej"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 17
+		}
+		location =431
+		division_template = "Brygada Ochrony Pogranicza"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location =8526
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 20
+		}
+		location =5832
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 104
+		}
+		location =8548
+		division_template = "Brygada Kawalerii"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
+		start_experience_factor = 0.2
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 103
+		}
+		location =5856
+		division_template = "Brygada Kawalerii"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
+		start_experience_factor = 0.2
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location =8526
+		division_template = "Brygada Ochrony Pogranicza"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 18
+		}
+		location =10261
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 33
+		}
+		location =10288
+		division_template = "Dywizja Piechoty"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.2
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 108
+		}
+		location =365
+		division_template = "Brygada Kawalerii"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
+		start_experience_factor = 0.2
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 105
+		}
+		location =3039
+		division_template = "Brygada Kawalerii"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "Grupa Pancerna Prusy"
+		location =10460
+		division_template = "Grupa Pancerna"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 13
+		}
+		location =10460
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 19
+		}
+		location =10460
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 29
+		}
+		location =10460
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.2
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 44
+		}
+		location =10460
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.2
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 110
+		}
+		location =10460
+		division_template = "Brygada Kawalerii"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
+		start_experience_factor = 0.2
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location =10358
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 12
+		}
+		location =10358
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 36
+		}
+		location =10358
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.2
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 39
+		}
+		location =3321
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.2
+	}
+	division= {
+		name = "Brygada Motorowej Warszawska"
+		location =3321
+		division_template = "Brygada Motorowej"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location =10420
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 24
+		}
+		location =10420
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.2
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 22
+		}
+		location =527
+		division_template = "Dywizja Piechoty Górskiej"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 38
+		}
+		location =527
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.2
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location =489
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 35
+		}
+		location =489
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.2
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 41
+		}
+		location =489
+		division_template = "Dywizja Piechoty"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 16
+		}
+		location =403
+		division_template = "Brygada Ochrony Pogranicza"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location =5940
+		division_template = "Brygada Ochrony Pogranicza"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 15
+		}
+		location =8538
+		division_template = "Brygada Ochrony Pogranicza"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 13
+		}
+		location =3104
+		division_template = "Brygada Ochrony Pogranicza"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "POL" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+}
+air_wings = {
+	10 = {
+		fighter_equipment_0 =  { owner = "POL" amount = 54 }
+	}
+	92 = {
+		tac_bomber_equipment_1 =  { owner = "POL" amount = 36 }
+		CAS_equipment_1 =  { owner = "POL" amount = 50 }
+	}
+	85 = {
+		fighter_equipment_0 =  { owner = "POL" amount = 22 }
+	}
+	86 = {
+		fighter_equipment_0 =  { owner = "POL" amount = 22 }
+	}
+	87 = {
+		fighter_equipment_0 =  { owner = "POL" amount = 22 }
+	}
+	88 = {
+		fighter_equipment_0 =  { owner = "POL" amount = 22 }
+	}
+	97 = {
+		fighter_equipment_0 =  { owner = "POL" amount = 22 }
+	}
+}
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "POL"
+		}
+		requested_factories = 3
+		progress = 0.1
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "POL"
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_equipment_1
+			creator = "POL"
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "POL"
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_0
+			creator = "POL"
+		}
+		requested_factories = 1
+		progress = 0.15
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = CAS_equipment_1
+			creator = "POL"
+		}
+		requested_factories = 1
+		progress = 0.2
+		efficiency = 100
+	}
+}
 

@@ -1,38 +1,38 @@
 ################
- #### SOVIET ####
- ################
- SOV_industry_relocation = {
- 	allowed = {
- 		original_tag = SOV
- 	}
- 	available = {
- 		has_completed_focus = SOV_move_industry_to_urals
- 	}
- 	visible = {
- 		has_war = yes
- 	}
- }
- SOV_great_patriotic_war = {
- 	allowed = {
- 		original_tag = SOV
- 	}
- 	visible = {
- 	}
- }
- SOV_mrp = {
- 	allowed = {
- 		original_tag = SOV
- 	}
- 	visible = {
- 	}
- }
- SOV_purge = {
- 	allowed = {
- 		original_tag = SOV
- 	}
- 	visible = {
- 		NOT = { SOV = { has_completed_focus = SOV_great_purge }}
- 		SOV = { has_completed_focus = SOV_collectivist_propaganda }
- 	}
- }
+#### SOVIET ####
+################
+SOV_industry_relocation = {
+	allowed = {
+		original_tag = SOV
+	}
+	available = {
+		has_completed_focus = SOV_move_industry_to_urals
+	}
+	visible = {
+		has_war = yes
+	}
+}
+SOV_great_patriotic_war = {
+	allowed = {
+		original_tag = SOV
+	}
+	visible = {
+	}
+}
+SOV_mrp = {
+	allowed = {
+		original_tag = SOV
+	}
+	visible = {
+	}
+}
+SOV_purge = {
+	allowed = {
+		original_tag = SOV
+	}
+	visible = {
+		NOT = { SOV = { has_completed_focus = SOV_great_purge }}
+		SOV = { has_completed_focus = SOV_collectivist_propaganda }
+	}
+}
 

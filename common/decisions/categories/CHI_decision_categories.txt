@@ -1,20 +1,20 @@
 CHI_army_reform = {
- 	icon = army_reform
- 	allowed = {
- 		is_literally_china = yes
- 	}
- 	visible = {
- 	}
- }
- CHI_xian_incident = {
- 	icon = power_struggle
- 	allowed = {
- 		is_independent_china_or_warlord = yes
- 		NOT = {
- 			OR = {
- 				tag = CHI
- 			}
- 		}
- 	}
- }
+	icon = army_reform
+	allowed = {
+		is_literally_china = yes
+	}
+	visible = {
+	}
+}
+CHI_xian_incident = {
+	icon = power_struggle
+	allowed = {
+		is_independent_china_or_warlord = yes
+		NOT = {
+			OR = {
+				tag = CHI
+			}
+		}
+	}
+}
 

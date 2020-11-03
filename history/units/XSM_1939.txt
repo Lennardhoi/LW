@@ -1,89 +1,89 @@
 ﻿start_equipment_factor = 0.2
- division_template = {
- name = "Binary Infantry"
- division_names_group = XSM_INF_01
- regiments = {
- infantry = { x = 0 y = 0 }
- infantry = { x = 0 y = 1 }
- infantry = { x = 1 y = 0 }
- infantry = { x = 1 y = 1 }
- }
- }
- division_template = {
- name = "Triangular Infantry"
- division_names_group = XSM_INF_01
- regiments = {
- infantry = { x = 0 y = 0 }
- infantry = { x = 0 y = 1 }
- infantry = { x = 1 y = 0 }
- infantry = { x = 1 y = 1 }
- infantry = { x = 2 y = 0 }
- infantry = { x = 2 y = 1 }
- }
- }
- division_template = {
- name = "Triangular Cavalry"
- division_names_group = XSM_CAV_01
- regiments = {
- cavalry = { x = 0 y = 0 }
- cavalry = { x = 0 y = 1 }
- cavalry = { x = 1 y = 0 }
- cavalry = { x = 1 y = 1 }
- cavalry = { x = 2 y = 0 }
- cavalry = { x = 2 y = 1 }
- }
- }
- units = {
- division = {
- name = "80 Juntuán"
- location =7439
- division_template = "Binary Infantry"
- }
- division = {
- name = "82 Juntuán"
- location =3516
- division_template = "Binary Infantry"
- }
- division = {
- name = "Xin 2 Juntuán"
- location =1579
- division_template = "Binary Infantry"
- }
- division = {
- name = "5 Qábing Jun"
- location =7439
- division_template = "Triangular Cavalry"
- }
- division = {
- name = "Golmud Jingbei"
- location =11612
- division_template = "Binary Infantry"
- }
- division = {
- name = "81 Juntuán"
- location =9839
- division_template = "Binary Infantry"
- }
- division = {
- name = "2 Qábing Jun"
- location =7420
- division_template = "Triangular Cavalry"
- }
- division = {
- name = "6 Qábing Jun"
- location =7216
- division_template = "Triangular Cavalry"
- }
- }
- instant_effect = {
- add_equipment_production = {
- equipment = {
- type = infantry_equipment_0
- creator = "XSM"
- }
- requested_factories = 1
- progress = 0.47
- efficiency = 100
- }
- }
+division_template = {
+	name = "Binary Infantry"
+	division_names_group = XSM_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+division_template = {
+	name = "Triangular Infantry"
+	division_names_group = XSM_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+}
+division_template = {
+	name = "Triangular Cavalry"
+	division_names_group = XSM_CAV_01
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+	}
+}
+units = {
+	division = {
+		name = "80 Juntuán"
+		location =7439
+		division_template = "Binary Infantry"
+	}
+	division = {
+		name = "82 Juntuán"
+		location =3516
+		division_template = "Binary Infantry"
+	}
+	division = {
+		name = "Xin 2 Juntuán"
+		location =1579
+		division_template = "Binary Infantry"
+	}
+	division = {
+		name = "5 Qábing Jun"
+		location =7439
+		division_template = "Triangular Cavalry"
+	}
+	division = {
+		name = "Golmud Jingbei"
+		location =11612
+		division_template = "Binary Infantry"
+	}
+	division = {
+		name = "81 Juntuán"
+		location =9839
+		division_template = "Binary Infantry"
+	}
+	division = {
+		name = "2 Qábing Jun"
+		location =7420
+		division_template = "Triangular Cavalry"
+	}
+	division = {
+		name = "6 Qábing Jun"
+		location =7216
+		division_template = "Triangular Cavalry"
+	}
+}
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "XSM"
+		}
+		requested_factories = 1
+		progress = 0.47
+		efficiency = 100
+	}
+}
 

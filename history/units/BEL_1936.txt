@@ -1,42 +1,42 @@
 ﻿division_template = {
- name = "Division d'Infanterie"
- division_names_group = BEL_INF_01
- regiments = {
- infantry = { x = 0 y = 0 }
- infantry = { x = 0 y = 1 }
- infantry = { x = 0 y = 2 }
- infantry = { x = 1 y = 0 }
- infantry = { x = 1 y = 1 }
- infantry = { x = 1 y = 2 }
- infantry = { x = 2 y = 0 }
- infantry = { x = 2 y = 1 }
- infantry = { x = 2 y = 2 }
- infantry = { x = 2 y = 3 }
- }
- support = {
- engineer = { x = 0 y = 0 }
- }
- }
- units = {
- }
- instant_effect = {
- add_equipment_production = {
- equipment = {
- type = infantry_equipment_1
- creator = "BEL"
- }
- requested_factories = 2
- progress = 0.52
- efficiency = 100
- }
- add_equipment_production = {
- equipment = {
- type = support_equipment_1
- creator = "BEL"
- }
- requested_factories = 1
- progress = 0.85
- efficiency = 100
- }
- }
+	name = "Division d'Infanterie"
+	division_names_group = BEL_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+units = {
+}
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "BEL"
+		}
+		requested_factories = 2
+		progress = 0.52
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "BEL"
+		}
+		requested_factories = 1
+		progress = 0.85
+		efficiency = 100
+	}
+}
 

@@ -1,151 +1,151 @@
 #State scope
- WTT_should_show_state_decision = {
- 	has_variable = state_political_support_value
- 	any_other_country = {
- 		OR = {
- 			tag = event_target:WTT_current_china_leader
- 			is_subject_of = event_target:WTT_current_china_leader
- 		}
- 		controls_state = PREV
- 	}
- }
- WTT_show_build_support_decisions = {
- 	has_country_flag = wtt_political_struggle
- 	NOT = { has_country_flag = wtt_political_struggle_paused }
- 	any_other_country = {
- 		has_country_flag = wtt_political_struggle
- 	}
- 	has_civil_war = no
- }
- #####################
- #State scope
- WTT_can_ROOT_select_state_support_decision_state = {
- 	custom_trigger_tooltip = {
- 		tooltip = WTT_china_pol_struggle_state_controlled_by_leader
- 		any_other_country = {
- 			OR = {
- 				tag = event_target:WTT_current_china_leader
- 				is_subject_of = event_target:WTT_current_china_leader
- 			}
- 			controls_state = PREV
- 		}
- 		CONTROLLER = { NOT = { has_war_with = ROOT } }
- 	}
- 	if = {
- 		limit = {
- 			check_variable = {
- 				var = state_political_support_value
- 				value = global.big_state_support_value
- 				compare = greater_than_or_equals
- 			}
- 		}
- 		ROOT = { WTT_has_politcal_support_points_17 = yes }
- 	}
- }
- #####################
- #State scope
- WTT_can_select_state_remove_support_state = {
- 	ROOT = { hidden_trigger = { NOT = { has_country_flag = wtt_political_struggle_paused } } }
- 	custom_trigger_tooltip = {
- 		tooltip = support_for_opposition_in_state
- 		any_country = {
- 			NOT = { tag = ROOT }
- 			check_variable = { PREV.political_platform_@THIS > 0 }
- 		}
- 	}
- }
- #####################
- WTT_has_politcal_support_points_17 = {
- 	custom_trigger_tooltip = {
- 		tooltip = has_politcal_support_points_17
- 		check_variable = { total_political_support_points > 16 }
- 	}
- }
- #####################
- #State scope
- WTT_is_potential_political_struggle_state = {
- 	OR = {
- 		has_variable = state_political_support_value
- 		#state = 271 # Gansu
- 		#state = 292 # Yunnan
- 		#state = 515 # Hainan
- 		#state = 516 # Guangzhou
- 		#state = 517 # Guangdong
- 		#state = 518 # Nanning
- 		#state = 519 # Fujian
- 		#state = 520 # Zhejiang
- 		#state = 521 # Shandong
- 		#state = 522 # Jiangsu
- 		#state = 523 # Guangxi
- 		#state = 524 # Jiangxi
- 		#state = 525 # Xikang
- 		#state = 526 # Hunan
- 		#state = 527 # Guizhou
- 		#state = 528 # Qinghai
- 		#state = 529 # Sichuan
- 		#state = 530 # Anhui
- 		#state = 531 # Henan
- 		#state = 532 # Beijing
- 		#state = 537 # Shanghai
- 		#state = 538 # Hebei
- 		#state = 539 # Shanxi
- 		#state = 540 # Ningxia
- 		#state = 541 # Hubei
- 		#state = 542 # Suiyuan
- 		#state = 543 # Shaanxi
- 	}
- }
- #Country scope
- #PRC specific for kill Chiang
- WTT_has_politcal_support_points_30 = {
- 	custom_trigger_tooltip = {
- 		tooltip = has_politcal_support_points_30
- 		check_variable = { total_political_support_points > 29 }
- 	}
- }
- #Country scope
- WTT_is_ROOT_current_leader_of_china = {
- 	custom_trigger_tooltip = {
- 		tooltip = is_current_leader_of_china
- 		event_target:WTT_current_china_leader = { tag = ROOT }
- 	}
- }
- #Country scope
- WTT_ROOT_is_not_current_leader_of_china = {
- 	custom_trigger_tooltip = {
- 		tooltip = is_not_current_leader_of_china
- 		NOT = { event_target:WTT_current_china_leader = { tag = ROOT } }
- 	}
- }
- #Country sope
- WTT_CHI_is_not_leader = {
- 	custom_trigger_tooltip = {
- 		tooltip = CHI_is_not_china_leader
- 		NOT = { event_target:WTT_current_china_leader = { tag = CHI } }
- 	}
- }
- #Country sope
- WTT_not_taking_over_national_leadership = {
- 	custom_trigger_tooltip = {
- 		tooltip = WTT_not_taking_over_national_leadership
- 		NOT = { has_global_flag = wtt_national_leadership_takeover_in_progress }
- 	}
- }
- #Country sope
- WTT_not_china_leader_refused_to_give_up_national_leadership = {
- 	custom_trigger_tooltip = {
- 		tooltip = WTT_china_leader_refused_to_give_up_national_leadership
- 		NOT = { has_global_flag = wtt_war_over_national_leadership }
- 	}
- }
- #State scope
- WTT_is_active_political_struggle_state = {
- 	WTT_is_potential_political_struggle_state = yes
- 	OR = {
- 		is_controlled_by = event_target:WTT_current_china_leader
- 		CONTROLLER = { is_subject_of = event_target:WTT_current_china_leader }
- 		#Own state points
- 		CONTROLLER = { has_country_flag = wtt_political_struggle }
- 	}
- }
+WTT_should_show_state_decision = {
+	has_variable = state_political_support_value
+	any_other_country = {
+		OR = {
+			tag = event_target:WTT_current_china_leader
+			is_subject_of = event_target:WTT_current_china_leader
+		}
+		controls_state = PREV
+	}
+}
+WTT_show_build_support_decisions = {
+	has_country_flag = wtt_political_struggle
+	NOT = { has_country_flag = wtt_political_struggle_paused }
+	any_other_country = {
+		has_country_flag = wtt_political_struggle
+	}
+	has_civil_war = no
+}
+#####################
+#State scope
+WTT_can_ROOT_select_state_support_decision_state = {
+	custom_trigger_tooltip = {
+		tooltip = WTT_china_pol_struggle_state_controlled_by_leader
+		any_other_country = {
+			OR = {
+				tag = event_target:WTT_current_china_leader
+				is_subject_of = event_target:WTT_current_china_leader
+			}
+			controls_state = PREV
+		}
+		CONTROLLER = { NOT = { has_war_with = ROOT } }
+	}
+	if = {
+		limit = {
+			check_variable = {
+				var = state_political_support_value
+				value = global.big_state_support_value
+				compare = greater_than_or_equals
+			}
+		}
+		ROOT = { WTT_has_politcal_support_points_17 = yes }
+	}
+}
+#####################
+#State scope
+WTT_can_select_state_remove_support_state = {
+	ROOT = { hidden_trigger = { NOT = { has_country_flag = wtt_political_struggle_paused } } }
+	custom_trigger_tooltip = {
+		tooltip = support_for_opposition_in_state
+		any_country = {
+			NOT = { tag = ROOT }
+			check_variable = { PREV.political_platform_@THIS > 0 }
+		}
+	}
+}
+#####################
+WTT_has_politcal_support_points_17 = {
+	custom_trigger_tooltip = {
+		tooltip = has_politcal_support_points_17
+		check_variable = { total_political_support_points > 16 }
+	}
+}
+#####################
+#State scope
+WTT_is_potential_political_struggle_state = {
+	OR = {
+		has_variable = state_political_support_value
+		#state = 271 # Gansu
+		#state = 292 # Yunnan
+		#state = 515 # Hainan
+		#state = 516 # Guangzhou
+		#state = 517 # Guangdong
+		#state = 518 # Nanning
+		#state = 519 # Fujian
+		#state = 520 # Zhejiang
+		#state = 521 # Shandong
+		#state = 522 # Jiangsu
+		#state = 523 # Guangxi
+		#state = 524 # Jiangxi
+		#state = 525 # Xikang
+		#state = 526 # Hunan
+		#state = 527 # Guizhou
+		#state = 528 # Qinghai
+		#state = 529 # Sichuan
+		#state = 530 # Anhui
+		#state = 531 # Henan
+		#state = 532 # Beijing
+		#state = 537 # Shanghai
+		#state = 538 # Hebei
+		#state = 539 # Shanxi
+		#state = 540 # Ningxia
+		#state = 541 # Hubei
+		#state = 542 # Suiyuan
+		#state = 543 # Shaanxi
+	}
+}
+#Country scope
+#PRC specific for kill Chiang
+WTT_has_politcal_support_points_30 = {
+	custom_trigger_tooltip = {
+		tooltip = has_politcal_support_points_30
+		check_variable = { total_political_support_points > 29 }
+	}
+}
+#Country scope
+WTT_is_ROOT_current_leader_of_china = {
+	custom_trigger_tooltip = {
+		tooltip = is_current_leader_of_china
+		event_target:WTT_current_china_leader = { tag = ROOT }
+	}
+}
+#Country scope
+WTT_ROOT_is_not_current_leader_of_china = {
+	custom_trigger_tooltip = {
+		tooltip = is_not_current_leader_of_china
+		NOT = { event_target:WTT_current_china_leader = { tag = ROOT } }
+	}
+}
+#Country sope
+WTT_CHI_is_not_leader = {
+	custom_trigger_tooltip = {
+		tooltip = CHI_is_not_china_leader
+		NOT = { event_target:WTT_current_china_leader = { tag = CHI } }
+	}
+}
+#Country sope
+WTT_not_taking_over_national_leadership = {
+	custom_trigger_tooltip = {
+		tooltip = WTT_not_taking_over_national_leadership
+		NOT = { has_global_flag = wtt_national_leadership_takeover_in_progress }
+	}
+}
+#Country sope
+WTT_not_china_leader_refused_to_give_up_national_leadership = {
+	custom_trigger_tooltip = {
+		tooltip = WTT_china_leader_refused_to_give_up_national_leadership
+		NOT = { has_global_flag = wtt_war_over_national_leadership }
+	}
+}
+#State scope
+WTT_is_active_political_struggle_state = {
+	WTT_is_potential_political_struggle_state = yes
+	OR = {
+		is_controlled_by = event_target:WTT_current_china_leader
+		CONTROLLER = { is_subject_of = event_target:WTT_current_china_leader }
+		#Own state points
+		CONTROLLER = { has_country_flag = wtt_political_struggle }
+	}
+}
 

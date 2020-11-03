@@ -1,441 +1,441 @@
 POW = {
-  POW_recruit_soldiers = {
-  icon = generic_civil_support
-  cost=25
-  allowed = {
-  is_playable_country =yes
-  }
-  available={
-  custom_trigger_tooltip= {
-  tooltip=[POW_recruit_soldiers_tt1]
-  if={
-  limit={check_variable={POW_recruit_soldiers_cost>0}}
-  check_variable ={total_pows_unassigned>POW_recruit_soldiers_cost}
-  }
-  else ={
-  check_variable ={total_pows_unassigned>25}}
-  }
-  }
-  fixed_random_seed = no
-  fire_only_once = no
-  is_good = yes
-  complete_effect = {
-  custom_effect_tooltip = [POW_recruit_soldiers_tt2]
-  subtract_from_variable={total_pows_unassigned =25}
-  random_list= {
-  70 = {
-  add_manpower = 15000
-  }
-  10 = {
-  add_manpower = 25000
-  }
-  20 = {
-  if= {limit={has_idea=mutiny_3}
-  modify_timed_idea = {
-  idea = mutiny_3
-  days = 30
-  }
-  }
-  if= {limit={has_idea=mutiny_2}
-  remove_ideas=mutiny_2
-  add_timed_idea = {
-  idea = mutiny_3
-  days = 30
-  }
-  }
-  else_if= {limit={has_idea=mutiny_1}
-  remove_ideas=mutiny_1
-  add_timed_idea = {
-  idea = mutiny_2
-  days = 30
-  }
-  }
-  else= {
-  add_timed_idea = {
-  idea = mutiny_1
-  days = 30
-  }
-  }
-  }
-  }
-  }
-  }
-  POW_recruit_workers_for_army_production = {
-  icon = generic_civil_support
-  cost=50
-  allowed = {
-  is_playable_country =yes
-  }
-  fire_only_once = no
-  fixed_random_seed = no
-  is_good = yes
-  available={
-  if={
-  limit={check_variable={POW_recruit_workers_for_army_production_cost>0}}
-  custom_trigger_tooltip= {
-  tooltip= POW_recruit_workers_for_army_production_tt1
-  check_variable ={total_pows_unassigned>POW_recruit_workers_for_army_production_cost}
-  }
-  }
-  else ={
-  custom_trigger_tooltip= {
-  tooltip= POW_recruit_workers_for_army_production_tt2
-  check_variable ={total_pows_unassigned>pow_base_cost}}
-  }
-  }
-  complete_effect = {
-  if={limit={check_variable={POW_recruit_workers_for_army_production_cost=0}}
-  add_to_variable={total_pows_assigned = pow_base_cost
-  tooltip=pow_assignment_tt}
-  subtract_from_variable={total_pows_unassigned =pow_base_cost}
-  set_temp_variable= {increase = pow_base_cost}
-  multiply_temp_variable = {increase = 0.5}
-  add_to_variable={POW_recruit_workers_for_army_production_cost = pow_base_cost}
-  add_to_variable={POW_recruit_workers_for_army_production_cost = increase}
-  }
-  else={
-  add_to_variable={total_pows_assigned = POW_recruit_workers_for_army_production_cost
-  tooltip=pow_assignment_tt}
-  subtract_from_variable={total_pows_unassigned =POW_recruit_workers_for_army_production_cost}
-  set_temp_variable= {increase = pow_base_cost}
-  multiply_temp_variable = {increase = 0.5}
-  add_to_variable={POW_recruit_workers_for_army_production_cost = increase}
-  }
-  add_to_variable = {pow_industrial_capacity =0.025}
-  custom_effect_tooltip = POW_recruit_workers_tt5
-  hidden_effect={if={limit={NOT={has_dynamic_modifier = { modifier = POW_industry }}}
-  add_dynamic_modifier = { modifier = POW_industry }
-  }}
-  random_list= {
-  80 = {}
-  10 = {add_stability=-0.01 }
-  10 = { add_war_support = -0.01}
-  }
-  }
-  }
-  POW_recruit_workers_for_naval_production = {
-  icon = generic_civil_support
-  cost=50
-  allowed = {
-  is_playable_country =yes
-  }
-  fire_only_once = no
-  fixed_random_seed = no
-  is_good = yes
-  available={
-  if={
-  limit={check_variable={POW_recruit_workers_for_navy_production_cost>0}}
-  custom_trigger_tooltip= {
-  tooltip= POW_recruit_workers_for_navy_production_tt1
-  check_variable ={total_pows_unassigned>POW_recruit_workers_for_navy_production_cost}
-  }
-  }
-  else ={
-  custom_trigger_tooltip= {
-  tooltip= POW_recruit_workers_for_navy_production_tt2
-  check_variable ={total_pows_unassigned>pow_base_cost}}
-  }
-  }
-  complete_effect = {
-  if={limit={check_variable={POW_recruit_workers_for_navy_production_cost=0}}
-  add_to_variable={total_pows_assigned = pow_base_cost
-  tooltip=pow_assignment_tt}
-  subtract_from_variable={total_pows_unassigned =pow_base_cost}
-  set_temp_variable= {increase = pow_base_cost}
-  multiply_temp_variable = {increase = 0.5}
-  add_to_variable={POW_recruit_workers_for_navy_production_cost = pow_base_cost}
-  add_to_variable={POW_recruit_workers_for_navy_production_cost = increase}
-  }
-  else={
-  add_to_variable={total_pows_assigned = POW_recruit_workers_for_navy_production_cost
-  tooltip=pow_assignment_tt}
-  subtract_from_variable={total_pows_unassigned =POW_recruit_workers_for_navy_production_cost}
-  set_temp_variable= {increase = pow_base_cost}
-  multiply_temp_variable = {increase = 0.5}
-  add_to_variable={POW_recruit_workers_for_navy_production_cost = increase}
-  }
-  add_to_variable = {pow_dockyard_capacity =0.025}
-  custom_effect_tooltip = POW_recruit_workers_tt4
-  hidden_effect={if={limit={NOT={has_dynamic_modifier = { modifier = POW_industry }}}
-  add_dynamic_modifier = { modifier = POW_industry }
-  }}
-  random_list= {
-  80 = {}
-  10 = {add_stability=-0.01 }
-  10 = { add_war_support = -0.01}
-  }
-  }
-  }
-  POW_recruit_workers_for_resource_extraction= {
-  icon = generic_civil_support
-  cost=50
-  allowed = {
-  is_playable_country =yes
-  }
-  fire_only_once = no
-  fixed_random_seed = no
-  is_good = yes
-  available={
-  if={
-  limit={check_variable={POW_recruit_workers_for_resource_extraction_cost>0}}
-  custom_trigger_tooltip= {
-  tooltip= POW_recruit_workers_for_resource_extraction_tt1
-  check_variable ={total_pows_unassigned>POW_recruit_workers_for_resource_extraction_cost}
-  }
-  }
-  else ={
-  custom_trigger_tooltip= {
-  tooltip= POW_recruit_workers_for_resource_extraction_tt2
-  check_variable ={total_pows_unassigned>pow_base_cost}}
-  }
-  }
-  complete_effect = {
-  if={limit={check_variable={POW_recruit_workers_for_resource_extraction_cost=0}}
-  add_to_variable={total_pows_assigned = pow_base_cost
-  tooltip=pow_assignment_tt}
-  subtract_from_variable={total_pows_unassigned =pow_base_cost}
-  set_temp_variable= {increase = pow_base_cost}
-  multiply_temp_variable = {increase = 0.5}
-  add_to_variable={POW_recruit_workers_for_resource_extraction_cost = pow_base_cost}
-  add_to_variable={POW_recruit_workers_for_resource_extraction_cost = increase}
-  }
-  else={
-  add_to_variable={total_pows_assigned = POW_recruit_workers_for_resource_extraction_cost
-  tooltip=pow_assignment_tt}
-  subtract_from_variable={total_pows_unassigned =POW_recruit_workers_for_resource_extraction_cost}
-  set_temp_variable= {increase = pow_base_cost}
-  multiply_temp_variable = {increase = 0.5}
-  add_to_variable={POW_recruit_workers_for_resource_extraction_cost = increase}
-  }
-  add_to_variable = {pow_resource_gain =0.05}
-  custom_effect_tooltip =  POW_recruit_workers_tt3
-  hidden_effect={if={limit={NOT={has_dynamic_modifier = { modifier = POW_industry }}}
-  add_dynamic_modifier = { modifier = POW_industry }
-  }}
-  random_list= {
-  80 = {}
-  10 = {add_stability=-0.01 }
-  10 = { add_war_support = -0.01}
-  }
-  }
-  }
-  POW_recruit_workers_for_construction_projects= {
-  icon = generic_civil_support
-  cost=50
-  allowed = {
-  is_playable_country =yes
-  }
-  fire_only_once = no
-  fixed_random_seed = no
-  is_good = yes
-  available={
-  if={
-  limit={check_variable={POW_recruit_workers_for_construction_projects_cost>0}}
-  custom_trigger_tooltip= {
-  tooltip= POW_recruit_workers_for_construction_projects_tt1
-  check_variable ={total_pows_unassigned>POW_recruit_workers_for_construction_projects_cost}
-  }
-  }
-  else ={
-  custom_trigger_tooltip= {
-  tooltip= POW_recruit_workers_for_construction_projects_tt2
-  check_variable ={total_pows_unassigned>pow_base_cost}}
-  }
-  }
-  complete_effect = {
-  if={limit={check_variable={POW_recruit_workers_for_construction_projects_cost=0}}
-  add_to_variable={total_pows_assigned = pow_base_cost
-  tooltip=pow_assignment_tt}
-  subtract_from_variable={total_pows_unassigned =pow_base_cost}
-  set_temp_variable= {increase = pow_base_cost}
-  multiply_temp_variable = {increase = 0.5}
-  add_to_variable={POW_recruit_workers_for_construction_projects_cost = pow_base_cost}
-  add_to_variable={POW_recruit_workers_for_construction_projects_cost = increase}
-  }
-  else={
-  add_to_variable={total_pows_assigned = POW_recruit_workers_for_construction_projects_cost
-  tooltip=pow_assignment_tt}
-  subtract_from_variable={total_pows_unassigned =POW_recruit_workers_for_construction_projects_cost}
-  set_temp_variable= {increase = pow_base_cost}
-  multiply_temp_variable = {increase = 0.5}
-  add_to_variable={POW_recruit_workers_for_construction_projects_cost = increase}
-  }
-  add_to_variable = {pow_fortification =0.05}
-  custom_effect_tooltip =  POW_recruit_workers_tt6
-  custom_effect_tooltip =  POW_recruit_workers_tt7
-  custom_effect_tooltip =  POW_recruit_workers_tt8
-  custom_effect_tooltip =  POW_recruit_workers_tt9
-  hidden_effect={if={limit={NOT={has_dynamic_modifier = { modifier = POW_industry }}}
-  add_dynamic_modifier = { modifier = POW_industry }
-  }}
-  random_list= {
-  80 = {}
-  10 = {add_stability=-0.01 }
-  10 = { add_war_support = -0.01}
-  }
-  }
-  }
-  POW_free_prisoners = {
-  cost=25
-  icon = generic_civil_support
-  allowed = {
-  is_playable_country =yes
-  }
-  available={
-  custom_trigger_tooltip= {
-  tooltip=[POW_free_prisoners_tt1]
-  if={
-  limit={check_variable={POW_free_prisoners_cost>0}}
-  check_variable ={total_pows_unassigned>POW_free_prisoners_cost}
-  }
-  else ={
-  check_variable ={total_pows_unassigned>15}}
-  }
-  }
-  fire_only_once = no
-  is_good = yes
-  fixed_random_seed = no
-  complete_effect = {
-  custom_effect_tooltip = [POW_free_prisoners_tt2]
-  add_to_variable={total_pows_assigned = 15}
-  subtract_from_variable={total_pows_unassigned =15}
-  random_list= {
-  50 = {
-  if = {
-  limit = {any_owned_state = {
-  is_fully_controlled_by = ROOT
-  is_owned_by = ROOT
-  free_building_slots = {
-  building = industrial_complex
-  size > 1
-  include_locked = yes
-  }
-  free_building_slots = {
-  building = infrastructure
-  size < 1
-  }
-  }
-  }
-  random_owned_state = {
-  limit = {
-  is_fully_controlled_by = ROOT
-  is_owned_by = ROOT
-  free_building_slots = {
-  building = industrial_complex
-  size > 1
-  include_locked = yes
-  }
-  free_building_slots = {
-  building = infrastructure
-  size < 1
-  }
-  }
-  add_extra_state_shared_building_slots = 2
-  }
-  }
-  else = {
-  random_owned_state = {
-  limit = {
-  is_fully_controlled_by = ROOT
-  is_owned_by = ROOT
-  free_building_slots = {
-  building = industrial_complex
-  size > 1
-  include_locked = yes
-  }
-  }
-  add_extra_state_shared_building_slots = 2
-  }
-  }
-  }
-  15 = {
-  if = {
-  limit = {any_owned_state = {
-  is_fully_controlled_by = ROOT
-  is_owned_by = ROOT
-  free_building_slots = {
-  building = industrial_complex
-  size > 1
-  include_locked = yes
-  }
-  free_building_slots = {
-  building = infrastructure
-  size < 1
-  }
-  }
-  }
-  random_owned_state = {
-  limit = {
-  is_fully_controlled_by = ROOT
-  is_owned_by = ROOT
-  free_building_slots = {
-  building = industrial_complex
-  size > 1
-  include_locked = yes
-  }
-  free_building_slots = {
-  building = infrastructure
-  size < 1
-  }
-  }
-  add_extra_state_shared_building_slots = 2
-  add_building_construction = {
-  type = industrial_complex
-  level = 1
-  instant_build = yes
-  }
-  }
-  }
-  else = {
-  random_owned_state = {
-  limit = {
-  is_fully_controlled_by = ROOT
-  is_owned_by = ROOT
-  free_building_slots = {
-  building = industrial_complex
-  size > 1
-  include_locked = yes
-  }
-  }
-  add_extra_state_shared_building_slots = 2
-  add_building_construction = {
-  type = industrial_complex
-  level = 1
-  instant_build = yes
-  }
-  }
-  }
-  }
-  15 = {
-  random_owned_state = {
-  limit = {
-  is_fully_controlled_by = ROOT
-  is_owned_by = ROOT
-  arms_factory > 1
-  industrial_complex > 1
-  }
-  damage_building = {
-  type = industrial_complex
-  damage = 1
-  }
-  damage_building = {
-  type = arms_factory
-  damage = 1
-  }
-  damage_building = {
-  type = infrastructure
-  damage = 3
-  }
-  }
-  }
-  20 = {
-  if= { limit= {has_government = democratic}
-  add_stability=0.02
-  }
-  else = {add_stability=-0.02}
-  }
-  }
-  }
-  }
-  }
+	POW_recruit_soldiers = {
+		icon = generic_civil_support
+		cost=25
+		allowed = {
+			is_playable_country =yes
+		}
+		available={
+			custom_trigger_tooltip= {
+				tooltip=[POW_recruit_soldiers_tt1]
+				if={
+					limit={check_variable={POW_recruit_soldiers_cost>0}}
+					check_variable ={total_pows_unassigned>POW_recruit_soldiers_cost}
+				}
+				else ={
+					check_variable ={total_pows_unassigned>25}}
+			}
+		}
+		fixed_random_seed = no
+		fire_only_once = no
+		is_good = yes
+		complete_effect = {
+			custom_effect_tooltip = [POW_recruit_soldiers_tt2]
+			subtract_from_variable={total_pows_unassigned =25}
+			random_list= {
+				70 = {
+					add_manpower = 15000
+				}
+				10 = {
+					add_manpower = 25000
+				}
+				20 = {
+					if= {limit={has_idea=mutiny_3}
+						modify_timed_idea = {
+							idea = mutiny_3
+							days = 30
+						}
+					}
+					if= {limit={has_idea=mutiny_2}
+						remove_ideas=mutiny_2
+						add_timed_idea = {
+							idea = mutiny_3
+							days = 30
+						}
+					}
+					else_if= {limit={has_idea=mutiny_1}
+						remove_ideas=mutiny_1
+						add_timed_idea = {
+							idea = mutiny_2
+							days = 30
+						}
+					}
+					else= {
+						add_timed_idea = {
+							idea = mutiny_1
+							days = 30
+						}
+					}
+				}
+			}
+		}
+	}
+	POW_recruit_workers_for_army_production = {
+		icon = generic_civil_support
+		cost=50
+		allowed = {
+			is_playable_country =yes
+		}
+		fire_only_once = no
+		fixed_random_seed = no
+		is_good = yes
+		available={
+			if={
+				limit={check_variable={POW_recruit_workers_for_army_production_cost>0}}
+				custom_trigger_tooltip= {
+					tooltip= POW_recruit_workers_for_army_production_tt1
+					check_variable ={total_pows_unassigned>POW_recruit_workers_for_army_production_cost}
+				}
+			}
+			else ={
+				custom_trigger_tooltip= {
+					tooltip= POW_recruit_workers_for_army_production_tt2
+					check_variable ={total_pows_unassigned>pow_base_cost}}
+			}
+		}
+		complete_effect = {
+			if={limit={check_variable={POW_recruit_workers_for_army_production_cost=0}}
+				add_to_variable={total_pows_assigned = pow_base_cost
+					tooltip=pow_assignment_tt}
+				subtract_from_variable={total_pows_unassigned =pow_base_cost}
+				set_temp_variable= {increase = pow_base_cost}
+				multiply_temp_variable = {increase = 0.5}
+				add_to_variable={POW_recruit_workers_for_army_production_cost = pow_base_cost}
+				add_to_variable={POW_recruit_workers_for_army_production_cost = increase}
+			}
+			else={
+				add_to_variable={total_pows_assigned = POW_recruit_workers_for_army_production_cost
+					tooltip=pow_assignment_tt}
+				subtract_from_variable={total_pows_unassigned =POW_recruit_workers_for_army_production_cost}
+				set_temp_variable= {increase = pow_base_cost}
+				multiply_temp_variable = {increase = 0.5}
+				add_to_variable={POW_recruit_workers_for_army_production_cost = increase}
+			}
+			add_to_variable = {pow_industrial_capacity =0.025}
+			custom_effect_tooltip = POW_recruit_workers_tt5
+			hidden_effect={if={limit={NOT={has_dynamic_modifier = { modifier = POW_industry }}}
+					add_dynamic_modifier = { modifier = POW_industry }
+					}}
+			random_list= {
+				80 = {}
+				10 = {add_stability=-0.01 }
+				10 = { add_war_support = -0.01}
+			}
+		}
+	}
+	POW_recruit_workers_for_naval_production = {
+		icon = generic_civil_support
+		cost=50
+		allowed = {
+			is_playable_country =yes
+		}
+		fire_only_once = no
+		fixed_random_seed = no
+		is_good = yes
+		available={
+			if={
+				limit={check_variable={POW_recruit_workers_for_navy_production_cost>0}}
+				custom_trigger_tooltip= {
+					tooltip= POW_recruit_workers_for_navy_production_tt1
+					check_variable ={total_pows_unassigned>POW_recruit_workers_for_navy_production_cost}
+				}
+			}
+			else ={
+				custom_trigger_tooltip= {
+					tooltip= POW_recruit_workers_for_navy_production_tt2
+					check_variable ={total_pows_unassigned>pow_base_cost}}
+			}
+		}
+		complete_effect = {
+			if={limit={check_variable={POW_recruit_workers_for_navy_production_cost=0}}
+				add_to_variable={total_pows_assigned = pow_base_cost
+					tooltip=pow_assignment_tt}
+				subtract_from_variable={total_pows_unassigned =pow_base_cost}
+				set_temp_variable= {increase = pow_base_cost}
+				multiply_temp_variable = {increase = 0.5}
+				add_to_variable={POW_recruit_workers_for_navy_production_cost = pow_base_cost}
+				add_to_variable={POW_recruit_workers_for_navy_production_cost = increase}
+			}
+			else={
+				add_to_variable={total_pows_assigned = POW_recruit_workers_for_navy_production_cost
+					tooltip=pow_assignment_tt}
+				subtract_from_variable={total_pows_unassigned =POW_recruit_workers_for_navy_production_cost}
+				set_temp_variable= {increase = pow_base_cost}
+				multiply_temp_variable = {increase = 0.5}
+				add_to_variable={POW_recruit_workers_for_navy_production_cost = increase}
+			}
+			add_to_variable = {pow_dockyard_capacity =0.025}
+			custom_effect_tooltip = POW_recruit_workers_tt4
+			hidden_effect={if={limit={NOT={has_dynamic_modifier = { modifier = POW_industry }}}
+					add_dynamic_modifier = { modifier = POW_industry }
+					}}
+			random_list= {
+				80 = {}
+				10 = {add_stability=-0.01 }
+				10 = { add_war_support = -0.01}
+			}
+		}
+	}
+	POW_recruit_workers_for_resource_extraction= {
+		icon = generic_civil_support
+		cost=50
+		allowed = {
+			is_playable_country =yes
+		}
+		fire_only_once = no
+		fixed_random_seed = no
+		is_good = yes
+		available={
+			if={
+				limit={check_variable={POW_recruit_workers_for_resource_extraction_cost>0}}
+				custom_trigger_tooltip= {
+					tooltip= POW_recruit_workers_for_resource_extraction_tt1
+					check_variable ={total_pows_unassigned>POW_recruit_workers_for_resource_extraction_cost}
+				}
+			}
+			else ={
+				custom_trigger_tooltip= {
+					tooltip= POW_recruit_workers_for_resource_extraction_tt2
+					check_variable ={total_pows_unassigned>pow_base_cost}}
+			}
+		}
+		complete_effect = {
+			if={limit={check_variable={POW_recruit_workers_for_resource_extraction_cost=0}}
+				add_to_variable={total_pows_assigned = pow_base_cost
+					tooltip=pow_assignment_tt}
+				subtract_from_variable={total_pows_unassigned =pow_base_cost}
+				set_temp_variable= {increase = pow_base_cost}
+				multiply_temp_variable = {increase = 0.5}
+				add_to_variable={POW_recruit_workers_for_resource_extraction_cost = pow_base_cost}
+				add_to_variable={POW_recruit_workers_for_resource_extraction_cost = increase}
+			}
+			else={
+				add_to_variable={total_pows_assigned = POW_recruit_workers_for_resource_extraction_cost
+					tooltip=pow_assignment_tt}
+				subtract_from_variable={total_pows_unassigned =POW_recruit_workers_for_resource_extraction_cost}
+				set_temp_variable= {increase = pow_base_cost}
+				multiply_temp_variable = {increase = 0.5}
+				add_to_variable={POW_recruit_workers_for_resource_extraction_cost = increase}
+			}
+			add_to_variable = {pow_resource_gain =0.05}
+			custom_effect_tooltip =  POW_recruit_workers_tt3
+			hidden_effect={if={limit={NOT={has_dynamic_modifier = { modifier = POW_industry }}}
+					add_dynamic_modifier = { modifier = POW_industry }
+					}}
+			random_list= {
+				80 = {}
+				10 = {add_stability=-0.01 }
+				10 = { add_war_support = -0.01}
+			}
+		}
+	}
+	POW_recruit_workers_for_construction_projects= {
+		icon = generic_civil_support
+		cost=50
+		allowed = {
+			is_playable_country =yes
+		}
+		fire_only_once = no
+		fixed_random_seed = no
+		is_good = yes
+		available={
+			if={
+				limit={check_variable={POW_recruit_workers_for_construction_projects_cost>0}}
+				custom_trigger_tooltip= {
+					tooltip= POW_recruit_workers_for_construction_projects_tt1
+					check_variable ={total_pows_unassigned>POW_recruit_workers_for_construction_projects_cost}
+				}
+			}
+			else ={
+				custom_trigger_tooltip= {
+					tooltip= POW_recruit_workers_for_construction_projects_tt2
+					check_variable ={total_pows_unassigned>pow_base_cost}}
+			}
+		}
+		complete_effect = {
+			if={limit={check_variable={POW_recruit_workers_for_construction_projects_cost=0}}
+				add_to_variable={total_pows_assigned = pow_base_cost
+					tooltip=pow_assignment_tt}
+				subtract_from_variable={total_pows_unassigned =pow_base_cost}
+				set_temp_variable= {increase = pow_base_cost}
+				multiply_temp_variable = {increase = 0.5}
+				add_to_variable={POW_recruit_workers_for_construction_projects_cost = pow_base_cost}
+				add_to_variable={POW_recruit_workers_for_construction_projects_cost = increase}
+			}
+			else={
+				add_to_variable={total_pows_assigned = POW_recruit_workers_for_construction_projects_cost
+					tooltip=pow_assignment_tt}
+				subtract_from_variable={total_pows_unassigned =POW_recruit_workers_for_construction_projects_cost}
+				set_temp_variable= {increase = pow_base_cost}
+				multiply_temp_variable = {increase = 0.5}
+				add_to_variable={POW_recruit_workers_for_construction_projects_cost = increase}
+			}
+			add_to_variable = {pow_fortification =0.05}
+			custom_effect_tooltip =  POW_recruit_workers_tt6
+			custom_effect_tooltip =  POW_recruit_workers_tt7
+			custom_effect_tooltip =  POW_recruit_workers_tt8
+			custom_effect_tooltip =  POW_recruit_workers_tt9
+			hidden_effect={if={limit={NOT={has_dynamic_modifier = { modifier = POW_industry }}}
+					add_dynamic_modifier = { modifier = POW_industry }
+					}}
+			random_list= {
+				80 = {}
+				10 = {add_stability=-0.01 }
+				10 = { add_war_support = -0.01}
+			}
+		}
+	}
+	POW_free_prisoners = {
+		cost=25
+		icon = generic_civil_support
+		allowed = {
+			is_playable_country =yes
+		}
+		available={
+			custom_trigger_tooltip= {
+				tooltip=[POW_free_prisoners_tt1]
+				if={
+					limit={check_variable={POW_free_prisoners_cost>0}}
+					check_variable ={total_pows_unassigned>POW_free_prisoners_cost}
+				}
+				else ={
+					check_variable ={total_pows_unassigned>15}}
+			}
+		}
+		fire_only_once = no
+		is_good = yes
+		fixed_random_seed = no
+		complete_effect = {
+			custom_effect_tooltip = [POW_free_prisoners_tt2]
+			add_to_variable={total_pows_assigned = 15}
+			subtract_from_variable={total_pows_unassigned =15}
+			random_list= {
+				50 = {
+					if = {
+						limit = {any_owned_state = {
+								is_fully_controlled_by = ROOT
+								is_owned_by = ROOT
+								free_building_slots = {
+									building = industrial_complex
+									size > 1
+									include_locked = yes
+								}
+								free_building_slots = {
+									building = infrastructure
+									size < 1
+								}
+							}
+						}
+						random_owned_state = {
+							limit = {
+								is_fully_controlled_by = ROOT
+								is_owned_by = ROOT
+								free_building_slots = {
+									building = industrial_complex
+									size > 1
+									include_locked = yes
+								}
+								free_building_slots = {
+									building = infrastructure
+									size < 1
+								}
+							}
+							add_extra_state_shared_building_slots = 2
+						}
+					}
+					else = {
+						random_owned_state = {
+							limit = {
+								is_fully_controlled_by = ROOT
+								is_owned_by = ROOT
+								free_building_slots = {
+									building = industrial_complex
+									size > 1
+									include_locked = yes
+								}
+							}
+							add_extra_state_shared_building_slots = 2
+						}
+					}
+				}
+				15 = {
+					if = {
+						limit = {any_owned_state = {
+								is_fully_controlled_by = ROOT
+								is_owned_by = ROOT
+								free_building_slots = {
+									building = industrial_complex
+									size > 1
+									include_locked = yes
+								}
+								free_building_slots = {
+									building = infrastructure
+									size < 1
+								}
+							}
+						}
+						random_owned_state = {
+							limit = {
+								is_fully_controlled_by = ROOT
+								is_owned_by = ROOT
+								free_building_slots = {
+									building = industrial_complex
+									size > 1
+									include_locked = yes
+								}
+								free_building_slots = {
+									building = infrastructure
+									size < 1
+								}
+							}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+								type = industrial_complex
+								level = 1
+								instant_build = yes
+							}
+						}
+					}
+					else = {
+						random_owned_state = {
+							limit = {
+								is_fully_controlled_by = ROOT
+								is_owned_by = ROOT
+								free_building_slots = {
+									building = industrial_complex
+									size > 1
+									include_locked = yes
+								}
+							}
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+								type = industrial_complex
+								level = 1
+								instant_build = yes
+							}
+						}
+					}
+				}
+				15 = {
+					random_owned_state = {
+						limit = {
+							is_fully_controlled_by = ROOT
+							is_owned_by = ROOT
+							arms_factory > 1
+							industrial_complex > 1
+						}
+						damage_building = {
+							type = industrial_complex
+							damage = 1
+						}
+						damage_building = {
+							type = arms_factory
+							damage = 1
+						}
+						damage_building = {
+							type = infrastructure
+							damage = 3
+						}
+					}
+				}
+				20 = {
+					if= { limit= {has_government = democratic}
+						add_stability=0.02
+					}
+					else = {add_stability=-0.02}
+				}
+			}
+		}
+	}
+}
 

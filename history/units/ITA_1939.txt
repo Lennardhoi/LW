@@ -1,1029 +1,1029 @@
 ﻿
- division_template = {
- name = "Divisione di Fanteria"
- division_names_group = ITA_INF_01
- regiments = {
- infantry = { x = 0 y = 0 }
- infantry = { x = 0 y = 1 }
- infantry = { x = 0 y = 2 }
- infantry = { x = 1 y = 0 }
- infantry = { x = 1 y = 1 }
- infantry = { x = 1 y = 2 }
- }
- support = {
- engineer = { x = 0 y = 0 }
- }
- }
- division_template = {
- name = "Divisione Alpina"
- division_names_group = ITA_MNT_01
- regiments = {
- mountaineers = { x = 0 y = 0 }
- mountaineers = { x = 0 y = 1 }
- mountaineers = { x = 0 y = 2 }
- mountaineers = { x = 1 y = 0 }
- mountaineers = { x = 1 y = 1 }
- mountaineers = { x = 1 y = 2 }
- }
- support = {
- engineer = { x = 0 y = 0 }
- artillery = { x = 0 y = 1 }
- }
- priority = 2
- }
- division_template = {
- name = "Divisione Autotrasportabile"
- division_names_group = ITA_MOT_01
- regiments = {
- infantry = { x = 0 y = 0 }
- infantry = { x = 0 y = 1 }
- infantry = { x = 0 y = 2 }
- infantry = { x = 1 y = 0 }
- infantry = { x = 1 y = 1 }
- infantry = { x = 1 y = 2 }
- light_armor = { x = 2 y = 0 }
- motorized = { x = 2 y = 1 }
- motorized = { x = 2 y = 2 }
- }
- support = {
- engineer = { x = 0 y = 0 }
- }
- }
- division_template = {
- name = "Divisione Motorizzata"
- division_names_group = ITA_MOT_01
- regiments = {
- motorized = { x = 0 y = 0 }
- motorized = { x = 0 y = 1 }
- motorized = { x = 1 y = 0 }
- motorized = { x = 1 y = 1 }
- motorized = { x = 2 y = 0 }
- motorized = { x = 2 y = 1 }
- motorized = { x = 2 y = 2 }
- }
- support = {
- engineer = { x = 0 y = 0 }
- }
- }
- division_template = {
- name = "Divisione Celere"
- division_names_group = ITA_CAV_02
- regiments = {
- cavalry = { x = 0 y = 0 }
- cavalry = { x = 0 y = 1 }
- cavalry = { x = 1 y = 0 }
- cavalry = { x = 1 y = 1 }
- motorized = { x = 2 y = 0 }
- motorized = { x = 2 y = 1 }
- light_armor = { x = 3 y = 0 }
- }
- priority = 2
- }
- division_template = {
- name = "Divisione Corazzata"
- division_names_group = ITA_ARM_01
- regiments = {
- light_armor = { x = 0 y = 0 }
- light_armor = { x = 0 y = 1 }
- light_armor = { x = 0 y = 2 }
- light_armor = { x = 0 y = 3 }
- motorized = { x = 1 y = 0 }
- motorized = { x = 1 y = 1 }
- motorized = { x = 1 y = 2 }
- }
- support = {
- engineer = { x = 0 y = 0 }
- }
- priority = 2
- }
- division_template = {
- name = "Raggruppamento Celere"
- division_names_group = ITA_CAV_02
- regiments = {
- cavalry = { x = 0 y = 0 }
- cavalry = { x = 0 y = 1 }
- motorized = { x = 1 y = 0 }
- motorized = { x = 1 y = 1 }
- light_armor = { x = 2 y = 0 }
- }
- }
- division_template = {
- name = "Divisione Coloniale"
- division_names_group = ITA_COL_01
- regiments = {
- infantry = { x = 0 y = 0 }
- infantry = { x = 0 y = 1 }
- infantry = { x = 0 y = 2 }
- infantry = { x = 1 y = 0 }
- infantry = { x = 1 y = 1 }
- infantry = { x = 1 y = 2 }
- }
- priority = 0
- }
- units = {
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 7
- }
- location =733
- division_template = "Divisione di Fanteria"
- start_experience_factor = 0.2
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 22
- }
- location =6290
- division_template = "Divisione di Fanteria"
- start_experience_factor = 0.2
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 37
- }
- location =6290
- division_template = "Divisione di Fanteria"
- start_experience_factor = 0.3
- }
- division = {
- name = "1a Raggruppamento Celere"
- location =733
- division_template = "Raggruppamento Celere"
- start_experience_factor = 0.2
- start_equipment_factor = 0.7
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 1
- }
- location =733
- division_template = "Divisione Alpina"
- start_experience_factor = 0.3
- start_equipment_factor = 0.7
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 4
- }
- location =10643
- division_template = "Divisione di Fanteria"
- start_experience_factor = 0.3
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 33
- }
- location =10643
- division_template = "Divisione di Fanteria"
- start_experience_factor = 0.3
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 36
- }
- location =10643
- division_template = "Divisione di Fanteria"
- start_experience_factor = 0.3
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 4
- }
- location =10643
- division_template = "Divisione Alpina"
- start_experience_factor = 0.3
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 3
- }
- location =10785
- division_template = "Divisione di Fanteria"
- start_experience_factor = 0.3
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 6
- }
- location =10785
- division_template = "Divisione di Fanteria"
- start_experience_factor = 0.3
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 44
- }
- location =10785
- division_template = "Divisione di Fanteria"
- start_experience_factor = 0.2
- start_equipment_factor = 0.7
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 11
- }
- location =3553
- division_template = "Divisione di Fanteria"
- start_experience_factor = 0.2
- start_equipment_factor = 0.7
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 58
- }
- location =3553
- division_template = "Divisione di Fanteria"
- start_experience_factor = 0.2
- start_equipment_factor = 0.7
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 4
- }
- location =10498
- division_template = "Raggruppamento Celere"
- start_experience_factor = 0.2
- start_equipment_factor = 0.7
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 4
- }
- location =10498
- division_template = "Divisione Alpina"
- start_experience_factor = 0.3
- start_equipment_factor = 0.7
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 1
- }
- location =576
- division_template = "Divisione Alpina"
- start_experience_factor = 0.3
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 2
- }
- location =576
- division_template = "Divisione Alpina"
- start_experience_factor = 0.3
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 5
- }
- location =576
- division_template = "Divisione Alpina"
- start_experience_factor = 0.3
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 1
- }
- location =6282
- division_template = "Divisione di Fanteria"
- start_experience_factor = 0.3
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 24
- }
- location =6282
- division_template = "Divisione di Fanteria"
- start_experience_factor = 0.3
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 59
- }
- location =6282
- division_template = "Divisione di Fanteria"
- start_experience_factor = 0.3
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 2
- }
- location =8955
- division_template = "Divisione di Fanteria"
- start_experience_factor = 0.3
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 26
- }
- location =8955
- division_template = "Divisione di Fanteria"
- start_experience_factor = 0.3
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 29
- }
- location =8955
- division_template = "Divisione di Fanteria"
- start_experience_factor = 0.3
- }
- division = {
- name = "Raggruppamento Verona"
- location =8835
- division_template = "Raggruppamento Celere"
- start_experience_factor = 0.2
- start_equipment_factor = 0.7
- }
- division = {
- name = "Alto Isonzo Gruppa d'Alpina"
- location =8835
- division_template = "Divisione Alpina"
- start_experience_factor = 0.3
- start_equipment_factor = 0.7
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 12
- }
- location =10522
- division_template = "Divisione di Fanteria"
- start_experience_factor = 0.2
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 15
- }
- location =10522
- division_template = "Divisione di Fanteria"
- start_experience_factor = 0.2
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 32
- }
- location =10522
- division_template = "Divisione di Fanteria"
- start_experience_factor = 0.3
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 57
- }
- location =10522
- division_template = "Divisione di Fanteria"
- start_experience_factor = 0.2
- start_equipment_factor = 0.7
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 18
- }
- location =10657
- division_template = "Divisione di Fanteria"
- start_experience_factor = 0.2
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 49
- }
- location =10657
- division_template = "Divisione di Fanteria"
- start_experience_factor = 0.3
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 56
- }
- location =10657
- division_template = "Divisione di Fanteria"
- start_experience_factor = 0.2
- start_equipment_factor = 0.7
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 13
- }
- location =564
- division_template = "Divisione di Fanteria"
- start_experience_factor = 0.3
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 14
- }
- location =564
- division_template = "Divisione di Fanteria"
- start_experience_factor = 0.3
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 38
- }
- location =564
- division_template = "Divisione di Fanteria"
- start_experience_factor = 0.3
- }
- division = {
- name = "Raggruppamento Dalmatia"
- location =3381
- division_template = "Raggruppamento Celere"
- start_experience_factor = 0.2
- start_equipment_factor = 0.7
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 1
- }
- location =10512
- division_template = "Divisione Celere"
- start_experience_factor = 0.3
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 2
- }
- location =10512
- division_template = "Divisione Celere"
- start_experience_factor = 0.3
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 3
- }
- location =10512
- division_template = "Divisione Celere"
- start_experience_factor = 0.3
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 9
- }
- location =6160
- division_template = "Divisione Autotrasportabile"
- start_experience_factor = 0.3
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 101
- }
- location =6160
- division_template = "Divisione Motorizzata"
- start_experience_factor = 0.3
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 102
- }
- location =6160
- division_template = "Divisione Motorizzata"
- start_experience_factor = 0.3
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 132
- }
- location =3381
- division_template = "Divisione Corazzata"
- start_experience_factor = 0.3
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 133
- }
- location =3381
- division_template = "Divisione Corazzata"
- start_experience_factor = 0.3
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 5
- }
- location =9253
- division_template = "Divisione di Fanteria"
- start_experience_factor = 0.3
- start_equipment_factor = 0.7
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 54
- }
- location =3891
- division_template = "Divisione di Fanteria"
- start_experience_factor = 0.2
- start_equipment_factor = 0.7
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 30
- }
- location =10689
- division_template = "Divisione di Fanteria"
- start_experience_factor = 0.3
- start_equipment_factor = 0.7
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 31
- }
- location =6383
- division_template = "Divisione di Fanteria"
- start_experience_factor = 0.2
- start_equipment_factor = 0.7
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 20
- }
- location =6449
- division_template = "Divisione di Fanteria"
- start_experience_factor = 0.2
- start_equipment_factor = 0.7
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 41
- }
- location =6449
- division_template = "Divisione di Fanteria"
- start_experience_factor = 0.2
- start_equipment_factor = 0.7
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 21
- }
- location =10739
- division_template = "Divisione di Fanteria"
- start_experience_factor = 0.2
- start_equipment_factor = 0.7
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 51
- }
- location =10739
- division_template = "Divisione di Fanteria"
- start_experience_factor = 0.2
- start_equipment_factor = 0.7
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 47
- }
- location =9098
- division_template = "Divisione di Fanteria"
- start_experience_factor = 0.2
- start_equipment_factor = 0.7
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 48
- }
- location =9098
- division_template = "Divisione di Fanteria"
- start_experience_factor = 0.2
- start_equipment_factor = 0.7
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 19
- }
- location =9104
- division_template = "Divisione di Fanteria"
- start_experience_factor = 0.3
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 23
- }
- location =3225
- division_template = "Divisione di Fanteria"
- start_experience_factor = 0.2
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 53
- }
- location =9104
- division_template = "Divisione di Fanteria"
- start_experience_factor = 0.2
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 3
- }
- location =870
- division_template = "Divisione Alpina"
- start_experience_factor = 0.3
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 131
- }
- location =9104
- division_template = "Divisione Corazzata"
- start_experience_factor = 0.3
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 50
- }
- location =9190
- division_template = "Divisione di Fanteria"
- start_experience_factor = 0.2
- start_equipment_factor = 0.5
- }
- division = {
- name = "I Battaglione Sahariano"
- location =1075
- division_template = "Divisione Coloniale"
- force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
- start_equipment_factor = 0.7
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 2
- }
- location =1094
- division_template = "Divisione Coloniale"
- force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
- start_equipment_factor = 0.7
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 3
- }
- location =1094
- division_template = "Divisione Coloniale"
- force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
- start_equipment_factor = 0.7
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 25
- }
- location =1094
- division_template = "Divisione Autotrasportabile"
- start_experience_factor = 0.3
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 55
- }
- location =1094
- division_template = "Divisione Autotrasportabile"
- start_experience_factor = 0.3
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 60
- }
- location =1094
- division_template = "Divisione Autotrasportabile"
- start_experience_factor = 0.3
- start_equipment_factor = 0.85
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 17
- }
- location =10926
- division_template = "Divisione Autotrasportabile"
- start_experience_factor = 0.3
- start_equipment_factor = 0.85
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 27
- }
- location =10926
- division_template = "Divisione Autotrasportabile"
- start_experience_factor = 0.3
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 61
- }
- location =10926
- division_template = "Divisione Autotrasportabile"
- start_experience_factor = 0.2
- start_equipment_factor = 0.7
- }
- division = {
- name = "1a Divisione CC.NN. '23 Marzo'"
- location =1094
- division_template = "Divisione di Fanteria"
- start_experience_factor = 0.1
- start_equipment_factor = 0.7
- }
- division = {
- name = "2a Divisione CC.NN. '28 Ottobre'"
- location =1094
- division_template = "Divisione di Fanteria"
- start_experience_factor = 0.1
- start_equipment_factor = 0.7
- }
- division = {
- name = "3a Divisione CC.NN. '21 Aprile'"
- location =1094
- division_template = "Divisione di Fanteria"
- start_experience_factor = 0.1
- start_equipment_factor = 0.3
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 1
- }
- location =1075
- division_template = "Divisione Coloniale"
- force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
- start_equipment_factor = 0.7
- }
- division = {
- name = "Piazzafotre di Tobruch"
- location =1075
- division_template = "Divisione Coloniale"
- force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
- start_equipment_factor = 0.7
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 62
- }
- location =9299
- division_template = "Divisione Autotrasportabile"
- start_experience_factor = 0.2
- start_equipment_factor = 0.7
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 63
- }
- location =3796
- division_template = "Divisione Autotrasportabile"
- start_experience_factor = 0.2
- start_equipment_factor = 0.7
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 64
- }
- location =10843
- division_template = "Divisione Autotrasportabile"
- start_experience_factor = 0.2
- start_equipment_factor = 0.7
- }
- division = {
- name = "4a Divisione CC.NN. '3 Gennaio'"
- location =10843
- division_template = "Divisione di Fanteria"
- start_experience_factor = 0.1
- start_equipment_factor = 0.7
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 31
- }
- location =4658
- division_template = "Divisione Coloniale"
- force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
- start_equipment_factor = 0.3
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 32
- }
- location =4658
- division_template = "Divisione Coloniale"
- force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
- start_equipment_factor = 0.3
- }
- division = {
- name = "Gruppa Coloniale dell'Amhara"
- location =1875
- division_template = "Divisione Coloniale"
- force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
- start_equipment_factor = 0.3
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 40
- }
- location =4675
- division_template = "Divisione di Fanteria"
- start_experience_factor = 0.1
- start_equipment_factor = 0.5
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 65
- }
- location =11515
- division_template = "Divisione di Fanteria"
- start_experience_factor = 0.1
- start_equipment_factor = 0.5
- }
- division = {
- name = "Gruppa Coloniale dello Scoia"
- location =4654
- division_template = "Divisione Coloniale"
- force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
- start_equipment_factor = 0.3
- }
- division = {
- name = "Gruppa Coloniale dell'Gimma"
- location =7424
- division_template = "Divisione Coloniale"
- force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
- start_equipment_factor = 0.3
- }
- division = {
- name = "1a Gruppa Coloniale dell'Mogadiscio"
- location =11683
- division_template = "Divisione Coloniale"
- force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
- start_equipment_factor = 0.3
- }
- division = {
- name = "2a Gruppa Coloniale dell'Mogadiscio"
- location =11683
- division_template = "Divisione Coloniale"
- force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
- start_equipment_factor = 0.3
- }
- }
- air_wings = {
- 158 = {
- fighter_equipment_0 = { owner = "ITA" amount = 84 }
- tac_bomber_equipment_1 =  { owner = "ITA" amount = 123 }
- }
- 115 = {
- fighter_equipment_0 = { owner = "ITA" amount = 84 }
- tac_bomber_equipment_1 =  { owner = "ITA" amount = 136 }
- }
- 2 = {
- fighter_equipment_1 = { owner = "ITA" amount = 96 }
- tac_bomber_equipment_1 =  { owner = "ITA" amount = 88 }
- }
- 156 = {
- fighter_equipment_0 = { owner = "ITA" amount = 54 }
- tac_bomber_equipment_0 =  { owner = "ITA" amount = 24 }
- nav_bomber_equipment_1 = { owner = "ITA" amount = 24 }
- }
- 114 = {
- tac_bomber_equipment_1 =  { owner = "ITA" amount = 64 }
- nav_bomber_equipment_1 = { owner = "ITA" amount = 24 }
- }
- 44 = {
- fighter_equipment_0 =  { owner = "ITA" amount = 24 }
- tac_bomber_equipment_0 = { owner = "ITA" amount = 32 }
- }
- 164 = {
- tac_bomber_equipment_0 = { owner = "ITA" amount = 24 }
- }
- 448 = {
- fighter_equipment_0 = { owner = "ITA" amount = 54 }
- tac_bomber_equipment_1 =  { owner = "ITA" amount = 72 }
- CAS_equipment_1 =  { owner = "ITA" amount = 36 }
- }
- 448 = {
- tac_bomber_equipment_1 =  { owner = "ITA" amount = 60 }
- }
- 550 = {
- fighter_equipment_0 = { owner = "ITA" amount = 45 }
- tac_bomber_equipment_0 =  { owner = "ITA" amount = 54 }
- }
- 271 = {
- tac_bomber_equipment_0 =  { owner = "ITA" amount = 60 }
- }
- }
- instant_effect = {
- add_equipment_production = {
- equipment = {
- type = infantry_equipment_1
- creator = "ITA"
- }
- requested_factories = 10
- progress = 0.1
- efficiency = 100
- }
- add_equipment_production = {
- equipment = {
- type = support_equipment_1
- creator = "ITA"
- }
- requested_factories = 4
- progress = 0.3
- efficiency = 100
- }
- add_equipment_production = {
- equipment = {
- type = light_tank_equipment_2
- creator = "ITA"
- }
- requested_factories = 1
- progress = 0.4
- efficiency = 100
- }
- add_equipment_production = {
- equipment = {
- type = motorized_equipment_1
- creator = "ITA"
- }
- requested_factories = 2
- progress = 0.4
- efficiency = 100
- }
- add_equipment_production = {
- equipment = {
- type = fighter_equipment_2
- creator = "ITA"
- }
- requested_factories = 2
- progress = 0.2
- efficiency = 100
- }
- add_equipment_production = {
- equipment = {
- type = CAS_equipment_1
- creator = "ITA"
- }
- requested_factories = 2
- progress = 0.2
- efficiency = 100
- }
- }
+division_template = {
+	name = "Divisione di Fanteria"
+	division_names_group = ITA_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Divisione Alpina"
+	division_names_group = ITA_MNT_01
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+	}
+	priority = 2
+}
+division_template = {
+	name = "Divisione Autotrasportabile"
+	division_names_group = ITA_MOT_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		light_armor = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Divisione Motorizzata"
+	division_names_group = ITA_MOT_01
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		motorized = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Divisione Celere"
+	division_names_group = ITA_CAV_02
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		motorized = { x = 2 y = 0 }
+		motorized = { x = 2 y = 1 }
+		light_armor = { x = 3 y = 0 }
+	}
+	priority = 2
+}
+division_template = {
+	name = "Divisione Corazzata"
+	division_names_group = ITA_ARM_01
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		light_armor = { x = 0 y = 3 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+	priority = 2
+}
+division_template = {
+	name = "Raggruppamento Celere"
+	division_names_group = ITA_CAV_02
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		light_armor = { x = 2 y = 0 }
+	}
+}
+division_template = {
+	name = "Divisione Coloniale"
+	division_names_group = ITA_COL_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	priority = 0
+}
+units = {
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location =733
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.2
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 22
+		}
+		location =6290
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.2
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 37
+		}
+		location =6290
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "1a Raggruppamento Celere"
+		location =733
+		division_template = "Raggruppamento Celere"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location =733
+		division_template = "Divisione Alpina"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location =10643
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 33
+		}
+		location =10643
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 36
+		}
+		location =10643
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location =10643
+		division_template = "Divisione Alpina"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location =10785
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location =10785
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 44
+		}
+		location =10785
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location =3553
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 58
+		}
+		location =3553
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location =10498
+		division_template = "Raggruppamento Celere"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location =10498
+		division_template = "Divisione Alpina"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location =576
+		division_template = "Divisione Alpina"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location =576
+		division_template = "Divisione Alpina"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location =576
+		division_template = "Divisione Alpina"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location =6282
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 24
+		}
+		location =6282
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 59
+		}
+		location =6282
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location =8955
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 26
+		}
+		location =8955
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 29
+		}
+		location =8955
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Raggruppamento Verona"
+		location =8835
+		division_template = "Raggruppamento Celere"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "Alto Isonzo Gruppa d'Alpina"
+		location =8835
+		division_template = "Divisione Alpina"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 12
+		}
+		location =10522
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.2
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 15
+		}
+		location =10522
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.2
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 32
+		}
+		location =10522
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 57
+		}
+		location =10522
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 18
+		}
+		location =10657
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.2
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 49
+		}
+		location =10657
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 56
+		}
+		location =10657
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 13
+		}
+		location =564
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 14
+		}
+		location =564
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 38
+		}
+		location =564
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+	}
+	division = {
+		name = "Raggruppamento Dalmatia"
+		location =3381
+		division_template = "Raggruppamento Celere"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location =10512
+		division_template = "Divisione Celere"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location =10512
+		division_template = "Divisione Celere"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location =10512
+		division_template = "Divisione Celere"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location =6160
+		division_template = "Divisione Autotrasportabile"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 101
+		}
+		location =6160
+		division_template = "Divisione Motorizzata"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 102
+		}
+		location =6160
+		division_template = "Divisione Motorizzata"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 132
+		}
+		location =3381
+		division_template = "Divisione Corazzata"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 133
+		}
+		location =3381
+		division_template = "Divisione Corazzata"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location =9253
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 54
+		}
+		location =3891
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 30
+		}
+		location =10689
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 31
+		}
+		location =6383
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 20
+		}
+		location =6449
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 41
+		}
+		location =6449
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 21
+		}
+		location =10739
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 51
+		}
+		location =10739
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 47
+		}
+		location =9098
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 48
+		}
+		location =9098
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 19
+		}
+		location =9104
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 23
+		}
+		location =3225
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.2
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 53
+		}
+		location =9104
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.2
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location =870
+		division_template = "Divisione Alpina"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 131
+		}
+		location =9104
+		division_template = "Divisione Corazzata"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 50
+		}
+		location =9190
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "I Battaglione Sahariano"
+		location =1075
+		division_template = "Divisione Coloniale"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location =1094
+		division_template = "Divisione Coloniale"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location =1094
+		division_template = "Divisione Coloniale"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 25
+		}
+		location =1094
+		division_template = "Divisione Autotrasportabile"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 55
+		}
+		location =1094
+		division_template = "Divisione Autotrasportabile"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 60
+		}
+		location =1094
+		division_template = "Divisione Autotrasportabile"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 17
+		}
+		location =10926
+		division_template = "Divisione Autotrasportabile"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.85
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 27
+		}
+		location =10926
+		division_template = "Divisione Autotrasportabile"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 61
+		}
+		location =10926
+		division_template = "Divisione Autotrasportabile"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "1a Divisione CC.NN. '23 Marzo'"
+		location =1094
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "2a Divisione CC.NN. '28 Ottobre'"
+		location =1094
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "3a Divisione CC.NN. '21 Aprile'"
+		location =1094
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location =1075
+		division_template = "Divisione Coloniale"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "Piazzafotre di Tobruch"
+		location =1075
+		division_template = "Divisione Coloniale"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 62
+		}
+		location =9299
+		division_template = "Divisione Autotrasportabile"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 63
+		}
+		location =3796
+		division_template = "Divisione Autotrasportabile"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 64
+		}
+		location =10843
+		division_template = "Divisione Autotrasportabile"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "4a Divisione CC.NN. '3 Gennaio'"
+		location =10843
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 31
+		}
+		location =4658
+		division_template = "Divisione Coloniale"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+		start_equipment_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 32
+		}
+		location =4658
+		division_template = "Divisione Coloniale"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+		start_equipment_factor = 0.3
+	}
+	division = {
+		name = "Gruppa Coloniale dell'Amhara"
+		location =1875
+		division_template = "Divisione Coloniale"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+		start_equipment_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 40
+		}
+		location =4675
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 65
+		}
+		location =11515
+		division_template = "Divisione di Fanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division = {
+		name = "Gruppa Coloniale dello Scoia"
+		location =4654
+		division_template = "Divisione Coloniale"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+		start_equipment_factor = 0.3
+	}
+	division = {
+		name = "Gruppa Coloniale dell'Gimma"
+		location =7424
+		division_template = "Divisione Coloniale"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+		start_equipment_factor = 0.3
+	}
+	division = {
+		name = "1a Gruppa Coloniale dell'Mogadiscio"
+		location =11683
+		division_template = "Divisione Coloniale"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+		start_equipment_factor = 0.3
+	}
+	division = {
+		name = "2a Gruppa Coloniale dell'Mogadiscio"
+		location =11683
+		division_template = "Divisione Coloniale"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" } }
+		start_equipment_factor = 0.3
+	}
+}
+air_wings = {
+	158 = {
+		fighter_equipment_0 = { owner = "ITA" amount = 84 }
+		tac_bomber_equipment_1 =  { owner = "ITA" amount = 123 }
+	}
+	115 = {
+		fighter_equipment_0 = { owner = "ITA" amount = 84 }
+		tac_bomber_equipment_1 =  { owner = "ITA" amount = 136 }
+	}
+	2 = {
+		fighter_equipment_1 = { owner = "ITA" amount = 96 }
+		tac_bomber_equipment_1 =  { owner = "ITA" amount = 88 }
+	}
+	156 = {
+		fighter_equipment_0 = { owner = "ITA" amount = 54 }
+		tac_bomber_equipment_0 =  { owner = "ITA" amount = 24 }
+		nav_bomber_equipment_1 = { owner = "ITA" amount = 24 }
+	}
+	114 = {
+		tac_bomber_equipment_1 =  { owner = "ITA" amount = 64 }
+		nav_bomber_equipment_1 = { owner = "ITA" amount = 24 }
+	}
+	44 = {
+		fighter_equipment_0 =  { owner = "ITA" amount = 24 }
+		tac_bomber_equipment_0 = { owner = "ITA" amount = 32 }
+	}
+	164 = {
+		tac_bomber_equipment_0 = { owner = "ITA" amount = 24 }
+	}
+	448 = {
+		fighter_equipment_0 = { owner = "ITA" amount = 54 }
+		tac_bomber_equipment_1 =  { owner = "ITA" amount = 72 }
+		CAS_equipment_1 =  { owner = "ITA" amount = 36 }
+	}
+	448 = {
+		tac_bomber_equipment_1 =  { owner = "ITA" amount = 60 }
+	}
+	550 = {
+		fighter_equipment_0 = { owner = "ITA" amount = 45 }
+		tac_bomber_equipment_0 =  { owner = "ITA" amount = 54 }
+	}
+	271 = {
+		tac_bomber_equipment_0 =  { owner = "ITA" amount = 60 }
+	}
+}
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "ITA"
+		}
+		requested_factories = 10
+		progress = 0.1
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "ITA"
+		}
+		requested_factories = 4
+		progress = 0.3
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_equipment_2
+			creator = "ITA"
+		}
+		requested_factories = 1
+		progress = 0.4
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "ITA"
+		}
+		requested_factories = 2
+		progress = 0.4
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_2
+			creator = "ITA"
+		}
+		requested_factories = 2
+		progress = 0.2
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = CAS_equipment_1
+			creator = "ITA"
+		}
+		requested_factories = 2
+		progress = 0.2
+		efficiency = 100
+	}
+}
 

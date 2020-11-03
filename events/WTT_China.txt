@@ -1,267 +1,267 @@
 add_namespace = wtt_china
-  add_namespace = wtt_xian_incident
-  country_event = {
-  id = wtt_xian_incident.1
-  title = wtt_xian_incident.1.t
-  desc = wtt_xian_incident.1.desc
-  picture = GFX_report_event_china_politicians_captured
-  is_triggered_only = yes
-  immediate = {
-  hidden_effect = {
-  random_other_country = {
-  limit = {
-  has_country_flag = CHI_xian_instigator_flag
-  }
-  save_event_target_as = CHI_xian_instigator
-  }
-  }
-  }
-  option = {
-  name = wtt_xian_incident.1.b
-  custom_effect_tooltip = CHI_xian_warlords_upset
-  ai_chance = {
-  base = 30
-  modifier = {
-  CHI_is_on_historical_plan_trigger = yes
-  factor = 0
-  }
-  }
-  event_target:CHI_xian_instigator = { country_event = wtt_xian_incident.3 }
-  }
-  }
-  country_event = {
-  id = wtt_xian_incident.3
-  title = wtt_xian_incident.3.t
-  desc = wtt_xian_incident.3.desc
-  picture = GFX_report_event_china_chiang_kai_shek
-  is_triggered_only = yes
-  option = {
-  name = wtt_xian_incident.3.a
-  }
-  }
-  add_namespace = wtt_china_shared
-  country_event = {
-  id = wtt_china_shared.10
-  title = wtt_china_shared.10.t
-  desc = { text = wtt_china_shared.10.desc_a trigger = { FROM = { has_idea = CHI_soong_mei_ling } } }
-  desc = { text = wtt_china_shared.10.desc_b trigger = { NOT = { FROM = { has_idea = CHI_soong_mei_ling } } } }
-  picture = GFX_report_event_china_flying_tigers
-  is_triggered_only = yes
-  option = {
-  name = wtt_china_shared.10.a
-  set_country_flag = CHI_flying_tigers
-  hidden_effect = {
-  news_event = { id = wtt_news.34 days = 1 }
-  }
-  }
-  }
-  country_event = {
-  id = wtt_china_shared.11
-  title = wtt_china_shared.11.t
-  desc = { text = wtt_china_shared.11.desc_a trigger = { FROM = { has_government = communism } } }
-  desc = { text = wtt_china_shared.11.desc_b trigger = { NOT = { FROM = { has_government = communism } } } }
-  picture = GFX_report_event_china_soviet_volunteers
-  is_triggered_only = yes
-  option = {
-  name = wtt_china_shared.11.a
-  ai_chance = {
-  base = 70
-  }
-  set_country_flag = CHI_soviet_volunteer_group
-  }
-  }
-  add_namespace = wtt_burma_road
-  country_event = {
-  id = wtt_burma_road.1
-  title = wtt_burma_road.1.t
-  desc = wtt_burma_road.1.desc
-  picture = GFX_report_event_burma_road
-  is_triggered_only = yes
-  option = {
-  name = wtt_burma_road.1.a
-  }
-  }
-  country_event = {
-  id = wtt_burma_road.2
-  title = wtt_burma_road.1.t
-  desc = {
-  text = wtt_burma_road.2.desc
-  trigger = {
-  NOT = { FROM = { has_war_with = ROOT } }
-  }
-  }
-  desc = {
-  text = wtt_burma_road.2.desc_war_with_from
-  trigger = {
-  FROM = { has_war_with = ROOT }
-  }
-  }
-  picture = GFX_report_event_generic_sign_treaty2
-  is_triggered_only = yes
-  option = {
-  name = wtt_burma_road.1.a
-  }
-  }
-  country_event = {
-  id = wtt_burma_road.3
-  title = wtt_burma_road.3.t
-  desc = wtt_burma_road.3.desc
-  picture = GFX_report_event_ledo_road
-  is_triggered_only = yes
-  option = {
-  name = wtt_burma_road.3.a
-  }
-  }
-  country_event = {
-  id = wtt_burma_road.4
-  title = wtt_burma_road.4.t
-  desc = wtt_burma_road.4.desc
-  picture = GFX_report_event_burma_road
-  is_triggered_only = yes
-  option = {
-  name = wtt_burma_road.4.a
-  add_offsite_building = { type = arms_factory level = CHI_burma_road_closed_level }
-  set_variable = { CHI_burma_road = CHI_burma_road_closed_level }
-  clear_variable = CHI_burma_road_closed_level
-  }
-  }
-  add_namespace = wtt_ledo_road
-  country_event = {
-  id = wtt_ledo_road.1
-  title = wtt_ledo_road.1.t
-  desc = wtt_ledo_road.1.desc
-  picture = GFX_report_event_nationalist_china_machinegun_firing
-  is_triggered_only = yes
-  option = {
-  name = wtt_burma_road.1.a
-  }
-  }
-  country_event = {
-  id = wtt_ledo_road.2
-  title = wtt_ledo_road.1.t
-  desc = {
-  text = wtt_ledo_road.2.desc
-  trigger = {
-  NOT = { FROM = { has_war_with = ROOT } }
-  }
-  }
-  desc = {
-  text = wtt_ledo_road.2.desc_war_with_from
-  trigger = {
-  FROM = { has_war_with = ROOT }
-  }
-  }
-  picture = GFX_report_event_indian_soldiers
-  is_triggered_only = yes
-  option = {
-  name = wtt_burma_road.1.a
-  }
-  }
-  country_event = {
-  id = wtt_ledo_road.3
-  title = wtt_ledo_road.3.t
-  desc = wtt_ledo_road.3.desc
-  picture = GFX_report_event_ledo_road
-  is_triggered_only = yes
-  option = {
-  name = wtt_ledo_road.3.a
-  }
-  }
-  country_event = {
-  id = wtt_ledo_road.4
-  title = wtt_ledo_road.4.t
-  desc = wtt_ledo_road.4.desc
-  picture = GFX_report_event_ledo_road
-  is_triggered_only = yes
-  option = {
-  name = wtt_ledo_road.4.a
-  add_offsite_building = { type = arms_factory level = CHI_ledo_road_closed_level }
-  set_variable = { CHI_ledo_road = CHI_ledo_road_closed_level }
-  clear_variable = CHI_ledo_road_closed_level
-  }
-  }
-  add_namespace = wtt_hanoi_route
-  country_event = {
-  id = wtt_hanoi_route.1
-  title = wtt_hanoi_route.1.t
-  desc = wtt_hanoi_route.1.desc
-  picture = GFX_report_event_merchant_ship_01
-  is_triggered_only = yes
-  option = {
-  name = wtt_burma_road.1.a
-  }
-  }
-  country_event = {
-  id = wtt_hanoi_route.2
-  title = wtt_hanoi_route.1.t
-  desc = {
-  text = wtt_hanoi_route.2.desc
-  trigger = {
-  NOT = { FROM = { has_war_with = ROOT } }
-  }
-  }
-  desc = {
-  text = wtt_hanoi_route.2.desc_war_with_from
-  trigger = {
-  FROM = { has_war_with = ROOT }
-  }
-  }
-  picture = GFX_report_event_merchant_ship_01
-  is_triggered_only = yes
-  option = {
-  name = wtt_burma_road.1.a
-  }
-  }
-  add_namespace = wtt_the_hump
-  country_event = {
-  id = wtt_the_hump.1
-  title = wtt_the_hump.1.t
-  desc = wtt_the_hump.1.desc
-  picture = GFX_report_event_nationalist_china_machinegun_firing
-  is_triggered_only = yes
-  option = {
-  name = wtt_burma_road.1.a
-  }
-  }
-  country_event = {
-  id = wtt_the_hump.2
-  title = wtt_the_hump.1.t
-  desc = {
-  text = wtt_the_hump.2.desc
-  trigger = {
-  NOT = { FROM = { has_war_with = ROOT } }
-  }
-  }
-  desc = {
-  text = wtt_the_hump.2.desc_war_with_from
-  trigger = {
-  FROM = { has_war_with = ROOT }
-  }
-  }
-  picture = GFX_report_event_generic_read_write
-  is_triggered_only = yes
-  option = {
-  name = wtt_burma_road.1.a
-  }
-  }
-  country_event = {
-  id = wtt_the_hump.3
-  title = wtt_the_hump.3.t
-  desc = wtt_the_hump.3.desc
-  picture = GFX_report_event_generic_bombers
-  is_triggered_only = yes
-  option = {
-  name = wtt_the_hump.3.a
-  }
-  }
-  country_event = {
-  id = wtt_the_hump.4
-  title = wtt_the_hump.4.t
-  desc = wtt_the_hump.4.desc
-  picture = GFX_report_event_generic_bombers
-  is_triggered_only = yes
-  option = {
-  name = wtt_the_hump.4.a
-  }
-  }
+add_namespace = wtt_xian_incident
+country_event = {
+	id = wtt_xian_incident.1
+	title = wtt_xian_incident.1.t
+	desc = wtt_xian_incident.1.desc
+	picture = GFX_report_event_china_politicians_captured
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			random_other_country = {
+				limit = {
+					has_country_flag = CHI_xian_instigator_flag
+				}
+				save_event_target_as = CHI_xian_instigator
+			}
+		}
+	}
+	option = {
+		name = wtt_xian_incident.1.b
+		custom_effect_tooltip = CHI_xian_warlords_upset
+		ai_chance = {
+			base = 30
+			modifier = {
+				CHI_is_on_historical_plan_trigger = yes
+				factor = 0
+			}
+		}
+		event_target:CHI_xian_instigator = { country_event = wtt_xian_incident.3 }
+	}
+}
+country_event = {
+	id = wtt_xian_incident.3
+	title = wtt_xian_incident.3.t
+	desc = wtt_xian_incident.3.desc
+	picture = GFX_report_event_china_chiang_kai_shek
+	is_triggered_only = yes
+	option = {
+		name = wtt_xian_incident.3.a
+	}
+}
+add_namespace = wtt_china_shared
+country_event = {
+	id = wtt_china_shared.10
+	title = wtt_china_shared.10.t
+	desc = { text = wtt_china_shared.10.desc_a trigger = { FROM = { has_idea = CHI_soong_mei_ling } } }
+	desc = { text = wtt_china_shared.10.desc_b trigger = { NOT = { FROM = { has_idea = CHI_soong_mei_ling } } } }
+	picture = GFX_report_event_china_flying_tigers
+	is_triggered_only = yes
+	option = {
+		name = wtt_china_shared.10.a
+		set_country_flag = CHI_flying_tigers
+		hidden_effect = {
+			news_event = { id = wtt_news.34 days = 1 }
+		}
+	}
+}
+country_event = {
+	id = wtt_china_shared.11
+	title = wtt_china_shared.11.t
+	desc = { text = wtt_china_shared.11.desc_a trigger = { FROM = { has_government = communism } } }
+	desc = { text = wtt_china_shared.11.desc_b trigger = { NOT = { FROM = { has_government = communism } } } }
+	picture = GFX_report_event_china_soviet_volunteers
+	is_triggered_only = yes
+	option = {
+		name = wtt_china_shared.11.a
+		ai_chance = {
+			base = 70
+		}
+		set_country_flag = CHI_soviet_volunteer_group
+	}
+}
+add_namespace = wtt_burma_road
+country_event = {
+	id = wtt_burma_road.1
+	title = wtt_burma_road.1.t
+	desc = wtt_burma_road.1.desc
+	picture = GFX_report_event_burma_road
+	is_triggered_only = yes
+	option = {
+		name = wtt_burma_road.1.a
+	}
+}
+country_event = {
+	id = wtt_burma_road.2
+	title = wtt_burma_road.1.t
+	desc = {
+		text = wtt_burma_road.2.desc
+		trigger = {
+			NOT = { FROM = { has_war_with = ROOT } }
+		}
+	}
+	desc = {
+		text = wtt_burma_road.2.desc_war_with_from
+		trigger = {
+			FROM = { has_war_with = ROOT }
+		}
+	}
+	picture = GFX_report_event_generic_sign_treaty2
+	is_triggered_only = yes
+	option = {
+		name = wtt_burma_road.1.a
+	}
+}
+country_event = {
+	id = wtt_burma_road.3
+	title = wtt_burma_road.3.t
+	desc = wtt_burma_road.3.desc
+	picture = GFX_report_event_ledo_road
+	is_triggered_only = yes
+	option = {
+		name = wtt_burma_road.3.a
+	}
+}
+country_event = {
+	id = wtt_burma_road.4
+	title = wtt_burma_road.4.t
+	desc = wtt_burma_road.4.desc
+	picture = GFX_report_event_burma_road
+	is_triggered_only = yes
+	option = {
+		name = wtt_burma_road.4.a
+		add_offsite_building = { type = arms_factory level = CHI_burma_road_closed_level }
+		set_variable = { CHI_burma_road = CHI_burma_road_closed_level }
+		clear_variable = CHI_burma_road_closed_level
+	}
+}
+add_namespace = wtt_ledo_road
+country_event = {
+	id = wtt_ledo_road.1
+	title = wtt_ledo_road.1.t
+	desc = wtt_ledo_road.1.desc
+	picture = GFX_report_event_nationalist_china_machinegun_firing
+	is_triggered_only = yes
+	option = {
+		name = wtt_burma_road.1.a
+	}
+}
+country_event = {
+	id = wtt_ledo_road.2
+	title = wtt_ledo_road.1.t
+	desc = {
+		text = wtt_ledo_road.2.desc
+		trigger = {
+			NOT = { FROM = { has_war_with = ROOT } }
+		}
+	}
+	desc = {
+		text = wtt_ledo_road.2.desc_war_with_from
+		trigger = {
+			FROM = { has_war_with = ROOT }
+		}
+	}
+	picture = GFX_report_event_indian_soldiers
+	is_triggered_only = yes
+	option = {
+		name = wtt_burma_road.1.a
+	}
+}
+country_event = {
+	id = wtt_ledo_road.3
+	title = wtt_ledo_road.3.t
+	desc = wtt_ledo_road.3.desc
+	picture = GFX_report_event_ledo_road
+	is_triggered_only = yes
+	option = {
+		name = wtt_ledo_road.3.a
+	}
+}
+country_event = {
+	id = wtt_ledo_road.4
+	title = wtt_ledo_road.4.t
+	desc = wtt_ledo_road.4.desc
+	picture = GFX_report_event_ledo_road
+	is_triggered_only = yes
+	option = {
+		name = wtt_ledo_road.4.a
+		add_offsite_building = { type = arms_factory level = CHI_ledo_road_closed_level }
+		set_variable = { CHI_ledo_road = CHI_ledo_road_closed_level }
+		clear_variable = CHI_ledo_road_closed_level
+	}
+}
+add_namespace = wtt_hanoi_route
+country_event = {
+	id = wtt_hanoi_route.1
+	title = wtt_hanoi_route.1.t
+	desc = wtt_hanoi_route.1.desc
+	picture = GFX_report_event_merchant_ship_01
+	is_triggered_only = yes
+	option = {
+		name = wtt_burma_road.1.a
+	}
+}
+country_event = {
+	id = wtt_hanoi_route.2
+	title = wtt_hanoi_route.1.t
+	desc = {
+		text = wtt_hanoi_route.2.desc
+		trigger = {
+			NOT = { FROM = { has_war_with = ROOT } }
+		}
+	}
+	desc = {
+		text = wtt_hanoi_route.2.desc_war_with_from
+		trigger = {
+			FROM = { has_war_with = ROOT }
+		}
+	}
+	picture = GFX_report_event_merchant_ship_01
+	is_triggered_only = yes
+	option = {
+		name = wtt_burma_road.1.a
+	}
+}
+add_namespace = wtt_the_hump
+country_event = {
+	id = wtt_the_hump.1
+	title = wtt_the_hump.1.t
+	desc = wtt_the_hump.1.desc
+	picture = GFX_report_event_nationalist_china_machinegun_firing
+	is_triggered_only = yes
+	option = {
+		name = wtt_burma_road.1.a
+	}
+}
+country_event = {
+	id = wtt_the_hump.2
+	title = wtt_the_hump.1.t
+	desc = {
+		text = wtt_the_hump.2.desc
+		trigger = {
+			NOT = { FROM = { has_war_with = ROOT } }
+		}
+	}
+	desc = {
+		text = wtt_the_hump.2.desc_war_with_from
+		trigger = {
+			FROM = { has_war_with = ROOT }
+		}
+	}
+	picture = GFX_report_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = wtt_burma_road.1.a
+	}
+}
+country_event = {
+	id = wtt_the_hump.3
+	title = wtt_the_hump.3.t
+	desc = wtt_the_hump.3.desc
+	picture = GFX_report_event_generic_bombers
+	is_triggered_only = yes
+	option = {
+		name = wtt_the_hump.3.a
+	}
+}
+country_event = {
+	id = wtt_the_hump.4
+	title = wtt_the_hump.4.t
+	desc = wtt_the_hump.4.desc
+	picture = GFX_report_event_generic_bombers
+	is_triggered_only = yes
+	option = {
+		name = wtt_the_hump.4.a
+	}
+}
 

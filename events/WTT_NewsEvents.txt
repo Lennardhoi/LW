@@ -1,848 +1,848 @@
 add_namespace = wtt_news
-  news_event = {
-  id = wtt_news.18
-  title = wtt_news.18.t
-  desc = wtt_news.18.desc
-  picture = GFX_news_event_election_vote
-  major = yes
-  is_triggered_only = yes
-  option = {
-  name = wtt_news.18.a
-  trigger = {
-  original_tag = GER
-  }
-  }
-  option = {
-  name = wtt_news.18.b
-  trigger = {
-  NOT = { original_tag = GER }
-  }
-  }
-  }
-  news_event = {
-  id = wtt_news.25
-  title = wtt_news.25.t
-  desc = wtt_news.25.desc
-  picture = GFX_news_event_generic_read_write
-  is_triggered_only = yes
-  option = {
-  name = wtt_news.25.a
-  trigger = {
-  original_tag = JAP
-  }
-  }
-  option = {
-  name = wtt_news.25.b
-  trigger = {
-  OR = {
-  original_tag = HOL
-  original_tag = ENG
-  AND = {
-  original_tag = FRA
-  has_government = democratic
-  }
-  }
-  }
-  }
-  option = {
-  name = wtt_news.25.c
-  trigger = {
-  NOT = {
-  original_tag = JAP
-  original_tag = HOL
-  original_tag = ENG
-  AND = {
-  original_tag = FRA
-  has_government = democratic
-  }
-  }
-  }
-  }
-  }
-  news_event = {
-  id = wtt_news.34
-  title = wtt_news.34.t
-  desc = wtt_news.34.desc
-  picture = GFX_news_event_china_flying_tigers
-  is_triggered_only = yes
-  option = {
-  name = wtt_news.34.a
-  trigger = {
-  original_tag = USA
-  }
-  }
-  option = {
-  name = wtt_news.34.b
-  trigger = {
-  original_tag = CHI
-  }
-  }
-  option = {
-  name = wtt_news.34.c
-  trigger = {
-  has_war_with = CHI
-  }
-  }
-  option = {
-  name = wtt_news.34.d
-  trigger = {
-  NOT = {
-  original_tag = CHI
-  original_tag = USA
-  has_war_with = CHI
-  }
-  }
-  }
-  }
-  news_event = {
-  id = wtt_news.40
-  title = wtt_news.40.t
-  desc = {
-  text = wtt_news.40.desc_eng
-  trigger = {
-  FROM = {
-  has_country_flag = blew_up_suez
-  owns_state = 412
-  owns_state = 417
-  }
-  }
-  }
-  desc = {
-  text = wtt_news.40.desc_not_eng
-  trigger = {
-  FROM = {
-  OR = {
-  NOT = {	has_country_flag = blew_up_suez }
-  NOT = {
-  owns_state = 412
-  owns_state = 417
-  }
-  }
-  }
-  }
-  }
-  picture = GFX_news_event_020
-  is_triggered_only = yes
-  option = {
-  name = wtt_news.40.a
-  trigger = {
-  NOT = { has_country_flag = blew_up_suez }
-  owns_state = 412
-  owns_state = 417
-  }
-  if = {
-  limit = {
-  original_tag = ENG
-  }
-  add_war_support = -0.05
-  add_stability = -0.05
-  }
-  }
-  option = {
-  name = wtt_news.40.b
-  trigger = {
-  has_country_flag = blew_up_suez
-  owns_state = 412
-  owns_state = 417
-  }
-  if = {
-  limit = {
-  original_tag = ENG
-  }
-  add_war_support = -0.05
-  add_stability = -0.05
-  }
-  clr_country_flag = blew_up_suez
-  }
-  option = {
-  name = wtt_news.40.c
-  trigger = {
-  any_country = {
-  has_war_with = ROOT
-  owns_state = 412
-  owns_state = 417
-  has_country_flag = blew_up_suez
-  }
-  }
-  }
-  option = {
-  name = wtt_news.40.d
-  trigger = {
-  any_country = {
-  has_war_with = ROOT
-  owns_state = 412
-  owns_state = 417
-  }
-  has_country_flag = blew_up_suez
-  }
-  clr_country_flag = blew_up_suez
-  }
-  option = {
-  name = wtt_news.40.e
-  trigger = {
-  any_country = {
-  has_war_with = ROOT
-  owns_state = 412
-  owns_state = 417
-  NOT = { has_country_flag = blew_up_suez }
-  }
-  any_other_country = {
-  has_war_together_with = ROOT
-  has_country_flag = blew_up_suez
-  }
-  NOT = { has_country_flag = blew_up_suez }
-  }
-  }
-  option = {
-  name = wtt_news.40.f
-  trigger = {
-  any_other_country = {
-  has_war_together_with = ROOT
-  owns_state = 412
-  owns_state = 417
-  has_country_flag = blew_up_suez
-  }
-  NOT = { has_country_flag = blew_up_suez }
-  }
-  }
-  option = {
-  name = wtt_news.40.g
-  trigger = {
-  any_country = {
-  has_war_with = ROOT
-  has_country_flag = blew_up_suez
-  }
-  any_other_country = {
-  has_war_together_with = ROOT
-  owns_state = 412
-  owns_state = 417
-  NOT = { has_country_flag = blew_up_suez }
-  }
-  NOT = { has_country_flag = blew_up_suez }
-  }
-  }
-  option = {
-  name = wtt_news.40.h
-  trigger = {
-  NOT = {
-  any_country = {
-  has_war_with = ROOT
-  has_country_flag = blew_up_suez
-  }
-  }
-  NOT = {
-  any_other_country = {
-  has_war_together_with = ROOT
-  owns_state = 412
-  owns_state = 417
-  has_country_flag = blew_up_suez
-  }
-  }
-  NOT = { has_country_flag = blew_up_suez }
-  }
-  }
-  }
-  news_event = {
-  id = wtt_news.41
-  title = wtt_news.41.t
-  desc = {
-  text = wtt_news.41.desc_usa
-  trigger = {
-  FROM = {
-  has_country_flag = blew_up_panama
-  owns_state = 604
-  }
-  }
-  }
-  desc = {
-  text = wtt_news.41.desc_not_usa
-  trigger = {
-  FROM = {
-  OR = {
-  NOT = {	has_country_flag = blew_up_panama }
-  NOT = { owns_state = 604 }
-  }
-  }
-  }
-  }
-  picture = GFX_news_event_020
-  is_triggered_only = yes
-  option = {
-  name = wtt_news.41.a
-  trigger = {
-  NOT = { has_country_flag = blew_up_panama }
-  owns_state = 604
-  }
-  if = {
-  limit = {
-  original_tag = USA
-  }
-  add_war_support = -0.05
-  add_stability = -0.05
-  }
-  }
-  option = {
-  name = wtt_news.41.b
-  trigger = {
-  has_country_flag = blew_up_panama
-  owns_state = 604
-  }
-  if = {
-  limit = {
-  original_tag = USA
-  }
-  add_war_support = -0.05
-  add_stability = -0.05
-  }
-  clr_country_flag = blew_up_panama
-  }
-  option = {
-  name = wtt_news.41.c
-  trigger = {
-  any_country = {
-  has_war_with = ROOT
-  owns_state = 604
-  has_country_flag = blew_up_panama
-  }
-  }
-  }
-  option = {
-  name = wtt_news.41.d
-  trigger = {
-  any_country = {
-  has_war_with = ROOT
-  owns_state = 604
-  }
-  has_country_flag = blew_up_panama
-  }
-  clr_country_flag = blew_up_panama
-  }
-  option = {
-  name = wtt_news.41.e
-  trigger = {
-  any_country = {
-  has_war_with = ROOT
-  owns_state = 604
-  NOT = { has_country_flag = blew_up_panama }
-  }
-  any_other_country = {
-  has_war_together_with = ROOT
-  has_country_flag = blew_up_panama
-  }
-  NOT = { has_country_flag = blew_up_panama }
-  }
-  }
-  option = {
-  name = wtt_news.41.f
-  trigger = {
-  any_other_country = {
-  has_war_together_with = ROOT
-  owns_state = 604
-  has_country_flag = blew_up_panama
-  }
-  NOT = { has_country_flag = blew_up_panama }
-  }
-  }
-  option = {
-  name = wtt_news.41.g
-  trigger = {
-  any_country = {
-  has_war_with = ROOT
-  has_country_flag = blew_up_panama
-  }
-  any_other_country = {
-  has_war_together_with = ROOT
-  owns_state = 604
-  NOT = { has_country_flag = blew_up_panama }
-  }
-  NOT = { has_country_flag = blew_up_panama }
-  }
-  }
-  option = {
-  name = wtt_news.41.h
-  trigger = {
-  NOT = {
-  any_country = {
-  has_war_with = ROOT
-  has_country_flag = blew_up_panama
-  }
-  }
-  NOT = {
-  any_other_country = {
-  has_war_together_with = ROOT
-  owns_state = 604
-  has_country_flag = blew_up_panama
-  }
-  }
-  NOT = { has_country_flag = blew_up_panama }
-  }
-  }
-  }
-  news_event = {
-  id = wtt_news.42
-  title = wtt_news.42.t
-  desc = wtt_news.42.desc
-  picture = GFX_news_event_020
-  is_triggered_only = yes
-  option = {
-  name = wtt_news.42.a
-  trigger = {
-  original_tag = ENG
-  has_country_flag = rebuilt_suez
-  }
-  clr_country_flag = rebuilt_suez
-  }
-  option = {
-  name = wtt_news.42.b
-  trigger = {
-  NOT = { original_tag = ENG }
-  has_country_flag = rebuilt_suez
-  }
-  clr_country_flag = rebuilt_suez
-  }
-  option = {
-  name = wtt_news.42.c
-  trigger = {
-  any_other_country = {
-  has_war_together_with = ROOT
-  has_country_flag = rebuilt_suez
-  }
-  NOT = { has_country_flag = rebuilt_suez }
-  }
-  }
-  option = {
-  name = wtt_news.42.d
-  trigger = {
-  any_other_country = {
-  has_war_with = ROOT
-  has_country_flag = rebuilt_suez
-  }
-  NOT = { has_country_flag = rebuilt_suez }
-  }
-  }
-  option = {
-  name = wtt_news.42.e
-  trigger = {
-  NOT = { has_country_flag = rebuilt_suez }
-  NOT = {
-  any_other_country = {
-  has_war_together_with = ROOT
-  has_country_flag = rebuilt_suez
-  }
-  }
-  NOT = {
-  any_other_country = {
-  has_war_with = ROOT
-  has_country_flag = rebuilt_suez
-  }
-  }
-  }
-  }
-  }
-  news_event = {
-  id = wtt_news.43
-  title = wtt_news.43.t
-  desc = wtt_news.43.desc
-  picture = GFX_news_event_020
-  is_triggered_only = yes
-  option = {
-  name = wtt_news.43.a
-  trigger = {
-  original_tag = USA
-  has_country_flag = rebuilt_panama
-  }
-  clr_country_flag = rebuilt_panama
-  }
-  option = {
-  name = wtt_news.43.b
-  trigger = {
-  NOT = { original_tag = USA }
-  has_country_flag = rebuilt_panama
-  }
-  clr_country_flag = rebuilt_panama
-  }
-  option = {
-  name = wtt_news.43.c
-  trigger = {
-  any_other_country = {
-  has_war_together_with = ROOT
-  has_country_flag = rebuilt_panama
-  }
-  NOT = { has_country_flag = rebuilt_panama }
-  }
-  }
-  option = {
-  name = wtt_news.43.d
-  trigger = {
-  any_other_country = {
-  has_war_with = ROOT
-  has_country_flag = rebuilt_panama
-  }
-  NOT = { has_country_flag = rebuilt_panama }
-  }
-  }
-  option = {
-  name = wtt_news.43.e
-  trigger = {
-  NOT = { has_country_flag = rebuilt_panama }
-  NOT = {
-  any_other_country = {
-  has_war_together_with = ROOT
-  has_country_flag = rebuilt_panama
-  }
-  }
-  NOT = {
-  any_other_country = {
-  has_war_with = ROOT
-  has_country_flag = rebuilt_panama
-  }
-  }
-  }
-  }
-  }
-  news_event = {
-  id = wtt_news.44
-  title = wtt_news.44.t
-  desc = wtt_news.44.desc
-  picture = GFX_news_event_japanese_army_parade
-  is_triggered_only = yes
-  option = {
-  name = wtt_news.44.a
-  trigger = {
-  is_literally_china = yes
-  OR = {
-  is_subject_of = MAN
-  is_in_faction_with = MAN
-  }
-  }
-  }
-  option = {
-  name = wtt_news.44.b
-  trigger = {
-  original_tag = MAN
-  }
-  }
-  option = {
-  name = wtt_news.44.c
-  trigger = {
-  original_tag = JAP
-  }
-  }
-  option = {
-  name = wtt_news.44.d
-  trigger = {
-  NOT = {
-  original_tag = MAN
-  original_tag = JAP
-  is_literally_china = yes
-  }
-  }
-  }
-  option = {
-  name = wtt_news.44.e
-  trigger = {
-  is_literally_china = yes
-  NOT = {
-  is_subject_of = MAN
-  is_in_faction_with = MAN
-  }
-  }
-  }
-  }
-  news_event = {
-  id = wtt_news.45
-  title = wtt_news.45.t
-  desc = wtt_news.45.desc
-  picture = GFX_news_event_generic_rally_3
-  is_triggered_only = yes
-  option = {
-  name = wtt_news.45.a
-  trigger = {
-  is_literally_china = yes
-  NOT = {
-  tag = event_target:new_leader
-  tag = event_target:old_leader
-  }
-  }
-  }
-  option = {
-  name = wtt_news.45.b
-  trigger = {
-  tag = event_target:new_leader
-  }
-  }
-  option = {
-  name = wtt_news.45.c
-  trigger = {
-  tag = event_target:old_leader
-  }
-  }
-  option = {
-  name = wtt_news.45.d
-  trigger = {
-  is_literally_china = no
-  }
-  }
-  }
-  news_event = {
-  id = wtt_news.47
-  title = wtt_news.47.t
-  desc = wtt_news.47.desc
-  picture = GFX_news_event_polish_army
-  is_triggered_only = yes
-  option = {
-  name = wtt_news.47.a
-  trigger = {
-  is_literally_china = yes
-  }
-  }
-  option = {
-  name = wtt_news.47.b
-  trigger = {
-  OR = {
-  controls_state = 590
-  controls_state = 589
-  controls_state = 274
-  controls_state = 659
-  }
-  }
-  }
-  option = {
-  name = wtt_news.47.c
-  trigger = {
-  is_literally_china = no
-  NOT = {
-  controls_state = 590
-  controls_state = 589
-  controls_state = 274
-  controls_state = 659
-  }
-  NOT = { tag = USA }
-  }
-  }
-  option = {
-  name = wtt_news.47.d
-  trigger = {
-  tag = USA
-  }
-  }
-  }
-  news_event = {
-  id = wtt_news.48
-  title = wtt_news.48.t
-  desc = wtt_news.48.desc
-  picture = GFX_news_event_japanese_parade
-  is_triggered_only = yes
-  option = {
-  name = wtt_news.48.a
-  trigger = {
-  is_literally_china = yes
-  }
-  }
-  option = {
-  name = wtt_news.48.b
-  trigger = {
-  original_tag = MAN
-  }
-  }
-  option = {
-  name = wtt_news.48.c
-  trigger = {
-  original_tag = JAP
-  }
-  }
-  option = {
-  name = wtt_news.48.d
-  trigger = {
-  NOT = {
-  original_tag = MAN
-  original_tag = JAP
-  is_literally_china = yes
-  }
-  }
-  }
-  }
-  news_event = {
-  id = wtt_news.50
-  title = wtt_news.50.t
-  desc = wtt_news.50.desc
-  picture = GFX_news_event_generic_ruins
-  is_triggered_only = yes
-  option = {
-  name = wtt_news.50.a
-  trigger = {
-  original_tag = GER
-  }
-  }
-  option = {
-  name = wtt_news.50.b
-  trigger = {
-  is_in_faction_with = GER
-  NOT = {
-  original_tag = GER
-  }
-  }
-  }
-  option = {
-  name = wtt_news.50.c
-  trigger = {
-  has_war_with = GER
-  }
-  }
-  option = {
-  name = wtt_news.50.d
-  trigger = {
-  NOT = {
-  has_war_with = GER
-  }
-  NOT = {
-  original_tag = GER
-  }
-  NOT = {
-  is_in_faction_with = GER
-  }
-  }
-  }
-  }
-  news_event = {
-  id = wtt_news.51
-  title = wtt_news.51.t
-  desc = wtt_news.51.desc
-  picture = GFX_news_event_generic_ruins
-  is_triggered_only = yes
-  option = {
-  name = wtt_news.50.a
-  trigger = {
-  original_tag = GER
-  }
-  }
-  option = {
-  name = wtt_news.50.b
-  trigger = {
-  is_in_faction_with = GER
-  NOT = {
-  original_tag = GER
-  }
-  }
-  }
-  option = {
-  name = wtt_news.51.c
-  trigger = {
-  has_war_with = GER
-  }
-  }
-  option = {
-  name = wtt_news.50.d
-  trigger = {
-  NOT = {
-  has_war_with = GER
-  }
-  NOT = {
-  original_tag = GER
-  }
-  NOT = {
-  is_in_faction_with = GER
-  }
-  }
-  }
-  }
-  news_event = {
-  id = wtt_news.52
-  title = wtt_news.51.t
-  desc = wtt_news.52.desc
-  picture = GFX_news_event_generic_ruins
-  is_triggered_only = yes
-  option = {
-  name = wtt_news.50.a
-  trigger = {
-  original_tag = GER
-  }
-  }
-  option = {
-  name = wtt_news.50.b
-  trigger = {
-  is_in_faction_with = GER
-  NOT = {
-  original_tag = GER
-  }
-  }
-  }
-  option = {
-  name = wtt_news.50.c
-  trigger = {
-  has_war_with = GER
-  }
-  }
-  option = {
-  name = wtt_news.50.d
-  trigger = {
-  NOT = {
-  has_war_with = GER
-  }
-  NOT = {
-  original_tag = GER
-  }
-  NOT = {
-  is_in_faction_with = GER
-  }
-  }
-  }
-  }
-  news_event = {
-  id = wtt_news.69
-  title = wtt_news.69.t
-  desc = wtt_news.69.desc
-  picture = GFX_news_event_generic_parliament
-  is_triggered_only = yes
-  option = {
-  name = wtt_news.69.a
-  trigger = {
-  OR = {
-  original_tag = INS
-  }
-  NOT = { has_war_with = FROM }
-  }
-  }
-  option = {
-  name = wtt_news.69.b
-  trigger = {
-  NOT = { original_tag = INS }
-  NOT = { has_war_with = FROM }
-  }
-  }
-  option = {
-  name = wtt_news.53.c
-  trigger = {
-  has_war_with = FROM
-  }
-  }
-  }
-  news_event = {
-  id = wtt_news.1000
-  title = wtt_germany.1001.t
-  desc = wtt_news.1000.desc
-  picture = GFX_news_event_japanese_parade
-  is_triggered_only = yes
-  fire_for_sender = no
-  option = {
-  name = wtt_news.1000.a
-  trigger = {
-  NOT = { original_tag = GER }
-  }
-  }
-  }
-  news_event = {
-  id = wtt_news.1001
-  title = wtt_germany.1001.t
-  desc = wtt_news.1001.desc
-  picture = GFX_news_event_japanese_parade
-  is_triggered_only = yes
-  fire_for_sender = no
-  option = {
-  name = wtt_news.1001.a
-  trigger = {
-  NOT = { original_tag = GER }
-  }
-  }
-  }
+news_event = {
+	id = wtt_news.18
+	title = wtt_news.18.t
+	desc = wtt_news.18.desc
+	picture = GFX_news_event_election_vote
+	major = yes
+	is_triggered_only = yes
+	option = {
+		name = wtt_news.18.a
+		trigger = {
+			original_tag = GER
+		}
+	}
+	option = {
+		name = wtt_news.18.b
+		trigger = {
+			NOT = { original_tag = GER }
+		}
+	}
+}
+news_event = {
+	id = wtt_news.25
+	title = wtt_news.25.t
+	desc = wtt_news.25.desc
+	picture = GFX_news_event_generic_read_write
+	is_triggered_only = yes
+	option = {
+		name = wtt_news.25.a
+		trigger = {
+			original_tag = JAP
+		}
+	}
+	option = {
+		name = wtt_news.25.b
+		trigger = {
+			OR = {
+				original_tag = HOL
+				original_tag = ENG
+				AND = {
+					original_tag = FRA
+					has_government = democratic
+				}
+			}
+		}
+	}
+	option = {
+		name = wtt_news.25.c
+		trigger = {
+			NOT = {
+				original_tag = JAP
+				original_tag = HOL
+				original_tag = ENG
+				AND = {
+					original_tag = FRA
+					has_government = democratic
+				}
+			}
+		}
+	}
+}
+news_event = {
+	id = wtt_news.34
+	title = wtt_news.34.t
+	desc = wtt_news.34.desc
+	picture = GFX_news_event_china_flying_tigers
+	is_triggered_only = yes
+	option = {
+		name = wtt_news.34.a
+		trigger = {
+			original_tag = USA
+		}
+	}
+	option = {
+		name = wtt_news.34.b
+		trigger = {
+			original_tag = CHI
+		}
+	}
+	option = {
+		name = wtt_news.34.c
+		trigger = {
+			has_war_with = CHI
+		}
+	}
+	option = {
+		name = wtt_news.34.d
+		trigger = {
+			NOT = {
+				original_tag = CHI
+				original_tag = USA
+				has_war_with = CHI
+			}
+		}
+	}
+}
+news_event = {
+	id = wtt_news.40
+	title = wtt_news.40.t
+	desc = {
+		text = wtt_news.40.desc_eng
+		trigger = {
+			FROM = {
+				has_country_flag = blew_up_suez
+				owns_state = 412
+				owns_state = 417
+			}
+		}
+	}
+	desc = {
+		text = wtt_news.40.desc_not_eng
+		trigger = {
+			FROM = {
+				OR = {
+					NOT = {	has_country_flag = blew_up_suez }
+					NOT = {
+						owns_state = 412
+						owns_state = 417
+					}
+				}
+			}
+		}
+	}
+	picture = GFX_news_event_020
+	is_triggered_only = yes
+	option = {
+		name = wtt_news.40.a
+		trigger = {
+			NOT = { has_country_flag = blew_up_suez }
+			owns_state = 412
+			owns_state = 417
+		}
+		if = {
+			limit = {
+				original_tag = ENG
+			}
+			add_war_support = -0.05
+			add_stability = -0.05
+		}
+	}
+	option = {
+		name = wtt_news.40.b
+		trigger = {
+			has_country_flag = blew_up_suez
+			owns_state = 412
+			owns_state = 417
+		}
+		if = {
+			limit = {
+				original_tag = ENG
+			}
+			add_war_support = -0.05
+			add_stability = -0.05
+		}
+		clr_country_flag = blew_up_suez
+	}
+	option = {
+		name = wtt_news.40.c
+		trigger = {
+			any_country = {
+				has_war_with = ROOT
+				owns_state = 412
+				owns_state = 417
+				has_country_flag = blew_up_suez
+			}
+		}
+	}
+	option = {
+		name = wtt_news.40.d
+		trigger = {
+			any_country = {
+				has_war_with = ROOT
+				owns_state = 412
+				owns_state = 417
+			}
+			has_country_flag = blew_up_suez
+		}
+		clr_country_flag = blew_up_suez
+	}
+	option = {
+		name = wtt_news.40.e
+		trigger = {
+			any_country = {
+				has_war_with = ROOT
+				owns_state = 412
+				owns_state = 417
+				NOT = { has_country_flag = blew_up_suez }
+			}
+			any_other_country = {
+				has_war_together_with = ROOT
+				has_country_flag = blew_up_suez
+			}
+			NOT = { has_country_flag = blew_up_suez }
+		}
+	}
+	option = {
+		name = wtt_news.40.f
+		trigger = {
+			any_other_country = {
+				has_war_together_with = ROOT
+				owns_state = 412
+				owns_state = 417
+				has_country_flag = blew_up_suez
+			}
+			NOT = { has_country_flag = blew_up_suez }
+		}
+	}
+	option = {
+		name = wtt_news.40.g
+		trigger = {
+			any_country = {
+				has_war_with = ROOT
+				has_country_flag = blew_up_suez
+			}
+			any_other_country = {
+				has_war_together_with = ROOT
+				owns_state = 412
+				owns_state = 417
+				NOT = { has_country_flag = blew_up_suez }
+			}
+			NOT = { has_country_flag = blew_up_suez }
+		}
+	}
+	option = {
+		name = wtt_news.40.h
+		trigger = {
+			NOT = {
+				any_country = {
+					has_war_with = ROOT
+					has_country_flag = blew_up_suez
+				}
+			}
+			NOT = {
+				any_other_country = {
+					has_war_together_with = ROOT
+					owns_state = 412
+					owns_state = 417
+					has_country_flag = blew_up_suez
+				}
+			}
+			NOT = { has_country_flag = blew_up_suez }
+		}
+	}
+}
+news_event = {
+	id = wtt_news.41
+	title = wtt_news.41.t
+	desc = {
+		text = wtt_news.41.desc_usa
+		trigger = {
+			FROM = {
+				has_country_flag = blew_up_panama
+				owns_state = 604
+			}
+		}
+	}
+	desc = {
+		text = wtt_news.41.desc_not_usa
+		trigger = {
+			FROM = {
+				OR = {
+					NOT = {	has_country_flag = blew_up_panama }
+					NOT = { owns_state = 604 }
+				}
+			}
+		}
+	}
+	picture = GFX_news_event_020
+	is_triggered_only = yes
+	option = {
+		name = wtt_news.41.a
+		trigger = {
+			NOT = { has_country_flag = blew_up_panama }
+			owns_state = 604
+		}
+		if = {
+			limit = {
+				original_tag = USA
+			}
+			add_war_support = -0.05
+			add_stability = -0.05
+		}
+	}
+	option = {
+		name = wtt_news.41.b
+		trigger = {
+			has_country_flag = blew_up_panama
+			owns_state = 604
+		}
+		if = {
+			limit = {
+				original_tag = USA
+			}
+			add_war_support = -0.05
+			add_stability = -0.05
+		}
+		clr_country_flag = blew_up_panama
+	}
+	option = {
+		name = wtt_news.41.c
+		trigger = {
+			any_country = {
+				has_war_with = ROOT
+				owns_state = 604
+				has_country_flag = blew_up_panama
+			}
+		}
+	}
+	option = {
+		name = wtt_news.41.d
+		trigger = {
+			any_country = {
+				has_war_with = ROOT
+				owns_state = 604
+			}
+			has_country_flag = blew_up_panama
+		}
+		clr_country_flag = blew_up_panama
+	}
+	option = {
+		name = wtt_news.41.e
+		trigger = {
+			any_country = {
+				has_war_with = ROOT
+				owns_state = 604
+				NOT = { has_country_flag = blew_up_panama }
+			}
+			any_other_country = {
+				has_war_together_with = ROOT
+				has_country_flag = blew_up_panama
+			}
+			NOT = { has_country_flag = blew_up_panama }
+		}
+	}
+	option = {
+		name = wtt_news.41.f
+		trigger = {
+			any_other_country = {
+				has_war_together_with = ROOT
+				owns_state = 604
+				has_country_flag = blew_up_panama
+			}
+			NOT = { has_country_flag = blew_up_panama }
+		}
+	}
+	option = {
+		name = wtt_news.41.g
+		trigger = {
+			any_country = {
+				has_war_with = ROOT
+				has_country_flag = blew_up_panama
+			}
+			any_other_country = {
+				has_war_together_with = ROOT
+				owns_state = 604
+				NOT = { has_country_flag = blew_up_panama }
+			}
+			NOT = { has_country_flag = blew_up_panama }
+		}
+	}
+	option = {
+		name = wtt_news.41.h
+		trigger = {
+			NOT = {
+				any_country = {
+					has_war_with = ROOT
+					has_country_flag = blew_up_panama
+				}
+			}
+			NOT = {
+				any_other_country = {
+					has_war_together_with = ROOT
+					owns_state = 604
+					has_country_flag = blew_up_panama
+				}
+			}
+			NOT = { has_country_flag = blew_up_panama }
+		}
+	}
+}
+news_event = {
+	id = wtt_news.42
+	title = wtt_news.42.t
+	desc = wtt_news.42.desc
+	picture = GFX_news_event_020
+	is_triggered_only = yes
+	option = {
+		name = wtt_news.42.a
+		trigger = {
+			original_tag = ENG
+			has_country_flag = rebuilt_suez
+		}
+		clr_country_flag = rebuilt_suez
+	}
+	option = {
+		name = wtt_news.42.b
+		trigger = {
+			NOT = { original_tag = ENG }
+			has_country_flag = rebuilt_suez
+		}
+		clr_country_flag = rebuilt_suez
+	}
+	option = {
+		name = wtt_news.42.c
+		trigger = {
+			any_other_country = {
+				has_war_together_with = ROOT
+				has_country_flag = rebuilt_suez
+			}
+			NOT = { has_country_flag = rebuilt_suez }
+		}
+	}
+	option = {
+		name = wtt_news.42.d
+		trigger = {
+			any_other_country = {
+				has_war_with = ROOT
+				has_country_flag = rebuilt_suez
+			}
+			NOT = { has_country_flag = rebuilt_suez }
+		}
+	}
+	option = {
+		name = wtt_news.42.e
+		trigger = {
+			NOT = { has_country_flag = rebuilt_suez }
+			NOT = {
+				any_other_country = {
+					has_war_together_with = ROOT
+					has_country_flag = rebuilt_suez
+				}
+			}
+			NOT = {
+				any_other_country = {
+					has_war_with = ROOT
+					has_country_flag = rebuilt_suez
+				}
+			}
+		}
+	}
+}
+news_event = {
+	id = wtt_news.43
+	title = wtt_news.43.t
+	desc = wtt_news.43.desc
+	picture = GFX_news_event_020
+	is_triggered_only = yes
+	option = {
+		name = wtt_news.43.a
+		trigger = {
+			original_tag = USA
+			has_country_flag = rebuilt_panama
+		}
+		clr_country_flag = rebuilt_panama
+	}
+	option = {
+		name = wtt_news.43.b
+		trigger = {
+			NOT = { original_tag = USA }
+			has_country_flag = rebuilt_panama
+		}
+		clr_country_flag = rebuilt_panama
+	}
+	option = {
+		name = wtt_news.43.c
+		trigger = {
+			any_other_country = {
+				has_war_together_with = ROOT
+				has_country_flag = rebuilt_panama
+			}
+			NOT = { has_country_flag = rebuilt_panama }
+		}
+	}
+	option = {
+		name = wtt_news.43.d
+		trigger = {
+			any_other_country = {
+				has_war_with = ROOT
+				has_country_flag = rebuilt_panama
+			}
+			NOT = { has_country_flag = rebuilt_panama }
+		}
+	}
+	option = {
+		name = wtt_news.43.e
+		trigger = {
+			NOT = { has_country_flag = rebuilt_panama }
+			NOT = {
+				any_other_country = {
+					has_war_together_with = ROOT
+					has_country_flag = rebuilt_panama
+				}
+			}
+			NOT = {
+				any_other_country = {
+					has_war_with = ROOT
+					has_country_flag = rebuilt_panama
+				}
+			}
+		}
+	}
+}
+news_event = {
+	id = wtt_news.44
+	title = wtt_news.44.t
+	desc = wtt_news.44.desc
+	picture = GFX_news_event_japanese_army_parade
+	is_triggered_only = yes
+	option = {
+		name = wtt_news.44.a
+		trigger = {
+			is_literally_china = yes
+			OR = {
+				is_subject_of = MAN
+				is_in_faction_with = MAN
+			}
+		}
+	}
+	option = {
+		name = wtt_news.44.b
+		trigger = {
+			original_tag = MAN
+		}
+	}
+	option = {
+		name = wtt_news.44.c
+		trigger = {
+			original_tag = JAP
+		}
+	}
+	option = {
+		name = wtt_news.44.d
+		trigger = {
+			NOT = {
+				original_tag = MAN
+				original_tag = JAP
+				is_literally_china = yes
+			}
+		}
+	}
+	option = {
+		name = wtt_news.44.e
+		trigger = {
+			is_literally_china = yes
+			NOT = {
+				is_subject_of = MAN
+				is_in_faction_with = MAN
+			}
+		}
+	}
+}
+news_event = {
+	id = wtt_news.45
+	title = wtt_news.45.t
+	desc = wtt_news.45.desc
+	picture = GFX_news_event_generic_rally_3
+	is_triggered_only = yes
+	option = {
+		name = wtt_news.45.a
+		trigger = {
+			is_literally_china = yes
+			NOT = {
+				tag = event_target:new_leader
+				tag = event_target:old_leader
+			}
+		}
+	}
+	option = {
+		name = wtt_news.45.b
+		trigger = {
+			tag = event_target:new_leader
+		}
+	}
+	option = {
+		name = wtt_news.45.c
+		trigger = {
+			tag = event_target:old_leader
+		}
+	}
+	option = {
+		name = wtt_news.45.d
+		trigger = {
+			is_literally_china = no
+		}
+	}
+}
+news_event = {
+	id = wtt_news.47
+	title = wtt_news.47.t
+	desc = wtt_news.47.desc
+	picture = GFX_news_event_polish_army
+	is_triggered_only = yes
+	option = {
+		name = wtt_news.47.a
+		trigger = {
+			is_literally_china = yes
+		}
+	}
+	option = {
+		name = wtt_news.47.b
+		trigger = {
+			OR = {
+				controls_state = 590
+				controls_state = 589
+				controls_state = 274
+				controls_state = 659
+			}
+		}
+	}
+	option = {
+		name = wtt_news.47.c
+		trigger = {
+			is_literally_china = no
+			NOT = {
+				controls_state = 590
+				controls_state = 589
+				controls_state = 274
+				controls_state = 659
+			}
+			NOT = { tag = USA }
+		}
+	}
+	option = {
+		name = wtt_news.47.d
+		trigger = {
+			tag = USA
+		}
+	}
+}
+news_event = {
+	id = wtt_news.48
+	title = wtt_news.48.t
+	desc = wtt_news.48.desc
+	picture = GFX_news_event_japanese_parade
+	is_triggered_only = yes
+	option = {
+		name = wtt_news.48.a
+		trigger = {
+			is_literally_china = yes
+		}
+	}
+	option = {
+		name = wtt_news.48.b
+		trigger = {
+			original_tag = MAN
+		}
+	}
+	option = {
+		name = wtt_news.48.c
+		trigger = {
+			original_tag = JAP
+		}
+	}
+	option = {
+		name = wtt_news.48.d
+		trigger = {
+			NOT = {
+				original_tag = MAN
+				original_tag = JAP
+				is_literally_china = yes
+			}
+		}
+	}
+}
+news_event = {
+	id = wtt_news.50
+	title = wtt_news.50.t
+	desc = wtt_news.50.desc
+	picture = GFX_news_event_generic_ruins
+	is_triggered_only = yes
+	option = {
+		name = wtt_news.50.a
+		trigger = {
+			original_tag = GER
+		}
+	}
+	option = {
+		name = wtt_news.50.b
+		trigger = {
+			is_in_faction_with = GER
+			NOT = {
+				original_tag = GER
+			}
+		}
+	}
+	option = {
+		name = wtt_news.50.c
+		trigger = {
+			has_war_with = GER
+		}
+	}
+	option = {
+		name = wtt_news.50.d
+		trigger = {
+			NOT = {
+				has_war_with = GER
+			}
+			NOT = {
+				original_tag = GER
+			}
+			NOT = {
+				is_in_faction_with = GER
+			}
+		}
+	}
+}
+news_event = {
+	id = wtt_news.51
+	title = wtt_news.51.t
+	desc = wtt_news.51.desc
+	picture = GFX_news_event_generic_ruins
+	is_triggered_only = yes
+	option = {
+		name = wtt_news.50.a
+		trigger = {
+			original_tag = GER
+		}
+	}
+	option = {
+		name = wtt_news.50.b
+		trigger = {
+			is_in_faction_with = GER
+			NOT = {
+				original_tag = GER
+			}
+		}
+	}
+	option = {
+		name = wtt_news.51.c
+		trigger = {
+			has_war_with = GER
+		}
+	}
+	option = {
+		name = wtt_news.50.d
+		trigger = {
+			NOT = {
+				has_war_with = GER
+			}
+			NOT = {
+				original_tag = GER
+			}
+			NOT = {
+				is_in_faction_with = GER
+			}
+		}
+	}
+}
+news_event = {
+	id = wtt_news.52
+	title = wtt_news.51.t
+	desc = wtt_news.52.desc
+	picture = GFX_news_event_generic_ruins
+	is_triggered_only = yes
+	option = {
+		name = wtt_news.50.a
+		trigger = {
+			original_tag = GER
+		}
+	}
+	option = {
+		name = wtt_news.50.b
+		trigger = {
+			is_in_faction_with = GER
+			NOT = {
+				original_tag = GER
+			}
+		}
+	}
+	option = {
+		name = wtt_news.50.c
+		trigger = {
+			has_war_with = GER
+		}
+	}
+	option = {
+		name = wtt_news.50.d
+		trigger = {
+			NOT = {
+				has_war_with = GER
+			}
+			NOT = {
+				original_tag = GER
+			}
+			NOT = {
+				is_in_faction_with = GER
+			}
+		}
+	}
+}
+news_event = {
+	id = wtt_news.69
+	title = wtt_news.69.t
+	desc = wtt_news.69.desc
+	picture = GFX_news_event_generic_parliament
+	is_triggered_only = yes
+	option = {
+		name = wtt_news.69.a
+		trigger = {
+			OR = {
+				original_tag = INS
+			}
+			NOT = { has_war_with = FROM }
+		}
+	}
+	option = {
+		name = wtt_news.69.b
+		trigger = {
+			NOT = { original_tag = INS }
+			NOT = { has_war_with = FROM }
+		}
+	}
+	option = {
+		name = wtt_news.53.c
+		trigger = {
+			has_war_with = FROM
+		}
+	}
+}
+news_event = {
+	id = wtt_news.1000
+	title = wtt_germany.1001.t
+	desc = wtt_news.1000.desc
+	picture = GFX_news_event_japanese_parade
+	is_triggered_only = yes
+	fire_for_sender = no
+	option = {
+		name = wtt_news.1000.a
+		trigger = {
+			NOT = { original_tag = GER }
+		}
+	}
+}
+news_event = {
+	id = wtt_news.1001
+	title = wtt_germany.1001.t
+	desc = wtt_news.1001.desc
+	picture = GFX_news_event_japanese_parade
+	is_triggered_only = yes
+	fire_for_sender = no
+	option = {
+		name = wtt_news.1001.a
+		trigger = {
+			NOT = { original_tag = GER }
+		}
+	}
+}
 

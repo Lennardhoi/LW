@@ -1,200 +1,200 @@
 ﻿division_template = {
- name = "Trigonikó Pezikoú"
- division_names_group = GRE_INF_01
- regiments = {
- infantry = { x = 0 y = 0 }
- infantry = { x = 0 y = 1 }
- infantry = { x = 0 y = 2 }
- infantry = { x = 1 y = 0 }
- infantry = { x = 1 y = 1 }
- infantry = { x = 1 y = 2 }
- infantry = { x = 2 y = 0 }
- infantry = { x = 2 y = 1 }
- infantry = { x = 2 y = 2 }
- }
- }
- division_template = {
- name = "Tetrágono Pezikoú"
- division_names_group = GRE_MNT_01
- regiments = {
- mountaineers = { x = 0 y = 0 }
- mountaineers = { x = 0 y = 1 }
- mountaineers = { x = 0 y = 2 }
- mountaineers = { x = 1 y = 0 }
- mountaineers = { x = 1 y = 1 }
- mountaineers = { x = 1 y = 2 }
- mountaineers = { x = 2 y = 0 }
- mountaineers = { x = 2 y = 1 }
- }
- }
- division_template = {
- name = "Merarchía Ippikoú"
- division_names_group = GRE_CAV_01
- regiments = {
- cavalry = { x = 0 y = 0 }
- cavalry = { x = 0 y = 1 }
- cavalry = { x = 0 y = 2 }
- cavalry = { x = 1 y = 0 }
- cavalry = { x = 1 y = 1 }
- cavalry = { x = 1 y = 2 }
- }
- support = {
- recon = { x = 0 y = 0 }
- }
- }
- units = {
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 5
- }
- location =10945
- division_template = "Trigonikó Pezikoú"
- start_experience_factor = 0.2
- start_equipment_factor = 0.5
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 8
- }
- location =3666
- division_template = "Tetrágono Pezikoú"
- start_experience_factor = 0.3
- start_equipment_factor = 0.7
- }
- division = {
- name = "Merarchía Ippikoú"
- location =10726
- division_template = "Merarchía Ippikoú"
- start_experience_factor = 0.2
- start_equipment_factor = 0.5
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 2
- }
- location =3845
- division_template = "Tetrágono Pezikoú"
- start_experience_factor = 0.3
- start_equipment_factor = 0.7
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 3
- }
- location =3925
- division_template = "Trigonikó Pezikoú"
- start_experience_factor = 0.2
- start_equipment_factor = 0.5
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 4
- }
- location =6563
- division_template = "Trigonikó Pezikoú"
- start_experience_factor = 0.2
- start_equipment_factor = 0.5
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 1
- }
- location =825
- division_template = "Tetrágono Pezikoú"
- start_experience_factor = 0.3
- start_equipment_factor = 0.7
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 9
- }
- location =915
- division_template = "Trigonikó Pezikoú"
- start_experience_factor = 0.2
- start_equipment_factor = 0.5
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 6
- }
- location =3303
- division_template = "Trigonikó Pezikoú"
- start_experience_factor = 0.2
- start_equipment_factor = 0.3
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 10
- }
- location =9341
- division_template = "Trigonikó Pezikoú"
- start_experience_factor = 0.2
- start_equipment_factor = 0.5
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 7
- }
- location =9002
- division_template = "Trigonikó Pezikoú"
- start_experience_factor = 0.2
- start_equipment_factor = 0.3
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 12
- }
- location =10690
- division_template = "Trigonikó Pezikoú"
- start_experience_factor = 0.2
- start_equipment_factor = 0.3
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 13
- }
- location =10690
- division_template = "Trigonikó Pezikoú"
- start_experience_factor = 0.2
- start_equipment_factor = 0.5
- }
- }
- air_wings = {
- 47 = {
- fighter_equipment_0 = { owner = "GRE" creator = "POL" version_name = "PZL P.24" amount = 27 }
- CAS_equipment_1 = { owner = "GRE" amount = 27}
- }
- }
- instant_effect = {
- add_equipment_production = {
- equipment = {
- type = infantry_equipment_1
- creator = "GRE"
- }
- requested_factories = 1
- progress = 0.10
- efficiency = 100
- }
- add_equipment_production = {
- equipment = {
- type = support_equipment_1
- creator = "GRE"
- }
- requested_factories = 1
- progress = 0.56
- efficiency = 100
- }
- }
+	name = "Trigonikó Pezikoú"
+	division_names_group = GRE_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+division_template = {
+	name = "Tetrágono Pezikoú"
+	division_names_group = GRE_MNT_01
+	regiments = {
+		mountaineers = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 2 y = 0 }
+		mountaineers = { x = 2 y = 1 }
+	}
+}
+division_template = {
+	name = "Merarchía Ippikoú"
+	division_names_group = GRE_CAV_01
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+units = {
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location =10945
+		division_template = "Trigonikó Pezikoú"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location =3666
+		division_template = "Tetrágono Pezikoú"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division = {
+		name = "Merarchía Ippikoú"
+		location =10726
+		division_template = "Merarchía Ippikoú"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location =3845
+		division_template = "Tetrágono Pezikoú"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location =3925
+		division_template = "Trigonikó Pezikoú"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location =6563
+		division_template = "Trigonikó Pezikoú"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location =825
+		division_template = "Tetrágono Pezikoú"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.7
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location =915
+		division_template = "Trigonikó Pezikoú"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location =3303
+		division_template = "Trigonikó Pezikoú"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location =9341
+		division_template = "Trigonikó Pezikoú"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location =9002
+		division_template = "Trigonikó Pezikoú"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 12
+		}
+		location =10690
+		division_template = "Trigonikó Pezikoú"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 13
+		}
+		location =10690
+		division_template = "Trigonikó Pezikoú"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+}
+air_wings = {
+	47 = {
+		fighter_equipment_0 = { owner = "GRE" creator = "POL" version_name = "PZL P.24" amount = 27 }
+		CAS_equipment_1 = { owner = "GRE" amount = 27}
+	}
+}
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "GRE"
+		}
+		requested_factories = 1
+		progress = 0.10
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "GRE"
+		}
+		requested_factories = 1
+		progress = 0.56
+		efficiency = 100
+	}
+}
 

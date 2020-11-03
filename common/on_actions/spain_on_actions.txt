@@ -1,14 +1,14 @@
 on_actions = {
-  on_weekly_SPR = {
-  effect = {
-  if={
-  limit ={ NOT ={has_global_flag=spain_joined} 707={is_demilitarized_zone = no}}
-  every_owned_state= {
-  limit = { NOT= {state=41}}
-  set_demilitarized_zone = yes
-  }
-  }
-  }
-  }
-  }
+	on_weekly_SPR = {
+		effect = {
+			if={
+				limit ={ NOT ={has_global_flag=spain_joined} 707={is_demilitarized_zone = no}}
+				every_owned_state= {
+					limit = { NOT= {state=41}}
+					set_demilitarized_zone = yes
+				}
+			}
+		}
+	}
+}
 

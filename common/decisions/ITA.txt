@@ -1,161 +1,161 @@
 operations = {
-  ITA_join_war = {
-  icon = ger_reichskommissariats
-  fire_only_once = yes
-  allowed = { tag = ITA }
-  available = { has_completed_focus = ITA_greece_war_goal}
-  cost = 0
-  days_remove = 30
-  complete_effect = {
-  effect_tooltip = {
-  declare_war_on = {
-  target = ENG
-  type = annex_everything
-  }
-  declare_war_on = {
-  target = YUG
-  type = annex_everything
-  }
-  declare_war_on = {
-  target = GRE
-  type = annex_everything
-  }
-  }
-  hidden_effect = {
-  every_country = {limit = {check_variable= { speeches_enabled > 0}  }
-  scoped_sound_effect = "sp_ita_musso"
-  }
-  set_variable={Global.super_event=3}
-  show_super_event=yes
-  YUG = { add_to_war = { targeted_alliance = ENG enemy = GER } }
-  ITA = { add_to_war = { targeted_alliance = GER enemy = ENG } }
-  ENG = { add_to_faction = YUG }
-  }
-  }
-  remove_effect = {
-  GRE = { add_to_war = { targeted_alliance = ENG enemy = GER } }
-  ENG = { add_to_faction = GRE }
-  }
-  }
-  ITA_give_germany_marsa_matruh = {
-  icon = ger_reichskommissariats
-  fire_only_once = no
-  allowed = { tag = ITA }
-  available = { controls_state=416}
-  visible={has_war=yes}
-  cost = 0
-  complete_effect = {
-  GER={set_state_owner=416}
-  416= {
-  set_state_province_controller = {
-  controller = GER
-  limit = {
-  is_in_faction_with=GER
-  }
-  }
-  }
-  }
-  }
-  }
-  foreign_politics = {
-  ITA_enable_ll = {
-  icon = generic_operation
-  available = {
-  GER={has_war=yes}
-  NOT={has_country_flag=ll_enabled}
-  }
-  allowed = {
-  tag = ITA
-  }
-  cost = 0
-  visible = {
-  always=yes
-  }
-  fire_only_once = no
-  complete_effect = {
-  custom_effect_tooltip=ITA_enable_ll_tt
-  hidden_effect={set_country_flag=ll_enabled}
-  effect_tooltip={
-  send_equipment = { equipment = fighter_equipment amount = 5000 target = GER }
-  send_equipment = { equipment = CAS_equipment amount = 5000 target = GER }
-  send_equipment = { equipment = nav_bomber_equipment amount = 5000 target = GER }
-  send_equipment = { equipment = tac_bomber_equipment amount = 5000 target = GER }
-  send_equipment = { equipment = heavy_fighter_equipment amount = 5000 target = GER }
-  }
-  }
-  }
-  ITA_support_luftwaffe = {
-  icon = generic_operation
-  available = {
-  GER={has_war_with=SOV}
-  has_equipment = {
-  fighter_equipment_alt > 599
-  }
-  has_deployed_air_force_size = {
-  size> 1999
-  type=fighter
-  }
-  }
-  allowed = {
-  tag = ITA
-  }
-  days_remove = 90
-  cost = 0
-  visible = {
-  always=yes
-  }
-  fire_only_once = no
-  complete_effect = {
-  GER={add_equipment_to_stockpile={type = fighter_equipment amount = 500 }}
-  add_equipment_to_stockpile={type = fighter_equipment_alt amount = -600 }
-  }
-  }
-  ITA_disable_ll = {
-  icon = generic_operation
-  available = {
-  has_country_flag=ll_enabled
-  }
-  allowed = {
-  tag = ITA
-  }
-  cost = 0
-  visible = {
-  always=yes
-  }
-  fire_only_once = no
-  complete_effect = {
-  custom_effect_tooltip="This will deactivate the monthly lendlease of the following equipment on the first day of a month."
-  hidden_effect={clr_country_flag=ll_enabled}
-  }
-  }
-  ITA_annex_bul = {
-  icon = generic_operation
-  available = {
-  BUL = { is_ai = yes }
-  date>1939.1.1
-  }
-  allowed = {
-  tag = ROM
-  }
-  cost = 0
-  visible = {
-  BUL = { is_ai = yes }
-  }
-  fire_only_once = yes
-  complete_effect = {
-  BUL = {
-  every_owned_state={
-  limit={is_core_of=PREV}
-  add_core_of = ROM
-  }
-  }
-  ROM = {
-  annex_country = {
-  target = BUL
-  transfer_troops = yes
-  }
-  }
-  }
-  }
-  }
+	ITA_join_war = {
+		icon = ger_reichskommissariats
+		fire_only_once = yes
+		allowed = { tag = ITA }
+		available = { has_completed_focus = ITA_greece_war_goal}
+		cost = 0
+		days_remove = 30
+		complete_effect = {
+			effect_tooltip = {
+				declare_war_on = {
+					target = ENG
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = YUG
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = GRE
+					type = annex_everything
+				}
+			}
+			hidden_effect = {
+				every_country = {limit = {check_variable= { speeches_enabled > 0}  }
+					scoped_sound_effect = "sp_ita_musso"
+				}
+				set_variable={Global.super_event=3}
+				show_super_event=yes
+				YUG = { add_to_war = { targeted_alliance = ENG enemy = GER } }
+				ITA = { add_to_war = { targeted_alliance = GER enemy = ENG } }
+				ENG = { add_to_faction = YUG }
+			}
+		}
+		remove_effect = {
+			GRE = { add_to_war = { targeted_alliance = ENG enemy = GER } }
+			ENG = { add_to_faction = GRE }
+		}
+	}
+	ITA_give_germany_marsa_matruh = {
+		icon = ger_reichskommissariats
+		fire_only_once = no
+		allowed = { tag = ITA }
+		available = { controls_state=416}
+		visible={has_war=yes}
+		cost = 0
+		complete_effect = {
+			GER={set_state_owner=416}
+			416= {
+				set_state_province_controller = {
+					controller = GER
+					limit = {
+						is_in_faction_with=GER
+					}
+				}
+			}
+		}
+	}
+}
+foreign_politics = {
+	ITA_enable_ll = {
+		icon = generic_operation
+		available = {
+			GER={has_war=yes}
+			NOT={has_country_flag=ll_enabled}
+		}
+		allowed = {
+			tag = ITA
+		}
+		cost = 0
+		visible = {
+			always=yes
+		}
+		fire_only_once = no
+		complete_effect = {
+			custom_effect_tooltip=ITA_enable_ll_tt
+			hidden_effect={set_country_flag=ll_enabled}
+			effect_tooltip={
+				send_equipment = { equipment = fighter_equipment amount = 5000 target = GER }
+				send_equipment = { equipment = CAS_equipment amount = 5000 target = GER }
+				send_equipment = { equipment = nav_bomber_equipment amount = 5000 target = GER }
+				send_equipment = { equipment = tac_bomber_equipment amount = 5000 target = GER }
+				send_equipment = { equipment = heavy_fighter_equipment amount = 5000 target = GER }
+			}
+		}
+	}
+	ITA_support_luftwaffe = {
+		icon = generic_operation
+		available = {
+			GER={has_war_with=SOV}
+			has_equipment = {
+				fighter_equipment_alt > 599
+			}
+			has_deployed_air_force_size = {
+				size> 1999
+				type=fighter
+			}
+		}
+		allowed = {
+			tag = ITA
+		}
+		days_remove = 90
+		cost = 0
+		visible = {
+			always=yes
+		}
+		fire_only_once = no
+		complete_effect = {
+			GER={add_equipment_to_stockpile={type = fighter_equipment amount = 500 }}
+			add_equipment_to_stockpile={type = fighter_equipment_alt amount = -600 }
+		}
+	}
+	ITA_disable_ll = {
+		icon = generic_operation
+		available = {
+			has_country_flag=ll_enabled
+		}
+		allowed = {
+			tag = ITA
+		}
+		cost = 0
+		visible = {
+			always=yes
+		}
+		fire_only_once = no
+		complete_effect = {
+			custom_effect_tooltip="This will deactivate the monthly lendlease of the following equipment on the first day of a month."
+			hidden_effect={clr_country_flag=ll_enabled}
+		}
+	}
+	ITA_annex_bul = {
+		icon = generic_operation
+		available = {
+			BUL = { is_ai = yes }
+			date>1939.1.1
+		}
+		allowed = {
+			tag = ROM
+		}
+		cost = 0
+		visible = {
+			BUL = { is_ai = yes }
+		}
+		fire_only_once = yes
+		complete_effect = {
+			BUL = {
+				every_owned_state={
+					limit={is_core_of=PREV}
+					add_core_of = ROM
+				}
+			}
+			ROM = {
+				annex_country = {
+					target = BUL
+					transfer_troops = yes
+				}
+			}
+		}
+	}
+}
 

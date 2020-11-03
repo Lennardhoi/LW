@@ -1,392 +1,392 @@
 replace_civ_with_arms_factories = {
-  random_owned_controlled_state = {
-  limit = {
-  is_fully_controlled_by = ROOT
-  industrial_complex > 0
-  }
-  remove_building = {
-  type = industrial_complex
-  level = 1
-  }
-  add_building_construction = {
-  type = arms_factory
-  level = 1
-  instant_build = yes
-  }
-  }
-  random_owned_controlled_state = {
-  limit = {
-  is_fully_controlled_by = ROOT
-  industrial_complex > 0
-  }
-  remove_building = {
-  type = industrial_complex
-  level = 1
-  }
-  add_building_construction = {
-  type = arms_factory
-  level = 1
-  instant_build = yes
-  }
-  }
-  random_owned_controlled_state = {
-  limit = {
-  is_fully_controlled_by = ROOT
-  industrial_complex > 0
-  }
-  remove_building = {
-  type = industrial_complex
-  level = 1
-  }
-  add_building_construction = {
-  type = arms_factory
-  level = 1
-  instant_build = yes
-  }
-  }
-  random_owned_controlled_state = {
-  limit = {
-  is_fully_controlled_by = ROOT
-  industrial_complex > 0
-  }
-  remove_building = {
-  type = industrial_complex
-  level = 1
-  }
-  add_building_construction = {
-  type = arms_factory
-  level = 1
-  instant_build = yes
-  }
-  }
-  random_owned_controlled_state = {
-  limit = {
-  is_fully_controlled_by = ROOT
-  industrial_complex > 0
-  }
-  remove_building = {
-  type = industrial_complex
-  level = 1
-  }
-  add_building_construction = {
-  type = arms_factory
-  level = 1
-  instant_build = yes
-  }
-  }
-  }
-  ROOT_inherit_current_scope_wars_effect = {
-  custom_effect_tooltip = ROOT_inherit_current_scope_wars_effect
-  hidden_effect = {
-  every_country = {
-  limit = {
-  has_defensive_war_with = PREV
-  }
-  ROOT = { declare_war_on = { target = PREV type = annex_everything } }
-  }
-  every_country = {
-  limit = {
-  has_offensive_war_with = PREV
-  }
-  declare_war_on = { target = ROOT type = annex_everything }
-  }
-  }
-  }
-  print_variable_log_effect = {
-  print_variables = {
-  file = variables_yug
-  append = yes
-  }
-  }
-  remove_naval_treaty_effect = {
-  if = {
-  limit = {
-  has_idea = MTG_naval_treaty_adherent
-  }
-  remove_ideas = MTG_naval_treaty_adherent
-  }
-  else_if = {
-  limit = {
-  has_idea = MTG_naval_treaty_cheating
-  }
-  remove_ideas = MTG_naval_treaty_cheating
-  }
-  else_if = {
-  limit = {
-  has_idea = MTG_naval_treaty_adherent_reduced
-  }
-  remove_ideas = MTG_naval_treaty_adherent_reduced
-  }
-  else_if = {
-  limit = {
-  has_idea = MTG_naval_treaty_cheating_reduced
-  }
-  remove_ideas = MTG_naval_treaty_cheating_reduced
-  }
-  set_country_flag = MTG_naval_treaty_abandoned
-  }
-  civil_war_anti_exploiter_punitive_action = {
-  if = {
-  limit = {
-  has_army_size = {
-  size < 1
-  }
-  }
-  division_template = {
-  name = "Anti-Exploit Punitive Brigade"
-  priority = 1
-  division_names_group = ENG_MAR_01
-  is_locked = yes
-  regiments = {
-  infantry = { x = 0 y = 0 }
-  infantry = { x = 0 y = 1 }
-  infantry = { x = 0 y = 2 }
-  infantry = { x = 1 y = 0 }
-  infantry = { x = 1 y = 1 }
-  infantry = { x = 1 y = 2 }
-  infantry = { x = 2 y = 0 }
-  artillery_brigade = { x = 2 y = 1 }
-  artillery_brigade = { x = 2 y = 2 }
-  }
-  support = {
-  engineer = { x = 0 y = 0 }
-  recon = { x = 0 y = 1 }
-  artillery = { x = 0 y = 2 }
-  }
-  }
-  random_state = {
-  limit = {
-  is_capital = yes
-  is_fully_controlled_by = PREV
-  }
-  create_unit = {
-  division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
-  owner = PREV
-  }
-  create_unit = {
-  division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
-  owner = PREV
-  }
-  create_unit = {
-  division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
-  owner = PREV
-  }
-  create_unit = {
-  division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
-  owner = PREV
-  }
-  }
-  random_state = {
-  limit = {
-  is_in_home_area = yes
-  is_fully_controlled_by = PREV
-  }
-  create_unit = {
-  division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
-  owner = PREV
-  }
-  create_unit = {
-  division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
-  owner = PREV
-  }
-  create_unit = {
-  division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
-  owner = PREV
-  }
-  create_unit = {
-  division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
-  owner = PREV
-  }
-  }
-  random_state = {
-  limit = {
-  is_in_home_area = yes
-  is_fully_controlled_by = PREV
-  }
-  create_unit = {
-  division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
-  owner = PREV
-  }
-  create_unit = {
-  division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
-  owner = PREV
-  }
-  create_unit = {
-  division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
-  owner = PREV
-  }
-  create_unit = {
-  division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
-  owner = PREV
-  }
-  }
-  random_state = {
-  limit = {
-  is_in_home_area = yes
-  is_fully_controlled_by = PREV
-  }
-  create_unit = {
-  division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
-  owner = PREV
-  }
-  create_unit = {
-  division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
-  owner = PREV
-  }
-  create_unit = {
-  division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
-  owner = PREV
-  }
-  create_unit = {
-  division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
-  owner = PREV
-  }
-  }
-  random_state = {
-  limit = {
-  is_in_home_area = yes
-  is_fully_controlled_by = PREV
-  }
-  create_unit = {
-  division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
-  owner = PREV
-  }
-  create_unit = {
-  division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
-  owner = PREV
-  }
-  create_unit = {
-  division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
-  owner = PREV
-  }
-  create_unit = {
-  division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
-  owner = PREV
-  }
-  }
-  }
-  }
-  clear_sabotaged_resources_if_necesary = {
-  if = {
-  limit = {
-  not = {
-  has_dynamic_modifier = {
-  modifier = sabotaged_resources
-  }
-  }
-  }
-  clear_variable = sabotaged_oil
-  clear_variable = sabotaged_aluminium
-  clear_variable = sabotaged_rubber
-  clear_variable = sabotaged_tungsten
-  clear_variable = sabotaged_steel
-  clear_variable = sabotaged_chromium
-  }
-  }
-  remove_from_allowed_party = {
-  if = {
-  limit = { has_government = democratic }
-  set_temp_variable = { allowed_party_democratic = 0 }
-  }
-  else_if = {
-  limit = { has_government = fascism }
-  set_temp_variable = { allowed_party_fascism = 0 }
-  }
-  else_if = {
-  limit = { has_government = communism }
-  set_temp_variable = { allowed_party_communism = 0 }
-  }
-  else_if = {
-  limit = { has_government = neutrality }
-  set_temp_variable = { allowed_party_neutrality = 0 }
-  }
-  }
-  instantiate_collaboration_government = {
-  }
-  abandon_colony_tag = {
-  if = {
-  limit = {
-  is_subject = yes
-  }
-  if = {
-  limit = {
-  original_tag = CAN
-  }
-  if = {
-  limit = { NOT = { has_dlc = "Together for Victory" } }
-  set_cosmetic_tag = CAN_ALY
-  }
-  else = {
-  set_cosmetic_tag = CAN_UK
-  }
-  }
-  else_if = {
-  limit = {
-  original_tag = RAJ
-  }
-  set_cosmetic_tag = RAJ_UK
-  }
-  else_if = {
-  limit = {
-  original_tag = MAL
-  }
-  set_cosmetic_tag = MAL_UK
-  }
-  else_if = {
-  limit = {
-  original_tag = INS
-  }
-  set_cosmetic_tag = INS_HOL
-  }
-  }
-  else = {
-  if = {
-  limit = {
-  original_tag = RAJ
-  NOT = {
-  any_country = {
-  has_cosmetic_tag = RAJ_FREE
-  }
-  }
-  }
-  set_cosmetic_tag = RAJ_FREE
-  }
-  else_if = {
-  limit = {
-  original_tag = CAN
-  NOT = {
-  any_country = {
-  has_cosmetic_tag = CAN_FREE
-  }
-  }
-  }
-  set_cosmetic_tag = CAN_FREE
-  }
-  else_if = {
-  limit = {
-  original_tag = INS
-  NOT = { has_cosmetic_tag = MAJ_UNIFIED }
-  NOT = {
-  any_country = {
-  has_cosmetic_tag = INS_FREE
-  }
-  }
-  }
-  set_cosmetic_tag = INS_FREE
-  }
-  else_if = {
-  limit = {
-  OR = {
-  has_cosmetic_tag = united_polynesia
-  has_cosmetic_tag = MAJ_UNIFIED
-  }
-  }
-  }
-  else = {
-  drop_cosmetic_tag = yes
-  }
-  }
-  }
-  on_daily = {
-  }
+	random_owned_controlled_state = {
+		limit = {
+			is_fully_controlled_by = ROOT
+			industrial_complex > 0
+		}
+		remove_building = {
+			type = industrial_complex
+			level = 1
+		}
+		add_building_construction = {
+			type = arms_factory
+			level = 1
+			instant_build = yes
+		}
+	}
+	random_owned_controlled_state = {
+		limit = {
+			is_fully_controlled_by = ROOT
+			industrial_complex > 0
+		}
+		remove_building = {
+			type = industrial_complex
+			level = 1
+		}
+		add_building_construction = {
+			type = arms_factory
+			level = 1
+			instant_build = yes
+		}
+	}
+	random_owned_controlled_state = {
+		limit = {
+			is_fully_controlled_by = ROOT
+			industrial_complex > 0
+		}
+		remove_building = {
+			type = industrial_complex
+			level = 1
+		}
+		add_building_construction = {
+			type = arms_factory
+			level = 1
+			instant_build = yes
+		}
+	}
+	random_owned_controlled_state = {
+		limit = {
+			is_fully_controlled_by = ROOT
+			industrial_complex > 0
+		}
+		remove_building = {
+			type = industrial_complex
+			level = 1
+		}
+		add_building_construction = {
+			type = arms_factory
+			level = 1
+			instant_build = yes
+		}
+	}
+	random_owned_controlled_state = {
+		limit = {
+			is_fully_controlled_by = ROOT
+			industrial_complex > 0
+		}
+		remove_building = {
+			type = industrial_complex
+			level = 1
+		}
+		add_building_construction = {
+			type = arms_factory
+			level = 1
+			instant_build = yes
+		}
+	}
+}
+ROOT_inherit_current_scope_wars_effect = {
+	custom_effect_tooltip = ROOT_inherit_current_scope_wars_effect
+	hidden_effect = {
+		every_country = {
+			limit = {
+				has_defensive_war_with = PREV
+			}
+			ROOT = { declare_war_on = { target = PREV type = annex_everything } }
+		}
+		every_country = {
+			limit = {
+				has_offensive_war_with = PREV
+			}
+			declare_war_on = { target = ROOT type = annex_everything }
+		}
+	}
+}
+print_variable_log_effect = {
+	print_variables = {
+		file = variables_yug
+		append = yes
+	}
+}
+remove_naval_treaty_effect = {
+	if = {
+		limit = {
+			has_idea = MTG_naval_treaty_adherent
+		}
+		remove_ideas = MTG_naval_treaty_adherent
+	}
+	else_if = {
+		limit = {
+			has_idea = MTG_naval_treaty_cheating
+		}
+		remove_ideas = MTG_naval_treaty_cheating
+	}
+	else_if = {
+		limit = {
+			has_idea = MTG_naval_treaty_adherent_reduced
+		}
+		remove_ideas = MTG_naval_treaty_adherent_reduced
+	}
+	else_if = {
+		limit = {
+			has_idea = MTG_naval_treaty_cheating_reduced
+		}
+		remove_ideas = MTG_naval_treaty_cheating_reduced
+	}
+	set_country_flag = MTG_naval_treaty_abandoned
+}
+civil_war_anti_exploiter_punitive_action = {
+	if = {
+		limit = {
+			has_army_size = {
+				size < 1
+			}
+		}
+		division_template = {
+			name = "Anti-Exploit Punitive Brigade"
+			priority = 1
+			division_names_group = ENG_MAR_01
+			is_locked = yes
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+				infantry = { x = 2 y = 0 }
+				artillery_brigade = { x = 2 y = 1 }
+				artillery_brigade = { x = 2 y = 2 }
+			}
+			support = {
+				engineer = { x = 0 y = 0 }
+				recon = { x = 0 y = 1 }
+				artillery = { x = 0 y = 2 }
+			}
+		}
+		random_state = {
+			limit = {
+				is_capital = yes
+				is_fully_controlled_by = PREV
+			}
+			create_unit = {
+				division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = PREV
+			}
+			create_unit = {
+				division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = PREV
+			}
+			create_unit = {
+				division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = PREV
+			}
+			create_unit = {
+				division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = PREV
+			}
+		}
+		random_state = {
+			limit = {
+				is_in_home_area = yes
+				is_fully_controlled_by = PREV
+			}
+			create_unit = {
+				division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = PREV
+			}
+			create_unit = {
+				division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = PREV
+			}
+			create_unit = {
+				division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = PREV
+			}
+			create_unit = {
+				division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = PREV
+			}
+		}
+		random_state = {
+			limit = {
+				is_in_home_area = yes
+				is_fully_controlled_by = PREV
+			}
+			create_unit = {
+				division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = PREV
+			}
+			create_unit = {
+				division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = PREV
+			}
+			create_unit = {
+				division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = PREV
+			}
+			create_unit = {
+				division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = PREV
+			}
+		}
+		random_state = {
+			limit = {
+				is_in_home_area = yes
+				is_fully_controlled_by = PREV
+			}
+			create_unit = {
+				division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = PREV
+			}
+			create_unit = {
+				division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = PREV
+			}
+			create_unit = {
+				division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = PREV
+			}
+			create_unit = {
+				division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = PREV
+			}
+		}
+		random_state = {
+			limit = {
+				is_in_home_area = yes
+				is_fully_controlled_by = PREV
+			}
+			create_unit = {
+				division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = PREV
+			}
+			create_unit = {
+				division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = PREV
+			}
+			create_unit = {
+				division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = PREV
+			}
+			create_unit = {
+				division = "division_template = \"Anti-Exploit Punitive Brigade\" start_experience_factor = 1 start_equipment_factor = 1"
+				owner = PREV
+			}
+		}
+	}
+}
+clear_sabotaged_resources_if_necesary = {
+	if = {
+		limit = {
+			not = {
+				has_dynamic_modifier = {
+					modifier = sabotaged_resources
+				}
+			}
+		}
+		clear_variable = sabotaged_oil
+		clear_variable = sabotaged_aluminium
+		clear_variable = sabotaged_rubber
+		clear_variable = sabotaged_tungsten
+		clear_variable = sabotaged_steel
+		clear_variable = sabotaged_chromium
+	}
+}
+remove_from_allowed_party = {
+	if = {
+		limit = { has_government = democratic }
+		set_temp_variable = { allowed_party_democratic = 0 }
+	}
+	else_if = {
+		limit = { has_government = fascism }
+		set_temp_variable = { allowed_party_fascism = 0 }
+	}
+	else_if = {
+		limit = { has_government = communism }
+		set_temp_variable = { allowed_party_communism = 0 }
+	}
+	else_if = {
+		limit = { has_government = neutrality }
+		set_temp_variable = { allowed_party_neutrality = 0 }
+	}
+}
+instantiate_collaboration_government = {
+}
+abandon_colony_tag = {
+	if = {
+		limit = {
+			is_subject = yes
+		}
+		if = {
+			limit = {
+				original_tag = CAN
+			}
+			if = {
+				limit = { NOT = { has_dlc = "Together for Victory" } }
+				set_cosmetic_tag = CAN_ALY
+			}
+			else = {
+				set_cosmetic_tag = CAN_UK
+			}
+		}
+		else_if = {
+			limit = {
+				original_tag = RAJ
+			}
+			set_cosmetic_tag = RAJ_UK
+		}
+		else_if = {
+			limit = {
+				original_tag = MAL
+			}
+			set_cosmetic_tag = MAL_UK
+		}
+		else_if = {
+			limit = {
+				original_tag = INS
+			}
+			set_cosmetic_tag = INS_HOL
+		}
+	}
+	else = {
+		if = {
+			limit = {
+				original_tag = RAJ
+				NOT = {
+					any_country = {
+						has_cosmetic_tag = RAJ_FREE
+					}
+				}
+			}
+			set_cosmetic_tag = RAJ_FREE
+		}
+		else_if = {
+			limit = {
+				original_tag = CAN
+				NOT = {
+					any_country = {
+						has_cosmetic_tag = CAN_FREE
+					}
+				}
+			}
+			set_cosmetic_tag = CAN_FREE
+		}
+		else_if = {
+			limit = {
+				original_tag = INS
+				NOT = { has_cosmetic_tag = MAJ_UNIFIED }
+				NOT = {
+					any_country = {
+						has_cosmetic_tag = INS_FREE
+					}
+				}
+			}
+			set_cosmetic_tag = INS_FREE
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_cosmetic_tag = united_polynesia
+					has_cosmetic_tag = MAJ_UNIFIED
+				}
+			}
+		}
+		else = {
+			drop_cosmetic_tag = yes
+		}
+	}
+}
+on_daily = {
+}
 

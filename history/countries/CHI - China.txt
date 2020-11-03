@@ -1,48 +1,48 @@
 capital = 537 # Nanjing
- set_research_slots = 0
- oob = "CHI_1936"
- set_stability = 0.2
- set_war_support = 0.5
- # Starting tech
- set_technology = {
- }
- add_ideas = {
- 	german_advisors
- 	CHI_division
- }
- if = {
- 	limit = {
- 		has_dlc = "Waking the Tiger"
- 	}
- 	add_ideas = {
- 		CHI_nine_power_treaty
- 		CHI_army_corruption_1
- 		CHI_ineffective_bureaucracy
- 		CHI_incompetent_officers
- 		free_trade
- 		CHI_hyper_inflation_1
- 		CHI_division
- 	}
- }
- save_global_event_target_as = WTT_current_china_leader
- set_convoys = 40
- set_politics = {
- 	ruling_party = neutrality
- 	last_election = "1936.1.1"
- 	election_frequency = 48
- 	elections_allowed = no
- }
- set_popularities = {
- 	neutrality = 100
- }
- create_country_leader = {
- 	name = "Chiang Kai-Shek"
- 	desc = "POLITICS_CHIANG_KAI-SHEK_DESC"
- 	picture = "Portrait_China_Chiang_Kai_Shek.dds"
- 	expire = "1965.1.1"
- 	ideology = despotism
- 	traits = {
- 		generallissimo
- 	}
- }
+set_research_slots = 0
+oob = "CHI_1936"
+set_stability = 0.2
+set_war_support = 0.5
+# Starting tech
+set_technology = {
+}
+add_ideas = {
+	german_advisors
+	CHI_division
+}
+if = {
+	limit = {
+		has_dlc = "Waking the Tiger"
+	}
+	add_ideas = {
+		CHI_nine_power_treaty
+		CHI_army_corruption_1
+		CHI_ineffective_bureaucracy
+		CHI_incompetent_officers
+		free_trade
+		CHI_hyper_inflation_1
+		CHI_division
+	}
+}
+save_global_event_target_as = WTT_current_china_leader
+set_convoys = 40
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	neutrality = 100
+}
+create_country_leader = {
+	name = "Chiang Kai-Shek"
+	desc = "POLITICS_CHIANG_KAI-SHEK_DESC"
+	picture = "Portrait_China_Chiang_Kai_Shek.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		generallissimo
+	}
+}
 

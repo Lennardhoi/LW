@@ -1,30 +1,30 @@
 ﻿division_template = {
- name = "Brigada de Infanteria"
- division_names_group = SPAN_INFB_01
- regiments = {
- infantry = { x = 0 y = 0 }
- infantry = { x = 0 y = 1 }
- infantry = { x = 0 y = 2 }
- }
- }
- units = {
- division= {
- name = "Ejército de Guatemala"
- location =4639
- division_template = "Brigada de Infanteria"
- start_experience_factor = 0.1
- start_equipment_factor = 0.3
- }
- }
- instant_effect = {
- add_equipment_production = {
- equipment = {
- type = infantry_equipment_0
- creator = "GUA"
- }
- requested_factories = 1
- progress = 0.11
- efficiency = 100
- }
- }
+	name = "Brigada de Infanteria"
+	division_names_group = SPAN_INFB_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+}
+units = {
+	division= {
+		name = "Ejército de Guatemala"
+		location =4639
+		division_template = "Brigada de Infanteria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+}
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "GUA"
+		}
+		requested_factories = 1
+		progress = 0.11
+		efficiency = 100
+	}
+}
 

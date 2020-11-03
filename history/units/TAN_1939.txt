@@ -1,29 +1,29 @@
 ﻿start_equipment_factor = 0.2
- division_template = {
- name = "Strelkovaya Polk"
- division_names_group = TAN_INF_01
- regiments = {
- infantry = { x = 0 y = 0 }
- infantry = { x = 0 y = 1 }
- }
- }
- units = {
- division = {
- name = "1ya Revolyutsionnaya Polk"
- location =9756
- division_template = "Strelkovaya Polk"
- start_equipment_factor = 0.7
- }
- }
- instant_effect = {
- add_equipment_production = {
- equipment = {
- type = infantry_equipment_0
- creator = "TAN"
- }
- requested_factories = 1
- progress = 0.57
- efficiency = 100
- }
- }
+division_template = {
+	name = "Strelkovaya Polk"
+	division_names_group = TAN_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+	}
+}
+units = {
+	division = {
+		name = "1ya Revolyutsionnaya Polk"
+		location =9756
+		division_template = "Strelkovaya Polk"
+		start_equipment_factor = 0.7
+	}
+}
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "TAN"
+		}
+		requested_factories = 1
+		progress = 0.57
+		efficiency = 100
+	}
+}
 

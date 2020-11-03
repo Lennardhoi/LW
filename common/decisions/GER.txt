@@ -1,1067 +1,1067 @@
 operations = {
-  GER_give_italy_marsa_matruh = {
-  icon = ger_reichskommissariats
-  fire_only_once = no
-  allowed = { tag = GER }
-  available = { controls_state=416}
-  visible={has_war=yes}
-  cost = 0
-  complete_effect = {
-  ITA={set_state_owner=416}
-  416= {
-  set_state_province_controller = {
-  controller = ITA
-  limit = {
-  is_in_faction_with=GER
-  }
-  }
-  }
-  }
-  }
-  GER_atlantikwall = {
-  icon = ger_reichskommissariats
-  allowed = { tag = GER }
-  available = { always=no}
-  visible={has_war=yes}
-  activation = {
-  always=no
-  }
-  is_good=yes
-  days_mission_timeout=30
-  timeout_effect = {
-  custom_effect_tooltip="Adds a Coastal Fort to every coastal provinces that have at least one coastal fort."
-  99 = {
-  add_building_construction = {
-  type = coastal_bunker
-  level = 1
-  province = {
-  all_provinces = yes
-  limit_to_coastal = yes
-  level > 0
-  }
-  }
-  }
-  58 = {
-  add_building_construction = {
-  type = coastal_bunker
-  level = 1
-  province = {
-  all_provinces = yes
-  limit_to_coastal = yes
-  level > 0
-  }
-  }
-  }
-  59 = {
-  add_building_construction = {
-  type = coastal_bunker
-  level = 1
-  province = {
-  all_provinces = yes
-  limit_to_coastal = yes
-  level > 0
-  }
-  }
-  }
-  56 = {
-  add_building_construction = {
-  type = coastal_bunker
-  level = 1
-  province = {
-  all_provinces = yes
-  limit_to_coastal = yes
-  level > 0
-  }
-  }
-  }
-  36 = {
-  add_building_construction = {
-  type = coastal_bunker
-  level = 1
-  province = {
-  all_provinces = yes
-  limit_to_coastal = yes
-  level > 0
-  }
-  }
-  }
-  7 = {
-  add_building_construction = {
-  type = coastal_bunker
-  level = 1
-  province = {
-  all_provinces = yes
-  limit_to_coastal = yes
-  level > 0
-  }
-  }
-  }
-  35 = {
-  add_building_construction = {
-  type = coastal_bunker
-  level = 1
-  province = {
-  all_provinces = yes
-  limit_to_coastal = yes
-  level > 0
-  }
-  }
-  }
-  6 = {
-  add_building_construction = {
-  type = coastal_bunker
-  level = 1
-  province = {
-  all_provinces = yes
-  limit_to_coastal = yes
-  level > 0
-  }
-  }
-  }
-  29 = {
-  add_building_construction = {
-  type = coastal_bunker
-  level = 1
-  province = {
-  all_provinces = yes
-  limit_to_coastal = yes
-  level > 0
-  }
-  }
-  }
-  699 = {
-  add_building_construction = {
-  type = coastal_bunker
-  level = 1
-  province = {
-  all_provinces = yes
-  limit_to_coastal = yes
-  level > 0
-  }
-  }
-  }
-  15 = {
-  add_building_construction = {
-  type = coastal_bunker
-  level = 1
-  province = {
-  all_provinces = yes
-  limit_to_coastal = yes
-  level > 0
-  }
-  }
-  }
-  14 = {
-  add_building_construction = {
-  type = coastal_bunker
-  level = 1
-  province = {
-  all_provinces = yes
-  limit_to_coastal = yes
-  level > 0
-  }
-  }
-  }
-  30 = {
-  add_building_construction = {
-  type = coastal_bunker
-  level = 1
-  province = {
-  all_provinces = yes
-  limit_to_coastal = yes
-  level > 0
-  }
-  }
-  }
-  23 = {
-  add_building_construction = {
-  type = coastal_bunker
-  level = 1
-  province = {
-  all_provinces = yes
-  limit_to_coastal = yes
-  level > 0
-  }
-  }
-  }
-  19 = {
-  add_building_construction = {
-  type = coastal_bunker
-  level = 1
-  province = {
-  all_provinces = yes
-  limit_to_coastal = yes
-  level > 0
-  }
-  }
-  }
-  if = {
-  limit = {
-  any_country = {
-  OR = {
-  tag = GER
-  is_in_faction_with = GER
-  }
-  has_full_control_of_state = 138
-  }
-  }
-  138 = {
-  add_building_construction = {
-  type = coastal_bunker
-  level = 1
-  province = {
-  all_provinces = yes
-  limit_to_coastal = yes
-  level > 0
-  }
-  }
-  }
-  }
-  if = {
-  limit = {
-  any_country = {
-  OR = {
-  tag = GER
-  is_in_faction_with = GER
-  }
-  has_full_control_of_state = 139
-  }
-  }
-  139 = {
-  add_building_construction = {
-  type = coastal_bunker
-  level = 1
-  province = {
-  all_provinces = yes
-  limit_to_coastal = yes
-  level > 0
-  }
-  }
-  }
-  }
-  if = {
-  limit = {
-  any_country = {
-  OR = {
-  tag = GER
-  is_in_faction_with = GER
-  }
-  has_full_control_of_state = 140
-  }
-  }
-  140 = {
-  add_building_construction = {
-  type = coastal_bunker
-  level = 1
-  province = {
-  all_provinces = yes
-  limit_to_coastal = yes
-  level > 0
-  }
-  }
-  }
-  }
-  }
-  }
-  GER_operation_weserubung = {
-  icon = ger_reichskommissariats
-  fire_only_once = yes
-  allowed = { tag = GER }
-  ai_will_do = {
-  factor = 1
-  }
-  available = { has_completed_focus = GER_weserubung	has_war=yes}
-  cost = 0
-  complete_effect = {
-  effect_tooltip = {
-  declare_war_on = {
-  target = NOR
-  type = annex_everything
-  }
-  declare_war_on = {
-  target = DEN
-  type = annex_everything
-  }
-  }
-  hidden_effect = {
-  ENG = { add_to_faction = DEN }
-  ENG = { add_to_faction = NOR }
-  DEN = { add_to_war = { targeted_alliance = ENG enemy = GER } }
-  NOR = { add_to_war = { targeted_alliance = ENG enemy = GER } }
-  }
-  }
-  }
-  GER_fall_weiss = {
-  icon = ger_reichskommissariats
-  fire_only_once = yes
-  allowed = { tag = GER }
-  ai_will_do = {
-  factor = 1
-  }
-  available = { has_completed_focus = GER_danzig_or_war date > 1939.09.1	}
-  cost = 0
-  complete_effect = {
-  effect_tooltip = {
-  declare_war_on = {
-  target = POL
-  type = annex_everything
-  }
-  }
-  hidden_effect = {
-  ENG = { add_to_faction = POL }
-  declare_war_on = {
-  target = POL
-  type = annex_everything
-  }
-  POL={declare_war_on_enemy_faction =yes}
-  }
-  }
-  }
-  GER_fall_gelb = {
-  icon = ger_reichskommissariats
-  fire_only_once = yes
-  allowed = {  tag = GER }
-  ai_will_do = {
-  factor = 1
-  }
-  available = {  GER = { controls_state = 10 }GER = {has_completed_focus =GER_around_maginot}  }
-  cost = 0
-  complete_effect = {
-  effect_tooltip = {
-  declare_war_on = {
-  target = HOL
-  type = annex_everything
-  }
-  declare_war_on = {
-  target = LUX
-  type = annex_everything
-  }
-  declare_war_on = {
-  target = BEL
-  type = annex_everything
-  }
-  declare_war_on = {
-  target = FRA
-  type = annex_everything
-  }
-  }
-  hidden_effect = {
-  ENG = { add_to_faction = LUX}
-  ENG = { add_to_faction = HOL }
-  ENG = { add_to_faction = BEL }
-  ENG = { add_to_faction = FRA }
-  LUX = { add_to_war = { targeted_alliance = ENG enemy = GER } }
-  FRA = { add_to_war = { targeted_alliance = ENG enemy = GER } }
-  HOL = { add_to_war = { targeted_alliance = ENG enemy = GER } }
-  BEL = { add_to_war = { targeted_alliance = ENG enemy = GER } }
-  }
-  }
-  }
-  GER_fall_barb = {
-  icon = ger_reichskommissariats
-  fire_only_once = yes
-  allowed = { tag = GER }
-  available = { has_completed_focus = GER_ussr_war_goal date > 1941.06.21	}
-  ai_will_do = {
-  factor = 1
-  }
-  cost = 0
-  complete_effect = {
-  hidden_effect = {
-  every_country = {limit = {check_variable= { speeches_enabled > 0} is_in_faction_with=GER }
-  scoped_sound_effect="sp_von_finnland"
-  }
-  }
-  hidden_effect = {
-  every_country = {limit = {check_variable= { speeches_enabled > 0} OR={is_in_faction_with=ENG tag=SOV } }
-  scoped_sound_effect="sp_sacred_war"
-  }
-  }
-  set_variable={Global.super_event=1}
-  show_super_event=yes
-  SOV={declare_war_on_enemy_faction =yes}
-  GER = {
-  add_timed_idea = { idea = GER_barbarossa days = 175 }
-  add_dynamic_modifier = { modifier = Ostarbeiter scope=GER }
-  every_country={set_country_flag = big_event_custom_barbarossa}
-  }
-  hidden_effect={
-  every_country={
-  add_ideas = speed3
-  }
-  ROM = {
-  if = { limit= { has_country_flag=inf_barb_buff }
-  add_timed_idea = { idea = GER_barbarossa_inf days = 175 }
-  }
-  else_if = { limit= { has_country_flag=armor_barb_buff }
-  add_timed_idea = { idea = GER_barbarossa days = 175 }
-  }
-  else={
-  add_timed_idea = { idea = GER_barbarossa_inf days = 175 }
-  }
-  }
-  HUN = {
-  if = { limit= { has_country_flag=inf_barb_buff }
-  add_timed_idea = { idea = GER_barbarossa_inf days = 175 }
-  }
-  else_if = { limit= { has_country_flag=armor_barb_buff }
-  add_timed_idea = { idea = GER_barbarossa days = 175 }
-  }
-  else={
-  add_timed_idea = { idea = GER_barbarossa days = 175 }
-  }
-  }
-  BUL = {
-  if = { limit= { has_country_flag=inf_barb_buff }
-  add_timed_idea = { idea = GER_barbarossa_inf days = 175 }
-  }
-  else_if = { limit= { has_country_flag=armor_barb_buff }
-  add_timed_idea = { idea = GER_barbarossa days = 175 }
-  }
-  else={
-  add_timed_idea = { idea = GER_barbarossa_inf days = 175 }
-  }
-  }
-  SPR = {
-  if = { limit= { has_country_flag=inf_barb_buff }
-  add_timed_idea = { idea = GER_barbarossa_inf days = 175 }
-  }
-  else_if = { limit= { has_country_flag=armor_barb_buff }
-  add_timed_idea = { idea = GER_barbarossa days = 175 }
-  }
-  else={
-  add_timed_idea = { idea = GER_barbarossa days = 175 }
-  }
-  }
-  }
-  }
-  }
-  GER_iran = {
-  icon = generic_operation
-  fire_only_once = yes
-  allowed = { original_tag = GER }
-  visible = {
-  ENG = {NOT ={controls_state = 412}}
-  }
-  is_good = yes
-  available = {
-  ENG = {NOT ={controls_state = 278}}
-  Date > 1940.3.1
-  }
-  days_remove = 30
-  complete_effect = {
-  hidden_effect = {
-  every_enemy_country = {
-  country_event = {
-  id = news.iran
-  days = 0
-  }
-  }
-  }
-  }
-  remove_effect = {
-  SOV = { country_event = { id = iran.2}}
-  hidden_effect={every_country= { limit={NOT={tag=SOV}} country_event = { id = iran.3 } }}
-  }
-  }
-  GER_jaegernotprogramm = {
-  icon = generic_air
-  allowed = {
-  tag = GER
-  }
-  available = {
-  GER ={has_war_with = SOV}
-  tag=GER
-  }
-  cost = 50
-  fire_only_once = yes
-  visible = {
-  GER ={has_war_with = SOV}
-  }
-  complete_effect = {
-  add_timed_idea = { idea = GER_jaegernotprogramm days = 100 }
-  }
-  }
-  GER_fuelsavingmeasures = {
-  icon = generic_air
-  allowed = {
-  tag = GER
-  }
-  available = {
-  GER ={has_war_with = SOV}
-  tag=GER
-  }
-  cost = 50
-  fire_only_once = no
-  visible = {
-  GER ={has_war_with = SOV}
-  }
-  complete_effect = {
-  add_timed_idea = { idea = GER_fuelsavingmeasures days = 60 }
-  }
-  }
-  GER_fin = {
-  icon = generic_operation
-  fire_only_once = yes
-  allowed = {
-  tag = GER
-  }
-  visible = {
-  Date > 1941.1.1
-  }
-  available = {
-  Date > 1941.6.1
-  }
-  complete_effect = {
-  GER =  { puppet = FIN}
-  }
-  }
-  GER_pressure_sweden = {
-  icon = generic_operation
-  fire_only_once = no
-  allowed = {
-  tag = GER
-  }
-  visible = {
-  date > 1940.1.1
-  }
-  available = {
-  has_completed_focus=GER_pressure_sweden
-  NOR_axis=yes
-  NOT={has_global_flag=GER_resource_rights_swe}
-  }
-  cost=50
-  days_remove=30
-  remove_effect = {
-  SWE = {
-  remove_resource_rights = 666
-  give_resource_rights = { receiver = GER state = 585 }
-  }
-  set_global_flag=GER_resource_rights_swe
-  }
-  }
-  GER_Anton = {
-  icon = generic_operation
-  fire_only_once = yes
-  allowed = {
-  tag = GER
-  }
-  visible = {
-  tag = GER
-  Date > 1940.1.1
-  }
-  available = {
-  AND={EFR = { has_war_with = ENG }
-  date > 1942.3.1}
-  }
-  days_remove = 30
-  remove_effect = {
-  annex_country = { target = EFR transfer_troops = yes }
-  }
-  }
-  GER_seize_syria = {
-  icon = generic_operation
-  fire_only_once = yes
-  allowed = {
-  tag = GER
-  }
-  visible = {
-  tag = GER
-  EFR = {
-  exists = yes
-  }
-  EFR = {
-  owns_state = 478
-  owns_state = 599
-  owns_state = 596
-  }
-  }
-  days_remove = 10
-  available = {
-  any_country = {
-  is_in_faction_with = ROOT
-  controls_state = 419
-  }
-  any_country = {
-  is_in_faction_with = ROOT
-  controls_state = 418
-  }
-  }
-  complete_effect = {
-  hidden_effect = {
-  every_enemy_country = {
-  country_event = {
-  id = germany.121
-  days = 0
-  }
-  }
-  }
-  }
-  remove_effect = {
-  transfer_state = 554
-  transfer_state = 680
-  transfer_state = 677
-  478 = {
-  set_demilitarized_zone = no
-  }
-  599 = {
-  set_demilitarized_zone = no
-  }
-  596 = {
-  set_demilitarized_zone = no
-  }
-  }
-  }
-  GER_barbarossa_mission = {
-  icon = generic_operation
-  allowed = {
-  always = no
-  original_tag = GER
-  }
-  available = {
-  212 = { is_controlled_by_ROOT_or_ally = yes }
-  188 = { is_controlled_by_ROOT_or_ally = yes }
-  195 = { is_controlled_by_ROOT_or_ally = yes }
-  210 = { is_controlled_by_ROOT_or_ally = yes }
-  }
-  days_mission_timeout = 180
-  fire_only_once = yes
-  activation = {
-  }
-  is_good = no
-  complete_effect = {
-  add_war_support = 0.1
-  custom_effect_tooltip = barbarossa_mission_tt
-  }
-  timeout_effect = {
-  }
-  ai_will_do = {
-  factor = 1
-  }
-  }
-  }
-  GER_military_buildup = {
-  }
-  special_projects = {
-  GER_exploit_occupied_territories = {
-  allowed = {
-  original_tag = GER
-  }
-  fixed_random_seed=no
-  available = {
-  all_controlled_state = {
-  OR={is_core_of=GER
-  OR={arms_factory>0 industrial_complex>0}
-  }}
-  }
-  activation = {has_completed_focus=GER_exploit_occupied_territories}
-  is_good = yes
-  days_mission_timeout = 30
-  timeout_effect = {
-  activate_mission=GER_exploit_occupied_territories
-  exploit_occupied_territories=yes
-  exploit_occupied_territories=yes
-  exploit_occupied_territories=yes
-  exploit_occupied_territories=yes
-  }
-  complete_effect = { set_global_flag = GER_heavy_water_production_underway }
-  }
-  GER_begin_heavy_water_production = {
-  allowed = {
-  original_tag = GER
-  has_dlc = "La Resistance"
-  }
-  available = {
-  110 = {
-  CONTROLLER = {
-  OR = {
-  tag = ROOT
-  is_subject_of = ROOT
-  }
-  }
-  }
-  }
-  visible = {has_war=yes}
-  cost = 0
-  ai_will_do = {
-  factor = 5
-  }
-  cancel_trigger = { NOT = { has_global_flag = GER_heavy_water_production_underway } }
-  days_remove = 365
-  remove_effect = {
-  add_tech_bonus = {
-  name = GER_heavy_water
-  category = nuclear
-  uses = 2
-  bonus = 2
-  }
-  }
-  complete_effect = { set_global_flag = GER_heavy_water_production_underway }
-  }
-  GER_dismantle_maginot = {
-  icon = generic_construction
-  allowed = {
-  original_tag = GeR
-  }
-  available = {
-  controls_state = 28
-  NOT={has_idea=GER_dismantle_czechoslovakian_forts}
-  }
-  cost = 50
-  fire_only_once = yes
-  ai_will_do = {
-  factor = 0
-  }
-  visible = {
-  controls_state = 28
-  }
-  days_remove = 180
-  modifier = {
-  civilian_factory_use = 5
-  }
-  remove_effect = {
-  28 = {
-  set_building_level = {
-  type = bunker
-  level = 2
-  province = {
-  all_provinces = yes
-  limit_to_border = no
-  level > 2
-  }
-  }
-  }
-  }
-  complete_effect = {
-  add_timed_idea = { idea = GER_dismantle_maginot days = 180 }
-  }
-  }
-  GER_dismantle_czechoslovakian_forts = {
-  icon = generic_construction
-  allowed = {
-  original_tag = GeR
-  }
-  available = {
-  controls_state = 69
-  controls_state = 74
-  controls_state = 9
-  controls_state = 75
-  NOT={has_idea=GER_dismantle_maginot}
-  }
-  cost = 50
-  fire_only_once = yes
-  ai_will_do = {
-  factor = 0
-  }
-  visible = {
-  controls_state = 69
-  controls_state = 74
-  controls_state = 9
-  controls_state = 75
-  }
-  days_remove = 180
-  modifier = {
-  civilian_factory_use = 3
-  }
-  remove_effect = {
-  69 = {
-  set_building_level = {
-  type = bunker
-  level = 1
-  province = {
-  all_provinces = yes
-  limit_to_border = no
-  level > 0
-  }
-  }
-  }
-  74 = {
-  set_building_level = {
-  type = bunker
-  level = 1
-  province = {
-  all_provinces = yes
-  limit_to_border = no
-  level > 0
-  }
-  }
-  }
-  9 = {
-  set_building_level = {
-  type = bunker
-  level = 1
-  province = {
-  all_provinces = yes
-  limit_to_border = no
-  level > 0
-  }
-  }
-  }
-  75 = {
-  set_building_level = {
-  type = bunker
-  level = 1
-  province = {
-  all_provinces = yes
-  limit_to_border = no
-  level > 0
-  }
-  }
-  }
-  if = {
-  limit = {
-  72 = {
-  controller = {
-  OR = {
-  tag = ROOT
-  is_subject_of = ROOT
-  }
-  }
-  }
-  71 = {
-  controller = {
-  OR = {
-  tag = ROOT
-  is_subject_of = ROOT
-  }
-  }
-  }
-  }
-  72 = {
-  set_building_level = {
-  type = bunker
-  level = 1
-  province = {
-  all_provinces = yes
-  limit_to_border = no
-  level > 0
-  }
-  }
-  }
-  71 = {
-  set_building_level = {
-  type = bunker
-  level = 1
-  province = {
-  all_provinces = yes
-  limit_to_border = no
-  level > 0
-  }
-  }
-  }
-  }
-  if = {
-  limit = {
-  70 = {
-  controller = {
-  OR = {
-  tag = ROOT
-  is_subject_of = ROOT
-  }
-  }
-  }
-  }
-  70 = {
-  set_building_level = {
-  type = bunker
-  level = 1
-  province = {
-  all_provinces = yes
-  limit_to_border = no
-  level > 0
-  }
-  }
-  }
-  }
-  if = {
-  limit = {
-  73 = {
-  controller = {
-  OR = {
-  tag = ROOT
-  is_subject_of = ROOT
-  }
-  }
-  }
-  583 = {
-  controller = {
-  OR = {
-  tag = ROOT
-  is_subject_of = ROOT
-  }
-  }
-  }
-  }
-  73 = {
-  set_building_level = {
-  type = bunker
-  level = 1
-  province = {
-  all_provinces = yes
-  limit_to_border = no
-  level > 0
-  }
-  }
-  }
-  583 = {
-  set_building_level = {
-  type = bunker
-  level = 1
-  province = {
-  all_provinces = yes
-  limit_to_border = no
-  level > 0
-  }
-  }
-  }
-  }
-  }
-  complete_effect = {
-  add_timed_idea = { idea = GER_dismantle_czechoslovakian_forts days = 180 }
-  }
-  }
-  }
-  GER_reichswerke_four_year_plan = {
-  GER_underground_mills = {
-  icon = arms_factory
-  allowed = {
-  original_tag = GER
-  }
-  available = {
-  FROM = {
-  arms_factory>0
-  }
-  ROOT = { num_of_civilian_factories > 3 }
-  }
-  visible = {
-  FROM = {
-  arms_factory>0
-  }
-  has_completed_focus = GER_u_verlagerung
-  }
-  state_target = yes
-  target_array = core_states
-  highlight_state_targets = { state = FROM }
-  on_map_mode = map_and_decisions_view
-  cost = 10
-  days_remove = 30
-  is_good = yes
-  fire_only_once = no
-  modifier = {
-  civilian_factory_use = 5
-  }
-  complete_effect = {
-  FROM = {if = {limit= {arms_factory>2}
-  remove_building = {
-  type =arms_factory
-  level = 3
-  }
-  ROOT={add_offsite_building = { type = arms_factory level = 3 }}
-  }
-  else_if = {limit= {arms_factory>1}
-  remove_building = {
-  type =arms_factory
-  level = 2
-  }
-  ROOT={add_offsite_building = { type = arms_factory level = 2 }}
-  }
-  else_if = {limit= {arms_factory>0}
-  remove_building = {
-  type =arms_factory
-  level = 1
-  }
-  ROOT={add_offsite_building = { type = arms_factory level = 1 }}
-  }
-  }
-  }
-  }
-  GER_underground_refs = {
-  icon = rubber
-  allowed = {
-  original_tag = GER
-  }
-  available = {
-  FROM = {
-  synthetic_refinery>0
-  }
-  ROOT = { num_of_civilian_factories > 3 }
-  }
-  visible = {
-  FROM = {
-  synthetic_refinery>0
-  }
-  has_completed_focus = GER_u_verlagerung
-  }
-  state_target = yes
-  target_array = core_states
-  highlight_state_targets = { state = FROM }
-  on_map_mode = map_and_decisions_view
-  cost = 10
-  days_remove = 30
-  is_good = yes
-  fire_only_once = no
-  modifier = {
-  civilian_factory_use = 5
-  }
-  complete_effect = {
-  FROM = {if = {limit= {synthetic_refinery>0}
-  remove_building = {
-  type =synthetic_refinery
-  level = 1
-  }
-  add_resource = {
-  type = oil
-  amount = 2
-  }
-  add_resource = {
-  type = rubber
-  amount = 2
-  }
-  }
-  }
-  }
-  }
-  GER_plan_z = {
-  icon = generic_naval
-  available = {
-  has_navy_size = {
-  unit = battleship
-  size > 9
-  }
-  has_navy_size = {
-  unit = battle_cruiser
-  size > 2
-  }
-  has_navy_size = {
-  unit = carrier
-  size > 3
-  }
-  has_navy_size = {
-  unit = heavy_cruiser
-  size > 19
-  }
-  has_navy_size = {
-  unit = light_cruiser
-  size > 19
-  }
-  has_navy_size = {
-  unit = destroyer
-  size > 99
-  }
-  }
-  fire_only_once = yes
-  days_mission_timeout = 1800
-  is_good = no
-  activation = {
-  has_completed_focus = GER_plan_z
-  }
-  visible = {
-  has_completed_focus = GER_plan_z
-  }
-  complete_effect = {
-  add_war_support = 0.05
-  navy_experience = 150
-  }
-  }
-  }
+	GER_give_italy_marsa_matruh = {
+		icon = ger_reichskommissariats
+		fire_only_once = no
+		allowed = { tag = GER }
+		available = { controls_state=416}
+		visible={has_war=yes}
+		cost = 0
+		complete_effect = {
+			ITA={set_state_owner=416}
+			416= {
+				set_state_province_controller = {
+					controller = ITA
+					limit = {
+						is_in_faction_with=GER
+					}
+				}
+			}
+		}
+	}
+	GER_atlantikwall = {
+		icon = ger_reichskommissariats
+		allowed = { tag = GER }
+		available = { always=no}
+		visible={has_war=yes}
+		activation = {
+			always=no
+		}
+		is_good=yes
+		days_mission_timeout=30
+		timeout_effect = {
+			custom_effect_tooltip="Adds a Coastal Fort to every coastal provinces that have at least one coastal fort."
+			99 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+						level > 0
+					}
+				}
+			}
+			58 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+						level > 0
+					}
+				}
+			}
+			59 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+						level > 0
+					}
+				}
+			}
+			56 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+						level > 0
+					}
+				}
+			}
+			36 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+						level > 0
+					}
+				}
+			}
+			7 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+						level > 0
+					}
+				}
+			}
+			35 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+						level > 0
+					}
+				}
+			}
+			6 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+						level > 0
+					}
+				}
+			}
+			29 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+						level > 0
+					}
+				}
+			}
+			699 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+						level > 0
+					}
+				}
+			}
+			15 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+						level > 0
+					}
+				}
+			}
+			14 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+						level > 0
+					}
+				}
+			}
+			30 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+						level > 0
+					}
+				}
+			}
+			23 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+						level > 0
+					}
+				}
+			}
+			19 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+						level > 0
+					}
+				}
+			}
+			if = {
+				limit = {
+					any_country = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER
+						}
+						has_full_control_of_state = 138
+					}
+				}
+				138 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 1
+						province = {
+							all_provinces = yes
+							limit_to_coastal = yes
+							level > 0
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					any_country = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER
+						}
+						has_full_control_of_state = 139
+					}
+				}
+				139 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 1
+						province = {
+							all_provinces = yes
+							limit_to_coastal = yes
+							level > 0
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					any_country = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER
+						}
+						has_full_control_of_state = 140
+					}
+				}
+				140 = {
+					add_building_construction = {
+						type = coastal_bunker
+						level = 1
+						province = {
+							all_provinces = yes
+							limit_to_coastal = yes
+							level > 0
+						}
+					}
+				}
+			}
+		}
+	}
+	GER_operation_weserubung = {
+		icon = ger_reichskommissariats
+		fire_only_once = yes
+		allowed = { tag = GER }
+		ai_will_do = {
+			factor = 1
+		}
+		available = { has_completed_focus = GER_weserubung	has_war=yes}
+		cost = 0
+		complete_effect = {
+			effect_tooltip = {
+				declare_war_on = {
+					target = NOR
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = DEN
+					type = annex_everything
+				}
+			}
+			hidden_effect = {
+				ENG = { add_to_faction = DEN }
+				ENG = { add_to_faction = NOR }
+				DEN = { add_to_war = { targeted_alliance = ENG enemy = GER } }
+				NOR = { add_to_war = { targeted_alliance = ENG enemy = GER } }
+			}
+		}
+	}
+	GER_fall_weiss = {
+		icon = ger_reichskommissariats
+		fire_only_once = yes
+		allowed = { tag = GER }
+		ai_will_do = {
+			factor = 1
+		}
+		available = { has_completed_focus = GER_danzig_or_war date > 1939.09.1	}
+		cost = 0
+		complete_effect = {
+			effect_tooltip = {
+				declare_war_on = {
+					target = POL
+					type = annex_everything
+				}
+			}
+			hidden_effect = {
+				ENG = { add_to_faction = POL }
+				declare_war_on = {
+					target = POL
+					type = annex_everything
+				}
+				POL={declare_war_on_enemy_faction =yes}
+			}
+		}
+	}
+	GER_fall_gelb = {
+		icon = ger_reichskommissariats
+		fire_only_once = yes
+		allowed = {  tag = GER }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {  GER = { controls_state = 10 }GER = {has_completed_focus =GER_around_maginot}  }
+		cost = 0
+		complete_effect = {
+			effect_tooltip = {
+				declare_war_on = {
+					target = HOL
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = LUX
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = BEL
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = FRA
+					type = annex_everything
+				}
+			}
+			hidden_effect = {
+				ENG = { add_to_faction = LUX}
+				ENG = { add_to_faction = HOL }
+				ENG = { add_to_faction = BEL }
+				ENG = { add_to_faction = FRA }
+				LUX = { add_to_war = { targeted_alliance = ENG enemy = GER } }
+				FRA = { add_to_war = { targeted_alliance = ENG enemy = GER } }
+				HOL = { add_to_war = { targeted_alliance = ENG enemy = GER } }
+				BEL = { add_to_war = { targeted_alliance = ENG enemy = GER } }
+			}
+		}
+	}
+	GER_fall_barb = {
+		icon = ger_reichskommissariats
+		fire_only_once = yes
+		allowed = { tag = GER }
+		available = { has_completed_focus = GER_ussr_war_goal date > 1941.06.21	}
+		ai_will_do = {
+			factor = 1
+		}
+		cost = 0
+		complete_effect = {
+			hidden_effect = {
+				every_country = {limit = {check_variable= { speeches_enabled > 0} is_in_faction_with=GER }
+					scoped_sound_effect="sp_von_finnland"
+				}
+			}
+			hidden_effect = {
+				every_country = {limit = {check_variable= { speeches_enabled > 0} OR={is_in_faction_with=ENG tag=SOV } }
+					scoped_sound_effect="sp_sacred_war"
+				}
+			}
+			set_variable={Global.super_event=1}
+			show_super_event=yes
+			SOV={declare_war_on_enemy_faction =yes}
+			GER = {
+				add_timed_idea = { idea = GER_barbarossa days = 175 }
+				add_dynamic_modifier = { modifier = Ostarbeiter scope=GER }
+				every_country={set_country_flag = big_event_custom_barbarossa}
+			}
+			hidden_effect={
+				every_country={
+					add_ideas = speed3
+				}
+				ROM = {
+					if = { limit= { has_country_flag=inf_barb_buff }
+						add_timed_idea = { idea = GER_barbarossa_inf days = 175 }
+					}
+					else_if = { limit= { has_country_flag=armor_barb_buff }
+						add_timed_idea = { idea = GER_barbarossa days = 175 }
+					}
+					else={
+						add_timed_idea = { idea = GER_barbarossa_inf days = 175 }
+					}
+				}
+				HUN = {
+					if = { limit= { has_country_flag=inf_barb_buff }
+						add_timed_idea = { idea = GER_barbarossa_inf days = 175 }
+					}
+					else_if = { limit= { has_country_flag=armor_barb_buff }
+						add_timed_idea = { idea = GER_barbarossa days = 175 }
+					}
+					else={
+						add_timed_idea = { idea = GER_barbarossa days = 175 }
+					}
+				}
+				BUL = {
+					if = { limit= { has_country_flag=inf_barb_buff }
+						add_timed_idea = { idea = GER_barbarossa_inf days = 175 }
+					}
+					else_if = { limit= { has_country_flag=armor_barb_buff }
+						add_timed_idea = { idea = GER_barbarossa days = 175 }
+					}
+					else={
+						add_timed_idea = { idea = GER_barbarossa_inf days = 175 }
+					}
+				}
+				SPR = {
+					if = { limit= { has_country_flag=inf_barb_buff }
+						add_timed_idea = { idea = GER_barbarossa_inf days = 175 }
+					}
+					else_if = { limit= { has_country_flag=armor_barb_buff }
+						add_timed_idea = { idea = GER_barbarossa days = 175 }
+					}
+					else={
+						add_timed_idea = { idea = GER_barbarossa days = 175 }
+					}
+				}
+			}
+		}
+	}
+	GER_iran = {
+		icon = generic_operation
+		fire_only_once = yes
+		allowed = { original_tag = GER }
+		visible = {
+			ENG = {NOT ={controls_state = 412}}
+		}
+		is_good = yes
+		available = {
+			ENG = {NOT ={controls_state = 278}}
+			Date > 1940.3.1
+		}
+		days_remove = 30
+		complete_effect = {
+			hidden_effect = {
+				every_enemy_country = {
+					country_event = {
+						id = news.iran
+						days = 0
+					}
+				}
+			}
+		}
+		remove_effect = {
+			SOV = { country_event = { id = iran.2}}
+			hidden_effect={every_country= { limit={NOT={tag=SOV}} country_event = { id = iran.3 } }}
+		}
+	}
+	GER_jaegernotprogramm = {
+		icon = generic_air
+		allowed = {
+			tag = GER
+		}
+		available = {
+			GER ={has_war_with = SOV}
+			tag=GER
+		}
+		cost = 50
+		fire_only_once = yes
+		visible = {
+			GER ={has_war_with = SOV}
+		}
+		complete_effect = {
+			add_timed_idea = { idea = GER_jaegernotprogramm days = 100 }
+		}
+	}
+	GER_fuelsavingmeasures = {
+		icon = generic_air
+		allowed = {
+			tag = GER
+		}
+		available = {
+			GER ={has_war_with = SOV}
+			tag=GER
+		}
+		cost = 50
+		fire_only_once = no
+		visible = {
+			GER ={has_war_with = SOV}
+		}
+		complete_effect = {
+			add_timed_idea = { idea = GER_fuelsavingmeasures days = 60 }
+		}
+	}
+	GER_fin = {
+		icon = generic_operation
+		fire_only_once = yes
+		allowed = {
+			tag = GER
+		}
+		visible = {
+			Date > 1941.1.1
+		}
+		available = {
+			Date > 1941.6.1
+		}
+		complete_effect = {
+			GER =  { puppet = FIN}
+		}
+	}
+	GER_pressure_sweden = {
+		icon = generic_operation
+		fire_only_once = no
+		allowed = {
+			tag = GER
+		}
+		visible = {
+			date > 1940.1.1
+		}
+		available = {
+			has_completed_focus=GER_pressure_sweden
+			NOR_axis=yes
+			NOT={has_global_flag=GER_resource_rights_swe}
+		}
+		cost=50
+		days_remove=30
+		remove_effect = {
+			SWE = {
+				remove_resource_rights = 666
+				give_resource_rights = { receiver = GER state = 585 }
+			}
+			set_global_flag=GER_resource_rights_swe
+		}
+	}
+	GER_Anton = {
+		icon = generic_operation
+		fire_only_once = yes
+		allowed = {
+			tag = GER
+		}
+		visible = {
+			tag = GER
+			Date > 1940.1.1
+		}
+		available = {
+			AND={EFR = { has_war_with = ENG }
+				date > 1942.3.1}
+		}
+		days_remove = 30
+		remove_effect = {
+			annex_country = { target = EFR transfer_troops = yes }
+		}
+	}
+	GER_seize_syria = {
+		icon = generic_operation
+		fire_only_once = yes
+		allowed = {
+			tag = GER
+		}
+		visible = {
+			tag = GER
+			EFR = {
+				exists = yes
+			}
+			EFR = {
+				owns_state = 478
+				owns_state = 599
+				owns_state = 596
+			}
+		}
+		days_remove = 10
+		available = {
+			any_country = {
+				is_in_faction_with = ROOT
+				controls_state = 419
+			}
+			any_country = {
+				is_in_faction_with = ROOT
+				controls_state = 418
+			}
+		}
+		complete_effect = {
+			hidden_effect = {
+				every_enemy_country = {
+					country_event = {
+						id = germany.121
+						days = 0
+					}
+				}
+			}
+		}
+		remove_effect = {
+			transfer_state = 554
+			transfer_state = 680
+			transfer_state = 677
+			478 = {
+				set_demilitarized_zone = no
+			}
+			599 = {
+				set_demilitarized_zone = no
+			}
+			596 = {
+				set_demilitarized_zone = no
+			}
+		}
+	}
+	GER_barbarossa_mission = {
+		icon = generic_operation
+		allowed = {
+			always = no
+			original_tag = GER
+		}
+		available = {
+			212 = { is_controlled_by_ROOT_or_ally = yes }
+			188 = { is_controlled_by_ROOT_or_ally = yes }
+			195 = { is_controlled_by_ROOT_or_ally = yes }
+			210 = { is_controlled_by_ROOT_or_ally = yes }
+		}
+		days_mission_timeout = 180
+		fire_only_once = yes
+		activation = {
+		}
+		is_good = no
+		complete_effect = {
+			add_war_support = 0.1
+			custom_effect_tooltip = barbarossa_mission_tt
+		}
+		timeout_effect = {
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+GER_military_buildup = {
+}
+special_projects = {
+	GER_exploit_occupied_territories = {
+		allowed = {
+			original_tag = GER
+		}
+		fixed_random_seed=no
+		available = {
+			all_controlled_state = {
+				OR={is_core_of=GER
+					OR={arms_factory>0 industrial_complex>0}
+					}}
+		}
+		activation = {has_completed_focus=GER_exploit_occupied_territories}
+		is_good = yes
+		days_mission_timeout = 30
+		timeout_effect = {
+			activate_mission=GER_exploit_occupied_territories
+			exploit_occupied_territories=yes
+			exploit_occupied_territories=yes
+			exploit_occupied_territories=yes
+			exploit_occupied_territories=yes
+		}
+		complete_effect = { set_global_flag = GER_heavy_water_production_underway }
+	}
+	GER_begin_heavy_water_production = {
+		allowed = {
+			original_tag = GER
+			has_dlc = "La Resistance"
+		}
+		available = {
+			110 = {
+				CONTROLLER = {
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+		}
+		visible = {has_war=yes}
+		cost = 0
+		ai_will_do = {
+			factor = 5
+		}
+		cancel_trigger = { NOT = { has_global_flag = GER_heavy_water_production_underway } }
+		days_remove = 365
+		remove_effect = {
+			add_tech_bonus = {
+				name = GER_heavy_water
+				category = nuclear
+				uses = 2
+				bonus = 2
+			}
+		}
+		complete_effect = { set_global_flag = GER_heavy_water_production_underway }
+	}
+	GER_dismantle_maginot = {
+		icon = generic_construction
+		allowed = {
+			original_tag = GeR
+		}
+		available = {
+			controls_state = 28
+			NOT={has_idea=GER_dismantle_czechoslovakian_forts}
+		}
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			controls_state = 28
+		}
+		days_remove = 180
+		modifier = {
+			civilian_factory_use = 5
+		}
+		remove_effect = {
+			28 = {
+				set_building_level = {
+					type = bunker
+					level = 2
+					province = {
+						all_provinces = yes
+						limit_to_border = no
+						level > 2
+					}
+				}
+			}
+		}
+		complete_effect = {
+			add_timed_idea = { idea = GER_dismantle_maginot days = 180 }
+		}
+	}
+	GER_dismantle_czechoslovakian_forts = {
+		icon = generic_construction
+		allowed = {
+			original_tag = GeR
+		}
+		available = {
+			controls_state = 69
+			controls_state = 74
+			controls_state = 9
+			controls_state = 75
+			NOT={has_idea=GER_dismantle_maginot}
+		}
+		cost = 50
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0
+		}
+		visible = {
+			controls_state = 69
+			controls_state = 74
+			controls_state = 9
+			controls_state = 75
+		}
+		days_remove = 180
+		modifier = {
+			civilian_factory_use = 3
+		}
+		remove_effect = {
+			69 = {
+				set_building_level = {
+					type = bunker
+					level = 1
+					province = {
+						all_provinces = yes
+						limit_to_border = no
+						level > 0
+					}
+				}
+			}
+			74 = {
+				set_building_level = {
+					type = bunker
+					level = 1
+					province = {
+						all_provinces = yes
+						limit_to_border = no
+						level > 0
+					}
+				}
+			}
+			9 = {
+				set_building_level = {
+					type = bunker
+					level = 1
+					province = {
+						all_provinces = yes
+						limit_to_border = no
+						level > 0
+					}
+				}
+			}
+			75 = {
+				set_building_level = {
+					type = bunker
+					level = 1
+					province = {
+						all_provinces = yes
+						limit_to_border = no
+						level > 0
+					}
+				}
+			}
+			if = {
+				limit = {
+					72 = {
+						controller = {
+							OR = {
+								tag = ROOT
+								is_subject_of = ROOT
+							}
+						}
+					}
+					71 = {
+						controller = {
+							OR = {
+								tag = ROOT
+								is_subject_of = ROOT
+							}
+						}
+					}
+				}
+				72 = {
+					set_building_level = {
+						type = bunker
+						level = 1
+						province = {
+							all_provinces = yes
+							limit_to_border = no
+							level > 0
+						}
+					}
+				}
+				71 = {
+					set_building_level = {
+						type = bunker
+						level = 1
+						province = {
+							all_provinces = yes
+							limit_to_border = no
+							level > 0
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					70 = {
+						controller = {
+							OR = {
+								tag = ROOT
+								is_subject_of = ROOT
+							}
+						}
+					}
+				}
+				70 = {
+					set_building_level = {
+						type = bunker
+						level = 1
+						province = {
+							all_provinces = yes
+							limit_to_border = no
+							level > 0
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					73 = {
+						controller = {
+							OR = {
+								tag = ROOT
+								is_subject_of = ROOT
+							}
+						}
+					}
+					583 = {
+						controller = {
+							OR = {
+								tag = ROOT
+								is_subject_of = ROOT
+							}
+						}
+					}
+				}
+				73 = {
+					set_building_level = {
+						type = bunker
+						level = 1
+						province = {
+							all_provinces = yes
+							limit_to_border = no
+							level > 0
+						}
+					}
+				}
+				583 = {
+					set_building_level = {
+						type = bunker
+						level = 1
+						province = {
+							all_provinces = yes
+							limit_to_border = no
+							level > 0
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			add_timed_idea = { idea = GER_dismantle_czechoslovakian_forts days = 180 }
+		}
+	}
+}
+GER_reichswerke_four_year_plan = {
+	GER_underground_mills = {
+		icon = arms_factory
+		allowed = {
+			original_tag = GER
+		}
+		available = {
+			FROM = {
+				arms_factory>0
+			}
+			ROOT = { num_of_civilian_factories > 3 }
+		}
+		visible = {
+			FROM = {
+				arms_factory>0
+			}
+			has_completed_focus = GER_u_verlagerung
+		}
+		state_target = yes
+		target_array = core_states
+		highlight_state_targets = { state = FROM }
+		on_map_mode = map_and_decisions_view
+		cost = 10
+		days_remove = 30
+		is_good = yes
+		fire_only_once = no
+		modifier = {
+			civilian_factory_use = 5
+		}
+		complete_effect = {
+			FROM = {if = {limit= {arms_factory>2}
+					remove_building = {
+						type =arms_factory
+						level = 3
+					}
+					ROOT={add_offsite_building = { type = arms_factory level = 3 }}
+				}
+				else_if = {limit= {arms_factory>1}
+					remove_building = {
+						type =arms_factory
+						level = 2
+					}
+					ROOT={add_offsite_building = { type = arms_factory level = 2 }}
+				}
+				else_if = {limit= {arms_factory>0}
+					remove_building = {
+						type =arms_factory
+						level = 1
+					}
+					ROOT={add_offsite_building = { type = arms_factory level = 1 }}
+				}
+			}
+		}
+	}
+	GER_underground_refs = {
+		icon = rubber
+		allowed = {
+			original_tag = GER
+		}
+		available = {
+			FROM = {
+				synthetic_refinery>0
+			}
+			ROOT = { num_of_civilian_factories > 3 }
+		}
+		visible = {
+			FROM = {
+				synthetic_refinery>0
+			}
+			has_completed_focus = GER_u_verlagerung
+		}
+		state_target = yes
+		target_array = core_states
+		highlight_state_targets = { state = FROM }
+		on_map_mode = map_and_decisions_view
+		cost = 10
+		days_remove = 30
+		is_good = yes
+		fire_only_once = no
+		modifier = {
+			civilian_factory_use = 5
+		}
+		complete_effect = {
+			FROM = {if = {limit= {synthetic_refinery>0}
+					remove_building = {
+						type =synthetic_refinery
+						level = 1
+					}
+					add_resource = {
+						type = oil
+						amount = 2
+					}
+					add_resource = {
+						type = rubber
+						amount = 2
+					}
+				}
+			}
+		}
+	}
+	GER_plan_z = {
+		icon = generic_naval
+		available = {
+			has_navy_size = {
+				unit = battleship
+				size > 9
+			}
+			has_navy_size = {
+				unit = battle_cruiser
+				size > 2
+			}
+			has_navy_size = {
+				unit = carrier
+				size > 3
+			}
+			has_navy_size = {
+				unit = heavy_cruiser
+				size > 19
+			}
+			has_navy_size = {
+				unit = light_cruiser
+				size > 19
+			}
+			has_navy_size = {
+				unit = destroyer
+				size > 99
+			}
+		}
+		fire_only_once = yes
+		days_mission_timeout = 1800
+		is_good = no
+		activation = {
+			has_completed_focus = GER_plan_z
+		}
+		visible = {
+			has_completed_focus = GER_plan_z
+		}
+		complete_effect = {
+			add_war_support = 0.05
+			navy_experience = 150
+		}
+	}
+}
 

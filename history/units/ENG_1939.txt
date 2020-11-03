@@ -1,691 +1,691 @@
 ﻿division_template = {
- name = "Infantry Division"
- division_names_group = ENG_INF_01
- regiments = {
- infantry = { x = 0 y = 0 }
- infantry = { x = 0 y = 1 }
- infantry = { x = 0 y = 2 }
- infantry = { x = 1 y = 0 }
- infantry = { x = 1 y = 1 }
- infantry = { x = 1 y = 2 }
- infantry = { x = 2 y = 0 }
- infantry = { x = 2 y = 1 }
- infantry = { x = 2 y = 2 }
- }
- support = {
- engineer = { x = 0 y = 0 }
- recon = { x = 0 y = 1 }
- artillery = { x = 0 y = 2 }
- }
- }
- division_template = {
- name = "Infantry Division (ME)"
- division_names_group = ENG_INF_01
- regiments = {
- infantry = { x = 0 y = 0 }
- infantry = { x = 0 y = 1 }
- infantry = { x = 0 y = 2 }
- infantry = { x = 1 y = 0 }
- infantry = { x = 1 y = 1 }
- infantry = { x = 1 y = 2 }
- }
- support = {
- recon = { x = 0 y = 0 }
- }
- }
- division_template = {
- name = "Motorised Division"
- division_names_group = ENG_MOT_01
- regiments = {
- motorized = { x = 0 y = 0 }
- motorized = { x = 0 y = 1 }
- motorized = { x = 0 y = 2 }
- motorized = { x = 1 y = 0 }
- motorized = { x = 1 y = 1 }
- motorized = { x = 1 y = 2 }
- }
- support = {
- engineer = { x = 0 y = 0 }
- mot_recon = { x = 0 y = 1 }
- }
- }
- division_template = {
- name = "Armour Division"
- division_names_group = ENG_ARM_01
- regiments = {
- medium_armor = { x = 0 y = 0 }
- medium_armor = { x = 0 y = 1 }
- light_armor = { x = 0 y = 2 }
- light_armor = { x = 1 y = 0 }
- light_armor = { x = 1 y = 1 }
- light_armor = { x = 1 y = 2 }
- light_armor = { x = 2 y = 0 }
- light_armor = { x = 2 y = 1 }
- light_armor = { x = 2 y = 2 }
- motorized = { x = 3 y = 0 }
- motorized = { x = 3 y = 1 }
- }
- support = {
- mot_recon = { x = 0 y = 0 }
- }
- }
- division_template = {
- name = "Tank Brigade"
- division_names_group = ENG_ARM_02
- regiments = {
- light_armor = { x = 0 y = 0 }
- light_armor = { x = 0 y = 1 }
- light_armor = { x = 0 y = 2 }
- }
- }
- division_template = {
- name = "Cavalry Brigade"
- division_names_group = ENG_CAV_02
- regiments = {
- cavalry = { x = 0 y = 0 }
- cavalry = { x = 0 y = 1 }
- cavalry = { x = 0 y = 2 }
- }
- }
- division_template = {
- name = "Colonial Garrison"
- division_names_group = ENG_COL_01
- regiments = {
- infantry = { x = 0 y = 0 }
- infantry = { x = 0 y = 1 }
- infantry = { x = 0 y = 2 }
- infantry = { x = 1 y = 0 }
- infantry = { x = 1 y = 1 }
- infantry = { x = 1 y = 2 }
- }
- priority = 0
- }
- units = {
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 5
- }
- location =319
- division_template = "Infantry Division"
- start_experience_factor = 0.3
- start_equipment_factor = 0.5
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 23
- }
- location =8624
- division_template = "Motorised Division"
- start_experience_factor = 0.2
- start_equipment_factor = 0.3
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 50
- }
- location =8624
- division_template = "Motorised Division"
- start_experience_factor = 0.2
- start_equipment_factor = 0.5
- }
- division= {
- name = "25th Army Tank Brigade"
- location =8624
- division_template = "Tank Brigade"
- start_experience_factor = 0.2
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 46
- }
- location =10163
- division_template = "Infantry Division"
- start_experience_factor = 0.2
- start_equipment_factor = 0.3
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 49
- }
- location =10163
- division_template = "Infantry Division"
- start_experience_factor = 0.2
- start_equipment_factor = 0.5
- }
- division= {
- name = "5th Cavalry Brigade"
- location =10233
- division_template = "Cavalry Brigade"
- start_experience_factor = 0.2
- start_equipment_factor = 0.5
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 4
- }
- location =243
- division_template = "Infantry Division"
- start_experience_factor = 0.3
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 12
- }
- location =10304
- division_template = "Infantry Division"
- start_experience_factor = 0.2
- start_equipment_factor = 0.3
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 44
- }
- location =10304
- division_template = "Infantry Division"
- start_experience_factor = 0.2
- start_equipment_factor = 0.5
- }
- division= {
- name = "21st Army Tank Brigade"
- location =10304
- division_template = "Tank Brigade"
- start_experience_factor = 0.2
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 18
- }
- location =3071
- division_template = "Infantry Division"
- start_experience_factor = 0.2
- start_equipment_factor = 0.3
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 54
- }
- location =3071
- division_template = "Infantry Division"
- start_experience_factor = 0.2
- start_equipment_factor = 0.5
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 38
- }
- location =280
- division_template = "Infantry Division"
- start_experience_factor = 0.2
- start_equipment_factor = 0.3
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 53
- }
- location =280
- division_template = "Infantry Division"
- start_experience_factor = 0.2
- start_equipment_factor = 0.5
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 55
- }
- location =5893
- division_template = "Motorised Division"
- start_experience_factor = 0.2
- start_equipment_factor = 0.5
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 59
- }
- location =5893
- division_template = "Motorised Division"
- start_experience_factor = 0.2
- start_equipment_factor = 0.3
- }
- division= {
- name = "23rd Army Tank Brigade"
- location =5893
- division_template = "Tank Brigade"
- start_experience_factor = 0.2
- }
- division= {
- name = "6th Cavalry Brigade"
- location =372
- division_template = "Cavalry Brigade"
- start_experience_factor = 0.2
- start_equipment_factor = 0.5
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 42
- }
- location =5829
- division_template = "Infantry Division"
- start_experience_factor = 0.2
- start_equipment_factor = 0.5
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 66
- }
- location =5829
- division_template = "Infantry Division"
- start_experience_factor = 0.2
- start_equipment_factor = 0.3
- }
- division= {
- name = "24th Army Tank Brigade"
- location =5829
- division_template = "Tank Brigade"
- start_experience_factor = 0.2
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 3
- }
- location =11748
- division_template = "Infantry Division"
- start_experience_factor = 0.3
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 1
- }
- location =11748
- division_template = "Armour Division"
- start_experience_factor = 0.3
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 43
- }
- location =3150
- division_template = "Infantry Division"
- start_experience_factor = 0.2
- start_equipment_factor = 0.5
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 45
- }
- location =3150
- division_template = "Infantry Division"
- start_experience_factor = 0.2
- start_equipment_factor = 0.3
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 48
- }
- location =5860
- division_template = "Infantry Division"
- start_experience_factor = 0.2
- start_equipment_factor = 0.5
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 61
- }
- location =5860
- division_template = "Infantry Division"
- start_experience_factor = 0.2
- start_equipment_factor = 0.3
- }
- division= {
- name = "20th Light Army Tank Brigade"
- location =8479
- division_template = "Tank Brigade"
- start_experience_factor = 0.2
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 1
- }
- location =8682
- division_template = "Infantry Division"
- start_experience_factor = 0.3
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 2
- }
- location =8682
- division_template = "Infantry Division"
- start_experience_factor = 0.3
- }
- division= {
- name = "1st Army Tank Brigade"
- location =8682
- division_template = "Tank Brigade"
- start_experience_factor = 0.3
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 9
- }
- location =3058
- division_template = "Infantry Division"
- start_experience_factor = 0.2
- start_equipment_factor = 0.3
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 51
- }
- location =3058
- division_template = "Infantry Division"
- start_experience_factor = 0.2
- start_equipment_factor = 0.5
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 15
- }
- location =8620
- division_template = "Infantry Division"
- start_experience_factor = 0.2
- start_equipment_factor = 0.3
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 52
- }
- location =8620
- division_template = "Infantry Division"
- start_experience_factor = 0.2
- start_equipment_factor = 0.5
- }
- division= {
- name = "1st London Motorised Division"
- location =5644
- division_template = "Motorised Division"
- start_experience_factor = 0.1
- start_equipment_factor = 0.3
- }
- division= {
- name = "2nd London Motorised Division"
- location =5644
- division_template = "Motorised Division"
- start_experience_factor = 0.1
- start_equipment_factor = 0.3
- }
- division= {
- name = "Northern Ireland Command"
- location =3159
- division_template = "Colonial Garrison"
- start_experience_factor = 0.1
- start_equipment_factor = 0.3
- }
- division= {
- name = "Gibraltar Command"
- location =3867
- division_template = "Colonial Garrison"
- start_experience_factor = 0.2
- start_equipment_factor = 0.3
- }
- division= {
- name = "Malta Command"
- location =10892
- division_template = "Colonial Garrison"
- start_experience_factor = 0.2
- start_equipment_factor = 0.3
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 7
- }
- location =6479
- division_template = "Infantry Division (ME)"
- start_experience_factor = 0.3
- start_equipment_factor = 0.5
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 7
- }
- location =6479
- division_template = "Armour Division"
- start_experience_factor = 0.3
- start_equipment_factor = 0.3
- }
- division= {
- name = "Cairo Area"
- location =6479
- division_template = "Colonial Garrison"
- force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
- start_experience_factor = 0.1
- start_equipment_factor = 0.3
- }
- division= {
- name = "Canal Area"
- location =1100
- division_template = "Colonial Garrison"
- force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
- start_experience_factor = 0.1
- start_equipment_factor = 0.3
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 8
- }
- location =3938
- division_template = "Infantry Division (ME)"
- start_experience_factor = 0.3
- start_equipment_factor = 0.5
- }
- division= {
- name = "Jerusalem
- Lydda Area"
- location =3938
- division_template = "Colonial Garrison"
- force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
- start_experience_factor = 0.1
- start_equipment_factor = 0.3
- }
- division= {
- name = "Aden Defense Force"
- location =11593
- division_template = "Colonial Garrison"
- force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
- start_experience_factor = 0.1
- start_equipment_factor = 0.3
- }
- division= {
- name = "British Troops in Sudan"
- location =11582
- division_template = "Colonial Garrison"
- force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
- start_experience_factor = 0.2
- start_equipment_factor = 0.3
- }
- division= {
- name = "East Africa Force"
- location =1835
- division_template = "Colonial Garrison"
- force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
- start_equipment_factor = 0.5
- }
- division= {
- name = "Northern Rhodesia Force"
- location =9971
- division_template = "Colonial Garrison"
- force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
- start_equipment_factor = 0.3
- }
- division= {
- name = "1 West African Force"
- location =1928
- division_template = "Colonial Garrison"
- force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
- start_equipment_factor = 0.15
- }
- division= {
- name = "2 West African Force"
- location =9928
- division_template = "Colonial Garrison"
- force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
- start_equipment_factor = 0.15
- }
- division= {
- name = "Ceylon Command"
- location =6725
- division_template = "Colonial Garrison"
- force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
- start_experience_factor = 0.2
- start_equipment_factor = 0.15
- }
- division= {
- name = "Singapore Fortress"
- location =11178
- division_template = "Colonial Garrison"
- start_experience_factor = 0.2
- }
- division= {
- name = "Penang Fortress"
- location =11097
- division_template = "Colonial Garrison"
- start_experience_factor = 0.2
- start_equipment_factor = 0.15
- }
- division= {
- name = "Hong Kong VDF"
- location =9241
- division_template = "Colonial Garrison"
- start_experience_factor = 0.2
- start_equipment_factor = 0.3
- }
- }
- air_wings = {
- 129 = {
- fighter_equipment_1 = { owner = "ENG" amount = 144 }
- heavy_fighter_equipment_1 = { owner = "ENG" amount = 96 }
- }
- 130 = {
- fighter_equipment_1 = { owner = "ENG" amount = 72 }
- fighter_equipment_2 = { owner = "ENG" amount = 72 }
- tac_bomber_equipment_1 = { owner = "ENG" amount = 96 }
- }
- 127 = {
- fighter_equipment_1 = { owner = "ENG" amount = 72 }
- fighter_equipment_2 = { owner = "ENG" amount = 96 }
- heavy_fighter_equipment_1 = { owner = "ENG" amount = 48 }
- nav_bomber_equipment_1 = { owner = "ENG" amount = 24 }
- }
- 131 = {
- fighter_equipment_2 = { owner = "ENG" amount = 96 }
- heavy_fighter_equipment_1 = { owner = "ENG" amount = 24 }
- }
- 125 = {
- CAS_equipment_1 = { owner = "ENG" amount = 192 }
- fighter_equipment_1 = { owner = "ENG" amount = 96 }
- CAS_equipment_2 = { owner = "ENG" amount = 112 }
- }
- 126 = {
- tac_bomber_equipment_2 = { owner = "ENG" amount = 128 }
- }
- 128 = {
- tac_bomber_equipment_2 = { owner = "ENG" amount = 128 }
- }
- 123 = {
- nav_bomber_equipment_2 = { owner = "ENG" amount = 36 }
- }
- 121 = {
- nav_bomber_equipment_2 = { owner = "ENG" amount = 36 }
- }
- 447 = {
- CAS_equipment_1 = { owner = "ENG" amount = 96 }
- fighter_equipment_0 = { owner = "ENG" amount = 48 }
- }
- 454 = {
- fighter_equipment_0 = { owner = "ENG" amount = 48 }
- }
- 454 = {
- CAS_equipment_1 = { owner = "ENG" amount = 32 }
- }
- 336 = {
- CAS_equipment_1 = { owner = "ENG" amount = 48 }
- nav_bomber_equipment_1 = { owner = "ENG" amount = 36 }
- }
- }
- instant_effect = {
- add_equipment_production = {
- equipment = {
- type = infantry_equipment_1
- creator = "ENG"
- }
- requested_factories = 7
- progress = 0.1
- efficiency = 100
- }
- add_equipment_production = {
- equipment = {
- type = support_equipment_1
- creator = "ENG"
- }
- requested_factories = 2
- progress = 0.3
- efficiency = 100
- }
- add_equipment_production = {
- equipment = {
- type = light_tank_equipment_2
- creator = "ENG"
- }
- requested_factories = 2
- progress = 0.4
- efficiency = 100
- }
- add_equipment_production = {
- equipment = {
- type = fighter_equipment_2
- creator = "ENG"
- }
- requested_factories = 1
- progress = 0.15
- efficiency = 100
- }
- add_equipment_production = {
- equipment = {
- type = strat_bomber_equipment_1
- creator = "ENG"
- }
- requested_factories = 1
- progress = 0.1
- efficiency = 100
- }
- }
+	name = "Infantry Division"
+	division_names_group = ENG_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Infantry Division (ME)"
+	division_names_group = ENG_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Motorised Division"
+	division_names_group = ENG_MOT_01
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		mot_recon = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "Armour Division"
+	division_names_group = ENG_ARM_01
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		light_armor = { x = 1 y = 2 }
+		light_armor = { x = 2 y = 0 }
+		light_armor = { x = 2 y = 1 }
+		light_armor = { x = 2 y = 2 }
+		motorized = { x = 3 y = 0 }
+		motorized = { x = 3 y = 1 }
+	}
+	support = {
+		mot_recon = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Tank Brigade"
+	division_names_group = ENG_ARM_02
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Cavalry Brigade"
+	division_names_group = ENG_CAV_02
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "Colonial Garrison"
+	division_names_group = ENG_COL_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	priority = 0
+}
+units = {
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location =319
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 23
+		}
+		location =8624
+		division_template = "Motorised Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 50
+		}
+		location =8624
+		division_template = "Motorised Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {
+		name = "25th Army Tank Brigade"
+		location =8624
+		division_template = "Tank Brigade"
+		start_experience_factor = 0.2
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 46
+		}
+		location =10163
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 49
+		}
+		location =10163
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {
+		name = "5th Cavalry Brigade"
+		location =10233
+		division_template = "Cavalry Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location =243
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 12
+		}
+		location =10304
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 44
+		}
+		location =10304
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {
+		name = "21st Army Tank Brigade"
+		location =10304
+		division_template = "Tank Brigade"
+		start_experience_factor = 0.2
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 18
+		}
+		location =3071
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 54
+		}
+		location =3071
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 38
+		}
+		location =280
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 53
+		}
+		location =280
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 55
+		}
+		location =5893
+		division_template = "Motorised Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 59
+		}
+		location =5893
+		division_template = "Motorised Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {
+		name = "23rd Army Tank Brigade"
+		location =5893
+		division_template = "Tank Brigade"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "6th Cavalry Brigade"
+		location =372
+		division_template = "Cavalry Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 42
+		}
+		location =5829
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 66
+		}
+		location =5829
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {
+		name = "24th Army Tank Brigade"
+		location =5829
+		division_template = "Tank Brigade"
+		start_experience_factor = 0.2
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location =11748
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location =11748
+		division_template = "Armour Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 43
+		}
+		location =3150
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 45
+		}
+		location =3150
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 48
+		}
+		location =5860
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 61
+		}
+		location =5860
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {
+		name = "20th Light Army Tank Brigade"
+		location =8479
+		division_template = "Tank Brigade"
+		start_experience_factor = 0.2
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location =8682
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location =8682
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		name = "1st Army Tank Brigade"
+		location =8682
+		division_template = "Tank Brigade"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location =3058
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 51
+		}
+		location =3058
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 15
+		}
+		location =8620
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 52
+		}
+		location =8620
+		division_template = "Infantry Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division= {
+		name = "1st London Motorised Division"
+		location =5644
+		division_template = "Motorised Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division= {
+		name = "2nd London Motorised Division"
+		location =5644
+		division_template = "Motorised Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division= {
+		name = "Northern Ireland Command"
+		location =3159
+		division_template = "Colonial Garrison"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division= {
+		name = "Gibraltar Command"
+		location =3867
+		division_template = "Colonial Garrison"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {
+		name = "Malta Command"
+		location =10892
+		division_template = "Colonial Garrison"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location =6479
+		division_template = "Infantry Division (ME)"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location =6479
+		division_template = "Armour Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.3
+	}
+	division= {
+		name = "Cairo Area"
+		location =6479
+		division_template = "Colonial Garrison"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division= {
+		name = "Canal Area"
+		location =1100
+		division_template = "Colonial Garrison"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location =3938
+		division_template = "Infantry Division (ME)"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+	division= {
+		name = "Jerusalem
+		Lydda Area"
+		location =3938
+		division_template = "Colonial Garrison"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division= {
+		name = "Aden Defense Force"
+		location =11593
+		division_template = "Colonial Garrison"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+	}
+	division= {
+		name = "British Troops in Sudan"
+		location =11582
+		division_template = "Colonial Garrison"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+	division= {
+		name = "East Africa Force"
+		location =1835
+		division_template = "Colonial Garrison"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
+		start_equipment_factor = 0.5
+	}
+	division= {
+		name = "Northern Rhodesia Force"
+		location =9971
+		division_template = "Colonial Garrison"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
+		start_equipment_factor = 0.3
+	}
+	division= {
+		name = "1 West African Force"
+		location =1928
+		division_template = "Colonial Garrison"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
+		start_equipment_factor = 0.15
+	}
+	division= {
+		name = "2 West African Force"
+		location =9928
+		division_template = "Colonial Garrison"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
+		start_equipment_factor = 0.15
+	}
+	division= {
+		name = "Ceylon Command"
+		location =6725
+		division_template = "Colonial Garrison"
+		force_equipment_variants = { infantry_equipment_0 = { owner = "ENG" } }
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+	}
+	division= {
+		name = "Singapore Fortress"
+		location =11178
+		division_template = "Colonial Garrison"
+		start_experience_factor = 0.2
+	}
+	division= {
+		name = "Penang Fortress"
+		location =11097
+		division_template = "Colonial Garrison"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.15
+	}
+	division= {
+		name = "Hong Kong VDF"
+		location =9241
+		division_template = "Colonial Garrison"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+	}
+}
+air_wings = {
+	129 = {
+		fighter_equipment_1 = { owner = "ENG" amount = 144 }
+		heavy_fighter_equipment_1 = { owner = "ENG" amount = 96 }
+	}
+	130 = {
+		fighter_equipment_1 = { owner = "ENG" amount = 72 }
+		fighter_equipment_2 = { owner = "ENG" amount = 72 }
+		tac_bomber_equipment_1 = { owner = "ENG" amount = 96 }
+	}
+	127 = {
+		fighter_equipment_1 = { owner = "ENG" amount = 72 }
+		fighter_equipment_2 = { owner = "ENG" amount = 96 }
+		heavy_fighter_equipment_1 = { owner = "ENG" amount = 48 }
+		nav_bomber_equipment_1 = { owner = "ENG" amount = 24 }
+	}
+	131 = {
+		fighter_equipment_2 = { owner = "ENG" amount = 96 }
+		heavy_fighter_equipment_1 = { owner = "ENG" amount = 24 }
+	}
+	125 = {
+		CAS_equipment_1 = { owner = "ENG" amount = 192 }
+		fighter_equipment_1 = { owner = "ENG" amount = 96 }
+		CAS_equipment_2 = { owner = "ENG" amount = 112 }
+	}
+	126 = {
+		tac_bomber_equipment_2 = { owner = "ENG" amount = 128 }
+	}
+	128 = {
+		tac_bomber_equipment_2 = { owner = "ENG" amount = 128 }
+	}
+	123 = {
+		nav_bomber_equipment_2 = { owner = "ENG" amount = 36 }
+	}
+	121 = {
+		nav_bomber_equipment_2 = { owner = "ENG" amount = 36 }
+	}
+	447 = {
+		CAS_equipment_1 = { owner = "ENG" amount = 96 }
+		fighter_equipment_0 = { owner = "ENG" amount = 48 }
+	}
+	454 = {
+		fighter_equipment_0 = { owner = "ENG" amount = 48 }
+	}
+	454 = {
+		CAS_equipment_1 = { owner = "ENG" amount = 32 }
+	}
+	336 = {
+		CAS_equipment_1 = { owner = "ENG" amount = 48 }
+		nav_bomber_equipment_1 = { owner = "ENG" amount = 36 }
+	}
+}
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "ENG"
+		}
+		requested_factories = 7
+		progress = 0.1
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "ENG"
+		}
+		requested_factories = 2
+		progress = 0.3
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_equipment_2
+			creator = "ENG"
+		}
+		requested_factories = 2
+		progress = 0.4
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_2
+			creator = "ENG"
+		}
+		requested_factories = 1
+		progress = 0.15
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = strat_bomber_equipment_1
+			creator = "ENG"
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 100
+	}
+}
 

@@ -1,87 +1,87 @@
 ﻿
- division_template = {
- name = "Katyusha Diviziya"
- division_names_group = SOV_MEC_01
- regiments = {
- motorized = { x = 0 y = 0 }
- motorized = { x = 0 y = 1 }
- motorized = { x = 0 y = 2 }
- motorized = { x = 0 y = 3 }
- motorized = { x = 1 y = 0 }
- motorized = { x = 1 y = 1 }
- motorized = { x = 1 y = 2 }
- motorized_rocket_brigade= { x = 2 y = 1 }
- motorized_rocket_brigade= { x = 2 y = 2 }
- motorized_rocket_brigade= { x = 2 y = 3}
- motorized_rocket_brigade= { x = 2 y = 4 }
- motorized_rocket_brigade= { x = 2 y = 0 }
- motorized_rocket_brigade= { x = 3 y = 1 }
- motorized_rocket_brigade= { x = 3 y = 2 }
- motorized_rocket_brigade= { x = 3 y = 3 }
- mot_anti_air_brigade= { x = 3 y = 4 }
- mot_anti_air_brigade= { x = 3 y = 0 }
- }
- support = {
- recon = { x = 0 y = 0 }
- engineer = { x = 0 y = 1 }
- artillery = { x = 0 y = 2 }
- logistics_company = { x = 0 y = 3 }
- signal_company = { x = 0 y = 4 }
- }
- }
- units = {
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 1}
- location =5889
- division_template = "Katyusha Diviziya"
- start_experience_factor = 0.2
- start_equipment_factor = 1
- }
- division= {
- division_name = {
- is_name_ordered = yes
- name_order = 2}
- location =5889
- division_template = "Katyusha Diviziya"
- start_experience_factor = 0.2
- start_equipment_factor = 1
- }division= {
- division_name = {
- is_name_ordered = yes
- name_order = 3}
- location =5889
- division_template = "Katyusha Diviziya"
- start_experience_factor = 0.2
- start_equipment_factor = 1
- }division= {
- division_name = {
- is_name_ordered = yes
- name_order = 4}
- location =5889
- division_template = "Katyusha Diviziya"
- start_experience_factor = 0.2
- start_equipment_factor = 1
- }division= {
- division_name = {
- is_name_ordered = yes
- name_order = 5}
- location =5889
- division_template = "Katyusha Diviziya"
- start_experience_factor = 0.2
- start_equipment_factor = 1
- }
- }
- instant_effect = {
- add_equipment_production = {
- equipment = {
- type = motorized_rocket_equipment_1
- creator = "SOV"
- }
- requested_factories = 5
- progress = 0.1
- efficiency = 50
- }
- }
+division_template = {
+	name = "Katyusha Diviziya"
+	division_names_group = SOV_MEC_01
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 0 y = 3 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		motorized_rocket_brigade= { x = 2 y = 1 }
+		motorized_rocket_brigade= { x = 2 y = 2 }
+		motorized_rocket_brigade= { x = 2 y = 3}
+		motorized_rocket_brigade= { x = 2 y = 4 }
+		motorized_rocket_brigade= { x = 2 y = 0 }
+		motorized_rocket_brigade= { x = 3 y = 1 }
+		motorized_rocket_brigade= { x = 3 y = 2 }
+		motorized_rocket_brigade= { x = 3 y = 3 }
+		mot_anti_air_brigade= { x = 3 y = 4 }
+		mot_anti_air_brigade= { x = 3 y = 0 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		signal_company = { x = 0 y = 4 }
+	}
+}
+units = {
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1}
+		location =5889
+		division_template = "Katyusha Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2}
+		location =5889
+		division_template = "Katyusha Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		}division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3}
+		location =5889
+		division_template = "Katyusha Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		}division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4}
+		location =5889
+		division_template = "Katyusha Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		}division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5}
+		location =5889
+		division_template = "Katyusha Diviziya"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+}
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = motorized_rocket_equipment_1
+			creator = "SOV"
+		}
+		requested_factories = 5
+		progress = 0.1
+		efficiency = 50
+	}
+}
 

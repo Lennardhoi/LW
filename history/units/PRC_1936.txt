@@ -1,104 +1,104 @@
 ﻿division_template = {
- name = "Juntuán"
- division_names_group = PRC_INF_01
- regiments = {
- infantry = { x = 0 y = 0 }
- infantry = { x = 0 y = 1 }
- infantry = { x = 1 y = 0 }
- infantry = { x = 1 y = 1 }
- }
- priority = 0
- }
- division_template = {
- name = "Renmin Jundui"
- division_names_group = PRC_GAR_01
- regiments = {
- infantry = { x = 0 y = 0 }
- infantry = { x = 0 y = 1 }
- infantry = { x = 1 y = 0 }
- infantry = { x = 1 y = 1 }
- infantry = { x = 2 y = 0 }
- infantry = { x = 2 y = 1 }
- }
- priority = 1
- }
- units = {
- division = {
- name = "115 Bubing Shi"
- location =4652
- division_template = "Juntuán"
- start_experience_factor = 0.3
- start_equipment_factor = 0.8
- }
- division = {
- name = "120 Bubing Shi"
- location =6673
- division_template = "Juntuán"
- start_experience_factor = 0.3
- start_equipment_factor = 0.8
- }
- division = {
- name = "129 Bubing Shi"
- location =482
- division_template = "Juntuán"
- start_experience_factor = 0.3
- start_equipment_factor = 0.8
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 1
- }
- location =11040
- division_template = "Renmin Jundui"
- start_equipment_factor = 0.5
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 2
- }
- location =9844
- division_template = "Renmin Jundui"
- start_equipment_factor = 0.5
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 3
- }
- location =9844
- division_template = "Renmin Jundui"
- start_equipment_factor = 0.5
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 4
- }
- location =7417
- division_template = "Renmin Jundui"
- start_equipment_factor = 0.5
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 5
- }
- location =7417
- division_template = "Renmin Jundui"
- start_equipment_factor = 0.5
- }
- }
- instant_effect = {
- add_equipment_production = {
- equipment = {
- type = infantry_equipment_0
- creator = "PRC"
- }
- requested_factories = 2
- progress = 0.33
- efficiency = 100
- }
- }
+	name = "Juntuán"
+	division_names_group = PRC_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	priority = 0
+}
+division_template = {
+	name = "Renmin Jundui"
+	division_names_group = PRC_GAR_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	priority = 1
+}
+units = {
+	division = {
+		name = "115 Bubing Shi"
+		location =4652
+		division_template = "Juntuán"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "120 Bubing Shi"
+		location =6673
+		division_template = "Juntuán"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "129 Bubing Shi"
+		location =482
+		division_template = "Juntuán"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location =11040
+		division_template = "Renmin Jundui"
+		start_equipment_factor = 0.5
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location =9844
+		division_template = "Renmin Jundui"
+		start_equipment_factor = 0.5
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location =9844
+		division_template = "Renmin Jundui"
+		start_equipment_factor = 0.5
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location =7417
+		division_template = "Renmin Jundui"
+		start_equipment_factor = 0.5
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location =7417
+		division_template = "Renmin Jundui"
+		start_equipment_factor = 0.5
+	}
+}
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "PRC"
+		}
+		requested_factories = 2
+		progress = 0.33
+		efficiency = 100
+	}
+}
 

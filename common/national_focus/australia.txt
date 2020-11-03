@@ -1,2333 +1,2333 @@
 focus_tree = {
-  id = australian_focus
-  country = {
-  factor = 0
-  modifier = {
-  add = 10
-  tag = AST
-  has_dlc = "Together for Victory"
-  }
-  }
-  default = no
-  continuous_focus_position = { x = 50 y = 1000 }
-  focus = {
-  id = AST_additional_militia_training
-  icon = GFX_goal_generic_allies_build_infantry
-  x = 2
-  y = 0
-  cost = 10
-  ai_will_do = {
-  factor = 1
-  }
-  available = {
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = yes
-  search_filters = { FOCUS_FILTER_RESEARCH }
-  completion_reward = {
-  army_experience = 5
-  add_tech_bonus = {
-  name = AST_additional_militia_training
-  bonus = 1.0
-  uses = 1
-  category = land_doctrine
-  }
-  }
-  }
-  focus = {
-  id = AST_royal_australian_artillery
-  icon = GFX_goal_generic_army_artillery2
-  prerequisite = { focus = AST_additional_militia_training }
-  x = -1
-  y = 1
-  relative_position_id = AST_additional_militia_training
-  cost = 10
-  ai_will_do = {
-  factor = 1
-  }
-  available = {
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = yes
-  search_filters = { FOCUS_FILTER_RESEARCH }
-  completion_reward = {
-  add_tech_bonus = {
-  name = AST_royal_australian_artillery
-  bonus = 1.0
-  uses = 1
-  category = artillery
-  }
-  }
-  }
-  focus = {
-  id = AST_promote_reservists
-  icon = GFX_goal_generic_army_doctrines
-  prerequisite = { focus = AST_additional_militia_training }
-  x = 1
-  y = 1
-  relative_position_id = AST_additional_militia_training
-  cost = 10
-  ai_will_do = {
-  factor = 1
-  }
-  available = {
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = yes
-  search_filters = { FOCUS_FILTER_RESEARCH }
-  completion_reward = {
-  army_experience = 5
-  add_tech_bonus = {
-  name = AST_promote_reservists
-  bonus = 1.0
-  uses = 1
-  category = land_doctrine
-  }
-  custom_effect_tooltip = AST_new_general_tt
-  hidden_effect = {
-  create_corps_commander = {
-  name = "Iven Mackay"
-  gfx = "GFX_AST_iven_mackay"
-  traits = { }
-  skill = 3
-  attack_skill = 2
-  defense_skill = 2
-  planning_skill = 3
-  logistics_skill = 3
-  }
-  }
-  }
-  }
-  focus = {
-  id = AST_daimler_dingo
-  icon = GFX_goal_generic_army_motorized
-  prerequisite = { focus = AST_royal_australian_artillery }
-  x = -2
-  y = 2
-  relative_position_id = AST_additional_militia_training
-  cost = 10
-  ai_will_do = {
-  factor = 1
-  }
-  available = {
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = no
-  search_filters = { FOCUS_FILTER_RESEARCH }
-  completion_reward = {
-  add_tech_bonus = {
-  name = motorized_bonus
-  bonus = 1.00
-  category = motorized_equipment
-  }
-  }
-  }
-  focus = {
-  id = AST_hmas_assault
-  icon = GFX_goal_generic_army_doctrines
-  prerequisite = { focus = AST_royal_australian_artillery focus = AST_promote_reservists }
-  x = 0
-  y = 2
-  relative_position_id = AST_additional_militia_training
-  cost = 10
-  ai_will_do = {
-  factor = 1
-  }
-  available = {
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = yes
-  search_filters = { FOCUS_FILTER_RESEARCH }
-  completion_reward = {
-  army_experience = 5
-  add_tech_bonus = {
-  name = AST_hmas_assault
-  bonus = 1.0
-  uses = 1
-  category = land_doctrine
-  }
-  add_tech_bonus = {
-  name = AST_hmas_assault
-  bonus = 1.0
-  uses = 1
-  category = marine_tech
-  }
-  }
-  }
-  focus = {
-  id = AST_specialize_equipment
-  icon = GFX_goal_generic_army_artillery
-  prerequisite = { focus = AST_promote_reservists }
-  x = 2
-  y = 2
-  relative_position_id = AST_additional_militia_training
-  cost = 10
-  ai_will_do = {
-  factor = 1
-  }
-  available = {
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = yes
-  search_filters = { FOCUS_FILTER_RESEARCH }
-  completion_reward = {
-  add_tech_bonus = {
-  name = AST_specialize_equipment
-  bonus = 1.0
-  uses = 1
-  category = infantry_weapons
-  category = artillery
-  }add_tech_bonus = {
-  name = rocketry
-  bonus = 1.0
-  uses = 1
-  category = rocketry
-  }
-  }
-  }
-  focus = {
-  id = AST_australian_womens_army_service
-  icon = GFX_goal_generic_allies_build_infantry
-  prerequisite = { focus = AST_hmas_assault }
-  x = -1
-  y = 3
-  relative_position_id = AST_additional_militia_training
-  cost = 10
-  ai_will_do = {
-  factor = 1
-  }
-  available = {
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = no
-  search_filters = { FOCUS_FILTER_MANPOWER }
-  completion_reward = {
-  add_ideas = AST_australian_womens_army_service
-  }
-  }
-  focus = {
-  id = AST_australian_army_catering_corps
-  icon = GFX_goal_generic_consumer_goods
-  prerequisite = { focus = AST_hmas_assault }
-  x = 0
-  y = 4
-  relative_position_id = AST_additional_militia_training
-  cost = 10
-  ai_will_do = {
-  factor = 1
-  }
-  available = {
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = yes
-  search_filters = { FOCUS_FILTER_RESEARCH  }
-  completion_reward = {
-  add_tech_bonus = {
-  name = AST_fund_owen_gun_research
-  bonus = 3.0
-  uses = 1
-  technology = tech_logistics_company
-  technology = tech_logistics_company2
-  technology = tech_logistics_company3
-  technology = tech_logistics_company4
-  }
-  }
-  }
-  focus = {
-  id = AST_fund_owen_gun_research
-  icon = GFX_goal_generic_small_arms
-  prerequisite = { focus = AST_hmas_assault }
-  x = 1
-  y = 3
-  relative_position_id = AST_additional_militia_training
-  cost = 10
-  ai_will_do = {
-  factor = 1
-  }
-  available = {
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = yes
-  search_filters = { FOCUS_FILTER_RESEARCH  }
-  completion_reward = {
-  add_tech_bonus = {
-  name = AST_fund_owen_gun_research
-  bonus = 1.0
-  uses = 1
-  category = infantry_weapons
-  }
-  }
-  }
-  focus = {
-  id = AST_sentinel_tank_project
-  icon = GFX_goal_generic_army_tanks
-  prerequisite = { focus = AST_daimler_dingo }
-  x = -2
-  y = 4
-  relative_position_id = AST_additional_militia_training
-  cost = 10
-  ai_will_do = {
-  factor = 1
-  }
-  available = {
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = no
-  search_filters = { FOCUS_FILTER_RESEARCH  }
-  completion_reward = {
-  add_tech_bonus = {
-  name = AST_sentinel_tank_project
-  bonus = 1.0
-  uses = 2
-  category = armor
-  }
-  }
-  }
-  focus = {
-  id = AST_airborne_defence
-  icon = GFX_goal_generic_special_forces
-  prerequisite = { focus = AST_specialize_equipment }
-  prerequisite = { focus = AST_volunteer_air_observers_corps }
-  x = 2
-  y = 4
-  relative_position_id = AST_additional_militia_training
-  cost = 10
-  ai_will_do = {
-  factor = 1
-  }
-  available = {
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = yes
-  search_filters = { FOCUS_FILTER_RESEARCH  }
-  completion_reward = {
-  add_tech_bonus = {
-  name = AST_airborne_defence
-  bonus = 3.0
-  uses = 1
-  category = para_tech
-  }
-  }
-  }
-  focus = {
-  id = AST_introduce_unconventional_warfare
-  icon = GFX_goal_generic_army_doctrines
-  prerequisite = { focus = AST_sentinel_tank_project focus = AST_airborne_defence }
-  x = 0
-  y = 5
-  relative_position_id = AST_additional_militia_training
-  cost = 10
-  ai_will_do = {
-  factor = 1
-  }
-  available = {
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = yes
-  search_filters = { FOCUS_FILTER_RESEARCH  }
-  completion_reward = {
-  army_experience = 5
-  add_tech_bonus = {
-  name = AST_introduce_unconventional_warfare
-  bonus = 1.0
-  uses = 1
-  category = land_doctrine
-  }
-  }
-  }
-  focus = {
-  id = AST_z_special_unit
-  icon = GFX_goal_generic_amphibious_assault
-  prerequisite = { focus = AST_introduce_unconventional_warfare }
-  x = -1
-  y = 6
-  relative_position_id = AST_additional_militia_training
-  cost = 10
-  ai_will_do = {
-  factor = 1
-  }
-  available = {
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = yes
-  search_filters = { FOCUS_FILTER_RESEARCH  }
-  completion_reward = {
-  add_tech_bonus = {
-  name = AST_z_special_unit
-  bonus = 3.0
-  uses = 1
-  category = marine_tech
-  category = para_tech
-  }
-  }
-  }
-  focus = {
-  id = AST_m_special_unit
-  icon = GFX_goal_generic_special_forces
-  prerequisite = { focus = AST_introduce_unconventional_warfare }
-  x = 1
-  y = 6
-  relative_position_id = AST_additional_militia_training
-  cost = 10
-  ai_will_do = {
-  factor = 1
-  }
-  available = {
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = yes
-  search_filters = { FOCUS_FILTER_RESEARCH  }
-  completion_reward = {
-  add_tech_bonus = {
-  name = AST_m_special_unit
-  bonus = 1.0
-  ahead_reduction = 2
-  uses = 1
-  technology = tech_recon
-  technology = tech_recon2
-  technology = tech_recon3
-  technology = tech_recon4
-  }
-  }
-  }
-  focus = {
-  id = AST_expand_the_raaf
-  icon = GFX_goal_generic_build_airforce
-  x = 7
-  y = 0
-  cost = 5
-  ai_will_do = {
-  factor = 1
-  }
-  available = {
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = no
-  search_filters = { FOCUS_FILTER_RESEARCH  }
-  complete_tooltip = {
-  }
-  completion_reward = {
-  air_experience = 25
-  random_owned_controlled_state = {
-  limit = {
-  free_building_slots = {
-  building = air_base
-  size > 3
-  }
-  }
-  prioritize = {447}
-  add_building_construction = {
-  type = air_base
-  level = 4
-  instant_build = yes
-  }
-  set_state_flag = AST_expand_the_raaf_AB
-  }
-  add_tech_bonus = {
-  name = AST_expand_the_raaf
-  bonus = 1.0
-  uses = 1
-  category = air_doctrine
-  }
-  }
-  }
-  focus = {
-  id = AST_cac_boomerang
-  icon = GFX_goal_generic_air_fighter
-  prerequisite = { focus = AST_expand_the_raaf }
-  x = -1
-  y = 1
-  relative_position_id = AST_expand_the_raaf
-  cost = 10
-  ai_will_do = {
-  factor = 1
-  }
-  available = {
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = no
-  search_filters = { FOCUS_FILTER_RESEARCH  }
-  completion_reward = {
-  add_tech_bonus = {
-  name = AST_cac_boomerang
-  bonus = 0.5
-  uses = 1
-  technology = early_fighter
-  technology = fighter1
-  technology = fighter2
-  }
-  }
-  }
-  focus = {
-  id = AST_expand_northern_presence
-  icon = GFX_goal_generic_air_doctrine
-  prerequisite = { focus = AST_expand_the_raaf }
-  x = 0
-  y = 2
-  relative_position_id = AST_expand_the_raaf
-  cost = 5
-  ai_will_do = {
-  factor = 1
-  }
-  available = {
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = no
-  search_filters = { FOCUS_FILTER_RESEARCH  }
-  complete_tooltip = {
-  }
-  completion_reward = {
-  air_experience = 25
-  random_owned_controlled_state = {
-  prioritize = { 448 }
-  limit = {
-  free_building_slots = {
-  building = air_base
-  size > 3
-  }
-  }
-  add_building_construction = {
-  type = air_base
-  level = 4
-  instant_build = yes
-  }
-  set_state_flag = AST_expand_the_raaf_AB
-  }
-  add_tech_bonus = {
-  name = AST_expand_northern_presence
-  bonus = 1.0
-  uses = 1
-  category = air_doctrine
-  }
-  }
-  }
-  focus = {
-  id = AST_cac_woomera
-  icon = GFX_goal_generic_air_bomber
-  prerequisite = { focus = AST_expand_the_raaf }
-  relative_position_id = AST_expand_the_raaf
-  x = 1
-  y = 1
-  cost = 10
-  ai_will_do = {
-  factor = 1
-  }
-  available = {
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = no
-  search_filters = { FOCUS_FILTER_RESEARCH  }
-  completion_reward = {
-  add_tech_bonus = {
-  name = AST_cac_woomera
-  bonus = 3.0
-  uses = 1
-  category = tactical_bomber
-  category = naval_air
-  }
-  }
-  }
-  focus = {
-  id = AST_volunteer_air_observers_corps
-  icon = GFX_goal_generic_radar
-  prerequisite = { focus = AST_cac_boomerang focus = AST_expand_northern_presence }
-  relative_position_id = AST_expand_the_raaf
-  x = -1
-  y = 3
-  cost = 5
-  ai_will_do = {
-  factor = 1
-  }
-  available = {
-  has_tech = radio
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = no
-  complete_tooltip = {
-  }
-  completion_reward = {
-  add_tech_bonus = {
-  name = AST_volunteer_air_observers_corps
-  bonus = 1.0
-  uses = 1
-  category = radar_tech
-  }
-  if = {
-  limit = { has_tech = radio_detection }
-  450 = {
-  add_building_construction = {
-  type = radar_station
-  level = 4
-  instant_build = yes
-  }
-  set_state_flag = AST_volunteer_air_observers_corps_radar1
-  }
-  448 = {
-  add_building_construction = {
-  type = radar_station
-  level = 4
-  instant_build = yes
-  }
-  set_state_flag = AST_volunteer_air_observers_corps_radar2
-  }
-  447 = {
-  add_building_construction = {
-  type = radar_station
-  level = 4
-  instant_build = yes
-  }
-  set_state_flag = AST_volunteer_air_observers_corps_radar3
-  }
-  else = {
-  set_technology = {
-  radio_detection = 1
-  }
-  448 = {
-  add_building_construction = {
-  type = radar_station
-  level = 4
-  instant_build = yes
-  }
-  set_state_flag = AST_volunteer_air_observers_corps_radar1
-  }
-  447 = {
-  add_building_construction = {
-  type = radar_station
-  level = 4
-  instant_build = yes
-  }
-  set_state_flag = AST_volunteer_air_observers_corps_radar2
-  }
-  450 = {
-  add_building_construction = {
-  type = radar_station
-  level = 4
-  instant_build = yes
-  }
-  set_state_flag = AST_volunteer_air_observers_corps_radar3
-  }
-  }
-  }
-  }
-  }
-  focus = {
-  id = AST_naval_bombers
-  icon = GFX_goal_generic_air_naval_bomber
-  prerequisite = { focus = AST_cac_woomera }
-  x = 1
-  y = 3
-  relative_position_id = AST_expand_the_raaf
-  cost = 10
-  ai_will_do = {
-  factor = 1
-  }
-  available = {
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = no
-  search_filters = { FOCUS_FILTER_RESEARCH  }
-  completion_reward = {
-  add_tech_bonus = {
-  name = AST_naval_bombers
-  bonus = 1.0
-  ahead_reduction = 2
-  uses = 1
-  category = naval_bomber
-  }
-  }
-  }
-  focus = {
-  id = AST_death_from_down_under
-  icon = GFX_goal_generic_CAS
-  prerequisite = { focus = AST_volunteer_air_observers_corps }
-  x = -1
-  y = 5
-  relative_position_id = AST_expand_the_raaf
-  cost = 10
-  ai_will_do = {
-  factor = 1
-  }
-  available = {
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = no
-  search_filters = { FOCUS_FILTER_RESEARCH  }
-  complete_tooltip = {
-  air_experience = 25
-  random_state = {
-  limit = {
-  has_state_flag = AST_death_from_down_under_AB
-  }
-  add_building_construction = {
-  type = air_base
-  level = 2
-  instant_build = yes
-  }
-  }
-  random_state = {
-  limit = {
-  has_state_flag = AST_death_from_down_under_AA1
-  }
-  add_building_construction = {
-  type = anti_air_building
-  level = 2
-  instant_build = yes
-  }
-  }
-  random_state = {
-  limit = {
-  has_state_flag = AST_death_from_down_under_AA2
-  }
-  add_building_construction = {
-  type = anti_air_building
-  level = 2
-  instant_build = yes
-  }
-  }
-  random_state = {
-  limit = {
-  has_state_flag = AST_death_from_down_under_AA3
-  }
-  add_building_construction = {
-  type = anti_air_building
-  level = 2
-  instant_build = yes
-  }
-  }
-  add_tech_bonus = {
-  name = AST_death_from_down_under
-  bonus = 1.0
-  uses = 1
-  category = air_doctrine
-  }
-  }
-  completion_reward = {
-  air_experience = 25
-  random_owned_controlled_state = {
-  limit = {
-  free_building_slots = {
-  building = air_base
-  size > 1
-  }
-  }
-  add_building_construction = {
-  type = air_base
-  level = 2
-  instant_build = yes
-  }
-  set_state_flag = AST_death_from_down_under_AB
-  }
-  random_owned_controlled_state = {
-  limit = {
-  is_in_home_area = yes
-  free_building_slots = {
-  building = anti_air_building
-  size > 1
-  }
-  }
-  add_building_construction = {
-  type = anti_air_building
-  level = 2
-  instant_build = yes
-  }
-  set_state_flag = AST_death_from_down_under_AA1
-  }
-  random_owned_controlled_state = {
-  limit = {
-  is_in_home_area = yes
-  free_building_slots = {
-  building = anti_air_building
-  size > 1
-  }
-  }
-  add_building_construction = {
-  type = anti_air_building
-  level = 2
-  instant_build = yes
-  }
-  set_state_flag = AST_death_from_down_under_AA2
-  }
-  random_owned_controlled_state = {
-  limit = {
-  is_in_home_area = yes
-  free_building_slots = {
-  building = anti_air_building
-  size > 1
-  }
-  }
-  add_building_construction = {
-  type = anti_air_building
-  level = 2
-  instant_build = yes
-  }
-  set_state_flag = AST_death_from_down_under_AA3
-  }
-  add_tech_bonus = {
-  name = AST_death_from_down_under
-  bonus = 1.0
-  uses = 1
-  category = air_doctrine
-  }
-  }
-  }
-  focus = {
-  id = AST_womens_auxilliary_australian_air_force
-  icon = GFX_goal_generic_build_airforce
-  prerequisite = { focus = AST_volunteer_air_observers_corps focus = AST_naval_bombers }
-  x = 0
-  y = 4
-  relative_position_id = AST_expand_the_raaf
-  cost = 10
-  ai_will_do = {
-  factor = 1
-  }
-  available = {
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = yes
-  search_filters = {  }
-  completion_reward = {
-  air_experience = 50
-  set_rule = {
-  can_generate_female_aces = yes
-  }
-  }
-  }
-  focus = {
-  id = AST_dominate_the_skies
-  icon = GFX_goal_generic_air_doctrine
-  prerequisite = { focus = AST_womens_auxilliary_australian_air_force }
-  x = 1
-  y = 5
-  relative_position_id = AST_expand_the_raaf
-  cost = 10
-  ai_will_do = {
-  factor = 1
-  }
-  available = {
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = no
-  search_filters = { FOCUS_FILTER_RESEARCH  }
-  complete_tooltip = {
-  air_experience = 25
-  random_state = {
-  limit = {
-  has_state_flag = AST_dominate_the_skies_AB
-  }
-  add_building_construction = {
-  type = air_base
-  level = 2
-  instant_build = yes
-  }
-  }
-  add_tech_bonus = {
-  name = AST_dominate_the_skies
-  bonus = 1.0
-  uses = 1
-  category = air_doctrine
-  }
-  }
-  completion_reward = {
-  air_experience = 25
-  random_owned_controlled_state = {
-  limit = {
-  free_building_slots = {
-  building = air_base
-  size > 1
-  }
-  }
-  add_building_construction = {
-  type = air_base
-  level = 2
-  instant_build = yes
-  }
-  set_state_flag = AST_dominate_the_skies_AB
-  }
-  add_tech_bonus = {
-  name = AST_expand_the_raaf
-  bonus = 1.0
-  uses = 1
-  category = air_doctrine
-  }
-  }
-  }
-  focus = {
-  id = AST_cockatoo_island_shipyards
-  icon = GFX_goal_generic_construct_naval_dockyard
-  x = 11
-  y = 0
-  cost = 5
-  ai_will_do = {
-  factor = 1
-  }
-  available = {
-  any_state = {
-  is_coastal = yes
-  is_controlled_by = ROOT
-  }
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = no
-  search_filters = {  FOCUS_FILTER_INDUSTRY }
-  complete_tooltip = {
-  navy_experience = 25
-  random_state = {
-  limit = {
-  has_state_flag = AST_cockatoo_island_shipyards_DY
-  }
-  add_extra_state_shared_building_slots = 3
-  add_building_construction = {
-  type = dockyard
-  level = 3
-  instant_build = yes
-  }
-  }
-  }
-  completion_reward = {
-  navy_experience = 25
-  444={add_building_construction = {
-  type = naval_base
-  level = 20
-  province=7213
-  instant_build = yes
-  }}
-  random_owned_controlled_state = {
-  prioritize = { 273 }
-  limit = {
-  is_coastal = yes
-  free_building_slots = {
-  building = dockyard
-  size > 2
-  include_locked = yes
-  }
-  not = { state = 593 }
-  }
-  add_extra_state_shared_building_slots = 3
-  add_building_construction = {
-  type = dockyard
-  level = 3
-  instant_build = yes
-  }
-  set_state_flag = AST_cockatoo_island_shipyards_DY
-  }
-  }
-  }
-  focus = {
-  id = AST_protect_overseas_commerce
-  icon = GFX_goal_generic_navy_doctrines_tactics
-  prerequisite = { focus = AST_cockatoo_island_shipyards }
-  mutually_exclusive = { focus = AST_fly_the_jolly_roger }
-  x = -1
-  y = 1
-  relative_position_id = AST_cockatoo_island_shipyards
-  cost = 5
-  ai_will_do = {
-  factor = 1
-  }
-  available = {
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = yes
-  search_filters = { FOCUS_FILTER_RESEARCH  }
-  completion_reward = {
-  add_tech_bonus = {
-  name = AST_protect_overseas_commerce
-  bonus = 1.0
-  uses = 2
-  category = fleet_in_being_tree
-  category = convoy_defense_tree
-  }
-  }
-  }
-  focus = {
-  id = AST_fly_the_jolly_roger
-  icon = GFX_goal_generic_navy_submarine
-  prerequisite = { focus = AST_cockatoo_island_shipyards }
-  mutually_exclusive = { focus = AST_protect_overseas_commerce }
-  x = 1
-  y = 1
-  relative_position_id = AST_cockatoo_island_shipyards
-  cost = 5
-  ai_will_do = {
-  factor = 1
-  }
-  available = {
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = yes
-  search_filters = { FOCUS_FILTER_RESEARCH  }
-  completion_reward = {
-  add_tech_bonus = {
-  name = AST_fly_the_jolly_roger
-  bonus = 1.0
-  uses = 2
-  category = submarine_doctrine
-  }
-  }
-  }
-  focus = {
-  id = AST_scrap_iron_flotilla
-  icon = GFX_goal_generic_navy_cruiser
-  prerequisite = { focus = AST_protect_overseas_commerce focus = AST_fly_the_jolly_roger }
-  x = -1
-  y = 2
-  relative_position_id = AST_cockatoo_island_shipyards
-  cost = 5
-  ai_will_do = {
-  factor = 1
-  }
-  available = {
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = no
-  search_filters = { FOCUS_FILTER_RESEARCH  }
-  completion_reward = {
-  add_tech_bonus = {
-  name = AST_scrap_iron_flotilla
-  bonus = 1.0
-  ahead_reduction = 2
-  uses = 1
-  category = dd_tech
-  }
-  }
-  }
-  focus = {
-  id = AST_royal_australian_submarine_service
-  icon = GFX_goal_generic_wolf_pack
-  prerequisite = { focus = AST_protect_overseas_commerce focus = AST_fly_the_jolly_roger }
-  x = 1
-  y = 2
-  relative_position_id = AST_cockatoo_island_shipyards
-  cost = 5
-  ai_will_do = {
-  factor = 1
-  }
-  available = {
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = no
-  search_filters = { FOCUS_FILTER_RESEARCH  }
-  completion_reward = {
-  add_tech_bonus = {
-  name = AST_royal_australian_submarine_service
-  bonus = 1.0
-  ahead_reduction = 2
-  uses = 1
-  category = ss_tech
-  }
-  }
-  }
-  focus = {
-  id = AST_naval_auxiliary_patrol
-  icon = GFX_goal_generic_fortify_city
-  prerequisite = { focus = AST_royal_australian_submarine_service focus = AST_scrap_iron_flotilla }
-  x = 0
-  y = 3
-  relative_position_id = AST_cockatoo_island_shipyards
-  cost = 5
-  ai_will_do = {
-  factor = 1
-  }
-  available = {
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = no
-  search_filters = {  }
-  completion_reward = {
-  add_ideas = AST_naval_auxiliary_patrol
-  }
-  }
-  focus = {
-  id = AST_cruisers
-  icon = GFX_goal_generic_navy_battleship
-  prerequisite = { focus = AST_naval_auxiliary_patrol }
-  x = -1
-  y = 4
-  relative_position_id = AST_cockatoo_island_shipyards
-  cost = 5
-  ai_will_do = {
-  factor = 1
-  }
-  available = {
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = no
-  search_filters = { FOCUS_FILTER_RESEARCH  }
-  completion_reward = {
-  add_tech_bonus = {
-  name = AST_cruisers
-  bonus = 1.0
-  ahead_reduction = 2
-  uses = 1
-  category = cl_tech
-  category = ca_tech
-  }
-  }
-  }
-  focus = {
-  id = AST_pacific_area_navy
-  icon = GFX_goal_generic_navy_doctrines_tactics
-  prerequisite = { focus = AST_naval_auxiliary_patrol }
-  x = 1
-  y = 4
-  relative_position_id = AST_cockatoo_island_shipyards
-  cost = 5
-  ai_will_do = {
-  factor = 1
-  }
-  available = {
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = yes
-  search_filters = { FOCUS_FILTER_RESEARCH  }
-  completion_reward = {
-  add_tech_bonus = {
-  name = AST_pacific_area_navy
-  bonus = 1.0
-  uses = 1
-  category = naval_doctrine
-  }
-  }
-  }
-  focus = {
-  id = AST_standard_gauge_railway
-  icon = GFX_goal_generic_construct_infrastructure
-  x = 14
-  y = 0
-  cost = 5
-  ai_will_do = {
-  factor = 4
-  }
-  available = {
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = no
-  search_filters = { FOCUS_FILTER_INDUSTRY }
-  complete_tooltip = {
-  447 = {
-  add_building_construction = {
-  type = infrastructure
-  level = 3
-  instant_build = yes
-  }
-  }
-  }
-  completion_reward = {
-  447 = {
-  add_building_construction = {
-  type = infrastructure
-  level = 3
-  instant_build = yes
-  }
-  }
-  }
-  }
-  focus = {
-  id = AST_industries_assistance_corporation
-  icon = GFX_goal_generic_production
-  x = 2
-  y = 0
-  relative_position_id = AST_standard_gauge_railway
-  cost = 10
-  ai_will_do = {
-  factor = 5
-  }
-  available = {
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = yes
-  search_filters = { FOCUS_FILTER_RESEARCH }
-  completion_reward = {
-  add_tech_bonus = {
-  name = industrial_bonus
-  bonus = 1.0
-  uses = 1
-  category = industry
-  }
-  }
-  }
-  focus = {
-  id = AST_western_australian_government_railways
-  icon = GFX_goal_generic_construct_infrastructure
-  prerequisite = { focus = AST_standard_gauge_railway }
-  prerequisite = { focus = AST_industries_assistance_corporation }
-  x = 1
-  y = 1
-  relative_position_id = AST_standard_gauge_railway
-  cost = 5
-  ai_will_do = {
-  factor = 5
-  }
-  available = {
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = no
-  search_filters = { FOCUS_FILTER_INDUSTRY }
-  complete_tooltip = {
-  448 = {
-  add_building_construction = {
-  type = infrastructure
-  level = 3
-  instant_build = yes
-  }
-  }
-  }
-  completion_reward = {
-  448 = {
-  add_building_construction = {
-  type = infrastructure
-  level = 3
-  instant_build = yes
-  }
-  }
-  }
-  }
-  focus = {
-  id = AST_south_australian_housing_trust
-  icon = GFX_goal_generic_construct_civ_factory
-  prerequisite = { focus = AST_western_australian_government_railways }
-  x = 0
-  y = 2
-  relative_position_id = AST_standard_gauge_railway
-  cost = 10
-  ai_will_do = {
-  factor = 5
-  }
-  available = {
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = no
-  search_filters = { FOCUS_FILTER_INDUSTRY }
-  complete_tooltip = {
-  random_state = {
-  limit = {
-  has_state_flag = AST_south_australian_housing_trust_IC
-  }
-  add_extra_state_shared_building_slots = 2
-  add_building_construction = {
-  type = industrial_complex
-  level = 2
-  instant_build = yes
-  }
-  }
-  }
-  completion_reward = {
-  random_owned_controlled_state = {
-  prioritize = { 446 }
-  limit = {
-  free_building_slots = {
-  building = industrial_complex
-  size > 1
-  include_locked = yes
-  }
-  not = { state = 593 }
-  }
-  add_extra_state_shared_building_slots = 4
-  add_building_construction = {
-  type = industrial_complex
-  level = 4
-  instant_build = yes
-  }
-  set_state_flag = AST_south_australian_housing_trust_IC
-  }
-  }
-  }
-  focus = {
-  id = AST_department_of_supply_and_development
-  icon = GFX_goal_generic_construct_mil_factory
-  prerequisite = { focus = AST_western_australian_government_railways }
-  x = 2
-  y = 2
-  relative_position_id = AST_standard_gauge_railway
-  cost = 5
-  ai_will_do = {
-  factor = 5
-  }
-  available = {
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = no
-  search_filters = { FOCUS_FILTER_INDUSTRY }
-  complete_tooltip = {
-  random_state = {
-  limit = {
-  has_state_flag = AST_department_of_supply_and_development_AF
-  }
-  add_extra_state_shared_building_slots = 1
-  add_building_construction = {
-  type = arms_factory
-  level = 1
-  instant_build = yes
-  }
-  }
-  }
-  completion_reward = {
-  random_owned_controlled_state = {
-  prioritize = { 273 444 }
-  limit = {
-  free_building_slots = {
-  building = arms_factory
-  size > 0
-  include_locked = yes
-  }
-  not = { state = 593 }
-  }
-  add_extra_state_shared_building_slots = 1
-  add_building_construction = {
-  type = arms_factory
-  level = 1
-  instant_build = yes
-  }
-  set_state_flag = AST_department_of_supply_and_development_AF
-  }
-  }
-  }
-  focus = {
-  id = AST_expand_lithgow_small_arms_factory
-  icon = GFX_goal_generic_construct_mil_factory
-  prerequisite = { focus = AST_south_australian_housing_trust }
-  x = 0
-  y = 3
-  relative_position_id = AST_standard_gauge_railway
-  cost = 10
-  ai_will_do = {
-  factor = 5
-  }
-  available = {
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = no
-  search_filters = { FOCUS_FILTER_INDUSTRY }
-  complete_tooltip = {
-  random_state = {
-  limit = {
-  has_state_flag = AST_expand_lithgow_small_arms_factory_AF
-  }
-  add_extra_state_shared_building_slots = 2
-  add_building_construction = {
-  type = arms_factory
-  level = 1
-  instant_build = yes
-  }
-  }
-  }
-  completion_reward = {
-  random_owned_controlled_state = {
-  prioritize = { 273 }
-  limit = {
-  free_building_slots = {
-  building = arms_factory
-  size > 1
-  include_locked = yes
-  }
-  not = { state = 593 }
-  }
-  add_extra_state_shared_building_slots = 2
-  add_building_construction = {
-  type = arms_factory
-  level = 2
-  instant_build = yes
-  }
-  set_state_flag = AST_expand_lithgow_small_arms_factory_AF
-  }
-  }
-  }
-  focus = {
-  id = AST_allied_works_council
-  icon = GFX_goal_generic_production2
-  prerequisite = { focus = AST_department_of_supply_and_development }
-  prerequisite = { focus = AST_civil_construction_corps }
-  x = 2
-  y = 3
-  relative_position_id = AST_standard_gauge_railway
-  cost = 10
-  ai_will_do = {
-  factor = 5
-  }
-  available = {
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = no
-  search_filters = { FOCUS_FILTER_INDUSTRY }
-  complete_tooltip = {
-  random_state = {
-  limit = {
-  has_state_flag = AST_allied_works_council_IC1
-  }
-  add_extra_state_shared_building_slots = 2
-  add_building_construction = {
-  type = industrial_complex
-  level = 2
-  instant_build = yes
-  }
-  }
-  random_state = {
-  limit = {
-  has_state_flag = AST_allied_works_council_IC2
-  }
-  add_extra_state_shared_building_slots = 2
-  add_building_construction = {
-  type = industrial_complex
-  level = 2
-  instant_build = yes
-  }
-  }
-  }
-  completion_reward = {
-  random_owned_controlled_state = {
-  limit = {
-  is_in_home_area = yes
-  free_building_slots = {
-  building = industrial_complex
-  size > 1
-  include_locked = yes
-  }
-  not = { state = 593 }
-  }
-  add_extra_state_shared_building_slots = 2
-  add_building_construction = {
-  type = industrial_complex
-  level = 2
-  instant_build = yes
-  }
-  set_state_flag = AST_allied_works_council_IC1
-  }
-  random_owned_controlled_state = {
-  limit = {
-  is_in_home_area = yes
-  free_building_slots = {
-  building = industrial_complex
-  size > 1
-  include_locked = yes
-  }
-  not = { state = 593 }
-  }
-  add_extra_state_shared_building_slots = 2
-  add_building_construction = {
-  type = industrial_complex
-  level = 2
-  instant_build = yes
-  }
-  set_state_flag = AST_allied_works_council_IC2
-  }
-  }
-  }
-  focus = {
-  id = AST_expand_the_northern_railway
-  icon = GFX_goal_generic_construct_infrastructure
-  prerequisite = { focus = AST_expand_lithgow_small_arms_factory }
-  x = 0
-  y = 4
-  relative_position_id = AST_standard_gauge_railway
-  cost = 5
-  ai_will_do = {
-  factor = 1
-  }
-  available = {
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = no
-  search_filters = { FOCUS_FILTER_INDUSTRY }
-  complete_tooltip = {
-  random_state = {
-  limit = {
-  has_state_flag = AST_expand_the_northern_railway_Inf
-  }
-  add_building_construction = {
-  type = infrastructure
-  level = 2
-  instant_build = yes
-  }
-  }
-  }
-  completion_reward = {
-  random_owned_controlled_state = {
-  prioritize = { 447 }
-  limit = {
-  free_building_slots = {
-  building = infrastructure
-  size > 1
-  }
-  not = { state = 593 }
-  }
-  add_building_construction = {
-  type = infrastructure
-  level = 2
-  instant_build = yes
-  }
-  set_state_flag = AST_expand_the_northern_railway_Inf
-  }
-  }
-  }
-  focus = {
-  id = AST_australian_arms_production
-  icon = GFX_goal_generic_construct_mil_factory
-  prerequisite = { focus = AST_allied_works_council }
-  x = 2
-  y = 4
-  relative_position_id = AST_standard_gauge_railway
-  cost = 5
-  ai_will_do = {
-  factor = 1
-  }
-  available = {
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = no
-  search_filters = { FOCUS_FILTER_INDUSTRY }
-  completion_reward = {
-  add_ideas = AST_australian_arms_production
-  }
-  }
-  focus = {
-  id = AST_uranium_mining
-  icon = GFX_focus_wonderweapons
-  prerequisite = { focus = AST_expand_the_northern_railway }
-  prerequisite = { focus = AST_australian_arms_production }
-  x = 1
-  y = 5
-  relative_position_id = AST_standard_gauge_railway
-  cost = 5
-  ai_will_do = {
-  factor = 1
-  }
-  available = {
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = no
-  search_filters = { FOCUS_FILTER_RESEARCH }
-  completion_reward = {
-  add_tech_bonus = {
-  name = AST_uranium_mining
-  bonus = 1.0
-  uses = 1
-  category = nuclear
-  }
-  }
-  }
-  focus = {
-  id = AST_establish_advisory_war_council
-  icon = GFX_goal_generic_demand_territory
-  x = 22
-  y = 0
-  cost = 5
-  ai_will_do = {
-  factor = 3
-  }
-  available = {
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = yes
-  search_filters = { FOCUS_FILTER_POLITICAL }
-  completion_reward = {
-  add_political_power = 120
-  }
-  }
-  focus = {
-  id = AST_national_security_act
-  icon = GFX_goal_generic_forceful_treaty
-  prerequisite = { focus = AST_establish_advisory_war_council }
-  x = -2
-  y = 1
-  relative_position_id = AST_establish_advisory_war_council
-  cost = 10
-  ai_will_do = {
-  factor = 8
-  }
-  available = {
-  if = {
-  limit = {
-  has_dlc = "Man the Guns"
-  }
-  OR = {
-  threat > 0.2
-  date > 1938.1.1
-  }
-  }
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = yes
-  search_filters = { FOCUS_FILTER_INDUSTRY }
-  completion_reward = {
-  swap_ideas = {
-  remove_idea = AST_great_depression_1
-  add_idea = AST_great_depression_2
-  }
-  }
-  }
-  focus = {
-  id = AST_volunteer_defence_corps
-  icon = GFX_goal_generic_political_pressure
-  prerequisite = { focus = AST_establish_advisory_war_council }
-  x = 2
-  y = 1
-  relative_position_id = AST_establish_advisory_war_council
-  cost = 5
-  ai_will_do = {
-  factor = 1
-  }
-  available = {
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = no
-  completion_reward = {
-  add_ideas = AST_volunteer_defence_corps
-  }
-  }
-  focus = {
-  id = AST_civil_construction_corps
-  icon = GFX_goal_generic_production2
-  prerequisite = { focus = AST_national_security_act }
-  x = -4
-  y = 2
-  relative_position_id = AST_establish_advisory_war_council
-  cost = 10
-  ai_will_do = {
-  factor = 10
-  }
-  available = {
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = yes
-  search_filters = { FOCUS_FILTER_INDUSTRY }
-  completion_reward = {
-  swap_ideas = {
-  remove_idea = AST_great_depression_2
-  add_idea = AST_great_depression_3
-  }
-  }
-  }
-  focus = {
-  id = AST_army_inventions_directorate
-  icon = GFX_focus_research
-  prerequisite = { focus = AST_establish_advisory_war_council }
-  x = 0
-  y = 1
-  relative_position_id = AST_establish_advisory_war_council
-  cost = 10
-  ai_will_do = {
-  factor = 15
-  }
-  available = {
-  threat > 0.10
-  }
-  bypass = {
-  }
-  cancel_if_invalid = no
-  continue_if_invalid = yes
-  available_if_capitulated = yes
-  search_filters = { FOCUS_FILTER_RESEARCH }
-  completion_reward = {
-  add_research_slot = 1
-  }
-  }
-  focus = {
-  id = AST_invest_in_victory
-  icon = GFX_goal_generic_national_unity
-  prerequisite = { focus = AST_national_security_act }
-  x = 0
-  y = 2
-  relative_position_id = AST_establish_advisory_war_council
-  cost = 10
-  ai_will_do = {
-  factor = 5
-  }
-  available = {
-  has_war = yes
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = yes
-  search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY }
-  completion_reward = {
-  add_ideas = AST_invest_in_victory
-  }
-  }
-  focus = {
-  id = AST_citizen_military_forces
-  icon = GFX_goal_generic_political_pressure
-  prerequisite = { focus = AST_volunteer_defence_corps }
-  x = 2
-  y = 2
-  relative_position_id = AST_establish_advisory_war_council
-  cost = 5
-  ai_will_do = {
-  factor = 1
-  }
-  available = {
-  threat > 0.20
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = yes
-  completion_reward = {
-  add_ideas = AST_citizen_military_forces
-  }
-  }
-  focus = {
-  id = AST_rats_of_tobruk
-  icon = GFX_focus_AST_rats_tobruk
-  prerequisite = { focus = AST_volunteer_defence_corps }
-  prerequisite = { focus = AST_strengthen_ties_with_uk }
-  x = 4
-  y = 2
-  relative_position_id = AST_establish_advisory_war_council
-  cost = 5
-  ai_will_do = {
-  factor = 1
-  }
-  available = {
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = no
-  completion_reward = {
-  hidden_effect = {
-  if = {
-  limit = {
-  has_tech = tech_logistics_company
-  }
-  division_template = {
-  name = "Rats of Tobruk"
-  division_names_group = AST_INF_01
-  regiments = {
-  infantry = { x = 0 y = 0 }
-  infantry = { x = 0 y = 1 }
-  infantry = { x = 0 y = 2 }
-  infantry = { x = 1 y = 0 }
-  infantry = { x = 1 y = 1 }
-  infantry = { x = 1 y = 2 }
-  infantry = { x = 2 y = 0 }
-  infantry = { x = 2 y = 1 }
-  infantry = { x = 2 y = 2 }
-  infantry = { x = 3 y = 0 }
-  infantry = { x = 3 y = 1 }
-  }
-  support = {
-  recon = { x = 0 y = 0 }
-  engineer = { x = 0 y = 1 }
-  logistics_company = { x = 0 y = 2 }
-  }
-  }
-  else = {
-  division_template = {
-  name = "Rats of Tobruk"
-  division_names_group = AST_INF_01
-  regiments = {
-  infantry = { x = 0 y = 0 }
-  infantry = { x = 0 y = 1 }
-  infantry = { x = 0 y = 2 }
-  infantry = { x = 1 y = 0 }
-  infantry = { x = 1 y = 1 }
-  infantry = { x = 1 y = 2 }
-  infantry = { x = 2 y = 0 }
-  infantry = { x = 2 y = 1 }
-  infantry = { x = 2 y = 2 }
-  infantry = { x = 3 y = 0 }
-  infantry = { x = 3 y = 1 }
-  }
-  support = {
-  recon = { x = 0 y = 0 }
-  engineer = { x = 0 y = 1 }
-  }
-  }
-  }
-  }
-  if = {
-  limit = {
-  any_country = {
-  is_in_faction_with = AST
-  controls_state = 265
-  }
-  any_country = {
-  is_in_faction_with = AST
-  controls_state = 477
-  }
-  }
-  load_oob = "AST_TFV_rats_africa"
-  else = {
-  if = {
-  limit = {
-  controls_state = 273
-  }
-  load_oob = "AST_TFV_rats_australia"
-  }
-  }
-  }
-  }
-  if = {
-  limit = {
-  any_country = {
-  is_in_faction_with = AST
-  controls_state = 265
-  }
-  any_country = {
-  is_in_faction_with = AST
-  controls_state = 477
-  }
-  }
-  custom_effect_tooltip = AST_rats_of_tobruk_effect_1
-  else = {
-  if = {
-  limit = {
-  controls_state = 273
-  }
-  }
-  custom_effect_tooltip = AST_rats_of_tobruk_effect_2
-  }
-  }
-  }
-  }
-  focus = {
-  id = AST_fight_work_or_perish
-  icon = GFX_goal_generic_propaganda
-  prerequisite = { focus = AST_civil_construction_corps }
-  prerequisite = { focus = AST_squash_the_squanderbugs }
-  x = -3
-  y = 4
-  relative_position_id = AST_establish_advisory_war_council
-  cost = 10
-  ai_will_do = {
-  factor = 15
-  }
-  available = {
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = yes
-  search_filters = { FOCUS_FILTER_INDUSTRY }
-  completion_reward = {
-  if = {
-  limit = { has_idea = AST_great_depression_1 }
-  remove_ideas = AST_great_depression_1
-  add_ideas = AST_all_in
-  }
-  if = {
-  limit = { has_idea = AST_great_depression_2 }
-  remove_ideas = AST_great_depression_2
-  add_ideas = AST_all_in
-  }
-  if = {
-  limit = { has_idea = AST_great_depression_3 }
-  swap_ideas = {
-  remove_idea = AST_great_depression_3
-  add_idea = AST_all_in
-  }
-  }
-  }
-  }
-  focus = {
-  id = AST_squash_the_squanderbugs
-  icon = GFX_focus_AST_squander_bug
-  prerequisite = { focus = AST_invest_in_victory }
-  x = -2
-  y = 3
-  relative_position_id = AST_establish_advisory_war_council
-  cost = 10
-  ai_will_do = {
-  factor = 5
-  }
-  available = {
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = yes
-  search_filters = { FOCUS_FILTER_INDUSTRY }
-  completion_reward = {
-  swap_ideas = {
-  remove_idea = AST_invest_in_victory
-  add_idea = AST_invest_in_victory_2
-  }
-  }
-  }
-  focus = {
-  id = AST_rationing_and_recycling
-  icon = GFX_goal_generic_trade
-  prerequisite = { focus = AST_invest_in_victory }
-  x = 0
-  y = 3
-  relative_position_id = AST_establish_advisory_war_council
-  cost = 10
-  ai_will_do = {
-  factor = 5
-  }
-  available = {
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = no
-  search_filters = { FOCUS_FILTER_INDUSTRY }
-  complete_tooltip = {
-  random_state = {
-  limit = { has_state_flag = AST_rationing_and_recycling_alu }
-  add_resource = {
-  type = aluminium
-  amount = 24
-  }
-  }
-  random_state = {
-  limit = { has_state_flag = AST_rationing_and_recycling_oil }
-  add_resource = {
-  type = oil
-  amount = 12
-  }
-  }
-  }
-  completion_reward = {
-  random_owned_controlled_state = {
-  limit = { is_in_home_area = yes
-  }
-  prioritize = { 448 447 449 }
-  add_resource = {
-  type = aluminium
-  amount = 24
-  }
-  set_state_flag = AST_rationing_and_recycling_alu
-  }
-  random_owned_controlled_state = {
-  limit = { is_in_home_area = yes }
-  prioritize = { 444 }
-  add_resource = {
-  type = oil
-  amount = 12
-  }
-  set_state_flag = AST_rationing_and_recycling_oil
-  }
-  }
-  }
-  focus = {
-  id = AST_classify_aliens
-  icon = GFX_goal_generic_defence
-  prerequisite = { focus = AST_citizen_military_forces }
-  x = 2
-  y = 3
-  relative_position_id = AST_establish_advisory_war_council
-  cost = 5
-  ai_will_do = {
-  factor = 1
-  }
-  available = {
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = yes
-  completion_reward = {
-  add_ideas = AST_classify_aliens
-  if = {
-  limit = {
-  has_government = democratic
-  }
-  add_popularity = {
-  ideology = fascism
-  popularity = -0.1
-  }
-  add_popularity = {
-  ideology = communism
-  popularity = -0.1
-  }
-  }
-  if = {
-  limit = {
-  has_government = fascism
-  }
-  add_popularity = {
-  ideology = democratic
-  popularity = -0.1
-  }
-  add_popularity = {
-  ideology = communism
-  popularity = -0.1
-  }
-  }
-  if = {
-  limit = {
-  has_government = communism
-  }
-  add_popularity = {
-  ideology = democratic
-  popularity = -0.1
-  }
-  add_popularity = {
-  ideology = fascism
-  popularity = -0.1
-  }
-  }
-  }
-  }
-  focus = {
-  id = AST_support_the_policy_of_appeasement
-  icon = GFX_goal_generic_improve_relations
-  x = 28
-  y = 0
-  cost = 5
-  ai_will_do = {}
-  available = {
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = yes
-  search_filters = { FOCUS_FILTER_RESEARCH }
-  completion_reward = {
-  modify_tech_sharing_bonus = {
-  id = commonwealth_research
-  bonus = 0.03
-  }
-  ENG = {
-  add_opinion_modifier = {
-  target = ROOT
-  modifier = AST_support_the_policy_of_appeasement
-  }
-  }
-  }
-  }
-  focus = {
-  id = AST_strengthen_ties_with_uk
-  icon = GFX_goal_tfv_strengthen_commonwealth_ties
-  prerequisite = { focus = AST_support_the_policy_of_appeasement }
-  relative_position_id = AST_support_the_policy_of_appeasement
-  x = 0
-  y = 1
-  cost = 5
-  ai_will_do = {
-  }
-  available = {
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = yes
-  search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER }
-  completion_reward = {
-  add_stability = 0.05
-  add_manpower = 5000
-  }
-  }
-  focus = {
-  id = AST_adopt_westminster
-  icon = GFX_goal_generic_improve_relations
-  prerequisite = { focus = AST_strengthen_ties_with_uk }
-  x = 0
-  y = 2
-  relative_position_id = AST_support_the_policy_of_appeasement
-  cost = 5
-  ai_will_do = {
-  factor = 1
-  }
-  available = {
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = yes
-  search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_TFV_AUTONOMY }
-  completion_reward = {
-  add_political_power = 120
-  add_autonomy_ratio = {
-  value = 0.1
-  localization = AST_adopt_westminster
-  }
-  custom_effect_tooltip = available_political_advisor
-  show_ideas_tooltip = AST_arthur_calwell
-  }
-  }
-  focus = {
-  id = AST_CSIR
-  icon = GFX_goal_tfv_generic_tech_sharing
-  prerequisite = { focus = AST_adopt_westminster }
-  x = -1
-  y = 3
-  relative_position_id = AST_support_the_policy_of_appeasement
-  cost = 5
-  ai_will_do = {
-  factor = 10
-  }
-  available = {
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = yes
-  search_filters = { FOCUS_FILTER_RESEARCH }
-  completion_reward = {
-  AST = {
-  modify_tech_sharing_bonus = {
-  id = commonwealth_research
-  bonus = 0.05
-  }
-  }
-  }
-  }
-  focus = {
-  id = AST_swpa_protector
-  icon = GFX_goal_generic_defence
-  prerequisite = { focus = AST_adopt_westminster }
-  x = 1
-  y = 3
-  relative_position_id = AST_support_the_policy_of_appeasement
-  cost = 5
-  ai_will_do = {
-  factor = 1
-  }
-  available = {
-  303 = {
-  controller = { is_in_faction_with = ROOT }
-  }
-  300 = {
-  controller = { is_in_faction_with = ROOT }
-  }
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = no
-  search_filters = {  }
-  completion_reward = {
-  591 = {
-  add_building_construction = {
-  type = air_base
-  level = 2
-  instant_build = yes
-  }
-  set_building_level = {
-  type = coastal_bunker
-  province = {
-  all_provinces = yes
-  limit_to_coastal = yes
-  }
-  level = 2
-  instant_build = yes
-  }
-  set_building_level = {
-  type = coastal_bunker
-  province = {
-  all_provinces = yes
-  limit_to_naval_base = yes
-  }
-  level = 3
-  instant_build = yes
-  }
-  }
-  300 = {
-  set_building_level = {
-  type = coastal_bunker
-  province = {
-  all_provinces = yes
-  limit_to_coastal = yes
-  }
-  level = 2
-  instant_build = yes
-  }
-  set_building_level = {
-  type = coastal_bunker
-  province = {
-  all_provinces = yes
-  limit_to_naval_base = yes
-  }
-  level = 3
-  instant_build = yes
-  }
-  }
-  }
-  }
-  focus = {
-  id = AST_empire_air_training_scheme
-  icon = GFX_goal_generic_air_fighter2
-  prerequisite = { focus = AST_CSIR focus = AST_swpa_protector }
-  x = -1
-  y = 4
-  relative_position_id = AST_support_the_policy_of_appeasement
-  cost = 5
-  ai_will_do = {
-  }
-  available = {
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = no
-  search_filters = {  }
-  completion_reward = {
-  add_ideas = AST_empire_air_training_scheme
-  }
-  }
-  focus = {
-  id = AST_commonwealth_aircraft_corporation
-  icon = GFX_goal_generic_air_fighter
-  prerequisite = { focus = AST_CSIR focus = AST_swpa_protector }
-  x = 1
-  y = 4
-  relative_position_id = AST_support_the_policy_of_appeasement
-  cost = 10
-  ai_will_do = {
-  }
-  available = {
-  }
-  bypass = {
-  }
-  cancel_if_invalid = yes
-  continue_if_invalid = no
-  available_if_capitulated = no
-  search_filters = {  FOCUS_FILTER_INDUSTRY }
-  completion_reward = {
-  add_ideas = AST_commonwealth_aircraft_corporation
-  }
-  }
-  }
+	id = australian_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = AST
+			has_dlc = "Together for Victory"
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 50 y = 1000 }
+	focus = {
+		id = AST_additional_militia_training
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 2
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = AST_additional_militia_training
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = AST_royal_australian_artillery
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = AST_additional_militia_training }
+		x = -1
+		y = 1
+		relative_position_id = AST_additional_militia_training
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_royal_australian_artillery
+				bonus = 1.0
+				uses = 1
+				category = artillery
+			}
+		}
+	}
+	focus = {
+		id = AST_promote_reservists
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = AST_additional_militia_training }
+		x = 1
+		y = 1
+		relative_position_id = AST_additional_militia_training
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = AST_promote_reservists
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+			custom_effect_tooltip = AST_new_general_tt
+			hidden_effect = {
+				create_corps_commander = {
+					name = "Iven Mackay"
+					gfx = "GFX_AST_iven_mackay"
+					traits = { }
+					skill = 3
+					attack_skill = 2
+					defense_skill = 2
+					planning_skill = 3
+					logistics_skill = 3
+				}
+			}
+		}
+	}
+	focus = {
+		id = AST_daimler_dingo
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = AST_royal_australian_artillery }
+		x = -2
+		y = 2
+		relative_position_id = AST_additional_militia_training
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 1.00
+				category = motorized_equipment
+			}
+		}
+	}
+	focus = {
+		id = AST_hmas_assault
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = AST_royal_australian_artillery focus = AST_promote_reservists }
+		x = 0
+		y = 2
+		relative_position_id = AST_additional_militia_training
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = AST_hmas_assault
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+			add_tech_bonus = {
+				name = AST_hmas_assault
+				bonus = 1.0
+				uses = 1
+				category = marine_tech
+			}
+		}
+	}
+	focus = {
+		id = AST_specialize_equipment
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = AST_promote_reservists }
+		x = 2
+		y = 2
+		relative_position_id = AST_additional_militia_training
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_specialize_equipment
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+				}add_tech_bonus = {
+				name = rocketry
+				bonus = 1.0
+				uses = 1
+				category = rocketry
+			}
+		}
+	}
+	focus = {
+		id = AST_australian_womens_army_service
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = AST_hmas_assault }
+		x = -1
+		y = 3
+		relative_position_id = AST_additional_militia_training
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		completion_reward = {
+			add_ideas = AST_australian_womens_army_service
+		}
+	}
+	focus = {
+		id = AST_australian_army_catering_corps
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = AST_hmas_assault }
+		x = 0
+		y = 4
+		relative_position_id = AST_additional_militia_training
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_fund_owen_gun_research
+				bonus = 3.0
+				uses = 1
+				technology = tech_logistics_company
+				technology = tech_logistics_company2
+				technology = tech_logistics_company3
+				technology = tech_logistics_company4
+			}
+		}
+	}
+	focus = {
+		id = AST_fund_owen_gun_research
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = AST_hmas_assault }
+		x = 1
+		y = 3
+		relative_position_id = AST_additional_militia_training
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_fund_owen_gun_research
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+	focus = {
+		id = AST_sentinel_tank_project
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = AST_daimler_dingo }
+		x = -2
+		y = 4
+		relative_position_id = AST_additional_militia_training
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_sentinel_tank_project
+				bonus = 1.0
+				uses = 2
+				category = armor
+			}
+		}
+	}
+	focus = {
+		id = AST_airborne_defence
+		icon = GFX_goal_generic_special_forces
+		prerequisite = { focus = AST_specialize_equipment }
+		prerequisite = { focus = AST_volunteer_air_observers_corps }
+		x = 2
+		y = 4
+		relative_position_id = AST_additional_militia_training
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_airborne_defence
+				bonus = 3.0
+				uses = 1
+				category = para_tech
+			}
+		}
+	}
+	focus = {
+		id = AST_introduce_unconventional_warfare
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = AST_sentinel_tank_project focus = AST_airborne_defence }
+		x = 0
+		y = 5
+		relative_position_id = AST_additional_militia_training
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = AST_introduce_unconventional_warfare
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	focus = {
+		id = AST_z_special_unit
+		icon = GFX_goal_generic_amphibious_assault
+		prerequisite = { focus = AST_introduce_unconventional_warfare }
+		x = -1
+		y = 6
+		relative_position_id = AST_additional_militia_training
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_z_special_unit
+				bonus = 3.0
+				uses = 1
+				category = marine_tech
+				category = para_tech
+			}
+		}
+	}
+	focus = {
+		id = AST_m_special_unit
+		icon = GFX_goal_generic_special_forces
+		prerequisite = { focus = AST_introduce_unconventional_warfare }
+		x = 1
+		y = 6
+		relative_position_id = AST_additional_militia_training
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_m_special_unit
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				technology = tech_recon
+				technology = tech_recon2
+				technology = tech_recon3
+				technology = tech_recon4
+			}
+		}
+	}
+	focus = {
+		id = AST_expand_the_raaf
+		icon = GFX_goal_generic_build_airforce
+		x = 7
+		y = 0
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+		complete_tooltip = {
+		}
+		completion_reward = {
+			air_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 3
+					}
+				}
+				prioritize = {447}
+				add_building_construction = {
+					type = air_base
+					level = 4
+					instant_build = yes
+				}
+				set_state_flag = AST_expand_the_raaf_AB
+			}
+			add_tech_bonus = {
+				name = AST_expand_the_raaf
+				bonus = 1.0
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+	focus = {
+		id = AST_cac_boomerang
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = AST_expand_the_raaf }
+		x = -1
+		y = 1
+		relative_position_id = AST_expand_the_raaf
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_cac_boomerang
+				bonus = 0.5
+				uses = 1
+				technology = early_fighter
+				technology = fighter1
+				technology = fighter2
+			}
+		}
+	}
+	focus = {
+		id = AST_expand_northern_presence
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = { focus = AST_expand_the_raaf }
+		x = 0
+		y = 2
+		relative_position_id = AST_expand_the_raaf
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+		complete_tooltip = {
+		}
+		completion_reward = {
+			air_experience = 25
+			random_owned_controlled_state = {
+				prioritize = { 448 }
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 3
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 4
+					instant_build = yes
+				}
+				set_state_flag = AST_expand_the_raaf_AB
+			}
+			add_tech_bonus = {
+				name = AST_expand_northern_presence
+				bonus = 1.0
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+	focus = {
+		id = AST_cac_woomera
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = { focus = AST_expand_the_raaf }
+		relative_position_id = AST_expand_the_raaf
+		x = 1
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_cac_woomera
+				bonus = 3.0
+				uses = 1
+				category = tactical_bomber
+				category = naval_air
+			}
+		}
+	}
+	focus = {
+		id = AST_volunteer_air_observers_corps
+		icon = GFX_goal_generic_radar
+		prerequisite = { focus = AST_cac_boomerang focus = AST_expand_northern_presence }
+		relative_position_id = AST_expand_the_raaf
+		x = -1
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_tech = radio
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		complete_tooltip = {
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_volunteer_air_observers_corps
+				bonus = 1.0
+				uses = 1
+				category = radar_tech
+			}
+			if = {
+				limit = { has_tech = radio_detection }
+				450 = {
+					add_building_construction = {
+						type = radar_station
+						level = 4
+						instant_build = yes
+					}
+					set_state_flag = AST_volunteer_air_observers_corps_radar1
+				}
+				448 = {
+					add_building_construction = {
+						type = radar_station
+						level = 4
+						instant_build = yes
+					}
+					set_state_flag = AST_volunteer_air_observers_corps_radar2
+				}
+				447 = {
+					add_building_construction = {
+						type = radar_station
+						level = 4
+						instant_build = yes
+					}
+					set_state_flag = AST_volunteer_air_observers_corps_radar3
+				}
+				else = {
+					set_technology = {
+						radio_detection = 1
+					}
+					448 = {
+						add_building_construction = {
+							type = radar_station
+							level = 4
+							instant_build = yes
+						}
+						set_state_flag = AST_volunteer_air_observers_corps_radar1
+					}
+					447 = {
+						add_building_construction = {
+							type = radar_station
+							level = 4
+							instant_build = yes
+						}
+						set_state_flag = AST_volunteer_air_observers_corps_radar2
+					}
+					450 = {
+						add_building_construction = {
+							type = radar_station
+							level = 4
+							instant_build = yes
+						}
+						set_state_flag = AST_volunteer_air_observers_corps_radar3
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = AST_naval_bombers
+		icon = GFX_goal_generic_air_naval_bomber
+		prerequisite = { focus = AST_cac_woomera }
+		x = 1
+		y = 3
+		relative_position_id = AST_expand_the_raaf
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_naval_bombers
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = naval_bomber
+			}
+		}
+	}
+	focus = {
+		id = AST_death_from_down_under
+		icon = GFX_goal_generic_CAS
+		prerequisite = { focus = AST_volunteer_air_observers_corps }
+		x = -1
+		y = 5
+		relative_position_id = AST_expand_the_raaf
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+		complete_tooltip = {
+			air_experience = 25
+			random_state = {
+				limit = {
+					has_state_flag = AST_death_from_down_under_AB
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = {
+					has_state_flag = AST_death_from_down_under_AA1
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = {
+					has_state_flag = AST_death_from_down_under_AA2
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = {
+					has_state_flag = AST_death_from_down_under_AA3
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = AST_death_from_down_under
+				bonus = 1.0
+				uses = 1
+				category = air_doctrine
+			}
+		}
+		completion_reward = {
+			air_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = AST_death_from_down_under_AB
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					free_building_slots = {
+						building = anti_air_building
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = AST_death_from_down_under_AA1
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					free_building_slots = {
+						building = anti_air_building
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = AST_death_from_down_under_AA2
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					free_building_slots = {
+						building = anti_air_building
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = AST_death_from_down_under_AA3
+			}
+			add_tech_bonus = {
+				name = AST_death_from_down_under
+				bonus = 1.0
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+	focus = {
+		id = AST_womens_auxilliary_australian_air_force
+		icon = GFX_goal_generic_build_airforce
+		prerequisite = { focus = AST_volunteer_air_observers_corps focus = AST_naval_bombers }
+		x = 0
+		y = 4
+		relative_position_id = AST_expand_the_raaf
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {  }
+		completion_reward = {
+			air_experience = 50
+			set_rule = {
+				can_generate_female_aces = yes
+			}
+		}
+	}
+	focus = {
+		id = AST_dominate_the_skies
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = { focus = AST_womens_auxilliary_australian_air_force }
+		x = 1
+		y = 5
+		relative_position_id = AST_expand_the_raaf
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+		complete_tooltip = {
+			air_experience = 25
+			random_state = {
+				limit = {
+					has_state_flag = AST_dominate_the_skies_AB
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = AST_dominate_the_skies
+				bonus = 1.0
+				uses = 1
+				category = air_doctrine
+			}
+		}
+		completion_reward = {
+			air_experience = 25
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = air_base
+						size > 1
+					}
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = AST_dominate_the_skies_AB
+			}
+			add_tech_bonus = {
+				name = AST_expand_the_raaf
+				bonus = 1.0
+				uses = 1
+				category = air_doctrine
+			}
+		}
+	}
+	focus = {
+		id = AST_cockatoo_island_shipyards
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 11
+		y = 0
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			any_state = {
+				is_coastal = yes
+				is_controlled_by = ROOT
+			}
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  FOCUS_FILTER_INDUSTRY }
+		complete_tooltip = {
+			navy_experience = 25
+			random_state = {
+				limit = {
+					has_state_flag = AST_cockatoo_island_shipyards_DY
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+		completion_reward = {
+			navy_experience = 25
+			444={add_building_construction = {
+					type = naval_base
+					level = 20
+					province=7213
+					instant_build = yes
+					}}
+			random_owned_controlled_state = {
+				prioritize = { 273 }
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+					not = { state = 593 }
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = AST_cockatoo_island_shipyards_DY
+			}
+		}
+	}
+	focus = {
+		id = AST_protect_overseas_commerce
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { focus = AST_cockatoo_island_shipyards }
+		mutually_exclusive = { focus = AST_fly_the_jolly_roger }
+		x = -1
+		y = 1
+		relative_position_id = AST_cockatoo_island_shipyards
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_protect_overseas_commerce
+				bonus = 1.0
+				uses = 2
+				category = fleet_in_being_tree
+				category = convoy_defense_tree
+			}
+		}
+	}
+	focus = {
+		id = AST_fly_the_jolly_roger
+		icon = GFX_goal_generic_navy_submarine
+		prerequisite = { focus = AST_cockatoo_island_shipyards }
+		mutually_exclusive = { focus = AST_protect_overseas_commerce }
+		x = 1
+		y = 1
+		relative_position_id = AST_cockatoo_island_shipyards
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_fly_the_jolly_roger
+				bonus = 1.0
+				uses = 2
+				category = submarine_doctrine
+			}
+		}
+	}
+	focus = {
+		id = AST_scrap_iron_flotilla
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = AST_protect_overseas_commerce focus = AST_fly_the_jolly_roger }
+		x = -1
+		y = 2
+		relative_position_id = AST_cockatoo_island_shipyards
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_scrap_iron_flotilla
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = dd_tech
+			}
+		}
+	}
+	focus = {
+		id = AST_royal_australian_submarine_service
+		icon = GFX_goal_generic_wolf_pack
+		prerequisite = { focus = AST_protect_overseas_commerce focus = AST_fly_the_jolly_roger }
+		x = 1
+		y = 2
+		relative_position_id = AST_cockatoo_island_shipyards
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_royal_australian_submarine_service
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = ss_tech
+			}
+		}
+	}
+	focus = {
+		id = AST_naval_auxiliary_patrol
+		icon = GFX_goal_generic_fortify_city
+		prerequisite = { focus = AST_royal_australian_submarine_service focus = AST_scrap_iron_flotilla }
+		x = 0
+		y = 3
+		relative_position_id = AST_cockatoo_island_shipyards
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+		completion_reward = {
+			add_ideas = AST_naval_auxiliary_patrol
+		}
+	}
+	focus = {
+		id = AST_cruisers
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = AST_naval_auxiliary_patrol }
+		x = -1
+		y = 4
+		relative_position_id = AST_cockatoo_island_shipyards
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_cruisers
+				bonus = 1.0
+				ahead_reduction = 2
+				uses = 1
+				category = cl_tech
+				category = ca_tech
+			}
+		}
+	}
+	focus = {
+		id = AST_pacific_area_navy
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		prerequisite = { focus = AST_naval_auxiliary_patrol }
+		x = 1
+		y = 4
+		relative_position_id = AST_cockatoo_island_shipyards
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH  }
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_pacific_area_navy
+				bonus = 1.0
+				uses = 1
+				category = naval_doctrine
+			}
+		}
+	}
+	focus = {
+		id = AST_standard_gauge_railway
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 14
+		y = 0
+		cost = 5
+		ai_will_do = {
+			factor = 4
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		complete_tooltip = {
+			447 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+		completion_reward = {
+			447 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = AST_industries_assistance_corporation
+		icon = GFX_goal_generic_production
+		x = 2
+		y = 0
+		relative_position_id = AST_standard_gauge_railway
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = industry
+			}
+		}
+	}
+	focus = {
+		id = AST_western_australian_government_railways
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = AST_standard_gauge_railway }
+		prerequisite = { focus = AST_industries_assistance_corporation }
+		x = 1
+		y = 1
+		relative_position_id = AST_standard_gauge_railway
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		complete_tooltip = {
+			448 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+		completion_reward = {
+			448 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = AST_south_australian_housing_trust
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = AST_western_australian_government_railways }
+		x = 0
+		y = 2
+		relative_position_id = AST_standard_gauge_railway
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		complete_tooltip = {
+			random_state = {
+				limit = {
+					has_state_flag = AST_south_australian_housing_trust_IC
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 446 }
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					not = { state = 593 }
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+				set_state_flag = AST_south_australian_housing_trust_IC
+			}
+		}
+	}
+	focus = {
+		id = AST_department_of_supply_and_development
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = AST_western_australian_government_railways }
+		x = 2
+		y = 2
+		relative_position_id = AST_standard_gauge_railway
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		complete_tooltip = {
+			random_state = {
+				limit = {
+					has_state_flag = AST_department_of_supply_and_development_AF
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 273 444 }
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					not = { state = 593 }
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				set_state_flag = AST_department_of_supply_and_development_AF
+			}
+		}
+	}
+	focus = {
+		id = AST_expand_lithgow_small_arms_factory
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = AST_south_australian_housing_trust }
+		x = 0
+		y = 3
+		relative_position_id = AST_standard_gauge_railway
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		complete_tooltip = {
+			random_state = {
+				limit = {
+					has_state_flag = AST_expand_lithgow_small_arms_factory_AF
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 273 }
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+					not = { state = 593 }
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = AST_expand_lithgow_small_arms_factory_AF
+			}
+		}
+	}
+	focus = {
+		id = AST_allied_works_council
+		icon = GFX_goal_generic_production2
+		prerequisite = { focus = AST_department_of_supply_and_development }
+		prerequisite = { focus = AST_civil_construction_corps }
+		x = 2
+		y = 3
+		relative_position_id = AST_standard_gauge_railway
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		complete_tooltip = {
+			random_state = {
+				limit = {
+					has_state_flag = AST_allied_works_council_IC1
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = {
+					has_state_flag = AST_allied_works_council_IC2
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					not = { state = 593 }
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = AST_allied_works_council_IC1
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+					not = { state = 593 }
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = AST_allied_works_council_IC2
+			}
+		}
+	}
+	focus = {
+		id = AST_expand_the_northern_railway
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = AST_expand_lithgow_small_arms_factory }
+		x = 0
+		y = 4
+		relative_position_id = AST_standard_gauge_railway
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		complete_tooltip = {
+			random_state = {
+				limit = {
+					has_state_flag = AST_expand_the_northern_railway_Inf
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 447 }
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					not = { state = 593 }
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = AST_expand_the_northern_railway_Inf
+			}
+		}
+	}
+	focus = {
+		id = AST_australian_arms_production
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = AST_allied_works_council }
+		x = 2
+		y = 4
+		relative_position_id = AST_standard_gauge_railway
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_ideas = AST_australian_arms_production
+		}
+	}
+	focus = {
+		id = AST_uranium_mining
+		icon = GFX_focus_wonderweapons
+		prerequisite = { focus = AST_expand_the_northern_railway }
+		prerequisite = { focus = AST_australian_arms_production }
+		x = 1
+		y = 5
+		relative_position_id = AST_standard_gauge_railway
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_tech_bonus = {
+				name = AST_uranium_mining
+				bonus = 1.0
+				uses = 1
+				category = nuclear
+			}
+		}
+	}
+	focus = {
+		id = AST_establish_advisory_war_council
+		icon = GFX_goal_generic_demand_territory
+		x = 22
+		y = 0
+		cost = 5
+		ai_will_do = {
+			factor = 3
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_political_power = 120
+		}
+	}
+	focus = {
+		id = AST_national_security_act
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = AST_establish_advisory_war_council }
+		x = -2
+		y = 1
+		relative_position_id = AST_establish_advisory_war_council
+		cost = 10
+		ai_will_do = {
+			factor = 8
+		}
+		available = {
+			if = {
+				limit = {
+					has_dlc = "Man the Guns"
+				}
+				OR = {
+					threat > 0.2
+					date > 1938.1.1
+				}
+			}
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = AST_great_depression_1
+				add_idea = AST_great_depression_2
+			}
+		}
+	}
+	focus = {
+		id = AST_volunteer_defence_corps
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = AST_establish_advisory_war_council }
+		x = 2
+		y = 1
+		relative_position_id = AST_establish_advisory_war_council
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			add_ideas = AST_volunteer_defence_corps
+		}
+	}
+	focus = {
+		id = AST_civil_construction_corps
+		icon = GFX_goal_generic_production2
+		prerequisite = { focus = AST_national_security_act }
+		x = -4
+		y = 2
+		relative_position_id = AST_establish_advisory_war_council
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = AST_great_depression_2
+				add_idea = AST_great_depression_3
+			}
+		}
+	}
+	focus = {
+		id = AST_army_inventions_directorate
+		icon = GFX_focus_research
+		prerequisite = { focus = AST_establish_advisory_war_council }
+		x = 0
+		y = 1
+		relative_position_id = AST_establish_advisory_war_council
+		cost = 10
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+			threat > 0.10
+		}
+		bypass = {
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	focus = {
+		id = AST_invest_in_victory
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = AST_national_security_act }
+		x = 0
+		y = 2
+		relative_position_id = AST_establish_advisory_war_council
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+			has_war = yes
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_ideas = AST_invest_in_victory
+		}
+	}
+	focus = {
+		id = AST_citizen_military_forces
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = AST_volunteer_defence_corps }
+		x = 2
+		y = 2
+		relative_position_id = AST_establish_advisory_war_council
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			threat > 0.20
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = AST_citizen_military_forces
+		}
+	}
+	focus = {
+		id = AST_rats_of_tobruk
+		icon = GFX_focus_AST_rats_tobruk
+		prerequisite = { focus = AST_volunteer_defence_corps }
+		prerequisite = { focus = AST_strengthen_ties_with_uk }
+		x = 4
+		y = 2
+		relative_position_id = AST_establish_advisory_war_council
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		completion_reward = {
+			hidden_effect = {
+				if = {
+					limit = {
+						has_tech = tech_logistics_company
+					}
+					division_template = {
+						name = "Rats of Tobruk"
+						division_names_group = AST_INF_01
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+							infantry = { x = 2 y = 0 }
+							infantry = { x = 2 y = 1 }
+							infantry = { x = 2 y = 2 }
+							infantry = { x = 3 y = 0 }
+							infantry = { x = 3 y = 1 }
+						}
+						support = {
+							recon = { x = 0 y = 0 }
+							engineer = { x = 0 y = 1 }
+							logistics_company = { x = 0 y = 2 }
+						}
+					}
+					else = {
+						division_template = {
+							name = "Rats of Tobruk"
+							division_names_group = AST_INF_01
+							regiments = {
+								infantry = { x = 0 y = 0 }
+								infantry = { x = 0 y = 1 }
+								infantry = { x = 0 y = 2 }
+								infantry = { x = 1 y = 0 }
+								infantry = { x = 1 y = 1 }
+								infantry = { x = 1 y = 2 }
+								infantry = { x = 2 y = 0 }
+								infantry = { x = 2 y = 1 }
+								infantry = { x = 2 y = 2 }
+								infantry = { x = 3 y = 0 }
+								infantry = { x = 3 y = 1 }
+							}
+							support = {
+								recon = { x = 0 y = 0 }
+								engineer = { x = 0 y = 1 }
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						any_country = {
+							is_in_faction_with = AST
+							controls_state = 265
+						}
+						any_country = {
+							is_in_faction_with = AST
+							controls_state = 477
+						}
+					}
+					load_oob = "AST_TFV_rats_africa"
+					else = {
+						if = {
+							limit = {
+								controls_state = 273
+							}
+							load_oob = "AST_TFV_rats_australia"
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					any_country = {
+						is_in_faction_with = AST
+						controls_state = 265
+					}
+					any_country = {
+						is_in_faction_with = AST
+						controls_state = 477
+					}
+				}
+				custom_effect_tooltip = AST_rats_of_tobruk_effect_1
+				else = {
+					if = {
+						limit = {
+							controls_state = 273
+						}
+					}
+					custom_effect_tooltip = AST_rats_of_tobruk_effect_2
+				}
+			}
+		}
+	}
+	focus = {
+		id = AST_fight_work_or_perish
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = AST_civil_construction_corps }
+		prerequisite = { focus = AST_squash_the_squanderbugs }
+		x = -3
+		y = 4
+		relative_position_id = AST_establish_advisory_war_council
+		cost = 10
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			if = {
+				limit = { has_idea = AST_great_depression_1 }
+				remove_ideas = AST_great_depression_1
+				add_ideas = AST_all_in
+			}
+			if = {
+				limit = { has_idea = AST_great_depression_2 }
+				remove_ideas = AST_great_depression_2
+				add_ideas = AST_all_in
+			}
+			if = {
+				limit = { has_idea = AST_great_depression_3 }
+				swap_ideas = {
+					remove_idea = AST_great_depression_3
+					add_idea = AST_all_in
+				}
+			}
+		}
+	}
+	focus = {
+		id = AST_squash_the_squanderbugs
+		icon = GFX_focus_AST_squander_bug
+		prerequisite = { focus = AST_invest_in_victory }
+		x = -2
+		y = 3
+		relative_position_id = AST_establish_advisory_war_council
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = AST_invest_in_victory
+				add_idea = AST_invest_in_victory_2
+			}
+		}
+	}
+	focus = {
+		id = AST_rationing_and_recycling
+		icon = GFX_goal_generic_trade
+		prerequisite = { focus = AST_invest_in_victory }
+		x = 0
+		y = 3
+		relative_position_id = AST_establish_advisory_war_council
+		cost = 10
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		complete_tooltip = {
+			random_state = {
+				limit = { has_state_flag = AST_rationing_and_recycling_alu }
+				add_resource = {
+					type = aluminium
+					amount = 24
+				}
+			}
+			random_state = {
+				limit = { has_state_flag = AST_rationing_and_recycling_oil }
+				add_resource = {
+					type = oil
+					amount = 12
+				}
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = { is_in_home_area = yes
+				}
+				prioritize = { 448 447 449 }
+				add_resource = {
+					type = aluminium
+					amount = 24
+				}
+				set_state_flag = AST_rationing_and_recycling_alu
+			}
+			random_owned_controlled_state = {
+				limit = { is_in_home_area = yes }
+				prioritize = { 444 }
+				add_resource = {
+					type = oil
+					amount = 12
+				}
+				set_state_flag = AST_rationing_and_recycling_oil
+			}
+		}
+	}
+	focus = {
+		id = AST_classify_aliens
+		icon = GFX_goal_generic_defence
+		prerequisite = { focus = AST_citizen_military_forces }
+		x = 2
+		y = 3
+		relative_position_id = AST_establish_advisory_war_council
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = AST_classify_aliens
+			if = {
+				limit = {
+					has_government = democratic
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = -0.1
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = fascism
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = -0.1
+				}
+				add_popularity = {
+					ideology = communism
+					popularity = -0.1
+				}
+			}
+			if = {
+				limit = {
+					has_government = communism
+				}
+				add_popularity = {
+					ideology = democratic
+					popularity = -0.1
+				}
+				add_popularity = {
+					ideology = fascism
+					popularity = -0.1
+				}
+			}
+		}
+	}
+	focus = {
+		id = AST_support_the_policy_of_appeasement
+		icon = GFX_goal_generic_improve_relations
+		x = 28
+		y = 0
+		cost = 5
+		ai_will_do = {}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			modify_tech_sharing_bonus = {
+				id = commonwealth_research
+				bonus = 0.03
+			}
+			ENG = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = AST_support_the_policy_of_appeasement
+				}
+			}
+		}
+	}
+	focus = {
+		id = AST_strengthen_ties_with_uk
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		prerequisite = { focus = AST_support_the_policy_of_appeasement }
+		relative_position_id = AST_support_the_policy_of_appeasement
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_MANPOWER }
+		completion_reward = {
+			add_stability = 0.05
+			add_manpower = 5000
+		}
+	}
+	focus = {
+		id = AST_adopt_westminster
+		icon = GFX_goal_generic_improve_relations
+		prerequisite = { focus = AST_strengthen_ties_with_uk }
+		x = 0
+		y = 2
+		relative_position_id = AST_support_the_policy_of_appeasement
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_TFV_AUTONOMY }
+		completion_reward = {
+			add_political_power = 120
+			add_autonomy_ratio = {
+				value = 0.1
+				localization = AST_adopt_westminster
+			}
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = AST_arthur_calwell
+		}
+	}
+	focus = {
+		id = AST_CSIR
+		icon = GFX_goal_tfv_generic_tech_sharing
+		prerequisite = { focus = AST_adopt_westminster }
+		x = -1
+		y = 3
+		relative_position_id = AST_support_the_policy_of_appeasement
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			AST = {
+				modify_tech_sharing_bonus = {
+					id = commonwealth_research
+					bonus = 0.05
+				}
+			}
+		}
+	}
+	focus = {
+		id = AST_swpa_protector
+		icon = GFX_goal_generic_defence
+		prerequisite = { focus = AST_adopt_westminster }
+		x = 1
+		y = 3
+		relative_position_id = AST_support_the_policy_of_appeasement
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			303 = {
+				controller = { is_in_faction_with = ROOT }
+			}
+			300 = {
+				controller = { is_in_faction_with = ROOT }
+			}
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+		completion_reward = {
+			591 = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+				set_building_level = {
+					type = coastal_bunker
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+				set_building_level = {
+					type = coastal_bunker
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+					level = 3
+					instant_build = yes
+				}
+			}
+			300 = {
+				set_building_level = {
+					type = coastal_bunker
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+					level = 2
+					instant_build = yes
+				}
+				set_building_level = {
+					type = coastal_bunker
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = AST_empire_air_training_scheme
+		icon = GFX_goal_generic_air_fighter2
+		prerequisite = { focus = AST_CSIR focus = AST_swpa_protector }
+		x = -1
+		y = 4
+		relative_position_id = AST_support_the_policy_of_appeasement
+		cost = 5
+		ai_will_do = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  }
+		completion_reward = {
+			add_ideas = AST_empire_air_training_scheme
+		}
+	}
+	focus = {
+		id = AST_commonwealth_aircraft_corporation
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = AST_CSIR focus = AST_swpa_protector }
+		x = 1
+		y = 4
+		relative_position_id = AST_support_the_policy_of_appeasement
+		cost = 10
+		ai_will_do = {
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {  FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			add_ideas = AST_commonwealth_aircraft_corporation
+		}
+	}
+}
 

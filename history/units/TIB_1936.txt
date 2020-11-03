@@ -1,42 +1,42 @@
 ﻿division_template = {
- name = "Juntuan"
- division_names_group = TIB_GAR_01
- regiments = {
- infantry = { x = 0 y = 0 }
- infantry = { x = 0 y = 1 }
- infantry = { x = 1 y = 0 }
- infantry = { x = 1 y = 1 }
- }
- }
- units = {
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 1
- }
- location =1882
- division_template = "Juntuan"
- start_equipment_factor = 0.3
- }
- division = {
- division_name = {
- is_name_ordered = yes
- name_order = 2
- }
- location =1897
- division_template = "Juntuan"
- start_equipment_factor = 0.3
- }
- }
- instant_effect = {
- add_equipment_production = {
- equipment = {
- type = infantry_equipment_0
- creator = "TIB"
- }
- requested_factories = 1
- progress = 0.65
- efficiency = 100
- }
- }
+	name = "Juntuan"
+	division_names_group = TIB_GAR_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+units = {
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location =1882
+		division_template = "Juntuan"
+		start_equipment_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location =1897
+		division_template = "Juntuan"
+		start_equipment_factor = 0.3
+	}
+}
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "TIB"
+		}
+		requested_factories = 1
+		progress = 0.65
+		efficiency = 100
+	}
+}
 

@@ -1,38 +1,38 @@
 state={
-  id=292
-  name="STATE_325"
-  resources={
-  tungsten=2.000
-  }
-  history={
-  owner = CHI
-  add_core_of = CHI
-  victory_points = {
- 1264 10
-  }
-  buildings = {
-  infrastructure = 3
-  arms_factory = 1
-  industrial_complex = 3
-  }
-  1938.10.25 = {
-  if = {
-  limit = {
-  NOT = {
-  has_dlc = "Waking the Tiger"
-  }
-  }
-  CHI = {
-  transfer_state = PREV
-  }
-  }
-  }
-  }
-  provinces={
- 1060 1117 1141 1264 1328 1464 1585 4226 6908 7049 7400 9519 9873 11142 11161
-  }
-  manpower=10994500
-  buildings_max_level_factor=1.000
-  state_category=town
-  }
+	id=292
+	name="STATE_325"
+	resources={
+		tungsten=2.000
+	}
+	history={
+		owner = CHI
+		add_core_of = CHI
+		victory_points = {
+			1264 10
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 3
+		}
+		1938.10.25 = {
+			if = {
+				limit = {
+					NOT = {
+						has_dlc = "Waking the Tiger"
+					}
+				}
+				CHI = {
+					transfer_state = PREV
+				}
+			}
+		}
+	}
+	provinces={
+		1060 1117 1141 1264 1328 1464 1585 4226 6908 7049 7400 9519 9873 11142 11161
+	}
+	manpower=10994500
+	buildings_max_level_factor=1.000
+	state_category=town
+}
 

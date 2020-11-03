@@ -1,23 +1,23 @@
- add_namespace = tfv_canada
-  add_namespace = canada_vanilla
-  country_event = {
-  id = tfv_canada.145
-  title = tfv_canada.145.t
-  desc = tfv_canada.145.d
-  picture = GFX_report_event_alliedminor_startup
-  is_triggered_only = yes
-  option = {
-  name = tfv_canada.145.a
-  }
-  }
-  country_event = {
-  id = canada_vanilla.1
-  title = canada_vanilla.1.title
-  desc = canada_vanilla.1.desc
-  picture = GFX_report_event_canada_ronnie
-  is_triggered_only = yes
-  option = {
-  name = canada_vanilla.1.opt
-  }
-  }
+add_namespace = tfv_canada
+add_namespace = canada_vanilla
+country_event = {
+	id = tfv_canada.145
+	title = tfv_canada.145.t
+	desc = tfv_canada.145.d
+	picture = GFX_report_event_alliedminor_startup
+	is_triggered_only = yes
+	option = {
+		name = tfv_canada.145.a
+	}
+}
+country_event = {
+	id = canada_vanilla.1
+	title = canada_vanilla.1.title
+	desc = canada_vanilla.1.desc
+	picture = GFX_report_event_canada_ronnie
+	is_triggered_only = yes
+	option = {
+		name = canada_vanilla.1.opt
+	}
+}
 
