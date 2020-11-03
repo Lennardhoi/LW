@@ -1,52 +1,52 @@
 ﻿start_equipment_factor = 0.2
-division_template = {
-	name = "Binary Infantry"
-	division_names_group = YUN_INF_01
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-	}
-}
-division_template = {
-	name = "Triangular Infantry"
-	division_names_group = YUN_INF_01
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-	}
-}
-units = {
-	division = {
-		name = "Kunming Jingbei"
-		location =11995
-		division_template = "Binary Infantry"
-	}
-	division = {
-		name = "Yunnan Baoan Ke"
-		location =9821
-		division_template = "Binary Infantry"
-	}
-	division = {
-		name = "Dali Baoan Ke"
-		location =9821
-		division_template = "Binary Infantry"
-	}
-}
-instant_effect = {
-	add_equipment_production = {
-		equipment = {
-			type = infantry_equipment_0
-			creator = "YUN"
-		}
-		requested_factories = 1
-		progress = 0.48
-		efficiency = 100
-	}
-}
+ division_template = {
+ name = "Binary Infantry"
+ division_names_group = YUN_INF_01
+ regiments = {
+ infantry = { x = 0 y = 0 }
+ infantry = { x = 0 y = 1 }
+ infantry = { x = 1 y = 0 }
+ infantry = { x = 1 y = 1 }
+ }
+ }
+ division_template = {
+ name = "Triangular Infantry"
+ division_names_group = YUN_INF_01
+ regiments = {
+ infantry = { x = 0 y = 0 }
+ infantry = { x = 0 y = 1 }
+ infantry = { x = 1 y = 0 }
+ infantry = { x = 1 y = 1 }
+ infantry = { x = 2 y = 0 }
+ infantry = { x = 2 y = 1 }
+ }
+ }
+ units = {
+ division = {
+ name = "Kunming Jingbei"
+ location =11570
+ division_template = "Binary Infantry"
+ }
+ division = {
+ name = "Yunnan Baoan Ke"
+ location =9519
+ division_template = "Binary Infantry"
+ }
+ division = {
+ name = "Dali Baoan Ke"
+ location =9519
+ division_template = "Binary Infantry"
+ }
+ }
+ instant_effect = {
+ add_equipment_production = {
+ equipment = {
+ type = infantry_equipment_0
+ creator = "YUN"
+ }
+ requested_factories = 1
+ progress = 0.48
+ efficiency = 100
+ }
+ }
 

@@ -1,90 +1,85 @@
 ﻿division_template = {
-	name = "Pestininku Divizija"
-	division_names_group = LIT_INF_01
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
-	}
-}
-division_template = {
-	name = "Kavalerijos Brigados"
-	division_names_group = LIT_CAV_01
-	regiments = {
-		cavalry = { x = 0 y = 0 }
-		cavalry = { x = 0 y = 1 }
-		cavalry = { x = 0 y = 2 }
-	}
-}
-units = {
-
-
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location =6005
-		division_template = "Pestininku Divizija"
-		force_equipment_variants = { infantry_equipment_0 = { owner = "LIT" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location =6005
-		division_template = "Pestininku Divizija"
-		force_equipment_variants = { infantry_equipment_0 = { owner = "LIT" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 3
-		}
-		location =6005
-		division_template = "Pestininku Divizija"
-		force_equipment_variants = { infantry_equipment_0 = { owner = "LIT" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-	}
-	division = {
-		name = "Kavalerijos Brigados"
-		location =6005
-		division_template = "Kavalerijos Brigados"
-		force_equipment_variants = { infantry_equipment_0 = { owner = "LIT" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-	}
-
-}
-air_wings = {
-
-	11 = {
-		fighter_equipment_0 =  { owner = "LIT" amount = 39 }
-		tac_bomber_equipment_0 =  { owner = "LIT" amount = 30 }
-	}
-}
-
-instant_effect = {
-	add_equipment_production = {
-		equipment = {
-			type = infantry_equipment_1
-			creator = "LIT"
-		}
-		requested_factories = 1
-		progress = 0.22
-		efficiency = 100
-	}
-}
+ name = "Pestininku Divizija"
+ division_names_group = LIT_INF_01
+ regiments = {
+ infantry = { x = 0 y = 0 }
+ infantry = { x = 0 y = 1 }
+ infantry = { x = 0 y = 2 }
+ infantry = { x = 1 y = 0 }
+ infantry = { x = 1 y = 1 }
+ infantry = { x = 1 y = 2 }
+ infantry = { x = 2 y = 0 }
+ infantry = { x = 2 y = 1 }
+ infantry = { x = 2 y = 2 }
+ }
+ }
+ division_template = {
+ name = "Kavalerijos Brigados"
+ division_names_group = LIT_CAV_01
+ regiments = {
+ cavalry = { x = 0 y = 0 }
+ cavalry = { x = 0 y = 1 }
+ cavalry = { x = 0 y = 2 }
+ }
+ }
+ units = {
+ division = {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 1
+ }
+ location =5810
+ division_template = "Pestininku Divizija"
+ force_equipment_variants = { infantry_equipment_0 = { owner = "LIT" } }
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.5
+ }
+ division = {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 2
+ }
+ location =5810
+ division_template = "Pestininku Divizija"
+ force_equipment_variants = { infantry_equipment_0 = { owner = "LIT" } }
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.5
+ }
+ division = {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 3
+ }
+ location =5810
+ division_template = "Pestininku Divizija"
+ force_equipment_variants = { infantry_equipment_0 = { owner = "LIT" } }
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.5
+ }
+ division = {
+ name = "Kavalerijos Brigados"
+ location =5810
+ division_template = "Kavalerijos Brigados"
+ force_equipment_variants = { infantry_equipment_0 = { owner = "LIT" } }
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.5
+ }
+ }
+ air_wings = {
+ 11 = {
+ fighter_equipment_0 =  { owner = "LIT" amount = 39 }
+ tac_bomber_equipment_0 =  { owner = "LIT" amount = 30 }
+ }
+ }
+ instant_effect = {
+ add_equipment_production = {
+ equipment = {
+ type = infantry_equipment_1
+ creator = "LIT"
+ }
+ requested_factories = 1
+ progress = 0.22
+ efficiency = 100
+ }
+ }
 

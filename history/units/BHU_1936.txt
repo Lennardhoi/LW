@@ -1,24 +1,22 @@
 ﻿division_template = {
-	name = "Infantry Division"
-	division_names_group = BHU_INF_01
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-	}
-}
-units = {
-
-}
-
-instant_effect = {
-	add_equipment_production = {
-		equipment = {
-			type = infantry_equipment_0
-			creator = "BHU"
-		}
-		requested_factories = 1
-		progress = 0.71
-		efficiency = 100
-	}
-}
+ name = "Infantry Division"
+ division_names_group = BHU_INF_01
+ regiments = {
+ infantry = { x = 0 y = 0 }
+ infantry = { x = 0 y = 1 }
+ }
+ }
+ units = {
+ }
+ instant_effect = {
+ add_equipment_production = {
+ equipment = {
+ type = infantry_equipment_0
+ creator = "BHU"
+ }
+ requested_factories = 1
+ progress = 0.71
+ efficiency = 100
+ }
+ }
 

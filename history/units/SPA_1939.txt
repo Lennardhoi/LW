@@ -1,422 +1,401 @@
 ﻿
-division_template = {
-	name = "División de Infantería"
-	division_names_group = SPA_INF_01
-
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 0 y = 3 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-		infantry = { x = 1 y = 3 }
-	}
-	support = {
-		artillery = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-	}
-}
-division_template = {
-	name = "División de Caballería"
-	division_names_group = SPR_CAV_01
-	regiments = {
-		cavalry = { x = 0 y = 0 }
-		cavalry = { x = 0 y = 1 }
-		cavalry = { x = 0 y = 2 }
-		cavalry = { x = 0 y = 3 }
-		motorized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
-		motorized = { x = 1 y = 2 }
-		motorized = { x = 1 y = 3 }
-	}
-	support = {
-		recon = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-	}
-}
-division_template = {
-	name = "Fuerza Colonial"
-	division_names_group = SPR_GAR_01
-
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-		cavalry = { x = 2 y = 0 }
-		cavalry = { x = 2 y = 1 }
-	}
-	priority = 0
-}
-
-units = {
-
-
-	division = {
-		name = "División de Caballería"
-		location =3797
-		division_template = "División de Caballería"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
-	}
-
-
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 11
-		}
-		location =3797
-		division_template = "División de Infantería"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 12
-		}
-		location =3797
-		division_template = "División de Infantería"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 13
-		}
-		location =3797
-		division_template = "División de Infantería"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
-	}
-
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 21
-		}
-		location =6855
-		division_template = "División de Infantería"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 22
-		}
-		location =6855
-		division_template = "División de Infantería"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 23
-		}
-		location =6855
-		division_template = "División de Infantería"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
-	}
-
-
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 31
-		}
-		location =6601
-		division_template = "División de Infantería"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 32
-		}
-		location =6601
-		division_template = "División de Infantería"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
-	}
-
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 41
-		}
-		location =3692
-		division_template = "División de Infantería"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 42
-		}
-		location =3692
-		division_template = "División de Infantería"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 43
-		}
-		location =3692
-		division_template = "División de Infantería"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
-	}
-
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 51
-		}
-		location =9269
-		division_template = "División de Infantería"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 52
-		}
-		location =9269
-		division_template = "División de Infantería"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
-	}
-
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 61
-		}
-		location =736
-		division_template = "División de Infantería"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 62
-		}
-		location =736
-		division_template = "División de Infantería"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
-	}
-
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 71
-		}
-		location =878
-		division_template = "División de Infantería"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 72
-		}
-		location =11126
-		division_template = "División de Infantería"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
-	}
-
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 81
-		}
-		location =754
-		division_template = "División de Infantería"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 82
-		}
-		location =754
-		division_template = "División de Infantería"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
-	}
-
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location =9295
-		division_template = "Fuerza Colonial"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location =12193
-		division_template = "Fuerza Colonial"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-	}
-
-
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 91
-		}
-		location =11386
-		division_template = "División de Infantería"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 92
-		}
-		location =11386
-		division_template = "División de Infantería"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 3
-		}
-		location =11386
-		division_template = "Fuerza Colonial"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-	}
-
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 101
-		}
-		location =9426
-		division_template = "División de Infantería"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 102
-		}
-		location =9426
-		division_template = "División de Infantería"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 4
-		}
-		location =9426
-		division_template = "Fuerza Colonial"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-	}
-}
-
-air_wings = {
-	41 = {
-		fighter_equipment_0 = { owner = "SPR" amount = 80 }
-		CAS_equipment_1 = { owner = "SPR" amount = 24 }
-	}
-	169 = {
-		tac_bomber_equipment_1 = { owner = "SPR" amount = 60 }
-		fighter_equipment_0 = { owner = "SPR" amount = 24 }
-		tac_bomber_equipment_0 = { owner = "SPR" amount = 30 }
-		CAS_equipment_1 = { owner = "SPR" amount = 24 }
-	}
-	166 = {
-		fighter_equipment_0 = { owner = "SPR" amount = 64 }
-	}
-	173 = {
-		fighter_equipment_1 = { owner = "SPR" amount = 30 }
-		tac_bomber_equipment_1 = { owner = "SPR" amount = 40 }
-	}
-	290 = {
-		fighter_equipment_1 = { owner = "SPR" amount = 36 }
-	}
-}
-
-instant_effect = {
-	add_equipment_production = {
-		equipment = {
-			type = infantry_equipment_1
-			creator = "SPR"
-		}
-		requested_factories = 1
-		progress = 0.60
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = support_equipment_1
-			creator = "SPR"
-		}
-		requested_factories = 1
-		progress = 0.80
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = artillery_equipment_1
-			creator = "SPR"
-		}
-		requested_factories = 1
-		progress = 0.80
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = motorized_equipment_1
-			creator = "SPR"
-		}
-		requested_factories = 1
-		progress = 0.4
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = fighter_equipment_1
-			creator = "SPR"
-		}
-		requested_factories = 1
-		progress = 0.30
-		efficiency = 100
-	}
-}
+ division_template = {
+ name = "División de Infantería"
+ division_names_group = SPA_INF_01
+ regiments = {
+ infantry = { x = 0 y = 0 }
+ infantry = { x = 0 y = 1 }
+ infantry = { x = 0 y = 2 }
+ infantry = { x = 0 y = 3 }
+ infantry = { x = 1 y = 0 }
+ infantry = { x = 1 y = 1 }
+ infantry = { x = 1 y = 2 }
+ infantry = { x = 1 y = 3 }
+ }
+ support = {
+ artillery = { x = 0 y = 0 }
+ engineer = { x = 0 y = 1 }
+ }
+ }
+ division_template = {
+ name = "División de Caballería"
+ division_names_group = SPR_CAV_01
+ regiments = {
+ cavalry = { x = 0 y = 0 }
+ cavalry = { x = 0 y = 1 }
+ cavalry = { x = 0 y = 2 }
+ cavalry = { x = 0 y = 3 }
+ motorized = { x = 1 y = 0 }
+ motorized = { x = 1 y = 1 }
+ motorized = { x = 1 y = 2 }
+ motorized = { x = 1 y = 3 }
+ }
+ support = {
+ recon = { x = 0 y = 0 }
+ engineer = { x = 0 y = 1 }
+ }
+ }
+ division_template = {
+ name = "Fuerza Colonial"
+ division_names_group = SPR_GAR_01
+ regiments = {
+ infantry = { x = 0 y = 0 }
+ infantry = { x = 0 y = 1 }
+ infantry = { x = 0 y = 2 }
+ infantry = { x = 1 y = 0 }
+ infantry = { x = 1 y = 1 }
+ infantry = { x = 1 y = 2 }
+ cavalry = { x = 2 y = 0 }
+ cavalry = { x = 2 y = 1 }
+ }
+ priority = 0
+ }
+ units = {
+ division = {
+ name = "División de Caballería"
+ location =3685
+ division_template = "División de Caballería"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.5
+ }
+ division = {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 11
+ }
+ location =3685
+ division_template = "División de Infantería"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.5
+ }
+ division = {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 12
+ }
+ location =3685
+ division_template = "División de Infantería"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.5
+ }
+ division = {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 13
+ }
+ location =3685
+ division_template = "División de Infantería"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.5
+ }
+ division = {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 21
+ }
+ location =6648
+ division_template = "División de Infantería"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.5
+ }
+ division = {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 22
+ }
+ location =6648
+ division_template = "División de Infantería"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.5
+ }
+ division = {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 23
+ }
+ location =6648
+ division_template = "División de Infantería"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.5
+ }
+ division = {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 31
+ }
+ location =6397
+ division_template = "División de Infantería"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.5
+ }
+ division = {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 32
+ }
+ location =6397
+ division_template = "División de Infantería"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.5
+ }
+ division = {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 41
+ }
+ location =3582
+ division_template = "División de Infantería"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.5
+ }
+ division = {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 42
+ }
+ location =3582
+ division_template = "División de Infantería"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.5
+ }
+ division = {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 43
+ }
+ location =3582
+ division_template = "División de Infantería"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.5
+ }
+ division = {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 51
+ }
+ location =8978
+ division_template = "División de Infantería"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.5
+ }
+ division = {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 52
+ }
+ location =8978
+ division_template = "División de Infantería"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.5
+ }
+ division = {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 61
+ }
+ location =703
+ division_template = "División de Infantería"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.5
+ }
+ division = {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 62
+ }
+ location =703
+ division_template = "División de Infantería"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.5
+ }
+ division = {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 71
+ }
+ location =845
+ division_template = "División de Infantería"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.5
+ }
+ division = {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 72
+ }
+ location =10733
+ division_template = "División de Infantería"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.5
+ }
+ division = {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 81
+ }
+ location =721
+ division_template = "División de Infantería"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.5
+ }
+ division = {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 82
+ }
+ location =721
+ division_template = "División de Infantería"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.5
+ }
+ division = {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 1
+ }
+ location =9004
+ division_template = "Fuerza Colonial"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ division = {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 2
+ }
+ location =11749
+ division_template = "Fuerza Colonial"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ division = {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 91
+ }
+ location =10986
+ division_template = "División de Infantería"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ division = {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 92
+ }
+ location =10986
+ division_template = "División de Infantería"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ division = {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 3
+ }
+ location =10986
+ division_template = "Fuerza Colonial"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ division = {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 101
+ }
+ location =9130
+ division_template = "División de Infantería"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ division = {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 102
+ }
+ location =9130
+ division_template = "División de Infantería"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ division = {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 4
+ }
+ location =9130
+ division_template = "Fuerza Colonial"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ }
+ air_wings = {
+ 41 = {
+ fighter_equipment_0 = { owner = "SPR" amount = 80 }
+ CAS_equipment_1 = { owner = "SPR" amount = 24 }
+ }
+ 169 = {
+ tac_bomber_equipment_1 = { owner = "SPR" amount = 60 }
+ fighter_equipment_0 = { owner = "SPR" amount = 24 }
+ tac_bomber_equipment_0 = { owner = "SPR" amount = 30 }
+ CAS_equipment_1 = { owner = "SPR" amount = 24 }
+ }
+ 166 = {
+ fighter_equipment_0 = { owner = "SPR" amount = 64 }
+ }
+ 173 = {
+ fighter_equipment_1 = { owner = "SPR" amount = 30 }
+ tac_bomber_equipment_1 = { owner = "SPR" amount = 40 }
+ }
+ 290 = {
+ fighter_equipment_1 = { owner = "SPR" amount = 36 }
+ }
+ }
+ instant_effect = {
+ add_equipment_production = {
+ equipment = {
+ type = infantry_equipment_1
+ creator = "SPR"
+ }
+ requested_factories = 1
+ progress = 0.60
+ efficiency = 100
+ }
+ add_equipment_production = {
+ equipment = {
+ type = support_equipment_1
+ creator = "SPR"
+ }
+ requested_factories = 1
+ progress = 0.80
+ efficiency = 100
+ }
+ add_equipment_production = {
+ equipment = {
+ type = artillery_equipment_1
+ creator = "SPR"
+ }
+ requested_factories = 1
+ progress = 0.80
+ efficiency = 100
+ }
+ add_equipment_production = {
+ equipment = {
+ type = motorized_equipment_1
+ creator = "SPR"
+ }
+ requested_factories = 1
+ progress = 0.4
+ efficiency = 100
+ }
+ add_equipment_production = {
+ equipment = {
+ type = fighter_equipment_1
+ creator = "SPR"
+ }
+ requested_factories = 1
+ progress = 0.30
+ efficiency = 100
+ }
+ }
 

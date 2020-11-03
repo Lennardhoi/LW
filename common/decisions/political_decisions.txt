@@ -1,718 +1,519 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 political_actions = {
-	strikes_negotiations_1 = {
-		icon = generic_decision
-		priority = 10
-		allowed = {
-			always = yes
-		}
-		available = {
-			has_active_mission = strikes_mission
-			has_stability < 0.5
-		}
-		cost = 100
-		days_remove = 30
-		ai_will_do = {
-			factor = 1
-		}
-		visible = {
-			has_active_mission = strikes_mission
-		}
-		modifier = {
-			stability_weekly_factor = 0.005
-			consumer_goods_factor = 0.05
-			conscription = -0.01
-		}
-		complete_effect = {
-			set_country_flag = { flag = no_strikes_please days = 365 }
-		}
-		remove_effect = {
-		}
-	}
-	strikes_negotiations_2 = {
-		icon = generic_break_treaty
-		priority = 10
-		allowed = {
-			always = yes
-		}
-		available = {
-			has_active_mission = strikes_mission
-			has_stability < 0.5
-		}
-		cost = 50
-		days_remove = 30
-		ai_will_do = {
-			factor = 1
-		}
-		visible = {
-			has_active_mission = strikes_mission
-		}
-		modifier = {
-			stability_weekly_factor = -0.001
-			industrial_capacity_factory = -0.05
-			industrial_capacity_dockyard = -0.05
-		}
-		complete_effect = {
-			set_country_flag = { flag = no_strikes_please days = 180 }
-		}
-		remove_effect = {
-		}
-	}
-	strikes_negotiations_3 = {
-		icon = oppression
-		priority = 10
-		allowed = {
-			always=yes
-		}
-		available = {
-			has_active_mission = strikes_mission
-			has_stability < 0.5
-			NOT = { has_government = democratic }
-		}
-		cost = 25
-		ai_will_do = {
-			factor = 1
-		}
-		visible = {
-			has_active_mission = strikes_mission
-			NOT = { has_government = democratic }
-		}
-		complete_effect = {
-			set_country_flag = { flag = no_strikes_please days = 365 }
-			add_stability = -0.05
-		}
-		remove_effect = {
-		}
-	}
-	draft_dodging_negotiations = {
-		icon = generic_nationalism
-		priority = 10
-		allowed = {
-			always = yes
-		}
-		available = {
-			has_active_mission = draft_dodging_mission
-			has_war_support < 0.5
-			has_war = yes
-		}
-		cost = 0
-		days_remove = 90
-		ai_will_do = {
-			factor = 1
-		}
-		visible = {
-			has_active_mission = draft_dodging_mission
-		}
-		modifier = {
-			war_support_weekly = 0.005
-			stability_weekly_factor = -0.005
-		}
-		complete_effect = {
-			set_country_flag = { flag = no_dodging_please days = 365 }
-		}
-	}
-	give_refuge_ger = {
-		icon = generic_research
-		allowed = {
-			OR = {
-				original_tag = ENG
-				original_tag = USA
-				original_tag = FRA
-				original_tag = CAN
-			}
-		}
-		visible = {
-		}
-		cost = 50
-		fire_only_once = yes
-		days_remove = -1
-		available = {
-		}
-		modifier = {
-			research_speed_factor = 0.05
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				tag = ENG
-				has_War = no
-				date < 1937.3.1
-				factor = 0
-			}
-		}
-	}
-	give_refuge_ita = {
-		icon = generic_research
-		allowed = {
-			OR = {
-				original_tag = ENG
-				original_tag = USA
-				original_tag = FRA
-				original_tag = CAN
-			}
-		}
-		visible = {
-		}
-		cost = 50
-		fire_only_once = yes
-		days_remove = -1
-		available = {
-		}
-		modifier = {
-			research_speed_factor = 0.05
-		}
-		remove_trigger = {
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				tag = ENG
-				has_War = no
-				date < 1937.3.1
-				factor = 0
-			}
-		}
-	}
-	anti_fascist_raids = {
-		icon = generic_civil_support
-		allowed = {
-			OR = {
-				tag = SOV
-				tag = RAJ
-			}
-		}
-		visible = {
-			NOT = { has_government = fascism }
-		}
-		available = {
-			fascism > 0.1
-		}
-		modifier = {
-			fascism_drift = -0.05
-			stability_weekly = 0.007
-		}
-		days_remove = 120
-		cost = 50
-		complete_effect = {
-			add_stability = -0.08
-			custom_effect_tooltip = "Gives 4% Stability in total"
-		}
-		remove_effect = {
-		}
-		ai_will_do = {
-			base = 0
-			modifier = {
-				add = 1
-				tag = AUS
-				fascism > 0.45
-				is_historical_focus_on = no
-			}
-			modifier = {
-				add = 10
-				tag = AUS
-				fascism > 0.45
-				has_completed_focus = liberty_ethos
-			}
-		}
-	}
-	anti_democratic_raids = {
-		icon = generic_civil_support
-		allowed = {
-			OR = {
-				tag = SOV
-				tag = JAP
-				tag = RAJ
-				tag = MAN
-				tag = BUL
-				tag = ROM
-				tag = HUN
-				tag = SPR
-				tag = GER
-				tag = ITA
-				tag = SAF
-				tag = FIN
-				tag = EFR
-			}
-		}
-		visible = {
-			NOT = { has_government = democratic }
-		}
-		available = {
-			democratic > 0.1
-		}
-		modifier = {
-			democratic_drift = -0.05
-			stability_weekly = 0.007
-		}
-		days_remove = 120
-		cost = 50
-		complete_effect = {
-			add_stability = -0.08
-			custom_effect_tooltip = "Gives 4% Stability in total"
-		}
-		remove_effect = {
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	anti_communist_raids = {
-		allowed = {
-			OR = {
-				tag = JAP
-				tag = RAJ
-				tag = MAN
-				tag = BUL
-				tag = ROM
-				tag = HUN
-				tag = SPR
-				tag = GER
-				tag = ITA
-				tag = FIN
-				tag = EFR
-			}
-		}
-		icon = generic_civil_support
-		visible = {
-			NOT = { has_government = communism }
-		}
-		available = {
-			communism > 0.1
-		}
-		modifier = {
-			communism_drift = -0.05
-			stability_weekly = 0.007
-		}
-		days_remove = 120
-		cost = 50
-		complete_effect = {
-			add_stability = -0.08
-			custom_effect_tooltip = "Gives 4% Stability in total"
-		}
-		remove_effect = {
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	ban_fascist_party = {
-		icon = generic_civil_support
-		allowed = {
-			OR = {
-				tag = SOV
-				tag = FRA
-				tag = RAJ
-				tag = SAF
-			}
-		}
-		available = {
-			fascism < 0.1
-		}
-		visible = {
-			NOT = { has_government = fascism }
-			fascism > 0
-		}
-		remove_trigger = {
-			hidden_trigger = {
-				has_government = fascism
-			}
-		}
-		modifier = {
-			fascism_drift = -0.05
-		}
-		days_remove = -1
-		cost = 25
-		complete_effect = {
-		}
-	}
-	ban_democratic_party = {
-		icon = generic_civil_support
-		allowed = {
-			OR = {
-				tag = SOV
-				tag = JAP
-				tag = RAJ
-				tag = MAN
-				tag = BUL
-				tag = ROM
-				tag = HUN
-				tag = SPR
-				tag = GER
-				tag = ITA
-				tag = SAF
-				tag = FIN
-				tag = EFR
-			}
-		}
-		available = {
-			democratic < 0.1
-		}
-		visible = {
-			NOT = { has_government = democratic }
-			democratic > 0
-		}
-		remove_trigger = {
-			hidden_trigger = {
-				has_government = democratic
-			}
-		}
-		modifier = {
-			democratic_drift = -0.05
-		}
-		days_remove = -1
-		cost = 25
-		complete_effect = {
-		}
-	}
-	ban_communist_party = {
-		icon = generic_civil_support
-		allowed = {
-			OR = {
-				tag = JAP
-				tag = RAJ
-				tag = MAN
-				tag = BUL
-				tag = ROM
-				tag = HUN
-				tag = SPR
-				tag = GER
-				tag = ITA
-				tag = SAF
-				tag = EFR
-			}
-		}
-		available = {
-			communism < 0.1
-		}
-		visible = {
-			NOT = { has_government = communism }
-			communism > 0
-		}
-		remove_trigger = {
-			hidden_trigger = {
-				has_government = communism
-			}
-		}
-		modifier = {
-			communism_drift = -0.05
-		}
-		days_remove = -1
-		cost = 25
-		complete_effect = {
-		}
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	institute_press_censorship_fascist_state = {
-		icon = generic_political_discourse
-		allowed = {
-			OR = {
-				tag = JAP
-				tag = MAN
-				tag = BUL
-				tag = ROM
-				tag = HUN
-				tag = SPR
-				tag = GER
-				tag = ITA
-				tag = FIN
-				tag = EFR
-			}
-		}
-		visible = {
-			has_government = fascism
-		}
-		modifier = {
-			stability_weekly = 0.0025
-			communism_drift = -0.01
-			fascism_drift = 0.03
-			democratic_drift = -0.01
-			neutrality_drift = -0.01
-		}
-		days_remove = 120
-		cost = 50
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	institute_press_censorship_democratic_state = {
-		icon = generic_political_discourse
-		allowed = {
-			OR = {
-				tag = FRA
-				tag = RAJ
-				tag = AST
-				tag = NZL
-				tag = ENG
-				tag = IRE
-				tag = SAF
-				tag = USA
-				tag = CAN
-			}
-		}
-		visible = {
-			has_government = democratic
-		}
-		modifier = {
-			stability_weekly = 0.0025
-			communism_drift = -0.01
-			fascism_drift = -0.01
-			democratic_drift = 0.03
-			neutrality_drift = -0.01
-		}
-		days_remove = 120
-		cost = 50
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	institute_press_censorship_communist_state = {
-		icon = generic_political_discourse
-		allowed = {
-			tag = SOV
-		}
-		visible = {
-			has_government = communism
-		}
-		modifier = {
-			stability_weekly = 0.0025
-			communism_drift = 0.03
-			fascism_drift = -0.01
-			democratic_drift = -0.01
-			neutrality_drift = -0.01
-		}
-		days_remove = 120
-		cost = 50
-		ai_will_do = {
-			factor = 0
-		}
-	}
-	institute_press_censorship_neutrality_state = {
-		icon = generic_political_discourse
-		allowed = {
-			OR = {
-				tag = RAJ
-				tag = AST
-				tag = SAF
-				tag = EFR
-				tag = ROM
-				tag = BUL
-			}
-		}
-		visible = {
-			has_government = neutrality
-		}
-		modifier = {
-			stability_weekly = 0.005
-			communism_drift = -0.01
-			fascism_drift = -0.01
-			democratic_drift = -0.01
-			neutrality_drift = 0.03
-		}
-		days_remove = 360
-		cost = 50
-		ai_will_do = {
-			factor = 0
-		}
-	}
-}
+ strikes_negotiations_1 = {
+ icon = generic_decision
+ priority = 10
+ allowed = {
+ always = yes
+ }
+ available = {
+ has_active_mission = strikes_mission
+ has_stability < 0.5
+ }
+ cost = 100
+ days_remove = 30
+ ai_will_do = {
+ factor = 1
+ }
+ visible = {
+ has_active_mission = strikes_mission
+ }
+ modifier = {
+ stability_weekly_factor = 0.005
+ consumer_goods_factor = 0.05
+ conscription = -0.01
+ }
+ complete_effect = {
+ set_country_flag = { flag = no_strikes_please days = 365 }
+ }
+ remove_effect = {
+ }
+ }
+ strikes_negotiations_2 = {
+ icon = generic_break_treaty
+ priority = 10
+ allowed = {
+ always = yes
+ }
+ available = {
+ has_active_mission = strikes_mission
+ has_stability < 0.5
+ }
+ cost = 50
+ days_remove = 30
+ ai_will_do = {
+ factor = 1
+ }
+ visible = {
+ has_active_mission = strikes_mission
+ }
+ modifier = {
+ stability_weekly_factor = -0.001
+ industrial_capacity_factory = -0.05
+ industrial_capacity_dockyard = -0.05
+ }
+ complete_effect = {
+ set_country_flag = { flag = no_strikes_please days = 180 }
+ }
+ remove_effect = {
+ }
+ }
+ strikes_negotiations_3 = {
+ icon = oppression
+ priority = 10
+ allowed = {
+ always=yes
+ }
+ available = {
+ has_active_mission = strikes_mission
+ has_stability < 0.5
+ NOT = { has_government = democratic }
+ }
+ cost = 25
+ ai_will_do = {
+ factor = 1
+ }
+ visible = {
+ has_active_mission = strikes_mission
+ NOT = { has_government = democratic }
+ }
+ complete_effect = {
+ set_country_flag = { flag = no_strikes_please days = 365 }
+ add_stability = -0.05
+ }
+ remove_effect = {
+ }
+ }
+ draft_dodging_negotiations = {
+ icon = generic_nationalism
+ priority = 10
+ allowed = {
+ always = yes
+ }
+ available = {
+ has_active_mission = draft_dodging_mission
+ has_war_support < 0.5
+ has_war = yes
+ }
+ cost = 0
+ days_remove = 90
+ ai_will_do = {
+ factor = 1
+ }
+ visible = {
+ has_active_mission = draft_dodging_mission
+ }
+ modifier = {
+ war_support_weekly = 0.005
+ stability_weekly_factor = -0.005
+ }
+ complete_effect = {
+ set_country_flag = { flag = no_dodging_please days = 365 }
+ }
+ }
+ give_refuge_ger = {
+ icon = generic_research
+ allowed = {
+ OR = {
+ original_tag = ENG
+ original_tag = USA
+ original_tag = FRA
+ original_tag = CAN
+ }
+ }
+ visible = {
+ }
+ cost = 50
+ fire_only_once = yes
+ days_remove = -1
+ available = {
+ }
+ modifier = {
+ research_speed_factor = 0.05
+ }
+ ai_will_do = {
+ factor = 1
+ modifier = {
+ tag = ENG
+ has_War = no
+ date < 1937.3.1
+ factor = 0
+ }
+ }
+ }
+ give_refuge_ita = {
+ icon = generic_research
+ allowed = {
+ OR = {
+ original_tag = ENG
+ original_tag = USA
+ original_tag = FRA
+ original_tag = CAN
+ }
+ }
+ visible = {
+ }
+ cost = 50
+ fire_only_once = yes
+ days_remove = -1
+ available = {
+ }
+ modifier = {
+ research_speed_factor = 0.05
+ }
+ remove_trigger = {
+ }
+ ai_will_do = {
+ factor = 1
+ modifier = {
+ tag = ENG
+ has_War = no
+ date < 1937.3.1
+ factor = 0
+ }
+ }
+ }
+ anti_fascist_raids = {
+ icon = generic_civil_support
+ allowed = {
+ OR = {
+ tag = SOV
+ tag = RAJ
+ }
+ }
+ visible = {
+ NOT = { has_government = fascism }
+ }
+ available = {
+ fascism > 0.1
+ }
+ modifier = {
+ fascism_drift = -0.05
+ stability_weekly = 0.007
+ }
+ days_remove = 120
+ cost = 50
+ complete_effect = {
+ add_stability = -0.08
+ custom_effect_tooltip = "Gives 4% Stability in total"
+ }
+ remove_effect = {
+ }
+ ai_will_do = {
+ base = 0
+ modifier = {
+ add = 1
+ tag = AUS
+ fascism > 0.45
+ is_historical_focus_on = no
+ }
+ modifier = {
+ add = 10
+ tag = AUS
+ fascism > 0.45
+ has_completed_focus = liberty_ethos
+ }
+ }
+ }
+ anti_democratic_raids = {
+ icon = generic_civil_support
+ allowed = {
+ OR = {
+ tag = SOV
+ tag = JAP
+ tag = RAJ
+ tag = MAN
+ tag = BUL
+ tag = ROM
+ tag = HUN
+ tag = SPR
+ tag = GER
+ tag = ITA
+ tag = SAF
+ tag = FIN
+ tag = EFR
+ }
+ }
+ visible = {
+ NOT = { has_government = democratic }
+ }
+ available = {
+ democratic > 0.1
+ }
+ modifier = {
+ democratic_drift = -0.05
+ stability_weekly = 0.007
+ }
+ days_remove = 120
+ cost = 50
+ complete_effect = {
+ add_stability = -0.08
+ custom_effect_tooltip = "Gives 4% Stability in total"
+ }
+ remove_effect = {
+ }
+ ai_will_do = {
+ factor = 0
+ }
+ }
+ anti_communist_raids = {
+ allowed = {
+ OR = {
+ tag = JAP
+ tag = RAJ
+ tag = MAN
+ tag = BUL
+ tag = ROM
+ tag = HUN
+ tag = SPR
+ tag = GER
+ tag = ITA
+ tag = FIN
+ tag = EFR
+ }
+ }
+ icon = generic_civil_support
+ visible = {
+ NOT = { has_government = communism }
+ }
+ available = {
+ communism > 0.1
+ }
+ modifier = {
+ communism_drift = -0.05
+ stability_weekly = 0.007
+ }
+ days_remove = 120
+ cost = 50
+ complete_effect = {
+ add_stability = -0.08
+ custom_effect_tooltip = "Gives 4% Stability in total"
+ }
+ remove_effect = {
+ }
+ ai_will_do = {
+ factor = 0
+ }
+ }
+ ban_fascist_party = {
+ icon = generic_civil_support
+ allowed = {
+ OR = {
+ tag = SOV
+ tag = FRA
+ tag = RAJ
+ tag = SAF
+ }
+ }
+ available = {
+ fascism < 0.1
+ }
+ visible = {
+ NOT = { has_government = fascism }
+ fascism > 0
+ }
+ remove_trigger = {
+ hidden_trigger = {
+ has_government = fascism
+ }
+ }
+ modifier = {
+ fascism_drift = -0.05
+ }
+ days_remove = -1
+ cost = 25
+ complete_effect = {
+ }
+ }
+ ban_democratic_party = {
+ icon = generic_civil_support
+ allowed = {
+ OR = {
+ tag = SOV
+ tag = JAP
+ tag = RAJ
+ tag = MAN
+ tag = BUL
+ tag = ROM
+ tag = HUN
+ tag = SPR
+ tag = GER
+ tag = ITA
+ tag = SAF
+ tag = FIN
+ tag = EFR
+ }
+ }
+ available = {
+ democratic < 0.1
+ }
+ visible = {
+ NOT = { has_government = democratic }
+ democratic > 0
+ }
+ remove_trigger = {
+ hidden_trigger = {
+ has_government = democratic
+ }
+ }
+ modifier = {
+ democratic_drift = -0.05
+ }
+ days_remove = -1
+ cost = 25
+ complete_effect = {
+ }
+ }
+ ban_communist_party = {
+ icon = generic_civil_support
+ allowed = {
+ OR = {
+ tag = JAP
+ tag = RAJ
+ tag = MAN
+ tag = BUL
+ tag = ROM
+ tag = HUN
+ tag = SPR
+ tag = GER
+ tag = ITA
+ tag = SAF
+ tag = EFR
+ }
+ }
+ available = {
+ communism < 0.1
+ }
+ visible = {
+ NOT = { has_government = communism }
+ communism > 0
+ }
+ remove_trigger = {
+ hidden_trigger = {
+ has_government = communism
+ }
+ }
+ modifier = {
+ communism_drift = -0.05
+ }
+ days_remove = -1
+ cost = 25
+ complete_effect = {
+ }
+ ai_will_do = {
+ factor = 0
+ }
+ }
+ institute_press_censorship_fascist_state = {
+ icon = generic_political_discourse
+ allowed = {
+ OR = {
+ tag = JAP
+ tag = MAN
+ tag = BUL
+ tag = ROM
+ tag = HUN
+ tag = SPR
+ tag = GER
+ tag = ITA
+ tag = FIN
+ tag = EFR
+ }
+ }
+ visible = {
+ has_government = fascism
+ }
+ modifier = {
+ stability_weekly = 0.0025
+ communism_drift = -0.01
+ fascism_drift = 0.03
+ democratic_drift = -0.01
+ neutrality_drift = -0.01
+ }
+ days_remove = 120
+ cost = 50
+ ai_will_do = {
+ factor = 0
+ }
+ }
+ institute_press_censorship_democratic_state = {
+ icon = generic_political_discourse
+ allowed = {
+ OR = {
+ tag = FRA
+ tag = RAJ
+ tag = AST
+ tag = NZL
+ tag = ENG
+ tag = IRE
+ tag = SAF
+ tag = USA
+ tag = CAN
+ }
+ }
+ visible = {
+ has_government = democratic
+ }
+ modifier = {
+ stability_weekly = 0.0025
+ communism_drift = -0.01
+ fascism_drift = -0.01
+ democratic_drift = 0.03
+ neutrality_drift = -0.01
+ }
+ days_remove = 120
+ cost = 50
+ ai_will_do = {
+ factor = 0
+ }
+ }
+ institute_press_censorship_communist_state = {
+ icon = generic_political_discourse
+ allowed = {
+ tag = SOV
+ }
+ visible = {
+ has_government = communism
+ }
+ modifier = {
+ stability_weekly = 0.0025
+ communism_drift = 0.03
+ fascism_drift = -0.01
+ democratic_drift = -0.01
+ neutrality_drift = -0.01
+ }
+ days_remove = 120
+ cost = 50
+ ai_will_do = {
+ factor = 0
+ }
+ }
+ institute_press_censorship_neutrality_state = {
+ icon = generic_political_discourse
+ allowed = {
+ OR = {
+ tag = RAJ
+ tag = AST
+ tag = SAF
+ tag = EFR
+ tag = ROM
+ tag = BUL
+ }
+ }
+ visible = {
+ has_government = neutrality
+ }
+ modifier = {
+ stability_weekly = 0.005
+ communism_drift = -0.01
+ fascism_drift = -0.01
+ democratic_drift = -0.01
+ neutrality_drift = 0.03
+ }
+ days_remove = 360
+ cost = 50
+ ai_will_do = {
+ factor = 0
+ }
+ }
+ }
 

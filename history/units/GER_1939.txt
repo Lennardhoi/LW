@@ -1,1490 +1,1390 @@
 ﻿division_template = {
-	name = "Infanterie-Division"
-	division_names_group = GER_Inf_01
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
-	}
-}
-division_template = {
-	name = "Gebirgs-Division"
-	division_names_group = GER_Mnt_01
-	regiments = {
-		mountaineers = { x = 0 y = 0 }
-		mountaineers = { x = 0 y = 1 }
-		mountaineers = { x = 0 y = 2 }
-		mountaineers = { x = 1 y = 0 }
-		mountaineers = { x = 1 y = 1 }
-		mountaineers = { x = 1 y = 2 }
-		mountaineers = { x = 2 y = 0 }
-		mountaineers = { x = 2 y = 1 }
-		mountaineers = { x = 2 y = 2 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-	}
-}
-division_template = {
-	name = "Fallschirmjäger-Division"
-	division_names_group = GER_PAR_01
-	regiments = {
-		paratrooper = { x = 0 y = 0 }
-		paratrooper = { x = 0 y = 1 }
-		paratrooper = { x = 0 y = 2 }
-		paratrooper = { x = 1 y = 0 }
-		paratrooper = { x = 1 y = 1 }
-	}
-}
-division_template = {
-	name = "Infanterie-Division (mot.)"
-	division_names_group = GER_MOT_02
-	regiments = {
-		motorized = { x = 0 y = 0 }
-		motorized = { x = 0 y = 1 }
-		motorized = { x = 0 y = 2 }
-		motorized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
-		motorized = { x = 1 y = 2 }
-		motorized = { x = 2 y = 0 }
-		motorized = { x = 2 y = 1 }
-		motorized = { x = 2 y = 2 }
-	}
-	support = {
-		mot_recon = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-		artillery = { x = 0 y = 2 }
-	}
-}
-division_template = {
-	name = "Leichte Division"
-	division_names_group = GER_LTARM_01
-	regiments = {
-		light_armor = { x = 0 y = 0 }
-		motorized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
-		motorized = { x = 2 y = 0 }
-		motorized = { x = 2 y = 1 }
-	}
-	support = {
-		mot_recon = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-	}
-}
-division_template = {
-	name = "Panzer-Division"
-	division_names_group = GER_Arm_01
-	regiments = {
-		light_armor = { x = 0 y = 0 }
-		light_armor = { x = 0 y = 1 }
-		light_armor = { x = 1 y = 0 }
-		light_armor = { x = 1 y = 1 }
-		motorized = { x = 2 y = 0 }
-		motorized = { x = 2 y = 1 }
-		motorized = { x = 2 y = 2 }
-	}
-	support = {
-		mot_recon = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-	}
-}
-division_template = {
-	name = "SS-Regiment"
-	division_names_group = GER_SS_01
-	regiments = {
-		motorized = { x = 0 y = 0 }
-		motorized = { x = 0 y = 1 }
-		motorized = { x = 0 y = 2 }
-	}
-	support = {
-		artillery = { x = 0 y = 0 }
-	}
-	priority = 2
-}
-division_template = {
-	name = "Kavallerie-Brigade"
-	division_names_group = GER_Cav_01
-	regiments = {
-		cavalry = { x = 0 y = 0 }
-		cavalry = { x = 0 y = 1 }
-		cavalry = { x = 0 y = 2 }
-	}
-	support = {
-		recon = { x = 0 y = 0 }
-	}
-}
-division_template = {
-	name = "Sicherungs-Division"
-	division_names_group = GER_GAR_01
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
-	}
-	priority = 0
-}
-units = {
-
-	division= {
-		name = "7. Flieger-Division"
-		location =6228
-		division_template = "Fallschirmjäger-Division"
-		start_experience_factor = 0.3
-	}
-
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 76
-		}
-		location =6097
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 75
-		}
-		location =6195
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 209
-		}
-		location =6195
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.1
-		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 214
-		}
-		location =6195
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.1
-		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 223
-		}
-		location =10789
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.1
-		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 231
-		}
-		location =10754
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.1
-		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 246
-		}
-		location =10754
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.1
-		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 25
-		}
-		location =9089
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 33
-		}
-		location =9089
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 15
-		}
-		location =10850
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 34
-		}
-		location =10850
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 52
-		}
-		location =10850
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 79
-		}
-		location =561
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		name = "Grenzkommando St. Wendel"
-		location =561
-		division_template = "Sicherungs-Division"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 6
-		}
-		location =3443
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 9
-		}
-		location =3443
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 36
-		}
-		location =3443
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 71
-		}
-		location =3443
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 58
-		}
-		location =6176
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 87
-		}
-		location =6176
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 22
-		}
-		location =10589
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 225
-		}
-		location =8801
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.1
-		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
-	}
-
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 16
-		}
-		location =10666
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 69
-		}
-		location =6329
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 211
-		}
-		location =9036
-		division_template = "Infanterie-Division"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
-		start_experience_factor = 0.1
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 216
-		}
-		location =3432
-		division_template = "Infanterie-Division"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
-		start_experience_factor = 0.1
-	}
-
-	division= {
-		name = "Grenzschutz-Abschnitts-Kommando 9"
-		location =241
-		division_template = "Sicherungs-Division"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
-	}
-
-	division= {
-		name = "Grenzkommando Aachen"
-		location =3329
-		division_template = "Sicherungs-Division"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
-	}
-	division= {
-		name = "Grenzkommando Trier"
-		location =3397
-		division_template = "Sicherungs-Division"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 78
-		}
-		location =3415
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 212
-		}
-		location =6249
-		division_template = "Infanterie-Division"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
-		start_experience_factor = 0.1
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 215
-		}
-		location =3415
-		division_template = "Infanterie-Division"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
-		start_experience_factor = 0.1
-	}
-
-	division= {
-		name = "SS-Standarte 'Der Führer'"
-		location =10955
-		division_template = "SS-Regiment"
-		start_experience_factor = 0.4
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 5
-		}
-		location =6417
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 35
-		}
-		location =6417
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		name = "14. Landwehr-Division"
-		location =10955
-		division_template = "Sicherungs-Division"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 251
-		}
-		location =9031
-		division_template = "Infanterie-Division"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 253
-		}
-		location =9031
-		division_template = "Infanterie-Division"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 254
-		}
-		location =9031
-		division_template = "Infanterie-Division"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 255
-		}
-		location =9031
-		division_template = "Infanterie-Division"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 256
-		}
-		location =688
-		division_template = "Infanterie-Division"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 260
-		}
-		location =688
-		division_template = "Infanterie-Division"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 262
-		}
-		location =688
-		division_template = "Infanterie-Division"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 263
-		}
-		location =10863
-		division_template = "Infanterie-Division"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 267
-		}
-		location =10863
-		division_template = "Infanterie-Division"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 268
-		}
-		location =688
-		division_template = "Infanterie-Division"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 269
-		}
-		location =688
-		division_template = "Infanterie-Division"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 73
-		}
-		location =5991
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 206
-		}
-		location =8797
-		division_template = "Infanterie-Division"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
-		start_experience_factor = 0.1
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 208
-		}
-		location =8797
-		division_template = "Infanterie-Division"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
-		start_experience_factor = 0.1
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 10
-		}
-		location =8797
-		division_template = "Panzer-Division"
-		start_experience_factor = 0.3
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 217
-		}
-		location =6040
-		division_template = "Infanterie-Division"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
-		start_experience_factor = 0.1
-	}
-	division= {
-		name = "1. Kavallerie-Brigade"
-		location =10705
-		division_template = "Kavallerie-Brigade"
-		start_experience_factor = 0.2
-	}
-	division= {
-		name = "Grenzschutz-Abschnitts-Kommando 15"
-		location =10705
-		division_template = "Sicherungs-Division"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
-	}
-	division= {
-		name = "Grenzkommando Danzig"
-		location =3266
-		division_template = "Sicherungs-Division"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 11
-		}
-		location =8862
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 61
-		}
-		location =6083
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		name = "Panzer-Division Kempf"
-		location =6083
-		division_template = "Panzer-Division"
-		start_experience_factor = 0.2
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 21
-		}
-		location =3238
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 228
-		}
-		location =3238
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.2
-	}
-
-	division= {
-		name = "Festung Königsberg"
-		location =6040
-		division_template = "Sicherungs-Division"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
-	}
-	division= {
-		name = "Festung Lötzen"
-		location =8843
-		division_template = "Sicherungs-Division"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location =8887
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 12
-		}
-		location =8887
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 23
-		}
-		location =10637
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 207
-		}
-		location =8797
-		division_template = "Infanterie-Division"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
-		start_experience_factor = 0.1
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 218
-		}
-		location =8797
-		division_template = "Infanterie-Division"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
-		start_experience_factor = 0.1
-	}
-	division= {
-		name = "Grenzschutz-Abschnitts-Kommando 1"
-		location =10663
-		division_template = "Sicherungs-Division"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
-	}
-	division= {
-		name = "Grenzschutz-Abschnitts-Kommando 2"
-		location =8902
-		division_template = "Sicherungs-Division"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
-	}
-	division= {
-		name = "Grenzschutz-Abschnitts-Kommando 12"
-		location =5945
-		division_template = "Sicherungs-Division"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 3
-		}
-		location =10585
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 32
-		}
-		location =10585
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 50
-		}
-		location =8773
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 3
-		}
-		location =10611
-		division_template = "Panzer-Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location =10611
-		division_template = "Infanterie-Division (mot.)"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 20
-		}
-		location =10611
-		division_template = "Infanterie-Division (mot.)"
-		start_experience_factor = 0.3
-	}
-
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 252
-		}
-		location =6283
-		division_template = "Infanterie-Division"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 257
-		}
-		location =6283
-		division_template = "Infanterie-Division"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 258
-		}
-		location =6283
-		division_template = "Infanterie-Division"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
-	}
-
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 27
-		}
-		location =9084
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 68
-		}
-		location =9084
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 62
-		}
-		location =10858
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 213
-		}
-		location =10858
-		division_template = "Infanterie-Division"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
-		start_experience_factor = 0.1
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 221
-		}
-		location =10858
-		division_template = "Infanterie-Division"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
-		start_experience_factor = 0.1
-	}
-
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 30
-		}
-		location =8984
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		name = "Grenzschutz-Abschnitts-Kommando 13"
-		location =10797
-		division_template = "Sicherungs-Division"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
-	}
-	division= {
-		name = "Grenzschutz-Abschnitts-Kommando 14"
-		location =442
-		division_template = "Sicherungs-Division"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 24
-		}
-		location =3395
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-
-	division= {
-		name = "SS Leibstandarte 'Adolf Hitler'"
-		location =3171
-		division_template = "SS-Regiment"
-		start_experience_factor = 0.4
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 10
-		}
-		location =3171
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 17
-		}
-		location =3171
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 6
-		}
-		location =6169
-		division_template = "Leichte Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 8
-		}
-		location =6169
-		division_template = "Leichte Division"
-		start_experience_factor = 0.3
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 4
-		}
-		location =8971
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 46
-		}
-		location =8971
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 13
-		}
-		location =477
-		division_template = "Infanterie-Division (mot.)"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 29
-		}
-		location =477
-		division_template = "Infanterie-Division (mot.)"
-		start_experience_factor = 0.3
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 4
-		}
-		location =6283
-		division_template = "Panzer-Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 18
-		}
-		location =6283
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 19
-		}
-		location =6283
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 7
-		}
-		location =3468
-		division_template = "Leichte Division"
-		start_experience_factor = 0.3
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location =10786
-		division_template = "Panzer-Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 14
-		}
-		location =10786
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 31
-		}
-		location =10786
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-
-	division= {
-		name = "Grenzschutz-Abschnitts-Kommando 30"
-		location =3466
-		division_template = "Sicherungs-Division"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
-	}
-
-	division= {
-		name = "SS-Standarte 'Germania'"
-		location =6297
-		division_template = "SS-Regiment"
-		start_experience_factor = 0.4
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 5
-		}
-		location =3369
-		division_template = "Panzer-Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 8
-		}
-		location =6297
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 28
-		}
-		location =6297
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 239
-		}
-		location =3369
-		division_template = "Infanterie-Division"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
-		start_experience_factor = 0.1
-	}
-	division= {
-		name = "Grenzschutz-Abschnitts-Kommando 3"
-		location =3369
-		division_template = "Sicherungs-Division"
-		force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 7
-		}
-		location =6297
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 44
-		}
-		location =6297
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 45
-		}
-		location =6297
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location =579
-		division_template = "Panzer-Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 9
-		}
-		location =579
-		division_template = "Leichte Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 3
-		}
-		location =3435
-		division_template = "Gebirgs-Division"
-		start_experience_factor = 0.3
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 56
-		}
-		location =512
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 57
-		}
-		location =512
-		division_template = "Infanterie-Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location =512
-		division_template = "Gebirgs-Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location =512
-		division_template = "Gebirgs-Division"
-		start_experience_factor = 0.3
-	}
-
-}
-
-air_wings = {
-
-	64 = {
-
-		transport_plane_equipment_1 = { owner = "GER" amount = 132 }
-
-
-
-		fighter_equipment_1 = { owner = "GER"  version_name = "Bf 109 E" amount = 120 }
-
-
-		heavy_fighter_equipment_1  = { owner = "GER"  amount = 30 }
-	}
-	62 = {
-
-		tac_bomber_equipment_1 = { owner = "GER" amount = 144 }
-
-		CAS_equipment_1 =  { owner = "GER" amount = 108 }
-
-		fighter_equipment_1 = { owner = "GER"  version_name = "Bf 109 E" amount = 72 }
-		heavy_fighter_equipment_1  = { owner = "GER"  amount = 30 }
-	}
-	763 = {
-
-		tac_bomber_equipment_0 =  { owner = "GER" version_name = "Do 17" amount = 144 }
-
-		CAS_equipment_1 =  { owner = "GER" amount = 36 }
-
-		tac_bomber_equipment_1 = { owner = "GER" amount = 72 }
-		heavy_fighter_equipment_1  = { owner = "GER"  amount = 30 }
-
-		fighter_equipment_1 = { owner = "GER"  version_name = "Bf 109 E" amount = 72 }
-	}
-
-	66 = {
-
-		tac_bomber_equipment_1 = { owner = "GER" amount = 96 }
-		tac_bomber_equipment_0 =  { owner = "GER" version_name = "Do 17" amount = 84 }
-		tac_bomber_equipment_0 =  { owner = "GER" version_name = "Do 17" amount = 76 }
-		CAS_equipment_1 =  { owner = "GER" amount = 216 }
-
-
-
-
-		heavy_fighter_equipment_1  = { owner = "GER"  amount = 30 }
-
-		fighter_equipment_1 = { owner = "GER"  version_name = "Bf 109 E" amount = 132 }
-
-
-	}
-
-	51 = {
-
-		tac_bomber_equipment_1 = { owner = "GER" amount = 84 }
-
-		fighter_equipment_1 = { owner = "GER"  version_name = "Bf 109 E" amount = 76 }
-		fighter_equipment_1 = { owner = "GER"  amount = 76 }
-		ace={
-			modifier="fighter_genius"
-			name="Erich"
-			surname="Hartmann"
-			callsign="Bubi"
-			portrait=1
-		}
-	}
-	59 = {
-
-		tac_bomber_equipment_1 = { owner = "GER" amount = 192 }
-
-
-		fighter_equipment_1 = { owner = "GER"  amount = 144 }
-
-	}
-
-	52 = {
-
-		tac_bomber_equipment_1 = { owner = "GER" amount = 72 }
-
-		fighter_equipment_1 = { owner = "GER"  amount = 216 }
-
-
-	}
-	55 = {
-
-		tac_bomber_equipment_1 = { owner = "GER" amount = 72 }
-		CAS_equipment_1 =  { owner = "GER" amount = 30 }
-
-		fighter_equipment_1 = { owner = "GER"  amount = 216}
-
-
-	}
-	54 = {
-
-		fighter_equipment_1 = { owner = "GER"  amount = 24 }
-	}
-
-	56 = {
-
-		nav_bomber_equipment_1 = { owner = "GER" amount = 108 }
-
-
-	}
-	62 = {
-
-		nav_bomber_equipment_1 = { owner = "GER" amount = 54 }
-
-	}
-}
-
-
-
-instant_effect = {
-	add_equipment_production = {
-		equipment = {
-			type = infantry_equipment_2
-			creator = "GER"
-		}
-		requested_factories = 15
-		progress = 0.1
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = support_equipment_1
-			creator = "GER"
-		}
-		requested_factories = 3
-		progress = 0.3
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = artillery_equipment_1
-			creator = "GER"
-		}
-		requested_factories = 2
-		progress = 0.3
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = light_tank_equipment_2
-			creator = "GER"
-		}
-		requested_factories = 5
-		progress = 0.4
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = motorized_equipment_1
-			creator = "GER"
-		}
-		requested_factories = 5
-		progress = 0.4
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = fighter_equipment_1
-			creator = "GER"
-		}
-		requested_factories = 4
-		progress = 0.15
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = CAS_equipment_2
-			creator = "GER"
-		}
-		requested_factories = 4
-		progress = 0.2
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = tac_bomber_equipment_1
-			creator = "GER"
-		}
-		requested_factories = 2
-		progress = 0.1
-		efficiency = 100
-	}
-
-}
-
+ name = "Infanterie-Division"
+ division_names_group = GER_Inf_01
+ regiments = {
+ infantry = { x = 0 y = 0 }
+ infantry = { x = 0 y = 1 }
+ infantry = { x = 0 y = 2 }
+ infantry = { x = 1 y = 0 }
+ infantry = { x = 1 y = 1 }
+ infantry = { x = 1 y = 2 }
+ infantry = { x = 2 y = 0 }
+ infantry = { x = 2 y = 1 }
+ infantry = { x = 2 y = 2 }
+ }
+ support = {
+ engineer = { x = 0 y = 0 }
+ artillery = { x = 0 y = 1 }
+ }
+ }
+ division_template = {
+ name = "Gebirgs-Division"
+ division_names_group = GER_Mnt_01
+ regiments = {
+ mountaineers = { x = 0 y = 0 }
+ mountaineers = { x = 0 y = 1 }
+ mountaineers = { x = 0 y = 2 }
+ mountaineers = { x = 1 y = 0 }
+ mountaineers = { x = 1 y = 1 }
+ mountaineers = { x = 1 y = 2 }
+ mountaineers = { x = 2 y = 0 }
+ mountaineers = { x = 2 y = 1 }
+ mountaineers = { x = 2 y = 2 }
+ }
+ support = {
+ engineer = { x = 0 y = 0 }
+ }
+ }
+ division_template = {
+ name = "Fallschirmjäger-Division"
+ division_names_group = GER_PAR_01
+ regiments = {
+ paratrooper = { x = 0 y = 0 }
+ paratrooper = { x = 0 y = 1 }
+ paratrooper = { x = 0 y = 2 }
+ paratrooper = { x = 1 y = 0 }
+ paratrooper = { x = 1 y = 1 }
+ }
+ }
+ division_template = {
+ name = "Infanterie-Division (mot.)"
+ division_names_group = GER_MOT_02
+ regiments = {
+ motorized = { x = 0 y = 0 }
+ motorized = { x = 0 y = 1 }
+ motorized = { x = 0 y = 2 }
+ motorized = { x = 1 y = 0 }
+ motorized = { x = 1 y = 1 }
+ motorized = { x = 1 y = 2 }
+ motorized = { x = 2 y = 0 }
+ motorized = { x = 2 y = 1 }
+ motorized = { x = 2 y = 2 }
+ }
+ support = {
+ mot_recon = { x = 0 y = 0 }
+ engineer = { x = 0 y = 1 }
+ artillery = { x = 0 y = 2 }
+ }
+ }
+ division_template = {
+ name = "Leichte Division"
+ division_names_group = GER_LTARM_01
+ regiments = {
+ light_armor = { x = 0 y = 0 }
+ motorized = { x = 1 y = 0 }
+ motorized = { x = 1 y = 1 }
+ motorized = { x = 2 y = 0 }
+ motorized = { x = 2 y = 1 }
+ }
+ support = {
+ mot_recon = { x = 0 y = 0 }
+ engineer = { x = 0 y = 1 }
+ }
+ }
+ division_template = {
+ name = "Panzer-Division"
+ division_names_group = GER_Arm_01
+ regiments = {
+ light_armor = { x = 0 y = 0 }
+ light_armor = { x = 0 y = 1 }
+ light_armor = { x = 1 y = 0 }
+ light_armor = { x = 1 y = 1 }
+ motorized = { x = 2 y = 0 }
+ motorized = { x = 2 y = 1 }
+ motorized = { x = 2 y = 2 }
+ }
+ support = {
+ mot_recon = { x = 0 y = 0 }
+ engineer = { x = 0 y = 1 }
+ }
+ }
+ division_template = {
+ name = "SS-Regiment"
+ division_names_group = GER_SS_01
+ regiments = {
+ motorized = { x = 0 y = 0 }
+ motorized = { x = 0 y = 1 }
+ motorized = { x = 0 y = 2 }
+ }
+ support = {
+ artillery = { x = 0 y = 0 }
+ }
+ priority = 2
+ }
+ division_template = {
+ name = "Kavallerie-Brigade"
+ division_names_group = GER_Cav_01
+ regiments = {
+ cavalry = { x = 0 y = 0 }
+ cavalry = { x = 0 y = 1 }
+ cavalry = { x = 0 y = 2 }
+ }
+ support = {
+ recon = { x = 0 y = 0 }
+ }
+ }
+ division_template = {
+ name = "Sicherungs-Division"
+ division_names_group = GER_GAR_01
+ regiments = {
+ infantry = { x = 0 y = 0 }
+ infantry = { x = 0 y = 1 }
+ infantry = { x = 0 y = 2 }
+ infantry = { x = 1 y = 0 }
+ infantry = { x = 1 y = 1 }
+ infantry = { x = 1 y = 2 }
+ infantry = { x = 2 y = 0 }
+ infantry = { x = 2 y = 1 }
+ infantry = { x = 2 y = 2 }
+ }
+ priority = 0
+ }
+ units = {
+ division= {
+ name = "7. Flieger-Division"
+ location =6026
+ division_template = "Fallschirmjäger-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 76
+ }
+ location =5898
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 75
+ }
+ location =5993
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 209
+ }
+ location =5993
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.1
+ force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 214
+ }
+ location =5993
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.1
+ force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 223
+ }
+ location =10398
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.1
+ force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 231
+ }
+ location =10363
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.1
+ force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 246
+ }
+ location =10363
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.1
+ force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 25
+ }
+ location =8799
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 33
+ }
+ location =8799
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 15
+ }
+ location =10459
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 34
+ }
+ location =10459
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 52
+ }
+ location =10459
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 79
+ }
+ location =528
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ name = "Grenzkommando St. Wendel"
+ location =528
+ division_template = "Sicherungs-Division"
+ force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.7
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 6
+ }
+ location =3335
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 9
+ }
+ location =3335
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 36
+ }
+ location =3335
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 71
+ }
+ location =3335
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 58
+ }
+ location =5974
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 87
+ }
+ location =5974
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 22
+ }
+ location =10205
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 225
+ }
+ location =8518
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.1
+ force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 16
+ }
+ location =10277
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 69
+ }
+ location =6126
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 211
+ }
+ location =8746
+ division_template = "Infanterie-Division"
+ force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+ start_experience_factor = 0.1
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 216
+ }
+ location =3324
+ division_template = "Infanterie-Division"
+ force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+ start_experience_factor = 0.1
+ }
+ division= {
+ name = "Grenzschutz-Abschnitts-Kommando 9"
+ location =214
+ division_template = "Sicherungs-Division"
+ force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.7
+ }
+ division= {
+ name = "Grenzkommando Aachen"
+ location =3221
+ division_template = "Sicherungs-Division"
+ force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.7
+ }
+ division= {
+ name = "Grenzkommando Trier"
+ location =3289
+ division_template = "Sicherungs-Division"
+ force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.7
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 78
+ }
+ location =3307
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 212
+ }
+ location =6046
+ division_template = "Infanterie-Division"
+ force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+ start_experience_factor = 0.1
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 215
+ }
+ location =3307
+ division_template = "Infanterie-Division"
+ force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+ start_experience_factor = 0.1
+ }
+ division= {
+ name = "SS-Standarte 'Der Führer'"
+ location =10563
+ division_template = "SS-Regiment"
+ start_experience_factor = 0.4
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 5
+ }
+ location =6214
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 35
+ }
+ location =6214
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ name = "14. Landwehr-Division"
+ location =10563
+ division_template = "Sicherungs-Division"
+ force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.7
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 251
+ }
+ location =8741
+ division_template = "Infanterie-Division"
+ force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.7
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 253
+ }
+ location =8741
+ division_template = "Infanterie-Division"
+ force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.7
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 254
+ }
+ location =8741
+ division_template = "Infanterie-Division"
+ force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.7
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 255
+ }
+ location =8741
+ division_template = "Infanterie-Division"
+ force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.7
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 256
+ }
+ location =655
+ division_template = "Infanterie-Division"
+ force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.7
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 260
+ }
+ location =655
+ division_template = "Infanterie-Division"
+ force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.7
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 262
+ }
+ location =655
+ division_template = "Infanterie-Division"
+ force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.7
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 263
+ }
+ location =10472
+ division_template = "Infanterie-Division"
+ force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.7
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 267
+ }
+ location =10472
+ division_template = "Infanterie-Division"
+ force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.7
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 268
+ }
+ location =655
+ division_template = "Infanterie-Division"
+ force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.7
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 269
+ }
+ location =655
+ division_template = "Infanterie-Division"
+ force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.7
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 73
+ }
+ location =5796
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 206
+ }
+ location =8515
+ division_template = "Infanterie-Division"
+ force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+ start_experience_factor = 0.1
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 208
+ }
+ location =8515
+ division_template = "Infanterie-Division"
+ force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+ start_experience_factor = 0.1
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 10
+ }
+ location =8515
+ division_template = "Panzer-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 217
+ }
+ location =5842
+ division_template = "Infanterie-Division"
+ force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+ start_experience_factor = 0.1
+ }
+ division= {
+ name = "1. Kavallerie-Brigade"
+ location =10315
+ division_template = "Kavallerie-Brigade"
+ start_experience_factor = 0.2
+ }
+ division= {
+ name = "Grenzschutz-Abschnitts-Kommando 15"
+ location =10315
+ division_template = "Sicherungs-Division"
+ force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.7
+ }
+ division= {
+ name = "Grenzkommando Danzig"
+ location =3160
+ division_template = "Sicherungs-Division"
+ force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.7
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 11
+ }
+ location =8576
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 61
+ }
+ location =5884
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ name = "Panzer-Division Kempf"
+ location =5884
+ division_template = "Panzer-Division"
+ start_experience_factor = 0.2
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 21
+ }
+ location =3133
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 228
+ }
+ location =3133
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.2
+ }
+ division= {
+ name = "Festung Königsberg"
+ location =5842
+ division_template = "Sicherungs-Division"
+ force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.7
+ }
+ division= {
+ name = "Festung Lötzen"
+ location =8558
+ division_template = "Sicherungs-Division"
+ force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.7
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 1
+ }
+ location =8600
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 12
+ }
+ location =8600
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 23
+ }
+ location =10250
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 207
+ }
+ location =8515
+ division_template = "Infanterie-Division"
+ force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+ start_experience_factor = 0.1
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 218
+ }
+ location =8515
+ division_template = "Infanterie-Division"
+ force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+ start_experience_factor = 0.1
+ }
+ division= {
+ name = "Grenzschutz-Abschnitts-Kommando 1"
+ location =10274
+ division_template = "Sicherungs-Division"
+ force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.7
+ }
+ division= {
+ name = "Grenzschutz-Abschnitts-Kommando 2"
+ location =8615
+ division_template = "Sicherungs-Division"
+ force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.7
+ }
+ division= {
+ name = "Grenzschutz-Abschnitts-Kommando 12"
+ location =5750
+ division_template = "Sicherungs-Division"
+ force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.7
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 3
+ }
+ location =10202
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 32
+ }
+ location =10202
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 50
+ }
+ location =8491
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 3
+ }
+ location =10226
+ division_template = "Panzer-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 2
+ }
+ location =10226
+ division_template = "Infanterie-Division (mot.)"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 20
+ }
+ location =10226
+ division_template = "Infanterie-Division (mot.)"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 252
+ }
+ location =6080
+ division_template = "Infanterie-Division"
+ force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.7
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 257
+ }
+ location =6080
+ division_template = "Infanterie-Division"
+ force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.7
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 258
+ }
+ location =6080
+ division_template = "Infanterie-Division"
+ force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.7
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 27
+ }
+ location =8794
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 68
+ }
+ location =8794
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 62
+ }
+ location =10467
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 213
+ }
+ location =10467
+ division_template = "Infanterie-Division"
+ force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+ start_experience_factor = 0.1
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 221
+ }
+ location =10467
+ division_template = "Infanterie-Division"
+ force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+ start_experience_factor = 0.1
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 30
+ }
+ location =8694
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ name = "Grenzschutz-Abschnitts-Kommando 13"
+ location =10406
+ division_template = "Sicherungs-Division"
+ force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.7
+ }
+ division= {
+ name = "Grenzschutz-Abschnitts-Kommando 14"
+ location =409
+ division_template = "Sicherungs-Division"
+ force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.7
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 24
+ }
+ location =3287
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ name = "SS Leibstandarte 'Adolf Hitler'"
+ location =3068
+ division_template = "SS-Regiment"
+ start_experience_factor = 0.4
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 10
+ }
+ location =3068
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 17
+ }
+ location =3068
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 6
+ }
+ location =5967
+ division_template = "Leichte Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 8
+ }
+ location =5967
+ division_template = "Leichte Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 4
+ }
+ location =8681
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 46
+ }
+ location =8681
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 13
+ }
+ location =444
+ division_template = "Infanterie-Division (mot.)"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 29
+ }
+ location =444
+ division_template = "Infanterie-Division (mot.)"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 4
+ }
+ location =6080
+ division_template = "Panzer-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 18
+ }
+ location =6080
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 19
+ }
+ location =6080
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 7
+ }
+ location =3360
+ division_template = "Leichte Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 1
+ }
+ location =10395
+ division_template = "Panzer-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 14
+ }
+ location =10395
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 31
+ }
+ location =10395
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ name = "Grenzschutz-Abschnitts-Kommando 30"
+ location =3358
+ division_template = "Sicherungs-Division"
+ force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.7
+ }
+ division= {
+ name = "SS-Standarte 'Germania'"
+ location =6094
+ division_template = "SS-Regiment"
+ start_experience_factor = 0.4
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 5
+ }
+ location =3261
+ division_template = "Panzer-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 8
+ }
+ location =6094
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 28
+ }
+ location =6094
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 239
+ }
+ location =3261
+ division_template = "Infanterie-Division"
+ force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+ start_experience_factor = 0.1
+ }
+ division= {
+ name = "Grenzschutz-Abschnitts-Kommando 3"
+ location =3261
+ division_template = "Sicherungs-Division"
+ force_equipment_variants = { infantry_equipment_1 = { owner = "GER" } }
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.7
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 7
+ }
+ location =6094
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 44
+ }
+ location =6094
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 45
+ }
+ location =6094
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 2
+ }
+ location =546
+ division_template = "Panzer-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 9
+ }
+ location =546
+ division_template = "Leichte Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 3
+ }
+ location =3327
+ division_template = "Gebirgs-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 56
+ }
+ location =479
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 57
+ }
+ location =479
+ division_template = "Infanterie-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 1
+ }
+ location =479
+ division_template = "Gebirgs-Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 2
+ }
+ location =479
+ division_template = "Gebirgs-Division"
+ start_experience_factor = 0.3
+ }
+ }
+ air_wings = {
+ 64 = {
+ transport_plane_equipment_1 = { owner = "GER" amount = 132 }
+ fighter_equipment_1 = { owner = "GER"  version_name = "Bf 109 E" amount = 120 }
+ heavy_fighter_equipment_1  = { owner = "GER"  amount = 30 }
+ }
+ 62 = {
+ tac_bomber_equipment_1 = { owner = "GER" amount = 144 }
+ CAS_equipment_1 =  { owner = "GER" amount = 108 }
+ fighter_equipment_1 = { owner = "GER"  version_name = "Bf 109 E" amount = 72 }
+ heavy_fighter_equipment_1  = { owner = "GER"  amount = 30 }
+ }
+ 763 = {
+ tac_bomber_equipment_0 =  { owner = "GER" version_name = "Do 17" amount = 144 }
+ CAS_equipment_1 =  { owner = "GER" amount = 36 }
+ tac_bomber_equipment_1 = { owner = "GER" amount = 72 }
+ heavy_fighter_equipment_1  = { owner = "GER"  amount = 30 }
+ fighter_equipment_1 = { owner = "GER"  version_name = "Bf 109 E" amount = 72 }
+ }
+ 66 = {
+ tac_bomber_equipment_1 = { owner = "GER" amount = 96 }
+ tac_bomber_equipment_0 =  { owner = "GER" version_name = "Do 17" amount = 84 }
+ tac_bomber_equipment_0 =  { owner = "GER" version_name = "Do 17" amount = 76 }
+ CAS_equipment_1 =  { owner = "GER" amount = 216 }
+ heavy_fighter_equipment_1  = { owner = "GER"  amount = 30 }
+ fighter_equipment_1 = { owner = "GER"  version_name = "Bf 109 E" amount = 132 }
+ }
+ 51 = {
+ tac_bomber_equipment_1 = { owner = "GER" amount = 84 }
+ fighter_equipment_1 = { owner = "GER"  version_name = "Bf 109 E" amount = 76 }
+ fighter_equipment_1 = { owner = "GER"  amount = 76 }
+ ace={
+ modifier="fighter_genius"
+ name="Erich"
+ surname="Hartmann"
+ callsign="Bubi"
+ portrait=1
+ }
+ }
+ 59 = {
+ tac_bomber_equipment_1 = { owner = "GER" amount = 192 }
+ fighter_equipment_1 = { owner = "GER"  amount = 144 }
+ }
+ 52 = {
+ tac_bomber_equipment_1 = { owner = "GER" amount = 72 }
+ fighter_equipment_1 = { owner = "GER"  amount = 216 }
+ }
+ 55 = {
+ tac_bomber_equipment_1 = { owner = "GER" amount = 72 }
+ CAS_equipment_1 =  { owner = "GER" amount = 30 }
+ fighter_equipment_1 = { owner = "GER"  amount = 216}
+ }
+ 54 = {
+ fighter_equipment_1 = { owner = "GER"  amount = 24 }
+ }
+ 56 = {
+ nav_bomber_equipment_1 = { owner = "GER" amount = 108 }
+ }
+ 62 = {
+ nav_bomber_equipment_1 = { owner = "GER" amount = 54 }
+ }
+ }
+ instant_effect = {
+ add_equipment_production = {
+ equipment = {
+ type = infantry_equipment_2
+ creator = "GER"
+ }
+ requested_factories = 15
+ progress = 0.1
+ efficiency = 100
+ }
+ add_equipment_production = {
+ equipment = {
+ type = support_equipment_1
+ creator = "GER"
+ }
+ requested_factories = 3
+ progress = 0.3
+ efficiency = 100
+ }
+ add_equipment_production = {
+ equipment = {
+ type = artillery_equipment_1
+ creator = "GER"
+ }
+ requested_factories = 2
+ progress = 0.3
+ efficiency = 100
+ }
+ add_equipment_production = {
+ equipment = {
+ type = light_tank_equipment_2
+ creator = "GER"
+ }
+ requested_factories = 5
+ progress = 0.4
+ efficiency = 100
+ }
+ add_equipment_production = {
+ equipment = {
+ type = motorized_equipment_1
+ creator = "GER"
+ }
+ requested_factories = 5
+ progress = 0.4
+ efficiency = 100
+ }
+ add_equipment_production = {
+ equipment = {
+ type = fighter_equipment_1
+ creator = "GER"
+ }
+ requested_factories = 4
+ progress = 0.15
+ efficiency = 100
+ }
+ add_equipment_production = {
+ equipment = {
+ type = CAS_equipment_2
+ creator = "GER"
+ }
+ requested_factories = 4
+ progress = 0.2
+ efficiency = 100
+ }
+ add_equipment_production = {
+ equipment = {
+ type = tac_bomber_equipment_1
+ creator = "GER"
+ }
+ requested_factories = 2
+ progress = 0.1
+ efficiency = 100
+ }
+ }
 

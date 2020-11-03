@@ -1,51 +1,51 @@
 form_greater_german_reich_category = {
-	form_greater_german_reich = {
-		icon = generic_form_nation
-		allowed = {
-			original_tag = GER
-			has_dlc = "Waking the Tiger"
-		}
-		available = {
-			is_subject = no
-			has_full_control_of_state = 85
-			has_full_control_of_state = 86
-			has_full_control_of_state = 188
-			has_full_control_of_state = 762
-			has_full_control_of_state = 69
-			has_full_control_of_state = 74
-			has_full_control_of_state = 4
-			has_full_control_of_state = 152
-			has_full_control_of_state = 153
-			has_full_control_of_state = 28
-			has_full_control_of_state = 8
-			all_owned_state = {
-				is_fully_controlled_by = ROOT
-			}
-		}
-		visible = {
-			AND = {
-				original_tag = GER
-				has_government = fascism
-				has_country_leader = { ruling_only = yes name = "Adolf Hitler" }
-			}
-			NOT = { has_global_flag = form_greater_german_reich_flag }
-			OR = {
-				AND = {
-					has_war_with = FRA
-					FRA = { has_capitulated = yes }
-				}
-				AND = {
-					owns_state = 16
-					has_full_control_of_state = 16
-				}
-			}
-		}
-		complete_effect = {
-			set_cosmetic_tag = GER_greater_german_reich
-			hidden_effect = {
-				set_global_flag = form_greater_german_reich_flag
-			}
-		}
-	}
-}
+ form_greater_german_reich = {
+ icon = generic_form_nation
+ allowed = {
+ original_tag = GER
+ has_dlc = "Waking the Tiger"
+ }
+ available = {
+ is_subject = no
+ has_full_control_of_state = 85
+ has_full_control_of_state = 86
+ has_full_control_of_state = 188
+ has_full_control_of_state = 762
+ has_full_control_of_state = 69
+ has_full_control_of_state = 74
+ has_full_control_of_state = 4
+ has_full_control_of_state = 152
+ has_full_control_of_state = 153
+ has_full_control_of_state = 28
+ has_full_control_of_state = 8
+ all_owned_state = {
+ is_fully_controlled_by = ROOT
+ }
+ }
+ visible = {
+ AND = {
+ original_tag = GER
+ has_government = fascism
+ has_country_leader = { ruling_only = yes name = "Adolf Hitler" }
+ }
+ NOT = { has_global_flag = form_greater_german_reich_flag }
+ OR = {
+ AND = {
+ has_war_with = FRA
+ FRA = { has_capitulated = yes }
+ }
+ AND = {
+ owns_state = 16
+ has_full_control_of_state = 16
+ }
+ }
+ }
+ complete_effect = {
+ set_cosmetic_tag = GER_greater_german_reich
+ hidden_effect = {
+ set_global_flag = form_greater_german_reich_flag
+ }
+ }
+ }
+ }
 

@@ -1,33 +1,33 @@
 state= {
-	id=599
-	name="STATE_599"
-	manpower = 8685200
-	state_category = town
-	resources={
-	}
-	history= {
-		owner = CHI
-		add_core_of = CHI
-		buildings = {
-			infrastructure = 3
-			industrial_complex = 2
-			arms_factory = 1
-			air_base = 2
-		}
-		victory_points = {
-			9869 3
-		}
-		1938.10.25 = {
-			if = {
-				limit = {
-					NOT = { has_dlc = "Waking the Tiger" }
-				}
-				CHI = { transfer_state = PREV }
-			}
-		}
-	}
-	provinces={
-		1003 1448 1573 1599 3877 3926 3934 3981 3999 4460 4485 6768 6801 6840 6882 7295 9519 9599 9869 9893 9919 11675 11701
-	}
-}
+ id=599
+ name="STATE_599"
+ manpower = 8685200
+ state_category = town
+ resources={
+ }
+ history= {
+ owner = CHI
+ add_core_of = CHI
+ buildings = {
+ infrastructure = 3
+ industrial_complex = 2
+ arms_factory = 1
+ air_base = 2
+ }
+ victory_points = {
+9567 3
+ }
+ 1938.10.25 = {
+ if = {
+ limit = {
+ NOT = { has_dlc = "Waking the Tiger" }
+ }
+ CHI = { transfer_state = PREV }
+ }
+ }
+ }
+ provinces={
+969 1413 1535 1561 3764 3813 3821 3866 3884 4339 4363 6562 6595 6633 6675 7084 9220 9300 9567 9591 9617 11270 11296
+ }
+ }
 

@@ -1,103 +1,97 @@
 ﻿
-division_template = {
-	name = "Pesi Divize"
-	division_names_group = SLO_INF_01
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
-	}
-}
-division_template = {
-	name = "Mobilná Skupina"
-	division_names_group = SLO_CAV_01
-	regiments = {
-		light_armor = { x = 0 y = 0 }
-		cavalry = { x = 1 y = 0 }
-	}
-	support = {
-		recon = { x = 0 y = 0 }
-	}
-}
-units = {
-
-	division = {
-
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location =6311
-		division_template = "Pesi Divize"
-		start_experience_factor = 0.2
-	}
-	division = {
-
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location =3435
-		division_template = "Pesi Divize"
-		start_experience_factor = 0.2
-	}
-	division = {
-
-		division_name = {
-			is_name_ordered = yes
-			name_order = 3
-		}
-		location =3466
-		division_template = "Pesi Divize"
-		start_experience_factor = 0.2
-	}
-	division = {
-		name = "Rychle Vojská Skupina 'Kalinciak'"
-		location =9200
-		division_template = "Mobilná Skupina"
-		start_experience_factor = 0.2
-	}
-}
-air_wings = {
-
-	70 = {
-		fighter_equipment_0 =  { owner = "SLO" amount = 30 }
-	}
-}
-
-instant_effect = {
-	add_equipment_production = {
-		equipment = {
-			type = infantry_equipment_1
-			creator = "SLO"
-		}
-		requested_factories = 1
-		progress = 0.37
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = support_equipment_1
-			creator = "SLO"
-		}
-		requested_factories = 1
-		progress = 0.69
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = light_tank_equipment_1
-			creator = "SLO"
-		}
-		requested_factories = 1
-		progress = 0.4
-		efficiency = 100
-	}
-}
+ division_template = {
+ name = "Pesi Divize"
+ division_names_group = SLO_INF_01
+ regiments = {
+ infantry = { x = 0 y = 0 }
+ infantry = { x = 0 y = 1 }
+ infantry = { x = 0 y = 2 }
+ infantry = { x = 1 y = 0 }
+ infantry = { x = 1 y = 1 }
+ infantry = { x = 1 y = 2 }
+ infantry = { x = 2 y = 0 }
+ infantry = { x = 2 y = 1 }
+ infantry = { x = 2 y = 2 }
+ }
+ }
+ division_template = {
+ name = "Mobilná Skupina"
+ division_names_group = SLO_CAV_01
+ regiments = {
+ light_armor = { x = 0 y = 0 }
+ cavalry = { x = 1 y = 0 }
+ }
+ support = {
+ recon = { x = 0 y = 0 }
+ }
+ }
+ units = {
+ division = {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 1
+ }
+ location =6108
+ division_template = "Pesi Divize"
+ start_experience_factor = 0.2
+ }
+ division = {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 2
+ }
+ location =3327
+ division_template = "Pesi Divize"
+ start_experience_factor = 0.2
+ }
+ division = {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 3
+ }
+ location =3358
+ division_template = "Pesi Divize"
+ start_experience_factor = 0.2
+ }
+ division = {
+ name = "Rychle Vojská Skupina 'Kalinciak'"
+ location =8909
+ division_template = "Mobilná Skupina"
+ start_experience_factor = 0.2
+ }
+ }
+ air_wings = {
+ 70 = {
+ fighter_equipment_0 =  { owner = "SLO" amount = 30 }
+ }
+ }
+ instant_effect = {
+ add_equipment_production = {
+ equipment = {
+ type = infantry_equipment_1
+ creator = "SLO"
+ }
+ requested_factories = 1
+ progress = 0.37
+ efficiency = 100
+ }
+ add_equipment_production = {
+ equipment = {
+ type = support_equipment_1
+ creator = "SLO"
+ }
+ requested_factories = 1
+ progress = 0.69
+ efficiency = 100
+ }
+ add_equipment_production = {
+ equipment = {
+ type = light_tank_equipment_1
+ creator = "SLO"
+ }
+ requested_factories = 1
+ progress = 0.4
+ efficiency = 100
+ }
+ }
 

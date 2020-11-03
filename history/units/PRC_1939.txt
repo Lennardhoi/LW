@@ -1,244 +1,237 @@
 ﻿division_template = {
-	name = "Juntuán"
-	division_names_group = PRC_INF_01
-
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-	}
-	priority = 0
-}
-division_template = {
-	name = "Renmin Jundui"
-	division_names_group = PRC_GAR_01
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-	}
-	priority = 1
-}
-
-units = {
-
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location =10271
-		division_template = "Juntuán"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.7
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location =6986
-		division_template = "Juntuán"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 3
-		}
-		location =7304
-		division_template = "Juntuán"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 4
-		}
-		location =6986
-		division_template = "Juntuán"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 5
-		}
-		location =7304
-		division_template = "Juntuán"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 21
-		}
-		location =3923
-		division_template = "Juntuán"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.7
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 22
-		}
-		location =9839
-		division_template = "Juntuán"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 3
-		}
-		location =1510
-		division_template = "Juntuán"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 4
-		}
-		location =1014
-		division_template = "Juntuán"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 5
-		}
-		location =1014
-		division_template = "Juntuán"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 31
-		}
-		location =6880
-		division_template = "Juntuán"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.7
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 32
-		}
-		location =4795
-		division_template = "Juntuán"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 33
-		}
-		location =4795
-		division_template = "Juntuán"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 34
-		}
-		location =11938
-		division_template = "Juntuán"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 35
-		}
-		location =11938
-		division_template = "Juntuán"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 41
-		}
-		location =4861
-		division_template = "Juntuán"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.5
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 42
-		}
-		location =4861
-		division_template = "Juntuán"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.5
-	}
-
-
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location =11440
-		division_template = "Renmin Jundui"
-		start_equipment_factor = 0.3
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location =4103
-		division_template = "Renmin Jundui"
-		start_equipment_factor = 0.3
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 3
-		}
-		location =11440
-		division_template = "Renmin Jundui"
-		start_equipment_factor = 0.3
-	}
-}
-
-instant_effect = {
-	add_equipment_production = {
-		equipment = {
-			type = infantry_equipment_0
-			creator = "PRC"
-		}
-		requested_factories = 2
-		progress = 0.1
-		efficiency = 100
-	}
-}
-
+ name = "Juntuán"
+ division_names_group = PRC_INF_01
+ regiments = {
+ infantry = { x = 0 y = 0 }
+ infantry = { x = 0 y = 1 }
+ infantry = { x = 1 y = 0 }
+ infantry = { x = 1 y = 1 }
+ infantry = { x = 2 y = 0 }
+ infantry = { x = 2 y = 1 }
+ }
+ priority = 0
+ }
+ division_template = {
+ name = "Renmin Jundui"
+ division_names_group = PRC_GAR_01
+ regiments = {
+ infantry = { x = 0 y = 0 }
+ infantry = { x = 0 y = 1 }
+ infantry = { x = 1 y = 0 }
+ infantry = { x = 1 y = 1 }
+ infantry = { x = 2 y = 0 }
+ infantry = { x = 2 y = 1 }
+ }
+ priority = 1
+ }
+ units = {
+ division = {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 1
+ }
+ location =9940
+ division_template = "Juntuán"
+ start_experience_factor = 0.3
+ start_equipment_factor = 0.7
+ }
+ division = {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 2
+ }
+ location =6779
+ division_template = "Juntuán"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.7
+ }
+ division = {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 3
+ }
+ location =7093
+ division_template = "Juntuán"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.7
+ }
+ division = {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 4
+ }
+ location =6779
+ division_template = "Juntuán"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.7
+ }
+ division = {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 5
+ }
+ location =7093
+ division_template = "Juntuán"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.7
+ }
+ division = {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 21
+ }
+ location =3810
+ division_template = "Juntuán"
+ start_experience_factor = 0.3
+ start_equipment_factor = 0.7
+ }
+ division = {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 22
+ }
+ location =9537
+ division_template = "Juntuán"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.7
+ }
+ division = {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 3
+ }
+ location =1473
+ division_template = "Juntuán"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.7
+ }
+ division = {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 4
+ }
+ location =980
+ division_template = "Juntuán"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.7
+ }
+ division = {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 5
+ }
+ location =980
+ division_template = "Juntuán"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.7
+ }
+ division = {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 31
+ }
+ location =6673
+ division_template = "Juntuán"
+ start_experience_factor = 0.3
+ start_equipment_factor = 0.7
+ }
+ division = {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 32
+ }
+ location =4652
+ division_template = "Juntuán"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.7
+ }
+ division = {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 33
+ }
+ location =4652
+ division_template = "Juntuán"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.7
+ }
+ division = {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 34
+ }
+ location =11514
+ division_template = "Juntuán"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.7
+ }
+ division = {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 35
+ }
+ location =11514
+ division_template = "Juntuán"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.7
+ }
+ division = {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 41
+ }
+ location =4716
+ division_template = "Juntuán"
+ start_experience_factor = 0.3
+ start_equipment_factor = 0.5
+ }
+ division = {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 42
+ }
+ location =4716
+ division_template = "Juntuán"
+ start_experience_factor = 0.3
+ start_equipment_factor = 0.5
+ }
+ division = {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 1
+ }
+ location =11040
+ division_template = "Renmin Jundui"
+ start_equipment_factor = 0.3
+ }
+ division = {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 2
+ }
+ location =3986
+ division_template = "Renmin Jundui"
+ start_equipment_factor = 0.3
+ }
+ division = {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 3
+ }
+ location =11040
+ division_template = "Renmin Jundui"
+ start_equipment_factor = 0.3
+ }
+ }
+ instant_effect = {
+ add_equipment_production = {
+ equipment = {
+ type = infantry_equipment_0
+ creator = "PRC"
+ }
+ requested_factories = 2
+ progress = 0.1
+ efficiency = 100
+ }
+ }
 

@@ -1,250 +1,236 @@
 ﻿division_template = {
-	name = "Infantry Division"
-	division_names_group = RAJ_INF_01
-
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-	}
-}
-division_template = {
-	name = "District Garrison"
-	division_names_group = RAJ_GAR_01
-
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
-	}
-}
-division_template = {
-	name = "Colonial Garrison"
-	division_names_group = RAJ_GAR_01
-
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-	}
-	priority = 0
-}
-division_template = {
-	name = "Armoured Division"
-	division_names_group = RAJ_ARM_01
-	regiments = {
-		light_armor = { x = 0 y = 0 }
-		light_armor = { x = 0 y = 1 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-	}
-}
-
-units = {
-
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 112
-		}
-		location =11941
-		division_template = "District Garrison"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 101
-		}
-		location =11941
-		division_template = "District Garrison"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 102
-		}
-		location =4787
-		division_template = "District Garrison"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 103
-		}
-		location =11291
-		division_template = "District Garrison"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 104
-		}
-		location =10243
-		division_template = "District Garrison"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 105
-		}
-		location =1927
-		division_template = "District Garrison"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-	}
-
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 4
-		}
-		location =11241
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.7
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 106
-		}
-		location =11241
-		division_template = "District Garrison"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 107
-		}
-		location =11421
-		division_template = "District Garrison"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-	}
-	division= {
-		name = "Presidency
-		Assam District"
-		location =1476
-		division_template = "District Garrison"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-	}
-
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 5
-		}
-		location =11989
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.7
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 109
-		}
-		location =11989
-		division_template = "District Garrison"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 110
-		}
-		location =1329
-		division_template = "District Garrison"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 111
-		}
-		location =9755
-		division_template = "District Garrison"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-	}
-
-	division= {
-		name = "Rangoon Brigade"
-		location =1310
-		division_template = "Colonial Garrison"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-	}
-	division= {
-		name = "Mandalay Brigade"
-		location =1471
-		division_template = "Colonial Garrison"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-	}
-}
-air_wings = {
-
-	439 = {
-		CAS_equipment_1 = { owner = "ENG" amount = 48 }
-	}
-}
-
-instant_effect = {
-	add_equipment_production = {
-		equipment = {
-			type = infantry_equipment_1
-			creator = "RAJ"
-		}
-		requested_factories = 1
-		progress = 0.86
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = support_equipment_1
-			creator = "RAJ"
-		}
-		requested_factories = 1
-		progress = 0.45
-		efficiency = 100
-	}
-}
+ name = "Infantry Division"
+ division_names_group = RAJ_INF_01
+ regiments = {
+ infantry = { x = 0 y = 0 }
+ infantry = { x = 0 y = 1 }
+ infantry = { x = 0 y = 2 }
+ infantry = { x = 1 y = 0 }
+ infantry = { x = 1 y = 1 }
+ infantry = { x = 1 y = 2 }
+ infantry = { x = 2 y = 0 }
+ infantry = { x = 2 y = 1 }
+ infantry = { x = 2 y = 2 }
+ }
+ support = {
+ engineer = { x = 0 y = 0 }
+ }
+ }
+ division_template = {
+ name = "District Garrison"
+ division_names_group = RAJ_GAR_01
+ regiments = {
+ infantry = { x = 0 y = 0 }
+ infantry = { x = 0 y = 1 }
+ infantry = { x = 0 y = 2 }
+ infantry = { x = 1 y = 0 }
+ infantry = { x = 1 y = 1 }
+ infantry = { x = 1 y = 2 }
+ infantry = { x = 2 y = 0 }
+ infantry = { x = 2 y = 1 }
+ infantry = { x = 2 y = 2 }
+ }
+ }
+ division_template = {
+ name = "Colonial Garrison"
+ division_names_group = RAJ_GAR_01
+ regiments = {
+ infantry = { x = 0 y = 0 }
+ infantry = { x = 0 y = 1 }
+ infantry = { x = 0 y = 2 }
+ infantry = { x = 1 y = 0 }
+ infantry = { x = 1 y = 1 }
+ infantry = { x = 1 y = 2 }
+ }
+ priority = 0
+ }
+ division_template = {
+ name = "Armoured Division"
+ division_names_group = RAJ_ARM_01
+ regiments = {
+ light_armor = { x = 0 y = 0 }
+ light_armor = { x = 0 y = 1 }
+ infantry = { x = 1 y = 0 }
+ infantry = { x = 1 y = 1 }
+ }
+ }
+ units = {
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 112
+ }
+ location =11517
+ division_template = "District Garrison"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 101
+ }
+ location =11517
+ division_template = "District Garrison"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 102
+ }
+ location =4645
+ division_template = "District Garrison"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 103
+ }
+ location =10894
+ division_template = "District Garrison"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 104
+ }
+ location =9917
+ division_template = "District Garrison"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 105
+ }
+ location =1869
+ division_template = "District Garrison"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 4
+ }
+ location =10844
+ division_template = "Infantry Division"
+ start_experience_factor = 0.3
+ start_equipment_factor = 0.7
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 106
+ }
+ location =10844
+ division_template = "District Garrison"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 107
+ }
+ location =11021
+ division_template = "District Garrison"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ division= {
+ name = "Presidency
+ Assam District"
+ location =1441
+ division_template = "District Garrison"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 5
+ }
+ location =11564
+ division_template = "Infantry Division"
+ start_experience_factor = 0.3
+ start_equipment_factor = 0.7
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 109
+ }
+ location =11564
+ division_template = "District Garrison"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 110
+ }
+ location =1294
+ division_template = "District Garrison"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 111
+ }
+ location =9454
+ division_template = "District Garrison"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ division= {
+ name = "Rangoon Brigade"
+ location =1275
+ division_template = "Colonial Garrison"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ division= {
+ name = "Mandalay Brigade"
+ location =1436
+ division_template = "Colonial Garrison"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ }
+ air_wings = {
+ 439 = {
+ CAS_equipment_1 = { owner = "ENG" amount = 48 }
+ }
+ }
+ instant_effect = {
+ add_equipment_production = {
+ equipment = {
+ type = infantry_equipment_1
+ creator = "RAJ"
+ }
+ requested_factories = 1
+ progress = 0.86
+ efficiency = 100
+ }
+ add_equipment_production = {
+ equipment = {
+ type = support_equipment_1
+ creator = "RAJ"
+ }
+ requested_factories = 1
+ progress = 0.45
+ efficiency = 100
+ }
+ }
 

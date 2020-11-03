@@ -1,33 +1,33 @@
 state={
-	id=747
-	name="STATE_747"
-	provinces={
-		4401 4739 4796 7580 7589 7706 9877 10258 11995 12073
-	}
-	manpower=1000006
-	buildings_max_level_factor=1.000
-	state_category = pastoral
-	history={
-		owner = CHI
-		add_core_of = CHI
-		victory_points = {
-			7580 3
-		}
-		buildings = {
-			infrastructure = 3
-		}
-		1938.10.25 = {
-			if = {
-				limit = {
-					NOT = {
-						has_dlc = "Waking the Tiger"
-					}
-				}
-				CHI = {
-					transfer_state = PREV
-				}
-			}
-		}
-	}
-}
+ id=747
+ name="STATE_747"
+ provinces={
+4280 4598 4653 7354 7362 7473 9575 9929 11570 11646
+ }
+ manpower=1000006
+ buildings_max_level_factor=1.000
+ state_category = pastoral
+ history={
+ owner = CHI
+ add_core_of = CHI
+ victory_points = {
+7354 3
+ }
+ buildings = {
+ infrastructure = 3
+ }
+ 1938.10.25 = {
+ if = {
+ limit = {
+ NOT = {
+ has_dlc = "Waking the Tiger"
+ }
+ }
+ CHI = {
+ transfer_state = PREV
+ }
+ }
+ }
+ }
+ }
 

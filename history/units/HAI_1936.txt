@@ -1,33 +1,29 @@
 ﻿division_template = {
-	name = "Brigade de Infanterie"
-	division_names_group = FREN_INFB_01
-
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-	}
-}
-units = {
-
-	division= {
-		name = "Garde d'Haiti"
-		location =1571
-		division_template = "Brigade de Infanterie"
-		start_equipment_factor = 0.3
-	}
-
-}
-
-instant_effect = {
-	add_equipment_production = {
-		equipment = {
-			type = infantry_equipment_0
-			creator = "HAI"
-		}
-		requested_factories = 1
-		progress = 0.27
-		efficiency = 100
-	}
-}
+ name = "Brigade de Infanterie"
+ division_names_group = FREN_INFB_01
+ regiments = {
+ infantry = { x = 0 y = 0 }
+ infantry = { x = 0 y = 1 }
+ infantry = { x = 0 y = 2 }
+ }
+ }
+ units = {
+ division= {
+ name = "Garde d'Haiti"
+ location =1533
+ division_template = "Brigade de Infanterie"
+ start_equipment_factor = 0.3
+ }
+ }
+ instant_effect = {
+ add_equipment_production = {
+ equipment = {
+ type = infantry_equipment_0
+ creator = "HAI"
+ }
+ requested_factories = 1
+ progress = 0.27
+ efficiency = 100
+ }
+ }
 

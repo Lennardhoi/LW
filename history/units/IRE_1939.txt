@@ -1,40 +1,36 @@
 ﻿division_template = {
-	name = "Infantry Division"
-	division_names_group = IRE_INF_01
-
-
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
-	}
-}
-units = {
-
-	division = {
-		name = "Army High Command"
-		location =285
-		division_template = "Infantry Division"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-	}
-}
-
-instant_effect = {
-	add_equipment_production = {
-		equipment = {
-			type = infantry_equipment_1
-			creator = "IRE"
-		}
-		requested_factories = 1
-		progress = 0.77
-		efficiency = 100
-	}
-}
+ name = "Infantry Division"
+ division_names_group = IRE_INF_01
+ regiments = {
+ infantry = { x = 0 y = 0 }
+ infantry = { x = 0 y = 1 }
+ infantry = { x = 0 y = 2 }
+ infantry = { x = 1 y = 0 }
+ infantry = { x = 1 y = 1 }
+ infantry = { x = 1 y = 2 }
+ infantry = { x = 2 y = 0 }
+ infantry = { x = 2 y = 1 }
+ infantry = { x = 2 y = 2 }
+ }
+ }
+ units = {
+ division = {
+ name = "Army High Command"
+ location =257
+ division_template = "Infantry Division"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.3
+ }
+ }
+ instant_effect = {
+ add_equipment_production = {
+ equipment = {
+ type = infantry_equipment_1
+ creator = "IRE"
+ }
+ requested_factories = 1
+ progress = 0.77
+ efficiency = 100
+ }
+ }
 

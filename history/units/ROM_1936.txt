@@ -1,158 +1,155 @@
 ﻿division_template = {
-	name = "Divizia de Infanterie"
-
-	division_names_group = ROM_INF_01
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 0 y = 3 }
-		artillery_brigade = { x = 0 y = 4 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-		infantry = { x = 1 y = 3 }
-		artillery_brigade = { x = 1 y = 4 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
-		artillery_brigade = { x = 2 y = 3 }
-		infantry = { x = 3 y = 0 }
-		infantry = { x = 3 y = 1 }
-		infantry = { x = 3 y = 2 }
-		artillery_brigade = { x = 3 y = 3 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
-		recon = { x = 0 y = 2 }
-	}
-}
-division_template = {
-	name = "Divizia de Munte"
-	division_names_group = ROM_MTN_01
-	regiments = {
-		mountaineers = { x = 0 y = 0 }
-		mountaineers = { x = 0 y = 1 }
-		mountaineers = { x = 0 y = 2 }
-		mountaineers = { x = 0 y = 3 }
-		artillery_brigade = { x = 0 y = 4 }
-		mountaineers = { x = 1 y = 0 }
-		mountaineers = { x = 1 y = 1 }
-		mountaineers = { x = 1 y = 2 }
-		mountaineers = { x = 1 y = 3 }
-		artillery_brigade = { x = 1 y = 4 }
-		mountaineers = { x = 2 y = 0 }
-		mountaineers = { x = 2 y = 1 }
-		mountaineers = { x = 2 y = 2 }
-		artillery_brigade = { x = 2 y = 3 }
-		mountaineers = { x = 3 y = 0 }
-		mountaineers = { x = 3 y = 1 }
-		mountaineers = { x = 3 y = 2 }
-		artillery_brigade = { x = 3 y = 3 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
-		recon = { x = 0 y = 2 }
-	}
-}
-division_template = {
-	name = "Regimentul de Blindate"
-
-	division_names_group = ROM_ARM_01
-	regiments = {
-		light_armor = { x = 0 y = 0 }
-		light_armor = { x = 0 y = 1 }
-		light_armor = { x = 0 y = 2 }
-		light_armor = { x = 0 y = 3 }
-		light_armor = { x = 1 y = 0 }
-		light_armor = { x = 1 y = 1 }
-		light_armor = { x = 1 y = 2 }
-		light_armor = { x = 1 y = 3 }
-		light_armor = { x = 2 y = 0 }
-		light_armor = { x = 2 y = 1 }
-		light_armor = { x = 2 y = 2 }
-		light_armor = { x = 2 y = 3 }
-		motorized = { x = 3 y = 0 }
-		motorized = { x = 3 y = 1 }
-		motorized = { x = 3 y = 2 }
-		motorized = { x = 3 y = 3 }
-		motorized = { x = 4 y = 0 }
-		motorized = { x = 4 y = 1 }
-		motorized = { x = 4 y = 2 }
-		motorized = { x = 4 y = 3 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-		recon = { x = 0 y = 1 }
-		artillery = { x = 0 y = 2 }
-	}
-}
-units = {
-	division= {
-		name = "This is here so you can look at your generals"
-		location =9129
-		division_template = "Divizia de Infanterie"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.01
-	}
-}
-
-instant_effect = {
-	add_equipment_production = {
-		equipment = {
-			type = infantry_equipment_1
-			creator = "ROM"
-		}
-		requested_factories = 1
-		progress = 0.87
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = support_equipment_1
-			creator = "ROM"
-		}
-		requested_factories = 1
-		progress = 0.19
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = artillery_equipment_1
-			creator = "ROM"
-		}
-		requested_factories = 1
-		progress = 0.24
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = light_tank_equipment_1
-			creator = "ROM"
-		}
-		requested_factories = 1
-		progress = 0.4
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = anti_air_equipment_1
-			creator = "ROM"
-		}
-		requested_factories = 1
-		progress = 0.3
-		efficiency = 50
-	}
-	add_equipment_production = {
-		equipment = {
-			type = motorized_equipment_1
-			creator = "ROM"
-		}
-		requested_factories = 1
-		progress = 0.4
-		efficiency = 50
-	}
-}
+ name = "Divizia de Infanterie"
+ division_names_group = ROM_INF_01
+ regiments = {
+ infantry = { x = 0 y = 0 }
+ infantry = { x = 0 y = 1 }
+ infantry = { x = 0 y = 2 }
+ infantry = { x = 0 y = 3 }
+ artillery_brigade = { x = 0 y = 4 }
+ infantry = { x = 1 y = 0 }
+ infantry = { x = 1 y = 1 }
+ infantry = { x = 1 y = 2 }
+ infantry = { x = 1 y = 3 }
+ artillery_brigade = { x = 1 y = 4 }
+ infantry = { x = 2 y = 0 }
+ infantry = { x = 2 y = 1 }
+ infantry = { x = 2 y = 2 }
+ artillery_brigade = { x = 2 y = 3 }
+ infantry = { x = 3 y = 0 }
+ infantry = { x = 3 y = 1 }
+ infantry = { x = 3 y = 2 }
+ artillery_brigade = { x = 3 y = 3 }
+ }
+ support = {
+ engineer = { x = 0 y = 0 }
+ artillery = { x = 0 y = 1 }
+ recon = { x = 0 y = 2 }
+ }
+ }
+ division_template = {
+ name = "Divizia de Munte"
+ division_names_group = ROM_MTN_01
+ regiments = {
+ mountaineers = { x = 0 y = 0 }
+ mountaineers = { x = 0 y = 1 }
+ mountaineers = { x = 0 y = 2 }
+ mountaineers = { x = 0 y = 3 }
+ artillery_brigade = { x = 0 y = 4 }
+ mountaineers = { x = 1 y = 0 }
+ mountaineers = { x = 1 y = 1 }
+ mountaineers = { x = 1 y = 2 }
+ mountaineers = { x = 1 y = 3 }
+ artillery_brigade = { x = 1 y = 4 }
+ mountaineers = { x = 2 y = 0 }
+ mountaineers = { x = 2 y = 1 }
+ mountaineers = { x = 2 y = 2 }
+ artillery_brigade = { x = 2 y = 3 }
+ mountaineers = { x = 3 y = 0 }
+ mountaineers = { x = 3 y = 1 }
+ mountaineers = { x = 3 y = 2 }
+ artillery_brigade = { x = 3 y = 3 }
+ }
+ support = {
+ engineer = { x = 0 y = 0 }
+ artillery = { x = 0 y = 1 }
+ recon = { x = 0 y = 2 }
+ }
+ }
+ division_template = {
+ name = "Regimentul de Blindate"
+ division_names_group = ROM_ARM_01
+ regiments = {
+ light_armor = { x = 0 y = 0 }
+ light_armor = { x = 0 y = 1 }
+ light_armor = { x = 0 y = 2 }
+ light_armor = { x = 0 y = 3 }
+ light_armor = { x = 1 y = 0 }
+ light_armor = { x = 1 y = 1 }
+ light_armor = { x = 1 y = 2 }
+ light_armor = { x = 1 y = 3 }
+ light_armor = { x = 2 y = 0 }
+ light_armor = { x = 2 y = 1 }
+ light_armor = { x = 2 y = 2 }
+ light_armor = { x = 2 y = 3 }
+ motorized = { x = 3 y = 0 }
+ motorized = { x = 3 y = 1 }
+ motorized = { x = 3 y = 2 }
+ motorized = { x = 3 y = 3 }
+ motorized = { x = 4 y = 0 }
+ motorized = { x = 4 y = 1 }
+ motorized = { x = 4 y = 2 }
+ motorized = { x = 4 y = 3 }
+ }
+ support = {
+ engineer = { x = 0 y = 0 }
+ recon = { x = 0 y = 1 }
+ artillery = { x = 0 y = 2 }
+ }
+ }
+ units = {
+ division= {
+ name = "This is here so you can look at your generals"
+ location =8839
+ division_template = "Divizia de Infanterie"
+ start_experience_factor = 0.3
+ start_equipment_factor = 0.01
+ }
+ }
+ instant_effect = {
+ add_equipment_production = {
+ equipment = {
+ type = infantry_equipment_1
+ creator = "ROM"
+ }
+ requested_factories = 1
+ progress = 0.87
+ efficiency = 100
+ }
+ add_equipment_production = {
+ equipment = {
+ type = support_equipment_1
+ creator = "ROM"
+ }
+ requested_factories = 1
+ progress = 0.19
+ efficiency = 100
+ }
+ add_equipment_production = {
+ equipment = {
+ type = artillery_equipment_1
+ creator = "ROM"
+ }
+ requested_factories = 1
+ progress = 0.24
+ efficiency = 100
+ }
+ add_equipment_production = {
+ equipment = {
+ type = light_tank_equipment_1
+ creator = "ROM"
+ }
+ requested_factories = 1
+ progress = 0.4
+ efficiency = 100
+ }
+ add_equipment_production = {
+ equipment = {
+ type = anti_air_equipment_1
+ creator = "ROM"
+ }
+ requested_factories = 1
+ progress = 0.3
+ efficiency = 50
+ }
+ add_equipment_production = {
+ equipment = {
+ type = motorized_equipment_1
+ creator = "ROM"
+ }
+ requested_factories = 1
+ progress = 0.4
+ efficiency = 50
+ }
+ }
 

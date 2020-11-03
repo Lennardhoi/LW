@@ -1,42 +1,42 @@
 start_equipment_factor = 0.2
-division_template = {
-	name = "Binary Infantry"
-	division_names_group = KOR_INF_01
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-	}
-}
-division_template = {
-	name = "Triangular Infantry"
-	division_names_group = KOR_INF_01
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-	}
-}
-units = {
-	division = {
-		name = "Guilin Jingbei"
-		location =9869
-		division_template = "Binary Infantry"
-	}
-}
-instant_effect = {
-	add_equipment_production = {
-		equipment = {
-			type = infantry_equipment_0
-			creator = "GXC"
-		}
-		requested_factories = 1
-		progress = 0.47
-		efficiency = 100
-	}
-}
+ division_template = {
+ name = "Binary Infantry"
+ division_names_group = KOR_INF_01
+ regiments = {
+ infantry = { x = 0 y = 0 }
+ infantry = { x = 0 y = 1 }
+ infantry = { x = 1 y = 0 }
+ infantry = { x = 1 y = 1 }
+ }
+ }
+ division_template = {
+ name = "Triangular Infantry"
+ division_names_group = KOR_INF_01
+ regiments = {
+ infantry = { x = 0 y = 0 }
+ infantry = { x = 0 y = 1 }
+ infantry = { x = 1 y = 0 }
+ infantry = { x = 1 y = 1 }
+ infantry = { x = 2 y = 0 }
+ infantry = { x = 2 y = 1 }
+ }
+ }
+ units = {
+ division = {
+ name = "Guilin Jingbei"
+ location =9567
+ division_template = "Binary Infantry"
+ }
+ }
+ instant_effect = {
+ add_equipment_production = {
+ equipment = {
+ type = infantry_equipment_0
+ creator = "GXC"
+ }
+ requested_factories = 1
+ progress = 0.47
+ efficiency = 100
+ }
+ }
 

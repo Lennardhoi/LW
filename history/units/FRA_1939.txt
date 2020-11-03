@@ -1,1408 +1,1301 @@
 ﻿
-division_template = {
-	name = "Division d'Infanterie"
-	division_names_group = FRA_INF_01
-
-
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
-	}
-	support = {
-		artillery = { x = 0 y = 0 }
-	}
-}
-division_template = {
-	name = "Division Coloniale"
-	division_names_group = FRA_COL_01
-
-
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
-	}
-	support = {
-		artillery = { x = 0 y = 0 }
-	}
-}
-division_template = {
-	name = "Division Forteresse"
-	division_names_group = FRA_GAR_01
-
-
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
-	}
-	support = {
-		artillery = { x = 0 y = 0 }
-	}
-	priority = 0
-}
-division_template = {
-	name = "Division d'Infanterie Alpine"
-	division_names_group = FRA_MNT_01
-
-
-	regiments = {
-		mountaineers = { x = 0 y = 0 }
-		mountaineers = { x = 0 y = 1 }
-		mountaineers = { x = 0 y = 2 }
-		mountaineers = { x = 1 y = 0 }
-		mountaineers = { x = 1 y = 1 }
-		mountaineers = { x = 1 y = 2 }
-		mountaineers = { x = 2 y = 0 }
-		mountaineers = { x = 2 y = 1 }
-		mountaineers = { x = 2 y = 2 }
-	}
-	support = {
-		artillery = { x = 0 y = 0 }
-	}
-}
-division_template = {
-	name = "Division d'Infanterie Motorisée"
-	division_names_group = FRA_MOT_01
-
-	regiments = {
-		motorized = { x = 0 y = 0 }
-		motorized = { x = 0 y = 1 }
-		motorized = { x = 0 y = 2 }
-		motorized = { x = 1 y = 0 }
-		motorized = { x = 1 y = 1 }
-		motorized = { x = 1 y = 2 }
-		motorized = { x = 2 y = 0 }
-		motorized = { x = 2 y = 1 }
-		motorized = { x = 2 y = 2 }
-	}
-	support = {
-		mot_recon = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
-	}
-}
-division_template = {
-	name = "Division de Cavalerie"
-	division_names_group = FRA_CAV_01
-
-	regiments = {
-		cavalry = { x = 0 y = 0 }
-		cavalry = { x = 0 y = 1 }
-		cavalry = { x = 1 y = 0 }
-		cavalry = { x = 1 y = 1 }
-	}
-	support = {
-		recon = { x = 0 y = 0 }
-	}
-}
-division_template = {
-	name = "Division Légère Mécanique"
-	division_names_group = FRA_MEC_01
-	regiments = {
-		medium_armor = { x = 0 y = 0 }
-		light_armor = { x = 0 y = 1 }
-		medium_armor = { x = 1 y = 0 }
-		light_armor = { x = 1 y = 1 }
-		motorized = { x = 2 y = 0 }
-		motorized = { x = 2 y = 1 }
-		motorized = { x = 2 y = 2 }
-	}
-	support = {
-		mot_recon = { x = 0 y = 0 }
-	}
-}
-division_template = {
-	name = "Brigade de Chars de Combat"
-
-	division_names_group = FRA_ARM_02
-	regiments = {
-		light_armor = { x = 0 y = 0 }
-		light_armor = { x = 0 y = 1 }
-		light_armor = { x = 1 y = 0 }
-		light_armor = { x = 1 y = 1 }
-	}
-}
-division_template = {
-	name = "Brigade Cuirassée"
-
-	division_names_group = FRA_ARM_02
-	regiments = {
-		heavy_armor = { x = 0 y = 0 }
-		heavy_armor = { x = 0 y = 1 }
-	}
-	support = {
-		artillery = { x = 0 y = 0 }
-	}
-}
-division_template = {
-	name = "Brigade Coloniale"
-	division_names_group = FRA_COL_01
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-	}
-	priority = 0
-}
-
-units = {
-
-
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 10
-		}
-		location =3529
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 13
-		}
-		location =3547
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 14
-		}
-		location =3547
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.3
-	}
-
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 57
-		}
-		location =9017
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 104
-		}
-		location =9017
-		division_template = "Division Forteresse"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 67
-		}
-		location =674
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 105
-		}
-		location =674
-		division_template = "Division Forteresse"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-	}
-
-	division= {
-		name = "506e Rgt. de Chars de Combat"
-		location =694
-		division_template = "Brigade de Chars de Combat"
-		start_experience_factor = 0.2
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 19
-		}
-		location =694
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 54
-		}
-		location =694
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-	}
-
-
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 61
-		}
-		location =10821
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 102
-		}
-		location =10821
-		division_template = "Division Forteresse"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 101
-		}
-		location =5002
-		division_template = "Division Forteresse"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location =3332
-		division_template = "Division Légère Mécanique"
-		start_experience_factor = 0.3
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location =10802
-		division_template = "Division d'Infanterie Motorisée"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 42
-		}
-		location =573
-		division_template = "Division Coloniale"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 32
-		}
-		location =10922
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 45
-		}
-		location =3332
-		division_template = "Division Coloniale"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-	}
-	division= {
-		name = "505e Rgt. de Chars de Combat"
-		location =10922
-		division_template = "Brigade de Chars de Combat"
-		start_experience_factor = 0.2
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 71
-		}
-		location =6252
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location =6252
-		division_template = "Division de Cavalerie"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.75
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location =6252
-		division_template = "Division Légère Mécanique"
-		start_experience_factor = 0.3
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 55
-		}
-		location =3445
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-	}
-	division= {
-		name = "511e Rgt. de Chars de Combat"
-		location =3445
-		division_template = "Brigade de Chars de Combat"
-		start_experience_factor = 0.2
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 41
-		}
-		location =3445
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location =3445
-		division_template = "Division Coloniale"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 53
-		}
-		location =5002
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-	}
-	division= {
-		name = "502e Rgt. de Chars de Combat"
-		location =5002
-		division_template = "Brigade de Chars de Combat"
-		start_experience_factor = 0.2
-	}
-	division= {
-		name = "509e Rgt. de Chars de Combat"
-		location =9073
-		division_template = "Brigade de Chars de Combat"
-		start_experience_factor = 0.2
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 5
-		}
-		location =9073
-		division_template = "Division d'Infanterie Motorisée"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location =9073
-		division_template = "Division de Cavalerie"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.75
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 18
-		}
-		location =5002
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 22
-		}
-		location =5002
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-	}
-
-
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 20
-		}
-		location =547
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 51
-		}
-		location =547
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 58
-		}
-		location =3513
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 103
-		}
-		location =3513
-		division_template = "Division Forteresse"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 6
-		}
-		location =3513
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 3
-		}
-		location =10835
-		division_template = "Division de Cavalerie"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.75
-	}
-	division= {
-		name = "512e Rgt. de Chars de Combat"
-		location =10835
-		division_template = "Brigade Cuirassée"
-		start_experience_factor = 0.2
-	}
-
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 12
-		}
-		location =10821
-		division_template = "Division d'Infanterie Motorisée"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 43
-		}
-		location =10821
-		division_template = "Division Coloniale"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location =10821
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 42
-		}
-		location =10821
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.3
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 26
-		}
-		location =3513
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 56
-		}
-		location =3513
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-	}
-	division= {
-		name = "507e Rgt. de Chars de Combat"
-		location =3513
-		division_template = "Brigade de Chars de Combat"
-		start_experience_factor = 0.2
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 45
-		}
-		location =694
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 9
-		}
-		location =694
-		division_template = "Division d'Infanterie Motorisée"
-		start_experience_factor = 0.3
-	}
-	division= {
-		name = "510e Rgt. de Chars de Combat"
-		location =694
-		division_template = "Brigade de Chars de Combat"
-		start_experience_factor = 0.2
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 4
-		}
-		location =3513
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 15
-		}
-		location =3513
-		division_template = "Division d'Infanterie Motorisée"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 3
-		}
-		location =3513
-		division_template = "Division Coloniale"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 11
-		}
-		location =9017
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 47
-		}
-		location =9017
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 6
-		}
-		location =9017
-		division_template = "Division Coloniale"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 44
-		}
-		location =9017
-		division_template = "Division Coloniale"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 21
-		}
-		location =547
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 23
-		}
-		location =547
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 52
-		}
-		location =547
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 82
-		}
-		location =547
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 4
-		}
-		location =6236
-		division_template = "Division Coloniale"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 87
-		}
-		location =674
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-	}
-	division= {
-		name = "501e Rgt. de Chars de Combat"
-		location =6236
-		division_template = "Brigade de Chars de Combat"
-		start_experience_factor = 0.2
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 24
-		}
-		location =6236
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 16
-		}
-		location =674
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 35
-		}
-		location =674
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 70
-		}
-		location =674
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 62
-		}
-		location =6236
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-	}
-
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 5
-		}
-		location =9037
-		division_template = "Division Coloniale"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.35
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 7
-		}
-		location =9037
-		division_template = "Division Coloniale"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.35
-	}
-	division= {
-		name = "1ère Brigade Cuirassée"
-		location =9037
-		division_template = "Brigade Cuirassée"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
-	}
-	division= {
-		name = "2ème Brigade Cuirassée"
-		location =9037
-		division_template = "Brigade Cuirassée"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 7
-		}
-		location =639
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 36
-		}
-		location =639
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 43
-		}
-		location =639
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.3
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 60
-		}
-		location =8948
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.21
-		start_equipment_factor = 0.5
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 3
-		}
-		location =452
-		division_template = "Division d'Infanterie Motorisée"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 25
-		}
-		location =452
-		division_template = "Division d'Infanterie Motorisée"
-		start_experience_factor = 0.3
-	}
-	division= {
-		name = "503e Rgt. de Chars de Combat"
-		location =452
-		division_template = "Brigade de Chars de Combat"
-		start_experience_factor = 0.2
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 63
-		}
-		location =11133
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 65
-		}
-		location =900
-		division_template = "Division d'Infanterie Alpine"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location =3644
-		division_template = "Division Coloniale"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-	}
-	division= {
-		name = "504e Rgt. de Chars de Combat"
-		location =6656
-		division_template = "Brigade de Chars de Combat"
-		start_experience_factor = 0.2
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 27
-		}
-		location =774
-		division_template = "Division d'Infanterie Alpine"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 31
-		}
-		location =774
-		division_template = "Division d'Infanterie Alpine"
-		start_experience_factor = 0.3
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 29
-		}
-		location =9393
-		division_template = "Division d'Infanterie Alpine"
-		start_experience_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 30
-		}
-		location =3816
-		division_template = "Division d'Infanterie Alpine"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 66
-		}
-		location =9393
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 28
-		}
-		location =9253
-		division_template = "Division d'Infanterie Alpine"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 64
-		}
-		location =760
-		division_template = "Division d'Infanterie Alpine"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 41
-		}
-		location =3644
-		division_template = "Division Coloniale"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.7
-	}
-
-
-	division= {
-		name = "Front Est Saharien"
-		location =6805
-		division_template = "Brigade Coloniale"
-		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-	}
-	division= {
-		name = "Front Sud-Est Saharien"
-		location =1125
-		division_template = "Brigade Coloniale"
-		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 85
-		}
-		location =6805
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.7
-	}
-
-
-
-
-
-
-
-
-
-
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 182
-		}
-		location =1125
-		division_template = "Division d'Infanterie"
-		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 183
-		}
-		location =1125
-		division_template = "Division d'Infanterie"
-		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-	}
-	division= {
-		name = "1e Grpmt. de Cavalerie d'Afrique"
-		location =1125
-		division_template = "Division de Cavalerie"
-		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-	}
-
-
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 83
-		}
-		location =11255
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 84
-		}
-		location =11255
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 88
-		}
-		location =9474
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.5
-	}
-	division= {
-		name = "2e Grmpt. de Cavalerie d'Afrique"
-		location =11255
-		division_template = "Division de Cavalerie"
-		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 81
-		}
-		location =11243
-		division_template = "Division d'Infanterie"
-		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 180
-		}
-		location =1085
-		division_template = "Division d'Infanterie"
-		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-	}
-	division= {
-		name = "Front Sud-Tunisien"
-		location =11243
-		division_template = "Brigade Coloniale"
-		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 62
-		}
-		location =6742
-		division_template = "Division Coloniale"
-		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 63
-		}
-		location =6742
-		division_template = "Division Coloniale"
-		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-	}
-
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 86
-		}
-		location =788
-		division_template = "Division d'Infanterie"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 191
-		}
-		location =788
-		division_template = "Division d'Infanterie"
-		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
-		start_equipment_factor = 0.3
-	}
-
-	division= {
-		name = "Troupes de Madagascar"
-		location =4938
-		division_template = "Brigade Coloniale"
-		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
-		start_equipment_factor = 0.15
-	}
-
-	division= {
-		name = "Troupes de Sénégalais"
-		location =4748
-		division_template = "Brigade Coloniale"
-		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
-		start_equipment_factor = 0.3
-	}
-
-	division= {
-		name = "Troupes de Afrique Equatoriale Française"
-		location =4898
-		division_template = "Brigade Coloniale"
-		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
-		start_equipment_factor = 0.15
-	}
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 91
-		}
-		location =3924
-		division_template = "Division Coloniale"
-		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 92
-		}
-		location =4248
-		division_template = "Division Coloniale"
-		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-	}
-	division= {
-		name = "Brigade d'Annam-Laos"
-		location =7047
-		division_template = "Brigade Coloniale"
-		force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
-		start_experience_factor = 0.1
-		start_equipment_factor = 0.3
-	}
-}
-
-
-
-air_wings = {
-	29 = {
-
-
-
-
-
-
-		fighter_equipment_2 = { owner = "FRA" amount = 259 }
-		heavy_fighter_equipment_1  = { owner = "FRA"  amount = 36 }
-		tac_bomber_equipment_2 =  { owner = "FRA" amount = 24 }
-		tac_bomber_equipment_1 =  { owner = "FRA" amount = 24 }
-		CAS_equipment_1 =  { owner = "FRA" amount = 24 }
-	}
-	18 = {
-
-
-
-		fighter_equipment_2 = { owner = "FRA" amount = 132 }
-		tac_bomber_equipment_1 =  { owner = "FRA" amount = 24 }
-		strat_bomber_equipment_1 =  { owner = "FRA" amount = 12 }
-	}
-	21 = {
-
-
-
-		fighter_equipment_2 = { owner = "FRA" amount = 144 }
-		tac_bomber_equipment_2 =  { owner = "FRA" amount = 27 }
-		tac_bomber_equipment_1 =  { owner = "FRA" amount = 52 }
-		CAS_equipment_1 =  { owner = "FRA" amount = 24 }
-
-	}
-	458 = {
-
-		fighter_equipment_1 = { owner = "FRA" amount = 48 }
-		tac_bomber_equipment_0 =  { owner = "FRA" amount = 27 }
-	}
-	458 = {
-
-		fighter_equipment_2 = { owner = "FRA" amount = 27 }
-	}
-	15 = {
-
-		nav_bomber_equipment_1 = { owner = "FRA" amount = 24 }
-		cv_nav_bomber_equipment_1 = { owner = "FRA" amount = 24 }
-	}
-}
-
-
-
-instant_effect = {
-	add_equipment_production = {
-		equipment = {
-			type = infantry_equipment_1
-			creator = "FRA"
-		}
-		requested_factories = 2
-		progress = 0.1
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = support_equipment_1
-			creator = "FRA"
-		}
-		requested_factories = 1
-		progress = 0.3
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = artillery_equipment_1
-			creator = "FRA"
-		}
-		requested_factories = 1
-		progress = 0.3
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = light_tank_equipment_2
-			creator = "FRA"
-		}
-		requested_factories = 1
-		progress = 0.4
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = motorized_equipment_1
-			creator = "FRA"
-		}
-		requested_factories = 1
-		progress = 0.4
-		efficiency = 100
-	}
-}
-
+ division_template = {
+ name = "Division d'Infanterie"
+ division_names_group = FRA_INF_01
+ regiments = {
+ infantry = { x = 0 y = 0 }
+ infantry = { x = 0 y = 1 }
+ infantry = { x = 0 y = 2 }
+ infantry = { x = 1 y = 0 }
+ infantry = { x = 1 y = 1 }
+ infantry = { x = 1 y = 2 }
+ infantry = { x = 2 y = 0 }
+ infantry = { x = 2 y = 1 }
+ infantry = { x = 2 y = 2 }
+ }
+ support = {
+ artillery = { x = 0 y = 0 }
+ }
+ }
+ division_template = {
+ name = "Division Coloniale"
+ division_names_group = FRA_COL_01
+ regiments = {
+ infantry = { x = 0 y = 0 }
+ infantry = { x = 0 y = 1 }
+ infantry = { x = 0 y = 2 }
+ infantry = { x = 1 y = 0 }
+ infantry = { x = 1 y = 1 }
+ infantry = { x = 1 y = 2 }
+ infantry = { x = 2 y = 0 }
+ infantry = { x = 2 y = 1 }
+ infantry = { x = 2 y = 2 }
+ }
+ support = {
+ artillery = { x = 0 y = 0 }
+ }
+ }
+ division_template = {
+ name = "Division Forteresse"
+ division_names_group = FRA_GAR_01
+ regiments = {
+ infantry = { x = 0 y = 0 }
+ infantry = { x = 0 y = 1 }
+ infantry = { x = 0 y = 2 }
+ infantry = { x = 1 y = 0 }
+ infantry = { x = 1 y = 1 }
+ infantry = { x = 1 y = 2 }
+ infantry = { x = 2 y = 0 }
+ infantry = { x = 2 y = 1 }
+ infantry = { x = 2 y = 2 }
+ }
+ support = {
+ artillery = { x = 0 y = 0 }
+ }
+ priority = 0
+ }
+ division_template = {
+ name = "Division d'Infanterie Alpine"
+ division_names_group = FRA_MNT_01
+ regiments = {
+ mountaineers = { x = 0 y = 0 }
+ mountaineers = { x = 0 y = 1 }
+ mountaineers = { x = 0 y = 2 }
+ mountaineers = { x = 1 y = 0 }
+ mountaineers = { x = 1 y = 1 }
+ mountaineers = { x = 1 y = 2 }
+ mountaineers = { x = 2 y = 0 }
+ mountaineers = { x = 2 y = 1 }
+ mountaineers = { x = 2 y = 2 }
+ }
+ support = {
+ artillery = { x = 0 y = 0 }
+ }
+ }
+ division_template = {
+ name = "Division d'Infanterie Motorisée"
+ division_names_group = FRA_MOT_01
+ regiments = {
+ motorized = { x = 0 y = 0 }
+ motorized = { x = 0 y = 1 }
+ motorized = { x = 0 y = 2 }
+ motorized = { x = 1 y = 0 }
+ motorized = { x = 1 y = 1 }
+ motorized = { x = 1 y = 2 }
+ motorized = { x = 2 y = 0 }
+ motorized = { x = 2 y = 1 }
+ motorized = { x = 2 y = 2 }
+ }
+ support = {
+ mot_recon = { x = 0 y = 0 }
+ artillery = { x = 0 y = 1 }
+ }
+ }
+ division_template = {
+ name = "Division de Cavalerie"
+ division_names_group = FRA_CAV_01
+ regiments = {
+ cavalry = { x = 0 y = 0 }
+ cavalry = { x = 0 y = 1 }
+ cavalry = { x = 1 y = 0 }
+ cavalry = { x = 1 y = 1 }
+ }
+ support = {
+ recon = { x = 0 y = 0 }
+ }
+ }
+ division_template = {
+ name = "Division Légère Mécanique"
+ division_names_group = FRA_MEC_01
+ regiments = {
+ medium_armor = { x = 0 y = 0 }
+ light_armor = { x = 0 y = 1 }
+ medium_armor = { x = 1 y = 0 }
+ light_armor = { x = 1 y = 1 }
+ motorized = { x = 2 y = 0 }
+ motorized = { x = 2 y = 1 }
+ motorized = { x = 2 y = 2 }
+ }
+ support = {
+ mot_recon = { x = 0 y = 0 }
+ }
+ }
+ division_template = {
+ name = "Brigade de Chars de Combat"
+ division_names_group = FRA_ARM_02
+ regiments = {
+ light_armor = { x = 0 y = 0 }
+ light_armor = { x = 0 y = 1 }
+ light_armor = { x = 1 y = 0 }
+ light_armor = { x = 1 y = 1 }
+ }
+ }
+ division_template = {
+ name = "Brigade Cuirassée"
+ division_names_group = FRA_ARM_02
+ regiments = {
+ heavy_armor = { x = 0 y = 0 }
+ heavy_armor = { x = 0 y = 1 }
+ }
+ support = {
+ artillery = { x = 0 y = 0 }
+ }
+ }
+ division_template = {
+ name = "Brigade Coloniale"
+ division_names_group = FRA_COL_01
+ regiments = {
+ infantry = { x = 0 y = 0 }
+ infantry = { x = 0 y = 1 }
+ infantry = { x = 1 y = 0 }
+ infantry = { x = 1 y = 1 }
+ }
+ priority = 0
+ }
+ units = {
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 10
+ }
+ location =3421
+ division_template = "Division d'Infanterie"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 13
+ }
+ location =3438
+ division_template = "Division d'Infanterie"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 14
+ }
+ location =3438
+ division_template = "Division d'Infanterie"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 57
+ }
+ location =8727
+ division_template = "Division d'Infanterie"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.5
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 104
+ }
+ location =8727
+ division_template = "Division Forteresse"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 67
+ }
+ location =641
+ division_template = "Division d'Infanterie"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.5
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 105
+ }
+ location =641
+ division_template = "Division Forteresse"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ division= {
+ name = "506e Rgt. de Chars de Combat"
+ location =661
+ division_template = "Brigade de Chars de Combat"
+ start_experience_factor = 0.2
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 19
+ }
+ location =661
+ division_template = "Division d'Infanterie"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 54
+ }
+ location =661
+ division_template = "Division d'Infanterie"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.5
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 61
+ }
+ location =10430
+ division_template = "Division d'Infanterie"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.5
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 102
+ }
+ location =10430
+ division_template = "Division Forteresse"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 101
+ }
+ location =4850
+ division_template = "Division Forteresse"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 2
+ }
+ location =3224
+ division_template = "Division Légère Mécanique"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 1
+ }
+ location =10411
+ division_template = "Division d'Infanterie Motorisée"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 42
+ }
+ location =540
+ division_template = "Division Coloniale"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.7
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 32
+ }
+ location =10531
+ division_template = "Division d'Infanterie"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.7
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 45
+ }
+ location =3224
+ division_template = "Division Coloniale"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.7
+ }
+ division= {
+ name = "505e Rgt. de Chars de Combat"
+ location =10531
+ division_template = "Brigade de Chars de Combat"
+ start_experience_factor = 0.2
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 71
+ }
+ location =6049
+ division_template = "Division d'Infanterie"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.5
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 2
+ }
+ location =6049
+ division_template = "Division de Cavalerie"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.75
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 1
+ }
+ location =6049
+ division_template = "Division Légère Mécanique"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 55
+ }
+ location =3337
+ division_template = "Division d'Infanterie"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.5
+ }
+ division= {
+ name = "511e Rgt. de Chars de Combat"
+ location =3337
+ division_template = "Brigade de Chars de Combat"
+ start_experience_factor = 0.2
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 41
+ }
+ location =3337
+ division_template = "Division d'Infanterie"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.7
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 1
+ }
+ location =3337
+ division_template = "Division Coloniale"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.7
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 53
+ }
+ location =4850
+ division_template = "Division d'Infanterie"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.5
+ }
+ division= {
+ name = "502e Rgt. de Chars de Combat"
+ location =4850
+ division_template = "Brigade de Chars de Combat"
+ start_experience_factor = 0.2
+ }
+ division= {
+ name = "509e Rgt. de Chars de Combat"
+ location =8783
+ division_template = "Brigade de Chars de Combat"
+ start_experience_factor = 0.2
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 5
+ }
+ location =8783
+ division_template = "Division d'Infanterie Motorisée"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 1
+ }
+ location =8783
+ division_template = "Division de Cavalerie"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.75
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 18
+ }
+ location =4850
+ division_template = "Division d'Infanterie"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.7
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 22
+ }
+ location =4850
+ division_template = "Division d'Infanterie"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.7
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 20
+ }
+ location =514
+ division_template = "Division d'Infanterie"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.7
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 51
+ }
+ location =514
+ division_template = "Division d'Infanterie"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.5
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 58
+ }
+ location =3405
+ division_template = "Division d'Infanterie"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.5
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 103
+ }
+ location =3405
+ division_template = "Division Forteresse"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 6
+ }
+ location =3405
+ division_template = "Division d'Infanterie"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.7
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 3
+ }
+ location =10444
+ division_template = "Division de Cavalerie"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.75
+ }
+ division= {
+ name = "512e Rgt. de Chars de Combat"
+ location =10444
+ division_template = "Brigade Cuirassée"
+ start_experience_factor = 0.2
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 12
+ }
+ location =10430
+ division_template = "Division d'Infanterie Motorisée"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 43
+ }
+ location =10430
+ division_template = "Division Coloniale"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.7
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 2
+ }
+ location =10430
+ division_template = "Division d'Infanterie"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.7
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 42
+ }
+ location =10430
+ division_template = "Division d'Infanterie"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 26
+ }
+ location =3405
+ division_template = "Division d'Infanterie"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.7
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 56
+ }
+ location =3405
+ division_template = "Division d'Infanterie"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.5
+ }
+ division= {
+ name = "507e Rgt. de Chars de Combat"
+ location =3405
+ division_template = "Brigade de Chars de Combat"
+ start_experience_factor = 0.2
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 45
+ }
+ location =661
+ division_template = "Division d'Infanterie"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.7
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 9
+ }
+ location =661
+ division_template = "Division d'Infanterie Motorisée"
+ start_experience_factor = 0.3
+ }
+ division= {
+ name = "510e Rgt. de Chars de Combat"
+ location =661
+ division_template = "Brigade de Chars de Combat"
+ start_experience_factor = 0.2
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 4
+ }
+ location =3405
+ division_template = "Division d'Infanterie"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.7
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 15
+ }
+ location =3405
+ division_template = "Division d'Infanterie Motorisée"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 3
+ }
+ location =3405
+ division_template = "Division Coloniale"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.7
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 11
+ }
+ location =8727
+ division_template = "Division d'Infanterie"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 47
+ }
+ location =8727
+ division_template = "Division d'Infanterie"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.7
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 6
+ }
+ location =8727
+ division_template = "Division Coloniale"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.7
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 44
+ }
+ location =8727
+ division_template = "Division Coloniale"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.7
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 21
+ }
+ location =514
+ division_template = "Division d'Infanterie"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.7
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 23
+ }
+ location =514
+ division_template = "Division d'Infanterie"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 52
+ }
+ location =514
+ division_template = "Division d'Infanterie"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.5
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 82
+ }
+ location =514
+ division_template = "Division d'Infanterie"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.7
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 4
+ }
+ location =6034
+ division_template = "Division Coloniale"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.7
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 87
+ }
+ location =641
+ division_template = "Division d'Infanterie"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.7
+ }
+ division= {
+ name = "501e Rgt. de Chars de Combat"
+ location =6034
+ division_template = "Brigade de Chars de Combat"
+ start_experience_factor = 0.2
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 24
+ }
+ location =6034
+ division_template = "Division d'Infanterie"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.7
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 16
+ }
+ location =641
+ division_template = "Division d'Infanterie"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.7
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 35
+ }
+ location =641
+ division_template = "Division d'Infanterie"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.7
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 70
+ }
+ location =641
+ division_template = "Division d'Infanterie"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.5
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 62
+ }
+ location =6034
+ division_template = "Division d'Infanterie"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.5
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 5
+ }
+ location =8747
+ division_template = "Division Coloniale"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.35
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 7
+ }
+ location =8747
+ division_template = "Division Coloniale"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.35
+ }
+ division= {
+ name = "1ère Brigade Cuirassée"
+ location =8747
+ division_template = "Brigade Cuirassée"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.5
+ }
+ division= {
+ name = "2ème Brigade Cuirassée"
+ location =8747
+ division_template = "Brigade Cuirassée"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.5
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 7
+ }
+ location =606
+ division_template = "Division d'Infanterie"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.7
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 36
+ }
+ location =606
+ division_template = "Division d'Infanterie"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 43
+ }
+ location =606
+ division_template = "Division d'Infanterie"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 60
+ }
+ location =8658
+ division_template = "Division d'Infanterie"
+ start_experience_factor = 0.21
+ start_equipment_factor = 0.5
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 3
+ }
+ location =419
+ division_template = "Division d'Infanterie Motorisée"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 25
+ }
+ location =419
+ division_template = "Division d'Infanterie Motorisée"
+ start_experience_factor = 0.3
+ }
+ division= {
+ name = "503e Rgt. de Chars de Combat"
+ location =419
+ division_template = "Brigade de Chars de Combat"
+ start_experience_factor = 0.2
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 63
+ }
+ location =10740
+ division_template = "Division d'Infanterie"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.5
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 65
+ }
+ location =867
+ division_template = "Division d'Infanterie Alpine"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.5
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 2
+ }
+ location =3535
+ division_template = "Division Coloniale"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.7
+ }
+ division= {
+ name = "504e Rgt. de Chars de Combat"
+ location =6451
+ division_template = "Brigade de Chars de Combat"
+ start_experience_factor = 0.2
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 27
+ }
+ location =741
+ division_template = "Division d'Infanterie Alpine"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 31
+ }
+ location =741
+ division_template = "Division d'Infanterie Alpine"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 29
+ }
+ location =9100
+ division_template = "Division d'Infanterie Alpine"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 30
+ }
+ location =3704
+ division_template = "Division d'Infanterie Alpine"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.7
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 66
+ }
+ location =9100
+ division_template = "Division d'Infanterie"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.5
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 28
+ }
+ location =8962
+ division_template = "Division d'Infanterie Alpine"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.7
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 64
+ }
+ location =727
+ division_template = "Division d'Infanterie Alpine"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.5
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 41
+ }
+ location =3535
+ division_template = "Division Coloniale"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.7
+ }
+ division= {
+ name = "Front Est Saharien"
+ location =6598
+ division_template = "Brigade Coloniale"
+ force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ division= {
+ name = "Front Sud-Est Saharien"
+ location =1090
+ division_template = "Brigade Coloniale"
+ force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 85
+ }
+ location =6598
+ division_template = "Division d'Infanterie"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.7
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 182
+ }
+ location =1090
+ division_template = "Division d'Infanterie"
+ force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 183
+ }
+ location =1090
+ division_template = "Division d'Infanterie"
+ force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ division= {
+ name = "1e Grpmt. de Cavalerie d'Afrique"
+ location =1090
+ division_template = "Division de Cavalerie"
+ force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.5
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 83
+ }
+ location =10858
+ division_template = "Division d'Infanterie"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.5
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 84
+ }
+ location =10858
+ division_template = "Division d'Infanterie"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.5
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 88
+ }
+ location =9177
+ division_template = "Division d'Infanterie"
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.5
+ }
+ division= {
+ name = "2e Grmpt. de Cavalerie d'Afrique"
+ location =10858
+ division_template = "Division de Cavalerie"
+ force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 81
+ }
+ location =10846
+ division_template = "Division d'Infanterie"
+ force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 180
+ }
+ location =1051
+ division_template = "Division d'Infanterie"
+ force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ division= {
+ name = "Front Sud-Tunisien"
+ location =10846
+ division_template = "Brigade Coloniale"
+ force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 62
+ }
+ location =6536
+ division_template = "Division Coloniale"
+ force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 63
+ }
+ location =6536
+ division_template = "Division Coloniale"
+ force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 86
+ }
+ location =755
+ division_template = "Division d'Infanterie"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.5
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 191
+ }
+ location =755
+ division_template = "Division d'Infanterie"
+ force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+ start_equipment_factor = 0.3
+ }
+ division= {
+ name = "Troupes de Madagascar"
+ location =4787
+ division_template = "Brigade Coloniale"
+ force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+ start_equipment_factor = 0.15
+ }
+ division= {
+ name = "Troupes de Sénégalais"
+ location =4606
+ division_template = "Brigade Coloniale"
+ force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+ start_equipment_factor = 0.3
+ }
+ division= {
+ name = "Troupes de Afrique Equatoriale Française"
+ location =4749
+ division_template = "Brigade Coloniale"
+ force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+ start_equipment_factor = 0.15
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 91
+ }
+ location =3811
+ division_template = "Division Coloniale"
+ force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 92
+ }
+ location =4130
+ division_template = "Division Coloniale"
+ force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ division= {
+ name = "Brigade d'Annam-Laos"
+ location =6840
+ division_template = "Brigade Coloniale"
+ force_equipment_variants = { infantry_equipment_0 = { owner = "FRA" } }
+ start_experience_factor = 0.1
+ start_equipment_factor = 0.3
+ }
+ }
+ air_wings = {
+ 29 = {
+ fighter_equipment_2 = { owner = "FRA" amount = 259 }
+ heavy_fighter_equipment_1  = { owner = "FRA"  amount = 36 }
+ tac_bomber_equipment_2 =  { owner = "FRA" amount = 24 }
+ tac_bomber_equipment_1 =  { owner = "FRA" amount = 24 }
+ CAS_equipment_1 =  { owner = "FRA" amount = 24 }
+ }
+ 18 = {
+ fighter_equipment_2 = { owner = "FRA" amount = 132 }
+ tac_bomber_equipment_1 =  { owner = "FRA" amount = 24 }
+ strat_bomber_equipment_1 =  { owner = "FRA" amount = 12 }
+ }
+ 21 = {
+ fighter_equipment_2 = { owner = "FRA" amount = 144 }
+ tac_bomber_equipment_2 =  { owner = "FRA" amount = 27 }
+ tac_bomber_equipment_1 =  { owner = "FRA" amount = 52 }
+ CAS_equipment_1 =  { owner = "FRA" amount = 24 }
+ }
+ 458 = {
+ fighter_equipment_1 = { owner = "FRA" amount = 48 }
+ tac_bomber_equipment_0 =  { owner = "FRA" amount = 27 }
+ }
+ 458 = {
+ fighter_equipment_2 = { owner = "FRA" amount = 27 }
+ }
+ 15 = {
+ nav_bomber_equipment_1 = { owner = "FRA" amount = 24 }
+ cv_nav_bomber_equipment_1 = { owner = "FRA" amount = 24 }
+ }
+ }
+ instant_effect = {
+ add_equipment_production = {
+ equipment = {
+ type = infantry_equipment_1
+ creator = "FRA"
+ }
+ requested_factories = 2
+ progress = 0.1
+ efficiency = 100
+ }
+ add_equipment_production = {
+ equipment = {
+ type = support_equipment_1
+ creator = "FRA"
+ }
+ requested_factories = 1
+ progress = 0.3
+ efficiency = 100
+ }
+ add_equipment_production = {
+ equipment = {
+ type = artillery_equipment_1
+ creator = "FRA"
+ }
+ requested_factories = 1
+ progress = 0.3
+ efficiency = 100
+ }
+ add_equipment_production = {
+ equipment = {
+ type = light_tank_equipment_2
+ creator = "FRA"
+ }
+ requested_factories = 1
+ progress = 0.4
+ efficiency = 100
+ }
+ add_equipment_production = {
+ equipment = {
+ type = motorized_equipment_1
+ creator = "FRA"
+ }
+ requested_factories = 1
+ progress = 0.4
+ efficiency = 100
+ }
+ }
 
