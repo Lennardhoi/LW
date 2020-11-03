@@ -1,251 +1,247 @@
 ﻿division_template = {
-	name = "División de Infanteria"
-	division_names_group = SPAN_INF_01
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-		infantry = { x = 2 y = 2 }
-	}
-	support = {
-		artillery = { x = 0 y = 0 }
-	}
-}
-division_template = {
-	name = "Brigada Agrarista"
-	division_names_group = MEX_INF_02
-
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-	}
-	priority = 0
-}
-division_template = {
-	name = "División de Caballería"
-	division_names_group = SPAN_CAV_01
-	regiments = {
-		cavalry = { x = 0 y = 0 }
-		cavalry = { x = 0 y = 1 }
-		cavalry = { x = 0 y = 2 }
-		cavalry = { x = 1 y = 0 }
-		cavalry = { x = 1 y = 1 }
-		cavalry = { x = 1 y = 2 }
-	}
-	support = {
-		artillery = { x = 0 y = 0 }
-	}
-}
-units = {
-
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location =1916
-		division_template = "División de Infanteria"
-		start_experience_factor = 0.2
-		force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location =1846
-		division_template = "División de Infanteria"
-		start_experience_factor = 0.2
-		force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 3
-		}
-		location =1989
-		division_template = "División de Infanteria"
-		start_experience_factor = 0.2
-		force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } }
-	}
-	division= {
-		name = "Estado Mayor Presidencial"
-		location =1916
-		division_template = "División de Infanteria"
-		start_experience_factor = 0.3
-		force_equipment_variants = { infantry_equipment_1 = { owner = "USA" } }
-	}
-	division= {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location =1916
-		division_template = "División de Caballería"
-		start_experience_factor = 0.3
-		force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
-	}
-	division = {
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location =4708
-		division_template = "División de Caballería"
-		start_experience_factor = 0.3
-		force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
-	}
-	division = {
-		location =1916
-		division_template = "Brigada Agrarista"
-		start_experience_factor = 0.1
-		force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } }
-	}
-	division = {
-		location =1916
-		division_template = "Brigada Agrarista"
-		start_experience_factor = 0.1
-		force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } }
-	}
-	division = {
-		location =1916
-		division_template = "Brigada Agrarista"
-		start_experience_factor = 0.1
-		force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } }
-	}
-	division = {
-		location =1854
-		division_template = "Brigada Agrarista"
-		start_experience_factor = 0.1
-		force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } }
-	}
-	division = {
-		location =1963
-		division_template = "Brigada Agrarista"
-		start_experience_factor = 0.1
-		force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } }
-	}
-	division = {
-		location =1963
-		division_template = "Brigada Agrarista"
-		start_experience_factor = 0.1
-		force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } }
-	}
-	division = {
-		location =4708
-		division_template = "Brigada Agrarista"
-		start_experience_factor = 0.1
-		force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } }
-	}
-	division = {
-		location =4694
-		division_template = "Brigada Agrarista"
-		start_experience_factor = 0.1
-		force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } }
-	}
-	division = {
-		location =1846
-		division_template = "Brigada Agrarista"
-		start_experience_factor = 0.1
-		force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
-	}
-	division = {
-		location =2005
-		division_template = "Brigada Agrarista"
-		start_experience_factor = 0.1
-		force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
-	}
-	division = {
-		location =2005
-		division_template = "Brigada Agrarista"
-		start_experience_factor = 0.1
-		force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
-	}
-	division = {
-		location =2005
-		division_template = "Brigada Agrarista"
-		start_experience_factor = 0.1
-		force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
-	}
-	division = {
-		location =4694
-		division_template = "Brigada Agrarista"
-		start_experience_factor = 0.1
-		force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
-	}
-	division = {
-		location =1989
-		division_template = "Brigada Agrarista"
-		start_experience_factor = 0.1
-		force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
-	}
-	division = {
-		location =1903
-		division_template = "Brigada Agrarista"
-		start_experience_factor = 0.1
-		force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
-	}
-}
-air_wings = {
-
-	277 = {
-
-		CAS_equipment_1 =  {
-			owner = "MEX"
-			amount = 12
-		}
-		fighter_equipment_0 =  {
-			owner = "MEX"
-			amount = 6
-		}
-		tac_bomber_equipment_0 =  {
-			owner = "MEX"
-			amount = 6
-		}
-	}
-}
-instant_effect = {
-	add_equipment_production = {
-		equipment = {
-			type = infantry_equipment_1
-			creator = "MEX"
-		}
-		requested_factories = 1
-		progress = 0.20
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = artillery_equipment_1
-			creator = "MEX"
-		}
-		requested_factories = 1
-		progress = 0.20
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = CAS_equipment_1
-			creator = "MEX"
-		}
-		requested_factories = 1
-		progress = 0.20
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = convoy_1
-			creator = "MEX"
-		}
-		requested_factories = 2
-		progress = 0.20
-		efficiency = 100
-	}
-}
+ name = "División de Infanteria"
+ division_names_group = SPAN_INF_01
+ regiments = {
+ infantry = { x = 0 y = 0 }
+ infantry = { x = 0 y = 1 }
+ infantry = { x = 0 y = 2 }
+ infantry = { x = 1 y = 0 }
+ infantry = { x = 1 y = 1 }
+ infantry = { x = 1 y = 2 }
+ infantry = { x = 2 y = 0 }
+ infantry = { x = 2 y = 1 }
+ infantry = { x = 2 y = 2 }
+ }
+ support = {
+ artillery = { x = 0 y = 0 }
+ }
+ }
+ division_template = {
+ name = "Brigada Agrarista"
+ division_names_group = MEX_INF_02
+ regiments = {
+ infantry = { x = 0 y = 0 }
+ infantry = { x = 0 y = 1 }
+ infantry = { x = 0 y = 2 }
+ }
+ priority = 0
+ }
+ division_template = {
+ name = "División de Caballería"
+ division_names_group = SPAN_CAV_01
+ regiments = {
+ cavalry = { x = 0 y = 0 }
+ cavalry = { x = 0 y = 1 }
+ cavalry = { x = 0 y = 2 }
+ cavalry = { x = 1 y = 0 }
+ cavalry = { x = 1 y = 1 }
+ cavalry = { x = 1 y = 2 }
+ }
+ support = {
+ artillery = { x = 0 y = 0 }
+ }
+ }
+ units = {
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 1
+ }
+ location =1859
+ division_template = "División de Infanteria"
+ start_experience_factor = 0.2
+ force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 2
+ }
+ location =1791
+ division_template = "División de Infanteria"
+ start_experience_factor = 0.2
+ force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 3
+ }
+ location =1929
+ division_template = "División de Infanteria"
+ start_experience_factor = 0.2
+ force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } }
+ }
+ division= {
+ name = "Estado Mayor Presidencial"
+ location =1859
+ division_template = "División de Infanteria"
+ start_experience_factor = 0.3
+ force_equipment_variants = { infantry_equipment_1 = { owner = "USA" } }
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 1
+ }
+ location =1859
+ division_template = "División de Caballería"
+ start_experience_factor = 0.3
+ force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
+ }
+ division = {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 2
+ }
+ location =4568
+ division_template = "División de Caballería"
+ start_experience_factor = 0.3
+ force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
+ }
+ division = {
+ location =1859
+ division_template = "Brigada Agrarista"
+ start_experience_factor = 0.1
+ force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } }
+ }
+ division = {
+ location =1859
+ division_template = "Brigada Agrarista"
+ start_experience_factor = 0.1
+ force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } }
+ }
+ division = {
+ location =1859
+ division_template = "Brigada Agrarista"
+ start_experience_factor = 0.1
+ force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } }
+ }
+ division = {
+ location =1799
+ division_template = "Brigada Agrarista"
+ start_experience_factor = 0.1
+ force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } }
+ }
+ division = {
+ location =1904
+ division_template = "Brigada Agrarista"
+ start_experience_factor = 0.1
+ force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } }
+ }
+ division = {
+ location =1904
+ division_template = "Brigada Agrarista"
+ start_experience_factor = 0.1
+ force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } }
+ }
+ division = {
+ location =4568
+ division_template = "Brigada Agrarista"
+ start_experience_factor = 0.1
+ force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } }
+ }
+ division = {
+ location =4554
+ division_template = "Brigada Agrarista"
+ start_experience_factor = 0.1
+ force_equipment_variants = { infantry_equipment_0 = { owner = "GER" } }
+ }
+ division = {
+ location =1791
+ division_template = "Brigada Agrarista"
+ start_experience_factor = 0.1
+ force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
+ }
+ division = {
+ location =1943
+ division_template = "Brigada Agrarista"
+ start_experience_factor = 0.1
+ force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
+ }
+ division = {
+ location =1943
+ division_template = "Brigada Agrarista"
+ start_experience_factor = 0.1
+ force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
+ }
+ division = {
+ location =1943
+ division_template = "Brigada Agrarista"
+ start_experience_factor = 0.1
+ force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
+ }
+ division = {
+ location =4554
+ division_template = "Brigada Agrarista"
+ start_experience_factor = 0.1
+ force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
+ }
+ division = {
+ location =1929
+ division_template = "Brigada Agrarista"
+ start_experience_factor = 0.1
+ force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
+ }
+ division = {
+ location =1847
+ division_template = "Brigada Agrarista"
+ start_experience_factor = 0.1
+ force_equipment_variants = { infantry_equipment_0 = { owner = "USA" } }
+ }
+ }
+ air_wings = {
+ 277 = {
+ CAS_equipment_1 =  {
+ owner = "MEX"
+ amount = 12
+ }
+ fighter_equipment_0 =  {
+ owner = "MEX"
+ amount = 6
+ }
+ tac_bomber_equipment_0 =  {
+ owner = "MEX"
+ amount = 6
+ }
+ }
+ }
+ instant_effect = {
+ add_equipment_production = {
+ equipment = {
+ type = infantry_equipment_1
+ creator = "MEX"
+ }
+ requested_factories = 1
+ progress = 0.20
+ efficiency = 100
+ }
+ add_equipment_production = {
+ equipment = {
+ type = artillery_equipment_1
+ creator = "MEX"
+ }
+ requested_factories = 1
+ progress = 0.20
+ efficiency = 100
+ }
+ add_equipment_production = {
+ equipment = {
+ type = CAS_equipment_1
+ creator = "MEX"
+ }
+ requested_factories = 1
+ progress = 0.20
+ efficiency = 100
+ }
+ add_equipment_production = {
+ equipment = {
+ type = convoy_1
+ creator = "MEX"
+ }
+ requested_factories = 2
+ progress = 0.20
+ efficiency = 100
+ }
+ }
 

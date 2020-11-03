@@ -1,252 +1,218 @@
 ﻿division_template = {
-	name = "Infantry Division"
-
-	division_names_group = CAN_INF_01
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-		infantry = { x = 2 y = 0 }
-		infantry = { x = 2 y = 1 }
-	}
-	support = {
-		engineer = { x = 0 y = 0 }
-	}
-}
-division_template = {
-	name = "District Militia"
-
-	division_names_group = CAN_GAR_01
-	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
-		infantry = { x = 1 y = 2 }
-	}
-}
-division_template = {
-	name = "Cavalry Militia"
-
-	division_names_group = CAN_CAV_01
-	regiments = {
-		cavalry = { x = 0 y = 0 }
-		cavalry = { x = 0 y = 1 }
-	}
-}
-division_template = {
-	name = "Armored-Division"
-	division_names_group = CAN_ARM_01
-	regiments = {
-		light_armor = { x = 0 y = 0 }
-		light_armor = { x = 0 y = 1 }
-		cavalry = { x = 1 y = 0 }
-		cavalry = { x = 1 y = 1 }
-	}
-}
-units = {
-
-
-	division= {
-
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location =7033
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-	}
-	division= {
-
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location =3655
-		division_template = "Infantry Division"
-		start_experience_factor = 0.3
-		start_equipment_factor = 0.5
-	}
-
-
-
-	division= {
-
-		division_name = {
-			is_name_ordered = yes
-			name_order = 1
-		}
-		location =718
-		division_template = "District Militia"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-	}
-
-	division= {
-
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location =3655
-		division_template = "District Militia"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-	}
-	division= {
-
-		division_name = {
-			is_name_ordered = yes
-			name_order = 2
-		}
-		location =3655
-		division_template = "Cavalry Militia"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-	}
-
-	division= {
-
-		division_name = {
-			is_name_ordered = yes
-			name_order = 3
-		}
-		location =3490
-		division_template = "District Militia"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-	}
-
-	division= {
-
-		division_name = {
-			is_name_ordered = yes
-			name_order = 4
-		}
-		location =4192
-		division_template = "District Militia"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-	}
-	division= {
-
-		division_name = {
-			is_name_ordered = yes
-			name_order = 4
-		}
-		location =4192
-		division_template = "Cavalry Militia"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-	}
-
-	division= {
-
-		division_name = {
-			is_name_ordered = yes
-			name_order = 5
-		}
-		location =11433
-		division_template = "District Militia"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-	}
-
-	division= {
-
-		division_name = {
-			is_name_ordered = yes
-			name_order = 6
-		}
-		location =7033
-		division_template = "District Militia"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-	}
-
-	division= {
-
-		division_name = {
-			is_name_ordered = yes
-			name_order = 7
-		}
-		location =4132
-		division_template = "District Militia"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-	}
-	division= {
-
-		division_name = {
-			is_name_ordered = yes
-			name_order = 10
-		}
-		location =4680
-		division_template = "Cavalry Militia"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-	}
-
-	division= {
-
-		division_name = {
-			is_name_ordered = yes
-			name_order = 12
-		}
-		location =11844
-		division_template = "Cavalry Militia"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-	}
-
-	division= {
-
-		division_name = {
-			is_name_ordered = yes
-			name_order = 13
-		}
-		location =3587
-		division_template = "Cavalry Militia"
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.3
-	}
-}
-air_wings = {
-
-	276 = {
-
-		fighter_equipment_0 =  { owner = "CAN" amount = 24 }
-	}
-	473 = {
-
-		fighter_equipment_1 =  { owner = "CAN" amount = 24 }
-		nav_bomber_equipment_1 =  { owner = "CAN" amount = 12 }
-	}
-}
-
-instant_effect = {
-	add_equipment_production = {
-		equipment = {
-			type = infantry_equipment_1
-			creator = "CAN"
-		}
-		requested_factories = 1
-		progress = 0.39
-		efficiency = 100
-	}
-	add_equipment_production = {
-		equipment = {
-			type = support_equipment_1
-			creator = "CAN"
-		}
-		requested_factories = 1
-		progress = 0.45
-		efficiency = 100
-	}
-}
+ name = "Infantry Division"
+ division_names_group = CAN_INF_01
+ regiments = {
+ infantry = { x = 0 y = 0 }
+ infantry = { x = 0 y = 1 }
+ infantry = { x = 0 y = 2 }
+ infantry = { x = 1 y = 0 }
+ infantry = { x = 1 y = 1 }
+ infantry = { x = 1 y = 2 }
+ infantry = { x = 2 y = 0 }
+ infantry = { x = 2 y = 1 }
+ }
+ support = {
+ engineer = { x = 0 y = 0 }
+ }
+ }
+ division_template = {
+ name = "District Militia"
+ division_names_group = CAN_GAR_01
+ regiments = {
+ infantry = { x = 0 y = 0 }
+ infantry = { x = 0 y = 1 }
+ infantry = { x = 0 y = 2 }
+ infantry = { x = 1 y = 0 }
+ infantry = { x = 1 y = 1 }
+ infantry = { x = 1 y = 2 }
+ }
+ }
+ division_template = {
+ name = "Cavalry Militia"
+ division_names_group = CAN_CAV_01
+ regiments = {
+ cavalry = { x = 0 y = 0 }
+ cavalry = { x = 0 y = 1 }
+ }
+ }
+ division_template = {
+ name = "Armored-Division"
+ division_names_group = CAN_ARM_01
+ regiments = {
+ light_armor = { x = 0 y = 0 }
+ light_armor = { x = 0 y = 1 }
+ cavalry = { x = 1 y = 0 }
+ cavalry = { x = 1 y = 1 }
+ }
+ }
+ units = {
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 1
+ }
+ location =6826
+ division_template = "Infantry Division"
+ start_experience_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 2
+ }
+ location =3546
+ division_template = "Infantry Division"
+ start_experience_factor = 0.3
+ start_equipment_factor = 0.5
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 1
+ }
+ location =685
+ division_template = "District Militia"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 2
+ }
+ location =3546
+ division_template = "District Militia"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 2
+ }
+ location =3546
+ division_template = "Cavalry Militia"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 3
+ }
+ location =3382
+ division_template = "District Militia"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 4
+ }
+ location =4074
+ division_template = "District Militia"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 4
+ }
+ location =4074
+ division_template = "Cavalry Militia"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 5
+ }
+ location =11033
+ division_template = "District Militia"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 6
+ }
+ location =6826
+ division_template = "District Militia"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 7
+ }
+ location =4015
+ division_template = "District Militia"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 10
+ }
+ location =4542
+ division_template = "Cavalry Militia"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 12
+ }
+ location =11428
+ division_template = "Cavalry Militia"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.3
+ }
+ division= {
+ division_name = {
+ is_name_ordered = yes
+ name_order = 13
+ }
+ location =3478
+ division_template = "Cavalry Militia"
+ start_experience_factor = 0.2
+ start_equipment_factor = 0.3
+ }
+ }
+ air_wings = {
+ 276 = {
+ fighter_equipment_0 =  { owner = "CAN" amount = 24 }
+ }
+ 473 = {
+ fighter_equipment_1 =  { owner = "CAN" amount = 24 }
+ nav_bomber_equipment_1 =  { owner = "CAN" amount = 12 }
+ }
+ }
+ instant_effect = {
+ add_equipment_production = {
+ equipment = {
+ type = infantry_equipment_1
+ creator = "CAN"
+ }
+ requested_factories = 1
+ progress = 0.39
+ efficiency = 100
+ }
+ add_equipment_production = {
+ equipment = {
+ type = support_equipment_1
+ creator = "CAN"
+ }
+ requested_factories = 1
+ progress = 0.45
+ efficiency = 100
+ }
+ }
 

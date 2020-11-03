@@ -1,84 +1,84 @@
 ﻿add_namespace = iran
-country_event = {
-	id = iran.2
-	title = iran.2.t
-	desc = iran.2.d
-	picture = GFX_report_event_soviet_tanks_snow
-	is_triggered_only = yes
-	option = {
-		name = iran.2.a
-		white_peace = PER
-		SOV = {
-			PER = {set_equipment_fraction = 0}
-			annex_country = { target = PER transfer_troops = no }
-			416 = { add_core_of = SOV }
-			419 = { add_core_of = SOV }
-			418 = { add_core_of = SOV }
-			266 = { add_core_of = SOV }
-			420 = { add_core_of = SOV }
-		}
-	}
-}
-country_event = {
-	id = iran.3
-	title = iran.3.t
-	desc = iran.3.d
-	picture = GFX_report_event_soviet_tanks_snow
-	is_triggered_only = yes
-	option = {
-		name = iran.3.b
-		trigger={NOT={tag=ENG}}
-	}
-	option = {
-		name = iran.3.a
-		trigger={tag=ENG}
-		ENG = {
-			transfer_state = 413
-			transfer_state = 421
-			transfer_state = 417
-			transfer_state = 411
-			transfer_state = 412
-			transfer_state = 414
-			transfer_state = 410
-			413 = {
-				add_compliance = 100
-			}
-			421 = {
-				add_compliance = 100
-			}
-			417 = {
-				add_compliance = 100
-			}
-			411 = {
-				add_compliance = 100
-			}
-			412 = {
-				add_compliance = 100
-			}
-			414 = {
-				add_compliance = 100
-			}
-			410 = {
-				add_compliance = 100
-			}
-		}
-	}
-}
-country_event = {
-	id = iran.4
-	title = iran.4.t
-	desc = iran.4.d
-	picture = GFX_report_event_soviet_tanks_snow
-	is_triggered_only = yes
-	option = {
-		name = iran.4.a
-		if = {
-			limit = { tag = ENG }
-			ENG = { country_event = { id = iran.3 } }
-		}
-		else_if = {
-			SOV = { country_event = { id = iran.2}}
-		}
-	}
-}
+ country_event = {
+ id = iran.2
+ title = iran.2.t
+ desc = iran.2.d
+ picture = GFX_report_event_soviet_tanks_snow
+ is_triggered_only = yes
+ option = {
+ name = iran.2.a
+ white_peace = PER
+ SOV = {
+ PER = {set_equipment_fraction = 0}
+ annex_country = { target = PER transfer_troops = no }
+ 416 = { add_core_of = SOV }
+ 419 = { add_core_of = SOV }
+ 418 = { add_core_of = SOV }
+ 266 = { add_core_of = SOV }
+ 420 = { add_core_of = SOV }
+ }
+ }
+ }
+ country_event = {
+ id = iran.3
+ title = iran.3.t
+ desc = iran.3.d
+ picture = GFX_report_event_soviet_tanks_snow
+ is_triggered_only = yes
+ option = {
+ name = iran.3.b
+ trigger={NOT={tag=ENG}}
+ }
+ option = {
+ name = iran.3.a
+ trigger={tag=ENG}
+ ENG = {
+ transfer_state = 413
+ transfer_state = 421
+ transfer_state = 417
+ transfer_state = 411
+ transfer_state = 412
+ transfer_state = 414
+ transfer_state = 410
+ 413 = {
+ add_compliance = 100
+ }
+ 421 = {
+ add_compliance = 100
+ }
+ 417 = {
+ add_compliance = 100
+ }
+ 411 = {
+ add_compliance = 100
+ }
+ 412 = {
+ add_compliance = 100
+ }
+ 414 = {
+ add_compliance = 100
+ }
+ 410 = {
+ add_compliance = 100
+ }
+ }
+ }
+ }
+ country_event = {
+ id = iran.4
+ title = iran.4.t
+ desc = iran.4.d
+ picture = GFX_report_event_soviet_tanks_snow
+ is_triggered_only = yes
+ option = {
+ name = iran.4.a
+ if = {
+ limit = { tag = ENG }
+ ENG = { country_event = { id = iran.3 } }
+ }
+ else_if = {
+ SOV = { country_event = { id = iran.2}}
+ }
+ }
+ }
 

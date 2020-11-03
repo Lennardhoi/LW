@@ -1,16 +1,15 @@
 on_actions = {
-
-	on_state_control_changed = {
-		effect = {
-			if = {
-				limit = {
-					FROM.FROM = { is_core_of = ROM }
-				}
-				FROM = {
-					set_country_flag = ROM_lost_starting_state
-				}
-			}
-		}
-	}
-}
+ on_state_control_changed = {
+ effect = {
+ if = {
+ limit = {
+ FROM.FROM = { is_core_of = ROM }
+ }
+ FROM = {
+ set_country_flag = ROM_lost_starting_state
+ }
+ }
+ }
+ }
+ }
 

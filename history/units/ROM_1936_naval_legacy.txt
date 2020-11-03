@@ -1,33 +1,27 @@
 ﻿
-units= {
-
-	fleet = {
-		name = "Flota Romania de Mare"
-		naval_base =655
-		task_force = {
-			name = "Flota Romania de Mare"
-			location =655
-			ship = { name = "NMS Marasti" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ROM } } }
-			ship = { name = "NMS Marasesti" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ROM } } }
-			ship = { name = "NMS Regele Ferdinand" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ROM version_name = "Regele Ferdinand Class" } } }
-			ship = { name = "NMS Regina Maria" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ROM version_name = "Regele Ferdinand Class" } } }
-		}
-	}
-}
-
-
-
-instant_effect = {
-
-
-	add_equipment_production = {
-		equipment = {
-			type = submarine_1
-			creator = "ROM"
-		}
-		requested_factories = 1
-		progress = 0.50
-		amount = 1
-	}
-}
+ units= {
+ fleet = {
+ name = "Flota Romania de Mare"
+ naval_base =622
+ task_force = {
+ name = "Flota Romania de Mare"
+ location =622
+ ship = { name = "NMS Marasti" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ROM } } }
+ ship = { name = "NMS Marasesti" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ROM } } }
+ ship = { name = "NMS Regele Ferdinand" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ROM version_name = "Regele Ferdinand Class" } } }
+ ship = { name = "NMS Regina Maria" definition = destroyer equipment = { destroyer_1 = { amount = 1 owner = ROM version_name = "Regele Ferdinand Class" } } }
+ }
+ }
+ }
+ instant_effect = {
+ add_equipment_production = {
+ equipment = {
+ type = submarine_1
+ creator = "ROM"
+ }
+ requested_factories = 1
+ progress = 0.50
+ amount = 1
+ }
+ }
 

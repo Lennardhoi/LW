@@ -1,103 +1,91 @@
 ﻿add_namespace = wtt_manchukou
-
-country_event = {
-	id = wtt_manchukou.11
-	title = wtt_manchukou.11.t
-	desc = wtt_manchukou.11.desc
-	picture = GFX_report_event_generic_factory
-	is_triggered_only = yes
-
-	option = {
-		name = wtt_manchukou.11.a
-		if = {
-			limit = { original_tag = MAN }
-			add_timed_idea = { days = 1825 idea = MAN_five_year_plan_air }
-		}
-	}
-
-	option = {
-		name = wtt_manchukou.11.b
-		if = {
-			limit = { original_tag = MAN }
-			add_timed_idea = { days = 1825 idea = MAN_five_year_plan_tank }
-		}
-	}
-
-	option = {
-		name = wtt_manchukou.11.c
-		if = {
-			limit = { original_tag = MAN }
-			add_timed_idea = { days = 1825 idea = MAN_five_year_plan_industry }
-		}
-	}
-}
-
-
-
-
-
-add_namespace = wtt_manchukou_bandit_sabotage
-
-country_event = {
-	id = wtt_manchukou_bandit_sabotage.21
-	title = wtt_manchukou_bandit_sabotage.21.t
-	desc = wtt_manchukou_bandit_sabotage.21.desc
-	picture = GFX_report_event_generic_ruins
-	is_triggered_only = yes
-	option = {
-		name = wtt_manchukou_bandit_sabotage.21.a
-		random_owned_state = {
-			limit = {
-				is_fully_controlled_by = MAN
-				arms_factory > 0
-			}
-			damage_building = {
-				type = arms_factory
-				damage = 0.6
-			}
-		}
-	}
-}
-
-country_event = {
-	id = wtt_manchukou_bandit_sabotage.22
-	title = wtt_manchukou_bandit_sabotage.22.t
-	desc = wtt_manchukou_bandit_sabotage.21.desc
-	picture = GFX_report_event_generic_ruins
-	is_triggered_only = yes
-	option = {
-		name = wtt_manchukou_bandit_sabotage.21.a
-		random_owned_state = {
-			limit = {
-				is_fully_controlled_by = MAN
-				arms_factory > 0
-			}
-			damage_building = {
-				type = industrial_complex
-				damage = 0.6
-			}
-		}
-	}
-}
-
-country_event = {
-	id = wtt_manchukou_bandit_sabotage.23
-	title = wtt_manchukou_bandit_sabotage.23.t
-	desc = wtt_manchukou_bandit_sabotage.23.desc
-	picture = GFX_report_event_generic_train
-	is_triggered_only = yes
-	option = {
-		name = wtt_manchukou_bandit_sabotage.21.a
-		random_owned_state = {
-			limit = {
-				is_fully_controlled_by = MAN
-				arms_factory > 0
-			}
-			damage_building = {
-				type = infrastructure
-				damage = 1
-			}
-		}
-	}
-}
+ country_event = {
+ id = wtt_manchukou.11
+ title = wtt_manchukou.11.t
+ desc = wtt_manchukou.11.desc
+ picture = GFX_report_event_generic_factory
+ is_triggered_only = yes
+ option = {
+ name = wtt_manchukou.11.a
+ if = {
+ limit = { original_tag = MAN }
+ add_timed_idea = { days = 1825 idea = MAN_five_year_plan_air }
+ }
+ }
+ option = {
+ name = wtt_manchukou.11.b
+ if = {
+ limit = { original_tag = MAN }
+ add_timed_idea = { days = 1825 idea = MAN_five_year_plan_tank }
+ }
+ }
+ option = {
+ name = wtt_manchukou.11.c
+ if = {
+ limit = { original_tag = MAN }
+ add_timed_idea = { days = 1825 idea = MAN_five_year_plan_industry }
+ }
+ }
+ }
+ add_namespace = wtt_manchukou_bandit_sabotage
+ country_event = {
+ id = wtt_manchukou_bandit_sabotage.21
+ title = wtt_manchukou_bandit_sabotage.21.t
+ desc = wtt_manchukou_bandit_sabotage.21.desc
+ picture = GFX_report_event_generic_ruins
+ is_triggered_only = yes
+ option = {
+ name = wtt_manchukou_bandit_sabotage.21.a
+ random_owned_state = {
+ limit = {
+ is_fully_controlled_by = MAN
+ arms_factory > 0
+ }
+ damage_building = {
+ type = arms_factory
+ damage = 0.6
+ }
+ }
+ }
+ }
+ country_event = {
+ id = wtt_manchukou_bandit_sabotage.22
+ title = wtt_manchukou_bandit_sabotage.22.t
+ desc = wtt_manchukou_bandit_sabotage.21.desc
+ picture = GFX_report_event_generic_ruins
+ is_triggered_only = yes
+ option = {
+ name = wtt_manchukou_bandit_sabotage.21.a
+ random_owned_state = {
+ limit = {
+ is_fully_controlled_by = MAN
+ arms_factory > 0
+ }
+ damage_building = {
+ type = industrial_complex
+ damage = 0.6
+ }
+ }
+ }
+ }
+ country_event = {
+ id = wtt_manchukou_bandit_sabotage.23
+ title = wtt_manchukou_bandit_sabotage.23.t
+ desc = wtt_manchukou_bandit_sabotage.23.desc
+ picture = GFX_report_event_generic_train
+ is_triggered_only = yes
+ option = {
+ name = wtt_manchukou_bandit_sabotage.21.a
+ random_owned_state = {
+ limit = {
+ is_fully_controlled_by = MAN
+ arms_factory > 0
+ }
+ damage_building = {
+ type = infrastructure
+ damage = 1
+ }
+ }
+ }
+ }
 

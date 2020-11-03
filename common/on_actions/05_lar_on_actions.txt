@@ -1,322 +1,274 @@
 on_actions = {
-
-
-	on_operative_on_mission_spotted = {
-		effect = {
-
-
-
-
-			set_temp_variable = {
-				var = capture_chance
-				value = 90
-			}
-			set_temp_variable = {
-				var = kill_chance
-				value = 10
-			}
-
-			if = {
-				limit = {
-					OR = {
-						operative_leader_mission = control_trade
-						operative_leader_mission = diplomatic_pressure
-					}
-				}
-				set_temp_variable = {
-					var = kill_chance
-					value = 0
-				}
-			}
-
-
-
-
-
-
-
-
-
-
-			random_list = {
-
-				temp_var:capture_chance = {
-					random_list = {
-						90 = {
-							force_operative_leader_into_hiding = 120
-							operative_leader_event = {
-								id = lar_operative_event.1
-								set_from_from = ROOT
-							}
-							operative_leader_event = {
-								id = lar_operative_event.6
-								originator = FROM
-								recipient = ROOT
-								set_from = FROM
-							}
-							if = {
-								limit = { ROOT = { has_done_agency_upgrade = upgrade_interrogation_techniques }}
-								ROOT = {
-									add_intel = {
-										target = PREV.FROM
-										army_intel = 25
-										civilian_intel = 25
-										navy_intel = 25
-										airforce_intel = 25
-									}
-								}
-								} else = {
-								ROOT = {
-									add_intel = {
-										target = PREV.FROM
-										army_intel = 20
-										civilian_intel = 20
-										navy_intel = 20
-										airforce_intel = 20
-									}
-								}
-							}
-						}
-						10 = {
-							modifier = {
-								has_trait = operative_tough
-								factor = 0
-							}
-							modifier = {
-								has_trait = operative_double_agent
-								factor = 0
-							}
-							turn_operative = { turned_by = ROOT }
-
-							add_nationality = FROM
-							operative_leader_event = {
-								id = lar_operative_event.5
-								set_from_from = FROM
-							}
-						}
-					}
-				}
-				temp_var:kill_chance = {
-					kill_operative = {
-						killed_by = ROOT
-					}
-				}
-			}
-		}
-	}
-	on_operative_captured = {
-		effect = {
-
-
-
-			if = {
-				limit = {
-					NOT = { has_unit_leader_flag = le_clerc1 }
-				}
-				set_unit_leader_flag = le_clerc1
-			}
-			else_if = {
-				limit = {
-					has_unit_leader_flag = le_clerc1
-				}
-				set_unit_leader_flag = le_clerc2
-			}
-			random_list = {
-				90 = {
-					operative_leader_event = {
-						id = lar_operative_event.1
-						set_from_from = ROOT
-					}
-					operative_leader_event = {
-						id = lar_operative_event.6
-						originator = FROM
-						recipient = ROOT
-						set_from = FROM
-					}
-				}
-				10 = {
-					modifier = {
-						has_trait = operative_tough
-						factor = 0
-					}
-					modifier = {
-						has_trait = operative_double_agent
-						factor = 0
-					}
-					turn_operative = { turned_by = ROOT }
-
-					add_nationality = FROM
-					operative_leader_event = {
-						id = lar_operative_event.5
-						set_from_from = FROM
-					}
-				}
-			}
-		}
-	}
-	on_operative_death = {
-		effect = {
-
-
-
-			if = {
-				limit = {
-					country_exists = ROOT
-				}
-
-				operative_leader_event = {
-					id = lar_operative_event.3
-					set_from_from = ROOT
-				}
-				operative_leader_event = {
-					id = lar_operative_event.7
-					originator = FROM
-					recipient = ROOT
-					set_from = FROM
-				}
-			}
-			else = {
-
-			}
-			if = {
-				limit = {
-					FROM = {
-						NOT = { is_ai = yes }
-						has_done_agency_upgrade = upgrade_suicide_pills
-					}
-				}
-				set_global_flag = kill_me_alive_flag
-			}
-		}
-	}
-
-
-
-
-	on_operative_detected_during_operation = {
-		effect = {
-			random_list = {
-				40 = {
-					force_operative_leader_into_hiding = 45
-					operative_leader_event = {
-						id = lar_operative_event.2
-						set_from_from = FROM
-					}
-				}
-				35 = {
-					capture_operative = {
-						captured_by = FROM
-					}
-				}
-				20 = {
-					harm_operative_leader = 90
-					operative_leader_event = {
-						id = lar_operative_event.4
-						set_from_from = FROM
-					}
-				}
-				5 = {
-					kill_operative = {
-						killed_by = FROM
-					}
-				}
-			}
-		}
-	}
-	on_operation_completed = {
-		effect = {
-
-
-
-
-
-			if = {
-				limit = {
-					ROOT = { has_country_flag = just_freed_operative_flag }
-				}
-				every_operative = {
-					if = {
-						limit = {
-							NOT = { has_trait = operative_escape_artist }
-						}
-						random_list = {
-							15 = { add_unit_leader_trait = operative_escape_artist }
-							85 = {}
-						}
-					}
-				}
-				ROOT = { clr_country_flag = just_freed_operative_flag }
-			}
-			every_operative = {
-				if = {
-					limit = {
-						has_trait = operative_linguist
-						NOT = { operative_leader_mission = no_mission }
-						NOT = { has_nationality = FROM }
-					}
-					random_list = {
-						20 = { add_nationality = FROM }
-						80 = {}
-					}
-				}
-			}
-			every_operative = {
-				if = {
-					limit = {
-						has_nationality = FRA
-					}
-					ROOT = {
-						add_to_variable = {
-							var = fra_nat
-							value = 1
-						}
-					}
-				}
-				if = {
-					limit = {
-						has_nationality = ENG
-					}
-					ROOT = {
-						add_to_variable = {
-							var = eng_nat
-							value = 1
-						}
-					}
-				}
-			}
-			ROOT = {
-				if = {
-					limit = {
-						check_variable = { fra_nat > 0 }
-						check_variable = { eng_nat > 0 }
-					}
-					set_country_flag = achievement_listen_carefully_flag
-				}
-				set_variable = {
-					var = fra_nat
-					value = 0
-				}
-				set_variable = {
-					var = eng_nat
-					value = 0
-				}
-			}
-		}
-	}
-
-
-
-
-
-	on_fully_decrypted_cipher = {
-	}
-
-
-
-	on_activated_active_decryption_bonuses = {
-	}
-
-
-
-}
+ on_operative_on_mission_spotted = {
+ effect = {
+ set_temp_variable = {
+ var = capture_chance
+ value = 90
+ }
+ set_temp_variable = {
+ var = kill_chance
+ value = 10
+ }
+ if = {
+ limit = {
+ OR = {
+ operative_leader_mission = control_trade
+ operative_leader_mission = diplomatic_pressure
+ }
+ }
+ set_temp_variable = {
+ var = kill_chance
+ value = 0
+ }
+ }
+ random_list = {
+ temp_var:capture_chance = {
+ random_list = {
+ 90 = {
+ force_operative_leader_into_hiding = 120
+ operative_leader_event = {
+ id = lar_operative_event.1
+ set_from_from = ROOT
+ }
+ operative_leader_event = {
+ id = lar_operative_event.6
+ originator = FROM
+ recipient = ROOT
+ set_from = FROM
+ }
+ if = {
+ limit = { ROOT = { has_done_agency_upgrade = upgrade_interrogation_techniques }}
+ ROOT = {
+ add_intel = {
+ target = PREV.FROM
+ army_intel = 25
+ civilian_intel = 25
+ navy_intel = 25
+ airforce_intel = 25
+ }
+ }
+ } else = {
+ ROOT = {
+ add_intel = {
+ target = PREV.FROM
+ army_intel = 20
+ civilian_intel = 20
+ navy_intel = 20
+ airforce_intel = 20
+ }
+ }
+ }
+ }
+ 10 = {
+ modifier = {
+ has_trait = operative_tough
+ factor = 0
+ }
+ modifier = {
+ has_trait = operative_double_agent
+ factor = 0
+ }
+ turn_operative = { turned_by = ROOT }
+ add_nationality = FROM
+ operative_leader_event = {
+ id = lar_operative_event.5
+ set_from_from = FROM
+ }
+ }
+ }
+ }
+ temp_var:kill_chance = {
+ kill_operative = {
+ killed_by = ROOT
+ }
+ }
+ }
+ }
+ }
+ on_operative_captured = {
+ effect = {
+ if = {
+ limit = {
+ NOT = { has_unit_leader_flag = le_clerc1 }
+ }
+ set_unit_leader_flag = le_clerc1
+ }
+ else_if = {
+ limit = {
+ has_unit_leader_flag = le_clerc1
+ }
+ set_unit_leader_flag = le_clerc2
+ }
+ random_list = {
+ 90 = {
+ operative_leader_event = {
+ id = lar_operative_event.1
+ set_from_from = ROOT
+ }
+ operative_leader_event = {
+ id = lar_operative_event.6
+ originator = FROM
+ recipient = ROOT
+ set_from = FROM
+ }
+ }
+ 10 = {
+ modifier = {
+ has_trait = operative_tough
+ factor = 0
+ }
+ modifier = {
+ has_trait = operative_double_agent
+ factor = 0
+ }
+ turn_operative = { turned_by = ROOT }
+ add_nationality = FROM
+ operative_leader_event = {
+ id = lar_operative_event.5
+ set_from_from = FROM
+ }
+ }
+ }
+ }
+ }
+ on_operative_death = {
+ effect = {
+ if = {
+ limit = {
+ country_exists = ROOT
+ }
+ operative_leader_event = {
+ id = lar_operative_event.3
+ set_from_from = ROOT
+ }
+ operative_leader_event = {
+ id = lar_operative_event.7
+ originator = FROM
+ recipient = ROOT
+ set_from = FROM
+ }
+ }
+ else = {
+ }
+ if = {
+ limit = {
+ FROM = {
+ NOT = { is_ai = yes }
+ has_done_agency_upgrade = upgrade_suicide_pills
+ }
+ }
+ set_global_flag = kill_me_alive_flag
+ }
+ }
+ }
+ on_operative_detected_during_operation = {
+ effect = {
+ random_list = {
+ 40 = {
+ force_operative_leader_into_hiding = 45
+ operative_leader_event = {
+ id = lar_operative_event.2
+ set_from_from = FROM
+ }
+ }
+ 35 = {
+ capture_operative = {
+ captured_by = FROM
+ }
+ }
+ 20 = {
+ harm_operative_leader = 90
+ operative_leader_event = {
+ id = lar_operative_event.4
+ set_from_from = FROM
+ }
+ }
+ 5 = {
+ kill_operative = {
+ killed_by = FROM
+ }
+ }
+ }
+ }
+ }
+ on_operation_completed = {
+ effect = {
+ if = {
+ limit = {
+ ROOT = { has_country_flag = just_freed_operative_flag }
+ }
+ every_operative = {
+ if = {
+ limit = {
+ NOT = { has_trait = operative_escape_artist }
+ }
+ random_list = {
+ 15 = { add_unit_leader_trait = operative_escape_artist }
+ 85 = {}
+ }
+ }
+ }
+ ROOT = { clr_country_flag = just_freed_operative_flag }
+ }
+ every_operative = {
+ if = {
+ limit = {
+ has_trait = operative_linguist
+ NOT = { operative_leader_mission = no_mission }
+ NOT = { has_nationality = FROM }
+ }
+ random_list = {
+ 20 = { add_nationality = FROM }
+ 80 = {}
+ }
+ }
+ }
+ every_operative = {
+ if = {
+ limit = {
+ has_nationality = FRA
+ }
+ ROOT = {
+ add_to_variable = {
+ var = fra_nat
+ value = 1
+ }
+ }
+ }
+ if = {
+ limit = {
+ has_nationality = ENG
+ }
+ ROOT = {
+ add_to_variable = {
+ var = eng_nat
+ value = 1
+ }
+ }
+ }
+ }
+ ROOT = {
+ if = {
+ limit = {
+ check_variable = { fra_nat > 0 }
+ check_variable = { eng_nat > 0 }
+ }
+ set_country_flag = achievement_listen_carefully_flag
+ }
+ set_variable = {
+ var = fra_nat
+ value = 0
+ }
+ set_variable = {
+ var = eng_nat
+ value = 0
+ }
+ }
+ }
+ }
+ on_fully_decrypted_cipher = {
+ }
+ on_activated_active_decryption_bonuses = {
+ }
+ }
 

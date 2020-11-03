@@ -1,228 +1,228 @@
 foreign_politics = {
-	ENG_get_chromium = {
-		icon = generic_operation
-		allowed = {
-			tag = ENG
-		}
-		available = {
-			NOT={has_country_flag=resource_rights_saf}
-		}
-		cost = 0
-		visible = {
-			SAF={has_completed_focus = SAF_secure_interests_in_africa}
-		}
-		complete_effect = {
-			SAF = {
-				give_resource_rights = { receiver = ENG state = 542 }
-				give_resource_rights = { receiver = ENG state = 771 }
-			}
-			set_country_flag=resource_rights_saf
-		}
-	}
-	ENG_pressure_sweden= {
-		icon = generic_operation
-		fire_only_once = no
-		allowed = {
-			tag = ENG
-		}
-		visible = {
-			date > 1940.1.1
-		}
-		available = {
-			GER={has_completed_focus=GER_pressure_sweden}
-			NOR_axis=yes
-			has_global_flag=GER_resource_rights_swe
-		}
-		cost=50
-		days_remove=30
-		remove_effect = {
-			SWE = {
-				remove_resource_rights = 666
-				give_resource_rights = { receiver = ENG state = 666 }
-			}
-			clr_global_flag=GER_resource_rights_swe
-		}
-	}
-	ENG_give_chromium = {
-		icon = generic_operation
-		allowed = {
-			tag = ENG
-		}
-		available = {
-			has_country_flag=resource_rights_saf
-		}
-		cost = 0
-		visible = {
-			SAF={has_completed_focus = SAF_secure_interests_in_africa}
-			always=yes
-		}
-		complete_effect = {
-			remove_resource_rights = 542
-			remove_resource_rights = 771
-			clr_country_flag=resource_rights_saf
-		}
-	}
-}
-ENG_imperial_conference_decision = {
-	ENG_imperial_conference_decision = {
-		icon = generic_political_discourse
-		available = {
-			hidden_trigger = { always = no }
-		}
-		days_mission_timeout = 60
-		fire_only_once = yes
-		activation = {
-			tag = ENG
-			has_country_flag = ENG_imperial_conference_timer_flag
-		}
-		visible = {
-			tag = ENG
-			has_country_flag = ENG_imperial_conference_timer_flag
-		}
-		cancel_if_not_visible = no
-		is_good = yes
-		complete_effect = {
-		}
-		timeout_effect = {
-			custom_effect_tooltip = imperial_conference_ends_tt
-			every_country = {
-				limit = {
-					OR = {
-						AND = {
-							is_subject_of = ENG
-							tag = CAN
-						}
-						AND = {
-							is_subject_of = ENG
-							tag = SAF
-						}
-						AND = {
-							is_subject_of = ENG
-							tag = RAJ
-						}
-						AND = {
-							is_subject_of = ENG
-							tag = AST
-						}
-						AND = {
-							is_subject_of = ENG
-							tag = NZL
-						}
-					}
-				}
-				remove_opinion_modifier = { target = ENG modifier = ENG_imperial_conference_opinion }
-				remove_opinion_modifier = { target = ENG modifier = ENG_imperial_conference_approved_resolution }
-			}
-		}
-	}
-}
-political_actions = {
-	hold_blood_toil_tears_sweat_speech = {
-		icon = generic_political_discourse
-		allowed = {
-			tag = ENG
-		}
-		available = {
-			has_war_with = GER
-		}
-		cost = 10
-		fire_only_once = yes
-		visible = {
-			tag = ENG
-			has_government = democratic
-			has_war_with = GER
-			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
-		}
-		complete_effect = {
-			add_stability = 0.05
-			add_war_support = 0.05
-			if = {
-				limit = {
-					USA = {
-						exists = yes
-						has_war = no
-						has_government = ROOT
-					}
-				}
-				USA = { set_country_flag = blood_toil_tears_sweat_speech }
-			}
-			set_country_flag = blood_toil_tears_sweat_speech
-		}
-		ai_will_do = {
-			factor = 200
-		}
-	}
-	hold_fight_on_the_beaches_speech = {
-		icon = generic_political_discourse
-		allowed = {
-			tag = ENG
-		}
-		available = {
-			has_war_with = GER
-			is_in_faction_with = FRA
-		}
-		cost = 5
-		fire_only_once = yes
-		visible = {
-			tag = ENG
-			has_government = democratic
-			has_war_with = GER
-			has_country_flag = blood_toil_tears_sweat_speech
-			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
-		}
-		complete_effect = {
-			add_war_support = 0.05
-			if = {
-				limit = {
-					USA = {
-						exists = yes
-						has_war = no
-						has_government = ROOT
-					}
-				}
-				USA = { set_country_flag = fight_on_the_beaches_speech }
-			}
-			set_country_flag = fight_on_the_beaches_speech
-		}
-		ai_will_do = {
-			factor = 200
-		}
-	}
-	hold_this_was_their_finest_hour_speech = {
-		icon = generic_political_discourse
-		allowed = {
-			tag = ENG
-		}
-		available = {
-			has_war_with = GER
-			is_in_faction_with = FRA
-		}
-		cost = 5
-		fire_only_once = yes
-		visible = {
-			tag = ENG
-			has_government = democratic
-			has_war_with = GER
-			has_country_flag = fight_on_the_beaches_speech
-			has_country_leader = { ruling_only = yes name = "Winston Churchill" }
-		}
-		complete_effect = {
-			add_war_support = 0.05
-			if = {
-				limit = {
-					USA = {
-						exists = yes
-						has_war = no
-						has_government = ROOT
-					}
-				}
-				USA = { set_country_flag = this_was_their_finest_hour_speech }
-			}
-			set_country_flag = this_was_their_finest_hour_speech
-		}
-		ai_will_do = {
-			factor = 200
-		}
-	}
-}
+ ENG_get_chromium = {
+ icon = generic_operation
+ allowed = {
+ tag = ENG
+ }
+ available = {
+ NOT={has_country_flag=resource_rights_saf}
+ }
+ cost = 0
+ visible = {
+ SAF={has_completed_focus = SAF_secure_interests_in_africa}
+ }
+ complete_effect = {
+ SAF = {
+ give_resource_rights = { receiver = ENG state = 542 }
+ give_resource_rights = { receiver = ENG state = 771 }
+ }
+ set_country_flag=resource_rights_saf
+ }
+ }
+ ENG_pressure_sweden= {
+ icon = generic_operation
+ fire_only_once = no
+ allowed = {
+ tag = ENG
+ }
+ visible = {
+ date > 1940.1.1
+ }
+ available = {
+ GER={has_completed_focus=GER_pressure_sweden}
+ NOR_axis=yes
+ has_global_flag=GER_resource_rights_swe
+ }
+ cost=50
+ days_remove=30
+ remove_effect = {
+ SWE = {
+ remove_resource_rights = 666
+ give_resource_rights = { receiver = ENG state = 666 }
+ }
+ clr_global_flag=GER_resource_rights_swe
+ }
+ }
+ ENG_give_chromium = {
+ icon = generic_operation
+ allowed = {
+ tag = ENG
+ }
+ available = {
+ has_country_flag=resource_rights_saf
+ }
+ cost = 0
+ visible = {
+ SAF={has_completed_focus = SAF_secure_interests_in_africa}
+ always=yes
+ }
+ complete_effect = {
+ remove_resource_rights = 542
+ remove_resource_rights = 771
+ clr_country_flag=resource_rights_saf
+ }
+ }
+ }
+ ENG_imperial_conference_decision = {
+ ENG_imperial_conference_decision = {
+ icon = generic_political_discourse
+ available = {
+ hidden_trigger = { always = no }
+ }
+ days_mission_timeout = 60
+ fire_only_once = yes
+ activation = {
+ tag = ENG
+ has_country_flag = ENG_imperial_conference_timer_flag
+ }
+ visible = {
+ tag = ENG
+ has_country_flag = ENG_imperial_conference_timer_flag
+ }
+ cancel_if_not_visible = no
+ is_good = yes
+ complete_effect = {
+ }
+ timeout_effect = {
+ custom_effect_tooltip = imperial_conference_ends_tt
+ every_country = {
+ limit = {
+ OR = {
+ AND = {
+ is_subject_of = ENG
+ tag = CAN
+ }
+ AND = {
+ is_subject_of = ENG
+ tag = SAF
+ }
+ AND = {
+ is_subject_of = ENG
+ tag = RAJ
+ }
+ AND = {
+ is_subject_of = ENG
+ tag = AST
+ }
+ AND = {
+ is_subject_of = ENG
+ tag = NZL
+ }
+ }
+ }
+ remove_opinion_modifier = { target = ENG modifier = ENG_imperial_conference_opinion }
+ remove_opinion_modifier = { target = ENG modifier = ENG_imperial_conference_approved_resolution }
+ }
+ }
+ }
+ }
+ political_actions = {
+ hold_blood_toil_tears_sweat_speech = {
+ icon = generic_political_discourse
+ allowed = {
+ tag = ENG
+ }
+ available = {
+ has_war_with = GER
+ }
+ cost = 10
+ fire_only_once = yes
+ visible = {
+ tag = ENG
+ has_government = democratic
+ has_war_with = GER
+ has_country_leader = { ruling_only = yes name = "Winston Churchill" }
+ }
+ complete_effect = {
+ add_stability = 0.05
+ add_war_support = 0.05
+ if = {
+ limit = {
+ USA = {
+ exists = yes
+ has_war = no
+ has_government = ROOT
+ }
+ }
+ USA = { set_country_flag = blood_toil_tears_sweat_speech }
+ }
+ set_country_flag = blood_toil_tears_sweat_speech
+ }
+ ai_will_do = {
+ factor = 200
+ }
+ }
+ hold_fight_on_the_beaches_speech = {
+ icon = generic_political_discourse
+ allowed = {
+ tag = ENG
+ }
+ available = {
+ has_war_with = GER
+ is_in_faction_with = FRA
+ }
+ cost = 5
+ fire_only_once = yes
+ visible = {
+ tag = ENG
+ has_government = democratic
+ has_war_with = GER
+ has_country_flag = blood_toil_tears_sweat_speech
+ has_country_leader = { ruling_only = yes name = "Winston Churchill" }
+ }
+ complete_effect = {
+ add_war_support = 0.05
+ if = {
+ limit = {
+ USA = {
+ exists = yes
+ has_war = no
+ has_government = ROOT
+ }
+ }
+ USA = { set_country_flag = fight_on_the_beaches_speech }
+ }
+ set_country_flag = fight_on_the_beaches_speech
+ }
+ ai_will_do = {
+ factor = 200
+ }
+ }
+ hold_this_was_their_finest_hour_speech = {
+ icon = generic_political_discourse
+ allowed = {
+ tag = ENG
+ }
+ available = {
+ has_war_with = GER
+ is_in_faction_with = FRA
+ }
+ cost = 5
+ fire_only_once = yes
+ visible = {
+ tag = ENG
+ has_government = democratic
+ has_war_with = GER
+ has_country_flag = fight_on_the_beaches_speech
+ has_country_leader = { ruling_only = yes name = "Winston Churchill" }
+ }
+ complete_effect = {
+ add_war_support = 0.05
+ if = {
+ limit = {
+ USA = {
+ exists = yes
+ has_war = no
+ has_government = ROOT
+ }
+ }
+ USA = { set_country_flag = this_was_their_finest_hour_speech }
+ }
+ set_country_flag = this_was_their_finest_hour_speech
+ }
+ ai_will_do = {
+ factor = 200
+ }
+ }
+ }
 

@@ -1,212 +1,212 @@
 focus_tree = {
-	id = sweden_focus
-	country = {
-		factor = 0
-		modifier = {
-			add = 10
-			tag = SWE
-		}
-	}
-	default = no
-	focus = {
-		id = NDA_anti_meme
-		icon = GFX_goal_generic_consumer_goods
-		x = 10
-		y = 0
-		cost =52
-		available_if_capitulated = yes
-		completion_reward = {
-			hidden_effect = {
-				anti_cross_faction_trade_all = yes
-				SPR = {
-					add_opinion_modifier = {
-						target = SOV
-						modifier = anti_cross_faction_trade
-					}
-				}
-			}
-			every_country={
-				limit={is_playable_country=yes}
-				add_ideas=research_37
-			}
-		}
-	}
-	focus = {
-		id = NDA_resource4
-		icon = GFX_goal_generic_consumer_goods
-		x = 0
-		y = 1
-		cost = 52.2
-		prerequisite = { focus = NDA_anti_meme }
-		relative_position_id = NDA_anti_meme
-		available_if_capitulated = yes
-		completion_reward = {
-			every_country={
-				limit={is_playable_country=yes}
-				swap_ideas={
-					remove_idea = research_37
-					add_idea = research_38
-				}
-			}
-		}
-	}
-	focus = {
-		id = NDA_resource11
-		icon = GFX_goal_generic_consumer_goods
-		x = 0
-		y = 1
-		cost = 52.2
-		prerequisite = { focus = NDA_resource4 }
-		relative_position_id = NDA_resource4
-		available_if_capitulated = yes
-		completion_reward = {
-			every_country={
-				limit={is_playable_country=yes}
-				swap_ideas={
-					remove_idea = research_38
-					add_idea = research_39
-				}
-			}
-		}
-	}
-	focus = {
-		id = NDA_resource5
-		icon = GFX_goal_generic_consumer_goods
-		x = 0
-		y = 1
-		cost = 52.2
-		prerequisite = { focus = NDA_resource11 }
-		relative_position_id = NDA_resource11
-		available_if_capitulated = yes
-		completion_reward = {
-			every_country={
-				limit={is_playable_country=yes}
-				swap_ideas={
-					remove_idea = research_39
-					add_idea = research_40
-				}
-			}
-		}
-	}
-	focus = {
-		id = NDA_resource3
-		icon = GFX_goal_generic_consumer_goods
-		x = 0
-		y = 1
-		cost = 52.2
-		prerequisite = { focus = NDA_resource5 }
-		relative_position_id = NDA_resource5
-		available_if_capitulated = yes
-		completion_reward = {
-			every_country={
-				limit={is_playable_country=yes}
-				swap_ideas={
-					remove_idea = research_40
-					add_idea = research_41
-				}
-			}
-		}
-	}
-	focus = {
-		id = NDA_resource1337
-		icon = GFX_goal_generic_consumer_goods
-		x = 0
-		y = 1
-		cost = 52.2
-		prerequisite = { focus = NDA_resource3 }
-		relative_position_id = NDA_resource3
-		available_if_capitulated = yes
-		completion_reward = {
-			every_country={
-				limit={is_playable_country=yes}
-				swap_ideas={
-					remove_idea = research_41
-					add_idea = research_42
-				}
-			}
-		}
-	}
-	focus = {
-		id = NDA_resource1338
-		icon = GFX_goal_generic_consumer_goods
-		x = 0
-		y = 1
-		cost = 52.2
-		prerequisite = { focus = NDA_resource1337 }
-		relative_position_id = NDA_resource1337
-		available_if_capitulated = yes
-		completion_reward = {
-			every_country={
-				limit={is_playable_country=yes}
-				swap_ideas={
-					remove_idea = research_42
-					add_idea = research_43
-				}
-			}
-		}
-	}
-	focus = {
-		id = NDA_resource2
-		icon = GFX_goal_generic_consumer_goods
-		x = 0
-		y = 1
-		cost = 52.2
-		prerequisite = { focus = NDA_resource1338 }
-		relative_position_id = NDA_resource1338
-		available_if_capitulated = yes
-		completion_reward = {
-			TUR = { country_event = turkey.1 }
-			country_event = MTG_naval_treaty.10
-		}
-	}
-	focus = {
-		id = NDA_resource20
-		icon = GFX_goal_generic_consumer_goods
-		x = 0
-		y = 1
-		cost = 9
-		prerequisite = { focus = NDA_resource2 }
-		relative_position_id = NDA_resource2
-		available_if_capitulated = yes
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = NDA_resource
-		icon = GFX_goal_generic_consumer_goods
-		x = 0
-		y = 1
-		cost = 52.2
-		prerequisite = { focus = NDA_resource20 }
-		relative_position_id = NDA_resource20
-		available_if_capitulated = yes
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = NDA_iraq
-		icon = GFX_goal_generic_consumer_goods
-		prerequisite = { focus = NDA_resource }
-		x = 0
-		y = 1
-		cost = 52.2
-		relative_position_id = NDA_resource
-		available_if_capitulated = yes
-		completion_reward = {
-			SOV = { country_event = news.37 }
-		}
-	}
-	focus = {
-		id = NDA_nothing
-		icon = GFX_goal_generic_consumer_goods
-		prerequisite = { focus = NDA_iraq }
-		x = 0
-		y = 1
-		cost = 126
-		relative_position_id = NDA_iraq
-		available_if_capitulated = yes
-		completion_reward = {
-		}
-	}
-}
+ id = sweden_focus
+ country = {
+ factor = 0
+ modifier = {
+ add = 10
+ tag = SWE
+ }
+ }
+ default = no
+ focus = {
+ id = NDA_anti_meme
+ icon = GFX_goal_generic_consumer_goods
+ x = 10
+ y = 0
+ cost =52
+ available_if_capitulated = yes
+ completion_reward = {
+ hidden_effect = {
+ anti_cross_faction_trade_all = yes
+ SPR = {
+ add_opinion_modifier = {
+ target = SOV
+ modifier = anti_cross_faction_trade
+ }
+ }
+ }
+ every_country={
+ limit={is_playable_country=yes}
+ add_ideas=research_37
+ }
+ }
+ }
+ focus = {
+ id = NDA_resource4
+ icon = GFX_goal_generic_consumer_goods
+ x = 0
+ y = 1
+ cost = 52.2
+ prerequisite = { focus = NDA_anti_meme }
+ relative_position_id = NDA_anti_meme
+ available_if_capitulated = yes
+ completion_reward = {
+ every_country={
+ limit={is_playable_country=yes}
+ swap_ideas={
+ remove_idea = research_37
+ add_idea = research_38
+ }
+ }
+ }
+ }
+ focus = {
+ id = NDA_resource11
+ icon = GFX_goal_generic_consumer_goods
+ x = 0
+ y = 1
+ cost = 52.2
+ prerequisite = { focus = NDA_resource4 }
+ relative_position_id = NDA_resource4
+ available_if_capitulated = yes
+ completion_reward = {
+ every_country={
+ limit={is_playable_country=yes}
+ swap_ideas={
+ remove_idea = research_38
+ add_idea = research_39
+ }
+ }
+ }
+ }
+ focus = {
+ id = NDA_resource5
+ icon = GFX_goal_generic_consumer_goods
+ x = 0
+ y = 1
+ cost = 52.2
+ prerequisite = { focus = NDA_resource11 }
+ relative_position_id = NDA_resource11
+ available_if_capitulated = yes
+ completion_reward = {
+ every_country={
+ limit={is_playable_country=yes}
+ swap_ideas={
+ remove_idea = research_39
+ add_idea = research_40
+ }
+ }
+ }
+ }
+ focus = {
+ id = NDA_resource3
+ icon = GFX_goal_generic_consumer_goods
+ x = 0
+ y = 1
+ cost = 52.2
+ prerequisite = { focus = NDA_resource5 }
+ relative_position_id = NDA_resource5
+ available_if_capitulated = yes
+ completion_reward = {
+ every_country={
+ limit={is_playable_country=yes}
+ swap_ideas={
+ remove_idea = research_40
+ add_idea = research_41
+ }
+ }
+ }
+ }
+ focus = {
+ id = NDA_resource1337
+ icon = GFX_goal_generic_consumer_goods
+ x = 0
+ y = 1
+ cost = 52.2
+ prerequisite = { focus = NDA_resource3 }
+ relative_position_id = NDA_resource3
+ available_if_capitulated = yes
+ completion_reward = {
+ every_country={
+ limit={is_playable_country=yes}
+ swap_ideas={
+ remove_idea = research_41
+ add_idea = research_42
+ }
+ }
+ }
+ }
+ focus = {
+ id = NDA_resource1338
+ icon = GFX_goal_generic_consumer_goods
+ x = 0
+ y = 1
+ cost = 52.2
+ prerequisite = { focus = NDA_resource1337 }
+ relative_position_id = NDA_resource1337
+ available_if_capitulated = yes
+ completion_reward = {
+ every_country={
+ limit={is_playable_country=yes}
+ swap_ideas={
+ remove_idea = research_42
+ add_idea = research_43
+ }
+ }
+ }
+ }
+ focus = {
+ id = NDA_resource2
+ icon = GFX_goal_generic_consumer_goods
+ x = 0
+ y = 1
+ cost = 52.2
+ prerequisite = { focus = NDA_resource1338 }
+ relative_position_id = NDA_resource1338
+ available_if_capitulated = yes
+ completion_reward = {
+ TUR = { country_event = turkey.1 }
+ country_event = MTG_naval_treaty.10
+ }
+ }
+ focus = {
+ id = NDA_resource20
+ icon = GFX_goal_generic_consumer_goods
+ x = 0
+ y = 1
+ cost = 9
+ prerequisite = { focus = NDA_resource2 }
+ relative_position_id = NDA_resource2
+ available_if_capitulated = yes
+ completion_reward = {
+ }
+ }
+ focus = {
+ id = NDA_resource
+ icon = GFX_goal_generic_consumer_goods
+ x = 0
+ y = 1
+ cost = 52.2
+ prerequisite = { focus = NDA_resource20 }
+ relative_position_id = NDA_resource20
+ available_if_capitulated = yes
+ completion_reward = {
+ }
+ }
+ focus = {
+ id = NDA_iraq
+ icon = GFX_goal_generic_consumer_goods
+ prerequisite = { focus = NDA_resource }
+ x = 0
+ y = 1
+ cost = 52.2
+ relative_position_id = NDA_resource
+ available_if_capitulated = yes
+ completion_reward = {
+ SOV = { country_event = news.37 }
+ }
+ }
+ focus = {
+ id = NDA_nothing
+ icon = GFX_goal_generic_consumer_goods
+ prerequisite = { focus = NDA_iraq }
+ x = 0
+ y = 1
+ cost = 126
+ relative_position_id = NDA_iraq
+ available_if_capitulated = yes
+ completion_reward = {
+ }
+ }
+ }
 

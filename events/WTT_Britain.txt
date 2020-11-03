@@ -1,58 +1,48 @@
 ﻿add_namespace = wtt_britain
-
-country_event = {
-	id = wtt_britain.30
-	title = wtt_britain.30.t
-	desc = wtt_britain.30.d
-	picture = GFX_report_event_generic_factory
-	is_triggered_only = yes
-
-	option = {
-		name = wtt_britain.30.a
-		if = {
-			limit = { original_tag = ENG }
-			effect_tooltip = {
-				add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 20000 producer = USA }
-				add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 250 producer = USA }
-				add_equipment_to_stockpile = { type = support_equipment_1 amount = 250 producer = USA }
-			}
-		}
-	}
-}
-
-
-
-
-
-add_namespace = wtt_britain_lease_azores
-
-country_event = {
-	id = wtt_britain_lease_azores.1
-	title = wtt_britain_lease_azores.1.t
-	desc = wtt_britain_lease_azores.1.desc
-	picture = GFX_report_event_degaulle_churchill
-	is_triggered_only = yes
-
-	option = {
-		name = wtt_britain_lease_azores.1.a
-		ai_chance = {
-			base = 10
-		}
-		FROM = {
-			set_country_flag = wtt_britain_lease_azores_accepted
-			country_event = { id = wtt_britain_lease_azores.2 }
-		}
-	}
-}
-
-country_event = {
-	id = wtt_britain_lease_azores.2
-	title = wtt_britain_lease_azores.2.t
-	desc = wtt_britain_lease_azores.2.desc
-	picture = GFX_report_event_usa_heavy_cruiser
-	is_triggered_only = yes
-	option = {
-		name = wtt_britain_lease_azores.2.a
-	}
-}
+ country_event = {
+ id = wtt_britain.30
+ title = wtt_britain.30.t
+ desc = wtt_britain.30.d
+ picture = GFX_report_event_generic_factory
+ is_triggered_only = yes
+ option = {
+ name = wtt_britain.30.a
+ if = {
+ limit = { original_tag = ENG }
+ effect_tooltip = {
+ add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 20000 producer = USA }
+ add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 250 producer = USA }
+ add_equipment_to_stockpile = { type = support_equipment_1 amount = 250 producer = USA }
+ }
+ }
+ }
+ }
+ add_namespace = wtt_britain_lease_azores
+ country_event = {
+ id = wtt_britain_lease_azores.1
+ title = wtt_britain_lease_azores.1.t
+ desc = wtt_britain_lease_azores.1.desc
+ picture = GFX_report_event_degaulle_churchill
+ is_triggered_only = yes
+ option = {
+ name = wtt_britain_lease_azores.1.a
+ ai_chance = {
+ base = 10
+ }
+ FROM = {
+ set_country_flag = wtt_britain_lease_azores_accepted
+ country_event = { id = wtt_britain_lease_azores.2 }
+ }
+ }
+ }
+ country_event = {
+ id = wtt_britain_lease_azores.2
+ title = wtt_britain_lease_azores.2.t
+ desc = wtt_britain_lease_azores.2.desc
+ picture = GFX_report_event_usa_heavy_cruiser
+ is_triggered_only = yes
+ option = {
+ name = wtt_britain_lease_azores.2.a
+ }
+ }
 
