@@ -118,33 +118,33 @@ country_event = {
 		if = {
 			limit = {Date < 1939.11.1}
 			ITA = {
-				transfer_state = 735
+				transfer_state = 653
 				transfer_state = 32
 				transfer_state = 21
 				transfer_state = 1
-				transfer_state = 458
-				transfer_state = 665
+				transfer_state = 422
+				transfer_state = 584
 			}
 		}
 		else = {
 			ITA = {
-				transfer_state = 735
+				transfer_state = 653
 			}
 		}
 		JAP = {
 			EFR = { country_event = { id = france.1 } }
-			transfer_state = 286
-			transfer_state = 670
-			transfer_state = 671
-			transfer_state = 741
-			transfer_state = 728
+			transfer_state = 274
+			transfer_state = 589
+			transfer_state = 590
+			transfer_state = 659
+			transfer_state = 646
 		}
 		GER = {
 			transfer_state = 28
 			transfer_state = 17
 			transfer_state = 18
 			transfer_state = 29
-			transfer_state = 785
+			transfer_state = 699
 			transfer_state = 16
 			transfer_state = 15
 			transfer_state = 14
@@ -160,26 +160,26 @@ country_event = {
 		FRA = {
 			add_ideas = FRA_no_training_queue
 			add_ideas = FRA_defeatism
-			transfer_state = 539
-			transfer_state = 772
-			transfer_state = 773
-			transfer_state = 774
-			transfer_state = 660
-			transfer_state = 310
-			transfer_state = 635
-			transfer_state = 734
-			transfer_state = 641
-			transfer_state = 320
-			transfer_state = 694
-			transfer_state = 706
-			transfer_state = 713
-			transfer_state = 708
-			transfer_state = 295
-			transfer_state = 538
-			transfer_state = 718
-			transfer_state = 768
-			transfer_state = 769
-			transfer_state = 730
+			transfer_state = 466
+			transfer_state = 686
+			transfer_state = 687
+			transfer_state = 688
+			transfer_state = 580
+			transfer_state = 288
+			transfer_state = 556
+			transfer_state = 652
+			transfer_state = 562
+			transfer_state = 290
+			transfer_state = 612
+			transfer_state = 624
+			transfer_state = 631
+			transfer_state = 626
+			transfer_state = 282
+			transfer_state = 465
+			transfer_state = 636
+			transfer_state = 682
+			transfer_state = 683
+			transfer_state = 648
 			set_cosmetic_tag = FRA_FREE
 			clr_country_flag = no_naval_base
 			remove_ideas = FRA_protected_by_the_maginot_line
@@ -411,7 +411,7 @@ country_event = {
 	option = {
 		name = france.146.a
 		RAJ = {
-			transfer_state = 321
+			transfer_state = 291
 			291 = { add_extra_state_shared_building_slots = 1 }
 		}
 	}
@@ -426,7 +426,7 @@ country_event = {
 	option = {
 		name = france.147.a
 		SAF = {
-			transfer_state = 544
+			transfer_state = DeleteB
 			291 = { add_extra_state_shared_building_slots = 1 }
 		}
 	}
@@ -441,7 +441,7 @@ country_event = {
 	option = {
 		name = france.148.a
 		ENG = {
-			transfer_state = 702
+			transfer_state = 620
 		}
 	}
 }

@@ -164,7 +164,7 @@ country_event = {
 		name = italy.9.a
 		country_event = { id = italy.10 }
 		effect_tooltip = {
-			ITA = { transfer_state = 177 }
+			ITA = { transfer_state = 173 }
 			remove_opinion_modifier = { target = ITA modifier = ita_supported_spain_civil_war }
 		}
 		hidden_effect = {
@@ -180,7 +180,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = italy.10.a
-		ITA = { transfer_state = 177 }
+		ITA = { transfer_state = 173 }
 		remove_opinion_modifier = { target = ITA modifier = ita_supported_spain_civil_war }
 	}
 }
@@ -311,7 +311,7 @@ country_event = {
 			}
 			add_threat = 4.6
 		}
-		BUL = { transfer_state = 184 }
+		BUL = { transfer_state = 177 }
 	}
 	option = {
 		name = italy.153.b
@@ -333,7 +333,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = italy.155.a
-		HUN = { transfer_state = 764
+		HUN = { transfer_state = 678
 			transfer_state = 45
 		}
 		ITA = {

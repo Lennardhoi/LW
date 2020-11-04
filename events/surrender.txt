@@ -40,7 +40,7 @@ country_event = {
 			}
 			if={limit={tag=DEN}USA = { transfer_state = 101}
 				ENG = { transfer_state =  100
-					transfer_state = 337 }
+					transfer_state = 304 }
 				GER={set_province_controller=5870}
 			}
 			ENG={annex_country={target=ROOT transfer_troops=yes}}
@@ -74,7 +74,7 @@ country_event = {
 				OR={tag=POL tag=LUX
 					}}
 			transfer_navy={target=ENG}
-			transfer_state=270
+			transfer_state=262
 			every_owned_state={limit={is_core_of=ROOT}
 				add_state_modifier = {
 					modifier = {

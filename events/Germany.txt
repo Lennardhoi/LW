@@ -12,7 +12,7 @@ country_event = {
 		76={remove_core_of=ROM}
 		HUN = {transfer_state = 76
 			transfer_state = 45
-			transfer_state = 764
+			transfer_state = 678
 		}
 		ROM = { remove_state_core = 76 }
 		if = {
@@ -20,16 +20,16 @@ country_event = {
 			77 = {remove_core_of = ROM}
 			BUL = {
 				transfer_state = 106
-				transfer_state = 731
-				transfer_state = 184
+				transfer_state = 649
+				transfer_state = 177
 				transfer_state = 77
 			}
 		}
 		else = {
 			ITA = {
 				transfer_state = 106
-				transfer_state = 731
-				transfer_state = 184
+				transfer_state = 649
+				transfer_state = 177
 			}
 		}
 		ITA = {
@@ -40,9 +40,9 @@ country_event = {
 			transfer_state = 105
 			transfer_state = 108
 			transfer_state = 107
-			transfer_state = 185
+			transfer_state = 178
 			transfer_state = 47
-			transfer_state = 186
+			transfer_state = 179
 		}
 		GER = {
 			transfer_state = 102
@@ -58,9 +58,9 @@ country_event = {
 						}
 					}
 				}
-				transfer_state =182
+				transfer_state =175
 			}
-			else={ENG={transfer_state=182}}
+			else={ENG={transfer_state=175}}
 			if={
 				limit={
 					180={
@@ -73,9 +73,9 @@ country_event = {
 						}
 					}
 				}
-				transfer_state =187
+				transfer_state =180
 			}
-			else={ENG={transfer_state=187}}
+			else={ENG={transfer_state=180}}
 		}
 	}
 	option = {
@@ -267,7 +267,7 @@ country_event = {
 			transfer_state = 91
 			transfer_state = 97
 			transfer_state = 89
-			transfer_state = 784
+			transfer_state = 698
 			country_event = germany.15 }
 	}
 }

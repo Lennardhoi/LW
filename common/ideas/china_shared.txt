@@ -1,175 +1,119 @@
 ideas = {
-
 	country = {
 		CHI_wargaming_division = {
-
 			picture = chi_wargaming_division
-
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-
 			modifier = {
 				max_command_power = 5
 			}
 		}
-
 		CHI_chinese_general_staff = {
-
 			picture = general_staff
-
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-
 			modifier = {
 				army_leader_start_planning_level = 1
 			}
 		}
-
 		CHI_elite_mountaineers = {
-
 			picture = ast_volunteer_defence_corps
-
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-
 			modifier = {
 				special_forces_cap = 0.02
 			}
 		}
-
 		CHI_french_drill = {
-
 			picture = generic_intel_bonus
-
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-
 			modifier = {
 				army_leader_start_defense_level = 1
 			}
 		}
-
 		CHI_modern_logistics = {
-
 			picture = FRA_motorized_focus
-
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-
 			modifier = {
 				army_leader_start_logistics_level = 1
 			}
 		}
-
 		CHI_construction_battalions = {
-
 			picture = ast_all_in
-
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-
 			modifier = {
 				max_dig_in = 5
 			}
 		}
-
 		CHI_chinese_support = {
-
 			picture = chi_chinese_support
-
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-
 			modifier = {
 				autonomy_gain = 0.5
 			}
 		}
-
 		CHI_train_marines = {
-
 			picture = generic_infantry_bonus
-
 			allowed = {
 				always = no
 			}
-
 			allowed_civil_war = {
 				always = yes
 			}
-
 			removal_cost = -1
-
 			modifier = {
 				special_forces_cap = 0.02
 			}
 		}
-
 	}
-
 	political_advisor = {
-
 	}
-
 	army_chief = {
-
 		CHI_alexander_von_falkenhausen = {
-
 			picture = generic_army_europe_2
-
 			available = {
 				has_completed_focus = CHI_give_falkenhausen_citizenship
 				NOT = { has_global_flag = falkenhausen_recalled }
 			}
-
 			allowed = {
 				OR = {
 					is_literally_china = yes
@@ -177,29 +121,21 @@ ideas = {
 				}
 				has_dlc = "Waking the Tiger"
 			}
-
 			traits = { army_chief_offensive_2 }
-
 			ai_will_do = {
 				factor = 2
 			}
 		}
 	}
-
 	air_chief = {
-
 		CHI_claire_lee_chennault_air_chief = {
-
 			name = claire_lee_chennault
-
 			picture = CHI_claire_chennault
-
 			available = {
 				has_completed_focus = CHI_hire_chennault
 				NOT = { has_idea = CHI_claire_lee_chennault_air_theorist }
 				NOT = { has_war_with = USA }
 			}
-
 			allowed = {
 				OR = {
 					is_literally_china = yes
@@ -209,41 +145,25 @@ ideas = {
 			}
 			cost = 75
 			traits = { air_chief_ground_support_2 }
-
 			ai_will_do = {
 				factor = 1
 			}
 		}
-
 	}
-
 	navy_chief = {
-
-
 	}
-
 	high_command = {
-
-
 	}
-
-
-
 	theorist = {
-
 		CHI_claire_lee_chennault_air_theorist = {
 			ledger = air
-
 			name = claire_lee_chennault
-
 			picture = CHI_claire_chennault
-
 			available = {
 				has_completed_focus = CHI_hire_chennault
 				NOT = { has_idea = CHI_claire_lee_chennault_air_chief }
 				NOT = { has_war_with = USA }
 			}
-
 			allowed = {
 				OR = {
 					is_literally_china = yes
@@ -255,20 +175,13 @@ ideas = {
 			research_bonus = {
 				air_doctrine = 0.10
 			}
-
 			traits = { air_warfare_theorist }
 		}
-
 	}
-
 	naval_manufacturer = {
-
 		designer = yes
-
 		jiangnan_shipyard_group = {
 			picture = generic_naval_manufacturer_3
-
-
 			allowed = {
 				OR = {
 					is_literally_china = yes
@@ -277,21 +190,14 @@ ideas = {
 				has_dlc = "Waking the Tiger"
 			}
 			cost = 100
-
 			research_bonus = {
 				naval_equipment = 0.15
 			}
-
 			# riverine warfare weak on open waters
-
 			traits = { coastal_defence_naval_manufacturer }
-
 		}
-
 		dagu_shipyard = {
 			picture = generic_naval_manufacturer_3
-
-
 			allowed = {
 				OR = {
 					is_literally_china = yes
@@ -300,26 +206,17 @@ ideas = {
 				has_dlc = "Waking the Tiger"
 			}
 			cost = 100
-
 			research_bonus = {
 				naval_equipment = 0.15
 			}
-
 			# riverine warfare weak on open waters
-
 			traits = { raiding_fleet_naval_manufacturer }
-
 		}
 	}
-
 	materiel_manufacturer = {
-
 		designer = yes
-
 		CHI_taiyuan_arsenal = {
 			picture = generic_artillery_manufacturer_1
-
-
 			allowed = {
 				OR = {
 					is_literally_china = yes
@@ -327,22 +224,13 @@ ideas = {
 				}
 				has_dlc = "Waking the Tiger"
 			}
-
-
 			research_bonus = {
 				artillery = 0.15
 			}
-
-
-
 			traits = { artillery_manufacturer }
-
 		}
-
 		CHI_liaoning_arsenal = {
 			picture = generic_motorized_equipment_manufacturer_1
-
-
 			allowed = {
 				OR = {
 					is_literally_china = yes
@@ -350,19 +238,13 @@ ideas = {
 				}
 				has_dlc = "Waking the Tiger"
 			}
-
-
 			research_bonus = {
 				motorized_equipment = 0.15
 			}
-
 			traits = { motorized_equipment_manufacturer }
-
 		}
 		CHI_mukden_arsenal = {
 			picture = generic_infantry_equipment_manufacturer_2
-
-
 			allowed = {
 				OR = {
 					is_literally_china = yes
@@ -370,25 +252,17 @@ ideas = {
 				}
 				has_dlc = "Waking the Tiger"
 			}
-
 			research_bonus = {
 				infantry_weapons = 0.15
 			}
-
 			#WTT_TODO_CD: a special trait to make more distinct from above somehow?
 			traits = { infantry_equipment_manufacturer }
-
 		}
 	}
-
 	tank_manufacturer = {
-
 		designer = yes
-
 		german_chinese_tank_designer = {
-
 			picture = porsche
-
 			allowed = {
 				has_dlc = "Waking the Tiger"
 				OR = {
@@ -396,7 +270,6 @@ ideas = {
 					tag = MAN
 				}
 			}
-
 			available = {
 				OR = {
 					has_completed_focus = CHI_chinese_panzers
@@ -406,19 +279,14 @@ ideas = {
 					has_war_with = GER
 				}
 			}
-
 			cost = 150
 			removal_cost = 10
-
 			research_bonus = {
 				armor = 0.15
 			}
-
 			traits = { heavy_tank_manufacturer }
-
 			ai_will_do = {
 				factor = 1
-
 				modifier = { # CHI might lose the advisors, don't want the AI wasting PP
 					factor = 0
 					NOT = {
@@ -428,15 +296,10 @@ ideas = {
 			}
 		}
 	}
-
 	aircraft_manufacturer = { #
-
 		designer = yes
-
 		CHI_camco_1 = {
-
 			picture = CHI_camco
-
 			available = {
 				if = {
 					limit = {
@@ -445,7 +308,6 @@ ideas = {
 					has_completed_focus = CHI_camco
 				}
 			}
-
 			allowed = {
 				has_DLC = "Waking the Tiger"
 				OR = {
@@ -453,26 +315,18 @@ ideas = {
 					tag = MAN
 				}
 			}
-
 			research_bonus = {
 				air_equipment = 0.15
 			}
-
 			traits = { medium_aircraft_manufacturer }
-
 			# assembled hawk II and hawk III fighter bombers as well as the Vultee V-11 ground attackers
-
 			ai_will_do = {
 				factor = 1
 			}
 		}
-
 		CHI_camco_2 = {
-
 			cost = 50
-
 			picture = CHI_camco
-
 			available = {
 				if = {
 					limit = {
@@ -481,46 +335,34 @@ ideas = {
 					has_completed_focus = CHI_local_fighter_production
 				}
 			}
-
 			allowed = {
 				has_DLC = "Waking the Tiger"
 				OR = {
 					is_literally_china = yes
 					tag = MAN
 				}
-
 			}
-
 			research_bonus = {
 				air_equipment = 0.15
 			}
-
 			equipment_bonus = {
 				fighter_equipment = {
 					air_agility = 0.05
 					air_attack = 0.1
 				}
 			}
-
 			traits = { medium_aircraft_manufacturer }
-
 			# assembled hawk II and hawk III fighter bombers as well as the Vultee V-11 ground attackers
-
 			ai_will_do = {
 				factor = 1
 			}
 		}
-
 		CHI_camco_3 = {
-
 			picture = CHI_camco
-
 			cost = 50
-
 			available = {
 				has_completed_focus = CHI_local_bomber_production
 			}
-
 			allowed = {
 				has_DLC = "Waking the Tiger"
 				OR = {
@@ -528,7 +370,6 @@ ideas = {
 					tag = MAN
 				}
 			}
-
 			equipment_bonus = {
 				fighter_equipment = {
 					air_agility = 0.05
@@ -543,15 +384,11 @@ ideas = {
 					air_ground_attack = 0.1
 				}
 			}
-
 			research_bonus = {
 				air_equipment = 0.15
 			}
-
 			traits = { medium_aircraft_manufacturer }
-
 			# assembled hawk II and hawk III fighter bombers as well as the Vultee V-11 ground attackers
-
 			ai_will_do = {
 				factor = 1
 			}
@@ -559,9 +396,7 @@ ideas = {
 	}
 	industrial_concern = {
 		MAN_showa_steel_works = {
-
 			picture = generic_industrial_concern_1
-
 			allowed = {
 				has_dlc = "Waking the Tiger"
 				OR = {
@@ -569,23 +404,18 @@ ideas = {
 					is_literally_china = yes
 				}
 			}
-
 			research_bonus = {
 				industry = 0.15
 			}
-
 			traits = {
 				industrial_concern
 			}
-
 			ai_will_do = {
 				factor = 1
 			}
 		}
-
 		MAN_western_refinery = {
 			picture = generic_refining_concern_1
-
 			allowed = {
 				has_DLC = "Waking the Tiger"
 				OR = {
@@ -593,26 +423,18 @@ ideas = {
 					is_literally_china = yes
 				}
 			}
-
 			research_bonus = {
 				industry = 0.1
 				synth_resources = 0.15
 			}
-
 			traits = { refinery_concern }
-
 			# assembled hawk II and hawk III fighter bombers as well as the Vultee V-11 ground attackers
-
 			ai_will_do = {
 				factor = 1
 			}
-
 		}
-
 		shanghai_electronics = {
-
 			picture = generic_electronics_concern_1
-
 			allowed = {
 				has_DLC = "Waking the Tiger"
 				OR = {
@@ -620,16 +442,12 @@ ideas = {
 					is_literally_china = yes
 				}
 			}
-
 			research_bonus = {
 				electronics = 0.15
 			}
-
 			traits = { electronics_concern }
-
 			ai_will_do = {
 				factor = 1
-
 				modifier = { # AI is likely to lose access to this state and waste the PP
 					factor = 0
 					OR = {
@@ -641,3 +459,4 @@ ideas = {
 		}
 	}
 }
+

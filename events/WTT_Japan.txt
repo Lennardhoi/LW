@@ -23,7 +23,7 @@ country_event = {
 						is_fully_controlled_by = FRA
 					}
 				}
-				FROM = { transfer_state = 670 }
+				FROM = { transfer_state = 589 }
 			}
 			if = {
 				limit = {
@@ -31,7 +31,7 @@ country_event = {
 						is_fully_controlled_by = FRA
 					}
 				}
-				FROM = { transfer_state = 671 }
+				FROM = { transfer_state = 590 }
 			}
 			if = {
 				limit = {
@@ -39,7 +39,7 @@ country_event = {
 						is_fully_controlled_by = FRA
 					}
 				}
-				FROM = { transfer_state = 286 }
+				FROM = { transfer_state = 274 }
 			}
 			if = {
 				limit = {
@@ -47,7 +47,7 @@ country_event = {
 						is_fully_controlled_by = FRA
 					}
 				}
-				FROM = { transfer_state = 741 }
+				FROM = { transfer_state = 659 }
 			}
 		}
 		FROM = { country_event = { id = wtt_japan.2 days = 1 } }
@@ -86,20 +86,20 @@ country_event = {
 				limit = { FROM = { tag = FRA } }
 				if = {
 					limit = { 589 = { is_fully_controlled_by = ROOT } }
-					transfer_state = 670
+					transfer_state = 589
 				}
 				if = {
 					limit = { 590 = { is_fully_controlled_by = ROOT } }
-					transfer_state = 671
+					transfer_state = 590
 				}
 				if = {
 					limit = { 274 = { is_fully_controlled_by = ROOT } }
-					transfer_state = 286
+					transfer_state = 274
 				}
 				if = {
 					limit = { 659 = { is_fully_controlled_by = ROOT }
 					}
-					transfer_state = 741
+					transfer_state = 659
 				}
 			}
 			hidden_effect = {
@@ -196,7 +196,7 @@ country_event = {
 				controls_state = 534
 			}
 			FROM = {
-				transfer_state = 610
+				transfer_state = 534
 			}
 		}
 		if = {
@@ -204,7 +204,7 @@ country_event = {
 				controls_state = 533
 			}
 			FROM = {
-				transfer_state = 609
+				transfer_state = 533
 			}
 		}
 		if = {
@@ -212,7 +212,7 @@ country_event = {
 				controls_state = 634
 			}
 			FROM = {
-				transfer_state = 716
+				transfer_state = 634
 			}
 		}
 		if = {
@@ -220,7 +220,7 @@ country_event = {
 				controls_state = 663
 			}
 			FROM = {
-				transfer_state = 745
+				transfer_state = 663
 			}
 		}
 		if = {
@@ -228,7 +228,7 @@ country_event = {
 				controls_state = 295
 			}
 			FROM = {
-				transfer_state = 328
+				transfer_state = 295
 			}
 		}
 		if = {
@@ -236,7 +236,7 @@ country_event = {
 				controls_state = 635
 			}
 			FROM = {
-				transfer_state = 717
+				transfer_state = 635
 			}
 		}
 		if = {
@@ -244,7 +244,7 @@ country_event = {
 				controls_state = 632
 			}
 			FROM = {
-				transfer_state = 714
+				transfer_state = 632
 			}
 		}
 		if = {
@@ -252,7 +252,7 @@ country_event = {
 				controls_state = 633
 			}
 			FROM = {
-				transfer_state = 715
+				transfer_state = 633
 			}
 		}
 		if = {
@@ -260,7 +260,7 @@ country_event = {
 				controls_state = 675
 			}
 			FROM = {
-				transfer_state = 761
+				transfer_state = 675
 			}
 		}
 		if = {
@@ -268,7 +268,7 @@ country_event = {
 				controls_state = 535
 			}
 			FROM = {
-				transfer_state = 611
+				transfer_state = 535
 			}
 		}
 		if = {
@@ -276,7 +276,7 @@ country_event = {
 				controls_state = 536
 			}
 			FROM = {
-				transfer_state = 612
+				transfer_state = 536
 			}
 		}
 	}
