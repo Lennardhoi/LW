@@ -217,7 +217,7 @@ NDefines.NMilitary.LAND_COMBAT_COLLATERAL_FACTOR = 0.003 -- vanilla is 0.005
 NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.04    -- air global damage modifier
 NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.025    -- global damage modifier
 NDefines.NNavy.AMPHIBIOUS_LANDING_PENALTY = -0.75 --vanilla 
-	
+--NDefines.NMilitary.PEN_VS_AVERAGE = 0.4 --vanilla 0.4
 NDefines.NMilitary.UNIT_EXP_LEVELS = { 0.2, 0.3, 0.4, 0.6 }
 NDefines.NMilitary.HOURLY_ORG_MOVEMENT_IMPACT = -0.15
 NDefines.NMilitary.ZERO_ORG_MOVEMENT_MODIFIER = -0.6

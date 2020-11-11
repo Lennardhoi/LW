@@ -26,7 +26,7 @@ sub_units = {
 		}
 
 		combat_width = 2
-
+		breakthrough = -0.1
 		#Size Definitions
 		max_strength = 25
 		max_organisation = 60
@@ -85,7 +85,7 @@ sub_units = {
 		initiative = 0.007
 		supply_consumption = 0.08
 		supply_consumption_factor=-0.01
-		breakthrough = 0.3
+		breakthrough = 0.2
 
 		need = {
 			infantry_equipment = 250
@@ -142,7 +142,7 @@ sub_units = {
 		initiative = 0.007
 		supply_consumption = 0.08
 		supply_consumption_factor=-0.01
-		breakthrough = 0.3
+		breakthrough = 0.2
 
 		need = {
 			infantry_equipment = 250
@@ -201,7 +201,7 @@ sub_units = {
 		initiative = 0.007
 		supply_consumption = 0.08
 		supply_consumption_factor=-0.01
-		breakthrough = 0.36
+		breakthrough = 0.25
 		need = {
 			infantry_equipment = 250
 		}
@@ -256,7 +256,7 @@ sub_units = {
 		initiative = 0.007
 		supply_consumption = 0.08
 		supply_consumption_factor=-0.01
-		breakthrough = 0.3
+		breakthrough = 0.2
 
 		need = {
 			infantry_equipment = 250
@@ -380,7 +380,7 @@ sub_units = {
 		initiative = 0.007
 		supply_consumption = 0.08
 		supply_consumption_factor=-0.01
-		breakthrough = 0.3
+		breakthrough = 0.2
 
 		need = {
 			infantry_equipment = 300
@@ -442,8 +442,7 @@ sub_units = {
 		initiative = 0.007
 		supply_consumption = 0.08
 		supply_consumption_factor=-0.01
-		breakthrough = 0.3
-
+		breakthrough = 0.2
 		need = {
 			infantry_equipment = 250
 		}
@@ -500,9 +499,9 @@ sub_units = {
 		initiative = 0.007
 		supply_consumption = 0.07
 		supply_consumption_factor=-0.01
-		can_be_parachuted = yes
+		can_be_parachuted = no
 		need = {
-			infantry_equipment = 200
+			infantry_equipment = 150
 		}
 	}
 
