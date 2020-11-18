@@ -1,5 +1,20 @@
 ideas = {
 	hidden_ideas = {
+		
+		ITA_production_boost = {
+			removal_cost = -1
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = generic_morale_bonus
+			modifier = {
+				industrial_capacity_factory=1
+			}
+			
+		}
 		ITA_retention = {
 			allowed = {
 				always = no
@@ -281,7 +296,7 @@ ideas = {
 				original_tag = "ITA"
 			}
 			picture = generic_navy_europe_3
-			traits = { quartermaster_general }
+			traits = { quartermaster_general fortification_engineer }
 			on_add = {
 			}
 			ai_will_do = {

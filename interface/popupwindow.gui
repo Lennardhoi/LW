@@ -1475,12 +1475,18 @@ guiTypes = {
 		fade_time = 200
 		fade_type = linear
 		click_to_front = yes
-		
+		clipping=no
 		background = {
 			name = "Background"
 			quadTextureSprite ="GFX_pol_goal_popup_bg"
 		}
 		
+		iconType = {
+			name ="background2"
+			spriteType = "GFX_pol_goal_popup_bg2"
+			centerposition = yes
+			orientation= center
+		}
 		instantTextBoxType = {
 			name = "title"
 			position = { x = 10 y = 16 }

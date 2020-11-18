@@ -32,10 +32,7 @@ country_event = {
 					}
 				}
 				GER={
-					set_state_owner=PREV
-					if = {limit={is_controlled_by_ROOT_or_ally=yes}
-						set_state_controller=PREV
-					}
+					transfer_state=PREV
 				}
 			}
 			if={limit={tag=DEN}USA = { transfer_state = 101}
@@ -61,7 +58,7 @@ country_event = {
 						local_building_slots_factor = 0.5
 					}
 				}
-				GER={set_state_owner=PREV}}
+				GER={transfer_state=PREV}}
 			FRA={annex_country={target=ROOT transfer_troops=yes}
 				set_state_controller=465
 				set_state_controller=636
@@ -81,7 +78,7 @@ country_event = {
 						local_building_slots_factor = 0.5
 					}
 				}
-				GER={set_state_owner=PREV}}
+				GER={transfer_state=PREV}}
 			ENG={annex_country={target=ROOT transfer_troops=yes}}
 		}
 	}

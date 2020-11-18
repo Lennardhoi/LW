@@ -160,11 +160,22 @@ country_event = {
 	desc = italy.9.d
 	picture = GFX_report_event_merchant_ship_01
 	is_triggered_only = yes
+	immediate = {
+		173 = {
+			set_building_level= {
+				type = anti_air_building
+				level = 5
+				instant_build = yes
+			}
+		}
+	}
 	option = {
 		name = italy.9.a
 		country_event = { id = italy.10 }
 		effect_tooltip = {
 			ITA = { transfer_state = 173 }
+
+
 			remove_opinion_modifier = { target = ITA modifier = ita_supported_spain_civil_war }
 		}
 		hidden_effect = {
@@ -181,6 +192,14 @@ country_event = {
 	option = {
 		name = italy.10.a
 		ITA = { transfer_state = 173 }
+		173 = {
+			set_demilitarized_zone = no
+			set_building_level= {
+				type = anti_air_building
+				level = 5
+				instant_build = yes
+			}
+		}
 		remove_opinion_modifier = { target = ITA modifier = ita_supported_spain_civil_war }
 	}
 }

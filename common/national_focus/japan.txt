@@ -210,7 +210,7 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
 		completion_reward = {
-		
+
 			if={limit={country_exists = MAN}
 				MAN={add_ideas=wartime_economy
 					add_ideas=closed_economy}
@@ -231,36 +231,36 @@ focus_tree = {
 				}
 				add_compliance = 20
 			}
-		    hidden_effect = {
+			hidden_effect = {
 
 				SOV = { army_experience = 200}
-				USA = { 
+				USA = {
 					army_experience = 100
 					air_experience = 200}
-				ENG = { 
+				ENG = {
 					army_experience = 100
 					air_experience = 200}
-				AST = { 
+				AST = {
 					army_experience = 100
 				}
 				SAF = {
 					army_experience = 100
 				}
-				CAN = { 
+				CAN = {
 					army_experience = 100
 				}
-				NZL = { 
+				NZL = {
 					army_experience = 100
 				}
-				RAJ = { 
+				RAJ = {
 					army_experience = 100
 				}
-				FRA = { 
+				FRA = {
 					army_experience = 100
 				}
 				GER = {
 					army_experience = 100
-			    }
+				}
 				ITA = {
 					army_experience = 100
 				}
@@ -276,7 +276,7 @@ focus_tree = {
 				ROM = {
 					army_experience = 100
 				}
-				
+
 			}
 		}
 	}

@@ -23,7 +23,7 @@ NDefines.NTechnology.MAX_SUBTECHS = 4
 NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 6
 NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 300
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 100
-NDefines.NGame.GAME_SPEED_SECONDS = { 2.0, 0.5, 0.2, 0.05, 0  } -- game speeds for each level. Must be 5 entries with last one 0 for unbound
+NDefines.NGame.GAME_SPEED_SECONDS = { 2.0, 0.5, 0.2, 0.04, 0  } -- game speeds for each level. Must be 5 entries with last one 0 for unbound
  -- game speeds for each level. Must be 5 entries with last one 0 for unbound
 
 
@@ -265,12 +265,13 @@ NDefines.NNavy.CONVOY_DEFENSE_MAX_CONVOY_TO_SHIP_RATIO = 20
 NDefines.NNavy.ADMIRAL_TASKFORCE_CAP = 20		
 -------------------------------------
 --Air changes
+NDefines.NAir.CAPACITY_PENALTY=0.869
 NDefines.NAir.CAS_NIGHT_ATTACK_FACTOR = 0.5
 NDefines.NAir.AIR_WING_FLIGHT_SPEED_MULT = 0.2 --makes redeployement of fighters faster vanilla is 0.02 
 NDefines.NAir.COMBAT_MULTIPLANE_CAP = 2                          --vanilla 3
 NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.04			--0.11 prev			-- Vanilla 0,10
 NDefines.NAir.DISRUPTION_FACTOR = 5
-NDefines.NAir.ESCORT_FACTOR = 2.5 		
+NDefines.NAir.ESCORT_FACTOR = 5  --2.5		
 NDefines.NAir.FIELD_EXPERIENCE_SCALE = 0.002 --0.001 in vanilla
 NDefines.NAir.FIELD_EXPERIENCE_MAX_PER_DAY = 3 --2 in vanilla
 NDefines.NAir.BOMBING_TARGETING_RANDOM_FACTOR = 0.75  --0.001 in vanilla
