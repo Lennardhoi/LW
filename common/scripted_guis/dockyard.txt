@@ -12,9 +12,9 @@ scripted_gui = {
 
 		effects = {
 			remove_dockyard_click = {
-				remove_building = {
-					type = dockyard
-					level = 1
+				if= {
+				limit={any_owned_state
+				}
 				}
 			}
 		}

@@ -19,7 +19,17 @@ technologies = {
 			leads_to_tech = dispersed_industry
 			research_cost_coeff = 1
 		}
-
+		on_research_complete = {
+			meta_effect = {
+				text = {
+					set_global_flag = [TAG]_basic_machine_tools
+							
+					
+				}
+				TAG = "[This.GetTAG]"
+			}
+			
+		}
 		research_cost = 1.5
 		start_year = 1936
 		categories = {
@@ -59,7 +69,17 @@ technologies = {
 		categories = {
 			year_1937
 		}
-
+		on_research_complete = {
+			meta_effect = {
+				text = {
+					set_global_flag = [TAG]_improved_machine_tools
+							
+					
+				}
+				TAG = "[This.GetTAG]"
+			}
+			
+		}
 		folder = {
 			name = industry_folder
 			position = { x = 0 y = 4 }
@@ -93,7 +113,17 @@ technologies = {
 		categories = {
 			year_1939
 		}
-
+		on_research_complete = {
+			meta_effect = {
+				text = {
+					set_global_flag = [TAG]_advanced_machine_tools
+							
+					
+				}
+				TAG = "[This.GetTAG]"
+			}
+			
+		}
 		folder = {
 			name = industry_folder
 			position = { x = 0 y = 6 }
@@ -132,7 +162,17 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-
+		on_research_complete = {
+			meta_effect = {
+				text = {
+					set_global_flag = [TAG]_assembly_line_production
+							
+					
+				}
+				TAG = "[This.GetTAG]"
+			}
+			
+		}
 		research_cost = 2
 		start_year = 1941
 		categories = {
@@ -312,7 +352,17 @@ technologies = {
 		}
 
 		research_cost = 2
-
+		on_research_complete = {
+			meta_effect = {
+				text = {
+					set_global_flag = [TAG]_concentrated_industry
+							
+					
+				}
+				TAG = "[This.GetTAG]"
+			}
+			
+		}
 		XOR = {
 			dispersed_industry
 		}
@@ -392,7 +442,17 @@ technologies = {
 			name = industry_folder
 			position = { x = 4 y = 4 }
 		}
-
+		on_research_complete = {
+			meta_effect = {
+				text = {
+					set_global_flag = [TAG]_concentrated_industry2
+							
+					
+				}
+				TAG = "[This.GetTAG]"
+			}
+			
+		}
 		ai_will_do = {
 			factor = 20
 
@@ -429,7 +489,17 @@ technologies = {
 		categories = {
 			year_1939
 		}
-
+		on_research_complete = {
+			meta_effect = {
+				text = {
+					set_global_flag = [TAG]_concentrated_industry3
+							
+					
+				}
+				TAG = "[This.GetTAG]"
+			}
+			
+		}
 		folder = {
 			name = industry_folder
 			position = { x = 4 y = 6 }
@@ -475,7 +545,17 @@ technologies = {
 			name = industry_folder
 			position = { x = 4 y = 8 }
 		}
-
+		on_research_complete = {
+			meta_effect = {
+				text = {
+					set_global_flag = [TAG]_concentrated_industry4
+							
+					
+				}
+				TAG = "[This.GetTAG]"
+			}
+			
+		}
 		ai_will_do = {
 			factor = 15
 
@@ -508,7 +588,17 @@ technologies = {
 			name = industry_folder
 			position = { x = 4 y = 10 }
 		}
-
+		on_research_complete = {
+			meta_effect = {
+				text = {
+					set_global_flag = [TAG]_concentrated_industry5
+							
+					
+				}
+				TAG = "[This.GetTAG]"
+			}
+			
+		}
 		ai_will_do = {
 			factor = 4
 
@@ -558,7 +648,17 @@ technologies = {
 			name = industry_folder
 			position = { x = 6 y = 2 }
 		}
-
+		on_research_complete = {
+			meta_effect = {
+				text = {
+					set_global_flag = [TAG]_dispersed_industry
+							
+					
+				}
+				TAG = "[This.GetTAG]"
+			}
+			
+		}
 		ai_will_do = {
 			factor = 25
 
@@ -627,7 +727,17 @@ technologies = {
 		categories = {
 			year_1937
 		}
-
+		on_research_complete = {
+			meta_effect = {
+				text = {
+					set_global_flag = [TAG]_dispersed_industry2
+							
+					
+				}
+				TAG = "[This.GetTAG]"
+			}
+			
+		}
 		folder = {
 			name = industry_folder
 			position = { x = 6 y = 4 }
@@ -671,7 +781,17 @@ technologies = {
 		categories = {
 			year_1939
 		}
-
+		on_research_complete = {
+			meta_effect = {
+				text = {
+					set_global_flag = [TAG]_dispersed_industry3
+							
+					
+				}
+				TAG = "[This.GetTAG]"
+			}
+			
+		}
 		folder = {
 			name = industry_folder
 			position = { x = 6 y = 6 }
@@ -708,6 +828,17 @@ technologies = {
 		path = {
 			leads_to_tech = dispersed_industry5
 			research_cost_coeff = 1
+		}
+		on_research_complete = {
+			meta_effect = {
+				text = {
+					set_global_flag = [TAG]_dispersed_industry4
+							
+					
+				}
+				TAG = "[This.GetTAG]"
+			}
+			
 		}
 
 		research_cost = 2
@@ -767,7 +898,17 @@ technologies = {
 				date > "1943.1.1"
 			}
 		}
-
+		on_research_complete = {
+			meta_effect = {
+				text = {
+					set_global_flag = [TAG]_dispersed_industry5
+							
+					
+				}
+				TAG = "[This.GetTAG]"
+			}
+			
+		}
 		categories = {
 			industry
 			dispersed_industry_category
@@ -1286,7 +1427,7 @@ technologies = {
 			leads_to_tech = advanced_rubber_processing
 			research_cost_coeff = 1
 		}
-
+		
 		research_cost = 1.5
 		start_year = 1939
 		categories = {
@@ -1456,7 +1597,17 @@ technologies = {
 			leads_to_tech = excavation1
 			research_cost_coeff = 1
 		}
-
+		on_research_complete = {
+			meta_effect = {
+				text = {
+					set_global_flag = [TAG]_construction1
+							
+					
+				}
+				TAG = "[This.GetTAG]"
+			}
+			
+		}
 		research_cost = 2
 		start_year = 1936
 		categories = {
@@ -1556,7 +1707,17 @@ technologies = {
 			industry
 			construction_tech
 		}
-
+		on_research_complete = {
+			meta_effect = {
+				text = {
+					set_global_flag = [TAG]_construction2
+							
+					
+				}
+				TAG = "[This.GetTAG]"
+			}
+			
+		}
 		folder = {
 			name = industry_folder
 			position = { x = 0 y = 2 }
@@ -1646,7 +1807,17 @@ technologies = {
 		categories = {
 			year_1939
 		}
-
+		on_research_complete = {
+			meta_effect = {
+				text = {
+					set_global_flag = [TAG]_construction3
+							
+					
+				}
+				TAG = "[This.GetTAG]"
+			}
+			
+		}
 		categories = {
 			industry
 			construction_tech
@@ -1677,7 +1848,7 @@ technologies = {
 		}
 	}
 
-
+	
 	excavation3 = {
 
 		local_resources_factor = 0.10
@@ -1745,7 +1916,17 @@ technologies = {
 			leads_to_tech = excavation4
 			research_cost_coeff = 1
 		}
-
+		on_research_complete = {
+			meta_effect = {
+				text = {
+					set_global_flag = [TAG]_construction4
+							
+					
+				}
+				TAG = "[This.GetTAG]"
+			}
+			
+		}
 		research_cost = 2
 		start_year = 1941
 		categories = {
@@ -1785,7 +1966,7 @@ technologies = {
 		categories = {
 			year_1941
 		}
-
+		
 		categories = {
 			industry
 			construction_tech
@@ -1839,7 +2020,17 @@ technologies = {
 
 		research_cost = 2
 		start_year = 1943
-
+		on_research_complete = {
+			meta_effect = {
+				text = {
+					set_global_flag = [TAG]_construction5
+							
+					
+				}
+				TAG = "[This.GetTAG]"
+			}
+			
+		}
 		categories = {
 			industry
 			construction_tech

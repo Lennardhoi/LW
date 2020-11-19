@@ -2548,6 +2548,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			unlock_decision_tooltip=GER_fall_weiss
+			remove_resource_rights = 122 
 			hidden_effect = {
 				POL = {
 					country_event = { id = germany.86 }
@@ -2565,16 +2566,7 @@ focus_tree = {
 				SOV = { add_ideas = war_in_our_neigbour }
 				JAP = { add_ideas = war_in_our_neigbour }
 				army_experience=70
-				add_resource = {
-					type=rubber
-					amount=-30
-					state=64
-				}
-				add_resource = {
-					type=tungsten
-					amount=-50
-					state=64
-				}
+				
 			}
 			hidden_effect = {
 				ENG = {

@@ -39,6 +39,7 @@ on_actions = {
 			}}
 	on_startup={
 		effect{
+			SWE = {give_resource_rights = {receiver = GER state = 122}}
 			116 = {add_province_modifier = {  static_modifiers = { dont_take_gibraltar }
 					province = {
 						all_provinces = yes
