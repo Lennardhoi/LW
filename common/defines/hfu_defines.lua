@@ -237,7 +237,7 @@ NDefines.NCountry.VP_TO_SUPPLY_BASE = 0
 NDefines.NCountry.VP_TO_SUPPLY_BONUS_CONVERSION = 1
 NDefines.NCountry.SUPPLY_FROM_DAMAGED_INFRA = 0.8
 NDefines.NCountry.SUPPLY_PATH_MAX_DISTANCE = 8
-
+NDefines.NCountry.BASE_MOBILIZATION_SPEED = 0.02
 --NDefines.NCountry.SUPPLY_BONUS_FROM_INPUT = 0 --not sure yet
 --Halving overall fuel
 NDefines.NMilitary.ARMY_FUEL_COST_MULT = 0.2 --0.5
