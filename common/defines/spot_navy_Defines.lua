@@ -108,6 +108,7 @@ NDefines.NNavy.SUPREMACY_PER_SHIP_BASE = 15.0
 NDefines.NNavy.SUPPLY_NEED_FACTOR = 0
 
 ---Air
+NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO = 0.02 -- vanilla 0.05
 NDefines.NAir.COMBAT_DAMAGE_SCALE_CARRIER = 0.1    -- same as above but used inside naval combat for carrier battles
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_STR = 1.0
 NDefines.NAir.NAVAL_KAMIKAZE_DAMAGE_MULT = 5.0  -- vanilla is like 20

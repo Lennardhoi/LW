@@ -1199,7 +1199,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
-			add_ideas = militarism_focus
+			#add_ideas = militarism_focus
 			add_tech_bonus = {
 				name = HUN_home_defense
 				bonus = 1.0
@@ -1353,7 +1353,8 @@ focus_tree = {
 					}
 				}
 			}
-			hidden_effect = { set_technology = { HUN_light_infantry_tech = 1 } }
+			hidden_effect = { set_technology = { HUN_light_infantry_tech = 1 } 
+			}
 		}
 	}
 	focus = {
