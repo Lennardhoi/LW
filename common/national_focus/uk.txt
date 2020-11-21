@@ -205,7 +205,7 @@ focus_tree = {
 		x = -4
 		y = 1
 		relative_position_id = limited_rearmament_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -287,7 +287,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = air_defense_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -424,7 +424,6 @@ focus_tree = {
 		}
 		prerequisite = { focus = uk_industrial_focus }
 		icon = GFX_goal_generic_construct_mil_factory
-		mutually_exclusive = {focus = royal_navy_focus}
 		x = -1
 		y = 2
 		relative_position_id = uk_industrial_focus
@@ -482,7 +481,6 @@ focus_tree = {
 		}
 		prerequisite = { focus = uk_industrial_focus }
 		icon = GFX_goal_generic_construct_naval_dockyard
-		mutually_exclusive = {focus = royal_ordinance_focus }
 		x = 1
 		y = 2
 		relative_position_id = uk_industrial_focus
