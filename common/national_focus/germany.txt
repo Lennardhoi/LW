@@ -2902,6 +2902,7 @@ focus_tree = {
 		icon = GFX_focus_ger_final_crusade
 		available = {
 			NOT = {has_idea = GER_barbarossa}
+			has_war_with = SOV
 		}
 		relative_position_id = GER_moscow
 		x = -1
@@ -2927,6 +2928,7 @@ focus_tree = {
 		icon = GFX_focus_GER_winter_of_1941
 		available = {
 			NOT = {has_idea = GER_barbarossa}
+			has_war_with = SOV
 		}
 		relative_position_id = GER_moscow
 		x = 1

@@ -910,6 +910,7 @@ focus_tree = {
 		icon = GFX_focus_ENG_brittania
 		x = 1
 		y = 2
+		available = {date > 1940.1.1}
 		relative_position_id = naval_rearmament_focus
 		cost = 5
 		ai_will_do = {
@@ -917,12 +918,7 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-			add_tech_bonus = {
-				name = uk_waves_focus
-				bonus = 1.0
-				uses = 3
-				category = naval_doctrine
-			}
+			add_timed_idea = {idea = britannia_rules_the_waves days = 60}
 		}
 	}
 	focus = {
@@ -1341,6 +1337,12 @@ focus_tree = {
 		cost = 5
 		completion_reward = {
 			476 = {
+			    set_building_level = {
+					type = naval_base
+					level = 20
+					province =11524
+					instant_build = yes
+				}
 				set_building_level = {
 					type = infrastructure
 					level = 10
@@ -1348,7 +1350,7 @@ focus_tree = {
 				}
 				set_building_level = {
 					type = air_base
-					level = 40
+					level = 20
 					instant_build = yes
 				}
 			}
