@@ -1,4 +1,33 @@
 foreign_politics = {
+	ENG_annex_saf = {
+		icon = generic_operation
+		available = {
+			SAF = { is_ai = yes }
+			date>1939.1.1
+		}
+		allowed = {
+			tag = ENG
+		}
+		cost = 0
+		visible = {
+			SAF= { is_ai = yes }
+		}
+		fire_only_once = yes
+		complete_effect = {
+			SAF = {
+				every_owned_state={
+					limit={is_core_of=PREV}
+					add_core_of = ENG
+				}
+			}
+			ENG = {
+				annex_country = {
+					target = SAF
+					transfer_troops = yes
+				}
+			}
+		}
+	}
 	ENG_get_chromium = {
 		icon = generic_operation
 		allowed = {

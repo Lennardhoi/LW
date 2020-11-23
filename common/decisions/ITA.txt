@@ -5,7 +5,7 @@ operations = {
 		allowed = { tag = ITA }
 		available = { has_completed_focus = ITA_greece_war_goal}
 		cost = 0
-		days_remove = 30
+		days_remove = 20
 		complete_effect = {
 			effect_tooltip = {
 				declare_war_on = {
@@ -128,14 +128,14 @@ foreign_politics = {
 			hidden_effect={clr_country_flag=ll_enabled}
 		}
 	}
-	ITA_annex_bul = {
+	ROM_annex_bul = {
 		icon = generic_operation
 		available = {
 			BUL = { is_ai = yes }
 			date>1939.1.1
 		}
 		allowed = {
-			tag = ROM
+			tag = GER
 		}
 		cost = 0
 		visible = {
@@ -150,6 +150,29 @@ foreign_politics = {
 				}
 			}
 			ROM = {
+				annex_country = {
+					target = BUL
+					transfer_troops = yes
+				}
+			}
+		}
+	}
+	GER_annex_bul = {
+		icon = generic_operation
+		available = {
+			BUL = { is_ai = yes }
+			date>1939.1.1
+		}
+		allowed = {
+			tag = GER
+		}
+		cost = 0
+		visible = {
+			BUL = { is_ai = yes }
+		}
+		fire_only_once = yes
+		complete_effect = {
+			GER = {
 				annex_country = {
 					target = BUL
 					transfer_troops = yes
