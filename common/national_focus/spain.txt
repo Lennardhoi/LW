@@ -213,7 +213,7 @@ focus_tree = {
 		x = -5
 		y = 1
 		relative_position_id = SPA_fuse_the_parties
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		complete_tooltip = {
 		}
@@ -393,7 +393,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = SPA_an_armored_corps
 				bonus = 1.0
-				uses = 2
+				uses = 3
 				category = armor
 			}
 		}
@@ -401,9 +401,7 @@ focus_tree = {
 	focus = {
 		id = SPA_national_recovery
 		available = {
-			NOT = {
-				has_idea = SPA_civil_war
-			}
+			date>1937.1.1
 		}
 		bypass = {
 		}
@@ -412,7 +410,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SPA_fuse_the_parties
-		cost = 10
+		cost = 15
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		complete_tooltip = {
@@ -784,6 +782,21 @@ focus_tree = {
 				uses = 2
 				category = synth_resources
 			}
+			
+			41 = {
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 3
+					instant_build = yes
+				}
+			}
+			707 = {
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 3
+					instant_build = yes
+				}
+			}
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -947,6 +960,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
 			remove_ideas = SPA_recovering_from_civil_war_3
+			add_ideas = SPA_the_duty_to_work
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -1155,15 +1169,6 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					NOT = {
-						has_idea = war_economy
-						has_idea = tot_economic_mobilisation
-					}
-				}
-				add_ideas = war_economy
-			}
-			if = {
-				limit = {
 					has_idea = limited_conscription
 				}
 				add_ideas = extensive_conscription
@@ -1174,22 +1179,12 @@ focus_tree = {
 				}
 				add_ideas = limited_conscription
 			}
-			every_owned_state = {
-				limit = {
-					OR = {
-						state = 161
-						state = 167
-						state = 706
-					}
-				}
-				remove_dynamic_modifier = { modifier = autonomous_state }
-			}
 		}
 	}
 	focus = {
 		id = SPA_direct_the_universities
 		available = {
-			num_of_factories > 50
+			num_of_factories > 40
 		}
 		bypass = {
 		}

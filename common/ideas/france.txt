@@ -34,13 +34,21 @@ ideas = {
 			picture = generic_production_bonus
 			allowed = {
 				original_tag = FRA
+				
 			}
+			available={amount_manpower_in_deployment_queue > 10}
 			cancel={NOT={amount_manpower_in_deployment_queue > 10}}
 			allowed_civil_war = {
 				tag = FRA #stays with main country
 			}
 			removal_cost = -1
-			on_remove={set_equipment_fraction = 0}
+			on_remove={set_equipment_fraction = 0
+			every_country = {
+			FRA= { delete_unit = { 
+           		 state = PREV             
+             		disband = no #will refund equipment and manpower
+             		 }}}
+			}
 			modifier = {
 				industrial_capacity_factory = -0.5
 				consumer_goods_factor = 0.5
@@ -1516,6 +1524,7 @@ ideas = {
 			ledger = army
 			allowed = {
 				original_tag = FRA
+				
 			}
 			traits = { army_armored_2 }
 			ai_will_do = {
