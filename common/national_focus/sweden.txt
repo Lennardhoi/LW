@@ -8,12 +8,14 @@ focus_tree = {
 		}
 	}
 	default = no
+	
 	focus = {
 		id = NDA_anti_meme
 		icon = GFX_goal_generic_consumer_goods
 		x = 10
 		y = 0
-		cost =52
+		cost =0
+		
 		available_if_capitulated = yes
 		completion_reward = {
 			hidden_effect = {
@@ -23,6 +25,40 @@ focus_tree = {
 						target = SOV
 						modifier = anti_cross_faction_trade
 					}
+				}
+			}
+			
+			every_country={
+				limit={is_playable_country=yes}
+				add_ideas=research_36
+			}
+		}
+	}
+	focus = {
+		id = NDA_anti_meme2
+		icon = GFX_goal_generic_consumer_goods
+		x = 0
+		y = 1
+		cost =52
+		prerequisite = { focus = NDA_anti_meme }
+		relative_position_id = NDA_anti_meme
+		available_if_capitulated = yes
+		completion_reward = {
+			hidden_effect = {
+				anti_cross_faction_trade_all = yes
+				SPR = {
+					add_opinion_modifier = {
+						target = SOV
+						modifier = anti_cross_faction_trade
+					}
+				}
+			}
+			
+			every_country={
+				limit={is_playable_country=yes}
+				swap_ideas={
+					remove_idea = research_36
+					add_idea = research_37
 				}
 			}
 			every_country={
@@ -37,8 +73,8 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 52.2
-		prerequisite = { focus = NDA_anti_meme }
-		relative_position_id = NDA_anti_meme
+		prerequisite = { focus = NDA_anti_meme2 }
+		relative_position_id = NDA_anti_meme2
 		available_if_capitulated = yes
 		completion_reward = {
 			every_country={
