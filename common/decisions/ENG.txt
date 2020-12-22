@@ -28,6 +28,96 @@ foreign_politics = {
 			}
 		}
 	}
+	
+	ENG_annex_ast = {
+		icon = generic_operation
+		available = {
+			SAF = { is_ai = yes }
+			date>1939.1.1
+		}
+		allowed = {
+			tag = ENG
+		}
+		cost = 0
+		visible = {
+			AST= { is_ai = yes }
+		}
+		fire_only_once = yes
+		complete_effect = {
+			AST = {
+				every_owned_state={
+					limit={is_core_of=PREV}
+					add_core_of = ENG
+				}
+			}
+			ENG = {
+				annex_country = {
+					target = AST
+					transfer_troops = yes
+				}
+			}
+		}
+	}
+	
+	ENG_annex_can = {
+		icon = generic_operation
+		available = {
+			SAF = { is_ai = yes }
+			date>1939.1.1
+		}
+		allowed = {
+			tag = ENG
+		}
+		cost = 0
+		visible = {
+			CAN= { is_ai = yes }
+		}
+		fire_only_once = yes
+		complete_effect = {
+			CAN = {
+				every_owned_state={
+					limit={is_core_of=PREV}
+					add_core_of = ENG
+				}
+			}
+			ENG = {
+				annex_country = {
+					target = CAN
+					transfer_troops = yes
+				}
+			}
+		}
+	}
+	
+	ENG_annex_nzl = {
+		icon = generic_operation
+		available = {
+			SAF = { is_ai = yes }
+			date>1939.1.1
+		}
+		allowed = {
+			tag = ENG
+		}
+		cost = 0
+		visible = {
+			NZL= { is_ai = yes }
+		}
+		fire_only_once = yes
+		complete_effect = {
+			NZL = {
+				every_owned_state={
+					limit={is_core_of=PREV}
+					add_core_of = ENG
+				}
+			}
+			NZL = {
+				annex_country = {
+					target = SAF
+					transfer_troops = yes
+				}
+			}
+		}
+	}
 	ENG_get_chromium = {
 		icon = generic_operation
 		allowed = {
