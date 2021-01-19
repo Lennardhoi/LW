@@ -51,6 +51,7 @@ NDefines.NDiplomacy.MIN_TRUST_VALUE = -500 							-- WAS -100 | this is added to
 
 ---------------------------------------------------------------
 NDefines.NPolitics.DEFAULT_OCCUPATION_POLICY = 4                   --HARSHEST 
+NDefines.NPolitics.BASE_POLITICAL_POWER_INCREASE = 1  --was 2
 ---------------------------------------------------------------
 NDefines.NProduction.MIN_LICENSE_ACTIVE_DAYS = 1                 -- License can be cancelled at any time now, down from 30 |                  -- Was 1, reduced to counter early game boosting, particularly cancerous Germany builds that force Bulgaria players to build a battleship in the black sea for "shore bombardment" via license and imported steel from Germany
 NDefines.NTechnology.LICENSE_PRODUCTION_TECH_BONUS = 0	-- License production tech bonus

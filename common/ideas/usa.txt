@@ -1501,8 +1501,7 @@ ideas = {
 					build_cost_ic = 0.05
 				}
 			}
-			modifier = {
-			}
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 		chrysler = {
 			allowed = {
@@ -1533,8 +1532,7 @@ ideas = {
 				}
 			}
 			traits = {  }
-			modifier = {
-			}
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 		detroit_arsenal = {
 			picture = generic_industrial_concern_1
@@ -1555,8 +1553,7 @@ ideas = {
 					reliability=0.1
 				}
 			}
-			modifier = {
-			}
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 		tank_destroyer_board = {
 			picture = usa_tank_destroyer_board
@@ -1587,8 +1584,7 @@ ideas = {
 					hard_attack = 0.25
 				}
 			}
-			modifier = {
-			}
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 		army_ordnance_department = {
 			allowed = {
@@ -1612,8 +1608,7 @@ ideas = {
 					build_cost_ic = 0.25
 				}
 			}
-			modifier = {
-			}
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 	}
 	naval_manufacturer = {
@@ -1627,8 +1622,7 @@ ideas = {
 				naval_equipment = 0.15
 			}
 			traits = { coastal_defence_naval_manufacturer }
-			modifier = {
-			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
 		}
 		electric_boat_company = {
 			allowed = {
@@ -1639,8 +1633,7 @@ ideas = {
 				naval_equipment = 0.15
 			}
 			traits = { raiding_fleet_naval_manufacturer }
-			modifier = {
-			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
 		}
 		brooklyn_naval_yard = {
 			allowed = {
@@ -1651,8 +1644,7 @@ ideas = {
 				naval_equipment = 0.15
 			}
 			traits = { atlantic_fleet_naval_manufacturer }
-			modifier = {
-			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
 		}
 		newport_news_shipbuilding = {
 			allowed = {
@@ -1663,8 +1655,7 @@ ideas = {
 				naval_equipment = 0.15
 			}
 			traits = { pacific_fleet_naval_manufacturer }
-			modifier = {
-			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
 		}
 	}
 	aircraft_manufacturer = {
@@ -1684,8 +1675,7 @@ ideas = {
 					maximum_speed = 0.1
 				}
 			}
-			modifier = {
-			}
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 		lockheed = {
 			allowed = {
@@ -1696,8 +1686,7 @@ ideas = {
 				air_equipment = 0.15
 			}
 			traits = { medium_aircraft_manufacturer }
-			modifier = {
-			}
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 		douglas_aircraft_company = {
 			allowed = {
@@ -1708,8 +1697,7 @@ ideas = {
 				air_equipment = 0.15
 			}
 			traits = { CAS_manufacturer }
-			modifier = {
-			}
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 		grumman = {
 			allowed = {
@@ -1720,8 +1708,7 @@ ideas = {
 				air_equipment = 0.15
 			}
 			traits = { naval_aircraft_manufacturer }
-			modifier = {
-			}
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 	}
 	materiel_manufacturer = {
@@ -1732,19 +1719,9 @@ ideas = {
 			}
 			research_bonus = {
 				infantry_weapons = 0.15
-			}
-			traits = { infantry_equipment_manufacturer }
-			modifier = {
-			}
-		}
-		ford_motor_company = {
-			allowed = {
-				original_tag = USA
-			}
-			research_bonus = {
 				motorized_equipment = 0.15
 			}
-			traits = { motorized_equipment_manufacturer }
+			traits = { infantry_equipment_manufacturer motorized_equipment_manufacturer}
 			modifier = {
 			}
 		}
@@ -1754,8 +1731,9 @@ ideas = {
 			}
 			research_bonus = {
 				artillery = 0.15
+				support_tech = 0.15
 			}
-			traits = { artillery_manufacturer }
+			traits = { artillery_manufacturer support_equipment_manufacturer }
 			modifier = {
 			}
 		}

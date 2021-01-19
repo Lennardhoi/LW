@@ -11,7 +11,7 @@ ideas = {
 				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = 0.15
 				production_speed_buildings_factor = 0.15
-				research_speed_factor = 0.15
+				research_speed_factor = 0.10
 				consumer_goods_factor = 0.2
 				production_factory_max_efficiency_factor = 0.1
 				production_factory_efficiency_gain_factor = -0.2
@@ -990,6 +990,7 @@ ideas = {
 			}
 			available = {
 			}
+			modifier = { tank_manufacturer_cost_factor = -1 }
 			research_bonus = {
 				armor = 0.15
 			}
@@ -1008,8 +1009,7 @@ ideas = {
 				}
 			}
 			traits = {  }
-			modifier = {
-			}
+			
 		}
 		dzerzhinsky_stalingrad_tractor_factory = { #Stalingrad Tank Factory
 			allowed = {
@@ -1018,6 +1018,7 @@ ideas = {
 			cost = 100
 			available = {
 			}
+			modifier = { tank_manufacturer_cost_factor = -1 }
 			research_bonus = {
 				armor = 0.15
 			}
@@ -1050,13 +1051,13 @@ ideas = {
 				}
 			}
 			traits = { }
-			modifier = {
-			}
+			
 		}
 		ordzhonikidze_ural_heavy_machine_building_plant_UZTM = { #variant su-85 etc designer
 			allowed = {
 				original_tag = SOV
 			}
+			modifier = { tank_manufacturer_cost_factor = -1 }
 			cost = 100
 			available = {
 			}
@@ -1075,14 +1076,14 @@ ideas = {
 				}
 			}
 			traits = {  }
-			modifier = {
-			}
+			
 		}
 		morozov_design_bureau = {
 			cost = 100
 			allowed = {
 				original_tag = SOV
 			}
+			modifier = { tank_manufacturer_cost_factor = -1 }
 			available = {
 				original_tag = SOV
 			}
@@ -1112,6 +1113,7 @@ ideas = {
 			allowed = {
 				original_tag = SOV
 			}
+			modifier = { tank_manufacturer_cost_factor = -1 }
 			research_bonus = {
 				armor = 0.15
 			}
@@ -1142,6 +1144,7 @@ ideas = {
 		}
 		okmo = {
 			cost = 100
+			modifier = { tank_manufacturer_cost_factor = -1 }
 			allowed = {
 				original_tag = SOV
 			}
@@ -1159,8 +1162,7 @@ ideas = {
 					build_cost_ic = 0.075	maximum_speed = 0.25 soft_attack = 0.1
 				}
 			}
-			modifier = {
-			}
+			
 		}
 	}
 	aircraft_manufacturer = {
@@ -1175,6 +1177,7 @@ ideas = {
 			}
 			traits = {  mig_aircraft_designer }
 			cost = 100
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 		tupolev_design_bureau = {
 			allowed = {
@@ -1184,6 +1187,7 @@ ideas = {
 			research_bonus = {
 				air_equipment = 0.15
 			}
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 			traits = { CAS_manufacturer }
 			equipment_bonus = {
 				CAS_equipment = {build_cost_ic = -0.20
@@ -1223,8 +1227,9 @@ ideas = {
 			}
 			research_bonus = {
 				artillery = 0.15
+				support_tech = 0.15
 			}
-			traits = { artillery_manufacturer }
+			traits = { artillery_manufacturer support_equipment_manufacturer }
 			modifier = {
 			}
 		}

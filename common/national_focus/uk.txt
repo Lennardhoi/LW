@@ -660,6 +660,19 @@ focus_tree = {
 				category = light_fighter
 				category = cat_heavy_fighter
 			}
+			if= {limit={NOT={has_idea=supermarine}}
+				add_ideas=supermarine
+				if= {limit={NOT={
+					amount_taken_ideas = {
+   				 		amount > 0
+    						slots = {
+        						aircraft_manufacturer
+   			 			}
+					} 
+				}}
+				add_political_power=-100
+			}
+			}
 			set_technology = {
 				fighter2 = 1
 			}

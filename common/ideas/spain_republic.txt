@@ -145,8 +145,9 @@ ideas = {
 			}
 			research_bonus = {
 				infantry_weapons = 0.15
+				motorized_equipment = 0.15
 			}
-			traits = { infantry_equipment_manufacturer }
+			traits = { infantry_equipment_manufacturer motorized_equipment_manufacturer}
 			modifier = {
 			}
 		}
@@ -160,38 +161,9 @@ ideas = {
 			}
 			research_bonus = {
 				artillery = 0.15
+				support_tech = 0.15
 			}
-			traits = { artillery_manufacturer }
-			modifier = {
-			}
-		}
-		SPR_llama_gabilondo_y_cia = {
-			picture = SPR_llama_gabilondo_y_cia_sa
-			allowed = {
-				has_dlc = "La Resistance"
-				original_tag = SPR
-			}
-			available = {
-			}
-			research_bonus = {
-				support_tech = 0.10
-			}
-			traits = { support_equipment_manufacturer }
-			modifier = {
-			}
-		}
-		SPR_hispano_suiza = {
-			picture = SPR_hispano_suiza
-			allowed = {
-				has_dlc = "La Resistance"
-				original_tag = SPR
-			}
-			available = {
-			}
-			research_bonus = {
-				motorized_equipment = 0.15
-			}
-			traits = { motorized_equipment_manufacturer }
+			traits = { artillery_manufacturer support_equipment_manufacturer }
 			modifier = {
 			}
 		}

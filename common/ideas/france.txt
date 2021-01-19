@@ -1609,9 +1609,10 @@ ideas = {
 				original_tag = FRA
 			}
 			research_bonus = {
+				infantry_weapons = 0.15
 				motorized_equipment = 0.15
 			}
-			traits = { motorized_equipment_manufacturer }
+			traits = { infantry_equipment_manufacturer motorized_equipment_manufacturer}
 		}
 		mas = {
 			allowed = {
@@ -1628,8 +1629,9 @@ ideas = {
 			}
 			research_bonus = {
 				artillery = 0.15
+				support_tech = 0.15
 			}
-			traits = { artillery_manufacturer }
+			traits = { artillery_manufacturer support_equipment_manufacturer }
 		}
 	}
 	aircraft_manufacturer = {
@@ -1642,6 +1644,7 @@ ideas = {
 				air_equipment = 0.15
 			}
 			traits = { light_aircraft_manufacturer }
+				modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 		bloch = {
 			allowed = {
@@ -1650,6 +1653,7 @@ ideas = {
 			research_bonus = {
 				air_equipment = 0.15
 			}
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 			traits = { medium_aircraft_manufacturer }
 		}
 		levasseur = {
@@ -1659,6 +1663,7 @@ ideas = {
 			research_bonus = {
 				air_equipment = 0.15
 			}
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 			traits = { naval_aircraft_manufacturer }
 		}
 	}
@@ -1672,6 +1677,7 @@ ideas = {
 				naval_equipment = 0.15
 			}
 			traits = { mediterranean_naval_manufacturer }
+			modifier = { naval_manufacturer_cost_factor = -1 }
 		}
 		aeb = {
 			picture = FRA_aeb
@@ -1682,6 +1688,7 @@ ideas = {
 				naval_equipment = 0.15
 			}
 			traits = { convoy_escort_naval_manufacturer }
+			modifier = { naval_manufacturer_cost_factor = -1 }
 		}
 		acl = {
 			picture = FRA_acl
@@ -1691,6 +1698,7 @@ ideas = {
 			research_bonus = {
 				naval_equipment = 0.15
 			}
+				modifier = { naval_manufacturer_cost_factor = -1 }
 			traits = { atlantic_fleet_naval_manufacturer }
 		}
 		acf = {
@@ -1701,6 +1709,7 @@ ideas = {
 			research_bonus = {
 				naval_equipment = 0.15
 			}
+				modifier = { naval_manufacturer_cost_factor = -1 }
 			traits = { raiding_fleet_naval_manufacturer }
 		}
 	}

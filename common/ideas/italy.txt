@@ -495,6 +495,7 @@ ideas = {
 			research_bonus = {
 				armor = 0.15
 			}
+			modifier = { tank_manufacturer_cost_factor = -1 }
 			equipment_bonus = {
 				medium_tank_equipment = {
 					reliability = 0.05
@@ -525,26 +526,20 @@ ideas = {
 			}
 			research_bonus = {
 				infantry_weapons = 0.15
-			}
-			traits = { infantry_equipment_manufacturer }
-		}
-		lancia = {
-			allowed = {
-				original_tag = ITA
-			}
-			research_bonus = {
 				motorized_equipment = 0.15
 			}
-			traits = { motorized_equipment_manufacturer }
+			traits = { infantry_equipment_manufacturer motorized_equipment_manufacturer}
 		}
+		
 		breda = {
 			allowed = {
 				original_tag = ITA
 			}
 			research_bonus = {
 				artillery = 0.15
+				support_tech = 0.15
 			}
-			traits = { artillery_manufacturer }
+			traits = { artillery_manufacturer support_equipment_manufacturer }
 		}
 	}
 	aircraft_manufacturer = {
@@ -556,6 +551,7 @@ ideas = {
 					original_tag = SWE
 				}
 			}
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 			cost = 100
 			research_bonus = {
 				air_equipment = 0.15
@@ -579,6 +575,7 @@ ideas = {
 			allowed = {
 				original_tag = ITA
 			}
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 			cost = 100
 			research_bonus = {
 				air_equipment = 0.15
@@ -589,6 +586,7 @@ ideas = {
 			allowed = {
 				original_tag = ITA
 			}
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 			cost = 100
 			research_bonus = {
 				air_equipment = 0.15
@@ -606,6 +604,7 @@ ideas = {
 			research_bonus = {
 				air_equipment = 0.15
 			}
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 			equipment_bonus = {
 				CAS_equipment = {
 					build_cost_ic = -0.1

@@ -1083,6 +1083,7 @@ ideas = {
 			research_bonus = {
 				naval_equipment = 0.15
 			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
 			traits = { convoy_escort_naval_manufacturer }
 		}
 		harland_wolff = {
@@ -1093,6 +1094,7 @@ ideas = {
 			research_bonus = {
 				naval_equipment = 0.15
 			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
 			traits = { pacific_fleet_naval_manufacturer }
 		}
 		cammell_laird = {
@@ -1104,8 +1106,7 @@ ideas = {
 				naval_equipment = 0.15
 			}
 			traits = { atlantic_fleet_naval_manufacturer }
-			modifier = {
-			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
 		}
 		john_brown_company = {
 			allowed = {
@@ -1115,6 +1116,7 @@ ideas = {
 			research_bonus = {
 				naval_equipment = 0.15
 			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
 			traits = { coastal_defence_naval_manufacturer }
 		}
 	}
@@ -1129,8 +1131,7 @@ ideas = {
 				air_equipment = 0.15
 			}
 			traits = { light_aircraft_manufacturer }
-			modifier = {
-			}
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 		hawker = {
 			allowed = {
@@ -1141,8 +1142,7 @@ ideas = {
 				air_equipment = 0.15
 			}
 			traits = { CAS_manufacturer }
-			modifier = {
-			}
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 		de_havilland = {
 			allowed = {
@@ -1153,8 +1153,7 @@ ideas = {
 				air_equipment = 0.15
 			}
 			traits = { medium_aircraft_manufacturer }
-			modifier = {
-			}
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 		fairey_aviation = {
 			allowed = {
@@ -1165,8 +1164,7 @@ ideas = {
 				air_equipment = 0.15
 			}
 			traits = { naval_aircraft_manufacturer }
-			modifier = {
-			}
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 	}
 	materiel_manufacturer = {
@@ -1177,8 +1175,9 @@ ideas = {
 			}
 			research_bonus = {
 				infantry_weapons = 0.15
+				motorized_equipment = 0.15
 			}
-			traits = { infantry_equipment_manufacturer }
+			traits = { infantry_equipment_manufacturer motorized_equipment_manufacturer}
 			modifier = {
 			}
 		}
@@ -1188,8 +1187,9 @@ ideas = {
 			}
 			research_bonus = {
 				artillery = 0.15
+				support_tech = 0.15
 			}
-			traits = { artillery_manufacturer }
+			traits = { artillery_manufacturer support_equipment_manufacturer }
 			modifier = {
 			}
 		}
@@ -1259,7 +1259,7 @@ ideas = {
 					maximum_speed = 0.05
 				}
 			}
-			traits = {  }
+			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
 		vauxhall = {
 			cost = 100
@@ -1276,7 +1276,7 @@ ideas = {
 			research_bonus = {
 				armor = 0.15
 			}
-			traits = {  }
+			modifier = { tank_manufacturer_cost_factor = -1 }
 			equipment_bonus = {
 				heavy_tank_equipment = {
 					hard_attack = 0.1
@@ -1307,7 +1307,7 @@ ideas = {
 			research_bonus = {
 				armor = 0.15
 			}
-			traits = {  }
+			modifier = { tank_manufacturer_cost_factor = -1 }
 			equipment_bonus = {
 				medium_tank_equipment = {
 					maximum_speed = 0.05

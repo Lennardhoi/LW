@@ -1091,6 +1091,7 @@ ideas = {
 			allowed = {
 				original_tag = JAP
 			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
 			cost = 100
 			available = {
 				has_completed_focus = JAP_supremacy_of_the_battlefleet
@@ -1104,6 +1105,7 @@ ideas = {
 			allowed = {
 				original_tag = JAP
 			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
 			cost = 100
 			research_bonus = {
 				naval_equipment = 0.15
@@ -1117,6 +1119,7 @@ ideas = {
 			allowed = {
 				original_tag = JAP
 			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
 			cost = 100
 			research_bonus = {
 				naval_equipment = 0.15
@@ -1130,6 +1133,7 @@ ideas = {
 			allowed = {
 				original_tag = JAP
 			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
 			cost = 100
 			research_bonus = {
 				naval_equipment = 0.15
@@ -1143,6 +1147,7 @@ ideas = {
 			allowed = {
 				original_tag = JAP
 			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
 			cost = 100
 			research_bonus = {
 				naval_equipment = 0.15
@@ -1158,6 +1163,7 @@ ideas = {
 			allowed = {
 				original_tag = JAP
 			}
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 			available = {
 				has_completed_focus = JAP_agility_focus
 			}
@@ -1166,8 +1172,7 @@ ideas = {
 			}
 			cost = 100
 			traits = { light_aircraft_manufacturer_2 }
-			modifier = {
-			}
+			
 		}
 		aichi = {
 			allowed = {
@@ -1176,6 +1181,7 @@ ideas = {
 			available = {
 				has_completed_focus = JAP_range_focus
 			}
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 			research_bonus = {
 				air_equipment = 0.15
 			}
@@ -1191,6 +1197,7 @@ ideas = {
 			allowed = {
 				original_tag = JAP
 			}
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 			cost = 100
 			research_bonus = {
 				air_equipment = 0.15
@@ -1238,21 +1245,29 @@ ideas = {
 		designer = yes
 		tokyo_arsenal = {
 			allowed = {
-				original_tag = JAP
+				OR = {
+					original_tag = JAP
+					original_tag = MAN
+				}
 			}
 			research_bonus = {
-				infantry_weapons = 0.15
+				artillery = 0.15
+				support_tech = 0.15
 			}
-			traits = { infantry_equipment_manufacturer }
+			traits = { artillery_manufacturer support_equipment_manufacturer }
 		}
 		nissan = {
 			allowed = {
-				original_tag = JAP
+				OR = {
+					original_tag = JAP
+					original_tag = MAN
+				}
 			}
 			research_bonus = {
+				infantry_weapons = 0.15
 				motorized_equipment = 0.15
 			}
-			traits = { motorized_equipment_manufacturer }
+			traits = { infantry_equipment_manufacturer motorized_equipment_manufacturer}
 		}
 	}
 	tank_manufacturer = {
@@ -1260,7 +1275,10 @@ ideas = {
 		osaka_army_arsenal = {
 			cost =100
 			allowed = {
-				original_tag = JAP
+				OR = {
+					original_tag = JAP
+					original_tag = MAN
+				}
 			}
 			research_bonus = {
 				armor = 0.15

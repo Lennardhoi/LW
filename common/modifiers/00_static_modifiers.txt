@@ -129,8 +129,8 @@ soviet_hero_city = { # on Province
 }
 
 german_OWK_plan = { # on Province
-	army_core_attack_factor = -0.05
-	army_core_defence_factor = -0.1
+	army_attack_factor = 0.05
+	army_defence_factor = -0.1
 }
 
 night = { # On province. Multiplied by amount of darkness.
@@ -182,7 +182,6 @@ lacking_consumer_goods = {
 }
 
 gain_focus = {
-	political_power_cost = 1
 }
 
 #license production
@@ -309,7 +308,7 @@ stability_good_modifier = {
 	#army_core_attack_factor = 0.1
 	#army_core_defence_factor = 0.1
 	consumer_goods_factor = -0.05
-	political_power_factor = 0.1
+	political_power_factor = 0.2
 	industrial_capacity_factory = 0.1
 	industrial_capacity_dockyard = 0.1
 }
@@ -319,7 +318,7 @@ stability_bad_modifier = {
 	#production_speed_buildings_factor = -0.25
 	#army_core_attack_factor = -0.1
 	#army_core_defence_factor = -0.1
-	political_power_factor = -0.2
+	political_power_factor = -0.4
 	industrial_capacity_factory = -0.1
 	industrial_capacity_dockyard = -0.1
 }

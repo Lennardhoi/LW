@@ -582,9 +582,10 @@ ideas = {
 				has_dlc = "Together for Victory"
 			}
 			research_bonus = {
-				support_tech = 0.10
+				artillery = 0.15
+				support_tech = 0.15
 			}
-			traits = { support_equipment_manufacturer }
+			traits = { artillery_manufacturer support_equipment_manufacturer }
 		}
 		small_arms_limited = {
 			picture = generic_infantry_equipment_manufacturer_1
@@ -594,8 +595,9 @@ ideas = {
 			}
 			research_bonus = {
 				infantry_weapons = 0.15
+				motorized_equipment = 0.15
 			}
-			traits = { infantry_equipment_manufacturer }
+			traits = { infantry_equipment_manufacturer motorized_equipment_manufacturer}
 		}
 	}
 	naval_manufacturer = {
@@ -612,6 +614,7 @@ ideas = {
 			equipment_bonus = {
 			}
 			traits = { pacific_fleet_naval_manufacturer }
+			modifier = { naval_manufacturer_cost_factor = -1 }
 		}
 		halifax_shipyard_limited = {
 			picture = generic_naval_manufacturer_3
@@ -625,6 +628,7 @@ ideas = {
 			equipment_bonus = {
 				# destroyers
 			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
 			traits = { convoy_escort_naval_manufacturer }
 		}
 	}
@@ -638,6 +642,7 @@ ideas = {
 			research_bonus = {
 				air_equipment = 0.15
 			}
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 			traits = { medium_aircraft_manufacturer }
 			# heavy fighters like mosquito
 			ai_will_do = {
@@ -652,6 +657,7 @@ ideas = {
 			research_bonus = {
 				air_equipment = 0.15
 			}
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 			traits = { light_aircraft_manufacturer }
 			# fighter/interceptors like Hurricane
 			ai_will_do = {
@@ -668,6 +674,7 @@ ideas = {
 			available = {
 				has_completed_focus = CAN_fund_fairchilds_development
 			}
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 			research_bonus = {
 				air_equipment = 0.15
 			}

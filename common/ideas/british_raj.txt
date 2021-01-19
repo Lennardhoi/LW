@@ -560,6 +560,7 @@ ideas = {
 			research_bonus = {
 				naval_equipment = 0.15
 			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
 			traits = { convoy_escort_naval_manufacturer }
 		}
 		garden_reach_shipbuilders = {
@@ -572,6 +573,7 @@ ideas = {
 			research_bonus = {
 				naval_equipment = 0.15
 			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
 			traits = { pacific_fleet_naval_manufacturer }
 		}
 		scindia_shipyard = {
@@ -584,6 +586,7 @@ ideas = {
 			research_bonus = {
 				naval_equipment = 0.15
 			}
+			modifier = { naval_manufacturer_cost_factor = -1 }
 			traits = { atlantic_fleet_naval_manufacturer }
 		}
 	}
@@ -599,8 +602,7 @@ ideas = {
 				air_equipment = 0.15
 			}
 			traits = { light_aircraft_manufacturer }
-			modifier = {
-			}
+			modifier = { aircraft_manufacturer_cost_factor = -1 }
 		}
 	}
 	materiel_manufacturer = {
@@ -611,12 +613,12 @@ ideas = {
 				original_TAG = RAJ
 			}
 			picture = generic_infantry_equipment_manufacturer_2
-			research_bonus = {
+				research_bonus = {
 				infantry_weapons = 0.15
+				motorized_equipment = 0.15
 			}
-			traits = { infantry_equipment_manufacturer }
-			modifier = {
-			}
+			traits = { infantry_equipment_manufacturer motorized_equipment_manufacturer}
+			
 		}
 		ordnance_factories_board = {
 			allowed = {
@@ -626,10 +628,9 @@ ideas = {
 			picture = generic_artillery_manufacturer_2
 			research_bonus = {
 				artillery = 0.15
+				support_tech = 0.15
 			}
-			traits = { artillery_manufacturer }
-			modifier = {
-			}
+			traits = { artillery_manufacturer support_equipment_manufacturer }
 		}
 	}
 }

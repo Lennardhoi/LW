@@ -1672,18 +1672,31 @@ focus_tree = {
 				idea = ITA_retention
 				days =30
 			}
+			if= {limit={NOT={has_idea=macchi}}
+				add_ideas=macchi
+			if= {limit={NOT={
+					amount_taken_ideas = {
+   				 		amount > 0
+    						slots = {
+        						aircraft_manufacturer
+   			 			}
+					} 
+				}}
+				add_political_power=-100
+			}
+			}
 			set_technology={
 				fighter2_alt=1
 			}
 			add_tech_bonus = {
 				name = fighter_bonus
-				bonus = 2
+				bonus = 3
 				uses = 1
 				technology=fighter2
 			}
 			add_tech_bonus = {
 				name = fighter_bonus
-				bonus = 2
+				bonus = 3
 				uses = 1
 				technology=cas2
 			}
@@ -1695,7 +1708,8 @@ focus_tree = {
 		prerequisite = { focus = ITA_air_innovation_2 }
 		x = 0
 		y = 1
-		available = {date >1941.4.1}
+		available = {date >1941.4.1
+			has_tech=cas2}
 		relative_position_id = ITA_air_innovation_2
 		cost = 5
 		ai_will_do = {
