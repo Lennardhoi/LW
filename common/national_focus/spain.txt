@@ -43,7 +43,7 @@ focus_tree = {
 		x = -4
 		y = 1
 		relative_position_id = SPA_unify_the_nationalist_front
-		cost = 5
+		cost = 10
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
@@ -363,7 +363,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SPA_the_army_of_africa_model
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
@@ -386,7 +386,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SPA_motorization
-		cost = 10
+		cost = 5
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
@@ -601,6 +601,7 @@ focus_tree = {
 						size > 0
 					}
 					is_core_of = ROOT
+					NOT={state=173}
 				}
 				set_state_flag = SPA_support_the_war_industry_1civ
 				add_extra_state_shared_building_slots = 1
@@ -617,6 +618,7 @@ focus_tree = {
 						size > 0
 					}
 					is_core_of = ROOT
+					NOT={state=173}
 					NOT = { has_state_flag = SPA_support_the_war_industry_1civ }
 				}
 				set_state_flag = SPA_support_the_war_industry_1civ
@@ -634,6 +636,7 @@ focus_tree = {
 						size > 0
 					}
 					is_core_of = ROOT
+					NOT={state=173}
 					NOT = { has_state_flag = SPA_support_the_war_industry_1civ }
 				}
 				set_state_flag = SPA_support_the_war_industry_1civ
@@ -946,17 +949,6 @@ focus_tree = {
 		relative_position_id = SPA_expand_the_axis_gold_trade
 		cost = 10
 		available_if_capitulated = yes
-		complete_tooltip = {
-			every_state = {
-				limit	= {	has_state_flag = SPA_ensure_agricultural_self_sufficiency_2civ }
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
 			remove_ideas = SPA_recovering_from_civil_war_3
@@ -968,6 +960,7 @@ focus_tree = {
 						size > 1
 					}
 					is_core_of = ROOT
+					NOT={state=173}
 				}
 				set_state_flag = SPA_ensure_agricultural_self_sufficiency_2civ
 				add_extra_state_shared_building_slots = 2
@@ -984,6 +977,7 @@ focus_tree = {
 						size > 1
 					}
 					is_core_of = ROOT
+					NOT={state=173}
 					NOT = { has_state_flag = SPA_ensure_agricultural_self_sufficiency_2civ }
 				}
 				set_state_flag = SPA_ensure_agricultural_self_sufficiency_2civ
@@ -1001,6 +995,7 @@ focus_tree = {
 						size > 1
 					}
 					is_core_of = ROOT
+					NOT={state=173}
 					NOT = { has_state_flag = SPA_ensure_agricultural_self_sufficiency_2civ }
 				}
 				set_state_flag = SPA_ensure_agricultural_self_sufficiency_2civ
@@ -1067,7 +1062,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = SPA_unify_the_nationalist_front
-		cost = 5
+		cost = 10
 		available_if_capitulated = yes
 		completion_reward = {
 			add_ideas = SPA_a_methodical_approach

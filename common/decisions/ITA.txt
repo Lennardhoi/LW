@@ -27,14 +27,19 @@ operations = {
 				}
 				set_variable={Global.super_event=3}
 				show_super_event=yes
-				YUG = { add_to_war = { targeted_alliance = ENG enemy = GER } }
-				ITA = { add_to_war = { targeted_alliance = GER enemy = ENG } }
 				ENG = { add_to_faction = YUG }
+				ITA = { add_to_war = { targeted_alliance = GER enemy = ENG } }
+				YUG = { add_to_war = { targeted_alliance = ENG enemy = GER } }
+				YUG={declare_war_on_enemy_faction = yes}
+				
+				
 			}
 		}
 		remove_effect = {
-			GRE = { add_to_war = { targeted_alliance = ENG enemy = GER } }
 			ENG = { add_to_faction = GRE }
+			GRE = { add_to_war = { targeted_alliance = ENG enemy = GER } }
+			hidden_effect = {GRE={declare_war_on_enemy_faction =yes}}
+			
 		}
 	}
 	ITA_give_germany_marsa_matruh = {

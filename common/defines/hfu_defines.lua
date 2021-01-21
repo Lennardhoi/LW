@@ -26,9 +26,11 @@ NDefines.NGame.LAG_DAYS_FOR_PAUSE = 100
 NDefines.NGame.GAME_SPEED_SECONDS = { 2.0, 0.5, 0.2, 0.04, 0  } -- game speeds for each level. Must be 5 entries with last one 0 for unbound
  -- game speeds for each level. Must be 5 entries with last one 0 for unbound
 
-
+NDefines.NDiplomacy.VOLUNTEERS_PER_TARGET_PROVINCE = 0
+NDefines.NDiplomacy.VOLUNTEERS_PER_COUNTRY_ARMY = 0
 NDefines.NCountry.EVENT_PROCESS_OFFSET = 30
-NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 20
+NDefines.NCountry.AIR_VOLUNTEER_PLANES_LIMIT = 0
+NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 70
 NDefines.NAI.DIPLOMACY_SEND_EXPEDITIONARY_BASE = 0
 ---------------------------------------------------------------
 NDefines.NTrade.ANTI_MONOPOLY_TRADE_FACTOR = -1			-- was -100 | This is added to the factor value when anti-monopoly threshold is exceeded; cucks Soviets/Japan often if the value is vanilla
@@ -169,7 +171,7 @@ NDefines_Graphics.NGraphics.DRAW_FOW_FADE_LENGTH = 0
 --HFU defines:
 NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 2
 NDefines.NDiplomacy.BASE_SEND_ATTACHE_CP_COST = 0
-NDefines.NDiplomacy.BASE_SEND_ATTACHE_COST= 100
+NDefines.NDiplomacy.BASE_SEND_ATTACHE_COST= 50
 NDefines.NDiplomacy.TENSION_VOLUNTEER_FORCE_DIVISION = 0.15
 NDefines.NDiplomacy.VOLUNTEERS_TRANSFER_SPEED=0
 NDefines.NTechnology.BASE_RESEARCH_POINTS_SAVED = 50 -- Was 30, exists to help speed 5 macro

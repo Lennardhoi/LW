@@ -343,13 +343,19 @@ focus_tree = {
 		select_effect = {
 			hidden_effect={activate_mission=SOV_relocation}
 		}
+		
 		completion_reward = {
-			custom_effect_tooltip="This will start the industry relocation. Every 10 days two civilian factories and two military factories will be moved from states at the front to the Ural."
-		}
-		completion_reward = {
+				custom_effect_tooltip="This will start the industry relocation. Every 10 days two civilian factories and two military factories will be moved from states at the front to the Ural."
+		
 			remove_ideas = peace_training
 			add_ideas=Fast_Training
 			add_ideas = SOV_the_great_war
+			hidden_effect = {
+				if={
+					limit={NOT={FIN= {is_ai=yes}}}
+				add_offsite_building = { type = arms_factory level = 15 }
+				}	
+			}
 		}
 	}
 	focus = {
@@ -1221,7 +1227,7 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-			add_political_power = 10
+			add_political_power = 30
 			add_ideas = SPR_collectivized_society
 		}
 	}

@@ -484,15 +484,17 @@ technologies = {
 		}
 
 		on_research_complete = {
-			limit = {
-				NOT = {
-					has_template_containing_unit = paratrooper
+			if = {
+				limit = {
+					NOT = {
+						has_template_containing_unit = paratrooper
+					}
 				}
+				hidden_effect = {
+					load_oob = "unlock_paratroopers"
+				}
+				custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 			}
-			hidden_effect = {
-				load_oob = "unlock_paratroopers"
-			}
-			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 		}
 
 		categories = {
@@ -610,15 +612,17 @@ technologies = {
 		}
 
 		on_research_complete = {
-			limit = {
-				NOT = {
-					has_template_containing_unit = marine
+			if = {
+				limit = {
+					NOT = {
+						has_template_containing_unit = marine
+					}
 				}
+				hidden_effect = {
+					load_oob = "unlock_marines"
+				}
+				custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 			}
-			hidden_effect = {
-				load_oob = "unlock_marines"
-			}
-			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 		}
 
 		path = {
@@ -735,15 +739,17 @@ technologies = {
 		}
 
 		on_research_complete = {
-			limit = {
-				NOT = {
-					has_template_containing_unit = mountaineers
+			if = {
+				limit = {
+					NOT = {
+						has_template_containing_unit = mountaineers
+					}
 				}
+				hidden_effect = {
+					load_oob = "unlock_mountineers"
+				}
+				custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 			}
-			hidden_effect = {
-				load_oob = "unlock_mountineers"
-			}
-			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 		}
 
 		path = {
@@ -1085,15 +1091,17 @@ technologies = {
 		}
 
 		on_research_complete = {
-			limit = {
-				NOT = {
-					has_template_containing_unit = jaeger
+			if = {
+				limit = {
+					NOT = {
+						has_template_containing_unit = jaeger
+					}
 				}
+				hidden_effect = {
+					load_oob = "unlock_jaegers"
+				}
+				custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 			}
-			hidden_effect = {
-				load_oob = "unlock_jaegers"
-			}
-			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 		}
 
 		path = {
@@ -1175,15 +1183,17 @@ technologies = {
 		}
 
 		on_research_complete = {
-			limit = {
-				NOT = {
-					has_template_containing_unit = jungletroop
+			if = {
+				limit = {
+					NOT = {
+						has_template_containing_unit = jungletroop
+					}
 				}
+				hidden_effect = {
+					load_oob = "unlock_jungletroops"
+				}
+				custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 			}
-			hidden_effect = {
-				load_oob = "unlock_jungletroops"
-			}
-			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 		}
 
 		path = {
@@ -1264,15 +1274,17 @@ technologies = {
 		}
 
 		on_research_complete = {
-			limit = {
-				NOT = {
-					has_template_containing_unit = shocktroop
+			if = {
+				limit = {
+					NOT = {
+						has_template_containing_unit = shocktroop
+					}
 				}
+				hidden_effect = {
+					load_oob = "unlock_shocktroop"
+				}
+				custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 			}
-			hidden_effect = {
-				load_oob = "unlock_shocktroop"
-			}
-			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 		}
 
 		path = {
@@ -1353,15 +1365,17 @@ technologies = {
 		}
 
 		on_research_complete = {
-			limit = {
-				NOT = {
-					has_template_containing_unit = desertinfantry
+			if = {
+				limit = {
+					NOT = {
+						has_template_containing_unit = desertinfantry
+					}
 				}
+				hidden_effect = {
+					load_oob = "unlock_desertinfantry"
+				}
+				custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 			}
-			hidden_effect = {
-				load_oob = "unlock_desertinfantry"
-			}
-			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 		}
 
 		path = {
@@ -1899,15 +1913,17 @@ technologies = {
 		}
 
 		on_research_complete = {
-			limit = {
-				NOT = {
-					has_template_containing_unit = motorized
+			if = {
+				limit = {
+					NOT = {
+						has_template_containing_unit = motorized
+					}
 				}
+				hidden_effect = {
+					load_oob = "unlock_motorized"
+				}
+				custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 			}
-			hidden_effect = {
-				load_oob = "unlock_motorized"
-			}
-			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 		}
 
 		path = {

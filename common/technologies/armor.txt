@@ -10,29 +10,31 @@ technologies = {
 		}
 
 		on_research_complete = {
-			limit = {
-				NOT = {	has_template_containing_unit = light_armor }
-				NOT = {	has_template_containing_unit = heavy_armor }
-				NOT = {	has_template_containing_unit = medium_armor }
-			}
-			hidden_effect = {
-				if = {
-					limit = {
-						has_tech = motorised_infantry
-					}
-
-					load_oob = "unlock_tanks"
+			if = {	
+				limit = {
+					NOT = {	has_template_containing_unit = light_armor }
+					NOT = {	has_template_containing_unit = heavy_armor }
+					NOT = {	has_template_containing_unit = medium_armor }
 				}
-				if = {
-					limit = {
-						NOT = { has_tech = motorised_infantry }
+				hidden_effect = {
+					if = {
+						limit = {
+							has_tech = motorised_infantry
+						}
+
+						load_oob = "unlock_tanks"
 					}
+					if = {
+						limit = {
+							NOT = { has_tech = motorised_infantry }
+						}
 
-					load_oob = "unlock_tanks"
+						load_oob = "unlock_tanks"
+					}
 				}
+				custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 			}
-
-			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+				
 		}
 
 		path = {
@@ -92,29 +94,31 @@ technologies = {
 		}
 
 		on_research_complete = {
-			limit = {
-				NOT = {	has_template_containing_unit = light_armor }
-				NOT = {	has_template_containing_unit = heavy_armor }
-				NOT = {	has_template_containing_unit = medium_armor }
-			}
-			hidden_effect = {
-				if = {
-					limit = {
-						has_tech = motorised_infantry
-					}
-
-					load_oob = "unlock_tanks"
+			if = {
+				limit = {
+					NOT = {	has_template_containing_unit = light_armor }
+					NOT = {	has_template_containing_unit = heavy_armor }
+					NOT = {	has_template_containing_unit = medium_armor }
 				}
-				if = {
-					limit = {
-						NOT = { has_tech = motorised_infantry }
+				hidden_effect = {
+					if = {
+						limit = {
+							has_tech = motorised_infantry
+						}
+
+						load_oob = "unlock_tanks"
 					}
+					if = {
+						limit = {
+							NOT = { has_tech = motorised_infantry }
+						}
 
-					load_oob = "unlock_tanks"
+						load_oob = "unlock_tanks"
+					}
 				}
+				custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 			}
-
-			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+			
 		}
 
 		path = {
@@ -613,27 +617,29 @@ technologies = {
 			medium_armor
 		}
 		on_research_complete = {
-			limit = {
-				NOT = {	has_template_containing_unit = medium_armor }
-			}
-			hidden_effect = {
-				if = {
-					limit = {
-						has_tech = motorised_infantry
-					}
-
-					load_oob = "unlock_tanks_medium"
+			if = {
+				limit = {
+					NOT = {	has_template_containing_unit = medium_armor }
 				}
-				if = {
-					limit = {
-						NOT = { has_tech = motorised_infantry }
+				hidden_effect = {
+					if = {
+						limit = {
+							has_tech = motorised_infantry
+						}
+
+						load_oob = "unlock_tanks_medium"
 					}
+					if = {
+						limit = {
+							NOT = { has_tech = motorised_infantry }
+						}
 
-					load_oob = "unlock_tanks_medium"
+						load_oob = "unlock_tanks_medium"
+					}
 				}
+				custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 			}
-
-			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+				
 		}
 
 		path = {
@@ -1411,27 +1417,29 @@ technologies = {
 		}
 
 		on_research_complete = {
-			limit = {
-				NOT = {	has_template_containing_unit = heavy_armor }
-			}
-			hidden_effect = {
-				if = {
-					limit = {
-						has_tech = motorised_infantry
-					}
-
-					load_oob = "unlock_tanks_heavy"
+			if = {
+				limit = {
+					NOT = {	has_template_containing_unit = heavy_armor }
 				}
-				if = {
-					limit = {
-						NOT = { has_tech = motorised_infantry }
+				hidden_effect = {
+					if = {
+						limit = {
+							has_tech = motorised_infantry
+						}
+
+						load_oob = "unlock_tanks_heavy"
 					}
+					if = {
+						limit = {
+							NOT = { has_tech = motorised_infantry }
+						}
 
-					load_oob = "unlock_tanks_heavy"
+						load_oob = "unlock_tanks_heavy"
+					}
 				}
+				custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 			}
-
-			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+			
 		}
 
 		path = {
@@ -1585,27 +1593,29 @@ technologies = {
 		}
 
 		on_research_complete = {
-			limit = {
-				NOT = {	has_template_containing_unit = heavy_armor }
-			}
-			hidden_effect = {
-				if = {
-					limit = {
-						has_tech = motorised_infantry
-					}
-
-					load_oob = "unlock_tanks_heavy"
+			if = {
+				limit = {
+					NOT = {	has_template_containing_unit = heavy_armor }
 				}
-				if = {
-					limit = {
-						NOT = { has_tech = motorised_infantry }
+				hidden_effect = {
+					if = {
+						limit = {
+							has_tech = motorised_infantry
+						}
+
+						load_oob = "unlock_tanks_heavy"
 					}
+					if = {
+						limit = {
+							NOT = { has_tech = motorised_infantry }
+						}
 
-					load_oob = "unlock_tanks_heavy"
+						load_oob = "unlock_tanks_heavy"
+					}
 				}
+				custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 			}
-
-			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+			
 		}
 
 		path = {
