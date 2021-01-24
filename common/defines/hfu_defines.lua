@@ -205,7 +205,10 @@ NDefines.NMilitary.AIR_EQUIPMENT_RAMP_COST = 5
 
 --industry
 NDefines.NBuildings.MAX_SHARED_SLOTS = 99 --max building slots in a state
-NDefines.NBuildings.MAX_BUILDING_LEVELS=40
+NDefines.NBuildings.MAX_BUILDING_LEVELS = 99
+NDefines.NBuildings.BASE_FACTORY_REPAIR = 0.3 --doesnt work
+--NDefines.NResistance.COMPLIANCE_FACTOR_ON_STATE_CONTROLLER_CHANGE = -0.1
+NDefines.NProduction.MAX_MIL_FACTORIES_PER_LINE = 300
 NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.13 -- -0.12
 NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 100
 NDefines.NBuildings.NAVALBASE_REPAIR_MULT = 0.075

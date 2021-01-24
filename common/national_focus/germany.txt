@@ -1808,13 +1808,19 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip=GER_atlantikwall_tt
 			every_owned_state= {
-				limit={is_coastal=yes is_on_continent = europe  OR={is_core_of=HOL is_core_of=BEL is_core_of=DEN is_core_of=FRA}
+				limit={
+				OR = {is_coastal=yes is_on_continent = europe  OR={is_core_of=HOL is_core_of=BEL is_core_of=DEN is_core_of=FRA}
+				OR={state=56 state=58 state=59}
+				}
 				}
 				hidden_effect= {add_dynamic_modifier = {
 						modifier = Atlantikwall
 					}
 					}}
 			add_timed_idea = {idea=GER_atlantikwall_idea days=30}
+			add_dynamic_modifier = {
+						modifier = Atlantikwall_visual
+			}
 			activate_mission=GER_atlantikwall
 			custom_effect_tooltip="Adds a Coastal Fort to every coastal provinces that have at least one coastal fort."
 		}

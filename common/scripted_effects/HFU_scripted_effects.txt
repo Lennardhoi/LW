@@ -100,6 +100,18 @@ update_pacific_war = {
 	set_variable={ENG.pacific_status=USA.pacific_status}
 	multiply_variable={ENG.pacific_status=0.5}
 	if={limit={JAP={has_completed_focus=JAP_korean_guest_workers}} add_to_variable={JAP.pacific_status=0.1}}
+	set_variable={GER.pacific_status=JAP.pacific_status}
+	if= { 
+		limit = {date <1942.1.1}
+		add_to_variable={GER.pacific_status=.2}
+	}
+	else_if = {
+		limit = {date <1943.1.1}
+		set_temp_variable={Global.pacific_days=num_days}
+		subtract_from_temp_variable={Global.pacific_days=1827}
+		divide_temp_variable={Global.pacific_days=3650}
+		add_to_variable={GER.pacific_status=Global.pacific_days}
+	}
 }
 anti_cross_faction_trade_axis = {
 	add_opinion_modifier = {
