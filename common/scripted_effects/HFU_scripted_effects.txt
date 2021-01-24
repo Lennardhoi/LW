@@ -103,7 +103,7 @@ update_pacific_war = {
 	set_variable={GER.pacific_status=JAP.pacific_status}
 	if= { 
 		limit = {date <1942.1.1}
-		add_to_variable={GER.pacific_status=.2}
+		add_to_variable={GER.pacific_status=0.2}
 	}
 	else_if = {
 		limit = {date <1943.1.1}
