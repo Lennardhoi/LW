@@ -345,7 +345,7 @@ focus_tree = {
 	focus = {
 		id = AST_introduce_unconventional_warfare
 		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = AST_sentinel_tank_project focus = AST_airborne_defence }
+		prerequisite = { focus = AST_sentinel_tank_project focus = AST_airborne_defence focus = AST_australian_army_catering_corps }
 		x = 0
 		y = 5
 		relative_position_id = AST_additional_militia_training
@@ -483,7 +483,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = AST_expand_the_raaf
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1817,6 +1817,7 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
+		582 = {is_controlled_by_ROOT_or_ally=yes}
 		}
 		bypass = {
 		}
@@ -1824,100 +1825,47 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			hidden_effect = {
-				if = {
-					limit = {
-						has_tech = tech_logistics_company
-					}
-					division_template = {
-						name = "Rats of Tobruk"
-						division_names_group = AST_INF_01
-						regiments = {
-							infantry = { x = 0 y = 0 }
-							infantry = { x = 0 y = 1 }
-							infantry = { x = 0 y = 2 }
-							infantry = { x = 1 y = 0 }
-							infantry = { x = 1 y = 1 }
-							infantry = { x = 1 y = 2 }
-							infantry = { x = 2 y = 0 }
-							infantry = { x = 2 y = 1 }
-							infantry = { x = 2 y = 2 }
-							infantry = { x = 3 y = 0 }
-							infantry = { x = 3 y = 1 }
-						}
-						support = {
-							recon = { x = 0 y = 0 }
-							engineer = { x = 0 y = 1 }
-							logistics_company = { x = 0 y = 2 }
-						}
-					}
-					else = {
-						division_template = {
-							name = "Rats of Tobruk"
-							division_names_group = AST_INF_01
-							regiments = {
-								infantry = { x = 0 y = 0 }
-								infantry = { x = 0 y = 1 }
-								infantry = { x = 0 y = 2 }
-								infantry = { x = 1 y = 0 }
-								infantry = { x = 1 y = 1 }
-								infantry = { x = 1 y = 2 }
-								infantry = { x = 2 y = 0 }
-								infantry = { x = 2 y = 1 }
-								infantry = { x = 2 y = 2 }
-								infantry = { x = 3 y = 0 }
-								infantry = { x = 3 y = 1 }
-							}
-							support = {
-								recon = { x = 0 y = 0 }
-								engineer = { x = 0 y = 1 }
-							}
-						}
-					}
+			custom_effect_tooltip = "Four Mountaineers will spawn in Tobruk"
+			division_template = {
+				name = "Rats of Tobruk"
+				regiments = {
+					mountaineers = { x = 0 y = 0 }
+					mountaineers = { x = 0 y = 1 }
+					mountaineers = { x = 0 y = 2 }
+					mountaineers = { x = 0 y = 3 }
+					mountaineers = { x = 1 y = 0 }
+					mountaineers = { x = 1 y = 1 }
+					mountaineers = { x = 1 y = 2 }
+					mountaineers = { x = 1 y = 3 }
+					mountaineers = { x = 2 y = 0 }
+					mountaineers = { x = 2 y = 1 }
+					mountaineers = { x = 2 y = 2 }
+					mountaineers = { x = 2 y = 3 }
+					mountaineers = { x = 3 y = 0 }
+					mountaineers = { x = 3 y = 1 }
+					artillery_brigade = { x = 4 y = 0 }
+					artillery_brigade = { x = 4 y = 1 }
+					artillery_brigade = { x = 4 y = 2 }
+					artillery_brigade = { x = 4 y = 3 }
 				}
-				if = {
-					limit = {
-						any_country = {
-							is_in_faction_with = AST
-							controls_state = 265
-						}
-						any_country = {
-							is_in_faction_with = AST
-							controls_state = 477
-						}
-					}
-					load_oob = "AST_TFV_rats_africa"
-					else = {
-						if = {
-							limit = {
-								controls_state = 273
-							}
-							load_oob = "AST_TFV_rats_australia"
-						}
-					}
+				support = {
+					recon = { x = 0 y = 0 }
+					engineer = { x = 0 y = 1 }
+					artillery = { x = 0 y = 2 }
+					logistics_company = { x = 0 y = 3 }
+					signal_company = { x = 0 y = 4 }
+					anti_tank = {x = 0 y = 5}
 				}
 			}
-			if = {
-				limit = {
-					any_country = {
-						is_in_faction_with = AST
-						controls_state = 265
+			582 = {
+				for_loop_effect = {
+					end = 4
+					create_unit = {
+						division = "name = \"Rats of Tobruk\" division_template = \"Rats of Tobruk\" start_experience_factor = 2.0 start_equipment_factor = 1"
+						prioritize_location = 1075
+						owner = AST
 					}
-					any_country = {
-						is_in_faction_with = AST
-						controls_state = 477
-					}
-				}
-				custom_effect_tooltip = AST_rats_of_tobruk_effect_1
-				else = {
-					if = {
-						limit = {
-							controls_state = 273
-						}
-					}
-					custom_effect_tooltip = AST_rats_of_tobruk_effect_2
-				}
-			}
+					}}
 		}
 	}
 	focus = {
