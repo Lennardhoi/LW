@@ -2,9 +2,9 @@
 
 --------------------------------------------------------------
 ---nukes
-NDefines.NMilitary.NUKE_MIN_DAMAGE_PERCENT =0
-NDefines.NMilitary.NUKE_MAX_DAMAGE_PERCENT =0.1
-NDefines.NMilitary.NUKE_DELAY_HOURS =12
+--NDefines.NMilitary.NUKE_MIN_DAMAGE_PERCENT =0
+--NDefines.NMilitary.NUKE_MAX_DAMAGE_PERCENT =0.1
+--NDefines.NMilitary.NUKE_DELAY_HOURS =12
 ---
 --new graphics
 NDefines.NGraphics.COUNTRY_COLOR_SATURATION_MODIFIER = 0.9 -- 0.6
@@ -38,7 +38,7 @@ NDefines.NTrade.BASE_LAND_TRADE_RANGE = 350
 ---------------------------------------------------------------
 NDefines.NAir.AIR_WING_MAX_SIZE = 1600                            -- this can be halved 4 times into 100 stacks (very convinient), up from 1600 | 
 NDefines.NAir.AIR_DEPLOYMENT_DAYS = 0                              -- Down from 3 | Makes AC player much more responsive
-NDefines.NAir.AIR_WING_BOMB_DAMAGE_FACTOR = 1.8 --controlls strat bombing damage was too strong on 5 but might need to be high to actually damage something
+NDefines.NAir.AIR_WING_BOMB_DAMAGE_FACTOR = 1.6 --controlls strat bombing damage was too strong on 5 but might need to be high to actually damage something
 ----------------------------------------------------------------------------------------------------------------------------
 NDefines.NDiplomacy.NUM_DAYS_TO_ENABLE_KICKING_NEW_MEMBERS_OF_FACTION = 14	-- down from 90 | Number of days before being able to kick a new member of faction 
 NDefines.NDiplomacy.NUM_DAYS_TO_ENABLE_REINVITE_KICKED_NATIONS = 14		-- down from 90 | Number of days before being able to re invite a kicked 
