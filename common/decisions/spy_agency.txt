@@ -15,6 +15,14 @@ spy_agency = {
 		}
 		fire_only_once = no
 		complete_effect = {
+			set_variable={buff_days=GLOBAL.num_days}
+			multiply_variable={buff_days=-1}
+			add_to_variable={buff_days=708830}
+			every_owned_state = {
+			limit= {OR = {state = 209 state = 210 state = 212 state = 228 state = 229 state = 230 state = 231 state = 232 state = 238 state = 240 state =241 state = 245 state =246 state =247 state =248 state = 250 state = 251 state =253 state = 257 state = 258 state = 318}}
+			
+			add_dynamic_modifier = { modifier = SOV_noob days=SOV.buff_days  }
+			}
 			hidden_effect = {
 				set_country_flag = no_agency_warning
 			}

@@ -346,7 +346,7 @@ focus_tree = {
 		
 		completion_reward = {
 				custom_effect_tooltip="This will start the industry relocation. Every 10 days two civilian factories and two military factories will be moved from states at the front to the Ural."
-		
+				
 			remove_ideas = peace_training
 			add_ideas=Fast_Training
 			add_ideas = SOV_the_great_war
@@ -354,6 +354,14 @@ focus_tree = {
 				if={
 					limit={NOT={FIN= {is_ai=yes}}}
 				add_offsite_building = { type = arms_factory level = 15 }
+				}
+				set_variable={buff_days=GLOBAL.num_days}
+				multiply_variable={buff_days=-1}
+				add_to_variable={buff_days=708830}
+				every_owned_state = {
+					limit= {OR = {state = 209 state = 210 state = 212 state = 228 state = 229 state = 230 state = 231 state = 232 state = 238 state = 240 state =241 state = 245 state =246 state =247 state =248 state = 250 state = 251 state =253 state = 257 state = 258 state = 318}}
+			
+					add_dynamic_modifier = { modifier = SOV_noob days=SOV.buff_days  }
 				}	
 			}
 		}
