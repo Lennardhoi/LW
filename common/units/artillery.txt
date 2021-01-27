@@ -77,14 +77,14 @@ sub_units = {
 		training_time = 120
 		max_organisation = 0
 		default_morale = 0.1
-		max_strength = -5
+		max_strength = -10
 		weight = 0.1
 
 		supply_consumption = 0.09
 
 		# Support nerfs to combat abilities
-		defense = -0.5
-		soft_attack = -0.4
+		defense = -0.4
+		soft_attack = -0.45
 		hard_attack = -0.5
 
 
@@ -98,7 +98,7 @@ sub_units = {
 		active = yes
 		defense = -0.5
 		breakthrough = -0.5
-		soft_attack = -0.3
+		soft_attack = -0.4
 		hard_attack = -0.3
 		armor_value = -1
 		same_support_type = artillery
@@ -112,7 +112,6 @@ sub_units = {
 
 		categories = {
 			category_mobile_artillery
-			category_all_armor
 			category_army
 			category_support_battalions
 		}
@@ -143,7 +142,7 @@ sub_units = {
 		active = yes
 		defense = -0.5
 		breakthrough = -0.5
-		soft_attack = -0.3
+		soft_attack = -0.5
 		hard_attack = -0.3
 		armor_value = -1
 		type = {
@@ -155,15 +154,14 @@ sub_units = {
 		group = support
 
 		categories = {
-			category_all_armor
-			category_army
 			category_mobile_artillery
+			category_army
 			category_support_battalions
 		}
 		combat_width = 0
 
 		need = {
-			medium_tank_artillery_equipment = 18
+			medium_tank_artillery_equipment = 15
 		}
 		manpower = 500
 		max_organisation = 0
@@ -188,7 +186,7 @@ sub_units = {
 		training_time = 180
 		defense = -0.5
 		breakthrough = -0.5
-		soft_attack = -0.3
+		soft_attack = -0.5
 		hard_attack = -0.3
 		armor_value = -1
 		type = {
@@ -200,9 +198,8 @@ sub_units = {
 		group = support
 
 		categories = {
-			category_all_armor
-			category_army
 			category_mobile_artillery
+			category_army
 			category_support_battalions
 		}
 
@@ -234,7 +231,7 @@ sub_units = {
 		active = yes
 		defense = -0.5
 		breakthrough = -0.5
-		soft_attack = -0.3
+		soft_attack = -0.5
 		hard_attack = -0.3
 		armor_value = -1
 		type = {
@@ -246,9 +243,8 @@ sub_units = {
 		group = support
 
 		categories = {
-			category_all_armor
-			category_army
 			category_mobile_artillery
+			category_army
 			category_support_battalions
 		}
 
@@ -293,7 +289,6 @@ sub_units = {
 		group = support
 
 		categories = {
-			category_all_armor
 			category_army
 			category_support_battalions
 		}

@@ -9,7 +9,7 @@ technologies = {
 		xp_research_bonus = 1.00
 
 		xor = { superior_firepower trench_warfare mass_assault }
-
+		
 		path = {
 			leads_to_tech = delay
 			research_cost_coeff = 1
@@ -294,8 +294,8 @@ technologies = {
 			default_morale = 0.05
 			max_organisation = 5
 			maximum_speed = 0.1
-			soft_attack = 0.075
-			hard_attack= 0.075
+			soft_attack = 0.1
+			hard_attack= 0.1
 
 		}
 
@@ -710,8 +710,10 @@ technologies = {
 		conscription = 0.005
 		category_light_infantry = {
 			max_organisation=5
+			default_morale = 0.1
 
 		}
+			
 		category_support_battalions = {
 			max_organisation=5
 
@@ -980,7 +982,7 @@ technologies = {
 		xp_research_bonus = 1.00
 		category_support_battalions = {
 			max_organisation = 10
-			soft_attack = 0.25
+			soft_attack = 0.15
 		}
 
 		path = {
@@ -1025,7 +1027,7 @@ technologies = {
 		xp_research_bonus = 1.00
 		category_support_battalions = {
 			max_organisation = 10
-			soft_attack = 0.25
+			soft_attack = 0.15
 		}
 
 		path = {
