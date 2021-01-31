@@ -1,0 +1,17 @@
+ideas = {
+	country = {
+reichskommissariat = {
+			picture = saf_history_of_segregation
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				conscription_factor = -1
+				consumer_goods_factor = 1
+				cic_to_overlord_factor = -0.25
+				mic_to_overlord_factor = -0.65
+			}
+		}
+	}
+}
