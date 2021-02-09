@@ -1990,7 +1990,7 @@ focus_tree = {
 	focus = {
 		id = JAP_at
 		prerequisite = { focus=JAP_strike_on_the_southern_resource_area }
-		icon = GFX_goal_generic_army_artillery
+		icon = GFX_focus_anti_tank
 		available = {
 		}
 		x = -2
@@ -2237,6 +2237,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_dacca_offensive
+		icon = GFX_focus_JAP_small_arms
 		prerequisite = { focus = JAP_burma_attack }
 		x = 0
 		y = 2
@@ -2264,6 +2265,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_volunteer_workers_in_burma
+		icon = GFX_focus_JAP_industry
 		prerequisite = { focus = JAP_burma_attack focus = JAP_go_westward }
 		x = 1
 		y = 1
@@ -2498,6 +2500,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_reconquest_of_dei
+		icon = GFX_focus_JAP_samurai
 		prerequisite = { focus = JAP_fortify_dei }
 		x = 0
 		y = 2
@@ -2544,6 +2547,7 @@ focus_tree = {
 	}
 	focus = {
 		id = JAP_develop_the_bejing_area
+		icon = GFX_focus_JAP_yen
 		prerequisite = { focus = JAP_korean_guest_workers focus = JAP_heavy_industry_development}
 		x = 1
 		y = 1
