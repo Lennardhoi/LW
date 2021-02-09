@@ -56,6 +56,20 @@ equipments = {
 		priority = 130
 		visual_level = 0
 		is_convertable = yes
+		can_convert_from = {
+			super_heavy_tank_equipment_1_f
+		}
+	}
+	super_heavy_tank_equipment_1_f = {
+		year = 1943
+
+		archetype = super_heavy_tank_equipment
+		priority = 130
+		visual_level = 0
+		is_convertable = yes
+		can_convert_from = {
+			super_heavy_tank_equipment_1
+		}
 	}
 
 	super_heavy_tank_artillery_equipment = {
@@ -113,10 +127,23 @@ equipments = {
 		priority = 140
 		visual_level = 0
 		can_convert_from = {
+			super_heavy_tank_artillery_equipment_1_f
 			super_heavy_tank_equipment_1
+			super_heavy_tank_equipment_1_f
 		}
 	}
+	super_heavy_tank_artillery_equipment_1_f = {
+		year = 1943
 
+		archetype = super_heavy_tank_artillery_equipment
+		priority = 140
+		visual_level = 0
+		can_convert_from = {
+			super_heavy_tank_artillery_equipment_1
+			super_heavy_tank_equipment_1
+			super_heavy_tank_equipment_1_f
+		}
+	}
 
 	super_heavy_tank_destroyer_equipment = {
 		year = 1934
@@ -173,11 +200,25 @@ equipments = {
 		priority = 160
 		visual_level = 0
 		can_convert_from = {
+			super_heavy_tank_destroyer_equipment_1_f
 			super_heavy_tank_equipment_1
+			super_heavy_tank_equipment_1_f
 		}
 	}
 
+	
+	super_heavy_tank_destroyer_equipment_1_f = {
+		year = 1943
 
+		archetype = super_heavy_tank_destroyer_equipment
+		priority = 160
+		visual_level = 0
+		can_convert_from = {
+			super_heavy_tank_destroyer_equipment_1
+			super_heavy_tank_equipment_1
+			super_heavy_tank_equipment_1_f
+		}
+	}
 	super_heavy_tank_aa_equipment = {
 		year = 1934
 
@@ -233,7 +274,21 @@ equipments = {
 		priority = 150
 		visual_level = 0
 		can_convert_from = {
+			super_heavy_tank_aa_equipment_1_f
 			super_heavy_tank_equipment_1
+			super_heavy_tank_equipment_1_f
+		}
+	}
+	super_heavy_tank_aa_equipment_1_f = {
+		year = 1943
+
+		archetype = super_heavy_tank_aa_equipment
+		priority = 150
+		visual_level = 0
+		can_convert_from = {
+			super_heavy_tank_aa_equipment_1
+			super_heavy_tank_equipment_1
+			super_heavy_tank_equipment_1_f
 		}
 	}
 }

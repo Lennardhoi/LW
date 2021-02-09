@@ -1,0 +1,787 @@
+technologies = {
+	### GERMAN TANK NAMES IN COMMENTS SO YOU CAN FIND STUFF MORE EASILY
+	gwtank_f = { #Leichttraktor
+
+		enable_equipments = {
+			gw_tank_equipment_f
+		}
+		path = {
+			leads_to_tech = basic_light_tank_f
+			research_cost_coeff = 1
+		}
+		dependencies = {
+			gwtank = 1
+		}
+		path = {
+			leads_to_tech = basic_heavy_tank_f
+			research_cost_coeff = 1
+		}
+
+		research_cost = 0
+		start_year = 1918
+		folder = {
+			name = armour_folder_f
+			position = { x = 0 y = 0 }
+		}
+
+		
+
+		
+	}
+
+	basic_light_tank_f = { #Panzer I
+
+		enable_equipments = {
+			light_tank_equipment_1_f
+		}
+		allow= {has_tech=basic_light_tank}
+
+		path = {
+			leads_to_tech = improved_light_tank_f
+			research_cost_coeff = 1
+		}
+
+		research_cost = 0
+		start_year = 1934
+		folder = {
+			name = armour_folder_f
+			position = { x = -4 y = 2 }
+		}
+
+		sub_technologies = {
+			basic_light_td_f
+			basic_light_art_f
+			basic_light_spaa_f
+		}
+
+	}
+
+	basic_light_td_f = {
+
+		enable_equipments = {
+			light_tank_destroyer_equipment_1_f
+		}
+		allow= {has_tech=basic_light_td}
+		research_cost = 0
+		start_year = 1934
+
+		
+
+	}
+
+	basic_light_art_f = {
+
+		enable_equipments = {
+			light_tank_artillery_equipment_1_f
+		}
+		allow= {has_tech=basic_light_art}
+		research_cost = 0
+		start_year = 1934
+
+
+	}
+
+	basic_light_spaa_f = {
+
+		enable_equipments = {
+			light_tank_aa_equipment_1_f
+		}
+		enable_subunits = {
+			light_sp_anti_air_brigade
+		}
+		allow= {has_tech=basic_light_spaa}
+		research_cost = 0
+		start_year = 1934
+
+
+
+	}
+
+	improved_light_tank_f = { #Panzer II
+
+		enable_equipments = {
+			light_tank_equipment_2_f
+		}
+
+		path = {
+			leads_to_tech = advanced_light_tank_f
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = basic_medium_tank_f
+			research_cost_coeff = 1
+		}
+
+		research_cost = 0
+		start_year = 1936
+		allow= {has_tech=improved_light_tank}
+		folder = {
+			name = armour_folder_f
+			position = { x = -4 y = 4 }
+		}
+
+		sub_technologies = {
+			improved_light_td_f
+			improved_light_art_f
+			improved_light_spaa_f
+		}
+	}
+
+	improved_light_td_f = {
+
+		enable_equipments = {
+			light_tank_destroyer_equipment_2_f
+		}
+		allow= {has_tech=improved_light_td}
+		research_cost = 0
+		start_year = 1936
+
+	}
+
+	improved_light_art_f = {
+
+		enable_equipments = {
+			light_tank_artillery_equipment_2_f
+		}
+		allow= {has_tech=improved_light_art}
+		research_cost = 0
+		start_year = 1936
+
+
+	}
+
+	improved_light_spaa_f = {
+
+		enable_equipments = {
+			light_tank_aa_equipment_2_f
+		}
+		allow= {has_tech=improved_light_spaa}
+		research_cost = 0
+		start_year = 1936
+	}
+
+
+
+	advanced_light_tank_f = { #Leopard
+
+		enable_equipments = {
+			light_tank_equipment_3_f
+		}
+
+		research_cost = 0
+		start_year = 1941
+		allow= {has_tech=advanced_light_tank}
+		folder = {
+			name = armour_folder_f
+			position = { x = -4 y = 8 }
+		}
+		path = {
+			leads_to_tech = improved_medium_tank_f
+			research_cost_coeff = 0.7
+		}
+		sub_technologies = {
+			advanced_light_td_f
+			advanced_light_art_f
+			advanced_light_spaa_f
+		}
+	}
+
+	advanced_light_td_f = {
+
+		enable_equipments = {
+			light_tank_destroyer_equipment_3_f
+		}
+		allow= {has_tech=advanced_light_td}
+		research_cost = 0
+		start_year = 1936
+
+
+	}
+
+	advanced_light_art_f = {
+
+		enable_equipments = {
+			light_tank_artillery_equipment_3_f
+		}
+		allow= {has_tech=advanced_light_art}
+		research_cost = 0
+		start_year = 1936
+
+
+	}
+
+	advanced_light_spaa_f = {
+
+		enable_equipments = {
+			light_tank_aa_equipment_3_f
+		}
+		allow= {has_tech=advanced_light_spaa}
+		research_cost = 0
+		start_year = 1936
+
+
+
+	}
+
+	basic_medium_tank_f = { #Panzer III
+
+		enable_equipments = {
+			medium_tank_equipment_1_f
+		}
+		allow= {has_tech=basic_medium_tank}
+		path = {
+			leads_to_tech = improved_medium_tank_f
+			research_cost_coeff = 1
+		}
+
+		research_cost = 0
+		start_year = 1939
+
+		folder = {
+			name = armour_folder_f
+			position = { x = 0 y = 6 }
+		}
+
+		sub_technologies = {
+			basic_medium_td_f
+			basic_medium_art_f
+			basic_medium_spaa_f
+			amphibious_tank_f
+		}
+	}
+
+	basic_medium_td_f = {
+
+		enable_equipments = {
+			medium_tank_destroyer_equipment_1_f
+		}
+		allow= {has_tech=basic_medium_td}
+
+		research_cost = 0
+		start_year = 1936
+
+	}
+
+	basic_medium_art_f = {
+
+		enable_equipments = {
+			medium_tank_artillery_equipment_1_f
+		}
+
+		allow= {has_tech=basic_medium_art}
+		enable_subunits = {
+			medium_sp_artillery_brigade
+			medium_sp_artillery
+		}
+
+		research_cost = 0
+		start_year = 1936
+
+	}
+
+	basic_medium_spaa_f = {
+
+		enable_equipments = {
+			medium_tank_aa_equipment_1_f
+		}
+		allow= {has_tech=basic_medium_spaa}
+
+
+		research_cost = 0
+		start_year = 1936
+
+
+	}
+
+	improved_medium_tank_f = { #Panzer IV
+
+		enable_equipments = {
+			medium_tank_equipment_2_f
+		}
+		allow= {has_tech=improved_medium_tank}
+
+		path = {
+			leads_to_tech = advanced_medium_tank_f
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = advanced_light_tank_f
+			research_cost_coeff = 0.7
+		}
+		path = {
+			leads_to_tech = improved_heavy_tank_f
+			research_cost_coeff = 0.5
+		}
+
+		research_cost = 0
+		start_year = 1941
+
+		folder = {
+			name = armour_folder_f
+			position = { x = 0 y = 8 }
+		}
+
+		sub_technologies = {
+			improved_medium_td_f
+			improved_medium_art_f
+			improved_medium_spaa_f
+			amphibious_tank_2_f
+		}
+	}
+
+	improved_medium_td_f = {
+
+		enable_equipments = {
+			medium_tank_destroyer_equipment_2_f
+		}
+		allow= {has_tech=improved_medium_td}
+
+		research_cost = 0
+		start_year = 1936
+
+	}
+
+	improved_medium_art_f = {
+
+		enable_equipments = {
+			medium_tank_artillery_equipment_2_f
+		}
+
+		allow= {has_tech=improved_medium_art}
+		research_cost = 0
+		start_year = 1936
+
+	}
+
+	improved_medium_spaa_f = {
+
+		enable_equipments = {
+			medium_tank_aa_equipment_2_f
+		}
+		allow= {has_tech=improved_medium_spaa}
+
+		research_cost = 0
+		start_year = 1936
+
+
+	}
+
+	advanced_medium_tank_f = { #Panther
+
+		enable_equipments = {
+			medium_tank_equipment_3_f
+		}
+		allow= {has_tech=advanced_medium_tank}
+
+		path = {
+			leads_to_tech = main_battle_tank_f
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = advanced_heavy_tank_f
+			research_cost_coeff = 0.7
+		}
+
+		research_cost = 0
+		start_year = 1943
+		folder = {
+			name = armour_folder_f
+			position = { x = 0 y = 10 }
+		}
+
+		sub_technologies = {
+			advanced_medium_td_f
+			advanced_medium_art_f
+			advanced_medium_spaa_f
+			amphibious_tank_3_f
+		}
+
+
+	}
+
+	advanced_medium_td_f = {
+
+		enable_equipments = {
+			medium_tank_destroyer_equipment_3_f
+		}
+		allow= {has_tech=advanced_medium_td}
+
+		research_cost = 0
+		start_year = 1936
+
+	}
+
+	advanced_medium_art_f = {
+
+		enable_equipments = {
+			medium_tank_artillery_equipment_3_f
+		}
+		allow= {has_tech=advanced_medium_art}
+
+		research_cost = 0
+		start_year = 1936
+
+	}
+
+	advanced_medium_spaa_f = {
+
+		enable_equipments = {
+			medium_tank_aa_equipment_3_f
+		}
+		allow= {has_tech=advanced_medium_spaa}
+
+		research_cost = 0
+		start_year = 1936
+
+
+	}
+
+	main_battle_tank_f = { #E-50
+
+		allow_branch = {
+
+			always=no
+		}
+
+		enable_equipments = {
+			modern_tank_equipment_1_f
+		}
+		allow= {has_tech=main_battle_tank}
+
+		research_cost = 0
+		start_year = 1945
+
+		folder = {
+			name = armour_folder_f
+			position = { x = 2 y = 12 }
+		}
+
+		sub_technologies = {
+			modern_td
+			modern_art
+			modern_spaa
+		}
+
+	}
+
+	modern_td_f = {
+
+		enable_equipments = {
+			modern_tank_destroyer_equipment_1_f
+		}
+		allow= {has_tech=modern_td}
+
+
+		research_cost = 0
+		start_year = 1945
+
+	}
+
+	modern_art_f = {
+
+		enable_equipments = {
+			modern_tank_artillery_equipment_1_f
+		}
+		allow= {has_tech=modern_art}
+
+
+		research_cost = 0
+		start_year = 1945
+	}
+
+	modern_spaa_f = {
+
+		enable_equipments = {
+			modern_tank_aa_equipment_1_f
+		}
+		allow= {has_tech=modern_spaa}
+
+
+		research_cost = 00
+		start_year = 1945
+	}
+
+	basic_heavy_tank_f = { #Grosstraktor
+
+		enable_equipments = {
+			heavy_tank_equipment_1_f
+		}
+		allow= {has_tech=basic_heavy_tank}
+		path = {
+			leads_to_tech = basic_medium_tank_f
+			research_cost_coeff = 0.7
+		}
+
+		path = {
+			leads_to_tech = improved_heavy_tank_f
+			research_cost_coeff = 1
+		}
+
+		research_cost = 0
+		start_year = 1939
+
+		folder = {
+			name = armour_folder_f
+			position = { x = 4 y = 6 }
+		}
+
+		sub_technologies = {
+			basic_heavy_td_f
+			basic_heavy_art_f
+			basic_heavy_spaa_f
+		}
+
+	}
+
+	basic_heavy_td_f = {
+
+		enable_equipments = {
+			heavy_tank_destroyer_equipment_1_f
+		}
+		allow= {has_tech=basic_heavy_td}
+
+
+		research_cost = 0
+		start_year = 1934
+
+	}
+
+	basic_heavy_art_f = {
+
+		enable_equipments = {
+			heavy_tank_artillery_equipment_1_f
+		}
+		allow= {has_tech=basic_heavy_art}
+
+
+		research_cost = 0
+		start_year = 1934
+	}
+
+
+	basic_heavy_spaa_f = {
+
+		enable_equipments = {
+			medium_tank_aa_equipment_1_f
+		}
+		allow= {has_tech=basic_heavy_spaa}
+
+		research_cost = 0
+		start_year = 1934
+
+
+	}
+
+	improved_heavy_tank_f = { #Tiger
+
+		enable_equipments = {
+			heavy_tank_equipment_2_f
+		}
+
+		allow= {has_tech=improved_heavy_tank}
+
+		path = {
+			leads_to_tech = advanced_heavy_tank_f
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = improved_medium_tank_f
+			research_cost_coeff = 0.5
+		}
+
+		path = {
+			leads_to_tech = super_heavy_tank_f
+			research_cost_coeff = 1
+		}
+
+		research_cost = 0
+		start_year = 1941
+
+		folder = {
+			name = armour_folder_f
+			position = { x = 4 y = 8 }
+		}
+
+		sub_technologies = {
+			improved_heavy_td_f
+			improved_heavy_art_f
+			improved_heavy_spaa_f
+		}
+	}
+
+	improved_heavy_td_f = {
+
+		enable_equipments = {
+			heavy_tank_destroyer_equipment_2_f
+		}
+		allow= {has_tech=improved_heavy_td}
+
+		research_cost = 0
+		start_year = 1941
+	}
+
+	improved_heavy_art_f = {
+
+		enable_equipments = {
+			heavy_tank_artillery_equipment_2_f
+		}
+		allow= {has_tech=improved_heavy_art}
+		research_cost = 0
+		start_year = 1936
+	}
+
+
+	improved_heavy_spaa_f = {
+
+		enable_equipments = {
+			medium_tank_aa_equipment_2_f
+		}
+		allow= {has_tech=improved_heavy_spaa}
+		research_cost = 0
+		start_year = 1936
+
+	}
+
+	advanced_heavy_tank_f = { #King Tiger
+
+		enable_equipments = {
+			heavy_tank_equipment_3_f
+		}
+		allow= {has_tech=advanced_heavy_tank}
+
+		
+		path = {
+			leads_to_tech = advanced_medium_tank_f
+			research_cost_coeff = 0.7
+		}
+		path = {
+			leads_to_tech = super_heavy_tank_f
+			research_cost_coeff = 0.5
+		}
+		research_cost = 0
+		start_year = 1943
+		folder = {
+			name = armour_folder_f
+			position = { x = 4 y = 10 }
+		}
+
+		sub_technologies = {
+			advanced_heavy_td_f
+			advanced_heavy_art_f
+			advanced_heavy_spaa_f
+		}
+	}
+
+	advanced_heavy_td_f = {
+
+		enable_equipments = {
+			heavy_tank_destroyer_equipment_3_f
+		}
+		allow= {has_tech=advanced_heavy_td}
+
+		research_cost = 0
+		start_year = 1936
+	}
+
+	advanced_heavy_art_f = {
+
+		enable_equipments = {
+			heavy_tank_artillery_equipment_3_f
+		}
+		allow= {has_tech=advanced_heavy_art}
+
+		research_cost = 0
+		start_year = 1936
+	}
+
+	advanced_heavy_spaa_f = {
+
+		enable_equipments = {
+			medium_tank_aa_equipment_3_f
+		}
+		allow= {has_tech=advanced_heavy_spaa}
+
+		research_cost = 0
+		start_year = 1936
+	}
+
+	super_heavy_tank_f = { #Maus
+
+		enable_equipments = {
+			super_heavy_tank_equipment_1_f
+		}
+
+		enable_subunits = {
+			super_heavy_armor
+		}
+		allow= {has_tech=super_heavy_tank}
+		research_cost = 0
+		start_year = 1943
+		folder = {
+			name = armour_folder_f
+			position = { x = 8 y = 10 }
+		}
+		sub_technologies = {
+			super_heavy_td
+			super_heavy_art
+			#super_heavy_spaa
+		}
+	}
+
+	super_heavy_td_f = {
+
+		enable_equipments = {
+			super_heavy_tank_destroyer_equipment_1_f
+		}
+		allow= {has_tech=super_heavy_td}
+		research_cost = 0
+		start_year = 1943
+	}
+
+	super_heavy_art_f = {
+
+		enable_equipments = {
+			super_heavy_tank_artillery_equipment_1_f
+		}
+
+		allow= {has_tech=super_heavy_art}
+
+		research_cost = 0
+		start_year = 1943
+	}
+	amphibious_tank_f = { #SchwimmPanzer II
+
+		enable_equipments = {
+			amphibious_tank_equipment_1_f
+		}
+
+		allow= {has_tech=amphibious_tank}
+
+		research_cost = 0
+		start_year = 1940
+	}
+
+	amphibious_tank_2_f = { #tauchPanzer III
+
+		enable_equipments = {
+			amphibious_tank_equipment_2_f
+		}
+		allow= {has_tech=amphibious_tank_2}
+
+		research_cost = 0
+		start_year = 1942
+	}
+	amphibious_tank_3_f = {
+
+		enable_equipments = {
+			amphibious_tank_equipment_3_f
+		}
+		allow= {has_tech=amphibious_tank_3}
+
+		research_cost = 0
+		start_year = 1944
+	}
+}
+

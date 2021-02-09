@@ -1385,7 +1385,7 @@ focus_tree = {
 			114 = {
 				set_building_level = {
 					type = coastal_bunker
-					level = 5
+					level = 3
 					province =10892
 					instant_build = yes
 				}
@@ -1396,7 +1396,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = anti_air_building
-					level = 5
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -2684,7 +2684,15 @@ focus_tree = {
 			factor = 1
 		}
 		completion_reward = {
-			every_country={limit={is_in_faction_with=ENG}army_experience=100}
+			every_country={limit={is_in_faction_with=ENG}
+			army_experience=100
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1
+				uses = 1
+				category = armor
+			}
+			}
 			swap_ideas = {
 				remove_idea = ENG_prepare_for_the_inevitable_idea
 				add_idea = ENG_handle_the_inevitable_idea

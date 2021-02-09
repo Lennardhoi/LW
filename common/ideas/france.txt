@@ -1545,18 +1545,20 @@ ideas = {
 			ledger = army
 			allowed = {
 				original_tag = FRA
+				
 			}
-			traits = { army_commando_2 }
+			available={has_completed_focus=FRA_appeal_to_the_french_nation}
+			traits = { army_commando_1 }
 			ai_will_do = {
 				factor = 1
 			}
 		}
 		alfred_heurtaux = {
-			ledger = air
+			ledger = army
 			allowed = {
 				original_tag = FRA
 			}
-			traits = { air_air_combat_training_2 }
+			traits = { army_infantry_1 }
 			ai_will_do = {
 				factor = 1
 			}
@@ -1582,11 +1584,12 @@ ideas = {
 			}
 		}
 		emile_muselier = {
-			ledger = navy
+			ledger = army
 			allowed = {
 				original_tag = FRA
 			}
-			traits = { navy_fleet_logistics_2 }
+			available={has_completed_focus=FRA_appeal_to_the_french_nation}
+			traits = { army_infantry_2 }
 			ai_will_do = {
 				factor = 1
 			}

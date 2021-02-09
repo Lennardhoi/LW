@@ -57,6 +57,20 @@ equipments = {
 		priority = 90
 		visual_level = 0
 		is_convertable = yes
+		can_convert_from = {
+			heavy_tank_equipment_1_f
+		}
+	}
+	heavy_tank_equipment_1_f = {
+		year = 1934
+
+		archetype = heavy_tank_equipment
+		priority = 90
+		visual_level = 0
+		is_convertable = yes
+		can_convert_from = {
+			heavy_tank_equipment_1
+		}
 	}
 
 	# 1941
@@ -68,6 +82,41 @@ equipments = {
 		priority = 90
 		visual_level = 1
 		is_convertable = yes
+		can_convert_from = {
+			heavy_tank_equipment_2_f
+		}
+
+		#Misc Abilities
+		maximum_speed = 6
+
+		#Defensive Abilities
+		defense = 8
+		breakthrough = 52
+		armor_value = 110
+
+		#Offensive Abilities
+		soft_attack = 22
+		hard_attack = 32
+		ap_attack = 111
+
+		build_cost_ic = 33
+		resources = {
+			#			oil = 1
+			steel = 3
+			chromium = 3
+		}
+	}
+	heavy_tank_equipment_2_f = {
+		year = 1941
+
+		archetype = heavy_tank_equipment
+		parent = heavy_tank_equipment_1
+		priority = 90
+		visual_level = 1
+		is_convertable = yes
+		can_convert_from = {
+			heavy_tank_equipment_2
+		}
 
 		#Misc Abilities
 		maximum_speed = 6
@@ -99,7 +148,9 @@ equipments = {
 		priority = 90
 		visual_level = 2
 		is_convertable = yes
-
+		can_convert_from = {
+			heavy_tank_equipment_3_f
+		}
 		#Misc Abilities
 		maximum_speed = 6
 
@@ -120,7 +171,38 @@ equipments = {
 			chromium = 3
 		}
 	}
+	
+	heavy_tank_equipment_3_f = {
+		year = 1943
 
+		archetype = heavy_tank_equipment
+		parent = heavy_tank_equipment_2
+		priority = 90
+		visual_level = 2
+		is_convertable = yes
+		can_convert_from = {
+			heavy_tank_equipment_3
+		}
+		#Misc Abilities
+		maximum_speed = 6
+
+		#Defensive Abilities
+		defense = 9
+		breakthrough = 67
+		armor_value = 130
+
+		#Offensive Abilities
+		soft_attack = 26
+		hard_attack = 38
+		ap_attack = 131
+
+		build_cost_ic = 36
+		resources = {
+			#oil = 1
+			steel = 4
+			chromium = 3
+		}
+	}
 	heavy_tank_artillery_equipment = {
 		year = 1934
 
@@ -176,11 +258,26 @@ equipments = {
 		family = heavy_tank_equipment_1
 		can_convert_from = {
 			heavy_tank_equipment_1
+			heavy_tank_equipment_1_f
+			heavy_tank_artillery_equipment_1_f
 		}
 		priority = 100
 		visual_level = 0
 	}
+	
+	heavy_tank_artillery_equipment_1_f = {
+		year = 1934
 
+		archetype = heavy_tank_artillery_equipment
+		family = heavy_tank_equipment_1
+		can_convert_from = {
+			heavy_tank_equipment_1
+			heavy_tank_equipment_1_f
+			heavy_tank_artillery_equipment_1
+		}
+		priority = 100
+		visual_level = 0
+	}
 	heavy_tank_artillery_equipment_2 = {
 		year = 1941
 
@@ -190,6 +287,44 @@ equipments = {
 		can_convert_from = {
 			heavy_tank_equipment_1
 			heavy_tank_equipment_2
+			heavy_tank_equipment_1_f
+			heavy_tank_equipment_2_f
+			heavy_tank_artillery_equipment_2_f
+		}
+		priority = 100
+		visual_level = 1
+
+		#Misc Abilities
+		maximum_speed = 6
+
+		#Defensive Abilities
+		defense = 6
+		breakthrough = 3
+		armor_value = 68
+
+		#Offensive Abilities
+		soft_attack = 97
+		hard_attack = 2
+
+		build_cost_ic = 31
+		resources = {
+			#oil = 1
+			steel = 4
+			chromium = 3
+		}
+	}
+	heavy_tank_artillery_equipment_2_f = {
+		year = 1941
+
+		archetype = heavy_tank_artillery_equipment
+		parent = heavy_tank_artillery_equipment_1
+		family = heavy_tank_equipment_2
+		can_convert_from = {
+			heavy_tank_equipment_1
+			heavy_tank_equipment_2
+			heavy_tank_equipment_1_f
+			heavy_tank_equipment_2_f
+			heavy_tank_artillery_equipment_2
 		}
 		priority = 100
 		visual_level = 1
@@ -223,6 +358,44 @@ equipments = {
 		can_convert_from = {
 			heavy_tank_equipment_2
 			heavy_tank_equipment_3
+			heavy_tank_equipment_2_f
+			heavy_tank_equipment_3_f
+			heavy_tank_artillery_equipment_3_f
+		}
+		priority = 100
+		visual_level = 2
+
+		#Misc Abilities
+		maximum_speed = 6
+
+		#Defensive Abilities
+		defense = 7
+		breakthrough = 3.5
+		armor_value = 90
+
+		#Offensive Abilities
+		soft_attack = 107
+		hard_attack = 2.5
+
+		build_cost_ic = 34
+		resources = {
+			#oil = 1
+			steel = 5
+			chromium = 3
+		}
+	}
+	heavy_tank_artillery_equipment_3_f = {
+		year = 1943
+
+		archetype = heavy_tank_artillery_equipment
+		parent = heavy_tank_artillery_equipment_2
+		family = heavy_tank_equipment_3
+		can_convert_from = {
+			heavy_tank_equipment_2
+			heavy_tank_equipment_3
+			heavy_tank_equipment_2_f
+			heavy_tank_equipment_3_f
+			heavy_tank_artillery_equipment_3
 		}
 		priority = 100
 		visual_level = 2
@@ -302,6 +475,21 @@ equipments = {
 		family = heavy_tank_equipment_1
 		can_convert_from = {
 			heavy_tank_equipment_1
+			heavy_tank_equipment_1_f
+			heavy_tank_destroyer_equipment_1_f
+		}
+		priority = 120
+		visual_level = 0
+	}
+	heavy_tank_destroyer_equipment_1_f = {
+		year = 1934
+
+		archetype = heavy_tank_destroyer_equipment
+		family = heavy_tank_equipment_1
+		can_convert_from = {
+			heavy_tank_equipment_1
+			heavy_tank_equipment_1_f
+			heavy_tank_destroyer_equipment_1
 		}
 		priority = 120
 		visual_level = 0
@@ -316,6 +504,9 @@ equipments = {
 		can_convert_from = {
 			heavy_tank_equipment_1
 			heavy_tank_equipment_2
+			heavy_tank_equipment_1_f
+			heavy_tank_equipment_2_f
+			heavy_tank_destroyer_equipment_2_f
 		}
 		priority = 120
 		visual_level = 1
@@ -341,7 +532,44 @@ equipments = {
 			chromium = 3
 		}
 	}
+	
+	heavy_tank_destroyer_equipment_2_f = {
+		year = 1941
 
+		archetype = heavy_tank_destroyer_equipment
+		parent = heavy_tank_destroyer_equipment_1
+		family = heavy_tank_equipment_2
+		can_convert_from = {
+			heavy_tank_equipment_1
+			heavy_tank_equipment_2
+			heavy_tank_equipment_1_f
+			heavy_tank_equipment_2_f
+			heavy_tank_destroyer_equipment_2
+		}
+		priority = 120
+		visual_level = 1
+
+		#Misc Abilities
+		maximum_speed = 6
+
+		#Defensive Abilities
+		defense = 6
+		breakthrough = 1.5
+		armor_value = 110
+
+		#Offensive Abilities
+		soft_attack = 8
+		hard_attack = 44
+		ap_attack = 140
+		air_attack = 0
+
+		build_cost_ic = 28
+		resources = {
+			#oil = 1
+			steel = 4
+			chromium = 3
+		}
+	}
 	heavy_tank_destroyer_equipment_3 = {
 		year = 1943
 
@@ -351,6 +579,46 @@ equipments = {
 		can_convert_from = {
 			heavy_tank_equipment_2
 			heavy_tank_equipment_3
+			heavy_tank_equipment_2_f
+			heavy_tank_equipment_3_f
+			heavy_tank_destroyer_equipment_3_f
+		}
+		priority = 120
+		visual_level = 2
+
+		#Misc Abilities
+		maximum_speed = 6
+
+		#Defensive Abilities
+		defense = 7
+		breakthrough = 1.8
+		armor_value = 130
+
+		#Offensive Abilities
+		soft_attack = 10
+		hard_attack = 64
+		ap_attack = 160
+		air_attack = 0
+
+		build_cost_ic = 31
+		resources = {
+			#oil = 2
+			steel = 4
+			chromium = 4
+		}
+	}
+	heavy_tank_destroyer_equipment_3_f = {
+		year = 1943
+
+		archetype = heavy_tank_destroyer_equipment
+		parent = heavy_tank_destroyer_equipment_2
+		family = heavy_tank_equipment_3
+		can_convert_from = {
+			heavy_tank_equipment_2
+			heavy_tank_equipment_3
+			heavy_tank_equipment_2_f
+			heavy_tank_equipment_3_f
+			heavy_tank_destroyer_equipment_3
 		}
 		priority = 120
 		visual_level = 2
@@ -432,11 +700,26 @@ equipments = {
 		family = heavy_tank_equipment_1
 		can_convert_from = {
 			heavy_tank_equipment_1
+			heavy_tank_equipment_1_f
+			heavy_tank_aa_equipment_1_f
 		}
 		priority = 110
 		visual_level = 0
 	}
 
+	heavy_tank_aa_equipment_1_f = {
+		year = 1934
+
+		archetype = heavy_tank_aa_equipment
+		family = heavy_tank_equipment_1
+		can_convert_from = {
+			heavy_tank_equipment_1
+			heavy_tank_equipment_1_f
+			heavy_tank_aa_equipment_1
+		}
+		priority = 110
+		visual_level = 0
+	}
 	heavy_tank_aa_equipment_2 = {
 		year = 1941
 
@@ -446,6 +729,9 @@ equipments = {
 		can_convert_from = {
 			heavy_tank_equipment_1
 			heavy_tank_equipment_2
+			heavy_tank_equipment_1_f
+			heavy_tank_equipment_2_f
+			heavy_tank_aa_equipment_2_f
 		}
 		priority = 110
 		visual_level = 1
@@ -471,7 +757,44 @@ equipments = {
 			chromium = 3
 		}
 	}
+	
+	heavy_tank_aa_equipment_2_f = {
+		year = 1941
 
+		archetype = heavy_tank_aa_equipment
+		parent = heavy_tank_aa_equipment_1
+		family = heavy_tank_equipment_2
+		can_convert_from = {
+			heavy_tank_equipment_1
+			heavy_tank_equipment_2
+			heavy_tank_equipment_1_f
+			heavy_tank_equipment_2_f
+			heavy_tank_aa_equipment_2
+		}
+		priority = 110
+		visual_level = 1
+
+		#Misc Abilities
+		maximum_speed = 6
+
+		#Defensive Abilities
+		defense = 3
+		breakthrough = 3
+		armor_value = 68
+
+		#Offensive Abilities
+		soft_attack = 6
+		hard_attack = 4.5
+		ap_attack = 60
+		air_attack = 25
+
+		build_cost_ic = 28
+		resources = {
+			#oil = 1
+			steel = 3
+			chromium = 3
+		}
+	}
 	heavy_tank_aa_equipment_3 = {
 		year = 1943
 
@@ -481,6 +804,49 @@ equipments = {
 		can_convert_from = {
 			heavy_tank_equipment_2
 			heavy_tank_equipment_3
+			heavy_tank_equipment_2_f
+			heavy_tank_equipment_3_f
+			heavy_tank_aa_equipment_3_f
+		}
+		priority = 110
+		visual_level = 2
+
+		#Misc Abilities
+		maximum_speed = 6
+		reliability = 0.8
+
+
+		#Defensive Abilities
+		defense = 3.5
+		breakthrough = 3.5
+		armor_value = 90
+
+		#Offensive Abilities
+		soft_attack = 7.5
+		hard_attack = 6
+		ap_attack = 88
+		air_attack = 30
+
+		build_cost_ic = 31
+		resources = {
+			#oil = 1
+			steel = 4
+			chromium = 3
+		}
+
+	}
+	heavy_tank_aa_equipment_3_f = {
+		year = 1943
+
+		archetype = heavy_tank_aa_equipment
+		parent = heavy_tank_aa_equipment_2
+		family = heavy_tank_equipment_3
+		can_convert_from = {
+			heavy_tank_equipment_2
+			heavy_tank_equipment_3
+			heavy_tank_equipment_2_f
+			heavy_tank_equipment_3_f
+			heavy_tank_aa_equipment_3
 		}
 		priority = 110
 		visual_level = 2

@@ -128,7 +128,9 @@ scripted_gui = {
 					limit={check_variable={ROOT.target=ROOT.taker}}
 				}
 				else={
-					var:ROOT.target={var:ROOT.taker={
+					var:ROOT.target={
+						pow_before_annex=yes
+						var:ROOT.taker={
 							annex_country={
 								target=PREV
 								transfer_troops=yes

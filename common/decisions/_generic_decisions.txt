@@ -304,6 +304,14 @@ special_projects = {
 			num_of_civilian_factories > 15
 		}
 		visible = {
+			any_country = {
+				is_in_faction_with = ROOT
+				has_full_control_of_state = 412
+			}
+			any_country = {
+				is_in_faction_with = ROOT
+				has_full_control_of_state = 418
+			}
 			has_global_flag = SUEZ_CANAL_BLOCKED
 			NOT={has_global_flag=suez_rebuild_in_progress}
 		}

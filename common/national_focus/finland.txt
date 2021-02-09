@@ -463,8 +463,17 @@ focus_tree = {
 		y = 3
 		cost = 10
 		available_if_capitulated = yes
+		available = {
+			
+				fascism > 0.5
+			
+		}
 		completion_reward = {
 			add_ideas = fin_continuation_war
+			set_politics = {
+				ruling_party = fascism
+				elections_allowed = no
+			}
 		}
 	}
 	focus = {

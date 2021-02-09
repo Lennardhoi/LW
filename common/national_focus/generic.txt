@@ -829,6 +829,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
+		available = {is_ai =yes}
 		completion_reward = {
 			add_tech_bonus = {
 				name = industrial_bonus
@@ -1529,6 +1530,7 @@ focus_tree = {
 		cost = 10
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		available_if_capitulated = yes
+		available = {is_ai =yes}
 		completion_reward = {
 			add_political_power = 120
 		}

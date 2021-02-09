@@ -85,7 +85,9 @@ country_event = {
 			set_variable={collabo=has_collaboration@FRA}
 			multiply_variable={collabo=100}
 		}
-		FRA={transfer_navy = {
+		FRA={
+			pow_before_annex=yes
+			transfer_navy = {
 				target = VEN
 				}}
 		EFR ={annex_country = { target = FRA transfer_troops = no }}
@@ -234,22 +236,22 @@ country_event = {
 			set_technology = { africa_hp = 1 popup = no }
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
-				amount = 50000
+				amount = 80000
 				producer = GER
 			}
 			add_equipment_to_stockpile = {
 				type = artillery_equipment
-				amount = 6000
+				amount = 8000
 				producer = GER
 			}
 			add_equipment_to_stockpile = {
 				type = anti_air_equipment
-				amount = 1000
+				amount = 2000
 				producer = GER
 			}
 			add_equipment_to_stockpile = {
 				type = anti_tank_equipment
-				amount = 1000
+				amount = 2000
 				producer = GER
 			}
 		}

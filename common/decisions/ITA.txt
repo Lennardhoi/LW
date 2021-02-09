@@ -148,6 +148,7 @@ foreign_politics = {
 		fire_only_once = yes
 		complete_effect = {
 			BUL = {
+				pow_before_annex=yes
 				every_owned_state={
 					limit={is_core_of=PREV}
 					add_core_of = ROM
@@ -176,6 +177,7 @@ foreign_politics = {
 		}
 		fire_only_once = yes
 		complete_effect = {
+			BUL={pow_before_annex=yes}
 			GER = {
 				annex_country = {
 					target = BUL
