@@ -30,7 +30,10 @@ focus_tree = {
 			
 			every_country={
 				limit={is_playable_country=yes}
-				add_ideas=research_36
+				swap_ideas={
+					remove_idea = research_35
+					add_idea = research_36
+				}
 			}
 		}
 	}

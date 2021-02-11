@@ -244,6 +244,7 @@ equipments = {
 		year = 1933
 		carrier_capable = yes
 		archetype = fighter_equipment
+		family = fighter_equipment_0
 		priority = 5
 		can_convert_from = {
 			fighter_equipment_0
@@ -292,6 +293,7 @@ equipments = {
 		carrier_capable = yes
 		archetype = fighter_equipment
 		parent = fighter_equipment_0
+		family = fighter_equipment_1
 		priority = 10
 		can_convert_from = {
 			fighter_equipment_1
@@ -348,6 +350,7 @@ equipments = {
 		carrier_capable = yes
 		archetype = fighter_equipment
 		parent = fighter_equipment_1
+		family = fighter_equipment_2
 		priority = 10
 		can_convert_from = {
 			fighter_equipment_2
@@ -403,6 +406,7 @@ equipments = {
 		carrier_capable = yes
 		archetype = fighter_equipment_alt
 		parent = fighter_equipment_2
+		family = fighter_equipment_alt_2
 		priority = 10
 		can_license = no
 		air_range = 1000
@@ -458,6 +462,7 @@ equipments = {
 		carrier_capable = yes
 		archetype = fighter_equipment
 		parent = fighter_equipment_2
+		family = fighter_equipment_3
 		priority = 10
 		can_convert_from = {
 			fighter_equipment_3
@@ -512,6 +517,7 @@ equipments = {
 		carrier_capable = yes
 		archetype = fighter_equipment_alt
 		parent = fighter_equipment_alt_2
+		family = fighter_equipment_alt_3
 		priority = 10
 		can_license = no
 		air_range = 1100
@@ -563,6 +569,7 @@ equipments = {
 	jet_fighter_equipment_1_f = {
 		year = 1945
 		archetype =jet_fighter_equipment
+		family = jet_fighter_equipment_1
 		priority = 20
 		build_cost_ic = 65
 		air_range = 1200
@@ -613,6 +620,7 @@ equipments = {
 
 		archetype = jet_fighter_equipment
 		parent = jet_fighter_equipment_1
+		family = jet_fighter_equipment_2
 		priority = 20
 		can_convert_from = {
 			jet_fighter_equipment_2
@@ -659,6 +667,7 @@ equipments = {
 		}
 
 		archetype = CAS_equipment
+		family = CAS_equipment_1
 		priority = 40
 
 		air_range = 800
@@ -705,6 +714,7 @@ equipments = {
 		carrier_capable = yes
 		archetype = CAS_equipment
 		parent = CAS_equipment_1
+		family = CAS_equipment_2
 		priority = 40
 		can_convert_from = {
 			CAS_equipment_2
@@ -761,6 +771,7 @@ equipments = {
 		carrier_capable = yes
 		archetype = CAS_equipment
 		parent = CAS_equipment_2
+		family = CAS_equipment_3
 		priority = 40
 		can_convert_from = {
 			CAS_equipment_3
@@ -805,6 +816,7 @@ equipments = {
 		year = 1936
 		carrier_capable = yes
 		archetype = nav_bomber_equipment
+		family = nav_bomber_equipment_1
 		priority = 60
 		can_convert_from = {
 			nav_bomber_equipment_1
@@ -852,6 +864,7 @@ equipments = {
 
 		archetype = nav_bomber_equipment
 		parent = nav_bomber_equipment_1
+		family = nav_bomber_equipment_2
 		priority = 60
 		carrier_capable = yes
 		air_range = 930
@@ -901,6 +914,7 @@ equipments = {
 		carrier_capable = yes
 		archetype = nav_bomber_equipment
 		parent = nav_bomber_equipment_2
+		family = nav_bomber_equipment_3
 		priority = 60
 		can_convert_from = {
 			nav_bomber_equipment_3

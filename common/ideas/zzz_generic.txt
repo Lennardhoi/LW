@@ -659,10 +659,15 @@ ideas = {
 		strikes_1 = {
 			allowed = {
 				always = no
+				
 			}
 			removal_cost = -1
 			allowed_civil_war = {
 				always = yes
+			}
+			cancel= {
+			has_war_support > 0.5
+			NOT= {has_unsupported_economic_law = yes}
 			}
 			picture = generic_production_bonus
 			modifier = {

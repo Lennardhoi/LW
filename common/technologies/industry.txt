@@ -60,7 +60,7 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = improved_equipment_conversion
+			leads_to_tech = basic_equipment_conversion
 			research_cost_coeff = 1
 		}
 
@@ -107,7 +107,10 @@ technologies = {
 			leads_to_tech = assembly_line_production
 			research_cost_coeff = 1
 		}
-
+		path = {
+			leads_to_tech = improved_equipment_conversion
+			research_cost_coeff = 1
+		}
 		research_cost = 2
 		start_year = 1939
 		categories = {
@@ -156,7 +159,10 @@ technologies = {
 			leads_to_tech = flexible_line
 			research_cost_coeff = 1
 		}
-
+		path = {
+			leads_to_tech = advanced_equipment_conversion
+			research_cost_coeff = 1
+		}
 		path = {
 			leads_to_tech = streamlined_line
 			research_cost_coeff = 1
@@ -262,7 +268,7 @@ technologies = {
 	}
 
 	#Conversion branch - Enabled in DoD
-	improved_equipment_conversion = {
+	basic_equipment_conversion = {
 
 		equipment_conversion_speed = 0.40
 
@@ -270,12 +276,8 @@ technologies = {
 			has_dlc = "Death or Dishonor"
 		}
 
-		path = {
-			leads_to_tech = advanced_equipment_conversion
-			research_cost_coeff = 1
-		}
 
-		research_cost = 1.5
+		research_cost = 0.7
 		start_year = 1937
 		categories = {
 			year_1937
@@ -300,16 +302,13 @@ technologies = {
 			}
 		}
 
-		categories = {
-			industry
-		}
 	}
 
-	advanced_equipment_conversion = {
+	improved_equipment_conversion = {
 
 		equipment_conversion_speed = 0.40
-
-		research_cost = 1.5
+		
+		research_cost = 0.7
 		start_year = 1939
 		categories = {
 			year_1939
@@ -334,9 +333,38 @@ technologies = {
 			}
 		}
 
+		
+	}
+
+	advanced_equipment_conversion = {
+
+		equipment_conversion_speed = 0.40
+		
+		research_cost = 0.7
+		start_year = 1941
 		categories = {
-			industry
+			year_1941
 		}
+
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 8 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				date > "1939.1.1"
+			}
+
+			modifier = {
+				factor = 0
+				NOT = { has_government = fascism }
+			}
+		}
+
 	}
 
 	###############
@@ -632,6 +660,8 @@ technologies = {
 		equipment_conversion_speed = 0.20
 		industry_air_damage_factor = -0.15
 		global_building_slots_factor = 0.2
+		conversion_cost_civ_to_mil_factor = -0.025
+		conversion_cost_mil_to_civ_factor = -0.025
 
 		path = {
 			leads_to_tech = dispersed_industry2
@@ -716,6 +746,8 @@ technologies = {
 		production_factory_start_efficiency_factor = 0.05
 		industry_air_damage_factor = -0.10
 		global_building_slots_factor = 0.2
+		conversion_cost_civ_to_mil_factor = -0.025
+		conversion_cost_mil_to_civ_factor = -0.025
 
 		path = {
 			leads_to_tech = dispersed_industry3
@@ -770,6 +802,8 @@ technologies = {
 		production_factory_start_efficiency_factor = 0.05
 		industry_air_damage_factor = -0.10
 		global_building_slots_factor = 0.2
+		conversion_cost_civ_to_mil_factor = -0.025
+		conversion_cost_mil_to_civ_factor = -0.025
 
 		path = {
 			leads_to_tech = dispersed_industry4
@@ -824,6 +858,8 @@ technologies = {
 		production_factory_start_efficiency_factor = 0.05
 		industry_air_damage_factor = -0.10
 		global_building_slots_factor = 0.2
+		conversion_cost_civ_to_mil_factor = -0.025
+		conversion_cost_mil_to_civ_factor = -0.025
 
 		path = {
 			leads_to_tech = dispersed_industry5
@@ -879,6 +915,8 @@ technologies = {
 		production_factory_start_efficiency_factor = 0.05
 		industry_air_damage_factor = -0.10
 		global_building_slots_factor = 0.2
+		conversion_cost_civ_to_mil_factor = -0.025
+		conversion_cost_mil_to_civ_factor = -0.025
 
 
 		research_cost = 2

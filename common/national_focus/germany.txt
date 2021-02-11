@@ -1823,6 +1823,7 @@ focus_tree = {
 			}
 			activate_mission=GER_atlantikwall
 			custom_effect_tooltip="Adds a Coastal Fort to every coastal provinces that have at least one coastal fort."
+			custom_effect_tooltip="Adds one level of State Anti-Air to every state that has at least one one level of State Anti-Air."
 		}
 	}
 	focus = {
@@ -1834,10 +1835,44 @@ focus_tree = {
 		y = 1
 		cost = 5
 		available = {
-			date > 1942.1.1
-			SOV = { controls_state = 210 }
-			has_war_with = USA
 			has_war_with = SOV
+			
+			OR={
+			date > 1942.1.1
+			AND= {
+				hidden_trigger = {
+					DEN={exists=no}
+					HOL={exists=no}
+					NOR={exists=no}
+					BEL={exists=no}
+					LUX={exists=no}
+					
+				}
+			
+			
+			
+			OR={
+				99= {NOT={is_controlled_by_ROOT_or_ally=yes}}
+				58= {NOT={is_controlled_by_ROOT_or_ally=yes}}
+				59= {NOT={is_controlled_by_ROOT_or_ally=yes}}
+				56= {NOT={is_controlled_by_ROOT_or_ally=yes}}
+				36= {NOT={is_controlled_by_ROOT_or_ally=yes}}
+				7= {NOT={is_controlled_by_ROOT_or_ally=yes}}
+				35= {NOT={is_controlled_by_ROOT_or_ally=yes}}
+				6= {NOT={is_controlled_by_ROOT_or_ally=yes}}
+				29= {NOT={is_controlled_by_ROOT_or_ally=yes}}
+				699= {NOT={is_controlled_by_ROOT_or_ally=yes}}
+				15= {NOT={is_controlled_by_ROOT_or_ally=yes}}
+				14= {NOT={is_controlled_by_ROOT_or_ally=yes}}
+				30= {NOT={is_controlled_by_ROOT_or_ally=yes}}
+				23= {NOT={is_controlled_by_ROOT_or_ally=yes}}
+				19= {NOT={is_controlled_by_ROOT_or_ally=yes}}
+				#138= {NOT={is_controlled_by_ROOT_or_ally=yes}}
+				#139= {NOT={is_controlled_by_ROOT_or_ally=yes}}
+				#140= {NOT={is_controlled_by_ROOT_or_ally=yes}}
+			}
+			}}
+			
 		}
 		ai_will_do = {
 			factor = 5

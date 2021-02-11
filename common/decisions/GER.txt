@@ -30,7 +30,16 @@ operations = {
 		days_mission_timeout=30
 		timeout_effect = {
 			custom_effect_tooltip="Adds a Coastal Fort to every coastal provinces that have at least one coastal fort."
+			custom_effect_tooltip="Adds one level of State Anti-Air to every state that has at least one one level of State Anti-Air."
 			99 = {
+				if = {
+					limit= {anti_air_building >0 anti_air_building <5 }
+					add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+					}
+				}
 				add_building_construction = {
 					type = coastal_bunker
 					level = 1
@@ -42,6 +51,14 @@ operations = {
 				}
 			}
 			58 = {
+				if = {
+					limit= {anti_air_building >0 anti_air_building <5 }
+					add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+					}
+				}
 				add_building_construction = {
 					type = coastal_bunker
 					level = 1
@@ -53,6 +70,14 @@ operations = {
 				}
 			}
 			59 = {
+				if = {
+					limit= {anti_air_building >0 anti_air_building <5 }
+					add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+					}
+				}
 				add_building_construction = {
 					type = coastal_bunker
 					level = 1
@@ -64,6 +89,14 @@ operations = {
 				}
 			}
 			56 = {
+				if = {
+					limit= {anti_air_building >0 anti_air_building <5 }
+					add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+					}
+				}
 				add_building_construction = {
 					type = coastal_bunker
 					level = 1
@@ -75,6 +108,14 @@ operations = {
 				}
 			}
 			36 = {
+				if = {
+					limit= {anti_air_building >0 anti_air_building <5 }
+					add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+					}
+				}
 				add_building_construction = {
 					type = coastal_bunker
 					level = 1
@@ -86,6 +127,14 @@ operations = {
 				}
 			}
 			7 = {
+				if = {
+					limit= {anti_air_building >0 anti_air_building <5 }
+					add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+					}
+				}
 				add_building_construction = {
 					type = coastal_bunker
 					level = 1
@@ -97,6 +146,14 @@ operations = {
 				}
 			}
 			35 = {
+				if = {
+					limit= {anti_air_building >0 anti_air_building <5 }
+					add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+					}
+				}
 				add_building_construction = {
 					type = coastal_bunker
 					level = 1
@@ -108,6 +165,14 @@ operations = {
 				}
 			}
 			6 = {
+				if = {
+					limit= {anti_air_building >0 anti_air_building <5 }
+					add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+					}
+				}
 				add_building_construction = {
 					type = coastal_bunker
 					level = 1
@@ -119,6 +184,14 @@ operations = {
 				}
 			}
 			29 = {
+				if = {
+					limit= {anti_air_building >0 anti_air_building <5 }
+					add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+					}
+				}
 				add_building_construction = {
 					type = coastal_bunker
 					level = 1
@@ -130,6 +203,14 @@ operations = {
 				}
 			}
 			699 = {
+				if = {
+					limit= {anti_air_building >0 anti_air_building <5 }
+					add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+					}
+				}
 				add_building_construction = {
 					type = coastal_bunker
 					level = 1
@@ -141,6 +222,14 @@ operations = {
 				}
 			}
 			15 = {
+				if = {
+					limit= {anti_air_building >0 anti_air_building <5 }
+					add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+					}
+				}
 				add_building_construction = {
 					type = coastal_bunker
 					level = 1
@@ -152,6 +241,14 @@ operations = {
 				}
 			}
 			14 = {
+				if = {
+					limit= {anti_air_building >0 anti_air_building <5 }
+					add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+					}
+				}
 				add_building_construction = {
 					type = coastal_bunker
 					level = 1
@@ -163,6 +260,14 @@ operations = {
 				}
 			}
 			30 = {
+				if = {
+					limit= {anti_air_building >0 anti_air_building <5 }
+					add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+					}
+				}
 				add_building_construction = {
 					type = coastal_bunker
 					level = 1
@@ -174,6 +279,14 @@ operations = {
 				}
 			}
 			23 = {
+				if = {
+					limit= {anti_air_building >0 anti_air_building <5 }
+					add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+					}
+				}
 				add_building_construction = {
 					type = coastal_bunker
 					level = 1
@@ -185,6 +298,14 @@ operations = {
 				}
 			}
 			19 = {
+				if = {
+					limit= {anti_air_building >0 anti_air_building <5 }
+					add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+					}
+				}
 				add_building_construction = {
 					type = coastal_bunker
 					level = 1
@@ -206,6 +327,14 @@ operations = {
 					}
 				}
 				138 = {
+				if = {
+					limit= {anti_air_building >0 anti_air_building <5 }
+					add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+					}
+				}
 					add_building_construction = {
 						type = coastal_bunker
 						level = 1
@@ -228,6 +357,14 @@ operations = {
 					}
 				}
 				139 = {
+				if = {
+					limit= {anti_air_building >0 anti_air_building <5 }
+					add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+					}
+				}
 					add_building_construction = {
 						type = coastal_bunker
 						level = 1
@@ -250,6 +387,14 @@ operations = {
 					}
 				}
 				140 = {
+				if = {
+					limit= {anti_air_building >0 anti_air_building <5 }
+					add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+					}
+				}
 					add_building_construction = {
 						type = coastal_bunker
 						level = 1

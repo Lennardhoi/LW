@@ -1,5 +1,18 @@
 ideas = {
 	hidden_ideas= {
+		research_35={
+			picture = generic_infantry_bonus
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier= {
+			production_factory_start_efficiency_factor = 0.4 
+			}
+		}
 		research_36={
 			picture = generic_infantry_bonus
 			allowed = {
@@ -89,6 +102,7 @@ ideas = {
 			modifier={
 				production_factory_efficiency_gain_factor = 0.1
 				training_time_factor = -0.1
+				political_power_factor = 0.05
 			}
 			research_bonus = {
 				year_1918=0.25
@@ -113,6 +127,8 @@ ideas = {
 			modifier={
 				production_factory_efficiency_gain_factor = 0.2
 				training_time_factor = -0.15
+				air_strategic_bomber_bombing_factor = 0.1
+				political_power_factor = 0.1
 			}
 			research_bonus = {
 				year_1918=0.3
@@ -132,6 +148,8 @@ ideas = {
 			}
 			modifier={production_factory_efficiency_gain_factor = 0.3
 				training_time_factor = -0.2
+				air_strategic_bomber_bombing_factor = 0.2
+				political_power_factor = 0.2
 			}
 			removal_cost = -1
 			allowed_civil_war = {
@@ -145,7 +163,7 @@ ideas = {
 				year_1939=0.15
 				year_1940=0.1
 				year_1941=0.05
-				year_1943=-0.15
+				year_1942=-0.15
 			}
 		}
 		research_43={
@@ -159,6 +177,8 @@ ideas = {
 			}
 			modifier={production_factory_efficiency_gain_factor = 0.4
 				training_time_factor = -0.3
+				air_strategic_bomber_bombing_factor = 0.3
+				political_power_factor = 0.3
 			}
 			research_bonus = {
 				year_1918=0.4

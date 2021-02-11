@@ -12,7 +12,11 @@ on_actions = {
 			}}
 	on_startup = {
 	effect= {
-	
+			every_country={
+				limit={is_playable_country=yes}
+				add_ideas=research_35
+				
+			}
 			every_state = {
 				limit={OR={ state=175 state=176 state=114 state=160 state=180}}
 				add_state_modifier={

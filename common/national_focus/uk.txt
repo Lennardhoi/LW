@@ -2597,6 +2597,30 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = ENG_market_garden
+		prerequisite = { focus = ENG_crusader }
+		available = {
+			date > 1942.5.1
+			16 = {is_controlled_by_Root_or_ally=yes}
+			113 = {is_controlled_by_Root_or_ally=yes}
+		}
+		continue_if_invalid = yes
+		icon = GFX_focus_attack_germany
+		x = 0
+		y = 1
+		relative_position_id = ENG_crusader
+		cost = 0
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			every_country= {
+			limit={is_in_faction_with = ENG}
+			add_ideas=ENG_market_garden
+			}
+		}
+	}
+	focus = {
 		id = ENG_issue_gasmasks
 		available = {
 			OR = {

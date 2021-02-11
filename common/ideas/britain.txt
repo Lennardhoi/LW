@@ -83,6 +83,16 @@ ideas = {
 				army_infantry_defence_factor = 0.05
 			}
 		}
+		ENG_market_garden = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = eng_the_sun_never_sets
+			modifier = {
+				terrain_penalty_reduction = 0.1
+			}
+		}
 		ENG_the_sun_never_sets_idea = {
 			name = ENG_the_sun_never_sets
 			allowed = {
