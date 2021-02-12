@@ -54,8 +54,18 @@ operations = {
 				transfer_state = 32
 				transfer_state = 21
 			}
-			FRA = {transfer_state = 425
+			FRA={
+				if = {
+				limit={exists=yes}
+				transfer_state = 425
 				transfer_state = 426
+				}
+				else={
+					USA={
+						transfer_state = 425
+						transfer_state = 426
+					}
+				}
 			}
 			hidden_effect = {
 				EFR={

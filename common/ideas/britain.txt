@@ -90,7 +90,7 @@ ideas = {
 			removal_cost = -1
 			picture = eng_the_sun_never_sets
 			modifier = {
-				terrain_penalty_reduction = 0.1
+				terrain_penalty_reduction = 0.15
 			}
 		}
 		ENG_the_sun_never_sets_idea = {
@@ -247,6 +247,20 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = -0.05
 				conscription = 0.01
+			}
+		}
+		british_austerity_idea_2 = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = generic_goods_red_bonus
+			modifier = {
+				consumer_goods_factor = -0.1
+				conscription = 0.015
 			}
 		}
 		ENG_colonial_elite = {

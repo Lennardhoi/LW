@@ -106,6 +106,7 @@ foreign_politics = {
 		fire_only_once = yes
 		cost = 0
 		visible = {
+			hidden_trigger = {country_exists = PER}
 			NOT={ENG={has_completed_focus=ENG_southern_thrust}}
 		}
 		available = {
@@ -117,7 +118,7 @@ foreign_politics = {
 		days_remove=30
 		remove_effect = {
 			SOV = { country_event = { id = iran.2}}
-			ENG = { country_event = { id = iran.3 }}
+			hidden_effect={every_country= { limit={NOT={tag=SOV}} country_event = { id = iran.3 } }}
 		}
 	}
 }

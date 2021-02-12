@@ -67,7 +67,7 @@ NDefines.NNavy.ESCAPE_SPEED_SUB_BASE = -0.20
 NDefines.NNavy.NAVAL_COMBAT_AIR_SUB_DETECTION_FACTOR = 0.1
 
 NDefines.NNavy.COMBAT_DAMAGE_TO_STR_FACTOR = 0.25 -- casting damage value to ship strength multiplier. Use it ot balance the game difficulty.
-NDefines.NNavy.COMBAT_DAMAGE_TO_ORG_FACTOR = 0.8	--- casting damage value to ship organisation multiplier. Use it to balance the game difficulty.
+NDefines.NNavy.COMBAT_DAMAGE_TO_ORG_FACTOR = 0.75	--- casting damage value to ship organisation multiplier. Use it to balance the game difficulty.
 NDefines.NNavy.MAX_ORG_ON_MANUAL_MOVE = 1.0	-- org will clamped to this ratio on manual move
 
 NDefines.NNavy.UNIT_TRANSFER_DETECTION_CHANCE_BASE = 1.0  -- unit transfer and naval invasion base chance detection percentage (if this fails, no detection is done on that tick)
@@ -108,7 +108,7 @@ NDefines.NNavy.SUPREMACY_PER_SHIP_BASE = 15.0
 NDefines.NNavy.SUPPLY_NEED_FACTOR = 0
 
 ---Air
-NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO = 0.02 -- vanilla 0.05
+NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO = 0.015 -- vanilla 0.05
 NDefines.NAir.COMBAT_DAMAGE_SCALE_CARRIER = 0.1    -- same as above but used inside naval combat for carrier battles
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_STR = 1.0
 NDefines.NAir.NAVAL_KAMIKAZE_DAMAGE_MULT = 5.0  -- vanilla is like 20

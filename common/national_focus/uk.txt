@@ -1468,77 +1468,20 @@ focus_tree = {
 		cost = 5
 		available_if_capitulated = yes
 		completion_reward = {
-			random_country = {
-				limit = {
-					original_tag = CAN
-					is_in_faction_with = ROOT
-				}
-				add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties }
-			}
-			random_country = {
-				limit = {
-					original_tag = AST
-					is_in_faction_with = ROOT
-				}
-				add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties }
-			}
-			random_country = {
-				limit = {
-					original_tag = RAJ
-					is_in_faction_with = ROOT
-				}
-				add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties }
-			}
-			random_country = {
-				limit = {
-					original_tag = NZL
-					is_in_faction_with = ROOT
-				}
-				add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties }
-			}
-			random_country = {
-				limit = {
-					original_tag = SAF
-					is_in_faction_with = ROOT
-				}
-				add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties }
-			}
-		}
-	}
-	focus = {
-		id = ENG_british_commonwealth_air_training_plan
-		prerequisite = { focus = uk_commonwealth_focus }
-		icon = GFX_goal_generic_air_fighter2
-		x = 2
-		y = 1
-		relative_position_id = uk_commonwealth_focus
-		cost = 5
-		ai_will_do = {
-			factor = 3
-		}
-		available = {
-		}
-		bypass = {
-		}
-		completion_reward = {
-			add_ideas = ENG_british_commonwealth_air_training_plan
 			every_country = {
 				limit = {
-					is_subject_of = ROOT
-					NOT = { original_tag = SAF }
+					OR={original_tag = CAN
+					original_tag = AST
+					original_tag = NZL
+					original_tag = RAJ
+					original_tag = SAF}
+					is_in_faction_with = ROOT
 				}
-				add_ideas = ENG_british_commonwealth_air_training_plan
-			}
-			SAF = {
-				if = {
-					limit = {
-						is_subject_of = ROOT
-					}
-					add_ideas = ENG_joint_air_training_scheme
-				}
+				add_opinion_modifier = { target = ENG modifier = ENG_commonwealth_ties }
 			}
 		}
 	}
+	
 	focus = {
 		id = uk_india_focus
 		prerequisite = { focus = uk_commonwealth_focus }
@@ -1785,7 +1728,7 @@ focus_tree = {
 			}
 		}
 		icon = GFX_goal_generic_construction
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = uk_australia_focus
 		cost = 5
@@ -1926,8 +1869,8 @@ focus_tree = {
 			}
 		}
 		icon = GFX_goal_generic_construct_civ_factory
-		x = -1
-		y = 3
+		x = 2
+		y = 1
 		relative_position_id = uk_commonwealth_focus
 		cost = 5
 		available_if_capitulated = yes
@@ -2084,8 +2027,8 @@ focus_tree = {
 			}
 		}
 		icon = GFX_goal_generic_construct_civ_factory
-		x = 1
-		y = 3
+		x = -1
+		y = 2
 		relative_position_id = uk_commonwealth_focus
 		cost = 5
 		available_if_capitulated = yes
@@ -2222,8 +2165,8 @@ focus_tree = {
 		}
 		continue_if_invalid = no
 		icon = GFX_focus_ENG_imp_conference
-		x = 0
-		y = 2
+		x = -1
+		y = 1
 		relative_position_id = uk_new_zealand_focus
 		cost = 10
 		ai_will_do = {
@@ -2236,40 +2179,154 @@ focus_tree = {
 				add_timed_idea = { idea = ENG_imperial_conference_economy_5 days = 365 }
 				add_war_support = 0.15
 			}
-			RAJ = {
+			every_country = {
+				limit = {
+					OR={original_tag = CAN
+					original_tag = AST
+					original_tag = NZL
+					original_tag = RAJ
+					original_tag = SAF}
+					is_in_faction_with = ROOT
+				}
+				
 				add_political_power = -60
 				add_timed_idea = { idea = ENG_imperial_conference_economy_dominion days = 365 }
 				add_timed_idea = { idea = ENG_imperial_conference_defense_dominion days = 365 }
 				country_event = { id = mtg_britain.88 hours = 12 }
 				add_war_support = 0.1
 			}
-			AST = {
-				add_political_power = -60
-				add_timed_idea = { idea = ENG_imperial_conference_economy_dominion days = 365 }
-				add_timed_idea = { idea = ENG_imperial_conference_defense_dominion days = 365 }
-				country_event = { id = mtg_britain.88 hours = 12 }
-				add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = ENG_together_for_victory
+		prerequisite = { focus = ENG_imperial_conference }
+		icon = GFX_focus_ENG_steady
+		x = 0
+		y = 1
+		relative_position_id = ENG_imperial_conference
+		cost = 5
+		ai_will_do = {
+			factor = 3
+		}
+		available = {
+		date >1941.1.1
+		}
+		bypass = {
+		}
+		completion_reward = {
+			swap_ideas = {
+			add_idea = british_austerity_idea_2
+			remove_idea =british_austerity_idea
 			}
-			NZL = {
-				add_political_power = -60
-				add_timed_idea = { idea = ENG_imperial_conference_economy_dominion days = 365 }
-				add_timed_idea = { idea = ENG_imperial_conference_defense_dominion days = 365 }
-				country_event = { id = mtg_britain.88 hours = 12 }
-				add_war_support = 0.1
+			add_resource = {
+    				type = steel
+   				amount = 20
+    				state = 126#eng
 			}
-			CAN = {
-				add_political_power = -60
-				add_timed_idea = { idea = ENG_imperial_conference_economy_dominion days = 365 }
-				add_timed_idea = { idea = ENG_imperial_conference_defense_dominion days = 365 }
-				country_event = { id = mtg_britain.88 hours = 12 }
-				add_war_support = 0.1
+			add_resource = {
+    				type = aluminium
+   				amount = 20
+    				state = 130#eng
 			}
-			SAF = {
-				add_political_power = -60
-				add_timed_idea = { idea = ENG_imperial_conference_economy_dominion days = 365 }
-				add_timed_idea = { idea = ENG_imperial_conference_defense_dominion days = 365 }
-				country_event = { id = mtg_britain.88 hours = 12 }
-				add_war_support = 0.1
+			add_resource = {
+    				type = tungsten
+   				amount = 10
+    				state = 118#eng
+			}
+			add_resource = {
+    				type = steel
+   				amount = 20
+    				state = 601#canada
+			}
+			add_resource = {
+    				type = tungsten
+   				amount = 10
+    				state = 430#canada
+			}
+			add_resource = {
+    				type = chromium
+   				amount = 10
+    				state = 430#canada
+			}
+			add_resource = {
+    				type = steel
+   				amount = 20
+    				state = 267#saf
+			}
+			add_resource = {
+    				type = steel
+   				amount = 15
+    				state = 450#astpapua
+			}
+			add_resource = {
+    				type = tungsten
+   				amount = 15
+    				state = 450#astpapua
+			}
+			add_resource = {
+    				type = chromium
+   				amount = 15
+    				state = 450#astpapua
+			}
+			add_resource = {
+    				type = aluminium
+   				amount = 7
+    				state = 272#nzl
+			}
+			add_resource = {
+    				type = steel
+   				amount = 7
+    				state = 272#nzl
+			}
+			add_resource = {
+    				type = tungsten
+   				amount = 7
+    				state = 641#nzl
+			}
+			add_resource = {
+    				type = chromium
+   				amount = 7
+    				state = 641#nzl
+			}
+			add_resource = {
+    				type = aluminium
+   				amount = 10
+    				state = 446#fra
+			}
+			add_resource = {
+    				type = steel
+   				amount = 10
+    				state = 446#fra
+			}
+			add_resource = {
+    				type = tungsten
+   				amount = 10
+    				state = 446#fra
+			}
+			add_resource = {
+    				type = chromium
+   				amount = 10
+    				state = 446#fra
+			}
+			add_resource = {
+    				type = aluminium
+   				amount = 10
+    				state = 405#raj
+			}
+			add_resource = {
+    				type = steel
+   				amount = 10
+    				state = 405#raj
+			}
+			add_resource = {
+    				type = tungsten
+   				amount = 15
+    				state = 404#raj
+			}
+			add_resource = {
+    				type = chromium
+   				amount = 10
+    				state = 404#raj
 			}
 		}
 	}

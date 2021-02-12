@@ -73,7 +73,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1.25
 
 		start_year = 1936
 		categories = {
@@ -85,10 +85,6 @@ technologies = {
 			position = { x = 0 y = 2 }
 		}
 
-		categories = {
-			artillery
-			cat_artillery
-		}
 
 		ai_will_do = {
 			factor = 2
@@ -587,7 +583,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1.25
 
 		start_year = 1936
 		categories = {
@@ -631,10 +627,6 @@ technologies = {
 			}
 		}
 
-		categories = {
-			artillery
-			cat_anti_air
-		}
 	}
 
 	antiair1 = {
@@ -648,7 +640,7 @@ technologies = {
 		mot_anti_air_brigade = {
 			air_attack = 0.15
 		}
-
+		navy_anti_air_attack_factor = 0.05
 		tech_air_damage_factor = -0.01
 
 		path = {
@@ -656,7 +648,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
+		research_cost = 0.8
 
 		start_year = 1939
 		categories = {
@@ -686,10 +678,6 @@ technologies = {
 			}
 		}
 
-		categories = {
-			artillery
-			cat_anti_air
-		}
 	}
 
 	antiair2 = {
@@ -699,6 +687,7 @@ technologies = {
 		}
 
 		static_anti_air_damage_factor = 0.1
+		navy_anti_air_attack_factor = 0.05
 
 		enable_equipment_modules = {
 			ship_anti_air_3
@@ -755,6 +744,7 @@ technologies = {
 		mot_anti_air_brigade = {
 			air_attack = 0.15
 		}
+		navy_anti_air_attack_factor = 0.05
 
 		tech_air_damage_factor = -0.01
 
@@ -809,6 +799,7 @@ technologies = {
 		mot_anti_air_brigade = {
 			air_attack = 0.1
 		}
+		navy_anti_air_attack_factor = 0.05
 
 		tech_air_damage_factor = -0.01
 
@@ -863,6 +854,7 @@ technologies = {
 		enable_equipment_modules = {
 			ship_anti_air_4
 		}
+		navy_anti_air_attack_factor = 0.05
 
 		research_cost = 1
 
@@ -907,7 +899,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 1.25
 
 		start_year = 1936
 		categories = {
@@ -972,10 +964,6 @@ technologies = {
 			}
 		}
 
-		categories = {
-			artillery
-			cat_anti_tank
-		}
 	}
 
 	antitank1 = {

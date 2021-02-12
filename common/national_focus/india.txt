@@ -1738,52 +1738,7 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-		complete_tooltip = {
-			add_autonomy_ratio = {
-				value = -0.25
-				localization = RAJ_british_rail_investors
-			}
-			random_state = {
-				limit = {
-					has_state_flag = RAJ_british_rail_investors_IC1
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			random_state = {
-				limit = {
-					has_state_flag = RAJ_british_rail_investors_IC2
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
 		completion_reward = {
-			random_owned_controlled_state = {
-				prioritize = {  }
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = RAJ_british_rail_investors_IC1
-			}
 			random_owned_controlled_state = {
 				prioritize = {  }
 				limit = {
@@ -1799,7 +1754,6 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
-				set_state_flag = RAJ_british_rail_investors_IC2
 			}
 		}
 	}
