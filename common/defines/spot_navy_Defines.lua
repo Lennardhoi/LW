@@ -33,8 +33,8 @@ NDefines.NNavy.NAVAL_COMBAT_AIR_CARRIER_TARGET_SCORE = 30
 NDefines.NNavy.NAVAL_COMBAT_AIR_CAPITAL_TARGET_SCORE = 200
 NDefines.NNavy.GUN_HIT_PROFILES = { -- hit profiles for guns, if target ih profile is lower the gun will have lower accuracy
 		80.0,	-- big guns
-		140.0,	-- torpedos
-		40.0,	-- small guns
+		120.0,	-- torpedos
+		45.0,	-- small guns
 	}
 NDefines.NNavy.BASE_GUN_COOLDOWNS = { -- number of hours for a gun to be ready after shooting
 		1.0,	-- big guns
@@ -42,6 +42,7 @@ NDefines.NNavy.BASE_GUN_COOLDOWNS = { -- number of hours for a gun to be ready a
 		1.0,	-- small guns
 	}
 
+NDefines.NNavy.COMBAT_ARMOR_PIERCING_DAMAGE_REDUCTION = -0.95 --vanilla -0.9
 
 NDefines.NNavy.COMBAT_MIN_DURATION = 12
 
