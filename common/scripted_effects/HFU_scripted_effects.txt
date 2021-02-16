@@ -105,7 +105,7 @@ refresh_click_effect = { #prevent spam hidden idea for one day
 					add_to_temp_variable = { idefix = 1}
 					add_to_array = {PREV.pow_enemy_countries_numbers = idefix}
 					if= {
-						limit={NOT={check_variable={getting_annexed=1}}}
+						limit={NOT={check_variable={PREV.getting_annexed=1}}}
 						
 					add_to_array = {PREV.pow_enemy_countries_casualties = casualties_against}
 					}

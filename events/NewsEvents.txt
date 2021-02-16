@@ -3691,47 +3691,7 @@ news_event = {
 		}
 	}
 }
-news_event = {
-	id = news.192
-	title = news.192.t
-	desc = news.192.d
-	picture = GFX_news_event_journalists_speech
-	major = yes
-	is_triggered_only = yes
-	fire_for_sender = no
-	option = {
-		name = news.192.a
-		trigger = {
-			tag = YUG
-		}
-	}
-	option = {
-		name = news.192.b
-		trigger = {
-			NOT = {
-				OR = {
-					tag = YUG
-					tag = ITA
-				}
-			}
-			NOT = {
-				has_government = fascism
-			}
-		}
-	}
-	option = {
-		name = news.192.c
-		trigger = {
-			NOT = {
-				OR = {
-					tag = YUG
-					tag = ITA
-				}
-			}
-			has_government = fascism
-		}
-	}
-}
+
 news_event = {
 	id = news.194
 	title = news.194.t

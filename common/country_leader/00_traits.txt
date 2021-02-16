@@ -323,6 +323,9 @@ leader_traits = {
 			fighter_equipment = {
 				air_range = 0.01
 			}
+			jet_fighter_equipment = {
+				air_range = 0.01
+			}
 		}
 
 		ai_will_do = {
@@ -2122,6 +2125,9 @@ leader_traits = {
 			fighter_equipment = {
 				air_agility = 0.1 maximum_speed = 0.1
 			}
+			jet_fighter_equipment = {
+				air_agility = 0.1 maximum_speed = 0.1
+			}
 			# cv_fighter_equipment = {
 				# air_agility = 0.1 maximum_speed = 0.1
 				# }
@@ -2136,6 +2142,9 @@ leader_traits = {
 		random = no
 		equipment_bonus = {
 			fighter_equipment = {
+				air_agility = 0.2 maximum_speed = 0.1 air_range = 0.1
+			}
+			jet_fighter_equipment = {
 				air_agility = 0.2 maximum_speed = 0.1 air_range = 0.1
 			}
 			# cv_fighter_equipment = {
@@ -2156,6 +2165,14 @@ leader_traits = {
 		equipment_bonus = {
 
 			fighter_equipment = {
+
+				build_cost_ic = -0.15
+				air_range = 0.1
+				air_agility = 0.15
+				air_attack = 0.05
+				maximum_speed = 0.1
+			}
+			jet_fighter_equipment = {
 
 				build_cost_ic = -0.15
 				air_range = 0.1
@@ -2209,6 +2226,9 @@ leader_traits = {
 		random = no
 		equipment_bonus = {
 			fighter_equipment = {
+				air_range = 0.2
+			}
+			jet_fighter_equipment = {
 				air_range = 0.2
 			}
 			heavy_fighter_equipment = {

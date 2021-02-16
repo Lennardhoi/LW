@@ -1383,11 +1383,20 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			114 = {
-				set_building_level = {
+				if = {
+					limit={any_province_building_level = {
+  					  province = {
+      						  id =10892
+    						}
+    					building = coastal_bunker
+    					level < 3
+					}}
+					set_building_level = {
 					type = coastal_bunker
 					level = 3
 					province =10892
 					instant_build = yes
+					}
 				}
 				set_building_level = {
 					type = air_base
