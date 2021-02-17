@@ -18,8 +18,7 @@ scripted_gui = {
 				clear_array=ROOT.pow_enemy_countries
 				clear_variable=ROOT.total_pows
 				every_enemy_country = {
-					limit={is_playable_country =yes
-						OR = { NOT = { original_tag = FRA } has_global_flag = fall_of_france } }
+					limit={is_playable_country =yes}
 					add_to_array = {ROOT.pow_enemy_countries=THIS }
 					set_temp_variable= {casualties_against = 0 }
 					while_loop_effect = {
@@ -110,11 +109,20 @@ scripted_gui = {
 					add_to_temp_variable = { idefix = 1}
 					add_to_array = {ROOT.pow_enemy_countries_numbers = idefix}
 
-					add_to_array = {ROOT.pow_enemy_countries_casualties = casualties_against}
-
-
-
+					
+					if= {
+						limit={NOT={has_variable=getting_annexed}}
+						
+					add_to_array = {PREV.pow_enemy_countries_casualties = casualties_against}
+					}
+					else = {
+						add_to_variable= {PREV.pow_other_sources = casualties_against}
+					}
 				}
+
+
+
+				
 				##total casualties calculator
 				for_each_loop = {
 					array=pow_enemy_countries_casualties

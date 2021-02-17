@@ -17,87 +17,87 @@ refresh_click_effect = { #prevent spam hidden idea for one day
 					limit={is_playable_country =yes }
 					add_to_array = {PREV.pow_enemy_countries=THIS }
 					set_temp_variable= {casualties_against = 0 }
-					while_loop_effect = {
-						limit = {
+						while_loop_effect = {
+							limit = {
 
 
-							casualties_inflicted_by = {
-								opponent = PREV
-								thousands > casualties_against
+								casualties_inflicted_by = {
+									opponent = PREV
+									thousands > casualties_against
+								}
 							}
+							add_to_temp_variable = { casualties_against = 1000 }
 						}
-						add_to_temp_variable = { casualties_against = 1000 }
-					}
-					if= {
-						limit = {
+						if= {
+							limit = {
 
-							casualties_inflicted_by = {
-								opponent = PREV
-								thousands < casualties_against
+								casualties_inflicted_by = {
+									opponent = PREV
+									thousands < casualties_against
+								}
 							}
+							add_to_temp_variable = { casualties_against = -1000 }
 						}
-						add_to_temp_variable = { casualties_against = -1000 }
-					}
-					while_loop_effect = {
-						limit = {
+						while_loop_effect = {
+							limit = {
 
-							casualties_inflicted_by = {
-								opponent = PREV
-								thousands > casualties_against
+								casualties_inflicted_by = {
+									opponent = PREV
+									thousands > casualties_against
+								}
 							}
+							add_to_temp_variable = { casualties_against = 100 }
 						}
-						add_to_temp_variable = { casualties_against = 100 }
-					}
-					if= {
-						limit = {
+						if= {
+							limit = {
 
-							casualties_inflicted_by = {
-								opponent = PREV
-								thousands < casualties_against
+								casualties_inflicted_by = {
+									opponent = PREV
+									thousands < casualties_against
+								}
 							}
+							add_to_temp_variable = { casualties_against = -100 }
 						}
-						add_to_temp_variable = { casualties_against = -100 }
-					}
-					while_loop_effect = {
-						limit = {
+						while_loop_effect = {
+							limit = {
 
-							casualties_inflicted_by = {
-								opponent = PREV
-								thousands > casualties_against
+								casualties_inflicted_by = {
+									opponent = PREV
+									thousands > casualties_against
+								}
 							}
+							add_to_temp_variable = { casualties_against = 10 }
 						}
-						add_to_temp_variable = { casualties_against = 10 }
-					}
-					if= {
-						limit = {
+						if= {
+							limit = {
 
-							casualties_inflicted_by = {
-								opponent = PREV
-								thousands < casualties_against
+								casualties_inflicted_by = {
+									opponent = PREV
+									thousands < casualties_against
+								}
 							}
+							add_to_temp_variable = { casualties_against = -10}
 						}
-						add_to_temp_variable = { casualties_against = -10}
-					}
-					while_loop_effect = {
-						limit = {
+						while_loop_effect = {
+							limit = {
 
-							casualties_inflicted_by = {
-								opponent = PREV
-								thousands > casualties_against
+								casualties_inflicted_by = {
+									opponent = PREV
+									thousands > casualties_against
+								}
 							}
+							add_to_temp_variable = { casualties_against = 1 }
 						}
-						add_to_temp_variable = { casualties_against = 1 }
-					}
-					if= {
-						limit = {
+						if= {
+							limit = {
 
-							casualties_inflicted_by = {
-								opponent = PREV
-								thousands < casualties_against
+								casualties_inflicted_by = {
+									opponent = PREV
+									thousands < casualties_against
+								}
 							}
+							#add_to_temp_variable = { casualties_against = -1}
 						}
-						#add_to_temp_variable = { casualties_against = -1}
-					}
 					set_temp_variable={pow_modifier_total=0.25}
 					add_to_temp_variable = {pow_modifier_total = pow_modifier}
 					multiply_temp_variable = { casualties_against = pow_modifier_total}
@@ -105,23 +105,23 @@ refresh_click_effect = { #prevent spam hidden idea for one day
 					add_to_temp_variable = { idefix = 1}
 					add_to_array = {PREV.pow_enemy_countries_numbers = idefix}
 					if= {
-						limit={NOT={check_variable={PREV.getting_annexed=1}}}
+						limit={NOT={has_variable=getting_annexed}}
 						
 					add_to_array = {PREV.pow_enemy_countries_casualties = casualties_against}
 					}
 					else = {
 						add_to_variable= {PREV.pow_other_sources = casualties_against}
 					}
-
-
-
 				}
+
+
+				
 				##total casualties calculator
+				set_variable= {total_pows = pow_other_sources}
 				for_each_loop = {
 					array=pow_enemy_countries_casualties
 					add_to_variable= {total_pows  = v}
 				}
-				add_to_variable= {total_pows = pow_other_sources}
 				set_variable = {total_pows_unassigned =total_pows}
 				subtract_from_variable = {total_pows_unassigned =total_pows_assigned}
 				##total casualties calculator end

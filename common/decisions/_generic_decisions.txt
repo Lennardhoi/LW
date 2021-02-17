@@ -1,28 +1,24 @@
 political_actions = {
+	improved_worker_conditions_cancel = {
+		icon = generic_industry
+		allowed = {
+			is_playable_country =yes
+		}
+		available = {
+		}
+		visible = {
+			has_decision = improved_worker_conditions
+		}
+		fire_only_once = no
+		cost = 0
+		complete_effect = {
+			remove_decision = improved_worker_conditions
+		}
+	}
 	improved_worker_conditions = {
 		icon = generic_industry
 		allowed = {
-			OR = {
-				tag = SOV
-				tag = FRA
-				tag = JAP
-				tag = RAJ
-				tag = AST
-				tag = NZL
-				tag = MAN
-				tag = BUL
-				tag = ROM
-				tag = HUN
-				tag = SPR
-				tag = GER
-				tag = ITA
-				tag = ENG
-				tag = SAF
-				tag = FIN
-				tag = USA
-				tag = CAN
-				tag = EFR
-			}
+			is_playable_country =yes
 		}
 		visible = {
 			always = yes
@@ -32,16 +28,9 @@ political_actions = {
 			stability_factor = 0.1
 			industrial_capacity_factory = -0.1
 		}
-		days_remove = 120
-		cost = 50
+		days_remove = -1
+		cost = 0
 		complete_effect = {
-		}
-		ai_will_do = {
-			base = 0
-			modifier = {
-				add = 1
-				has_stability < 0.6
-			}
 		}
 	}
 	promises_of_peace = {
@@ -50,27 +39,7 @@ political_actions = {
 			has_war = no
 		}
 		allowed = {
-			OR = {
-				tag = SOV
-				tag = FRA
-				tag = JAP
-				tag = RAJ
-				tag = AST
-				tag = NZL
-				tag = MAN
-				tag = BUL
-				tag = ROM
-				tag = HUN
-				tag = SPR
-				tag = GER
-				tag = ITA
-				tag = ENG
-				tag = SAF
-				tag = FIN
-				tag = USA
-				tag = CAN
-				tag = EFR
-			}
+			is_playable_country =yes
 		}
 		visible = {
 			always = yes

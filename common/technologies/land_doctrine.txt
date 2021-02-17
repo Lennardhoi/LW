@@ -298,13 +298,21 @@ technologies = {
 			hard_attack= 0.1
 
 		}
-
+		
+		mechanized={
+			need = {
+				mechanized_equipment = -10
+			}
+		}
 		path = {
 			leads_to_tech = kampfgruppe
 			research_cost_coeff = 1
 		}
 
-
+		
+		on_research_complete = {
+			custom_effect_tooltip = "Each Mechanized Batallion requires 10 less Mechanized Equipment"
+		}
 		doctrine = yes
 		research_cost = 4.00
 

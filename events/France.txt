@@ -84,6 +84,7 @@ country_event = {
 		GER={
 			set_variable={collabo=has_collaboration@FRA}
 			multiply_variable={collabo=100}
+			add_to_variable= {pow_other_sources = 100}
 		}
 		FRA={
 			pow_before_annex=yes
