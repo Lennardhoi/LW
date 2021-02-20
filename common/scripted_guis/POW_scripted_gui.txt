@@ -10,7 +10,7 @@ scripted_gui = {
 		window_name = "pow_decision_ui_window"
 		effects = {
 
-			refresh_click = { #prevent spam hidden idea for one day
+			refresh_click = { #prevent spam hidden idea for one day 
 				# Coring List Window
 				#add_timed_idea= {idea=pow_refresh days=1}
 				clear_array=ROOT.pow_enemy_countries_casualties
@@ -113,13 +113,13 @@ scripted_gui = {
 					if= {
 						limit={NOT={has_variable=getting_annexed}}
 						
-					add_to_array = {PREV.pow_enemy_countries_casualties = casualties_against}
+					add_to_array = {ROOT.pow_enemy_countries_casualties = casualties_against}
+					
 					}
 					else = {
-						add_to_variable= {PREV.pow_other_sources = casualties_against}
+						add_to_variable= {ROOT.pow_other_sources = casualties_against}
 					}
 				}
-
 
 
 				
