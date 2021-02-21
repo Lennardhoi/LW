@@ -1415,6 +1415,7 @@ leader_traits = {
 	destroyer_leader = {
 		type = navy
 		modifier = {
+			naval_torpedo_screen_penetration_factor = 0.1
 			#destroyer = {
 				#	units = {
 					#		attack = 0.1
@@ -1425,7 +1426,7 @@ leader_traits = {
 		sub_unit_modifiers = {
 			destroyer = {
 				naval_damage_factor = 0.1
-				naval_torpedo_hit_chance_factor = 0.1
+				#naval_torpedo_hit_chance_factor = 0.1
 			}
 		}
 		ai_will_do = {

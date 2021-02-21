@@ -13,6 +13,19 @@ ideas = {
 			production_factory_start_efficiency_factor = 0.4 
 			}
 		}
+		no_agency_passive_defense={
+			picture = generic_infantry_bonus
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier= {
+			intelligence_agency_defense = 5
+			}
+		}
 		research_36={
 			picture = generic_infantry_bonus
 			allowed = {

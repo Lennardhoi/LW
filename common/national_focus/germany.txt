@@ -3398,6 +3398,8 @@ focus_tree = {
 		available = {
 			Date > 1942.5.1
 			NOT={has_idea=GER_barbarossa}
+			NOT={has_idea=GER_barbarossa_2}
+			NOT={has_idea=GER_barbarossa_3}
 		}
 		relative_position_id = GER_moscow
 		x = 0
@@ -3481,6 +3483,7 @@ focus_tree = {
 		icon = GFX_focus_ger_reichskommisariats
 		available = {
 			date > 1943.5.15
+			NOT={has_idea=GER_blau}
 		}
 		x = 1
 		y = 1

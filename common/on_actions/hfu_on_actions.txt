@@ -11,7 +11,13 @@ on_actions = {
 			update_pacific_war=yes
 			}}
 	on_startup = {
-	effect= {
+	effect= {	
+			every_country={
+				limit={NOT={OR={original_tag=GER original_tag=ITA original_tag=ENG original_tag=USA original_tag=SOV original_tag=JAP}}}
+				add_ideas=no_agency_passive_defense
+				
+			}
+			GER = {set_variable = {ostarbeiter_cg=-0.1}}
 			every_country={
 				limit={is_playable_country=yes}
 				add_ideas=research_35

@@ -23,8 +23,8 @@ NDefines.NNavy.MAX_POSITIONING_PENALTY_FOR_NEWLY_JOINED_SHIPS = 0.0  -- the accu
 NDefines.NNavy.DAMAGE_PENALTY_ON_MINIMUM_POSITIONING = 0.8	-- damage penalty at 0% positioning
 NDefines.NNavy.SCREENING_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING = 0.4   -- screening efficiency (screen to capital ratio) at 0% positioning
 
-NDefines.NNavy.COMBAT_ARMOR_PIERCING_CRITICAL_BONUS = 1.5 -- Bonus to critical chance when shooter armor piercing is higher then target armor.
-NDefines.NNavy.COMBAT_TORPEDO_CRITICAL_CHANCE = 0.5 -- chance for critical hit from torpedo.
+NDefines.NNavy.COMBAT_ARMOR_PIERCING_CRITICAL_BONUS = 2 -- Bonus to critical chance when shooter armor piercing is higher then target armor.
+NDefines.NNavy.COMBAT_TORPEDO_CRITICAL_CHANCE = 0.2 -- chance for critical hit from torpedo.
 NDefines.NNavy.PRIDE_OF_THE_FLEET_UNASSIGN_COST = 0 -- cost to unassign/replace pride of the fleet
 
 NDefines.NNavy.CARRIER_STACK_PENALTY = 5 -- The most efficient is 4 carriers in combat. 5+ brings the penalty to the amount of wings in battle.
@@ -33,12 +33,12 @@ NDefines.NNavy.NAVAL_COMBAT_AIR_CARRIER_TARGET_SCORE = 30
 NDefines.NNavy.NAVAL_COMBAT_AIR_CAPITAL_TARGET_SCORE = 200
 NDefines.NNavy.GUN_HIT_PROFILES = { -- hit profiles for guns, if target ih profile is lower the gun will have lower accuracy
 		80.0,	-- big guns
-		120.0,	-- torpedos
-		45.0,	-- small guns
+		140.0,	-- torpedos
+		40.0,	-- small guns
 	}
 NDefines.NNavy.BASE_GUN_COOLDOWNS = { -- number of hours for a gun to be ready after shooting
 		1.0,	-- big guns
-		2.0,	-- torpedos
+		1.0,	-- torpedos
 		1.0,	-- small guns
 	}
 
