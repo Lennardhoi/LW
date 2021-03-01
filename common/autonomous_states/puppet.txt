@@ -50,10 +50,8 @@ autonomy_state = {
 		modifier = {
 			add = 10
 			FROM = {
-				OR = {
 					has_wargoal_against = { target = ROOT type = puppet_wargoal_focus }
-					has_rule = can_puppet
-				}
+					
 			}
 		}
 	}

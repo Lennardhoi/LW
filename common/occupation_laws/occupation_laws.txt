@@ -119,11 +119,11 @@ secret_police_oversight = {
 
 	state_modifier = {
 		resistance_target 				= -0.30
-		compliance_gain 				= 0
+		compliance_gain 				= 0.05
 		required_garrison_factor 		= -0.3
 		resistance_damage_to_garrison 	= -0.15
-		local_factories 				= 0.2
-		local_resources 				= 0.2
+		local_factories 				= 0.1
+		local_resources 				= 0.1
 		enemy_operative_detection_chance_over_occupied_tag = 1.5 # offset detection chance by +1%
 		enemy_intel_network_gain_factor_over_occupied_tag = -0.4 # -25% scaled by the number of occupied states and the ratio of the network covering those occupied states
 		# todo + spy defense
