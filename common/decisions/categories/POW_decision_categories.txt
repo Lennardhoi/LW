@@ -29,6 +29,7 @@ POW = {
 		#	has_war=yes
 		#}
 	visible= {
+		OR = { NOT = { original_tag = FRA } has_global_flag = fall_of_france } 
 		has_war=yes
 	}
 	scripted_gui = pow_decision_ui

@@ -1,7 +1,9 @@
 pow_before_annex= {
 hidden_effect = {set_variable ={getting_annexed=1}
 every_enemy_country = {
-					limit={is_playable_country =yes }
+					limit={is_playable_country =yes 
+					OR = { NOT = { original_tag = FRA } has_global_flag = fall_of_france } 
+					}
 refresh_click_effect = yes
 }
 }
@@ -14,7 +16,9 @@ refresh_click_effect = { #prevent spam hidden idea for one day
 				clear_array=pow_enemy_countries
 				clear_variable=total_pows
 				every_enemy_country = {
-					limit={is_playable_country =yes }
+					limit={is_playable_country =yes
+					OR = { NOT = { original_tag = FRA } has_global_flag = fall_of_france } 
+					 }
 					add_to_array = {PREV.pow_enemy_countries=THIS }
 					set_temp_variable= {casualties_against = 0 }
 						while_loop_effect = {

@@ -82,13 +82,13 @@ country_event = {
 		add_political_power = 100
 		add_timed_idea={idea=GER_triumph_in_france days=730}
 		GER={
-			set_variable={collabo=has_collaboration@FRA}
-			multiply_variable={collabo=100}
-			add_to_variable= {pow_other_sources = 100}
+			#set_variable={collabo=has_collaboration@FRA}
+			#multiply_variable={collabo=100}
+			#add_to_variable= {pow_other_sources = 100}
 		}
 		FRA={
-			pow_before_annex=yes
-			clear_variable = getting_annexed
+			#pow_before_annex=yes
+			#clear_variable = getting_annexed
 			transfer_navy = {
 				target = VEN
 				}}
