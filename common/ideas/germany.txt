@@ -311,13 +311,13 @@ ideas = {
 			removal_cost = -1
 			picture = generic_acquire_tanks
 			modifier = {
-				army_armor_attack_factor = 0.2
+				army_armor_attack_factor = 0.10
 				air_mission_efficiency = 0.1
 				air_cas_present_factor = 0.1
-				no_supply_grace = 96
+				no_supply_grace = 72
 				max_dig_in = -7
-				production_speed_air_base_factor=0.35
-				production_speed_infrastructure_factor=0.5
+				production_speed_air_base_factor=0.15
+				production_speed_infrastructure_factor=0.25
 			}
 		}
 		GER_barbarossa_2 = {
@@ -330,7 +330,7 @@ ideas = {
 			removal_cost = -1
 			picture = generic_acquire_tanks
 			modifier = {
-				army_armor_attack_factor = 0.2
+				army_armor_attack_factor = 0.15
 				supply_consumption_factor = 0.2
 			}
 		}
@@ -376,11 +376,11 @@ ideas = {
 			removal_cost = -1
 			picture = generic_acquire_tanks
 			modifier = {
-				army_infantry_attack_factor = 0.1
-				production_speed_air_base_factor=0.35
+				army_infantry_attack_factor = 0.05
+				production_speed_air_base_factor=0.15
 				max_dig_in = -7
-				no_supply_grace = 96
-				production_speed_infrastructure_factor=0.5
+				no_supply_grace = 72
+				production_speed_infrastructure_factor=0.2
 				air_cas_present_factor = 0.1
 			}
 		}
@@ -1495,24 +1495,20 @@ ideas = {
 			}
 			equipment_bonus = {
 				anti_air_equipment = {
-					build_cost_ic = -0.1 
+					build_cost_ic = -0.075 
 					instant = yes
 				}
 				artillery_equipment = {
-					build_cost_ic = -0.1 
+					build_cost_ic = -0.075 
 					instant = yes
 				}
 				anti_tank_equipment = {
-					build_cost_ic = -0.1 
+					build_cost_ic = -0.075  
 					instant = yes
 				}
 				infantry_equipment = {
 					instant = yes
-					build_cost_ic = -0.1
-				}
-				armor = {
-					build_cost_ic = -0.05 
-					instant = yes
+					build_cost_ic = -0.075 
 				}
 			}
 		}
