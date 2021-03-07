@@ -27,6 +27,18 @@ ideas = {
 		}
 	}
 	hidden_ideas = {
+		SOV_improve_stalin_line = {
+			picture = generic_production_bonus
+			allowed = {
+				original_tag = SOV
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_bunker_factor = 0.3 
+				production_speed_coastal_bunker_factor = 0.3
+			}
+		}
 		SOV_snakemodding = {
 			picture = generic_production_bonus
 			allowed = {
@@ -147,7 +159,7 @@ ideas = {
 				operative_slot = 1
 				local_resources_factor = 0.2
 				industry_air_damage_factor = -0.1
-				production_speed_air_base_factor = 0.1
+				production_speed_air_base_factor = 0.2
 			}
 		}
 		SOV_the_great_war = {
@@ -352,12 +364,14 @@ ideas = {
 					instant = yes
 					build_cost_ic = 100
 				}
+				category_army = {
+					breakthrough = 0.10
+				}
 			}
 			modifier = {
 				license_naval_purchase_cost = 400
 				#army_defence_factor = -0.05
 				max_dig_in = -2
-				breakthrough_factor = 0.1
 				air_attack_factor =-0.20
 			}
 		}

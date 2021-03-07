@@ -1375,6 +1375,9 @@ focus_tree = {
 		available = {
 			114 = { is_owned_and_controlled_by = ENG }
 		}
+		bypass = {
+			114 = { NOT={is_owned_and_controlled_by = ENG }}
+		}
 		icon = GFX_goal_generic_construct_military
 		x = 1
 		y = 1

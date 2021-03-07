@@ -496,6 +496,19 @@ on_actions = {
 						}}
 				country_event = {days = 9 id=france.13}
 				FRA ={set_country_flag =lel}
+				if = {
+					limit = {date < 1939.11.1}
+					set_global_flag=Fall_of_france_oct
+				}
+				else_if = {
+					limit = {date < 1939.12.1}
+					set_global_flag=Fall_of_france_nov
+				}
+				else_if = {
+					limit = {date > 1940.12.1}
+					set_global_flag=Fall_of_france_dec
+				}
+				
 			}
 			if = {
 				limit = {

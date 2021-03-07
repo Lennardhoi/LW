@@ -22,10 +22,7 @@ country_event = {
 	hidden=yes
 	option = {
 		name = france.12.a
-		add_timed_idea = {
-			idea = FRA_snakemodding
-			days = 45
-		}
+		
 	}
 }
 country_event = {
@@ -120,7 +117,7 @@ country_event = {
 			diplomatic_relation = { country = GER relation = non_aggression_pact }
 		}
 		if = {
-			limit = {Date < 1939.11.1}
+			limit = {has_global_flag=Fall_of_france_oct}
 			ITA = {
 				transfer_state = 653
 				transfer_state = 32

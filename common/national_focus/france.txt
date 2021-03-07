@@ -2023,7 +2023,7 @@ focus_tree = {
 				}
 				476 = {
 					for_loop_effect = {
-						end = 2
+						end = 4
 						create_unit = {
 							division = "name = \"French\" division_template = \"French\" start_experience_factor = 0.3 start_equipment_factor = 0.01"
 							owner = FRA
@@ -2034,7 +2034,7 @@ focus_tree = {
 				limit = {has_tech = basic_heavy_tank}
 
 				division_template = {
-					name = "French"
+					name = "French2"
 					regiments = {
 						heavy_armor = { x = 0 y = 0 }
 						heavy_armor = { x = 0 y = 1 }
@@ -2068,9 +2068,9 @@ focus_tree = {
 				}
 				476 = {
 					for_loop_effect = {
-						end = 2
+						end = 4
 						create_unit = {
-							division = "name = \"French\" division_template = \"French\" start_experience_factor = 0.3 start_equipment_factor = 0.01"
+							division = "name = \"French2\" division_template = \"French2\" start_experience_factor = 0.3 start_equipment_factor = 0.01"
 							owner = FRA
 						}
 						}}
@@ -2089,23 +2089,23 @@ focus_tree = {
 				amount = 200
 			}
 			add_equipment_to_stockpile = {
-				type = artillery_equipment_1
+				type = artillery_equipment
 				amount = 2500
 				producer = FRA
 			}
 			add_equipment_to_stockpile = {
-				type = anti_air_equipment_1
+				type = anti_air_equipment
 				amount = 1000
 				producer = FRA
 			}
 			add_equipment_to_stockpile = {
-				type = infantry_equipment_1
+				type = infantry_equipment
 				amount = 25000
 				producer = FRA
 			}
 			add_equipment_to_stockpile = {
-				type = motorized_equipment_1
-				amount = 500
+				type = motorized_equipment
+				amount = 1000
 				producer = FRA
 			}
 			add_equipment_to_stockpile = {
@@ -2146,8 +2146,19 @@ focus_tree = {
 				type = industrial_complex
 				level = 4
 			}
+			add_timed_idea = {
+				idea = FRA_snakemodding
+				days = 60
+			}
 			hidden_effect = {
-				country_event = lar_appeal_to_overseas_territories.1
+				if = {
+					limit={OR = { has_global_flag=Fall_of_france_dec has_global_flag=Fall_of_france_nov}}
+					country_event = lar_appeal_to_overseas_territories.9
+				}
+				if = {
+					limit={has_global_flag=Fall_of_france_dec}
+					country_event = lar_appeal_to_overseas_territories.5
+				}		
 			}
 		}
 	}
