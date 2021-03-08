@@ -411,4 +411,39 @@ adjacency_rule
 	icon =10297
 	offset = { 5 0 -6 }
 }
+adjacency_rule
+{
+	name = "LENINGRAD_CANAL"
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = yes
+	}
+	required_provinces = {10062 10218 135}
+	icon =10218
+	offset = { 0 0 -1 }
+}
 
