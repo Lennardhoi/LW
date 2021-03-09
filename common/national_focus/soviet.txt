@@ -411,7 +411,7 @@ focus_tree = {
 					scoped_sound_effect = "sp_sov_stalin"
 				}
 			}
-			add_timed_idea= {idea=SOV_winter_offensive days=60}
+			add_timed_idea= {idea=SOV_winter_offensive days=90}
 		}
 	}
 	focus = {
@@ -1305,12 +1305,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			air_experience = 250
-			add_tech_bonus = {
-				name = coastal_command_focus
-				bonus = 1.0
-				uses = 2
-				category = cas_bomber
-			}
+			
 			set_rule = {
 				can_generate_female_aces = yes
 			}
@@ -1377,9 +1372,9 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SOV_extra_tech_slot
-		icon = GFX_focus_research
-		text = extra_tech_slot
+		id = SOV_mobilization
+		icon = GFX_goal_generic_allies_build_infantry
+		#text = extra_tech_slot
 		prerequisite = { focus = SOV_socialist_science }
 		x = 0
 		y = 1
@@ -1390,7 +1385,14 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-			add_research_slot = 1
+			if = {
+			limit={has_idea=volunteer_only}
+			add_ideas=limited_conscription
+			}
+			else_if = {
+			limit={has_idea=limited_conscription}
+			add_ideas=extensive_conscription
+			}
 		}
 	}
 	focus = {
@@ -1451,6 +1453,26 @@ focus_tree = {
 				technology = antiair1
 				technology = antiair2
 				technology = antiair3
+			}
+		}
+	}
+	focus = {
+		id = SOV_cas
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = { focus = SOV_transpolar_flights }
+		x = 13
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = coastal_command_focus
+				bonus = 1.0
+				uses = 2
+				category = cas_bomber
 			}
 		}
 	}
@@ -1891,7 +1913,7 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-			add_timed_idea= {idea=SOV_uranus days=60}
+			add_timed_idea= {idea=SOV_uranus days=90}
 		}
 	}
 	focus = {
