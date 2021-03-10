@@ -32,11 +32,11 @@ NDefines.NNavy.CARRIER_STACK_PENALTY_EFFECT = 0.167 -- Each carrier above the op
 NDefines.NNavy.NAVAL_COMBAT_AIR_CARRIER_TARGET_SCORE = 30
 NDefines.NNavy.NAVAL_COMBAT_AIR_CAPITAL_TARGET_SCORE = 200
 NDefines.NNavy.GUN_HIT_PROFILES = { -- hit profiles for guns, if target ih profile is lower the gun will have lower accuracy
-		80.0,	-- big guns
+		70.0,	-- big guns
 		140.0,	-- torpedos
 		40.0,	-- small guns
 	}
-NDefines.NNavy.CONVOY_HIT_PROFILE = 70 -- vanilla 120
+NDefines.NNavy.CONVOY_HIT_PROFILE = 50 -- vanilla 120
 NDefines.NNavy.BASE_GUN_COOLDOWNS = { -- number of hours for a gun to be ready after shooting
 		1.0,	-- big guns
 		1.0,	-- torpedos
