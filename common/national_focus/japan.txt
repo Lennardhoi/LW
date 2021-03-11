@@ -329,8 +329,8 @@ focus_tree = {
 				limit = { has_dlc = "Waking the Tiger" }
 				unlock_decision_category_tooltip = prospect_for_resources
 			}
-			add_timed_idea = { idea = SPA_preparing_for_war days = 365 }
-			MAN = { add_timed_idea = { idea = SPA_preparing_for_war days = 365 } }
+			add_timed_idea = { idea = SPA_preparing_for_war days = 180 }
+			MAN = { add_timed_idea = { idea = SPA_preparing_for_war days = 180 } }
 		}
 	}
 	focus = {
@@ -763,7 +763,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = JAP_small_arms_modernization
 				bonus = 1.0
-				uses = 1
+				uses = 2
 				category = infantry_weapons
 			}
 		}
@@ -831,7 +831,13 @@ focus_tree = {
 				name = JAP_modern_artillery
 				bonus = 1.0
 				uses = 2
-				category = artillery
+				category = cat_artillery
+			}
+			add_tech_bonus = {
+				name = JAP_modern_artillery
+				bonus = 1.0
+				uses = 1
+				technology = antiair2
 			}
 		}
 	}
@@ -906,8 +912,8 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = JAP_bicycle_battalions
-		icon = GFX_goal_generic_special_forces
+		id = JAP_modern_at_guns
+		icon = GFX_focus_GER_flak_36
 		prerequisite = { focus = JAP_supremacy_of_technology focus = JAP_supremacy_of_will }
 		x = 1
 		y = 1
@@ -925,7 +931,12 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			set_technology = { bicycle_infantry = 1 }
+			add_tech_bonus = {
+				name = JAP_small_arms_modernization
+				bonus = 1.0
+				uses = 2
+				category = cat_anti_tank
+			}
 		}
 	}
 	focus = {

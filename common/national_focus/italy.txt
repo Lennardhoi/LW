@@ -299,7 +299,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_trade_interdiction
-		icon = GFX_goal_generic_wolf_pack
+		icon = GFX_focus_ITA_trade_interdiction
 		prerequisite = { focus = ITA_u_boat_effort }
 		x = 1
 		y = 1
@@ -346,7 +346,7 @@ focus_tree = {
 	focus = {
 		id = ITA_naval_air_effort_2
 		text = naval_air_effort
-		icon = GFX_focus_ger_arado
+		icon = GFX_focus_ITA_naval_air_effort_2
 		prerequisite = { focus = ITA_graf_zeppelin  }
 		x = 0
 		y = 1
@@ -440,7 +440,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_h_class
-		icon = GFX_focus_ger_arado
+		icon = GFX_focus_ITA_h_class
 		prerequisite = { focus = ITA_germaniawerft  }
 		x = 0
 		y = 1
@@ -1008,7 +1008,7 @@ focus_tree = {
 		id = ITA_oil
 		prerequisite = { focus = ITA_highway }
 		relative_position_id = ITA_highway
-		icon = GFX_goal_generic_production
+		icon = GFX_focus_ITA_oil
 		available = {
 			ITA = {
 				controls_state = 414
@@ -1704,7 +1704,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_air_innovation_3
-		icon = GFX_focus_rocketry
+		icon = GFX_focus_ITA_air_innovation_3
 		prerequisite = { focus = ITA_air_innovation_2 }
 		x = 0
 		y = 1
@@ -1847,7 +1847,7 @@ focus_tree = {
 	}
 	focus = {
 		id = ITA_pact_of_steel
-		icon = GFX_goal_generic_major_alliance
+		icon = GFX_focus_ITA_pact_of_steel
 		prerequisite = { focus = ITA_bulgaria_friend }
 		available = {
 		}

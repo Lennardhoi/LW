@@ -1303,7 +1303,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_air_innovation_2
-		icon = GFX_goal_generic_air_fighter2
+		icon = GFX_focus_GER_air_innovation_2
 		prerequisite = { focus = GER_strategic_air_effort  }
 		x = 0
 		y = 2
@@ -1506,7 +1506,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_army_innovation_2
-		icon = GFX_goal_generic_army_tanks
+		icon = GFX_focus_GER_army_innovation_2
 		prerequisite = { focus = GER_german_engineering }
 		x = -1
 		y = 1
@@ -3559,10 +3559,6 @@ focus_tree = {
 				}
 				72 = { add_core_of = POL }
 				POL = { transfer_state = 72 }
-				HUN = { add_timed_idea = { idea = SPA_preparing_for_war days = 365 } }
-				ROM = { add_timed_idea = { idea = SPA_preparing_for_war days = 365 } }
-				BUL = { add_timed_idea = { idea = SPA_preparing_for_war days = 365 } }
-				ITA = { add_timed_idea = { idea = SPA_preparing_for_war days = 365 } }
 			}
 		}
 	}
@@ -4429,7 +4425,7 @@ focus_tree = {
 	}
 	focus = {
 		id = GER_operation_sealion
-		icon = GFX_focus_ger_arado
+		icon = GFX_focus_GER_operation_sealion
 		prerequisite = { focus=GER_naval_air_effort }
 		prerequisite = { focus = GER_h_class  }
 		x = 1
