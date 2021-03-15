@@ -2326,7 +2326,7 @@ focus_tree = {
 			focus = FRA_form_the_national_committee
 		}
 		relative_position_id = FRA_form_the_national_committee
-		cost = 5
+		cost = 10
 		ai_will_do = {
 			factor = 1
 		}
@@ -2341,44 +2341,6 @@ focus_tree = {
 			add_ideas = FRA_egalite_liberte_solidarite
 		}
 	}
-	focus = {
-		id = FRA_katyusha
-		icon = GFX_focus_sparta
-		x = 0
-		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = {
-			focus = FRA_form_the_provisional_government_of_the_republic
-		}
-		relative_position_id = FRA_form_the_provisional_government_of_the_republic
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-		}
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		completion_reward = {
-			create_field_marshal = {
-				name = "Katyusha"
-				picture = "portrait_fra_katyusha.dds"
-				traits = { organizer infantry_leader urban_assault_specialist naval_invader }
-				skill = 5
-				attack_skill = 6
-				defense_skill = 2
-				planning_skill = 1
-				logistics_skill = 1
-			}
-		}
-	}
-	
 	focus = {
 		id = FRA_continue_the_fight
 		icon = GFX_goal_generic_major_war
