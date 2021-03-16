@@ -177,6 +177,7 @@ focus_tree = {
 				technology = advanced_machine_tools
 				technology = assembly_line_production
 				technology = streamlined_line
+				technology = flexible_line
 			}
 		}
 	}
@@ -418,8 +419,8 @@ focus_tree = {
 		id = SOV_winter_offensive_2
 		icon = GFX_SOV_lessons_of_the_winter_war
 		relative_position_id = SOV_great_figher
-		available = {212 = {is_fully_controlled_by = SOV}}
-		bypass = {not = {212 = {is_fully_controlled_by = SOV}}}
+		available = {245 = {is_fully_controlled_by = SOV}}
+		bypass = {not = {245 = {is_fully_controlled_by = SOV}}}
 		x = -2
 		y = 1
 		prerequisite = { focus = SOV_great_figher }
@@ -432,7 +433,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			custom_effect_tooltip = "This focus will spawn 20 14x4 Divisions in Moscow"
+			custom_effect_tooltip = "This focus will spawn 20 Elite Divisions in Gorki"
 			division_template = {
 				name = "Red Guards"
 				regiments = {
@@ -448,8 +449,10 @@ focus_tree = {
 					shocktroop = { x = 2 y = 1 }
 					shocktroop = { x = 2 y = 2 }
 					shocktroop = { x = 2 y = 3 }
-					shocktroop = { x = 3 y = 0 }
-					shocktroop = { x = 3 y = 1 }
+					anti_tank_brigade = { x = 3 y = 0 }
+					anti_tank_brigade = { x = 3 y = 1 }
+					anti_air_brigade = { x = 3 y = 2 }
+					anti_air_brigade = { x = 3 y = 3 }
 					artillery_brigade = { x = 4 y = 0 }
 					artillery_brigade = { x = 4 y = 1 }
 					artillery_brigade = { x = 4 y = 2 }
@@ -464,11 +467,11 @@ focus_tree = {
 					anti_tank = {x = 0 y = 5}
 				}
 			}
-			212 = {
+			245 = {
 				for_loop_effect = {
 					end = 20
 					create_unit = {
-						division = "name = \"Red Guards\" division_template = \"Red Guards\" start_experience_factor = 0.3"
+						division = "name = \"Red Guards\" division_template = \"Red Guards\" start_experience_factor = 0.4"
 						owner = SOV
 					}
 					}}
@@ -514,6 +517,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = SOV_red_army
+			swap_ideas = {
+				remove_idea = ivan_konev
+				add_idea = ivan_konev_2
+			}
 		}
 	}
 	focus = {

@@ -71,15 +71,15 @@ ideas = {
 		}
 		SOV_uranus = {
 			modifier = {
-				army_armor_attack_factor = 0.1
-				army_infantry_attack_factor = 0.1
+				army_armor_attack_factor = 0.15
+				army_infantry_attack_factor = 0.15
 				winter_attrition_factor = -1
 			}
 		}
 		SOV_bagration = {
 			modifier = {
-				army_armor_attack_factor = 0.15
-				army_infantry_attack_factor = 0.1
+				army_armor_attack_factor = 0.25
+				army_infantry_attack_factor = 0.20
 				winter_attrition_factor = -1
 			}
 		}
@@ -174,6 +174,7 @@ ideas = {
 			modifier = {
 				consumer_goods_factor=-0.15
 				industry_repair_factor = 1
+				political_power_gain = 0.5
 			}
 		}
 		workers_culture = {
@@ -894,6 +895,18 @@ ideas = {
 				factor = 1
 			}
 		}
+		ivan_konev_2 = {
+			ledger = army
+			picture = ivan_konev
+			allowed = {
+				original_tag = SOV
+			}
+			traits = { army_infantry_1 army_commando_1}
+			visible = { has_completed_focus = SOV_great_patriotic_general }
+			ai_will_do = {
+				factor = 1
+			}
+		}
 		aleksandr_vasilevsky = {
 			ledger = army
 			#Also unit leader: 407
@@ -910,15 +923,7 @@ ideas = {
 			#Also unit leader: 402
 			allowed = {
 				original_tag = SOV # Unlocked via focus
-				hidden_trigger = {
-					NOT = {
-						any_other_country = {
-							has_war_with = SOV
-							original_tag = SOV
-							has_unit_leader = 403
-						}
-					}
-				}
+				
 			}
 			available =
 			{
@@ -938,15 +943,7 @@ ideas = {
 			visible = { has_completed_focus = SOV_barb_2 }
 			allowed = {
 				original_tag = SOV # Unlocked via focus
-				hidden_trigger = {
-					NOT = {
-						any_other_country = {
-							has_war_with = SOV
-							original_tag = SOV
-							has_unit_leader = 403
-						}
-					}
-				}
+				
 			}
 			available =
 			{
