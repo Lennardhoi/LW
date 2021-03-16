@@ -342,8 +342,8 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = USA_office_of_scientific_research_and_development
-		icon = GFX_focus_research
+		id = USA_manhattan_project
+		icon = GFX_focus_wonderweapons
 		x = -1
 		y = 1
 		prerequisite = { focus = USA_continue_the_new_deal }
@@ -361,19 +361,24 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			add_research_slot = 1
+			add_tech_bonus = {
+				name = USA_manhattan_project
+				bonus = 1.0
+				uses = 3
+				category = nuclear
+			}
 		}
 	}
 	focus = {
 		id = USA_rubber_reserve_company
 		icon = GFX_focus_generic_rubber
-		prerequisite = { focus = USA_office_of_scientific_research_and_development }
+		prerequisite = { focus = USA_manhattan_project }
 		available = {
 			has_tech=synth_oil_experiments
 		}
 		x = 0
 		y = 1
-		relative_position_id = USA_office_of_scientific_research_and_development
+		relative_position_id = USA_manhattan_project
 		cost = 5
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {

@@ -531,26 +531,7 @@ name = armour_f_folder
 position = { x = 8 y = 10 }
 }
 sub_technologies = {
-super_heavy_td
-super_heavy_art
-
 }
-}
-super_heavy_td_f = {
-enable_equipments = {
-super_heavy_tank_destroyer_equipment_1_f
-}
-dependencies = {super_heavy_td = 1}
-research_cost = 0
-start_year = 1943
-}
-super_heavy_art_f = {
-enable_equipments = {
-super_heavy_tank_artillery_equipment_1_f
-}
-dependencies = {super_heavy_art = 1}
-research_cost = 0
-start_year = 1943
 }
 amphibious_tank_f = {
 enable_equipments = {

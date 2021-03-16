@@ -1913,9 +1913,6 @@ technologies = {
 		}
 
 		sub_technologies = {
-			super_heavy_td
-			super_heavy_art
-			#super_heavy_spaa
 		}
 
 		ai_will_do = {
@@ -1928,64 +1925,6 @@ technologies = {
 		}
 	}
 
-	super_heavy_td = {
-
-		enable_equipments = {
-			super_heavy_tank_destroyer_equipment_1
-		}
-
-		enable_subunits = {
-			super_heavy_tank_destroyer_brigade
-		}
-
-		research_cost = 0.3
-		start_year = 1943
-
-		ai_will_do = {
-			factor = 0
-		}
-	}
-
-	super_heavy_art = {
-
-		enable_equipments = {
-			super_heavy_tank_artillery_equipment_1
-		}
-
-		enable_subunits = {
-			super_heavy_sp_artillery_brigade
-			super_heavy_sp_artillery
-		}
-
-		research_cost = 0.3
-		start_year = 1943
-
-		ai_will_do = {
-			factor = 0
-		}
-
-		categories = {
-			armor
-		}
-	}
-
-	# super_heavy_spaa = {
-
-		# enable_equipments = {
-			# super_heavy_tank_aa_equipment_1
-			# }
-		# enable_subunits = {
-			# super_heavy_sp_anti_air_brigade
-			# }
-
-		# research_cost = 0.3
-		# start_year = 1943
-
-		# ai_will_do = {
-			# factor = 0
-			# }
-
-		# }
 	amphibious_tank = { #SchwimmPanzer II
 
 		enable_equipments = {
