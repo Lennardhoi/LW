@@ -1,45 +1,36 @@
 technologies = {
 	mobile = {
 		air_cas_present_factor = 0.25
-
 		allow_branch = {is_debug = yes}
 		armored_car = {
 			breakthrough = 0.2
 			default_morale = 0.3
 			max_organisation = 17
-
 		}
 		army_speed_factor = 0.1
-
 		categories = {cat_mobile_warfare
 			land_doctrine
-
 			}		category_all_armor = {
 			breakthrough = 0.2
 			default_morale = 0.4
 			maximum_speed = 0.1
-
 		}
 		category_all_infantry = {
 			default_morale = 0.25
 			max_organisation = 30
 			maximum_speed = 0.1
 			soft_attack = 0.05
-
 		}
 		category_army = {
 			breakthrough = 0.05
-
 		}
 		category_light_infantry = {
 			defense = 0.1
 			max_organisation = 10
-
 		}
 		category_line_artillery = {
 			soft_attack = 0.1
 			hard_attack = 0.1
-
 		}
 		category_mobile_artillery = {
 			default_morale = 0.05
@@ -47,238 +38,177 @@ technologies = {
 			maximum_speed = 0.1
 			soft_attack = 0.075
 			hard_attack = 0.075
-
 		}
 		category_mobile_infantry = {
 			defense = 0.1
 			max_organisation = 10
-
 		}
 		category_support_battalions = {
 			max_organisation = 25
-
 		}
 		category_tanks = {
 			breakthrough = 0.1
 			max_organisation = 17
-
 		}
 		conscription = 0.015
 		dig_in_speed_factor = 0.3
-
 		doctrine = yes
-
 		folder = {name = land_doctrine_folder
 			position = { x = 0 y = 18 }
-
 			}	land_reinforce_rate = 0.02
 		mot_anti_air_brigade = {
 			need = {
 				motorized_equipment = -15
-
 			}
-
 		}
 		mot_anti_tank_brigade = {
 			need = {
 				motorized_equipment = -25
-
 			}
-
 		}
 		mot_artillery_brigade = {
 			need = {
 				motorized_equipment = -25
-
 			}
-
 		}
 		mot_rocket_artillery_brigade = {
 			need = {
 				motorized_equipment = -25
-
 			}
-
 		}
 		motorized = {
 			need = {
 				motorized_equipment = -20
-
 			}
-
 		}
 		path = {
 			research_cost_coeff = 14
-
 		}
 		planning_speed = 0.7
 		research_cost = 60
 		resistance_damage_to_garrison_on_our_occupied_states = 0.1
-
 	}
 	superior = {
-
 		allow_branch = {is_debug = yes}
 		army_bonus_air_superiority_factor = 0.2
-
 		categories = {cat_superior_firepower
 			land_doctrine
-
 			}		category_all_armor = {
 			hard_attack = 0.1
 			soft_attack = 0.1
 			breakthrough = 0.1
-
 		}
 		category_all_infantry = {
 			default_morale = 0.1
 			defense = 0.1
-
 		}
 		category_anti_air = {
 			air_attack = 0.1
-
 		}
 		category_army = {
 			hard_attack = 0.1
 			max_organisation = 5
 			soft_attack = 0.1
 			breakthrough = 0.1
-
 		}
 		category_artillery = {
 			soft_attack = 0.15
-
 		}
 		category_light_infantry = {
 			default_morale = 0.05
 			max_organisation = 20
 			soft_attack = 0.05
-
 		}
 		category_line_artillery = {
 			ap_attack = 0.05
-
 		}
 		category_mobile_infantry = {
 			max_organisation = 15
-
 		}
 		category_recon = {
 			recon = 1
-
 		}
 		category_support_battalions = {
 			max_organisation = 20
 			soft_attack = 0.5
-
 		}
 		category_tanks = {
 			max_organisation = 10
-
 		}
-
 		doctrine = yes
 		field_hospital = {
 			casualty_trickleback = 0.1
-
 		}
-
 		folder = {name = land_doctrine_folder
 			position = { x = 0 y = 18 }
-
 			}	land_reinforce_rate = 0.04
 		path = {
 			research_cost_coeff = 14
-
 		}
 		research_cost = 60
 		signal_company = {
 			initiative = 0.05
-
 		}
-
 	}
 	grand = {
-
 		allow_branch = {is_debug = yes}
 		amphibious_armor = {
 			soft_attack = 0.1
 			amphibious = {
 				attack = 0.1
 				defence = 0.1
-
 			}
-
 		}
 		armored_car = {
 			default_morale = 0.1
 			max_organisation = 9
-
 		}
 		cas_damage_reduction = 0.2
-
 		categories = {cat_grand_battle_plan
 			land_doctrine
-
 			}		category_all_armor = {
 			hard_attack = 0.1
 			ap_attack = 0.1
-
 		}
 		category_all_infantry = {
 			defense = 0.1
 			max_organisation = 15
 			maximum_speed = 0.1
-
 		}
 		category_army = {
 			max_organisation = 7
-
 		}
 		category_light_infantry = {
 			max_organisation = 5
 			breakthrough = 0.1
-
 		}
 		category_line_artillery = {
 			maximum_speed = 0.1
-
 		}
 		category_mobile_artillery = {
 			soft_attack = 0.1
-
 		}
 		category_mobile_infantry = {
 			max_organisation = 20
-
 		}
 		category_recon = {
 			recon = 1
-
 		}
 		category_special_forces = {
 			soft_attack = 0.1
-
 		}
 		category_tanks = {
 			breakthrough = 0.1
 			max_organisation = 13
-
 		}
 		dig_in_speed_factor = 0.5
-
 		doctrine = yes
-
 		folder = {name = land_doctrine_folder
 			position = { x = 0 y = 18 }
-
 			}		infantry = {
 			need = {
 				infantry_equipment = -10
-
 			}
-
 		}
 		land_night_attack = 0.25
 		land_reinforce_rate = 0.12
@@ -287,144 +217,107 @@ technologies = {
 		no_supply_grace = 48
 		path = {
 			research_cost_coeff = 14
-
 		}
 		research_cost = 60
 		terrain_penalty_reduction = 0.1
-
 	}
 	mass_ass = {
-
 		allow_branch = {is_debug = yes}
 		anti_air_brigade = {
 			need = {
 				anti_air_equipment = -6
-
 			}
-
 		}
 		anti_tank_brigade = {
 			need = {
 				anti_tank_equipment = -7
-
 			}
-
 		}
 		armored_car = {
 			breakthrough = 0.1
 			default_morale = 0.1
 			max_organisation = 6
-
 		}
 		army_fuel_capacity_factor = 1
 		artillery_brigade = {
 			need = {
 				artillery_equipment = -7
-
 			}
-
 		}
-
 		categories = {cat_mass_assault
 			land_doctrine
-
 			}		category_all_armor = {
 			default_morale = 0.1
-
 		}
 		category_army = {
 			default_morale = 0.25
-
 		}
 		category_light_infantry = {
 			defense = 0.1
 			breakthrough = 0.1
 			default_morale = 0.3
 			max_organisation = 25
-
 		}
 		category_line_artillery = {
 			soft_attack = 0.1
 			hard_attack = 0.1
-
 		}
 		category_mobile_infantry = {
 			breakthrough = 0.1
 			default_morale = 0.2
 			defense = 0.1
 			max_organisation = 30
-
 		}
 		category_recon = {
 			need = {
 				support_equipment = -5
-
 			}
-
 		}
 		category_support_battalions = {
 			max_organisation = 15
-
 		}
 		category_tanks = {
 			max_organisation = 7
-
 		}
 		conscription = 0.03
-
 		doctrine = yes
 		engineer = {
 			need = {
 				support_equipment = -5
-
 			}
 			entrenchment = 5
-
 		}
 		field_hospital = {
 			need = {
 				support_equipment = -5
-
 			}
-
 		}
-
 		folder = {name = land_doctrine_folder
 			position = { x = 0 y = 18 }
-
 			}		infantry = {
 			need = {
 				infantry_equipment = -20
-
 			}
-
 		}
 		land_reinforce_rate = 0.2
 		maintenance_company = {
 			need = {
 				support_equipment = -5
-
 			}
-
 		}
 		mechanized = {
 			need = {
 				motorized_rocket_equipment = 10
-
 			}
-
 		}
 		motorized = {
 			need = {
 				motorized_rocket_equipment = 10
-
 			}
-
 		}
 		no_supply_grace = 96
 		path = {
 			research_cost_coeff = 13
-
 		}
 		research_cost = 56
 		resistance_damage_to_garrison_on_our_occupied_states = 0.1
@@ -432,11 +325,8 @@ technologies = {
 		signal_company = {
 			need = {
 				support_equipment = -5
-
 			}
-
 		}
-
 	}
-
 }
+

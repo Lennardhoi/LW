@@ -50,21 +50,6 @@ exfiltration_border = {
 	risk_extra = exfiltration_border_outcome_fail
 	picture = "GFX_phase_exfiltration_border"
 	icon = "GFX_phase_exfiltration_border_small"
-	requirements = {
-		FROM = {
-			any_owned_state = {
-				is_controlled_by = PREV
-				any_neighbor_state = {
-					OWNER = {
-						NOT = {
-							tag = FROM
-							has_war_with = ROOT #any neighbouring state is controlled by a country that is not at war with us
-						}
-					}
-				}
-			}
-		}
-	}
 
 	equipment = {
 

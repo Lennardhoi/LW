@@ -18,13 +18,10 @@ technologies = {
 			position = { x = 10 y = 4 }
 		}
 	}
-
 	scout_plane2_f = {
-
 		enable_equipments = {
 			scout_plane_equipment_2_f
 		}
-
 		dependencies = {
 			scout_plane2 = 1
 		}
@@ -36,7 +33,6 @@ technologies = {
 		}
 	}
 	early_fighter_f= {
-
 		enable_equipments = {
 			fighter_equipment_0_f
 		}
@@ -56,7 +52,6 @@ technologies = {
 			leads_to_tech = naval_bomber1_f
 			research_cost_coeff = 1
 		}
-
 		research_cost = 0
 		start_year = 1933
 		folder = {
@@ -65,14 +60,12 @@ technologies = {
 		}
 	}
 	fighter1_f = {
-
 		enable_equipments = {
 			fighter_equipment_1_f
 		}
 		dependencies = {
 			fighter1 = 1
 		}
-
 		path = {
 			leads_to_tech = fighter2_f
 			research_cost_coeff = 1
@@ -82,16 +75,12 @@ technologies = {
 		}
 		research_cost = 0
 		start_year = 1936
-
 		folder = {
 			name = air_techs_folder_f
 			position = { x = 0 y = 4 }
 		}
 	}
-
-
 	fighter2_f = {
-
 		enable_equipments = {
 			fighter_equipment_2_f
 		}
@@ -107,22 +96,17 @@ technologies = {
 			leads_to_tech = fighter3_f
 			research_cost_coeff = 1
 		}
-
 		research_cost = 0
 		start_year = 1940
 		folder = {
 			name = air_techs_folder_f
 			position = { x = 0 y = 6 }
 		}
-
-
 	}
 	fighter2_alt_f = {
-
 		enable_equipments = {
 			fighter_equipment_alt_2_f
 		}
-
 		allow = {
 			always = no
 		}
@@ -131,29 +115,21 @@ technologies = {
 		categories = {
 			year_1940
 		}
-
 	}
 	fighter3_alt_f = {
-
 		enable_equipments = {
 			fighter_equipment_alt_3
 		}
-
 		allow = {
 			always = no
 		}
 		research_cost = 0
 		start_year = 1940
-
-
 	}
-
 	fighter3_f = {
-
 		enable_equipments = {
 			fighter_equipment_3_f
 		}
-
 		path = {
 			leads_to_tech = jet_fighter1_f
 			research_cost_coeff = 1
@@ -166,48 +142,39 @@ technologies = {
 				set_technology={fighter3_alt_f=1 popup=no}
 			}
 		}
-
-
 		research_cost = 0
 		start_year = 1943
-		
+		categories = {
+			year_1943
+		}
+
 		folder = {
 			name = air_techs_folder_f
 			position = { x = 0 y = 8 }
 		}
 
-		
 	}
-
 	jet_fighter1_f = {
-
 		enable_equipments = {
 			jet_fighter_equipment_1_f
 		}
-
 		path = {
 			leads_to_tech = jet_fighter2_f
 			research_cost_coeff = 1
 		}
-
 		dependencies = {
 			jet_engines = 1
 			jet_fighter1 = 1
 		}
-	
+
 		research_cost = 0
 		start_year = 1945
-
 		folder = {
 			name = air_techs_folder_f
 			position = { x = 0 y = 12 }
 		}
-
-
 	}
-
 	jet_fighter2_f = {
-
 		enable_equipments = {
 			jet_fighter_equipment_2_f
 		}
@@ -216,89 +183,73 @@ technologies = {
 		}
 		research_cost = 0
 		start_year = 1950
-
 		folder = {
 			name = air_techs_folder_f
 			position = { x = 0 y = 14 }
 		}
 	}
-
-
 	CAS1_f = {
-
 		enable_equipments = {
 			CAS_equipment_1_f
 		}
-
 		path = {
 			leads_to_tech = CAS2_f
 			research_cost_coeff = 1
 		}
-		
+
 		dependencies = {
 			CAS1 = 1
 		}
 		research_cost = 0
 		start_year = 1936
-
 		folder = {
 			name = air_techs_folder_f
 			position = { x = -4 y = 4 }
 		}
 	}
-
 	CAS2_f = {
-
 		enable_equipments = {
 			CAS_equipment_2_f
 		}
 		dependencies = {
 			CAS2 = 1
 		}
-
 		path = {
 			leads_to_tech = CAS3_f
 			research_cost_coeff = 1
 		}
-
 		research_cost = 0
 		start_year = 1940
-
 		folder = {
 			name = air_techs_folder_f
 			position = { x = -4 y = 6 }
 		}
 	}
-
 	CAS3_f = {
-
 		enable_equipments = {
 			CAS_equipment_3_f
 		}
 		dependencies = {
 			CAS3 = 1
 		}
-
-
 		path = {
 			leads_to_tech = jet_fighter1_f
 			research_cost_coeff = 1
 		}
 		research_cost = 0
 		start_year = 1943
+		categories = {
+			year_1943
+		}
 		folder = {
 			name = air_techs_folder_f
 			position = { x = -4 y = 8 }
 		}
 	}
-
-
 	naval_bomber1_f = {
-
 		enable_equipments = {
 			nav_bomber_equipment_1_f
 		}
-
 		path = {
 			leads_to_tech = naval_bomber2_f
 			research_cost_coeff = 1
@@ -306,8 +257,6 @@ technologies = {
 		dependencies = {
 			naval_bomber1 = 1
 		}
-
-
 		research_cost = 0
 		start_year = 1936
 		categories = {
@@ -317,23 +266,18 @@ technologies = {
 			name = air_techs_folder_f
 			position = { x = 4 y = 4 }
 		}
-
 	}
-
 	naval_bomber2_f = {
-
 		enable_equipments = {
 			nav_bomber_equipment_2_f
 		}
 		dependencies = {
 			naval_bomber2 = 1
 		}
-
 		path = {
 			leads_to_tech = naval_bomber3_f
 			research_cost_coeff = 1
 		}
-
 		research_cost = 0
 		start_year = 1940
 		folder = {
@@ -342,29 +286,28 @@ technologies = {
 		}
 	}
 
-	
 	naval_bomber3_f = {
-
 		enable_equipments = {
 			nav_bomber_equipment_3_f
 		}
 		dependencies = {
 			naval_bomber3 = 1
 		}
-
 		path = {
 			leads_to_tech = jet_fighter1_f
 			research_cost_coeff = 1
 		}
 		research_cost = 0
 		start_year = 1943
+		categories = {
+			year_1943
+		}
 		folder = {
 			name = air_techs_folder_f
 			position = { x = 4 y = 8 }
-	}
+		}
 	}
 	early_bomber_f = {
-
 		enable_equipments = {
 			tac_bomber_equipment_0_f
 		}
@@ -380,7 +323,6 @@ technologies = {
 			leads_to_tech = tactical_bomber1_f
 			research_cost_coeff = 1
 		}
-
 		research_cost = 0
 		start_year = 1933
 		folder = {
@@ -388,21 +330,17 @@ technologies = {
 			position = { x = 2 y = 2 }
 		}
 	}
-
 	heavy_fighter1_f = {
-
 		enable_equipments = {
 			heavy_fighter_equipment_1_f
 		}
 		dependencies = {
 			heavy_fighter1 = 1
 		}
-
 		path = {
 			leads_to_tech = heavy_fighter2_f
 			research_cost_coeff = 1
 		}
-
 		research_cost = 0
 		start_year = 1936
 		folder = {
@@ -410,16 +348,13 @@ technologies = {
 			position = { x = -2 y = 4 }
 		}
 	}
-
 	heavy_fighter2_f = {
-
 		enable_equipments = {
 			heavy_fighter_equipment_2_f
 		}
 		dependencies = {
 			heavy_fighter2 = 1
 		}
-
 		path = {
 			leads_to_tech = heavy_fighter3_f
 			research_cost_coeff = 1
@@ -443,63 +378,52 @@ technologies = {
 			position = { x = -2 y = 6 }
 		}
 	}
-
 	heavy_fighter3_f = {
-
 		enable_equipments = {
 			heavy_fighter_equipment_3_f
 		}
 		dependencies = {
 			heavy_fighter3 = 1
 		}
-
-
 		research_cost = 0
 		start_year = 1943
+		categories = {
+			year_1943
+		}
 		folder = {
 			name = air_techs_folder_f
 			position = { x = -2 y = 8 }
 		}
-
 	}
-
 	tactical_bomber1_f = {
-
 		enable_equipments = {
 			tac_bomber_equipment_1_f
 		}
 		dependencies = {
 			tactical_bomber1 = 1
 		}
-
 		path = {
 			leads_to_tech = tactical_bomber2_f
 			research_cost_coeff = 1
 		}
-
 		research_cost = 0
 		start_year = 1936
-
 		folder = {
 			name = air_techs_folder_f
 			position = { x = 2 y = 4 }
 		}
 	}
-
 	tactical_bomber2_f = {
-
 		enable_equipments = {
 			tac_bomber_equipment_2_f
 		}
 		dependencies = {
 			tactical_bomber2 = 1
 		}
-
 		path = {
 			leads_to_tech = tactical_bomber3_f
 			research_cost_coeff = 1
 		}
-
 		research_cost = 0
 		start_year = 1940
 		folder = {
@@ -507,65 +431,55 @@ technologies = {
 			position = { x = 2 y = 6 }
 		}
 	}
-
 	tactical_bomber3_f = {
-
 		enable_equipments = {
 			tac_bomber_equipment_3_f
 		}
 		dependencies = {
 			tactical_bomber3 = 1
 		}
-
 		path = {
 			leads_to_tech = jet_tactical_bomber1_f
 			research_cost_coeff = 1
 		}
 		research_cost = 0
 		start_year = 1943
+		categories = {
+			year_1943
+		}
 		folder = {
 			name = air_techs_folder_f
 			position = { x = 2 y = 8 }
 		}
 	}
-
 	jet_tactical_bomber1_f = {
-
 		enable_equipments = {
 			jet_tac_bomber_equipment_1_f
 		}
 		dependencies = {
 			jet_tactical_bomber1 = 1
 		}
-
 		path = {
 			leads_to_tech = jet_tactical_bomber2_f
 			research_cost_coeff = 1
 		}
-
 		dependencies = {
 			jet_engines = 1
 		}
-
 		research_cost = 0
 		start_year = 1945
-
 		folder = {
 			name = air_techs_folder_f
 			position = { x = 2 y = 12 }
 		}
 	}
-
 	jet_tactical_bomber2_f = {
-
 		enable_equipments = {
 			jet_tac_bomber_equipment_2_f
 		}
 		dependencies = {
 			jet_tactical_bomber2 = 1
 		}
-
-
 		research_cost = 0
 		start_year = 1950
 		folder = {
@@ -573,14 +487,11 @@ technologies = {
 			position = { x = 2 y = 14 }
 		}
 	}
-
-
 	strategic_bomber1_f = {
 		allow_branch={NOT={tag=EFR}}
 		enable_equipments = {
 			strat_bomber_equipment_1_f
 		}
-
 		path = {
 			leads_to_tech = strategic_bomber2_f
 			research_cost_coeff = 1
@@ -588,7 +499,6 @@ technologies = {
 		dependencies = {
 			strategic_bomber1 = 1
 		}
-
 		research_cost = 0
 		start_year = 1940
 		folder = {
@@ -596,43 +506,38 @@ technologies = {
 			position = { x = 0 y = 4 }
 		}
 	}
-
 	strategic_bomber2_f = {
-
 		enable_equipments = {
 			strat_bomber_equipment_2_f
 		}
 		dependencies = {
 			strategic_bomber2 = 1
 		}
-
 		path = {
 			leads_to_tech = strategic_bomber3_f
 			research_cost_coeff = 1
 		}
 		research_cost = 0
 		start_year = 1943
+		categories = {
+			year_1943
+		}
 		folder = {
 			name = air_techs_folder_f
 			position = { x = 0 y = 6 }
 		}
-
 	}
-
 	strategic_bomber3_f = {
-
 		enable_equipments = {
 			strat_bomber_equipment_3_f
 		}
 		dependencies = {
 			strategic_bomber3 = 1
 		}
-
 		path = {
 			leads_to_tech = jet_strategic_bomber1_f
 			research_cost_coeff = 1
 		}
-
 		research_cost = 0
 		start_year = 1945
 		folder = {
@@ -640,28 +545,22 @@ technologies = {
 			position = { x = 0 y = 8 }
 		}
 	}
-
 	jet_strategic_bomber1_f = {
-
 		enable_equipments = {
 			jet_strat_bomber_equipment_1_f
 		}
 		dependencies = {
 			jet_strategic_bomber1 = 1
 		}
-
 		research_cost = 0
 		start_year = 1950
-
 		dependencies = {
 			jet_engines = 1
 		}
-
 		folder = {
 			name = air_techs_folder_f
 			position = { x = 0 y = 14 }
 		}
 	}
-
 }
 

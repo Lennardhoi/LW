@@ -11,6 +11,14 @@ debug_decisions = {
 			is_ai = no
 		}
 		complete_effect = {
+			
+				ENG = {
+					add_equipment_to_stockpile = {
+						type = convoy
+						amount = convoy_count
+						producer = ENG
+					}
+				}
 			SOV = {
 				transfer_state = 96
 				transfer_state = 95

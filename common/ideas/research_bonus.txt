@@ -23,7 +23,7 @@ ideas = {
 				always = yes
 			}
 			modifier= {
-			intelligence_agency_defense = 5
+			intelligence_agency_defense = 3
 			}
 		}
 		research_36={
@@ -42,6 +42,26 @@ ideas = {
 				year_1940=-0.6
 				year_1941=-0.75
 				year_1942=-0.9
+				year_1943=-0.9
+			}
+		}
+		research_36_mid={
+			picture = generic_infantry_bonus
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			research_bonus = {
+				year_1937=-0.075
+				year_1938=-0.225
+				year_1939=-0.375
+				year_1940=-0.525
+				year_1941=-0.675
+				year_1942=-0.825
+				year_1943=-0.9
 			}
 		}
 		research_37={
@@ -64,6 +84,26 @@ ideas = {
 				year_1943=-0.9
 			}
 		}
+		research_37_mid={
+			picture = generic_infantry_bonus
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			research_bonus = {
+				year_1918=0.1
+				year_1936=0.05
+				year_1938=-0.075
+				year_1939=-0.225
+				year_1940=-0.375
+				year_1941=-0.525
+				year_1942=-0.675
+				year_1943=-0.825
+			}
+		}
 		research_38={
 			picture = generic_infantry_bonus
 			allowed = {
@@ -84,6 +124,26 @@ ideas = {
 				year_1943=-0.75
 			}
 		}
+		research_38_mid={
+			picture = generic_infantry_bonus
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			research_bonus = {
+				year_1918=0.15
+				year_1936=0.1
+				year_1937=0.05
+				year_1939=-0.075
+				year_1940=-0.225
+				year_1941=-0.375
+				year_1942=-0.525
+				year_1943=-0.675
+			}
+		}
 		research_39={
 			picture = generic_infantry_bonus
 			allowed = {
@@ -101,6 +161,27 @@ ideas = {
 				year_1940=-0.15
 				year_1941=-0.3
 				year_1942=-0.45
+				year_1943=-0.6
+			}
+		}
+		research_39_mid={
+			picture = generic_infantry_bonus
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			research_bonus = {
+				year_1918=0.2
+				year_1936=0.15
+				year_1937=0.1
+				year_1938=0.05
+				year_1940=-0.075
+				year_1941=-0.225
+				year_1942=-0.375
+				year_1943=-0.525
 			}
 		}
 		research_40={
@@ -123,9 +204,34 @@ ideas = {
 				year_1937=0.15
 				year_1938=0.1
 				year_1939=0.05
-				year_1940=-0.15
-				year_1941=-0.3
-				year_1942=-0.45
+				year_1941=-0.15
+				year_1942=-0.3
+				year_1943=-0.45
+			}
+		}
+		research_40_mid={
+			picture = generic_infantry_bonus
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier={
+				production_factory_efficiency_gain_factor = 0.1
+				training_time_factor = -0.1
+				political_power_gain = 0.1
+			}
+			research_bonus = {
+				year_1918=0.25
+				year_1936=0.2
+				year_1937=0.15
+				year_1938=0.1
+				year_1939=0.05
+				year_1941=-0.075
+				year_1942=-0.225
+				year_1943=-0.375
 			}
 		}
 		research_41={
@@ -150,8 +256,34 @@ ideas = {
 				year_1938=0.15
 				year_1939=0.1
 				year_1940=0.05
-				year_1941=-0.15
-				year_1942=-0.3
+				year_1942=-0.15
+				year_1943=-0.3
+			}
+		}
+		research_41_mid={
+			picture = generic_infantry_bonus
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier={
+				production_factory_efficiency_gain_factor = 0.2
+				training_time_factor = -0.15
+				air_strategic_bomber_bombing_factor = 0.1
+				political_power_gain = 0.15
+			}
+			research_bonus = {
+				year_1918=0.3
+				year_1936=0.25
+				year_1937=0.2
+				year_1938=0.15
+				year_1939=0.1
+				year_1940=0.05
+				year_1942=-0.075
+				year_1943=-0.225
 			}
 		}
 		research_42={
@@ -176,7 +308,32 @@ ideas = {
 				year_1939=0.15
 				year_1940=0.1
 				year_1941=0.05
-				year_1942=-0.15
+				year_1943=-0.15
+			}
+		}
+		research_42_mid={
+			picture = generic_infantry_bonus
+			allowed = {
+				always = no
+			}
+			modifier={production_factory_efficiency_gain_factor = 0.3
+				training_time_factor = -0.2
+				air_strategic_bomber_bombing_factor = 0.2
+				political_power_gain = 0.2
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			research_bonus = {
+				year_1918=0.35
+				year_1936=0.3
+				year_1937=0.25
+				year_1938=0.2
+				year_1939=0.15
+				year_1940=0.1
+				year_1941=0.05
+				year_1943=-0.075
 			}
 		}
 		research_43={

@@ -15,11 +15,16 @@ country_event = {
 	desc = japan.1.d
 	picture = GFX_report_event_chinese_soldiers_01
 	hidden=yes
+	fire_only_once = no
 	is_triggered_only = yes
 	immediate={
 		every_state={
 			limit={ is_owned_by = INS}
-			if = { limit = { NOT={ is_core_of=INS } }add_compliance = 100 }
+			if = { 
+				limit = { NOT={ is_core_of=INS } 
+				}
+				add_compliance = 100 
+			}
 			INS={
 				give_resource_rights = { receiver = ENG state = PREV }
 			}
