@@ -231,7 +231,7 @@ update_pacific_war = {
 	set_variable={USA.pacific_status=JAP.pacific_status}
 	multiply_variable={USA.pacific_status=-1}
 	set_variable={ENG.pacific_status=USA.pacific_status}
-	multiply_variable={ENG.pacific_status=0.5}
+	multiply_variable={ENG.pacific_status=0.75}
 	set_variable={GER.pacific_status=JAP.pacific_status}
 	if={limit={JAP={has_completed_focus=JAP_korean_guest_workers}} add_to_variable={JAP.pacific_status=0.1}}
 	
