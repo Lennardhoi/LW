@@ -364,7 +364,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = USA_manhattan_project
 				bonus = 1.0
-				uses = 3
+				uses = 2
 				category = nuclear
 			}
 		}
@@ -437,6 +437,7 @@ focus_tree = {
 			}
 		}
 	}
+	
 	focus = {
 		id = USA_second_new_deal
 		icon = GFX_USA_lend_lease_act_2
@@ -894,6 +895,36 @@ focus_tree = {
 		completion_reward = {
 			add_research_slot = 1
 			add_to_tech_sharing_group = commonwealth_research
+		}
+	}
+	focus = {
+		id = USA_manhattan_project2
+		icon = GFX_focus_wonderweapons
+	prerequisite = { focus = USA_scientist_haven }
+	relative_position_id = USA_scientist_haven
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			date>1941.6.1
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			add_tech_bonus = {
+				name = USA_manhattan_project
+				bonus = 2.0
+				ahead_reduction = 1
+				uses = 1
+				category = nuclear
+			}
 		}
 	}
 	focus = {
