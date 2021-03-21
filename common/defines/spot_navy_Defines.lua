@@ -7,7 +7,8 @@ NDefines.NProduction.EQUIPMENT_MODULE_ADD_XP_COST = 0.0			-- XP cost for adding 
 NDefines.NProduction.EQUIPMENT_MODULE_REPLACE_XP_COST = 0.0		-- XP cost for replacing one equipment module with an unrelated module when creating an equipment variant.
 NDefines.NProduction.EQUIPMENT_MODULE_CONVERT_XP_COST = 0.0		-- XP cost for converting one equipment module to a related module when creating an equipment variant.
 NDefines.NProduction.EQUIPMENT_MODULE_REMOVE_XP_COST = 0.0		-- XP cost for removing an equipment module and leaving the slot empty when creating an equipment variant.
-
+--NDefines.NNavy.NAVAL_TRANSFER_BASE_SPEED = 6
+--NDefines.NMilitary.AMPHIBIOUS_INVADE_MOVEMENT_COST = 25
 --- Navy
 NDefines.NNavy.LEADER_EXPERIENCE_SCALE = 0.0
 NDefines.NNavy.SCREEN_RATIO_FOR_FULL_SCREENING_FOR_CAPITALS = 2.5
