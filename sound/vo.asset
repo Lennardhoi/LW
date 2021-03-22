@@ -1,0 +1,547 @@
+
+category = 
+{
+ name = "Voices"
+ soundeffects = {
+	USA_infantry_idle
+	USA_infantry_neutral_combat
+	USA_infantry_positive_combat
+	USA_infantry_retreat
+	USA_infantry_move_out
+	
+ }
+  compressor = 
+ {
+	enabled = yes
+	pregain = 3.0 #0
+	postgain = 3.0 #2
+	ratio = 10.0
+	threshold = -10.0
+	attacktime = 0.030
+	releasetime = 0.2 #1,2
+ }
+}
+
+########## 
+
+soundeffect = 
+{
+    name = "USA_infantry_idle"
+    sounds = {
+        sound = USA_Idle_01
+        sound = USA_Idle_02
+        sound = USA_Idle_03
+        sound = USA_Idle_04
+        sound = USA_Idle_05
+		sound = USA_Idle_06
+		sound = USA_Idle_07
+        sound = USA_Idle_08
+        sound = USA_Idle_09
+        sound = USA_Idle_10
+        sound = USA_Idle_11
+		sound = USA_Idle_12
+		sound = USA_Idle_13
+        sound = USA_Idle_14
+        sound = USA_Idle_15
+        sound = USA_Idle_16
+        sound = USA_Idle_17
+		sound = USA_Idle_18
+		sound = USA_Idle_19
+		sound = USA_Idle_20
+    }
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 1.0
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+soundeffect = 
+{
+    name = "USA_infantry_neutral_combat"
+    sounds = {
+        sound = USA_Combat_01
+        sound = USA_Combat_02
+        sound = USA_Combat_03
+		sound = USA_Combat_04
+        sound = USA_Combat_05
+        sound = USA_Combat_06
+		sound = USA_Combat_07
+        sound = USA_Combat_08
+        sound = USA_Combat_09
+		sound = USA_Combat_10
+        sound = USA_Combat_11
+        sound = USA_Combat_12
+		sound = USA_Combat_13
+        sound = USA_Combat_14
+        sound = USA_Combat_15
+		sound = USA_Combat_16
+        sound = USA_Combat_17
+		sound = USA_Combat_18
+		sound = USA_Combat_19
+		sound = USA_Combat_20
+    }
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 1.0
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+soundeffect = 
+{
+    name = "USA_infantry_positive_combat"
+    sounds = {
+        sound = USA_Winning_01
+        sound = USA_Winning_02
+        sound = USA_Winning_03
+		sound = USA_Winning_04
+        sound = USA_Winning_05
+        sound = USA_Winning_06
+		sound = USA_Winning_07
+        sound = USA_Winning_08
+        sound = USA_Winning_09
+		sound = USA_Winning_10
+        sound = USA_Winning_11
+        sound = USA_Winning_12
+		sound = USA_Winning_13
+        sound = USA_Winning_14
+		sound = USA_Winning_15
+		sound = USA_Winning_16
+    }
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 1.0
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+soundeffect = 
+{
+    name = "USA_infantry_retreat"
+    sounds = {
+        sound = USA_Retreat_01
+        sound = USA_Retreat_02
+		sound = USA_Retreat_03
+		sound = USA_Retreat_04
+    }
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 1.0
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+soundeffect = 
+{
+    name = "USA_infantry_move_out"
+    sounds = {
+        sound = USA_Move_01
+		sound = USA_Move_02
+		sound = USA_Move_03
+		sound = USA_Move_04
+		sound = USA_Move_05
+		sound = USA_Move_06
+		sound = USA_Move_07
+		sound = USA_Move_08
+		sound = USA_Move_09
+		sound = USA_Move_10
+		sound = USA_Move_11
+		sound = USA_Move_12
+		sound = USA_Move_13
+		sound = USA_Move_14
+		sound = USA_Move_15
+		sound = USA_Move_16
+    }
+	max_audible = 1
+	max_audible_behaviour = fail
+	volume = 1.0
+	volume_random_offset = { 0.0 -0.15 }
+	playbackrate_random_offset = { 0.0 -0.15}
+}
+
+############## AUDIO ASSETS
+
+
+########### USA
+sound = 
+{
+	name = "USA_Idle_01"
+	file = "usa/USA_Idle_01.wav"
+}
+sound = 
+{
+	name = "USA_Idle_02"
+	file = "usa/USA_Idle_02.wav"
+}
+sound = 
+{
+	name = "USA_Idle_03"
+	file = "usa/USA_Idle_03.wav"
+}
+sound = 
+{
+	name = "USA_Idle_04"
+	file = "usa/USA_Idle_04.wav"
+}
+sound = 
+{
+	name = "USA_Idle_05"
+	file = "usa/USA_Idle_05.wav"
+}
+sound = 
+{
+	name = "USA_Idle_06"
+	file = "usa/USA_Idle_06.wav"
+}
+sound = 
+{
+	name = "USA_Idle_07"
+	file = "usa/USA_Idle_07.wav"
+}
+sound = 
+{
+	name = "USA_Idle_08"
+	file = "usa/USA_Idle_08.wav"
+}
+sound = 
+{
+	name = "USA_Idle_09"
+	file = "usa/USA_Idle_09.wav"
+}
+sound = 
+{
+	name = "USA_Idle_10"
+	file = "usa/USA_Idle_10.wav"
+}
+sound = 
+{
+	name = "USA_Idle_11"
+	file = "usa/USA_Idle_11.wav"
+}
+sound = 
+{
+	name = "USA_Idle_12"
+	file = "usa/USA_Idle_12.wav"
+}
+sound = 
+{
+	name = "USA_Idle_13"
+	file = "usa/USA_Idle_13.wav"
+}
+sound = 
+{
+	name = "USA_Idle_14"
+	file = "usa/USA_Idle_14.wav"
+}
+sound = 
+{
+	name = "USA_Idle_15"
+	file = "usa/USA_Idle_15.wav"
+}
+sound = 
+{
+	name = "USA_Idle_16"
+	file = "usa/USA_Idle_16.wav"
+}
+sound = 
+{
+	name = "USA_Idle_17"
+	file = "usa/USA_Idle_17.wav"
+}
+sound = 
+{
+	name = "USA_Idle_18"
+	file = "usa/USA_Idle_18.wav"
+}
+sound = 
+{
+	name = "USA_Idle_19"
+	file = "usa/USA_Idle_19.wav"
+}
+sound = 
+{
+	name = "USA_Idle_20"
+	file = "usa/USA_Idle_20.wav"
+}
+
+sound = 
+{
+	name = "USA_Winning_01"
+	file = "usa/USA_win_01.wav"
+}
+sound = 
+{
+	name = "USA_Winning_02"
+	file = "usa/USA_win_02.wav"
+}
+sound = 
+{
+	name = "USA_Winning_03"
+	file = "usa/USA_win_03.wav"
+}
+sound = 
+{
+	name = "USA_Winning_04"
+	file = "usa/USA_win_04.wav"
+}
+sound = 
+{
+	name = "USA_Winning_05"
+	file = "usa/USA_win_05.wav"
+}
+sound = 
+{
+	name = "USA_Winning_06"
+	file = "usa/USA_win_06.wav"
+}
+sound = 
+{
+	name = "USA_Winning_07"
+	file = "usa/USA_win_07.wav"
+}
+sound = 
+{
+	name = "USA_Winning_08"
+	file = "usa/USA_win_08.wav"
+}
+sound = 
+{
+	name = "USA_Winning_09"
+	file = "usa/USA_win_09.wav"
+}
+sound = 
+{
+	name = "USA_Winning_10"
+	file = "usa/USA_win_10.wav"
+}
+sound = 
+{
+	name = "USA_Winning_11"
+	file = "usa/USA_win_11.wav"
+}
+sound = 
+{
+	name = "USA_Winning_12"
+	file = "usa/USA_win_12.wav"
+}
+sound = 
+{
+	name = "USA_Winning_13"
+	file = "usa/USA_win_13.wav"
+}
+sound = 
+{
+	name = "USA_Winning_14"
+	file = "usa/USA_win_14.wav"
+}
+sound = 
+{
+	name = "USA_Winning_15"
+	file = "usa/USA_win_05.wav"
+}
+sound = 
+{
+	name = "USA_Winning_16"
+	file = "usa/USA_win_05.wav"
+}
+
+sound = 
+{
+	name = "USA_Retreat_01"
+	file = "usa/USA_lose_01.wav"
+}
+sound = 
+{
+	name = "USA_Retreat_02"
+	file = "usa/USA_lose_02.wav"
+}
+sound = 
+{
+	name = "USA_Retreat_03"
+	file = "usa/USA_lose_03.wav"
+}
+sound = 
+{
+	name = "USA_Retreat_04"
+	file = "usa/USA_lose_04.wav"
+}
+
+sound = 
+{
+	name = "USA_Combat_01"
+	file = "usa/USA_neutral_01.wav"
+}
+sound = 
+{
+	name = "USA_Combat_02"
+	file = "usa/USA_neutral_02.wav"
+}
+sound = 
+{
+	name = "USA_Combat_03"
+	file = "usa/USA_neutral_03.wav"
+}
+sound = 
+{
+	name = "USA_Combat_04"
+	file = "usa/USA_neutral_04.wav"
+}
+sound = 
+{
+	name = "USA_Combat_05"
+	file = "usa/USA_neutral_05.wav"
+}
+sound = 
+{
+	name = "USA_Combat_06"
+	file = "usa/USA_neutral_06.wav"
+}
+sound = 
+{
+	name = "USA_Combat_07"
+	file = "usa/USA_neutral_07.wav"
+}
+sound = 
+{
+	name = "USA_Combat_08"
+	file = "usa/USA_neutral_08.wav"
+}
+sound = 
+{
+	name = "USA_Combat_09"
+	file = "usa/USA_neutral_09.wav"
+}
+sound = 
+{
+	name = "USA_Combat_10"
+	file = "usa/USA_neutral_10.wav"
+}
+sound = 
+{
+	name = "USA_Combat_11"
+	file = "usa/USA_neutral_11.wav"
+}
+sound = 
+{
+	name = "USA_Combat_12"
+	file = "usa/USA_neutral_12.wav"
+}
+sound = 
+{
+	name = "USA_Combat_13"
+	file = "usa/USA_neutral_13.wav"
+}
+sound = 
+{
+	name = "USA_Combat_14"
+	file = "usa/USA_neutral_14.wav"
+}
+sound = 
+{
+	name = "USA_Combat_15"
+	file = "usa/USA_neutral_15.wav"
+}
+sound = 
+{
+	name = "USA_Combat_16"
+	file = "usa/USA_neutral_16.wav"
+}
+sound = 
+{
+	name = "USA_Combat_17"
+	file = "usa/USA_neutral_17.wav"
+}
+sound = 
+{
+	name = "USA_Combat_18"
+	file = "usa/USA_neutral_18.wav"
+}
+sound = 
+{
+	name = "USA_Combat_19"
+	file = "usa/USA_neutral_19.wav"
+}
+sound = 
+{
+	name = "USA_Combat_20"
+	file = "usa/USA_neutral_20.wav"
+}
+
+sound = 
+{
+	name = "USA_Move_01"
+	file = "usa/USA_move_01.wav"
+}
+sound = 
+{
+	name = "USA_Move_02"
+	file = "usa/USA_move_02.wav"
+}
+sound = 
+{
+	name = "USA_Move_03"
+	file = "usa/USA_move_03.wav"
+}
+sound = 
+{
+	name = "USA_Move_04"
+	file = "usa/USA_move_04.wav"
+}
+sound = 
+{
+	name = "USA_Move_05"
+	file = "usa/USA_move_05.wav"
+}
+sound = 
+{
+	name = "USA_Move_06"
+	file = "usa/USA_move_06.wav"
+}
+sound = 
+{
+	name = "USA_Move_07"
+	file = "usa/USA_move_07.wav"
+}
+sound = 
+{
+	name = "USA_Move_08"
+	file = "usa/USA_move_08.wav"
+}
+sound = 
+{
+	name = "USA_Move_09"
+	file = "usa/USA_move_09.wav"
+}
+sound = 
+{
+	name = "USA_Move_10"
+	file = "usa/USA_move_10.wav"
+}
+sound = 
+{
+	name = "USA_Move_11"
+	file = "usa/USA_move_11.wav"
+}
+sound = 
+{
+	name = "USA_Move_12"
+	file = "usa/USA_move_12.wav"
+}
+sound = 
+{
+	name = "USA_Move_13"
+	file = "usa/USA_move_13.wav"
+}
+sound = 
+{
+	name = "USA_Move_14"
+	file = "usa/USA_move_14.wav"
+}
+sound = 
+{
+	name = "USA_Move_15"
+	file = "usa/USA_move_15.wav"
+}
+sound = 
+{
+	name = "USA_Move_16"
+	file = "usa/USA_move_16.wav"
+}
+
