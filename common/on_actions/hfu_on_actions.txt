@@ -1,6 +1,21 @@
 on_actions = {
 	on_weekly_SWE={
 		effect={
+			if = {
+				limit = {
+					date > 1941.1.1
+					ITA = { surrender_progress > 0.80 }
+					country_exists = ITA
+				}
+				GER = {	
+					change_tag_from = ITA
+					annex_country = {
+						target = ITA
+						transfer_troops = yes
+					}
+					
+				}
+			}
 			every_country = {
 				limit= {
 					has_war=yes
@@ -12,6 +27,52 @@ on_actions = {
 			}}
 	on_startup = {
 	effect= {	
+			# if = {
+				# limit= {CRO={is_ai=yes}}
+				# YUG={transfer_state=713}
+				# 103={
+					# add_building_construction = {
+    					# type = industrial_complex
+    					# level = 2
+    					# instant_build = yes
+					# }
+				# }
+				# 109={
+					# add_building_construction = {
+    					# type = arms_factory
+    					# level = 2
+    					# instant_build = yes
+					# }
+				# }
+			# }
+			# if = {
+				# limit= {CRO={is_ai=no}}
+				# 713={
+					# add_building_construction = {
+    					# type = industrial_complex
+    					# level = 4
+    					# instant_build = yes
+					# }
+				# }
+				# 109={
+					# remove_building = {
+    						# type = industrial_complex
+    						# level = 2
+					# }
+				# }
+				# 103={
+					# remove_building = {
+    						# type = industrial_complex
+    						# level = 2
+					# }
+				# }
+				# 104={
+					# remove_building = {
+    						# type = industrial_complex
+    						# level = 2
+					# }
+				# }
+			# }
 			every_country={
 				limit={NOT={OR={original_tag=GER original_tag=ITA original_tag=ENG original_tag=USA original_tag=SOV original_tag=JAP}}}
 				add_ideas=no_agency_passive_defense

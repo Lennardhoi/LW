@@ -32,6 +32,8 @@ country_event = {
 				transfer_state = 177
 			}
 		}
+		# if = {
+				# limit= {CRO={OR={exists = no is_ai=yes}}}
 		ITA = {
 			add_ideas = alpine_forts
 			transfer_state = 103
@@ -44,6 +46,25 @@ country_event = {
 			transfer_state = 47
 			transfer_state = 179
 		}
+		#}
+		# if = {
+				# limit= {CRO={exists = yes is_ai=no}}
+		# CRO = {
+			# transfer_state = 103
+			# transfer_state = 109
+			# transfer_state = 104
+		# }
+		# ITA = {
+			# add_ideas = alpine_forts
+			
+			# transfer_state = 105
+			# transfer_state = 108
+			# transfer_state = 107
+			# transfer_state = 178
+			# transfer_state = 47
+			# transfer_state = 179
+		# }
+		# }
 		GER = {
 			transfer_state = 102
 			if={
@@ -90,15 +111,6 @@ country_event = {
 	option = {
 		name = germany.4.a
 	}
-}
-country_event = {
-	id = germany.444
-	is_triggered_only = yes
-	hidden=yes
-	immediate={GER={add_timed_idea = {
-				idea = GER_mefo_bills_2
-				days = 638
-				}}}
 }
 country_event = {
 	id = germany.5

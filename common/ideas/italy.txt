@@ -636,11 +636,44 @@ ideas = {
 			}
 			available = {
 			}
+			modifier = { naval_manufacturer_cost_factor = -1 }	
 			cost = 100
 			research_bonus = {
 				naval_equipment = 0.15
 			}
 			traits = { med_fleet_naval_manufacturer }
+		}
+				
+		ansaldo = {			
+			allowed = {
+				original_tag = ITA
+			}
+			available = {
+			}
+			cost = 100
+			modifier = { naval_manufacturer_cost_factor = -1 }			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { atlantic_fleet_naval_manufacturer }
+		}
+
+		odero_terni_orlando = {
+						
+			allowed = {
+				original_tag = ITA
+			}
+			available = {
+			}
+			cost = 100
+			modifier = { naval_manufacturer_cost_factor = -1 }		
+						
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { convoy_escort_naval_manufacturer }
 		}
 	}
 	theorist = {
@@ -649,6 +682,7 @@ ideas = {
 			allowed = {
 				original_tag = ITA
 			}
+			modifier = { naval_manufacturer_cost_factor = -1 }	
 			cost = 150
 			research_bonus = {
 				cat_mobile_warfare = 0.15

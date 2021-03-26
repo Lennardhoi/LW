@@ -1705,7 +1705,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_air_innovation_2 }
 		x = 0
 		y = 1
-		available = {date >1941.4.1
+		available = {date >1941.3.1
 			has_tech=cas2}
 		relative_position_id = ITA_air_innovation_2
 		cost = 5
@@ -2075,12 +2075,12 @@ focus_tree = {
 				create_corps_commander = {
 					name = "Erwin Rommel"
 					picture = "Portrait_Germany_Erwin_Rommel.dds"
-					traits = { commando panzer_leader panzer_expert desert_fox trait_engineer }
+					traits = { commando panzer_leader panzer_expert desert_fox trait_engineer hill_fighter}
 					skill = 5
 					id =1771
 					attack_skill = 6
 					defense_skill = 3
-					planning_skill = 1
+					planning_skill = 3
 					logistics_skill = 6
 					}}}}
 	focus = {
@@ -2096,7 +2096,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			add_timed_idea = { idea = desert_fox  days = 30 }
+			add_timed_idea = { idea = desert_fox  days = 90 }
 		}
 	}
 	focus = {
@@ -2112,7 +2112,7 @@ focus_tree = {
 			factor = 10
 		}
 		completion_reward = {
-			add_timed_idea = { idea = desert_fox_2  days = 60 }
+			add_timed_idea = { idea = desert_fox_2  days = 120 }
 		}
 	}
 	focus = {

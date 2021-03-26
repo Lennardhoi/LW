@@ -42,7 +42,7 @@ focus_tree = {
 		icon = GFX_goal_generic_consumer_goods
 		x = 0
 		y = 1
-		cost =26
+		cost =25.7
 		prerequisite = { focus = NDA_anti_meme }
 		relative_position_id = NDA_anti_meme
 		available_if_capitulated = yes
@@ -106,6 +106,12 @@ focus_tree = {
 		relative_position_id = NDA_resource44
 		available_if_capitulated = yes
 		completion_reward = {
+			GER = {
+				swap_ideas={
+					remove_idea = GER_mefo_bills_1
+					add_idea = GER_mefo_bills_2
+				}
+			}
 			every_country={
 				limit={is_playable_country=yes}
 				swap_ideas={
@@ -222,6 +228,8 @@ focus_tree = {
 		relative_position_id = NDA_resource5
 		available_if_capitulated = yes
 		completion_reward = {
+			GER ={remove_ideas = GER_africa_hp}
+			GER ={set_technology = { africa_hp_off = 1 popup = no }}
 			every_country={
 				limit={is_playable_country=yes}
 				remove_ideas = speed3_africa
