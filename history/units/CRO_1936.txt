@@ -1,7 +1,9 @@
-﻿
-division_template = {
-	name = "Pesadijska Divizija"
-	division_names_group = CRO_INF_01
+﻿division_template = {
+	name = "Pesadijska Divizija"	# Infantry Division
+
+
+	division_names_group = YUG_INF_01
+
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -15,34 +17,18 @@ division_template = {
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
 	}
 }
-division_template = {
-	name = "Alpine Odred"
-	division_names_group = CRO_MTN_01
-	regiments = {
-		mountaineers = { x = 0 y = 0 }
-		mountaineers = { x = 0 y = 1 }
-		mountaineers = { x = 0 y = 2 }
-	}
-}
-division_template = {
-	name = "Konjièka Divizija"
-	division_names_group = CRO_CAV_01
-	regiments = {
-		cavalry = { x = 0 y = 0 }
-		cavalry = { x = 0 y = 1 }
-		cavalry = { x = 0 y = 2 }
-		cavalry = { x = 1 y = 0 }
-		cavalry = { x = 1 y = 1 }
-		cavalry = { x = 1 y = 2 }
-	}
-}
-division_template = {
-	name = "Bataljon Bornih Kola"
-	division_names_group = CRO_ARM_01
-	regiments = {
-		light_armor = { x = 0 y = 0 }
+
+
+units = {
+	division= {
+		name = "This is here so you can look at your generals"
+		location = 11497
+		division_template = "Pesadijska Divizija"
+		start_experience_factor = 0
+		start_equipment_factor = 0.01
 	}
 }
 
