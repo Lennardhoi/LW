@@ -1740,7 +1740,7 @@ focus_tree = {
 		available = {
 		}
 		bypass = {has_war = yes}
-		x = 8
+		x = 5
 		y = 1
 		relative_position_id = USA_american_dream
 		cost = 5
@@ -1855,65 +1855,25 @@ focus_tree = {
 		icon = GFX_focus_attack_japan
 		prerequisite = { focus = USA_war_plans_division }
 		available = {
-			date>1942.1.1
+			date>1942.6.1
 		}
 		continue_if_invalid = yes
 		available_if_capitulated = yes
 		x = 0
 		y = 4
 		relative_position_id = USA_prepare_for_japan
-		cost = 1
+		cost = 0
 		completion_reward = {
-			add_timed_idea = {idea = USA_guadalcanal days = 90}
+			add_timed_idea = {idea = USA_guadalcanal days = 60}
 			hidden_effect = {
-				FRA = {add_timed_idea = {idea = USA_guadalcanal days = 90}}
-				SAF = {add_timed_idea = {idea = USA_guadalcanal days = 90}}
-				CAN = {add_timed_idea = {idea = USA_guadalcanal days = 90}}
-				NZL = {add_timed_idea = {idea = USA_guadalcanal days = 90}}
-				AST = {add_timed_idea = {idea = USA_guadalcanal days = 90}}
-				RAJ = {add_timed_idea = {idea = USA_guadalcanal days = 90}}
+				FRA = {add_timed_idea = {idea = USA_guadalcanal days = 60}}
+				SAF = {add_timed_idea = {idea = USA_guadalcanal days = 60}}
+				CAN = {add_timed_idea = {idea = USA_guadalcanal days = 60}}
+				NZL = {add_timed_idea = {idea = USA_guadalcanal days = 60}}
+				AST = {add_timed_idea = {idea = USA_guadalcanal days = 60}}
+				RAJ = {add_timed_idea = {idea = USA_guadalcanal days = 60}}
+				ENG = {add_timed_idea = {idea = USA_guadalcanal days = 60}}
 			}
-		}
-	}
-	focus = {
-		id = USA_iwo_jima
-		icon = GFX_focus_attack_japan
-		prerequisite = { focus = USA_war_plan_orange }
-		available = {
-		}
-		continue_if_invalid = yes
-		available_if_capitulated = yes
-		x = 0
-		y = 1
-		relative_position_id = USA_war_plan_orange
-		cost = 2
-		completion_reward = {
-			every_state = {
-				limit={OR={state=566 state=453}}
-				add_dynamic_modifier = {modifier = JAP_attack days=120}
-		    }
-		}
-	}
-	focus = {
-		id = USA_downfall
-		icon = GFX_focus_attack_japan
-		prerequisite = { focus = USA_iwo_jima }
-		available = {
-		 date > 1942.5.1
-	     NOT={JAP={controls_state = 566 controls_state = 453}}
-		}
-		continue_if_invalid = yes
-		available_if_capitulated = yes
-		x = 0
-		y = 1
-		relative_position_id = USA_iwo_jima
-		cost = 2
-		completion_reward = {
-		 JAP={remove_ideas = JAP_defense_of_homeland}
-		 every_state = {
-				limit={OR={state=455 state=457}}
-				add_dynamic_modifier = {modifier = JAP_attack days=120}
-		    }
 		}
 	}
 	focus = {
@@ -2152,13 +2112,19 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+		available = {
+			naval_strength_ratio = {
+				tag = JAP
+				ratio < 0.5
+			}
+		}
 		bypass = {
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			add_timed_idea={idea=USA_navy_recovery days=120}
+			add_timed_idea={idea=USA_navy_recovery days=180}
 		}
 	}
 	focus = {
