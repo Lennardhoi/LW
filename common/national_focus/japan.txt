@@ -1875,19 +1875,13 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		available = {
-			naval_strength_ratio = {
-				tag = USA
-				ratio < 0.5
-			}
-		}
 		bypass = {
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			add_timed_idea={idea=JAP_navy_recover days=180}
+			add_timed_idea={idea=JAP_navy_recover days=120}
 		}
 	}
 	focus = {
@@ -1946,7 +1940,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = JAP_strike_on_the_southern_resource_area
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1976,7 +1970,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = JAP_fighter3
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -2226,7 +2220,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = JAP_go_westward
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 2
 		}
@@ -2253,7 +2247,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = JAP_burma_attack
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 2
 		}
@@ -2320,7 +2314,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = JAP_japanese_settlement
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 2
 		}
@@ -2347,7 +2341,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = JAP_japanese_settlement
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 2
 		}
@@ -2410,7 +2404,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = JAP_eastern_expansion
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 2
 		}
@@ -2437,7 +2431,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = JAP_southern_expansion
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 2
 		}
@@ -2516,7 +2510,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = JAP_fortify_dei
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 2
 		}
@@ -2563,7 +2557,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = JAP_korean_guest_workers
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 2
 		}
