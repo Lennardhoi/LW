@@ -726,6 +726,22 @@ focus_tree = {
 		cost = 10
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ITA
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 			add_tech_bonus = {
 				name = ITA_four_year_plan
 				bonus = 1
@@ -1715,6 +1731,11 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			add_timed_idea={
+				idea = ITA_air_deployment
+				days =30
+			}
+			
 			add_equipment_to_stockpile = {
 				type = fighter_equipment_alt
 				amount = 2000
@@ -2160,7 +2181,7 @@ focus_tree = {
 				set_building_level = {
 					type = bunker
 					level = 3
-					province =9213
+					province =11219
 					instant_build = yes
 				}
 				set_building_level = {
@@ -2178,7 +2199,7 @@ focus_tree = {
 				set_building_level = {
 					type = bunker
 					level = 3
-					province =3875
+					province =3791
 					instant_build = yes
 				}
 			}

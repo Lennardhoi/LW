@@ -34,7 +34,7 @@ SOV_industry_relocation = {
 			set_variable={reloceatedmil=0}
 			set_variable={reloceatedciv=0}
 			if={
-				limit={check_variable = {relocation<50}}
+				limit={check_variable = {relocation<100}}
 				activate_mission=SOV_relocation2
 				add_to_variable= {relocation = 1}
 				else={clear_variable=relocation}
@@ -61,7 +61,7 @@ SOV_industry_relocation = {
 			SOV_relocate_civ=yes
 			SOV_relocate_civ=yes
 			if={
-				limit={check_variable = {relocation<75}}
+				limit={check_variable = {relocation<100}}
 				activate_mission=SOV_relocation3
 				add_to_variable= {relocation = 1}
 				else={clear_variable=relocation}
@@ -88,7 +88,7 @@ SOV_industry_relocation = {
 			SOV_relocate_civ=yes
 			SOV_relocate_civ=yes
 			if={
-				limit={check_variable = {relocation<75}}
+				limit={check_variable = {relocation<100}}
 				activate_mission=SOV_relocation4
 				add_to_variable= {relocation = 1}
 				else={clear_variable=relocation}
@@ -115,7 +115,7 @@ SOV_industry_relocation = {
 			SOV_relocate_civ=yes
 			SOV_relocate_civ=yes
 			if={
-				limit={check_variable = {relocation<75}}
+				limit={check_variable = {relocation<100}}
 				activate_mission=SOV_relocation5
 				add_to_variable= {relocation = 1}
 				else={clear_variable=relocation}
@@ -142,7 +142,7 @@ SOV_industry_relocation = {
 			SOV_relocate_civ=yes
 			SOV_relocate_civ=yes
 			if={
-				limit={check_variable = {relocation<75}}
+				limit={check_variable = {relocation<100}}
 				activate_mission=SOV_relocation
 				add_to_variable= {relocation = 1}
 				else={clear_variable=relocation}

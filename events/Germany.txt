@@ -280,7 +280,24 @@ country_event = {
 			transfer_state = 97
 			transfer_state = 89
 			transfer_state = 698
-			country_event = germany.15 }
+			country_event = germany.15 
+		}
+		hidden_effect = {
+		96 = {
+			add_building_construction = {
+				type = arms_factory
+				level = 5
+				instant_build = yes
+				}
+		}
+		196 = {
+			remove_building = {
+  			type = arms_factory
+   			level = 5
+			}
+		}
+		}
+		
 	}
 }
 country_event = {

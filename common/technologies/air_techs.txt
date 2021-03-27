@@ -1153,12 +1153,13 @@ technologies = {
 			create_equipment_variant = {
 				name = "Upgraded Heavy Fighter"
 				type = heavy_fighter_equipment_2
+				parent_version = 1
 				upgrades = {
 					plane_range_upgrade = 5
-					plane_engine_upgrade = 3
+					#plane_engine_upgrade = 3
 					#plane_reliability_upgrade = 2
 				}
-				obsolete = no
+				obsolete = yes
 			}
 		}
 		research_cost = 2

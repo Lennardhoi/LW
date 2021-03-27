@@ -110,4 +110,23 @@ create_field_marshal = {
 	planning_skill = 3
 	logistics_skill = 4
 }
-
+	create_corps_commander = { #DLC
+		name = "Georgi Popov"
+		gfx = GFX_portrait_bul_georgi_popov
+		traits = { infantry_leader trait_engineer ranger trickster}
+ 	skill = 5
+ 	attack_skill = 4
+ 	defense_skill = 4
+ 	planning_skill = 2
+ 	logistics_skill = 2
+	}
+	create_corps_commander = { 
+		name = "Nikola Hadzhipetkov"
+		gfx = GFX_portrait_bul_nikola_hadzipetkov
+		traits = {  trait_engineer panzer_leader infantry_leader urban_assault_specialist trait_mountaineer trickster}
+ 		skill = 5
+ 		attack_skill = 5
+ 		defense_skill = 4
+ 		planning_skill = 2
+ 		logistics_skill = 4
+	}
