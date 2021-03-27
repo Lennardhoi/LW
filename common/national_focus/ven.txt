@@ -37,32 +37,4 @@ focus_tree = {
 			FRA = {add_ideas =  tot_economic_mobilisation}
 		}
 	}
-	focus = {
-		id = VEN_hurensohn_sealion_2
-		icon = GFX_goal_generic_consumer_goods
-		x = 12
-		y = 0
-		cost = 1
-		ai_will_do = {
-			factor = 1
-		}
-		available_if_capitulated = yes
-		available = {
-			or = {
-				JAP = {NOT = {has_full_control_of_state = 460 }}
-				JAP = {NOT = {has_full_control_of_state = 270 }}
-				JAP = {NOT = {has_full_control_of_state = 459 }}
-				JAP = {NOT = {has_full_control_of_state = 462 }}
-				JAP = {NOT = {has_full_control_of_state = 461 }}
-			}
-		}
-		completion_reward = {
-			SPR = {add_ideas =  tot_economic_mobilisation}
-			HUN = {add_ideas =  tot_economic_mobilisation}
-			ROM = {add_ideas =  tot_economic_mobilisation}
-			BUL = {add_ideas =  tot_economic_mobilisation}
-			ITA = {add_ideas =  tot_economic_mobilisation}
-			GER = {add_ideas =  tot_economic_mobilisation}
-		}
-	}
 
