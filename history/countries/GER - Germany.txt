@@ -97,6 +97,8 @@ set_technology = {
 	synth_oil_experiments = 1
 	fuel_silos = 1
 	fuel_refining = 1
+	heavy_fighter1 =1
+	
 }
 if = {
 	limit = {
@@ -148,6 +150,7 @@ if = {
 		sonar = 1
 		basic_heavy_armor_scheme = 1
 		basic_cruiser_armor_scheme = 1
+		smoke_generator = 1
 	}
 	set_naval_oob = "GER_1936_naval_mtg"
 }
@@ -163,7 +166,7 @@ set_variable = { var = ger_gateway_to_europe_influence value = 0 }
 set_country_flag=fuel_system_enabled
 add_timed_idea = {
 	idea = GER_mefo_bills_1
-	days = 731#1369
+	days = 1369#731
 }
 set_research_slots = 5
 set_convoys = 300

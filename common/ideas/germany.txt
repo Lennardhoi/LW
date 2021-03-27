@@ -25,7 +25,7 @@ ideas = {
 				conscription = 0.02
 				stability_factor = 0.1
 				war_support_factor = 0.1
-				consumer_goods_factor = 0.05
+				consumer_goods_factor = 0.025
 				}}
 		GER_triumph_in_africa = {
 			allowed = {
@@ -527,6 +527,10 @@ ideas = {
 		GER_all_options = {
 			allowed = {
 				always = no
+			}
+			research_bonus = {
+				naval_equipment = 0.15
+				naval_doctrine = 0.15
 			}
 			allowed_civil_war = {
 				always = yes

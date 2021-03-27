@@ -28,6 +28,19 @@ ideas = {
 				line_change_production_efficiency_factor = 1
 			}
 		}
+		ITA_air_deployment = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_navy_bonus
+			modifier={
+				air_training_xp_gain_factor = 10
+			}
+		}
 	}
 	country = {
 		ITA_atlantikschlacht = {

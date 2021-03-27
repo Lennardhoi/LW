@@ -882,46 +882,26 @@ focus_tree = {
 	focus = {
 		id = GER_long_range_escorts
 		icon = GFX_focus_GER_heavy_fighter
-		prerequisite = { focus = GER_tactical_air_effort focus = GER_strategic_air_effort }
-		x = -1
-		y = 1
-		relative_position_id = GER_tactical_air_effort
-		cost = 5
-		ai_will_do = {
-			factor = 0.1
-		}
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {
-			add_tech_bonus = {
-				name = GER_long_range_escorts
-				bonus = 2.0
-				uses = 2
-				category = cat_heavy_fighter
-			}
-		}
-	}
-	focus = {
-		id = GER_strategic_bomber_effort
-		icon = GFX_focus_ger_arado
-		prerequisite = { focus = GER_tactical_air_effort }
+		prerequisite = { focus = GER_tactical_air_effort  }
+		prerequisite = { focus = GER_strategic_air_effort  }
 		x = 0
 		y = 2
 		relative_position_id = GER_tactical_air_effort
 		cost = 5
 		ai_will_do = {
-			factor = 1
+			factor = 0.1
+		}
+		available = {
+			date>1938.3.1
+			has_completed_focus=GER_soviet_treaty
 		}
 		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			add_tech_bonus = {
-				name = nav_bomber_bonus
-				bonus = 1.0
-				uses = 2
-				category = naval_bomber
-			}
+			set_technology = {heavy_fighter2 =1}
 		}
 	}
+	
 	focus = {
 		id = GER_strategic_air_effort
 		icon = GFX_focus_GER_bomber
@@ -1304,11 +1284,11 @@ focus_tree = {
 	focus = {
 		id = GER_air_innovation_2
 		icon = GFX_focus_GER_air_innovation_2
+		prerequisite = { focus = GER_tactical_air_effort  }
 		prerequisite = { focus = GER_strategic_air_effort  }
 		x = 0
 		y = 2
 		available = {
-			has_completed_focus=GER_tactical_air_effort
 			has_completed_focus=GER_soviet_treaty
 		}
 		relative_position_id = GER_strategic_air_effort
@@ -1347,7 +1327,7 @@ focus_tree = {
 		id = GER_german_engineering
 		icon = GFX_focus_GER_Wunderwaffe
 		prerequisite = { focus = GER_extra_tech_slot }
-		prerequisite = { focus = GER_strategic_bomber_effort }
+		prerequisite = { focus = GER_long_range_escorts }
 		prerequisite = { focus = GER_air_innovation_2}
 		prerequisite = { focus = GER_flak_36 }
 		x = 4
@@ -2411,7 +2391,7 @@ focus_tree = {
 		relative_position_id = GER_summon_fritz_todt
 		x = 2
 		y = 1
-		cost = 8
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -3849,6 +3829,13 @@ focus_tree = {
 				category = cl_tech
 				category = ca_tech
 			}
+			add_tech_bonus = {
+				name = ti_bonus
+				name = GER_all_options
+				bonus = 100
+				uses = 2
+				category = naval_doctrine
+			}
 		}
 	}
 	focus = {
@@ -3871,7 +3858,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = ti_bonus
 				name = GER_all_options
-				bonus = 2.0
+				bonus = 100
 				uses = 2
 				category = naval_doctrine
 			}
@@ -3932,6 +3919,13 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			navy_experience = 50
+			add_tech_bonus = {
+				name = ti_bonus
+				name = GER_all_options
+				bonus = 100
+				uses = 2
+				category = naval_doctrine
+			}
 			random_owned_controlled_state = {
 				limit = {
 					dockyard > 0
@@ -4013,21 +4007,16 @@ focus_tree = {
 			factor = 1
 		}
 		available_if_capitulated = yes
-		complete_tooltip = {
-			navy_experience = 25
-			every_state = {
-				limit = { has_state_flag = GER_u_boat_effort_2dockyards }
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-			}
-			set_technology={ improved_submarine=1}
-		}
+		
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 		completion_reward = {
+			add_tech_bonus = {
+				name = ti_bonus
+				name = GER_all_options
+				bonus = 100
+				uses = 2
+				category = naval_doctrine
+			}
 			navy_experience = 25
 			random_owned_controlled_state = {
 				limit = {
@@ -4046,7 +4035,7 @@ focus_tree = {
 				}
 				set_state_flag = GER_u_boat_effort_2dockyards
 			}
-			set_technology={ improved_submarine=1}
+			set_technology={ improved_ship_hull_submarine=1}
 		}
 	}
 	focus = {
