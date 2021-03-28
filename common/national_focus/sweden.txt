@@ -188,6 +188,12 @@ focus_tree = {
 		relative_position_id = NDA_resource55
 		available_if_capitulated = yes
 		completion_reward = {
+			412 = {add_state_modifier = {
+					modifier = {
+						state_production_speed_buildings_factor = 0.30
+					}
+				}
+			}
 			every_country={
 				limit={is_playable_country=yes}
 				add_ideas = speed3_africa
