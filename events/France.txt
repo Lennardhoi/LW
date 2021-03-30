@@ -232,9 +232,16 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = france.15.a
+		16 = {
+		remove_province_modifier = {
+			static_modifiers = { paris_city }
+			province = {
+				id =10434
+				id =8747
+			}
+		}
+		}
 		GER = {
-			add_ideas = GER_africa_hp
-			set_technology = { africa_hp = 1 popup = no }
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = 80000
