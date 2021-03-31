@@ -359,18 +359,6 @@ technologies = {
 			leads_to_tech = heavy_fighter3_f
 			research_cost_coeff = 1
 		}
-		on_research_complete={
-			create_equipment_variant = {
-				name = "Upgraded Heavy Fighter"
-				type = heavy_fighter_equipment_2_f
-				upgrades = {
-					plane_range_upgrade = 5
-					#plane_engine_upgrade = 3
-					#plane_reliability_upgrade = 2
-				}
-				obsolete = no
-			}
-		}
 		research_cost = 0
 		start_year = 1940
 		folder = {

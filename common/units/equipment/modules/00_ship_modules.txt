@@ -286,13 +286,13 @@ equipment_modules = {
 		}
 		build_cost_resources = {
 			steel = 1
-			chromium = 1
+			#chromium = 1
 		}
 		multiply_stats = {
 			naval_speed = -0.05
 		}
 		add_average_stats = {
-			hg_armor_piercing = 50
+			hg_armor_piercing = 60
 		}
 		critical_parts = { damaged_heavy_guns }
 	}
@@ -1558,7 +1558,7 @@ equipment_modules = {
 
 
 		add_stats = {
-			torpedo_attack = 4.5
+			torpedo_attack = 6
 			build_cost_ic = 80
 		}
 
@@ -1575,7 +1575,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			torpedo_attack = 5.5
+			torpedo_attack = 7
 			build_cost_ic = 100
 		}
 
@@ -1596,7 +1596,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			torpedo_attack = 7
+			torpedo_attack = 10
 			build_cost_ic = 120
 		}
 		can_convert_from = {

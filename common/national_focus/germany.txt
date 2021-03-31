@@ -1372,7 +1372,8 @@ focus_tree = {
 					type = heavy_tank_equipment_2
 					upgrades = {
 						tank_gun_upgrade = 5
-						tank_reliability_upgrade = 5
+						tank_armor_upgrade = 5
+						tank_reliability_upgrade = 3
 						}}
 				add_equipment_production = {
 					equipment = {
@@ -2563,7 +2564,55 @@ focus_tree = {
 				11 = { remove_core_of = LIT }
 				182 = { remove_core_of = LIT }
 				181 = { remove_core_of = LIT }
-				
+				hidden_effect = {182 = {
+				set_temp_variable= {GER.a = building_level@arms_factory}
+				set_temp_variable= {GER.b = building_level@industrial_complex}
+				remove_building = {
+   					type = arms_factory
+    					level = GER.a
+				}
+				remove_building = {
+   					type = industrial_complex
+    					level = GER.b
+				}
+				}
+				698 = {
+					add_extra_state_shared_building_slots = GER.a
+					add_extra_state_shared_building_slots = GER.b
+					add_building_construction = {
+    						type = arms_factory
+    						level = GER.a
+					}
+					add_building_construction = {
+    						type = industrial_complex
+    						level = GER.b
+					}
+				}
+				183 = {
+				set_temp_variable= {GER.c = building_level@arms_factory}
+				set_temp_variable= {GER.d = building_level@industrial_complex}
+				remove_building = {
+   					type = arms_factory
+    					level = GER.a
+				}
+				remove_building = {
+   					type = industrial_complex
+    					level = GER.b
+				}
+				}
+				199 = {
+					add_extra_state_shared_building_slots = GER.c
+					add_extra_state_shared_building_slots = GER.d
+					add_building_construction = {
+    						type = arms_factory
+    						level = GER.c
+					}
+					add_building_construction = {
+    						type = industrial_complex
+    						level = GER.d
+					}
+				}
+				}
 			}
 		}
 	}
