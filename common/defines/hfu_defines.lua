@@ -80,6 +80,7 @@ NDefines.NCountry.AIR_SCORE_MULTIPLIER = 0					-- Based on number of planes (whi
 NDefines.NCountry.INDUSTRY_SCORE_MULTIPLIER = 0				-- Based on number of factories.
 NDefines.NCountry.PROVINCE_SCORE_MULTIPLIER = 0				-- Based on number of controlled provinces.
 NDefines.NCountry.POPULATION_YEARLY_GROWTH_BASE = 0
+NDefines.NCountry.STARTING_COMMAND_POWER = 100.0
 ---------------------------------------------------------------
 NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0						-- down from 0.02 | Chances one ship get damage each hour while on training 		 0.0001	
 NDefines.NAir.AIR_WING_XP_TRAINING_MISSION_ACCIDENT_FACTOR = 0

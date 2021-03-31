@@ -2253,6 +2253,13 @@ focus_tree = {
 		}
 		available_if_capitulated = no
 		completion_reward = {
+		    set_technology = {nukes=1}
+			add_nuclear_bombs = 2
+		    add_equipment_to_stockpile = {
+    type = strat_bomber_equipment
+    amount = 1
+    producer = GER
+}
 			custom_effect_tooltip = "Deploys the last reserves of the Reich"
 			hidden_effect ={
 				division_template = {
