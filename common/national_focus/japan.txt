@@ -1761,7 +1761,12 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-		RAJ = {activate_decision = RAJ_famine}
+		RAJ = {
+		       add_ideas= RAJ_asia_focus
+			   add_timed_idea = {
+               idea = RAJ_famine
+               days = 180
+            }}
 			set_variable={Global.super_event=4}
 			show_super_event=yes
 			hidden_effect = {
@@ -1793,7 +1798,7 @@ focus_tree = {
 					limit={is_in_faction_with=ENG NOT={original_tag=USA}}
 					add_dynamic_modifier={modifier=pacific_war_minor}
 				}
-				if= {limit={USA={has_completed_focus=USA_swpa}}
+				if= {limit={RAJ={has_completed_focus=RAJ_the_smiling_buddha}}
 					USA = {
 						set_autonomy = {
 							target = INS
@@ -1801,8 +1806,6 @@ focus_tree = {
 						}
 						INS={
 							set_cosmetic_tag=MAL_UK
-							transfer_state=300
-							transfer_state=303
 							transfer_state=643
 							transfer_state=560
 							transfer_state=564
@@ -1822,19 +1825,34 @@ focus_tree = {
 						}
 					}
 				}
-				else={ENG={
-						transfer_state=591
-						transfer_state=588
-						transfer_state=656
-						transfer_state=587
-						transfer_state=586
-						transfer_state=592
-						transfer_state=302
-						transfer_state=301
-						transfer_state=591
-						transfer_state=711
+				else={USA = {
+						set_autonomy = {
+							target = INS
+							autonomy_state = autonomy_dominion
+						}
+						INS={
+							set_cosmetic_tag=MAL_UK
+							transfer_state=643
+							transfer_state=560
+							transfer_state=564
+							transfer_state=629
+							transfer_state=630
+							transfer_state=651
+							transfer_state=269
+							transfer_state=628
+							transfer_state=262
+							transfer_state=293
+							transfer_state=300
+						    transfer_state=303
+							transfer_state=388
+							add_ideas = ins_idea
+							set_technology={infantry_weapons=1 popup=no}
+							country_event = {
+								id = japan.444
+								days=1
+							}
+						}
 					}
-					USA={annex_country = { target = INS transfer_troops = no }}
 				}
 				effect_tooltip={ENG = {annex_country = { target = INS transfer_troops = no }}}
 				hidden_effect = {

@@ -2035,12 +2035,12 @@ focus_tree = {
 						division = "name = \"US-Marines\" division_template = \"US-Marines\" start_experience_factor = 2.0 start_equipment_factor = 0.25"
 						owner = USA
 					}
-					}}
+				}}
 		}
 	}
 	focus = {
-		id = USA_lend_lease_to_raj
-		icon = GFX_USA_well_supplied_and_motivated
+		id = USA_Ernst_King
+		icon = GFX_focus_GER_atlantikschlacht
 		x = -3
 		y = 1
 		prerequisite = { focus =USA_war_plans_division }
@@ -2051,6 +2051,7 @@ focus_tree = {
 		}
 		available = {
 			has_war_with = JAP
+			date >1941.7.01
 		}
 		bypass = {
 		}
@@ -2058,11 +2059,14 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			RAJ={add_equipment_to_stockpile = { type = infantry_equipment amount = 10000 producer = USA }
-				add_equipment_to_stockpile = { type = artillery_equipment amount = 1200 producer = USA }
-				add_equipment_to_stockpile = { type = anti_air_equipment amount = 200 producer = USA }
-				add_equipment_to_stockpile = { type = support_equipment amount = 300 producer = USA }
-				}}
+		every_unit_leader = {
+				limit={has_id=451}
+				add_skill_level=3
+				add_attack=3
+				add_unit_leader_trait=ironside
+				add_unit_leader_trait=air_controller
+			}
+		}
 	}
 	focus = {
 		id = USA_retake_the_philippines
