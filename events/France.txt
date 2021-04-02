@@ -184,7 +184,10 @@ country_event = {
 			transfer_state = 683
 			transfer_state = 648
 			set_cosmetic_tag = FRA_FREE
-			clr_country_flag = no_naval_base
+			set_technology = {
+				naval_base_allowed = 1
+				popup = no
+			}
 			remove_ideas = FRA_protected_by_the_maginot_line
 			set_country_flag = free_france
 			set_capital = 466

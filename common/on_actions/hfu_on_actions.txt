@@ -16,6 +16,21 @@ on_actions = {
 					
 				}
 			}
+			if = {
+				limit = {
+					date > 1941.1.1
+					JAP = { surrender_progress > 0.97 }
+					country_exists = JAP
+				}
+				USA = {	
+					#change_tag_from = ITA
+					annex_country = {
+						target = JAP
+						transfer_troops = no
+					}
+					
+				}
+			}
 			every_country = {
 				limit= {
 					has_war=yes
