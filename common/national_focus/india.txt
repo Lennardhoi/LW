@@ -1359,14 +1359,13 @@ completion_reward = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-        set_state_controller = 290 
-		set_state_controller = 579
-		set_state_controller = 281
-		set_state_controller = 578
-		set_state_controller = 303
-		set_state_controller = 300
-		set_state_controller = 388
-		set_state_controller = 679
+         transfer_state = 290 
+		 transfer_state = 579
+		 transfer_state = 281
+		 transfer_state = 578
+		 transfer_state = 303
+		 transfer_state = 300
+		 transfer_state = 679
 		give_resource_rights = { receiver = ENG state = 303 }
 		give_resource_rights = { receiver = ENG state = 300 }
 		RAJ = {set_cosmetic_tag = RAJ_LW_2}
