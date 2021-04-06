@@ -185,7 +185,18 @@ focus_tree = {
 	focus = {
 		id = RAJ_freedom
 		icon = GFX_RAJ_swaraj
-		available = {RAJ = {controls_state = 276 controls_state = 642 controls_state = 303 controls_state = 561 controls_state = 275 }}
+		available = {
+		date > 1941.03.01
+		RAJ = {
+		276= {is_controlled_by_ROOT_or_ally=yes}
+		642= {is_controlled_by_ROOT_or_ally=yes}
+		303= {is_controlled_by_ROOT_or_ally=yes}
+		561= {is_controlled_by_ROOT_or_ally=yes}
+		275= {is_controlled_by_ROOT_or_ally=yes}
+		}
+		}
+		
+	
 		prerequisite = { focus =RAJ_cripps_mission}
 		x = 0
 		y = 1
