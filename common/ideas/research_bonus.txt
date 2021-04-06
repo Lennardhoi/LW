@@ -1,5 +1,21 @@
 ideas = {
 	hidden_ideas= {
+		expensive_armor={
+			picture = generic_infantry_bonus
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = 0.10
+					instant = yes
+				}
+			}
+		}
 		research_35={
 			picture = generic_infantry_bonus
 			allowed = {
@@ -9,6 +25,7 @@ ideas = {
 			allowed_civil_war = {
 				always = yes
 			}
+			
 			modifier= {
 			production_factory_start_efficiency_factor = 0.4 
 			}
