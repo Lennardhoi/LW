@@ -1,6 +1,12 @@
 SOV_relocate_civ = {
 	random_owned_controlled_state={
 		limit={
+			SOV = {
+				divisions_in_state = {
+    					size > 4
+   					state = PREV
+				}
+			}			
 			any_neighbor_state={
 				is_core_of=SOV
 				NOT={is_controlled_by=SOV}
@@ -23,7 +29,15 @@ SOV_relocate_civ = {
 }
 SOV_relocate_mil = {
 	random_owned_controlled_state={
-		limit={any_neighbor_state={is_core_of=SOV
+		limit={
+			
+			SOV = {
+				divisions_in_state = {
+    					size > 4
+   					state = PREV
+				}
+			}
+			any_neighbor_state={is_core_of=SOV
 				NOT={is_controlled_by=SOV}} arms_factory>0}
 		remove_building = {type = arms_factory level = 1}
 		OWNER={add_to_variable={relocatedmil = 1}}

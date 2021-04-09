@@ -171,10 +171,10 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-		 ENG ={release_autonomy = {
-         target = RAJ
-         autonomy_state = autonomy_dominion
-    }   }
+		 ENG ={set_autonomy = {
+        	target = RAJ
+         	autonomy_state = autonomy_dominion
+   	 }   	}
 	        RAJ={add_equipment_to_stockpile = { type = infantry_equipment amount = 10000 producer = RAJ }
 				add_equipment_to_stockpile = { type = artillery_equipment amount = 1200 producer = RAJ }
 				add_equipment_to_stockpile = { type = anti_air_equipment amount = 200 producer = RAJ }
