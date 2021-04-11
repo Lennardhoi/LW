@@ -141,6 +141,7 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+		 add_war_support = 0.35
 		 add_political_power = 150
 		 add_ideas = war_economy
 		 custom_effect_tooltip = available_political_advisor
@@ -247,7 +248,7 @@ focus_tree = {
 		completion_reward = {
 			swap_ideas = {
 				add_idea = RAJ_marginalized_muslim_community_happy
-				remove_idea = RAJ_marginalized_muslim_community_angry
+				remove_idea = RAJ_marginalized_muslim_community
 			}
 		}
 	}
