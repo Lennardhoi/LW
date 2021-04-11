@@ -31,6 +31,16 @@ on_actions = {
 					
 				}
 			}
+			if = {
+				limit = {
+					date > 1941.6.1
+					GER = { surrender_progress > 0.8 }
+					country_exists = GER
+				}
+				#country_event={id=germany.8541 days=2}
+				set_variable={Global.super_event=2}
+				show_super_event=yes
+			}
 			every_country = {
 				limit= {
 					has_war=yes
@@ -579,6 +589,24 @@ on_actions = {
 	}
 	on_capitulation = {
 		effect = {
+		    if = {
+				limit = {
+				    tag=FIN
+				}
+			every_country = {
+	        limit = { has_war_with = FIN}
+	        white_peace = FIN
+		     }
+			GER = {end_puppet = FIN}
+			FIN = {
+			add_ideas = EFR_neutrality_idea
+			leave_faction = yes
+			}
+			SOV = { transfer_state = 143 transfer_state = 142 transfer_state = 640}
+			GER = {	
+					change_tag_from = FIN
+				}
+            }
 			if = {
 				limit = {
 					OR={
@@ -613,9 +641,6 @@ on_actions = {
 				add_offsite_building = { type = industrial_complex level = 20 }
 				add_offsite_building = { type = dockyard level = 10 }
 			}
-			if = {limit = {tag=ger}
-				set_variable={Global.super_event=2}
-				show_super_event=yes}
 			if = {limit = {tag=jap}
 				set_variable={Global.super_event=7}
 				show_super_event=yes}

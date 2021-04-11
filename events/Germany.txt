@@ -113,6 +113,171 @@ country_event = {
 	}
 }
 country_event = {
+	id = germany.8541
+	title = germany.8541.t
+	desc = germany.8541.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	hidden = yes
+	option = {
+		name = germany.8541.a
+			every_state = {
+				limit = {
+					is_core_of = POL
+					NOT = {is_core_of = SOV}
+				}
+				POL = {
+					transfer_state = PREV
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = CZE
+
+				}
+				CZE = {
+					transfer_state = PREV
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = YUG
+				}
+				YUG = {
+					transfer_state = PREV
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = ALB
+				}
+				ALB = {
+					transfer_state = PREV
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = GRE
+				}
+				GRE = {
+					transfer_state = PREV
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = FRA
+				}
+				FRA = {
+					transfer_state = PREV
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = LUX
+				}
+				LUX = {
+					transfer_state = PREV
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = BEL
+				}
+				BEL = {
+					transfer_state = PREV
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = HOL
+				}
+				HOL = {
+					transfer_state = PREV
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = NOR
+				}
+				NOR = {
+					transfer_state = PREV
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = DEN
+				}
+				DEN = {
+					transfer_state = PREV
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = ROM
+					NOT = {is_core_of = SOV}
+				}
+				ROM = {
+					transfer_state = PREV
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = HUN
+					NOT ={is_core_of = ROM}
+					NOT ={is_core_of = YUG}
+					NOT ={is_core_of = CZE }
+					NOT ={is_core_of = BUL }
+				}
+				HUN = {
+					transfer_state = PREV
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = BUL
+					NOT ={is_core_of = YUG}
+					NOT ={is_core_of = GRE }
+				}
+				BUL = {
+					transfer_state = PREV
+				}
+			}
+			every_state = {
+				limit = {
+					is_core_of = ITA
+					NOT ={is_core_of = YUG}
+					NOT ={is_core_of = ALB }
+				}
+				ITA = {
+					transfer_state = PREV
+				}
+			}
+			ROM = {transfer_state = 76}
+			POL = {
+			transfer_state = 63
+			transfer_state = 68
+			transfer_state = 66 
+			transfer_state = 67
+			transfer_state = 5
+			transfer_state = 97
+			}
+			SOV = {transfer_state = 677 transfer_state = 181 transfer_state = 65 transfer_state =60 transfer_state = 64 transfer_state = 61 transfer_state = 4 transfer_state = 62 }
+			ENG = {transfer_state =58 transfer_state =59 transfer_state =57 transfer_state = 56 transfer_state = 51}
+			FRA = {transfer_state = 42}
+			USA = {transfer_state = 52 transfer_state = 53 transfer_state = 54 transfer_state = 55 transfer_state = 50 transfer_state =149 transfer_state =148 }
+		 every_country = {
+	       limit = { has_war_with = GER}
+	       white_peace = GER
+		 }
+		 every_country = {
+	       limit = { has_war_with = SOV}
+	       white_peace = SOV
+		 }
+		  SOV ={puppet = ROM puppet = HUN puppet = BUL puppet = CZE puppet = POL puppet = YUG puppet = ALB}
+ 
+	}
+}
+country_event = {
 	id = germany.5
 	title = germany.5.t
 	desc = germany.5.d
