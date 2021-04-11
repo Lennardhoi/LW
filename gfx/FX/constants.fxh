@@ -146,16 +146,16 @@ static const float  WATER_HEIGHT_RECP_SQUARED = WATER_HEIGHT_RECP * WATER_HEIGHT
 // --------------------------------------------------------------
 
 static const float3 FOG_COLOR 					= float3( 0.12, 0.28, 0.6 );
-static const float 	FOG_BEGIN					= 1.0f;
-static const float 	FOG_END 					= 150.0f;
-static const float 	FOG_MAX 					= 0.35f; 
+static const float 	FOG_BEGIN					= 0.0f;
+static const float 	FOG_END 					= 0.0f;
+static const float 	FOG_MAX 					= 0.0; 
 
 //static const float 	FOG_MAX 					= 1000.7f;
 
 // Fog of war
-static const float 	FOW_MAX 					= 0.5f;
-static const float  FOW_CAMERA_MIN				= 200;
-static const float  FOW_CAMERA_MAX				= 500;
+static const float 	FOW_MAX 					= 0.0f;
+static const float  FOW_CAMERA_MIN				= 0;
+static const float  FOW_CAMERA_MAX				= 0;
 
 
 // --------------------------------------------------------------
