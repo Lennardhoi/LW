@@ -2475,6 +2475,9 @@ focus_tree = {
 			}
 			hidden_effect = {
 				news_event = { hours = 6 id = news.36 }
+				every_country = {limit = { check_variable= { speeches_enabled > 0}  is_in_faction_with = GER}
+					scoped_sound_effect = "sp_ger_anschluss"
+				}
 			}
 		}
 	}

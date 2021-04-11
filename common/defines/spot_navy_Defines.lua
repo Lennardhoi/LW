@@ -72,7 +72,7 @@ NDefines.NNavy.DETECTION_CHANCE_MULT_AIR_SUPERIORITY_BONUS = 0.3
 NDefines.NNavy.COMBAT_DAMAGE_TO_STR_FACTOR = 0.23 -- casting damage value to ship strength multiplier. Use it ot balance the game difficulty.
 NDefines.NNavy.COMBAT_DAMAGE_TO_ORG_FACTOR = 0.69	--- casting damage value to ship organisation multiplier. Use it to balance the game difficulty.
 NDefines.NNavy.MAX_ORG_ON_MANUAL_MOVE = 1.0	-- org will clamped to this ratio on manual move
-
+NDefines.NNavy.TRAINING_EXPERIENCE_FACTOR = 0.6
 NDefines.NNavy.UNIT_TRANSFER_DETECTION_CHANCE_BASE = 1.0  -- unit transfer and naval invasion base chance detection percentage (if this fails, no detection is done on that tick)
 NDefines.NNavy.UNIT_TRANSFER_SPOTTING_SPEED_MULT = 1.0
 NDefines.NNavy.NAVAL_INVASION_SPOTTING_SPEED_MULT = 2.0	-- spotting speed mult against naval invasion armies

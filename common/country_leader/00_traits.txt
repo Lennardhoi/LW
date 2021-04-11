@@ -2056,6 +2056,7 @@ leader_traits = {
 	naval_aviation_pioneer = {
 		sprite = 14
 		experience_gain_navy = 0.2
+		experience_gain_air = 0.2
 
 		ai_will_do = {
 			factor = 100
@@ -2141,17 +2142,16 @@ leader_traits = {
 		random = no
 		equipment_bonus = {
 			fighter_equipment = {
-				air_agility = 0.2 maximum_speed = 0.1 air_range = 0.1
+				air_agility = 0.2 maximum_speed = 0.1 air_range = 0.2 build_cost_ic = -0.15
+				
 			}
 			jet_fighter_equipment = {
-				air_agility = 0.2 maximum_speed = 0.1 air_range = 0.1
+				air_agility = 0.2 maximum_speed = 0.1 air_range = 0.2
 			}
 			# cv_fighter_equipment = {
 				# air_agility = 0.2 maximum_speed = 0.1
 				# }
-			heavy_fighter_equipment = {
-				air_agility = 0.2 maximum_speed = 0.1 air_range = 0.05
-			}
+			
 		}
 
 		ai_will_do = {
@@ -2224,15 +2224,12 @@ leader_traits = {
 	fuel_efficient_aircraft_manufacturer = {
 		random = no
 		equipment_bonus = {
-			fighter_equipment = {
-				air_range = 0.2
-			}
 			jet_fighter_equipment = {
 				air_range = 0.2
 			}
 			heavy_fighter_equipment = {
 				air_range = 0.15
-
+				build_cost_ic = -0.20
 				reliability = 0.2
 				air_defence = 0.2
 			}
