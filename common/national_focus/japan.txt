@@ -329,8 +329,8 @@ focus_tree = {
 				limit = { has_dlc = "Waking the Tiger" }
 				unlock_decision_category_tooltip = prospect_for_resources
 			}
-			add_timed_idea = { idea = SPA_preparing_for_war days = 180 }
-			MAN = { add_timed_idea = { idea = SPA_preparing_for_war days = 180 } }
+			add_timed_idea = { idea = SPA_preparing_for_war days = 365 }
+			MAN = { add_timed_idea = { idea = SPA_preparing_for_war days = 365 } }
 		}
 	}
 	focus = {
@@ -1490,7 +1490,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = JAP_supremacy_of_the_battlefleet
 				bonus = 1.0
-				uses = 1
+				uses = 2
 				category = bb_tech
 			}
 			custom_effect_tooltip = available_designer
@@ -1509,11 +1509,6 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-		}
-		bypass = {
-			AND = {
-				has_tech = ship_hull_super_heavy
-			}
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
