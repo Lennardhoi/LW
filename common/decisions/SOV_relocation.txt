@@ -11,144 +11,33 @@ SOV_industry_relocation = {
 		fire_only_once = no
 		is_good = yes
 		activation = {
-			always=no}
+			has_completed_focus=SOV_move_industry_to_urals
+			has_war_with = GER
+			#always=no
+		}
 		timeout_effect = {
 			SOV_relocate_mil=yes
 			SOV_relocate_mil=yes
-			SOV_relocate_civ=yes
-			SOV_relocate_civ=yes
-			if={limit={check_variable={relocatedciv=0}}
-				SOV_relocate_mil=yes
-				SOV_relocate_mil=yes
-				else_if={limit={check_variable={relocatedciv=1}}
-					SOV_relocate_mil=yes
-				}
+			SOV_relocate_mil=yes
+			SOV_relocate_mil=yes
+			if={limit={check_variable={relocatedmil<4}}
+				set_temp_variable = {civs_to_relocate=4}
+				subtract_from_temp_variable = {civs_to_relocate = relocatedmil}
+				for_loop_effect = {
+						end = civs_to_relocate
+						 
+						SOV_relocate_civ=yes
+						}
 			}
-			if={limit={check_variable={relocatedmil=0}}
-				SOV_relocate_civ=yes
-				SOV_relocate_civ=yes
-				else_if={limit={check_variable={relocatedmil=1}}
-					SOV_relocate_civ=yes
-				}
-			}
-			set_variable={reloceatedmil=0}
-			set_variable={reloceatedciv=0}
-			if={
-				limit={check_variable = {relocation<100}}
-				activate_mission=SOV_relocation2
-				add_to_variable= {relocation = 1}
-				else={clear_variable=relocation}
-				}}
-		complete_effect = {
-		}
-	}
-	SOV_relocation2= {
-		allowed = {
-			original_tag=SOV
-		}
-		icon = generic_naval
-		available = {
-			tag=Gay
-		}
-		days_mission_timeout = 4
-		fire_only_once = no
-		is_good = yes
-		activation = {
-			always=no}
-		timeout_effect = {
-			SOV_relocate_mil=yes
-			SOV_relocate_mil=yes
-			SOV_relocate_civ=yes
-			SOV_relocate_civ=yes
-			if={
-				limit={check_variable = {relocation<100}}
-				activate_mission=SOV_relocation3
-				add_to_variable= {relocation = 1}
-				else={clear_variable=relocation}
-				}}
-		complete_effect = {
-		}
-	}
-	SOV_relocation3= {
-		allowed = {
-			original_tag=SOV
-		}
-		icon = generic_naval
-		available = {
-			tag=Gay
-		}
-		days_mission_timeout = 4
-		fire_only_once = no
-		is_good = yes
-		activation = {
-			always=no}
-		timeout_effect = {
-			SOV_relocate_mil=yes
-			SOV_relocate_mil=yes
-			SOV_relocate_civ=yes
-			SOV_relocate_civ=yes
-			if={
-				limit={check_variable = {relocation<100}}
-				activate_mission=SOV_relocation4
-				add_to_variable= {relocation = 1}
-				else={clear_variable=relocation}
-				}}
-		complete_effect = {
-		}
-	}
-	SOV_relocation4= {
-		allowed = {
-			original_tag=SOV
-		}
-		icon = generic_naval
-		available = {
-			tag=Gay
-		}
-		days_mission_timeout = 4
-		fire_only_once = no
-		is_good = yes
-		activation = {
-			always=no}
-		timeout_effect = {
-			SOV_relocate_mil=yes
-			SOV_relocate_mil=yes
-			SOV_relocate_civ=yes
-			SOV_relocate_civ=yes
-			if={
-				limit={check_variable = {relocation<100}}
-				activate_mission=SOV_relocation5
-				add_to_variable= {relocation = 1}
-				else={clear_variable=relocation}
-				}}
-		complete_effect = {
-		}
-	}
-	SOV_relocation5= {
-		allowed = {
-			original_tag=SOV
-		}
-		icon = generic_naval
-		available = {
-			tag=Gay
-		}
-		days_mission_timeout = 4
-		fire_only_once = no
-		is_good = yes
-		activation = {
-			always=no}
-		timeout_effect = {
-			SOV_relocate_mil=yes
-			SOV_relocate_mil=yes
-			SOV_relocate_civ=yes
-			SOV_relocate_civ=yes
 			if={
 				limit={check_variable = {relocation<100}}
 				activate_mission=SOV_relocation
 				add_to_variable= {relocation = 1}
-				else={clear_variable=relocation}
+				#else={clear_variable=relocation}
 				}}
 		complete_effect = {
 		}
 	}
+	
 }
 
