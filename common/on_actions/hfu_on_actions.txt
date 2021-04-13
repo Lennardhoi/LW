@@ -18,6 +18,16 @@ on_actions = {
 			}
 			if = {
 				limit = {
+					SOV = {
+		  			has_war_with = GER
+		   			surrender_progress > 0.95
+					}
+					not = { has_global_flag = SOV_peacedeal }
+				}
+				SWE = {country_event = {id = peace.1 } }
+			}
+			if = {
+				limit = {
 					date > 1941.1.1
 					JAP = { surrender_progress > 0.97 }
 					country_exists = JAP

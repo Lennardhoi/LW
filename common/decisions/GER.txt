@@ -524,6 +524,12 @@ operations = {
 				every_country = {limit = {check_variable= { speeches_enabled > 0} OR={is_in_faction_with=ENG tag=SOV } }
 					scoped_sound_effect="sp_sacred_war"
 				}
+				SOV = {country_event={id=soviet.471 days =1}
+				country_event={id=soviet.471 days =5}
+				country_event={id=soviet.471 days =10}
+				country_event={id=soviet.471 days =15}
+				country_event={id=soviet.471 days =20}
+				}
 			}
 			set_variable={Global.super_event=1}
 			show_super_event=yes

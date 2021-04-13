@@ -6,16 +6,9 @@ country_event = {
 	desc = peace.1.d
 	picture = GFX_report_event_generic_battle	
 
-	trigger = {
-		tag = SWE
-		SOV = {
-		   has_war_with = GER
-		   surrender_progress > 0.95
-		}
-		not = { has_global_flag = SOV_peacedeal }
-	}
 	
-	mean_time_to_happen = { days = 5 }
+	
+	is_triggered_only=yes
 
 	immediate = {
 		set_global_flag = SOV_peacedeal

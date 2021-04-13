@@ -1360,7 +1360,8 @@ focus_tree = {
 				uses = 2
 				category = marine_tech
 			}
-			set_technology={jungle_warfare=1}
+			custom_effect_tooltip = RAJ_jungle_training_effect
+			hidden_effect = { set_technology = { jungle_warfare = 1 } }
 			hidden_effect={
 				division_template = {
 					name = "Rikuhentai"

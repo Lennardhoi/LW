@@ -431,6 +431,17 @@ country_event = {
 	}
 }
 country_event = {
+	id = soviet.471
+	hidden = yes
+	is_triggered_only = yes
+	fire_only_once = no
+	immediate = {
+		every_unit_leader = {
+		boost_planning = 1
+		}
+	}
+}
+country_event = {
 	id = soviet.140
 	title = soviet.140.t
 	desc = soviet.140.d
