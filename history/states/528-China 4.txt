@@ -2,32 +2,16 @@ state={
 	id=528
 	name="STATE_604"
 	history={
-		owner = CHI
-		add_core_of = CHI
-		victory_points = {
-			7332 10
-		}
+		
 		buildings = {
-			infrastructure = 1
-			industrial_complex = 2
+			
 		}
-		1938.10.25 = {
-			if = {
-				limit = {
-					NOT = {
-						has_dlc = "Waking the Tiger"
-					}
-				}
-				CHI = {
-					transfer_state = PREV
-				}
-			}
-		}
+		
 	}
 	provinces={
 		4576 4620 7332 7395 7407 11647
 	}
-	manpower=1196100
+	manpower=1
 	buildings_max_level_factor=1.000
 	state_category=rural
 }
