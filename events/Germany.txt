@@ -121,7 +121,36 @@ country_event = {
 	hidden = yes
 	option = {
 		name = germany.8541.a
-			every_state = {
+		 country_event = {
+             id = germany.8542	
+             days = 2
+   
+            }
+		   every_country = {
+	       limit = { has_war_with = GER}
+	       white_peace = GER
+		 }
+		 every_country = {
+	       limit = { has_war_with = SOV}
+	       white_peace = SOV
+		 }
+ 
+	}
+}
+country_event = {
+	id = germany.8542
+	title = germany.8542.t
+	desc = germany.8542.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	hidden = yes
+	option = {
+		name = germany.8542.a
+		 country_event = {
+             id = germany.8543
+             days = 2
+            }
+		every_state = {
 				limit = {
 					is_core_of = POL
 					NOT = {is_core_of = SOV}
@@ -155,7 +184,23 @@ country_event = {
 					transfer_state = PREV
 				}
 			}
-			every_state = {
+	}
+}
+country_event = {
+	id = germany.8543
+	title = germany.8543.t
+	desc = germany.8543.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	hidden = yes
+	option = {
+		name = germany.8543.a
+		 country_event = {
+             id = germany.8544
+             days = 2
+            }
+		every_state = {
+		
 				limit = {
 					is_core_of = GRE
 				}
@@ -195,6 +240,21 @@ country_event = {
 					transfer_state = PREV
 				}
 			}
+	}
+}
+country_event = {
+	id = germany.8544
+	title = germany.8544.t
+	desc = germany.8544.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	hidden = yes
+	option = {
+		name = germany.8544.a
+		    country_event = {
+             id = germany.8545
+             days = 2
+            }
 			every_state = {
 				limit = {
 					is_core_of = NOR
@@ -220,6 +280,21 @@ country_event = {
 					transfer_state = PREV
 				}
 			}
+	}
+}
+country_event = {
+	id = germany.8545
+	title = germany.8545.t
+	desc = germany.8545.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	hidden = yes
+	option = {
+		name = germany.8545.a
+		    country_event = {
+             id = germany.8546
+             days = 2
+            }
 			every_state = {
 				limit = {
 					is_core_of = HUN
@@ -252,7 +327,18 @@ country_event = {
 					transfer_state = PREV
 				}
 			}
-			ROM = {transfer_state = 76}
+	}
+}
+country_event = {
+	id = germany.8546
+	title = germany.8546.t
+	desc = germany.8546.d
+	picture = GFX_report_event_german_speech
+	is_triggered_only = yes
+	hidden = yes
+	option = {
+		name = germany.8546.a
+		ROM = {transfer_state = 76}
 			POL = {
 			transfer_state = 63
 			transfer_state = 68
@@ -265,16 +351,7 @@ country_event = {
 			ENG = {transfer_state =58 transfer_state =59 transfer_state =57 transfer_state = 56 transfer_state = 51}
 			FRA = {transfer_state = 42}
 			USA = {transfer_state = 52 transfer_state = 53 transfer_state = 54 transfer_state = 55 transfer_state = 50 transfer_state =149 transfer_state =148 }
-		 every_country = {
-	       limit = { has_war_with = GER}
-	       white_peace = GER
-		 }
-		 every_country = {
-	       limit = { has_war_with = SOV}
-	       white_peace = SOV
-		 }
 		  SOV ={puppet = ROM puppet = HUN puppet = BUL puppet = CZE puppet = POL puppet = YUG puppet = ALB}
- 
 	}
 }
 country_event = {
