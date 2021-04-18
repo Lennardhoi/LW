@@ -3051,6 +3051,15 @@ focus_tree = {
 		cost = 5
 		completion_reward = {
 			add_ideas = GER_Waffen_SS
+			custom_effect_tooltip = "Ten fully equipped SS-Divisions will spawn in Duisburg."
+				51 = {
+					for_loop_effect = {
+						end = 10
+						create_unit = {
+							division = "name = \"SS-Panzergrenadier\" division_template = \"Brandenburgers\" start_experience_factor = 2.0"
+							owner = GER
+						}
+						}}
 		}
 	}
 	focus = {

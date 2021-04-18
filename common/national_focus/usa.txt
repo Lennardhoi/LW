@@ -1634,12 +1634,9 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_ger3
-		icon = GFX_focus_attack_germany
+		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = USA_war_plan_black }
 		available = {
-			OR = {EFR ={has_war = yes}
-				GER={controls_state = 20}
-			}
 		}
 		continue_if_invalid = yes
 		available_if_capitulated = yes
@@ -1648,9 +1645,10 @@ focus_tree = {
 		relative_position_id = USA_war_plan_black
 		cost = 4
 		completion_reward = {
-			every_state = {
-				limit={OR={state=424 state=584 state=422 state=440}}
-				add_dynamic_modifier = { modifier = JAP_attack days=60  }}
+			swap_ideas = {
+				remove_idea =joseph_stilwell
+				add_idea = joseph_stilwell_2
+			}
 		}
 	}
 	focus = {

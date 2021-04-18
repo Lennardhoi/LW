@@ -157,6 +157,12 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
+		    add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
 			add_tech_bonus = {
 				name = armor_bonus
 				bonus = 1.0
@@ -181,6 +187,12 @@ focus_tree = {
 		completion_reward = {
 			army_experience=200
 			add_ideas=ENG_Tank_upgrade_cost
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
 			add_tech_bonus = {
 				name = armor_bonus
 				ahead_reduction = 2

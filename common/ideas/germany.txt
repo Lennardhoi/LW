@@ -326,6 +326,75 @@ ideas = {
 				breakthrough_bonus_against  = 0.05
 			}
 		}
+		GER_barbarossa_spr = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			removal_cost = -1
+			picture = generic_acquire_tanks
+			modifier = {
+				army_armor_attack_factor = 0.10
+				air_mission_efficiency = 0.1
+				air_cas_present_factor = 0.1
+				no_supply_grace = 72
+				max_dig_in = -7
+				production_speed_air_base_factor=0.15
+				production_speed_infrastructure_factor=0.25
+			}
+			targeted_modifier = {
+				tag = SOV
+				defense_bonus_against  = -0.1
+				breakthrough_bonus_against  = 0.05
+			}
+			targeted_modifier = {
+				tag = ENG
+				defense_bonus_against  = -0.1
+				attack_bonus_against  = -0.1
+			}
+			targeted_modifier = {
+				tag = USA
+				defense_bonus_against  = -0.1
+				attack_bonus_against  = -0.1
+			}
+			targeted_modifier = {
+				tag = FRA
+				defense_bonus_against  = -0.1
+				attack_bonus_against  = -0.1
+			}
+			targeted_modifier = {
+				tag = AST
+				defense_bonus_against  = -0.1
+				attack_bonus_against  = -0.1
+				
+			}
+			targeted_modifier = {
+				tag = NZL
+				defense_bonus_against  = -0.1
+				attack_bonus_against  = -0.1
+				
+			}
+			targeted_modifier = {
+				tag = CAN
+				defense_bonus_against  = -0.1
+				attack_bonus_against  = -0.1
+				
+			}
+			targeted_modifier = {
+				tag = RAJ
+				defense_bonus_against  = -0.1
+				attack_bonus_against  = -0.1
+				
+			}
+			targeted_modifier = {
+				tag = SAF
+				defense_bonus_against  = -0.1
+				attack_bonus_against  = -0.1
+				
+			}
+		}
 		GER_barbarossa_2 = {
 			allowed = {
 				always = no
