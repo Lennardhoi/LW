@@ -1432,12 +1432,6 @@ focus_tree = {
 				uses = 2
 				category = cat_anti_tank
 			}
-			add_tech_bonus = {
-				name = h3bonus
-				bonus = 1
-				uses = 1
-				technology = advanced_heavy_tank
-			}
 		}
 	}
 	focus = {
@@ -1537,7 +1531,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		available = { date > 1942.1.1}
+		available = { date > 1941.8.1}
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {

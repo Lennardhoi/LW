@@ -856,6 +856,17 @@ ideas = {
 				factor = 0
 			}
 		}
+		sanzo_nosaka = {
+			
+			allowed = {
+				original_tag = "JAP"
+			}
+			traits = { captain_of_industry }
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}	
 		JAP_mitsumasa_yonai = {
 			picture = generic_political_advisor_asia_2
 			allowed = {
@@ -879,11 +890,12 @@ ideas = {
 				original_tag = JAP
 			}
 			traits = { war_industrialist }
+			available = {has_completed_focus = JAP_intervene_in_china}
 			ai_will_do = {
 				factor = 3
 			}
 		}
-		JAP_intelligence_advisor = {
+		JAP_chiune_sugihara = {
 			available = {
 				has_intelligence_agency = yes
 			}
