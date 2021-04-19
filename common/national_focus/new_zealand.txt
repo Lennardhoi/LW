@@ -1083,11 +1083,9 @@ focus = {
 	}
 	completion_reward = {
 		add_tech_bonus = {
-			name = NZL_schofield_tank
-			bonus = 1.0
-			uses = 1
-			category = cat_light_armor
-		}
+				ahead_reduction = 2
+				technology = advanced_light_tank
+			}
 	}
 }
 focus = {
@@ -1166,6 +1164,7 @@ focus = {
 		factor = 25
 	}
 	available = {
+	date > 1941.1.1
 	}
 	bypass = {
 	}
@@ -1175,19 +1174,7 @@ focus = {
 	complete_tooltip = {
 	}
 	completion_reward = {
-		add_tech_bonus = {
-			name = NZL_big_bob_tank
-			ahead_reduction = 2
-			bonus = 1.0
-			uses = 1
-			technology = super_heavy_tank
-		}
-		add_tech_bonus = {
-			name = motorized_bonus
-			bonus = 1.0
-			uses = 1
-			category = motorized_equipment
-		}
+		set_technology = {super_heavy_tank =1}
 	}
 }
 focus = {
