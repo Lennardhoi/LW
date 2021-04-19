@@ -162,7 +162,7 @@ share_intel_with_allies={
 create_arrays_pacific={
 	clear_array=GLOBAL.pacific_states
 	every_state={
-		limit={OR={state=273 state=294 state= 566 state= 569 state=652 state=405 state=272 state=275 state=300 state=301 state=302 state=303 state=388 state=450 state=544 state=545 state=546 state=547 state=548 state=549 state=550 state=551 state=552 state=553 state=554 state=555 state=556 state=557 state=559 state=560 state=561 state=563 state=564 state=567 state=568 state=586 state=587 state=588 state=591 state=592 state=603 state=639 state=643 state=644 state=645 state=655 state=656 state=711}}
+		limit={OR={state=273 state=294 state= 566 state= 569 state=652 state=405 state=272 state=273 state=275 state=300 state=301 state=302 state=303 state=388 state=450 state=544 state=545 state=546 state=547 state=548 state=549 state=550 state=551 state=552 state=553 state=554 state=555 state=556 state=557 state=559 state=560 state=561 state=563 state=564 state=567 state=568 state=586 state=587 state=588 state=591 state=592 state=603 state=639 state=643 state=644 state=645 state=655 state=656 state=711}}
 		add_to_array={GLOBAL.pacific_states=THIS}
 	}
 }
@@ -213,10 +213,10 @@ update_pacific_war = {
 		if={
 			limit={is_controlled_by_ENG_or_ally=yes }
 			if={
-				limit={NOT={OR={state=591 state=300 state=302 state=303 state=450 state=388 state= 550 state=588 state=273 state=272 state=405}}}
+				limit={NOT={OR={state=591 state = 712 state = 713 state=300 state=302 state=303 state=450 state=388 state= 550 state=588 state=273 state=272 state=405}}}
 				add_to_variable={GLOBAL.pacific_status=1}
 				else_if={
-					limit={NOT={OR={state=405 state=272 state=405}}}
+					limit={NOT={OR={state=273 state=272 state=405}}}
 					add_to_variable={GLOBAL.pacific_status=5}
 				}
 				else={
@@ -225,13 +225,17 @@ update_pacific_war = {
 		}
 	}
 	set_variable={JAP.pacific_status=GLOBAL.pacific_status}
-	subtract_from_variable={JAP.pacific_status=91}
+	subtract_from_variable={JAP.pacific_status=70}
 	multiply_variable={JAP.pacific_status=-30}
 	divide_variable={JAP.pacific_status=10200}
 	set_variable={USA.pacific_status=JAP.pacific_status}
+	set_variable={USA.pacific_status_negative=JAP.pacific_status}
 	multiply_variable={USA.pacific_status=-1}
+	set_variable={JAP.pacific_status_negative=USA.pacific_status}
 	set_variable={ENG.pacific_status=USA.pacific_status}
+	set_variable={ENG.pacific_status_negative=USA.pacific_status_negative}
 	multiply_variable={ENG.pacific_status=0.75}
+	multiply_variable={ENG.pacific_status_negative=0.75}
 	set_variable={GER.pacific_status=JAP.pacific_status}
 	if={limit={JAP={has_completed_focus=JAP_korean_guest_workers}} add_to_variable={JAP.pacific_status=0.1}}
 	

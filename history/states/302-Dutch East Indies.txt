@@ -1,19 +1,16 @@
+
 state={
 	id=302
-	name="STATE_335"
-	manpower = 41718200
-	state_category = city
+	name="West Java"
 	resources={
-		rubber=75
+		rubber=40
 	}
+
 	history={
 		owner = INS
 		add_core_of = INS
 		victory_points = {
-			6844 5
-		}
-		victory_points = {
-			4320 3
+			6844 5 
 		}
 		buildings = {
 			infrastructure = 5
@@ -22,14 +19,17 @@ state={
 			air_base = 3
 			6844 = {
 				naval_base = 6
-			}
-			4320 = {
-				naval_base = 3
-			}
-		}
-	}
-	provinces={
-		1154 1331 1343 1358 1370 4035 4119 4135 4163 4320 4332 6688 6844 6883 7076 7088 9313 9455 9483 9634 9645 11130 11156 11172 11325
-	}
-}
 
+			}
+
+		}
+
+	}
+
+	provinces={
+		1331 1343 1370 4135 4163 4332 6688 6844 6883 9455 9483 11130 
+	}
+	manpower=21718200
+	buildings_max_level_factor=1.000
+	state_category=city
+}

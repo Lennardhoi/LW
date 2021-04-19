@@ -1,22 +1,18 @@
+
 state={
 	id=591
-	name="STATE_672"
-	manpower = 8254900
-	state_category = town
+	name="Northern Sumatra"
 	resources={
-		rubber=90
-		oil=12
-		aluminium=28
+		rubber=30.000
+		oil=6.000
+		aluminium=28.000
 	}
-	history=
-	{
+
+	history={
 		owner = INS
 		add_core_of = INS
 		victory_points = {
-			4360 5
-		}
-		victory_points = {
-			11147 5
+			4360 5 
 		}
 		buildings = {
 			infrastructure = 3
@@ -24,17 +20,21 @@ state={
 			air_base = 1
 			4360 = {
 				naval_base = 3
+
 			}
 			1580 = {
 				naval_base = 1
-			}
-			11147 = {
-				naval_base = 1
-			}
-		}
-	}
-	provinces={
-		1191 1219 1222 1258 1277 1287 1290 1318 1346 1373 1405 1475 1580 3943 4006 4049 4090 4093 4110 4174 4360 6773 6792 6833 6847 6858 6902 6922 7092 7105 7643 9328 9371 9385 9401 9470 9497 9526 9550 9659 9670 11010 11022 11049 11052 11065 11068 11091 11094 11147 11175 11181 11215 11277 11338
-	}
-}
 
+			}
+
+		}
+
+	}
+
+	provinces={
+		1222 1373 1405 1580 4174 4360 6792 6922 7092 7105 7643 9385 9526 9550 9659 9670 11010 11052 11065 11181 11215 11338 
+	}
+	manpower=3254900
+	buildings_max_level_factor=1.000
+	state_category=town
+}
