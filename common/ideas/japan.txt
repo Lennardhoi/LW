@@ -58,7 +58,13 @@ ideas = {
 				army_core_attack_factor = 0.5
 				army_core_defence_factor = 0.5
 				special_forces_attack_factor = 0.05
+				army_defence_factor = 0.1
+				army_attack_factor = 0.1
 			}
+			on_remove = {
+		    set_technology = {
+		    jungle_warfare_2 = 1
+		   }}
 		}
 		JAP_navy_recover = {
 			picture = generic_infantry_bonus
@@ -606,9 +612,8 @@ ideas = {
 			removal_cost = -1
 			picture = jap_supremacy_of_will
 			modifier = {
-				army_defence_factor = 0.1
-				army_attack_factor = 0.1
-				army_morale_factor = 0.1
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
 			}
 		}
 		JAP_expand_the_snlf = {

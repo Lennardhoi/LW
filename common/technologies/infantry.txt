@@ -883,6 +883,21 @@ technologies = {
 			}
 		}
 	}
+	jungle_warfare_2 = {
+		research_cost = 1
+		# only from focus!!! #####
+		allow = {
+			always = no
+		}
+		#If you change these
+		#Change the custom tooltip too: RAJ_jungle_training_effect
+		category_special_forces = {
+			jungle = {
+				attack = -0.1
+				movement = -0.1
+			}
+		}
+	}
 	jaegers = {
 		enable_subunits = {
 			jaeger

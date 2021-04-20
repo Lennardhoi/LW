@@ -1075,7 +1075,7 @@ focus_tree = {
 				}
 			}
 			add_political_power = 100
-			add_ideas = war_economy
+			add_ideas = tot_economic_mobilisation
 			set_country_flag = USA_the_giant_wakes_added_civ_eco
 		}
 	}
@@ -2047,6 +2047,8 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
+		custom_effect_tooltip = available_political_advisor
+		show_ideas_tooltip = ernest_king
 		every_unit_leader = {
 				limit={has_id=451}
 				add_skill_level=3
