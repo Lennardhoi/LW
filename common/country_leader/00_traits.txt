@@ -2244,6 +2244,29 @@ leader_traits = {
 			factor = 1
 		}
 	}
+	
+	fuel_efficient_aircraft_manufacturer_2 = {
+		random = no
+		equipment_bonus = {
+			jet_fighter_equipment = {
+				air_range = 0.2
+			}
+			heavy_fighter_equipment = {
+				air_range = 0.1
+				reliability = 0.2
+				air_defence = 0.2
+			}
+			tac_bomber_equipment = {
+				reliability = 0.2
+				air_defence = 0.2
+
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
 
 	heavy_aircraft_manufacturer = {
 		random = no
