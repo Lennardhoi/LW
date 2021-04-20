@@ -1364,7 +1364,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = uk_rock_focus
-		cost = 5
+		cost = 2
 		completion_reward = {
 			476 = {
 				set_building_level = {
@@ -1376,6 +1376,41 @@ focus_tree = {
 				set_building_level = {
 					type = infrastructure
 					level = 10
+					instant_build = yes
+				}
+				set_building_level = {
+					type = air_base
+					level = 20
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = uk_eri_focus
+		prerequisite = { focus = uk_protect_suez }
+		available = {
+			475 = { is_controlled_by_ROOT_or_ally = yes }
+		}
+		icon = GFX_goal_generic_construct_military
+		x = 0
+		y = 1
+		relative_position_id = uk_protect_suez
+		cost = 2
+		completion_reward = {
+			transfer_state = 475
+			475 = {
+				add_compliance = 70 
+				set_building_level = {
+					type = naval_base
+					level = 10
+					province =11524
+					instant_build = yes
+				}
+				set_building_level = {
+					type = infrastructure
+					level = 6
 					instant_build = yes
 				}
 				set_building_level = {
@@ -2790,7 +2825,7 @@ focus_tree = {
 			}
 		}
 		relative_position_id = ENG_prepare_for_the_inevitable
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}

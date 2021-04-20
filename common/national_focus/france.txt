@@ -1985,6 +1985,82 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = yes
 		completion_reward = {
+			
+			country_event = {id=france.12}
+			if = {
+				limit = { not = { has_dlc = "Man the Guns" } }
+				add_manpower = 10000
+			}
+			else = {
+				add_manpower = 100000
+				add_legitimacy = 15
+			}
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = 200
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 2500
+				producer = FRA
+			}
+			add_equipment_to_stockpile = {
+				type = anti_air_equipment
+				amount = 1000
+				producer = FRA
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 25000
+				producer = FRA
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 1000
+				producer = FRA
+			}
+			add_equipment_to_stockpile = {
+				type = anti_tank_equipment
+				amount = 800
+				producer = FRA
+			}
+		}
+	}
+	focus = {
+		id = FRA_appeal_to_overseas_territories
+		icon = GFX_goal_generic_radar
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 0
+		}
+		prerequisite = {
+			focus = FRA_appeal_to_the_french_nation
+		}
+		relative_position_id = FRA_appeal_to_the_french_nation
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		completion_reward = {
+			custom_effect_tooltip = FRA_appeal_to_overseas_territories_tt
+			add_offsite_building = {
+				type = industrial_complex
+				level = 4
+			}
+			add_timed_idea = {
+				idea = FRA_snakemodding
+				days = 60
+			}
 			if = {
 				limit = {has_tech = basic_medium_tank}
 
@@ -2074,81 +2150,6 @@ focus_tree = {
 							owner = FRA
 						}
 						}}
-			}
-			country_event = {id=france.12}
-			if = {
-				limit = { not = { has_dlc = "Man the Guns" } }
-				add_manpower = 10000
-			}
-			else = {
-				add_manpower = 100000
-				add_legitimacy = 15
-			}
-			add_equipment_to_stockpile = {
-				type = convoy
-				amount = 200
-			}
-			add_equipment_to_stockpile = {
-				type = artillery_equipment
-				amount = 2500
-				producer = FRA
-			}
-			add_equipment_to_stockpile = {
-				type = anti_air_equipment
-				amount = 1000
-				producer = FRA
-			}
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = 25000
-				producer = FRA
-			}
-			add_equipment_to_stockpile = {
-				type = motorized_equipment
-				amount = 1000
-				producer = FRA
-			}
-			add_equipment_to_stockpile = {
-				type = anti_tank_equipment
-				amount = 800
-				producer = FRA
-			}
-		}
-	}
-	focus = {
-		id = FRA_appeal_to_overseas_territories
-		icon = GFX_goal_generic_radar
-		x = 0
-		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = {
-			focus = FRA_appeal_to_the_french_nation
-		}
-		relative_position_id = FRA_appeal_to_the_french_nation
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available = {
-		}
-		bypass = {
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-		completion_reward = {
-			custom_effect_tooltip = FRA_appeal_to_overseas_territories_tt
-			add_offsite_building = {
-				type = industrial_complex
-				level = 4
-			}
-			add_timed_idea = {
-				idea = FRA_snakemodding
-				days = 60
 			}
 			hidden_effect = {
 				if = {

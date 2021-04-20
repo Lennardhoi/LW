@@ -314,7 +314,24 @@ war_measures = {
 		allowed = {
 			OR = {
 				tag = SOV
+				tag = FRA
 				tag = JAP
+				tag = RAJ
+				tag = AST
+				tag = NZL
+				tag = MAN
+				tag = BUL
+				tag = ROM
+				tag = HUN
+				tag = SPR
+				tag = GER
+				tag = ITA
+				tag = ENG
+				tag = SAF
+				tag = FIN
+				tag = USA
+				tag = CAN
+				tag = EFR
 			}
 		}
 		available = {
@@ -345,6 +362,7 @@ war_measures = {
 		}
 		visible = {
 			has_war = yes
+			has_idea = tot_economic_mobilisation
 		}
 		cost = 100
 		days_remove = -1

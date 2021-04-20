@@ -1531,7 +1531,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		available = { date > 1941.8.1}
+		available = { date > 1941.10.1}
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
@@ -1620,7 +1620,7 @@ focus_tree = {
 	focus = {
 		id = GER_fighter_3
 		icon = GFX_focus_GER_peenemunde_research_facility
-		available={date>1942.1.1}
+		available={date>1942.2.1}
 		prerequisite = { focus = GER_ural_bomber }
 		x = 0
 		y = 1
@@ -1663,7 +1663,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = GER_german_engineering
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -1696,7 +1696,7 @@ focus_tree = {
 		y = 1
 		available={date>1941.6.1}
 		relative_position_id = GER_rocketry_focus
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -1717,7 +1717,7 @@ focus_tree = {
 		y = 1
 		relative_position_id =  GER_stuka
 		available={date>1942.1.1}
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -3048,7 +3048,7 @@ focus_tree = {
 		x = -2
 		y = 2
 		relative_position_id = GER_moscow
-		cost = 5
+		cost = 2
 		completion_reward = {
 			add_ideas = GER_Waffen_SS
 			custom_effect_tooltip = "Ten fully equipped SS-Divisions will spawn in Duisburg."
@@ -3090,7 +3090,7 @@ focus_tree = {
 		x = 2
 		y = 2
 		relative_position_id = GER_moscow
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
