@@ -126,7 +126,7 @@ equipment_modules = {
 
 		add_stats = {
 			lg_attack = 3
-			anti_air_attack = 1
+			anti_air_attack = 1.0
 			build_cost_ic = 150
 		}
 		multiply_stats = {
@@ -194,7 +194,7 @@ equipment_modules = {
 			naval_speed = -0.06
 		}
 		add_average_stats = {
-			hg_armor_piercing = 36
+			hg_armor_piercing = 40
 		}
 		build_cost_resources = {
 			steel = 1
@@ -218,14 +218,14 @@ equipment_modules = {
 		add_equipment_type = capital_ship
 
 		add_stats = {
-			hg_attack = 13
+			hg_attack = 15
 			build_cost_ic = 1300#1450
 		}
 		multiply_stats = {
 			naval_speed = -0.06
 		}
 		add_average_stats = {
-			hg_armor_piercing = 40
+			hg_armor_piercing = 50
 		}
 		build_cost_resources = {
 			steel = 1
@@ -281,7 +281,7 @@ equipment_modules = {
 		add_equipment_type = capital_ship
 
 		add_stats = {
-			hg_attack = 16
+			hg_attack = 12
 			build_cost_ic = 1800
 		}
 		build_cost_resources = {
@@ -595,7 +595,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
 			lg_attack = 4
-			anti_air_attack = 1
+			anti_air_attack = 1.5
 			build_cost_ic = 250
 		}
 
@@ -2114,7 +2114,7 @@ equipment_modules = {
 			chromium = 1
 		}
 		add_stats = {
-			armor_value = 70
+			armor_value = 60
 			surface_visibility = 15
 		}
 		dismantle_cost_ic = 8200
