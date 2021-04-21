@@ -1987,14 +1987,10 @@ focus_tree = {
 		completion_reward = {
 			
 			country_event = {id=france.12}
-			if = {
-				limit = { not = { has_dlc = "Man the Guns" } }
-				add_manpower = 10000
-			}
-			else = {
+			
 				add_manpower = 100000
 				add_legitimacy = 15
-			}
+			
 			add_equipment_to_stockpile = {
 				type = convoy
 				amount = 200
@@ -2024,7 +2020,8 @@ focus_tree = {
 				amount = 800
 				producer = FRA
 			}
-		}
+		
+	}
 	}
 	focus = {
 		id = FRA_appeal_to_overseas_territories

@@ -60,22 +60,6 @@ on_actions = {
 			}
 		}
 	}
-	on_civil_war_end = {
-		effect = {
-			if = {
-				limit = {
-					has_dlc = "Man the Guns"
-					original_tag = MEX
-					has_focus_tree = generic_focus
-					FROM = {
-						original_tag = MEX
-					}
-				}
-				load_focus_tree = { tree = mexico_focus_tree keep_completed = yes }
-			}
-			delete_unit_template_and_units = { division_template = "Anti-Exploit Punitive Brigade" }
-		}
-	}
 	on_declare_war = {
 		effect = {
 			if = {
