@@ -310,18 +310,17 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = capital_ship
 		add_stats = {
-			hg_attack = 6.75
-			build_cost_ic = 750
+			lg_attack = 4
+			build_cost_ic = 350
 		}
 		multiply_stats = {
 			naval_speed = -0.04
-			max_strength = 0.35
-			lg_armor_piercing = 1.5
+			max_strength = 0.1
 		}
 		add_average_stats = {
-			hg_armor_piercing = 18
-			surface_visibility = 6
-			naval_speed = -7
+			lg_armor_piercing = 16
+			surface_visibility = 5
+			naval_speed = -5
 			armor_value = 10
 		}
 		can_convert_from = {
@@ -341,27 +340,26 @@ equipment_modules = {
 
 		add_equipment_type = capital_ship
 		add_stats = {
-			hg_attack = 7.25
-			build_cost_ic = 800
+			lg_attack = 5
+			build_cost_ic = 400
 		}
 		multiply_stats = {
 			naval_speed = -0.04
-			max_strength = 0.4
-			lg_armor_piercing = 1.5
+			max_strength = 0.125
 		}
 		add_average_stats = {
-			hg_armor_piercing = 21
-			surface_visibility = 6
-			naval_speed = -7
+			lg_armor_piercing = 18
+			surface_visibility = 5
+			naval_speed = -5
 			armor_value = 10
 		}
 		can_convert_from = {
 			module_category = ship_medium_battery
-			convert_cost_ic = 400
+			convert_cost_ic = 100
 		}
 		can_convert_from = {
 			module = ship_medium_battery_1
-			convert_cost_ic = 300
+			convert_cost_ic = 100
 		}
 		critical_parts = { damaged_heavy_guns }
 	}
@@ -372,27 +370,26 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			hg_attack = 7.75
-			build_cost_ic = 825
+			lg_attack = 6
+			build_cost_ic = 450
 		}
 		multiply_stats = {
 			naval_speed = -0.04
-			max_strength = 0.45
-			lg_armor_piercing = 1.5
+			max_strength = 0.15
 		}
 		add_average_stats = {
-			hg_armor_piercing = 24
-			surface_visibility = 6
-			naval_speed = -7
+			lg_armor_piercing = 20
+			surface_visibility = 5
+			naval_speed = -5
 			armor_value = 10
 		}
 		can_convert_from = {
 			module_category = ship_medium_battery
-			convert_cost_ic = 500
+			convert_cost_ic = 150
 		}
 		can_convert_from = {
 			module = ship_medium_battery_2
-			convert_cost_ic = 350
+			convert_cost_ic = 150
 		}
 		critical_parts = { damaged_heavy_guns }
 	}
@@ -417,11 +414,11 @@ equipment_modules = {
 		}
 		can_convert_from = {
 			module_category = ship_medium_battery
-			convert_cost_ic = 600
+			convert_cost_ic = 200
 		}
 		can_convert_from = {
 			module = ship_medium_battery_3
-			convert_cost_ic = 400
+			convert_cost_ic = 200
 		}
 		critical_parts = { damaged_heavy_guns }
 	}
