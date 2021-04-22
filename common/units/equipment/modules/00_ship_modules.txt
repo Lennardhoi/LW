@@ -2120,6 +2120,26 @@ equipment_modules = {
 		dismantle_cost_ic = 8200
 
 	}
+	ship_armor_shbb2 = {
+		category = ship_super_heavy_armor
+		gfx = ship_armor_thick_3
+
+		multiply_stats = {
+			build_cost_ic = 0.20
+			naval_speed = -0.20
+			max_strength = 0.1
+			lg_armor_piercing = 0.2
+		}
+		build_cost_resources = {
+			chromium = 1
+		}
+		add_stats = {
+			armor_value = 70
+			surface_visibility = 15
+		}
+		dismantle_cost_ic = 8200
+
+	}
 	ship_armor_cruiser_1 = {
 		category = ship_cruiser_armor
 		gfx = ship_armor_thin_1

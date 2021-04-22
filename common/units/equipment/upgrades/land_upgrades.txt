@@ -11,10 +11,12 @@ upgrades = {
 		reliability = -0.05
 	}
 	tank_armor_upgrade = {
-		max_level = 5
+		max_level = 4
 		cost = land
-		armor_value = 0.05
-		maximum_speed = -0.02
+		armor_value = 0.0625
+		maximum_speed = -0.025
+		defense = 0.0625
+		reliability = -0.0625
 	}
 	tank_engine_upgrade = {
 		max_level = 5
@@ -52,10 +54,30 @@ upgrades = {
 	}
 	tank_art_upgrade = {
 		max_level = 2
-
 		cost = land
 		soft_attack = 0.075
 		maximum_speed = -0.05
 		reliability = -0.125
+	}
+	
+	tank_armor_variant_upgrade = {
+		max_level = 2
+		cost = land
+		armor_value = 0.125
+		maximum_speed = -0.05
+		defense = 0.125
+		
+	}
+	tank_engine_variant_upgrade = {
+		max_level = 2
+		cost = land
+		maximum_speed = 0.1
+		reliability = -0.125
+	}
+	tank_reliability_variant_upgrade = {
+		max_level = 2
+		cost = land
+		reliability = 0.25
+		build_cost_ic=0.075
 	}
 }

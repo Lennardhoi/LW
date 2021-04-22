@@ -27,6 +27,21 @@ ideas = {
 		}
 	}
 	hidden_ideas = {
+		militarized_schools = {
+			removal_cost = -1
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+			picture = generic_manpower_bonus
+			modifier = {
+				conscription = 0.05
+			}
+		}
 		SOV_improve_stalin_line = {
 			picture = generic_production_bonus
 			allowed = {
@@ -39,6 +54,48 @@ ideas = {
 				production_speed_coastal_bunker_factor = 0.3
 			}
 		}
+		SOV_one_gun = {
+			picture = generic_research_bonus
+			allowed = {
+				always = no # Added via event
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					instant = yes
+					build_cost_ic = -0.2
+				}
+			}
+		}
+		SOV_scientist_defect = {
+			picture = generic_research_bonus
+			allowed = {
+				always = no # Added via event
+			}
+			equipment_bonus = {
+				anti_air_equipment = {
+					build_cost_ic = -0.2 instant = yes
+				}
+				artillery_equipment = {
+					build_cost_ic = -0.2 instant = yes
+				}
+				anti_tank_equipment = {
+					build_cost_ic = -0.2 instant = yes
+				}
+			}
+		}
+		workers_culture = {
+			removal_cost = -1
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			picture = generic_production_bonus
+			modifier = {
+				production_speed_buildings_factor = 0.10
+			}
+		}
 		SOV_snakemodding = {
 			picture = generic_production_bonus
 			allowed = {
@@ -48,6 +105,23 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				industrial_capacity_factory = 1
+			}
+		}
+		Fast_Training = {
+			modifier = {
+				training_time_army_factor = -0.40
+			}
+		}
+		war_in_our_neigbour = {
+			picture = generic_spy_intel
+			allowed = {
+				always = no
+			}
+			cancel = {
+				has_war = yes
+			}
+			modifier = {
+				decryption_power_factor = 0.50
 			}
 		}
 	}
@@ -83,23 +157,6 @@ ideas = {
 				winter_attrition_factor = -1
 			}
 		}
-		Fast_Training = {
-			modifier = {
-				training_time_army_factor = -0.40
-			}
-		}
-		war_in_our_neigbour = {
-			picture = generic_spy_intel
-			allowed = {
-				always = no
-			}
-			cancel = {
-				has_war = yes
-			}
-			modifier = {
-				decryption_power_factor = 0.50
-			}
-		}
 		SOV_home_fleet = {
 			picture = generic_the_london_naval_treaty
 			allowed = {
@@ -127,21 +184,6 @@ ideas = {
 			modifier = {
 				supply_consumption_factor = -0.2
 				no_supply_grace = 24
-			}
-		}
-		militarized_schools = {
-			removal_cost = -1
-			allowed = {
-				always = no # Added via focus
-			}
-			allowed_civil_war = {
-				NOT = {
-					has_government = democratic
-				}
-			}
-			picture = generic_manpower_bonus
-			modifier = {
-				conscription = 0.05
 			}
 		}
 		SOV_realism = {
@@ -175,19 +217,6 @@ ideas = {
 				consumer_goods_factor=-0.15
 				industry_repair_factor = 1
 				political_power_gain = 0.5
-			}
-		}
-		workers_culture = {
-			removal_cost = -1
-			allowed = {
-				always = no # Added via focus
-			}
-			allowed_civil_war = {
-				has_government = communism
-			}
-			picture = generic_production_bonus
-			modifier = {
-				production_speed_buildings_factor = 0.10
 			}
 		}
 		partisan_suppression_focus = {
@@ -669,35 +698,6 @@ ideas = {
 			}
 			modifier = {
 				stability_factor = 0.2
-			}
-		}
-		SOV_one_gun = {
-			picture = generic_research_bonus
-			allowed = {
-				always = no # Added via event
-			}
-			equipment_bonus = {
-				infantry_equipment = {
-					instant = yes
-					build_cost_ic = -0.2
-				}
-			}
-		}
-		SOV_scientist_defect = {
-			picture = generic_research_bonus
-			allowed = {
-				always = no # Added via event
-			}
-			equipment_bonus = {
-				anti_air_equipment = {
-					build_cost_ic = -0.2 instant = yes
-				}
-				artillery_equipment = {
-					build_cost_ic = -0.2 instant = yes
-				}
-				anti_tank_equipment = {
-					build_cost_ic = -0.2 instant = yes
-				}
 			}
 		}
 	}
