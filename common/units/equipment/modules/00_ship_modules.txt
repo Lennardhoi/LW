@@ -322,6 +322,7 @@ equipment_modules = {
 			surface_visibility = 5
 			naval_speed = -5
 			armor_value = 10
+			build_cost_ic =800
 		}
 		can_convert_from = {
 			module_category = ship_light_battery
@@ -352,6 +353,7 @@ equipment_modules = {
 			surface_visibility = 5
 			naval_speed = -5
 			armor_value = 10
+			build_cost_ic = 1000
 		}
 		can_convert_from = {
 			module_category = ship_medium_battery
@@ -382,6 +384,7 @@ equipment_modules = {
 			surface_visibility = 5
 			naval_speed = -5
 			armor_value = 10
+			build_cost_ic = 1200
 		}
 		can_convert_from = {
 			module_category = ship_medium_battery
@@ -543,7 +546,7 @@ equipment_modules = {
 
 
 		add_stats = {
-			lg_attack = 3
+			lg_attack = 4
 			build_cost_ic = 180
 		}
 
@@ -552,7 +555,7 @@ equipment_modules = {
 		}
 
 		add_average_stats = {
-			lg_armor_piercing = 5.5
+			lg_armor_piercing = 4
 		}
 
 		can_convert_from = {
@@ -568,15 +571,15 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			lg_attack = 4
-			build_cost_ic = 240
+			lg_attack = 6
+			build_cost_ic = 300
 		}
 		multiply_stats = {
 			naval_speed = -0.02
 		}
 
 		add_average_stats = {
-			lg_armor_piercing = 7
+			lg_armor_piercing = 4
 		}
 
 		can_convert_from = {
@@ -591,9 +594,9 @@ equipment_modules = {
 		gfx = ship_secondaries_3
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
-			lg_attack = 4
+			lg_attack = 6
 			anti_air_attack = 1.5
-			build_cost_ic = 250
+			build_cost_ic = 500
 		}
 
 		multiply_stats = {
@@ -1980,7 +1983,7 @@ equipment_modules = {
 		gfx = ship_armor_thick_1
 
 		multiply_stats = {
-			build_cost_ic = 0.12
+			build_cost_ic = 0.10
 			naval_speed = -0.15
 			max_strength = 0.05
 			lg_armor_piercing = 0.2
@@ -2000,7 +2003,7 @@ equipment_modules = {
 		gfx = ship_armor_1
 
 		multiply_stats = {
-			build_cost_ic = -0.05
+			build_cost_ic = -0.10
 			hg_armor_piercing = -0.4
 			lg_armor_piercing = 0.2
 			lg_attack = 0.1
@@ -2021,7 +2024,7 @@ equipment_modules = {
 		gfx = ship_armor_thick_2
 
 		multiply_stats = {
-			build_cost_ic = 0.12
+			build_cost_ic = 0.10
 			naval_speed = -0.15
 			max_strength = 0.1
 			lg_armor_piercing = 0.2
@@ -2041,7 +2044,7 @@ equipment_modules = {
 		gfx = ship_armor_2
 
 		multiply_stats = {
-			build_cost_ic = -0.05
+			build_cost_ic = -0.10
 			max_strength = 0.05
 			hg_armor_piercing = -0.4
 			lg_armor_piercing = 0.2
@@ -2061,7 +2064,7 @@ equipment_modules = {
 		gfx = ship_armor_thick_3
 
 		multiply_stats = {
-			build_cost_ic = 0.12
+			build_cost_ic = 0.10
 			naval_speed = -0.15
 			max_strength = 0.15
 			lg_armor_piercing = 0.2
@@ -2081,7 +2084,7 @@ equipment_modules = {
 		gfx = ship_armor_3
 
 		multiply_stats = {
-			build_cost_ic = -0.05
+			build_cost_ic = -0.10
 			max_strength = 0.10
 			hg_armor_piercing = -0.4
 			lg_armor_piercing = 0.2
