@@ -1189,6 +1189,9 @@ technologies = {
 	#  #  # #  # #    #   #  # #  #     # # # #  # #  # #  # #   #  # #       ()~*~()       # #  # #  # #   # #  # #  #  #  #  # #     #
 	#   ##  #  # #    ### ###   ##       # #  #  # #  # #  # #   #  # ###     (_)-(_)     ##   ##  ###  #   # #  # #  # ### #  # ### ##
 	basic_torpedo = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
 		research_cost = 0.75
 		start_year = 1922
 		path = {
@@ -1362,6 +1365,9 @@ technologies = {
 		}
 	}
 	improved_ship_torpedo_launcher = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
 		research_cost = 0.75
 		start_year = 1936
 		categories = {
@@ -1393,6 +1399,9 @@ technologies = {
 		}
 	}
 	advanced_ship_torpedo_launcher = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
 		research_cost = 0.75
 		start_year = 1940
 		categories = {
@@ -1677,6 +1686,9 @@ technologies = {
 	#  # #  # #   # #  # #   # #   #  #  #    #
 	#  # #  # #   # #  # #   # ### #  #  #  ##
 	basic_battery = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
 		research_cost = 0.75
 		start_year = 1922
 		path = {
@@ -1722,6 +1734,9 @@ technologies = {
 		}
 	}
 	basic_light_battery = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
 		research_cost = 0.75
 		start_year = 1936
 		categories = {
@@ -1757,6 +1772,9 @@ technologies = {
 		}
 	}
 	improved_light_battery = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
 		research_cost = 0.75
 		start_year = 1940
 		categories = {
@@ -1913,6 +1931,9 @@ technologies = {
 		}
 	}
 	basic_medium_battery = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
 		research_cost = 0.75
 		start_year = 1936
 		categories = {
@@ -1949,6 +1970,9 @@ technologies = {
 		}
 	}
 	improved_medium_battery = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
 		research_cost = 0.75
 		start_year = 1940
 		categories = {
@@ -2071,6 +2095,9 @@ technologies = {
 		}
 	}
 	basic_heavy_battery = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
 		research_cost = 0.75
 		start_year = 1936
 		categories = {
@@ -2114,6 +2141,9 @@ technologies = {
 		}
 	}
 	improved_heavy_battery = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
 		research_cost = 0.75
 		start_year = 1940
 		categories = {
@@ -2358,12 +2388,22 @@ technologies = {
 	###  #  # #   # #  #  ##  ###      ##   ##  #  #  #  #  #  ##  ###
 	damage_control_1 = {
 		research_cost = 2
+		battleship = {
+ reliability = 0.05}
+		battle_cruiser = {
+ reliability = 0.05}
+		heavy_cruiser = {
+ reliability = 0.05}
+		light_cruiser = {
+ reliability = 0.05}
+		carrier = {
+ reliability = 0.05}
+		destroyer = {
+ reliability = 0.05}
 		path = {
 			leads_to_tech = damage_control_2
 			research_cost_coeff = 1
 		}
-		critical_receive_chance = -0.1
-		naval_critical_effect_factor = -0.1
 		xp_research_type = navy
 		xp_research_cost = 50
 		xp_research_bonus = 1.50
@@ -2393,12 +2433,22 @@ technologies = {
 	}
 	damage_control_2 = {
 		research_cost = 2
+		battleship = {
+ reliability = 0.05}
+		battle_cruiser = {
+ reliability = 0.05}
+		heavy_cruiser = {
+ reliability = 0.05}
+		light_cruiser = {
+ reliability = 0.05}
+		carrier = {
+ reliability = 0.05}
+		destroyer = {
+ reliability = 0.05}
 		path = {
 			leads_to_tech = damage_control_3
 			research_cost_coeff = 1
 		}
-		critical_receive_chance = -0.1
-		naval_critical_effect_factor = -0.1
 		xp_research_type = navy
 		xp_research_cost = 50
 		xp_research_bonus = 1.50
@@ -2428,8 +2478,18 @@ technologies = {
 	}
 	damage_control_3 = {
 		research_cost = 2
-		critical_receive_chance = -0.1
-		naval_critical_effect_factor = -0.1
+		battleship = {
+ reliability = 0.05}
+		battle_cruiser = {
+ reliability = 0.05}
+		heavy_cruiser = {
+ reliability = 0.05}
+		light_cruiser = {
+ reliability = 0.05}
+		carrier = {
+ reliability = 0.05}
+		destroyer = {
+ reliability = 0.05}
 		xp_research_type = navy
 		xp_research_cost = 50
 		xp_research_bonus = 1.50
