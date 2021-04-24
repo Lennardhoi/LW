@@ -2492,6 +2492,9 @@ news_event = {
 	}
 	immediate = {
 		set_global_flag = liberation_of_paris
+		every_country = {limit = {check_variable= { speeches_enabled > 0} is_in_faction_with=USA }
+					scoped_sound_effect="eisenhower"
+		}
 	}
 	option = {
 		name = news.145.a

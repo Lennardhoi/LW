@@ -113,6 +113,158 @@ war_measures = {
 			add_ideas = USA_homeland_defense
 		}
 	}
+	USA_ast = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			original_tag = USA
+		}
+		available = {
+			AST = {has_full_control_of_state = 273}
+		}
+		cost = 10
+		visible = {
+			has_defensive_war = yes
+		}
+		complete_effect = {
+			division_template = {
+				name = "US-Infantry"
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 1 y = 3 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+				}
+			}
+			273 = {
+				for_loop_effect = {
+					end = 20
+					create_unit = {
+						division = "name = \"US-Infantry\" division_template = \"US-Infantry\" start_experience_factor = 0.2 start_equipment_factor = 0.001"
+						owner = USA
+					}
+				}}
+		}
+	}
+	USA_eng = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			original_tag = USA
+		}
+		available = {
+			ENG = {has_full_control_of_state = 124}
+		}
+		cost = 10
+		visible = {
+			has_defensive_war = yes
+		}
+		complete_effect = {
+		division_template = {
+				name = "US-Infantry"
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 1 y = 3 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+				}
+			}
+			124 = {
+				for_loop_effect = {
+					end = 20
+					create_unit = {
+						division = "name = \"US-Infantry\" division_template = \"US-Infantry\" start_experience_factor = 0.2 start_equipment_factor = 0.001"
+						owner = USA
+					}
+				}}	
+		}
+	}
+	USA_raj = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			original_tag = USA
+		}
+		available = {
+			RAJ = {has_full_control_of_state = 405}
+		}
+		cost = 10
+		visible = {
+			has_defensive_war = yes
+		}
+		complete_effect = {
+		division_template = {
+				name = "US-Infantry"
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 1 y = 3 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+				}
+			}
+			405 = {
+				for_loop_effect = {
+					end = 20
+					create_unit = {
+						division = "name = \"US-Infantry\" division_template = \"US-Infantry\" start_experience_factor = 0.2 start_equipment_factor = 0.001"
+						owner = USA
+					}
+				}}	
+		}
+	}
+	USA_fra = {
+		icon = generic_prepare_civil_war
+		allowed = {
+			original_tag = USA
+		}
+		available = {
+			FRA = {has_full_control_of_state = 466}
+		}
+		cost = 10
+		visible = {
+			has_defensive_war = yes
+		}
+		complete_effect = {
+		division_template = {
+				name = "US-Infantry"
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 1 y = 3 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+				}
+			}
+			466 = {
+				for_loop_effect = {
+					end = 20
+					create_unit = {
+						division = "name = \"US-Infantry\" division_template = \"US-Infantry\" start_experience_factor = 0.2 start_equipment_factor = 0.001"
+						owner = USA
+					}
+				}}	
+		}
+	}
 }
 USA_aid_britain = {
 	USA_establish_personal_communication_with_former_naval_person = {
