@@ -252,21 +252,7 @@ ideas = {
 				consumer_goods_factor = 0.05
 			}
 		}
-		JAP_nationalize_the_zaibatsus = {
-			allowed = {
-				always = no
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			removal_cost = -1
-			picture = jap_zaibatsu_control
-			modifier = {
-				production_speed_industrial_complex_factor = 0.05
-				production_speed_arms_factory_factor = 0.05
-				production_speed_dockyard_factor = 0.05
-			}
-		}
+	
 		JAP_guide_the_zaibatsus = {
 			allowed = {
 				always = no
@@ -277,31 +263,13 @@ ideas = {
 			removal_cost = -1
 			picture = jap_zaibatsu_ally
 			modifier = {
-				production_speed_industrial_complex_factor = 0.10
-				production_speed_arms_factory_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_arms_factory_factor = 0.1
 				industrial_capacity_factory = 0.05
 				consumer_goods_factor = 0.05
 			}
 		}
-		JAP_zaibatsus_empowered = {
-			allowed = {
-				always = no
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			removal_cost = -1
-			picture = jap_zaibatsu_ally
-			modifier = {
-				political_power_cost = 0.5
-				trade_laws_cost_factor = 0.25
-				economy_cost_factor = 0.25
-				production_speed_industrial_complex_factor = 0.10
-				production_speed_arms_factory_factor = 0.10
-				production_speed_dockyard_factor = 0.10
-				consumer_goods_factor = 0.05
-			}
-		}
+		
 		JAP_zaibatsus_challenged = {
 			allowed = {
 				always = no
@@ -312,10 +280,8 @@ ideas = {
 			removal_cost = -1
 			picture = jap_zaibatsu_control
 			modifier = {
-				stability_factor = -0.1
-				production_speed_industrial_complex_factor = 0.10
-				production_speed_arms_factory_factor = 0.10
-				production_speed_dockyard_factor = 0.10
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_dockyard_factor = 0.1
 				consumer_goods_factor = 0.05
 			}
 		}
@@ -884,7 +850,7 @@ ideas = {
 			allowed = {
 				original_tag = JAP
 			}
-			traits = { prince_of_terror }
+			traits = { quartermaster_general }
 			ai_will_do = {
 				factor = 0.3
 			}
