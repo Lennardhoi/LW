@@ -277,7 +277,7 @@ equipment_modules = {
 	ship_super_heavy_battery_1 = {
 		category = ship_super_heavy_battery
 		sfx = sfx_ui_sd_module_turret
-		gfx = ship_heavy_battery_5
+		gfx = ship_heavy_battery_4
 		add_equipment_type = capital_ship
 
 		add_stats = {
@@ -293,6 +293,29 @@ equipment_modules = {
 		}
 		add_average_stats = {
 			hg_armor_piercing = 60
+		}
+		critical_parts = { damaged_heavy_guns }
+	}
+
+ship_super_heavy_battery_2 = {
+		category = ship_super_heavy_battery
+		sfx = sfx_ui_sd_module_turret
+		gfx = ship_heavy_battery_5
+		add_equipment_type = capital_ship
+
+		add_stats = {
+			hg_attack = 15
+			build_cost_ic = 2500
+		}
+		build_cost_resources = {
+			steel = 1
+			#chromium = 1
+		}
+		multiply_stats = {
+			naval_speed = -0.05
+		}
+		add_average_stats = {
+			hg_armor_piercing = 80
 		}
 		critical_parts = { damaged_heavy_guns }
 	}
@@ -555,7 +578,7 @@ equipment_modules = {
 		}
 
 		add_average_stats = {
-			lg_armor_piercing = 4
+			lg_armor_piercing = 2
 		}
 
 		can_convert_from = {
@@ -579,7 +602,7 @@ equipment_modules = {
 		}
 
 		add_average_stats = {
-			lg_armor_piercing = 4
+			lg_armor_piercing = 2
 		}
 
 		can_convert_from = {
@@ -595,8 +618,8 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
 			lg_attack = 6
-			anti_air_attack = 1.5
-			build_cost_ic = 500
+			anti_air_attack = 2
+			build_cost_ic = 600
 		}
 
 		multiply_stats = {
@@ -604,7 +627,7 @@ equipment_modules = {
 		}
 
 		add_average_stats = {
-			lg_armor_piercing = 4
+			lg_armor_piercing = 2
 		}
 
 		can_convert_from = {
@@ -2102,7 +2125,7 @@ equipment_modules = {
 	}
 	ship_armor_shbb = {
 		category = ship_super_heavy_armor
-		gfx = ship_armor_thick_3
+		gfx = ship_armor_thick_1
 
 		multiply_stats = {
 			build_cost_ic = 0.20
@@ -2122,19 +2145,19 @@ equipment_modules = {
 	}
 	ship_armor_shbb2 = {
 		category = ship_super_heavy_armor
-		gfx = ship_armor_thick_3
+		gfx = ship_armor_thick_2
 
 		multiply_stats = {
-			build_cost_ic = 0.20
-			naval_speed = -0.20
-			max_strength = 0.1
+			build_cost_ic = 0.30
+			naval_speed = -0.25
+			max_strength = 0.15
 			lg_armor_piercing = 0.2
 		}
 		build_cost_resources = {
 			chromium = 1
 		}
 		add_stats = {
-			armor_value = 70
+			armor_value = 90
 			surface_visibility = 15
 		}
 		dismantle_cost_ic = 8200
