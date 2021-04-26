@@ -188,11 +188,6 @@ on_actions = {
 				}
 			}
 			if = {
-				limit = { FROM = { original_tag = CHI } }
-				JAP = { add_ideas = JAP_intervene_in_china_4 add_political_power = -25 }
-				USA = { add_war_support = 0.025 }
-			}
-			if = {
 				limit = {
 					FROM = {
 						is_in_faction_with = GER
@@ -266,13 +261,6 @@ on_actions = {
 				limit = { tag = FRA }
 				set_global_flag = FRA_already_surrendered
 				set_variable = { global.FRA_capitulation_days = global.num_days }
-			}
-			if = {
-				limit = {
-					FROM = { tag = JAP }
-					ROOT = { tag = CHI }
-				}
-				JAP = { JAP_intervene_in_china_remove = yes }
 			}
 			if = {
 				limit = {
