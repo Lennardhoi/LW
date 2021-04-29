@@ -450,7 +450,7 @@ leader_traits = {
 	organizer = {
 		type = corps_commander
 		gain_xp = {
-			check_variable = { num_battle_plans > 0 }
+			always = no # not gainable
 		}
 		custom_gain_xp_trigger_tooltip = is_using_battle_plans
 
@@ -469,12 +469,7 @@ leader_traits = {
 	cavalry_leader = {
 		type = corps_commander
 		gain_xp = {
-			set_temp_variable = { temp = num_units }
-			multiply_temp_variable = { temp = 0.4 }
-			set_temp_variable = { cmm = num_cavalry }
-			add_to_temp_variable = { cmm = num_motorized }
-			add_to_temp_variable = { cmm = num_mechanized }
-			check_variable = { cmm > temp }
+			always = no # not gainable
 		}
 		custom_gain_xp_trigger_tooltip = cavalary_ratio_over_40
 
@@ -495,9 +490,7 @@ leader_traits = {
 	infantry_leader = {
 		type = corps_commander
 		gain_xp = {
-			set_temp_variable = { temp = num_units }
-			multiply_temp_variable = { temp = 0.8 }
-			check_variable = { num_infantry > temp }
+			always = no # not gainable
 		}
 		custom_gain_xp_trigger_tooltip = infantry_ratio_over_80
 
@@ -515,7 +508,7 @@ leader_traits = {
 	skilled_staffer = {
 		type = corps_commander
 		gain_xp = {
-			check_variable = { num_units > 23 }
+			always = no # not gainable
 		}
 		custom_gain_xp_trigger_tooltip = fighting_with_at_least_23_units
 
@@ -535,10 +528,7 @@ leader_traits = {
 	trickster = {
 		type = corps_commander
 		gain_xp = {
-			OR = {
-				has_flanked_opponent = yes
-				opponent = { has_flanked_opponent = yes }
-			}
+			always = no # not gainable
 		}
 		custom_gain_xp_trigger_tooltip = has_flanked
 
@@ -558,7 +548,7 @@ leader_traits = {
 	winter_specialist = {
 		type = corps_commander
 		gain_xp = {
-			temperature < -10
+			always = no # not gainable
 		}
 		cost = 500
 		modifier = {
@@ -629,10 +619,7 @@ leader_traits = {
 	trait_engineer = {
 		type = corps_commander
 		gain_xp = {
-			OR = {
-				has_combat_modifier = fort_attack
-				has_combat_modifier = river_crossing
-			}
+			always = no # not gainable
 		}
 		cost = 700
 		modifier = {
@@ -640,7 +627,7 @@ leader_traits = {
 				attack = 0.05
 			}
 			fort = {
-				attack = 0.1
+				attack = 0.05
 			}
 		}
 
@@ -655,9 +642,7 @@ leader_traits = {
 	panzer_leader = {
 		type = corps_commander
 		gain_xp = {
-			set_temp_variable = { temp = num_units }
-			multiply_temp_variable = { temp = 0.4 }
-			check_variable = { num_armored > temp }
+			always = no # not gainable
 		}
 		custom_gain_xp_trigger_tooltip = armored_ratio_over_40
 		cost = 700
@@ -678,12 +663,7 @@ leader_traits = {
 	commando = {
 		type = corps_commander
 		gain_xp = {
-			OR = {
-				temperature < -15
-				temperature > 27
-				has_combat_modifier = paradrop
-				has_combat_modifier = amphibious_attack
-			}
+			always = no # not gainable
 		}
 		cost = 700
 		modifier = {
@@ -699,7 +679,7 @@ leader_traits = {
 	desert_fox = {
 		type = corps_commander
 		gain_xp = {
-			is_fighting_in_terrain = desert
+			always = no # not gainable
 		}
 		cost = 700
 		modifier = {
@@ -720,7 +700,7 @@ leader_traits = {
 	swamp_fox = {
 		type = corps_commander
 		gain_xp = {
-			is_fighting_in_terrain = marsh
+			always = no # not gainable
 		}
 		cost = 700
 		modifier = {
@@ -741,7 +721,7 @@ leader_traits = {
 	trait_mountaineer = {
 		type = corps_commander
 		gain_xp = {
-			is_fighting_in_terrain = mountain
+			always = no # not gainable
 		}
 		cost = 700
 		modifier = {
@@ -762,7 +742,7 @@ leader_traits = {
 	hill_fighter = {
 		type = corps_commander
 		gain_xp = {
-			is_fighting_in_terrain = hills
+			always = no # not gainable
 		}
 		cost = 700
 		modifier = {
@@ -783,7 +763,7 @@ leader_traits = {
 	jungle_rat = {
 		type = corps_commander
 		gain_xp = {
-			is_fighting_in_terrain = jungle
+			always = no # not gainable
 		}
 		cost = 700
 		modifier = {
@@ -804,7 +784,7 @@ leader_traits = {
 	ranger = {
 		type = corps_commander
 		gain_xp = {
-			is_fighting_in_terrain = forest
+			always = no # not gainable
 		}
 		cost = 700
 		modifier = {
@@ -825,7 +805,7 @@ leader_traits = {
 	urban_assault_specialist = {
 		type = corps_commander
 		gain_xp = {
-			is_fighting_in_terrain = urban
+			always = no # not gainable
 		}
 		cost = 500
 		modifier = {
@@ -847,7 +827,7 @@ leader_traits = {
 	naval_invader = {
 		type = corps_commander
 		gain_xp = {
-			is_amphibious_invasion = yes
+			always = no # not gainable
 		}
 		cost = 100
 		modifier = {
@@ -947,10 +927,7 @@ leader_traits = {
 	fortress_buster = {
 		type = corps_commander
 		gain_xp = {
-			OR = {
-				has_combat_modifier = fort_attack
-				dig_in > 10
-			}
+			always = no # not gainable
 		}
 		cost = 700
 		modifier = {
@@ -1204,7 +1181,7 @@ leader_traits = {
 	seawolf = {
 		type = navy
 		gain_xp = {
-			submarine > 0.8 # at least 80% subs
+			always = no # not gainable
 		}
 		cost = 700
 		modifier = {
@@ -1221,8 +1198,7 @@ leader_traits = {
 	fleet_protector = {
 		type = navy
 		gain_xp = {
-			screen_ship > 0.5
-			#should gain XP when screening_ratio > 0.5
+			always = no # not gainable
 		}
 		custom_gain_xp_trigger_tooltip = FLEET_PROTECTOR_TRIGGER_TT
 		cost = 500
@@ -1241,7 +1217,7 @@ leader_traits = {
 		type = navy
 		cost = 500
 		gain_xp = {
-			#gains XP when running away
+			always = no # not gainable
 		}
 		modifier = {
 			naval_retreat_chance = 0.2
@@ -1278,7 +1254,7 @@ leader_traits = {
 		gain_xp = { # This trigger is not needed as it gets xp from spotting (not by combat)
 			always = no
 		}
-		gain_xp_on_spotting = 10
+		#gain_xp_on_spotting = 10
 		cost = 500
 		modifier = {
 			spotting_chance = 0.1
@@ -1294,7 +1270,7 @@ leader_traits = {
 	fly_swatter = {
 		type = navy
 		gain_xp = {
-			is_fighting_air_units = yes
+			always = no # not gainable
 		}
 		cost = 300
 		modifier = {
@@ -1311,12 +1287,7 @@ leader_traits = {
 	ironside = {
 		type = navy
 		gain_xp = {
-			OR = {
-				capital_ship > 0.0
-				opponent = {
-					capital_ship > 0.0
-				}
-			}
+			always = no # not gainable
 		}
 		custom_gain_xp_trigger_tooltip = IRONSIDE_TRIGGER_TT
 		cost = 500
@@ -1334,10 +1305,7 @@ leader_traits = {
 	air_controller = {
 		type = navy
 		gain_xp = {
-			OR = {
-				has_carrier_airwings_on_mission = yes
-				has_carrier_airwings_in_own_combat = yes
-			}
+			always = no # not gainable
 		}
 		cost = 500
 		modifier = {
@@ -1780,7 +1748,7 @@ leader_traits = {
 	arctic_water_expert = {
 		type = navy
 		gain_xp = {
-			is_fighting_in_weather = arctic_water
+			always = no # not gainable
 		}
 
 		cost = 1000
@@ -1799,7 +1767,7 @@ leader_traits = {
 	inshore_fighter = {
 		type = navy
 		gain_xp = {
-			is_fighting_in_terrain = water_fjords
+			always = no # not gainable
 		}
 
 		cost = 1000
@@ -1822,7 +1790,7 @@ leader_traits = {
 	blue_water_expert = {
 		type = navy
 		gain_xp = {
-			is_fighting_in_terrain = water_deep_ocean
+			always = no # not gainable
 		}
 
 		cost = 1000
@@ -1845,7 +1813,7 @@ leader_traits = {
 	green_water_expert = {
 		type = navy
 		gain_xp = {
-			is_fighting_in_terrain = water_shallow_sea
+			always = no # not gainable
 		}
 
 		cost = 1000

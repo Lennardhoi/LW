@@ -18,7 +18,7 @@ country_event = {
 					name = "Francisco Franco"
 					id =1434
 					picture = "Portrait_Spain_Francisco_Franco.dds"
-					traits = {  panzer_leader panzer_expert trickster expert_improviser trait_engineer organizer}
+					traits = {  panzer_leader infantry_leader panzer_expert trickster expert_improviser trait_engineer organizer}
 					skill = 6
 					attack_skill = 6
 					defense_skill = 3
@@ -36,6 +36,12 @@ country_event = {
 					army_experience = 250
 					air_experience = 250}
 				ITA = {
+					army_experience = 100
+				}
+				HUN = {
+					army_experience = 100
+				}
+				MAN = {
 					army_experience = 100
 				}
 				set_global_flag = spanish_civil_war

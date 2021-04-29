@@ -24,6 +24,7 @@ technologies = {
 	infantry_weapons = {
 		enable_equipments = {
 			infantry_equipment_0
+			mechanized_equipment_0
 		}
 		enable_building = {
 			building = bunker
@@ -878,7 +879,7 @@ technologies = {
 		#Change the custom tooltip too: RAJ_jungle_training_effect
 		category_special_forces = {
 			jungle = {
-				attack = 0.1
+				attack = 0.05
 				movement = 0.1
 			}
 		}
@@ -893,7 +894,7 @@ technologies = {
 		#Change the custom tooltip too: RAJ_jungle_training_effect
 		category_special_forces = {
 			jungle = {
-				attack = -0.1
+				attack = -0.05
 				movement = -0.1
 			}
 		}
@@ -1610,6 +1611,7 @@ technologies = {
 	motorised_infantry = {
 		enable_subunits = {
 			motorized
+			mechanized
 		}
 		allow_branch={NOT={tag=EFR}}
 		enable_equipments = {
