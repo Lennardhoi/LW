@@ -6,7 +6,14 @@ country_event = {
 	desc = peace.1.d
 	picture = GFX_report_event_generic_battle	
 
-	
+	trigger = {
+		tag = SWE
+		SOV = {
+		   has_war_with = GER
+		   surrender_progress > 0.90
+		}
+		not = { has_global_flag = SOV_peacedeal }
+	}
 	
 	is_triggered_only=yes
 
@@ -64,7 +71,23 @@ country_event = {
 		transfer_state = 92
 		transfer_state = 181
         }
-		
+		SWE = { country_event = { id = peace.2 hours = 24 } }
+	}
+}
+		country_event = {
+	id = peace.2
+	title = peace.2.t
+	desc = peace.2.d
+	picture = GFX_report_event_german_speech
+
+	fire_only_once = yes
+	
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = peace.2.a
 		#################################################
 		
 		12 = { add_core_of = EST }
@@ -138,7 +161,23 @@ country_event = {
 		set_capital = 222
 		set_cosmetic_tag = LIT_reichskommissariat
 		}
-		
+				SWE = { country_event = { id = peace.3 hours = 24 } }
+	}
+}
+		country_event = {
+	id = peace.3
+	title = peace.3.t
+	desc = peace.3.d
+	picture = GFX_report_event_german_speech
+
+	fire_only_once = yes
+	
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = peace.3.a
 		#################################################
 		
 		195 = { add_core_of = LAT }
@@ -184,13 +223,13 @@ country_event = {
 		set_capital = 195
 		set_cosmetic_tag = LAT_reichskommissariat
 		}
-		SWE = { country_event = { id = peace.2 hours = 24 } }
+		SWE = { country_event = { id = peace.4 hours = 24 } }
 	}
 }
 country_event = {
-	id = peace.2
-	title = peace.2.t
-	desc = peace.2.d
+	id = peace.4
+	title = peace.4.t
+	desc = peace.4.d
 	picture = GFX_report_event_german_speech
 
 	fire_only_once = yes
@@ -200,7 +239,7 @@ country_event = {
 	
 	
 	option = {
-		name = peace.2.a
+		name = peace.3.a
 		
 		
 		44 = { remove_core_of = ALB }
@@ -230,25 +269,35 @@ country_event = {
 		transfer_state = 203
 		transfer_state = 235
 		transfer_state = 239
-		transfer_state = 234
 		transfer_state = 236
 		transfer_state = 217
 		transfer_state = 213
 		transfer_state = 240
 		transfer_state = 212
-		transfer_state = 198
-		transfer_state = 215
-		transfer_state = 233
-		transfer_state = 253
-		transfer_state = 238
-		transfer_state = 231
-		transfer_state = 230
-		transfer_state = 229
-		transfer_state = 210
-		transfer_state = 258
-		transfer_state = 216
-		transfer_state = 251
-		transfer_state = 250
+        
+		set_capital = 212
+		set_cosmetic_tag = ALB_reichskommissariat
+		}
+		SWE = { country_event = { id = peace.5 hours = 24 } }
+	}
+}
+
+country_event = {
+	id = peace.5
+	title = peace.5.t
+	desc = peace.5.d
+	picture = GFX_report_event_german_speech
+
+	fire_only_once = yes
+	
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = peace.5.a
+		
+		ALB = {
 		transfer_state = 232
 		transfer_state = 246
 		transfer_state = 241
@@ -267,19 +316,15 @@ country_event = {
 		transfer_state = 374
 		transfer_state = 373
 		
-        
-		every_controlled_state = { add_core_of = ALB }
-		set_capital = 212
-		set_cosmetic_tag = ALB_reichskommissariat
+			}
+			SWE = { country_event = { id = peace.6 hours = 24 } }
 		}
-		SWE = { country_event = { id = peace.3 hours = 24 } }
 	}
-}
-
-country_event = {
-	id = peace.3
-	title = peace.3.t
-	desc = peace.3.d
+	
+	country_event = {
+	id = peace.6
+	title = peace.6.t
+	desc = peace.6.d
 	picture = GFX_report_event_german_speech
 
 	fire_only_once = yes
@@ -289,7 +334,48 @@ country_event = {
 	
 	
 	option = {
-		name = peace.3.a
+		name = peace.6.a
+		
+		ALB = {
+		transfer_state = 198
+		transfer_state = 215
+		transfer_state = 233
+		transfer_state = 253
+		transfer_state = 238
+		transfer_state = 231
+		transfer_state = 230
+		transfer_state = 229
+		transfer_state = 210
+		transfer_state = 258
+		transfer_state = 216
+		transfer_state = 251
+		transfer_state = 250
+		transfer_state = 234
+		every_controlled_state = { add_core_of = ALB }
+			}
+			SWE = { country_event = { id = peace.7 hours = 24 } }
+		}
+	}
+		
+		
+		
+		
+		
+		
+country_event = {
+	id = peace.7
+	title = peace.7.t
+	desc = peace.7.d
+	picture = GFX_report_event_german_speech
+
+	fire_only_once = yes
+	
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = peace.7.a
 		
 		JAP = {
 		transfer_state = 375
