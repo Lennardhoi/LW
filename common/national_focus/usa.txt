@@ -974,7 +974,7 @@ focus_tree = {
 			if = { limit = { has_tech = heavy_fighter2}
 				add_equipment_to_stockpile = {
 				type = heavy_fighter_equipment
-				amount = 1000
+				amount = 800
 				producer = USA
 			}}
 			else = {add_equipment_to_stockpile = {
@@ -2769,7 +2769,7 @@ focus_tree = {
 		icon = GFX_goal_generic_build_navy
 		x = 2
 		y = 1
-		cost = 10
+		cost = 5
 		prerequisite = { focus = USA_two_ocean_navy_act }
 		relative_position_id = USA_two_ocean_navy_act
 		available_if_capitulated = yes
