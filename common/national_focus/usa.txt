@@ -1447,7 +1447,13 @@ focus_tree = {
 		relative_position_id = USA_american_dream
 		cost = 5
 		available = {
-			date > 1941.8.1
+			OR = {
+				date > 1941.8.1
+				AND = {
+				276 = {is_controlled_by_ROOT_OR_ALLY=yes}
+				589 = {is_controlled_by_ROOT_OR_ALLY=yes}
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 1
