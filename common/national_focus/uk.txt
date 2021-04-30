@@ -2451,8 +2451,20 @@ focus_tree = {
 					limit = { is_controlled_by = ROOT }
 					set_building_level = {
 						type = coastal_bunker
-						level = 3
+						level = 5
 						province =243
+						instant_build = yes
+					}
+					set_building_level = {
+						type = coastal_bunker
+						level = 5
+						province =194
+						instant_build = yes
+					}
+					set_building_level = {
+						type = coastal_bunker
+						level = 5
+						province =291
 						instant_build = yes
 					}
 				}
@@ -2462,7 +2474,7 @@ focus_tree = {
 					limit = { is_controlled_by = ROOT }
 					set_building_level = {
 						type = coastal_bunker
-						level = 3
+						level = 5
 						province =10304
 						instant_build = yes
 					}
@@ -2473,7 +2485,7 @@ focus_tree = {
 					limit = { is_controlled_by = ROOT }
 					set_building_level = {
 						type = coastal_bunker
-						level = 3
+						level = 5
 						province =3278
 						instant_build = yes
 					}
@@ -2483,6 +2495,18 @@ focus_tree = {
 						province =8682
 						instant_build = yes
 					}
+					set_building_level = {
+						type = coastal_bunker
+						level = 5
+						province =11748
+						instant_build = yes
+					}
+					set_building_level = {
+						type = coastal_bunker
+						level = 5
+						province =10374
+						instant_build = yes
+					}
 				}
 			}
 			121 = {
@@ -2490,8 +2514,54 @@ focus_tree = {
 					limit = { is_controlled_by = ROOT }
 					set_building_level = {
 						type = coastal_bunker
-						level = 3
+						level = 5
 						province =505
+						instant_build = yes
+					}
+					set_building_level = {
+						type = coastal_bunker
+						level = 5
+						province =3240
+						instant_build = yes
+					}
+					set_building_level = {
+						type = coastal_bunker
+						level = 5
+						province =6031
+						instant_build = yes
+					}
+				}
+			}
+			128 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					set_building_level = {
+						type = coastal_bunker
+						level = 5
+						province =10251
+						instant_build = yes
+					}
+					set_building_level = {
+						type = coastal_bunker
+						level = 5
+						province =10233
+						instant_build = yes
+					}
+				}
+			}
+			129 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					set_building_level = {
+						type = coastal_bunker
+						level = 5
+						province =319
+						instant_build = yes
+					}
+					set_building_level = {
+						type = coastal_bunker
+						level = 5
+						province =10210
 						instant_build = yes
 					}
 				}
