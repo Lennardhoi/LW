@@ -945,6 +945,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			add_timed_idea = {idea = britannia_rules_the_waves days = 60}
+				every_unit_leader = {
+				limit={has_id=985}
+				add_skill_level=2
+				add_unit_leader_trait=ironside
+				add_unit_leader_trait=air_controller
+			}
 		}
 	}
 	focus = {
