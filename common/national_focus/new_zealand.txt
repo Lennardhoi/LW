@@ -95,11 +95,12 @@ focus_tree = {
 				}
 				set_state_flag = NZL_expand_devonport_naval_base_DY
 			}
+			
 			272 = {
-				add_building_construction = {
+				set_building_level = {
 					type = naval_base
+					level = 20
 					province =4265
-					level = 5
 					instant_build = yes
 				}
 			}
