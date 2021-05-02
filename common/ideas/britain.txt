@@ -944,22 +944,24 @@ ideas = {
 			}
 		}
 		dudley_pound = {
+            
 			allowed = {
+                
 				original_tag = ENG
+            
 			}
+            
 			traits = { navy_chief_decisive_battle_1 }
+            
 			ai_will_do = {
+                
 				factor = 1
+            
 			}
-		}
+       
+		 }
 	}
 	air_chief = {
-		andrew_cunningham = {
-			allowed = {
-				original_tag = ENG
-			}
-			traits = { air_naval_strike_2 }
-		}
 		cyril_newall = {
 			allowed = {
 				original_tag = ENG
@@ -1064,16 +1066,6 @@ ideas = {
 				factor = 1
 			}
 		}
-		henry_harwood = {
-			ledger = navy
-			allowed = {
-				original_tag = ENG
-			}
-			traits = { navy_screen_2 }
-			ai_will_do = {
-				factor = 0.7
-			}
-		}
 		max_horton = {
 			ledger = navy
 			allowed = {
@@ -1083,6 +1075,16 @@ ideas = {
 			ai_will_do = {
 				factor = 0.2
 			}
+		}
+		andrew_cunningham = {
+			ledger = navy
+			available = {
+				has_completed_focus = ENG_vanguard
+			}
+			allowed = {
+				original_tag = ENG
+			}
+			traits = { navy_chief_decisive_battle_2 }
 		}
 		ENG_david_stirling = {
 			ledger = army

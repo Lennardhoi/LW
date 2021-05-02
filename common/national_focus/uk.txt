@@ -836,7 +836,6 @@ focus_tree = {
 				uses = 2
 				category = cl_tech
 			}
-			add_ideas = ENG_secure_the_imperial_shipping_routes
 		}
 	}
 	focus = {
@@ -1094,6 +1093,8 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = Andrew_Cunningham
 			navy_experience = 25
 			set_technology = {
 				improved_ship_hull_heavy = 1

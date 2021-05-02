@@ -339,13 +339,13 @@ ship_super_heavy_battery_2 = {
 		multiply_stats = {
 			naval_speed = -0.04
 			max_strength = 0.1
+			armor_value = 0.05
 		}
 		add_average_stats = {
 			lg_armor_piercing = 16
 			surface_visibility = 5
 			naval_speed = -5
-			armor_value = 10
-			build_cost_ic =800
+			build_cost_ic =1200
 		}
 		can_convert_from = {
 			module_category = ship_light_battery
@@ -370,13 +370,13 @@ ship_super_heavy_battery_2 = {
 		multiply_stats = {
 			naval_speed = -0.04
 			max_strength = 0.125
+			armor_value = 0.1
 		}
 		add_average_stats = {
 			lg_armor_piercing = 18
 			surface_visibility = 5
 			naval_speed = -5
-			armor_value = 10
-			build_cost_ic = 1000
+			build_cost_ic = 1400
 		}
 		can_convert_from = {
 			module_category = ship_medium_battery
@@ -401,13 +401,13 @@ ship_super_heavy_battery_2 = {
 		multiply_stats = {
 			naval_speed = -0.04
 			max_strength = 0.15
+			armor_value = 0.15
 		}
 		add_average_stats = {
 			lg_armor_piercing = 20
 			surface_visibility = 5
 			naval_speed = -5
-			armor_value = 10
-			build_cost_ic = 1200
+			build_cost_ic = 1600
 		}
 		can_convert_from = {
 			module_category = ship_medium_battery
@@ -632,7 +632,7 @@ ship_super_heavy_battery_2 = {
 
 		can_convert_from = {
 			module_category = ship_secondaries
-			convert_cost_ic = 150
+			convert_cost_ic = 250
 		}
 		critical_parts = { damaged_secondaries }
 	}
@@ -2168,7 +2168,6 @@ ship_super_heavy_battery_2 = {
 		gfx = ship_armor_thin_1
 
 		multiply_stats = {
-			build_cost_ic = 0.1
 			naval_speed = -0.05
 		}
 		dismantle_cost_ic = 2500
@@ -2182,7 +2181,7 @@ ship_super_heavy_battery_2 = {
 		gfx = ship_armor_thin_2
 
 		multiply_stats = {
-			build_cost_ic = 0.15
+			build_cost_ic = 0.05
 			naval_speed = -0.075
 			max_strength = 0.05
 		}
@@ -2197,7 +2196,7 @@ ship_super_heavy_battery_2 = {
 		gfx = ship_armor_thin_3
 
 		multiply_stats = {
-			build_cost_ic = 0.15
+			build_cost_ic = 0.05
 			naval_speed = -0.1
 			max_strength = 0.1
 		}
