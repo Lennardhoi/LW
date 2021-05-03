@@ -1550,7 +1550,7 @@ focus_tree = {
 	}
 	focus = {
 		id = AST_australian_arms_production
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_focus_research
 		prerequisite = { focus = AST_allied_works_council }
 		x = 2
 		y = 4
@@ -1568,7 +1568,7 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			add_ideas = AST_australian_arms_production
+			add_research_slot = 1
 		}
 	}
 	focus = {

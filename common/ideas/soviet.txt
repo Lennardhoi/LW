@@ -342,6 +342,21 @@ ideas = {
 				}
 			}
 		}
+		SOV_heavy_tonk = {
+			removal_cost = -1
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+               always = yes
+			}
+			picture = generic_manpower_bonus
+			equipment_bonus = {
+				heavy_tank_equipment = {
+					build_cost_ic = -0.5
+				}
+			}
+		}
 		home_of_revolution = {
 			removal_cost = -1
 			allowed = {

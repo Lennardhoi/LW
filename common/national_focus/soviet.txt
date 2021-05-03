@@ -486,7 +486,6 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = SOV_tankograd
-			set_technology = {improved_heavy_tank = 1 popup=no}
 		}
 	}
 	focus = {
@@ -967,7 +966,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_peoples_commissariat }
 		x = -1
 		y = 1
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 5
 		}
@@ -1380,7 +1379,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_socialist_science
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1431,7 +1430,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = SOV_stalin_constitution
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -1643,7 +1642,7 @@ focus_tree = {
 		id = SOV_rehabilitated_military
 		icon = GFX_goal_generic_small_arms
 		prerequisite = { focus = SOV_great_purge }
-		x = 12
+		x = 13
 		y = 1
 		relative_position_id = SOV_great_purge
 		cost = 5
@@ -1706,7 +1705,7 @@ focus_tree = {
 		id = SOV_nkvd_primacy
 		icon = GFX_focus_SOV_nkvd_primacy
 		prerequisite = { focus = SOV_great_purge }
-		x = 14
+		x = 15
 		y = 1
 		relative_position_id = SOV_great_purge
 		cost = 5
@@ -1804,6 +1803,24 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		completion_reward = {
+		    set_technology = {improved_heavy_tank = 1 popup=no}
+			create_equipment_variant = {
+					name = "KV-1/1"
+					type = heavy_tank_equipment_2
+					upgrades = {
+						tank_gun_upgrade = 5
+						tank_armor_upgrade = 5
+						tank_reliability_upgrade = 3
+						}}
+				add_equipment_production = {
+					equipment = {
+						type = heavy_tank_equipment_2
+						creator = "SOV"
+						version_name = "KV-1/1"		}
+					requested_factories = 15
+					progress = 0.1
+					efficiency = 50
+				}   
 			army_experience = 100
 			add_ideas = SOV_one_gun
 			add_tech_bonus = {
@@ -1820,7 +1837,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_lessons_of_war }
 		available = {
 		}
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = SOV_lessons_of_war
 		cost = 5
@@ -1843,7 +1860,7 @@ focus_tree = {
 		prerequisite = { focus = SOV_lessons_of_war }
 		available = {
 		}
-		x = 1
+		x = 2
 		y = 1
 		relative_position_id = SOV_lessons_of_war
 		cost = 5
@@ -1853,11 +1870,134 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			add_tech_bonus = {
-				name = secret
-				bonus = 1.0
+				bonus = 3
 				uses = 2
-				category = rocketry
+				name = rocket_arty
+				technology = rocket_artillery3
+				technology = rocket_artillery4
 			}
+		}
+	}
+	focus = {
+		id = SOV_heavy_tonk
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = SOV_lessons_of_war }
+		available = {
+		}
+		x = 0
+		y = 1
+		relative_position_id = SOV_lessons_of_war
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+		    add_timed_idea={idea=SOV_heavy_tonk days=120}
+		}
+	}
+	focus = {
+		id = SOV_prepare_japan
+		icon = GFX_goal_generic_build_airforce
+		prerequisite = { focus = SOV_heavy_tonk }
+		available = {
+		}
+		x = -2
+		y = 1
+		relative_position_id = SOV_heavy_tonk
+		cost = 3
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+		    487 = {
+				set_building_level = {
+					type = air_base
+					level = 20
+					instant_build = yes
+				}
+			}
+			488 = {
+				set_building_level = {
+					type = air_base
+					level = 20
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = SOV_doctrine
+		icon = GFX_focus_generic_license_production
+		prerequisite = { focus = SOV_heavy_tonk }
+		available = {
+		date > 1942.06.01
+		has_tech = mass_assault
+		}
+		cancel_if_invalid = yes
+		x = 2
+		y = 2
+		relative_position_id = SOV_lessons_of_war
+		cost = 0
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+		custom_effect_tooltip = SOV_doc_tt
+		  set_technology = {
+		   mobile_warfare = 1 popup=no
+		   delay = 1 popup=no
+		   elastic_defence = 1 popup=no
+		   mobile_infantry = 1 popup=no
+		   mass_motorization = 1 popup=no
+		   mechanised_offensive = 1 popup=no
+		   armored_spearhead  = 1 popup=no
+		   schwerpunk = 1 popup=no
+		   blitzkrieg = 1 popup=no
+		   kampfgruppe  = 1 popup=no
+		   firebrigades = 1 popup=no
+           backhand_blow = 1 popup=no
+           modern_blitzkrieg = 1 popup=no
+		   volkssturm = 1 popup=no
+		   nd_conscription = 1 popup=no
+		   werwolf_guerillas = 1 popup=no
+		   mass_assault = 0 popup=no
+		   pocket_defence = 0 popup=no
+		   defence_in_depth = 0 popup=no
+		   large_front_operations = 0 popup=no
+		   large_front_operations = 0 popup=no
+		   operational_concentration = 0 popup=no
+		   vast_offensives = 0 popup=no
+		   breakthrough_priority = 0 popup=no
+		   mechanized_wave = 0 popup=no
+		   continuous_offensive = 0 popup=no
+		   peoples_army  = 0 popup=no
+		   human_infantry_offensive = 0 popup=no
+	   	   large_front_offensive = 0 popup=no
+	       human_wave_offensive = 0 popup=no
+		   guerilla_warfare = 0 popup=no
+		   deep_operations = 0 popup=no
+		}
+		custom_effect_tooltip = SOV_doc_tt
+		}
+	}
+	focus = {
+		id = SOV_storm
+		icon =  GFX_focus_attack_japan
+		prerequisite = { focus = SOV_prepare_japan }
+		available = {date > 1942.03.01}
+		x = 0
+		y = 1
+		relative_position_id = SOV_prepare_japan
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+		 JAP = {country_event = { id = soviet.123 days = 1 }}
 		}
 	}
 	focus = {
