@@ -1809,7 +1809,7 @@ focus_tree = {
 					type = heavy_tank_equipment_2
 					upgrades = {
 						tank_gun_upgrade = 5
-						tank_armor_upgrade = 5
+						tank_armor_upgrade = 4
 						tank_reliability_upgrade = 3
 						}}
 				add_equipment_production = {
@@ -1987,7 +1987,10 @@ focus_tree = {
 		id = SOV_storm
 		icon =  GFX_focus_attack_japan
 		prerequisite = { focus = SOV_prepare_japan }
-		available = {date > 1942.03.01}
+		available = {
+		date > 1942.03.01
+		NOT = {has_war_with = JAP}
+		}
 		x = 0
 		y = 1
 		relative_position_id = SOV_prepare_japan
