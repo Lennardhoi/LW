@@ -1077,6 +1077,11 @@ focus_tree = {
 				}
 			}
 			add_ideas = JAP_superior_will
+			hidden_effect={
+				MAN = {
+				add_ideas = JAP_superior_will
+				}
+			}
 		}
 	}
 	focus = {
@@ -1451,6 +1456,10 @@ focus_tree = {
 			custom_effect_tooltip = RAJ_jungle_training_effect
 			hidden_effect = { set_technology = { jungle_warfare = 1 } }
 			hidden_effect={
+				MAN = {
+				set_technology = { jungle_warfare = 1 }
+				add_ideas = JAP_expand_the_snlf
+				}
 				division_template = {
 					name = "Rikuhentai"
 					division_names_group = JAP_MAR_01
@@ -1862,6 +1871,10 @@ focus_tree = {
 			add_dynamic_modifier={modifier=pacific_war}
 			USA={add_dynamic_modifier={modifier=pacific_war}}
 			JAP = {
+				add_timed_idea = { idea = JAP_banzai days = 180 }
+				add_ideas = closed_economy
+			}
+			MAN = {
 				add_timed_idea = { idea = JAP_banzai days = 180 }
 				add_ideas = closed_economy
 			}

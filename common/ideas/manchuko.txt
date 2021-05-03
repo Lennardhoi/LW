@@ -206,14 +206,14 @@ ideas = {
 			allowed = {
 				original_tag = MAN
 			}
-			traits = { armaments_organizer }
+			traits = { war_industrialist }
 		}
 		MAN_nalan_kang_an = {
 			picture = generic_political_advisor_asia_3
 			allowed = {
 				original_tag = MAN
 			}
-			traits = { fortification_engineer }
+			traits = { silent_workhorse }
 		}
 		MAN_songgotu_zhanshan = {
 			picture = generic_political_advisor_asia_1
@@ -229,24 +229,13 @@ ideas = {
 			allowed = {
 				original_tag = MAN
 			}
-			traits = { army_chief_offensive_2 }
+			traits = { army_chief_offensive_3 }
 			ai_will_do = {
 				factor = 1
 			}
 		}
 	}
-	air_chief = {
-		MAN_nakajima_kesago = {
-			picture = generic_air_asia_3
-			allowed = {
-				original_tag = MAN
-			}
-			traits = { air_chief_ground_support_2 }
-			ai_will_do = {
-				factor = 1
-			}
-		}
-	}
+	
 	navy_chief = {
 		MAN_yin_zuoqian = {
 			picture = generic_navy_asia_3
@@ -271,13 +260,24 @@ ideas = {
 				factor = 1
 			}
 		}
+		MAN_nakajima_kesago = {
+			picture = generic_army_asia_4
+			ledger = army
+			allowed = {
+				original_tag = MAN
+			}
+			traits = { army_armored_1 }
+			ai_will_do = {
+				factor = 1
+			}
+		}
 		MAN_kyoiji_tomonaga = {
 			ledger = army
 			picture = generic_air_asia_2
 			allowed = {
 				original_tag = MAN
 			}
-			traits = { army_infantry_2 }
+			traits = { army_infantry_3 }
 			ai_will_do = {
 				factor = 1
 			}
