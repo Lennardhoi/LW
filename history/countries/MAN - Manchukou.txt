@@ -75,47 +75,72 @@ create_country_leader = {
 		warrior_code
 	}
 }
-create_corps_commander = {
+ create_field_marshal  = {
 	name = "Zhang Haipeng"
 	GFX = "GFX_portrait_man_zhang_haipeng"
-	traits = { panzer_leader trait_engineer }
-	skill = 4
-	attack_skill = 5
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 2
+	traits = {  organizer trait_engineer JAP_samurai_lineage panzer_leader  }
+ 	skill = 5
+ 	attack_skill = 6
+ 	defense_skill = 4
+ 	planning_skill = 2
+ 	logistics_skill = 4
 }
-create_corps_commander = {
+ create_field_marshal  = {
 	name = "Zhang Jinghui"
 	GFX = "GFX_portrait_man_zhang_jinghui"
-	traits = { panzer_leader hill_fighter}
-	skill = 4
-	attack_skill = 2
-	defense_skill = 5
-	planning_skill = 2
-	logistics_skill = 2
+	traits = { 
+ 		offensive_doctrine
+ 		JAP_samurai_lineage   # hakushaku
+ 		infantry_leader infantry_expert organizer
+ 	}
+ 	skill = 4
+ 	attack_skill = 6
+ 	defense_skill = 4
+ 	planning_skill = 3
+ 	logistics_skill = 2
 }
 create_corps_commander = {
 	name = "Aisin Gioro Xiqia"
 	GFX = "GFX_portrait_man_aisin_gioro_xiqia"
-	traits = { infantry_leader commando ranger }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 1
+	traits = {
+ 		trickster trait_engineer brilliant_strategist jungle_rat infantry_leader infantry_expert JAP_samurai_lineage
+ 	}
+ 	skill = 6
+ 	attack_skill = 7
+ 	defense_skill = 4
+ 	planning_skill = 3
+ 	logistics_skill = 4
 }
 create_corps_commander = {
 	name = "Yoshiko Kawashima"
 	gfx = "GFX_portrait_man_yoshiko_kawashima"
-	traits = { naval_invader infantry_leader cavalry_leader trait_mountaineer }
-	skill = 4
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 2
-	female = yes
+	traits = {  infantry_leader naval_invader commando  trait_engineer jungle_rat}
+ 	skill = 5
+ 	attack_skill = 6
+ 	defense_skill = 4
+ 	planning_skill = 2
+ 	logistics_skill = 4
 }
+create_corps_commander = {
+	name = "Gu Zhutong"
+	gfx = "GFX_portrait_chi_gu_zhutong"
+	traits = { brilliant_strategist infantry_leader trait_engineer trait_mountaineer hill_fighter}
+ 	skill = 4
+ 	attack_skill = 5
+ 	defense_skill = 4
+ 	planning_skill = 3
+ 	logistics_skill = 4
+}
+create_corps_commander = {
+	name = "Hu Zongnan"
+	gfx = "GFX_portrait_chi_hu_zongnan"
+ 	traits = { panzer_leader trait_engineer trickster ranger jungle_rat}
+ 	skill = 5
+ 	attack_skill = 6
+ 	defense_skill = 4
+ 	planning_skill = 4
+ 	logistics_skill = 4
+ }
 create_navy_leader = {
 	name = "Tadashige Daigo"
 	picture = "Portrait_Japan_Tadashige_Daigo.dds"
