@@ -956,7 +956,6 @@ focus_tree = {
 	focus = {
 		id = uk_carrier_focus
 		prerequisite = { focus = uk_waves_focus }
-		mutually_exclusive = { focus = uk_battleship_focus }
 		icon = GFX_goal_generic_navy_carrier
 		x = -1
 		y = 1
@@ -968,18 +967,16 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			navy_experience = 25
-			add_tech_bonus = {
-				name = uk_carrier_focus
-				bonus = 1.0
-				uses = 2
-				category = cv_tech
+			set_technology = {
+				improved_ship_hull_carrier = 1
+				naval_bomber2 = 1
+				popup = yes
 			}
 		}
 	}
 	focus = {
 		id = uk_battleship_focus
 		prerequisite = { focus = uk_waves_focus }
-		mutually_exclusive = { focus = uk_carrier_focus }
 		icon = GFX_goal_generic_navy_battleship
 		x = 1
 		y = 1
@@ -991,12 +988,13 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			navy_experience = 25
-			add_tech_bonus = {
-				name = uk_battleship_focus
-				bonus = 1.0
-				uses = 2
-				category = bb_tech
-			}
+			set_technology = {
+				improved_ship_hull_heavy = 1
+				basic_ship_hull_heavy = 1
+				improved_heavy_battery = 1
+				improved_heavy_armor_scheme = 1
+				popup = yes
+			}			
 		}
 	}
 	focus = {
@@ -1076,11 +1074,11 @@ focus_tree = {
 	}
 	focus = {
 		id = ENG_vanguard
-		prerequisite = { focus = uk_battleship_focus }
+		prerequisite = { focus = ENG_expand_the_repair_yards }
 		icon = GFX_focus_generic_navy_battleship2
 		x = 0
-		y = 2
-		relative_position_id = uk_battleship_focus
+		y = 1
+		relative_position_id = ENG_expand_the_repair_yards
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -1097,11 +1095,6 @@ focus_tree = {
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = Andrew_Cunningham
 			navy_experience = 25
-			set_technology = {
-				improved_ship_hull_heavy = 1
-				basic_ship_hull_heavy = 1
-				popup = no
-			}
 			create_equipment_variant = {
 				name = "Vanguard"
 				type = ship_hull_heavy_3
@@ -1110,14 +1103,14 @@ focus_tree = {
 					fixed_ship_battery_slot = ship_heavy_battery_3
 					fixed_ship_anti_air_slot = ship_anti_air_3
 					fixed_ship_fire_control_system_slot = ship_fire_control_system_3
-					fixed_ship_radar_slot = ship_radar_3
+					fixed_ship_radar_slot = ship_radar_4
 					fixed_ship_engine_slot = heavy_ship_engine_3
 					fixed_ship_secondaries_slot = dp_ship_secondaries
 					fixed_ship_armor_slot = ship_armor_bb_3
 					front_1_custom_slot = ship_heavy_battery_3
-					mid_1_custom_slot = ship_anti_air_3
+					mid_1_custom_slot = ship_heavy_battery_3
 					mid_2_custom_slot = dp_ship_secondaries
-					mid_3_custom_slot = ship_airplane_launcher_2
+					mid_3_custom_slot = dp_ship_secondaries
 					rear_1_custom_slot = ship_heavy_battery_3
 				}
 			}
