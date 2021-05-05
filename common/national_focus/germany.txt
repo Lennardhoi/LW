@@ -3917,7 +3917,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-		available={date>1940.1.1}
+		available={date>1940.1.1
+		OR = {has_idea=blohm_und_voss has_idea=germaniawerft}}
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
@@ -3928,6 +3929,53 @@ focus_tree = {
 				bonus = 100
 				uses = 2
 				category = naval_doctrine
+			}
+			set_technology = {
+				improved_ship_hull_cruiser = 1
+			}
+			create_equipment_variant = {
+				name = "Hindenburg-Klasse"
+				type = ship_hull_cruiser_3
+				name_group = GER_BB_HISTORICAL
+				parent_version = 0
+				modules = {
+					fixed_ship_battery_slot=ship_light_medium_battery_3
+					fixed_ship_anti_air_slot=ship_anti_air_2
+					fixed_ship_fire_control_system_slot=ship_fire_control_system_2
+					fixed_ship_engine_slot=cruiser_ship_engine_3
+					fixed_ship_secondaries_slot=ship_secondaries_2
+					fixed_ship_armor_slot=ship_armor_cruiser_3
+					front_1_custom_slot=ship_light_medium_battery_3
+					mid_1_custom_slot=ship_light_medium_battery_3
+					mid_2_custom_slot=ship_light_medium_battery_3
+					rear_1_custom_slot=ship_airplane_launcher_2
+					rear_2_custom_slot=ship_light_medium_battery_3
+				}
+			}
+			custom_effect_tooltip="Adds two Hindenburg-Klasse Light Cruisers to the production queue, at 85% and 90% complete, respectively."
+			hidden_effect = {
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_cruiser_3
+						creator = "GER"
+						version_name = "Hindenburg-Klasse"
+					}
+					name = "Hindenburg"
+					requested_factories = 1
+					progress = 0.9
+					amount = 1
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_cruiser_3
+						creator = "GER"
+						version_name = "Hindenburg-Klasse"
+					}
+					name = "Roon"
+					requested_factories = 1
+					progress = 0.85
+					amount = 1
+				}
 			}
 			random_owned_controlled_state = {
 				limit = {
@@ -3979,7 +4027,8 @@ focus_tree = {
 		ai_will_do = {
 			factor = 0.25
 		}
-		available={date>1940.1.1}
+		available={date>1940.1.1
+		OR = {has_idea=blohm_und_voss has_idea=germaniawerft}}
 		available_if_capitulated = yes
 		complete_tooltip = {
 		}
@@ -4065,7 +4114,8 @@ focus_tree = {
 		icon = GFX_focus_GER_sub_plan
 		prerequisite = { focus = GER_naval_effort }
 		mutually_exclusive = { focus = GER_plan_z focus = GER_all_options}
-		available={date>1940.1.1}
+		available={date>1940.1.1
+		OR = {has_idea=blohm_und_voss has_idea=germaniawerft}}
 		x = 3
 		y = 1
 		relative_position_id = GER_naval_effort

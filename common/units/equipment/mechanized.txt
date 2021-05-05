@@ -38,7 +38,13 @@ equipments = {
     		priority = 40
     		visual_level = 0
     		is_buildable = no
-		build_cost_ic = 66
+			can_license = no
+		resources = {
+    			steel = 20
+    			#oil = 1
+    			rubber = 30
+    		}
+		build_cost_ic = 6.6
     	}
     	mechanized_equipment_1 = {
     		year = 1940
