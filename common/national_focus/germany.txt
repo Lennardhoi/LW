@@ -1,4 +1,4 @@
-﻿focus_tree = {
+focus_tree = {
 	id = german_focus
 	country = {
 		factor = 0
@@ -2663,6 +2663,9 @@
 		id = GER_danzig_or_war
 		icon = GFX_focus_GER_danzig
 		prerequisite = { focus = GER_mol_rib_pact }
+		available = {
+			date > 1939.8.1
+		}
 		bypass = {
 		}
 		cancel_if_invalid = no

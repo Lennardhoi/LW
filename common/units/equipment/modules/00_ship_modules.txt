@@ -349,11 +349,11 @@ ship_super_heavy_battery_2 = {
 		}
 		can_convert_from = {
 			module_category = ship_light_battery
-			convert_cost_ic = 100
+			convert_cost_ic = 400
 		}
 		can_convert_from = {
 			module_category = ship_medium_battery
-			convert_cost_ic = 100
+			convert_cost_ic = 400
 		}
 		critical_parts = { damaged_heavy_guns }
 	}
@@ -440,11 +440,11 @@ ship_super_heavy_battery_2 = {
 		}
 		can_convert_from = {
 			module_category = ship_medium_battery
-			convert_cost_ic = 00
+			convert_cost_ic = 200
 		}
 		can_convert_from = {
 			module = ship_medium_battery_3
-			convert_cost_ic = 100
+			convert_cost_ic = 200
 		}
 		critical_parts = { damaged_heavy_guns }
 	}
@@ -467,11 +467,7 @@ ship_super_heavy_battery_2 = {
 		}
 		can_convert_from = {
 			module_category = ship_medium_battery
-			convert_cost_ic = 100
-		}
-		can_convert_from = {
-			module = ship_light_medium_battery_1
-			convert_cost_ic = 100
+			convert_cost_ic = 500
 		}
 		critical_parts = { damaged_light_guns }
 	}
@@ -494,11 +490,11 @@ ship_super_heavy_battery_2 = {
 		}
 		can_convert_from = {
 			module_category = ship_medium_battery
-			convert_cost_ic = 100
+			convert_cost_ic = 400
 		}
 		can_convert_from = {
 			module = ship_light_medium_battery_1
-			convert_cost_ic = 100
+			convert_cost_ic = 300
 		}
 		critical_parts = { damaged_light_guns }
 	}
@@ -522,11 +518,11 @@ ship_super_heavy_battery_2 = {
 		}
 		can_convert_from = {
 			module_category = ship_medium_battery
-			convert_cost_ic = 150
+			convert_cost_ic = 500
 		}
 		can_convert_from = {
 			module = ship_light_medium_battery_2
-			convert_cost_ic = 150
+			convert_cost_ic = 350
 		}
 		critical_parts = { damaged_light_guns }
 	}
@@ -550,11 +546,11 @@ ship_super_heavy_battery_2 = {
 		}
 		can_convert_from = {
 			module_category = ship_medium_battery
-			convert_cost_ic = 100
+			convert_cost_ic = 600
 		}
 		can_convert_from = {
 			module = ship_light_medium_battery_3
-			convert_cost_ic = 100
+			convert_cost_ic = 400
 		}
 		critical_parts = { damaged_light_guns }
 	}
@@ -622,13 +618,12 @@ ship_super_heavy_battery_2 = {
 		sfx = sfx_ui_sd_module_turret
 		add_stats = {
 			lg_attack = 6
-			anti_air_attack = 2.5
-			build_cost_ic = 300
+			anti_air_attack = 2
+			build_cost_ic = 600
 		}
 
 		multiply_stats = {
 			naval_speed = -0.03
-			build_cost_ic = 0.03
 		}
 
 		add_average_stats = {
@@ -657,7 +652,7 @@ ship_super_heavy_battery_2 = {
 		add_equipment_type = anti_air
 
 		add_stats = {
-			anti_air_attack = 2.5
+			anti_air_attack = 2
 			build_cost_ic = 10
 		}
 
@@ -680,7 +675,7 @@ ship_super_heavy_battery_2 = {
 		add_equipment_type = anti_air
 
 		add_stats = {
-			anti_air_attack = 3
+			anti_air_attack = 2.6
 			build_cost_ic = 20
 		}
 
@@ -705,7 +700,7 @@ ship_super_heavy_battery_2 = {
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = anti_air
 		add_stats = {
-			anti_air_attack = 3.5
+			anti_air_attack = 3.8
 			build_cost_ic = 30
 		}
 
@@ -731,7 +726,7 @@ ship_super_heavy_battery_2 = {
 
 		add_equipment_type = anti_air
 		add_stats = {
-			anti_air_attack = 4
+			anti_air_attack = 5
 			build_cost_ic = 40
 		}
 
