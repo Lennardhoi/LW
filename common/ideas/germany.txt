@@ -8,10 +8,10 @@ ideas = {
 			picture = generic_acquire_tanks
 			equipment_bonus = {
 				motorized_equipment = {
-					max_strength = 13 instant = yes
+					max_strength = 16 instant = yes
 				}
 				mechanized_equipment = {
-					max_strength = 10 instant = yes
+					max_strength = 12 instant = yes
 				}
 			}
 		}
@@ -802,7 +802,7 @@ ideas = {
 			available = {
 				has_government = fascism
 			}
-			traits = { fascist_demagogue propaganda_expert}
+			traits = { fascist_demagogue propaganda_expert silent_workhorse}
 			on_add = {
 				hidden_effect = {
 				if = {limit ={check_variable= { speeches_enabled > 0} }

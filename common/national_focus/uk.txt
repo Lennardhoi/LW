@@ -1083,7 +1083,6 @@ focus_tree = {
 		y = 1
 		relative_position_id = ENG_expand_the_repair_yards
 		cost = 5
-		available = {has_tech = improved_ship_hull_heavy}
 		ai_will_do = {
 			factor = 1
 		}
@@ -1093,6 +1092,7 @@ focus_tree = {
 		available = {
 			date > 1941.1.1
 			has_full_control_of_state = 131
+			has_tech = improved_ship_hull_heavy
 		}
 		available_if_capitulated = yes
 		completion_reward = {
