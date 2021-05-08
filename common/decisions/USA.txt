@@ -53,6 +53,44 @@ war_measures = {
 			add_equipment_to_stockpile={type = fighter_equipment_alt amount = -600 }
 		}
 	}
+	USA_puppet_ast = {
+		icon = generic_operation
+		available = {
+			JAP = { has_war = yes }
+			AST = { NOT = {has_capitulated = yes}}
+			country_exists = AST
+		}
+		allowed = {
+			tag = USA
+		}
+		cost = 0
+		visible = {
+			always=yes
+		}
+		fire_only_once = yes
+		complete_effect = {
+		USA = { set_autonomy = { target = AST autonomy_state = autonomy_dominion } }	
+		}
+	}
+	USA_puppet_nzl = {
+		icon = generic_operation
+		available = {
+			JAP = { has_war = yes }
+			NZL = { NOT = {has_capitulated = yes}}
+			country_exists = NZL
+		}
+		allowed = {
+			tag = USA
+		}
+		cost = 0
+		visible = {
+			always=yes
+		}
+		fire_only_once = yes
+		complete_effect = {
+		USA = { set_autonomy = { target = NZL autonomy_state = autonomy_dominion } }	
+		}
+	}
 	USA_homeland_defense = {
 		icon = generic_prepare_civil_war
 		allowed = {
