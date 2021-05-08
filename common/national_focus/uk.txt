@@ -104,7 +104,7 @@ focus_tree = {
 		y = 0
 		cost = 10
 		ai_will_do = {
-			factor = 1
+			factor = 10
 		}
 		bypass = {
 		}
@@ -1556,6 +1556,9 @@ focus_tree = {
 	focus = {
 		id = uk_india_focus
 		prerequisite = { focus = uk_commonwealth_focus }
+		ai_will_do = {
+			factor = 9
+		}
 		available = {
 		}
 		icon = GFX_goal_generic_construct_civ_factory
@@ -1628,6 +1631,9 @@ focus_tree = {
 	focus = {
 		id = uk_australia_focus
 		prerequisite = { focus = uk_commonwealth_focus }
+		ai_will_do = {
+			factor = 9
+		}
 		available = {
 		}
 		bypass = {
@@ -1769,6 +1775,9 @@ focus_tree = {
 	focus = {
 		id = uk_new_zealand_focus
 		prerequisite = { focus = uk_australia_focus }
+		ai_will_do = {
+			factor = 9
+		}
 		available = {
 		}
 		bypass = {
@@ -1910,6 +1919,9 @@ focus_tree = {
 	focus = {
 		id = uk_canada_focus
 		prerequisite = { focus = uk_commonwealth_focus }
+		ai_will_do = {
+			factor = 9
+		}
 		available = {
 		}
 		bypass = {
@@ -2068,6 +2080,9 @@ focus_tree = {
 	focus = {
 		id = uk_south_africa_focus
 		prerequisite = { focus = uk_commonwealth_focus }
+		ai_will_do = {
+			factor = 9
+		}
 		available = {
 		}
 		bypass = {
