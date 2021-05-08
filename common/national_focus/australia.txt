@@ -942,22 +942,8 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		search_filters = {  FOCUS_FILTER_INDUSTRY }
-		complete_tooltip = {
-			navy_experience = 25
-			random_state = {
-				limit = {
-					has_state_flag = AST_cockatoo_island_shipyards_DY
-				}
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = dockyard
-					level = 3
-					instant_build = yes
-				}
-			}
-		}
 		completion_reward = {
-			navy_experience = 25
+			navy_experience = 100
 			444={add_building_construction = {
 					type = naval_base
 					level = 20
@@ -970,15 +956,15 @@ focus_tree = {
 					is_coastal = yes
 					free_building_slots = {
 						building = dockyard
-						size > 2
+						size > 1
 						include_locked = yes
 					}
 					not = { state = 593 }
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = dockyard
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = AST_cockatoo_island_shipyards_DY
@@ -989,7 +975,6 @@ focus_tree = {
 		id = AST_protect_overseas_commerce
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		prerequisite = { focus = AST_cockatoo_island_shipyards }
-		mutually_exclusive = { focus = AST_fly_the_jolly_roger }
 		x = -1
 		y = 1
 		relative_position_id = AST_cockatoo_island_shipyards
@@ -1006,12 +991,30 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH  }
 		completion_reward = {
+		    random_owned_controlled_state = {
+				prioritize = { 273 }
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+					not = { state = 593 }
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = AST_cockatoo_island_shipyards_DY
+			}
 			add_tech_bonus = {
 				name = AST_protect_overseas_commerce
-				bonus = 1.0
-				uses = 2
+				bonus = 10
+				uses = 5
 				category = fleet_in_being_tree
-				category = convoy_defense_tree
 			}
 		}
 	}
@@ -1019,7 +1022,6 @@ focus_tree = {
 		id = AST_fly_the_jolly_roger
 		icon = GFX_goal_generic_navy_submarine
 		prerequisite = { focus = AST_cockatoo_island_shipyards }
-		mutually_exclusive = { focus = AST_protect_overseas_commerce }
 		x = 1
 		y = 1
 		relative_position_id = AST_cockatoo_island_shipyards
@@ -1036,11 +1038,24 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH  }
 		completion_reward = {
-			add_tech_bonus = {
-				name = AST_fly_the_jolly_roger
-				bonus = 1.0
-				uses = 2
-				category = submarine_doctrine
+			random_owned_controlled_state = {
+				prioritize = { 273 }
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+					not = { state = 593 }
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = AST_cockatoo_island_shipyards_DY
 			}
 		}
 	}
@@ -1064,6 +1079,25 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_RESEARCH  }
 		completion_reward = {
+		    random_owned_controlled_state = {
+				prioritize = { 273 }
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+					not = { state = 593 }
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = AST_cockatoo_island_shipyards_DY
+			}
 			add_tech_bonus = {
 				name = AST_scrap_iron_flotilla
 				bonus = 1.0
@@ -1093,6 +1127,25 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_RESEARCH  }
 		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 273 }
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 1
+						include_locked = yes
+					}
+					not = { state = 593 }
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+				set_state_flag = AST_cockatoo_island_shipyards_DY
+			}
 			add_tech_bonus = {
 				name = AST_royal_australian_submarine_service
 				bonus = 1.0
@@ -1122,7 +1175,45 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = {  }
 		completion_reward = {
-			add_ideas = AST_naval_auxiliary_patrol
+			448 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					set_building_level = {
+						type = coastal_bunker
+						level = 5
+						province =7013
+						instant_build = yes
+					}
+				}
+			}
+			273 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					set_building_level = {
+						type = coastal_bunker
+						level = 5
+						province =11269
+						instant_build = yes
+					}
+				}
+			}
+			444 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					set_building_level = {
+						type = coastal_bunker
+						level = 5
+						province =7213
+						instant_build = yes
+					}
+					set_building_level = {
+						type = coastal_bunker
+						level = 5
+						province =11651
+						instant_build = yes
+					}
+				}
+			}
 		}
 	}
 	focus = {
@@ -1145,6 +1236,25 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_RESEARCH  }
 		completion_reward = {
+		    random_owned_controlled_state = {
+				prioritize = { 273 }
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+					not = { state = 593 }
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = AST_cockatoo_island_shipyards_DY
+			}
 			add_tech_bonus = {
 				name = AST_cruisers
 				bonus = 1.0
@@ -1175,10 +1285,29 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH  }
 		completion_reward = {
+		    random_owned_controlled_state = {
+				prioritize = { 273 }
+				limit = {
+					is_coastal = yes
+					free_building_slots = {
+						building = dockyard
+						size > 2
+						include_locked = yes
+					}
+					not = { state = 593 }
+				}
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+				set_state_flag = AST_cockatoo_island_shipyards_DY
+			}
 			add_tech_bonus = {
 				name = AST_pacific_area_navy
-				bonus = 1.0
-				uses = 1
+				bonus = 10
+				uses = 5
 				category = naval_doctrine
 			}
 		}
@@ -1235,7 +1364,7 @@ focus_tree = {
 		x = 2
 		y = 0
 		relative_position_id = AST_standard_gauge_railway
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 5
 		}
@@ -2010,45 +2139,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			add_ideas = AST_classify_aliens
-			if = {
-				limit = {
-					has_government = democratic
-				}
-				add_popularity = {
-					ideology = fascism
-					popularity = -0.1
-				}
-				add_popularity = {
-					ideology = communism
-					popularity = -0.1
-				}
-			}
-			if = {
-				limit = {
-					has_government = fascism
-				}
-				add_popularity = {
-					ideology = democratic
-					popularity = -0.1
-				}
-				add_popularity = {
-					ideology = communism
-					popularity = -0.1
-				}
-			}
-			if = {
-				limit = {
-					has_government = communism
-				}
-				add_popularity = {
-					ideology = democratic
-					popularity = -0.1
-				}
-				add_popularity = {
-					ideology = fascism
-					popularity = -0.1
-				}
-			}
+			NZL = {add_ideas = AST_classify_aliens}
 		}
 	}
 	focus = {

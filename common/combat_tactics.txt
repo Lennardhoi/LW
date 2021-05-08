@@ -9,7 +9,35 @@ phases = { # phase = no is the standard phase
 	seize_bridge
 	hold_bridge
 }
-
+tactic_basic_defend_island= {
+	
+	is_attacker = no
+	trigger = { # combined scope for both country and combatant
+		is_attacker = no
+		phase = no
+		is_fighting_in_terrain = island
+	}
+		
+	active = yes
+	
+	base =  { factor = 999 }
+	picture = defend
+	combat_width = -0.5
+}
+tactic_basic_attack_island = {
+	
+	is_attacker = yes
+	trigger = { # combined scope for both country and combatant
+		is_attacker = yes
+		phase = no
+		is_fighting_in_terrain = island
+	}
+		
+	active = yes
+	
+	base =  { factor = 999 }
+	picture = attack
+}
 tactic_basic_attack = {
 
 	is_attacker = yes
