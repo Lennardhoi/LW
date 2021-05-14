@@ -66,6 +66,7 @@ foreign_politics = {
 	ITA_enable_ll = {
 		icon = generic_operation
 		available = {
+			has_completed_focus = ITA_german_air_cooperation
 			GER={has_war=yes}
 			NOT={has_country_flag=ll_enabled}
 		}
@@ -91,7 +92,7 @@ foreign_politics = {
 	ITA_support_luftwaffe = {
 		icon = generic_operation
 		available = {
-			GER={has_war_with=SOV}
+			#GER={has_war_with=SOV}
 			has_equipment = {
 				fighter_equipment_alt > 599
 			}

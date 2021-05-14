@@ -17,7 +17,7 @@ set_stability = 0.40
 set_war_support = 0.15
 add_ideas = reliance_on_natural_rubber
 add_ideas = peace_training
-#add_ideas = low_economic_mobilisation
+add_ideas = tradeback_is_cancer
 add_timed_idea = {
 	idea = FRA_civs
 	days = 365
@@ -47,6 +47,7 @@ set_technology = {
 	basic_light_tank = 1
 	improved_light_tank = 1
 	early_fighter = 1
+	fighter1 = 1
 	naval_bomber1 = 1
 	early_bomber = 1
 	tactical_bomber1 = 1
@@ -132,8 +133,18 @@ add_equipment_to_stockpile = {
 	producer = FRA
 }
 add_equipment_to_stockpile = {
+	type = fighter_equipment_1
+	amount = 2000
+	producer = FRA
+}
+add_equipment_to_stockpile = {
+	type = cas_equipment_1
+	amount = 500
+	producer = FRA
+}
+add_equipment_to_stockpile = {
 	type = support_equipment_1
-	amount = 400
+	amount = 2000
 	producer = FRA
 }
 add_equipment_to_stockpile = {
