@@ -686,11 +686,11 @@ focus_tree = {
 	focus = {
 		id = ITA_mili
 		icon = GFX_goal_generic_production2
-		prerequisite = { focus = ITA_stab }
-		relative_position_id = ITA_stab
+		prerequisite = { focus = ITA_nat }
+		relative_position_id = ITA_nat
 		available = {
 		}
-		x = 0
+		x = -2
 		y = 1
 		cost = 5
 		search_filters = { FOCUS_FILTER_ANNEXATION }
@@ -717,7 +717,7 @@ focus_tree = {
 		id = ITA_moder
 		icon = GFX_goal_generic_positive_trade_relations
 		prerequisite = { focus = ITA_nat  }
-		prerequisite = { focus = ITA_stab }
+		#prerequisite = { focus = ITA_stab }
 		relative_position_id = ITA_nat
 		available = {
 		}
@@ -1478,35 +1478,12 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = ITA_motorized
-		icon = GFX_focus_ITA_tank
+		id = ITA_armored_effort
+		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = ITA_modernized_army }
 		x = -4
 		y = 1
 		relative_position_id = ITA_modernized_army
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {
-			add_tech_bonus = {
-				name = armor_bonus
-				bonus = 1.0
-				uses = 1
-				category = motorized_equipment
-			}
-			custom_effect_tooltip = "Applies on Mechanized"
-		}
-	}
-	focus = {
-		id = ITA_armored_effort
-		icon = GFX_goal_generic_army_tanks
-		prerequisite = { focus = ITA_motorized }
-		x = 0
-		y = 1
-		relative_position_id = ITA_motorized
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -1521,6 +1498,29 @@ focus_tree = {
 				uses = 2
 				category = armor
 			}
+		}
+	}
+	focus = {
+		id = ITA_motorized
+		icon = GFX_focus_ITA_tank
+		prerequisite = { focus = ITA_armored_effort }
+		x = 0
+		y = 1
+		relative_position_id = ITA_armored_effort
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 1
+				category = motorized_equipment
+			}
+			custom_effect_tooltip = "Applies on Mechanized"
 		}
 	}
 	focus = {
@@ -2116,8 +2116,8 @@ focus_tree = {
 				date > 1941.2.21
 			}
 		}
-		relative_position_id=ITA_armored_effort
-		prerequisite= {focus=ITA_armored_effort}
+		relative_position_id=ITA_motorized
+		prerequisite= {focus=ITA_motorized}
 		x = 0
 		y = 1
 		cost = 5
