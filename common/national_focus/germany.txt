@@ -3706,6 +3706,7 @@
 		id = GER_alta
 		icon = GFX_goal_generic_SS_focus
 		prerequisite = { focus = GER_around_maginot }
+		available = {date > 1940.01.01}
 		bypass = {
 			NOT = {FRA = {has_full_control_of_state =16}}
 		}
