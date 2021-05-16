@@ -41,34 +41,12 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = USA_suspend_the_presecution
-		icon = GFX_focus_generic_diplomatic_treaty
+		id = USA_reach_out_to_the_ware_group
+		icon = GFX_goal_generic_propaganda
 		x = -5
 		y = 1
 		prerequisite = { focus = USA_continue_the_new_deal }
 		relative_position_id = USA_continue_the_new_deal
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		allow_branch = {
-		}
-		available = {
-		}
-		bypass = {
-		}
-		search_filters = {FOCUS_FILTER_POLITICAL}
-		completion_reward = {
-			add_stability = -0.05
-		}
-	}
-	focus = {
-		id = USA_reach_out_to_the_ware_group
-		icon = GFX_goal_generic_propaganda
-		x = 0
-		y = 1
-		prerequisite = { focus = USA_suspend_the_presecution }
-		relative_position_id = USA_suspend_the_presecution
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -711,7 +689,6 @@ focus_tree = {
 		continue_if_invalid = yes
 		available_if_capitulated = no
 		completion_reward = {
-			add_ideas = USA_lend_lease_act_na
 			ENG = {
 			    add_offsite_building = { type = industrial_complex level = 10 }
 				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 20000 producer = USA }
@@ -742,7 +719,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = USA_neutrality_act
-		cost = 5
+		cost = 1
 		completion_reward = {
 			ENG = {
 				custom_effect_tooltip = needs_approval
@@ -955,6 +932,7 @@ focus_tree = {
 		completion_reward = {
 			add_ideas=partial_economic_mobilisation
 			remove_ideas=USA_second_deal
+			remove_ideas= USA_neutrality_act
 		}
 	}
 	focus = {
@@ -1529,7 +1507,7 @@ focus_tree = {
 			create_corps_commander = {
 				name = "George S. Patton"
 				picture = "Portrait_USA_George_S_Patton.dds"
-				traits = {  trickster armor_officer infantry_leader naval_invader panzer_leader war_hero trait_reckless hill_fighter }
+				traits = {  trickster armor_officer infantry_leader naval_invader panzer_leader war_hero trait_reckless hill_fighter skilled_staffer }
 				skill = 6
 				attack_skill = 6
 				defense_skill = 4
@@ -1539,7 +1517,7 @@ focus_tree = {
 			create_field_marshal = {
 				name = "Dwight D. Eisenhower"
 				picture = "Portrait_USA_Dwight_D_Eisenhower.dds"
-				traits = { logistics_wizard organizer offensive_doctrine trait_cautious armor_officer politically_connected panzer_leader trait_mountaineer infantry_leader }
+				traits = { logistics_wizard organizer offensive_doctrine trait_cautious armor_officer politically_connected panzer_leader trait_mountaineer infantry_leader skilled_staffer }
 				skill = 6
 				id =567
 				attack_skill = 6
@@ -1883,7 +1861,7 @@ focus_tree = {
 				name = "Douglas MacArthur"
 				id =56
 				picture = "Portrait_USA_Douglas_MacArthur.dds"
-				traits = {  offensive_doctrine brilliant_strategist media_personality politically_connected infantry_leader naval_invader jungle_rat }
+				traits = {  offensive_doctrine brilliant_strategist media_personality politically_connected infantry_leader naval_invader jungle_rat skilled_staffer}
 				skill = 7
 				attack_skill = 8
 				defense_skill = 3
@@ -2270,16 +2248,6 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-			if = {
-				limit = {
-					threat < 0.5
-					has_war = no
-				}
-				congress_high_support_trigger = yes
-			}
-			else = {
-				congress_low_support_trigger = yes
-			}
 		}
 		bypass = {
 		}
@@ -2413,7 +2381,12 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			add_ideas = USA_army_of_the_united_states
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 5				
+				category = tank_land_doctrine
+			}
 		}
 	}
 	focus = {
@@ -2570,7 +2543,7 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = USA_war_department }
 		relative_position_id = USA_war_department
-		cost = 2
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -2594,12 +2567,12 @@ focus_tree = {
 		prerequisite = { focus = USA_war_department }
 		relative_position_id = USA_war_department
 		available_if_capitulated = yes
-		available ={date > 1938.1.1}
+		available ={date > 1939.08.1}
 		completion_reward = {
 			air_experience = 150
 			add_tech_bonus = {
 				name = fighter_command_focus
-				bonus = 1.0
+				bonus = 3.0
 				uses = 1
 				technology= fighter2
 			}
@@ -2707,23 +2680,12 @@ focus_tree = {
 		y = 1
 		prerequisite = { focus = USA_war_department }
 		relative_position_id = USA_war_department
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
 		available = {
-			if = {
-				limit = {
-					threat < 0.5
-					has_war = no
-				}
-				congress_high_support_trigger = yes
-			}
-			else = {
-				congress_low_support_trigger = yes
-			}
-			controls_state = 352
-			controls_state = 331
+
 		}
 		bypass = {
 		}
@@ -2847,7 +2809,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = USA_battleship_primacy
-		cost = 5
+		cost = 2
 		available_if_capitulated = yes
 		completion_reward = {
 			add_tech_bonus = {
@@ -3070,7 +3032,6 @@ focus_tree = {
 				name = USA_expand_the_USMC
 				bonus = 1.0
 				uses = 1
-				technology = marines2
 				technology = marines3
 			}
 		}

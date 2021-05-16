@@ -376,7 +376,7 @@ focus_tree = {
 			factor = 80
 		}
 		available = {
-			has_war = yes
+			GER = {has_completed_focus = GER_end_of_czechoslovakia}
 		}
 		bypass = {
 		}
@@ -602,11 +602,11 @@ focus_tree = {
 			601 = {
 				add_resource = {
 					type = steel
-					amount = 20
+					amount = 40
 				}
 				add_resource = {
 					type = tungsten
-					amount = 15
+					amount = 30
 				}
 			}
 		}

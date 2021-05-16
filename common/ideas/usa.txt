@@ -23,12 +23,7 @@ ideas = {
 			picture = king_edward
 
 			modifier = {
-				land_equipment_upgrade_xp_cost=-0.5
-			}
-			equipment_bonus = {
-				armor = {
-					build_cost_ic = -0.05 instant=yes
-				}
+				land_equipment_upgrade_xp_cost=-0.75
 			}
 			removal_cost = -1
 		}
@@ -306,8 +301,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				send_volunteers_tension = 0.5
-				guarantee_tension = 0.5
+				lend_lease_tension = 3
 			}
 		}
 		# version if player went down limited intervention
