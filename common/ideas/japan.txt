@@ -57,14 +57,10 @@ ideas = {
 				land_reinforce_rate = 0.1
 				army_core_attack_factor = 0.5
 				army_core_defence_factor = 0.5
-				special_forces_attack_factor = 0.05
+				special_forces_attack_factor = 0.2
 				army_defence_factor = 0.1
 				army_attack_factor = 0.1
 			}
-			on_remove = {
-		    set_technology = {
-		    jungle_warfare_2 = 1
-		   }}
 		}
 		JAP_navy_recover = {
 			picture = generic_infantry_bonus
@@ -667,7 +663,7 @@ ideas = {
 			allowed = {
 				original_tag = JAP
 			}
-			traits = { army_chief_offensive_3 }
+			traits = { army_chief_offensive_1}
 			ai_will_do = {
 				factor = 1
 			}
@@ -775,7 +771,7 @@ ideas = {
 			allowed = {
 				original_tag = JAP
 			}
-			traits = { army_armored_1 }
+			traits = { army_armored_2 }
 			ai_will_do = {
 				factor = 1
 			}

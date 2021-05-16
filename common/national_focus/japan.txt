@@ -1453,11 +1453,8 @@ focus_tree = {
 				uses = 2
 				category = marine_tech
 			}
-			custom_effect_tooltip = RAJ_jungle_training_effect
-			hidden_effect = { set_technology = { jungle_warfare = 1 } }
 			hidden_effect={
 				MAN = {
-				set_technology = { jungle_warfare = 1 }
 				add_ideas = JAP_expand_the_snlf
 				}
 				division_template = {
@@ -1865,7 +1862,7 @@ focus_tree = {
 		       add_ideas= RAJ_asia_focus
 			   add_timed_idea = {
                idea = RAJ_famine
-               days = 180
+               days = 90
             }}
 			set_variable={Global.super_event=4}
 			show_super_event=yes
@@ -2465,7 +2462,7 @@ focus_tree = {
 		completion_reward = {
 			hidden_effect={	add_timed_idea={idea=main_focus_set_idea days=35}}
 			every_state = {
-				limit={OR={state=591 state=302 state=592 state=588 state=450 state=300 state=692 state=301 state=587 }}
+				limit={OR={state=591 state=713 state=712 state=302 state=592 state=588 state=450 state=300 state=692 state=301 state=587 state=294 state=548 state=544}}
 				add_dynamic_modifier = { modifier = JAP_attack days=90  }}
 		}
 	}
