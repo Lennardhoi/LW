@@ -226,7 +226,7 @@ NDefines.NNavy.RESOURCE_LENDLEASE_PRIORITY = 3
 NDefines.NNavy.RESOURCE_ORIGIN_PRIORITY = 3
 -------------------------------------
 --Combat 
-NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.052   -- global damage modifier... but some equipment is returned at end of battles see : EQUIPMENT_COMBAT_LOSS_FACTOR
+NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.048   -- global damage modifier... but some equipment is returned at end of battles see : EQUIPMENT_COMBAT_LOSS_FACTOR
 NDefines.NMilitary.LAND_COMBAT_ORG_DAMAGE_MODIFIER = 0.04
 NDefines.NMilitary.LAND_COMBAT_COLLATERAL_FACTOR = 0.003 -- vanilla is 0.005
 NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.04    -- air global damage modifier

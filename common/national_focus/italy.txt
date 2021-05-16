@@ -1467,6 +1467,7 @@ focus_tree = {
 		relative_position_id = ITA_desert_warfare_2
 		icon = GFX_focus_research
 		available = {
+			NOT={has_completed_focus=ITA_italian_air}
 			date > 1940.10.1
 		}
 		x = 0

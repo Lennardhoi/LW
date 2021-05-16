@@ -214,7 +214,7 @@ focus_tree = {
 		completion_reward = {
 
 			if={limit={country_exists = MAN}
-				MAN={add_ideas=wartime_economy
+				MAN={add_ideas=wartime_economy_man
 					add_ideas=closed_economy}
 			}
 			add_threat = 20
@@ -1588,7 +1588,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = JAP_supremacy_of_the_battlefleet
 				bonus = 1.0
-				uses = 2
+				uses = 1
 				category = bb_tech
 			}
 			custom_effect_tooltip = available_designer
@@ -1637,6 +1637,13 @@ focus_tree = {
 					rear_1_custom_slot = ship_super_heavy_battery_1
 					rear_2_custom_slot = ship_airplane_launcher_2
 				}
+			}
+			
+			add_tech_bonus = {
+				name = JAP_supremacy_of_the_battlefleet
+				bonus = 1.0
+				uses = 1
+				category = bb_tech
 			}
 			custom_effect_tooltip = JAP_yamato_tt
 			hidden_effect = {
@@ -1895,64 +1902,12 @@ focus_tree = {
 					limit={is_in_faction_with=ENG NOT={original_tag=USA}}
 					add_dynamic_modifier={modifier=pacific_war_minor}
 				}
-				if= {limit={RAJ={has_completed_focus=RAJ_the_smiling_buddha}}
-					USA = {
-						set_autonomy = {
-							target = INS
-							autonomy_state = autonomy_dominion
-						}
-						INS={
-							set_cosmetic_tag=MAL_UK
-							transfer_state=643
-							transfer_state=560
-							transfer_state=564
-							transfer_state=629
-							transfer_state=630
-							transfer_state=651
-							transfer_state=269
-							transfer_state=628
-							transfer_state=262
-							transfer_state=293
-							transfer_state=388
-							add_ideas = ins_idea
-							set_technology={infantry_weapons=1 popup=no}
-							country_event = {
-								id = japan.444
-								days=1
-							}
-						}
-					}
+				
+				if= {
+					limit = {USA={NOT={has_completed_focus=USA_swpa}}}
+					ENG = {annex_country = { target = INS transfer_troops = yes }}
 				}
-				else={USA = {
-						set_autonomy = {
-							target = INS
-							autonomy_state = autonomy_dominion
-						}
-						INS={
-							set_cosmetic_tag=MAL_UK
-							transfer_state=643
-							transfer_state=560
-							transfer_state=564
-							transfer_state=629
-							transfer_state=630
-							transfer_state=651
-							transfer_state=269
-							transfer_state=628
-							transfer_state=262
-							transfer_state=293
-							transfer_state=300
-						    transfer_state=303
-							transfer_state=388
-							add_ideas = ins_idea
-							set_technology={infantry_weapons=1 popup=no}
-							country_event = {
-								id = japan.444
-								days=1
-							}
-						}
-					}
-				}
-				effect_tooltip={ENG = {annex_country = { target = INS transfer_troops = no }}}
+				
 				hidden_effect = {
 					591 = {
 						add_compliance = 100

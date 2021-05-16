@@ -368,8 +368,8 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
 				option = LIMITED
 			}
 		}
-		hidden_trigger={OR={NOT={OR={tag=Jap tag=MAN}}
-				FROM={OR={tag=Jap tag=MAN}}}}
+		hidden_trigger={OR={NOT={OR={tag=Jap tag=MAN AND={tag=USA has_completed_focus=USA_lend_lease_act} }}
+				FROM={OR={tag=Jap tag=MAN AND={tag=USA has_completed_focus=USA_lend_lease_act}}}}}
 	}
 	if = {
 		limit = {

@@ -699,6 +699,7 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
+			date>1940.8.1
 			ENG={has_country_leader =  {
 				name = "Winston Churchill"
 				ruling_only = yes
@@ -994,7 +995,10 @@ focus_tree = {
 		icon = GFX_goal_generic_defence
 		prerequisite = { focus = USA_american_dream }
 		available = {
+			date>1940.9.1
+			NOT={has_war_with=JAP}
 		}
+		bypass = {has_war_with=JAP}
 		x = 3
 		y = 1
 		relative_position_id = USA_american_dream
@@ -1004,35 +1008,69 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-			custom_effect_tooltip= USA_swpa_tt
-			effect_tooltip = {
-				set_autonomy = {
-					target = INS
-					autonomy_state = autonomy_dominion
-				}
-				INS={
-					set_cosmetic_tag=MAL_UK
-					transfer_state=300
-					transfer_state=303
-					transfer_state=643
-					transfer_state=560
-					transfer_state=564
-					transfer_state=629
-					transfer_state=630
-					transfer_state=651
-					transfer_state=388
-					transfer_state=269
-					transfer_state=628
-					transfer_state=262
-					transfer_state=293
-					add_ideas = ins_idea
-					every_owned_state={
+			#custom_effect_tooltip= USA_swpa_tt
+			if= {limit={RAJ={has_completed_focus=RAJ_the_smiling_buddha}}
+					USA = {
+						set_autonomy = {
+							target = INS
+							autonomy_state = autonomy_dominion
+						}
 						INS={
-							give_resource_rights = { receiver = ENG state = PREV }
+							set_cosmetic_tag=MAL_UK
+							transfer_state=643
+							transfer_state=560
+							transfer_state=564
+							transfer_state=629
+							transfer_state=630
+							transfer_state=651
+							transfer_state=269
+							transfer_state=628
+							transfer_state=262
+							transfer_state=293
+							transfer_state=388
+							hidden_effect = {
+								
+							add_ideas = ins_idea
+							set_technology={infantry_weapons=1 popup=no}
+								country_event = {
+								id = japan.444
+								days=1
+							}
+							}
 						}
 					}
 				}
-			}
+				else={USA = {
+						set_autonomy = {
+							target = INS
+							autonomy_state = autonomy_dominion
+						}
+						INS={
+							set_cosmetic_tag=MAL_UK
+							transfer_state=643
+							transfer_state=560
+							transfer_state=564
+							transfer_state=629
+							transfer_state=630
+							transfer_state=651
+							transfer_state=269
+							transfer_state=628
+							transfer_state=262
+							transfer_state=293
+							transfer_state=300
+						    transfer_state=303
+							transfer_state=388
+							hidden_effect = {
+							add_ideas = ins_idea
+							set_technology={infantry_weapons=1 popup=no}
+								country_event = {
+									id = japan.444
+									days=1
+								}
+							}
+						}
+					}
+				}
 		}
 	}
 	focus = {

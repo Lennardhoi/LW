@@ -728,7 +728,10 @@
 					}
 				}
 			}
-			ROM = { country_event = { id = wtt_germany.72 }
+			
+			ROM = { 
+			add_relation_modifier = { target = GER modifier = ROM_oil_agreement}
+				country_event = { id = wtt_germany.72 }
 				set_temp_variable = {neutral=party_popularity@neutrality}
 				multiply_temp_variable={neutral=100}
 				set_temp_variable = {fasc=party_popularity@fascism}
