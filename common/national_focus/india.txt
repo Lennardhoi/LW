@@ -1677,12 +1677,26 @@ completion_reward = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			396={set_building_level = {
+			396={
+				set_building_level = {
 					type = naval_base
 					level = 20
 					instant_build = yes
 					province =10818
-					}}
+				}
+				set_building_level = {
+					type = coastal_bunker
+					level = 5
+					instant_build = yes
+					province =10818
+				}
+				set_building_level = {
+					type = bunker
+					level = 5
+					instant_build = yes
+					province =10818
+				}
+			}
 		}
 	}
 	

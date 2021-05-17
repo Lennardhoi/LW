@@ -25,7 +25,7 @@ ideas = {
 				conscription = 0.02
 				stability_factor = 0.1
 				war_support_factor = 0.1
-				consumer_goods_factor = 0.025
+				#consumer_goods_factor = 0.025
 				}}
 		GER_triumph_in_africa = {
 			allowed = {
@@ -298,8 +298,8 @@ ideas = {
 			removal_cost = -1
 			targeted_modifier = {
 				tag = FRA
-				attack_bonus_against = 0.05
-				defense_bonus_against = 0.05
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
 			}
 		}
 		GER_barbarossa = {
@@ -796,6 +796,7 @@ ideas = {
 			}
 		}
 		joseph_goebbels = {
+		    cost = 75
 			allowed = {
 				original_tag = GER
 			}
@@ -899,7 +900,7 @@ ideas = {
 					hard_attack = 0.1
 					armor_value = 0.1
 					hardness = 0.05
-					build_cost_ic = 0.05
+					build_cost_ic = 0.075
 				}
 				medium_tank_aa_equipment = {
 					reliability = -0.1

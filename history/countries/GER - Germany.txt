@@ -203,11 +203,6 @@ add_equipment_to_stockpile = {
 	producer = GER
 }
 add_equipment_to_stockpile = {
-	type = fighter_equipment_1
-	amount = 1000
-	producer = GER
-}
-add_equipment_to_stockpile = {
 	type = transport_plane_equipment_1
 	amount = 10
 	producer = GER
@@ -220,6 +215,11 @@ add_equipment_to_stockpile = {
 add_equipment_to_stockpile = {
 	type = tac_bomber_equipment_1
 	amount = 500
+	producer = GER
+}
+add_equipment_to_stockpile = {
+	type = fighter_equipment_1
+	amount = 1000
 	producer = GER
 }
 add_equipment_to_stockpile = {
@@ -813,8 +813,8 @@ if = {
 		parent_version = 0
 		modules = {
 			fixed_ship_torpedo_slot = ship_torpedo_sub_2
-			fixed_ship_engine_slot = sub_ship_engine_1
-			rear_1_custom_slot = empty
+			fixed_ship_engine_slot = sub_ship_engine_2
+			rear_1_custom_slot = ship_torpedo_sub_2
 		}
 	}
 	create_equipment_variant = {

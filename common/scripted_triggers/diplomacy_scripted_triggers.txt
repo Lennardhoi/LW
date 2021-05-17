@@ -368,8 +368,25 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
 				option = LIMITED
 			}
 		}
-		hidden_trigger={OR={NOT={OR={tag=Jap tag=MAN}}
-				FROM={OR={tag=Jap tag=MAN}}}}
+		
+		hidden_trigger={
+			OR={
+				AND={tag=JAP FROM={tag=MAN}}
+				AND={tag=MANFROM={tag=JAP}}
+				NOT={
+					OR={
+						tag=Jap 
+						tag=MAN 
+						AND={
+							tag=USA NOT = {has_completed_focus=USA_lend_lease_act}
+						}
+					}
+					FROM={OR={tag=Jap tag=MAN AND={
+							tag=USA NOT = {has_completed_focus=USA_lend_lease_act}
+						}}}
+				}
+				}
+			}
 	}
 	if = {
 		limit = {
@@ -425,11 +442,25 @@ DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = {
 				option = LIMITED
 			}
 		}
-		hidden_trigger={OR = {
+		
+		hidden_trigger={
+			OR={
+				AND={tag=JAP FROM={tag=MAN}}
+				AND={tag=MANFROM={tag=JAP}}
 				NOT={
-					From={OR={tag=Jap tag=MAN}}}
-				OR={tag=Jap tag=MAN}
-				}}
+					OR={
+						tag=Jap 
+						tag=MAN 
+						AND={
+							tag=USA NOT = {has_completed_focus=USA_lend_lease_act}
+						}
+					}
+					FROM={OR={tag=Jap tag=MAN AND={
+							tag=USA NOT = {has_completed_focus=USA_lend_lease_act}
+						}}}
+				}
+				}
+			}
 	}
 	if = {
 		limit = {

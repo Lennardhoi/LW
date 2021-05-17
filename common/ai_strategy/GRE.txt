@@ -1,0 +1,25 @@
+GRE_defend_athens = {
+	enable = {
+		original_tag = GRE
+	}
+	
+	ai_strategy = {
+		type = garrison
+		value = 100
+	}
+	
+}
+GRE_build_stuff= {
+	enable = {
+		#date>1939.1.1
+		OR = {original_tag = GRE original_tag = POL original_tag = HOL original_tag = BEL original_tag = NOR original_tag = YUG}
+	}
+	allowed = {
+		OR = {original_tag = GRE original_tag = POL original_tag = HOL original_tag = BEL original_tag = NOR original_tag = YUG}
+	}
+	
+	ai_strategy = {
+        type = force_build_armies
+        value = 100
+    }
+}

@@ -160,8 +160,9 @@ focus_tree = {
 		    add_tech_bonus = {
 				name = land_doc_bonus
 				bonus = 1.0
-				uses = 1
-				category = land_doctrine
+				uses = 2
+				category = cat_mobile_warfare
+				category = tank_land_doctrine
 			}
 			add_tech_bonus = {
 				name = CAN_cmp_truck
@@ -191,8 +192,9 @@ focus_tree = {
 			add_tech_bonus = {
 				name = land_doc_bonus
 				bonus = 1.0
-				uses = 1
-				category = land_doctrine
+				uses = 2				
+				category = cat_mobile_warfare
+				category = tank_land_doctrine
 			}
 			add_tech_bonus = {
 				name = armor_bonus
@@ -639,7 +641,7 @@ focus_tree = {
 			create_corps_commander = {
 				name = "Miles Dempsey"
 				picture = "Portrait_Britain_Miles_Dempsey.dds"
-				traits = { brilliant_strategist infantry_leader naval_invader trickster trait_engineer }
+				traits = { brilliant_strategist infantry_leader naval_invader trickster trait_engineer skilled_staffer }
 				skill = 7
 				attack_skill = 7
 				defense_skill = 4
@@ -1961,43 +1963,6 @@ focus_tree = {
 		relative_position_id = uk_commonwealth_focus
 		cost = 5
 		available_if_capitulated = yes
-		complete_tooltip = {
-			random_country = {
-				limit = {
-					original_tag = CAN
-					is_in_faction_with = ROOT
-				}
-				add_opinion_modifier = { target = ENG modifier = aided_industry }
-				every_state = { limit = { has_state_flag = ENG_uk_canada_focus_2IC }
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = industrial_complex
-						level = 2
-						instant_build = yes
-					}
-				}
-				every_state = { limit = { has_state_flag = ENG_uk_canada_focus_1IC }
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-				}
-				every_state = { limit = { has_state_flag = ENG_uk_canada_focus_1dockyard }
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = dockyard
-						level = 1
-						instant_build = yes
-					}
-				}
-				add_autonomy_ratio = {
-					value = -0.05
-					localization = uk_canada_focus
-				}
-			}
-		}
 		completion_reward = {
 			CAN = {
 				add_opinion_modifier = { target = ENG modifier = aided_industry }
@@ -2021,51 +1986,17 @@ focus_tree = {
 					limit = {
 						free_building_slots = {
 							building = industrial_complex
-							size > 0
+							size > 2
 							include_locked = yes
 						}
 					}
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = industrial_complex
-						level = 1
+						level = 3
 						instant_build = yes
 					}
 					set_state_flag = ENG_uk_canada_focus_1IC
-				}
-				random_owned_controlled_state = {
-					limit = {
-						is_coastal = yes
-						free_building_slots = {
-							building = dockyard
-							size > 0
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = dockyard
-						level = 1
-						instant_build = yes
-					}
-					set_state_flag = ENG_uk_canada_focus_1dockyard
-				}
-				random_owned_controlled_state = {
-					limit = {
-						is_coastal = yes
-						free_building_slots = {
-							building = dockyard
-							size > 0
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = dockyard
-						level = 1
-						instant_build = yes
-					}
-					set_state_flag = ENG_uk_canada_focus_1dockyard
 				}
 				add_autonomy_ratio = {
 					value = -0.05

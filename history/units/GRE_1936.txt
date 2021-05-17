@@ -13,6 +13,13 @@
 		infantry = { x = 2 y = 2 }
 		infantry = { x = 2 y = 3 }
 	}
+	
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+		anti_air = { x = 0 y = 3  }
+	}
 }
 units = {
 }
@@ -24,7 +31,25 @@ instant_effect = {
 		}
 		requested_factories = 1
 		progress = 0.22
-		efficiency = 100
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = anti_air_equipment_1
+			creator = "GRE"
+		}
+		requested_factories = 1
+		progress = 0.22
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "GER"
+		}
+		requested_factories = 1
+		progress = 0.3
+		efficiency = 50
 	}
 	add_equipment_production = {
 		equipment = {
@@ -33,7 +58,7 @@ instant_effect = {
 		}
 		requested_factories = 1
 		progress = 0.56
-		efficiency = 100
+		efficiency = 50
 	}
 }
 

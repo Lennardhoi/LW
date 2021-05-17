@@ -12,7 +12,7 @@ focus_tree = {
 	focus = {
 		id = ITA_naval_rearmament
 		icon = GFX_focus_GER_naval_rearm
-		x = 27
+		x = 28
 		y = 0
 		cost = 5
 		ai_will_do = {
@@ -686,11 +686,11 @@ focus_tree = {
 	focus = {
 		id = ITA_mili
 		icon = GFX_goal_generic_production2
-		prerequisite = { focus = ITA_stab }
-		relative_position_id = ITA_stab
+		prerequisite = { focus = ITA_nat }
+		relative_position_id = ITA_nat
 		available = {
 		}
-		x = 0
+		x = -2
 		y = 1
 		cost = 5
 		search_filters = { FOCUS_FILTER_ANNEXATION }
@@ -717,7 +717,7 @@ focus_tree = {
 		id = ITA_moder
 		icon = GFX_goal_generic_positive_trade_relations
 		prerequisite = { focus = ITA_nat  }
-		prerequisite = { focus = ITA_stab }
+		#prerequisite = { focus = ITA_stab }
 		relative_position_id = ITA_nat
 		available = {
 		}
@@ -1062,14 +1062,14 @@ focus_tree = {
 					is_core_of = ITA
 					free_building_slots = {
 						building = industrial_complex
-						size > 3
+						size > 4
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = industrial_complex
-					level = 4
+					level = 5
 					instant_build = yes
 				}
 			}
@@ -1078,14 +1078,14 @@ focus_tree = {
 					is_core_of = GER
 					free_building_slots = {
 						building = industrial_complex
-						size > 3
+						size > 4
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 5
 				add_building_construction = {
 					type = industrial_complex
-					level = 4
+					level = 5
 					instant_build = yes
 				}
 			}
@@ -1467,6 +1467,7 @@ focus_tree = {
 		relative_position_id = ITA_desert_warfare_2
 		icon = GFX_focus_research
 		available = {
+			NOT={has_completed_focus=ITA_italian_air}
 			date > 1940.10.1
 		}
 		x = 0
@@ -1478,12 +1479,35 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = ITA_motorized
-		icon = GFX_focus_ITA_tank
+		id = ITA_armored_effort
+		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = ITA_modernized_army }
 		x = -4
 		y = 1
 		relative_position_id = ITA_modernized_army
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			army_experience = 100
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.1
+				uses = 2
+				category = armor
+			}
+		}
+	}
+	focus = {
+		id = ITA_motorized
+		icon = GFX_focus_ITA_tank
+		prerequisite = { focus = ITA_armored_effort }
+		x = 0
+		y = 1
+		relative_position_id = ITA_armored_effort
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -1501,33 +1525,10 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = ITA_armored_effort
-		icon = GFX_goal_generic_army_tanks
-		prerequisite = { focus = ITA_motorized }
-		x = 0
-		y = 1
-		relative_position_id = ITA_motorized
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {
-			army_experience = 5
-			add_tech_bonus = {
-				name = armor_bonus
-				bonus = 1.0
-				uses = 2
-				category = armor
-			}
-		}
-	}
-	focus = {
 		id = ITA_air_innovation
 		icon = GFX_goal_generic_build_airforce
 		text = "Regia Aeronautica"
-		x = 20
+		x = 21
 		y = 0
 		cost = 5
 		ai_will_do = {
@@ -1594,7 +1595,9 @@ focus_tree = {
 		id = ITA_german_air_cooperation
 		icon = GFX_focus_ITA_german_air_cooperation
 		prerequisite = { focus = ITA_naval_air_effort }
-		x = 0
+		
+		mutually_exclusive = { focus = ITA_italian_air}
+		x = -1
 		y = 1
 		relative_position_id = ITA_naval_air_effort
 		cost = 10
@@ -1608,6 +1611,37 @@ focus_tree = {
 				modifier = ita_air_sharing
 			}
 			custom_effect_tooltip=ITA_german_air_cooperation_tt
+		}
+	}
+	focus = {
+		id = ITA_italian_air
+		icon = GFX_focus_GER_air_innovation_2
+		prerequisite = { focus = ITA_naval_air_effort }
+		mutually_exclusive = { focus = ITA_german_air_cooperation}
+		x = 1
+		y = 1
+		relative_position_id = ITA_naval_air_effort
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_research_slot = 1
+			add_political_power = 100
+			air_experience = 1000
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1
+				uses = 1
+				technology=fighter2
+			}
+			add_tech_bonus = {
+				name = fighter_bonus
+				bonus = 1
+				uses = 1
+				technology=cas2
+			}
 		}
 	}
 	focus = {
@@ -1666,9 +1700,10 @@ focus_tree = {
 		id = ITA_air_innovation_2
 		icon = GFX_goal_generic_build_airforce
 		text = air_innovation_2
-		prerequisite = {  focus = ITA_german_air_cooperation }
+		prerequisite = {  focus = ITA_german_air_cooperation focus = ITA_italian_air}
 		available = {date >1941.1.1}
-		x = 0
+		bypass={has_completed_focus = ITA_italian_air}
+		x = 1
 		y = 1
 		relative_position_id = ITA_german_air_cooperation
 		cost = 5
@@ -1721,8 +1756,10 @@ focus_tree = {
 		prerequisite = { focus = ITA_air_innovation_2 }
 		x = 0
 		y = 1
-		available = {date >1941.3.1
-			has_tech=cas2}
+		available = {
+			OR= { has_completed_focus= ITA_italian_air
+				date >1941.3.1}
+			     has_tech=cas2 has_tech=fighter2}
 		relative_position_id = ITA_air_innovation_2
 		cost = 5
 		ai_will_do = {
@@ -2080,8 +2117,8 @@ focus_tree = {
 				date > 1941.2.21
 			}
 		}
-		relative_position_id=ITA_armored_effort
-		prerequisite= {focus=ITA_armored_effort}
+		relative_position_id=ITA_motorized
+		prerequisite= {focus=ITA_motorized}
 		x = 0
 		y = 1
 		cost = 5
