@@ -357,6 +357,61 @@ JAP_interservice_rivalry = {
 			add_ideas=JAP_draft_exemptions
 		}
 	}
+	JAP_raiding_regiments = {
+		icon = generic_tank
+		available = {
+			NOT = {
+				has_country_flag = JAP_war_conferences_cd
+			}
+			#NOT = {
+			#	has_country_flag = JAP_special_air_landing_force
+			#}
+		}
+		visible = {
+			#NOT = {
+			#	has_country_flag = JAP_special_air_landing_force
+			#}
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 180
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			set_country_flag = { flag = JAP_war_conferences_cd value = 1 days = 180 }
+			set_country_flag = JAP_raiding_regiments
+			JAP_interservice_rivalry_towards_army = yes
+		}
+	}
+	JAP_special_air_landing_force = {
+		icon = generic_naval
+		available = {
+			NOT = {
+				has_country_flag = JAP_war_conferences_cd
+			}
+			#NOT = {
+			#	has_country_flag = JAP_raiding_regiments
+			#}
+		}
+		visible = {
+			#NOT = {
+			#	has_country_flag = JAP_raiding_regiments
+			#}
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 180
+		ai_will_do = {
+			factor = 1
+		}
+		complete_effect = {
+			set_country_flag = { flag = JAP_war_conferences_cd value = 1 days = 180 }
+			set_country_flag = JAP_special_air_landing_force
+			JAP_interservice_rivalry_towards_navy = yes
+			add_ideas=JAP_special_air_landing_force
+		}
+	}
 	JAP_favor_army = {
 		icon = generic_tank
 		available = {
