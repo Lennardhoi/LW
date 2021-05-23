@@ -372,7 +372,7 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
 		hidden_trigger={
 			OR={
 				AND={tag=JAP FROM={tag=MAN}}
-				AND={tag=MANFROM={tag=JAP}}
+				AND={tag=MAN FROM={tag=JAP}}
 				NOT={
 					OR={
 						tag=Jap 
@@ -446,7 +446,7 @@ DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = {
 		hidden_trigger={
 			OR={
 				AND={tag=JAP FROM={tag=MAN}}
-				AND={tag=MANFROM={tag=JAP}}
+				AND={tag=MAN FROM={tag=JAP}}
 				NOT={
 					OR={
 						tag=Jap 

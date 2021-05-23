@@ -337,7 +337,7 @@ focus_tree = {
 		
 		completion_reward = {
 				custom_effect_tooltip="This will start the industry relocation. Every 10 days two civilian factories and two military factories will be moved from states at the front to the Ural."
-				
+				add_offsite_building = { type = industrial_complex level = 15 }
 			remove_ideas = peace_training
 			add_ideas=Fast_Training
 			add_ideas = SOV_the_great_war
@@ -1832,35 +1832,12 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SOV_research_city_experiment
-		icon = GFX_focus_SOV_closed_city_network
-		prerequisite = { focus = SOV_lessons_of_war }
-		available = {
-		}
-		x = -2
-		y = 1
-		relative_position_id = SOV_lessons_of_war
-		cost = 5
-		ai_will_do = {
-			factor = 1
-		}
-		available_if_capitulated = yes
-		completion_reward = {
-			add_tech_bonus = {
-				name = nuclear_bonus
-				bonus = 2.0
-				uses = 3
-				category = nuclear
-			}
-		}
-	}
-	focus = {
 		id = SOV_diversify_the_programme
 		icon = GFX_focus_SOV_rocket
 		prerequisite = { focus = SOV_lessons_of_war }
 		available = {
 		}
-		x = 2
+		x = 1
 		y = 1
 		relative_position_id = SOV_lessons_of_war
 		cost = 5
@@ -1878,13 +1855,101 @@ focus_tree = {
 			}
 		}
 	}
+	
+	focus = {
+		id = SOV_research_city_experiment
+		icon = GFX_focus_SOV_closed_city_network
+		prerequisite = { focus = SOV_diversify_the_programme }
+		available = {
+		}
+		x = 0
+		y = 1
+		relative_position_id = SOV_diversify_the_programme
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = nuclear_bonus
+				bonus = 2.0
+				uses = 3
+				category = nuclear
+			}
+		}
+	}
+	focus = {
+		id = SOV_coal_liquidization
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus =  SOV_lessons_of_war }
+		x = -3
+		y = 1
+		relative_position_id = SOV_lessons_of_war
+		cost = 5
+		ai_will_do = {
+			factor = 4
+		}
+		available = {
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
+		completion_reward = {
+			set_technology= {synth_oil_experiments=1 popup=no}
+			modify_building_resources = {
+				building = synthetic_refinery
+				resource = rubber
+				amount = 2
+			}
+		}
+	}
+	focus = {
+		id = SOV_synthetic_rubber
+		icon = GFX_focus_GER_synthetic_rubber
+		prerequisite = { focus = SOV_coal_liquidization }
+		x = 0
+		y = 1
+		relative_position_id = SOV_coal_liquidization
+		cost = 5
+		ai_will_do = {
+			factor = 4
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				name = SOV_coal_liquidization
+				bonus = 3.0
+				uses = 2
+				category = synth_resources
+			}
+			496 = {
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 2
+					instant_build = yes
+				}
+			}
+			370 = {
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 2
+					instant_build = yes
+				}
+			}
+			573 = {
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
 	focus = {
 		id = SOV_heavy_tonk
 		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = SOV_lessons_of_war }
 		available = {
 		}
-		x = 0
+		x = 3
 		y = 1
 		relative_position_id = SOV_lessons_of_war
 		cost = 5
@@ -1899,12 +1964,12 @@ focus_tree = {
 	focus = {
 		id = SOV_prepare_japan
 		icon = GFX_goal_generic_build_airforce
-		prerequisite = { focus = SOV_heavy_tonk }
+		prerequisite = { focus = SOV_lessons_of_war }
 		available = {
 		}
-		x = -2
+		x = -1
 		y = 1
-		relative_position_id = SOV_heavy_tonk
+		relative_position_id = SOV_lessons_of_war 
 		cost = 3
 		ai_will_do = {
 			factor = 1
@@ -1930,15 +1995,15 @@ focus_tree = {
 	focus = {
 		id = SOV_doctrine
 		icon = GFX_focus_generic_license_production
-		prerequisite = { focus = SOV_heavy_tonk }
+		prerequisite = { focus = SOV_heavy_tonk}
 		available = {
 		date > 1942.06.01
 		has_tech = mobile_warfare
 		}
 		cancel_if_invalid = yes
-		x = 2
-		y = 2
-		relative_position_id = SOV_lessons_of_war
+		x = 0
+		y = 1
+		relative_position_id = SOV_heavy_tonk
 		cost = 0
 		ai_will_do = {
 			factor = 1

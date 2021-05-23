@@ -1371,9 +1371,9 @@ technologies = {
 		xp_research_cost = 75
 		xp_research_bonus = 1.00
 		category_army = {
-			max_organisation = 7
+			max_organisation = 10
 		}
-		max_planning = 0.1
+		max_planning = 0.15
 		enable_tactic = tactic_planned_attack
 		path = {
 			leads_to_tech = central_planning
@@ -1412,6 +1412,11 @@ technologies = {
 		xp_research_cost = 75
 		xp_research_bonus = 1.00
 		max_planning = 0.10
+		
+		category_support_battalions = {
+			soft_attack = 0.10
+			hard_attack = 0.10
+		}
 		#terrain_penalty_reduction = 0.1
 		path = {
 			leads_to_tech = grand_mechanized_offensive
@@ -1821,7 +1826,6 @@ technologies = {
 			leads_to_tech = infiltration_in_depth
 			research_cost_coeff = 1
 		}
-		cas_damage_reduction = 0.20
 		doctrine = yes
 		research_cost = 4.00
 		categories = {
@@ -1859,7 +1863,8 @@ technologies = {
 		categories = {
 			land_doctrine
 			cat_grand_battle_plan
-		}
+		}		
+		terrain_penalty_reduction = 0.1
 		folder = {
 			name = land_doctrine_folder
 			position = { x = 2 y = 18 }
@@ -2444,6 +2449,11 @@ technologies = {
 		xp_research_bonus = 1.00
 		category_light_infantry = {
 			defense = 0.10
+		}
+		category_support_battalions = {
+			max_organisation = 5
+			soft_attack = 0.15
+			hard_attack = 0.15
 		}
 		land_reinforce_rate = 0.05
 		path = {
