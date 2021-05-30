@@ -5,18 +5,20 @@ country_event = {
 	is_triggered_only = yes
 	fire_only_once = yes
 	immediate = {
-		if = {
-			limit = { has_idea = FRA_inefficient_economy_2 }
-			swap_ideas = {
-				remove_idea = FRA_inefficient_economy_2
-				add_idea = FRA_inefficient_economy_1
+		FRA = {
+			if = {
+				limit = { has_idea = FRA_inefficient_economy_2 }
+				swap_ideas = {
+					remove_idea = FRA_inefficient_economy_2
+					add_idea = FRA_inefficient_economy_1
+				}
 			}
-		}
-		else_if = {
-			limit = {
-				has_idea = FRA_inefficient_economy_1
+			else_if = {
+				limit = {
+					has_idea = FRA_inefficient_economy_1
+				}
+				remove_ideas = FRA_inefficient_economy_1
 			}
-			remove_ideas = FRA_inefficient_economy_1
 		}
 	}
 	option = {
