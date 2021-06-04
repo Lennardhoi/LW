@@ -29,6 +29,7 @@ SOV_industry_relocation = {
 						SOV_relocate_civ=yes
 						}
 			}
+			clear_variable=relocatedmil
 			if={
 				limit={check_variable = {relocation<100}}
 				activate_mission=SOV_relocation
