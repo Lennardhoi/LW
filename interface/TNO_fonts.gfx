@@ -1,0 +1,50 @@
+bitmapfonts = {
+
+	# Global text colors used in the entire game, for use in loc files ex: "§G Text Text§!"
+
+	bitmapfont = {
+		name = "aldrich_18_outline"
+		path = "gfx/fonts/aldrich_18_outline"
+		color = 0xffb2c9c2
+		textcolors = {
+			M = { 35 206 255 }
+			L = { 195 176 145 }
+			W = { 255 255 255 }
+			B = { 47 138 135 }
+			G = { 133 234 142 }
+			R = { 224 130 130 }
+			b = { 0 0 0 }
+			g = { 176 176 176 }
+			Y = { 220 218 80 }
+			H = { 220 218 80 }
+			T = { 47 138 135 }
+			O = { 234 161 14 } #orange, for npp
+			P = { 169 27 79 } #pink, for c-npp
+			r = { 132 50 0 } #brown, for yockeys
+			w = { 211 201 0 } #yellow, for republicans (different from other yellow)
+			e = { 146 0 0 } #red, for l-npp (different from other red)
+			p = { 204 0 204 }
+			j = { 153 102 51 } #Brown-ish
+			S = { 255 128 114 } #Salmon
+			x = { 255 0 0 } #uber-red
+			y = { 0 255 0} #uber-green
+			z = { 0 0 255 } #uber-blu
+			l = { 147 112 219 } #Lavender, per Pacifica request
+			n = { 60 180 60 } #Dark Green
+			q = { 65 65 65 } #Dark Grey
+			k = { 210 180 140 } #Light Brown
+			D = { 101 235 246 } #Default color I think
+			Q = { 0 84 142 } #Prussian blue, for speer econ GUI
+		}
+	}
+	bitmapfont = {
+		name = "Bomb_24"
+		path = "gfx/fonts/Bomb_24"
+		color = 0xffffffff
+		textcolors = {
+			W = { 255 255 255 }
+			b = { 0 0 0 }
+		}
+	}
+
+}
