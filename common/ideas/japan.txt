@@ -306,6 +306,7 @@ ideas = {
 				war_support_factor = 0.2
 				mobilization_laws_cost_factor = -0.25
 				justify_war_goal_time = -0.2
+				special_forces_min = 112
 				#research_speed_factor = -0.05
 				#production_speed_industrial_complex_factor = -0.1
 			}
@@ -507,7 +508,8 @@ ideas = {
 			removal_cost = -1
 			picture = generic_naval_manufacturer_1
 			modifier = {
-			land_reinforce_rate = 0.1
+				land_reinforce_rate = 0.1
+				special_forces_min = 112
 			}
 			equipment_bonus = {
 				category_special_forces = {

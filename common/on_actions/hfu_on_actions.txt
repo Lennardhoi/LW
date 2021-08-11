@@ -66,6 +66,14 @@ on_actions = {
 			}}
 	on_startup = {
 	effect= {	
+	every_state= {
+			limit= {OR = {state =416 state=582 state=414 state = 415 state=412 state=418 state =420 state =419 state =478 state = 596 state =599 state = 595 state=278 state=594 state = 576 state = 476}}
+			add_state_modifier = {
+   			modifier = {
+    	    			max_planning_factor = -1
+    			}
+		}
+		}
 			# if = {
 				# limit= {CRO={is_ai=yes}}
 				# YUG={transfer_state=713}
@@ -228,6 +236,17 @@ on_actions = {
 	}
 	on_monthly={
 		effect={
+			#set_temp_variable = {cap=modifier@special_forces_min}
+			#add_to_temp_variable = {cap=112}
+			#set_temp_variable = {bats= num_battalions_with_type@special_forces}
+			#if={
+			#limit {check_variable = {cap<bats}}
+			#add_ideas=over_limit
+			#}
+			#if={
+			#limit {has_idea=over_limit NOT = {check_variable = {cap<bats}}}
+			#remove_ideas=over_limit
+			#}
 			if={limit = {is_in_faction_with = GER}
 				JAP={
 					share_intel_with_allies=yes

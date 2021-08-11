@@ -38,6 +38,21 @@ tactic_basic_attack_island = {
 	base =  { factor = 999 }
 	picture = attack
 }
+tactic_planning_naval_invasion = {
+	
+	is_attacker = yes
+	trigger = { # combined scope for both country and combatant
+		is_attacker = yes
+		phase = no
+		is_amphibious_invasion = yes
+		min_planning > 0.05
+	}
+		
+	active = yes
+	attacker = -0.90
+	base =  { factor = 999 }
+	picture = attack
+}
 tactic_basic_attack = {
 
 	is_attacker = yes

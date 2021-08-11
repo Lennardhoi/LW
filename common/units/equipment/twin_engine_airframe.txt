@@ -519,6 +519,7 @@ equipments = {
     		is_convertable = yes
     		picture = archetype_strat_bomber_equipment
     		is_buildable = no
+    		carrier_capable = yes
     		type = { scout_plane }
     		group_by = archetype
     		sprite = scout_plane
@@ -547,6 +548,8 @@ equipments = {
     		year = 1936
     		archetype = scout_plane_equipment
     		priority = 100
+
+    		carrier_capable = yes
     		can_convert_from = {
     			scout_plane_equipment_1 
     		}
@@ -580,6 +583,8 @@ equipments = {
     	}
     	scout_plane_equipment_2 = {
     		year = 1940
+
+    		carrier_capable = yes
     		can_convert_from = {
     			scout_plane_equipment_2_f 
     		}
