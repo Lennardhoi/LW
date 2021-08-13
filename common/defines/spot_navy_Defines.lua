@@ -69,8 +69,8 @@ NDefines.NNavy.ESCAPE_SPEED_HIDDEN_SUB = 0.5									-- hidden subs get faster e
 NDefines.NNavy.ESCAPE_SPEED_SUB_BASE = -0.20
 NDefines.NNavy.NAVAL_COMBAT_AIR_SUB_DETECTION_FACTOR = 0.1
 NDefines.NNavy.DETECTION_CHANCE_MULT_AIR_SUPERIORITY_BONUS = 0.3
-NDefines.NNavy.COMBAT_DAMAGE_TO_STR_FACTOR = 0.23 -- casting damage value to ship strength multiplier. Use it ot balance the game difficulty.
-NDefines.NNavy.COMBAT_DAMAGE_TO_ORG_FACTOR = 0.69	--- casting damage value to ship organisation multiplier. Use it to balance the game difficulty.
+NDefines.NNavy.COMBAT_DAMAGE_TO_STR_FACTOR = 0.20 -- casting damage value to ship strength multiplier. Use it ot balance the game difficulty.
+NDefines.NNavy.COMBAT_DAMAGE_TO_ORG_FACTOR = 0.65	--- casting damage value to ship organisation multiplier. Use it to balance the game difficulty.
 NDefines.NNavy.MAX_ORG_ON_MANUAL_MOVE = 1.0	-- org will clamped to this ratio on manual move
 NDefines.NNavy.TRAINING_EXPERIENCE_FACTOR = 0.6
 NDefines.NNavy.UNIT_TRANSFER_DETECTION_CHANCE_BASE = 1.0  -- unit transfer and naval invasion base chance detection percentage (if this fails, no detection is done on that tick)
@@ -79,7 +79,7 @@ NDefines.NNavy.NAVAL_INVASION_SPOTTING_SPEED_MULT = 10.0	-- spotting speed mult 
 NDefines.NNavy.BASE_SPOTTING_EFFECT_FOR_INITIAL_UNIT_TRANSFER_SPOTTING = 2		-- same as BASE_SPOTTING_EFFECT_FOR_INITIAL_CONVOY_SPOTTING, but for naval transfer convoys
 NDefines.NNavy.BASE_SPOTTING_EFFECT_FOR_INITIAL_NAVAL_INVASION_SPOTTING = 2	-- same as BASE_SPOTTING_EFFECT_FOR_INITIAL_CONVOY_SPOTTING, but for naval invasion convoys
 
-
+NDefines.NNavy.NAVAL_INVASION_PREPARE_HOURS = 84
 NDefines.NNavy.ORG_COST_WHILE_MOVING = { -- org cost while the ships are moving
 		0.4, -- HOLD
 		0.4, -- PATROL		
@@ -104,7 +104,7 @@ NDefines.NNavy.MISSION_SUPREMACY_RATIOS = { -- supremacy multipliers for differe
 		0.0, -- RESERVE_FLEET
 		0.4, -- NAVAL_INVASION_SUPPORT
 	}
-NDefines.NNavy.CONVOY_DEFENSE_MAX_CONVOY_TO_SHIP_RATIO = 15.0		-- each ship in convoy defense mission can at most cover this many convoys without losing efficiency
+NDefines.NNavy.CONVOY_DEFENSE_MAX_CONVOY_TO_SHIP_RATIO = 20.0		-- each ship in convoy defense mission can at most cover this many convoys without losing efficiency
 NDefines.NNavy.CONVOY_ROUTE_SIZE_CONVOY_SCALE = 0.4     -- scales impact of convoy route size (0 to turn off)
 NDefines.NNavy.SUPREMACY_PER_SHIP_PER_MANPOWER = 0.07						-- supremacy of a ship is calculated using its IC, manpower and a base define
 NDefines.NNavy.SUPREMACY_PER_SHIP_BASE = 15.0
@@ -116,6 +116,6 @@ NDefines.NAir.COMBAT_DAMAGE_SCALE_CARRIER = 1    -- same as above but used insid
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_STR = 1.0
 NDefines.NAir.NAVAL_KAMIKAZE_DAMAGE_MULT = 5.0  -- vanilla is like 20
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_ORG = 0.5
-NDefines.NAir.NAVAL_STRIKE_DETECTION_BALANCE_FACTOR = 0.4		-- Value used to scale the surface_visibility stats to balance the gameplay, so 100% detection chance still won't spam the strikes.
+NDefines.NAir.NAVAL_STRIKE_DETECTION_BALANCE_FACTOR = 0.2		-- Value used to scale the surface_visibility stats to balance the gameplay, so 100% detection chance still won't spam the strikes.
 NDefines.NAir.NAVAL_STRIKE_CARRIER_MULTIPLIER = 3 --was 2.5 but i increased overall naval damage        -- damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)	
 NDefines.NAir.DISRUPTION_FACTOR_CARRIER = 3.0

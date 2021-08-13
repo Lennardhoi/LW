@@ -256,7 +256,7 @@ NDefines.NCountry.BASE_MOBILIZATION_SPEED = 0.02
 --NDefines.NCountry.SUPPLY_BONUS_FROM_INPUT = 0 --not sure yet
 --Halving overall fuel
 NDefines.NMilitary.ARMY_FUEL_COST_MULT = 0.22 --0.5
-NDefines.NAir.FUEL_COST_MULT = 0.15 --0.35
+NDefines.NAir.FUEL_COST_MULT = 0.17 --0.35
 NDefines.NNavy.FUEL_COST_MULT = 0.04 --0.1
 NDefines.NCountry.BASE_FUEL_GAIN = 12		--was 30 before					-- base amount of fuel gained hourly, independent of excess oil
 NDefines.NCountry.BASE_FUEL_GAIN_PER_OIL = 0.8 --vanilla 2
