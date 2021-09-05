@@ -931,7 +931,7 @@ technologies = {
 		}
 		folder = {
 			name = infantry_folder
-			position = { x = 5 y = @1936 }
+			position = { x = 4 y = @1936 }
 		}
 		categories = {
 			jaeger_tech
@@ -957,7 +957,7 @@ technologies = {
 		}
 		folder = {
 			name = infantry_folder
-			position = { x = 5 y = @1939 }
+			position = { x = 4 y = @1939 }
 		}
 		categories = {
 			jaeger_tech
@@ -975,7 +975,7 @@ technologies = {
 		}
 		folder = {
 			name = infantry_folder
-			position = { x = 5 y = @1943 }
+			position = { x = 4 y = @1943 }
 		}
 		categories = {
 			jaeger_tech
@@ -983,6 +983,7 @@ technologies = {
 		}
 	}
 	jungletroops = {
+		allow_branch={always=no}
 		enable_subunits = {
 			jungletroop
 		}
@@ -1062,6 +1063,7 @@ technologies = {
 		}
 	}
 	shocktroops = {
+		allow_branch={always=no}
 		enable_subunits = {
 			shocktroop
 		}
@@ -1141,6 +1143,7 @@ technologies = {
 		}
 	}
 	desertinfantry_at = {
+		allow_branch={always=no}
 		enable_subunits = {
 			desertinfantry
 		}
