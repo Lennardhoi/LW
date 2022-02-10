@@ -2,6 +2,15 @@
 # If adding new technology, make sure they are uniquely named.
 
 technology_categories = {
+	basic_medium_tank_chassis
+	improved_medium_tank_chassis
+	advanced_medium_tank_chassis
+	basic_light_tank_chassis
+	improved_light_tank_chassis
+	advanced_light_tank_chassis
+	basic_heavy_tank_chassis
+	improved_heavy_tank_chassis
+	advanced_heavy_tank_chassis
 	light_air
 	medium_air
 	heavy_air
@@ -10,7 +19,11 @@ technology_categories = {
 	cat_medium_armor
 	cat_heavy_armor
 	artillery
+    shocktroop
+    shock_tech
+    desert_tech
 	cat_anti_tank
+	cat_anti_air
 	naval_air
 	infantry_weapons
 	motorized_equipment
@@ -35,6 +48,7 @@ technology_categories = {
 	cat_strategic_bomber
 	naval_bomber
 	cas_bomber
+	ship_modules_tech
 	dd_tech
 	cl_tech
 	ca_tech
@@ -57,7 +71,6 @@ technology_categories = {
 	submarine_doctrine
 	air_equipment
 	cat_mobile_warfare
-	tank_land_doctrine
 	cat_superior_firepower
 	cat_grand_battle_plan
 	cat_mass_assault
@@ -71,7 +84,6 @@ technology_categories = {
 	base_strike_main
 	mot_rockets
 	support_tech
-	para_tech
 	engineers_tech
 	recon_tech
 	mountaineers_tech
@@ -87,10 +99,11 @@ technology_categories = {
 	naval_minesweeping
 	naval_minelaying
 	cat_scout_plane
-	desert_tech
-	shock_tech
-	jaeger_tech
-	jungle_tech
+	train_tech
+	cat_production
+	cat_synth_rubber
+	tank_land_doctrine
+	assault_guns
 	year_1918
 	year_1936
 	year_1937
@@ -100,8 +113,6 @@ technology_categories = {
 	year_1941
 	year_1942
 	year_1943
-	cat_anti_air
-	cat_artillery
 }
 
 technology_folders = {
@@ -113,19 +124,23 @@ technology_folders = {
 	}
 	armour_folder = {
 		ledger = army
+		available = {
+			NOT = {
+				has_dlc = "No Step Back"
+			}
+		}
 	}
-	
-	armour_f_folder = {
-		#ledger = army
+	nsb_armour_folder = {
+		ledger = army
+		available = {
+			has_dlc = "No Step Back"
+		}
 	}
 	artillery_folder = {
 		ledger = army
 	}
 	air_techs_folder = {
 		ledger = air
-	}
-	air_techs_folder_f = {
-		#ledger = air
 	}
 	naval_folder = {
 		available = {
@@ -144,18 +159,11 @@ technology_folders = {
 	}
 	land_doctrine_folder = {
 		ledger = army
-		doctrine = yes
+		#doctrine = yes
 	}
 	naval_doctrine_folder = {
 		ledger = navy
-		doctrine = yes
-	}
-	air_doctrine_folder = {
-		available = {
-			always=no
-		}
-		ledger = air
-		doctrine = yes
+		#doctrine = yes
 	}
 	electronics_folder = {
 		ledger = civilian
@@ -163,4 +171,4 @@ technology_folders = {
 	#secret_weapons_folder
 }
 
-
+ 
