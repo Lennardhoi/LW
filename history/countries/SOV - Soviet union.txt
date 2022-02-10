@@ -89,7 +89,6 @@ set_technology = {
 	tech_engineers = 1
 	tech_military_police = 1
 	motorised_infantry = 1
-	paratroopers = 1
 	gw_artillery = 1
 	interwar_antiair = 1
 	interwar_antitank = 1
@@ -301,10 +300,10 @@ add_ideas = {
 	closed_economy
 	SOV_home_fleet
 }
-add_namespace = {
-	name = "unit_leader_sov"
-	type = unit_leader
-}
+#add_namespace = {
+#	name = "unit_leader_sov"
+#	type = unit_leader
+#}
 
 if = {
 	limit = {

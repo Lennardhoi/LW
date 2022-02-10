@@ -1659,6 +1659,10 @@ focus_tree = {
 		icon = GFX_goal_generic_army_tanks
 		prerequisite = { focus = USA_war_plan_black }
 		available = {
+		has_character =USA_joseph_stilwell
+#={
+		#is_high_command =yes
+		#}
 		}
 		continue_if_invalid = yes
 		available_if_capitulated = yes
@@ -1667,10 +1671,17 @@ focus_tree = {
 		relative_position_id = USA_war_plan_black
 		cost = 4
 		completion_reward = {
-			swap_ideas = {
-				remove_idea =joseph_stilwell
-				add_idea = joseph_stilwell_2
+			remove_trait = {
+			character = USA_joseph_stilwell
+			slot = high_command
+			trait =army_armored_2
 			}
+			add_trait = {
+			character = USA_joseph_stilwell
+			slot = high_command
+			trait =army_armored_3
+			}
+			
 		}
 	}
 	focus = {
@@ -2290,8 +2301,6 @@ focus_tree = {
 				name = special_bonus
 				bonus = 1.0
 				uses = 2
-				technology = paratroopers
-				technology = paratroopers2
 				technology = tech_mountaineers
 				technology = tech_mountaineers2
 				technology = tech_engineers

@@ -509,9 +509,11 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = SOV_red_army
-			swap_ideas = {
-				remove_idea = ivan_konev
-				add_idea = ivan_konev_2
+			
+			add_trait = {
+			character = SOV_ivan_konev
+			slot = high_command
+			trait =army_commando_1
 			}
 		}
 	}
@@ -2086,9 +2088,15 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = konstantin_rokossovsky
-				add_idea = konstantin_rokossovsky_2
+			remove_trait = {
+			character = SOV_konstantin_rokossovsky
+			slot = high_command
+			trait =army_armored_2
+			}
+			add_trait = {
+			character = SOV_konstantin_rokossovsky
+			slot = high_command
+			trait =army_armored_3
 			}
 		}
 	}

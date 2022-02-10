@@ -33,7 +33,7 @@ country_event = {
 			white_peace = SPR
             		white_peace = JAP
            		white_peace = MAN
-            		set_capital = 496		
+            		set_capital = { state = 496 }		
 		}
 		
 		FIN = {
@@ -126,7 +126,7 @@ country_event = {
 		
 				
 		every_controlled_state = { add_core_of = EST }
-		set_capital = 12
+		set_capital = { state = 12 }
 		set_cosmetic_tag = EST_reichskommissariat
 		}
 		
@@ -158,7 +158,7 @@ country_event = {
 		
 		
 		every_controlled_state = { add_core_of = LIT }
-		set_capital = 222
+		set_capital = { state = 222 }
 		set_cosmetic_tag = LIT_reichskommissariat
 		}
 				SWE = { country_event = { id = peace.3 hours = 24 } }
@@ -220,7 +220,7 @@ country_event = {
 		
         
 		every_controlled_state = { add_core_of = LAT }
-		set_capital = 195
+		set_capital = { state = 195 }
 		set_cosmetic_tag = LAT_reichskommissariat
 		}
 		SWE = { country_event = { id = peace.4 hours = 24 } }
@@ -275,7 +275,7 @@ country_event = {
 		transfer_state = 240
 		transfer_state = 212
         
-		set_capital = 212
+		set_capital = { state = 212 }
 		set_cosmetic_tag = ALB_reichskommissariat
 		}
 		SWE = { country_event = { id = peace.5 hours = 24 } }

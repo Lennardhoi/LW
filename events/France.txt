@@ -96,7 +96,7 @@ country_event = {
 				limit = { is_core_of = FRA }
 				add_core_of = EFR
 			}
-			set_capital = 26
+			set_capital = { state = 26 }
 			set_politics = {
 				ruling_party = fascism
 				elections_allowed = no
@@ -191,7 +191,7 @@ country_event = {
 			}
 			remove_ideas = FRA_protected_by_the_maginot_line
 			set_country_flag = free_france
-			set_capital = 466
+			set_capital = { state = 466 }
 			country_event = france.20
 		}
 		ENG = { add_to_faction = FRA }
@@ -283,7 +283,7 @@ country_event = {
 		if = {
 			limit = { 425 = { is_owned_by = FRA }
 			}
-			set_capital = 425
+			set_capital = { state = 425 }
 		}
 	}
 }

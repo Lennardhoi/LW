@@ -135,7 +135,6 @@ set_technology = {
 	tech_recon = 1
 	tech_support = 1
 	tech_engineers = 1
-	paratroopers = 1
 	motorised_infantry = 1
 	interwar_antitank = 1
 	gw_artillery = 1
@@ -392,20 +391,11 @@ add_ideas = {
 }
 #add_ideas = GER_mefo_bills_1
 #activate_mission = GER_mefo_bills_mission
-create_country_leader = {
-	name = "Adolf Hitler"
-	desc = "POLITICS_ADOLF_HITLER_DESC"
-	picture = "Portrait_Germany_Adolf_Hitler.dds"
-	expire = "1965.1.1"
-	ideology = nazism
-	traits = {
-		dictator
-	}
-}
-add_namespace = {
-	name = "ger_unit_leader"
-	type = unit_leader
-}
+
+#add_namespace = {
+#	name = "ger_unit_leader"
+#	type = unit_leader
+#}
 
 if = {
 	limit = {

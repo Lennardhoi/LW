@@ -272,11 +272,7 @@ country_event = {
 				}
 			}
 			GER =  { set_autonomy = { target = ITA autonomy_state = autonomy_satellite } }
-			add_tech_bonus = {
-				bonus = 3.0
-				uses = 1
-				technology = paratroopers
-			}
+			
 		}
 		hidden_effect = {
 			ITA = { country_event = { id = italy.150 days = 21 } }
