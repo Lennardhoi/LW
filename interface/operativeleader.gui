@@ -8,6 +8,19 @@ guiTypes = {
 		clipping = no
 		size = { width=1 height=1 }
 
+		# for debug purpose
+		#background = {
+		#	name = "bg_bottom_bar"
+		#	spriteType = "GFX_tiled_window"
+		#}
+
+		#buttonType = {
+		#	name = "portrait_btn"
+		#	position = { x = 0 y = -100 }
+		#	spriteType = "GFX_LG_select_group_btn"
+		#	clicksound = click_default
+		#}
+
 		containerWindowType = {
 			name = "centering_box"
 			# center horizontaly within the parent window
@@ -16,6 +29,14 @@ guiTypes = {
 			# size controlled programaticaly
 			size = { width=4 height=1 }
 			clipping = no
+
+			# for debug purpose
+#			background = {
+#				name = "bg_centering_box"
+#				spriteType = "GFX_tiled_bg"
+##				spriteType = "GFX_tiled_window_transparent"
+##				alwaystransparent = yes
+#			}
 
 			@scroll_button_y = 40
 			buttonType = {
@@ -301,7 +322,7 @@ guiTypes = {
 		position = { x=-250 y=100 }
 		show_position={ x=-250 y=-210 }
 		orientation = center_down
-		size = { width=200 height=100 } 
+		size = { width=500 height=100 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
 		animation_time = 120
@@ -387,7 +408,7 @@ guiTypes = {
 			name = "btn_mission_5"
 			spriteType = "GFX_operative_mission_button_background"
 			clicksound = click_default
-			position = { x=155 y=333 }
+			position = { x=155 y=@btn_mission_y }
 			frame = 1
 			shortcut = "v"
 		}
@@ -395,14 +416,14 @@ guiTypes = {
 			name = "icn_mission_5"
 			spriteType = "GFX_operative_mission_icons"
 			frame = 5
-			position = { x=155 y=333  }
+			position = { x=162 y=@icn_mission_y }
 			alwaystransparent = yes
 		}
 		iconType = {
 			name = "icn_mission_active_5"
 			spriteType = "GFX_operative_mission_active"
 			frame = 1
-			position = { x=155 y=333  }
+			position = { x=155 y=@btn_mission_y }
 			alwaystransparent = yes
 		}
 
@@ -410,7 +431,7 @@ guiTypes = {
 			name = "btn_mission_8"
 			spriteType = "GFX_operative_mission_button_background"
 			clicksound = click_default
-			position = { x=155 y=333  }
+			position = { x=201 y=@btn_mission_y }
 			frame = 1
 			shortcut = "b"
 		}
@@ -418,14 +439,14 @@ guiTypes = {
 			name = "icn_mission_8"
 			spriteType = "GFX_operative_mission_icons"
 			frame = 8
-			position = { x=155 y=333  }
+			position = { x=208 y=@icn_mission_y }
 			alwaystransparent = yes
 		}
 		iconType = {
 			name = "icn_mission_active_8"
 			spriteType = "GFX_operative_mission_active"
 			frame = 1
-			position = { x=155 y=333  }
+			position = { x=201 y=@btn_mission_y }
 			alwaystransparent = yes
 		}
 
@@ -433,7 +454,7 @@ guiTypes = {
 			name = "btn_mission_4"
 			spriteType = "GFX_operative_mission_button_background"
 			clicksound = click_default
-			position = { x=155 y=@btn_mission_y }
+			position = { x=258 y=@btn_mission_y }
 			frame = 1 
 			shortcut = "n"
 		}
@@ -441,14 +462,14 @@ guiTypes = {
 			name = "icn_mission_4"
 			spriteType = "GFX_operative_mission_icons"
 			frame = 4 
-			position = { x=163 y=@icn_mission_y }
+			position = { x=265 y=@icn_mission_y }
 			alwaystransparent = yes
 		}
 		iconType = {
 			name = "icn_mission_active_4" 
 			spriteType = "GFX_operative_mission_active"
 			frame = 1
-			position = { x=155 y=@btn_mission_y }
+			position = { x=258 y=@btn_mission_y }
 			alwaystransparent = yes
 		}
 
@@ -456,22 +477,22 @@ guiTypes = {
 			name = "btn_mission_6"
 			spriteType = "GFX_operative_mission_button_background"
 			clicksound = click_default
-			position = { x=155 y=3304 }
+			position = { x=304 y=@btn_mission_y }
 			frame = 1
-			#shortcut = "m"
+			shortcut = "m"
 		}
 		iconType = {
 			name = "icn_mission_6"
 			spriteType = "GFX_operative_mission_icons"
 			frame = 6
-			position = { x=155 y=3304 }
+			position = { x=311 y=@icn_mission_y }
 			alwaystransparent = yes
 		}
 		iconType = {
 			name = "icn_mission_active_6"
 			spriteType = "GFX_operative_mission_active"
 			frame = 1
-			position = { x=155 y=3304 }
+			position = { x=304 y=@btn_mission_y }
 			alwaystransparent = yes
 		}
 
@@ -479,22 +500,22 @@ guiTypes = {
 			name = "btn_mission_7"
 			spriteType = "GFX_operative_mission_button_background"
 			clicksound = click_default
-			position = { x=155 y=3304 }
+			position = { x=350 y=@btn_mission_y }
 			frame = 1
-			#shortcut = "d"
+			shortcut = "d"
 		}
 		iconType = {
 			name = "icn_mission_7"
 			spriteType = "GFX_operative_mission_icons"
 			frame = 7
-			position = { x=155 y=3304 }
+			position = { x=357 y=@icn_mission_y }
 			alwaystransparent = yes
 		}
 		iconType = {
 			name = "icn_mission_active_7"
 			spriteType = "GFX_operative_mission_active"
 			frame = 1
-			position = { x=155 y=3304 }
+			position = { x=350 y=@btn_mission_y }
 			alwaystransparent = yes
 		}
 
@@ -632,6 +653,11 @@ guiTypes = {
 		Orientation = upper_left
 		size = {width=364 height=25}
 
+		#background = {
+		#	name = "bg11"
+		#	spriteType = "GFX_tiled_window_small_small"
+		#}
+
 		iconType = {
 			name = "activity_progressbar_mission"
 			spriteType = "GFX_operative_activity_porgress_bar"
@@ -692,6 +718,12 @@ guiTypes = {
 		Orientation = upper_left
 		size = {width=500 height=1000}
 		clipping = no
+
+		# for debug
+		#background = {
+		#	name = "background"
+		#	spriteType = "GFX_tiled_bg"
+		#}
 
 		positionType = {
 			name = "entry_padding"

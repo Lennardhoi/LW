@@ -756,7 +756,6 @@ guiTypes = {
 		moveable = yes
 		fade_time = 200
 		fade_type = linear
-		show_sound = research_complete
 		hide_sound = menu_close_window
 		click_to_front = yes
 
@@ -772,12 +771,12 @@ guiTypes = {
 		
 			background = {
 				name = "Background"
-				spriteType ="GFX_tiled_paper_bg"
+				#spriteType ="GFX_tiled_paper_bg"
+				spriteType = "GFX_agency_popup_bg"
 			}
 		}
 		
-		iconType =
-		{
+		iconType = {
 			name ="diplo_popup_header_bg"
 			spriteType = "GFX_diplo_popup_header_bg"
 			position = { x= 1 y = 8 }
@@ -807,7 +806,7 @@ guiTypes = {
 		
 		iconType = {
 			name = "equipment_icon"
-			quadTextureSprite ="GFX_sub_tech_strip_w_bg"
+			quadTextureSprite ="GFX_land_equipment_role_icons"
 			position = { x= 312 y = 140 }
 			centerposition = yes
 		}
@@ -871,8 +870,7 @@ guiTypes = {
 		#	maxHeight = 170
 		#}
 
-		iconType =
-		{
+		iconType = {
 			name ="diplo_popup_bottom"
 			spriteType = "GFX_diplo_popup_bottom"
 			position = { x= 3 y = 189 }
@@ -954,7 +952,7 @@ guiTypes = {
 		iconType = {
 			name = "sender_flag"
 			quadTextureSprite ="GFX_flag_small2"
-			position = { x= 24 y = 29 }
+			position = { x= 25 y = 30 }
 			Orientation = "UPPER_LEFT"
 		}	
 
@@ -968,7 +966,7 @@ guiTypes = {
 		iconType = {
 			name = "receiver_flag"
 			quadTextureSprite ="GFX_flag_small2"
-			position = { x= 434 y = 29 }
+			position = { x= 433 y = 30 }
 			Orientation = "UPPER_LEFT"
 		}
 
@@ -976,7 +974,7 @@ guiTypes = {
 		{
 			name ="receiver_flag_frame"
 			spriteType = "GFX_diplo_countrylist_flag_frame"
-			position = { x= 431 y = 26 }
+			position = { x= 428 y = 26 }
 		}
 		
 		instantTextBoxType = {
@@ -1198,7 +1196,7 @@ guiTypes = {
 		iconType = {
 			name = "sender_flag"
 			quadTextureSprite ="GFX_flag_small2"
-			position = { x= 20 y = 85 }
+			position = { x= 21 y = 87 }
 			Orientation = "UPPER_LEFT"
 		}	
 
@@ -1211,7 +1209,7 @@ guiTypes = {
 		iconType = {
 			name = "receiver_flag"
 			quadTextureSprite ="GFX_flag_small2"
-			position = { x= 466 y = 85 }
+			position = { x= 468 y = 87 }
 			Orientation = "UPPER_LEFT"
 		}
 
@@ -1301,7 +1299,7 @@ guiTypes = {
 		iconType = {
 			name = "sender_flag"
 			quadTextureSprite ="GFX_flag_small2"
-			position = { x= 20 y = 92 }
+			position = { x= 21 y = 94 }
 			Orientation = "UPPER_LEFT"
 		}	
 
@@ -1314,7 +1312,7 @@ guiTypes = {
 		iconType = {
 			name = "receiver_flag"
 			quadTextureSprite ="GFX_flag_small2"
-			position = { x= 466 y = 92 }
+			position = { x= 468 y = 94 }
 			Orientation = "UPPER_LEFT"
 		}
 
@@ -1404,7 +1402,7 @@ guiTypes = {
 		iconType = {
 			name = "sender_flag"
 			quadTextureSprite ="GFX_flag_small2"
-			position = { x= 20 y = 90 }
+			position = { x= 21 y = 91 }
 			Orientation = "UPPER_LEFT"
 		}	
 
@@ -1417,7 +1415,7 @@ guiTypes = {
 		iconType = {
 			name = "receiver_flag"
 			quadTextureSprite ="GFX_flag_small2"
-			position = { x= 466 y = 90 }
+			position = { x= 468 y = 91 }
 			Orientation = "UPPER_LEFT"
 		}
 
@@ -1468,25 +1466,19 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "default_confirmation_popup"
-		size = { width = 480 height=382 }
+		size = { width = 480 height=322 }
 		orientation= center
 		origo = center
 		moveable = yes
 		fade_time = 200
 		fade_type = linear
 		click_to_front = yes
-		clipping=no
+		
 		background = {
 			name = "Background"
-			quadTextureSprite ="GFX_pol_goal_popup_bg"
+			quadTextureSprite ="GFX_tiled_window_pol_goal"
 		}
 		
-		iconType = {
-			name ="background2"
-			spriteType = "GFX_pol_goal_popup_bg2"
-			centerposition = yes
-			orientation= center
-		}
 		instantTextBoxType = {
 			name = "title"
 			position = { x = 10 y = 16 }
@@ -1509,16 +1501,16 @@ guiTypes = {
 			borderSize = {x = 0 y = 0}
 			text = "Long text here!"
 			maxWidth = 430
-			maxHeight = 225
+			maxHeight = 155
 			format = centre
 			scrollbartype = "standardtext_slider"
 		}
 		
 		buttonType = {
 			name = "decline_button"
-			position = { x=90 y=323}
+			position = { x=90 y=250}
 			quadTextureSprite ="GFX_button_148x34"
-			buttonText = "CANCEL"
+			buttonText = "PDXO_CANCEL"
 			buttonFont = "hoi_16mbs"
 			shortcut = "ESCAPE"
 			clicksound = click_close
@@ -1526,7 +1518,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "accept_button"
-			position = { x=260 y=323}
+			position = { x=260 y=250}
 			quadTextureSprite ="GFX_button_148x34"
 			buttonText = "OK"
 			buttonFont = "hoi_16mbs"
@@ -1621,7 +1613,7 @@ guiTypes = {
 			name = "decline_button"
 			position = { x=90 y=323}
 			quadTextureSprite ="GFX_button_148x34"
-			buttonText = "CANCEL"
+			buttonText = "PDXO_CANCEL"
 			buttonFont = "hoi_16mbs"
 			shortcut = "ESCAPE"
 			clicksound = click_close
@@ -2137,7 +2129,7 @@ guiTypes = {
 		iconType = {
 			name = "sender_flag"
 			quadTextureSprite ="GFX_flag_small2"
-			position = { x= 20 y = 85 }
+			position = { x= 21 y = 87 }
 			Orientation = "UPPER_LEFT"
 		}	
 
@@ -2150,7 +2142,7 @@ guiTypes = {
 		iconType = {
 			name = "receiver_flag"
 			quadTextureSprite ="GFX_flag_small2"
-			position = { x= 466 y = 85 }
+			position = { x= 468 y = 87 }
 			Orientation = "UPPER_LEFT"
 		}
 
@@ -2346,6 +2338,96 @@ guiTypes = {
 				shortcut = "RETURN"
 				clicksound = click_ok
 			}
+		}
+	}
+
+	containerWindowType = {
+		name = "dismiss_operative_popup"
+		position = { x = -225 y = -160 }
+		size = { width = 500 height = 260 }
+		orientation= center
+		moveable = yes
+		fade_time = 200
+		fade_type = linear
+		hide_sound = menu_close_window
+		click_to_front = yes
+
+		background = {
+			name = "Background"	
+			quadTextureSprite ="GFX_tiled_bg"
+		}		
+
+		containerWindowType = {
+			name = "paper_background"
+			position = { x = 13 y = 75 }
+			size = { width = 474 height = 123 }
+		
+			background = {
+				name = "Background"
+				#spriteType ="GFX_tiled_paper_bg"
+				spriteType = "GFX_agency_popup_bg"
+			}
+		}
+		
+		iconType =
+		{
+			name ="diplo_popup_header_bg"
+			spriteType = "GFX_diplo_popup_header_bg"
+			position = { x= 1 y = 8 }
+			alwaystransparent = yes
+		}	
+
+		instantTextBoxType = {
+			name = "title"
+			position = { x = 72 y = 29 }
+			textureFile = ""
+			font = "hoi_24header"
+			borderSize = {x = 0 y = 0}
+			text = "Title"	
+			format = center
+			maxWidth = 350
+			maxHeight = 24
+			fixedsize = yes
+			truncate = yes
+		}
+
+		instantTextBoxType = {
+			name = "description"
+			position = { x = 50 y = 119 }
+			textureFile = ""
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			text = "Long text here!"
+			maxWidth = 400
+			maxHeight = 24
+			format = center
+		}
+
+		iconType =
+		{
+			name ="diplo_popup_bottom"
+			spriteType = "GFX_diplo_popup_bottom"
+			position = { x= 3 y = 189 }
+		}		
+		
+		buttonType = {
+			name = "decline_button"
+			position = { x=90 y=203}
+			quadTextureSprite ="GFX_button_148x34"
+			buttonText = "PDXO_CANCEL"
+			buttonFont = "hoi_16mbs"
+			shortcut = "ESCAPE"
+			clicksound = click_close
+		}
+		
+		buttonType = {
+			name = "accept_button"
+			position = { x=260 y=203}
+			quadTextureSprite ="GFX_button_148x34"
+			buttonText = "OK"
+			buttonFont = "hoi_16mbs"
+			shortcut = "RETURN"
+			clicksound = click_default
 		}
 	}
 }
