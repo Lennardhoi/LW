@@ -3,6 +3,10 @@ technologies = {
 		enable_equipments = {
 			artillery_equipment_1
 		}
+		enable_equipment_modules = {
+			tank_heavy_howitzer
+			tank_medium_howitzer
+		}
 		path = {
 			leads_to_tech = interwar_artillery
 			research_cost_coeff = 1
@@ -15,9 +19,6 @@ technologies = {
 			leads_to_tech = interwar_antiair
 			research_cost_coeff = 1
 		}
-		enable_equipment_modules = {
-			ship_anti_air_1
-		}
 		research_cost = 1.5
 		folder = {
 			name = artillery_folder
@@ -25,7 +26,6 @@ technologies = {
 		}
 		categories = {
 			artillery
-			cat_artillery
 		}
 		ai_will_do = {
 			factor = 2
@@ -86,12 +86,10 @@ technologies = {
 		enable_equipments = {
 			artillery_equipment_2
 		}
-		#artillery = {
-			#	soft_attack = 0.1
-			#}
-		#artillery_brigade = {
-			#	soft_attack = 0.1
-			#}
+		enable_equipment_modules = {
+			tank_heavy_howitzer2
+			tank_medium_howitzer_2
+		}
 		path = {
 			leads_to_tech = artillery2
 			research_cost_coeff = 1
@@ -107,7 +105,6 @@ technologies = {
 		}
 		categories = {
 			artillery
-			cat_artillery
 		}
 		ai_will_do = {
 			factor = 2
@@ -154,7 +151,6 @@ technologies = {
 		}
 		categories = {
 			artillery
-			cat_artillery
 		}
 		ai_will_do = {
 			factor = 2
@@ -197,7 +193,6 @@ technologies = {
 		}
 		categories = {
 			artillery
-			cat_artillery
 		}
 		ai_will_do = {
 			factor = 2
@@ -215,12 +210,10 @@ technologies = {
 		enable_equipments = {
 			artillery_equipment_3
 		}
-		#artillery = {
-			#	soft_attack = 0.1
-			#}
-		#artillery_brigade = {
-			#	soft_attack = 0.1
-			#}
+		enable_equipment_modules = {
+			tank_heavy_howitzer3
+			tank_medium_howitzer_3
+		}
 		path = {
 			leads_to_tech = artillery5
 			research_cost_coeff = 1
@@ -236,7 +229,6 @@ technologies = {
 		}
 		categories = {
 			artillery
-			cat_artillery
 		}
 		ai_will_do = {
 			factor = 2
@@ -275,7 +267,6 @@ technologies = {
 		}
 		categories = {
 			artillery
-			cat_artillery
 		}
 		ai_will_do = {
 			factor = 2
@@ -313,6 +304,10 @@ technologies = {
 	rocket_artillery = {
 		enable_equipments = {
 			rocket_artillery_equipment_1
+		}
+		enable_equipment_modules = {
+			tank_rocket_launcher
+			tank_light_rocket_launcher
 		}
 		#		enable_subunits = {
 			#			rocket_artillery_brigade
@@ -418,16 +413,16 @@ technologies = {
 	rocket_artillery4 = {
 		enable_equipments = {
 			rocket_artillery_equipment_2
+			tank_rocket_launcher
 		}
+		enable_equipment_modules = {
+			tank_rocket_launcher_2
+			ship_rocket_arty
+		}
+		
 		motorized_rocket_brigade = {
 			soft_attack = 0.3
 		}
-		#rocket_artillery = {
-			#	soft_attack = 0.15
-			#}
-		#rocket_artillery_brigade = {
-			#	soft_attack = 0.15
-			#}
 		research_cost = 1
 		start_year = 1943
 		categories = {
@@ -454,6 +449,8 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			ship_anti_air_2
+			tank_anti_air_cannon_2
+			tank_medium_anti_air_cannon_1
 		}
 		enable_building = {
 			building = anti_air
@@ -478,12 +475,6 @@ technologies = {
 				factor = 0.5
 				OR = {
 					tag = CHI
-					tag = PRC
-					tag = XSM
-					tag = SIK
-					tag = GXC
-					tag = SHX
-					tag = YUN
 				}
 			}
 			modifier = {
@@ -502,13 +493,13 @@ technologies = {
 	}
 	antiair1 = {
 		anti_air = {
-			air_attack = 0.15
+			air_attack = 0.1
 		}
 		anti_air_brigade = {
-			air_attack = 0.15
+			air_attack = 0.1
 		}
 		mot_anti_air_brigade = {
-			air_attack = 0.15
+			air_attack = 0.1
 		}
 		tech_air_damage_factor = -0.01
 		path = {
@@ -540,6 +531,10 @@ technologies = {
 				factor = 5
 			}
 		}
+		categories = {
+			artillery
+			cat_anti_air
+		}
 	}
 	antiair2 = {
 		enable_equipments = {
@@ -548,6 +543,8 @@ technologies = {
 		static_anti_air_damage_factor = 0.1
 		enable_equipment_modules = {
 			ship_anti_air_3
+			tank_anti_air_cannon_3
+			tank_medium_anti_air_cannon_2
 		}
 		path = {
 			leads_to_tech = antiair3
@@ -585,13 +582,13 @@ technologies = {
 	}
 	antiair3 = {
 		anti_air = {
-			air_attack = 0.15
+			air_attack = 0.1
 		}
 		anti_air_brigade = {
-			air_attack = 0.15
+			air_attack = 0.1
 		}
 		mot_anti_air_brigade = {
-			air_attack = 0.15
+			air_attack = 0.1
 		}
 		navy_anti_air_attack_factor = 0.05
 		tech_air_damage_factor = -0.01
@@ -681,6 +678,7 @@ technologies = {
 		}
 		static_anti_air_damage_factor = 0.1
 		enable_equipment_modules = {
+			tank_medium_anti_air_cannon_3
 			ship_anti_air_4
 		}
 		navy_anti_air_attack_factor = 0.05
@@ -718,6 +716,12 @@ technologies = {
 		enable_equipments = {
 			anti_tank_equipment_1
 		}
+		enable_equipment_modules = {
+			tank_high_velocity_cannon_m1
+			tank_high_velocity_cannon_h1
+			tank_heavy_cannon
+			tank_medium_cannon
+		}
 		path = {
 			leads_to_tech = antitank1
 			research_cost_coeff = 1
@@ -737,12 +741,6 @@ technologies = {
 				factor = 0.2
 				OR = {
 					tag = CHI
-					tag = PRC
-					tag = XSM
-					tag = SIK
-					tag = GXC
-					tag = SHX
-					tag = YUN
 				}
 			}
 			modifier = {
@@ -844,17 +842,19 @@ technologies = {
 		}
 	}
 	antitank2 = {
+		mot_anti_tank_brigade = {
+			hard_attack = 0.1
+		}
 		enable_equipments = {
 			anti_tank_equipment_2
 		}
-		#anti_tank = {
-			#	hard_attack = 0.1
-			#	ap_attack = 0.05
-			#}
-		#anti_tank_brigade = {
-			#	hard_attack = 0.1
-			#	ap_attack = 0.05
-			#}
+		enable_equipment_modules = {
+			tank_high_velocity_cannon_m2
+			tank_high_velocity_cannon_h2
+			tank_heavy_cannon_2
+			tank_medium_cannon_2
+			tungston_core_ammunition
+		}
 		path = {
 			leads_to_tech = antitank3
 			research_cost_coeff = 1
@@ -1048,14 +1048,12 @@ technologies = {
 		enable_equipments = {
 			anti_tank_equipment_3
 		}
-		#anti_tank = {
-			#	hard_attack = 0.1
-			#	ap_attack = 0.05
-			#}
-		#anti_tank_brigade = {
-			#	hard_attack = 0.1
-			#	ap_attack = 0.05
-			#}
+		enable_equipment_modules = {
+			tank_high_velocity_cannon_m3
+			tank_high_velocity_cannon_h3
+			tank_heavy_cannon_3
+			tank_medium_cannon_3
+		}
 		research_cost = 1
 		start_year = 1943
 		categories = {

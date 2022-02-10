@@ -1,6 +1,7 @@
 sub_units = {
 
 	anti_tank = {
+		abbreviation = "AT"
 		sprite = anti_tank
 		map_icon_category = infantry
 		priority = 0
@@ -15,6 +16,8 @@ sub_units = {
 			support
 		}
 
+		same_support_type = anti_tank
+		
 		categories = {
 			category_front_line
 			category_support_battalions
@@ -25,12 +28,12 @@ sub_units = {
 		combat_width = 0
 
 		need = {
-			anti_tank_equipment = 12
+			anti_tank_equipment = 18
 		}
 		manpower = 300
-		max_organisation = 0
+		max_organisation = -10
 		default_morale = 0.1
-		max_strength = 0.2
+		max_strength = -0.15
 		training_time = 120
 		weight = 0.1
 
@@ -39,10 +42,146 @@ sub_units = {
 		supply_consumption = 0.05
 
 		# Support nerfs to combat abilities
-		defense = -0.5
-		breakthrough = -0.5
-		soft_attack = -0.5
-		hard_attack = -0.35
-		ap_attack = -0.5
+		defense = -1
+		breakthrough = -0.70
+		soft_attack = -0.70
+		hard_attack = -0.6
+		ap_attack = -0.3
 	}
-}
+	light_tank_destroyer = {
+		abbreviation = "LTD"
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = yes
+		affects_speed = no
+
+		
+		type = {
+			infantry
+			support
+		}
+		same_support_type = anti_tank
+		group = support
+
+		categories = {
+			category_support_battalions
+			category_all_armor
+			category_mobile_artillery
+			category_army
+		}		
+
+		combat_width = 0
+
+		need = {
+			light_tank_destroyer_chassis = 30
+		}
+		manpower = 300
+		max_organisation = 10
+		default_morale = 0.1
+		max_strength = 0.6
+		training_time = 180
+		weight = 1
+		supply_consumption = 0.3
+
+		suppression = 1
+		ap_attack = -0.5
+		defense = -0.9
+		soft_attack = -0.8
+		hard_attack = -0.60
+		breakthrough = -0.35
+		armor_value = -0.7
+		own_equipment_fuel_consumption_mult = -1
+	}
+	medium_tank_destroyer = {
+		abbreviation = "MTD"
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = yes
+		affects_speed = no
+
+		type = {
+			infantry
+			support
+		}
+		same_support_type = anti_tank
+		group = support
+
+		categories = {
+			category_support_battalions
+			category_all_armor
+			category_army
+			category_mobile_artillery
+		}		
+
+		combat_width = 0
+
+		need = {
+			medium_tank_destroyer_chassis = 25
+		}
+		manpower = 300
+		max_organisation = 10
+		default_morale = 0.1
+		max_strength = 0.6
+		training_time = 180
+		weight = 1
+		supply_consumption = 0.3
+
+		suppression = 1
+		ap_attack = -0.4
+		defense = -0.9
+		soft_attack = -0.8
+		hard_attack = -0.55
+		breakthrough = -0.3
+		armor_value = -0.6
+	}
+	heavy_tank_destroyer = {
+		abbreviation = "HTD"
+		sprite = infantry
+		map_icon_category = infantry
+		priority = 0
+		ai_priority = 0
+		active = yes
+		affects_speed = no
+
+		
+		type = {
+			infantry
+			support
+		}
+		same_support_type = anti_tank
+		group = support
+
+		categories = {
+			category_support_battalions
+			category_all_armor
+			category_army
+			category_mobile_artillery
+		}		
+
+		combat_width = 0
+
+		need = {
+			heavy_tank_destroyer_chassis = 25
+		}
+		manpower = 300
+		max_organisation = 10
+		default_morale = 0.1
+		max_strength = 0.6
+		training_time = 180
+		weight = 1
+		supply_consumption = 0.3
+
+		suppression = 1
+		ap_attack = -0.3
+		defense = -0.9
+		soft_attack = -0.8
+		hard_attack = -0.5
+		breakthrough = -0.25
+		armor_value = -0.5
+	}
+}	
+

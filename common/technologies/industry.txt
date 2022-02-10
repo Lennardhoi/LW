@@ -214,11 +214,11 @@ technologies = {
 	}
 	#Conversion branch - Enabled in DoD
 	basic_equipment_conversion = {
-		equipment_conversion_speed = 0.75
+		line_change_production_efficiency_factor = 0.05
 		allow_branch = {
 			has_dlc = "Death or Dishonor"
 		}
-		research_cost = 0.5
+		research_cost = 1
 		start_year = 1937
 		categories = {
 			year_1937
@@ -240,9 +240,8 @@ technologies = {
 		}
 	}
 	improved_equipment_conversion = {
-		equipment_conversion_speed = 0.75
-
-		research_cost = 0.5
+		line_change_production_efficiency_factor = 0.05
+		research_cost = 1
 		start_year = 1939
 		categories = {
 			year_1939
@@ -262,12 +261,10 @@ technologies = {
 				NOT = { has_government = fascism }
 			}
 		}
-
 	}
 	advanced_equipment_conversion = {
-		equipment_conversion_speed = 0.75
-
-		research_cost = 0.5
+		line_change_production_efficiency_factor = 0.05
+		research_cost = 1
 		start_year = 1941
 		categories = {
 			year_1941
@@ -292,7 +289,7 @@ technologies = {
 	concentrated_industry = {
 		industrial_capacity_factory = 0.15
 		industrial_capacity_dockyard = 0.1
-		global_building_slots_factor = 0.20
+		global_building_slots_factor = 0.25
 		path = {
 			leads_to_tech = concentrated_industry2
 			research_cost_coeff = 1
@@ -355,7 +352,7 @@ technologies = {
 	concentrated_industry2 = {
 		industrial_capacity_factory = 0.15
 		industrial_capacity_dockyard = 0.1
-		global_building_slots_factor = 0.20
+		global_building_slots_factor = 0.25
 		path = {
 			leads_to_tech = concentrated_industry3
 			research_cost_coeff = 1
@@ -395,7 +392,7 @@ technologies = {
 	concentrated_industry3 = {
 		industrial_capacity_factory = 0.15
 		industrial_capacity_dockyard = 0.1
-		global_building_slots_factor = 0.20
+		global_building_slots_factor = 0.25
 		path = {
 			leads_to_tech = concentrated_industry4
 			research_cost_coeff = 1
@@ -435,7 +432,7 @@ technologies = {
 	concentrated_industry4 = {
 		industrial_capacity_factory = 0.15
 		industrial_capacity_dockyard = 0.1
-		global_building_slots_factor = 0.20
+		global_building_slots_factor = 0.25
 		path = {
 			leads_to_tech = concentrated_industry5
 			research_cost_coeff = 1
@@ -475,7 +472,7 @@ technologies = {
 	concentrated_industry5 = {
 		industrial_capacity_factory = 0.15
 		industrial_capacity_dockyard = 0.1
-		global_building_slots_factor = 0.20
+		global_building_slots_factor = 0.25
 		research_cost = 2
 		start_year = 1943
 		categories = {
@@ -513,9 +510,9 @@ technologies = {
 		}
 	}
 	dispersed_industry = {
-		industrial_capacity_factory = 0.15
+		industrial_capacity_factory = 0.12
 		industrial_capacity_dockyard = 0.1
-		line_change_production_efficiency_factor = 0.1
+		line_change_production_efficiency_factor = 0.08
 		production_factory_start_efficiency_factor = 0.05
 		equipment_conversion_speed = 0.20
 		industry_air_damage_factor = -0.15
@@ -582,9 +579,9 @@ technologies = {
 		}
 	}
 	dispersed_industry2 = {
-		industrial_capacity_factory = 0.1
+		industrial_capacity_factory = 0.12
 		industrial_capacity_dockyard = 0.1
-		line_change_production_efficiency_factor = 0.1
+		line_change_production_efficiency_factor = 0.08
 		production_factory_start_efficiency_factor = 0.05
 		industry_air_damage_factor = -0.10
 		global_building_slots_factor = 0.2
@@ -627,9 +624,9 @@ technologies = {
 		}
 	}
 	dispersed_industry3 = {
-		industrial_capacity_factory = 0.1
+		industrial_capacity_factory = 0.12
 		industrial_capacity_dockyard = 0.1
-		line_change_production_efficiency_factor = 0.1
+		line_change_production_efficiency_factor = 0.08
 		production_factory_start_efficiency_factor = 0.05
 		industry_air_damage_factor = -0.10
 		global_building_slots_factor = 0.2
@@ -672,9 +669,9 @@ technologies = {
 		}
 	}
 	dispersed_industry4 = {
-		industrial_capacity_factory = 0.1
+		industrial_capacity_factory = 0.12
 		industrial_capacity_dockyard = 0.1
-		line_change_production_efficiency_factor = 0.1
+		line_change_production_efficiency_factor = 0.08
 		production_factory_start_efficiency_factor = 0.05
 		industry_air_damage_factor = -0.10
 		global_building_slots_factor = 0.2
@@ -717,9 +714,9 @@ technologies = {
 		}
 	}
 	dispersed_industry5 = {
-		industrial_capacity_factory = 0.1
+		industrial_capacity_factory = 0.12
 		industrial_capacity_dockyard = 0.1
-		line_change_production_efficiency_factor = 0.1
+		line_change_production_efficiency_factor = 0.08
 		production_factory_start_efficiency_factor = 0.05
 		industry_air_damage_factor = -0.10
 		global_building_slots_factor = 0.2
@@ -762,12 +759,23 @@ technologies = {
 			building = fuel_silo
 			level = 3
 		}
+		enable_equipment_modules = {
+			external_fuel_tank
+		}
 		path = {
 			leads_to_tech = synth_oil_experiments
 			research_cost_coeff = 1
 		}
 		path = {
 			leads_to_tech = fuel_refining
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = Joker
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = Lucifer
 			research_cost_coeff = 1
 		}
 		research_cost = 1
@@ -1091,10 +1099,6 @@ technologies = {
 		enable_building = {
 			building = synthetic_refinery
 			level = 3
-		}
-		path = {
-			leads_to_tech = oil_processing
-			research_cost_coeff = 1
 		}
 		path = {
 			leads_to_tech = rubber_processing

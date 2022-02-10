@@ -11,6 +11,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		enable_equipment_modules = {
+			coordination_bonus = 0.04
 			ship_fire_control_system_0
 		}
 		research_cost = 1
@@ -36,11 +37,15 @@ technologies = {
 	radio = {
 		# units with radios can more efficiently join combats when there is room
 		land_reinforce_rate = 0.05
+		coordination_bonus = 0.01
 		path = {
 			leads_to_tech = radio_detection
 			research_cost_coeff = 1
 		}
-		research_cost = 1
+		research_cost = 0.5
+		enable_equipment_modules = {
+			tank_radio_1
+		}
 		folder = {
 			name = electronics_folder
 			position = { x = -2 y = 2 }
@@ -79,6 +84,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		research_cost = 0.5
+		coordination_bonus = 0.01
 		folder = {
 			name = electronics_folder
 			position = { x = -2 y = 4 }
@@ -102,6 +108,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		research_cost = 0.5
+		coordination_bonus = 0.01
 		start_year = 1938
 		categories = {
 			year_1938
@@ -144,6 +151,8 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			ship_radar_2
+			tank_radio_2
+			coordination_bonus = 0.01
 		}
 		path = {
 			leads_to_tech = centimetric_radar
@@ -273,6 +282,9 @@ technologies = {
 		categories = {
 			year_1942
 		}
+		enable_equipment_modules = {
+			tank_radio_3
+		}
 		folder = {
 			name = electronics_folder
 			position = { x = -2 y = 14 }
@@ -335,7 +347,7 @@ technologies = {
 			leads_to_tech = improved_fire_control_system
 			research_cost_coeff = 1
 		}
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1938
 		categories = {
 			year_1938
@@ -381,7 +393,7 @@ technologies = {
 			leads_to_tech = advanced_fire_control_system
 			research_cost_coeff = 1
 		}
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1940
 		categories = {
 			year_1940
@@ -423,7 +435,7 @@ technologies = {
 			leads_to_tech = advanced_decryption
 			research_cost_coeff = 1
 		}
-		research_cost = 1.5
+		research_cost = 1
 		start_year = 1942
 		categories = {
 			year_1942
@@ -849,7 +861,7 @@ technologies = {
 		research_cost = 2
 		folder = {
 			name = air_techs_folder
-			position = { x = 2 y = 11 }
+			position = { x = 2 y = 13 }
 		}
 		desc = "JET_ENGINES_SPECIAL"
 		on_research_complete = {
