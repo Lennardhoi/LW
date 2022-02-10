@@ -1,3 +1,25 @@
+recruit_character = MAN_aisin_gioro_puyi
+recruit_character = MAN_zhang_haipeng
+recruit_character = MAN_um_lai_tung
+recruit_character = MAN_sum_ting_wong
+recruit_character = MAN_ho_lee_fuk
+recruit_character = MAN_hu_ren_sun
+recruit_character = MAN_kam_in_mie
+recruit_character = MAN_tadashige_daigo
+recruit_character = MAN_fu_xingde
+recruit_character = MAN_ma_zhanshan
+recruit_character = MAN_kyoiji_tomonaga
+recruit_character = MAN_yonimitsu_kasahara
+recruit_character = MAN_deng_linge
+recruit_character = MAN_songgotu_zhanshan
+recruit_character = MAN_hung_zhehuang
+recruit_character = MAN_nakajima_kesago
+recruit_character = MAN_megata_toshiro
+recruit_character = MAN_yin_zuoqian
+recruit_character = MAN_hesehn_tiemei
+recruit_character = MAN_nalan_kang_an
+recruit_character = MAN_xian_yuan
+recruit_character = MAN_guan_xingde
 capital = 295
 oob = "MAN_1936"
 set_stability = 0.6
@@ -57,98 +79,3 @@ set_popularities = {
 	fascism = 100
 	neutrality = 0
 }
-create_country_leader = {
-	name = "Aisin Gioro Puyi"
-	picture = "gfx/leaders/MAN/Portrait_Manchuria_Henry_Pu_Yi.dds"
-	expire = "1960.1.1"
-	ideology = rexism
-	traits = {
-		warrior_code
-	}
-}
-create_country_leader = {
-	name = "Aisin Gioro Puyi"
-	picture = "gfx/leaders/MAN/Portrait_Manchuria_Henry_Pu_Yi.dds"
-	expire = "1960.1.1"
-	ideology = despotism
-	traits = {
-		warrior_code
-	}
-}
- create_field_marshal  = {
-	name = "Zhang Haipeng"
-	GFX = "GFX_portrait_man_zhang_haipeng"
-	traits = {  organizer trait_engineer JAP_samurai_lineage panzer_leader  }
- 	skill = 5
- 	attack_skill = 6
- 	defense_skill = 4
- 	planning_skill = 2
- 	logistics_skill = 4
-}
- create_field_marshal  = {
-	name = "Um Lai Tung"
-	GFX = "GFX_portrait_man_zhang_jinghui"
-	traits = { 
- 		offensive_doctrine
- 		JAP_samurai_lineage   # hakushaku
- 		infantry_leader infantry_expert organizer
- 	}
- 	skill = 4
- 	attack_skill = 6
- 	defense_skill = 4
- 	planning_skill = 3
- 	logistics_skill = 2
-}
-create_corps_commander = {
-	name = "Sum Ting Wong"
-	GFX = "GFX_portrait_man_aisin_gioro_xiqia"
-	traits = {
- 		trickster trait_engineer brilliant_strategist jungle_rat infantry_leader infantry_expert JAP_samurai_lineage
- 	}
- 	skill = 6
- 	attack_skill = 7
- 	defense_skill = 4
- 	planning_skill = 3
- 	logistics_skill = 4
-}
-create_corps_commander = {
-	name = "Ho Lee Fuk"
-	gfx = "GFX_portrait_man_yoshiko_kawashima"
-	traits = {  infantry_leader naval_invader commando  trait_engineer jungle_rat}
- 	skill = 5
- 	attack_skill = 6
- 	defense_skill = 4
- 	planning_skill = 2
- 	logistics_skill = 4
-}
-create_corps_commander = {
-	name = "Hu Ren Sun"
-	gfx = "GFX_portrait_chi_gu_zhutong"
-	traits = { brilliant_strategist infantry_leader trait_engineer trait_mountaineer hill_fighter}
- 	skill = 4
- 	attack_skill = 5
- 	defense_skill = 4
- 	planning_skill = 3
- 	logistics_skill = 4
-}
-create_corps_commander = {
-	name = "Kam In Mie"
-	gfx = "GFX_portrait_chi_hu_zongnan"
- 	traits = { panzer_leader trait_engineer trickster ranger jungle_rat}
- 	skill = 5
- 	attack_skill = 6
- 	defense_skill = 4
- 	planning_skill = 4
- 	logistics_skill = 4
- }
-create_navy_leader = {
-	name = "Tadashige Daigo"
-	picture = "Portrait_Japan_Tadashige_Daigo.dds"
-	traits = { seawolf superior_tactician }
-	skill = 5
-	attack_skill = 6
-	defense_skill = 1
-	maneuvering_skill = 4
-	coordination_skill = 6
-}
-

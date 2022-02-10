@@ -1,0 +1,373 @@
+characters={
+	EST_konstantin_päts={
+		name="Konstantin Päts"
+		portraits={
+			civilian={
+				large="GFX_Portrait_estonia_konstantin_pats"
+			}
+		}
+		country_leader={
+			desc="POLITICS_KONSTANTIN_PATS_DESC"
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	EST_joosep_klaasen={
+		name="Joosep Klaasen"
+		portraits={
+			civilian={
+				large="GFX_portrait_europe_generic_5"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			traits={ economist }
+			expire="1946.1.1.12"
+			id=-1
+		}
+	}
+	EST_valmar_koern={
+		name="Valmar Koern"
+		portraits={
+			civilian={
+				large="GFX_Portrait_Europe_Generic_1"
+			}
+		}
+		country_leader={
+			ideology=anti_revisionism
+			traits={ compassionate_gentleman }
+			expire="1947.1.1.12"
+			id=-1
+		}
+	}
+	EST_artur_koern={
+		name="Artur Koern"
+		portraits={
+			civilian={
+				large="GFX_portrait_europe_generic_4"
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			traits={ dealbroker }
+			expire="1948.1.1.12"
+			id=-1
+		}
+	}
+	EST_alexander_jaakson={
+		advisor={
+			slot = high_command
+			idea_token = EST_alexander_jaakson
+			ledger  = army 
+				allowed  = {
+					original_tag  = EST
+				}
+				traits  = {
+					army_artillery_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="EST_alexander_jaakson"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_3"
+			}
+		}
+	}
+	EST_oskar_eiriksson={
+		advisor={
+			slot = navy_chief
+			idea_token = EST_oskar_eiriksson
+			allowed  = {
+					original_tag  = EST
+				}
+				traits  = {
+					navy_chief_reform_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="EST_oskar_eiriksson"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_2"
+			}
+		}
+	}
+	EST_richard_veermaa={
+		advisor={
+			slot = high_command
+			idea_token = EST_richard_veermaa
+			ledger  = army 
+				allowed  = {
+					original_tag  = EST
+				}
+				traits  = {
+					army_cavalry_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="EST_richard_veermaa"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_2"
+			}
+		}
+	}
+	EST_alex_nirk={
+		advisor={
+			slot = theorist
+			idea_token = EST_alex_nirk
+			ledger  = navy 
+				allowed  = {
+					original_tag  = EST
+				}
+				research_bonus  = {
+					naval_doctrine  = 0.100
+				}
+				traits  = {
+					naval_theorist 
+				}
+		}
+		name="EST_alex_nirk"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_2"
+			}
+		}
+	}
+	EST_richard_tomberg={
+		advisor={
+			slot = air_chief
+			idea_token = EST_richard_tomberg
+			allowed  = {
+					original_tag  = EST
+				}
+				traits  = {
+					air_chief_all_weather_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="EST_richard_tomberg"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_1"
+			}
+		}
+	}
+	EST_juri_uluots={
+		advisor={
+			slot = political_advisor
+			idea_token = EST_juri_uluots
+			allowed  = {
+					original_tag  = EST
+				}
+				traits  = {
+					captain_of_industry 
+				}
+		}
+		name="EST_juri_uluots"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+	}
+	EST_august_rei={
+		advisor={
+			slot = political_advisor
+			idea_token = EST_august_rei
+			allowed  = {
+					original_tag  = EST
+				}
+				traits  = {
+					popular_figurehead 
+				}
+		}
+		name="EST_august_rei"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+	}
+	EST_alfred_vendt={
+		advisor={
+			slot = navy_chief
+			idea_token = EST_alfred_vendt
+			allowed  = {
+					original_tag  = EST
+				}
+				traits  = {
+					navy_chief_maneuver_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="EST_alfred_vendt"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_3"
+			}
+		}
+	}
+	EST_juhan_tuuling={
+		advisor={
+			slot = theorist
+			idea_token = EST_juhan_tuuling
+			ledger  = army 
+				allowed  = {
+					original_tag  = EST
+				}
+				research_bonus  = {
+					land_doctrine  = 0.100
+				}
+				traits  = {
+					military_theorist 
+				}
+		}
+		name="EST_juhan_tuuling"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_1"
+			}
+		}
+	}
+	EST_alfons_rebane={
+		advisor={
+			slot = army_chief
+			idea_token = EST_alfons_rebane
+			allowed  = {
+					original_tag  = EST
+				}
+				traits  = {
+					army_chief_morale_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="EST_alfons_rebane"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_2"
+			}
+		}
+	}
+	EST_leo_sepp={
+		advisor={
+			slot = air_chief
+			idea_token = EST_leo_sepp
+			allowed  = {
+					original_tag  = EST
+				}
+				traits  = {
+					air_chief_ground_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="EST_leo_sepp"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_3"
+			}
+		}
+	}
+	EST_boris_kumm={
+		advisor={
+			slot = political_advisor
+			idea_token = EST_boris_kumm
+			allowed  = {
+					original_tag  = EST
+				}
+				traits  = {
+					backroom_backstabber 
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+		name="EST_boris_kumm"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+	}
+	EST_nikolay_g_karotamm={
+		advisor={
+			slot = high_command
+			idea_token = EST_nikolay_g_karotamm
+			ledger  = army 
+				allowed  = {
+					original_tag  = EST
+				}
+				traits  = {
+					army_infantry_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="EST_nikolay_g_karotamm"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_4"
+			}
+		}
+	}
+	EST_voldemar_mere={
+		advisor={
+			slot = high_command
+			idea_token = EST_voldemar_mere
+			ledger  = navy 
+				allowed  = {
+					original_tag  = EST
+				}
+				traits  = {
+					navy_fleet_logistics_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="EST_voldemar_mere"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_1"
+			}
+		}
+	}
+	EST_johan_laidoner={
+		advisor={
+			slot = army_chief
+			idea_token = EST_johan_laidoner
+			allowed  = {
+					original_tag  = EST
+				}
+				traits  = {
+					army_chief_drill_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="EST_johan_laidoner"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_2"
+			}
+		}
+	}
+}

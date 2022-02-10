@@ -1,3 +1,25 @@
+recruit_character = SAF_j._b._m._hertzog
+recruit_character = SAF_d._f._malan
+recruit_character = SAF_moses_kotane
+recruit_character = SAF_pixley_ka_isaka_seme
+recruit_character = SAF_george_edwin_brink
+recruit_character = SAF_jan_smuts
+recruit_character = SAF_guy_hallifax
+recruit_character = SAF_pierre_oliver_knoll
+recruit_character = SAF_cornelis_van_zuigenbrogge
+recruit_character = SAF_e_g_jansen
+recruit_character = SAF_adolf_malan
+recruit_character = SAF_marinus_van_osterkamp
+recruit_character = SAF_nicolaas_havenga
+recruit_character = SAF_sir_patrick_duncan
+recruit_character = SAF_jeannot_de_la_tourier
+recruit_character = SAF_j_f_van_rensburg
+recruit_character = SAF_pierre_van_ryneveld
+recruit_character = SAF_s_p_le_roux
+recruit_character = SAF_robert_palmer
+recruit_character = SAF_leonard_beyers
+recruit_character = SAF_c_de_weenburg_du_toit
+recruit_character = SAF_james_mitchell_baker
 capital = 267
 oob = "SAF_1936"
 set_stability = 0.6
@@ -126,76 +148,3 @@ set_popularities = {
 	fascism = 20
 	communism = 5
 }
-create_country_leader = {
-	name = "J. B. M. Hertzog"
-	desc = "POLITICS_J_B_M_HERTZOG_DESC"
-	picture = "GFX_SAF_james_hertzog"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "D. F. Malan"
-	desc = "POLITICS_DF_MALAN_DESC"
-	picture = "GFX_SAF_daniel_malan"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "Moses Kotane"
-	desc = "POLITICS_MOSES_KOTANE_DESC"
-	picture = "GFX_SAF_moses_kotane"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "Pixley Ka Isaka Seme"
-	desc = "POLITICS_PIXLEY_SEME_DESC"
-	picture = "gfx/leaders/Africa/Portrait_Africa_Generic_3.dds"
-	expire = "1965.1.1"
-	ideology = centrism
-	traits = {
-		#
-	}
-}
-create_corps_commander = {
-	name = "George Edwin Brink"
-	gfx = "GFX_SAF_george_edwin_brink"
-	traits = { desert_fox panzer_leader trickster trait_engineer infantry_leader cavalry_leader}
-	skill = 4
-	id = 633
-	attack_skill = 5
-	defense_skill = 3
-	planning_skill = 4
-	logistics_skill = 4
-}
-create_corps_commander = {
-	name = "Jan Smuts"
-	gfx = "GFX_SAF_jan_smuts"
-	traits = { desert_fox panzer_leader organizer infantry_leader cavalry_leader}
-	id = 634
-	skill = 4
-	attack_skill = 4
-	defense_skill = 4
-	planning_skill = 4
-	logistics_skill = 3
-}
-create_navy_leader = {
-	name = "Guy Hallifax"
-	gfx = "GFX_SAF_guy_halifax"
-	traits = { battleship_adherent }
-	skill = 3
-	attack_skill = 4
-	defense_skill = 2
-	maneuvering_skill = 2
-	coordination_skill = 2
-}
-

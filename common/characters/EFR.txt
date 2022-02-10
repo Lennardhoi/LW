@@ -1,0 +1,797 @@
+characters={
+	EFR_philippe_pétain={
+		name="Philippe Pétain"
+		portraits={
+			civilian={
+				large="gfx/leaders/EFR/Portrait_France_Philippe_Petain.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_PHILIPPE_PÉTAIN_DESC"
+			ideology=fascism_ideology
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	EFR_jean_de_lattre_de_tassigny={
+		name="Jean de Lattre de Tassigny"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/EFR/Portrait_France_Jean_de_Lattre_de_Tassigny.dds"
+			}
+		}
+		corps_commander={
+			traits={ brilliant_strategist cavalry_officer war_hero trickster }
+			skill=4
+			attack_skill=4
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	EFR_alphonse_juin={
+		name="Alphonse Juin"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/EFR/Portrait_France_Alphonse_Juin.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_cautious armor_officer }
+			skill=4
+			attack_skill=3
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	EFR_maurice_gamelin={
+		name="Maurice Gamelin"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/EFR/Portrait_France_Maurice_Gamelin.dds"
+			}
+		}
+		field_marshal={
+			traits={ old_guard inflexible_strategist defensive_doctrine }
+			skill=2
+			attack_skill=1
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	EFR_maxime_weygand={
+		name="Maxime Weygand"
+		advisor={
+			slot = army_chief
+			idea_token = VIC_maxime_weygand
+			allowed  = {
+					not  = {
+						has_dlc = "La Resistance"
+					}
+					original_tag  = FRA 
+					has_government  = fascism 
+				}
+				traits  = {
+					army_chief_defensive_3 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_3"
+			}
+			army={
+				large="gfx/leaders/EFR/Portrait_France_Maxime_Weygand.dds"
+			}
+		}
+		field_marshal={
+			traits={ old_guard inflexible_strategist defensive_doctrine }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	EFR_alphonse_georges={
+		name="Alphonse Georges"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/EFR/Portrait_France_Alphonse_Joseph_Georges.dds"
+			}
+		}
+		field_marshal={
+			traits={ old_guard trait_cautious defensive_doctrine }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	EFR_charles_de_gaulle={
+		name="Charles De Gaulle"
+		portraits={
+			army={
+				small="GFX_Portrait_Europe_Generic_land_2_small"
+			}
+			army={
+				large="GFX_Portrait_Europe_Generic_land_2"
+			}
+		}
+		corps_commander={
+			traits={ media_personality harsh_leader armor_officer }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	EFR_philippe_leclerc={
+		name="Philippe Leclerc"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/EFR/portrait_france_philippe_leclerc.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_reckless armor_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	EFR_henri_giraud={
+		name="Henri Giraud"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/EFR/portrait_france_henri_giraud.dds"
+			}
+		}
+		corps_commander={
+			traits={ trait_cautious infantry_officer trickster }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=4
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	EFR_charles_huntziger={
+		name="Charles Huntziger"
+		advisor={
+			slot = theorist
+			idea_token = VIC_charles_huntziger
+			ledger  = army 
+				allowed  = {
+					original_tag  = FRA 
+					has_government  = fascism 
+				}
+				traits  = {
+					military_theorist 
+				}
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_4"
+			}
+			army={
+				large="gfx/leaders/EFR/portrait_france_charles_huntziger.dds"
+			}
+		}
+		corps_commander={
+			traits={ old_guard infantry_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+	EFR_françois_darlan={
+		name="François Darlan"
+		advisor={
+			slot = political_advisor
+			idea_token = EFR_francois_darlan
+			allowed  = {
+					original_tag  = EFR
+				}
+				available  = {
+					or  = {
+						has_government  = fascism 
+						has_government  = neutrality 
+					}
+				}
+				traits  = {
+					quartermaster_general 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		portraits={
+			army={
+				small=""
+			}
+			navy={
+				small="GFX_idea_EFR_francois_darlan"
+			}
+			army={
+				large="gfx/leaders/EFR/Portrait_France_Francois_Darlan.dds"
+			}
+		}
+		navy_leader={
+			traits={ naval_lineage superior_tactician }
+			skill=3
+			attack_skill=4
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+	EFR_jeanmarie_charles_abrial={
+		name="Jean-Marie Charles Abrial"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/EFR/Portrait_France_Jean-Marie_Charles_Abrial.dds"
+			}
+		}
+		navy_leader={
+			traits={ chief_engineer superior_tactician }
+			skill=3
+			attack_skill=2
+			defense_skill=3
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+	EFR_jeanpierre_esteva={
+		name="Jean-Pierre Esteva"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/EFR/Portrait_France_Jean-Pierre_Esteva.dds"
+			}
+		}
+		navy_leader={
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+	EFR_renéÉmile_godfroy={
+		name="René-Émile Godfroy"
+		portraits={
+			army={
+				small=""
+			}
+			army={
+				large="gfx/leaders/EFR/Portrait_France_Rene-Emile_Godfroy.dds"
+			}
+		}
+		navy_leader={
+			traits={ gentlemanly battleship_adherent spotter }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+	EFR_jean_de_laborde={
+		name="Jean de Laborde"
+		advisor={
+			slot = high_command
+			idea_token = VIC_jean_de_laborde
+			ledger  = navy 
+				allowed  = {
+					original_tag  = FRA 
+					has_government  = fascism 
+				}
+				traits  = {
+					navy_capital_ship_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		portraits={
+			army={
+				small=""
+			}
+			navy={
+				small="GFX_idea_generic_navy_europe_2"
+			}
+			army={
+				large="gfx/leaders/EFR/Portrait_France_Jean_de_Laborde.dds"
+			}
+		}
+		navy_leader={
+			traits={ naval_lineage }
+			skill=1
+			attack_skill=1
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+	EFR_peter_jones={
+		name="Peter Jones"
+		portraits={
+			civilian={
+				large="GFX_portrait_europe_generic_4"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			traits={ fortification_engineer }
+			expire="1942.1.1.12"
+			id=-1
+		}
+	}
+	EFR_lucas_taylor={
+		name="Lucas Taylor"
+		portraits={
+			civilian={
+				large="GFX_portrait_europe_generic_5"
+			}
+		}
+		country_leader={
+			ideology=leninism
+			traits={ reluctant_interventionist silent_workhorse }
+			expire="1945.1.1.12"
+			id=-1
+		}
+	}
+	EFR_peter_williams={
+		name="Peter Williams"
+		portraits={
+			civilian={
+				large="GFX_portrait_europe_generic_5"
+			}
+		}
+		country_leader={
+			ideology=moderatism
+			expire="1948.1.1.12"
+			id=-1
+		}
+	}
+	EFR_VIC_jean_francois_jannekeyn={
+		advisor={
+			slot = high_command
+			idea_token = VIC_jean_francois_jannekeyn
+			ledger  = navy 
+				allowed  = {
+					original_tag  = FRA 
+					has_government  = fascism 
+				}
+				traits  = {
+					air_naval_strike_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="VIC_jean_francois_jannekeyn"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_1"
+			}
+		}
+	}
+	EFR_VIC_pierre_le_gloan={
+		advisor={
+			slot = high_command
+			idea_token = VIC_pierre_le_gloan
+			ledger  = air 
+				allowed  = {
+					original_tag  = FRA 
+					has_government  = fascism 
+				}
+				traits  = {
+					air_air_superiority_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="VIC_pierre_le_gloan"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_2"
+			}
+		}
+	}
+	EFR_VIC_marcel_bruno_gensoul={
+		advisor={
+			slot = high_command
+			idea_token = VIC_marcel_bruno_gensoul
+			ledger  = navy 
+				allowed  = {
+					original_tag  = FRA 
+					has_government  = fascism 
+				}
+				traits  = {
+					navy_screen_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="VIC_marcel_bruno_gensoul"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_1"
+			}
+		}
+	}
+	EFR_marcel_deat={
+		advisor={
+			slot = political_advisor
+			idea_token = EFR_marcel_deat
+			allowed  = {
+					original_tag  = EFR
+				}
+				available  = {
+				}
+				traits  = {
+					fascist_demagogue 
+				}
+				on_add  = {
+					country_event  = political.7
+				}
+				do_effect  = {
+					not  = {
+						has_government  = fascism 
+					}
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+		name="EFR_marcel_deat"
+		portraits={
+			army={
+				small="GFX_idea_EFR_marcel_deat"
+			}
+		}
+	}
+	EFR_jacques_doriot={
+		advisor={
+			slot = political_advisor
+			idea_token = EFR_jacques_doriot
+			allowed  = {
+					original_tag  = EFR
+				}
+				available  = {
+					or  = {
+						has_government  = fascism 
+						has_government  = neutrality 
+					}
+				}
+				traits  = {
+					backroom_backstabber 
+				}
+		}
+		name="EFR_jacques_doriot"
+		portraits={
+			army={
+				small="GFX_idea_EFR_jacques_doriot"
+			}
+		}
+	}
+	EFR_VIC_rene_bousquet={
+		advisor={
+			slot = political_advisor
+			idea_token = VIC_rene_bousquet
+			allowed  = {
+					original_tag  = FRA 
+					has_government  = fascism 
+				}
+				traits  = {
+					compassionate_gentleman 
+				}
+		}
+		name="VIC_rene_bousquet"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+	}
+	EFR_VIC_jean_marie_abrial={
+		advisor={
+			slot = navy_chief
+			idea_token = VIC_jean_marie_abrial
+			allowed  = {
+					original_tag  = FRA 
+					has_government  = fascism 
+				}
+				traits  = {
+					navy_anti_submarine_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="VIC_jean_marie_abrial"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_1"
+			}
+		}
+	}
+	EFR_rene_belin={
+		advisor={
+			slot = political_advisor
+			idea_token = EFR_rene_belin
+			allowed  = {
+					original_tag  = EFR
+				}
+				available  = {
+					or  = {
+						has_government  = fascism 
+						has_government  = neutrality 
+					}
+				}
+				traits  = {
+					captain_of_industry 
+				}
+		}
+		name="EFR_rene_belin"
+		portraits={
+			army={
+				small="GFX_idea_EFR_rene_belin"
+			}
+		}
+	}
+	EFR_VIC_jean_marie_bergeret={
+		advisor={
+			slot = air_chief
+			idea_token = VIC_jean_marie_bergeret
+			allowed  = {
+					original_tag  = FRA 
+					has_government  = fascism 
+				}
+				traits  = {
+					air_chief_safety_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="VIC_jean_marie_bergeret"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_2"
+			}
+		}
+	}
+	EFR_VIC_pierre_laval={
+		advisor={
+			slot = political_advisor
+			idea_token = VIC_pierre_laval
+			allowed  = {
+					original_tag  = FRA 
+					has_government  = fascism 
+				}
+				traits  = {
+					backroom_backstabber 
+				}
+				ai_will_do  = {
+					factor  = 0.000
+				}
+		}
+		name="VIC_pierre_laval"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+	}
+	EFR_VIC_eugene_bridoux={
+		advisor={
+			slot = army_chief
+			idea_token = VIC_eugene_bridoux
+			allowed  = {
+					original_tag  = FRA 
+					has_government  = fascism 
+				}
+				traits  = {
+					army_chief_reform_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="VIC_eugene_bridoux"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_1"
+			}
+		}
+	}
+	EFR_pierre_laval={
+		advisor={
+			slot = political_advisor
+			idea_token = EFR_pierre_laval
+			allowed  = {
+					original_tag  = EFR
+				}
+				available  = {
+					or  = {
+						has_government  = fascism 
+						has_government  = neutrality 
+					}
+				}
+				traits  = {
+					silent_workhorse 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="EFR_pierre_laval"
+		portraits={
+			army={
+				small="GFX_idea_EFR_pierre_laval"
+			}
+		}
+	}
+	EFR_VIC_jean_romatet={
+		advisor={
+			slot = air_chief
+			idea_token = VIC_jean_romatet
+			allowed  = {
+					original_tag  = FRA 
+					has_government  = fascism 
+				}
+				traits  = {
+					air_chief_ground_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="VIC_jean_romatet"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_3"
+			}
+		}
+	}
+	EFR_VIC_lucien_lacaze={
+		advisor={
+			slot = theorist
+			idea_token = VIC_lucien_lacaze
+			ledger  = navy 
+				allowed  = {
+					original_tag  = FRA 
+					has_government  = fascism 
+				}
+				traits  = {
+					naval_theorist 
+				}
+		}
+		name="VIC_lucien_lacaze"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_1"
+			}
+		}
+	}
+	EFR_VIC_marius_viple={
+		advisor={
+			slot = political_advisor
+			idea_token = VIC_marius_viple
+			allowed  = {
+					original_tag  = FRA 
+					has_government  = fascism 
+				}
+				traits  = {
+					popular_figurehead 
+				}
+		}
+		name="VIC_marius_viple"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+	}
+	EFR_joseph_darnand={
+		advisor={
+			slot = political_advisor
+			idea_token = EFR_joseph_darnand
+			allowed  = {
+					original_tag  = EFR
+				}
+				available  = {
+					or  = {
+						has_government  = fascism 
+						has_government  = neutrality 
+					}
+				}
+				traits  = {
+					prince_of_terror 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="EFR_joseph_darnand"
+		portraits={
+			army={
+				small="GFX_idea_EFR_joseph_darnand"
+			}
+		}
+	}
+	EFR_VIC_jean_francois_darlan={
+		advisor={
+			slot = navy_chief
+			idea_token = VIC_jean_francois_darlan
+			allowed  = {
+					original_tag  = FRA 
+					has_government  = fascism 
+				}
+				traits  = {
+					navy_chief_maneuver_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="VIC_jean_francois_darlan"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_1"
+			}
+		}
+	}
+}

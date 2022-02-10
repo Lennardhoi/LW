@@ -1,3 +1,26 @@
+recruit_character = BUL_nikola_totev_markov
+recruit_character = BUL_boris_iii
+recruit_character = BUL_georgi_dimitrov
+recruit_character = BUL_nikola_petkov
+recruit_character = BUL_konstantin_ivanov_bekyarov
+recruit_character = BUL_georgi_popov
+recruit_character = BUL_nikola_hadzhipetkov
+recruit_character = BUL_kiril_stanchev
+recruit_character = BUL_hristo_lukov
+recruit_character = BUL_asen_dobrev_nikolov
+recruit_character = BUL_blagoi_ivanov
+recruit_character = BUL_georgi_ivanov_kyoseivanov
+recruit_character = BUL_dobri_bozhilov
+recruit_character = BUL_stoyan_stoyanov
+recruit_character = BUL_konstantin_muraviev
+recruit_character = BUL_mahmud_bughra_khan
+recruit_character = BUL_bonyu_stoev_pironkov
+recruit_character = BUL_ivan_gaidimitriv
+recruit_character = BUL_kiril_dimitrov_yanchule
+recruit_character = BUL_vasil_boydev
+recruit_character = BUL_nikola_hadzipetkov
+recruit_character = BUL_georgi_petsov
+recruit_character = BUL_atanas_pavlov_zhilkov
 capital = 48
 oob = "BUL_1936"
 set_research_slots = 3
@@ -52,83 +75,4 @@ set_popularities = {
 	fascism = 35
 	neutrality = 60
 }
-create_country_leader = {
-	name = "Boris III"
-	desc = "POLITICS_BORIS_III_DESC"
-	picture = "Portrait_Bulgaria_Boris_III.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "Georgi Dimitrov"
-	desc = "POLITICS_GEORGI_DIMITROV_DESC"
-	picture = "Portrait_Bulgaria_Georgi_Dimitrov.dds"
-	expire = "1965.1.1"
-	ideology = leninism
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "Nikola Petkov"
-	desc = "POLITICS_NIKOLA_PETKOV_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = socialism
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "Boris III"
-	desc = "POLITICS_BORIS_III_DESC"
-	picture = "Portrait_Bulgaria_Boris_III.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
-create_corps_commander = {
-	name = "Nikola Totev Markov"
-	portrait_path = "gfx/leaders/BUL/Nikola_Totev_Markov.tga"
-	traits = {infantry_leader trickster commando }
-	skill = 5
-	attack_skill = 5
-	defense_skill = 4
-	planning_skill = 2
-	logistics_skill = 4
-}
-create_field_marshal = {
-	name = "Konstantin Ivanov Bekyarov"
-	portrait_path = "gfx/leaders/BUL/Konstantin_Ivanov_Bekyarov.tga"
-	traits = { organizer panzer_leader infantry_leader}
-	skill = 5
-	attack_skill = 5
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 1
-}
-	create_corps_commander = { #DLC
-		name = "Georgi Popov"
-		gfx = GFX_portrait_bul_georgi_popov
-		traits = { infantry_leader ranger trait_mountaineer }
- 	skill = 5
- 	attack_skill = 5
- 	defense_skill = 3
- 	planning_skill = 2
- 	logistics_skill = 2
-	}
-	create_corps_commander = { 
-		name = "Nikola Hadzhipetkov"
-		portrait_path = "gfx/leaders/ENG/Portrait_Britain_Generic_land_4.dds"
-		traits = { infantry_leader trait_engineer panzer_leader urban_assault_specialist}
- 		skill = 5
- 		attack_skill = 3
- 		defense_skill = 3
- 		planning_skill = 2
- 		logistics_skill = 3
-	}
+

@@ -1,3 +1,61 @@
+recruit_character = USA_franklin_delano_roosevelt
+recruit_character = USA_geoffrey_keyes
+recruit_character = USA_lucian_truscott
+recruit_character = USA_mark_clark
+recruit_character = USA_walter_krueger
+recruit_character = USA_lloyd_fredendall
+recruit_character = USA_leslie_mcnair
+recruit_character = USA_jonathan_wainwright
+recruit_character = USA_russell_hartle
+recruit_character = USA_leonard_gerow
+recruit_character = USA_edward_brooks
+recruit_character = USA_clarence_huebner
+recruit_character = USA_alexander_patch
+recruit_character = USA_william_simpson
+recruit_character = USA_j._lawton_collins
+recruit_character = USA_courtney_hodges
+recruit_character = USA_joseph_stilwell
+recruit_character = USA_omar_bradley
+recruit_character = USA_oscar_griswold
+recruit_character = USA_maurice_rose
+recruit_character = USA_ernest_king
+recruit_character = USA_chester_w._nimitz
+recruit_character = USA_william_halsey_jr
+recruit_character = USA_frank_jack_fletcher
+recruit_character = USA_raymond_a._spruance
+recruit_character = USA_harold_rainsford_stark
+recruit_character = USA_arleigh_burke
+recruit_character = USA_charles_m_cooke_jr
+recruit_character = USA_jonathan_wilson
+recruit_character = USA_edward_buckner
+recruit_character = USA_james_bee
+recruit_character = USA_mark_clark
+recruit_character = USA_robert_goddard
+recruit_character = USA_henry_morgenthau
+recruit_character = USA_robert_taft
+recruit_character = USA_douglas_macarthur
+recruit_character = USA_raymond_spruance
+recruit_character = USA_robert_oppenheimer
+recruit_character = USA_harold_ickes
+recruit_character = USA_thomas_kinkaid
+recruit_character = USA_henry_arnold
+recruit_character = USA_victor_perlo
+recruit_character = USA_george_patton
+recruit_character = USA_dewitt_clinton_ramsey
+recruit_character = USA_harold_mcclelland
+recruit_character = USA_usa_william_donovan
+recruit_character = USA_whittaker_chambers
+recruit_character = USA_donald_nelson
+recruit_character = USA_george_kenney
+recruit_character = USA_william_halsey
+recruit_character = USA_george_marshall
+recruit_character = USA_carl_spaatz
+recruit_character = USA_marc_mitscher
+recruit_character = USA_william_regnery
+recruit_character = USA_henry_stimson
+recruit_character = USA_jimmy_doolittle
+recruit_character = USA_claire_lee_chennault
+recruit_character = USA_dwight_eisenhower
 capital = 328
 oob = "USA_1936"
 if = {
@@ -150,289 +208,7 @@ add_ideas = {
 	USA_segregation
 }
 # DIPLOMACY
-create_country_leader = {
-	name = "Franklin Delano Roosevelt"
-	desc = "POLITICS_FRANKLIN_DELANO_ROOSEVELT_DESC"
-	picture = "Portrait_USA_Franklin_Roosevelt.dds"
-	expire = "1947.1.1"
-	ideology = liberalism
-	traits = {
-		dislikes_germany
-	}
-}
-create_corps_commander = {
-	name = "Geoffrey Keyes"
-	picture = "Portrait_USA_Geoffrey_Keyes.dds"
-	traits = { armor_officer infantry_leader }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 4
-	planning_skill = 2
-	logistics_skill = 3
-}
-create_corps_commander = {
-	name = "Lucian Truscott"
-	picture = "Portrait_USA_Lucian_Truscott.dds"
-	traits = { trait_engineer commando cavalry_leader }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 2
-}
-create_corps_commander = {
-	name = "Mark Clark"
-	picture = "Portrait_USA_Mark_W_Clark.dds"
-	traits = { infantry_officer trait_reckless infantry_leader }
-	skill = 5
-	attack_skill = 5
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 3
-}
-create_corps_commander = {
-	name = "Walter Krueger"
-	picture = "Portrait_USA_Walter_Krueger.dds"
-	traits = { armor_officer brilliant_strategist infantry_leader }
-	skill = 3
-	attack_skill = 1
-	defense_skill = 7
-	planning_skill = 1
-	logistics_skill = 1
-}
-create_corps_commander = {
-	name = "Lloyd Fredendall"
-	picture = "Portrait_USA_Lloyd_Fredendall.dds"
-	traits = { old_guard infantry_officer naval_invader infantry_leader inflexible_strategist }
-	skill = 2
-	attack_skill = 4
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 1
-}
-create_corps_commander = {
-	name = "Leslie McNair"
-	picture = "Portrait_USA_Lesley_McNair.dds"
-	traits = {  old_guard armor_officer }
-	skill = 3
-	attack_skill = 1
-	defense_skill = 2
-	planning_skill = 4
-	logistics_skill = 2
-}
-create_corps_commander = {
-	name = "Jonathan Wainwright"
-	picture = "Portrait_USA_Jonathan_Wainwright.dds"
-	traits = { infantry_leader skilled_staffer }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
-}
-create_corps_commander = {
-	name = "Russell Hartle"
-	picture = "Portrait_USA_Russell_P_Hartle.dds"
-	traits = { infantry_officer }
-	skill = 1
-	rank = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-create_corps_commander = {
-	name = "Leonard Gerow"
-	picture = "Portrait_USA_Leonard_T_Gerow.dds"
-	traits = { infantry_officer trait_reckless infantry_leader }
-	skill = 5
-	attack_skill = 5
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 3
-}
-create_corps_commander = {
-	name = "Edward Brooks"
-	picture = "Portrait_USA_Edward_Brooks.dds"
-	traits = { armor_officer naval_invader commando }
-	skill = 4
-	attack_skill = 5
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 2
-}
-create_corps_commander = {
-	name = "Clarence Huebner"
-	picture = "Portrait_USA_Clarence_Huebner.dds"
-	traits = { infantry_officer naval_invader infantry_leader }
-	skill = 5
-	attack_skill = 5
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 3
-}
-create_corps_commander = {
-	name = "Alexander Patch"
-	picture = "Portrait_USA_Alexander_Patch.dds"
-	traits = {  commando infantry_officer }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 3
-}
-create_corps_commander = {
-	name = "William Simpson"
-	picture = "Portrait_USA_William_Hood_Simpson.dds"
-	traits = { infantry_officer infantry_leader }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 4
-	planning_skill = 2
-	logistics_skill = 2
-}
-create_corps_commander = {
-	name = "J. Lawton Collins"
-	picture = "Portrait_USA_Lawton_Collins.dds"
-	traits = {  trickster }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 3
-	logistics_skill = 2
-}
-create_corps_commander = {
-	name = "Courtney Hodges"
-	picture = "Portrait_USA_Cortney_Hodges.dds"
-	traits = {  panzer_leader infantry_officer }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 4
-}
-create_corps_commander = {
-	name = "Joseph Stilwell"
-	picture = "Portrait_USA_Joseph_Stilwell.dds"
-	traits = { politically_connected infantry_officer harsh_leader }
-	skill = 1
-	id = 601
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-create_corps_commander = {
-	name = "Omar Bradley"
-	picture = "Portrait_USA_Omar_Bradley.dds"
-	traits = {  trait_engineer trait_cautious brilliant_strategist harsh_leader infantry_leader organizer  }
-	skill = 6
-	attack_skill = 4
-	defense_skill = 5
-	planning_skill = 4
-	logistics_skill = 4
-			}
-create_corps_commander = {
-	name = "Oscar Griswold"
-	picture = "Portrait_USA_Oscar_Griswold.dds"
-	traits = { infantry_officer  }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 2
-	logistics_skill = 2
-}
-create_corps_commander = {
-	name = "Maurice Rose"
-	picture = "Portrait_USA_Maurice_Rose.dds"
-	traits = { armor_officer trait_reckless brilliant_strategist  }
-	skill = 4
-	attack_skill = 5
-	defense_skill = 2
-	planning_skill = 2
-	logistics_skill = 3
-}
-create_navy_leader = {
-	name = "Ernest King"
-	id = 451
-	picture = "Portrait_USA_Earnest_King.dds"
-	traits = { caustic_personality blockade_runner superior_tactician }
-	skill = 5
-	attack_skill = 4
-	defense_skill = 3
-	maneuvering_skill = 3
-	coordination_skill = 6
-}
-create_navy_leader = {
-	name = "Chester W. Nimitz"
-	picture = "Portrait_USA_Chester_W_Nimitz.dds"
-	traits = { gentlemanly blue_water_expert naval_lineage superior_tactician spotter ironside air_controller }
-	skill = 6
-	attack_skill = 6
-	defense_skill = 5
-	maneuvering_skill = 6
-	coordination_skill = 7
-}
-create_navy_leader = {
-	name = "William Halsey, Jr."
-	picture = "Portrait_USA_William_Halsey_Jr.dds"
-	traits = { superior_tactician spotter air_controller }
-	skill = 6
-	attack_skill = 6
-	defense_skill = 3
-	maneuvering_skill = 7
-	coordination_skill = 3
-}
-create_navy_leader = {
-	name = "Frank Jack Fletcher"
-	picture = "Portrait_USA_Frank_Jack_Fletcher.dds"
-	traits = { superior_tactician spotter ironside }
-	skill = 5
-	attack_skill = 5
-	defense_skill = 5
-	maneuvering_skill = 3
-	coordination_skill = 3
-}
-create_navy_leader = {
-	name = "Raymond A. Spruance"
-	picture = "Portrait_USA_Raymond_A_Spruance.dds"
-	traits = { gentlemanly superior_tactician fly_swatter }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 5
-	maneuvering_skill = 3
-	coordination_skill = 3
-}
-create_navy_leader = {
-	name = "Harold Rainsford Stark"
-	picture = "Portrait_USA_Harold_Rainsford_Stark.dds"
-	traits = { cuts_corners blockade_runner spotter seawolf }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 1
-	maneuvering_skill = 2
-	coordination_skill = 7
-}
-create_navy_leader = {
-	name = "Arleigh Burke"
-	picture = "Portrait_USA_Arleigh_Burke.dds"
-	traits = { fleet_protector superior_tactician }
-	skill = 5
-	attack_skill = 7
-	defense_skill = 3
-	maneuvering_skill = 8
-	coordination_skill = 4
-}
-create_navy_leader = {
-	name = "Charles M. Cooke, Jr."
-	picture = "Portrait_USA_Charles_M_Cooke.dds"
-	traits = { }
-	skill = 2
-	attack_skill = 1
-	defense_skill = 1
-	maneuvering_skill = 2
-	coordination_skill = 3
-}
+
 if = {
 	limit = { has_dlc = "La Resistance" }
 	create_operative_leader = {
@@ -860,4 +636,3 @@ if = {
 		}
 	}
 }
-

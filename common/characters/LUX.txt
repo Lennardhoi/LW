@@ -1,0 +1,392 @@
+characters={
+	LUX_joseph_bech={
+		name="Joseph Bech"
+		portraits={
+			civilian={
+				large="GFX_portrait_luxembourg_joseph_bech"
+			}
+		}
+		country_leader={
+			desc="POLITICS_JOSEPH_BECH_DESC"
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	LUX_alphonse_wyvekens={
+		name="Alphonse Wyvekens"
+		portraits={
+			civilian={
+				large="GFX_Portrait_europe_generic_7"
+			}
+		}
+		country_leader={
+			ideology=leninism
+			traits={ quartermaster_general retired_officer }
+			expire="1950.1.1.12"
+			id=-1
+		}
+	}
+	LUX_vincent_berthels={
+		name="Vincent Berthels"
+		portraits={
+			civilian={
+				large="GFX_portrait_europe_generic_8"
+			}
+		}
+		country_leader={
+			ideology=gen_nazism
+			traits={ silent_workhorse }
+			expire="1956.1.1.12"
+			id=-1
+		}
+	}
+	LUX_pierreguillaume_bredart={
+		name="Pierre-Guillaume Bredart"
+		portraits={
+			civilian={
+				large="GFX_portrait_europe_generic_6"
+			}
+		}
+		country_leader={
+			ideology=oligarchism
+			traits={ compassionate_gentleman economist }
+			expire="1947.1.1.12"
+			id=-1
+		}
+	}
+	LUX_alexander_von_falkenhausen={
+		advisor={
+			slot = army_chief
+			idea_token = LUX_alexander_von_falkenhausen
+			allowed  = {
+					original_tag  = LUX
+				}
+				traits  = {
+					army_chief_offensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="LUX_alexander_von_falkenhausen"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_2"
+			}
+		}
+	}
+	LUX_pierre_fischbach={
+		advisor={
+			slot = high_command
+			idea_token = LUX_pierre_fischbach
+			ledger  = navy 
+				allowed  = {
+					original_tag  = LUX
+				}
+				traits  = {
+					navy_fleet_logistics_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="LUX_pierre_fischbach"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_1"
+			}
+		}
+	}
+	LUX_guillaume_soisson={
+		advisor={
+			slot = air_chief
+			idea_token = LUX_guillaume_soisson
+			allowed  = {
+					original_tag  = LUX
+				}
+				traits  = {
+					air_air_combat_training_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="LUX_guillaume_soisson"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_3"
+			}
+		}
+	}
+	LUX_alex_federspiel={
+		advisor={
+			slot = theorist
+			idea_token = LUX_alex_federspiel
+			ledger  = army 
+				allowed  = {
+					original_tag  = LUX
+				}
+				research_bonus  = {
+					land_doctrine  = 0.100
+				}
+				traits  = {
+					military_theorist 
+				}
+		}
+		name="LUX_alex_federspiel"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_1"
+			}
+		}
+	}
+	LUX_pierre_krier={
+		advisor={
+			slot = political_advisor
+			idea_token = LUX_pierre_krier
+			allowed  = {
+					original_tag  = LUX
+				}
+				traits  = {
+					captain_of_industry 
+				}
+		}
+		name="LUX_pierre_krier"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+	}
+	LUX_francois_schammel={
+		advisor={
+			slot = high_command
+			idea_token = LUX_francois_schammel
+			ledger  = army 
+				allowed  = {
+					original_tag  = LUX
+				}
+				traits  = {
+					army_infantry_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="LUX_francois_schammel"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_1"
+			}
+		}
+	}
+	LUX_nicholas_diedrich={
+		advisor={
+			slot = air_chief
+			idea_token = LUX_nicholas_diedrich
+			allowed  = {
+					original_tag  = LUX
+				}
+				traits  = {
+					air_chief_ground_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="LUX_nicholas_diedrich"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_1"
+			}
+		}
+	}
+	LUX_damien_roeser={
+		advisor={
+			slot = high_command
+			idea_token = LUX_damien_roeser
+			ledger  = air 
+				allowed  = {
+					original_tag  = LUX
+				}
+				traits  = {
+					air_air_superiority_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="LUX_damien_roeser"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_2"
+			}
+		}
+	}
+	LUX_florent_destriveaux={
+		advisor={
+			slot = theorist
+			idea_token = LUX_florent_destriveaux
+			ledger  = navy 
+				allowed  = {
+					original_tag  = LUX
+				}
+				research_bonus  = {
+					naval_doctrine  = 0.100
+				}
+				traits  = {
+					naval_theorist 
+				}
+		}
+		name="LUX_florent_destriveaux"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_1"
+			}
+		}
+	}
+	LUX_henri_ahnen={
+		advisor={
+			slot = navy_chief
+			idea_token = LUX_henri_ahnen
+			allowed  = {
+					original_tag  = LUX
+				}
+				traits  = {
+					navy_chief_maneuver_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="LUX_henri_ahnen"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_1"
+			}
+		}
+	}
+	LUX_emile_speller={
+		advisor={
+			slot = army_chief
+			idea_token = LUX_emile_speller
+			allowed  = {
+					original_tag  = LUX
+				}
+				traits  = {
+					army_chief_defensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="LUX_emile_speller"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_4"
+			}
+		}
+	}
+	LUX_pierre_dupong={
+		advisor={
+			slot = political_advisor
+			idea_token = LUX_pierre_dupong
+			allowed  = {
+					original_tag  = LUX
+				}
+				traits  = {
+					silent_workhorse 
+				}
+		}
+		name="LUX_pierre_dupong"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+	}
+	LUX_aloyse_glodt={
+		advisor={
+			slot = high_command
+			idea_token = LUX_aloyse_glodt
+			ledger  = army 
+				allowed  = {
+					original_tag  = LUX
+				}
+				traits  = {
+					army_armored_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="LUX_aloyse_glodt"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_3"
+			}
+		}
+	}
+	LUX_nicolas_de_dixmude={
+		advisor={
+			slot = theorist
+			idea_token = LUX_nicolas_de_dixmude
+			ledger  = air 
+				allowed  = {
+					original_tag  = LUX
+				}
+				research_bonus  = {
+					air_doctrine  = 0.100
+				}
+				traits  = {
+					air_warfare_theorist 
+				}
+		}
+		name="LUX_nicolas_de_dixmude"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_1"
+			}
+		}
+	}
+	LUX_paul_medinger={
+		advisor={
+			slot = navy_chief
+			idea_token = LUX_paul_medinger
+			allowed  = {
+					original_tag  = LUX
+				}
+				traits  = {
+					navy_chief_decisive_battle_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="LUX_paul_medinger"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_3"
+			}
+		}
+	}
+	LUX_martin_karp={
+		advisor={
+			slot = political_advisor
+			idea_token = LUX_martin_karp
+			allowed  = {
+					original_tag  = LUX
+				}
+				traits  = {
+					war_industrialist 
+				}
+		}
+		name="LUX_martin_karp"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+	}
+}

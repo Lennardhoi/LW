@@ -1,3 +1,28 @@
+recruit_character = HUN_miklós_horthy
+recruit_character = HUN_mátyás_rákosi
+recruit_character = HUN_Árpád_szakasits
+recruit_character = HUN_géza_lakatos
+recruit_character = HUN_iván_hindy
+recruit_character = HUN_károly_beregfy
+recruit_character = HUN_lajos_veress
+recruit_character = HUN_ferenc_feketehalmyczeydner
+recruit_character = HUN_salvo
+recruit_character = HUN_vilmos_roder
+recruit_character = HUN_zoltan_tildy
+recruit_character = HUN_hugo_sonyi
+recruit_character = HUN_dezso_laszlo
+recruit_character = HUN_lajos_remenyi_schneller
+recruit_character = HUN_reszo_kastner
+recruit_character = HUN_sandor_magyarossy
+recruit_character = HUN_bela_rakosi
+recruit_character = HUN_francois_deak
+recruit_character = HUN_gyorgy_jendrassik
+recruit_character = HUN_jeno_ratz
+recruit_character = HUN_henrik_werth
+recruit_character = HUN_ferenc_szombathelyi
+recruit_character = HUN_gusztav_jany
+recruit_character = HUN_shvoy_kalman
+recruit_character = HUN_gyula_gombos_de_jakfa
 capital = 43
  oob = "HUN_1936"
  set_research_slots = 3
@@ -58,134 +83,8 @@ capital = 43
  	fascism = 31
  	neutrality = 44
  }
- #Start Horty as neutral if DOD
- if = {
- 	limit = {
- 		has_dlc = "Death or Dishonor"
- 	}
- 	create_country_leader = {
- 		name = "Miklós Horthy"
- 		desc = "POLITICS_MIKLOS_HORTHY_DESC"
- 		picture = "Portrait_Hungary_Miklos_Horthy.dds"
- 		expire = "1965.1.1"
- 		ideology = oligarchism
- 		traits = {
- 			fascist_sympathies
- 			anti_communist
- 		}
- 		id = 500 #Horthy Neutral
- 	}
- 	
- 		create_country_leader = {
- 		name = "Miklós Horthy"
- 		desc = "POLITICS_MIKLOS_HORTHY_DESC"
- 		picture = "Portrait_Hungary_Miklos_Horthy.dds"
- 		expire = "1965.1.1"
- 		ideology = fascism_ideology
- 		traits = {
- 			fascist_sympathies
- 			anti_communist
- 		}
- 		id = 5000 #Horthy Neutral
- 	}
- 	
- 	else = {
- 		create_country_leader = {
- 			name = "Miklós Horthy"
- 			desc = "POLITICS_MIKLOS_HORTHY_DESC"
- 			picture = "Portrait_Hungary_Miklos_Horthy.dds"
- 			expire = "1965.1.1"
- 			ideology = despotism
- 		}
- 		create_country_leader = {
- 			name = "Miklós Horthy"
- 			desc = "POLITICS_MIKLOS_HORTHY_DESC"
- 			picture = "Portrait_Hungary_Miklos_Horthy.dds"
- 			expire = "1965.1.1"
- 			ideology = fascism_ideology
- 		}
- 	}
- }
- create_country_leader = {
- 	name = "Mátyás Rákosi"
- 	desc = "POLITICS_MATYAS_RAKOSKI_DESC"
- 	picture = "Portrait_Hungary_Matyas_Rakoski.dds"
- 	expire = "1965.1.1"
- 	ideology = stalinism
- 	traits = {
- 		#
- 	}
- }
- create_country_leader = {
- 	name = "Árpád Szakasits"
- 	desc = "POLITICS_ARPAD_SZAKASITS_DESC"
- 	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
- 	expire = "1965.1.1"
- 	ideology = socialism
- 	traits = {
- 		#
- 	}
- }
- create_corps_commander = {
- 	name = "Géza Lakatos"
- 	gfx = GFX_Portrait_hungary_geza_lakatos
- 	traits = {  infantry_leader trait_mountaineer trickster}
- 	skill = 5
- 	attack_skill = 4
- 	defense_skill = 5
- 	planning_skill = 2
- 	logistics_skill = 4
- }
- create_corps_commander = {
- 	name = "Iván Hindy"
- 	gfx = GFX_Portrait_hungary_ivan_hindy
- 	traits = {  trait_engineer panzer_leader infantry_leader urban_assault_specialist}
- 	skill = 5
- 	attack_skill = 5
- 	defense_skill = 4
- 	planning_skill = 2
- 	logistics_skill = 4
- }
- create_corps_commander = {
- 	name = "Károly Beregfy"
- 	gfx = GFX_Portrait_hungary_karoly_beregfy
- 	traits = { infantry_leader trait_engineer trickster}
- 	skill = 5
- 	attack_skill = 6
- 	defense_skill = 2
- 	planning_skill = 3
- 	logistics_skill = 4
- }
- create_corps_commander = {
- 	name = "Lajos Veress"
- 	gfx = GFX_Portrait_hungary_lajos_veress
- 	traits = { infantry_leader trait_engineer ranger trickster}
- 	skill = 5
- 	attack_skill = 3
- 	defense_skill = 5
- 	planning_skill = 2
- 	logistics_skill = 2
- }
- create_field_marshal = {
- 	name = "Ferenc Feketehalmy-Czeydner"
- 	gfx = GFX_Portrait_hungary_ferenc_feketehalmy_czeydner
- 	traits = { panzer_leader ranger organizer trait_engineer infantry_leader trait_mountaineer}
- 	skill = 6
- 	attack_skill = 5
- 	defense_skill = 2
- 	planning_skill = 1
- 	logistics_skill = 2
- }
-create_navy_leader = {
-	name = "Salvo"
-	picture = "GFX_Portrait_romania_horia_macellariu"
-	traits = {gentlemanly spotter  }
-	skill = 4
-	attack_skill = 6
-	defense_skill = 2
-	maneuvering_skill = 6
-	coordination_skill = 4
-}
+ 
+ 
 create_equipment_variant = {
 		name = "Franz Joseph Class"
 		type = ship_hull_heavy_1

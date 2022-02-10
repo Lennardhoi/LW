@@ -1,0 +1,71 @@
+characters={
+	TUR_ismet_inönü={
+		name="Ismet Inönü"
+		portraits={
+			civilian={
+				large="gfx/leaders/TUR/Portrait_Turkey_Ismet_Inonu.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_ISMET_INÖNÜ_DESC"
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	TUR_mustafa_kemal_atatürk={
+		name="Mustafa Kemal Atatürk"
+		portraits={
+			civilian={
+				large="gfx/leaders/TUR/Portrait_Turkey_Mustafa_Kemal_Ataturk.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_MUSTAFA_KEMAL_ATATÜRK_DESC"
+			ideology=despotism
+			expire="1938.11.10.1"
+			id=-1
+		}
+	}
+	TUR_receb_atli={
+		name="Receb Atli"
+		portraits={
+			civilian={
+				large="GFX_Portrait_Arabia_Generic_2"
+			}
+		}
+		country_leader={
+			ideology=socialism
+			traits={ tenacious_negotiator ideological_crusader }
+			expire="1941.1.1.12"
+			id=-1
+		}
+	}
+	TUR_iskender_subasi={
+		name="Iskender Subasi"
+		portraits={
+			civilian={
+				large="GFX_Portrait_Arabia_Generic_1"
+			}
+		}
+		country_leader={
+			ideology=leninism
+			expire="1943.1.1.12"
+			id=-1
+		}
+	}
+	TUR_cemal_gürman={
+		name="Cemal Gürman"
+		portraits={
+			civilian={
+				large="GFX_Portrait_Arabia_Generic_3"
+			}
+		}
+		country_leader={
+			ideology=falangism
+			traits={ fortification_engineer }
+			expire="1944.1.1.12"
+			id=-1
+		}
+	}
+}

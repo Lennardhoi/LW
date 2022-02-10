@@ -1,3 +1,36 @@
+recruit_character = AST_john_curtin
+recruit_character = AST_leslie_morshead
+recruit_character = AST_thomas_blamey
+recruit_character = AST_henry_wynter
+recruit_character = AST_alan_vasey
+recruit_character = AST_horace_robertson
+recruit_character = AST_john_northcott
+recruit_character = AST_harold_farncomb
+recruit_character = AST_victor_crutchley
+recruit_character = AST_john_thesinger
+recruit_character = AST_bruce_issac
+recruit_character = AST_bruce_cook
+recruit_character = AST_clive_caldwell
+recruit_character = AST_frank_forde
+recruit_character = AST_sydney_rowell
+recruit_character = AST_richard_williams
+recruit_character = AST_ragnar_colvin
+recruit_character = AST_norman_makin
+recruit_character = AST_james_fairbairn
+recruit_character = AST_john_collins
+recruit_character = AST_arthur_calwell
+recruit_character = AST_robert_g_menzies
+recruit_character = AST_arthur_allen
+recruit_character = AST_alexander_hore_ruthven
+recruit_character = AST_jack_beasley
+recruit_character = AST_vernon_sturdee
+recruit_character = AST_jack_crace
+recruit_character = AST_cederic_hicks
+recruit_character = AST_herbert_v_evatt
+recruit_character = AST_charles_burnett
+recruit_character = AST_edmund_herring
+recruit_character = AST_arthur_drakeford
+recruit_character = AST_john_lavarack
 capital = 273
 oob = "AST_1936"
 set_stability = 0.65
@@ -102,102 +135,14 @@ set_politics = {
 set_popularities = {
 	democratic = 100
 }
-create_country_leader = {
-	name = "John Curtin"
-	desc = "POLITICS_JOHN_CURTIN_DESC"
-	picture = "Portrait_Australia_John_Curtin.dds"
-	expire = "1965.1.1"
-	ideology = socialism
-	traits = {
-		#
-	}
-}
+
 set_convoys = 100
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
 	amount = 2088
 	producer = AST
 }
-create_field_marshal = {
-	name = "Leslie Morshead"
-	gfx = "GFX_AST_leslie_morshead"
-	traits = { commando panzer_leader trait_engineer ranger infantry_leader trait_mountaineer}
-	skill = 5
-	attack_skill = 2
-	defense_skill = 5
-	planning_skill = 2
-	logistics_skill = 3
-}
-create_corps_commander = {
-	name = "Thomas Blamey"
-	gfx = "GFX_AST_thomas_blamey"
-	traits = { infantry_leader organizer panzer_leader trait_engineer}
-	skill = 4
-	attack_skill = 5
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 3
-}
-create_corps_commander = {
-	name = "Henry Wynter"
-	gfx = "GFX_AST_henry_wynter"
-	traits = {panzer_leader desert_fox trait_engineer}
-	skill = 4
-	attack_skill = 6
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 3
-}
-create_corps_commander = {
-	name = "Alan Vasey"
-	gfx = "GFX_AST_alan_vasey"
-	traits = { hill_fighter infantry_leader naval_invader }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 4
-	planning_skill = 3
-	logistics_skill = 1
-}
-create_corps_commander = {
-	name = "Horace Robertson"
-	gfx = "GFX_AST_horace_robertson"
-	traits = { desert_fox infantry_leader trait_mountaineer }
-	skill = 4
-	attack_skill = 5
-	defense_skill = 1
-	planning_skill = 3
-	logistics_skill = 3
-}
-create_corps_commander = {
-	name = "John Northcott"
-	gfx = "GFX_AST_john_northcott"
-	traits = {infantry_leader jungle_rat trickster}
-	skill = 4
-	attack_skill = 4
-	defense_skill = 3
-	planning_skill = 1
-	logistics_skill = 5
-}
-create_navy_leader = {
-	name = "Harold Farncomb"
-	gfx = "GFX_AST_harold_farncomb"
-	traits = {}
-	skill = 4
-	attack_skill = 4
-	defense_skill = 3
-	maneuvering_skill = 3
-	coordination_skill = 4
-}
-create_navy_leader = {
-	name = "Victor Crutchley"
-	gfx = "GFX_AST_victor_crutchley"
-	traits = { spotter blockade_runner }
-	skill = 5
-	attack_skill = 5
-	defense_skill = 1
-	maneuvering_skill = 9
-	coordination_skill = 6
-}
+
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	### Ship Variants ###
@@ -316,4 +261,3 @@ if = {
 		obsolete = yes
 	}
 }
-

@@ -1134,7 +1134,11 @@ GER_reichswerke_four_year_plan = {
 		}
 		state_target = yes
 		target_array = core_states
-		highlight_state_targets = { state = FROM }
+		highlight_states = {
+			highlight_state_targets = {
+				state = FROM
+			}
+		}
 		on_map_mode = map_and_decisions_view
 		cost = 10
 		days_remove = 30
@@ -1187,7 +1191,11 @@ GER_reichswerke_four_year_plan = {
 		}
 		state_target = yes
 		target_array = core_states
-		highlight_state_targets = { state = FROM }
+		highlight_states = {
+			highlight_state_targets = {
+				state = FROM
+			}
+		}
 		on_map_mode = map_and_decisions_view
 		cost = 10
 		days_remove = 30

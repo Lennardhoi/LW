@@ -1,3 +1,23 @@
+recruit_character = GRE_ioannis_metaxas
+recruit_character = GRE_bzk
+recruit_character = GRE_spyridion_pangalos
+recruit_character = GRE_nikolaos_metaxas
+recruit_character = GRE_sotiris_parakevopouolos
+recruit_character = GRE_alexander_papagos
+recruit_character = GRE_eleftherios_venizelos
+recruit_character = GRE_vasilios_tsarpalis
+recruit_character = GRE_alexandros_sakellariou
+recruit_character = GRE_aris_velouchiotis
+recruit_character = GRE_evripidis_bakirtris
+recruit_character = GRE_panagiotis_gazis
+recruit_character = GRE_georgios_papandreou
+recruit_character = GRE_konstantinos_ventiris
+recruit_character = GRE_damaskinos
+recruit_character = GRE_aristeidis_moraitinis
+recruit_character = GRE_petros_voulgaris
+recruit_character = GRE_nikos_beloyannis
+recruit_character = GRE_napoleon_zervas
+recruit_character = GRE_nikolaos_plastiras
 capital = 47
 oob = "GRE_1936"
 set_research_slots = 3
@@ -16,7 +36,6 @@ set_technology = {
 	gw_artillery = 1
 	interwar_antiair = 1
 	trench_warfare = 1
-
 }
 add_timed_idea = { idea = no_training days= 1095 }
 add_ideas = peace_training
@@ -51,25 +70,3 @@ set_popularities = {
 	neutrality = 65
 }
 set_stability = 0.75
-create_country_leader = {
-	name = "Ioannis Metaxas"
-	desc = "POLITICS_IOANNIS_METAXAS_DESC"
-	picture = "Portrait_Greece_Ioannis_Metaxas.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		#
-	}
-}
-create_corps_commander = {
-	name = "BZK"
-	portrait_path = "gfx/leaders/BZK/BZK.tga"
-	traits = { hill_fighter panzer_leader organizer commando harsh_leader }
-	skill = 6
-	attack_skill = 7
-	defense_skill = 3
-	planning_skill = 4
-	logistics_skill = 3
-}
-
-

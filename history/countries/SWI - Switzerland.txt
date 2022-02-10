@@ -1,3 +1,7 @@
+recruit_character = SWI_federal_council
+recruit_character = SWI_louis_calonder
+recruit_character = SWI_gustave_fogliardi
+recruit_character = SWI_johann_wille
 capital = 3
 oob = "SWI_1936"
 set_research_slots = 0
@@ -19,14 +23,4 @@ add_ideas = {
 	neutral_idea
 }
 set_stability = 0.85
-create_country_leader = {
-	name = "Federal Council"
-	desc = "POLITICS_FEDERAL_COUNCIL_DESC"
-	picture = "Portrait_Switzerland_Federal_council.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		#
-	}
-}
 

@@ -1,0 +1,391 @@
+characters={
+	PER_reza_shah_pahlavi={
+		name="Reza Shah Pahlavi"
+		portraits={
+			civilian={
+				large="gfx/leaders/PER/Portrait_Iran_Reza_Shah_Pahlavi.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_REZA_SHAH_PAHLAVI_DESC"
+			ideology=despotism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	PER_sassan_shamshiri={
+		name="Sassan Shamshiri"
+		portraits={
+			civilian={
+				large="GFX_Portrait_Arabia_Generic_2"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			traits={ rustungsorganisator }
+			expire="1941.1.1.12"
+			id=-1
+		}
+	}
+	PER_dariush_farhani={
+		name="Dariush Farhani"
+		portraits={
+			civilian={
+				large="GFX_Portrait_Arabia_Generic_1"
+			}
+		}
+		country_leader={
+			ideology=anarchist_communism
+			traits={ war_industrialist hawk }
+			expire="1944.1.1.12"
+			id=-1
+		}
+	}
+	PER_sassan_esfandiari={
+		name="Sassan Esfandiari"
+		portraits={
+			civilian={
+				large="GFX_Portrait_Arabia_Generic_3"
+			}
+		}
+		country_leader={
+			ideology=nazism
+			expire="1947.1.1.12"
+			id=-1
+		}
+	}
+	PER_mir_afkhami={
+		advisor={
+			slot = high_command
+			idea_token = PER_mir_afkhami
+			ledger  = army 
+				allowed  = {
+					original_tag  = PER
+				}
+				traits  = {
+					army_regrouping_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="PER_mir_afkhami"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_arab_1"
+			}
+		}
+	}
+	PER_reza_mizani={
+		advisor={
+			slot = navy_chief
+			idea_token = PER_reza_mizani
+			allowed  = {
+					original_tag  = PER
+				}
+				traits  = {
+					navy_chief_maneuver_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="PER_reza_mizani"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_3"
+			}
+		}
+	}
+	PER_ali_khan_mansour={
+		advisor={
+			slot = political_advisor
+			idea_token = PER_ali_khan_mansour
+			allowed  = {
+					original_tag  = PER
+				}
+				traits  = {
+					quartermaster_general 
+				}
+		}
+		name="PER_ali_khan_mansour"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_3"
+			}
+		}
+	}
+	PER_ali_razmara={
+		advisor={
+			slot = high_command
+			idea_token = PER_ali_razmara
+			ledger  = air 
+				allowed  = {
+					original_tag  = PER
+				}
+				traits  = {
+					air_airborne_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="PER_ali_razmara"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_3"
+			}
+		}
+	}
+	PER_ahmad_mira_khosravani={
+		advisor={
+			slot = high_command
+			idea_token = PER_ahmad_mira_khosravani
+			ledger  = navy 
+				allowed  = {
+					original_tag  = PER
+				}
+				traits  = {
+					navy_submarine_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="PER_ahmad_mira_khosravani"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_1"
+			}
+		}
+	}
+	PER_abdolreza_afkhami={
+		advisor={
+			slot = army_chief
+			idea_token = PER_abdolreza_afkhami
+			allowed  = {
+					original_tag  = PER
+				}
+				traits  = {
+					army_chief_organizational_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="PER_abdolreza_afkhami"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_arab_3"
+			}
+		}
+	}
+	PER_mahmud_jam={
+		advisor={
+			slot = political_advisor
+			idea_token = PER_mahmud_jam
+			allowed  = {
+					original_tag  = PER
+				}
+				traits  = {
+					silent_workhorse 
+				}
+		}
+		name="PER_mahmud_jam"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_2"
+			}
+		}
+	}
+	PER_fazlollah_zahedi={
+		advisor={
+			slot = high_command
+			idea_token = PER_fazlollah_zahedi
+			ledger  = army 
+				allowed  = {
+					original_tag  = PER
+				}
+				traits  = {
+					army_infantry_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="PER_fazlollah_zahedi"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_arab_2"
+			}
+		}
+	}
+	PER_mohammed_reza_pahlavi={
+		advisor={
+			slot = theorist
+			idea_token = PER_mohammed_reza_pahlavi
+			ledger  = army 
+				allowed  = {
+					original_tag  = PER
+				}
+				research_bonus  = {
+					land_doctrine  = 0.100
+				}
+				traits  = {
+					military_theorist 
+				}
+		}
+		name="PER_mohammed_reza_pahlavi"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_arab_3"
+			}
+		}
+	}
+	PER_ali_akbar_deiva={
+		advisor={
+			slot = theorist
+			idea_token = PER_ali_akbar_deiva
+			ledger  = air 
+				allowed  = {
+					original_tag  = PER
+				}
+				research_bonus  = {
+					air_doctrine  = 0.100
+				}
+				traits  = {
+					air_warfare_theorist 
+				}
+		}
+		name="PER_ali_akbar_deiva"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_2"
+			}
+		}
+	}
+	PER_ahmad_khan_nakhjavan={
+		advisor={
+			slot = air_chief
+			idea_token = PER_ahmad_khan_nakhjavan
+			allowed  = {
+					original_tag  = PER
+				}
+				traits  = {
+					air_chief_all_weather_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="PER_ahmad_khan_nakhjavan"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_1"
+			}
+		}
+	}
+	PER_hassan_majid_firooz={
+		advisor={
+			slot = army_chief
+			idea_token = PER_hassan_majid_firooz
+			allowed  = {
+					original_tag  = PER
+				}
+				traits  = {
+					army_chief_offensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="PER_hassan_majid_firooz"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_arab_1"
+			}
+		}
+	}
+	PER_ahmad_khan_nakhjaavan={
+		advisor={
+			slot = navy_chief
+			idea_token = PER_ahmad_khan_nakhjaavan
+			allowed  = {
+					original_tag  = PER
+				}
+				traits  = {
+					navy_chief_decisive_battle_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="PER_ahmad_khan_nakhjaavan"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_1"
+			}
+		}
+	}
+	PER_mohammed_nakhjavani={
+		advisor={
+			slot = air_chief
+			idea_token = PER_mohammed_nakhjavani
+			allowed  = {
+					original_tag  = PER
+				}
+				traits  = {
+					air_chief_ground_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="PER_mohammed_nakhjavani"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_arab_3"
+			}
+		}
+	}
+	PER_ali_zohayli={
+		advisor={
+			slot = political_advisor
+			idea_token = PER_ali_zohayli
+			allowed  = {
+					original_tag  = PER
+				}
+				traits  = {
+					captain_of_industry 
+				}
+		}
+		name="PER_ali_zohayli"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_arab_3"
+			}
+		}
+	}
+	PER_hossein_afkhami={
+		advisor={
+			slot = theorist
+			idea_token = PER_hossein_afkhami
+			ledger  = navy 
+				allowed  = {
+					original_tag  = PER
+				}
+				research_bonus  = {
+					naval_doctrine  = 0.100
+				}
+				traits  = {
+					naval_theorist 
+				}
+		}
+		name="PER_hossein_afkhami"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_arab_1"
+			}
+		}
+	}
+}

@@ -1,0 +1,369 @@
+characters={
+	LIT_antanas_smetona={
+		name="Antanas Smetona"
+		portraits={
+			civilian={
+				large="GFX_Portrait_lithuania_antanas_smetona"
+			}
+		}
+		country_leader={
+			desc="POLITICS_ANTANAS_SMETONA_DESC"
+			ideology=oligarchism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	LIT_algirdas_dvarionas={
+		name="Algirdas Dvarionas"
+		portraits={
+			civilian={
+				large="GFX_Portrait_Europe_Generic_2"
+			}
+		}
+		country_leader={
+			ideology=conservatism
+			expire="1956.1.1.12"
+			id=-1
+		}
+	}
+	LIT_visvaldas_voldemaras={
+		name="Visvaldas Voldemaras"
+		portraits={
+			civilian={
+				large="GFX_Portrait_europe_generic_7"
+			}
+		}
+		country_leader={
+			ideology=anti_revisionism
+			traits={ economist tenacious_negotiator }
+			expire="1954.1.1.12"
+			id=-1
+		}
+	}
+	LIT_aleksandras_voldemaras={
+		name="Aleksandras Voldemaras"
+		portraits={
+			civilian={
+				large="GFX_portrait_europe_generic_8"
+			}
+		}
+		country_leader={
+			ideology=nazism
+			traits={ retired_officer war_industrialist }
+			expire="1952.1.1.12"
+			id=-1
+		}
+	}
+	LIT_feliksas_baltusis={
+		advisor={
+			slot = army_chief
+			idea_token = LIT_feliksas_baltusis
+			allowed  = {
+					original_tag  = LIT
+				}
+				traits  = {
+					army_chief_drill_3 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="LIT_feliksas_baltusis"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_2"
+			}
+		}
+	}
+	LIT_vincentas_latozaite={
+		advisor={
+			slot = theorist
+			idea_token = LIT_vincentas_latozaite
+			ledger  = air 
+				allowed  = {
+					original_tag  = LIT
+				}
+				research_bonus  = {
+					air_doctrine  = 0.100
+				}
+				traits  = {
+					air_warfare_theorist 
+				}
+		}
+		name="LIT_vincentas_latozaite"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_1"
+			}
+		}
+	}
+	LIT_stasys_rastikis={
+		advisor={
+			slot = army_chief
+			idea_token = LIT_stasys_rastikis
+			allowed  = {
+					original_tag  = LIT
+				}
+				traits  = {
+					army_chief_defensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="LIT_stasys_rastikis"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_1"
+			}
+		}
+	}
+	LIT_leonas_bistras={
+		advisor={
+			slot = political_advisor
+			idea_token = LIT_leonas_bistras
+			allowed  = {
+					original_tag  = LIT
+				}
+				traits  = {
+					compassionate_gentleman 
+				}
+		}
+		name="LIT_leonas_bistras"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_2"
+			}
+		}
+	}
+	LIT_adolfas_ramanauskas={
+		advisor={
+			slot = high_command
+			idea_token = LIT_adolfas_ramanauskas
+			ledger  = army 
+				allowed  = {
+					original_tag  = LIT
+				}
+				traits  = {
+					army_concealment_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="LIT_adolfas_ramanauskas"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_1"
+			}
+		}
+	}
+	LIT_vladas_karvelis={
+		advisor={
+			slot = navy_chief
+			idea_token = LIT_vladas_karvelis
+			allowed  = {
+					original_tag  = LIT
+				}
+				traits  = {
+					navy_chief_decisive_battle_1 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="LIT_vladas_karvelis"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_1"
+			}
+		}
+	}
+	LIT_antanas_gustaitis={
+		advisor={
+			slot = air_chief
+			idea_token = LIT_antanas_gustaitis
+			allowed  = {
+					original_tag  = LIT
+				}
+				traits  = {
+					air_chief_reform_3 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="LIT_antanas_gustaitis"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_3"
+			}
+		}
+	}
+	LIT_antanas_kaskelis={
+		advisor={
+			slot = navy_chief
+			idea_token = LIT_antanas_kaskelis
+			allowed  = {
+					original_tag  = LIT
+				}
+				traits  = {
+					navy_chief_maneuver_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="LIT_antanas_kaskelis"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_3"
+			}
+		}
+	}
+	LIT_vladas_jurgutis={
+		advisor={
+			slot = political_advisor
+			idea_token = LIT_vladas_jurgutis
+			allowed  = {
+					original_tag  = LIT
+				}
+				traits  = {
+					captain_of_industry 
+				}
+		}
+		name="LIT_vladas_jurgutis"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+	}
+	LIT_albinas_cepas={
+		advisor={
+			slot = high_command
+			idea_token = LIT_albinas_cepas
+			ledger  = army 
+				allowed  = {
+					original_tag  = LIT
+				}
+				traits  = {
+					army_infantry_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="LIT_albinas_cepas"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_3"
+			}
+		}
+	}
+	LIT_juozas_ambrazevicius={
+		advisor={
+			slot = air_chief
+			idea_token = LIT_juozas_ambrazevicius
+			allowed  = {
+					original_tag  = LIT
+				}
+				traits  = {
+					air_chief_ground_support_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="LIT_juozas_ambrazevicius"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_1"
+			}
+		}
+	}
+	LIT_jonas_cernius={
+		advisor={
+			slot = theorist
+			idea_token = LIT_jonas_cernius
+			ledger  = army 
+				allowed  = {
+					original_tag  = LIT
+				}
+				research_bonus  = {
+					land_doctrine  = 0.100
+				}
+				traits  = {
+					military_theorist 
+				}
+		}
+		name="LIT_jonas_cernius"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_4"
+			}
+		}
+	}
+	LIT_mykolas_slezevicius={
+		advisor={
+			slot = political_advisor
+			idea_token = LIT_mykolas_slezevicius
+			allowed  = {
+					original_tag  = LIT
+				}
+				traits  = {
+					prince_of_terror 
+				}
+		}
+		name="LIT_mykolas_slezevicius"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_3"
+			}
+		}
+	}
+	LIT_kazys_musteikis={
+		advisor={
+			slot = high_command
+			idea_token = LIT_kazys_musteikis
+			ledger  = army 
+				allowed  = {
+					original_tag  = LIT
+				}
+				traits  = {
+					army_armored_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="LIT_kazys_musteikis"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_5"
+			}
+		}
+	}
+	LIT_juoza_barzda_bradauskas={
+		advisor={
+			slot = high_command
+			idea_token = LIT_juoza_barzda_bradauskas
+			ledger  = army 
+				allowed  = {
+					original_tag  = LIT
+				}
+				traits  = {
+					army_artillery_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="LIT_juoza_barzda_bradauskas"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_1"
+			}
+		}
+	}
+}

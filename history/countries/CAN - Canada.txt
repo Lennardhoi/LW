@@ -1,3 +1,39 @@
+recruit_character = CAN_mackenzie_king
+recruit_character = CAN_adrien_arcand
+recruit_character = CAN_tim_buck
+recruit_character = CAN_j._s._woodsworth
+recruit_character = CAN_thomas_victor_anderson
+recruit_character = CAN_charles_foulkes
+recruit_character = CAN_percival_john_montague
+recruit_character = CAN_bert_hoffmeister
+recruit_character = CAN_leonard_w._murray
+recruit_character = CAN_h.t._bailliegrohman
+recruit_character = CAN_james_d._prentice
+recruit_character = CAN_harry_dewolf
+recruit_character = CAN_lloyd_samuel_breadner
+recruit_character = CAN_robert_manion
+recruit_character = CAN_george_pearkes
+recruit_character = CAN_john_murchie
+recruit_character = CAN_ian_a_mackenzie
+recruit_character = CAN_c_d_howe
+recruit_character = CAN_newton_wesley_rowell
+recruit_character = CAN_harold_edwards
+recruit_character = CAN_frederick_m_w_harvey
+recruit_character = CAN_harry_crerar
+recruit_character = CAN_robert_leckie
+recruit_character = CAN_james_ilsley
+recruit_character = CAN_kenneth_stuart
+recruit_character = CAN_leo_richer_lafleche
+recruit_character = CAN_andrew_mcnaughton
+recruit_character = CAN_george_jones
+recruit_character = CAN_raymond_collishaw
+recruit_character = CAN_guy_simonds
+recruit_character = CAN_gino_verchiella
+recruit_character = CAN_r_b_bennett
+recruit_character = CAN_alasdair_murray
+recruit_character = CAN_george_volkoff
+recruit_character = CAN_george_croil
+recruit_character = CAN_percy_nelles
 capital = 268
 oob = "CAN_1936"
 if = {
@@ -110,46 +146,6 @@ set_politics = {
 set_popularities = {
 	democratic = 100
 }
-create_country_leader = {
-	name = "Mackenzie King"
-	desc = "POLITICS_MACKENZIE_KING_DESC"
-	picture = "Portrait_Canada_Mackenzie_King.dds"
-	expire = "1965.1.1"
-	ideology = liberalism
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "Adrien Arcand"
-	desc = "POLITICS_ADRIEN_ARCAND_DESC"
-	picture = "GFX_CAN_adrien_arcand"
-	expire = "1965.1.1"
-	ideology = nazism
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "Tim Buck"
-	desc = "POLITICS_TIM_BUCK_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "J. S. Woodsworth"
-	desc = "POLITICS_JS_WOODSWORTH_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_4.dds"
-	expire = "1965.1.1"
-	ideology = centrism
-	traits = {
-		#
-	}
-}
 set_convoys = 100
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
@@ -157,86 +153,7 @@ add_equipment_to_stockpile = {
 	producer = CAN
 }
 set_stability = 0.75
-create_corps_commander = {
-	name = "Thomas Victor Anderson"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	traits = { panzer_leader desert_fox trait_engineer }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 5
-}
-create_field_marshal = {
-	name = "Charles Foulkes"
-	gfx = "GFX_CAN_charles_foulkes"
-	traits = {panzer_leader infantry_leader organizer }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 3
-	planning_skill = 4
-	logistics_skill = 3
-}
-create_corps_commander = {
-	name = "Percival John Montague"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_2.dds"
-	traits = { panzer_leader commando }
-	skill = 4
-	attack_skill = 6
-	defense_skill = 3
-	planning_skill = 1
-	logistics_skill = 2
-}
-create_corps_commander = {
-	name = "Bert Hoffmeister"
-	gfx = "GFX_CAN_bert_hoffmeister"
-	traits = { hill_fighter infantry_leader }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 3
-}
-create_navy_leader = {
-	name = "Leonard W. Murray"
-	gfx = "GFX_CAN_leonard_warren_murray"
-	traits = { }
-	skill = 4
-	attack_skill = 4
-	defense_skill = 3
-	maneuvering_skill = 3
-	coordination_skill = 3
-}
-create_navy_leader = {
-	name = "H.T. Baillie-Grohman"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_navy_2.dds"
-	traits = { spotter blockade_runner }
-	skill = 5
-	attack_skill = 5
-	defense_skill = 1
-	maneuvering_skill = 9
-	coordination_skill = 6
-}
-create_navy_leader = {
-	name = "James D. Prentice"
-	gfx = "GFX_CAN_james_prentice"
-	traits = { spotter }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 2
-	maneuvering_skill = 3
-	coordination_skill = 2
-}
-create_navy_leader = {
-	name = "Harry DeWolf"
-	gfx = "GFX_CAN_harry_dewolf"
-	traits = { superior_tactician }
-	skill = 4
-	attack_skill = 5
-	defense_skill = 2
-	maneuvering_skill = 6
-	coordination_skill = 5
-}
+
 ### VARIANTS ###
 # 1936 Start #
 if = {
@@ -291,4 +208,3 @@ if = {
 		}
 	}
 }
-

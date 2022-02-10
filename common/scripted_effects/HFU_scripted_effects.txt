@@ -243,7 +243,7 @@ update_pacific_war = {
 		limit = {date <1944.1.1}
 		set_variable={Global.pacific_days=GLOBAL.num_days}
 		subtract_from_variable={Global.pacific_days=709560}
-		set_variable{Global.pacific_days2=Global.pacific_days}
+		set_variable={Global.pacific_days2=Global.pacific_days}
 		divide_variable={Global.pacific_days=3650}
 		subtract_from_variable={GER.pacific_status=Global.pacific_days}
 	}

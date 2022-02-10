@@ -1,3 +1,36 @@
+recruit_character = SPR_manuel_azana
+recruit_character = SPR_josé_díaz
+recruit_character = SPR_francisco_franco
+recruit_character = SPR_alejandro_lerroux
+recruit_character = SPR_davila_arrondo
+recruit_character = SPR_SPA_jose_antonio_giron
+recruit_character = SPR_augusto_barcia_trelles
+recruit_character = SPR_diego_hidalgo_duran_vanilla
+recruit_character = SPR_SPA_luis_carrero_blanco_vanilla
+recruit_character = SPR_SPA_miguel_ponte
+recruit_character = SPR_SPA_jose_enrique_varela_vanilla
+recruit_character = SPR_SPA_fransisco_moreno_fernandez_vanilla
+recruit_character = SPR_SPA_luis_carrero_blanco
+recruit_character = SPR_fransisco_franco_vanilla
+recruit_character = SPR_SPA_emilio_mola
+recruit_character = SPR_SPA_angel_salas_larrazabal_vanilla
+recruit_character = SPR_SPA_rafael_garcia_valino
+recruit_character = SPR_toribio_martinez_cabrera
+recruit_character = SPR_SPA_jose_antonio_primo_de_rivera
+recruit_character = SPR_SPA_jose_enrique_varela
+recruit_character = SPR_SPA_tomas_garciano_goni_vanilla
+recruit_character = SPR_SPA_joaquin_garcia_morato_vanilla
+recruit_character = SPR_SPA_miguel_cabanellas_ferrer_vanilla
+recruit_character = SPR_SPA_luis_valdes_cavanillas_vanilla
+recruit_character = SPR_SPA_juan_yague_blanco_vanilla
+recruit_character = SPR_SPA_fidel_davila_arrondo_vanilla
+recruit_character = SPR_SPA_enrique_canovas_lacruz
+recruit_character = SPR_SPA_wilhelm_ritter_von_thoma
+recruit_character = SPR_SPA_joaquin_garcia_morato
+recruit_character = SPR_SPA_emilio_herrera_vanilla
+recruit_character = SPR_SPA_miguel_cabanellas
+recruit_character = SPR_SPA_heli_rolando_de_tella
+recruit_character = SPR_SPA_emilio_mola_vidal_vanilla
 capital = 41
 oob = "SPR_1936"
 add_ideas = peace_training
@@ -66,53 +99,5 @@ set_popularities = {
 set_convoys = 200
 set_stability = 0.35
 set_war_support = 0.15
-create_country_leader = {
-	name = "Manuel Azana"
-	desc = "POLITICS_MANUEL_AZANA_DESC"
-	picture = "Portrait_Spain_Manuel_Azana.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "José Díaz"
-	desc = "POLITICS_JOSE_DIAZ_DESC"
-	picture = "Portrait_Spain_Jose_Diaz.dds"
-	expire = "1965.1.1"
-	ideology = stalinism
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "Francisco Franco"
-	desc = "POLITICS_FRANCISCO_FRANCO_DESC"
-	picture = "Portrait_Spain_Francisco_Franco.dds"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-	}
-}
-create_country_leader = {
-	name = "Alejandro Lerroux"
-	desc = "POLITICS_ALEJANDRO_LERROUX_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_5.dds"
-	expire = "1965.1.1"
-	ideology = centrism
-	traits = {
-		#
-	}
-}
-create_field_marshal = {
-	name = "Davila Arrondo"
-	portrait_path = "gfx/leaders/SPR/Davila_Arrondo.tga"
-	traits = { panzer_leader infantry_leader ranger }
-	skill = 5
-	attack_skill = 5
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 3
-}
+
 
