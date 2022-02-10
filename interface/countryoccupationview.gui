@@ -313,6 +313,8 @@ guiTypes = {
 				position = { x = 0 y = 0 }
 				size = { width = 540 height = 100% }
 				verticalScrollbar = "right_vertical_slider"
+				scroll_wheel_factor = 40
+				smooth_scrolling = yes
 				margin = { top = 0 left = 10 bottom = 195 right = 0 }
 				
 				background = {
@@ -476,7 +478,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "release_button"
-			position = { x = -1000 y = 82 }
+			position = { x = 178 y = 82 }
 			quadTextureSprite = "GFX_occupation_release_button"
 	 		buttonFont = "hoi_18mbs"
 			Orientation = "UPPER_LEFT"
@@ -486,11 +488,11 @@ guiTypes = {
 		positionType = {
 			# to align them right
 			name = "return_territory_button_pos_for_non_resistance"
-			position = { x = -1000 y = 82 }
+			position = { x = 178 y = 82 }
 		}
 		buttonType = {
 			name = "return_territory_button"
-			position = { x = -1000 y = 84 }
+			position = { x = 210 y = 84 }
 			quadTextureSprite = "GFX_occupation_release_button"
 	 		buttonFont = "hoi_18mbs"
 			Orientation = "UPPER_LEFT"
@@ -948,6 +950,8 @@ guiTypes = {
 			position = { x = 17 y = 45 }
 			size = { width = 515 height = 429 }
 			verticalScrollbar = "right_vertical_slider"
+			scroll_wheel_factor = 38
+			smooth_scrolling = yes
 			
 			background = {
 				name = "Background"

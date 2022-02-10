@@ -64,6 +64,25 @@ characters={
 				large="gfx/leaders/USA/Portrait_USA_Mark_W_Clark.dds"
 			}
 		}
+		#portraits={
+		#	army={
+		#		small="GFX_idea_mark_clark"
+		#	}
+		#}
+		advisor={
+			slot = high_command
+			idea_token = mark_clark
+			ledger  = army 
+				allowed  = {
+					original_tag  = USA 
+				}
+				traits  = {
+					army_infantry_3 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
 		corps_commander={
 			traits={ trait_reckless infantry_officer infantry_leader }
 			skill=5
@@ -74,6 +93,7 @@ characters={
 			legacy_id=-1
 		}
 	}
+	
 	USA_walter_krueger={
 		name="Walter Krueger"
 		portraits={
@@ -709,28 +729,6 @@ characters={
 			traits={ fortification_engineer national_integralist }
 			expire="1949.1.1.12"
 			id=-1
-		}
-	}
-	USA_mark_clark={
-		advisor={
-			slot = high_command
-			idea_token = mark_clark
-			ledger  = army 
-				allowed  = {
-					original_tag  = USA 
-				}
-				traits  = {
-					army_infantry_3 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
-		}
-		name="mark_clark"
-		portraits={
-			army={
-				small="GFX_idea_mark_clark"
-			}
 		}
 	}
 	USA_robert_goddard={
