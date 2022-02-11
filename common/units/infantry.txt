@@ -88,31 +88,37 @@ sub_units = {
 		breakthrough = 0.2
 
 		need = {
-			infantry_equipment = 250
+			infantry_equipment = 100
+			support_equipment = 20
 		}
 
 		
 		river = {
 			attack = 0.1
 		}
+		jungle = {
+
+			attack = 0.15
+			defence = 0.05
+		}
 		urban = {
 			attack = 0.10
 			movement = 0.1
-			defence = 0.1
+			defence = 0.05
 
 		}
 		fort = {
-			attack = 0.15
+			attack = 0.10
 			movement = 0.1
 		}
 		marsh = {
 			attack = 0.1
-			defence = 0.1
+			defence = 0.05
 			movement = 0.1
 		}
 		forest = {
 			attack = 0.15
-			defence = 0.1
+			defence = 0.05
 			movement = 0.1
 		}
 	}
@@ -158,12 +164,13 @@ sub_units = {
 		breakthrough = 0.2
 
 		need = {
-			infantry_equipment = 250
+			infantry_equipment = 100
+			support_equipment = 20
 		}
 
 		jungle = {
 			attack = 0.2
-			defence = 0.1
+			defence = 0.05
 			movement = 0.1
 		}
 		amphibious = {
@@ -214,16 +221,17 @@ sub_units = {
 		supply_consumption_factor=-0.01
 		breakthrough = 0.20
 		need = {
-			infantry_equipment = 250
+			infantry_equipment = 100
+			support_equipment = 20
 		}
 		urban = {
 			attack = 0.15
 			movement = 0.1
-			defence = 0.1
+			defence = 0.05
 
 		}
 		fort = {
-			attack = 0.2
+			attack = 0.10
 			movement = 0.1
 		}
 
@@ -272,16 +280,17 @@ sub_units = {
 		supply_consumption_factor=-0.01
 		breakthrough = 0.20
 		need = {
-			infantry_equipment = 250
+			infantry_equipment = 100
+			support_equipment = 20
 		}
 		urban = {
 			attack = 0.15
 			movement = 0.1
-			defence = 0.1
+			defence = 0.05
 
 		}
 		fort = {
-			attack = 0.2
+			attack = 0.10
 			movement = 0.1
 		}
 
@@ -328,12 +337,13 @@ sub_units = {
 		breakthrough = 0.2
 
 		need = {
-			infantry_equipment = 200
+			infantry_equipment = 100
+			support_equipment = 20
 		}
 
 		desert = {
 			attack = 0.1
-			defence = 0.15
+			defence = 0.075
 			movement = 0.3
 		}
 
@@ -452,14 +462,17 @@ sub_units = {
 		breakthrough = 0.2
 
 		need = {
-			infantry_equipment = 300
+			infantry_equipment = 100
+			support_equipment = 20
 		}
 		jungle = {
 
-			attack = 0.15
+			attack = 0.10
+			defence = 0.05
 		}
 		marsh = {
-			attack = 0.35
+			attack = 0.10
+			defence = 0.05
 		}
 		river = {
 			attack = 0.3
@@ -511,17 +524,18 @@ sub_units = {
 		supply_consumption_factor=-0.01
 		breakthrough = 0.2
 		need = {
-			infantry_equipment = 250
+			infantry_equipment = 100
+			support_equipment = 20
 		}
 		
 		urban = {
 			attack = 0.1
 			movement = 0.1
-			defence = 0.1
+			defence = 0.05
 
 		}
 		fort = {
-			attack = 0.2
+			attack = 0.10
 			movement = 0.1
 		}
 
@@ -530,7 +544,7 @@ sub_units = {
 		}
 		desert = {
 			attack = 0.1
-			defence = 0.15
+			defence = 0.05
 			movement = 0.3
 		}
 		hills = {
@@ -540,7 +554,7 @@ sub_units = {
 		}
 		mountain = {
 			attack = 0.3
-			defence = 0.1
+			defence = 0.05
 			movement = 0.2
 		}
 
@@ -588,7 +602,8 @@ sub_units = {
 		supply_consumption_factor=-0.01
 		can_be_parachuted = no
 		need = {
-			infantry_equipment = 200
+			infantry_equipment = 100
+			support_equipment = 20
 		}
 	}
 

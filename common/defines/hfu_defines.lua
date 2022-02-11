@@ -5,10 +5,9 @@
 --NDefines.NMilitary.NUKE_MIN_DAMAGE_PERCENT =0
 --NDefines.NMilitary.NUKE_MAX_DAMAGE_PERCENT =0.1
 --NDefines.NMilitary.NUKE_DELAY_HOURS =12
-NDefines.NMilitary.RETREAT_SPEED_FACTOR = 0.25
-NDefines.NMilitary.WITHDRAWING_SPEED_FACTOR = 0.25
-NDefines.NProduction.CAPITULATE_STOCKPILES_RATIO = 0.001
-NDefines.NResistance.COMPLIANCE_GROWTH_BASE = 0.075
+NDefines.NMilitary.RETREAT_SPEED_FACTOR = 0.15
+--NDefines.NProduction.CAPITULATE_STOCKPILES_RATIO = 0.001
+--NDefines.NResistance.COMPLIANCE_GROWTH_BASE = 0.075
 --new graphics
 NDefines.NGraphics.COUNTRY_COLOR_SATURATION_MODIFIER = 0.9 -- 0.6
 NDefines.NGraphics.COUNTRY_COLOR_BRIGHTNESS_MODIFIER = 0.9 -- 0.8
@@ -75,7 +74,7 @@ NDefines.NProduction.RAILWAY_GUN_MAX_MIL_FACTORIES_PER_LINE = 10
 NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 5000000
 NDefines.NProduction.RAILWAY_GUN_REPAIR_SPEED = 8.0		-- Railway gun strength repair speed per factory
 ---------------------------------------------------------------
-NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 10000				-- up from 24 | You can have a minimum of this many special forces battalions, regardless of the number of non-special forces battalions you have, this can also be modified by a country modifier
+NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 112				-- up from 24 | You can have a minimum of this many special forces battalions, regardless of the number of non-special forces battalions you have, this can also be modified by a country modifier
 NDefines.NCountry.DAYS_OF_WAR_BEFORE_SURRENDER = 3	             -- down from 7 | why not allow Luxembourg to cap faster
 NDefines.NCountry.NUM_DAYS_TO_FULLY_DELETE_STOCKPILED_EQUIPMENT = 999 
 NDefines.NCountry.SCORCHED_EARTH_STATE_COST = 5 -- pp cost to scorch a state
@@ -185,7 +184,7 @@ NDefines_Graphics.NGraphics.DRAW_FOW_FADE_LENGTH = 0
 
 
 --HFU defines:
-NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 2
+NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 2.5
 NDefines.NDiplomacy.BASE_SEND_ATTACHE_CP_COST = 0
 NDefines.NDiplomacy.BASE_SEND_ATTACHE_COST= 50
 NDefines.NDiplomacy.TENSION_VOLUNTEER_FORCE_DIVISION = 0.15
@@ -228,6 +227,7 @@ NDefines.NBuildings.MAX_BUILDING_LEVELS = 99
 NDefines.NBuildings.BASE_FACTORY_REPAIR = 0.3 --doesnt work
 --NDefines.NResistance.COMPLIANCE_FACTOR_ON_STATE_CONTROLLER_CHANGE = -0.1
 NDefines.NProduction.MAX_MIL_FACTORIES_PER_LINE = 300
+NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.13
 NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 100
 NDefines.NBuildings.NAVALBASE_REPAIR_MULT = 0.075
 NDefines.NBuildings.SUPPLY_ROUTE_RESOURCE_BONUS = 0  -- multiplicative resource bonus for having a railway/naval connection to the capital
@@ -237,12 +237,12 @@ NDefines.NNavy.RESOURCE_LENDLEASE_PRIORITY = 3
 NDefines.NNavy.RESOURCE_ORIGIN_PRIORITY = 3
 -------------------------------------
 --Combat 
-NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.03   -- global damage modifier... but some equipment is returned at end of battles see : EQUIPMENT_COMBAT_LOSS_FACTOR
+NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.04   -- global damage modifier... but some equipment is returned at end of battles see : EQUIPMENT_COMBAT_LOSS_FACTOR
 NDefines.NMilitary.LAND_COMBAT_ORG_DAMAGE_MODIFIER = 0.04
 NDefines.NMilitary.LAND_COMBAT_COLLATERAL_FACTOR = 0.003 -- vanilla is 0.005
-NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.03    -- air global damage modifier
+NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.04    -- air global damage modifier
 NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.025    -- global damage modifier
-NDefines.NNavy.AMPHIBIOUS_LANDING_PENALTY = -0.75 --vanilla 
+NDefines.NNavy.AMPHIBIOUS_LANDING_PENALTY = -0.5 --vanilla 
 --NDefines.NMilitary.PEN_VS_AVERAGE = 0.4 --vanilla 0.4
 NDefines.NMilitary.UNIT_EXP_LEVELS = { 0.2, 0.3, 0.4, 0.6 }
 NDefines.NMilitary.HOURLY_ORG_MOVEMENT_IMPACT = -0.15
@@ -256,7 +256,7 @@ NDefines.NMilitary.COMBAT_MINIMUM_TIME = 2
 NDefines.NCountry.REINFORCEMENT_EQUIPMENT_DELIVERY_SPEED = 0.7
 NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 30
 NDefines.NCountry.REINFORCEMENT_MANPOWER_CHUNK = 0.08
-NDefines.NCountry.AIR_SUPPLY_CONVERSION_SCALE = 0.02
+NDefines.NCountry.AIR_SUPPLY_CONVERSION_SCALE = 0.03
 
 NDefines.NBuildings.INFRA_TO_SUPPLY = 0.95
 NDefines.NCountry.VP_TO_SUPPLY_BASE = 0
@@ -266,7 +266,7 @@ NDefines.NCountry.SUPPLY_FROM_DAMAGED_INFRA = 0.4
 NDefines.NCountry.SUPPLY_PATH_MAX_DISTANCE = 8
 NDefines.NCountry.BASE_MOBILIZATION_SPEED = 0.02
 NDefines.NMilitary.ARMY_FUEL_COST_MULT = 0.22 --0.5
-NDefines.NAir.FUEL_COST_MULT = 0.15 --0.35
+NDefines.NAir.FUEL_COST_MULT = 0.17 --0.35
 NDefines.NNavy.FUEL_COST_MULT = 0.04 --0.1
 NDefines.NCountry.BASE_FUEL_GAIN = 12		--was 30 before					-- base amount of fuel gained hourly, independent of excess oil
 NDefines.NCountry.BASE_FUEL_GAIN_PER_OIL = 0.8 --vanilla 2
@@ -283,9 +283,9 @@ NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 0
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 0
 NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 0
 NDefines.NMilitary.ENCIRCLED_DISBAND_MANPOWER_FACTOR = 0.0
-NDefines.NMilitary.RIVER_CROSSING_PENALTY_LARGE = -0.3
-NDefines.NMilitary.RIVER_CROSSING_SPEED_PENALTY_LARGE = -0.3     -- large river crossing
-NDefines.NMilitary.RIVER_CROSSING_PENALTY = -0.2
+NDefines.NMilitary.RIVER_CROSSING_PENALTY_LARGE = -0.4
+NDefines.NMilitary.RIVER_CROSSING_SPEED_PENALTY_LARGE = -0.4     -- large river crossing
+NDefines.NMilitary.RIVER_CROSSING_PENALTY = -0.3
 NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 1	
 NDefines.NNavy.PRIDE_OF_THE_FLEET_UNASSIGN_COST = 0	
 NDefines.NNavy.CONVOY_DEFENSE_MAX_CONVOY_TO_SHIP_RATIO = 20			
@@ -340,7 +340,7 @@ NDefines.NAir.CAS_NIGHT_ATTACK_FACTOR = 0.5
 NDefines.NAir.AIR_WING_FLIGHT_SPEED_MULT = 0.2 --makes redeployement of fighters faster vanilla is 0.02 
 NDefines.NAir.COMBAT_MULTIPLANE_CAP = 2                          --vanilla 3
 NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.04			--0.11 prev			-- Vanilla 0,10
-NDefines.NAir.DISRUPTION_FACTOR = 3.2
+NDefines.NAir.DISRUPTION_FACTOR = 6
 NDefines.NAir.ESCORT_FACTOR = 4  --2.5		
 NDefines.NAir.FIELD_EXPERIENCE_SCALE = 0.002 --0.001 in vanilla
 NDefines.NAir.FIELD_EXPERIENCE_MAX_PER_DAY = 3 --2 in vanilla
@@ -492,7 +492,7 @@ NDefines.NAI.PLAN_FRONTUNIT_DISTANCE_FACTOR	= 30 --- closer units move first but
 --NDefines.NAI.REDEPLOY_DISTANCE_VS_ORDER_SIZE = 100
 NDefines.NMilitary.FRONT_MIN_PATH_TO_REDEPLOY = 3				--should really help--	-- If a units path is at least this long to reach its front location it will strategically redeploy.
 NDefines.NMilitary.ARMY_INITIATIVE_REINFORCE_FACTOR = 0.5		-- scales initiative for reinforce chance
-NDefines.NMilitary.REINFORCE_CHANCE = 0.05
+NDefines.NMilitary.REINFORCE_CHANCE = 0.02
 
 NDefines.NSupply.MAX_RAILWAY_LEVEL = 5 -- update railway texture as well, each frame corresponds to a level
 
