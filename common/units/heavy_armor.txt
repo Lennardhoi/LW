@@ -1,6 +1,7 @@
 sub_units = {
 
 	heavy_armor = {
+		abbreviation = "HTK"
 		sprite = heavy_armor
 		map_icon_category = armored
 		priority = 2503
@@ -11,9 +12,9 @@ sub_units = {
 		type = {
 			armor
 		}
-
+		
 		group = armor
-
+		
 		categories = {
 			category_tanks
 			category_front_line
@@ -30,10 +31,6 @@ sub_units = {
 		hills = {
 			attack = -0.2
 			defence = -0.6
-		}
-		desert = 	{
-			attack = -0.05
-			defence = -0.05
 		}
 		mountain = 	{
 			attack = -0.5
@@ -59,7 +56,7 @@ sub_units = {
 			movement = -0.4
 		}
 		amphibious = {
-			attack = -1.3
+			attack = -2
 		}
 		fort = {
 			attack = 0.1
@@ -68,20 +65,22 @@ sub_units = {
 		combat_width = 2
 
 		need = {
-			heavy_tank_equipment = 40
+			heavy_tank_chassis = 40
 		}
 
 		manpower = 500
 		max_organisation = 10
 		default_morale = 0.3
-		max_strength = 3
+		max_strength = 2
 		weight = 1.5
+		
+		supply_consumption = 0.32
 
-		supply_consumption = 0.4
-		initiative = 0.01
 		#Tanks are awesome
-		soft_attack = 0.5
-
-		suppression = 2.5
+		# soft_attack = 0.5
+		
+		suppression = 2.5		
 	}
+
+	
 }
