@@ -59,26 +59,7 @@ characters={
 	}
 	SOV_konstantin_rokossovsky={
 		name="Konstantin Rokossovsky"
-		advisor={
-			slot = high_command
-			idea_token = konstantin_rokossovsky_2
-			ledger  = army 
-				visible  = {
-					has_completed_focus  = SOV_barb_2 
-				}
-				allowed  = {
-					original_tag  = SOV 
-				}
-				available  = {
-					has_completed_focus  = SOV_barb_2 
-				}
-				traits  = {
-					army_armored_3 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
-		}
+		
 		advisor={
 			slot = high_command
 			idea_token = konstantin_rokossovsky
@@ -216,23 +197,6 @@ characters={
 				}
 				traits  = {
 					army_infantry_1 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
-		}
-		advisor={
-			slot = high_command
-			idea_token = ivan_konev_2
-			ledger  = army 
-				allowed  = {
-					original_tag  = SOV 
-				}
-				traits  = {
-					army_infantry_1 army_commando_1 
-				}
-				visible  = {
-					has_completed_focus  = SOV_great_patriotic_general 
 				}
 				ai_will_do  = {
 					factor  = 1.000
@@ -979,7 +943,7 @@ characters={
 		}
 		portraits={
 			army={
-				small=""
+				small="GFX_idea_arseniy_golovko"
 			}
 			navy={
 				small="GFX_idea_arseniy_golovko"

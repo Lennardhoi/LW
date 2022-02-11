@@ -366,26 +366,6 @@ characters={
 					factor  = 1.000
 				}
 		}
-		advisor={
-			slot = high_command
-			idea_token = joseph_stilwell_2
-			ledger  = army 
-				allowed  = {
-					original_tag  = USA 
-				}
-				visible  = {
-					has_completed_focus  = USA_ger3 
-				}
-				available  = {
-					has_completed_focus  = USA_ger3 
-				}
-				traits  = {
-					army_armored_3 
-				}
-				ai_will_do  = {
-					factor  = 1.000
-				}
-		}
 		portraits={
 			army={
 				small="GFX_idea_joseph_stilwell_2"
@@ -1063,9 +1043,6 @@ characters={
 			idea_token = whittaker_chambers
 			allowed  = {
 					original_tag  = USA
-				}
-				allowed_civil_war  = {
-					has_government  = communism 
 				}
 				available  = {
 					has_completed_focus  = USA_reach_out_to_the_ware_group 
