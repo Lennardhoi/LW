@@ -9,11 +9,11 @@ NDefines.NMilitary.RETREAT_SPEED_FACTOR = 0.15
 --NDefines.NProduction.CAPITULATE_STOCKPILES_RATIO = 0.001
 --NDefines.NResistance.COMPLIANCE_GROWTH_BASE = 0.075
 --new graphics
-NDefines.NGraphics.COUNTRY_COLOR_SATURATION_MODIFIER = 0.9 -- 0.6
-NDefines.NGraphics.COUNTRY_COLOR_BRIGHTNESS_MODIFIER = 0.9 -- 0.8
+NDefines.NGraphics.COUNTRY_COLOR_SATURATION_MODIFIER = 0.80 -- 0.6
+NDefines.NGraphics.COUNTRY_COLOR_BRIGHTNESS_MODIFIER = 0.85 -- 0.8
 --NDefines.NMapMode.MAP_MODE_TERRAIN_TRANSPARENCY = 0.2
 --test
-NDefines_Graphics.NMapMode.MAP_MODE_TERRAIN_TRANSPARENCY = 0.8
+--NDefines_Graphics.NMapMode.MAP_MODE_TERRAIN_TRANSPARENCY = 0.8
 NDefines_Graphics.NGraphics.BORDER_WIDTH = 1
 NDefines.NNavy.CONVOY_LOSS_HISTORY_TIMEOUT_MONTHS = 3
 NDefines.NNavy.NAVAL_COMBAT_RESULT_TIMEOUT_YEARS = 5
@@ -181,9 +181,10 @@ NDefines_Graphics.NGraphics.EMISSIVE_BLOOM_STRENGTH = 0
 NDefines_Graphics.NGraphics.DAY_NIGHT_FEATHER = 0.024
 NDefines_Graphics.NGraphics.DRAW_SHADOWS_CUTOFF = 0
 NDefines_Graphics.NGraphics.DRAW_SHADOWS_FADE_LENGTH = 0
-NDefines_Graphics.NGraphics.DRAW_FOW_CUTOFF = 0
-NDefines_Graphics.NGraphics.DRAW_FOW_FADE_LENGTH = 0
-
+--NDefines_Graphics.NGraphics.DRAW_FOW_CUTOFF = 0
+--NDefines_Graphics.NGraphics.DRAW_FOW_FADE_LENGTH = 0
+NDefines_Graphics.NGraphics.DRAW_FOW_CUTOFF = 475 		-- 25 above GB_CAM_MAX. Prevents transitional luminance flicker.
+	NDefines_Graphics.NGraphics.DRAW_FOW_FADE_LENGTH = 100
 
 --HFU defines:
 NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 2.5
