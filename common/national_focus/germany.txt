@@ -689,28 +689,7 @@
 				}
 			}
 			HUN = { country_event = { id = wtt_germany.72 }
-				set_temp_variable = {neutral=party_popularity@neutrality}
-				multiply_temp_variable={neutral=100}
-				set_temp_variable = {fasc=party_popularity@fascism}
-				multiply_temp_variable={fasc=100}
-				set_temp_variable = {comm=party_popularity@communism}
-				multiply_temp_variable={comm=100}
-				set_temp_variable = {demo=party_popularity@democratic}
-				multiply_temp_variable={demo=100}
 				
-				if = {
-					limit = {
-						has_dlc = "Death or Dishonor"
-						is_subject = no
-					}
-					GER =  { set_autonomy = { target = HUN autonomy_state = autonomy_satellite } }
-				}
-				set_popularities = {
-				neutrality = neutral
-				fascism = fasc
-				communism=comm
-				democratic= demo
-				}
 				random_owned_controlled_state = {
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
@@ -732,27 +711,7 @@
 			ROM = { 
 			add_relation_modifier = { target = GER modifier = ROM_oil_agreement}
 				country_event = { id = wtt_germany.72 }
-				set_temp_variable = {neutral=party_popularity@neutrality}
-				multiply_temp_variable={neutral=100}
-				set_temp_variable = {fasc=party_popularity@fascism}
-				multiply_temp_variable={fasc=100}
-				set_temp_variable = {comm=party_popularity@communism}
-				multiply_temp_variable={comm=100}
-				set_temp_variable = {demo=party_popularity@democratic}
-				multiply_temp_variable={demo=100}
-				if = {
-					limit = {
-						has_dlc = "Death or Dishonor"
-						is_subject = no
-					}
-					GER =  { set_autonomy = { target = ROM autonomy_state = autonomy_satellite } }
-				}
-				set_popularities = {
-				neutrality = neutral
-				fascism = fasc
-				communism=comm
-				democratic= demo
-				}
+				
 				random_owned_controlled_state = {
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
@@ -772,27 +731,7 @@
 			}
 			BUL = {
 				country_event = { id = wtt_germany.72 }
-				set_temp_variable = {neutral=party_popularity@neutrality}
-				multiply_temp_variable={neutral=100}
-				set_temp_variable = {fasc=party_popularity@fascism}
-				multiply_temp_variable={fasc=100}
-				set_temp_variable = {comm=party_popularity@communism}
-				multiply_temp_variable={comm=100}
-				set_temp_variable = {demo=party_popularity@democratic}
-				multiply_temp_variable={demo=100}
-				if = {
-					limit = {
-						has_dlc = "Death or Dishonor"
-						is_subject = no
-					}
-					GER =  { set_autonomy = { target = BUL autonomy_state = autonomy_satellite } }		}
 				
-				set_popularities = {
-				neutrality = neutral
-				fascism = fasc
-				communism=comm
-				democratic= demo
-				}
 				random_owned_controlled_state = {
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {

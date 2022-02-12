@@ -31,10 +31,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			add_political_power = 100
-			add_autonomy_ratio = {
-				value = 0.1
-				localization = RAJ_provincial_elections
-			}
+
 			swap_ideas = {
 				add_idea = RAJ_princely_states_election
 				remove_idea = RAJ_princely_states
@@ -172,12 +169,7 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-		hidden_effect = {pow_before_annex=yes clear_variable=getting_annexed}
-		 ENG ={set_autonomy = {
-        	target = RAJ
-         	autonomy_state = autonomy_dominion
-   		 }   	}
-		
+				
 	        RAJ={add_equipment_to_stockpile = { type = infantry_equipment amount = 10000 producer = RAJ }
 				add_equipment_to_stockpile = { type = artillery_equipment amount = 1200 producer = RAJ }
 				add_equipment_to_stockpile = { type = anti_air_equipment amount = 200 producer = RAJ }
@@ -337,10 +329,6 @@ focus_tree = {
 			swap_ideas = {
 				add_idea = RAJ_princely_states_donations_troops
 				remove_idea = RAJ_princely_states_donations
-			}
-			add_autonomy_ratio = {
-				value = -0.05
-				localization = RAJ_imperial_service_troops
 			}
 		}
 	}
@@ -1884,7 +1872,6 @@ completion_reward = {
 		available = {
 			AND = {
 				date > 1938.1.1
-				compare_autonomy_state > autonomy_puppet
 			}
 		}
 		bypass = {
