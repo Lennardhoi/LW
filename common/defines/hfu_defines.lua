@@ -69,6 +69,12 @@ NDefines.NPolitics.NAVY_LEADER_MAX_COST = 100				-- max cost BEFORE modifiers
 ---------------------------------------------------------------
 NDefines.NProduction.MIN_LICENSE_ACTIVE_DAYS = 1                 -- License can be cancelled at any time now, down from 30 |                  -- Was 1, reduced to counter early game boosting, particularly cancerous Germany builds that force Bulgaria players to build a battleship in the black sea for "shore bombardment" via license and imported steel from Germany
 NDefines.NTechnology.LICENSE_PRODUCTION_TECH_BONUS = 0	-- License production tech bonus
+NDefines.NProduction.CONVERSION_SPEED_BONUS = 3	
+NDefines.NProduction.EQUIPMENT_MODULE_ADD_XP_COST = 0.0					-- XP cost for adding a new equipment module in an empty slot when creating an equipment variant.
+NDefines.NProduction.EQUIPMENT_MODULE_REPLACE_XP_COST = 0.0				-- XP cost for replacing one equipment module with an unrelated module when creating an equipment variant.
+NDefines.NProduction.EQUIPMENT_MODULE_CONVERT_XP_COST = 0.0				-- XP cost for converting one equipment module to a related module when creating an equipment variant.
+NDefines.NProduction.EQUIPMENT_MODULE_REMOVE_XP_COST = 0.0				-- XP cost for removing an equipment module and leaving the slot empty when creating an equipment variant.
+	
 NDefines.NProduction.BASE_LICENSE_IC_COST = 0.4			-- Base IC cost for lended license
 NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0	-- IC cost equipment for every year of equipment after 1936
 NDefines.NProduction.FLOATING_HARBOR_MAX_NAV_FACTORIES_PER_LINE = 5
@@ -259,7 +265,7 @@ NDefines.NMilitary.COMBAT_MINIMUM_TIME = 2
 NDefines.NCountry.REINFORCEMENT_EQUIPMENT_DELIVERY_SPEED = 0.7
 NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 30
 NDefines.NCountry.REINFORCEMENT_MANPOWER_CHUNK = 0.08
-NDefines.NCountry.AIR_SUPPLY_CONVERSION_SCALE = 0.03
+NDefines.NCountry.AIR_SUPPLY_CONVERSION_SCALE = 0.01
 
 NDefines.NBuildings.INFRA_TO_SUPPLY = 0.95
 NDefines.NCountry.VP_TO_SUPPLY_BASE = 0
@@ -365,19 +371,20 @@ NDefines.NMilitary.ANTI_AIR_TARGETTING_TO_CHANCE = 0.009 --linear NDefines.NAir.
 NDefines.NMilitary.ANTI_AIR_ATTACK_TO_AMOUNT = 0
 NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane to create a mission
 		0.0, -- AIR_SUPERIORITY
-		0.0, -- CAS		
-		0.0, -- INTERCEPTION	
+		0.0, -- CAS
+		0.0, -- INTERCEPTION
 		0.0, -- STRATEGIC_BOMBER
-		0.0, -- NAVAL_BOMBER	
-		0.0, -- DROP_NUKE		
-		0.0, -- PARADROP		
-		0.0, -- NAVAL_KAMIKAZE	
-        0.0, -- PORT_STRIKE		
-		0.0, -- AIR_SUPPLY		
+		0.0, -- NAVAL_BOMBER
+		0.0, -- DROP_NUKE
+		0.0, -- PARADROP
+		0.0, -- NAVAL_KAMIKAZE
+        0.0, -- PORT_STRIKE
+		10.0, -- ATTACK_LOGISTICS
+		0.0, -- AIR_SUPPLY
 		0.0, -- TRAINING
 		0.0, -- NAVAL_MINES_PLANTING
 		0.0, -- NAVAL_MINES_SWEEPING
-		0.0, -- Mission Recon
+		0.0, -- MISSION_RECON
 	}
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT = -0.2   --Vanilla 0.3
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT = -0.35          --Vanilla -0.35 
@@ -644,7 +651,7 @@ NDefines.NSupply.COOLDOWN_DAYS_AFTER_MOVING_SUPPLY_CAPITAL = 30 -- cooldown for 
 NDefines.NSupply.DAYS_TO_START_GIVING_SUPPLY_AFTER_MOVING_SUPPLY_CAPITAL = 1  -- the country will start gaining supply after this many days moving its capital
 NDefines.NSupply.DAYS_TO_START_GIVING_FULL_SUPPLY_AFTER_MOVING_SUPPLY_CAPITAL =  1 -- the country will reach max supply after this many days moving its capital
 NDefines.NSupply.MIN_DIFF_FOR_AUTO_UPDATING_EXISTING_RAILWAYS = 5 -- while building railways, the system will prefer updating existing railway if new railway is close enough to existing one
-NDefines.NSupply.LOCAL_SUPPLY_PER_AIR_MISSION = 0.2 -- each assigned plane gives this much supply at full efficiency
+NDefines.NSupply.LOCAL_SUPPLY_PER_AIR_MISSION = 0.1 -- each assigned plane gives this much supply at full efficiency
 
 -- reinforcements depends on distance to capital and following defines are used for calculating reinforcement time
 

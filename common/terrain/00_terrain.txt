@@ -34,7 +34,8 @@ categories =  {
 		sound_type = forest
 
 		units = {
-			attack = -0.12
+			attack = -0.2
+			defence = -0.08
 			#movement = -0.2
 		}
 
@@ -56,8 +57,8 @@ categories =  {
 		sound_type = desert
 
 		units = {
-			attack = -0.2
-			defence = -0.05
+			attack = -0.25
+			defence = -0.1
 			#movement = -0.2
 		}
 		enemy_army_bonus_air_superiority_factor = -0.05
@@ -70,7 +71,7 @@ categories =  {
 	mountain = {
 		color = { 157 192 208 }
 		movement_cost = 2.0
-		attrition = 0.3
+		attrition = 0.4
 		#combat_width = -0.66
 		combat_width = 80
 		combat_support_width = 40
@@ -80,7 +81,7 @@ categories =  {
 
 		units = {
 			attack = -0.5
-			defence = -0.1
+			defence = -0.3
 			#movement = -0.4
 		}
 
@@ -124,7 +125,7 @@ categories =  {
 
 		units = {
 			attack = -0.4
-			defence = -0.25
+			defence = -0.3
 			#movement = -0.2
 		}
 
@@ -136,7 +137,7 @@ categories =  {
 	jungle = {
 		color = { 127 191 0 }
 		movement_cost = 1.5
-		attrition = 0.2
+		attrition = 0.25
 		# combat_width = -0.25
 		combat_width = 80
 		combat_support_width = 40
@@ -150,7 +151,7 @@ categories =  {
 			#movement = -0.3
 		}
 
-		enemy_army_bonus_air_superiority_factor = -0.5
+		enemy_army_bonus_air_superiority_factor = -0.3
 		
 		sickness_chance = 1.0
 		
@@ -172,6 +173,7 @@ categories =  {
 
 		units = {
 			attack = -0.4
+			defence = -0.2
 			#movement = -0.4
 		}
 		
@@ -190,12 +192,15 @@ categories =  {
 		ai_terrain_importance_factor = 8.0
 		match_value = 8
 		sound_type = desert
+		local_supplies = -0.2
+		enemy_army_bonus_air_superiority_factor = -0.2
 		attrition = 0.1
 		units = {
-			movement = -0.15
+			movement = -0.2
+			attack = -0.25
+			defence = -0.25
 		}
 		
-		sickness_chance = 1.0
 		
 		supply_flow_penalty_factor = 0.14
 		

@@ -3,22 +3,22 @@ PixelShader =
 	Code
 	[[
 	
-	static const float HEIGHT_FOG_END = 15.0;
+	static const float HEIGHT_FOG_END = 17.0;
 	static const float HEIGHT_FOG_START = 12.0;
-	static const float HEIGHT_FOG_POW = 3.0;
+	static const float HEIGHT_FOG_POW = 3.5;
 	static const float HEIGHT_FOG_MAX = 1.0;
 	
-	static const float FOW_TRANSPARENCY_MIN = 0.33;
+	static const float FOW_TRANSPARENCY_MIN = 0.43;
 	static const float FOW_TRANSPARENCY_MAX = 0.82;
 	
 	static const float FOW_COLOR_MIN = 0;
 	static const float FOW_COLOR_MAX = 0.93;
 	
 	static const float FOW_NOISE_TILING = 0.012;
-	static const float FOW_NOISE_SPEED = 0.007;
+	static const float FOW_NOISE_SPEED = 0.010;
 	
 	static const float3 BRIGHT_FOW_COLOR = float3(0.42, 0.42, 0.42);
-	static const float3 DARK_FOW_COLOR = float3(0.02, 0.02, 0.02);
+	static const float3 DARK_FOW_COLOR = float3(0.00, 0.00, 0.00);
 	
 	static const float INTEL_CUTOFF = 0.7;
 	
