@@ -1,69 +1,69 @@
 SAF_secure = {
-	SAF_rhodesia = {
-		allowed = {
-			original_tag = SAF
-		}
-		available = {
-			original_tag = SAF
-			has_completed_focus = SAF_secure_interests_in_africa
-			470 = { is_fully_controlled_by = ENG }
-			468 = { is_fully_controlled_by = ENG }
-		}
-		visible = {
-			470 = { is_fully_controlled_by = ENG }
-		}
-		cost = 0
-		complete_effect = {
-			SAF = { transfer_state = 470
-				transfer_state = 468 }
-		}
-	}
-	SAF_zambia = {
-		allowed = {
-			original_tag = SAF
-		}
-		available = {
-			original_tag = SAF
-			has_completed_focus = SAF_secure_interests_in_africa
-			685 = { is_fully_controlled_by = ENG }
-			470 = { is_fully_controlled_by = SAF }
-			468 = { is_fully_controlled_by = SAF }
-		}
-		visible = {
-			685 = { is_fully_controlled_by = ENG }
-		}
-		cost = 0
-		complete_effect = {
-			SAF = {
-				transfer_state = 685
-				transfer_state = 684
-			}
-		}
-	}
-	SAF_east_africa = {
-		allowed = {
-			original_tag = SAF
-		}
-		available = {
-			original_tag = SAF
-			has_completed_focus = SAF_secure_interests_in_africa
-			471 = { is_fully_controlled_by = ENG }
-			472 = { is_fully_controlled_by = ENG }
-			473 = { is_fully_controlled_by = ENG }
-			685 = { is_fully_controlled_by = SAF }
-		}
-		visible = {
-			472 = { is_fully_controlled_by = ENG }
-		}
-		cost = 0
-		complete_effect = {
-			SAF = { transfer_state = 471
-				transfer_state = 472
-				transfer_state = 473 }
-			every_owned_state={
-				add_core_of = SAF
-			}
-		}
-	}
-}
+ 	SAF_rhodesia = {
+ 		allowed = {
+ 			original_tag = SAF
+ 		}
+ 		available = {
+ 			original_tag = SAF
+ 			has_completed_focus = SAF_secure_interests_in_africa
+ 			470 = { is_fully_controlled_by = ENG }
+ 			468 = { is_fully_controlled_by = ENG }
+ 		}
+ 		visible = {
+ 			470 = { is_fully_controlled_by = ENG }
+ 		}
+ 		cost = 0
+ 		complete_effect = {
+ 			SAF = { transfer_state = 470
+ 				transfer_state = 468 }
+ 		}
+ 	}
+ 	SAF_zambia = {
+ 		allowed = {
+ 			original_tag = SAF
+ 		}
+ 		available = {
+ 			original_tag = SAF
+ 			has_completed_focus = SAF_secure_interests_in_africa
+ 			685 = { is_fully_controlled_by = ENG }
+ 			470 = { is_fully_controlled_by = SAF }
+ 			468 = { is_fully_controlled_by = SAF }
+ 		}
+ 		visible = {
+ 			685 = { is_fully_controlled_by = ENG }
+ 		}
+ 		cost = 0
+ 		complete_effect = {
+ 			SAF = {
+ 				transfer_state = 685
+ 				transfer_state = 684
+ 			}
+ 		}
+ 	}
+ 	SAF_east_africa = {
+ 		allowed = {
+ 			original_tag = SAF
+ 		}
+ 		available = {
+ 			original_tag = SAF
+ 			has_completed_focus = SAF_secure_interests_in_africa
+ 			471 = { is_fully_controlled_by = ENG }
+ 			472 = { is_fully_controlled_by = ENG }
+ 			473 = { is_fully_controlled_by = ENG }
+ 			685 = { is_fully_controlled_by = SAF }
+ 		}
+ 		visible = {
+ 			472 = { is_fully_controlled_by = ENG }
+ 		}
+ 		cost = 0
+ 		complete_effect = {
+ 			SAF = { transfer_state = 471
+ 				transfer_state = 472
+ 				transfer_state = 473 }
+ 			every_owned_state={
+ 				add_core_of = SAF
+ 			}
+ 		}
+ 	}
+ }
 
