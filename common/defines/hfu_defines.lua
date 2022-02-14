@@ -279,7 +279,7 @@ NDefines.NMilitary.ARMY_FUEL_COST_MULT = 0.22 --0.5
 NDefines.NAir.FUEL_COST_MULT = 0.17 --0.35
 NDefines.NNavy.FUEL_COST_MULT = 0.04 --0.1
 NDefines.NCountry.BASE_FUEL_GAIN = 12		--was 30 before					-- base amount of fuel gained hourly, independent of excess oil
-NDefines.NCountry.BASE_FUEL_GAIN_PER_OIL = 0.8 --vanilla 2
+NDefines.NCountry.BASE_FUEL_GAIN_PER_OIL = 0.08 --vanilla 2
 NDefines.NCountry.BASE_FUEL_CAPACITY = 50000 --vanilla same
 NDefines.NMilitary.EXPERIENCE_LOSS_FACTOR = 0.01
 NDefines.NMilitary.SLOWEST_SPEED = 2 --back to 4
@@ -805,6 +805,7 @@ NDefines.NAI.THEORIST_SCALING_WEIGHT_FACTOR_PER_NON_POLITICAL_ADVISORS = 0.15 --
 
 -- Calculating wanted nr of divisions
 
+NDefines.NAir.SUPPLY_NEED_FACTOR = 0.01
 NDefines.NAI.WANTED_UNITS_INDUSTRY_FACTORY = 1.5                        -- How many units a country wants is partially based on how much military industry that is available
 NDefines.NAI.WANTED_UNITS_THREAT_MAX = 25.0                            -- Normalized threat is clamped to this
 NDefines.NAI.WANTED_UNITS_WAR_THREAT_FACTOR = 1.5                       -- Factor threat with this if country are fascist, communist or at war
