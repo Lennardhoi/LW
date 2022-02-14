@@ -55,24 +55,18 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-			514 = {
-				add_resource = {
-					type = steel
-					amount = 100
-					state = 506
-				}
-				add_resource = {
-					type = aluminium
-					amount = 70
-					state = 506
-				}
-				add_resource = {
-					type = tungsten
-					amount = 30
-					state = 506
+		    every_owned_state = {
+			custom_effect_tooltip = ITA_doc_tt
+			limit= {AND = {infrastructure > 9 is_core_of = SOV}  }
+				    add_extra_state_shared_building_slots = 4
+				    add_building_construction = {
+				    type = industrial_complex
+				    level = 1
+				    instant_build = yes
 				}
 			}
-			}}
+		}
+		}
 	focus = {
 		id = SOV_capitals_of_socialism
 		icon = GFX_focus_GER_leningrad
@@ -86,11 +80,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			210 = {
-				set_building_level = {
-					type = infrastructure
-					level = 10
-					instant_build = yes
-				}
 				add_extra_state_shared_building_slots = 15
 				add_building_construction = {
 					type = industrial_complex
@@ -100,11 +89,6 @@ focus_tree = {
 				set_state_flag = SOV_finish_five_year_plan_2IC
 			}
 			212 = {
-				set_building_level = {
-					type = infrastructure
-					level = 10
-					instant_build = yes
-				}
 				add_extra_state_shared_building_slots = 15
 				add_building_construction = {
 					type = industrial_complex
@@ -114,11 +98,7 @@ focus_tree = {
 				set_state_flag = SOV_finish_five_year_plan_2IC
 			}
 			188 = {
-				set_building_level = {
-					type = infrastructure
-					level = 10
-					instant_build = yes
-				}
+
 				add_extra_state_shared_building_slots = 15
 				add_building_construction = {
 					type = industrial_complex
