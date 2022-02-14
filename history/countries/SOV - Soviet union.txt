@@ -149,62 +149,7 @@ if = {
 	}
 }
 set_convoys = 500
-add_equipment_to_stockpile = {
-	type = artillery_equipment_1
-	amount = 10000
-	producer = SOV
-}
-add_equipment_to_stockpile = {
-	type = anti_tank_equipment_1
-	amount = 7000
-	producer = SOV
-}
-add_equipment_to_stockpile = {
-	type = anti_air_equipment_1
-	amount = 7000
-	producer = SOV
-}
-add_equipment_to_stockpile = {
-	type = infantry_equipment_1
-	amount = 300000
-	producer = SOV
-}
-add_equipment_to_stockpile = {
-	type = motorized_equipment_1
-	amount = 2000
-	producer = SOV
-}
-add_equipment_to_stockpile = {
-	type = support_equipment_1
-	amount = 5000
-	producer = SOV
-}
-add_equipment_to_stockpile = {
-	type = light_tank_chassis_2
-	amount = 3000
-	producer = SOV
-}
 
-add_equipment_to_stockpile = {
-	type = fighter_equipment_1
-	amount = 1500
-	producer = SOV
-}
-add_equipment_to_stockpile = {
-	type = CAS_equipment_1
-	amount = 600
-	producer = SOV
-}
-add_equipment_to_stockpile = {
-	type = nav_bomber_equipment_1
-	amount = 300
-	producer = SOV
-}
-add_equipment_to_stockpile = {
-	type = tac_bomber_equipment_0
-	amount = 400
-	producer = SOV
-}
 set_politics = {
 	ruling_party = communism
 	last_election = "1933.7.1"
@@ -505,4 +450,60 @@ create_equipment_variant = {
 		rear_1_custom_slot = empty
 	}
 }
+}
+add_equipment_to_stockpile = {
+	type = artillery_equipment_1
+	amount = 10000
+	producer = SOV
+}
+add_equipment_to_stockpile = {
+	type = anti_tank_equipment_1
+	amount = 7000
+	producer = SOV
+}
+add_equipment_to_stockpile = {
+	type = anti_air_equipment_1
+	amount = 7000
+	producer = SOV
+}
+add_equipment_to_stockpile = {
+	type = infantry_equipment_1
+	amount = 300000
+	producer = SOV
+}
+add_equipment_to_stockpile = {
+	type = motorized_equipment_1
+	amount = 2000
+	producer = SOV
+}
+add_equipment_to_stockpile = {
+	type = support_equipment_1
+	amount = 5000
+	producer = SOV
+}
+add_equipment_to_stockpile = {
+	type = light_tank_chassis_2
+	amount = 3000
+	producer = SOV
+}
+
+add_equipment_to_stockpile = {
+	type = fighter_equipment_1
+	amount = 1500
+	producer = SOV
+}
+add_equipment_to_stockpile = {
+	type = CAS_equipment_1
+	amount = 600
+	producer = SOV
+}
+add_equipment_to_stockpile = {
+	type = nav_bomber_equipment_1
+	amount = 300
+	producer = SOV
+}
+add_equipment_to_stockpile = {
+	type = tac_bomber_equipment_0
+	amount = 400
+	producer = SOV
 }

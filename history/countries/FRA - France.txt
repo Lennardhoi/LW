@@ -205,56 +205,7 @@ if = {
 	}
 }
 set_convoys = 300
-add_equipment_to_stockpile = {
-	type = artillery_equipment_1
-	amount = 2500
-	producer = FRA
-}
-add_equipment_to_stockpile = {
-	type = anti_air_equipment_1
-	amount = 1000
-	producer = FRA
-}
-add_equipment_to_stockpile = {
-	type = infantry_equipment_0
-	amount = 10000
-	producer = FRA
-}
-add_equipment_to_stockpile = {
-	type = infantry_equipment_1
-	amount = 48200
-	producer = FRA
-}
-add_equipment_to_stockpile = {
-	type = motorized_equipment_1
-	amount = 3300
-	producer = FRA
-}
-add_equipment_to_stockpile = {
-	type = fighter_equipment_1
-	amount = 2000
-	producer = FRA
-}
-add_equipment_to_stockpile = {
-	type = cas_equipment_1
-	amount = 500
-	producer = FRA
-}
-add_equipment_to_stockpile = {
-	type = support_equipment_1
-	amount = 2000
-	producer = FRA
-}
-add_equipment_to_stockpile = {
-	type = light_tank_equipment_1
-	amount = 480
-	producer = FRA
-}
-add_equipment_to_stockpile = {
-	type = light_tank_equipment_2
-	amount = 720
-	producer = FRA
-}
+
 set_politics = {
 	ruling_party = democratic
 	last_election = "1932.5.1"
@@ -641,4 +592,49 @@ if = {
 			mid_1_custom_slot = empty
 		}
 	}
+}
+add_equipment_to_stockpile = {
+	type = artillery_equipment_1
+	amount = 2500
+	producer = FRA
+}
+add_equipment_to_stockpile = {
+	type = anti_air_equipment_1
+	amount = 1000
+	producer = FRA
+}
+add_equipment_to_stockpile = {
+	type = infantry_equipment_0
+	amount = 10000
+	producer = FRA
+}
+add_equipment_to_stockpile = {
+	type = infantry_equipment_1
+	amount = 48200
+	producer = FRA
+}
+add_equipment_to_stockpile = {
+	type = motorized_equipment_1
+	amount = 3300
+	producer = FRA
+}
+add_equipment_to_stockpile = {
+	type = fighter_equipment_1
+	amount = 2000
+	producer = FRA
+}
+add_equipment_to_stockpile = {
+	type = cas_equipment_1
+	amount = 500
+	producer = FRA
+}
+add_equipment_to_stockpile = {
+	type = support_equipment_1
+	amount = 2000
+	producer = FRA
+}
+add_equipment_to_stockpile = {
+	type = light_tank_chassis_2
+	amount = 1000
+	producer = FRA
 }
