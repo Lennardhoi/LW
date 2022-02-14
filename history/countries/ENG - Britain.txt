@@ -257,56 +257,6 @@ add_ideas = {
 	george_v
 }
 set_convoys = 1200
-add_equipment_to_stockpile = {
-	type = artillery_equipment_1
-	amount = 3000
-	producer = ENG
-}
-add_equipment_to_stockpile = {
-	type = anti_air_equipment_1
-	amount = 200
-	producer = ENG
-}
-add_equipment_to_stockpile = {
-	type = anti_tank_equipment_1
-	amount = 200
-	producer = ENG
-}
-add_equipment_to_stockpile = {
-	type = infantry_equipment_0
-	amount = 40000
-	producer = ENG
-}
-add_equipment_to_stockpile = {
-	type = support_equipment_1
-	amount = 500
-	producer = ENG
-}
-add_equipment_to_stockpile = {
-	type = light_tank_equipment_1
-	amount = 180
-	producer = ENG
-}
-add_equipment_to_stockpile = {
-	type = fighter_equipment_1
-	amount = 2000
-	producer = ENG
-}
-add_equipment_to_stockpile = {
-	type = nav_bomber_equipment_1
-	amount = 469
-	producer = ENG
-}
-add_equipment_to_stockpile = {
-	type = tac_bomber_equipment_1
-	amount = 600
-	producer = ENG
-}
-add_equipment_to_stockpile = {
-	type = CAS_equipment_1
-	amount = 900
-	producer = ENG
-}
 # DIPLOMACY
 
 give_guarantee = POL
@@ -917,4 +867,54 @@ if = {
 			front_1_custom_slot = ship_deck_space
 		}
 	}
+}
+add_equipment_to_stockpile = {
+	type = artillery_equipment_1
+	amount = 3000
+	producer = ENG
+}
+add_equipment_to_stockpile = {
+	type = anti_air_equipment_1
+	amount = 200
+	producer = ENG
+}
+add_equipment_to_stockpile = {
+	type = anti_tank_equipment_1
+	amount = 200
+	producer = ENG
+}
+add_equipment_to_stockpile = {
+	type = infantry_equipment_0
+	amount = 40000
+	producer = ENG
+}
+add_equipment_to_stockpile = {
+	type = support_equipment_1
+	amount = 500
+	producer = ENG
+}
+add_equipment_to_stockpile = {
+	type = light_tank_chassis_2
+	amount = 180
+	producer = ENG
+}
+add_equipment_to_stockpile = {
+	type = fighter_equipment_1
+	amount = 2000
+	producer = ENG
+}
+add_equipment_to_stockpile = {
+	type = nav_bomber_equipment_1
+	amount = 469
+	producer = ENG
+}
+add_equipment_to_stockpile = {
+	type = tac_bomber_equipment_1
+	amount = 600
+	producer = ENG
+}
+add_equipment_to_stockpile = {
+	type = CAS_equipment_1
+	amount = 900
+	producer = ENG
 }

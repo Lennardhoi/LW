@@ -230,62 +230,7 @@ add_timed_idea = {
 }
 set_research_slots = 5
 set_convoys = 300
-add_equipment_to_stockpile = {
-	type = artillery_equipment_1
-	amount = 4000
-	producer = GER
-}
-add_equipment_to_stockpile = {
-	type = anti_air_equipment_1
-	amount = 500
-	producer = GER
-}
-add_equipment_to_stockpile = {
-	type = infantry_equipment_1
-	amount = 20000
-	producer = GER
-}
-add_equipment_to_stockpile = {
-	type = motorized_equipment_1
-	amount = 1000
-	producer = GER
-}
-add_equipment_to_stockpile = {
-	type = support_equipment_1
-	amount = 700
-	producer = GER
-}
-add_equipment_to_stockpile = {
-	type = light_tank_chassis_2
-	amount = 720
-	producer = GER
-	variant_name = "Panzer II"
-}
-add_equipment_to_stockpile = {
-	type = transport_plane_equipment_1
-	amount = 10
-	producer = GER
-}
-add_equipment_to_stockpile = {
-	type = nav_bomber_equipment_1
-	amount = 300
-	producer = GER
-}
-add_equipment_to_stockpile = {
-	type = tac_bomber_equipment_1
-	amount = 500
-	producer = GER
-}
-add_equipment_to_stockpile = {
-	type = fighter_equipment_1
-	amount = 1000
-	producer = GER
-}
-add_equipment_to_stockpile = {
-	type = CAS_equipment_1
-	amount = 600
-	producer = GER
-}
+
 if = { 
 	limit = { has_dlc = "No Step Back" }
 
@@ -746,4 +691,60 @@ create_equipment_variant = {
 		plane_reliability_upgrade = 5
 	}
 	obsolete = yes
+}
+add_equipment_to_stockpile = {
+	type = artillery_equipment_1
+	amount = 4000
+	producer = GER
+}
+add_equipment_to_stockpile = {
+	type = anti_air_equipment_1
+	amount = 500
+	producer = GER
+}
+add_equipment_to_stockpile = {
+	type = infantry_equipment_1
+	amount = 20000
+	producer = GER
+}
+add_equipment_to_stockpile = {
+	type = motorized_equipment_1
+	amount = 1000
+	producer = GER
+}
+add_equipment_to_stockpile = {
+	type = support_equipment_1
+	amount = 700
+	producer = GER
+}
+add_equipment_to_stockpile = {
+	type = light_tank_chassis_2
+	amount = 720
+	producer = GER
+	variant_name = "Panzer II"
+}
+add_equipment_to_stockpile = {
+	type = transport_plane_equipment_1
+	amount = 10
+	producer = GER
+}
+add_equipment_to_stockpile = {
+	type = nav_bomber_equipment_1
+	amount = 300
+	producer = GER
+}
+add_equipment_to_stockpile = {
+	type = tac_bomber_equipment_1
+	amount = 500
+	producer = GER
+}
+add_equipment_to_stockpile = {
+	type = fighter_equipment_1
+	amount = 1000
+	producer = GER
+}
+add_equipment_to_stockpile = {
+	type = CAS_equipment_1
+	amount = 600
+	producer = GER
 }
