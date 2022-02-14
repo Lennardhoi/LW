@@ -822,8 +822,8 @@ focus_tree = {
 				bonus = 1.2
 				ahead_reduction= 1
 				uses = 1
-				technology = basic_medium_tank
-				technology = basic_heavy_tank
+				technology = basic_medium_tank_chassis 
+				technology = basic_heavy_tank_chassis 
 			}
 			add_tech_bonus = {
 				name = FRA_light_medium_armor
@@ -979,8 +979,8 @@ focus_tree = {
 				bonus = 1.2
 				ahead_reduction= 1
 				uses = 1
-				technology = basic_medium_tank
-				technology = basic_heavy_tank
+				technology = basic_medium_tank_chassis 
+				technology = basic_heavy_tank_chassis 
 			}
 			add_tech_bonus = {
 				name = FRA_light_medium_armor
@@ -2076,7 +2076,7 @@ focus_tree = {
 				days = 60
 			}
 			if = {
-				limit = {has_tech = basic_medium_tank}
+				limit = {has_tech = basic_medium_tank_chassis }
 
 				division_template = {
 					name = "French"
@@ -2121,7 +2121,7 @@ focus_tree = {
 						}}
 			}
 			if = {
-				limit = {has_tech = basic_heavy_tank}
+				limit = {has_tech = basic_heavy_tank_chassis }
 
 				division_template = {
 					name = "French2"

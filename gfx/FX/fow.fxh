@@ -8,8 +8,8 @@ PixelShader =
 	static const float HEIGHT_FOG_POW = 3.5;
 	static const float HEIGHT_FOG_MAX = 1.0;
 	
-	static const float FOW_TRANSPARENCY_MIN = 0.43;
-	static const float FOW_TRANSPARENCY_MAX = 0.72;
+	static const float FOW_TRANSPARENCY_MIN = 0.30;
+	static const float FOW_TRANSPARENCY_MAX = 0.92;
 	
 	static const float FOW_COLOR_MIN = 0;
 	static const float FOW_COLOR_MAX = 0.93;

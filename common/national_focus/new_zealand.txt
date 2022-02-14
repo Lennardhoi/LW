@@ -1004,7 +1004,7 @@ focus = {
 	completion_reward = {
 		add_ideas = NZL_bob_semple_tank
 		custom_effect_tooltip = NZL_bob_semple_tank_tt
-		hidden_effect = { set_technology = { basic_light_tank  = 1 } }
+		hidden_effect = { set_technology = { basic_light_tank_chassis   = 1 } }
 	}
 }
 focus = {
@@ -1085,7 +1085,7 @@ focus = {
 	completion_reward = {
 		add_tech_bonus = {
 				ahead_reduction = 2
-				technology = advanced_light_tank
+				technology = advanced_light_tank_chassis 
 			}
 	}
 }

@@ -982,13 +982,13 @@
 			add_tech_bonus = {
 				name = GER_soviet_treaty
 				ahead_reduction = 2
-				technology = basic_medium_tank
+				technology = basic_medium_tank_chassis 
 			}
 			add_tech_bonus = {
 				name = GER_soviet_treaty
 				bonus = 1.5
 				uses = 1
-				technology = basic_heavy_tank
+				technology = basic_heavy_tank_chassis 
 			}
 			add_tech_bonus = {
 				name = GER_soviet_treaty
@@ -1052,12 +1052,12 @@
 				bonus = 1.1
 				uses = 1
 				name = tank_innovation_bonus
-				technology = improved_medium_tank
+				technology = improved_medium_tank_chassis 
 			}
             add_tech_bonus = {
 				name = GER_soviet_treaty
 				ahead_reduction = 2
-				technology = improved_heavy_tank
+				technology = improved_heavy_tank_chassis 
 			}
 		}
 	}
@@ -1351,7 +1351,7 @@
 			custom_effect_tooltip = "Four fully equipped Tiger-Divisions will spawn in Königsberg. A designer can be used."
 			hidden_effect={
 				set_technology = {
-					improved_heavy_tank = 1
+					improved_heavy_tank_chassis  = 1
 				}
 				create_equipment_variant = {
 					name = "Tiger Panzer"
@@ -1502,13 +1502,13 @@
 				bonus = 1.5
 				uses = 1
 				name = mech_army_bonus
-				technology = advanced_medium_tank
+				technology = advanced_medium_tank_chassis 
 			}
 			add_tech_bonus = {
 				bonus = 1.5
 				uses = 1
 				name = mech_army_bonus
-				technology = advanced_heavy_tank
+				technology = advanced_heavy_tank_chassis 
 			}
 		}
 	}
@@ -1554,7 +1554,7 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
 			set_technology = {
-				advanced_heavy_tank = 1
+				advanced_heavy_tank_chassis  = 1
 			}
 		}
 	}

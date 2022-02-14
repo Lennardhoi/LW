@@ -1805,7 +1805,7 @@ focus_tree = {
 		cost = 10
 		available_if_capitulated = yes
 		completion_reward = {
-		    set_technology = {improved_heavy_tank = 1 popup=no}
+		    set_technology = {improved_heavy_tank_chassis  = 1 popup=no}
 			create_equipment_variant = {
 					name = "KV-1/1"
 					type = heavy_tank_equipment_2
