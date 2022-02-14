@@ -9,13 +9,13 @@ PixelShader =
 	static const float HEIGHT_FOG_MAX = 1.0;
 	
 	static const float FOW_TRANSPARENCY_MIN = 0.43;
-	static const float FOW_TRANSPARENCY_MAX = 0.82;
+	static const float FOW_TRANSPARENCY_MAX = 0.72;
 	
 	static const float FOW_COLOR_MIN = 0;
 	static const float FOW_COLOR_MAX = 0.93;
 	
 	static const float FOW_NOISE_TILING = 0.012;
-	static const float FOW_NOISE_SPEED = 0.010;
+	static const float FOW_NOISE_SPEED = 0.012;
 	
 	static const float3 BRIGHT_FOW_COLOR = float3(0.42, 0.42, 0.42);
 	static const float3 DARK_FOW_COLOR = float3(0.00, 0.00, 0.00);

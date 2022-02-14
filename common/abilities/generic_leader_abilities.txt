@@ -22,7 +22,6 @@ ability = {
 			planning_speed = 4.0
 		}
 
-
 		ai_will_do = {
 			factor = -1
 			modifier = {
@@ -112,10 +111,11 @@ ability = {
 
 		unit_modifiers = {
 			naval_invasion_prep_speed = 0.5
+			naval_invasion_planning_bonus_speed = 3
 		}
 
 		cost = 0.1
-		duration = 168
+		duration = 336
 	}
 
 	probing_attack = {
