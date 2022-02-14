@@ -1,45 +1,45 @@
 state={
-	id=516
-	name="STATE_592"
-	manpower = 17835200
-	state_category = city
-	resources={
-	}
-	history={
-		owner = CHI
-		add_core_of = CHI
-		buildings = {
-			infrastructure = 3
-			arms_factory = 2
-			industrial_complex = 2
-			air_base = 3
-			993 = {
-				naval_base = 5
-				coastal_bunker = 1
-				bunker = 1
-			}
-		}
-		victory_points = {
-			993 5
-		}
-		1938.10.25 = {
-			if = {
-				limit = {
-					NOT = { has_dlc = "Waking the Tiger" }
-				}
-				remove_core_of = GXC
-				CHI = { transfer_state = PREV }
-			}
-			JAP = {
-				set_province_controller = 1047
-				set_province_controller = 7152
-				set_province_controller = 11938
-				set_province_controller = 11941
-			}
-		}
-	}
-	provinces={
-		993 1033 1076 1132 3828 6506 6617 9147 10827 10830 10964
-	}
-}
+ 	id=516
+ 	name="STATE_592"
+ 	manpower = 17835200
+ 	state_category = city
+ 	resources={
+ 	}
+ 	history={
+ 		owner = CHI
+ 		add_core_of = CHI
+ 		buildings = {
+ 			infrastructure = 3
+ 			arms_factory = 2
+ 			industrial_complex = 2
+ 			air_base = 3
+ 			993 = {
+ 				naval_base = 5
+ 				coastal_bunker = 1
+ 				bunker = 1
+ 			}
+ 		}
+ 		victory_points = {
+ 			993 5
+ 		}
+ 		1938.10.25 = {
+ 			if = {
+ 				limit = {
+ 					NOT = { has_dlc = "Waking the Tiger" }
+ 				}
+ 				remove_core_of = GXC
+ 				CHI = { transfer_state = PREV }
+ 			}
+ 			JAP = {
+ 				set_province_controller = 1047
+ 				set_province_controller = 7152
+ 				set_province_controller = 11938
+ 				set_province_controller = 11941
+ 			}
+ 		}
+ 	}
+ 	provinces={
+ 		993 1033 1076 1132 3828 6506 6617 9147 10827 10830 10964
+ 	}
+ }
 
