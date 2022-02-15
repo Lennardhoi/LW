@@ -126,6 +126,20 @@ ideas = {
 		}
 	}
 	country = {
+		SOV_five_year_plan = {
+			allowed = {
+				original_tag = SOV
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_build_infrastructure
+			modifier = {
+				production_speed_infrastructure_factor = 0.5
+			}
+		}
 		SOV_kazanspawnin = {
 			modifier = {
 				industrial_capacity_factory=-0.1
