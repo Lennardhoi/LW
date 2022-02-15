@@ -3,7 +3,7 @@ PixelShader =
 	Code
 	[[
 	
-	static const float HEIGHT_FOG_END = 17.0;
+	static const float HEIGHT_FOG_END = 15.0;
 	static const float HEIGHT_FOG_START = 12.0;
 	static const float HEIGHT_FOG_POW = 3.5;
 	static const float HEIGHT_FOG_MAX = 1.0;
