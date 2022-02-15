@@ -68,7 +68,16 @@ focus_tree = {
  		relative_position_id = NDA_anti_meme4
  		available_if_capitulated = yes
  		completion_reward = {
- 			
+ 			every_country={
+ 				limit={is_playable_country=yes}
+ 			if = {
+ 				limit={NOT={has_idea=GER_africa_hp}}
+ 				add_ideas = GER_africa_hp
+ 				set_technology = { africa_hp = 1 popup = no }
+ 			}
+ 				add_ideas = speed3_africa
+ 				
+ 			}
  			every_country={
  				limit={is_playable_country=yes}
  				swap_ideas={
@@ -197,17 +206,13 @@ focus_tree = {
  			}
  			every_country={
  				limit={is_playable_country=yes}
- 			if = {
- 				limit={NOT={has_idea=GER_africa_hp}}
- 				add_ideas = GER_africa_hp
- 				set_technology = { africa_hp = 1 popup = no }
- 			}
- 				add_ideas = speed3_africa
+ 			
  				swap_ideas={
  					remove_idea = research_39_mid
  					add_idea = research_40
  				}
  			}
+ 			
  		}
  	}
  	focus = {
@@ -240,17 +245,10 @@ focus_tree = {
  		relative_position_id = NDA_resource5
  		available_if_capitulated = yes
  		completion_reward = {
- 			#GER ={remove_ideas = GER_africa_hp}
- 			#GER ={set_technology = { africa_hp_off = 1 popup = no }}
+			
  			every_country={
  				limit={is_playable_country=yes}
- 				remove_ideas = speed3_africa
- 				remove_ideas = GER_africa_hp
- 				set_technology = { africa_hp_off = 1 popup = no }
- 				set_technology = {
-     					hp_buff_41 = 1
- 					popup=no
- 				}
+ 				
  				swap_ideas={
  					remove_idea = research_40_mid
  					add_idea = research_41

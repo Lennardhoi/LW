@@ -280,6 +280,42 @@ ROM_oil_agreement = {
 	}
 
 	trade_cost_for_target_factor=-0.8}
+DOM_trade_1 = {
+	valid_relation_trigger = {
+		FROM = {
+			NOT = { has_war_with = ROOT }
+		}
+	}
+	extra_trade_to_target_factor = 0.25}
+DOM_trade_2 = {
+	valid_relation_trigger = {
+		FROM = {
+			NOT = { has_war_with = ROOT }
+		}
+	}
+	trade_cost_for_target_factor=-0.2}
+Axis_trade = {
+	valid_relation_trigger = {
+		FROM = {
+			NOT = { has_war_with = ROOT }
+		}
+	}
+	extra_trade_to_target_factor = 1
+}
+COL_trade_1 = {
+	valid_relation_trigger = {
+		FROM = {
+			NOT = { has_war_with = ROOT }
+		}
+	}
+	extra_trade_to_target_factor = 0.5}
+COL_trade_2 = {
+	valid_relation_trigger = {
+		FROM = {
+			NOT = { has_war_with = ROOT }
+		}
+	}
+	trade_cost_for_target_factor=-0.5}
 Stahlpakt = {
 	valid_relation_trigger = {
 		FROM = {

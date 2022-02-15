@@ -1594,6 +1594,12 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_attacker_speed2_texticon"
+		texturefile = "gfx/texticons/attacker_speed2_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
 		name = "GFX_operatives_build_intel_network_texticon"
 		texturefile = "gfx/texticons/operatives_build_intel_network_texticon.dds"
 		legacy_lazy_load = no
@@ -1605,6 +1611,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	
+	spriteType = {
+		name = "GFX_stage_coup_texticon"
+		texturefile = "gfx/texticons/stage_coup_texticon.dds"
+		legacy_lazy_load = no
+	}
 	
 	spriteType = {
 		name = "GFX_territorial_expansion_texticon"
@@ -1823,7 +1834,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_anti_air_texticon"
+		name = "GFX_anti_air_gun_texticon"
 		texturefile = "gfx/texticons/anti_air_texticon.dds"
 		legacy_lazy_load = no
 	}
@@ -1877,8 +1888,8 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_rocket_texticon"
-		texturefile = "gfx/texticons/rocket_texticon.dds"
+		name = "GFX_rocket_modifiericons_texticon"
+		texturefile = "gfx/texticons/rocket_modifiericons_texticon.dds"
 		legacy_lazy_load = no
 	}
 	
@@ -2213,6 +2224,12 @@ spriteTypes = {
 	}
 	
 	spriteType = {
+		name = "GFX_naval_patrol_texticon"
+		texturefile = "gfx/texticons/naval_patrol_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
 		name = "GFX_maneuver_texticon"
 		texturefile = "gfx/texticons/maneuver_texticon.dds"
 		legacy_lazy_load = no
@@ -2425,5 +2442,461 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_production_efficiency_loss_texticon"
 		texturefile = "gfx/texticons/production_efficiency_loss_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_kx_education_texticon"
+		texturefile = "gfx/texticons/kx_education_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_kx_illiteracy_texticon"
+		texturefile = "gfx/texticons/kx_illiteracy_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_wheat_texticon"
+		texturefile = "gfx/texticons/wheat_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_attack_artillery_texticon"
+		texturefile = "gfx/texticons/attack_artillery_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_attack_cavalry_texticon"
+		texturefile = "gfx/texticons/attack_cavalry_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_attack_infantry_texticon"
+		texturefile = "gfx/texticons/attack_infantry_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_attack_mecha_texticon"
+		texturefile = "gfx/texticons/attack_mecha_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_attack_motorised_texticon"
+		texturefile = "gfx/texticons/attack_motorised_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_attack_specops_texticon"
+		texturefile = "gfx/texticons/attack_specops_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_attack_tank_texticon"
+		texturefile = "gfx/texticons/attack_tank_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_defence_artillery_texticon"
+		texturefile = "gfx/texticons/defence_artillery_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_defence_cavalry_texticon"
+		texturefile = "gfx/texticons/defence_cavalry_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_defence_infantry_texticon"
+		texturefile = "gfx/texticons/defence_infantry_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_defence_mecha_texticon"
+		texturefile = "gfx/texticons/defence_mecha_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_defence_motorised_texticon"
+		texturefile = "gfx/texticons/defence_motorised_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_defence_specops_texticon"
+		texturefile = "gfx/texticons/defence_specops_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_defence_tank_texticon"
+		texturefile = "gfx/texticons/defence_tank_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_training_max_texticon"
+		texturefile = "gfx/texticons/training_max_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_training_speed_texticon"
+		texturefile = "gfx/texticons/training_speed_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_construction_speed_airbase_texticon"
+		texturefile = "gfx/texticons/construction_speed_airbase_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_construction_speed_antiair_texticon"
+		texturefile = "gfx/texticons/construction_speed_antiair_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_construction_speed_civfactory_texticon"
+		texturefile = "gfx/texticons/construction_speed_civfactory_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_construction_speed_coastfort_texticon"
+		texturefile = "gfx/texticons/construction_speed_coastfort_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_construction_speed_dockyard_texticon"
+		texturefile = "gfx/texticons/construction_speed_dockyard_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_construction_speed_fuelsilo_texticon"
+		texturefile = "gfx/texticons/construction_speed_fuelsilo_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_construction_speed_infrastructure_texticon"
+		texturefile = "gfx/texticons/construction_speed_infrastructure_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_construction_speed_landfort_texticon"
+		texturefile = "gfx/texticons/construction_speed_landfort_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_construction_speed_milfactory_texticon"
+		texturefile = "gfx/texticons/construction_speed_milfactory_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_construction_speed_navalbase_texticon"
+		texturefile = "gfx/texticons/construction_speed_navalbase_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_construction_speed_radar_texticon"
+		texturefile = "gfx/texticons/construction_speed_radar_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_construction_speed_railway_texticon"
+		texturefile = "gfx/texticons/construction_speed_railway_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_construction_speed_reactor_texticon"
+		texturefile = "gfx/texticons/construction_speed_reactor_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_construction_speed_refinery_texticon"
+		texturefile = "gfx/texticons/construction_speed_refinery_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_construction_speed_rocket_texticon"
+		texturefile = "gfx/texticons/construction_speed_rocket_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_construction_speed_supplyhub_texticon"
+		texturefile = "gfx/texticons/construction_speed_supplyhub_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_army_doctrine_cost_texticon"
+		texturefile = "gfx/texticons/army_doctrine_cost_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_air_doctrine_cost_texticon"
+		texturefile = "gfx/texticons/air_doctrine_cost_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_navy_doctrine_cost_texticon"
+		texturefile = "gfx/texticons/navy_doctrine_cost_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_neutral_doctrine_cost_texticon"
+		texturefile = "gfx/texticons/neutral_doctrine_cost_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_research_speed_artillery_texticon"
+		texturefile = "gfx/texticons/research_speed_artillery_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_research_speed_battery_texticon"
+		texturefile = "gfx/texticons/research_speed_battery_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_research_speed_cas_texticon"
+		texturefile = "gfx/texticons/research_speed_cas_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_research_speed_electronics_texticon"
+		texturefile = "gfx/texticons/research_speed_electronics_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_research_speed_equipment_texticon"
+		texturefile = "gfx/texticons/research_speed_equipment_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_research_speed_fighter_texticon"
+		texturefile = "gfx/texticons/research_speed_fighter_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_research_speed_heavyfighter_texticon"
+		texturefile = "gfx/texticons/research_speed_heavyfighter_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_research_speed_industry_texticon"
+		texturefile = "gfx/texticons/research_speed_industry_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_research_speed_jet_texticon"
+		texturefile = "gfx/texticons/research_speed_jet_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_research_speed_mines_texticon"
+		texturefile = "gfx/texticons/research_speed_mines_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_research_speed_motorised_texticon"
+		texturefile = "gfx/texticons/research_speed_motorised_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_research_speed_naval_texticon"
+		texturefile = "gfx/texticons/research_speed_naval_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_research_speed_navbomber_texticon"
+		texturefile = "gfx/texticons/research_speed_navbomber_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_research_speed_radar_texticon"
+		texturefile = "gfx/texticons/research_speed_radar_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_research_speed_rocket_texticon"
+		texturefile = "gfx/texticons/research_speed_rocket_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_research_speed_stratbomber_texticon"
+		texturefile = "gfx/texticons/research_speed_stratbomber_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_research_speed_tacbomber_texticon"
+		texturefile = "gfx/texticons/research_speed_tacbomber_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_research_speed_tank_texticon"
+		texturefile = "gfx/texticons/research_speed_tank_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_research_speed_train_texticon"
+		texturefile = "gfx/texticons/research_speed_train_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_research_speed_nuclear_texticon"
+		texturefile = "gfx/texticons/research_speed_nuclear_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_speed_tank_texticon"
+		texturefile = "gfx/texticons/speed_tank_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_speed_cavalry_texticon"
+		texturefile = "gfx/texticons/speed_cavalry_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_attack_air_texticon"
+		texturefile = "gfx/texticons/attack_air_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_defence_air_texticon"
+		texturefile = "gfx/texticons/defence_air_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_speed_air_texticon"
+		texturefile = "gfx/texticons/speed_air_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_attack_bomber_texticon"
+		texturefile = "gfx/texticons/attack_bomber_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_attack_cas_texticon"
+		texturefile = "gfx/texticons/attack_cas_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_attack_intercept_texticon"
+		texturefile = "gfx/texticons/attack_intercept_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_attack_paratroop_texticon"
+		texturefile = "gfx/texticons/attack_paratroop_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_defence_bomber_texticon"
+		texturefile = "gfx/texticons/defence_bomber_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_defence_cas_texticon"
+		texturefile = "gfx/texticons/defence_cas_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_defence_intercept_texticon"
+		texturefile = "gfx/texticons/defence_intercept_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_defence_paratroop_texticon"
+		texturefile = "gfx/texticons/defence_paratroop_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_speed_bomber_texticon"
+		texturefile = "gfx/texticons/speed_bomber_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_speed_cas_texticon"
+		texturefile = "gfx/texticons/speed_cas_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_speed_intercept_texticon"
+		texturefile = "gfx/texticons/speed_intercept_texticon.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_speed_paratroop_texticon"
+		texturefile = "gfx/texticons/speed_paratroop_texticon.dds"
 		legacy_lazy_load = no
 	}

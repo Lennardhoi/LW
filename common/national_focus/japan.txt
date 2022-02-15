@@ -1855,6 +1855,19 @@ focus_tree = {
  		available_if_capitulated = no
  		search_filters = { FOCUS_FILTER_ANNEXATION }
  		completion_reward = {
+		hidden_effect = {
+			every_country={
+				limit={is_playable_country=yes}
+					remove_ideas = speed3_africa
+					remove_ideas = GER_africa_hp
+					add_ideas=speed3
+					set_technology = { africa_hp_off = 1 popup = no }
+					set_technology = {
+							hp_buff_41 = 1
+						popup=no
+					}
+			}
+		}
  		RAJ = {
  		       add_ideas= RAJ_asia_focus
  			   add_timed_idea = {
