@@ -48,6 +48,7 @@ set_technology = {
 	#desertinfantry_at = 1
 	#shocktroops = 1
 	#jungletroops = 1
+	basic_train = 1
 	jaegers = 1
 	tech_mountaineers = 1
 	marines = 1
@@ -83,6 +84,11 @@ if = {
 	set_technology = {
 		mtg_transport = 1
 	}
+}
+add_equipment_to_stockpile = {
+	type = train_equipment
+	amount = 50
+	producer = SPR
 }
 set_politics = {
 	ruling_party = fascism

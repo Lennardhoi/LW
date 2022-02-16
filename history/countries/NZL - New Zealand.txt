@@ -49,6 +49,7 @@ set_technology = {
 	#desertinfantry_at = 1
 	#shocktroops = 1
 	#jungletroops = 1
+	basic_train = 1
 	jaegers = 1
 	tech_mountaineers = 1
 	marines = 1
@@ -133,7 +134,11 @@ add_equipment_to_stockpile = {
 	amount = 650
 	producer = NZL
 }
-
+add_equipment_to_stockpile = {
+	type = train_equipment
+	amount = 10
+	producer = NZL
+}
 ### VARIANTS ###
 # 1936 Start #
 if = {

@@ -126,6 +126,7 @@ set_technology = {
 	#desertinfantry_at = 1
 	#shocktroops = 1
 	#jungletroops = 1
+	basic_train = 1
 	jaegers = 1
 	tech_mountaineers = 1
 	marines = 1
@@ -230,7 +231,11 @@ add_timed_idea = {
 }
 set_research_slots = 5
 set_convoys = 300
-
+add_equipment_to_stockpile = {
+	type = train_equipment
+	amount = 300
+	producer = GER
+}
 if = { 
 	limit = { has_dlc = "No Step Back" }
 

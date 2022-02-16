@@ -106,6 +106,7 @@ capital = 270
 	bicycle_infantry = 1 
 	#shocktroops = 1
 	#jungletroops = 1
+	basic_train = 1
 	jaegers = 1
 	tech_mountaineers = 1
 	marines = 1
@@ -193,6 +194,11 @@ capital = 270
  	}
  }
  set_convoys = 1000
+ add_equipment_to_stockpile = {
+	type = train_equipment
+	amount = 150
+	producer = JAP
+}
  add_equipment_to_stockpile = {
           type = artillery_equipment_1
           amount = 1000

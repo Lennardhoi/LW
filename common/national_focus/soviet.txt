@@ -106,8 +106,9 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_capitals_of_socialism
-		prerequisite = { focus = SOV_capitals_of_socialism }
-		prerequisite = { focus = SOV_start_five_year_plan}
+		prerequisite = { 
+		focus = SOV_capitals_of_socialism 
+		focus = SOV_start_five_year_plan}
 		cost = 10
 		ai_will_do = {
 			factor = 5
@@ -134,7 +135,6 @@ focus_tree = {
 				name = sov_four_year_plan
 				bonus = 0.5
 				uses = 1
-				technology = advanced_machine_tools
 				technology = assembly_line_production
 				technology = streamlined_line
 				technology = flexible_line
@@ -918,8 +918,9 @@ focus_tree = {
 		icon = GFX_focus_SOV_extra_tech_slot_early
 		text = extra_tech_slot
 		relative_position_id = SOV_start_five_year_plan
-		prerequisite = { focus = SOV_start_five_year_plan }
-		prerequisite = { focus = SOV_capitals_of_socialism }
+		prerequisite = { 
+		focus = SOV_start_five_year_plan 
+		focus = SOV_capitals_of_socialism }
 		x = 1
 		y = 1
 		cost = 10
@@ -983,44 +984,16 @@ focus_tree = {
 			factor = 1
 		}
 		available_if_capitulated = yes
-		complete_tooltip = {
-			every_state = {
-				add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
-			}
-		}
 		completion_reward = {
-			222 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
-			}
-			367 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
-			}
-			490 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
-			}
+			add_ideas = {idea = SOV_railway}
 		}
 	}
 	focus = {
 		id = SOV_infrastructure_effort
 		icon = GFX_focus_SOV_infrastructrure_effort
-		prerequisite = { focus = SOV_start_five_year_plan }
-		prerequisite = { focus = SOV_capitals_of_socialism }
+		prerequisite = { 
+		focus = SOV_start_five_year_plan 
+		focus = SOV_capitals_of_socialism }
 		relative_position_id = SOV_start_five_year_plan
 		x = -1
 		y = 1

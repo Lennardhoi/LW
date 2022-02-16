@@ -63,6 +63,7 @@ set_technology = {
 	#desertinfantry_at = 1
 	#shocktroops = 1
 	#jungletroops = 1
+	basic_train = 1
 	jaegers = 1
 	tech_mountaineers = 1
 	marines = 1
@@ -149,6 +150,11 @@ set_popularities = {
 	democratic = 100
 }
 set_convoys = 100
+add_equipment_to_stockpile = {
+	type = train_equipment
+	amount = 50
+	producer = CAN
+}
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
 	amount = 2700
