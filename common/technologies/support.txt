@@ -494,7 +494,7 @@ technologies = {
 	}
 	tech_military_police2 = {
 		military_police = {
-			suppression_factor = 0.1
+			max_organisation=10
 		}
 		path = {
 			leads_to_tech = tech_military_police3
@@ -523,7 +523,7 @@ technologies = {
 	}
 	tech_military_police3 = {
 		military_police = {
-			suppression_factor = 0.1
+			max_organisation=10
 		}
 		path = {
 			leads_to_tech = tech_military_police4
@@ -552,7 +552,7 @@ technologies = {
 	}
 	tech_military_police4 = {
 		military_police = {
-			suppression_factor = 0.1
+			max_organisation=10
 		}
 		research_cost = 1
 		start_year = 1943
@@ -615,7 +615,8 @@ technologies = {
 	tech_maintenance_company2 = {
 		maintenance_company = {
 			reliability_factor = 0.05
-			equipment_capture_factor = 0.05
+			#equipment_capture_factor = 0.05
+			default_morale =0.4
 		}
 		enable_equipment_modules = {
 			easy_maintenance
@@ -656,7 +657,7 @@ technologies = {
 	tech_maintenance_company3 = {
 		maintenance_company = {
 			reliability_factor = 0.05
-			equipment_capture_factor = 0.05
+			default_morale =0.4
 		}
 		path = {
 			leads_to_tech = tech_maintenance_company4
@@ -694,7 +695,7 @@ technologies = {
 	tech_maintenance_company4 = {
 		maintenance_company = {
 			reliability_factor = 0.05
-			equipment_capture_factor = 0.05
+			default_morale =0.4
 		}
 		research_cost = 1
 		start_year = 1943
