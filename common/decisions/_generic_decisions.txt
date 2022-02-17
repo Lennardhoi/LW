@@ -426,9 +426,9 @@ political_actions = {
  		cost = 0
  		modifier = {
  			political_power_gain = -0.5
- 			industrial_capacity_dockyard = 0.05
+ 			industrial_capacity_dockyard = 0.025
  			industrial_capacity_factory = 0.05
- 			war_support_weekly = -0.0040
+ 			war_support_weekly = -0.002
  		}
  		ai_will_do = {
  			factor = 1
@@ -474,7 +474,7 @@ political_actions = {
  				tag = EFR
  			}
  		}
- 		cost = 75
+ 		cost = 25
  		fire_only_once = no
  		days_re_enable = 30
  		available = {
@@ -493,7 +493,7 @@ political_actions = {
  				is_fully_controlled_by = ROOT
  				free_building_slots = {
  					building = infrastructure
- 					size < 1
+ 					size < 4
  				}
  			}
  		}
@@ -504,16 +504,16 @@ political_actions = {
  					is_owned_by = ROOT
  					free_building_slots = {
  						building = industrial_complex
- 						size > 1
+ 						size > 5
  						include_locked = yes
  					}
  					free_building_slots = {
  						building = infrastructure
- 						size < 1
+ 						size < 5
  					}
  					NOT = { has_state_flag = infrastructure_building_slot_flag }
  				}
- 				add_extra_state_shared_building_slots = 3
+ 				add_extra_state_shared_building_slots = 1
  				set_state_flag = infrastructure_building_slot_flag
  			}
  		}

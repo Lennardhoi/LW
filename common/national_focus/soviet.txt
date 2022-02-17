@@ -55,7 +55,7 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-		    add_timed_idea = {idea= SOV_five_year_plan days = 120}
+		    add_ideas = SOV_five_year_plan 
 		}
 		}
 	focus = {
@@ -116,6 +116,34 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			add_ideas = officers_purged_2
+			370 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			495 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			494 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			490 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
 		}
 	}
 	focus = {
@@ -944,34 +972,32 @@ focus_tree = {
 		ai_will_do = {
 			factor = 5
 		}
-		available_if_capitulated = yes
-		bypass = {
-			custom_trigger_tooltip =  {
-				tooltip = production_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = arms_factory
-						size < 2
-						include_locked = yes
-					}
-				}
-			}
-		}
-
 		completion_reward = {
-			custom_effect_tooltip = "Each state with level 10 infra will get 1 Military Factory and 5 buiding slots"
-		    every_owned_state = {
-			limit= {AND = {infrastructure > 9 is_core_of = SOV}  }
-				    add_extra_state_shared_building_slots = 5
-				    add_building_construction = {
-				    type = arms_factory
-				    level = 1
-				    instant_build = yes
-				}
-			}
-		}
 			
-	}
+			custom_effect_tooltip = "Gain 1 Building slot for each level of infrastructure above 5"
+		    every_owned_state = {
+			limit= {AND = {infrastructure > 5 is_core_of = SOV}  }
+				    add_extra_state_shared_building_slots = 1
+			}
+			every_owned_state = {
+			limit= {AND = {infrastructure > 6 is_core_of = SOV}  }
+				    add_extra_state_shared_building_slots = 1
+			}
+			every_owned_state = {
+			limit= {AND = {infrastructure > 7 is_core_of = SOV}  }
+				    add_extra_state_shared_building_slots = 1
+			}
+			every_owned_state = {
+			limit= {AND = {infrastructure > 8 is_core_of = SOV}  }
+				    add_extra_state_shared_building_slots = 1
+			}
+			every_owned_state = {
+			limit= {AND = {infrastructure > 9 is_core_of = SOV}  }
+				    add_extra_state_shared_building_slots = 1
+			}
+				    
+		}
+	}	
 	focus = {
 		id = SOV_improve_railway
 		icon = GFX_focus_SOV_improve_railway
@@ -1025,17 +1051,17 @@ focus_tree = {
 		}
 		completion_reward = {
 			if = {
-				505 = {
+				571 = {
 					add_building_construction = {
 						type = infrastructure
-						level = 3
+						level = 2
 						instant_build = yes
 					}
 				}
 				497 = {
 					add_building_construction = {
 						type = infrastructure
-						level = 3
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -1043,14 +1069,21 @@ focus_tree = {
 			506 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 3
+					level = 2
 					instant_build = yes
 				}
 			}
-			507 = {
+			242 = {
 				add_building_construction = {
 					type = infrastructure
-					level = 3
+					level = 2
+					instant_build = yes
+				}
+			}
+			572 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1073,8 +1106,28 @@ focus_tree = {
 			add_political_power = 120
 			add_resource = {
 				type = rubber
-				amount = 520
+				amount = 160
+				state = 510
+			}
+			add_resource = {
+				type = rubber
+				amount = 160
+				state = 372
+			}
+			add_resource = {
+				type = rubber
+				amount = 100
 				state = 371
+			}
+			add_resource = {
+				type = rubber
+				amount = 100
+				state = 509
+			}
+			add_resource = {
+				type = rubber
+				amount = 100
+				state = 369
 			}
 		}
 	}
