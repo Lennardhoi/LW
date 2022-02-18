@@ -21,7 +21,7 @@ NDefines.NTechnology.MAX_SUBTECHS = 4
 
 --Performance
 
-NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 6
+NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 12
 NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 300
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 100
 NDefines.NGame.GAME_SPEED_SECONDS = { 600.0, 0.5, 0.2, 0.04, 0  } -- game speeds for each level. Must be 5 entries with last one 0 for unbound
@@ -476,7 +476,7 @@ NDefines.NMapMode.SUPPLY_MAP_MODE_REACH_COLOR = {
 	
 	-- NOTE: New supply mode uses map-mode-terrain camera override.... HACK: -1 used to toggle some supply-mode only stuff as well.
 	-- Terrain map mixing is weird but this is cleanest varient.
-NDefines.NGraphics.GRADIENT_BORDERS_CAMERA_DISTANCE_OVERRIDE_TERRAIN = -1 -- -1 now ignores camera-distance changes entirely.
+--NDefines.NGraphics.GRADIENT_BORDERS_CAMERA_DISTANCE_OVERRIDE_TERRAIN = -1 -- -1 now ignores camera-distance changes entirely.
 NDefines.NSupply.NAVAL_BASE_INITIAL_SUPPLY_FLOW = 2
 NDefines.NSupply.NAVAL_BASE_STARTING_PENALTY_PER_PROVINCE = 0.3
 NDefines.NSupply.NAVAL_BASE_ADDED_PENALTY_PER_PROVINCE = 1.0
