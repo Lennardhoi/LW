@@ -9,15 +9,7 @@ operations = {
  		complete_effect = {
  			effect_tooltip = {
  				declare_war_on = {
- 					target = ENG
- 					type = annex_everything
- 				}
- 				declare_war_on = {
  					target = YUG
- 					type = annex_everything
- 				}
- 				declare_war_on = {
- 					target = GRE
  					type = annex_everything
  				}
  			}
@@ -28,7 +20,6 @@ operations = {
  				set_variable={Global.super_event=3}
  				show_super_event=yes
  				ENG = { add_to_faction = YUG }
- 				ITA = { add_to_war = { targeted_alliance = GER enemy = ENG } }
  				YUG = { add_to_war = { targeted_alliance = ENG enemy = GER } }
  				YUG={declare_war_on_enemy_faction = yes}
  				
@@ -63,32 +54,6 @@ operations = {
  	}
  }
  foreign_politics = {
- 	ITA_enable_ll = {
- 		icon = generic_operation
- 		available = {
- 			has_completed_focus = ITA_german_air_cooperation
- 			GER={has_war=yes}
- 			NOT={has_country_flag=ll_enabled}
- 		}
- 		allowed = {
- 			tag = ITA
- 		}
- 		cost = 0
- 		visible = {
- 			always=yes
- 		}
- 		fire_only_once = no
- 		complete_effect = {
- 			custom_effect_tooltip=ITA_enable_ll_tt
- 			hidden_effect={set_country_flag=ll_enabled}
- 			effect_tooltip={
- 				send_equipment = { equipment = fighter_equipment amount = 5000 target = GER }
- 				send_equipment = { equipment = CAS_equipment amount = 5000 target = GER }
- 				send_equipment = { equipment = tac_bomber_equipment amount = 5000 target = GER }
- 				send_equipment = { equipment = heavy_fighter_equipment amount = 5000 target = GER }
- 			}
- 		}
- 	}
  	ITA_support_luftwaffe = {
  		icon = generic_operation
  		available = {
@@ -113,24 +78,6 @@ operations = {
  		complete_effect = {
  			GER={add_equipment_to_stockpile={type = fighter_equipment amount = 550 }}
  			add_equipment_to_stockpile={type = fighter_equipment_alt amount = -600 }
- 		}
- 	}
- 	ITA_disable_ll = {
- 		icon = generic_operation
- 		available = {
- 			has_country_flag=ll_enabled
- 		}
- 		allowed = {
- 			tag = ITA
- 		}
- 		cost = 0
- 		visible = {
- 			always=yes
- 		}
- 		fire_only_once = no
- 		complete_effect = {
- 			custom_effect_tooltip="This will deactivate the monthly lendlease of the following equipment on the first day of a month."
- 			hidden_effect={clr_country_flag=ll_enabled}
  		}
  	}
  	ROM_annex_bul = {

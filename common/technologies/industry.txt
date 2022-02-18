@@ -287,7 +287,7 @@ technologies = {
 	}
 	###############
 	concentrated_industry = {
-		industrial_capacity_factory = 0.16
+		industrial_capacity_factory = 0.15
 		industrial_capacity_dockyard = 0.1
 		global_building_slots_factor = 0.25
 		path = {
@@ -296,6 +296,14 @@ technologies = {
 		}
 		research_cost = 2
 		on_research_complete = {
+			if = {
+				limit={has_idea=railwaygun_1}
+				remove_ideas = railwaygun_1
+			}
+			else_if = {
+				limit={has_idea=railwaygun_2}
+				remove_ideas =railwaygun_2
+			}
 			meta_effect = {
 				text = {
 					set_global_flag = [TAG]_concentrated_industry
@@ -350,7 +358,7 @@ technologies = {
 		}
 	}
 	concentrated_industry2 = {
-		industrial_capacity_factory = 0.16
+		industrial_capacity_factory = 0.15
 		industrial_capacity_dockyard = 0.1
 		global_building_slots_factor = 0.25
 		path = {
@@ -390,7 +398,7 @@ technologies = {
 		}
 	}
 	concentrated_industry3 = {
-		industrial_capacity_factory = 0.16
+		industrial_capacity_factory = 0.15
 		industrial_capacity_dockyard = 0.1
 		global_building_slots_factor = 0.25
 		path = {
@@ -430,7 +438,7 @@ technologies = {
 		}
 	}
 	concentrated_industry4 = {
-		industrial_capacity_factory = 0.16
+		industrial_capacity_factory = 0.15
 		industrial_capacity_dockyard = 0.1
 		global_building_slots_factor = 0.25
 		path = {
@@ -470,7 +478,7 @@ technologies = {
 		}
 	}
 	concentrated_industry5 = {
-		industrial_capacity_factory = 0.16
+		industrial_capacity_factory = 0.15
 		industrial_capacity_dockyard = 0.1
 		global_building_slots_factor = 0.25
 		research_cost = 2
@@ -519,7 +527,7 @@ technologies = {
 		global_building_slots_factor = 0.2
 		conversion_cost_civ_to_mil_factor = -0.025
 		conversion_cost_mil_to_civ_factor = -0.025
-		add_ideas = railwaygun_1
+		
 		path = {
 			leads_to_tech = dispersed_industry2
 			research_cost_coeff = 1
@@ -533,6 +541,7 @@ technologies = {
 			position = { x = 6 y = 2 }
 		}
 		on_research_complete = {
+			add_ideas = railwaygun_1
 			meta_effect = {
 				text = {
 					set_global_flag = [TAG]_dispersed_industry
@@ -588,10 +597,7 @@ technologies = {
 		global_building_slots_factor = 0.2
 		conversion_cost_civ_to_mil_factor = -0.025
 		conversion_cost_mil_to_civ_factor = -0.025
-		swap_ideas = {
-		remove_idea =railwaygun_1
-		add_idea = railwaygun_2
-		}
+		
 		
 		path = {
 			leads_to_tech = dispersed_industry3
@@ -603,6 +609,10 @@ technologies = {
 			year_1937
 		}
 		on_research_complete = {
+			swap_ideas = {
+				remove_idea = railwaygun_1
+				add_idea = railwaygun_2
+			}
 			meta_effect = {
 				text = {
 					set_global_flag = [TAG]_dispersed_industry2
@@ -638,10 +648,7 @@ technologies = {
 		global_building_slots_factor = 0.2
 		conversion_cost_civ_to_mil_factor = -0.025
 		conversion_cost_mil_to_civ_factor = -0.025
-		swap_ideas = {
-		remove_idea =railwaygun_2
-		add_idea = railwaygun_3
-		}
+		
 		path = {
 			leads_to_tech = dispersed_industry4
 			research_cost_coeff = 1
@@ -652,6 +659,10 @@ technologies = {
 			year_1939
 		}
 		on_research_complete = {
+			swap_ideas = {
+				remove_idea = railwaygun_2
+				add_idea = railwaygun_3
+			}
 			meta_effect = {
 				text = {
 					set_global_flag = [TAG]_dispersed_industry3
@@ -687,15 +698,15 @@ technologies = {
 		global_building_slots_factor = 0.2
 		conversion_cost_civ_to_mil_factor = -0.025
 		conversion_cost_mil_to_civ_factor = -0.025
-		swap_ideas = {
-		remove_idea =railwaygun_3
-		add_idea = railwaygun_4
-		}
 		path = {
 			leads_to_tech = dispersed_industry5
 			research_cost_coeff = 1
 		}
 		on_research_complete = {
+			swap_ideas = {
+				remove_idea = railwaygun_3
+				add_idea = railwaygun_4
+			}
 			meta_effect = {
 				text = {
 					set_global_flag = [TAG]_dispersed_industry4
@@ -736,10 +747,7 @@ technologies = {
 		global_building_slots_factor = 0.2
 		conversion_cost_civ_to_mil_factor = -0.025
 		conversion_cost_mil_to_civ_factor = -0.025
-		swap_ideas = {
-		remove_idea =railwaygun_4
-		add_idea = railwaygun_5
-		}
+		
 		research_cost = 2
 		start_year = 1943
 		categories = {
@@ -757,6 +765,10 @@ technologies = {
 			}
 		}
 		on_research_complete = {
+			swap_ideas = {
+				remove_idea = railwaygun_4
+				add_idea = railwaygun_5
+			}
 			meta_effect = {
 				text = {
 					set_global_flag = [TAG]_dispersed_industry5

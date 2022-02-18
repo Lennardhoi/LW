@@ -387,7 +387,7 @@ ROOT_call_all_allies_against_THIS = {
 	for_each_scope_loop = {
 		array = ROOT.faction_members
 		if = {
-			limit = { NOT = { OR={AND={original_tag = ITA has_war=no} original_tag = ROOT}  }}
+			limit = { NOT = {  original_tag = ROOT}  }
 			add_to_war = {
 				targeted_alliance = ROOT
 				enemy = PREV

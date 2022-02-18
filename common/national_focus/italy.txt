@@ -1302,7 +1302,7 @@ focus_tree = {
  				name = arty_bonus
  				bonus = 1.0
  				uses = 2
- 				category = artillery
+ 				category = cat_artillery
  			}
  		}
  	}
@@ -1372,6 +1372,18 @@ focus_tree = {
  				uses = 1
  				category = land_doctrine
  			}
+ 			add_tech_bonus = {
+ 				name = desert_at
+ 				bonus = 1.0
+ 				uses = 1
+ 				category = cat_anti_tank
+ 			}
+ 			add_tech_bonus = {
+ 				name = desert_at2
+ 				bonus = 1.0
+ 				uses = 1
+ 				category = cat_anti_air
+ 			}
  		}
  	}
  	focus = {
@@ -1397,12 +1409,12 @@ focus_tree = {
  		relative_position_id = ITA_desert_warfare_2
  		icon = GFX_focus_research
  		available = {
- 			NOT={has_completed_focus=ITA_italian_air}
+ 			#NOT={has_completed_focus=ITA_italian_air}
  			date > 1940.10.1
  		}
  		x = 0
  		y = 1
- 		cost = 5
+ 		cost = 10
  		search_filters = { FOCUS_FILTER_ANNEXATION }
  		completion_reward = {
  			add_research_slot = 1
@@ -1526,8 +1538,8 @@ focus_tree = {
  		icon = GFX_focus_ITA_german_air_cooperation
  		prerequisite = { focus = ITA_naval_air_effort }
  		
- 		mutually_exclusive = { focus = ITA_italian_air}
- 		x = -1
+ 		#mutually_exclusive = { focus = ITA_italian_air}
+ 		x = 0
  		y = 1
  		relative_position_id = ITA_naval_air_effort
  		cost = 10
@@ -1536,44 +1548,51 @@ focus_tree = {
  		}
  		available_if_capitulated = yes
  		completion_reward = {
- 			add_relation_modifier = {
- 				target = GER
- 				modifier = ita_air_sharing
- 			}
- 			custom_effect_tooltip=ITA_german_air_cooperation_tt
+			add_ideas = GER_air_innovations_2_idea
+			add_tech_bonus = {
+				name = radar_tech_bonus
+				bonus = 1.0
+				uses = 2
+				category = radar_tech
+			}
+ 			#add_relation_modifier = {
+ 			#	target = GER
+ 			#	modifier = ita_air_sharing
+ 			#}
+ 			#custom_effect_tooltip=ITA_german_air_cooperation_tt
  		}
  	}
- 	focus = {
- 		id = ITA_italian_air
- 		icon = GFX_focus_GER_air_innovation_2
- 		prerequisite = { focus = ITA_naval_air_effort }
- 		mutually_exclusive = { focus = ITA_german_air_cooperation}
- 		x = 1
- 		y = 1
- 		relative_position_id = ITA_naval_air_effort
- 		cost = 5
- 		ai_will_do = {
- 			factor = 1
- 		}
- 		available_if_capitulated = yes
- 		completion_reward = {
- 			add_research_slot = 1
- 			add_political_power = 100
- 			air_experience = 1000
- 			add_tech_bonus = {
- 				name = fighter_bonus
- 				bonus = 1
- 				uses = 1
- 				technology=fighter2
- 			}
- 			add_tech_bonus = {
- 				name = fighter_bonus
- 				bonus = 1
- 				uses = 1
- 				technology=cas2
- 			}
- 		}
- 	}
+ 	#focus = {
+ 	#	id = ITA_italian_air
+ 	#	icon = GFX_focus_GER_air_innovation_2
+ 	#	prerequisite = { focus = ITA_naval_air_effort }
+ 	#	mutually_exclusive = { focus = ITA_german_air_cooperation}
+ 	#	x = 1
+ 	#	y = 1
+ 	#	relative_position_id = ITA_naval_air_effort
+ 	#	cost = 5
+ 	#	ai_will_do = {
+ 	#		factor = 1
+ 	#	}
+ 	#	available_if_capitulated = yes
+ 	#	completion_reward = {
+ 	#		add_research_slot = 1
+ 	#		add_political_power = 100
+ 	#		air_experience = 1000
+ 	#		add_tech_bonus = {
+ 	#			name = fighter_bonus
+ 	#			bonus = 1
+ 	#			uses = 1
+ 	#			technology=fighter2
+ 	#		}
+ 	#		add_tech_bonus = {
+ 	#			name = fighter_bonus
+ 	#			bonus = 1
+ 	#			uses = 1
+ 	#			technology=cas2
+ 	#		}
+ 	#	}
+ 	#}
  	focus = {
  		id = ITA_marines_and_landing_craft
  		icon = GFX_goal_generic_amphibious_assault
@@ -1630,10 +1649,12 @@ focus_tree = {
  		id = ITA_air_innovation_2
  		icon = GFX_goal_generic_build_airforce
  		text = air_innovation_2
- 		prerequisite = {  focus = ITA_german_air_cooperation focus = ITA_italian_air}
+ 		prerequisite = {  focus = ITA_german_air_cooperation 
+		#focus = ITA_italian_air
+			}
  		available = {date >1941.1.1}
- 		bypass={has_completed_focus = ITA_italian_air}
- 		x = 1
+ 		#bypass={has_completed_focus = ITA_italian_air}
+ 		x = 0
  		y = 1
  		relative_position_id = ITA_german_air_cooperation
  		cost = 5
@@ -1643,13 +1664,7 @@ focus_tree = {
  		available_if_capitulated = yes
  		search_filters = { FOCUS_FILTER_RESEARCH }
  		completion_reward = {
- 			hidden_effect={
- 				activate_decision=ITA_disable_ll
- 			}
- 			add_timed_idea={
- 				idea = ITA_retention
- 				days =30
- 			}
+ 			air_experience =200
  			if= {limit={NOT={has_idea=macchi}}
  				add_ideas=macchi
  			if= {limit={NOT={
@@ -1678,6 +1693,25 @@ focus_tree = {
  				uses = 1
  				technology=cas2
  			}
+			
+			create_equipment_variant = {
+				name = "C.202 Folgore I serie"
+				type = fighter_equipment_alt_2
+				upgrades = {
+					plane_engine_upgrade=5
+					plane_range_upgrade=5
+			    } 
+			}
+			add_equipment_production = {
+					equipment = {
+						type = fighter_equipment_alt_2
+						creator = "ITA"
+						version_name = "C.202 Folgore I serie"
+					}
+					requested_factories = 150
+					progress = 0.1
+					efficiency = 100
+			}
  		}
  	}
  	focus = {
@@ -1687,7 +1721,7 @@ focus_tree = {
  		x = 0
  		y = 1
  		available = {
- 			OR= { has_completed_focus= ITA_italian_air
+ 			OR= { #has_completed_focus= ITA_italian_air
  				date >1941.3.1}
  			     has_tech=cas2 has_tech=fighter2}
  		relative_position_id = ITA_air_innovation_2
@@ -1752,7 +1786,7 @@ focus_tree = {
  		x = 0
  		y = 1
  		relative_position_id = ITA_victoryinETH
- 		cost = 10
+ 		cost = 5
  		ai_will_do = {
  			factor = 1
  		}
