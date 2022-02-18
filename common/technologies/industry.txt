@@ -287,7 +287,7 @@ technologies = {
 	}
 	###############
 	concentrated_industry = {
-		industrial_capacity_factory = 0.15
+		industrial_capacity_factory = 0.16
 		industrial_capacity_dockyard = 0.1
 		global_building_slots_factor = 0.25
 		path = {
@@ -350,7 +350,7 @@ technologies = {
 		}
 	}
 	concentrated_industry2 = {
-		industrial_capacity_factory = 0.15
+		industrial_capacity_factory = 0.16
 		industrial_capacity_dockyard = 0.1
 		global_building_slots_factor = 0.25
 		path = {
@@ -390,7 +390,7 @@ technologies = {
 		}
 	}
 	concentrated_industry3 = {
-		industrial_capacity_factory = 0.15
+		industrial_capacity_factory = 0.16
 		industrial_capacity_dockyard = 0.1
 		global_building_slots_factor = 0.25
 		path = {
@@ -430,7 +430,7 @@ technologies = {
 		}
 	}
 	concentrated_industry4 = {
-		industrial_capacity_factory = 0.15
+		industrial_capacity_factory = 0.16
 		industrial_capacity_dockyard = 0.1
 		global_building_slots_factor = 0.25
 		path = {
@@ -470,7 +470,7 @@ technologies = {
 		}
 	}
 	concentrated_industry5 = {
-		industrial_capacity_factory = 0.15
+		industrial_capacity_factory = 0.16
 		industrial_capacity_dockyard = 0.1
 		global_building_slots_factor = 0.25
 		research_cost = 2
@@ -519,6 +519,7 @@ technologies = {
 		global_building_slots_factor = 0.2
 		conversion_cost_civ_to_mil_factor = -0.025
 		conversion_cost_mil_to_civ_factor = -0.025
+		add_ideas = railwaygun_1
 		path = {
 			leads_to_tech = dispersed_industry2
 			research_cost_coeff = 1
@@ -587,6 +588,11 @@ technologies = {
 		global_building_slots_factor = 0.2
 		conversion_cost_civ_to_mil_factor = -0.025
 		conversion_cost_mil_to_civ_factor = -0.025
+		swap_ideas = {
+		remove_idea =railwaygun_1
+		add_idea = railwaygun_2
+		}
+		
 		path = {
 			leads_to_tech = dispersed_industry3
 			research_cost_coeff = 1
@@ -632,6 +638,10 @@ technologies = {
 		global_building_slots_factor = 0.2
 		conversion_cost_civ_to_mil_factor = -0.025
 		conversion_cost_mil_to_civ_factor = -0.025
+		swap_ideas = {
+		remove_idea =railwaygun_2
+		add_idea = railwaygun_3
+		}
 		path = {
 			leads_to_tech = dispersed_industry4
 			research_cost_coeff = 1
@@ -677,6 +687,10 @@ technologies = {
 		global_building_slots_factor = 0.2
 		conversion_cost_civ_to_mil_factor = -0.025
 		conversion_cost_mil_to_civ_factor = -0.025
+		swap_ideas = {
+		remove_idea =railwaygun_3
+		add_idea = railwaygun_4
+		}
 		path = {
 			leads_to_tech = dispersed_industry5
 			research_cost_coeff = 1
@@ -722,6 +736,10 @@ technologies = {
 		global_building_slots_factor = 0.2
 		conversion_cost_civ_to_mil_factor = -0.025
 		conversion_cost_mil_to_civ_factor = -0.025
+		swap_ideas = {
+		remove_idea =railwaygun_4
+		add_idea = railwaygun_5
+		}
 		research_cost = 2
 		start_year = 1943
 		categories = {
