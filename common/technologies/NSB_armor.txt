@@ -346,13 +346,13 @@ technologies = {
 					limit = {
 						has_tech = motorised_infantry
 					}
-					load_oob = "unlock_tanks_mot"
+					load_oob = "unlock_tanks_medium"
 				}
 				if = {
 					limit = {
 						NOT = { has_tech = motorised_infantry }
 					}
-					load_oob = "unlock_tanks"
+					load_oob = "unlock_tanks_medium"
 				}
 			}
 			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
@@ -624,13 +624,13 @@ technologies = {
 					limit = {
 						has_tech = motorised_infantry
 					}
-					load_oob = "unlock_tanks_mot"
+					load_oob = "unlock_tanks_heavy"
 				}
 				if = {
 					limit = {
 						NOT = { has_tech = motorised_infantry }
 					}
-					load_oob = "unlock_tanks"
+					load_oob = "unlock_tanks_heavy"
 				}
 			}
 			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
