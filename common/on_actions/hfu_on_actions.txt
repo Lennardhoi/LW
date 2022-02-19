@@ -65,7 +65,16 @@ on_actions = {
 			update_pacific_war=yes
 			}}
 	on_startup = {
-	effect= {	
+	effect= {
+		ENG = {
+			every_owned_state = {
+				limit={is_core_of = ENG}
+				add_to_array = {
+					array = ENG.starting_core_states
+					value = THIS
+				}
+			}
+		}	
 	#every_state= {
 	#		limit= {OR = {state =416 state=582 state= 581 state = 584 state = 413 state=414 state = 415 state=412 state=418 state =420 state =419 state =478 state = 596 state =599 state = 595 state=278 state=594 state = 576 state = 476}}
 	#		add_state_modifier = {

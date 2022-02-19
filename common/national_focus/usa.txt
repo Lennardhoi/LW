@@ -106,21 +106,12 @@ focus_tree = {
  		}
  		available = {
  		}
- 		bypass = {
- 			not = {
- 				OR = {
- 					has_idea = great_depression
- 					has_idea = great_depression_2
- 					has_idea = great_depression_3
- 				}
- 			}
- 		}
  		cancel_if_invalid = no
  		continue_if_invalid = yes
  		available_if_capitulated = no
  		completion_reward = {
+			set_country_flag = USA_recently_developed
  			USA_great_depression_level_down = yes
- 			set_country_flag = { flag = USA_great_depression_cooldown value = 1 days = 365 }
  			USA_congress_medium_opposition = yes
  			custom_effect_tooltip = USA_great_depression_cooldown_tt
  			unlock_decision_tooltip = { decision = USA_pay_farm_subsidies show_effect_tooltip = yes }
@@ -185,15 +176,27 @@ focus_tree = {
  		ai_will_do = {
  			factor = 1
  		}
- 		available = {NOT={has_country_flag=USA_great_depression_cooldown} }
+ 		available = {
+			has_country_flag = {
+				flag = USA_recently_developed
+				days > 365
+			}
+			custom_trigger_tooltip = {
+				tooltip = USA_recently_developed_tt
+				has_country_flag = {
+					flag = USA_recently_developed
+					days > 365
+				}
+			}
+		}
  		bypass = {
  		}
  		cancel_if_invalid = no
  		continue_if_invalid = yes
  		available_if_capitulated = no
  		completion_reward = {
+			set_country_flag = USA_recently_developed
  			USA_great_depression_level_down = yes
- 			set_country_flag = { flag = USA_great_depression_cooldown value = 1 days = 365 }
  			custom_effect_tooltip = USA_great_depression_cooldown_tt
  			USA_congress_medium_opposition = yes
  			random_owned_controlled_state = {
@@ -254,7 +257,19 @@ focus_tree = {
  		prerequisite = { focus = USA_fair_labour_standards_act }
  		relative_position_id = USA_wpa
  		cost = 10
- 		available = {NOT={has_country_flag=USA_great_depression_cooldown} }
+ 		available = {
+			has_country_flag = {
+				flag = USA_recently_developed
+				days > 365
+			}
+			custom_trigger_tooltip = {
+				tooltip = USA_recently_developed_tt
+				has_country_flag = {
+					flag = USA_recently_developed
+					days > 365
+				}
+			}
+		}
  		cancel_if_invalid = no
  		continue_if_invalid = yes
  		available_if_capitulated = no
@@ -267,6 +282,7 @@ focus_tree = {
  			}
  		}
  		completion_reward = {
+			set_country_flag = USA_recently_developed
  			USA_great_depression_level_down = yes
  			USA_congress_medium_opposition = yes
  			random_owned_controlled_state = {

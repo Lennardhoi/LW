@@ -1,21 +1,4 @@
 USA_congress = {
- 	USA_depression_cooldown = {
- 		icon = generic_civil_support
- 		allowed = {
- 			original_tag = USA
- 		}
- 		available = {
- 			NOT={has_country_flag = USA_great_depression_cooldown}
- 		}
- 		days_mission_timeout = 364
- 		activation = {
- 			has_country_flag = USA_great_depression_cooldown
- 		}
- 		fire_only_once = no
- 		is_good = no
- 		timeout_effect = {
- 		}
- 	}
  	USA_small_lobby_effort = {
  		icon = generic_political_discourse
  		available = {
