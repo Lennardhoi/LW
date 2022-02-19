@@ -118,11 +118,12 @@ equipments = {
  			count < 2
  		}
  		default_modules = {
- 			main_armament_slot = empty
- 			turret_type_slot = tank_light_one_man_tank_turret
+ 			main_armament_slot = tank_auto_cannon
+ 			turret_type_slot = tank_light_three_man_tank_turret
  			suspension_type_slot = tank_bogie_suspension
  			armor_type_slot = tank_riveted_armor
  			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_1
  		}
  		fuel_consumption = 0
  		maximum_speed = 5
@@ -239,6 +240,7 @@ equipments = {
  			module = tungston_core_ammunition
  			count < 2
  		}
+		
  		upgrades = {
  			tank_nsb_engine_upgrade
  			tank_nsb_armor_upgrade
@@ -355,6 +357,15 @@ equipments = {
  		module_count_limit = {
  			module = tungston_core_ammunition
  			count < 2
+ 		}
+		default_modules = {
+ 			main_armament_slot = tank_auto_cannon
+ 			turret_type_slot = tank_light_three_man_tank_turret
+ 			suspension_type_slot = tank_bogie_suspension
+ 			armor_type_slot = tank_riveted_armor
+ 			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_1
+			special_type_slot_2 = secondary_turret_hmg
  		}
  		maximum_speed = 6
  		build_cost_ic = 2
@@ -474,6 +485,16 @@ equipments = {
  		module_count_limit = {
  			module = tungston_core_ammunition
  			count < 2
+ 		}
+		default_modules = {
+ 			main_armament_slot = tank_auto_cannon_2
+ 			turret_type_slot = tank_light_three_man_tank_turret
+ 			suspension_type_slot = tank_bogie_suspension
+ 			armor_type_slot = tank_riveted_armor
+ 			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_1
+			special_type_slot_2 = secondary_turret_hmg
+			special_type_slot_3 = additional_machine_guns
  		}
  		build_cost_ic = 2.5
  		maximum_speed = 6
@@ -604,7 +625,17 @@ equipments = {
  		module_count_limit = {
  			module = tungston_core_ammunition
  			count < 2
- 		}		
+ 		}
+		default_modules = {
+ 			main_armament_slot = tank_auto_cannon_3
+ 			turret_type_slot = tank_light_three_man_tank_turret
+ 			suspension_type_slot = tank_bogie_suspension
+ 			armor_type_slot = tank_riveted_armor
+ 			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_2
+			special_type_slot_2 = secondary_turret_hmg
+			special_type_slot_3 = additional_machine_guns
+ 		}	
  		build_cost_ic = 3
  		maximum_speed = 6.5
  		reliability = 1.4
@@ -733,11 +764,12 @@ equipments = {
  			count < 2
  		}
  		default_modules = {
- 			main_armament_slot = empty
- 			turret_type_slot = tank_medium_one_man_tank_turret
+ 			main_armament_slot = tank_medium_cannon
+ 			turret_type_slot = tank_medium_three_man_tank_turret
  			suspension_type_slot = tank_bogie_suspension
- 			armor_type_slot = tank_riveted_armor
+ 			armor_type_slot = tank_welded_armor
  			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_1
  		}
  		fuel_consumption = 0
  		maximum_speed = 5
@@ -859,6 +891,15 @@ equipments = {
  			upgrades = {
  			tank_nsb_engine_upgrade
  			tank_nsb_armor_upgrade
+ 		}
+		default_modules = {
+ 			main_armament_slot = tank_medium_cannon
+ 			turret_type_slot = tank_medium_three_man_tank_turret
+ 			suspension_type_slot = tank_bogie_suspension
+ 			armor_type_slot = tank_welded_armor
+ 			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_1
+			special_type_slot_2 = secondary_turret_hmg
  		}
  		maximum_speed = 4.5
  		build_cost_ic = 3.5
@@ -989,6 +1030,9 @@ equipments = {
  			suspension_type_slot = tank_bogie_suspension
  			armor_type_slot = tank_welded_armor
  			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_1
+			special_type_slot_2 = secondary_turret_hmg
+			special_type_slot_3 = extra_ammo_storage
  		}
  		fuel_consumption = 0
  		maximum_speed = 5
@@ -1133,6 +1177,9 @@ equipments = {
  			suspension_type_slot = tank_bogie_suspension
  			armor_type_slot = tank_welded_armor
  			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_2
+			special_type_slot_2 = secondary_turret_hmg
+			special_type_slot_3 = extra_ammo_storage
  		}
  		fuel_consumption = 0
  		maximum_speed = 5.5
@@ -1282,6 +1329,9 @@ equipments = {
  			suspension_type_slot = tank_bogie_suspension
  			armor_type_slot = tank_welded_armor
  			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_2
+			special_type_slot_2 = secondary_turret_hmg
+			special_type_slot_3 = extra_ammo_storage
  		}
  		fuel_consumption = 0
  		maximum_speed = 6
@@ -1413,11 +1463,14 @@ equipments = {
  			count < 2 #two secondary turrets only
  		}
  		default_modules = {
- 			main_armament_slot = empty
- 			turret_type_slot = tank_heavy_two_man_tank_turret
+ 			main_armament_slot = tank_heavy_cannon
+ 			turret_type_slot = tank_heavy_three_man_tank_turret
  			suspension_type_slot = tank_bogie_suspension
- 			armor_type_slot = tank_riveted_armor
- 			engine_type_slot = tank_gasoline_engine
+ 			armor_type_slot = tank_welded_armor
+ 			engine_type_slot = tank_diesel_engine
+			special_type_slot_1 = tank_radio_1
+			special_type_slot_2 = secondary_turret_hmg
+			special_type_slot_3 = extra_ammo_storage
  		}
  		fuel_consumption = 0
  		maximum_speed = 4
@@ -1536,6 +1589,16 @@ equipments = {
  		module_count_limit = {
  			module = tungston_core_ammunition
  			count < 2
+ 		}
+		default_modules = {
+ 			main_armament_slot = tank_heavy_cannon
+ 			turret_type_slot = tank_heavy_three_man_tank_turret
+ 			suspension_type_slot = tank_bogie_suspension
+ 			armor_type_slot = tank_welded_armor
+ 			engine_type_slot = tank_diesel_engine
+			special_type_slot_1 = tank_radio_1
+			special_type_slot_2 = secondary_turret_hmg
+			special_type_slot_3 = extra_ammo_storage
  		}
  		maximum_speed = 3.5
  		build_cost_ic = 6
@@ -1661,12 +1724,15 @@ equipments = {
  			module = tungston_core_ammunition
  			count < 2
  		}
- 		default_modules = {
- 			main_armament_slot = tank_heavy_cannon
+ 		ddefault_modules = {
+ 			main_armament_slot = tank_heavy_cannon_3
  			turret_type_slot = tank_heavy_three_man_tank_turret
  			suspension_type_slot = tank_bogie_suspension
- 			armor_type_slot = tank_riveted_armor
- 			engine_type_slot = tank_gasoline_engine
+ 			armor_type_slot = tank_welded_armor
+ 			engine_type_slot = tank_diesel_engine
+			special_type_slot_1 = tank_radio_1
+			special_type_slot_2 = secondary_turret_hmg
+			special_type_slot_3 = extra_ammo_storage
  		}
  		build_cost_ic = 8
  		reliability = 1
@@ -1804,8 +1870,11 @@ equipments = {
  			main_armament_slot = tank_heavy_cannon_2
  			turret_type_slot = tank_heavy_three_man_tank_turret
  			suspension_type_slot = tank_bogie_suspension
- 			armor_type_slot = tank_riveted_armor
- 			engine_type_slot = tank_gasoline_engine
+ 			armor_type_slot = tank_welded_armor
+ 			engine_type_slot = tank_diesel_engine
+			special_type_slot_1 = tank_radio_2
+			special_type_slot_2 = secondary_turret_hmg
+			special_type_slot_3 = extra_ammo_storage
  		}
  		build_cost_ic = 10
  		reliability = 1.3
@@ -1947,11 +2016,14 @@ equipments = {
  			count < 2
  		}
  		default_modules = {
- 			main_armament_slot = tank_heavy_cannon_3
+ 			main_armament_slot = tank_heavy_cannon
  			turret_type_slot = tank_heavy_three_man_tank_turret
  			suspension_type_slot = tank_bogie_suspension
- 			armor_type_slot = tank_riveted_armor
- 			engine_type_slot = tank_gasoline_engine
+ 			armor_type_slot = tank_welded_armor
+ 			engine_type_slot = tank_diesel_engine
+			special_type_slot_1 = tank_radio_2
+			special_type_slot_2 = secondary_turret_hmg
+			special_type_slot_3 = extra_ammo_storage
  		}
  		build_cost_ic = 12
  		reliability = 1.6

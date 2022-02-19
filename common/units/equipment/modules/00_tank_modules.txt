@@ -913,11 +913,18 @@ equipment_modules = {
  		}
  	}
  #######################SMALL GUNS######################
- 	tank_auto_cannon = {
+ 	tank_auto_cannon0 = {
+		abbreviation = "ac"
+ 		category = tank_small_main_armament
+		forbid_equipment_type = anti_tank
+ 		forbid_equipment_type = artillery
+		archetype = yes
+	}
+	tank_auto_cannon = {
  		abbreviation = "ac1"
  		category = tank_small_main_armament
  		sfx = sfx_ui_sd_module_turret
- forbid_equipment_type = anti_tank
+		forbid_equipment_type = anti_tank
  		forbid_equipment_type = artillery
  		add_stats = {
  			soft_attack = 24
