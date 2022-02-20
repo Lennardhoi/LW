@@ -15,8 +15,18 @@ ideas={
 			}
 			picture = neutrality_idea
 			removal_cost = -1
-			modifier= {industrial_capacity_factory=-1.5
-			industrial_capacity_dockyard=-1.5
+			modifier= {industrial_capacity_factory=-2
+			industrial_capacity_dockyard=-2
+			}
+		}
+		pol_eng_gbp = {
+			allowed = {
+				always = no
+			}
+			picture = neutrality_idea
+			removal_cost = -1
+			modifier= {
+			max_dig_in=-10
 			}
 		}
 	}
