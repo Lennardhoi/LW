@@ -162,8 +162,8 @@ NDefines_Graphics.NGraphics.DRAW_REFRACTIONS_CUTOFF = 0
 NDefines_Graphics.NGraphics.GRADIENT_BORDERS_FIELD_COUNTRY_REFRESH = 40
 --NDefines_Graphics.NGraphics.WEATHER_DISTANCE_CUTOFF = 50
 NDefines_Graphics.NGraphics.MAP_ICONS_GROUP_CAM_DISTANCE = 100
-NDefines_Graphics.NGraphics.MAP_ICONS_STATE_GROUP_CAM_DISTANCE = 300
-NDefines_Graphics.NGraphics.MAP_ICONS_STRATEGIC_GROUP_CAM_DISTANCE = 400
+NDefines_Graphics.NGraphics.MAP_ICONS_STATE_GROUP_CAM_DISTANCE = 500 --unit icons
+NDefines_Graphics.NGraphics.MAP_ICONS_STRATEGIC_GROUP_CAM_DISTANCE = 1000 --unit icons
 NDefines_Graphics.NGraphics.MAP_ICONS_STRATEGIC_AREA_HUGE = 250
 NDefines_Graphics.NGraphics.MAP_ICONS_COARSE_COUNTRY_GROUPING_DISTANCE = 300
 NDefines_Graphics.NGraphics.MAP_ICONS_COARSE_COUNTRY_GROUPING_DISTANCE_STRATEGIC = 0
@@ -206,8 +206,8 @@ NDefines.NMilitary.XP_GAIN_PER_OVERRUN_UNIT = 0
 NDefines.NMilitary.XP_GAIN_FOR_SHATTERING = 0
 NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 6 -- WAS 5 | We added one more support company as it feels necessary for quality tank or infantry divisions -Thrasymachus
 NDefines.NMilitary.MAX_DIVISION_BRIGADE_HEIGHT = 6		-- Max height of regiments in division designer
-NDefines.NMilitary.BATALION_CHANGED_EXPERIENCE_DROP = 0.2
-NDefines.NMilitary.BATALION_NOT_CHANGED_EXPERIENCE_DROP = 0.2
+NDefines.NMilitary.BATALION_CHANGED_EXPERIENCE_DROP = 0.0
+NDefines.NMilitary.BATALION_NOT_CHANGED_EXPERIENCE_DROP = 0.0
 
 --Eq upgrade cost
 
