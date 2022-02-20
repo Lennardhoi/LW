@@ -474,7 +474,7 @@ political_actions = {
  				tag = EFR
  			}
  		}
- 		cost = 25
+ 		cost = 50
  		fire_only_once = no
  		days_re_enable = 30
  		available = {
@@ -483,7 +483,7 @@ political_actions = {
  				is_fully_controlled_by = ROOT
  				free_building_slots = {
  					building = infrastructure
- 					size < 1
+ 					size < 3
  				}
  			}
  		}
@@ -493,7 +493,7 @@ political_actions = {
  				is_fully_controlled_by = ROOT
  				free_building_slots = {
  					building = infrastructure
- 					size < 4
+ 					size < 3
  				}
  			}
  		}
@@ -509,11 +509,11 @@ political_actions = {
  					}
  					free_building_slots = {
  						building = infrastructure
- 						size < 5
+ 						size < 3
  					}
  					NOT = { has_state_flag = infrastructure_building_slot_flag }
  				}
- 				add_extra_state_shared_building_slots = 1
+ 				add_extra_state_shared_building_slots = 2
  				set_state_flag = infrastructure_building_slot_flag
  			}
  		}

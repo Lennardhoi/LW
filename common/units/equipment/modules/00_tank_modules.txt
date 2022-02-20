@@ -278,8 +278,8 @@ equipment_modules = {
  		sfx = sfx_ui_sd_module_sonar
  		xp_cost = 0
  		add_stats = {
- 			defense = 3
- 			breakthrough = 3
+ 			defense = 4
+ 			breakthrough = 2
  		}
  		multiply_stats = {
  			armor_value = 0.6
@@ -918,7 +918,7 @@ equipment_modules = {
  		category = tank_small_main_armament
 		forbid_equipment_type = anti_tank
  		forbid_equipment_type = artillery
-		archetype = yes
+		is_archetype = yes
 	}
 	tank_auto_cannon = {
  		abbreviation = "ac1"
