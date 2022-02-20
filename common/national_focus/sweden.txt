@@ -267,6 +267,24 @@ focus_tree = {
  							owner = POL
  						}
  						}}
+			ENG={puppet=POL}
+			POL={
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+				last_election = "1935.12.17"
+				election_frequency = 48
+			}
+			set_popularities = {
+				democratic = 5
+				neutrality = 85
+				fascism = 5
+				communism = 5
+			}
+			every_unit_leader= {
+			set_nationality = POL
+			}
+			}
  			every_country={
  				limit={is_playable_country=yes}
  				swap_ideas={
