@@ -375,13 +375,13 @@ DIPLOMACY_LEND_LEASE_ENABLE_TRIGGER = {
 				AND={tag=MAN FROM={tag=JAP}}
 				NOT={
 					OR={
-						tag=Jap 
-						tag=MAN 
+						tag=JAP
+						tag=MAN
 						AND={
 							tag=USA NOT = {has_completed_focus=USA_lend_lease_act}
 						}
 					}
-					FROM={OR={tag=Jap tag=MAN AND={
+					FROM={OR={tag=JAP tag=MAN AND={
 							tag=USA NOT = {has_completed_focus=USA_lend_lease_act}
 						}}}
 				}
@@ -449,13 +449,13 @@ DIPLOMACY_INCOMING_LEND_LEASE_ENABLE_TRIGGER = {
 				AND={tag=MAN FROM={tag=JAP}}
 				NOT={
 					OR={
-						tag=Jap 
+						tag=JAP 
 						tag=MAN 
 						AND={
 							tag=USA NOT = {has_completed_focus=USA_lend_lease_act}
 						}
 					}
-					FROM={OR={tag=Jap tag=MAN AND={
+					FROM={OR={tag=JAP tag=MAN AND={
 							tag=USA NOT = {has_completed_focus=USA_lend_lease_act}
 						}}}
 				}
