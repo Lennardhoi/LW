@@ -22,7 +22,7 @@ NDefines.NTechnology.MAX_SUBTECHS = 4
 --Performance
 
 NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 12
-NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 300
+NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 500
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 100
 NDefines.NGame.GAME_SPEED_SECONDS = { 600.0, 0.5, 0.2, 0.04, 0  } -- game speeds for each level. Must be 5 entries with last one 0 for unbound
  -- game speeds for each level. Must be 5 entries with last one 0 for unbound
@@ -32,7 +32,7 @@ NDefines.NDiplomacy.VOLUNTEERS_PER_TARGET_PROVINCE = 0
 NDefines.NDiplomacy.VOLUNTEERS_PER_COUNTRY_ARMY = 0
 NDefines.NCountry.EVENT_PROCESS_OFFSET = 30
 NDefines.NCountry.AIR_VOLUNTEER_PLANES_LIMIT = 0
-NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 70
+NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 20
 NDefines.NAI.DIPLOMACY_SEND_EXPEDITIONARY_BASE = 0
 NDefines.NProduction.BASE_FACTORY_EFFICIENCY_ARCHETYPE_CHANGE_FACTOR = 30
 NDefines.NProduction.CONVERSION_SPEED_BONUS = 3
