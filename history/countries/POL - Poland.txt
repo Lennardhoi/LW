@@ -33,14 +33,19 @@ set_research_slots = 3
 set_technology = {
 	airfield_allowed = 1
 	naval_base_allowed = 1
+	basic_train = 1
+	armor_tech_1 = 1
+	engine_tech_1 = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
+	motorised_infantry = 1
 	tech_mountaineers = 1
 	tech_support = 1
 	tech_engineers = 1
 	tech_recon = 1
 	gw_artillery = 1
 	interwar_antiair = 1
+	interwar_antitank = 1
 	gwtank = 1
 	early_fighter = 1
 	early_bomber = 1
@@ -49,15 +54,8 @@ set_technology = {
 }
 add_timed_idea = { idea = no_training days= 1095 }
 add_ideas = peace_training
-add_equipment_to_stockpile = {
-	type = infantry_equipment_1
-	amount = 20600
-}
-add_equipment_to_stockpile = {
-	type = support_equipment
-	amount = 200
-}
-add_manpower = 320000
+add_ideas = pol_idea
+add_manpower = 700000
 set_convoys = 10
 set_politics = {
 	ruling_party = neutrality
@@ -65,13 +63,46 @@ set_politics = {
 	election_frequency = 36
 	elections_allowed = no
 }
+
 set_popularities = {
 	democratic = 18
 	fascism = 15
 	communism = 2
 	neutrality = 65
 }
-
+add_equipment_to_stockpile = {
+	type = artillery_equipment_1
+	amount = 600
+}
+add_equipment_to_stockpile = {
+	type = anti_air_equipment_1
+	amount = 400
+}
+add_equipment_to_stockpile = {
+	type = train_equipment_1
+	amount = 100
+}
+add_equipment_to_stockpile = {
+	type = anti_tank_equipment_1
+	amount = 300
+}
+add_equipment_to_stockpile = {
+	type = infantry_equipment_1
+	amount = 20000
+}
+add_equipment_to_stockpile = {
+	type = motorized_equipment_1
+	amount = 500
+}
+add_equipment_to_stockpile = {
+	type = support_equipment_1
+	amount = 500
+}
+add_equipment_to_stockpile = {
+	type = light_tank_chassis_2
+	amount = 300
+	variant_name = "7TP"
+}
 if = {
 	limit = {
 		has_dlc = "La Resistance"
