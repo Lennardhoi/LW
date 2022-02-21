@@ -1541,31 +1541,15 @@ focus_tree = {
  		available_if_capitulated = yes
  		search_filters = { FOCUS_FILTER_RESEARCH }
  		completion_reward = {
- 			carmy_experience = 100						
-				create_equipment_variant = {
-
-					name = "Panzer IV ausf.G"
-					type = medium_tank_chassis_2
-					parent_version = 0
-					modules = {
-						main_armament_slot = tank_medium_cannon_3
-						turret_type_slot = tank_medium_three_man_tank_turret
-						special_type_slot_1 = tank_radio_3
-						special_type_slot_2 = secondary_turret_hmg
-
-			
-						suspension_type_slot = tank_torsion_bar_suspension
-						armor_type_slot = tank_welded_armor
-						engine_type_slot = tank_gasoline_engine
-					}
-					upgrades = {
-						tank_nsb_engine_upgrade = 2
-						tank_nsb_armor_upgrade = 0
-					}
-					icon = "gfx/interface/equipmentdesigner/tanks/designer/Ger/Ger_medium_BBC_camo.dds"
-				}
-		}
-	}
+ 			create_equipment_variant = {
+ 				name = "Panzer IV Ausf. G"
+ 				type = medium_tank_equipment_2
+ 				upgrades = {
+ 					tank_gun_upgrade = 7
+ 					tank_reliability_upgrade = 5
+ 					}}
+ 		}
+ 	}
  	focus = {
  		id = GER_panther_massproduction
  		icon = GFX_focus_GER_king_tiger
