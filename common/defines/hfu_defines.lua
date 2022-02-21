@@ -161,6 +161,7 @@ NDefines_Graphics.NGraphics.MAPICON_GROUP_PASSES = 5
 NDefines_Graphics.NGraphics.DRAW_REFRACTIONS_CUTOFF = 0
 NDefines_Graphics.NGraphics.GRADIENT_BORDERS_FIELD_COUNTRY_REFRESH = 40
 --NDefines_Graphics.NGraphics.WEATHER_DISTANCE_CUTOFF = 50
+NDefines_Graphics.NGraphics.WEATHER_ZOOM_IN_CUTOFF = 500
 NDefines_Graphics.NGraphics.MAP_ICONS_GROUP_CAM_DISTANCE = 100
 NDefines_Graphics.NGraphics.MAP_ICONS_STATE_GROUP_CAM_DISTANCE = 500 --unit icons
 NDefines_Graphics.NGraphics.MAP_ICONS_STRATEGIC_GROUP_CAM_DISTANCE = 1000 --unit icons
