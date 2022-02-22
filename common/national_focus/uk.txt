@@ -630,6 +630,7 @@ focus_tree = {
  		id = uk_jet_focus
  		prerequisite = { focus = aircraft_production_focus }
  		icon = GFX_goal_generic_build_airforce
+		custom_effect_tooltip = 
  		x = 0
  		y = 1
  		relative_position_id = aircraft_production_focus
@@ -639,11 +640,17 @@ focus_tree = {
  		}
  		available_if_capitulated = yes
  		completion_reward = {
- 			add_tech_bonus = { bonus = 1
- 							uses = 1
- 							category = jet_technology
- 		}
- 	}}
+ 			create_equipment_variant {
+				name = "Spitfire XIV"
+				type = fighter_equipment_2
+				upgrades = {
+ 					plane_engine_upgrade = 7
+ 					plane_range_upgrade = 5
+ 				}
+				
+			}
+		}
+	}
  	focus = {
  		id = naval_rearmament_focus
  		mutually_exclusive = { focus = royal_navy_focus}

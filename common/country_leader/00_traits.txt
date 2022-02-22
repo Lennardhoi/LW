@@ -2520,7 +2520,7 @@ leader_traits = {
 		random = no
 		equipment_bonus = {
 			screen_ship = {
-				naval_range = 0.3 sub_detection = 0.1 build_cost_ic = -0.10
+				naval_range = 0.5 sub_detection = 0.2
 			}
 		}
 
@@ -2547,14 +2547,9 @@ leader_traits = {
 	coastal_defence_naval_manufacturer = {
 		random = no
 		equipment_bonus = {
-			carrier = {
-				build_cost_ic = -0.20 carrier_size = -0.2 naval_range = -0.5
-			}
-			capital_ship = {
-				build_cost_ic = -0.20 armor_value = -0.2 hg_attack = -0.2 naval_range = -0.5
-			}
+
 			screen_ship = {
-				build_cost_ic = -0.20 naval_range = -0.5
+				lg_attack = 0.2 torpedo_attack = 0.2 naval_range = -0.5
 			}
 
 		}
