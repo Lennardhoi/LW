@@ -188,11 +188,11 @@ static const float  SHADOW_WEIGHT_TREE   		= 0.7f;
 // ------------------    GRADIENT BORDERS   ---------------------
 // --------------------------------------------------------------
 
-static const float GB_CAM_MIN = 100.0f;
-static const float GB_CAM_MAX = 450.0f;
-static const float GB_CAM_MAX_FILLING_CLAMP = 0.9f; // 0 to 1 value for clamping the fill when camera is at max distance
+static const float GB_CAM_MIN = 0.0f;
+static const float GB_CAM_MAX = 550.0f; // NUDGE_HACK - Make sure to set to 0 when nudging
+static const float GB_CAM_MAX_FILLING_CLAMP = 0.8f; // 0 to 1 value for clamping the fill when camera is at max distance
 static const float GB_THRESHOLD = 0.05f; // interpolation time
-static const float GB_THRESHOLD2 = 0.25f; // interpolation time
+static const float GB_THRESHOLD2 = 0.31f; // interpolation time
 //static const float3 GB_OUTLINE_COLOR = float3( 0.0f, 0.0f, 0.0f );
 static const float GB_OUTLINE_CUTOFF_SEA = 0.990f; // Magic number to balance cutoff on edges without neighbor (over Sea)
 static const float GB_OPACITY_NEAR = 0.9f; // Transparency when camera is near

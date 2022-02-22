@@ -67,16 +67,17 @@ scripted_gui = {
 						if={limit={check_variable={Root.selected_cheat=1}} add_tech_bonus={name=armor_bonus bonus=1 uses=1 category=armor}}
 						if={limit={check_variable={Root.selected_cheat=2}}
 							#add_tech_bonus={name=armor_bonus bonus=200 uses=1 category=armor}
-							if={
-								limit={ROOT={has_idea=speed3}
+							every_state={
+								limit={infrastructure>9}
+								set_building_level = {
+    									type = infrastructure
+   									level = 8
+    									instant_build = yes
 								}
-								every_country={
-									remove_ideas=speed3
-								}
-							}
-							else={
-								every_country={
-									add_ideas=speed3
+								set_building_level = {
+    									type = infrastructure
+   									level = 8
+    									instant_build = yes
 								}
 							}
 						}

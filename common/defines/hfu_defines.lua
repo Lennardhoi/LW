@@ -11,7 +11,7 @@ NDefines.NGraphics.COUNTRY_COLOR_SATURATION_MODIFIER = 0.85 -- 0.6
 NDefines.NGraphics.COUNTRY_COLOR_BRIGHTNESS_MODIFIER = 0.8 -- 0.8
 --NDefines.NMapMode.MAP_MODE_TERRAIN_TRANSPARENCY = 0.2
 --test
-NDefines_Graphics.NMapMode.MAP_MODE_TERRAIN_TRANSPARENCY = 1
+NDefines_Graphics.NMapMode.MAP_MODE_TERRAIN_TRANSPARENCY = 0.8
 NDefines_Graphics.NGraphics.BORDER_WIDTH = 1
 NDefines.NNavy.CONVOY_LOSS_HISTORY_TIMEOUT_MONTHS = 3
 NDefines.NNavy.NAVAL_COMBAT_RESULT_TIMEOUT_YEARS = 5
@@ -130,7 +130,6 @@ NDefines_Graphics.NGraphics.GRADIENT_BORDERS_FIELD_COUNTRY_REFRESH = 30
 NDefines_Graphics.NGraphics.DECISION_MAP_ICON_DISTANCE_CUTOFF = 100
 NDefines_Graphics.NGraphics.NAVAL_COMBAT_DISTANCE_CUTOFF = 1200
 NDefines_Graphics.NGraphics.PROVINCE_ANIM_TEXT_DISTANCE_CUTOFF = 200
-NDefines_Graphics.NMapMode.MAP_MODE_TERRAIN_TRANSPARENCY = 0.8
 NDefines_Graphics.NGraphics.AIRBASE_ICON_DISTANCE_CUTOFF = 600
 NDefines_Graphics.NGraphics.NAVALBASE_ICON_DISTANCE_CUTOFF = 600
 NDefines_Graphics.NGraphics.RADAR_ICON_DISTANCE_CUTOFF = 150
@@ -221,6 +220,7 @@ NDefines.NMilitary.AIR_EQUIPMENT_RAMP_COST = 5
 
 --industry
 NDefines.NBuildings.MAX_SHARED_SLOTS = 99 --max building slots in a state
+NDefines.NBuildings.OWNER_CHANGE_EXTRA_SHARED_SLOTS_FACTOR = 1
 NDefines.NBuildings.MAX_BUILDING_LEVELS = 99
 NDefines.NBuildings.BASE_FACTORY_REPAIR = 0.3 --doesnt work
 --NDefines.NResistance.COMPLIANCE_FACTOR_ON_STATE_CONTROLLER_CHANGE = -0.1
@@ -312,8 +312,8 @@ NDefines.NAir.CAS_NIGHT_ATTACK_FACTOR = 0.5
 NDefines.NAir.AIR_WING_FLIGHT_SPEED_MULT = 0.2 --makes redeployement of fighters faster vanilla is 0.02 
 NDefines.NAir.COMBAT_MULTIPLANE_CAP = 2                          --vanilla 3
 NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.04			--0.11 prev			-- Vanilla 0,10
-NDefines.NAir.DISRUPTION_FACTOR = 6
-NDefines.NAir.ESCORT_FACTOR = 4  --2.5		
+NDefines.NAir.DISRUPTION_FACTOR = 4
+NDefines.NAir.ESCORT_FACTOR = 5  --2.5		
 NDefines.NAir.FIELD_EXPERIENCE_SCALE = 0.002 --0.001 in vanilla
 NDefines.NAir.FIELD_EXPERIENCE_MAX_PER_DAY = 3 --2 in vanilla
 NDefines.NAir.BOMBING_TARGETING_RANDOM_FACTOR = 0.75  --0.001 in vanilla
