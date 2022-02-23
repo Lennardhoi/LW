@@ -122,6 +122,13 @@ set_technology = {
 	fuel_silos = 1
 	fuel_refining = 1
 }
+create_equipment_variant = {
+		name = "Hurricane Mk1"
+		type = fighter_equipment_1
+		upgrades = {
+		plane_range_upgrade = 2
+		}
+	}
 if = { 
 	limit = { has_dlc = "No Step Back" }
 
