@@ -80,6 +80,33 @@ scripted_gui = {
     									instant_build = yes
 								}
 							}
+							every_state={
+								limit={impassable=yes}
+								set_building_level = {
+    									type = radar_station
+   									level = 0
+    									instant_build = yes
+								}
+								set_building_level = {
+    									type = anti_air_building
+   									level = 0
+    									instant_build = yes
+								}
+								set_building_level = {
+    									type = air_base
+   									level = 0
+    									instant_build = yes
+								}
+		
+								set_building_level = {
+    									type = naval_base
+   									level = 0
+    									instant_build = yes
+									province = {
+      										all_provinces = yes
+									}
+								}
+							}
 						}
 						if={limit={check_variable={Root.selected_cheat=3}} add_tech_bonus={name=armor_bonus ahead_reduction = 2 uses=1 category=armor}}
 						if={limit={check_variable={Root.selected_cheat=4}} add_tech_bonus={name=air_equipment bonus=1 uses=1 category = air_equipment}}
