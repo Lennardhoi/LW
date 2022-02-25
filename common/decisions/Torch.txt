@@ -4,7 +4,17 @@ operations = {
  		allowed = { original_tag = ENG }
  		available = {
  			EFR = { exists = yes}
- 			OR={Date > 1941.1.1
+ 			OR={Date > 1942.1.1
+			AND={Date > 1941.1.1 
+			count_triggers = {
+    			amount = 3
+				302={is_controlled_by_ROOT_or_ally = yes} 
+				294={is_controlled_by_ROOT_or_ally = yes}
+				303={is_controlled_by_ROOT_or_ally = yes}
+				450={is_controlled_by_ROOT_or_ally = yes}
+				713={is_controlled_by_ROOT_or_ally = yes}
+			}
+			} 
  			AND={415={is_controlled_by_ROOT_or_ally = yes } 413={is_controlled_by_ROOT_or_ally = yes }}
  			}
  			

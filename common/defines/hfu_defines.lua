@@ -488,7 +488,7 @@ NDefines.NSupply.NODE_FLOW_BONUS_PER_RAIL_LEVEL = 0.4
 
 -- rivers will transfer in between nodes as if they were this level
 
-NDefines.NSupply.RIVER_RAILWAY_LEVEL = 1
+NDefines.NSupply.RIVER_RAILWAY_LEVEL = 2
 
 -- defines that are used for supply reach for floating harbors
 
@@ -544,7 +544,7 @@ NDefines.NSupply.VP_TO_SUPPLY_BONUS_CONVERSION = 0.025		-- Bonus to supply local
 NDefines.NSupply.SUPPLY_FROM_DAMAGED_INFRA = 0.1                -- damaged infrastructure counts as this in supply calcs
 NDefines.NSupply.SUPPLY_BASE_MULT = 0.2						-- multiplier on supply base values
 NDefines.NSupply.SUPPLY_DISRUPTION_DAILY_RECOVERY = 1.5		-- every day nodes recover this much of their accumulated disruption.
-NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN = 5 -- railways will be put on cooldown when they are captured by enemy and will not be usable during the cooldown
+NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN = 3 -- railways will be put on cooldown when they are captured by enemy and will not be usable during the cooldown
 NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN_CORE = 0
 NDefines.NSupply.RAILWAY_CONVERSION_COOLDOWN_CIVILWAR = 0
 NDefines.NSupply.DEFAULT_STARTING_TRUCK_RATIO = 1.5 -- countries get this ratio of starting truck in their buffers compared to their need
