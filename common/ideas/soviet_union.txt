@@ -862,19 +862,26 @@ ideas = {
 			}
 			equipment_bonus = {
 				medium_tank_chassis = {
-					reliability = 0.1
+					reliability = 0.05
+					soft_attack = 0.05
+					hard_attack = 0.05
 					build_cost_ic = -0.1
 				}
 				medium_tank_aa_chassis = {
-					reliability = 0.1
+					reliability = 0.05
+					air_attack = 0.1
 					build_cost_ic = -0.1
 				}
 				medium_tank_artillery_chassis = {
-					reliability = 0.1
+					reliability = 0.05
+					soft_attack = 0.1
 					build_cost_ic = -0.1
 				}
 				medium_tank_destroyer_chassis = {
-					build_cost_ic = -0.1  reliability = 0.1
+					reliability = 0.05
+					ap_attack = 0.1
+					hard_attack = 0.1
+					build_cost_ic = -0.1  
 				}
 			}
 		}
