@@ -7,10 +7,10 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = italy.187.a
-		set_technology = {
-			basic_medium_tank = 1
-			improved_medium_tank = 1
-		}
+		#set_technology = {
+		#	basic_medium_tank = 1
+		#	improved_medium_tank = 1
+		#}
 		division_template = {
 			name = "Afrikakorps"
 			regiments = {
@@ -46,7 +46,7 @@ country_event = {
 		}
 		413 = {
 			for_loop_effect = {
-				end = 4
+				end = 2
 				create_unit = {
 					division = "name = \"SS-Panzergrenadier\" division_template = \"Afrikakorps\" start_experience_factor = 2.0"
 					owner = ITA
@@ -90,7 +90,7 @@ country_event = {
 				}}
 		413 = {
 			for_loop_effect = {
-				end = 4
+				end = 2
 				create_unit = {
 					division = "name = \"SS-Panzergrenadier\" division_template = \"Afrikakorps\" start_experience_factor = 2.0"
 					owner = GER
