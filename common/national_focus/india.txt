@@ -662,7 +662,7 @@ focus_tree = {
  		continue_if_invalid = no
  		available_if_capitulated = no
  		completion_reward = {
- 			custom_effect_tooltip = RAJ_indian_sandhurst_tt
+ 			custom_effect_tooltip = "A few Generals will significantly improve."
  			hidden_effect = {
  				create_field_marshal = {
  					name = "Kodandera Madappa Cariappa"
@@ -677,7 +677,7 @@ focus_tree = {
  				create_corps_commander = {
  					name = "Kodandera Subayya Thimayya"
  					gfx = "GFX_RAJ_kodendera_subayya_thimayya"
- 					traits = { jungle_rat ranger infantry_leader}
+ 					traits = { jungle_rat ranger infantry_leader naval_invader}
  					skill = 5
  					attack_skill = 6
  					defense_skill = 3
@@ -1745,10 +1745,8 @@ focus_tree = {
  		search_filters = { FOCUS_FILTER_INDUSTRY }
  		completion_reward = {
  		
- 		 add_timed_idea = {
-            idea =  RAJ_finanz
-            days = 180
-          }
+ 		 add_ideas = RAJ_finanz
+            
  		}
  	}
  	focus = {
@@ -1843,7 +1841,7 @@ focus_tree = {
  				}
  				add_extra_state_shared_building_slots = 2
  				add_building_construction = {
- 					type = arms_factory
+ 					type = industrial_complex
  					level = 2
  					instant_build = yes
  				}

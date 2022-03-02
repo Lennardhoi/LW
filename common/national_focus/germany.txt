@@ -1077,7 +1077,7 @@ focus_tree = {
  		}
  		available_if_capitulated = yes
  		completion_reward = {
- 			set_technology={antiair1= 1 antiair2=1 popup=no}
+ 			set_technology={antiair1= 1 popup=no}
  			add_equipment_production = {
  				equipment = {
  					type = anti_air_equipment_2
@@ -1816,7 +1816,7 @@ focus_tree = {
  						modifier = Atlantikwall
  					}
  					}}
- 			add_timed_idea = {idea=GER_atlantikwall_idea days=60}
+ 			add_timed_idea = {idea=GER_atlantikwall_idea days=90}
  			add_dynamic_modifier = {
  						modifier = Atlantikwall_visual
  			}
@@ -1909,50 +1909,22 @@ focus_tree = {
  			}
  		}
  	}
+	
  	focus = {
- 		id = GER_volkssturm
- 		icon = GFX_focus_GER_volkssturm
+ 		id = GER_nero
+ 		icon = GFX_focus_GER_implement_scorched_earth_tactics
  		prerequisite = { focus = GER_totaler_krieg }
  		relative_position_id = GER_totaler_krieg
  		x = 0
  		y = 2
  		cost = 3
  		available = {
- 			date > 1942.6.1
  		}
  		ai_will_do = {
  			factor = 5
  		}
  		available_if_capitulated = no
  		completion_reward = {
- 			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 100000 producer = GER }
- 			hidden_effect={
- 				division_template = {
- 					name = "Volkssturm"
- 					regiments = {
- 						infantry = { x = 0 y = 0 }
- 						infantry  = { x = 0 y = 1 }
- 						infantry  = { x = 0 y = 2 }
- 						infantry  = { x = 0 y = 3 }
- 						infantry  = { x = 0 y = 4 }
- 						infantry  = { x = 1 y = 0 }
- 						infantry  = { x = 1 y = 1 }
- 						infantry  = { x = 1 y = 2 }
- 						infantry  = { x = 1 y = 3 }
- 						infantry  = { x = 1 y = 4 }
- 					}
- 					support = {
- 						anti_air = { x = 0 y = 0  }
- 					}
- 					priority = 1
- 					}}
- 			64={for_loop_effect = {
- 					end = 50
- 					create_unit = {
- 						division = "name = \"Volkssturm\" division_template = \"Volkssturm\" start_experience_factor = 0.17"
- 						owner = GER
- 					}
- 					}}
  		}
  	}
  	focus = {
@@ -2000,21 +1972,67 @@ focus_tree = {
  			add_timed_idea={idea=GER_mineraloelsicherungsplan days=180}
  		}
  	}
+	
  	focus = {
- 		id = GER_nero
- 		icon = GFX_focus_GER_implement_scorched_earth_tactics
+ 		id = GER_volkssturm
+ 		icon = GFX_focus_GER_volkssturm
  		prerequisite = { focus = GER_albert_speer }
  		relative_position_id = GER_albert_speer
  		x = 1
  		y = 2
  		cost = 3
  		available = {
+ 			count_triggers={
+ 				amount=2
+ 				14= {is_controlled_by_ROOT_or_ally=no}
+ 				30= {is_controlled_by_ROOT_or_ally=no}
+ 				16= {is_controlled_by_ROOT_or_ally=no}
+ 				15= {is_controlled_by_ROOT_or_ally=no}
+ 				6= {is_controlled_by_ROOT_or_ally=no}
+ 				29= {is_controlled_by_ROOT_or_ally=no}
+ 				35= {is_controlled_by_ROOT_or_ally=no}
+ 				36= {is_controlled_by_ROOT_or_ally=no}
+ 				7= {is_controlled_by_ROOT_or_ally=no}
+ 				699= {is_controlled_by_ROOT_or_ally=no}
+ 				677= {is_controlled_by_ROOT_or_ally=no}
+ 				46= {is_controlled_by_ROOT_or_ally=no}
+ 				2= {is_controlled_by_ROOT_or_ally=no}
+ 				10= {is_controlled_by_ROOT_or_ally=no}
+ 			}
  		}
  		ai_will_do = {
  			factor = 5
  		}
  		available_if_capitulated = no
  		completion_reward = {
+ 			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 100000 producer = GER }
+ 			hidden_effect={
+ 				division_template = {
+ 					name = "Volkssturm"
+ 					regiments = {
+ 						infantry = { x = 0 y = 0 }
+ 						infantry  = { x = 0 y = 1 }
+ 						infantry  = { x = 0 y = 2 }
+ 						infantry  = { x = 0 y = 3 }
+ 						infantry  = { x = 0 y = 4 }
+ 						infantry  = { x = 1 y = 0 }
+ 						infantry  = { x = 1 y = 1 }
+ 						infantry  = { x = 1 y = 2 }
+ 						infantry  = { x = 1 y = 3 }
+ 						infantry  = { x = 1 y = 4 }
+ 					}
+ 					support = {
+ 						anti_air = { x = 0 y = 0  }
+ 					}
+ 					priority = 1
+ 					}}
+ 			64={for_loop_effect = {
+ 					end = 50
+ 					create_unit = {
+ 						division = "name = \"Volkssturm\" division_template = \"Volkssturm\" start_experience_factor = 0.17"
+ 						owner = GER
+ 					}
+ 					}}
  		}
  	}
  	focus = {
@@ -2239,9 +2257,9 @@ focus_tree = {
  	focus = {
  		id = GER_endsieg
  		icon = GFX_GER_endsieg
- 		prerequisite = { focus = GER_mineraloelsicherungsplan focus = GER_volkssturm }
+ 		prerequisite = { focus = GER_mineraloelsicherungsplan focus = GER_nero }
  		prerequisite = { focus = GER_alpenfestung  }
- 		prerequisite = { focus = GER_nero }
+ 		prerequisite = { focus =  GER_volkssturm}
  		relative_position_id = GER_mineraloelsicherungsplan
  		x = 2
  		y = 1
@@ -2790,10 +2808,6 @@ focus_tree = {
  			factor = 1
  		}
  		completion_reward = {
- 			hidden_effect = {
- 				set_technology = { africa_hp_off = 1 popup = no }
- 				remove_ideas = GER_africa_hp
- 			}
  			SOV = { add_opinion_modifier = { target = ROOT modifier = pact_against_us } }
  			add_named_threat = { threat = 2 name = GER_anti_comitern_pact }
  			every_other_country = {
@@ -4597,7 +4611,7 @@ focus_tree = {
  		x = 0
  		y = 1
  		relative_position_id = GER_albert_speer
- 		cost = 5
+ 		cost = 2
  		ai_will_do = {
  			factor = 1
  		}
