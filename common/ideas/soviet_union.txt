@@ -766,16 +766,26 @@ ideas = {
 			}
 			equipment_bonus = {
 				medium_tank_chassis = {
-					hard_attack = 0.10 soft_attack = 0.10 armor_value = -0.1 hardness = -0.1 build_cost_ic = -0.1
+					hard_attack = 0.10 
+					soft_attack = 0.10  
+					hardness = -0.1 
+					build_cost_ic = -0.1
 				}
 				medium_tank_aa_chassis = {
-					air_attack = 0.10 armor_value = -0.1 hardness = -0.1 build_cost_ic = -0.1
+					air_attack = 0.10  
+					hardness = -0.1 
+					build_cost_ic = -0.1
 				}
 				medium_tank_artillery_chassis = {
-					soft_attack = 0.15  armor_value = -0.1 hardness = -0.1 build_cost_ic = -0.1
+					soft_attack = 0.15   
+					hardness = -0.1 
+					build_cost_ic = -0.1
 				}
 				medium_tank_destroyer_chassis = {
-					hard_attack = 0.15 ap_attack = 0.1 armor_value = -0.1 hardness = -0.1 build_cost_ic = -0.1
+					hard_attack = 0.15 
+					ap_attack = 0.1  
+					hardness = -0.1 
+					build_cost_ic = -0.1
 				}
 			}
 			traits = {  }
@@ -798,7 +808,6 @@ ideas = {
 					reliability = 0.05
 					maximum_speed = 0.1
 					hard_attack = 0.2
-					build_cost_ic = 0.05
 				}
 				medium_tank_artillery_chassis = {
 					reliability = 0.05
@@ -897,19 +906,23 @@ ideas = {
 			equipment_bonus = {
 				medium_tank_chassis = {
 					defense = 0.25
+					reliability = 0.1
 					hard_attack = 0.1
 					soft_attack = 0.1
 				}
 				medium_tank_destroyer_chassis = {
 					defense = 0.25
+					reliability = 0.1
 					hard_attack = 0.15
 					ap_attack = 0.2
 				}
 				medium_tank_artillery_chassis = {
+					reliability = 0.1
 					defense = 0.25
 					soft_attack = 0.15
 				}
 				medium_tank_aa_chassis = {
+					reliability = 0.1
 					defense = 0.25
 					air_attack = 0.2
 				}
