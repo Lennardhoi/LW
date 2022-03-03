@@ -261,7 +261,7 @@ NDefines.NCountry.AIR_SUPPLY_CONVERSION_SCALE = 0.01
 NDefines.NBuildings.INFRA_TO_SUPPLY = 0.95
 NDefines.NCountry.VP_TO_SUPPLY_BASE = 0
 NDefines.NCountry.VP_TO_SUPPLY_BONUS_CONVERSION = 1
-
+NDefines.NProduction.PRODUCTION_RESOURCE_LACK_PENALTY = -0.005			-- Penalty decrease while lack of resource per factory
 NDefines.NCountry.SUPPLY_FROM_DAMAGED_INFRA = 0.4
 NDefines.NCountry.SUPPLY_PATH_MAX_DISTANCE = 8
 NDefines.NCountry.BASE_MOBILIZATION_SPEED = 0.02
