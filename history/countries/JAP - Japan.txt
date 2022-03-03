@@ -134,7 +134,6 @@ capital = 270
  	electronic_mechanical_engineering = 1
  	radio = 1
  	base_strike = 1
- 	fuel_silos = 1
  	synth_oil_experiments = 1
  	fuel_refining = 1
  }
@@ -155,8 +154,10 @@ capital = 270
  		early_ship_hull_cruiser = 1
  		basic_ship_hull_cruiser = 1
  		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
  		early_ship_hull_carrier = 1
  		basic_ship_hull_carrier = 1
+		tactical_bomber1 = 1
  		mtg_transport = 1
  		improved_airplane_launcher = 1
  		coastal_defense_ships = 1
@@ -233,7 +234,7 @@ capital = 270
           producer = JAP
  }
  add_equipment_to_stockpile = {
-          type = tac_bomber_equipment_0
+          type = tac_bomber_equipment_1
           amount = 500
           producer = JAP
  }
