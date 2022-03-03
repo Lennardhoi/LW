@@ -77,6 +77,26 @@ set_variable = {
 	var = min_fuel
 	value = 0.800
 }
+set_autonomy = {
+	target = CAN
+	autonomous_state = autonomy_dominion
+	freedom_level = 0.4
+}
+set_autonomy = {
+	target = SAF
+	autonomous_state = autonomy_dominion
+	freedom_level = 0.4
+}
+set_autonomy = {
+	target = AST
+	autonomous_state = autonomy_dominion
+	freedom_level = 0.2
+}
+set_autonomy = {
+	target = NZL
+	autonomous_state = autonomy_dominion
+	freedom_level = 0.2
+}
 set_research_slots = 5
 create_intelligence_agency = yes
 set_stability = 0.40

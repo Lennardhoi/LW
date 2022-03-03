@@ -447,7 +447,7 @@ NDefines.NAI.PLAN_FRONTUNIT_DISTANCE_FACTOR	= 30 --- closer units move first but
 --NDefines.NAI.REDEPLOY_DISTANCE_VS_ORDER_SIZE = 100
 NDefines.NMilitary.FRONT_MIN_PATH_TO_REDEPLOY = 3				--should really help--	-- If a units path is at least this long to reach its front location it will strategically redeploy.
 NDefines.NMilitary.ARMY_INITIATIVE_REINFORCE_FACTOR = 0.5		-- scales initiative for reinforce chance
-NDefines.NMilitary.REINFORCE_CHANCE = 0.01
+NDefines.NMilitary.REINFORCE_CHANCE = 0.05
 
 
 
@@ -479,9 +479,9 @@ NDefines.NMapMode.SUPPLY_MAP_MODE_REACH_COLOR = {
 	-- NOTE: New supply mode uses map-mode-terrain camera override.... HACK: -1 used to toggle some supply-mode only stuff as well.
 	-- Terrain map mixing is weird but this is cleanest varient.
 --NDefines.NGraphics.GRADIENT_BORDERS_CAMERA_DISTANCE_OVERRIDE_TERRAIN = -1 -- -1 now ignores camera-distance changes entirely.
-NDefines.NSupply.NAVAL_BASE_INITIAL_SUPPLY_FLOW = 2
+NDefines.NSupply.NAVAL_BASE_INITIAL_SUPPLY_FLOW = 2.8
 NDefines.NSupply.NAVAL_BASE_STARTING_PENALTY_PER_PROVINCE = 0.3
-NDefines.NSupply.NAVAL_BASE_ADDED_PENALTY_PER_PROVINCE = 1.0
+NDefines.NSupply.NAVAL_BASE_ADDED_PENALTY_PER_PROVINCE = 0.8
 
 -- Node Flow (i.e. province caps) increase by this amount per railway level of the node's bottleneck
 
