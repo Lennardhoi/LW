@@ -246,36 +246,36 @@ focus_tree = {
  			}
  		}
  	}
- 	focus = {
- 		id = RAJ_quit_india_movement
- 		icon = GFX_goal_generic_propaganda
- 		prerequisite = { focus = RAJ_two_nation_theory }
- 		x = 0
- 		y = 1
- 		relative_position_id = RAJ_two_nation_theory
- 		cost = 5
- 		ai_will_do = {
- 			factor = 25
- 		}
- 		available = {
- 		}
- 		bypass = {
- 		}
- 		cancel_if_invalid = yes
- 		continue_if_invalid = no
- 		available_if_capitulated = no
- 		complete_tooltip = {
- 		}
- 		completion_reward = {
- 			add_ideas = RAJ_quit_india_movement
- 			set_country_flag = RAJ_quit_india_movement
- 			custom_effect_tooltip = "tfv_raj_quit_india_unrest_tt"
- 			hidden_effect = {
- 				country_event = { id = tfv_raj.210 days = 15 random = 20 }
- 				news_event = { id = news.282 hours = 6 }
- 			}
- 		}
- 	}
+ 	# focus = {
+ 		# id = RAJ_quit_india_movement
+ 		# icon = GFX_goal_generic_propaganda
+ 		# prerequisite = { focus = RAJ_two_nation_theory }
+ 		# x = 0
+ 		# y = 1
+ 		# relative_position_id = RAJ_two_nation_theory
+ 		# cost = 5
+ 		# ai_will_do = {
+ 			# factor = 25
+ 		# }
+ 		# available = {
+ 		# }
+ 		# bypass = {
+ 		# }
+ 		# cancel_if_invalid = yes
+ 		# continue_if_invalid = no
+ 		# available_if_capitulated = no
+ 		# complete_tooltip = {
+ 		# }
+ 		# completion_reward = {
+ 			# add_ideas = RAJ_quit_india_movement
+ 			# set_country_flag = RAJ_quit_india_movement
+ 			# custom_effect_tooltip = "tfv_raj_quit_india_unrest_tt"
+ 			# hidden_effect = {
+ 				# country_event = { id = tfv_raj.210 days = 15 random = 20 }
+ 				# news_event = { id = news.282 hours = 6 }
+ 			# }
+ 		# }
+ 	# }
  	focus = {
  		id = RAJ_princely_state_donations
  		icon = GFX_goal_generic_improve_relations
@@ -1089,9 +1089,11 @@ focus_tree = {
  			}
  		}
  	}
+	
+ 	
  	focus = {
- 		id = RAJ_industrial_expansion_2
- 		icon = GFX_GOAL_nationalization
+ 		id = RAJ_research_2
+ 		icon = GFX_focus_generic_tank_production
  		prerequisite = { focus = RAJ_industrial_expansion }
  		x = -3
  		y = 1
@@ -1107,20 +1109,20 @@ focus_tree = {
  		cancel_if_invalid = yes
  		continue_if_invalid = no
  		available_if_capitulated = no
- 		
+ 		search_filters = { FOCUS_FILTER_INDUSTRY }
  		completion_reward = {
- 		add_ideas = RAJ_tata
+ 		add_ideas = RAJ_home_defence	
  		}
  	}
+	
  	focus = {
  		id = RAJ_industrial_expansion_3
  		icon = GFX_focus_spr_masters_of_our_own_fate
- 		prerequisite = { focus = RAJ_industrial_expansion_2 }
- 		available = {}
+ 		cost = 5
+		prerequisite = { focus = RAJ_research_2 }
  		x = 0
  		y = 1
- 		relative_position_id = RAJ_industrial_expansion_2
- 		cost = 5
+ 		relative_position_id = RAJ_research_2
  		ai_will_do = {
  			factor = 25
  		}
@@ -1136,7 +1138,6 @@ focus_tree = {
  		add_ideas = RAJ_mines
  		}
  	}
- 	
  	focus = {
  		id = RAJ_tata_steel
  		icon = GFX_goal_generic_construct_civilian
@@ -1749,14 +1750,16 @@ focus_tree = {
             
  		}
  	}
+	
  	focus = {
- 		id = RAJ_research_2
- 		icon = GFX_focus_generic_tank_production
- 		prerequisite = { focus = RAJ_research }
- 		available = {}
+ 		id = RAJ_industrial_expansion_2
+ 		icon = GFX_GOAL_nationalization
+		
+ 		prerequisite = { focus = RAJ_research  }
  		x = 0
  		y = 1
  		relative_position_id = RAJ_research
+ 		
  		cost = 5
  		ai_will_do = {
  			factor = 25
@@ -1768,9 +1771,9 @@ focus_tree = {
  		cancel_if_invalid = yes
  		continue_if_invalid = no
  		available_if_capitulated = no
- 		search_filters = { FOCUS_FILTER_INDUSTRY }
+ 		
  		completion_reward = {
- 		add_ideas = RAJ_home_defence	
+ 		add_ideas = RAJ_tata
  		}
  	}
  	focus = {
@@ -1954,7 +1957,7 @@ focus_tree = {
  		search_filters = { FOCUS_FILTER_INDUSTRY }
  		
  		completion_reward = {
- 			add_ideas = RAJ_industry 
+ 			add_ideas = RAJ_industryidea
  		}
  	}
  	focus = {
