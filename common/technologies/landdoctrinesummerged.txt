@@ -152,11 +152,19 @@ technologies = {
 	}
 	grand = {
 		allow_branch = {is_debug = yes}
-		amphibious_armor = {
+		
+		amphibious_medium_armor = {
 			soft_attack = 0.1
 			amphibious = {
 				attack = 0.1
-				defence = 0.1
+				defence = 0.10
+			}
+		}
+		amphibious_light_armor = {
+			soft_attack = 0.1
+			amphibious = {
+				attack = 0.1
+				defence = 0.10
 			}
 		}
 		armored_car = {

@@ -1489,7 +1489,14 @@ technologies = {
 		xp_unlock_cost = 0
 		xp_boost_cost = 100
 		xp_research_bonus = 1.00
-		amphibious_armor = {
+		amphibious_medium_armor = {
+			soft_attack = 0.1
+			amphibious = {
+				attack = 0.1
+				defence = 0.10
+			}
+		}
+		amphibious_light_armor = {
 			soft_attack = 0.1
 			amphibious = {
 				attack = 0.1
