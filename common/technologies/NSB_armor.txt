@@ -63,27 +63,12 @@ technologies = {
 			support_heavy_sp_artillery
 			support_mdeium_sp_artillery
 		}
-		on_research_complete_limit = {
-			NOT = {	has_template_containing_unit = light_armor }
-			NOT = {	has_template_containing_unit = heavy_armor }
-			NOT = {	has_template_containing_unit = medium_armor }
-		}
 		on_research_complete = {
-			hidden_effect = {
-				if = {
-					limit = {
-						has_tech = motorised_infantry
-					}
-					load_oob = "unlock_tanks_mot"
-				}
-				if = {
-					limit = {
-						NOT = { has_tech = motorised_infantry }
-					}
+				hidden_effect = {
 					load_oob = "unlock_tanks"
 				}
-			}
-			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+				
+		
 		}
 		path = {
 			leads_to_tech = basic_light_tank_chassis
@@ -143,28 +128,6 @@ technologies = {
 		}
 		enable_subunits = {
 			light_armor
-		}
-		on_research_complete_limit = {
-			NOT = {	has_template_containing_unit = light_armor }
-			NOT = {	has_template_containing_unit = heavy_armor }
-			NOT = {	has_template_containing_unit = medium_armor }
-		}
-		on_research_complete = {
-			hidden_effect = {
-				if = {
-					limit = {
-						has_tech = motorised_infantry
-					}
-					load_oob = "unlock_tanks_mot"
-				}
-				if = {
-					limit = {
-						NOT = { has_tech = motorised_infantry }
-					}
-					load_oob = "unlock_tanks"
-				}
-			}
-			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 		}
 		path = {
 			leads_to_tech = improved_light_tank_chassis
@@ -285,11 +248,11 @@ technologies = {
 		}
 		path = {
 			leads_to_tech = improved_medium_tank_chassis
-			research_cost_coeff = 0.7
+			research_cost_coeff = 0.6
 		}
 		path = {
 			leads_to_tech = improved_heavy_tank_chassis
-			research_cost_coeff = 0.7
+			research_cost_coeff = 0.6
 		}
 		research_cost = 2
 		start_year = 1941
@@ -334,27 +297,10 @@ technologies = {
 		enable_subunits = {
 			medium_armor
 		}
-		on_research_complete_limit = {
-			NOT = {	has_template_containing_unit = light_armor }
-			NOT = {	has_template_containing_unit = heavy_armor }
-			NOT = {	has_template_containing_unit = medium_armor }
-		}
 		on_research_complete = {
 			hidden_effect = {
-				if = {
-					limit = {
-						has_tech = motorised_infantry
-					}
-					load_oob = "unlock_tanks_medium"
-				}
-				if = {
-					limit = {
-						NOT = { has_tech = motorised_infantry }
-					}
-					load_oob = "unlock_tanks_medium"
-				}
+				load_oob = "unlock_tanks_medium"
 			}
-			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
 		}
 		enable_equipment_modules = {
 			tank_medium_howitzer
@@ -431,11 +377,11 @@ technologies = {
 		}
 		path = {
 			leads_to_tech = improved_heavy_tank_chassis
-			research_cost_coeff = 0.7
+			research_cost_coeff = 0.6
 		}
 		path = {
 			leads_to_tech = advanced_light_tank_chassis
-			research_cost_coeff = 0.7
+			research_cost_coeff = 0.6
 		}
 		research_cost = 2.2
 		start_year = 1941
@@ -514,7 +460,7 @@ technologies = {
 		
 		path = {
 			leads_to_tech = advanced_heavy_tank_chassis
-			research_cost_coeff = 0.7
+			research_cost_coeff = 0.6
 		}
 		research_cost = 4
 		start_year = 1943
@@ -611,27 +557,12 @@ technologies = {
 		enable_subunits = {
 			heavy_armor
 		}
-		on_research_complete_limit = {
-			NOT = {	has_template_containing_unit = light_armor }
-			NOT = {	has_template_containing_unit = heavy_armor }
-			NOT = {	has_template_containing_unit = medium_armor }
-		}
 		on_research_complete = {
 			hidden_effect = {
-				if = {
-					limit = {
-						has_tech = motorised_infantry
-					}
+				
 					load_oob = "unlock_tanks_heavy"
 				}
-				if = {
-					limit = {
-						NOT = { has_tech = motorised_infantry }
-					}
-					load_oob = "unlock_tanks_heavy"
-				}
-			}
-			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+				
 		}
 		path = {
 			leads_to_tech = improved_heavy_tank_chassis
