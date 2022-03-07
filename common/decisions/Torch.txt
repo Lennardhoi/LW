@@ -71,17 +71,23 @@ operations = {
  				if = {
  				limit={exists=yes}
  				transfer_state = 425
+ 				transfer_state = 260
  				transfer_state = 426
  				}
  				else={
  					USA={
  						transfer_state = 425
  						transfer_state = 426
+ 						transfer_state = 260
  					}
  				}
  			}
  			hidden_effect = {
  				EFR={
+					delete_unit = { 
+ 						transfer_state = 260          
+             					disband = yes #will refund equipment and manpower
+            					  }
  					every_country = {
  						if = {
  							limit = { is_in_faction_with = ENG has_war=yes}
