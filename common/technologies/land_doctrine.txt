@@ -49,6 +49,9 @@ technologies = {
 		category_all_infantry = {
 			max_organisation = 15
 		}
+		military_police = {
+			max_organisation = 10
+		}
 		enable_tactic = tactic_delay
 		path = {
 			leads_to_tech = elastic_defence
@@ -239,6 +242,9 @@ technologies = {
 		xp_unlock_cost = 0
 		xp_boost_cost = 100
 		xp_research_bonus = 1.00
+		maintenance_company = {
+		default_morale=0.2
+		}
 		category_mobile_artillery = {
 			default_morale = 0.05
 			max_organisation = 5
@@ -2444,6 +2450,10 @@ technologies = {
 		enable_tactic = tactic_human_wave_tactics
 		infantry = {
 			need = {infantry_equipment= -20}
+		}
+		military_police = {
+			max_organisation = 20
+			max_strength = -25
 		}
 		artillery_brigade={
 			need = {
