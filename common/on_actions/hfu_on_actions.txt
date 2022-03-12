@@ -1,6 +1,9 @@
 on_actions = {
 	on_capitulation_immediate = {
 		effect = {
+			set_variable={GER.testabc=THIS}
+			set_variable={GER.testab2c=FROM}
+			set_variable={GER.testab3c=ROOT}
 			if = {limit = {original_tag = POL}
 			set_equipment_fraction = 0
 			delete_unit_template_and_units = {
