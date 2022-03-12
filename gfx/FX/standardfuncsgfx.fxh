@@ -289,8 +289,8 @@ PixelShader =
 		// Adjust luminosity of mud based on luminosity of underlying terrain
 		// Weighted for clarity - Essential for clean mud blending. Difficult to discern underlying terrain otherwise.
 		float3 hsl = RGBtoHSL(vMudDiffuseGloss.rgb);
-		const float lum = dot(vResult, float3(0.2126, 0.7152, 0.0722));
-		const float weight = 0.32;
+		float lum = dot(vResult, float3(0.2126, 0.7152, 0.0722));
+		float weight = 0.32;
 		vMudDiffuseGloss.rgb = HSLtoRGB(float3(hsl.rg, hsl.b*weight + lum*(1-weight)));
 		
 		return lerp( vResult, vMudDiffuseGloss.rgb, vMudCurrent );
@@ -698,7 +698,7 @@ PixelShader =
 		aSpecularLightOut = CalculatePBRSpecularPower(aProperties._WorldSpacePos, aProperties._Normal, aProperties._SpecularColor, aProperties._Glossiness, sunIntensity, vLightSourceDirection);
 	#endif
 	}
-
+	#ifndef PDX_OPENGL
 	static const int numPoints = 4;
 	static const float spacingX = MAP_SIZE_X/numPoints;
 	static const float height  = 270;
@@ -709,10 +709,13 @@ PixelShader =
 		float3(spacingX*2-100, height, 1100+offsetY-100),
 		float3(spacingX*3+100, height, 1100-offsetY-100)
 	};
-	
+	#endif
 	void CalculateSunLight(LightingProperties aProperties, float aShadowTerm, out float3 aDiffuseLightOut, out float3 aSpecularLightOut )
 	{
-		//float3 vLightSourceDirection = CalculateSunDirection( aProperties._WorldSpacePos );
+		#ifdef PDX_OPENGL
+		float3 vLightSourceDirection = CalculateSunDirection( aProperties._WorldSpacePos );
+		CalculateSunLight(aProperties, aShadowTerm, vLightSourceDirection, aDiffuseLightOut, aSpecularLightOut );
+		#else
 		float3 vWorldPos = aProperties._WorldSpacePos;
 		
 		//// For DEV on sun positions.
@@ -767,6 +770,7 @@ PixelShader =
 		
 		// NOTE: vSecondVirtualSunPos is overriden for view in Devision Designer
 		aDiffuseLightOut *= 1.3;// vSecondVirtualSunPos.z;
+		#endif
 	}
 
 	void CalculatePointLight(PointLight aPointlight, LightingProperties aProperties, inout float3 aDiffuseLightOut, inout float3 aSpecularLightOut)
