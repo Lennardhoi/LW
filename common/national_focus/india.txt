@@ -210,8 +210,8 @@ focus_tree = {
  		}
  		search_filters = { FOCUS_FILTER_RESEARCH }
  		completion_reward = {
- 		hidden_effect = {pow_before_annex=yes clear_variable=getting_annexed}
- 		ENG = {end_puppet = RAJ}
+ 		#hidden_effect = {pow_before_annex=yes clear_variable=getting_annexed}
+ 		#ENG = {end_puppet = RAJ}
  		RAJ = {set_cosmetic_tag = RAJ_LW}
  		add_research_slot =1
  		remove_ideas = RAJ_asia_focus
@@ -1803,7 +1803,7 @@ focus_tree = {
  				}
  				set_state_flag = RAJ_integrate_princely_railways_Inf1
  			}
- 			388 = {	add_building_construction = {
+ 			399 = {	add_building_construction = {
  					type = infrastructure
  					level = 2
  					instant_build = yes
@@ -1850,7 +1850,7 @@ focus_tree = {
  				}
  				set_state_flag = RAJ_ishapore_arsenal_AF
  			}
- 		    388={add_extra_state_shared_building_slots = 4
+ 		    403={add_extra_state_shared_building_slots = 4
  				add_building_construction = {
  					type = arms_factory
  					level = 4

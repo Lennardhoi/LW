@@ -21,6 +21,7 @@ POW = {
  		is_good = yes
  		complete_effect = {
  			custom_effect_tooltip = [POW_recruit_soldiers_tt2]
+			add_to_variable={total_pows_assigned=25}
  			subtract_from_variable={total_pows_unassigned =25}
  			random_list= {
  				60 = {
@@ -69,6 +70,7 @@ POW = {
  		fire_only_once = no
  		fixed_random_seed = no
  		is_good = yes
+		days_remove=30
  		available={
  			if={
  				limit={check_variable={POW_recruit_workers_for_army_production_cost>0}}
@@ -107,9 +109,9 @@ POW = {
  					add_dynamic_modifier = { modifier = POW_industry }
  					}}
  			random_list= {
- 				80 = {}
- 				10 = {add_stability=-0.01 }
- 				10 = { add_war_support = -0.01}
+ 				60 = {}
+ 				20 = {add_stability=-0.01 }
+ 				20 = { add_war_support = -0.01}
  			}
  		}
  	}
@@ -122,6 +124,7 @@ POW = {
  		fire_only_once = no
  		fixed_random_seed = no
  		is_good = yes
+		days_remove=30
  		available={
  			if={
  				limit={check_variable={POW_recruit_workers_for_navy_production_cost>0}}
@@ -160,9 +163,9 @@ POW = {
  					add_dynamic_modifier = { modifier = POW_industry }
  					}}
  			random_list= {
- 				80 = {}
- 				10 = {add_stability=-0.01 }
- 				10 = { add_war_support = -0.01}
+ 				60 = {}
+ 				20 = {add_stability=-0.01 }
+ 				20 = { add_war_support = -0.01}
  			}
  		}
  	}
@@ -175,6 +178,7 @@ POW = {
  		fire_only_once = no
  		fixed_random_seed = no
  		is_good = yes
+		days_remove=30
  		available={
  			if={
  				limit={check_variable={POW_recruit_workers_for_resource_extraction_cost>0}}
@@ -213,9 +217,9 @@ POW = {
  					add_dynamic_modifier = { modifier = POW_industry }
  					}}
  			random_list= {
- 				80 = {}
- 				10 = {add_stability=-0.01 }
- 				10 = { add_war_support = -0.01}
+ 				60 = {}
+ 				20 = {add_stability=-0.01 }
+ 				20 = { add_war_support = -0.01}
  			}
  		}
  	}
@@ -228,6 +232,7 @@ POW = {
  		fire_only_once = no
  		fixed_random_seed = no
  		is_good = yes
+		days_remove=30
  		available={
  			if={
  				limit={check_variable={POW_recruit_workers_for_construction_projects_cost>0}}
@@ -269,9 +274,9 @@ POW = {
  					add_dynamic_modifier = { modifier = POW_industry }
  					}}
  			random_list= {
- 				80 = {}
- 				10 = {add_stability=-0.01 }
- 				10 = { add_war_support = -0.01}
+ 				60 = {}
+ 				20 = {add_stability=-0.01 }
+ 				20 = { add_war_support = -0.01}
  			}
  		}
  	}

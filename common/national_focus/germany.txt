@@ -531,10 +531,14 @@ focus_tree = {
  						include_locked = yes
  					}
  				}
- 				add_extra_state_shared_building_slots = 2
+ 				add_extra_state_shared_building_slots = 4
  				add_building_construction = {
  					type = synthetic_refinery
  					level = 2
+ 					instant_build = yes
+ 				}add_building_construction = {
+ 					type = arms_factory
+ 					level = 4
  					instant_build = yes
  				}
  				set_state_flag = GER_german_war_economy_syn
@@ -2281,6 +2285,8 @@ focus_tree = {
  				46= {is_controlled_by_ROOT_or_ally=no}
  				2= {is_controlled_by_ROOT_or_ally=no}
  				10= {is_controlled_by_ROOT_or_ally=no}
+ 				85= {is_controlled_by_ROOT_or_ally=no}
+ 				88= {is_controlled_by_ROOT_or_ally=no}
  			}
  		}
  		ai_will_do = {

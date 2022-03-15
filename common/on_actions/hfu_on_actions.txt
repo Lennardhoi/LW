@@ -493,38 +493,6 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
-					FROM.FROM = {
-						OR = {
-							state = 212
-							state = 188
-							state = 210
-							state = 195
-							state = 199
-						}
-					}
-				}
-				GER = {clear_variable=barb_factory_output
-					if={limit={NOT={SOV={controls_state = 195}}}
-						add_to_variable={barb_factory_output=0.025}
-					}
-					if={limit={NOT={SOV={controls_state = 199}}}
-						add_to_variable={barb_factory_output=0.025}
-					}
-					if={limit={NOT={SOV={controls_state = 188}}}
-						add_to_variable={barb_factory_output=0.05}
-					}
-					if={limit={NOT={SOV={controls_state = 210}}}
-						add_to_variable={barb_factory_output=0.05}
-					}
-					if={limit={NOT={SOV={controls_state = 212}}}
-						add_to_variable={barb_factory_output=0.10}
-					}
-				}
-				}}}
-	on_state_control_changed = {
-		effect = {
-			if = {
-				limit = {
 					ROOT = {
 						OR = {
 							tag = JAP
