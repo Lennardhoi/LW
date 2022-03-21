@@ -308,6 +308,7 @@ NDefines.NMilitary.NAVAL_INVASION_PLANNING_BONUS_GAIN = 0.01		-- Planning Bonus 
 NDefines.NMilitary.TRAINING_MAX_DAILY_COUNTRY_EXP = 0.08		-- Maximum army XP gained per day from training
 -------------------------------------
 --Air changes
+NDefines.NAir.SUPPLY_NEED_FACTOR=0.01
 NDefines.NAir.CAPACITY_PENALTY=0.869
 NDefines.NAir.CAS_NIGHT_ATTACK_FACTOR = 0.5
 NDefines.NAir.AIR_WING_FLIGHT_SPEED_MULT = 0.2 --makes redeployement of fighters faster vanilla is 0.02 

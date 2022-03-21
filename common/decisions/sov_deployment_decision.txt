@@ -1,0 +1,28 @@
+Automatic_unit_deployment = {
+
+	Soviet_Deployment_decision = {
+		icon = GFX_decision_deploy
+		ai_will_do = { factor = 0 }
+		cost = 0
+
+		available = {
+			has_manpower > 350000
+			date > 1941.1.1
+			date < 1941.4.1
+		}
+
+		allowed = {
+			original_tag = SOV		
+		}
+
+		fire_only_once = yes
+
+		complete_effect = {
+			SOV = {
+				country_event = { id = soviet.100 days = 1 }
+				country_event = { id = soviet.100 days = 3 }
+				add_manpower = -350000
+			}
+		}
+	}
+}
