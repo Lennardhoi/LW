@@ -629,7 +629,6 @@ focus_tree = {
  			}
  		}
  		available = {
- 			has_tech = tech_mountaineers
  		}
  		bypass = {
  		}
@@ -646,15 +645,16 @@ focus_tree = {
  	focus = {
  		id = RAJ_an_indian_sandhurst
  		icon = GFX_goal_generic_army_doctrines
- 		prerequisite = { focus = RAJ_indianisation_of_army }
+ 		prerequisite = { focus = RAJ_red_eagle_division }
  		x = 0
  		y = 1
- 		relative_position_id = RAJ_indianisation_of_army
+ 		relative_position_id = RAJ_red_eagle_division
  		cost = 5
  		ai_will_do = {
  			factor = 25
  		}
  		available = {
+		date>1940.10.1
  		}
  		bypass = {
  		}
@@ -725,9 +725,9 @@ focus_tree = {
  	focus = {
  		id = RAJ_indian_gentlemen_officers
  		icon = GFX_focus_RAJ_indian_gentlemen_offcers
- 		prerequisite = { focus = RAJ_an_indian_sandhurst }
+ 		prerequisite = { focus = RAJ_indianisation_of_army }
  		x = 0
- 		y = 3
+ 		y = 1
  		relative_position_id = RAJ_indianisation_of_army
  		cost = 5
  		ai_will_do = {

@@ -15,7 +15,7 @@ war_measures = {
  		allowed = {
  			tag = USA
  		}
- 		days_remove = 90
+ 		days_remove = 60
  		cost = 0
  		visible = {
  			always=yes
@@ -42,7 +42,7 @@ war_measures = {
  		allowed = {
  			tag = USA
  		}
- 		days_remove = 90
+ 		days_remove = 60
  		cost = 0
  		visible = {
  			always=yes
@@ -121,7 +121,7 @@ war_measures = {
  		available = {
  			AST = {has_full_control_of_state = 273}
  		}
- 		cost = 10
+ 		cost = 50
  		visible = {
  			has_defensive_war = yes
  		}
@@ -133,19 +133,29 @@ war_measures = {
  					infantry = { x = 0 y = 1 }
  					infantry = { x = 0 y = 2 }
  					infantry = { x = 0 y = 3 }
+ 					infantry = { x = 0 y = 4 }
  					infantry = { x = 1 y = 0 }
  					infantry = { x = 1 y = 1 }
  					infantry = { x = 1 y = 2 }
  					infantry = { x = 1 y = 3 }
+ 					infantry = { x = 1 y = 4 }
  					infantry = { x = 2 y = 0 }
  					infantry = { x = 2 y = 1 }
+ 					infantry = { x = 2 y = 2 }
+ 					infantry = { x = 2 y = 3 }
+ 					infantry = { x = 2 y = 4 }
+ 					infantry = { x = 3 y = 0 }
+ 					infantry = { x = 3 y = 1 }
+ 					infantry = { x = 3 y = 2 }
+ 					infantry = { x = 3 y = 3 }
+ 					infantry = { x = 3 y = 4 }
  				}
  			}
  			273 = {
  				for_loop_effect = {
  					end = 20
  					create_unit = {
- 						division = "name = \"US-Infantry\" division_template = \"US-Infantry\" start_experience_factor = 0.2 start_equipment_factor = 0.001"
+ 						division = "name = \"US-Infantry\" division_template = \"US-Infantry\" start_experience_factor = 0.25 start_equipment_factor = 0.001"
  						owner = USA
  					}
  				}}
@@ -159,7 +169,7 @@ war_measures = {
  		available = {
  			ENG = {has_full_control_of_state = 124}
  		}
- 		cost = 10
+ 		cost = 50
  		visible = {
  			has_defensive_war = yes
  		}
@@ -171,19 +181,29 @@ war_measures = {
  					infantry = { x = 0 y = 1 }
  					infantry = { x = 0 y = 2 }
  					infantry = { x = 0 y = 3 }
+ 					infantry = { x = 0 y = 4 }
  					infantry = { x = 1 y = 0 }
  					infantry = { x = 1 y = 1 }
  					infantry = { x = 1 y = 2 }
  					infantry = { x = 1 y = 3 }
+ 					infantry = { x = 1 y = 4 }
  					infantry = { x = 2 y = 0 }
  					infantry = { x = 2 y = 1 }
+ 					infantry = { x = 2 y = 2 }
+ 					infantry = { x = 2 y = 3 }
+ 					infantry = { x = 2 y = 4 }
+ 					infantry = { x = 3 y = 0 }
+ 					infantry = { x = 3 y = 1 }
+ 					infantry = { x = 3 y = 2 }
+ 					infantry = { x = 3 y = 3 }
+ 					infantry = { x = 3 y = 4 }
  				}
  			}
  			124 = {
  				for_loop_effect = {
  					end = 20
  					create_unit = {
- 						division = "name = \"US-Infantry\" division_template = \"US-Infantry\" start_experience_factor = 0.2 start_equipment_factor = 0.001"
+ 						division = "name = \"US-Infantry\" division_template = \"US-Infantry\" start_experience_factor = 0.25 start_equipment_factor = 0.001"
  						owner = USA
  					}
  				}}	
@@ -197,7 +217,7 @@ war_measures = {
  		available = {
  			RAJ = {has_full_control_of_state = 405}
  		}
- 		cost = 10
+ 		cost = 50
  		visible = {
  			has_defensive_war = yes
  		}
@@ -209,19 +229,29 @@ war_measures = {
  					infantry = { x = 0 y = 1 }
  					infantry = { x = 0 y = 2 }
  					infantry = { x = 0 y = 3 }
+ 					infantry = { x = 0 y = 4 }
  					infantry = { x = 1 y = 0 }
  					infantry = { x = 1 y = 1 }
  					infantry = { x = 1 y = 2 }
  					infantry = { x = 1 y = 3 }
+ 					infantry = { x = 1 y = 4 }
  					infantry = { x = 2 y = 0 }
  					infantry = { x = 2 y = 1 }
+ 					infantry = { x = 2 y = 2 }
+ 					infantry = { x = 2 y = 3 }
+ 					infantry = { x = 2 y = 4 }
+ 					infantry = { x = 3 y = 0 }
+ 					infantry = { x = 3 y = 1 }
+ 					infantry = { x = 3 y = 2 }
+ 					infantry = { x = 3 y = 3 }
+ 					infantry = { x = 3 y = 4 }
  				}
  			}
  			405 = {
  				for_loop_effect = {
  					end = 20
  					create_unit = {
- 						division = "name = \"US-Infantry\" division_template = \"US-Infantry\" start_experience_factor = 0.2 start_equipment_factor = 0.001"
+ 						division = "name = \"US-Infantry\" division_template = \"US-Infantry\" start_experience_factor = 0.25 start_equipment_factor = 0.001"
  						owner = USA
  					}
  				}}	
@@ -235,7 +265,7 @@ war_measures = {
  		available = {
  			FRA = {has_full_control_of_state = 466}
  		}
- 		cost = 10
+ 		cost = 50
  		visible = {
  			has_defensive_war = yes
  		}
@@ -247,19 +277,29 @@ war_measures = {
  					infantry = { x = 0 y = 1 }
  					infantry = { x = 0 y = 2 }
  					infantry = { x = 0 y = 3 }
+ 					infantry = { x = 0 y = 4 }
  					infantry = { x = 1 y = 0 }
  					infantry = { x = 1 y = 1 }
  					infantry = { x = 1 y = 2 }
  					infantry = { x = 1 y = 3 }
+ 					infantry = { x = 1 y = 4 }
  					infantry = { x = 2 y = 0 }
  					infantry = { x = 2 y = 1 }
+ 					infantry = { x = 2 y = 2 }
+ 					infantry = { x = 2 y = 3 }
+ 					infantry = { x = 2 y = 4 }
+ 					infantry = { x = 3 y = 0 }
+ 					infantry = { x = 3 y = 1 }
+ 					infantry = { x = 3 y = 2 }
+ 					infantry = { x = 3 y = 3 }
+ 					infantry = { x = 3 y = 4 }
  				}
  			}
  			466 = {
  				for_loop_effect = {
  					end = 20
  					create_unit = {
- 						division = "name = \"US-Infantry\" division_template = \"US-Infantry\" start_experience_factor = 0.2 start_equipment_factor = 0.001"
+ 						division = "name = \"US-Infantry\" division_template = \"US-Infantry\" start_experience_factor = 0.25 start_equipment_factor = 0.001"
  						owner = USA
  					}
  				}}	
