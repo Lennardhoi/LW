@@ -368,6 +368,18 @@ equipment_modules = {
  	 abbreviation = "tc"
  		category = tank_mechanized_turret_type
  		sfx = sfx_ui_sd_module_turret
+		
+ 		forbid_equipment_type_exact_match_for_category = {
+ 			tank_light_main_armament = armor
+ 		}
+ 		forbid_equipment_type = artillery
+ 		forbid_equipment_type = anti_tank
+ 		forbid_equipment_type = anti_air
+ 		allowed_module_categories = {
+ 			main_armament_slot = {
+ 				tank_secondary_turret
+ 			}
+ 		}
  		multiply_stats = {
  			breakthrough = -0.5
  			build_cost_ic = -0.1
@@ -384,6 +396,7 @@ equipment_modules = {
  		allowed_module_categories = {
  			main_armament_slot = {
  				tank_small_main_armament
+				tank_secondary_turret
  			}
  		}
  		forbid_equipment_type_exact_match_for_category = {
