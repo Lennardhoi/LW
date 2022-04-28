@@ -356,23 +356,6 @@ focus_tree = {
  		available_if_capitulated = yes
  		bypass = {
  		}
- 		complete_tooltip = {
- 			every_state = {
- 				limit = {
- 					OR = {
- 						state = 466
- 						state = 687
- 						state = 580
- 					}
- 					is_owned_or_subject_trigger = yes
- 					OR = {
- 						has_state_flag = FRA_industrial_expansion_target
- 						has_state_flag = FRA_colonial_industry_target
- 					}
- 				}
- 				add_extra_state_shared_building_slots = 2
- 			}
- 		}
  		search_filters = { FOCUS_FILTER_INDUSTRY }
  		completion_reward = {
  			random_state = {
