@@ -6,12 +6,13 @@ buildings = {
 
 
 	infrastructure = {
-		base_cost = 3000
+		base_cost = 4000
+		per_level_extra_cost = 100
 		icon_frame = 3
 		infrastructure = yes
 		max_level = 10
 		value = 1
-
+		infrastructure_construction_effect = yes
 		show_modifier = yes
 		max_fuel_building = 0.3 #k
 	}
@@ -45,10 +46,11 @@ buildings = {
 	air_base = {
 		damage_factor = 0.05
 		show_on_map = 1
-		base_cost = 700
+		base_cost = 1000
 		icon_frame = 5
 		air_base = yes
 		max_level = 20
+		infrastructure_construction_effect = yes
 		value = 1
 		damage_factor = 0.5
 		allied_build = yes
@@ -56,9 +58,10 @@ buildings = {
 
 	supply_node = {
 		show_on_map = 1
-		base_cost = 6000
+		base_cost = 9000
 		provincial = yes
 		disabled_in_dmz = yes
+		infrastructure_construction_effect = yes
 		icon_frame = 15
 		max_level = 1
 		centered = yes
@@ -70,9 +73,10 @@ buildings = {
 	}	
 	
 	rail_way = {
-		base_cost = 250 #higher cost to balance out cheaper supply nodes
+		base_cost = 300 #higher cost to balance out cheaper supply nodes
 		per_level_extra_cost = -25
 		provincial = yes
+		infrastructure_construction_effect = yes
 		disabled_in_dmz = yes
 		icon_frame = 16
 		max_level = 1
@@ -85,9 +89,10 @@ buildings = {
 		show_on_map = 1
 		show_on_map_meshes = 3
 		always_shown = yes
-		base_cost = 6000
+		base_cost = 10000
 		provincial = yes
 		only_costal = yes
+		infrastructure_construction_effect = yes
 		is_port = yes
 		icon_frame = 6
 		max_level = 20
