@@ -587,13 +587,13 @@ NDefines.NSupply.SUPPLY_THRESHOLD_FOR_ARMY_ATTRITION = 0.4 -- armies will only g
 NDefines.NSupply.AVAILABLE_MANPOWER_STATE_SUPPLY = 0.05						--Factor for state supply from max manpower (population)
 NDefines.NSupply.STORED_SUPPLY_CONSUMPTION_RATE_FACTOR = 0.75				--Multiplies consumption rate of stored supply (more/less easement)
 
-NDefines.NRailwayGun.RAILWAY_GUN_RANGE = 40						-- The range of railway guns in pixels
+NDefines.NRailwayGun.RAILWAY_GUN_RANGE = 30						-- The range of railway guns in pixels
 NDefines.NRailwayGun.ATTACK_TO_FORTS_MODIFIER_FACTOR = 1.333		-- Forts modifier is calculated by multiplying railway gun attack value with this and dividing by 100
-NDefines.NRailwayGun.ATTACK_TO_ENTRENCHMENT_MODIFIER_FACTOR = 0.8		-- Entrenchment modifier is calculated by multiplying railway gun attack value with this and dividing by 100
-NDefines.NRailwayGun.ATTACK_TO_BOMBARDMENT_MODIFIER_FACTOR = 0.4	-- Bombardment modifier is calculated by multiplying railway gun attack value with this and dividing by 100
+NDefines.NRailwayGun.ATTACK_TO_ENTRENCHMENT_MODIFIER_FACTOR = 1.0		-- Entrenchment modifier is calculated by multiplying railway gun attack value with this and dividing by 100
+NDefines.NRailwayGun.ATTACK_TO_BOMBARDMENT_MODIFIER_FACTOR = 0.2	-- Bombardment modifier is calculated by multiplying railway gun attack value with this and dividing by 100
 NDefines.NRailwayGun.ANNEX_RATIO = 1								-- How many railway guns will be transferred on annexation
 
-
+NDefines.NAir.RECON_LAND_SPOT_CHANCE = 0.1
 
 
 								-- Number of hours that is considered the "initial phase" of naval combat, used for modifiers like surprise attack during "initial combat"
