@@ -1112,7 +1112,7 @@ focus_tree = {
  		}
  		completion_reward = {
  			hidden_effect = {
- 				every_country = {limit = {check_variable= { speeches_enabled > 0}  }
+ 				every_country = {limit = {check_variable= { speeches_enabled > 0}  OR={is_in_faction_with=ENG tag=SOV }}
  					scoped_sound_effect = "sp_usa_roosevelt"
  				}
  			}
