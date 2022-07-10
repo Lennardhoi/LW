@@ -91,7 +91,9 @@ ideas = {
 				always = no
 			}
 			cancel = {
-				has_war = yes
+				AND={has_war = yes
+				NOT={has_idea=Khalin_Gol_idea}
+				}
 			}
 			removal_cost = -1
 			picture = generic_infantry_bonus

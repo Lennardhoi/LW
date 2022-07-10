@@ -1,0 +1,546 @@
+Khalin_Gol = {
+
+
+JAP_prepare_border_conflict = {
+ 		icon = generic_operation
+ 		allowed = {
+ 			tag = JAP
+ 		}
+ 		fire_only_once = yes
+ 		cost = 25
+		is_good = yes
+ 		visible = {
+ 			always=yes
+ 		}
+		available= {
+		date>1939.2.1
+		}
+		days_remove=90
+ 		complete_effect = {
+ 			every_state = {
+ 				limit={OR={ state=717 state=632 state=536 state=487 state=488 state=633 }}
+ 				add_state_modifier={
+ 					modifier={
+ 						#local_supplies=0.5
+ 						state_production_speed_buildings_factor = 0.50
+ 					}
+ 					}}
+					hidden_effect={
+						SOV={
+							news_event=khalin_gol.1
+						}
+					}
+ 		}
+		remove_effect = {
+		set_country_flag=JAP_border_conflict_prepared
+		every_state = {
+ 				limit={OR={ state=717 state=632 state=536 state=487 state=488 state=633 }}
+ 				add_state_modifier={
+ 					modifier={
+ 						#local_supplies=0.5
+ 						state_production_speed_buildings_factor = -0.50
+ 					}
+ 					}}
+		}
+ 	}
+
+
+
+
+JAP_start_border_conflict = {
+ 		icon = generic_operation
+ 		allowed = {
+ 			tag = JAP
+ 		}
+ 		fire_only_once = yes
+ 		cost = 25
+ 		visible = {
+ 			always=yes
+ 		}
+		available= {
+		date>1939.5.1
+		has_country_flag=JAP_border_conflict_prepared
+		}
+ 		complete_effect = {
+			activate_mission =JAP_Victory
+			activate_mission =SOV_Victory
+			hidden_effect={
+				SOV={
+					activate_mission =JAP_Victory_sov
+					activate_mission =SOV_Victory_sov
+			}
+			}
+ 			JAP={
+			add_ideas=Khalin_Gol_idea	
+			}
+			SOV={
+			add_ideas=Khalin_Gol_idea	
+			}
+			
+			declare_war_on = {
+ 					target = SOV
+ 					type = take_state_focus
+					generator ={717}
+ 				}
+			
+
+ 		}
+ 	}
+
+
+
+SOV_Victory= {
+ 		allowed = {
+ 			original_tag=JAP
+ 		}
+ 		icon = generic_naval
+ 		available = {
+			OR={AND={
+			OR={
+			SOV={
+ 			controls_province = 11943
+			}
+			MON={
+ 			controls_province = 11943
+			}
+			}
+ 			OR={
+			SOV={
+ 			controls_province = 11949
+			}
+			MON={
+ 			controls_province = 11949
+			}
+			}
+			OR={
+			SOV={
+ 			controls_province = 4438
+			}
+			MON={
+ 			controls_province = 4438
+			}
+			}
+			
+			JAP={casualties_k > 50}
+			}
+			
+			JAP={casualties_k > 150}
+		}
+ 		}
+ 		days_mission_timeout = 120
+ 		fire_only_once = no
+ 		is_good = yes
+ 		activation = {
+ 			#has_completed_focus=SOV_move_industry_to_urals
+ 			has_war_with = SOV
+ 			#always=no
+ 		}
+ 		
+ 		
+ 		timeout_effect = {
+ 		custom_effect_tooltip="Status Quo"
+		white_peace=SOV
+		hidden_effect= {
+		JAP={
+			remove_ideas=Khalin_Gol_idea	
+			}
+			SOV={
+			remove_ideas=Khalin_Gol_idea	
+			}
+		}
+		if={limit= {
+			OR={
+			SOV={
+ 			controls_province = 11943
+			}
+			MON={
+ 			controls_province = 11943
+			}
+			}
+ 			OR={
+			SOV={
+ 			controls_province = 11949
+			}
+			MON={
+ 			controls_province = 11949
+			}
+			}
+			OR={
+			SOV={
+ 			controls_province = 4438
+			}
+			MON={
+ 			controls_province = 4438
+			}
+			}
+		
+		}
+		JAP={transfer_state=717}
+			white_peace=SOV
+			hidden_effect ={
+			JAP={
+				remove_ideas=Khalin_Gol_idea	
+				}
+				SOV={
+				remove_ideas=Khalin_Gol_idea	
+				}
+			every_country= {
+				
+			news_event = {
+				id = khalin_gol.3
+			}
+			}
+			}
+			}
+		}
+		
+ 		complete_effect = {
+		SOV={transfer_state=675}
+		white_peace=SOV
+		hidden_effect ={
+			JAP={
+			remove_ideas=Khalin_Gol_idea	
+			}
+			SOV={
+			remove_ideas=Khalin_Gol_idea	
+			}
+			every_country= {
+				news_event = {
+    					id = khalin_gol.3
+				}
+			}
+ 		}
+ 		}
+}
+JAP_Victory= {
+ 		allowed = {
+ 			original_tag=JAP
+ 		}
+ 		icon = generic_naval
+ 		available = {
+			OR={AND={
+			OR={
+			JAP={
+ 			controls_province = 11943
+			}
+			MAN={
+ 			controls_province = 11943
+			}
+			}
+ 			OR={
+			JAP={
+ 			controls_province = 11949
+			}
+			MAN={
+ 			controls_province = 11949
+			}
+			}
+			OR={
+			JAP={
+ 			controls_province = 4438
+			}
+			MAN={
+ 			controls_province = 4438
+			}
+			}
+			
+			JAP={casualties_k > 50}
+			}
+			
+			JAP={casualties_k > 150}
+		}
+ 		}
+ 		days_mission_timeout = 120
+ 		fire_only_once = no
+ 		is_good = yes
+ 		activation = {
+ 			#has_completed_focus=SOV_move_industry_to_urals
+ 			has_war_with = SOV
+ 			#always=no
+ 		}
+ 		timeout_effect = {
+ 		custom_effect_tooltip="Status Quo"
+		white_peace=SOV
+		hidden_effect= {
+		JAP={
+			remove_ideas=Khalin_Gol_idea	
+			}
+			SOV={
+			remove_ideas=Khalin_Gol_idea	
+			}
+		}
+		if={limit= {
+			OR={
+			JAP={
+ 			controls_province = 11943
+			}
+			MAN={
+ 			controls_province = 11943
+			}
+			}
+ 			OR={
+			JAP={
+ 			controls_province = 11949
+			}
+			MAN={
+ 			controls_province = 11949
+			}
+			}
+			OR={
+			JAP={
+ 			controls_province = 4438
+			}
+			MAN={
+ 			controls_province = 4438
+			}
+			}
+		
+		}
+		JAP={transfer_state=717}
+			white_peace=SOV
+			hidden_effect ={
+			JAP={
+				remove_ideas=Khalin_Gol_idea	
+				}
+				SOV={
+				remove_ideas=Khalin_Gol_idea	
+				}
+			every_country= {
+				
+			news_event = {
+				id = khalin_gol.3
+			}
+			}
+			}
+			}
+		}
+ 		complete_effect = {
+			JAP={transfer_state=717}
+			white_peace=SOV
+			hidden_effect ={
+			JAP={
+				remove_ideas=Khalin_Gol_idea	
+				}
+				SOV={
+				remove_ideas=Khalin_Gol_idea	
+				}
+			every_country= {
+				
+			news_event = {
+				id = khalin_gol.3
+			}
+			}
+			}
+ 	}
+}
+JAP_Victory_sov= {
+ 		allowed = {
+ 			original_tag=SOV
+ 		}
+ 		icon = generic_naval
+ 		available = {
+			OR={AND={
+			OR={
+			JAP={
+ 			controls_province = 11943
+			}
+			MAN={
+ 			controls_province = 11943
+			}
+			}
+ 			OR={
+			JAP={
+ 			controls_province = 11949
+			}
+			MAN={
+ 			controls_province = 11949
+			}
+			}
+			OR={
+			JAP={
+ 			controls_province = 4438
+			}
+			MAN={
+ 			controls_province = 4438
+			}
+			}
+			
+			JAP={casualties_k > 50}
+			}
+			
+			JAP={casualties_k > 150}
+		}
+ 		}
+ 		days_mission_timeout = 120
+ 		fire_only_once = no
+ 		is_good = yes
+ 		activation = {
+ 			#has_completed_focus=SOV_move_industry_to_urals
+ 			has_war_with = SOV
+ 			#always=no
+ 		}
+ 		timeout_effect = {
+ 		effect_tooltip= {custom_effect_tooltip="Status Quo"
+		white_peace=SOV
+		hidden_effect= {
+		JAP={
+			remove_ideas=Khalin_Gol_idea	
+			}
+			SOV={
+			remove_ideas=Khalin_Gol_idea	
+			}
+		}
+		if={limit= {
+		JAP={
+ 			controls_province = 11943
+ 			controls_province = 11949
+ 			controls_province = 4438
+			}
+		
+		}
+		JAP={transfer_state=717}
+			white_peace=SOV
+			hidden_effect ={
+			JAP={
+				remove_ideas=Khalin_Gol_idea	
+				}
+				SOV={
+				remove_ideas=Khalin_Gol_idea	
+				}
+			every_country= {
+				
+			news_event = {
+				id = khalin_gol.3
+			}
+			}
+			}
+			}
+		}
+		}
+ 		complete_effect = {
+		effect_tooltip= {
+			JAP={transfer_state=717}
+			white_peace=SOV
+			hidden_effect ={
+			JAP={
+				remove_ideas=Khalin_Gol_idea	
+				}
+				SOV={
+				remove_ideas=Khalin_Gol_idea	
+				}
+			every_country= {
+				
+			news_event = {
+				id = khalin_gol.3
+			}
+			}
+			}}
+ 	}
+}
+SOV_Victory_sov= {
+ 		allowed = {
+ 			original_tag=SOV
+ 		}
+ 		icon = generic_naval
+ 		available = {
+			OR={AND={
+			OR={
+			SOV={
+ 			controls_province = 11943
+			}
+			MON={
+ 			controls_province = 11943
+			}
+			}
+ 			OR={
+			SOV={
+ 			controls_province = 11949
+			}
+			MON={
+ 			controls_province = 11949
+			}
+			}
+			OR={
+			SOV={
+ 			controls_province = 4438
+			}
+			MON={
+ 			controls_province = 4438
+			}
+			}
+			
+			JAP={casualties_k > 50}
+			}
+			
+			JAP={casualties_k > 150}
+		}
+ 		}
+ 		days_mission_timeout = 120
+ 		fire_only_once = no
+ 		is_good = yes
+ 		activation = {
+ 			#has_completed_focus=SOV_move_industry_to_urals
+ 			has_war_with = SOV
+ 			#always=no
+ 		}
+ 		
+ 		
+ 		timeout_effect = {
+		effect_tooltip= {
+ 		custom_effect_tooltip="Status Quo"
+		white_peace=JAP
+		hidden_effect= {
+		JAP={
+			remove_ideas=Khalin_Gol_idea	
+			}
+			SOV={
+			remove_ideas=Khalin_Gol_idea	
+			}
+		}
+		if={limit= {
+		SOV={
+ 			controls_province = 11943
+ 			controls_province = 11949
+ 			controls_province = 4438
+			}
+		
+		}
+		JAP={transfer_state=717}
+			white_peace=JAP
+			hidden_effect ={
+			JAP={
+				remove_ideas=Khalin_Gol_idea	
+				}
+				SOV={
+				remove_ideas=Khalin_Gol_idea	
+				}
+			every_country= {
+				
+			news_event = {
+				id = khalin_gol.3
+			}
+			}
+			}
+			}}
+		}
+		
+ 		complete_effect = {
+		effect_tooltip= {
+		SOV={transfer_state=675}
+		white_peace=JAP
+		hidden_effect ={
+			JAP={
+			remove_ideas=Khalin_Gol_idea	
+			}
+			SOV={
+			remove_ideas=Khalin_Gol_idea	
+			}
+			every_country= {
+				news_event = {
+    					id = khalin_gol.3
+				}
+			}
+ 		}
+ 		}}
+}
+}

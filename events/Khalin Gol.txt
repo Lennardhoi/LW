@@ -1,0 +1,19 @@
+add_namespace = khalin_gol
+news_event = {
+	id = khalin_gol.1
+	title = khalin_gol.1.t
+	desc = khalin_gol.1.d
+	picture = GFX_news_event_001
+	is_triggered_only = yes
+	option = {
+		effect_tooltip={every_state = {
+ 				limit={OR={ state=717 state=632 state=536 state=487 state=488 state=633 }}
+ 				add_state_modifier={
+ 					modifier={
+ 						#local_supplies=0.5
+ 						state_production_speed_buildings_factor = 0.50
+ 					}
+ 					}}
+	}
+	}
+}
