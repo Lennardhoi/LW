@@ -527,7 +527,7 @@ operations = {
  		cost = 0
  		complete_effect = {
  			hidden_effect = {
- 				
+ 				SOV={clear_variable = getting_annexed}
  				every_country = {limit = {check_variable= { speeches_enabled > 0} is_in_faction_with=GER }
  					scoped_sound_effect="sp_von_finnland"
  				}

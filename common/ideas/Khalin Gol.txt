@@ -6,12 +6,27 @@ ideas = {
 			}
 			picture = generic_democratic_drift_bonus
 			removal_cost = -1
+			equipment_bonus = {
+				tac_bomber_equipment = {
+					instant = yes
+					air_defence = -0.25
+				}
+				strat_bomber_equipment = {
+					instant = yes
+					air_defence = -0.25
+				}
+				CAS_equipment = {
+					instant = yes
+					air_defence = -0.25
+				}
+			}
 			modifier = {
+				air_attack_factor =-0.25
 				stability_factor= 0.3
 				war_support_factor = 0.20
 				experience_gain_army_factor = 0.5
-				army_strength_factor = 0.5
-				army_org_factor = 0.5				
+				army_strength_factor = 0.25
+				army_org_factor = 0.25				
 				army_armor_attack_factor = -0.10
 			}
 		}
