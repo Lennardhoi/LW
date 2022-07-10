@@ -164,6 +164,11 @@ set_popularities = {
 	fascism = 1.9
 	communism = 88
 }
+
+set_autonomy = {
+ 		target = MON
+ 		autonomous_state = autonomy_integrated_puppet
+ 	}
 if = { 
 	limit = { has_dlc = "No Step Back" }
 
