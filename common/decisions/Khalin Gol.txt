@@ -14,9 +14,11 @@ JAP_prepare_border_conflict = {
  		}
 		available= {
 		date>1939.2.1
+		date<1940.1.1
 		}
 		days_remove=90
  		complete_effect = {
+		set_country_flag=JAP_border_conflict_prepared_dmz
  			every_state = {
  				limit={OR={ state=717 state=632 state=536 state=487 state=488 state=633 }}
  				add_state_modifier={
@@ -59,9 +61,11 @@ JAP_start_border_conflict = {
  		}
 		available= {
 		date>1939.5.1
+		date<1940.5.1
 		has_country_flag=JAP_border_conflict_prepared
 		}
  		complete_effect = {
+			set_country_flag=JAP_border_conflict_started
 			activate_mission =JAP_Victory
 			activate_mission =SOV_Victory
 			hidden_effect={
@@ -141,6 +145,7 @@ SOV_Victory= {
  		timeout_effect = {
  		custom_effect_tooltip="Status Quo"
 		white_peace=SOV
+		set_country_flag=JAP_border_conflict_ended
 		hidden_effect= {
 		SOV={pow_before_annex=yes}
 		JAP={pow_before_annex=yes}
@@ -198,6 +203,7 @@ SOV_Victory= {
 		}
 		
  		complete_effect = {
+		set_country_flag=JAP_border_conflict_ended
 		SOV={transfer_state=675}
 		white_peace=SOV
 		hidden_effect ={
@@ -249,10 +255,10 @@ JAP_Victory= {
 			}
 			}
 			
-			JAP={casualties_k > 50}
+			SOV={casualties_k > 50}
 			}
 			
-			JAP={casualties_k > 150}
+			SOV={casualties_k > 150}
 		}
  		}
  		days_mission_timeout = 120
@@ -266,6 +272,7 @@ JAP_Victory= {
  		timeout_effect = {
  		custom_effect_tooltip="Status Quo"
 		white_peace=SOV
+		set_country_flag=JAP_border_conflict_ended
 		hidden_effect= {
 		
 		SOV={pow_before_annex=yes}
@@ -323,6 +330,7 @@ JAP_Victory= {
 			}
 		}
  		complete_effect = {
+		set_country_flag=JAP_border_conflict_ended
 			JAP={transfer_state=717}
 			white_peace=SOV
 			hidden_effect ={
@@ -373,10 +381,10 @@ JAP_Victory_sov= {
 			}
 			}
 			
-			JAP={casualties_k > 50}
+			SOV={casualties_k > 50}
 			}
 			
-			JAP={casualties_k > 150}
+			SOV={casualties_k > 150}
 		}
  		}
  		days_mission_timeout = 120

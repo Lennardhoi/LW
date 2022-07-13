@@ -8,6 +8,13 @@ on_actions = {
 					set_demilitarized_zone = yes
 				}
 			}
+			if={
+				limit ={ JAP ={has_country_flag=JAP_border_conflict_prepared_dmz NOT={has_country_flag=JAP_border_conflict_ended}}}
+				every_state= {
+					limit = { OR={ state=635 state=632 state=375 state=376 } is_demilitarized_zone = no}
+					set_demilitarized_zone = yes
+				}
+			}
 		}
 	}
 }
