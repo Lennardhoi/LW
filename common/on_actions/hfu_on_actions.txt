@@ -26,6 +26,8 @@ on_actions = {
 				}
 				GER = {	
 					change_tag_from = ITA
+				}
+				GER = {	
 					annex_country = {
 						target = ITA
 						transfer_troops = yes
@@ -83,6 +85,13 @@ on_actions = {
 			}}
 	on_startup = {
 	effect= {
+		ITA={
+		every_navy_leader={
+		add_trait = {
+     		trait = double_green_water_expert
+			}
+		}
+		}
 		ENG = {
 			every_owned_state = {
 				limit={is_core_of = ENG}

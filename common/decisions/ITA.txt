@@ -52,6 +52,53 @@ operations = {
  			}
  		}
  	}
+
+ 	ITA_desert_supply = {
+ 		icon = ger_reichskommissariats
+ 		fire_only_once = no
+ 		allowed = { OR={tag = ITA tag=GER}}
+ 		available = { ITA={controls_state=413}}
+ 		visible={has_war=yes}
+ 		cost = 0
+ 		complete_effect = {
+ 			413={add_building_construction = {
+		type = supply_node
+		level = 1
+		instant_build = yes
+		province = 1064
+		}}
+		581={add_building_construction = {
+		type = supply_node
+		level = 1
+		instant_build = yes
+		province = 4618
+		}}
+		414={add_building_construction = {
+		type = supply_node
+		level = 1
+		instant_build = yes
+		province = 7370
+		}}
+ 			build_railway = {
+  			level = 1
+  			#build_only_on_allied = yes
+  			
+  fallback = yes
+  path = { 1064 9164 6674 3926 1094 }
+  start_province = 1064
+  target_province = 1094
+}
+build_railway = {
+  			level = 1
+  			#build_only_on_allied = yes
+  			
+  fallback = yes
+  path = { 3793 10975 9296 9226 3783 987 1064  }
+  start_province = 3793
+  target_province = 1064
+}
+ 		}
+ 	}
  }
  foreign_politics = {
  	ITA_support_luftwaffe = {

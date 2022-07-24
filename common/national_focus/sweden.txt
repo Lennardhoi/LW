@@ -331,6 +331,13 @@ focus_tree = {
  		relative_position_id = NDA_resource5
  		available_if_capitulated = yes
  		completion_reward = {
+			ITA={
+		every_navy_leader={
+		remove_trait = {
+     		trait = double_green_water_expert
+			}
+		}
+		}
  			every_country={
  				limit={is_playable_country=yes}
  				

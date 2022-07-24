@@ -1832,6 +1832,29 @@ leader_traits = {
 		trait_type = basic_terrain_trait
 		gui_row = 4
 	}
+	
+	double_green_water_expert = {
+		type = navy
+		gain_xp = {
+			always = no # not gainable
+		}
+
+		cost = 1000
+		modifier = {
+			water_shallow_sea = {
+				attack = 0.1
+				movement = 0.1
+				defence = 0.1
+			}
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		trait_type = personality_trait
+		gui_row = 4
+	}
 
 
 	#  #  ##  #   #  ##  #       ###  ### ###   ##  ##  #  #  ##  #   ### ### #   #     ### ###   ##  ### ###  ##
