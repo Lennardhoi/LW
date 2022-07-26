@@ -52,7 +52,7 @@ NDefines.NTrade.BASE_LAND_TRADE_RANGE = 350
 --NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_MAX_DISRUPTION_DAMAGE_TO_CONSIDER     15.0     see above
 --NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_DIRECT_DISRUPTION_DAMAGE_FACTOR     0.01     Disruption damage to supply throughput done by bombing damage, not dependent on killing trains which also causes disruption.
 --NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_TRUCK_MAX_FACTOR     0.0     max trucks we can destroy in one instance of a logistics strike
-NDefines.NAir.AIR_WING_MAX_SIZE = 1600                            -- this can be halved 4 times into 100 stacks (very convinient), up from 1600 | 
+NDefines.NAir.AIR_WING_MAX_SIZE = 100                            -- this can be halved 4 times into 100 stacks (very convinient), up from 1600 | 
 NDefines.NAir.AIR_DEPLOYMENT_DAYS = 0                              -- Down from 3 | Makes AC player much more responsive
 NDefines.NAir.AIR_WING_BOMB_DAMAGE_FACTOR = 1.4 --controlls strat bombing damage was too strong on 5 but might need to be high to actually damage something
 NDefines.NAir.DETECT_CHANCE_FROM_OCCUPATION = 0.2
