@@ -52,7 +52,7 @@ NDefines.NTrade.BASE_LAND_TRADE_RANGE = 350
 --NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_MAX_DISRUPTION_DAMAGE_TO_CONSIDER     15.0     see above
 --NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_DIRECT_DISRUPTION_DAMAGE_FACTOR     0.01     Disruption damage to supply throughput done by bombing damage, not dependent on killing trains which also causes disruption.
 --NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_TRUCK_MAX_FACTOR     0.0     max trucks we can destroy in one instance of a logistics strike
-NDefines.NAir.AIR_WING_MAX_SIZE = 1600                            -- this can be halved 4 times into 100 stacks (very convinient), up from 1600 | 
+NDefines.NAir.AIR_WING_MAX_SIZE = 100                            -- this can be halved 4 times into 100 stacks (very convinient), up from 1600 | 
 NDefines.NAir.AIR_DEPLOYMENT_DAYS = 0                              -- Down from 3 | Makes AC player much more responsive
 NDefines.NAir.AIR_WING_BOMB_DAMAGE_FACTOR = 1.4 --controlls strat bombing damage was too strong on 5 but might need to be high to actually damage something
 NDefines.NAir.DETECT_CHANCE_FROM_OCCUPATION = 0.2
@@ -270,7 +270,8 @@ NDefines.NCountry.REINFORCEMENT_EQUIPMENT_DELIVERY_SPEED = 0.65
 NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 25
 NDefines.NCountry.REINFORCEMENT_MANPOWER_CHUNK = 0.08
 NDefines.NCountry.AIR_SUPPLY_CONVERSION_SCALE = 0.01
-
+NDefines.NCountry.MAX_PROPAGANDA_STABILITY_IMPACT = 0
+NDefines.NCountry.MAX_PROPAGANDA_WAR_SUPPORT_IMPACT = 0
 NDefines.NBuildings.INFRA_TO_SUPPLY = 0.95
 NDefines.NCountry.VP_TO_SUPPLY_BASE = 0
 NDefines.NCountry.VP_TO_SUPPLY_BONUS_CONVERSION = 1
