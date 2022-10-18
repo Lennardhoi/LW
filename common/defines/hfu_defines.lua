@@ -1,4 +1,63 @@
 --Horst defines:
+--BBA DLC changes
+NDefines.NCountry.BASE_STABILITY_WAR_FACTOR = -0.3
+NDefines.NCountry.WAR_SUPPORT_DEFENSIVE_WAR = 0.3
+NDefines.NCountry.WAR_SUPPORT_TENSION_IMPACT = 0.3
+NDefines.NCountry.FEMALE_UNIT_LEADER_BASE_CHANCE = {
+		-- applies as a factor to female unit leader randomization
+		-- the values needs to be zero if you don't actually have random portraits
+		0.0, -- country leaders
+		0.0, -- army leaders
+		0.0, -- navy leaders
+		0.0, -- air leaders
+		1.0, -- operatives
+}
+NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 4.75
+
+NDefines.NMilitary.CASUALTIES_WS_P_PENALTY_DIVISOR = 200							--Divisor for casualties WS penalty
+NDefines.NMilitary.CASUALTIES_WS_A_PENALTY_DIVISOR = 600							--Divisor for casualties WS penalty
+	
+NDefines.NMilitary.PIERCING_THRESHOLDS = {					-- Our piercing / their armor must be this value to deal damage fraction equal to the index in the array below [higher number = higher penetration]. If armor is 0, 1.00 will be returned.
+		1.00,
+		0.75,
+		0.50,
+		0.00, --there isn't much point setting this higher than 0
+	}
+NDefines.NMilitary.PIERCING_THRESHOLD_DAMAGE_VALUES = {	-- 0 armor will always receive maximum damage (so add overmatching at your own peril). the system expects at least 2 values, with no upper limit.
+		1.00,
+		0.80,
+		0.65,
+		0.50,
+	}
+
+NDefines.NMilitary.DIVISIONAL_COMMANDER_TRAIT_XP_REQUIREMENT = 600.0	--Get a trait if any valid options & xp gained >= this
+NDefines.NMilitary.NUM_DAYS_FOR_OPERATION_ENTRY = 60					--Number of days that a unit must have been on a particular active order instance to receive a history entry.
+NDefines.NMilitary.MAX_LEADERS_TO_SHOW = 20							--Max officers to show in field officers list, sorted by field EXP. Divisions with awardable entries will potentially supercede this limit
+NDefines.NMilitary.BASE_FEMALE_DIVISIONAL_COMMANDER_CHANCE = 0		--Chance to receive a female divisonal commander. This is set to zero in the base game, as we do not have generic female portraits for many graphical culture groups.
+														--this expects a value between 0 and 1 and is added to by female_divisional_commander_chance. If you don't have female generic portraits defined, you -will- get silhouettes.
+
+NDefines.NMilitary.DIVISIONAL_COMMANDER_RANK_XP_THRESHOLD = { 		-- XP thresholds for divisional commander ranks. [TAG]_DIVISION_EXPERIENCE_TITLE_ARMY_EXPERIENCE_[array index]
+		0,
+		100.0,
+		300.0,
+		600.0,
+		1000.0,
+	}
+	
+NDefines.NMilitary.VPS_FOR_HISTORY_ENTRY = 3					-- Minimum VPs required to receive an entry in divisional history
+NDefines.NMilitary.PS_FOR_HIGH_HISTORY_ENTRY = 8			-- VPs required for high-level history entry
+NDefines.NMilitary.ENTRIES_TO_CHECK_FOR_DUPLICATE = 2		-- Max number of history entries to check back to see if we're being awarded the same entry
+NDefines.NMilitary.COST_INCREASE_PER_ACTIVE_MEDAL = 0.25		-- Additional cost factor per active medal
+NDefines.NMilitary.MAX_ENTRY_ELISION_COUNT = 4			-- If we do the same type of thing consecutively, each entry will stack locations up to this number
+NDefines.NMilitary.GENERATE_AI_DIV_COMMAND_HISTORY_ENTRIES = false	--Should we generate history entries for the AI (may cause savegame bloat)
+NDefines.NMilitary.FIELD_EXPERIENCE_ON_DIVISION_MULT = 0.03	-- Multiply field experience gained by this, when applying to divisional commander
+NDefines.NMilitary.MAX_FIELD_EXPERIENCE_ON_DIVISION = 8000	-- Max experience that can be gained on divisional commanders
+NDefines.NMilitary.FIELD_EXPERIENCE_ON_DIVISION_PER_MEDAL_MULT = 0.1	--Multiply officer field experience gain by this * number of division medals on application
+NDefines.NMilitary.HISTORY_OPERATION_RANDOM_MAX = 24			-- max random int to roll when determining whether to grant an awardable entry for operations. 1/N chances.
+NDefines.NMilitary.CASUALTY_COUNT_FOR_HISTORY_ENTRY = 40000	-- number of received casualties to receive a history entry (one only)
+NDefines.NMilitary.FIELD_OFFICER_PROMOTION_PENALTY = 0.0		--Amount of division experience lost when promoting a commander (reduced by modifiers)
+	
+NDefines.NMilitary.HISTORICAL_ORDER_NAME_EXHAUSTION = false	-- Do historically chosen order instances exhaust their case names? If false ie, Operation Barbarossa will appear for any orders fulfilling the conditions for Germany
 
 --------------------------------------------------------------
 ---nukes
@@ -31,12 +90,12 @@ NDefines.NMilitary.LAND_COMBAT_ORG_ARMOR_ON_SOFT_DICE_SIZE = 5   --vanilla 6 -->
 NDefines.NDiplomacy.VOLUNTEERS_PER_TARGET_PROVINCE = 0
 NDefines.NDiplomacy.VOLUNTEERS_PER_COUNTRY_ARMY = 0
 NDefines.NCountry.EVENT_PROCESS_OFFSET = 30
-NDefines.NCountry.AIR_VOLUNTEER_PLANES_LIMIT = 0
+NDefines.NCountry.AIR_VOLUNTEER_PLANES_RATIO = 0
 NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 20
 NDefines.NAI.DIPLOMACY_SEND_EXPEDITIONARY_BASE = 0
 NDefines.NProduction.BASE_FACTORY_EFFICIENCY_ARCHETYPE_CHANGE_FACTOR = 30
 NDefines.NProduction.CONVERSION_SPEED_BONUS = 0
-NDefines.NProduction.MIN_LAND_EQUIPMENT_CONVERSION_IC_COST_FACTOR=1
+NDefines.NProduction.BASE_LAND_EQUIPMENT_CONVERSION_IC_COST_FACTOR=1
 ---------------------------------------------------------------
 NDefines.NTrade.ANTI_MONOPOLY_TRADE_FACTOR = -1			-- was -100 | This is added to the factor value when anti-monopoly threshold is exceeded; cucks Soviets/Japan often if the value is vanilla
 NDefines.NTrade.BASE_LAND_TRADE_RANGE = 350	
@@ -53,6 +112,7 @@ NDefines.NTrade.BASE_LAND_TRADE_RANGE = 350
 --NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_DIRECT_DISRUPTION_DAMAGE_FACTOR     0.01     Disruption damage to supply throughput done by bombing damage, not dependent on killing trains which also causes disruption.
 --NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_TRUCK_MAX_FACTOR     0.0     max trucks we can destroy in one instance of a logistics strike
 NDefines.NAir.AIR_WING_MAX_SIZE = 100                            -- this can be halved 4 times into 100 stacks (very convinient), up from 1600 | 
+NDefines.NAir.AIR_WING_AVERAGE_SIZE = 100
 NDefines.NAir.AIR_DEPLOYMENT_DAYS = 0                              -- Down from 3 | Makes AC player much more responsive
 NDefines.NAir.AIR_WING_BOMB_DAMAGE_FACTOR = 2 --controlls strat bombing damage was too strong on 5 but might need to be high to actually damage something
 NDefines.NAir.DETECT_CHANCE_FROM_OCCUPATION = 0.2
