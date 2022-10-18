@@ -46,27 +46,9 @@ NDefines.NNavy.BASE_GUN_COOLDOWNS = { -- number of hours for a gun to be ready a
 		1.0,	-- torpedos
 		1.0,	-- small guns
 	}
-NDefines.NNavy.HIT_PROFILE_SPEED_FACTOR										= 1		-- factors speed value when determining it profile (Vis * HIT_PROFILE_MULT * Ship Hit Profile Mult) prev: vis/speed now: vis/(speed*HIT_PROFILE_SPEED_FACTOR+HIT_PROFILE_SPEED_BASE). wird immer noch gesquared
-NDefines.NNavy.HIT_PROFILE_SPEED_BASE											= 0		-- Base value added to hitprofile speed calulation
 
 NDefines.NNavy.COMBAT_ARMOR_PIERCING_DAMAGE_REDUCTION = -0.95 --vanilla -0.9
-NDefines.NNavy.NAVY_PIERCING_THRESHOLDS = {					-- Our piercing / their armor must be this value to deal damage fraction equal to the index in the array below [higher number = higher penetration]. If armor is 0, 1.00 will be returned.
-		2.00,
-		1.00,
-		0.75,
-		0.50,
-		0.10,
-		0.00 --there isn't much point setting this higher than 0
-	}
 
-NDefines.NNavy.NAVY_PIERCING_THRESHOLD_CRITICAL_VALUES = {	-- 0 armor will always receive maximum damage (so add overmatching at your own peril). the system expects at least 2 values, with no upper limit.
-		2.00,
-		1.00,
-		0.75,
-		0.50,
-		0.10,
-		0.00 -- For criticals, you could reduce crit chance unlike damage in army combat, but we do not for now.
-	}
 NDefines.NNavy.COMBAT_MIN_DURATION = 12
 
 NDefines.NNavy.INITIAL_ALLOWED_DOCKYARD_RATIO_FOR_REPAIRS = 1
