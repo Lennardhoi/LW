@@ -2570,6 +2570,18 @@ guiTypes = {
 		}
 
 		buttonType = {
+			name = "btn_x10"
+			position = { x=278 y=30	 }
+			quadTextureSprite = "GFX_btn_x10"
+			clicksound = click_close
+		}
+		buttonType = {
+			name = "btn_x5"
+			position = { x=278 y=68	 }
+			quadTextureSprite = "GFX_btn_x5"
+			clicksound = click_close
+		}
+		buttonType = {
 			name = "increase_priority"
 			position = { x=5 y=48 }
 			quadTextureSprite = "GFX_arrow_up_small"
@@ -3255,23 +3267,6 @@ guiTypes = {
 			position = { x=@prod_add_pos_x y=2 }
 			quadTextureSprite = "GFX_add_10"
 			font = "hoi_16mbs"
-			clicksound = click_default
-		}
-		buttonType = {
-			name = "increase_priority"
-			position = { x=5 y=48 }
-			quadTextureSprite = "GFX_arrow_up_small"
-			pdx_tooltip = "PRODUCTION_INCREASE_PRIORITY_LABEL"
-			pdx_tooltip_delayed = "PRODUCTION_PRIORITY_DELAYED"
-			clicksound = click_default
-		}
-		
-		buttonType = {
-			name = "decrease_priority"
-			position = { x=5 y=75	 }
-			quadTextureSprite = "GFX_arrow_down_small"
-			pdx_tooltip = "PRODUCTION_DECREASE_PRIORITY_LABEL"
-			pdx_tooltip_delayed = "PRODUCTION_PRIORITY_DELAYED"
 			clicksound = click_default
 		}
 
