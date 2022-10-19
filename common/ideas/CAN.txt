@@ -1,5 +1,19 @@
 ideas = {
 	country = {
+		BUL_army_restrictions= {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = great_depression
+			modifier = {
+				industrial_capacity_factory = -0.30
+				industrial_capacity_dockyard = -0.30
+			}
+		}
 		CAN_great_depression_1 = {
 			allowed = {
 				always = no

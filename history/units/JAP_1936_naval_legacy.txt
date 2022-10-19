@@ -58,10 +58,7 @@ units = {
 			name = "1 Koku Sentai"
 			location =9181
 			ship = { name = "Ryujo" definition = carrier equipment = { carrier_1 = {amount = 1 owner = JAP} }
-				air_wings = {
-					cv_fighter_equipment_0 =  { owner = "JAP" amount = 18 }
-					cv_CAS_equipment_1 = { owner = "JAP" amount = 12 }
-				}
+				
 			}
 			ship = { name = "Asakaze" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
 			ship = { name = "Harukaze" definition = destroyer equipment = { destroyer_1 = {amount = 1 owner = JAP} } }
@@ -99,11 +96,7 @@ units = {
 			ship = { name = "Aoba" definition = heavy_cruiser equipment = { heavy_cruiser_1 = {amount = 1 owner = JAP} } }
 			ship = { name = "Kinugasa" definition = heavy_cruiser equipment = { heavy_cruiser_1 = {amount = 1 owner = JAP} } }
 			ship = { name = "Kaga" definition = carrier equipment = { carrier_1 = {amount = 1 owner = JAP version_name = "Akagi Class"} }
-				air_wings = {
-					cv_fighter_equipment_0 =  { owner = "JAP" amount = 12 }
-					cv_CAS_equipment_1 = { owner = "JAP" amount = 12 }
-					cv_nav_bomber_equipment_1 =  { owner = "JAP" amount = 21 }
-				}
+				
 			}
 		}
 		task_force = {
