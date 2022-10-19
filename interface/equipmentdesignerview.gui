@@ -727,18 +727,13 @@ guiTypes = {
 					position = { x = 0 y = 0 }
 				}
 
-				gridBoxType = {
-					name = "equipments_grid"
-					position = { x = 8 y = 0 }
-					size = { width = 199 height = 100%% }
-					slotsize = { width = 220 height = 50 }
-					max_slots_horizontal = 1
-					format = "UPPER_LEFT"
-
-					# contains designer_equipment_entry
-
-				}
-			}
+		buttonType = {
+			name = "toggle_comparison_button"
+			position = {x=-97 y=4}
+			spriteType = "GFX_equip_overview_button"
+			orientation = "UPPER_RIGHT"
+			clicksound = click_default
+			pdx_tooltip = "EQUIPMENT_COMPARISON"
 		}
 
 		buttonType = {
