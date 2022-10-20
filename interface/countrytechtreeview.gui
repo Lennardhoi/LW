@@ -4105,7 +4105,14 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "air_techs_folder_tab"
-				position = { x = 705 y = 0 }
+				position = { x = 672 y = 0 }
+				quadTextureSprite = "GFX_air_techs_folder_tab"
+				frame = 1
+				clicksound = ui_research_tab_air
+			}
+			buttonType = {
+				name = "bba_air_techs_folder_tab"
+				position = { x = 745 y = 0 }
 				quadTextureSprite = "GFX_air_techs_folder_tab"
 				frame = 1
 				clicksound = ui_research_tab_air
@@ -5091,7 +5098,7 @@ guiTypes = {
 		position = { x=-60 y=0 }
 		size = { width = 183 height = 84 }
 		clipping = no
-
+		
 		background = {
 			name = "Background"
 			quadTextureSprite ="GFX_technology_unavailable_item_bg"
@@ -5108,7 +5115,7 @@ guiTypes = {
 			maxHeight = 20
 			fixedsize = yes
 			format = left
-		}
+	}
 
 		iconType = {
 			name = "Icon"
