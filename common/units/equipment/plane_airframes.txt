@@ -212,6 +212,10 @@ equipments = {
 		weight = 3
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
+		upgrades = {
+ 			plane_engine_upgrade
+ 			plane_armor_upgrade
+ 		}
 	}
 
 	small_plane_airframe_1 = { #Basic
@@ -222,7 +226,10 @@ equipments = {
 		archetype = small_plane_airframe
 		parent = small_plane_airframe_0
 		priority = 5
-
+		upgrades = {
+ 			plane_engine_upgrade
+ 			plane_armor_upgrade
+ 		}
 		air_range = 650
 		maximum_speed = 0
 		air_agility = 50
@@ -299,7 +306,10 @@ equipments = {
 		archetype = small_plane_airframe
 		parent = small_plane_airframe_1
 		priority = 5
-
+		upgrades = {
+ 			plane_engine_upgrade
+ 			plane_armor_upgrade
+ 		}
 		air_range = 900
 		maximum_speed = 0
 		air_agility = 65
@@ -399,7 +409,10 @@ equipments = {
 		abbreviation = "afs3"
 		derived_variant_name = fighter_equipment_3
 		year = 1942
-
+		upgrades = {
+ 			plane_engine_upgrade
+ 			plane_armor_upgrade
+ 		}
 		archetype = small_plane_airframe
 		parent = small_plane_airframe_2
 		priority = 5
@@ -510,7 +523,10 @@ equipments = {
 		abbreviation = "afs4"
 		derived_variant_name = jet_fighter_equipment_1 # We should use "jet" for this or any of the ones below, but this is good enough for now.
 		year = 1945
-
+		upgrades = {
+ 			plane_engine_upgrade
+ 			plane_armor_upgrade
+ 		}
 		archetype = small_plane_airframe
 		parent = small_plane_airframe_3
 		priority = 5
@@ -628,7 +644,10 @@ equipments = {
 				has_idea = BUL_army_restrictions
 			}
 		}
-
+		upgrades = {
+ 			plane_engine_upgrade
+ 			plane_armor_upgrade
+ 		}
 		is_archetype = yes
 		is_convertable = yes
 		carrier_capable = yes
@@ -827,7 +846,10 @@ equipments = {
 		archetype = cv_small_plane_airframe
 		module_slots = inherit
 		priority = 5
-
+		upgrades = {
+ 			plane_engine_upgrade
+ 			plane_armor_upgrade
+ 		}
 		air_range = 450
 		maximum_speed = 0
 		air_agility = 40
@@ -845,7 +867,10 @@ equipments = {
 		archetype = cv_small_plane_airframe
 		parent = cv_small_plane_airframe_0
 		priority = 5
-
+		upgrades = {
+ 			plane_engine_upgrade
+ 			plane_armor_upgrade
+ 		}
 		air_range = 570
 		maximum_speed = 0
 		air_agility = 45
@@ -917,7 +942,10 @@ equipments = {
 		abbreviation = "afc2"
 		derived_variant_name = cv_fighter_equipment_2
 		year = 1939
-
+		upgrades = {
+ 			plane_engine_upgrade
+ 			plane_armor_upgrade
+ 		}
 		archetype = cv_small_plane_airframe
 		parent = cv_small_plane_airframe_1
 		priority = 5
@@ -1020,7 +1048,10 @@ equipments = {
 		abbreviation = "afc3"
 		derived_variant_name = cv_fighter_equipment_3
 		year = 1942
-
+		upgrades = {
+ 			plane_engine_upgrade
+ 			plane_armor_upgrade
+ 		}
 		archetype = cv_small_plane_airframe
 		parent = cv_small_plane_airframe_2
 		priority = 5
@@ -1129,7 +1160,10 @@ equipments = {
 	cv_small_plane_airframe_4 = { #modern
 		abbreviation = "afc4"
 		year = 1945
-
+		upgrades = {
+ 			plane_engine_upgrade
+ 			plane_armor_upgrade
+ 		}
 		archetype = cv_small_plane_airframe
 		parent = cv_small_plane_airframe_3
 		priority = 5
@@ -1246,7 +1280,10 @@ equipments = {
 				has_idea = BUL_army_restrictions
 			}
 		}
-
+		upgrades = {
+ 			plane_engine_upgrade
+ 			plane_armor_upgrade
+ 		}
 		is_archetype = yes
 		is_convertable = yes
 		picture = archetype_strat_bomber_equipment
@@ -1486,7 +1523,10 @@ equipments = {
 		archetype = medium_plane_airframe
 		module_slots = inherit
 		priority = 5
-
+		upgrades = {
+ 			plane_engine_upgrade
+ 			plane_armor_upgrade
+ 		}
 		air_range = 1200
 		maximum_speed = 0
 		air_agility = 15
@@ -1504,7 +1544,10 @@ equipments = {
 		archetype = medium_plane_airframe
 		parent = medium_plane_airframe_0
 		priority = 5
-
+		upgrades = {
+ 			plane_engine_upgrade
+ 			plane_armor_upgrade
+ 		}
 		air_range = 2200
 		maximum_speed = 0
 		air_agility = 30
@@ -1631,7 +1674,10 @@ equipments = {
 		archetype = medium_plane_airframe
 		parent = medium_plane_airframe_1
 		priority = 5
-
+		upgrades = {
+ 			plane_engine_upgrade
+ 			plane_armor_upgrade
+ 		}
 		air_range = 2400
 		maximum_speed = 0
 		air_agility = 35
@@ -1770,7 +1816,10 @@ equipments = {
 		abbreviation = "afm3"
 		derived_variant_name = tac_bomber_equipment_3
 		year = 1942
-
+		upgrades = {
+ 			plane_engine_upgrade
+ 			plane_armor_upgrade
+ 		}
 		archetype = medium_plane_airframe
 		parent = medium_plane_airframe_2
 		priority = 5
@@ -1925,7 +1974,10 @@ equipments = {
 		abbreviation = "afm4"
 		derived_variant_name = jet_tac_bomber_equipment_1
 		year = 1945
-
+		upgrades = {
+ 			plane_engine_upgrade
+ 			plane_armor_upgrade
+ 		}
 		archetype = medium_plane_airframe
 		parent = medium_plane_airframe_3
 		priority = 5
@@ -2084,7 +2136,10 @@ equipments = {
 				has_idea = BUL_army_restrictions
 			}
 		}
-
+		upgrades = {
+ 			plane_engine_upgrade
+ 			plane_armor_upgrade
+ 		}
 		is_archetype = yes
 		is_convertable = yes
 		picture = archetype_strat_bomber_equipment

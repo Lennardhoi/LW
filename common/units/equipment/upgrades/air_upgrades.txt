@@ -10,6 +10,16 @@ upgrades = {
 		reliability = -0.1
 		air_agility = -0.05
 	}
+	plane_armor_upgrade = {
+		max_level = 5
+
+		cost = air				# This determies how much XP it will cost, controlled by defines, there are 3 cost types: air, land and naval
+
+		air_attack = 0.1
+		maximum_speed = -0.01
+		reliability = -0.1
+		air_agility = -0.05
+	}
 	cv_plane_gun_upgrade = {
 		max_level = 5
 
