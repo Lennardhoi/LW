@@ -317,7 +317,7 @@ create_equipment_variant = {
 		fixed_ship_engine_slot = light_ship_engine_1
 		fixed_ship_torpedo_slot = ship_torpedo_1
 		mid_1_custom_slot = ship_torpedo_1
-		rear_1_custom_slot = empty
+		rear_1_custom_slot = ship_torpedo_1
 	}
 	obsolete = yes
 }
@@ -350,7 +350,7 @@ create_equipment_variant = {
 		fixed_ship_radar_slot = empty
 		fixed_ship_engine_slot = light_ship_engine_2
 		fixed_ship_torpedo_slot = ship_torpedo_1
-		mid_1_custom_slot = empty
+		mid_1_custom_slot = ship_torpedo_1
 		rear_1_custom_slot = ship_depth_charge_1
 	}
 }
@@ -366,8 +366,8 @@ create_equipment_variant = {
 		fixed_ship_radar_slot = empty
 		fixed_ship_engine_slot = light_ship_engine_2
 		fixed_ship_torpedo_slot = empty
-		mid_1_custom_slot = empty
-		rear_1_custom_slot = empty
+		mid_1_custom_slot = ship_torpedo_1
+		rear_1_custom_slot = ship_torpedo_1
 	}
 }
 # Light Cruisers #
@@ -385,6 +385,7 @@ create_equipment_variant = {
 		mid_1_custom_slot = ship_light_medium_battery_1
 		mid_2_custom_slot = empty
 		rear_1_custom_slot = empty
+		fixed_ship_armor_slot = ship_armor_cruiser_1
 	}
 	obsolete = yes
 }
@@ -402,6 +403,7 @@ create_equipment_variant = {
 		mid_1_custom_slot = ship_light_medium_battery_1
 		mid_2_custom_slot = ship_torpedo_1
 		rear_1_custom_slot = empty
+		fixed_ship_armor_slot = ship_armor_cruiser_1
 	}
 }
 create_equipment_variant = {
@@ -418,6 +420,7 @@ create_equipment_variant = {
 		mid_1_custom_slot = empty
 		mid_2_custom_slot = empty
 		rear_1_custom_slot = empty
+		fixed_ship_armor_slot = ship_armor_cruiser_1
 	}
 }
 # Heavy Cruisers #
