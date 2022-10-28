@@ -381,6 +381,7 @@ NDefines.NMilitary.NAVAL_INVASION_PLANNING_BONUS_GAIN = 0.01		-- Planning Bonus 
 NDefines.NMilitary.TRAINING_MAX_DAILY_COUNTRY_EXP = 0.08		-- Maximum army XP gained per day from training
 -------------------------------------
 --Air changes
+NDefines.NAir.COMBAT_BETTER_SPEED_DAMAGE_INCREASE = 0.60
 NDefines.NAir.SUPPLY_NEED_FACTOR=0.01
 NDefines.NAir.CAPACITY_PENALTY=0.869
 NDefines.NAir.CAS_NIGHT_ATTACK_FACTOR = 0.5
@@ -393,7 +394,7 @@ NDefines.NAir.FIELD_EXPERIENCE_SCALE = 0.002 --0.001 in vanilla
 NDefines.NAir.FIELD_EXPERIENCE_MAX_PER_DAY = 3 --2 in vanilla
 NDefines.NAir.BOMBING_TARGETING_RANDOM_FACTOR = 0.75  --0.001 in vanilla
 NDefines.NAir.AIR_WING_COUNTRY_XP_FROM_TRAINING_FACTOR = 0.0025 --Vanilla 0,005
-
+NDefines.NAir.COMBAT_DAMAGE_STATS_MULTILPIER = 1
 NDefines.NAir.EFFICIENCY_REGION_CHANGE_PENALTY_FACTOR = 1.0				-- Penalty applied for changing region
 NDefines.NAir.EFFICIENCY_REGION_CHANGE_DAILY_GAIN_TACTICAL_BOMBER = 0.144	-- How much efficiency to regain per day. Gain applied hourly.
 NDefines.NAir.ACE_WING_SIZE_MAX_BONUS = 1                        -- WAS 10, lowered to prevent some exploits with aces | biggest bonus we can get from having a small wing with an ace on
