@@ -19,14 +19,45 @@ NDefines.NMilitary.CASUALTIES_WS_A_PENALTY_DIVISOR = 600							--Divisor for cas
 	
 NDefines.NMilitary.PIERCING_THRESHOLDS = {					-- Our piercing / their armor must be this value to deal damage fraction equal to the index in the array below [higher number = higher penetration]. If armor is 0, 1.00 will be returned.
 		1.00,
+		0.99,
+		0.98,
+		0.97,
+		0.96,
+		0.95,
+		0.9,
+		0.85,
+		0.80,
 		0.75,
+		0.65,
+		0.6,
+		0.55,
 		0.50,
+		0.40,
+		0.30,
+		0.20,
+		0.10,
 		0.00, --there isn't much point setting this higher than 0
 	}
 NDefines.NMilitary.PIERCING_THRESHOLD_DAMAGE_VALUES = {	-- 0 armor will always receive maximum damage (so add overmatching at your own peril). the system expects at least 2 values, with no upper limit.
 		1.00,
-		0.80,
-		0.65,
+		0.95,
+		0.929,
+		0.913,
+		0.90,
+		0.888,
+		0.84,
+		0.806,
+		0.776,
+		0.75,
+		0.726,
+		0.704,
+		0.684,
+		0.665,
+		0.646,
+		0.61,
+		0.58,
+		0.55,
+		0.53,
 		0.50,
 	}
 
@@ -85,8 +116,12 @@ NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 500
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 100
 NDefines.NGame.GAME_SPEED_SECONDS = { 600.0, 0.5, 0.17, 0.04, 0  } -- game speeds for each level. Must be 5 entries with last one 0 for unbound
  -- game speeds for each level. Must be 5 entries with last one 0 for unbound
-
-NDefines.NMilitary.LAND_COMBAT_ORG_ARMOR_ON_SOFT_DICE_SIZE = 5   --vanilla 6 --> 20% bonus damage instead of 40% extra damage dice if our armor outclasses enemy
+NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 2
+NDefines.NMilitary.LAND_COMBAT_ORG_ARMOR_ON_SOFT_DICE_SIZE = 4   --kein bonus damage mehr--vanilla 6 --> 20% bonus damage instead of 40% extra damage dice if our armor outclasses enemy 
+--LAND_COMBAT_STR_ARMOR_ON_SOFT_DICE_SIZE = 2,   -- extra damage dice if our armor outclasses enemy
+--	LAND_COMBAT_ORG_ARMOR_ON_SOFT_DICE_SIZE = 6,   -- extra damage dice if our armor outclasses enemy
+--	LAND_COMBAT_STR_ARMOR_DEFLECTION_FACTOR = 0.5, -- no effect only used for tooltip
+--	LAND_COMBAT_ORG_ARMOR_DEFLECTION_FACTOR = 0.5, -- no effect only used for tooltip
 NDefines.NDiplomacy.VOLUNTEERS_PER_TARGET_PROVINCE = 0
 NDefines.NDiplomacy.VOLUNTEERS_PER_COUNTRY_ARMY = 0
 NDefines.NCountry.EVENT_PROCESS_OFFSET = 30
@@ -95,7 +130,7 @@ NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 20
 NDefines.NAI.DIPLOMACY_SEND_EXPEDITIONARY_BASE = 0
 NDefines.NProduction.BASE_FACTORY_EFFICIENCY_ARCHETYPE_CHANGE_FACTOR = 30
 NDefines.NProduction.CONVERSION_SPEED_BONUS = 0
-NDefines.NProduction.BASE_LAND_EQUIPMENT_CONVERSION_IC_COST_FACTOR=1
+NDefines.NProduction.BASE_LAND_EQUIPMENT_CONVERSION_IC_COST_FACTOR=0.1
 ---------------------------------------------------------------
 NDefines.NTrade.ANTI_MONOPOLY_TRADE_FACTOR = -1			-- was -100 | This is added to the factor value when anti-monopoly threshold is exceeded; cucks Soviets/Japan often if the value is vanilla
 NDefines.NTrade.BASE_LAND_TRADE_RANGE = 350	
