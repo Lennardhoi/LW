@@ -738,9 +738,6 @@ technologies = {
 
 		enable_equipment_modules = {
 			bomb_locks
-			small_bomb_bay
-			medium_bomb_bay
-			large_bomb_bay
 		}
 		
 		research_cost = 1
@@ -748,11 +745,23 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 0 y = 2 }
+			position = { x = 2 y = 2 }
 		}
 
 		path = {
 			leads_to_tech = photo_reconnaisance
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = cas_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = nav_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tac_1
 			research_cost_coeff = 1
 		}
 		
@@ -774,7 +783,351 @@ technologies = {
 			}
 		}
 	}
+	cas_1 = {
 
+		enable_equipment_modules = {
+			small_bomb_bay
+			medium_bomb_bay
+			large_bomb_bay
+		}
+		
+		research_cost = 1
+		start_year = 1922
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 0 y = 4 }
+		}
+
+		path = {
+			leads_to_tech = cas_2
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_bombs
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					has_tech = iw_small_airframe
+					has_tech = iw_medium_airframe
+					has_tech = iw_large_airframe
+				}
+				factor = 5
+			}
+		}
+	}
+	
+	cas_2 = {
+
+		enable_equipment_modules = {
+			#small_bomb_bay
+			#medium_bomb_bay
+			#large_bomb_bay
+		}
+		
+		research_cost = 1
+		start_year = 1922
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 0 y = 6 }
+		}
+
+		path = {
+			leads_to_tech = cas_3
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_bombs
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					has_tech = iw_small_airframe
+					has_tech = iw_medium_airframe
+					has_tech = iw_large_airframe
+				}
+				factor = 5
+			}
+		}
+	}
+	cas_3 = {
+
+		enable_equipment_modules = {
+			#small_bomb_bay
+			#medium_bomb_bay
+			#large_bomb_bay
+		}
+		
+		research_cost = 1
+		start_year = 1922
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 0 y = 8 }
+		}
+
+		path = {
+			leads_to_tech = cas_1
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_bombs
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					has_tech = iw_small_airframe
+					has_tech = iw_medium_airframe
+					has_tech = iw_large_airframe
+				}
+				factor = 5
+			}
+		}
+	}
+	nav_1 = {
+
+		enable_equipment_modules = {
+			small_bomb_bay
+			medium_bomb_bay
+			large_bomb_bay
+		}
+		
+		research_cost = 1
+		start_year = 1922
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 2 y = 4 }
+		}
+
+		path = {
+			leads_to_tech = nav_2
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_bombs
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					has_tech = iw_small_airframe
+					has_tech = iw_medium_airframe
+					has_tech = iw_large_airframe
+				}
+				factor = 5
+			}
+		}
+	}
+	nav_2 = {
+
+		enable_equipment_modules = {
+			small_bomb_bay
+			medium_bomb_bay
+			large_bomb_bay
+		}
+		
+		research_cost = 1
+		start_year = 1922
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 2 y = 6 }
+		}
+
+		path = {
+			leads_to_tech = nav_3
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_bombs
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					has_tech = iw_small_airframe
+					has_tech = iw_medium_airframe
+					has_tech = iw_large_airframe
+				}
+				factor = 5
+			}
+		}
+	}
+	nav_3 = {
+
+		enable_equipment_modules = {
+			small_bomb_bay
+			medium_bomb_bay
+			large_bomb_bay
+		}
+		
+		research_cost = 1
+		start_year = 1922
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 2 y = 8 }
+		}
+
+		
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_bombs
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					has_tech = iw_small_airframe
+					has_tech = iw_medium_airframe
+					has_tech = iw_large_airframe
+				}
+				factor = 5
+			}
+		}
+	}
+	
+	tac_1 = {
+
+		enable_equipment_modules = {
+			small_bomb_bay
+			medium_bomb_bay
+			large_bomb_bay
+		}
+		
+		research_cost = 1
+		start_year = 1922
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 4 y = 4 }
+		}
+
+		path = {
+			leads_to_tech = tac_2
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_bombs
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					has_tech = iw_small_airframe
+					has_tech = iw_medium_airframe
+					has_tech = iw_large_airframe
+				}
+				factor = 5
+			}
+		}
+	}
+	tac_2 = {
+
+		enable_equipment_modules = {
+			small_bomb_bay
+			medium_bomb_bay
+			large_bomb_bay
+		}
+		
+		research_cost = 1
+		start_year = 1922
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 4 y = 6 }
+		}
+
+		path = {
+			leads_to_tech = tac_3
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_bombs
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					has_tech = iw_small_airframe
+					has_tech = iw_medium_airframe
+					has_tech = iw_large_airframe
+				}
+				factor = 5
+			}
+		}
+	}
+	tac_3 = {
+
+		enable_equipment_modules = {
+			small_bomb_bay
+			medium_bomb_bay
+			large_bomb_bay
+		}
+		
+		research_cost = 1
+		start_year = 1922
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 4 y = 8 }
+		}
+
+		
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_bombs
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					has_tech = iw_small_airframe
+					has_tech = iw_medium_airframe
+					has_tech = iw_large_airframe
+				}
+				factor = 5
+			}
+		}
+	}
 	photo_reconnaisance = {
 
 		enable_equipment_modules = {
@@ -786,7 +1139,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 2 y = 2 }
+			position = { x = 4 y = 2 }
 		}
 
 		allow_branch = { has_dlc = "La Resistance" }
@@ -821,7 +1174,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 0 y = 2 }
+			position = { x = 4 y = 2 }
 		}
 
 		path = {
@@ -867,7 +1220,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = -2 y = 5 }
+			position = { x = 2 y =4 }
 		}
 
 		categories = {
@@ -908,7 +1261,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 0 y = 5 }
+			position = { x = 4 y = 4 }
 		}
 		path = {
 			leads_to_tech = aa_cannon_2
@@ -959,7 +1312,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 0 y = 7 }
+			position = { x = 4 y = 6 }
 		}
 
 		categories = {
@@ -999,7 +1352,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 2 y = 5 }
+			position = { x = 6 y = 4 }
 		}
 
 		categories = {
@@ -1042,7 +1395,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 2 y = 7 }
+			position = { x = 6 y = 6 }
 		}
 
 		categories = {
@@ -1090,7 +1443,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 0 y = 2 }
+			position = { x = 5 y = 2 }
 		}
 
 		path = {
@@ -1161,7 +1514,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 0 y = 4 }
+			position = { x = 5 y = 4 }
 		}
 
 		path = {
@@ -1215,7 +1568,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 0 y = 6 }
+			position = { x = 5 y = 6 }
 		}
 
 		path = {
@@ -1269,7 +1622,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 0 y = 8 }
+			position = { x = 5 y = 8 }
 		}
 
 		categories = {
@@ -1317,7 +1670,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 2 y = 4 }
+			position = { x = 7 y = 4 }
 		}
 
 		categories = {
@@ -1374,7 +1727,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = -2 y = 2 }
+			position = { x = 3 y = 4 }
 		}
 
 		categories = {
@@ -1403,7 +1756,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = -2 y = 4 }
+			position = { x = 3 y = 4 }
 		}
 
 		categories = {
@@ -1447,7 +1800,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = -2 y = 6 }
+			position = { x = 3 y = 6 }
 		}
 
 		categories = {
@@ -1491,7 +1844,7 @@ technologies = {
 
 		#folder = {
 		#	name = air_techs_folder
-		#	position = { x = -2 y = 8 }
+		#	position = { x = 3 y = 8 }
 		#}
 		
 		ai_will_do = {
