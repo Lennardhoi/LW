@@ -539,6 +539,9 @@ equipment_modules = {
 			build_cost_ic = 1
 			weight = 1
 		}
+        multiply_stats = {
+            air_agility = -0.02
+        }
 		#xp_cost = 1
 		allow_mission_type = {
 			air_superiority
@@ -557,6 +560,9 @@ equipment_modules = {
 			build_cost_ic = 2
 			weight = 2
 		}
+        multiply_stats = {
+            air_agility = -0.05
+        }
 		#xp_cost = 2
 		allow_mission_type = {
 			air_superiority
@@ -578,6 +584,9 @@ equipment_modules = {
 			air_attack = 12
 			build_cost_ic = 1.5
 			weight = 2
+            multiply_stats = {
+            air_agility = -0.04
+        }
 		}
 		#xp_cost = 1
 		allow_mission_type = {
@@ -598,7 +607,7 @@ equipment_modules = {
 			weight = 4
 		}
         multiply_stats = {
-            air_agility = -0.06
+            air_agility = -0.1
             }
 		#xp_cost = 2
 		allow_mission_type = {
@@ -630,6 +639,9 @@ equipment_modules = {
 			build_cost_ic = 3
 			weight = 4
 		}
+        multiply_stats = {
+            air_agility = -0.04
+        }
 		#xp_cost = 1
 		allow_mission_type = {
 			air_superiority
@@ -649,7 +661,7 @@ equipment_modules = {
 			weight = 8
 		}
         multiply_stats = {
-            air_agility = -0.08
+            air_agility = -0.12
         }
 		#xp_cost = 2
 		allow_mission_type = {
@@ -680,7 +692,10 @@ equipment_modules = {
 			air_attack = 12
 			build_cost_ic = 4
 			weight = 5
-		}        
+		}  
+            multiply_stats = {
+            air_agility = -0.05
+        }
 		#xp_cost = 1
 		allow_mission_type = {
 			air_superiority
@@ -708,7 +723,7 @@ equipment_modules = {
 			weight = 10
 		}
         multiply_stats = {
-            air_agility = -0.10
+            air_agility = -0.15
         }
 		#xp_cost = 2
 		allow_mission_type = {

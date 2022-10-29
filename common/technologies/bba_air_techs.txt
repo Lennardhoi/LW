@@ -833,11 +833,6 @@ technologies = {
 			leads_to_tech = aa_cannon_1
 			research_cost_coeff = 1
 		}
-
-		path = {
-			leads_to_tech = survivability_studies
-			research_cost_coeff = 1
-		}
 		
 		categories = {
 			air_equipment
@@ -858,51 +853,6 @@ technologies = {
 		}
 	}
 
-	survivability_studies = {
-
-		enable_equipment_modules = {
-			self_sealing_fuel_tanks_small
-			self_sealing_fuel_tanks_medium
-			self_sealing_fuel_tanks_large
-			armor_plate_small
-			armor_plate_medium
-			armor_plate_large
-		}
-		
-		research_cost = 1
-		start_year = 1936
-
-		folder = {
-			name = bba_air_techs_folder
-			position = { x = -2 y = 4 }
-		}
-
-		categories = {
-			air_equipment
-			plane_modules_tech
-		}
-		
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				date > "1937.1.1"
-				factor = 1.5
-			}
-			modifier = {
-				date > "1938.1.1"
-				factor = 1.5
-			}
-			modifier = {
-				date > "1939.1.1"
-				factor = 3
-			}
-			modifier = {
-				has_War = yes
-				factor = 3
-			}
-		}
-	}
-
 	aa_hmg = {
 
 		enable_equipment_modules = {
@@ -917,7 +867,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 0 y = 5 }
+			position = { x = -2 y = 5 }
 		}
 
 		categories = {
@@ -958,10 +908,14 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 2 y = 5 }
+			position = { x = 0 y = 5 }
 		}
 		path = {
 			leads_to_tech = aa_cannon_2
+			research_cost_coeff = 1
+		}
+        path = {
+			leads_to_tech = tank_buster_1
 			research_cost_coeff = 1
 		}
 		categories = {
@@ -1005,7 +959,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 2 y = 7 }
+			position = { x = 0 y = 7 }
 		}
 
 		categories = {
@@ -1014,6 +968,92 @@ technologies = {
 			cat_air_guns
 		}
 		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					has_tech = improved_small_airframe
+					has_tech = improved_medium_airframe
+					has_tech = improved_large_airframe
+				}
+				factor = 5
+			}
+			modifier = {
+				OR = {
+					tag = GER
+					tag = SOV
+					tag = ENG
+				}
+				factor = 3
+			}
+		}
+	}
+    tank_buster_1 = {
+
+		enable_equipment_modules = {
+			tank_buster_1
+		}
+		
+		research_cost = 1.5
+		start_year = 1939
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 2 y = 5 }
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cas_bomber
+		}
+		path = {
+			leads_to_tech = tank_buster_2
+			research_cost_coeff = 1
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					has_tech = improved_small_airframe
+					has_tech = improved_medium_airframe
+					has_tech = improved_large_airframe
+				}
+				factor = 5
+			}
+			modifier = {
+				OR = {
+					tag = GER
+					tag = SOV
+					tag = ENG
+				}
+				factor = 3
+			}
+		}
+	}
+    tank_buster_2 = {
+
+		enable_equipment_modules = {
+			tank_buster_2
+		}
+		
+		research_cost = 1.5
+		start_year = 1942
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 2 y = 7 }
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cas_bomber
+		}
+		path = {
+			leads_to_tech = tank_buster_2
+			research_cost_coeff = 1
+		}
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -1061,9 +1101,8 @@ technologies = {
 		path = {
 			leads_to_tech = range_improvements
 			research_cost_coeff = 1
-		}
-
-		path = {
+		}       
+        path = {
 			leads_to_tech = aircraft_construction
 			research_cost_coeff = 1
 		}
@@ -1331,11 +1370,11 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 1936
+		start_year = 1933
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = -2 y = 4 }
+			position = { x = -2 y = 2 }
 		}
 
 		categories = {
@@ -1346,8 +1385,96 @@ technologies = {
 		ai_will_do = {
 			factor = 5
 		}
+		path = {
+			leads_to_tech = survivability_studies
+			research_cost_coeff = 1
+		}
 	}
+	survivability_studies = {
 
+		enable_equipment_modules = {
+			armor_plate_small
+			armor_plate_medium
+			armor_plate_large
+		}
+		
+		research_cost = 1
+		start_year = 1938
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = -2 y = 4 }
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+		}
+		path = {
+			leads_to_tech = self_sealing_fuel_tanks
+			research_cost_coeff = 1
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				date > "1937.1.1"
+				factor = 1.5
+			}
+			modifier = {
+				date > "1938.1.1"
+				factor = 1.5
+			}
+			modifier = {
+				date > "1939.1.1"
+				factor = 3
+			}
+			modifier = {
+				has_War = yes
+				factor = 3
+			}
+		}
+	}
+    self_sealing_fuel_tanks = {
+
+		enable_equipment_modules = {
+			self_sealing_fuel_tanks_small
+			self_sealing_fuel_tanks_medium
+			self_sealing_fuel_tanks_large
+		}
+		
+		research_cost = 1
+		start_year = 1940
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = -2 y = 6 }
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				date > "1937.1.1"
+				factor = 1.5
+			}
+			modifier = {
+				date > "1938.1.1"
+				factor = 1.5
+			}
+			modifier = {
+				date > "1939.1.1"
+				factor = 3
+			}
+			modifier = {
+				has_War = yes
+				factor = 3
+			}
+		}
+	}
 	suicide_charge = {
 
 		enable_equipment_modules = {
