@@ -738,6 +738,7 @@ technologies = {
 
 		enable_equipment_modules = {
 			bomb_locks
+			medium_bomb_bay
 		}
 		
 		research_cost = 1
@@ -787,8 +788,6 @@ technologies = {
 
 		enable_equipment_modules = {
 			small_bomb_bay
-			medium_bomb_bay
-			large_bomb_bay
 		}
 		
 		research_cost = 1
@@ -904,9 +903,7 @@ technologies = {
 	nav_1 = {
 
 		enable_equipment_modules = {
-			small_bomb_bay
-			medium_bomb_bay
-			large_bomb_bay
+			torpedo_mounting
 		}
 		
 		research_cost = 1
@@ -943,9 +940,7 @@ technologies = {
 	nav_2 = {
 
 		enable_equipment_modules = {
-			small_bomb_bay
-			medium_bomb_bay
-			large_bomb_bay
+			torpedo_mounting2
 		}
 		
 		research_cost = 1
@@ -982,9 +977,7 @@ technologies = {
 	nav_3 = {
 
 		enable_equipment_modules = {
-			small_bomb_bay
-			medium_bomb_bay
-			large_bomb_bay
+			torpedo_mounting3
 		}
 		
 		research_cost = 1
@@ -1018,8 +1011,6 @@ technologies = {
 	tac_1 = {
 
 		enable_equipment_modules = {
-			small_bomb_bay
-			medium_bomb_bay
 			large_bomb_bay
 		}
 		
@@ -1057,8 +1048,6 @@ technologies = {
 	tac_2 = {
 
 		enable_equipment_modules = {
-			small_bomb_bay
-			medium_bomb_bay
 			large_bomb_bay
 		}
 		
@@ -1575,6 +1564,10 @@ technologies = {
 			leads_to_tech = engines_4
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = fuel_injection
+			research_cost_coeff = 1
+		}
 
 		categories = {
 			air_equipment
@@ -1606,7 +1599,101 @@ technologies = {
 			}
 		}
 	}
+	fuel_injection = {
 
+		enable_equipment_modules = {
+			fuel_injection	
+		}
+		
+		research_cost = 1.5
+		start_year = 1940
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 7 y = 6 }
+		}
+
+		path = {
+			leads_to_tech = fuel_injection2
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+		}
+		
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				is_major = yes
+				factor = 2
+			}
+			modifier = {
+				num_of_military_factories < 10
+				factor = 0
+			}
+			modifier = {
+				date > "1941.1.1"
+				factor = 1.5
+			}
+			modifier = {
+				date > "1942.1.1"
+				factor = 1.5
+			}
+			modifier = {
+				date > "1943.1.1"
+				factor = 3
+			}
+		}
+	}
+	
+	fuel_injection2 = {
+
+		enable_equipment_modules = {
+			fuel_injection	
+		}
+		
+		research_cost = 1.5
+		start_year = 1940
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 7 y = 8 }
+		}
+
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+		}
+		
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				is_major = yes
+				factor = 2
+			}
+			modifier = {
+				num_of_military_factories < 10
+				factor = 0
+			}
+			modifier = {
+				date > "1941.1.1"
+				factor = 1.5
+			}
+			modifier = {
+				date > "1942.1.1"
+				factor = 1.5
+			}
+			modifier = {
+				date > "1943.1.1"
+				factor = 3
+			}
+		}
+	}
 	engines_4 = {
 
 		enable_equipment_modules = {
@@ -1756,7 +1843,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 3 y = 4 }
+			position = { x = 3 y = 6 }
 		}
 
 		categories = {
@@ -1800,7 +1887,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 3 y = 6 }
+			position = { x = 3 y = 8 }
 		}
 
 		categories = {

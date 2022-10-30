@@ -1042,6 +1042,69 @@ equipment_modules = {
 		}
 		dismantle_cost_ic = 1.5
 	}
+	torpedo_mounting2 = {
+		abbreviation = "tpm"
+		category = nav_bomber_weapon
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = { naval_bomber maritime_patrol_plane }
+
+		add_stats = {
+			build_cost_ic = 4
+		}
+		##xp_cost = 2
+		allow_mission_type = {
+			naval_bomber
+			port_strike
+			naval_patrol
+		}
+		mission_type_stats = {
+			limit = {
+				naval_bomber
+				port_strike
+			}
+			add_stats = {
+				air_agility = -15
+				weight = 8
+				naval_strike_attack = 12
+			}
+			add_average_stats = {
+				naval_strike_targetting = 5
+			}
+		}
+		dismantle_cost_ic = 1.5
+	}
+	
+	torpedo_mounting3 = {
+		abbreviation = "tpm"
+		category = nav_bomber_weapon
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = { naval_bomber maritime_patrol_plane }
+
+		add_stats = {
+			build_cost_ic = 4
+		}
+		##xp_cost = 2
+		allow_mission_type = {
+			naval_bomber
+			port_strike
+			naval_patrol
+		}
+		mission_type_stats = {
+			limit = {
+				naval_bomber
+				port_strike
+			}
+			add_stats = {
+				air_agility = -15
+				weight = 8
+				naval_strike_attack = 12
+			}
+			add_average_stats = {
+				naval_strike_targetting = 5
+			}
+		}
+		dismantle_cost_ic = 1.5
+	}
 
 	recon_camera = {
 		abbreviation = "rca"
