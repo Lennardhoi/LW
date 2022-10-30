@@ -13,6 +13,7 @@ equipments = {
 		is_convertable = yes
 		picture = archetype_fighter_equipment
 		is_buildable = no
+		carrier_capable = yes
 		type = fighter
 		type_override = fixed_main_weapon_slot
 		allowed_types = {
@@ -55,13 +56,13 @@ equipments = {
 			}
 
 			fixed_auxiliary_weapon_slot_1 = { 
-				required = no
+				required = yes
 				allowed_module_categories = {
-					recon_camera
+					#recon_camera
 					fighter_weapon
-					cas_weapon
-					nav_bomber_weapon
-					kamikaze_bomber_weapon
+					#cas_weapon
+					#nav_bomber_weapon
+					#kamikaze_bomber_weapon
 				}
 			}
 
@@ -263,12 +264,12 @@ equipments = {
 			fixed_auxiliary_weapon_slot_1 = { 
 				required = no
 				allowed_module_categories = {
-					recon_camera
+					#recon_camera
 					fighter_weapon
-					cas_weapon
-					nav_bomber_weapon
-					mine_warfare_offense
-					kamikaze_bomber_weapon
+					#cas_weapon
+					#nav_bomber_weapon
+					#mine_warfare_offense
+					#kamikaze_bomber_weapon
 				}
 			}
 
@@ -343,18 +344,18 @@ equipments = {
 			fixed_auxiliary_weapon_slot_1 = { 
 				required = no
 				allowed_module_categories = {
-					recon_camera
+					#recon_camera
 					fighter_weapon
-					cas_weapon
-					nav_bomber_weapon
-					mine_warfare_offense
-					kamikaze_bomber_weapon
+					#cas_weapon
+					#nav_bomber_weapon
+					#mine_warfare_offense
+					#kamikaze_bomber_weapon
 				}
 			}
 			fixed_auxiliary_weapon_slot_2 = { 
 				required = no
 				allowed_module_categories = {
-                    plane_special_module_defense_turret
+                    			#plane_special_module_defense_turret
 					recon_camera
 					fighter_weapon
 					cas_weapon
@@ -452,12 +453,12 @@ equipments = {
 			fixed_auxiliary_weapon_slot_1 = { 
 				required = no
 				allowed_module_categories = {
-					recon_camera
+					#recon_camera
 					fighter_weapon
-					cas_weapon
-					nav_bomber_weapon
-					mine_warfare_offense
-					kamikaze_bomber_weapon
+					#cas_weapon
+					#nav_bomber_weapon
+					#mine_warfare_offense
+					#kamikaze_bomber_weapon
 				}
 			}
 			fixed_auxiliary_weapon_slot_2 = { 
@@ -566,12 +567,12 @@ equipments = {
 			fixed_auxiliary_weapon_slot_1 = { 
 				required = no
 				allowed_module_categories = {
-					recon_camera
+					#recon_camera
 					fighter_weapon
-					cas_weapon
-					nav_bomber_weapon
-					mine_warfare_offense
-					kamikaze_bomber_weapon
+					#cas_weapon
+					#nav_bomber_weapon
+					#mine_warfare_offense
+					#kamikaze_bomber_weapon
 				}
 			}
 			fixed_auxiliary_weapon_slot_2 = { 
