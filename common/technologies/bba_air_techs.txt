@@ -7,10 +7,10 @@ technologies = {
 			small_plane_cas_airframe_0
 			small_plane_naval_bomber_airframe_0
 			small_plane_suicide_airframe_0
-			cv_small_plane_airframe_0
-			cv_small_plane_cas_airframe_0
-			cv_small_plane_naval_bomber_airframe_0
-			cv_small_plane_suicide_airframe_0
+			#cv_small_plane_airframe_0
+			#cv_small_plane_cas_airframe_0
+			#cv_small_plane_naval_bomber_airframe_0
+			#cv_small_plane_suicide_airframe_0
 		}
 		
 	
@@ -56,10 +56,10 @@ technologies = {
 			small_plane_cas_airframe_1
 			small_plane_naval_bomber_airframe_1
 			small_plane_suicide_airframe_1
-			cv_small_plane_airframe_1
-			cv_small_plane_cas_airframe_1
-			cv_small_plane_naval_bomber_airframe_1
-			cv_small_plane_suicide_airframe_1
+			#cv_small_plane_airframe_1
+			#cv_small_plane_cas_airframe_1
+			#cv_small_plane_naval_bomber_airframe_1
+			#cv_small_plane_suicide_airframe_1
 		}
 	
 		path = {
@@ -125,10 +125,10 @@ technologies = {
 			small_plane_cas_airframe_2
 			small_plane_naval_bomber_airframe_2
 			small_plane_suicide_airframe_2
-			cv_small_plane_airframe_2
-			cv_small_plane_cas_airframe_2
-			cv_small_plane_naval_bomber_airframe_2
-			cv_small_plane_suicide_airframe_2
+			#cv_small_plane_airframe_2
+			#cv_small_plane_cas_airframe_2
+			#cv_small_plane_naval_bomber_airframe_2
+			#cv_small_plane_suicide_airframe_2
 		}
 	
 		path = {
@@ -200,10 +200,10 @@ technologies = {
 			small_plane_cas_airframe_3
 			small_plane_naval_bomber_airframe_3
 			small_plane_suicide_airframe_3
-			cv_small_plane_airframe_3
-			cv_small_plane_cas_airframe_3
-			cv_small_plane_naval_bomber_airframe_3
-			cv_small_plane_suicide_airframe_3
+			#cv_small_plane_airframe_3
+			#cv_small_plane_cas_airframe_3
+			#cv_small_plane_naval_bomber_airframe_3
+			#cv_small_plane_suicide_airframe_3
 		}
 		
 		path = {
@@ -265,10 +265,10 @@ technologies = {
 			small_plane_cas_airframe_4
 			small_plane_naval_bomber_airframe_4
 			small_plane_suicide_airframe_4
-			cv_small_plane_airframe_4
-			cv_small_plane_cas_airframe_4
-			cv_small_plane_naval_bomber_airframe_4
-			cv_small_plane_suicide_airframe_4
+			#cv_small_plane_airframe_4
+			#cv_small_plane_cas_airframe_4
+			#cv_small_plane_naval_bomber_airframe_4
+			#cv_small_plane_suicide_airframe_4
 		}
 
 		dependencies = {
@@ -825,9 +825,7 @@ technologies = {
 	cas_2 = {
 
 		enable_equipment_modules = {
-			#small_bomb_bay
-			#medium_bomb_bay
-			#large_bomb_bay
+			cluster_bombs
 		}
 		
 		research_cost = 1
@@ -864,9 +862,7 @@ technologies = {
 	cas_3 = {
 
 		enable_equipment_modules = {
-			#small_bomb_bay
-			#medium_bomb_bay
-			#large_bomb_bay
+			rocket_rails
 		}
 		
 		research_cost = 1
@@ -1012,6 +1008,7 @@ technologies = {
 
 		enable_equipment_modules = {
 			large_bomb_bay
+			medium_bomb_bay
 		}
 		
 		research_cost = 1
@@ -1048,7 +1045,7 @@ technologies = {
 	tac_2 = {
 
 		enable_equipment_modules = {
-			large_bomb_bay
+			large_bomb
 		}
 		
 		research_cost = 1
@@ -1085,9 +1082,7 @@ technologies = {
 	tac_3 = {
 
 		enable_equipment_modules = {
-			small_bomb_bay
-			medium_bomb_bay
-			large_bomb_bay
+			guided_anti_ship_missile
 		}
 		
 		research_cost = 1
@@ -1652,11 +1647,11 @@ technologies = {
 	fuel_injection2 = {
 
 		enable_equipment_modules = {
-			fuel_injection	
+			fuel_injection2	
 		}
 		
 		research_cost = 1.5
-		start_year = 1940
+		start_year = 1942
 
 		folder = {
 			name = bba_air_techs_folder
