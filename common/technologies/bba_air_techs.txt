@@ -30,9 +30,6 @@ technologies = {
 		categories = {
 			light_air
 			light_fighter
-			cas_bomber
-			naval_air
-			naval_bomber
 			air_equipment
 		}
 
@@ -78,9 +75,6 @@ technologies = {
 		categories = {
 			light_air
 			light_fighter
-			cas_bomber
-			naval_air
-			naval_bomber
 			air_equipment
 		}
 		
@@ -151,9 +145,6 @@ technologies = {
 		categories = {
 			light_air
 			light_fighter
-			cas_bomber
-			naval_air
-			naval_bomber
 			air_equipment
 		}
 		
@@ -222,9 +213,6 @@ technologies = {
 		categories = {
 			light_air
 			light_fighter
-			cas_bomber
-			naval_air
-			naval_bomber
 			air_equipment
 		}
 		
@@ -286,11 +274,7 @@ technologies = {
 		categories = {
 			light_air
 			light_fighter
-			cas_bomber
 			air_equipment
-			naval_air
-			naval_bomber
-			jet_technology
 		}
 
 		ai_will_do = {
@@ -328,8 +312,6 @@ technologies = {
 		
 		categories = {
 			medium_air
-			tactical_bomber
-			cat_heavy_fighter
 			air_equipment
 		}
 		
@@ -361,8 +343,6 @@ technologies = {
 		
 		categories = {
 			medium_air
-			tactical_bomber
-			cat_heavy_fighter
 			air_equipment
 		}
 		
@@ -417,8 +397,6 @@ technologies = {
 		
 		categories = {
 			medium_air
-			tactical_bomber
-			cat_heavy_fighter
 			air_equipment
 		}
 		
@@ -473,8 +451,6 @@ technologies = {
 		
 		categories = {
 			medium_air
-			tactical_bomber
-			cat_heavy_fighter
 			air_equipment
 		}
 		
@@ -523,9 +499,7 @@ technologies = {
 		
 		categories = {
 			medium_air
-			jet_technology
-			cat_heavy_fighter
-			tactical_bomber
+			air_equipment
 		}
 		
 		ai_will_do = {
@@ -559,7 +533,6 @@ technologies = {
 		categories = {
 			heavy_air
 			air_equipment
-			cat_strategic_bomber
 		}
 		
 		ai_will_do = {
@@ -599,7 +572,6 @@ technologies = {
 		categories = {
 			heavy_air
 			air_equipment
-			cat_strategic_bomber
 		}
 		
 		ai_will_do = {
@@ -639,7 +611,6 @@ technologies = {
 		categories = {
 			heavy_air
 			air_equipment
-			cat_strategic_bomber
 		}
 		
 		ai_will_do = {
@@ -679,7 +650,6 @@ technologies = {
 		categories = {
 			heavy_air
 			air_equipment
-			cat_strategic_bomber
 		}
 		
 		ai_will_do = {
@@ -718,8 +688,7 @@ technologies = {
 		
 		categories = {
 			heavy_air
-			jet_technology
-			cat_strategic_bomber
+			air_equipment
 		}
 		
 		ai_will_do = {
@@ -806,6 +775,7 @@ technologies = {
 		categories = {
 			air_equipment
 			plane_modules_tech
+			cas_bomber
 			cat_air_bombs
 		}
 		
@@ -844,6 +814,7 @@ technologies = {
 		categories = {
 			air_equipment
 			plane_modules_tech
+			cas_bomber
 			cat_air_bombs
 		}
 		
@@ -886,6 +857,7 @@ technologies = {
 		categories = {
 			air_equipment
 			plane_modules_tech
+			cas_bomber
 			cat_air_bombs
 		}
 		
@@ -908,7 +880,7 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 1922
+		start_year = 1936
 
 		folder = {
 			name = bba_air_techs_folder
@@ -923,7 +895,8 @@ technologies = {
 		categories = {
 			air_equipment
 			plane_modules_tech
-			cat_air_bombs
+			naval_air
+			naval_bomber
 		}
 		
 		ai_will_do = {
@@ -945,7 +918,7 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 1922
+		start_year = 1940
 
 		folder = {
 			name = bba_air_techs_folder
@@ -960,7 +933,8 @@ technologies = {
 		categories = {
 			air_equipment
 			plane_modules_tech
-			cat_air_bombs
+			naval_air
+			naval_bomber
 		}
 		
 		ai_will_do = {
@@ -982,7 +956,7 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 1922
+		start_year = 1944
 
 		folder = {
 			name = bba_air_techs_folder
@@ -993,7 +967,8 @@ technologies = {
 		categories = {
 			air_equipment
 			plane_modules_tech
-			cat_air_bombs
+			naval_air
+			naval_bomber
 		}
 		
 		ai_will_do = {
@@ -1013,7 +988,6 @@ technologies = {
 
 		enable_equipment_modules = {
 			large_bomb_bay
-			medium_bomb_bay
 		}
 		
 		research_cost = 1
@@ -1033,6 +1007,8 @@ technologies = {
 			air_equipment
 			plane_modules_tech
 			cat_air_bombs
+			tactical_bomber
+			cat_strategic_bomber
 		}
 		
 		ai_will_do = {
@@ -1070,6 +1046,8 @@ technologies = {
 			air_equipment
 			plane_modules_tech
 			cat_air_bombs
+			tactical_bomber
+			cat_strategic_bomber
 		}
 		
 		ai_will_do = {
@@ -1109,6 +1087,8 @@ technologies = {
 			air_equipment
 			plane_modules_tech
 			cat_air_bombs
+			tactical_bomber
+			cat_strategic_bomber
 		}
 		
 		ai_will_do = {
@@ -1142,6 +1122,7 @@ technologies = {
 		categories = {
 			air_equipment
 			plane_modules_tech
+			cat_scout_plane
 		}
 		
 		ai_will_do = {
@@ -1177,10 +1158,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		path = {
-			leads_to_tech = aa_cannon_1
-			research_cost_coeff = 1
-		}
+		
 		
 		categories = {
 			air_equipment
@@ -1215,9 +1193,16 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 2 y =4 }
+			position = { x = 4 y =4 }
 		}
-
+		path = {
+			leads_to_tech = aa_cannon_1
+			research_cost_coeff = 1
+		}
+        	path = {
+			leads_to_tech = tank_buster_1
+			research_cost_coeff = 1
+		}
 		categories = {
 			air_equipment
 			plane_modules_tech
@@ -1252,18 +1237,14 @@ technologies = {
 		}
 		
 		research_cost = 1
-		start_year = 1936
+		start_year = 1940
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 4 y = 4 }
+			position = { x = 3 y = 6 }
 		}
 		path = {
 			leads_to_tech = aa_cannon_2
-			research_cost_coeff = 1
-		}
-        path = {
-			leads_to_tech = tank_buster_1
 			research_cost_coeff = 1
 		}
 		categories = {
@@ -1302,12 +1283,12 @@ technologies = {
 			cannon_defense_turret_2x
 		}
 		
-		research_cost = 1.5
-		start_year = 1940
+		research_cost = 1
+		start_year = 1944
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 4 y = 6 }
+			position = { x = 3 y = 8 }
 		}
 
 		categories = {
@@ -1342,12 +1323,14 @@ technologies = {
 			tank_buster_1
 		}
 		
-		research_cost = 1.5
-		start_year = 1936
-
+		research_cost = 1
+		start_year = 1940
+		dependencies = {
+			interwar_antitank = 1
+		}
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 6 y = 4 }
+			position = { x = 5 y = 6 }
 		}
 
 		categories = {
@@ -1384,15 +1367,17 @@ technologies = {
 		enable_equipment_modules = {
 			tank_buster_2
 		}
-		
-		research_cost = 1.5
-		start_year = 1942
+		dependencies = {
+			antitank1 = 1
+		}
+		research_cost = 1
+		start_year = 1944
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 6 y = 6 }
+			position = { x = 5 y = 8 }
 		}
-
+			
 		categories = {
 			air_equipment
 			plane_modules_tech
@@ -1892,6 +1877,9 @@ technologies = {
 			self_sealing_fuel_tanks_large
 		}
 		
+		dependencies = {
+			synth_oil_experiments = 1
+		}
 		research_cost = 1
 		start_year = 1940
 
