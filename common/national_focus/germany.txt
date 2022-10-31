@@ -809,13 +809,6 @@ focus_tree = {
  		available_if_capitulated = yes
  		search_filters = { FOCUS_FILTER_RESEARCH }
  		completion_reward = {
- 			air_experience = 475
- 			add_tech_bonus = {
- 				name = air_sup_bonus
- 				bonus = 1.5
- 				uses = 6
- 				category = air_doctrine
- 			}
  			add_tech_bonus = {
  				name = fighter_command_focus
  				bonus = 1.0
@@ -861,14 +854,8 @@ focus_tree = {
  		search_filters = { FOCUS_FILTER_RESEARCH }
  		completion_reward = {
  			add_tech_bonus = {
- 				name = op_dest_bonus
- 				bonus = 1.5
- 				uses = 4
- 				category = air_doctrine
- 			}
- 			add_tech_bonus = {
  				name = bomber_bonus
- 				bonus = 1.5
+ 				bonus = 1
  				uses = 1
  				category = cas_bomber
  			}
@@ -893,7 +880,7 @@ focus_tree = {
  		available_if_capitulated = yes
  		search_filters = { FOCUS_FILTER_RESEARCH }
  		completion_reward = {
- 			set_technology = {heavy_fighter2 =1}
+ 			set_technology = {improved_medium_airframe =1}
  		}
  	}
  	
@@ -911,12 +898,6 @@ focus_tree = {
  		available_if_capitulated = yes
  		search_filters = { FOCUS_FILTER_RESEARCH }
  		completion_reward = {
- 			add_tech_bonus = {
- 				name = strat_dest_bonus
- 				bonus = 1.5
- 				uses = 2
- 				category = air_doctrine
- 			}
  			add_tech_bonus = {
  				name = bomber_bonus
  				bonus = 1.0
@@ -1654,7 +1635,7 @@ focus_tree = {
  		search_filters = { FOCUS_FILTER_RESEARCH }
  		completion_reward = {
  			set_technology = {
- 				fighter3=1
+ 				advanced_small_airframe=1
  			}
  		}
  	}

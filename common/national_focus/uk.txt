@@ -144,7 +144,6 @@ focus_tree = {
  			factor = 1
  		}
  		complete_tooltip = {
- 			air_experience = 25
  			if = {
  				limit = { has_country_flag = air_defense_focus_built_max }
  				custom_effect_tooltip = air_defense_focus_tt
@@ -162,7 +161,6 @@ focus_tree = {
  			}
  		}
  		completion_reward = {
- 			air_experience = 25
  			121 = {
  				set_building_level = {
  					type = anti_air_building
@@ -227,7 +225,6 @@ focus_tree = {
  		}
  		available_if_capitulated = yes
  		completion_reward = {
- 			air_experience = 25
  			add_tech_bonus = {
  				name = radar_focus
  				bonus = 1.0
@@ -516,7 +513,6 @@ focus_tree = {
  		relative_position_id = limited_rearmament_focus
  		cost = 5
  		completion_reward = {
- 			air_experience = 25
  			125 = {
  				set_building_level = {
  					type = air_base
@@ -582,7 +578,6 @@ focus_tree = {
  		}
  		available_if_capitulated = yes
  		completion_reward = {
- 			air_experience = 25
  			add_tech_bonus = {
  				name = bomber_command_focus
  				bonus = 1.0
@@ -605,7 +600,6 @@ focus_tree = {
  		}
  		available_if_capitulated = yes
  		completion_reward = {
- 			air_experience = 25
  			add_tech_bonus = {
  				name = coastal_command_focus
  				bonus = 1.0
@@ -628,7 +622,6 @@ focus_tree = {
  		}
  		available_if_capitulated = yes
  		completion_reward = {
- 			air_experience = 200
  			add_ideas = british_fighter_discount
  		}
  	}
@@ -871,8 +864,25 @@ focus_tree = {
  			navy_experience = 25
  			set_technology = {
  				improved_ship_hull_carrier = 1
- 				naval_bomber2 = 1
- 				popup = yes
+ 				nav_2 = 1
+ 				popup = no
+ 			}
+			
+ 			create_equipment_variant = {
+ 				name = "Hawker Typhoon"
+ 				type = small_plane_naval_bomber_airframe_2
+ 				upgrades = {
+ 					plane_armor_upgrade=0
+ 					plane_engine_upgrade=0
+ 				}
+		modules={
+			engine_type_slot=engine_3_1x
+			special_type_slot_1=dive_brakes_small
+			special_type_slot_2=floats
+			fixed_main_weapon_slot=torpedo_mounting2
+			fixed_auxiliary_weapon_slot_1=light_mg_2x
+			special_type_slot_3=drop_tanks
+			}
  			}
  		129 = {
  			add_extra_state_shared_building_slots = 2
@@ -1082,7 +1092,6 @@ focus_tree = {
  		completion_reward = {
  			army_experience = 5
  			navy_experience = 25
- 			air_experience = 25
  			add_ideas = ENG_service_overseas_idea
  		}
  	}
@@ -1124,7 +1133,6 @@ focus_tree = {
  		completion_reward = {
  			army_experience = 10
  			navy_experience = 10
- 			air_experience = 10
  			add_ideas = ENG_chiefs_of_staff_committee_idea
  			create_corps_commander = {
  				name = "Miles Dempsey"
