@@ -964,19 +964,19 @@ focus_tree = {
  		}
  		available_if_capitulated = yes
  		completion_reward = {
- 			if = { limit = { has_tech = heavy_fighter2}
+ 			if = { limit = { has_tech = improved_medium_airframe}
  				add_equipment_to_stockpile = {
- 				type = heavy_fighter_equipment
+ 				type = medium_plane_airframe_2
  				amount = 800
  				producer = USA
  			}}
  			else = {add_equipment_to_stockpile = {
- 				type = fighter_equipment_alt
- 				amount = 1000
+ 				type = small_medium_plane_airframe_2
+ 				amount = 1500
  				producer = USA
  			}}
  			add_equipment_to_stockpile = {
- 				type = cas_equipment
+ 				type = small_plane_cas_airframe_2
  				amount = 500
  				producer = USA
  			}
@@ -2596,7 +2596,7 @@ focus_tree = {
  				name = fighter_command_focus
  				bonus = 3.0
  				uses = 1
- 				technology= fighter2
+ 				technology= improved_medium_airframe
  			}
  		}
  	}
@@ -2691,7 +2691,7 @@ focus_tree = {
  				name = fighter_command_focus
  				bonus = 1.0
  				uses = 1
- 				technology= fighter3
+ 				technology= advanced_medium_airframe
  			}
  		}
  	}

@@ -1121,7 +1121,7 @@ focus_tree = {
  				name = JAP_fighter_modernization
  				bonus = 1.0
  				uses = 1
- 				category = cat_heavy_fighter
+ 				category = medium_air
  			}
  		}
  	}
@@ -1202,16 +1202,11 @@ focus_tree = {
  		search_filters = { FOCUS_FILTER_RESEARCH }
  		completion_reward = {
  			custom_effect_tooltip = JAP_the_zero_tt
- 			hidden_effect = { set_technology = { fighter2 = 1 } }
+ 			#hidden_effect = { 
+			set_technology = { improved_medium_airframe = 1 engine_3 = 1 } 
+			#}
  			
- 			create_equipment_variant = {
- 					name = "A6M Zero-sen Kai A"
- 					type = fighter_equipment_2
- 					upgrades = {
- 						plane_range_upgrade = 5
- 						plane_engine_upgrade = 5
- 						}
- 			}
+ 			
  		}
  	}
  	focus = {
@@ -1234,7 +1229,7 @@ focus_tree = {
  		available_if_capitulated = no
  		search_filters = { FOCUS_FILTER_RESEARCH }
  		completion_reward = {
- 			air_experience=200
+ 			air_experience=100
  			add_tech_bonus = {
  				name = JAP_bomber_modernization
  				bonus = 1.2
@@ -1266,7 +1261,7 @@ focus_tree = {
  		search_filters = { FOCUS_FILTER_RESEARCH }
  		completion_reward = {
  			remove_ideas = JAP_duplicate_research_efforts
- 			air_experience = 250
+ 			air_experience = 100
  		}
  	}
  	focus = {
@@ -2048,8 +2043,8 @@ focus_tree = {
  				name = JAP_jet_prototypes
  				bonus = 1.0
  				uses = 2
- 				technology = fighter3
- 				technology = heavy_fighter3
+ 				technology = advanced_small_airframe
+ 				technology = advanced_medium_airframe
  			}
  		}
  	}

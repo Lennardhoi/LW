@@ -1350,18 +1350,17 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-			air_experience = 250
 			add_tech_bonus = {
 				name = air_bonus
 				bonus = 1.0
 				uses = 1
-				technology= fighter2
+				technology= improved_small_airframe
 			}
 			add_tech_bonus = {
 				name = air_bonus
 				bonus = 0.5
 				uses = 1
-				technology= fighter3
+				technology= advanced_small_airframe
 			}
 		}
 	}
