@@ -42,7 +42,11 @@ on_actions = {
 
 		 
 		   			surrender_progress > 0.75
-
+					
+					212={NOT={CONTROLLER = {original_tag=SOV}}}
+					188={NOT={CONTROLLER = {original_tag=SOV}}}
+					210={NOT={CONTROLLER = {original_tag=SOV}}}
+					242={NOT={CONTROLLER = {original_tag=SOV}}}
 					}
 					not = { has_global_flag = SOV_peacedeal }
 				}
