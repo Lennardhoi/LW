@@ -838,8 +838,10 @@ technologies = {
 		show_equipment_icon = yes
 		# can build v1s/rocket planes
 		enable_equipments = {
-			rocket_interceptor_equipment_1
 			guided_missile_equipment_1
+		}
+		enable_equipment_modules = {
+			rocket_engine_1
 		}
 		path = {
 			leads_to_tech = improved_rocket_engines
@@ -871,6 +873,13 @@ technologies = {
 			name = electronics_folder
 			position = { x = 2 y = 2 }
 		}
+		enable_equipment_modules = {
+			jet_engine_1x
+			jet_engine_2x
+			jet_engine_3x
+			jet_engine_4x
+			jet_engine_6x
+			}
 		start_year = 1944
 		research_cost = 2
 		folder = {
@@ -893,8 +902,10 @@ technologies = {
 		show_equipment_icon = yes
 		# can build v2s
 		enable_equipments = {
-			rocket_interceptor_equipment_2
 			guided_missile_equipment_2
+		}
+		enable_equipment_modules = {
+			rocket_engine_2
 		}
 		path = {
 			leads_to_tech = advanced_rocket_engines
@@ -916,8 +927,8 @@ technologies = {
 	advanced_rocket_engines = {
 		show_equipment_icon = yes
 		# can build ICBMs?
-		enable_equipments = {
-			rocket_interceptor_equipment_3
+		enable_equipment_modules = {
+			rocket_engine_3
 		}
 		research_cost = 1.5
 		start_year = 1946
