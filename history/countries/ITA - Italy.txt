@@ -64,7 +64,7 @@ if = {
 		set_air_oob = "ITA_1936_air_bba"
 		set_technology = {
 			aa_lmg = 1
-			aa_cannon_1 = 1
+			nav_1
 			engines_1 = 1
 			engines_2 = 1
 			early_bombs = 1
@@ -117,6 +117,33 @@ set_technology = {
 	radio = 1
 	radio_detection = 1
 }
+if = {
+		limit = {
+			has_dlc = "By Blood Alone"
+		}
+		create_equipment_variant = {
+			name = "CR.42"
+			type = small_plane_airframe_0
+			modules = {
+				fixed_main_weapon_slot = light_mg_2x
+				fixed_auxiliary_weapon_slot_1 = light_mg_2x
+				engine_type_slot = engine_1_1x
+			}
+			icon = "GFX_ITA_fighter1_medium"
+		}
+		create_equipment_variant = {
+			name = "Ba.65"
+			type = small_plane_cas_airframe_0
+			modules = {
+				fixed_main_weapon_slot = bomb_locks
+				fixed_auxiliary_weapon_slot_1 = light_mg_2x
+				engine_type_slot = engine_1_1x
+				special_type_slot_2 = dive_brakes_small
+				
+			}
+			icon = "GFX_ITA_CAS1_medium"
+		}
+	}
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {

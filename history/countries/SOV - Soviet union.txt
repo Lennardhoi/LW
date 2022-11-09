@@ -65,7 +65,7 @@ if = {
 		set_air_oob = "SOV_1936_air_bba"
 		set_technology = {
 			aa_lmg = 1
-			aa_cannon_1 = 1
+			
 			engines_1 = 1
 			engines_2 = 1
 			early_bombs = 1
@@ -160,6 +160,58 @@ if = {
 		mtg_transport = 1
 	}
 }
+if = {
+		limit = {
+			has_dlc = "By Blood Alone"
+		}
+		create_equipment_variant = {
+			name = "I-16"
+			type = small_plane_airframe_1
+			modules = {
+				fixed_main_weapon_slot = light_mg_2x
+				fixed_auxiliary_weapon_slot_1 = light_mg_2x
+				engine_type_slot = engine_2_1x
+			}
+			icon = "GFX_SOV_fighter1_medium"
+		}
+		create_equipment_variant = {
+			name = "LBsh"
+			type = small_plane_cas_airframe_1
+			modules = {
+				fixed_main_weapon_slot = bomb_locks
+				fixed_auxiliary_weapon_slot_1 = light_mg_2x
+				engine_type_slot = engine_2_1x
+				special_type_slot_2 = dive_brakes_small
+				
+			}
+			icon = "GFX_SOV_CAS1_medium"
+		}
+		create_equipment_variant = {
+			name = "Il-4"
+			type = small_plane_naval_bomber_airframe_1
+			modules = {
+				fixed_main_weapon_slot = torpedo_mounting
+				fixed_auxiliary_weapon_slot_1 = light_mg_2x
+				engine_type_slot = engine_2_1x
+				special_type_slot_2 = dive_brakes_small
+				
+			}
+			icon = "GFX_SOV_naval_bomber1_medium"
+		}
+		create_equipment_variant = {
+			name = "DB-3"
+			type = medium_plane_airframe_1
+			modules = {
+				fixed_main_weapon_slot = Medium_bomb_bay
+				fixed_auxiliary_weapon_slot_2 = lmg_defense_turret_2x
+				fixed_auxiliary_weapon_slot_3 = lmg_defense_turret
+				engine_type_slot = engine_2_2x
+				special_type_slot_1 = radio_navigation_1
+				special_type_slot_2 = dive_brakes_medium
+			}
+			icon = "GFX_SOV_tactical_bomber1_medium"
+		}
+	}
 if = {
 	limit = {
 		has_dlc = "La Resistance"
@@ -521,22 +573,26 @@ add_equipment_to_stockpile = {
 }
 
 add_equipment_to_stockpile = {
-	type = fighter_equipment_1
+	type = small_plane_airframe_1
 	amount = 1500
 	producer = SOV
+	variant_name = "I-16"
 }
 add_equipment_to_stockpile = {
-	type = CAS_equipment_1
+	type = small_plane_cas_airframe_1
 	amount = 600
 	producer = SOV
+	variant_name = "LBsh"
 }
 add_equipment_to_stockpile = {
-	type = nav_bomber_equipment_1
+	type = small_plane_naval_bomber_airframe_1
 	amount = 300
 	producer = SOV
+	variant_name = Il-4"
 }
 add_equipment_to_stockpile = {
-	type = tac_bomber_equipment_0
+	type = medium_plane_airframe_1
 	amount = 400
 	producer = SOV
+	variant_name = "DB-3"
 }

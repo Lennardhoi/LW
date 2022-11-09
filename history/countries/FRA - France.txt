@@ -110,6 +110,35 @@ set_technology = {
 	electronic_mechanical_engineering = 1
 	radio = 1
 }
+if = {
+		limit = {
+			has_dlc = "By Blood Alone"
+		}
+		create_equipment_variant = {
+			name = "M.S.410"
+			type = small_plane_airframe_1
+			modules = {
+				fixed_main_weapon_slot = light_mg_2x
+				fixed_auxiliary_weapon_slot_1 = light_mg_2x
+				engine_type_slot = engine_2_1x
+				special_type_slot_1 = radio_navigation_1
+			}
+			icon = "GFX_FRA_fighter1_medium"
+		}
+		create_equipment_variant = {
+			name = "Br.693"
+			type = small_plane_cas_airframe_1
+			modules = {
+				fixed_main_weapon_slot = bomb_locks
+				fixed_auxiliary_weapon_slot_1 = light_mg_2x
+				engine_type_slot = engine_2_1x
+				special_type_slot_1 = radio_navigation_1
+				special_type_slot_2 = dive_brakes_small
+				
+			}
+			icon = "GFX_FRA_CAS1_medium"
+		}
+	}
 if = { 
 	limit = { has_dlc = "No Step Back" }
 
@@ -653,14 +682,16 @@ add_equipment_to_stockpile = {
 	producer = FRA
 }
 add_equipment_to_stockpile = {
-	type = fighter_equipment_1
+	type = small_plane_airframe_1
 	amount = 2000
 	producer = FRA
+	varian_name = "M.S.410"
 }
 add_equipment_to_stockpile = {
-	type = cas_equipment_1
+	type = small_plane_cas_airframe_1
 	amount = 500
 	producer = FRA
+	varian_name = "Br.693
 }
 add_equipment_to_stockpile = {
 	type = support_equipment_1

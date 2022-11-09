@@ -4,82 +4,112 @@ air_wings = {
 	# 1a Squadra Aerea - SQA1 (Milan)
 	155 = { 
 		# 2a Divisione Aerea 'Borea'
-		fighter_equipment_1 = { 
-			amount = 100 
-			owner = "ITA" 
+		small_plane_airframe_0 = { 
+			amount = 100
+			owner = "ITA"
+			version_name = "CR.42"
 			}
-		fighter_equipment_1 = { 
+		small_plane_airframe_0 = { 
 			amount = 100 
 			owner = "ITA" 
+			version_name = "CR.42"
+
 			}
-		fighter_equipment_1 = { 
+		small_plane_airframe_0 = { 
 			amount = 100 
 			owner = "ITA" 
+			version_name = "CR.42"
 			}
-		fighter_equipment_1 = { 
+		small_plane_airframe_0 = { 
 			amount = 100 
 			owner = "ITA" 
+			version_name = "CR.42"
 			}
-		fighter_equipment_1 = { 
+		small_plane_airframe_0 = { 
 			amount = 100 
 			owner = "ITA" 
+			version_name = "CR.42"
 			}
-		fighter_equipment_1 = { 
+		small_plane_airframe_0 = { 
 			amount = 100 
 			owner = "ITA" 
+			version_name = "CR.42"
 			}
 		}
 	154 = { 
 		# 2a Divisione Aerea 'Borea'
-		fighter_equipment_1 = { 
+		small_plane_airframe_0 = { 
 			amount = 100 
 			owner = "ITA" 
+			version_name = "CR.42"
 			}
-		fighter_equipment_1 = { 
+		small_plane_airframe_0 = { 
 			amount = 100 
 			owner = "ITA" 
+			version_name = "CR.42"
 			}
-		fighter_equipment_1 = { 
+		small_plane_airframe_0 = { 
 			amount = 100 
 			owner = "ITA" 
+			version_name = "CR.42"
 			}
-		fighter_equipment_1 = { 
+		small_plane_airframe_0 = { 
 			amount = 100 
 			owner = "ITA" 
+			version_name = "CR.42"
 			}
 		}
 	2 = {
-		fighter_equipment_1 = { 
+		small_plane_airframe_0 = { 
 			amount = 100 
 			owner = "ITA" 
+			version_name = "CR.42"
 		}
-		CAS_equipment_1 = { 
+		
+		small_plane_airframe_0 = { 
 			amount = 100 
 			owner = "ITA" 
+			version_name = "CR.42"
 		}
-	fighter_equipment_1 = { 
+		small_plane_cas_airframe_0 = { 
 			amount = 100 
-			owner = "ITA" 
+			owner = "ITA"
+			version_name = "Ba.65"			
 		}
-		CAS_equipment_1 = { 
+		small_plane_cas_airframe_0 = { 
 			amount = 100 
 			owner = "ITA" 
+			version_name = "Ba.65"
 		}
-	fighter_equipment_1 = { 
+		small_plane_cas_airframe_0 = { 
 			amount = 100 
-			owner = "ITA" 
+			owner = "ITA"
+			version_name = "Ba.65"			
 		}
-		CAS_equipment_1 = { 
+		small_plane_cas_airframe_0 = { 
 			amount = 100 
 			owner = "ITA" 
+			version_name = "Ba.65"
 		}
-	fighter_equipment_1 = { 
+		small_plane_airframe_0 = { 
 			amount = 100 
 			owner = "ITA" 
+			version_name = "CR.42"
 		}
-		CAS_equipment_1 = { 
+		small_plane_cas_airframe_0 = { 
 			amount = 100 
 			owner = "ITA" 
+			version_name = "CR.42"
+		}
+	small_plane_airframe_0 = { 
+			amount = 100 
+			owner = "ITA" 
+			version_name = "CR.42"
+		}
+		small_plane_cas_airframe_0 = { 
+			amount = 100 
+			owner = "ITA" 
+			version_name = "CR.42"
 		}
 	} 
 }
@@ -241,7 +271,7 @@ instant_effect = {
 		}
 		add_equipment_production = {
 			equipment = {
-				type = CAS_equipment_1
+				type = small_plane_cas_airframe_1
 				creator = "ITA"
 			}
 			requested_factories = 1
@@ -250,7 +280,7 @@ instant_effect = {
 		}
 		add_equipment_production = {
 			equipment = {
-				type = fighter_equipment_1
+				type = small_plane_airframe_1
 				creator = "ITA"
 			}
 			requested_factories = 1

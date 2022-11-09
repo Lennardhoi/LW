@@ -92,7 +92,7 @@ capital = 270
 		set_air_oob = "JAP_1936_air_bba"
 		set_technology = {
 			aa_lmg = 1
-			aa_cannon_1 = 1
+			nav_1
 			engines_1 = 1
 			engines_2 = 1
 			early_bombs = 1
@@ -154,6 +154,59 @@ capital = 270
  	synth_oil_experiments = 1
  	fuel_refining = 1
  }
+ if = {
+		limit = {
+			has_dlc = "By Blood Alone"
+		}
+		create_equipment_variant = {
+			name = "Ki-27"
+			type = small_plane_airframe_1
+			modules = {
+				fixed_main_weapon_slot = light_mg_2x
+				fixed_auxiliary_weapon_slot_1 = light_mg_2x
+				engine_type_slot = engine_2_1x
+			}
+			icon = "GFX_JAP_fighter1_medium"
+		}
+		create_equipment_variant = {
+			name = "Ki-32"
+			type = small_plane_cas_airframe_1
+			modules = {
+				fixed_main_weapon_slot = bomb_locks
+				fixed_auxiliary_weapon_slot_1 = light_mg_2x
+				engine_type_slot = engine_2_1x
+				special_type_slot_1 = radio_navigation_1
+				special_type_slot_2 = dive_brakes_small
+				
+			}
+			icon = "GFX_JAP_CAS1_medium"
+		}
+		create_equipment_variant = {
+			name = "G3M1"
+			type = small_plane_naval_bomber_airframe_1
+			modules = {
+				fixed_main_weapon_slot = torpedo_mounting
+				fixed_auxiliary_weapon_slot_1 = light_mg_2x
+				engine_type_slot = engine_2_1x
+				special_type_slot_2 = dive_brakes_small
+				
+			}
+			icon = "GFX_JAP_naval_bomber1_medium"
+		}
+		create_equipment_variant = {
+			name = "Ki-21"
+			type = medium_plane_airframe_1
+			modules = {
+				fixed_main_weapon_slot = Medium_bomb_bay
+				fixed_auxiliary_weapon_slot_2 = lmg_defense_turret_2x
+				fixed_auxiliary_weapon_slot_3 = lmg_defense_turret
+				engine_type_slot = engine_2_2x
+				special_type_slot_1 = radio_navigation_1
+				special_type_slot_2 = dive_brakes_medium
+			}
+			icon = "GFX_JAP_tactical_bomber1_medium"
+		}
+	}
  if = {
  	limit = {
  		has_dlc = "Man the Guns"
@@ -246,40 +299,30 @@ capital = 270
           producer =JAP
  }
  add_equipment_to_stockpile = {
-          type = fighter_equipment_1
+          type = small_plane_airframe_1
           amount = 1200
           producer = JAP
+		  variant_name = "Ki-27"
  }
  add_equipment_to_stockpile = {
-          type = tac_bomber_equipment_1
+          type = medium_plane_airframe_1
           amount = 500
           producer = JAP
+		  variant_name = "Ki-21"
  }
  add_equipment_to_stockpile = {
-          type = CAS_equipment_1
-          amount = 400
+          type = small_plane_cas_airframe_1
+          amount = 600
           producer = JAP
+		  variant_name = "Ki-32"
  }
  add_equipment_to_stockpile = {
-          type = nav_bomber_equipment_1
+          type = small_plane_naval_bomber_airframe_1
           amount = 691
           producer = JAP
+		  variant_name = "G3M1"
  }
- add_equipment_to_stockpile = {
-          type = fighter_equipment_0
-          amount = 208
-          producer = JAP
- }
- add_equipment_to_stockpile = {
-          type = CAS_equipment_1
-          amount = 209
-          producer = JAP
- }
- add_equipment_to_stockpile = {
-          type = transport_plane_equipment_1
-          amount = 100
-          producer = JAP
- }
+
  if = {
  	limit = {
  		has_dlc = "Together for Victory"

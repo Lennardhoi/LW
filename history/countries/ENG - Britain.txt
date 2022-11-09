@@ -69,7 +69,7 @@ if = {
 		set_air_oob = "ENG_1936_air_bba"
 		set_technology = {
 			aa_lmg = 1
-			aa_cannon_1 = 1
+			nav_1 = 1
 			engines_1 = 1
 			engines_2 = 1
 			early_bombs = 1
@@ -164,6 +164,61 @@ create_equipment_variant = {
 		type = fighter_equipment_1
 		upgrades = {
 		plane_range_upgrade = 2
+		}
+	}
+if = {
+		limit = {
+			has_dlc = "By Blood Alone"
+		}
+		create_equipment_variant = {
+			name = "Hurricane"
+			type = small_plane_airframe_1
+			modules = {
+				fixed_main_weapon_slot = light_mg_4x
+				fixed_auxiliary_weapon_slot_1 = light_mg_4x
+				engine_type_slot = engine_2_1x
+				special_type_slot_1 = radio_navigation_1
+			}
+			icon = "GFX_ENG_fighter1_medium"
+		}
+		create_equipment_variant = {
+			name = "Hector"
+			type = small_plane_cas_airframe_1
+			modules = {
+				fixed_main_weapon_slot = bomb_locks
+				fixed_auxiliary_weapon_slot_1 = light_mg_2x
+				engine_type_slot = engine_2_1x
+				special_type_slot_1 = radio_navigation_1
+				special_type_slot_2 = dive_brakes_small
+				
+			}
+			icon = "GFX_ENG_CAS1_medium"
+		}
+		create_equipment_variant = {
+			name = "Swordfish"
+			type = small_plane_naval_bomber_airframe_1
+			modules = {
+				fixed_main_weapon_slot = torpedo_mounting
+				fixed_auxiliary_weapon_slot_1 = light_mg_2x
+				engine_type_slot = engine_2_1x
+				special_type_slot_1 = radio_navigation_1
+				special_type_slot_2 = dive_brakes_small
+				
+			}
+			icon = "GFX_ENG_naval_bomber1_medium"
+		}
+		create_equipment_variant = {
+			name = "Wellington"
+			type = medium_plane_airframe_1
+			modules = {
+				fixed_main_weapon_slot = Medium_bomb_bay
+				fixed_auxiliary_weapon_slot_2 = lmg_defense_turret_2x
+				fixed_auxiliary_weapon_slot_3 = lmg_defense_turret
+				engine_type_slot = engine_2_2x
+				special_type_slot_1 = radio_navigation_1
+				special_type_slot_2 = dive_brakes_medium
+			}
+			icon = "GFX_ENG_tactical_bomber1_medium"
 		}
 	}
 if = { 
@@ -953,22 +1008,26 @@ add_equipment_to_stockpile = {
 	producer = ENG
 }
 add_equipment_to_stockpile = {
-	type = fighter_equipment_1
+	type = small_plane_airframe_1
 	amount = 2000
 	producer = ENG
+	variant_name = "Hurricane"
 }
 add_equipment_to_stockpile = {
-	type = nav_bomber_equipment_1
+	type = small_plane_cas_airframe_1
 	amount = 469
 	producer = ENG
+	variant_name = "Hector"
 }
 add_equipment_to_stockpile = {
-	type = tac_bomber_equipment_1
+	type = small_plane_naval_bomber_airframe_1
 	amount = 600
 	producer = ENG
+	variant_name = "Swordfish"
 }
 add_equipment_to_stockpile = {
-	type = CAS_equipment_1
+	type = medium_plane_airframe_1
 	amount = 900
 	producer = ENG
+	variant_name = "Wellington"
 }
