@@ -5,7 +5,7 @@ war_measures = {
  			NOT= { has_decision=USA_support_sov }
  			has_war=yes
  			has_equipment = {
- 				fighter_equipment_alt > 599
+ 				small_plane_airframe > 599
  			}
  			has_deployed_air_force_size = {
  				size> 999
@@ -22,8 +22,8 @@ war_measures = {
  		}
  		fire_only_once = no
  		complete_effect = {
- 			ENG={add_equipment_to_stockpile={type = fighter_equipment amount = 500 }}
- 			add_equipment_to_stockpile={type = fighter_equipment_alt amount = -600 }
+ 			ENG={add_equipment_to_stockpile={type = small_plane_airframe amount = 500 }}
+ 			add_equipment_to_stockpile={type = small_plane_airframe amount = -600 }
  		}
  	}
  	USA_support_sov = {
@@ -31,7 +31,7 @@ war_measures = {
  		available = {
  			SOV = { has_war = yes }
  			has_equipment = {
- 				fighter_equipment_alt > 599
+ 				small_plane_airframe > 599
  			}
  			has_deployed_air_force_size = {
  				size> 999
@@ -49,8 +49,8 @@ war_measures = {
  		}
  		fire_only_once = no
  		complete_effect = {
- 			SOV={add_equipment_to_stockpile={type = fighter_equipment amount = 500 }}
- 			add_equipment_to_stockpile={type = fighter_equipment_alt amount = -600 }
+ 			SOV={add_equipment_to_stockpile={type = small_plane_airframe amount = 500 }}
+ 			add_equipment_to_stockpile={type = small_plane_airframe amount = -600 }
  		}
  	}
  	USA_homeland_defense = {

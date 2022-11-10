@@ -668,21 +668,15 @@ ideas = {
 			}
 			equipment_bonus = {
 				# produced the IAR-80 fighter/ground attack aircraft around 350 of them during 36-44
-				fighter_equipment = {
-					air_attack = 0.1
-				}
-				jet_fighter_equipment = {
+				small_plane_airframe = {
 					air_attack = 0.1
 				}
 				# cv_fighter_equipment = {
 					# air_attack = 0.1
 					# }
-				CAS_equipment = {
+				small_plane_cas_airframe = {
 					air_ground_attack = 0.1
 				}
-				# cv_CAS_equipment = {
-					# air_ground_attack = 0.1
-					# }
 			}
 			ai_will_do = {
 				factor = 1
@@ -698,13 +692,13 @@ ideas = {
 				air_equipment = 0.1
 			}
 			equipment_bonus = {
-				fighter_equipment = {
+				small_plane_airframe = {
 					air_agility = 0.15
 				}
 				# cv_fighter_equipment = {
 					# air_agility = 0.15
 					# }
-				heavy_fighter_equipment = {
+				medium_plane_fighter_airframe = {
 					air_agility = 0.15
 				}
 			}
@@ -722,11 +716,11 @@ ideas = {
 				air_equipment = 0.1
 			}
 			equipment_bonus = {
-				tac_bomber_equipment = {
+				medium_plane_airframe = {
 					air_ground_attack = 0.1
 					build_cost_ic = -0.1
 				}
-				nav_bomber_equipment = {
+				small_plane_naval_bomber_airframe = {
 					naval_strike_attack = 0.1
 					build_cost_ic = -0.1
 				}

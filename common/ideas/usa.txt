@@ -400,11 +400,6 @@ ideas = {
 			modifier= {
 				special_forces_min = 112
 			}
-			equipment_bonus = {
-				category_special_forces = {
-					breakthrough = 0.10
-				}
-			}
 		}
 		USA_womens_armed_service_integration_act = {
 			picture = eng_imperial_conscription
@@ -820,7 +815,7 @@ ideas = {
 			removal_cost = -1
 			picture = generic_air_bonus
 			equipment_bonus = {
-				strat_bomber_equipment = {
+				large_plane_airframe = {
 					air_range = 0.5 instant = yes
 				}
 			}
@@ -924,13 +919,7 @@ ideas = {
 			}
 			removal_cost = -1
 			equipment_bonus = {
-				fighter_equipment = {
-					build_cost_ic = -0.1 instant = yes
-				}
-				jet_fighter_equipment = {
-					build_cost_ic = -0.1 instant = yes
-				}
-				fighter_equipment_alt = {
+				small_plane_airframe = {
 					build_cost_ic = -0.1 instant = yes
 				}
 				heavy_fighter_equipment = {
@@ -947,10 +936,10 @@ ideas = {
 			}
 			removal_cost = -1
 			equipment_bonus = {
-				CAS_equipment = {
+				small_plane_cas_airframe = {
 					build_cost_ic = -0.1 instant = yes
 				}
-				tac_bomber_equipment = {
+				medium_plane_airframe = {
 					build_cost_ic = -0.1 instant = yes
 				}
 			}
@@ -964,7 +953,7 @@ ideas = {
 			}
 			removal_cost = -1
 			equipment_bonus = {
-				strat_bomber_equipment = {
+				large_plane_airframe = {
 					build_cost_ic = -0.1 instant = yes
 				}
 			}
@@ -1383,9 +1372,8 @@ ideas = {
 			research_bonus = {
 				air_equipment = 0.15
 			}
-			traits = { light_aircraft_manufacturer }
 			equipment_bonus= {
-				fighter_equipment_alt = {
+				small_plane_airframe = {
 					build_cost_ic=-0.15
 					air_agility = 0.1
 					maximum_speed = 0.1

@@ -511,11 +511,11 @@ ideas = {
 				land_reinforce_rate = 0.1
 				special_forces_min = 112
 			}
-			equipment_bonus = {
-				category_special_forces = {
-					default_morale = 0.10
-				}
-			}
+			#equipment_bonus = {
+			#	category_special_forces = {
+			#		default_morale = 0.10
+			#	}
+			#}
 		}
 		JAP_tora_tora_tora_idea = {
 			allowed = {
@@ -558,10 +558,10 @@ ideas = {
 			}
 			picture = generic_air_research
 			equipment_bonus = {
-				CAS_equipment = {
+				small_plane_cas_airframe = {
 					build_cost_ic = -0.1 instant = yes
 				}
-				tac_bomber_equipment = {
+				medium_plane_airframe = {
 					build_cost_ic = -0.1 instant = yes
 				}
 			}
@@ -582,7 +582,7 @@ ideas = {
 				# cv_nav_bomber_equipment = {
 					# build_cost_ic = -0.2 instant = yes
 					# }
-				nav_bomber_equipment = {
+				small_plane_naval_bomber_airframe= {
 					build_cost_ic = -0.2 instant = yes
 				}
 			}
@@ -710,7 +710,7 @@ ideas = {
 				air_equipment = 0.15
 			}
 			equipment_bonus = {
-				CAS_equipment = {
+				small_plane_cas_airframe = {
 					air_ground_attack = 0.1 reliability = 0.1
 				}
 			}
@@ -814,7 +814,14 @@ ideas = {
 					armor_value = 0.05
 					build_cost_ic = 0.05
 				}
-				amphibious_tank_equipment = {
+				amphibious_tank_chassis = {
+					reliability = 0.05
+					soft_attack = 0.1
+					hard_attack = 0.1
+					reliability = 0.2
+					build_cost_ic = 0.1
+				}
+				medium_tank_amphibious_chassis = {
 					reliability = 0.05
 					soft_attack = 0.1
 					hard_attack = 0.1

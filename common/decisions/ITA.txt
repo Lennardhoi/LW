@@ -107,7 +107,7 @@ build_railway = {
  		available = {
  			#GER={has_war_with=SOV}
  			has_equipment = {
- 				fighter_equipment_alt > 599
+ 				small_plane_airframe > 599
  			}
  			has_deployed_air_force_size = {
  				size> 1999
@@ -124,8 +124,8 @@ build_railway = {
  		}
  		fire_only_once = no
  		complete_effect = {
- 			GER={add_equipment_to_stockpile={type = fighter_equipment amount = 550 }}
- 			add_equipment_to_stockpile={type = fighter_equipment_alt amount = -600 }
+ 			GER={add_equipment_to_stockpile={type = small_plane_airframe amount = 550 }}
+ 			add_equipment_to_stockpile={type = small_plane_airframe amount = -600 }
  		}
  	}
  	ROM_annex_bul = {

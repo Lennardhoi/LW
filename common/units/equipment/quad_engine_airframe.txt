@@ -16,7 +16,10 @@ equipments = {
      		air_superiority = 0
      		reliability = 1
      		# Air vs Navy - high damage / low hit chance / hard to hurt
- 		
+ 		allow_mission_type = {
+			paradrop
+			air_supply
+		}
      		naval_strike_attack = 0.0
      		naval_strike_targetting = 0.0
      		    build_cost_ic = 75 

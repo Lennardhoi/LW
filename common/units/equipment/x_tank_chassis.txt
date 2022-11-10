@@ -56,7 +56,7 @@
  			# used as the localization key (the name of the type) and run a find-and-replace on it.
  			# Example: light_tank_aa_chassis_1 gets variant_name light_tank_aa_equipment_1.
  			variant_name = { find_and_replace = { "chassis" "equipment" } }
- 			hardness = { set = 0.5 }
+ 			variant_name = { find_and_replace = { "chassis" "equipment" } }
  		}
  	}
  	light_tank_amphibious_chassis = {
