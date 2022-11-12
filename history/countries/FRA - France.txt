@@ -97,12 +97,12 @@ set_technology = {
 	gwtank_chassis = 1
 	basic_light_tank_chassis = 1
 	improved_light_tank_chassis = 1
-	early_fighter = 1
-	fighter1 = 1
-	naval_bomber1 = 1
-	early_bomber = 1
-	tactical_bomber1 = 1
-	CAS1 = 1
+	#early_fighter = 1
+	#fighter1 = 1
+	#naval_bomber1 = 1
+	#early_bomber = 1
+	#tactical_bomber1 = 1
+	#CAS1 = 1
 	fleet_in_being = 1
 	fuel_silos = 1
 	fuel_refining = 1
@@ -635,7 +635,7 @@ if = {
 		}
 	}
 	# Carriers #
-	create_equipment_variant = {
+	create_equipment_variantA = {
 		name = "Béarn Class"
 		type = ship_hull_carrier_conversion_bb
 		name_group = FRA_CV_HISTORICAL

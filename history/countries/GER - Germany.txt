@@ -145,13 +145,13 @@ set_technology = {
 	gwtank_chassis = 1
 	basic_light_tank_chassis = 1
 	improved_light_tank_chassis = 1
-	early_fighter = 1
-	fighter1 = 1
-	scout_plane1 = 1
-	early_bomber = 1
-	tactical_bomber1 = 1
-	CAS1 = 1
-	naval_bomber1 = 1
+	#early_fighter = 1
+	#fighter1 = 1
+	#scout_plane1 = 1
+	#early_bomber = 1
+	#tactical_bomber1 = 1
+	#CAS1 = 1
+	#naval_bomber1 = 1
 	electronic_mechanical_engineering = 1
 	radio = 1
 	radio_detection = 1
@@ -160,7 +160,7 @@ set_technology = {
 	synth_oil_experiments = 1
 	fuel_silos = 1
 	fuel_refining = 1
-	heavy_fighter1 =1
+	#heavy_fighter1 =1
 	
 }
 if = {
@@ -740,37 +740,7 @@ if = {
 		obsolete = yes
 	}
 }
-create_equipment_variant = {
-	name = "Ju 86"
-	type = tac_bomber_equipment_0
-	upgrades = {
-		plane_tac_bomb_upgrade = 5
-		plane_range_upgrade = 5
-		plane_engine_upgrade = 5
-		plane_reliability_upgrade = 10
-	}
-	obsolete = yes
-}
-create_equipment_variant = {
-	name = "Bf 109 A"
-	type = fighter_equipment_1
-	upgrades = {
-		plane_range_upgrade = 3
-		plane_engine_upgrade = 2
-	}
-	obsolete = no
-}
-create_equipment_variant = {
-	name = "Do 17"
-	type = tac_bomber_equipment_0
-	upgrades = {
-		plane_tac_bomb_upgrade = 5
-		plane_range_upgrade = 1
-		plane_engine_upgrade = 1
-		plane_reliability_upgrade = 5
-	}
-	obsolete = yes
-}
+
 add_equipment_to_stockpile = {
 	type = artillery_equipment_1
 	amount = 4000
