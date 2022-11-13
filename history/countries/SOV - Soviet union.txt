@@ -62,10 +62,10 @@ capital = 212
 oob = "SOV_1936"
 if = {
 	limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "SOV_1936_air_bba"
+		#set_air_oob = "SOV_1936_air_bba"
 		set_technology = {
 			aa_lmg = 1
-			
+			nav_1=1
 			engines_1 = 1
 			engines_2 = 1
 			early_bombs = 1
@@ -588,7 +588,7 @@ add_equipment_to_stockpile = {
 	type = small_plane_naval_bomber_airframe_1
 	amount = 300
 	producer = SOV
-	variant_name = Il-4"
+	variant_name = "Il-4"
 }
 add_equipment_to_stockpile = {
 	type = medium_plane_airframe_1

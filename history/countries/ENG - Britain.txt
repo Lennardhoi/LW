@@ -66,7 +66,7 @@ capital = 124
 oob = "ENG_1936"
 if = {
 	limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "ENG_1936_air_bba"
+		#set_air_oob = "ENG_1936_air_bba"
 		set_technology = {
 			aa_lmg = 1
 			nav_1 = 1
@@ -159,13 +159,6 @@ set_technology = {
 	fuel_silos = 1
 	fuel_refining = 1
 }
-create_equipment_variant = {
-		name = "Hurricane Mk1"
-		type = fighter_equipment_1
-		upgrades = {
-		plane_range_upgrade = 2
-		}
-	}
 if = {
 		limit = {
 			has_dlc = "By Blood Alone"

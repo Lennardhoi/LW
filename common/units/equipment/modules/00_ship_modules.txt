@@ -1586,7 +1586,7 @@ equipment_modules = {
  		gfx = ship_deck_space
  		add_equipment_type = capital_ship
  		add_stats = {
- 			carrier_size = 20
+ 			carrier_size = 2
  			build_cost_ic = 1250
  		}
  		manpower = 500 #outside the add_stats section for code reasons
@@ -1603,8 +1603,8 @@ equipment_modules = {
  		gfx = ship_deck_space
  		add_equipment_type = capital_ship
  		add_stats = {
- 			carrier_size = 15
- 			build_cost_ic = 750
+ 			carrier_size = 1
+ 			build_cost_ic = 500
  		}
  		manpower = 375 #outside the add_stats section for code reasons
  		multiply_stats = {
@@ -1612,16 +1612,16 @@ equipment_modules = {
  		}
  		can_convert_from = {
  			module_category = ship_heavy_battery
- 			convert_cost_ic = 700
+ 			convert_cost_ic = 500
  		}
  		can_convert_from = {
  			module_category = ship_medium_battery
- 			convert_cost_ic = 500
+ 			convert_cost_ic = 300
  		}
  		build_cost_resources = {
- 			steel = 10
+ 			steel = 5
  		}
- 		dismantle_cost_ic = 700
+ 		dismantle_cost_ic = 400
  	}
  	### #  # ### #       ###  ##  #  # # #  ##
  	#   #  # #   #        #  #  # ## # # # #

@@ -99,9 +99,9 @@ air_wings = {
 		small_plane_cas_airframe_0 = { 
 			amount = 100 
 			owner = "ITA" 
-			version_name = "CR.42"
+			version_name = "Ba.65"
 		}
-	small_plane_airframe_0 = { 
+		small_plane_airframe_0 = { 
 			amount = 100 
 			owner = "ITA" 
 			version_name = "CR.42"
@@ -109,7 +109,7 @@ air_wings = {
 		small_plane_cas_airframe_0 = { 
 			amount = 100 
 			owner = "ITA" 
-			version_name = "CR.42"
+			version_name = "Ba.65"
 		}
 	} 
 }
@@ -271,7 +271,7 @@ instant_effect = {
 		}
 		add_equipment_production = {
 			equipment = {
-				type = small_plane_cas_airframe_1
+				type = small_plane_cas_airframe_0
 				creator = "ITA"
 			}
 			requested_factories = 1
@@ -280,7 +280,7 @@ instant_effect = {
 		}
 		add_equipment_production = {
 			equipment = {
-				type = small_plane_airframe_1
+				type = small_plane_airframe_0
 				creator = "ITA"
 			}
 			requested_factories = 1
@@ -307,7 +307,8 @@ instant_effect = {
 		}
 		add_equipment_production = {
 			equipment = {
-				type = nav_bomber_equipment_1
+				version_name = "SM.79"
+				type = small_plane_naval_bomber_airframe_1
 				creator = "ITA"
 			}
 			requested_factories = 1

@@ -135,9 +135,9 @@ NDefines.NMilitary.SHIP_MORALE_TO_ORG_REGAIN_BASE = 0.3 --vanilla 0.2
 ---Air
 NDefines.NAir.NAVAL_COMBAT_EXTERNAL_PLANES_JOIN_RATIO = 0.015 -- vanilla 0.05
 NDefines.NAir.COMBAT_DAMAGE_SCALE_CARRIER = 1    -- same as above but used inside naval combat for carrier battles
-NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_STR = 1.5
+NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_STR = 0.3
 NDefines.NAir.NAVAL_KAMIKAZE_DAMAGE_MULT = 5.0  -- vanilla is like 20
-NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_ORG = 0.75
+NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_ORG = 0.2
 NDefines.NAir.NAVAL_STRIKE_DETECTION_BALANCE_FACTOR = 0.2		-- Value used to scale the surface_visibility stats to balance the gameplay, so 100% detection chance still won't spam the strikes.
 NDefines.NAir.NAVAL_STRIKE_CARRIER_MULTIPLIER = 3 --was 2.5 but i increased overall naval damage        -- damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)	
 NDefines.NAir.DISRUPTION_FACTOR_CARRIER = 3.0

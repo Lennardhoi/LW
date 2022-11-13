@@ -459,6 +459,24 @@ NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane t
 		0.0, -- NAVAL_MINES_SWEEPING
 		0.0, -- MISSION_RECON
 	}
+NDefines.NAir.MISSION_FUEL_COSTS = {  -- fuel cost per plane for each mission
+		1.0, -- AIR_SUPERIORITY
+		1.0, -- CAS
+		0.2, -- INTERCEPTION
+		1.0, -- STRATEGIC_BOMBER
+		1.0, -- NAVAL_BOMBER
+		1.0, -- DROP_NUKE
+		1.0, -- PARADROP
+		0.75, -- NAVAL_KAMIKAZE
+		1.2, -- PORT_STRIKE
+		1.2, -- ATTACK_LOGISTICS
+		1.0, -- AIR_SUPPLY
+		0.6, -- TRAINING
+		1.0, -- NAVAL_MINES_PLANTING
+		1.0, -- NAVAL_MINES_SWEEPING
+		1.0, -- RECON
+		--1.0, -- NAVAL_PATROL
+	}
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT = -0.2   --Vanilla 0.3
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT = -0.35          --Vanilla -0.35 
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE_STEEPNESS = 50 --see plot in mod/resources

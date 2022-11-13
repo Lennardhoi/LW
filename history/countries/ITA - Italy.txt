@@ -61,10 +61,10 @@ set_variable = {
 }
 if = {
 	limit = { has_dlc = "By Blood Alone" }
-		set_air_oob = "ITA_1936_air_bba"
+		#set_air_oob = "ITA_1936_air_bba"
 		set_technology = {
 			aa_lmg = 1
-			nav_1
+			nav_1 = 1
 			engines_1 = 1
 			engines_2 = 1
 			early_bombs = 1
@@ -142,6 +142,20 @@ if = {
 				
 			}
 			icon = "GFX_ITA_CAS1_medium"
+		}
+		
+		create_equipment_variant = {
+			name = "SM.79"
+			type = small_plane_naval_bomber_airframe_1
+			modules = {
+				fixed_main_weapon_slot = torpedo_mounting
+				fixed_auxiliary_weapon_slot_1 = light_mg_2x
+				engine_type_slot = engine_2_1x
+				special_type_slot_1 = radio_navigation_1
+				special_type_slot_2 = dive_brakes_small
+				
+			}
+			icon = "GFX_ENG_naval_bomber1_medium"
 		}
 	}
 if = {

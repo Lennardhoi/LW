@@ -1093,11 +1093,22 @@ focus_tree = {
  						level = 4
  						instant_build = yes
  					}
+					if={
+						limit={anti_air_building>2}
+					 
+ 					set_building_level = {
+ 						type = anti_air_building
+ 						level = 5
+ 						instant_build = yes
+ 					}
+					} 
+					else={
  					add_building_construction = {
  						type = anti_air_building
  						level = 3
  						instant_build = yes
  					}
+					}
  					set_building_level = {
  						type = air_base
  						level = 10
@@ -1119,11 +1130,22 @@ focus_tree = {
  						level = 2
  						instant_build = yes
  					}
+					if={
+						limit={anti_air_building>3}
+					 
+ 					set_building_level = {
+ 						type = anti_air_building
+ 						level = 5
+ 						instant_build = yes
+ 					}
+					} 
+					else={
  					add_building_construction = {
  						type = anti_air_building
  						level = 2
  						instant_build = yes
  					}
+					}
  					set_building_level = {
  						type = air_base
  						level = 10
@@ -1139,11 +1161,22 @@ focus_tree = {
  						level = 1
  						instant_build = yes
  					}
+					if={
+						limit={anti_air_building>3}
+					 
+ 					set_building_level = {
+ 						type = anti_air_building
+ 						level = 5
+ 						instant_build = yes
+ 					}
+					} 
+					else={
  					add_building_construction = {
  						type = anti_air_building
  						level = 2
  						instant_build = yes
  					}
+					}
  					set_building_level = {
  						type = air_base
  						level = 10
@@ -1159,11 +1192,22 @@ focus_tree = {
  						level = 1
  						instant_build = yes
  					}
+					if={
+						limit={anti_air_building>3}
+					 
+ 					set_building_level = {
+ 						type = anti_air_building
+ 						level = 5
+ 						instant_build = yes
+ 					}
+					} 
+					else={
  					add_building_construction = {
  						type = anti_air_building
  						level = 2
  						instant_build = yes
  					}
+					}
  					set_building_level = {
  						type = air_base
  						level = 10
@@ -2817,11 +2861,22 @@ focus_tree = {
  					province =3796
  					instant_build = yes
  				}
- 				add_building_construction = {
- 					type = anti_air_building
- 					level = 2
- 					instant_build = yes
- 				}
+					if={
+						limit={anti_air_building>3}
+					 
+ 					set_building_level = {
+ 						type = anti_air_building
+ 						level = 5
+ 						instant_build = yes
+ 					}
+					} 
+					else={
+ 					add_building_construction = {
+ 						type = anti_air_building
+ 						level = 2
+ 						instant_build = yes
+ 					}
+					}
  				set_building_level = {
  					type = bunker
  					level = 2
@@ -2838,18 +2893,41 @@ focus_tree = {
  				}
  			}
  			415 = {
- 				add_building_construction = {
- 					type = anti_air_building
- 					level = 2
- 					instant_build = yes
- 				}
+ 				
+					if={
+						limit={anti_air_building>3}
+					 
+ 					set_building_level = {
+ 						type = anti_air_building
+ 						level = 5
+ 						instant_build = yes
+ 					}
+					} 
+					else={
+ 					add_building_construction = {
+ 						type = anti_air_building
+ 						level = 2
+ 						instant_build = yes
+ 					}
+					}
  			}
  			414 = {
- 				add_building_construction = {
- 					type = anti_air_building
- 					level = 2
- 					instant_build = yes
- 				}
+ 				if={
+						limit={anti_air_building>3}
+					 
+ 					set_building_level = {
+ 						type = anti_air_building
+ 						level = 5
+ 						instant_build = yes
+ 					}
+					} 
+					else={
+ 					add_building_construction = {
+ 						type = anti_air_building
+ 						level = 2
+ 						instant_build = yes
+ 					}
+					}
  			}
  			582 = {
  				set_building_level = {

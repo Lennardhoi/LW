@@ -198,7 +198,8 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = fighter_equipment_1
+			type = small_plane_airframe_1
+			version_name = "Hurricane"
 			creator = "ENG"
 		}
 		requested_factories = 1
@@ -207,7 +208,8 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = tac_bomber_equipment_1
+			version_name = "Wellington"
+			type = medium_plane_airframe_1
 			creator = "ENG"
 		}
 		requested_factories = 1
@@ -216,8 +218,9 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = nav_bomber_equipment_1
+			type = small_plane_naval_bomber_airframe_1
 			creator = "ENG"
+			version_name = "Swordfish"
 		}
 		requested_factories = 1
 		progress = 0.1
@@ -225,8 +228,9 @@ instant_effect = {
 	}
 	add_equipment_production = {
 		equipment = {
-			type = CAS_equipment_1
-			creator = "ENG"
+			type = small_plane_cas_airframe_1
+			creator = "ENG" 
+			version_name = "Hector"
 		}
 		requested_factories = 1
 		progress = 0.2
