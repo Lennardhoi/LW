@@ -552,9 +552,6 @@ operations = {
  				every_country={set_country_flag = big_event_custom_barbarossa}
  			}
  			hidden_effect={
- 				every_country={
- 					add_ideas = speed3
- 				}
  				ROM = {
  					if = { limit= { has_country_flag=inf_barb_buff }
  						add_timed_idea = { idea = GER_barbarossa_inf days = 175 }
