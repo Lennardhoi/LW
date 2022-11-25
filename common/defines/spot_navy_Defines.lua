@@ -80,7 +80,7 @@ NDefines.NNavy.SUBMARINE_ESCAPE_RATIOS = { -- subs will escape battle in convoy 
 	}
 
 NDefines.NNavy.ANTI_AIR_ATTACK_TO_AMOUNT = 0.01	-- Balancing value to convert equipment stat anti_air_attack to the random % value of airplanes being hit.
-NDefines.NNavy.DEPTH_CHARGES_HIT_PROFILE = 70.0,
+NDefines.NNavy.DEPTH_CHARGES_HIT_PROFILE = 70.0
 NDefines.NNavy.SUBMARINE_REVEAL_POW = 1.8		-- A scaling factor that is applied to the reveal chance in order to make large differences in detection vs visibility more pronounced
 NDefines.NNavy.NAVAL_COMBAT_SUB_DETECTION_FACTOR = 12.0      -- balance value for sub detection in combat by ships
 NDefines.NNavy.SUBMARINE_HIDE_TIMEOUT = 16		-- Amount of in-game-hours that takes the submarine (with position unrevealed), to hide.
