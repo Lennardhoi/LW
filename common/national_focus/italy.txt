@@ -1800,9 +1800,11 @@ focus_tree = {
  		x = 0
  		y = 1
  		available = {
- 			OR= { #has_completed_focus= ITA_italian_air
- 				date >1941.1.1}
- 			     has_tech=cas2 has_tech=fighter2}
+ 			
+ 				date >1941.1.1
+ 			     has_tech = cas_2 
+			     has_tech = improved_small_airframe
+			}
  		relative_position_id = ITA_air_innovation_2
  		cost = 5
  		ai_will_do = {

@@ -201,7 +201,7 @@ technologies = {
 			leads_to_tech = modern_small_airframe
 			research_cost_coeff = 1
 		}
-		
+		allow={date>1941.1.1}
 		research_cost = 1.5
 		start_year = 1944
 
@@ -387,7 +387,6 @@ technologies = {
 			leads_to_tech = advanced_medium_airframe
 			research_cost_coeff = 1
 		}
-		
 		research_cost = 1.5
 		start_year = 1940
 		folder = {
@@ -441,7 +440,7 @@ technologies = {
 			leads_to_tech = modern_medium_airframe
 			research_cost_coeff = 1
 		}
-
+		allow={date>1941.1.1}
 		research_cost = 1.5
 		start_year = 1944
 		folder = {
@@ -639,7 +638,7 @@ technologies = {
 			leads_to_tech = modern_large_airframe
 			research_cost_coeff = 1
 		}
-
+		allow={date>1941.1.1}
 		research_cost = 2
 		start_year = 1944
 		folder = {
@@ -848,7 +847,7 @@ technologies = {
 		enable_equipment_modules = {
 			rocket_rails
 		}
-		
+		allow={date>1941.1.1}
 		research_cost = 1
 		start_year = 1944
 		categories = {
@@ -976,7 +975,7 @@ technologies = {
 		enable_equipment_modules = {
 			torpedo_mounting3
 		}
-		
+		allow={date>1941.1.1}
 		research_cost = 1
 		start_year = 1944
 
@@ -1098,7 +1097,7 @@ technologies = {
 		enable_equipment_modules = {
 			guided_anti_ship_missile
 		}
-		
+		allow={date>1941.1.1}
 		research_cost = 1
 		start_year = 1944
 		categories = {
@@ -1328,7 +1327,7 @@ technologies = {
 			cannon_defense_turret
 			cannon_defense_turret_2x
 		}
-		
+		allow={date>1941.1.1}
 		research_cost = 1
 		start_year = 1944
 
@@ -1429,7 +1428,7 @@ technologies = {
 			name = bba_air_techs_folder
 			position = { x = 4 y = 8 }
 		}
-			
+		allow={date>1941.1.1}	
 		categories = {
 			air_equipment
 			plane_modules_tech
@@ -1716,7 +1715,7 @@ technologies = {
 			fuel_injection2_m	
 			fuel_injection2_l
 		}
-		
+		allow={date>1941.1.1}
 		research_cost = 1
 		start_year = 1942
 
@@ -1768,7 +1767,7 @@ technologies = {
 			engine_4_4x
 			engine_4_6x	
 		}
-		
+		allow={date>1941.1.1}
 		research_cost = 1
 		start_year = 1944
 
