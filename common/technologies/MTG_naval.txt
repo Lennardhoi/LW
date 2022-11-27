@@ -130,8 +130,9 @@ technologies = {
 		enable_equipment_modules = {
 			light_ship_engine_4
 		}
+		allow={date>1940.1.1}
 		research_cost = 1.5
-		start_year = 1941
+		start_year = 1942
 		folder = {
 			name = mtgnavalfolder
 			position = { x = 0 y = 19 }
@@ -150,6 +151,7 @@ technologies = {
 		categories = {
 			naval_equipment
 			dd_tech
+			year_1942
 		}
 		#allow_branch = {always=no}
 	}
@@ -570,8 +572,9 @@ technologies = {
 		enable_equipment_modules = {
 			cruiser_ship_engine_4
 		}
+		allow={date>1940.1.1}
 		research_cost = 1.5
-		start_year = 1941
+		start_year = 1942
 		folder = {
 			name = mtgnavalfolder
 			position = {  x = -1 y = 19 }
@@ -591,6 +594,7 @@ technologies = {
 			naval_equipment
 			cl_tech
 			ca_tech
+			year_1942
 		}
 	}
 	improved_airplane_launcher = {
@@ -715,12 +719,13 @@ technologies = {
 		on_research_complete = {
 			custom_effect_tooltip = cruiser_armor_advice_tt
 		}
+		allow={date>1940.1.1}
 		xp_research_type = navy
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
 		xp_research_bonus = 1.50
 		research_cost = 1
-		start_year = 1941
+		start_year = 1942
 		folder = {
 			name = mtgnavalfolder
 			position = {  x = 0 y = 18 }
@@ -741,6 +746,7 @@ technologies = {
 			naval_equipment
 			cl_tech
 			ca_tech
+			year_1942
 		}
 	}
 	#  # ###  ##  #   # #   #      ## #  # ### ###   ##
@@ -943,8 +949,9 @@ technologies = {
 		enable_equipment_modules = {
 			heavy_ship_engine_4
 		}
+		allow={date>1940.1.1}
 		research_cost = 1.5
-		start_year = 1941
+		start_year = 1942
 		folder = {
 			name = mtgnavalfolder
 			position = {  x = -1 y = 19 }
@@ -965,6 +972,7 @@ technologies = {
 			naval_equipment
 			bb_tech
 			bc_tech
+			year_1942
 		}
 	}
 	basic_heavy_armor_scheme = {
@@ -1172,8 +1180,9 @@ technologies = {
 		enable_equipment_modules = {
 			carrier_ship_engine_4
 		}
+		allow={date>1940.1.1}
 		research_cost = 1.5
-		start_year = 1941
+		start_year = 1942
 		folder = {
 			name = mtgnavalfolder
 			position = {  x = -1 y = 19 }
@@ -1193,6 +1202,7 @@ technologies = {
 		categories = {
 			naval_equipment
 			cv_tech
+			year_1942
 		}
 	}
 	###  ##  ###  ###  ### ###   ##      #   #  ##  ###   ##  ### ###  ###                  ## #  # ###  #   #  ##  ###  ### #  # ###  ##
@@ -1452,10 +1462,12 @@ technologies = {
 	}
 	modern_ship_torpedo_launcher = {
 		research_cost = 0.75
-		start_year = 1941
+		start_year = 1942
 		enable_equipment_modules = {
 			ship_torpedo_4
 		}
+		
+		allow={date>1940.1.1}
 		on_research_complete = {
 			custom_effect_tooltip = torpedo_advice_tt
 		}
@@ -1473,6 +1485,7 @@ technologies = {
 		#allow_branch = {always=no}
 		categories = {
 			naval_equipment
+			year_1942
 		}
 	}
 	early_ship_hull_submarine = {
@@ -1596,11 +1609,10 @@ technologies = {
 			ship_torpedo_sub_4
 			sub_ship_engine_4
 		}
-		#allow_branch = {
-		#	always=no
-		#}
+		
+		allow={date>1940.1.1}
 		research_cost = 1.5
-		start_year = 1941
+		start_year = 1942
 		folder = {
 			name = mtgnavalfolder
 			position = {  x = -2 y = 19 }
@@ -1618,6 +1630,7 @@ technologies = {
 		categories = {
 			naval_equipment
 			ss_tech
+			year_1942
 		}
 	}
 	basic_submarine_snorkel = {
@@ -1679,7 +1692,7 @@ technologies = {
 		xp_boost_cost = 50
 		xp_research_bonus = 1.50
 		research_cost = 1.25
-		start_year = 1941
+		start_year = 1942
 		folder = {
 			name = mtgnavalfolder
 			position = {  x = -1 y = 18 }
@@ -1697,6 +1710,7 @@ technologies = {
 		categories = {
 			naval_equipment
 			ss_tech
+			year_1942
 		}
 	}
 	##  ###  #   #  ##  #   # ### #  # ###  ##
@@ -1829,13 +1843,15 @@ technologies = {
 	}
 	advanced_light_battery = {
 		research_cost = 0.75
-		start_year = 1941
+		start_year = 1942
 		enable_equipment_modules = {
 			ship_light_battery_4
 		}
 		on_research_complete = {
 			custom_effect_tooltip = light_battery_advice_tt
 		}
+		
+		allow={date>1940.1.1}
 		folder = {
 			name = mtgnavalfolder
 			position = { x = -2 y = 18 }
@@ -1849,6 +1865,7 @@ technologies = {
 		}
 		#allow_branch={always=no}
 		categories = {
+			year_1942
 			naval_equipment
 		}
 	}
@@ -2032,11 +2049,13 @@ technologies = {
 	}
 	advanced_medium_battery = {
 		research_cost = 0.75
-		start_year = 1941
+		start_year = 1942
 		enable_equipment_modules = {
 			ship_medium_battery_4
 			ship_light_medium_battery_4
 		}
+		
+		allow={date>1940.1.1}
 		on_research_complete = {
 			custom_effect_tooltip = medium_battery_advice_tt
 		}
@@ -2050,6 +2069,7 @@ technologies = {
 		#allow_branch={always=no}
 		categories = {
 			naval_equipment
+			year_1942
 		}
 	}
 	basic_medium_shell = {
@@ -2212,7 +2232,9 @@ technologies = {
 	}
 	advanced_heavy_battery = {
 		research_cost = 0.75
-		start_year = 1941
+		start_year = 1942
+		
+		allow={date>1940.1.1}
 		enable_equipment_modules = {
 			ship_heavy_battery_4
 		}
@@ -2240,6 +2262,7 @@ technologies = {
 		#allow_branch={always=no}
 		categories = {
 			naval_equipment
+			year_1942
 		}
 	}
 	basic_heavy_shell = {
