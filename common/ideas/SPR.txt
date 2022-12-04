@@ -1,4 +1,21 @@
 ideas = {
+	hidden_ideas = {
+
+	SAF_war_measures_act = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_navy_bonus
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_factory_efficiency_gain_factor = 0.25 
+			}
+		}
+	}
 	country = {
 		SPR_no_armada = {
 			allowed = {
