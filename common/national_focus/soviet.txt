@@ -634,7 +634,7 @@ focus_tree = {
 		completion_reward = {
 			every_unit_leader = {
 				limit={has_id=402}
-				promote_leader = yes
+				demote_leader = yes
 				add_skill_level=1
 				add_attack=3
 				add_logistics = 2
@@ -644,10 +644,11 @@ focus_tree = {
 				add_unit_leader_trait=logistics_wizard
 				add_unit_leader_trait=inspirational_leader
 				add_unit_leader_trait=organisational_leader
+				promote_leader = yes
 			}
 			every_unit_leader = {
 				limit={has_id=410}
-				promote_leader = yes
+				demote_leader = yes
 				add_skill_level=1
 				add_attack=2
 				add_defense=1
@@ -655,10 +656,11 @@ focus_tree = {
 				add_unit_leader_trait=expert_improviser
 				add_unit_leader_trait=scavenger
 				add_unit_leader_trait=trait_engineer
+				promote_leader = yes
 			}
 			every_unit_leader = {
 				limit={has_id=407}
-				promote_leader = yes
+				demote_leader = yes
 				add_skill_level=3
 				add_attack=-1
 				add_defense=2
@@ -667,6 +669,7 @@ focus_tree = {
 				add_unit_leader_trait=trickster
 				add_unit_leader_trait=scavenger
 				add_unit_leader_trait=skilled_staffer
+				promote_leader = yes
 			}
 		}
 	}

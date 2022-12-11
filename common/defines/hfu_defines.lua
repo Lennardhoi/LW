@@ -442,6 +442,9 @@ NDefines.NNavy.ANTI_AIR_TARGETING = 0.7
 NDefines.NBuildings.ANTI_AIR_SUPERIORITY_MULT = 25 --vanilla 5 there are no planes in vanilla :D                    
 NDefines.NMilitary.ANTI_AIR_TARGETTING_TO_CHANCE = 0.00875 --linear NDefines.NAir.ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR*air_attack*thisdefine=casreduction
 NDefines.NMilitary.ANTI_AIR_ATTACK_TO_AMOUNT = 0
+--NDefines.NMilitary.FIELD_EXPERIENCE_ON_DIVISION_MULT = 1.63
+NDefines.NMilitary.CASUALTY_COUNT_FOR_HISTORY_ENTRY = 15000
+NDefines.NMilitary.VPS_FOR_HIGH_HISTORY_ENTRY = 800	
 NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane to create a mission
 		0.0, -- AIR_SUPERIORITY
 		0.0, -- CAS
