@@ -2171,6 +2171,9 @@ focus_tree = {
  			factor = 10
  		}
  		completion_reward = {
+ 		every_country = {limit = {check_variable= { speeches_enabled > 0} is_in_faction_with=GER }
+ 					scoped_sound_effect="unser_rommel"
+ 				}
  			add_timed_idea= {idea= ITA_production_boost days=30}
  			GER = {remove_unit_leader = 4}
  			ITA={
