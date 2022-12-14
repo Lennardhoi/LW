@@ -1288,7 +1288,7 @@ leader_traits = {
 		}
 	}
 	
-	silent_workhorse2 = {
+	asilent_workhorse = {
 		random = yes
 		sprite = 13
 		political_power_factor = 0.3
@@ -1297,11 +1297,10 @@ leader_traits = {
 			factor = 1
 		}
 	}
-	silent_workhorse3 = {
+	bsilent_workhorse = {
 		random = yes
 		sprite = 13
 		political_power_factor = 0.30
-
 		ai_will_do = {
 			factor = 1
 		}
@@ -1331,7 +1330,7 @@ leader_traits = {
 
 	backroom_backstabber = {
 		sprite = 13
-		political_power_factor = 0.3
+		#political_power_factor = 0.3
 		drift_defence_factor = 0.15
 
 		ai_will_do = {
