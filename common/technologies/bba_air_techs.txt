@@ -1908,7 +1908,9 @@ technologies = {
 			name = bba_air_techs_folder
 			position = { x = 1 y = 6 }
 		}
-
+		on_research_complete = {
+			custom_effect_tooltip = armor_tech_1_tt
+		}
 		categories = {
 			air_equipment
 			plane_modules_tech
@@ -1943,9 +1945,12 @@ technologies = {
 		xp_boost_cost = 50
 		xp_research_bonus = 1.50
 		enable_equipment_modules = {
-			self_sealing_fuel_tanks_small
-			self_sealing_fuel_tanks_medium
-			self_sealing_fuel_tanks_large
+			#self_sealing_fuel_tanks_small
+			#self_sealing_fuel_tanks_medium
+			#self_sealing_fuel_tanks_large
+		}
+		on_research_complete = {
+			custom_effect_tooltip = armor_tech_2_tt
 		}
 		
 		dependencies = {
