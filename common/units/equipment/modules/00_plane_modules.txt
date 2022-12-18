@@ -922,9 +922,11 @@ equipment_modules = {
 		category = cas_weapon
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = { cas tactical_bomber }
-		
+		allow_mission_type = {
+			strategic_bomber
+		}
 		add_stats = {
-			build_cost_ic = 3
+			build_cost_ic = 2
 			air_agility = -20
             weight = 8
 			
