@@ -1,33 +1,39 @@
-state={
- 	id=47
- 	name="STATE_47"
- 	manpower=1591500
- 	resources={
- 		aluminium = 260
- 		tungsten = 100
- 	}
- 	state_category = city
- 	history={
- 		owner = GRE
- 		victory_points = {
- 			3714 3
- 		}
- 		victory_points = {
- 			6594 3
- 		}
- 		victory_points = {
- 			3726 1
- 		}
- 		buildings = {
- 			infrastructure = 5
- 			arms_factory = 1
- 			industrial_complex = 2
- 			air_base = 4
- 		}
- 		add_core_of = GRE
- 	}
- 	provinces={
- 		825 924 1055 3625 3714 3726 6414 6594
- 	}
- }
 
+state={
+	id=47
+	name="STATE_47"
+	resources={
+		aluminium=260.000
+		tungsten=100.000
+	}
+
+	history={
+		owner = GRE
+		victory_points = {
+			3714 3 
+		}
+		victory_points = {
+			6594 3 
+		}
+		victory_points = {
+			3726 1 
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 2
+			air_base = 4
+
+		}
+		add_core_of = GRE
+
+	}
+
+	provinces={
+		825 924 1055 3625 3714 3726 6414 6594 
+	}
+	manpower=1591500
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

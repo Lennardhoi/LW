@@ -1,26 +1,33 @@
-state={
- 	id=715
- 	name="Athens"
- 	manpower=721000
- 	state_category = city
- 	history={
- 		owner = GRE
- 		victory_points = {
- 			3845 20
- 		}
- 		buildings = {
- 			infrastructure = 5
- 			arms_factory = 3
- 			industrial_complex = 4
- 			air_base = 4
- 			3845 = {
- 				naval_base = 9
- 			}
- 		}
- 		add_core_of = GRE
- 	}
- 	provinces={
- 		3845
- 	}
- }
 
+state={
+	id=715
+	name="Athens"
+
+	history={
+		owner = GRE
+		victory_points = {
+			3845 20 
+		}
+		buildings = {
+			infrastructure = 5
+			arms_factory = 3
+			industrial_complex = 4
+			air_base = 4
+			3845 = {
+				naval_base = 9
+
+			}
+
+		}
+		add_core_of = GRE
+
+	}
+
+	provinces={
+		3845 
+	}
+	manpower=721000
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

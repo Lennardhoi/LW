@@ -1,26 +1,32 @@
-state={
- 	id=180
- 	name="STATE_187"
- 	manpower = 322600
- 	state_category = small_island
- 	resources={
- 	}
- 	history={
- 		owner = GRE
- 		buildings = {
- 			infrastructure = 4
- 			dockyard = 1
- 			7718 = {
- 				naval_base = 1
- 			}
- 			6054 = {
- 				naval_base = 1
- 			}
- 		}
- 		add_core_of = GRE
- 	}
- 	provinces={
- 		6054 7718 3179
- 	}
- }
 
+state={
+	id=180
+	name="STATE_187"
+
+	history={
+		owner = GRE
+		buildings = {
+			infrastructure = 4
+			dockyard = 1
+			7718 = {
+				naval_base = 1
+
+			}
+			6054 = {
+				naval_base = 1
+
+			}
+
+		}
+		add_core_of = GRE
+
+	}
+
+	provinces={
+		3179 6054 7718 
+	}
+	manpower=322600
+	buildings_max_level_factor=1.000
+	state_category=small_island
+	local_supplies=0.000
+}
