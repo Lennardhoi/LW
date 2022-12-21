@@ -3621,6 +3621,9 @@ focus_tree = {
  		}
  		search_filters = { FOCUS_FILTER_ANNEXATION }
  		completion_reward = {
+		 	every_country = {limit = {check_variable= { speeches_enabled > 0}}
+ 					scoped_sound_effect="peace_europe"
+ 				}	
  			HUN = {
  				country_event = { id = germany.51 }
  				add_opinion_modifier = { target = GER modifier = GER_first_vienna_award_GER }
