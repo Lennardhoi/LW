@@ -660,7 +660,7 @@ equipment_modules = {
                 interception
 			}
 			add_stats = {
-                air_attack = 6
+                air_attack = 2
 			}
 		}
 	}
@@ -689,7 +689,7 @@ equipment_modules = {
                 interception
 			}
 			add_stats = {
-                air_attack = 9
+                air_attack = 3
 			}
 		}
 		mission_type_stats = {
@@ -731,7 +731,7 @@ equipment_modules = {
                 interception
 			}
 			add_stats = {
-                air_attack = 8
+                air_attack = 3
 			}
 		}
 	}
@@ -768,7 +768,7 @@ equipment_modules = {
                 interception
 			}
 			add_stats = {
-                air_attack = 12
+                air_attack = 4
 			}
 		}
 		can_convert_from = {
@@ -1939,10 +1939,11 @@ equipment_modules = {
 				interception
 			}
 			add_stats = {
-                night_penalty = -0.2
+                night_penalty = -0.1
             }
 			multiply_stats={
-				air_attack= 0.10
+				air_attack= 0.05
+                air_defence = 0.05
 			}
 		}
 		##xp_cost = 1
@@ -1975,12 +1976,13 @@ equipment_modules = {
 			limit = {
 				interception
 			}
-			add_stats = {
-                night_penalty = -0.3
-            }
 			multiply_stats={
-				air_attack= 0.20
+				air_attack= 0.1
+                air_defence = 0.1
 			}
+			add_stats = {
+                night_penalty = -0.2
+            }
 		}
 		##xp_cost = 1
 	}
