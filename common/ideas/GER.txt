@@ -59,7 +59,7 @@ ideas = {
 				always = yes
 			}
 			removal_cost = -1
-			picture = generic_manpower_bonus
+			picture = GER_Nero
 			equipment_bonus = {
 				small_plane_airframe = {
 					air_attack = -0.1 instant=yes
@@ -84,14 +84,51 @@ ideas = {
 				always = yes
 			}
 			removal_cost = -1
-			picture = generic_manpower_bonus
+			picture = GER_Nero
 			modifier = {
 				production_factory_max_efficiency_factor = -0.05
 				production_speed_arms_factory_factor = -0.1
 				industrial_capacity_factory = -0.1
 				army_defence_factor = 0.1
 				consumer_goods_factor = 0.05
-				}}
+				}
+		}
+		GER_Support = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = GER_Support_Minors
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				anti_air_equipment = {
+					build_cost_ic = -0.05 
+					instant = yes
+				}
+				artillery_equipment = {
+					build_cost_ic = -0.05 
+					instant = yes
+				}
+				anti_tank_equipment = {
+					build_cost_ic = -0.05  
+					instant = yes
+				}
+			}
+		}
+		GER_Coorperation = {
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = GER_Support_Minors
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.075 instant = yes
+				}
+			}
+		}		
 		GER_Albert_Speer_idea = {
 			allowed = {
 				always = yes
@@ -103,12 +140,14 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.05
 				production_factory_efficiency_gain_factor = 0.1
 				line_change_production_efficiency_factor = 0.1
-				}}
+				}
+		}
 		GER_totaler_krieg = {
 			allowed = {
 				always = no
 			}
 			removal_cost = -1
+			picture = GER_total_war
 			allowed_civil_war = {
 				has_government = fascism
 			}
@@ -364,7 +403,7 @@ ideas = {
 				has_government = fascism
 			}
 			removal_cost = -1
-			picture = generic_acquire_tanks
+			picture = Ger_barb
 			modifier = {
 				army_armor_attack_factor = 0.10
 				air_mission_efficiency = 0.1
@@ -527,7 +566,7 @@ ideas = {
 				has_government = fascism
 			}
 			removal_cost = -1
-			picture = generic_acquire_tanks
+			picture = Ger_barb_2
 			
 			targeted_modifier = {
 				tag = SOV
@@ -679,7 +718,7 @@ ideas = {
 				always = yes
 			}
 			removal_cost = -1
-			picture = generic_navy_bonus
+			picture = German_Engineering
 			modifier={research_speed_factor = 0.25
 			}
 			equipment_bonus = {			

@@ -600,7 +600,7 @@ focus_tree = {
  			factor = 1
  		}
  		available = {
- 			GER = { has_completed_focus = GER_danzig_or_war }
+ 			date>1939.5.1 
  		}
  		available_if_capitulated = no
  		complete_tooltip = {
@@ -753,43 +753,59 @@ focus_tree = {
  		}
  	}
  	focus = {
- 		id = GER_operation_margarethe
+ 		id = GER_Support_Hungary
  		icon = GFX_focus_GER_Greater_Hungary
+		mutually_exclusive = { focus = GER_Support_Romania}
  		prerequisite = { focus = GER_integrate_war_economies }
  		x = -1
  		y = 1
  		relative_position_id = GER_integrate_war_economies
- 		cost = 0.001
+ 		cost = 5
  		ai_will_do = {
  			factor = 1
  		}
  		available = {
- 			HUN = {is_ai=yes}
+ 			date>1940.1.1 
  		}
- 		available_if_capitulated = no
+ 		available_if_capitulated = no	
  		search_filters = { FOCUS_FILTER_INDUSTRY }
  		completion_reward = {
- 			annex_country = { target = HUN transfer_troops = yes }
+			custom_effect_tooltip = "Will reduce Infantry Equipment IC for Hungary and Germany"
+			add_ideas = {idea = GER_Coorperation}
+ 			every_country = {
+ 				limit = {
+ 					original_tag = HUN
+ 				}
+ 				add_ideas = {idea = GER_Support}
+ 			}
  		}
  	}
  	focus = {
- 		id = GER_operation_margarethe2
- 		icon = GFX_focus_GER_Greater_Hungary
+ 		id = GER_Support_Romania
+ 		icon = GFX_GER_support_rom
+		mutually_exclusive = { focus = GER_Support_Hungary}
  		prerequisite = { focus = GER_integrate_war_economies }
  		x = 1
  		y = 1
  		relative_position_id = GER_integrate_war_economies
- 		cost = 0.001
+ 		cost = 5
  		ai_will_do = {
  			factor = 1
  		}
  		available = {
- 			ROM = {is_ai=yes}
+ 			date>1940.1.1 
  		}
  		available_if_capitulated = no
  		search_filters = { FOCUS_FILTER_INDUSTRY }
  		completion_reward = {
- 			annex_country = { target = ROM transfer_troops = yes }
+			custom_effect_tooltip = "Will reduce Infantry Equipment IC for Romania and Germany"
+			add_ideas = {idea = GER_Coorperation}
+ 			every_country = {
+ 				limit = {
+ 					original_tag = ROM
+ 				}
+ 				add_ideas = {idea = GER_Support}
+ 			}
  		}
  	}
  	focus = {
@@ -894,6 +910,9 @@ focus_tree = {
  		cost = 5
  		ai_will_do = {
  			factor = 1
+ 		}
+		available = {
+ 			date>1937.1.1
  		}
  		available_if_capitulated = yes
  		search_filters = { FOCUS_FILTER_RESEARCH }
