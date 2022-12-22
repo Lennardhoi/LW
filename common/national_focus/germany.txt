@@ -771,12 +771,12 @@ focus_tree = {
  		search_filters = { FOCUS_FILTER_INDUSTRY }
  		completion_reward = {
 			custom_effect_tooltip = "Will reduce Infantry Equipment IC for Hungary and Germany"
-			add_ideas = {idea = GER_Coorperation}
+			add_ideas = GER_Coorperation
  			every_country = {
  				limit = {
  					original_tag = HUN
  				}
- 				add_ideas = {idea = GER_Support}
+ 				add_ideas = GER_Support
  			}
  		}
  	}
@@ -799,12 +799,12 @@ focus_tree = {
  		search_filters = { FOCUS_FILTER_INDUSTRY }
  		completion_reward = {
 			custom_effect_tooltip = "Will reduce Infantry Equipment IC for Romania and Germany"
-			add_ideas = {idea = GER_Coorperation}
+			add_ideas = GER_Coorperation
  			every_country = {
  				limit = {
  					original_tag = ROM
  				}
- 				add_ideas = {idea = GER_Support}
+ 				add_ideas = GER_Support
  			}
  		}
  	}
