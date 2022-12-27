@@ -474,6 +474,15 @@ operations = {
  					target = POL
  					type = annex_everything
  				}
+				every_country = {
+ 				limit = {
+ 					original_tag = SOV
+ 				}
+ 				declare_war_on = {
+ 					target = POL
+ 					type = annex_everything
+ 				}
+ 			}
  				POL={declare_war_on_enemy_faction =yes}
  			}
  		}

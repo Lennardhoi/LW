@@ -535,6 +535,20 @@ ideas = {
 				attack_bonus_against = 0.25
 			}
 		}
+		GER_steiner_idea = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			removal_cost = -1
+			picture = generic_acquire_tanks
+			modifier = {
+				army_attack_factor = 0.3
+				no_supply_grace = 128
+			}
+		}
 		GER_barbarossa_inf = {
 			allowed = {
 				always = no

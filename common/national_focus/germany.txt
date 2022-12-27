@@ -765,7 +765,7 @@ focus_tree = {
  			factor = 1
  		}
  		available = {
- 			date>1940.1.1 
+ 			date>1940.6.1 
  		}
  		available_if_capitulated = no	
  		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -793,7 +793,7 @@ focus_tree = {
  			factor = 1
  		}
  		available = {
- 			date>1940.1.1 
+ 			date>1940.6.1 
  		}
  		available_if_capitulated = no
  		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -2463,6 +2463,51 @@ focus_tree = {
  				64 = {
  					for_loop_effect = {
  						end = 6
+ 						create_unit = {
+ 							division = "name = \"Panzerjagd-Division\" division_template = \"Panzerjagd-Division\" start_experience_factor = 2.0"
+ 							owner = GER
+ 						}
+ 					}
+ 				}
+ 			}
+ 		}
+ 	}
+ 	focus = {
+ 		id = GER_steiner
+ 		icon = GFX_GER_loyalty_to_the_fuhrer
+ 		prerequisite = { focus = GER_endsieg }
+ 		relative_position_id = GER_endsieg
+ 		x = 0
+ 		y = 1
+ 		cost = 1
+ 		available = {
+		    count_triggers={
+ 				amount=1
+ 				68= {is_controlled_by_ROOT_or_ally=no}
+ 				66= {is_controlled_by_ROOT_or_ally=no}
+ 				65= {is_controlled_by_ROOT_or_ally=no}
+ 				60= {is_controlled_by_ROOT_or_ally=no}
+ 				59= {is_controlled_by_ROOT_or_ally=no}
+ 				61= {is_controlled_by_ROOT_or_ally=no}
+ 				62= {is_controlled_by_ROOT_or_ally=no}
+ 				63= {is_controlled_by_ROOT_or_ally=no}
+ 				64= {is_controlled_by_ROOT_or_ally=no}
+ 			}
+ 		}
+ 		ai_will_do = {
+ 			factor = 5
+ 		}
+ 		available_if_capitulated = no
+ 		completion_reward = {
+			recruit_character = GER_felix_steiner
+			add_timed_idea = {idea = GER_steiner_idea days = 14}
+ 			every_country = {limit = {check_variable= { speeches_enabled > 0} is_in_faction_with=GER }
+ 					scoped_sound_effect="untergang"
+ 			}
+ 			hidden_effect ={
+ 				64 = {
+ 					for_loop_effect = {
+ 						end = 2
  						create_unit = {
  							division = "name = \"Panzerjagd-Division\" division_template = \"Panzerjagd-Division\" start_experience_factor = 2.0"
  							owner = GER

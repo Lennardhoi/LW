@@ -553,6 +553,27 @@ country_event = {
 		name = germany.12.a
 		hidden_effect = {
 			news_event = { hours = 6 id = news.33 }
+		every_country = {
+ 				limit = {
+ 					original_tag = SOV
+ 				}
+ 				white_peace = ENG
+ 				white_peace = DEN
+				white_peace = NOR
+				white_peace = HOL
+				white_peace = YUG
+ 				white_peace = BEL
+				white_peace = FRA
+				white_peace = NZL
+				white_peace = AST
+				white_peace = SAF
+				white_peace = RAJ
+				white_peace = CAN
+				white_peace = USA
+				add_ideas = peace_training
+				add_ideas = war_in_our_neigbour
+				remove_decision = war_bonds
+ 			}	
 		}
 	}
 }
