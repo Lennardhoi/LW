@@ -44,6 +44,110 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = SOV_lessons_of_poland
+		icon = GFX_SOV_lessons_of_poland
+		x = 27
+		y = 1
+		prerequisite = { focus = SOV_great_purge }
+		cost = 2
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		available = {has_idea=SOV_lessons_of_poland_idea}
+		completion_reward = {
+		custom_effect_tooltip = "Deploys 4 Veterans, that can be convertet into tanks"
+		 	division_template = {
+ 					name = "Red-Army Veterans"
+ 					regiments = {
+ 						infantry = { x = 0 y = 0 }
+ 						infantry = { x = 0 y = 1 }
+ 						infantry = { x = 0 y = 2 }
+ 						infantry = { x = 0 y = 3 }
+ 						infantry = { x = 1 y = 0 }
+ 						infantry = { x = 1 y = 1 }
+ 						infantry = { x = 1 y = 2 }
+ 						infantry = { x = 1 y = 3 }
+ 						infantry = { x = 2 y = 0 }
+ 						infantry = { x = 2 y = 1 }
+ 						infantry = { x = 2 y = 2 }
+ 						infantry = { x = 3 y = 0 }
+ 						infantry = { x = 3 y = 1 }
+ 						infantry = { x = 3 y = 2 }
+ 						infantry = { x = 3 y = 3 }
+						infantry = { x = 3 y = 4 }
+ 						infantry = { x = 4 y = 0 }
+ 						infantry = { x = 4 y = 1 }
+ 						infantry = { x = 4 y = 2 }
+ 						infantry = { x = 4 y = 3 }
+ 						infantry = { x = 4 y = 4 }
+ 					}
+				}	
+			212 = {
+				for_loop_effect = {
+ 					end = 4
+ 					create_unit = {
+ 						division = "name = \"Red-Army Veterans\" division_template = \"Red-Army Veterans\" start_experience_factor = 1"
+ 						owner = SOV
+ 					}
+ 				}
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = land_doctrine
+			}
+			add_ace = {
+				name = "Grigory"
+				surname = "Rechkalov"
+				type = fighter_unique
+				is_female = no
+			}
+			add_ace = {
+				name = "Ivan"
+				surname = "Kozhedub"
+				type = fighter_unique
+				is_female = no
+			}
+			add_ace = {
+				name = "Nikolai"
+				surname = "Gulaev"
+				type = fighter_unique
+				is_female = no
+			}
+			add_ace = {
+				name = "Kirill"
+				surname = "Yevstigneyev"
+				type = fighter_unique
+				is_female = no
+			}
+			add_ace = {
+				name = "Dmitry"
+				surname = "Glinka"
+				type = fighter_unique
+				is_female = no
+			}
+			add_ace = {
+				name = "Alexander"
+				surname = "Pokryshkin"
+				type = fighter_unique
+				is_female = no
+			}
+			add_ace = {
+				name = "Amet-khan"
+				surname = "Sultan"
+				type = fighter_unique
+				is_female = no
+			}
+			add_ace = {
+				name = "Alexander"
+				surname = "Koldunov"
+				type = fighter_unique
+				is_female = no
+			}			
+	}
+	}
+	focus = {
 		id = SOV_start_five_year_plan
 		icon = GFX_sov_stalin_writing
 		x = 3

@@ -69,4 +69,28 @@ focus_tree = {
  			GER = {add_ideas =  tot_economic_mobilisation}
  		}
  	}
+ 	focus = {
+ 		id = VEN_Lessons_of_poland
+ 		icon = GFX_goal_generic_consumer_goods
+ 		x = 14
+ 		y = 0
+ 		cost = 0.001
+ 		ai_will_do = {
+ 			factor = 1
+ 		}
+ 		available_if_capitulated = yes
+ 		available = {
+ 			AND = {
+ 				SOV = {controls_state = 94 }
+				SOV = {controls_state = 95 }
+				SOV = {controls_state = 93 }
+				SOV = {controls_state = 91 }
+ 			}
+ 		}
+ 		completion_reward = {
+ 			SOV = {add_timed_idea =  {idea = SOV_lessons_of_poland_idea days = 180}}
+ 		}
+ 	}
+	
+	
 
