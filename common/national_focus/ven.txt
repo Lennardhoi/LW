@@ -81,14 +81,16 @@ focus_tree = {
  		available_if_capitulated = yes
  		available = {
  			AND = {
+				SOV = {has_idea = SOV_poland_campaign}
  				SOV = {controls_state = 94 }
 				SOV = {controls_state = 95 }
 				SOV = {controls_state = 93 }
 				SOV = {controls_state = 91 }
+				date<1940.1.1
  			}
  		}
  		completion_reward = {
- 			SOV = {add_timed_idea =  {idea = SOV_lessons_of_poland_idea days = 180}}
+ 			SOV = {add_timed_idea =  {idea = SOV_lessons_of_poland_idea days = 365}}
  		}
  	}
 	
