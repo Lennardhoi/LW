@@ -2323,6 +2323,7 @@ focus_tree = {
  		icon = GFX_ITA_Mare_Nostrum
  		prerequisite = { focus = ITA_greece_war_goal }
  		available = {
+		date > 1941.01.1
  		}
  		x = -1
  		y = 1
@@ -2332,6 +2333,7 @@ focus_tree = {
  			factor = 10
  		}
  		completion_reward = {
+			add_timed_idea = {idea = Ita_fortress_italy days = 90}
  			add_stability = -0.05
  			add_political_power = -70
  			add_state_core = 103

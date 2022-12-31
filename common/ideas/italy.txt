@@ -90,6 +90,18 @@ ideas = {
 				production_speed_buildings_factor = 0.10
 			}
 		}
+		Ita_fortress_italy = {
+			picture = generic_production_bonus
+			allowed = {
+				original_tag = ITA
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = 0.20
+				consumer_goods_factor = -0.05
+				production_speed_arms_factory_factor = -0.7
+			}
+		}
 		desert_fox = {
 			picture = chi_incompetent_officers
 			allowed = {
