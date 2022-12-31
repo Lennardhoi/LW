@@ -474,16 +474,20 @@ operations = {
  					target = POL
  					type = annex_everything
  				}
+				
 				every_country = {
  				limit = {
  					original_tag = SOV
  				}
+				IF = {
+				limit = { has_global_flag = sov_yes_poland }
  				declare_war_on = {
  					target = POL
  					type = annex_everything
  				}
 				add_ideas = SOV_poland_campaign
- 			}
+				}
+				}
  				POL={declare_war_on_enemy_faction =yes}
  			}
  		}

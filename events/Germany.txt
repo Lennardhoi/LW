@@ -479,6 +479,66 @@ country_event = {
 			}
 		}
 		set_global_flag = sov_yes_pact
+		set_global_flag = sov_yes_poland
+	}
+	option = {
+		name = germany.11.a.2
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 0
+				GER = {
+					OR = {
+						has_wargoal_against = SOV
+						is_justifying_wargoal_against = SOV
+					}
+					NOT = {
+						is_in_faction_with = SOV
+					}
+				}
+			}
+		}
+		add_opinion_modifier = { target = GER modifier = MR_pact }
+		custom_effect_tooltip = germany.11.a.tt.2
+		add_state_claim = 96
+		add_state_claim = 11
+		add_state_claim = 12
+		add_state_claim = 13
+		add_state_claim = 183
+		add_state_claim = 184
+		add_state_claim = 142
+		add_state_claim = 182
+		add_state_claim = 78
+		add_state_claim = 89
+		add_state_claim = 91
+		add_state_claim = 93
+		add_state_claim = 94
+		add_state_claim = 95
+		add_state_claim = 96
+		add_state_claim = 97
+		add_state_claim = 80
+		add_state_claim = 698
+		hidden_effect =  { add_timed_idea = { idea = SOV_molotov_ribbentrop_pact days = 730 } }
+		GER = {
+			country_event = { days = 1 id = germany.12 }
+			effect_tooltip = {
+				add_opinion_modifier = { target = SOV modifier = MR_pact }
+			}
+		}
+				every_country = {
+ 				limit = {
+ 					original_tag = POL
+ 				}
+				10 = {
+ 				add_extra_state_shared_building_slots = 3
+ 				add_building_construction = {
+ 					type = arms_factory
+ 					level = 3
+ 					instant_build = yes
+ 				}
+				}
+				}
+		set_global_flag = sov_yes_pact
 	}
 }
 country_event = {

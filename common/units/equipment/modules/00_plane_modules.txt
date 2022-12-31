@@ -1085,13 +1085,13 @@ equipment_modules = {
 	}
 	tank_buster_1 = {
 		abbreviation = "tb1"
-		category = cas_weapon
+		category = tank_buster_weapon
         gui_category = tank_buster
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = cas
 
 		add_stats = {
-			air_ground_attack = 6
+			air_ground_attack = 4
 			build_cost_ic = 1
 			weight = 8
 			air_agility = -15
@@ -1107,13 +1107,13 @@ equipment_modules = {
 
 	tank_buster_2 = {
 		abbreviation = "tb2"
-		category = cas_weapon
+		category = tank_buster_weapon
         gui_category = tank_buster
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = cas
 
 		add_stats = {
-			air_ground_attack = 8
+			air_ground_attack = 5
 			build_cost_ic = 2
 			weight = 12
 			air_agility = -20
