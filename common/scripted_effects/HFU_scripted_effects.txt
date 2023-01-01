@@ -263,6 +263,40 @@ update_pacific_war = {
 		limit = {2= {is_controlled_by_GER_or_ally=no}}
 		add_to_variable={GER.pacific_status=-0.1}
 	}
+	set_variable={ITA.imperium_romanum=0.2}
+		subtract_from_variable={ITA.imperium_romanum=Global.pacific_days}
+	if= { 
+		limit = {582= {is_controlled_by_GER_or_ally=no}}
+		add_to_variable={ITA.imperium_romanum=-0.05}
+	}
+	if= { 
+		limit = {415= {is_controlled_by_GER_or_ally=no}}
+		add_to_variable={ITA.imperium_romanum=-0.05}
+	}
+	if= { 
+		limit = {413= {is_controlled_by_GER_or_ally=no}}
+		add_to_variable={ITA.imperium_romanum=-0.05}
+	}
+	if= { 
+		limit = {422= {is_controlled_by_GER_or_ally=no}}
+		add_to_variable={ITA.imperium_romanum=-0.05}
+	}
+	if= { 
+		limit = {422= {is_controlled_by_GER_or_ally=no}}
+		add_to_variable={ITA.imperium_romanum=-0.05}
+	}
+	if= { 
+		limit = {112= {is_controlled_by_GER_or_ally=no}}
+		add_to_variable={ITA.imperium_romanum=-0.05}
+	}
+	if= { 
+		limit = {412= {is_controlled_by_GER_or_ally=no}}
+		add_to_variable={ITA.imperium_romanum=-0.05}
+	}
+	if= { 
+		limit = {478= {is_controlled_by_GER_or_ally=no}}
+		add_to_variable={ITA.imperium_romanum=-0.05}
+	}
 }
 anti_cross_faction_trade_axis = {
 	add_opinion_modifier = {

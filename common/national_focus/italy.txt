@@ -2176,6 +2176,9 @@ focus_tree = {
  					scoped_sound_effect="unser_rommel"
  				}
  			add_timed_idea= {idea= ITA_production_boost days=30}
+			add_dynamic_modifier = {
+ 						modifier = imperium_romanum
+ 					}
  			GER = {remove_unit_leader = 4}
  			ITA={
  				country_event = { id = italy.187}
@@ -2291,17 +2294,18 @@ focus_tree = {
  			}
  			}}
  	focus = {
- 		id = ITA_sword_of_islam
+ 		id = ITA_graecia
  		icon = GFX_ITA_Generic_Ultranat_Eagle
  		prerequisite = { focus = ITA_greece_war_goal }
  		cost = 5
  		available = {
  			Date > 1942.1.1
- 			has_full_control_of_state = 582
- 			has_full_control_of_state = 414
- 			has_full_control_of_state = 581
- 			has_full_control_of_state = 413
- 			has_full_control_of_state = 415
+ 			has_full_control_of_state = 180
+ 			has_full_control_of_state = 178
+ 			has_full_control_of_state = 47
+ 			has_full_control_of_state = 179
+ 			GER={has_full_control_of_state = 715}
+ 			GER={has_full_control_of_state = 175}
  		}
  		x = 1
  		y = 1
@@ -2310,12 +2314,15 @@ focus_tree = {
  			factor = 10
  		}
  		completion_reward = {
- 			add_state_core = 582
- 			add_state_core = 414
- 			add_state_core = 581
- 			add_state_core = 413
- 			add_state_core = 415
- 			add_state_core = 265
+ 			add_state_core = 180
+ 			add_state_core = 178
+ 			add_state_core = 47
+ 			add_state_core = 179
+ 			add_state_core = 715
+ 			add_state_core = 175
+			transfer_state = 175
+			transfer_state = 715
+			
  		}
  	}
  	focus = {
@@ -2333,7 +2340,7 @@ focus_tree = {
  			factor = 10
  		}
  		completion_reward = {
-			add_timed_idea = {idea = Ita_fortress_italy days = 90}
+			add_ideas =Ita_fortress_italy
  			add_stability = -0.05
  			add_political_power = -70
  			add_state_core = 103

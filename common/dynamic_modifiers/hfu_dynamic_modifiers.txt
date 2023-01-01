@@ -8,10 +8,13 @@ POW_industry = {
 	industrial_capacity_dockyard= pow_dockyard_capacity
 	local_resources_factor  = pow_resource_gain
 	production_speed_air_base_factor = pow_fortification
-	production_speed_infrastructure_factor = pow_infrastructure_speed
+	production_speed_infrastructure_factor = pow_fortification
 	production_speed_bunker_factor = pow_fortification
 	production_speed_coastal_bunker_factor = pow_fortification
 	production_speed_anti_air_building_factor = pow_fortification
+	production_speed_supply_node_factor = pow_fortification
+	production_speed_rail_way_factor = pow_fortification
+	
 
 }
 JAP_volunteer_workers_in_burma = {
@@ -40,6 +43,11 @@ pacific_war_minor = {
 }
 Atlantikwall={
 	naval_invasion_penalty=GER.pacific_status
+}
+imperium_romanum={
+	icon = "FRA_fortification_focus"
+	army_core_defence_factor = ITA.imperium_romanum
+	army_core_attack_factor = ITA.imperium_romanum
 }
 Atlantikwall_visual = {
 		icon = "FRA_fortification_focus"

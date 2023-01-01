@@ -10,6 +10,13 @@
  		variant_name = { find_and_replace = { "aa_equipment" "equipment" } }
  		}
  	}
+	mechanized_amphibious_chassis = {
+ 		archetype = mechanized_equipment
+ 		type = { armor amphibious}
+ 		for_each = { 
+ 		variant_name = { find_and_replace = { "chassis" "equipment" } }
+ 		}
+ 	}
  	mechanized_spg_equipment = {
  		archetype = mechanized_equipment
  		type = { armor artillery  }
@@ -24,13 +31,13 @@
  		variant_name = { find_and_replace = { "td_equipment" "equipment" } }
  		}
  	}
- 	mechanized_flame_equipment = {
- 		archetype = mechanized_equipment
- 		type = { armor flame }
- 		for_each = { 
- 		variant_name = { find_and_replace = { "flame_equipment" "equipment" } }
- 		}
- 	}
+ 	#mechanized_flame_equipment = {
+ 	#	archetype = mechanized_equipment
+ 	##	type = { armor flame }
+ 	#	for_each = { 
+ 	#	variant_name = { find_and_replace = { "flame_equipment" "equipment" } }
+ 	#	}
+ 	#}
  	# light_tank
  	
  	light_tank_artillery_chassis = {
