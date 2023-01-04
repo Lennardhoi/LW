@@ -359,14 +359,15 @@ equipments = {
 			fixed_auxiliary_weapon_slot_2 = { 
 				required = no
 				allowed_module_categories = {
-                    			#plane_special_module_defense_turret
+                    #plane_special_module_defense_turret
 					recon_camera
-					fighter_weapon
+					#fighter_weapon
 					cas_weapon
 					special_bombs
 					nav_bomber_weapon
 					mine_warfare_offense
 					kamikaze_bomber_weapon
+					plane_amunition
 				}
 			}
 
@@ -470,12 +471,13 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					recon_camera
-					fighter_weapon
+					#fighter_weapon
 					cas_weapon
 					nav_bomber_weapon
 					mine_warfare_offense
 					kamikaze_bomber_weapon
 					special_bombs
+					plane_amunition
 					
 				}
 			}

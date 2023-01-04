@@ -1214,8 +1214,7 @@ technologies = {
 		xp_boost_cost = 50
 		xp_research_bonus = 1.50
 		enable_equipment_modules = {
-			heavy_mg_2x
-			heavy_mg_4x
+			aircraft_cannon_1_1x
 			hmg_defense_turret
 			hmg_defense_turret_2x
 		}
@@ -1231,8 +1230,12 @@ technologies = {
 			leads_to_tech = aa_cannon_1
 			research_cost_coeff = 1
 		}
-        	path = {
+        path = {
 			leads_to_tech = tank_buster_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = amunition_1
 			research_cost_coeff = 1
 		}
 		categories = {
@@ -1267,7 +1270,6 @@ technologies = {
 		xp_boost_cost = 50
 		xp_research_bonus = 1.50
 		enable_equipment_modules = {
-			aircraft_cannon_1_1x
 			aircraft_cannon_1_2x
 		}
 		
@@ -1280,6 +1282,10 @@ technologies = {
 		}
 		path = {
 			leads_to_tech = aa_cannon_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = amunition_2
 			research_cost_coeff = 1
 		}
 		categories = {
@@ -1327,6 +1333,138 @@ technologies = {
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = 4 y = 8 }
+		}
+		path = {
+			leads_to_tech = amunition_3
+			research_cost_coeff = 1
+		}
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_guns
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					has_tech = improved_small_airframe
+					has_tech = improved_medium_airframe
+					has_tech = improved_large_airframe
+				}
+				factor = 5
+			}
+			modifier = {
+				OR = {
+					tag = GER
+					tag = SOV
+					tag = ENG
+				}
+				factor = 3
+			}
+		}
+	}
+	amunition_1 = {
+		xp_research_type = air
+		xp_unlock_cost = 0
+		xp_boost_cost = 50
+		xp_research_bonus = 1.50
+		enable_equipment_modules = {
+		amunition_1
+		}
+		allow={}
+		research_cost = 0.25
+		start_year = 1936
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 6 y = 4 }
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_guns
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					has_tech = improved_small_airframe
+					has_tech = improved_medium_airframe
+					has_tech = improved_large_airframe
+				}
+				factor = 5
+			}
+			modifier = {
+				OR = {
+					tag = GER
+					tag = SOV
+					tag = ENG
+				}
+				factor = 3
+			}
+		}
+	}
+	amunition_2 = {
+		xp_research_type = air
+		xp_unlock_cost = 0
+		xp_boost_cost = 50
+		xp_research_bonus = 1.50
+		enable_equipment_modules = {
+		amunition_2
+		}
+		allow={}
+		research_cost = 0.25
+		start_year = 1940
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 6 y = 6 }
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_guns
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					has_tech = improved_small_airframe
+					has_tech = improved_medium_airframe
+					has_tech = improved_large_airframe
+				}
+				factor = 5
+			}
+			modifier = {
+				OR = {
+					tag = GER
+					tag = SOV
+					tag = ENG
+				}
+				factor = 3
+			}
+		}
+	}
+	amunition_3 = {
+		xp_research_type = air
+		xp_unlock_cost = 0
+		xp_boost_cost = 50
+		xp_research_bonus = 1.50
+		enable_equipment_modules = {
+		amunition_3
+		}
+		allow={}
+		research_cost = 0.25
+		start_year = 1944
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 6 y = 8 }
 		}
 
 		categories = {
@@ -1474,7 +1612,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 3 y = 2 }
+			position = { x = 5 y = 2 }
 		}
 
 		path = {
@@ -1548,7 +1686,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 3 y = 4 }
+			position = { x = 5 y = 4 }
 		}
 
 		path = {
@@ -1605,7 +1743,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 3 y = 6 }
+			position = { x = 5 y = 6 }
 		}
 
 		path = {
@@ -1663,7 +1801,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 5 y = 6 }
+			position = { x = 7 y = 6 }
 		}
 
 		path = {
@@ -1718,7 +1856,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 5 y = 8 }
+			position = { x = 7 y = 8 }
 		}
 
 
@@ -1770,7 +1908,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 3 y = 8 }
+			position = { x = 5 y = 8 }
 		}
 
 		categories = {
@@ -1818,7 +1956,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 5 y = 4 }
+			position = { x = 7 y = 4 }
 		}
 
 		categories = {
@@ -1879,7 +2017,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 1 y = 4 }
+			position = { x = 3 y = 4 }
 		}
 
 		categories = {
@@ -1905,7 +2043,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 1 y = 6 }
+			position = { x = 3 y = 6 }
 		}
 		on_research_complete = {
 			custom_effect_tooltip = armor_tech_1_tt
@@ -1960,7 +2098,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 1 y = 8 }
+			position = { x = 3 y = 8 }
 		}
 
 		categories = {

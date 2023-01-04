@@ -677,7 +677,7 @@ equipment_modules = {
 			weight = 6
 		}
         multiply_stats = {
-            air_agility = -0.12
+            air_agility = -0.07
         }
 		#xp_cost = 2
 		allow_mission_type = {
@@ -748,7 +748,7 @@ equipment_modules = {
 			weight = 8
 		}
         multiply_stats = {
-            air_agility = -0.15
+            air_agility = -0.10
         }
 		#xp_cost = 2
 		allow_mission_type = {
@@ -1057,6 +1057,7 @@ equipment_modules = {
 		##xp_cost = 2
 		allow_mission_type = {
 			cas
+			attack_logistics
 		}
        mission_type_stats = {
 			limit = {
@@ -2009,7 +2010,91 @@ equipment_modules = {
 		}
 		##xp_cost = 1
 	}
+	
+	amunition_1 = {
+		abbreviation = "amu1"
+		category = plane_amunition
+		gui_category = plane_amunition
+		sfx = sfx_ui_sd_module_turret
 
+		add_stats = {
+			build_cost_ic = 2.5
+			weight = 3   
+		}
+		mission_type_stats = {
+			limit = {
+				interception
+			}
+			multiply_stats = {
+				air_attack = 0.25
+			} 
+		}
+		mission_type_stats = {
+			limit = {
+				air_superiority
+			}
+			multiply_stats = {
+				air_attack = 0.25
+			} 
+		}
+		##xp_cost = 1
+	}
+	amunition_2 = {
+		abbreviation = "amu2"
+		category = plane_amunition
+		gui_category = plane_amunition
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 3
+			weight = 3   
+		}
+		mission_type_stats = {
+			limit = {
+				interception
+			}
+			multiply_stats = {
+				air_attack = 0.35
+			} 
+		}
+		mission_type_stats = {
+			limit = {
+				air_superiority
+			}
+			multiply_stats = {
+				air_attack = 0.35
+			} 
+		}
+		##xp_cost = 1
+	}
+	amunition_3 = {
+		abbreviation = "amu3"
+		category = plane_amunition
+		gui_category = plane_amunition
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 3.5
+			weight = 3   
+		}
+		mission_type_stats = {
+			limit = {
+				interception
+			}
+			multiply_stats = {
+				air_attack = 0.45
+			} 
+		}
+		mission_type_stats = {
+			limit = {
+				air_superiority
+			}
+			multiply_stats = {
+				air_attack = 0.45
+			} 
+		}
+		##xp_cost = 1
+	}
 ########  ######## ######## ######## ##    ##  ######  #### ##     ## ########    ######## ##     ## ########  ########  ######## ########  ######  
 ##     ## ##       ##       ##       ###   ## ##    ##  ##  ##     ## ##             ##    ##     ## ##     ## ##     ## ##          ##    ##    ## 
 ##     ## ##       ##       ##       ####  ## ##        ##  ##     ## ##             ##    ##     ## ##     ## ##     ## ##          ##    ##       
