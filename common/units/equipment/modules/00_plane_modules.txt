@@ -79,7 +79,7 @@ equipment_modules = {
 
 		add_stats = {
 			maximum_speed = 530
-			thrust = 20
+			thrust = 24
 			build_cost_ic = 16
 			fuel_consumption = 0.16
 		}
@@ -98,7 +98,7 @@ equipment_modules = {
 
 		add_stats = {
 			maximum_speed = 480
-			thrust = 32
+			thrust = 36
 			build_cost_ic = 32
 			fuel_consumption = 0.32
 		}
@@ -117,7 +117,7 @@ equipment_modules = {
 
 		add_stats = {
 			maximum_speed = 480
-			thrust = 44
+			thrust = 48
 			build_cost_ic = 48
 			fuel_consumption = 0.48
 		}
@@ -136,7 +136,7 @@ equipment_modules = {
 
 		add_stats = {
 			maximum_speed = 480
-			thrust = 56
+			thrust = 60
 			build_cost_ic = 64
 			fuel_consumption = 0.64
 		}
@@ -154,7 +154,7 @@ equipment_modules = {
 
 		add_stats = {
 			maximum_speed = 480
-			thrust = 68
+			thrust = 72
 			build_cost_ic = 96
 			fuel_consumption = 0.8
 		}
@@ -173,7 +173,7 @@ equipment_modules = {
 
 		add_stats = {
 			maximum_speed = 550
-			thrust = 30
+			thrust = 36
 			build_cost_ic = 17
 			fuel_consumption = 0.16
 		}
@@ -192,7 +192,7 @@ equipment_modules = {
 
 		add_stats = {
 			maximum_speed = 500
-			thrust = 50
+			thrust = 60
 			build_cost_ic =34
 			fuel_consumption = 0.32
 		}
@@ -211,7 +211,7 @@ equipment_modules = {
 
 		add_stats = {
 			maximum_speed = 500
-			thrust = 70
+			thrust = 84
 			build_cost_ic = 51
 			fuel_consumption = 0.48
 		}
@@ -230,7 +230,7 @@ equipment_modules = {
 
 		add_stats = {
 			maximum_speed = 500
-			thrust = 90
+			thrust = 108
 			build_cost_ic = 68
 			fuel_consumption = 0.64
 		}
@@ -249,7 +249,7 @@ equipment_modules = {
 
 		add_stats = {
 			maximum_speed = 500
-			thrust = 110
+			thrust = 132
 			build_cost_ic = 102
 			fuel_consumption = 0.8
 		}
@@ -267,7 +267,7 @@ equipment_modules = {
 
 		add_stats = {
 			maximum_speed = 750
-			thrust = 40
+			thrust = 48
 			build_cost_ic = 18
 			fuel_consumption = 0.16
 		}
@@ -286,7 +286,7 @@ equipment_modules = {
 
 		add_stats = {
 			maximum_speed = 700
-			thrust = 65
+			thrust = 80
 			build_cost_ic = 36
 			fuel_consumption = 0.32
 		}
@@ -304,7 +304,7 @@ equipment_modules = {
 
 		add_stats = {
 			maximum_speed = 700
-			thrust = 90
+			thrust = 112
 			build_cost_ic = 54
 			fuel_consumption = 0.48
 		}
@@ -325,7 +325,7 @@ equipment_modules = {
 
 		add_stats = {
 			maximum_speed = 700
-			thrust = 115
+			thrust = 144
 			build_cost_ic = 72
 			fuel_consumption = 0.64
 		}
@@ -344,7 +344,7 @@ equipment_modules = {
 
 		add_stats = {
 			maximum_speed = 700
-			thrust = 140
+			thrust = 176
 			build_cost_ic = 108
 			fuel_consumption = 0.8
 		}
@@ -779,7 +779,8 @@ equipment_modules = {
 
 	bomb_locks = {
 		abbreviation = "bol"
-		category = cas_weapon
+        category = special_bombs
+		gui_category = cas_weapon
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = cas
 		
@@ -790,25 +791,46 @@ equipment_modules = {
 		allow_mission_type = {
 			cas
 			attack_logistics
+            naval_bomber
+            port_strike
 		}
 		mission_type_stats = {
 			limit = {
 				cas
+                naval_bomber
+                attack_logistics
 			}
 			add_stats = {
-				air_agility = -15
-				weight = 8
+				weight = 6
 				air_ground_attack = 6
 			}
+            multiply_stats = {
+                air_agility = -0.25
+            }
 		}
         mission_type_stats = {
 			limit = {
 				attack_logistics
 			}
+            multiply_stats = {
+                air_agility = -0.25
+            }
 			add_stats = {
-				air_agility = -15
-				weight = 8
-				air_ground_attack = 0.3
+				weight = 6
+				air_ground_attack = 0.6
+			}
+		}
+        mission_type_stats = {
+			limit = {
+				naval_bomber
+                port_strike
+			}
+            multiply_stats = {
+                air_agility = -0.25
+            }
+			add_stats = {
+				weight = 6
+				naval_strike_attack = 8
 			}
 		}
 		dismantle_cost_ic = 0.5
@@ -832,73 +854,43 @@ equipment_modules = {
 			limit = {
 				cas
 			}
+            multiply_stats = {
+                air_agility = -0.25
+            }
 			add_stats = {
-				air_agility = -15
-				weight = 8
-				air_ground_attack = 9
+				weight = 6
+				air_ground_attack = 6
 			}
 		}
         	mission_type_stats = {
 			limit = {
 				attack_logistics
 			}
+            multiply_stats = {
+                air_agility = -0.25
+            }
 			add_stats = {
-				air_agility = -15
-				weight = 8
-				air_ground_attack = 0.4
+				weight = 6
+				air_ground_attack = 0.6
 			}
        		}
 		
 		dismantle_cost_ic = 0.5
 	}
-	rocket_rails = {
-		abbreviation = "rrl"
-		category = cas_weapon
-		sfx = sfx_ui_sd_module_turret
-		add_equipment_type = cas
-
-		add_stats = {
-			build_cost_ic = 2
-		}
-		#xp_cost = 2
-		allow_mission_type = {
-			cas
-			attack_logistics
-		}
-		mission_type_stats = {
-			limit = {
-				cas
-			}
-			multiply_stats = {
-				#maximum_speed = -0.1
-				air_agility = -0.1
-			}
-			add_stats = {
-				air_ground_attack = 9
-				weight = 4
-			}
-		}
-        mission_type_stats = {
-			limit = {
-				attack_logistics
-			}
-			add_stats = {
-				air_agility = -15
-				weight = 4
-				air_ground_attack = 0.4
-			}
-        }
-		dismantle_cost_ic = 0.5
-	}
 
 	small_bomb_bay = {
 		abbreviation = "sbb"
-		category = cas_weapon
+		category = special_bombs
+        gui_category = cas_weapon
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = { cas tactical_bomber }
 		add_stats = {
-			build_cost_ic = 1		
+			build_cost_ic = 1	
+            weight = 6
 		}
+        multiply_stats = {
+                air_agility = -0.25
+            }
 		##xp_cost = 2
 		allow_mission_type = {
 			cas
@@ -909,8 +901,7 @@ equipment_modules = {
 				cas
 			}
 			add_stats = {
-				air_ground_attack = 7
-				weight = 8
+				air_ground_attack = 4
 			}
 		}
 		mission_type_stats = {
@@ -918,11 +909,17 @@ equipment_modules = {
 				attack_logistics
 			}
 			add_stats = {
-				air_agility = -15
-				weight = 4
 				air_ground_attack = 0.4
 			}
         }
+        mission_type_stats = {
+			limit = {
+				strategic_bomber
+			}
+			add_stats = {
+				air_bombing = 4
+			}
+		}
 		dismantle_cost_ic = 3.5
 	}
 
@@ -965,8 +962,7 @@ equipment_modules = {
 				cas
 			}
 			add_stats = {
-				air_ground_attack = 5
-				weight = 0
+				air_ground_attack = 6
 			}
 		}
 		dismantle_cost_ic = 7
@@ -1046,48 +1042,121 @@ equipment_modules = {
 	}
 	tank_buster_1 = {
 		abbreviation = "tb1"
-		category = tank_buster_weapon
-        gui_category = tank_buster
+		category = cas_weapon
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = cas
 
 		add_stats = {
-			air_ground_attack = 4
-			build_cost_ic = 1
+			build_cost_ic = 2
 			weight = 8
-			air_agility = -15
-            air_attack = 3
-			air_defence = 1
+            air_attack = 4 
 		}
+        multiply_stats = {
+				air_agility = -0.2
+			}
 		##xp_cost = 2
 		allow_mission_type = {
 			cas
 		}
+       mission_type_stats = {
+			limit = {
+				cas
+			}
+			add_stats = {
+				air_ground_attack = 10
+			}
+		}
+        mission_type_stats = {
+			limit = {
+				attack_logistics
+			}
+			add_stats = {
+				air_ground_attack = 1
+			}
+        }
 		dismantle_cost_ic = 1.5
 	}
 
 	tank_buster_2 = {
 		abbreviation = "tb2"
-		category = tank_buster_weapon
-        gui_category = tank_buster
+		category = cas_weapon
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = cas
 
 		add_stats = {
-			air_ground_attack = 5
-			build_cost_ic = 2
-			weight = 12
-			air_agility = -20
+			build_cost_ic = 2.5
+			weight = 10
             air_attack = 6
-			air_defence = 2
 		}
+        multiply_stats = {
+				air_agility = -0.25
+			}
 		##xp_cost = 2
 		allow_mission_type = {
 			cas
+            attack_logistics
 		}
+        mission_type_stats = {
+			limit = {
+				cas
+			}
+			add_stats = {
+				air_ground_attack = 12
+			}
+		}
+        mission_type_stats = {
+			limit = {
+				attack_logistics
+			}
+			add_stats = {
+				air_ground_attack = 1.2
+			}
+        }
 		dismantle_cost_ic = 3.5
 	}
+    
+    rocket_rails = {
+		abbreviation = "rrl"
+		category = cas_weapon
+		sfx = sfx_ui_sd_module_turret
+		add_equipment_type = cas
 
+		add_stats = {
+			build_cost_ic = 3
+		}
+		#xp_cost = 2
+		allow_mission_type = {
+			cas
+			attack_logistics
+		}
+		mission_type_stats = {
+			limit = {
+				cas
+			}
+            multiply_stats = {
+				air_agility = -0.30
+			}
+			add_stats = {
+				air_ground_attack = 14
+				weight = 10
+                air_attack = 8
+			}
+		}
+        mission_type_stats = {
+			limit = {
+				attack_logistics
+			}
+            multiply_stats = {
+				air_agility = -0.30
+			}
+			add_stats = {
+				weight = 4
+				air_ground_attack = 1.4
+                air_attack = 8
+			}
+        }
+		dismantle_cost_ic = 0.5
+	}
 	torpedo_mounting = {
 		abbreviation = "tpm"
 		category = nav_bomber_weapon
@@ -1110,7 +1179,7 @@ equipment_modules = {
 			add_stats = {
 				air_agility = -30
 				weight = 8
-				naval_strike_attack = 19.5
+				naval_strike_attack = 15
 			}
 		}
 		dismantle_cost_ic = 1.5
@@ -1137,7 +1206,7 @@ equipment_modules = {
 			add_stats = {
 				air_agility = -30
 				weight = 8
-				naval_strike_attack = 23
+				naval_strike_attack = 18
 			}
 		}
 		dismantle_cost_ic = 1.5
@@ -1165,7 +1234,7 @@ equipment_modules = {
 			add_stats = {
 				air_agility = -15
 				weight = 8
-				naval_strike_attack = 26.5
+				naval_strike_attack = 21
 
 			}
 		}
@@ -1218,7 +1287,7 @@ equipment_modules = {
 		add_equipment_type = { naval_bomber maritime_patrol_plane }
 
 		add_stats = {	
-			build_cost_ic = 20
+			build_cost_ic = 10
 		}
 		##xp_cost = 5
 		allow_mission_type = {
@@ -1233,7 +1302,7 @@ equipment_modules = {
 			add_stats = {
 				air_agility = -20
 				weight = 15
-				naval_strike_attack = 30
+				naval_strike_attack = 40
 
 			}
 		}
@@ -1371,6 +1440,7 @@ equipment_modules = {
 		mission_type_stats = {
 			limit = {
 				cas
+                attack_logistics
 				naval_bomber
 				port_strike
 			}
@@ -1479,12 +1549,15 @@ equipment_modules = {
 				cas
 				naval_bomber
 				port_strike
+                strategic_bomber
 			}
            	 add_stats = {
             		naval_strike_targetting = 2
+                    air_defence = 6
             	}
 			multiply_stats = {
 				air_ground_attack = 0.15
+                air_bombing = 0.05
 			}
 		}
 		dismantle_cost_ic = 2 #you essentially have to redesign part of the wing
@@ -1881,6 +1954,7 @@ equipment_modules = {
 		add_stats = {
 			build_cost_ic = 2
 			weight = 1	
+            
 		}
 		mission_type_stats = {
 			limit = {
@@ -1888,11 +1962,8 @@ equipment_modules = {
 			}
 			add_stats = {
                 night_penalty = -0.1
+                air_superiority = 0.05
             }
-			multiply_stats={
-				air_attack= 0.05
-                air_defence = 0.05
-			}
 		}
         mission_type_stats = {
 			limit = {
@@ -1900,11 +1971,8 @@ equipment_modules = {
 			}
 			add_stats = {
                 night_penalty = -0.1
+                air_attack = 0.75
             }
-			multiply_stats={
-				air_attack= 0.05
-                air_defence = 0.05
-			}
 		}
 		##xp_cost = 1
 	}
@@ -1919,6 +1987,7 @@ equipment_modules = {
 		add_stats = {
 			build_cost_ic = 3
 			weight = 1
+            
 		}
 		mission_type_stats = {
 			limit = {
@@ -1926,22 +1995,16 @@ equipment_modules = {
 			}
 			add_stats = {
                 night_penalty = -0.2
+                air_superiority = 0.1
             }
-			multiply_stats={
-				air_attack= 0.1
-                air_defence = 0.1
-			}
 		}
         mission_type_stats = {
 			limit = {
 				interception
 			}
-			multiply_stats={
-				air_attack= 0.1
-                air_defence = 0.1
-			}
 			add_stats = {
                 night_penalty = -0.2
+                air_attack = 0.15
             }
 		}
 		##xp_cost = 1
@@ -2084,7 +2147,7 @@ equipment_modules = {
 			air_attack = 10
 			air_defence = 2.5
 			build_cost_ic = 3.5
-			weight = 5
+			weight = 4
 		}
         multiply_stats = {
             air_agility = -0.2
@@ -2110,7 +2173,7 @@ equipment_modules = {
 			air_attack = 20
 			air_defence = 5
 			build_cost_ic = 5
-			weight = 10
+			weight = 8
 		}
         multiply_stats = {
             air_agility = -0.4

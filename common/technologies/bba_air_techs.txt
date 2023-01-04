@@ -813,11 +813,6 @@ technologies = {
 			position = { x = 0 y = 6 }
 		}
 
-		path = {
-			leads_to_tech = cas_3
-			research_cost_coeff = 1
-		}
-		
 		categories = {
 			air_equipment
 			plane_modules_tech
@@ -856,7 +851,7 @@ technologies = {
 		}
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 0 y = 8 }
+			position = { x = 2 y = 8 }
 		}
 
 		path = {
@@ -1184,7 +1179,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 3 y = 2 }
+			position = { x = 4 y = 2 }
 		}
 
 		path = {
@@ -1230,7 +1225,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 3 y =4 }
+			position = { x = 4 y =4 }
 		}
 		path = {
 			leads_to_tech = aa_cannon_1
@@ -1281,7 +1276,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 2 y = 6 }
+			position = { x = 4 y = 6 }
 		}
 		path = {
 			leads_to_tech = aa_cannon_2
@@ -1331,7 +1326,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 2 y = 8 }
+			position = { x = 4 y = 8 }
 		}
 
 		categories = {
@@ -1376,7 +1371,7 @@ technologies = {
 		}
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 4 y = 6 }
+			position = { x = 2 y = 4 }
 		}
 
 		categories = {
@@ -1419,12 +1414,16 @@ technologies = {
 		dependencies = {
 			antitank1 = 1
 		}
+		path = {
+			leads_to_tech = cas_3
+			research_cost_coeff = 1
+		}
 		research_cost = 1
 		start_year = 1944
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 4 y = 8 }
+			position = { x = 2 y = 6 }
 		}
 		allow={date>1941.1.1}	
 		categories = {
