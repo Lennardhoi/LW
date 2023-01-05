@@ -650,7 +650,7 @@ equipment_modules = {
 
 	aircraft_cannon_1_1x = {
 		abbreviation = "ac11"
-		category = motor_cannon
+		category = fighter_weapon
         gui_category = fighter_weapon
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = fighter
@@ -751,7 +751,8 @@ equipment_modules = {
 
 	aircraft_cannon_2_2x = {
 		abbreviation = "ac22"
-		category = fighter_weapon
+		category = motor_cannon
+        gui_category = fighter_weapon
 		sfx = sfx_ui_sd_module_turret
 		parent = aircraft_cannon_1_2x
 		add_equipment_type = fighter
@@ -2047,7 +2048,7 @@ equipment_modules = {
 				air_superiority
 			}
 			multiply_stats = {
-				air_attack = 0.25
+				air_attack = 0.3
 			} 
 		}
 		##xp_cost = 1
@@ -2075,7 +2076,7 @@ equipment_modules = {
 				air_superiority
 			}
 			multiply_stats = {
-				air_attack = 0.35
+				air_attack = 0.4
 			} 
 		}
 		##xp_cost = 1

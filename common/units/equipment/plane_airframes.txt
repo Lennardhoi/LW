@@ -103,7 +103,7 @@ equipments = {
         
         module_count_limit = {
 			category = motor_cannon
-			count < 2
+			count < 3
 		}
 		module_count_limit = {
 			module = guided_anti_ship_missile
@@ -349,6 +349,7 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					#recon_camera
+					motor_cannon
                     plane_special_module_defense_turret
 					fighter_weapon
 					#cas_weapon
@@ -460,6 +461,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					#recon_camera
+					motor_cannon
 					fighter_weapon
 					#cas_weapon
 					#nav_bomber_weapon
