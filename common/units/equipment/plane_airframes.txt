@@ -926,7 +926,7 @@ equipments = {
 		air_range = 2200
 		maximum_speed = 0
 		air_agility = 30
-		air_defence = 18
+		air_defence = 20
 		weight = 10
 		naval_strike_attack = 1
 		naval_strike_targetting = 6
@@ -961,17 +961,9 @@ equipments = {
 			fixed_auxiliary_weapon_slot_2 = { 
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
 					recon_camera
-					fighter_weapon  
-				}
-			}
-			fixed_auxiliary_weapon_slot_3 = { 
-				required = no
-				allowed_module_categories = {
-					plane_special_module_defense_turret
-					recon_camera
-					fighter_weapon  
+					#fighter_weapon  
+					plane_amunition
 				}
 			}
 
@@ -1040,7 +1032,7 @@ equipments = {
 		air_range = 2400
 		maximum_speed = 0
 		air_agility = 35
-		air_defence = 20
+		air_defence = 22
 		weight = 12
 		naval_strike_attack = 1
 		naval_strike_targetting = 6
@@ -1075,17 +1067,15 @@ equipments = {
 			fixed_auxiliary_weapon_slot_2 = { 
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
 					recon_camera
-					fighter_weapon  
+					plane_amunition 
 				}
 			}
 			fixed_auxiliary_weapon_slot_3 = { 
 				required = no
 				allowed_module_categories = {
 					plane_special_module_defense_turret
-					recon_camera
-					fighter_weapon  
+					recon_camera  
 				}
 			}
 
@@ -1158,7 +1148,7 @@ equipments = {
 		air_range = 2800
 		maximum_speed = 0
 		air_agility = 40
-		air_defence = 24
+		air_defence = 26
 		weight = 14
 		naval_strike_attack = 1
 		naval_strike_targetting = 6
@@ -1204,9 +1194,8 @@ equipments = {
 			fixed_auxiliary_weapon_slot_3 = { 
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
 					recon_camera
-					fighter_weapon  
+					plane_amunition 
 				}
 			}
 
@@ -1331,9 +1320,8 @@ equipments = {
 			fixed_auxiliary_weapon_slot_3 = { 
 				required = no
 				allowed_module_categories = {
-					plane_special_module_defense_turret
 					recon_camera
-					fighter_weapon  
+					plane_amunition 
 				}
 			}
 
