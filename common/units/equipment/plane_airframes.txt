@@ -842,11 +842,6 @@ equipments = {
 		}
 
 		module_count_limit = {
-			module = medium_bomb_bay
-			count < 3
-		}
-
-		module_count_limit = {
 			module = demining_coil
 			count < 2
 		}
@@ -966,6 +961,14 @@ equipments = {
 					plane_ammunition
 				}
 			}
+			fixed_auxiliary_weapon_slot_3 = { 
+				required = no
+				allowed_module_categories = {
+					recon_camera
+					fighter_weapon 
+					plane_special_module_defense_turret					
+				}
+			}
 
 			engine_type_slot = {
 				required = yes
@@ -1075,7 +1078,16 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					plane_special_module_defense_turret
-					recon_camera  
+					recon_camera
+					fighter_weapon
+				}
+			}
+			fixed_auxiliary_weapon_slot_4 = { 
+				required = no
+				allowed_module_categories = {
+					plane_special_module_defense_turret
+					recon_camera 
+					fighter_weapon
 				}
 			}
 
