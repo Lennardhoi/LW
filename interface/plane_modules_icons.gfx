@@ -19,7 +19,22 @@ spriteTypes = {
 
 
 		#### MODULES ####
-
+	
+	spriteType = {
+		name = "GFX_EMI_ammunition_1"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_ammunition1"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_ammunition_2"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_ammunition2"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_ammunition_2"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_ammunition3"
+		legacy_lazy_load = no
+	}
 	spriteType = {
 		name = "GFX_EMI_light_mg_2x"
 		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_light_mg_2_icon.dds"
@@ -478,7 +493,12 @@ spriteTypes = {
 	}
 
 	#### Category
-
+	
+	spriteType = {
+		name = "GFX_EMI_plane_ammunition"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_ammunition1"
+		legacy_lazy_load = no
+	}
 	spriteType = {
 		name = "GFX_EMI_fighter_weapon"
 		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_heavy_mg_4_icon.dds"
