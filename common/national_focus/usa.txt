@@ -928,7 +928,15 @@ focus_tree = {
  		id = USA_american_dream
  		icon = GFX_USA_our_america_our_problems
  		available = {
- 			date>1940.1.1
+			OR = {
+				date>1940.1.1
+				count_triggers={
+ 				amount=1
+ 				410= {is_controlled_by_ROOT_or_ally=no}
+ 				409= {is_controlled_by_ROOT_or_ally=no}
+ 				411= {is_controlled_by_ROOT_or_ally=no}
+ 			}
+			}	
  		}
  		prerequisite = { focus = USA_natural_2}
  		prerequisite = { focus = USA_federal_housing_act}
@@ -1093,6 +1101,12 @@ focus_tree = {
  		available = {
  			OR={
  				date > 1941.1.1
+				count_triggers={
+ 				amount=1
+ 				410= {is_controlled_by_ROOT_or_ally=no}
+ 				409= {is_controlled_by_ROOT_or_ally=no}
+ 				411= {is_controlled_by_ROOT_or_ally=no}
+ 			}
  				has_war=yes
  			}
  		}
