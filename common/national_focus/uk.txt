@@ -638,18 +638,12 @@ focus_tree = {
  		}
  		available_if_capitulated = yes
 		available =  {
- 			date > 1942.1.1
+ 			date > 1942.5.1
  		}
  		completion_reward = {
- 			create_equipment_variant = {
-				name = "Spitfire XIV"
-				type = small_plane_airframe_2
-				upgrades = {
- 					plane_engine_upgrade = 7
- 					plane_range_upgrade = 5
- 				}
-				
-			}
+			 set_technology = {
+ 				advanced_small_airframe=1
+ 			}
 		}
 	}
  	focus = {

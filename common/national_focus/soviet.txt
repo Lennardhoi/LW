@@ -2201,6 +2201,12 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			add_timed_idea= {idea= SOV_bagration days=100}
+			 	set_technology = {
+ 				improved_rocket_engines = 1
+ 			}
+				set_technology = {
+ 				advanced_rocket_engines = 1
+ 			}
 		}
 	}
 }

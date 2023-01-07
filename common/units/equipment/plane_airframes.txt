@@ -377,7 +377,6 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					plane_engine_type
-					plane_jet_engine_type
 					plane_rocket_engine_type
 				}
 			}
@@ -499,7 +498,6 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					plane_engine_type
-					plane_jet_engine_type
 					plane_rocket_engine_type
 				}
 			}
@@ -556,14 +554,14 @@ equipments = {
 		air_range = 2000
 		maximum_speed = 0
 		air_agility = 85
-		air_defence = 18
+		air_defence = 10
 		weight = 7
 		naval_strike_attack = 1
 		naval_strike_targetting = 8
-		build_cost_ic = 12
+		build_cost_ic = 24
 		resources = {
-			aluminium = 40
-			rubber = 10
+			aluminium = 50
+			rubber = 15
 		}
 		module_slots = {
 			fixed_main_weapon_slot = {
@@ -581,6 +579,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					#recon_camera
+					motor_cannon
 					fighter_weapon
 					#cas_weapon
 					#nav_bomber_weapon
@@ -591,12 +590,7 @@ equipments = {
 			fixed_auxiliary_weapon_slot_2 = { 
 				required = no
 				allowed_module_categories = {
-					recon_camera
-					fighter_weapon
-					cas_weapon
-					nav_bomber_weapon
-					mine_warfare_offense
-					kamikaze_bomber_weapon
+					plane_ammunition
 				}
 			}
 			fixed_auxiliary_weapon_slot_3 = { 
@@ -610,7 +604,16 @@ equipments = {
 					kamikaze_bomber_weapon
 				}
 			}
-
+			fixed_auxiliary_weapon_slot_4 = { 
+				required = no
+				allowed_module_categories = {
+					recon_camera
+					fighter_weapon
+					nav_bomber_weapon
+					mine_warfare_offense
+					kamikaze_bomber_weapon
+				}
+			}
 			engine_type_slot = {
 				required = yes
 				allowed_module_categories = {

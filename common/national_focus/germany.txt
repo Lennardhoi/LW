@@ -1772,7 +1772,12 @@ focus_tree = {
  		icon = GFX_focus_GER_Me262
  		prerequisite = { focus = GER_rocket_interceptor }
  		prerequisite = { focus = GER_v2 }
- 		available={date>1943.5.1}
+ 		available={
+		AND = {
+		date>1943.1.1
+		has_idea = GER_totaler_krieg
+		}
+		}
  		x = -1
  		y = 1
  		relative_position_id = GER_rocket_interceptor
@@ -1784,7 +1789,9 @@ focus_tree = {
  		search_filters = { FOCUS_FILTER_RESEARCH }
  		completion_reward = {
  			set_technology = {
- 				
+ 				modern_small_airframe
+ 			}
+			 set_technology = {
  				jet_engines = 1
  			}
  		}

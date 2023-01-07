@@ -365,7 +365,7 @@ equipment_modules = {
 
 		add_stats = {
 			maximum_speed = 900
-			thrust = 40
+			thrust = 80
 			build_cost_ic = 19
 			fuel_consumption = 0.3
 		}
@@ -390,7 +390,7 @@ equipment_modules = {
 
 		add_stats = {
 			maximum_speed = 850
-			thrust = 60
+			thrust = 100
 			build_cost_ic = 38
 			fuel_consumption = 0.6
 		}
@@ -415,7 +415,7 @@ equipment_modules = {
 
 		add_stats = {
 			maximum_speed = 850
-			thrust = 80
+			thrust = 120
 			build_cost_ic = 57
 			fuel_consumption = 0.9
 		}
@@ -440,7 +440,7 @@ equipment_modules = {
 
 		add_stats = {
 			maximum_speed = 850
-			thrust = 100
+			thrust = 140
 			build_cost_ic = 76
 			fuel_consumption = 1.2
 		}
@@ -464,7 +464,7 @@ equipment_modules = {
 
 		add_stats = {
 			maximum_speed = 850
-			thrust = 120
+			thrust = 160
 			build_cost_ic = 114
 			fuel_consumption = 1.8
 		}
@@ -553,7 +553,7 @@ equipment_modules = {
 		add_equipment_type = fighter
 
 		add_stats = {
-			air_attack = 8
+			air_attack = 10
 			build_cost_ic = 1
 			weight = 1
 		}
@@ -574,7 +574,7 @@ equipment_modules = {
 		add_equipment_type = fighter
 
 		add_stats = {
-			air_attack = 12
+			air_attack = 16
 			build_cost_ic = 1.5
 			weight = 2
 		}
@@ -599,7 +599,7 @@ equipment_modules = {
 		add_equipment_type = fighter
 
 		add_stats = {
-			air_attack = 12
+			air_attack = 16
 			build_cost_ic = 2.5
 			weight = 2
             
@@ -622,7 +622,7 @@ equipment_modules = {
 		add_equipment_type = fighter
 
 		add_stats = {
-			air_attack = 16
+			air_attack = 21
 			build_cost_ic = 3
 			weight = 4
 		}
@@ -656,7 +656,7 @@ equipment_modules = {
 		add_equipment_type = fighter
 
 		add_stats = {
-			air_attack = 14
+			air_attack = 20
 			build_cost_ic = 2.5
 			weight = 3
 		}
@@ -673,7 +673,7 @@ equipment_modules = {
                 interception
 			}
 			add_stats = {
-                air_attack = 2
+                air_attack = 3
 			}
 		}
 	}
@@ -685,7 +685,7 @@ equipment_modules = {
 		add_equipment_type = fighter
 
 		add_stats = {
-			air_attack = 20
+			air_attack = 28
 			build_cost_ic = 3.5
 			weight = 6
 		}
@@ -702,7 +702,7 @@ equipment_modules = {
                 interception
 			}
 			add_stats = {
-                air_attack = 3
+                air_attack = 4
 			}
 		}
 		mission_type_stats = {
@@ -727,7 +727,7 @@ equipment_modules = {
 		parent = aircraft_cannon_1_1x
 		add_equipment_type = fighter
 		add_stats = {
-			air_attack = 16
+			air_attack = 21.5
 			build_cost_ic = 2.5
 			weight = 4
 		}  
@@ -744,7 +744,7 @@ equipment_modules = {
                 interception
 			}
 			add_stats = {
-                air_attack = 3
+                air_attack = 4
 			}
 		}
 	}
@@ -757,7 +757,7 @@ equipment_modules = {
 		parent = aircraft_cannon_1_2x
 		add_equipment_type = fighter
 		add_stats = {
-			air_attack = 24
+			air_attack = 32
 			build_cost_ic = 4
 			weight = 8
 		}
@@ -782,7 +782,7 @@ equipment_modules = {
                 interception
 			}
 			add_stats = {
-                air_attack = 4
+                air_attack = 5
 			}
 		}
 		can_convert_from = {
@@ -1041,7 +1041,7 @@ equipment_modules = {
 				strategic_bomber
 			}
 			add_stats = {
-				air_bombing = 24
+				air_bombing = 34
 			}
 		}
 		mission_type_stats = {
@@ -2045,7 +2045,7 @@ equipment_modules = {
 				interception
 			}
 			multiply_stats = {
-				air_attack = 0.3
+				air_attack = 0.1
 			} 
 		}
 		mission_type_stats = {
@@ -2053,7 +2053,7 @@ equipment_modules = {
 				air_superiority
 			}
 			multiply_stats = {
-				air_attack = 0.3
+				air_attack = 0.1
 			} 
 		}
 		mission_type_stats = {
@@ -2061,7 +2061,7 @@ equipment_modules = {
 				cas
 			}
 			multiply_stats = {
-				air_attack = 0.3
+				air_attack = 0.1
 			} 
 		}
         mission_type_stats = {
@@ -2069,7 +2069,7 @@ equipment_modules = {
 				strategic_bomber
 			}
 			multiply_stats = {
-				air_attack = 0.3
+				air_attack = 0.1
 			}
 		}
 		##xp_cost = 1
@@ -2089,7 +2089,7 @@ equipment_modules = {
 				interception
 			}
 			multiply_stats = {
-				air_attack = 0.4
+				air_defence = 0.1
 			} 
 		}
 		mission_type_stats = {
@@ -2097,7 +2097,7 @@ equipment_modules = {
 				air_superiority
 			}
 			multiply_stats = {
-				air_attack = 0.4
+				air_defence = 0.1
 			} 
 		}
 		mission_type_stats = {
@@ -2105,7 +2105,7 @@ equipment_modules = {
 				cas
 			}
 			multiply_stats = {
-				air_attack = 0.4
+				air_defence = 0.1
 			} 
 		}
         mission_type_stats = {
@@ -2113,7 +2113,7 @@ equipment_modules = {
 				strategic_bomber
 			}
 			multiply_stats = {
-				air_attack = 0.4
+				air_defence = 0.1
 			}
 		}
 		##xp_cost = 1
@@ -2133,15 +2133,18 @@ equipment_modules = {
 				interception
 			}
 			multiply_stats = {
-				air_attack = 0.45
+				air_attack = 0.15
 			} 
 		}
 		mission_type_stats = {
 			limit = {
 				air_superiority
 			}
+			add_stats = {
+                air_superiority = 0.1
+            }
 			multiply_stats = {
-				air_attack = 0.45
+				air_attack = 0.1
 			} 
 		}
 		mission_type_stats = {
@@ -2149,7 +2152,7 @@ equipment_modules = {
 				cas
 			}
 			multiply_stats = {
-				air_attack = 0.45
+				air_attack = 0.1
 			} 
 		}
         mission_type_stats = {
@@ -2157,7 +2160,7 @@ equipment_modules = {
 				strategic_bomber
 			}
 			multiply_stats = {
-				air_attack = 0.45
+				air_attack = 0.1
 			}
 		}
 		##xp_cost = 1
@@ -2176,7 +2179,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			air_attack = 6
+			air_attack = 8
 			air_defence = 1.5
 			build_cost_ic = 2
             weight = 2
@@ -2206,7 +2209,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			air_attack = 12
+			air_attack = 16
 			air_defence = 3
 			build_cost_ic = 3
 			weight = 4
@@ -2236,7 +2239,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			air_attack = 8
+			air_attack = 10
 			air_defence = 2
 			build_cost_ic = 3
 			weight = 3
@@ -2266,7 +2269,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			air_attack = 16
+			air_attack = 21
 			air_defence = 4
 			build_cost_ic = 4.5
 			weight = 6
@@ -2296,7 +2299,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			air_attack = 10
+			air_attack = 13
 			air_defence = 2.5
 			build_cost_ic = 3.5
 			weight = 4
@@ -2322,7 +2325,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			air_attack = 20
+			air_attack = 26
 			air_defence = 5
 			build_cost_ic = 5
 			weight = 8
