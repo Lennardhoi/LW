@@ -1772,9 +1772,9 @@ focus_tree = {
 			special_type_slot_1=drop_tanks
 			special_type_slot_2=fuel_injection_s
 			fixed_main_weapon_slot=aircraft_cannon_1_1x
-			fixed_auxiliary_weapon_slot_1=heavy_mg_4x
-			fixed_auxiliary_weapon_slot_2=heavy_mg_4x
-			special_type_slot_3=non_strategic_materials_small
+			fixed_auxiliary_weapon_slot_1=aircraft_cannon_1_2x
+			fixed_auxiliary_weapon_slot_2=ammunition_1
+			special_type_slot_3=radio_navigation_1
 			}
 			upgrades={
 				 plane_armor_upgrade= 3
@@ -2340,7 +2340,7 @@ focus_tree = {
  			factor = 10
  		}
  		completion_reward = {
-			add_ideas =Ita_fortress_italy
+			add_timed_idea={idea =Ita_fortress_italy days = 120}
  			add_stability = -0.05
  			add_political_power = -70
  			add_state_core = 103
