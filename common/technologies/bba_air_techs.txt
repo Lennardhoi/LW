@@ -1614,7 +1614,11 @@ technologies = {
 			name = bba_air_techs_folder
 			position = { x = 5 y = 2 }
 		}
-
+		
+		path = {
+			leads_to_tech = self_sealing_fuel_tanks
+			research_cost_coeff = 1
+		}
 		path = {
 			leads_to_tech = engines_2
 			research_cost_coeff = 1
@@ -1793,7 +1797,7 @@ technologies = {
 		enable_equipment_modules = {
 			fuel_injection_s
 			fuel_injection_m	
-			fuel_injection_l	
+			fuel_injection_l			
 		}
 		
 		research_cost = 1
@@ -2040,7 +2044,11 @@ technologies = {
 		xp_research_bonus = 1.50
 		research_cost = 1
 		start_year = 1938
-
+		enable_equipment_modules = {
+			armor_plate_small
+			armor_plate_medium
+			armor_plate_large
+		}
 		folder = {
 			name = bba_air_techs_folder
 			position = { x = 3 y = 6 }
@@ -2051,10 +2059,6 @@ technologies = {
 		categories = {
 			air_equipment
 			plane_modules_tech
-		}
-		path = {
-			leads_to_tech = self_sealing_fuel_tanks
-			research_cost_coeff = 1
 		}
 		ai_will_do = {
 			factor = 1
@@ -2082,9 +2086,9 @@ technologies = {
 		xp_boost_cost = 50
 		xp_research_bonus = 1.50
 		enable_equipment_modules = {
-			#self_sealing_fuel_tanks_small
-			#self_sealing_fuel_tanks_medium
-			#self_sealing_fuel_tanks_large
+			self_sealing_fuel_tanks_small
+			self_sealing_fuel_tanks_medium
+			self_sealing_fuel_tanks_large
 		}
 		on_research_complete = {
 			custom_effect_tooltip = armor_tech_2_tt
@@ -2094,11 +2098,11 @@ technologies = {
 			synth_oil_experiments = 1
 		}
 		research_cost = 1
-		start_year = 1940
+		start_year = 1933
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 3 y = 8 }
+			position = { x = 3 y = 2 }
 		}
 
 		categories = {

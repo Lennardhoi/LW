@@ -1358,23 +1358,27 @@ equipment_modules = {
 ##    ## ##        ##       ##    ##  ##  ##     ## ##          ##     ## ##     ## ##     ## ##     ## ##       ##       ##    ##               ##    ## ##     ## ##     ## ##       ##       
  ######  ##        ########  ######  #### ##     ## ########    ##     ##  #######  ########   #######  ######## ########  ######                 ######  ##     ## ##     ## ######## ######## 
 
-	# armor_plate_small = {
-		# abbreviation = "aps"
-		# category = plane_special_module_small
-		# sfx = sfx_ui_sd_module_turret
+	 armor_plate_small = {
+		 abbreviation = "aps"
+		 category = plane_special_module_small
+		 sfx = sfx_ui_sd_module_turret
 
-		# add_stats = {
-			# air_defence = 4
-			# build_cost_ic = 1
-			# weight = 2
-		# }
-
-		# multiply_stats = {
-			# air_range = -0.1
-		# }
-		# ##xp_cost = 1
-		# dismantle_cost_ic = 0.5
-	# }
+		 add_stats = {
+			build_cost_ic = 2
+			weight = 6
+		 }
+		 multiply_stats = {
+			air_defence = 0.1
+			air_range = -0.25
+			fuel_consumption = 0.5
+		 }
+		 build_cost_resources = {
+			 aluminium = 5
+			 steel = 5
+		 }
+		 ##xp_cost = 1
+		 dismantle_cost_ic = 0.5
+	 }
 
 
 	fuel_tanks_small = {
@@ -1394,22 +1398,25 @@ equipment_modules = {
 		dismantle_cost_ic = 0.5
 	}
 
-	# self_sealing_fuel_tanks_small = {
-		# abbreviation = "ssf"
-		# category = plane_special_module_small
-		# sfx = sfx_ui_sd_module_turret
+	 self_sealing_fuel_tanks_small = {
+		 abbreviation = "ssf"
+		 category = plane_special_module_small
+		 sfx = sfx_ui_sd_module_turret
 
-		# add_stats = {
-			# air_defence = 6
-			# build_cost_ic = 1
-			# weight = 1
-		# }
-		# build_cost_resources = {
-			# rubber = 5
-		# }
-		# ##xp_cost = 1
-		# dismantle_cost_ic = 0.5
-	# }
+		 add_stats = {
+			 build_cost_ic = 1
+			 weight = 2
+		 }
+		 multiply_stats = {
+			air_defence = 0.05
+			air_range = -0.1
+		 }
+		 build_cost_resources = {
+			 rubber = 2
+		 }
+		 ##xp_cost = 1
+		 dismantle_cost_ic = 0.5
+	 }
 
 	non_strategic_materials_small = {
 		abbreviation = "nsms"
@@ -1429,7 +1436,16 @@ equipment_modules = {
 		}
 		##xp_cost = 1
 	}
-
+ 	plane_easy_maintenance = {
+ 		abbreviation = "peasy"
+ 		category = plane_special_module_small
+ 		sfx = sfx_ui_sd_module_turret
+		multiply_stats = {
+			build_cost_ic = -0.03
+		}
+		dismantle_cost_ic = 2
+ 		xp_cost = 0
+ 	}
 	drop_tanks = {
 		abbreviation = "dpt"
 		category = plane_special_module_small
@@ -1437,7 +1453,7 @@ equipment_modules = {
 
 		add_stats = {
 			build_cost_ic = 2
-			air_range = 400
+			air_range = 300
 			weight = 1        
 		}
 		##xp_cost = 1
@@ -1499,22 +1515,27 @@ equipment_modules = {
 ##    ## ##        ##       ##    ##  ##  ##     ## ##          ##     ## ##     ## ##     ## ##     ## ##       ##       ##    ##               ##     ## ##       ##     ##  ##  ##     ## ##     ## 
  ######  ##        ########  ######  #### ##     ## ########    ##     ##  #######  ########   #######  ######## ########  ######                ##     ## ######## ########  ####  #######  ##     ## 
 
-	# armor_plate_medium = {
-		# abbreviation = "apm"
-		# category = plane_special_module_medium
-		# sfx = sfx_ui_sd_module_turret
-
-		# add_stats = {
-			# air_defence = 6
-			# build_cost_ic = 3
-			# weight = 6
-		# }
-		# multiply_stats = {
-			# air_range = -0.1
-		# }
-		# ##xp_cost = 1
-		# dismantle_cost_ic = 1
-	# }
+	 armor_plate_medium = {
+		 abbreviation = "apm"
+		 category = plane_special_module_medium
+		 sfx = sfx_ui_sd_module_turret
+		 
+		 add_stats = {
+			build_cost_ic = 3
+			weight = 8
+		 }
+		 multiply_stats = {
+			air_defence = 0.1
+			air_range = -0.33
+			fuel_consumption = 0.5
+		 }
+		 build_cost_resources = {
+			 aluminium = 10
+			 steel = 5
+		 }
+		 ##xp_cost = 1
+		 dismantle_cost_ic = 1
+	 }
 
 	#fuel_tanks_medium = {
 		#abbreviation = "ftm"
@@ -1533,22 +1554,25 @@ equipment_modules = {
 		#dismantle_cost_ic = 1
 	#}
 
-	# self_sealing_fuel_tanks_medium = {
-		# abbreviation = "ssm"
-		# category = plane_special_module_medium
-		# sfx = sfx_ui_sd_module_turret
+	 self_sealing_fuel_tanks_medium = {
+		 abbreviation = "ssm"
+		 category = plane_special_module_medium
+		 sfx = sfx_ui_sd_module_turret
 
-		# add_stats = {
-			# air_defence = 8
-			# build_cost_ic = 1.5
-			# weight = 1
-		# }
-		# build_cost_resources = {
-			# rubber = 2
-		# }
-		# dismantle_cost_ic = 1
-		# ##xp_cost = 1
-	# }
+		 add_stats = {
+			 build_cost_ic = 3
+			 weight = 3
+		 }
+		 multiply_stats = {
+			air_defence = 0.05
+			air_range = -0.1
+		 }
+		 build_cost_resources = {
+			 rubber = 4
+		 }
+		 dismantle_cost_ic = 1
+		 ##xp_cost = 1
+	 }
     dive_brakes_medium = {
 		abbreviation = "dbs"
 		category = plane_special_module_medium
@@ -1641,22 +1665,27 @@ equipment_modules = {
 ##    ## ##        ##       ##    ##  ##  ##     ## ##          ##     ## ##     ## ##     ## ##     ## ##       ##       ##    ##               ##       ##     ## ##    ##  ##    ##  ##       
  ######  ##        ########  ######  #### ##     ## ########    ##     ## ########   #######   #######  ######## ########  ######                ######## ##     ## ##     ##  ######   ######## 
 
-	# armor_plate_large = {
-		# abbreviation = "apl"
-		# category = plane_special_module_large
-		# sfx = sfx_ui_sd_module_turret
-
-		# add_stats = {
-			# air_defence = 8
-			# build_cost_ic = 5
-			# weight = 15
-		# }
-		# multiply_stats = {
-			# air_range = -0.1
-		# }
-		# ##xp_cost = 1
-		# dismantle_cost_ic = 1
-	# }
+	 armor_plate_large = {
+		 abbreviation = "apl"
+		 category = plane_special_module_large
+		 sfx = sfx_ui_sd_module_turret
+		 
+		 add_stats = {
+			build_cost_ic = 4
+			weight = 10
+		 }
+		 multiply_stats = {
+			air_defence = 0.1
+			air_range = -0.5
+			fuel_consumption = 1
+		 }
+		 build_cost_resources = {
+			 aluminium = 10
+			 steel = 10
+		 }
+		 ##xp_cost = 1
+		 dismantle_cost_ic = 1
+	 }
 
 	#fuel_tanks_large = {
 		#abbreviation = "ftl"
@@ -1675,22 +1704,25 @@ equipment_modules = {
 		#dismantle_cost_ic = 1.5
 	#}
 
-	# self_sealing_fuel_tanks_large = {
-		# abbreviation = "ssl"
-		# category = plane_special_module_large
-		# sfx = sfx_ui_sd_module_turret
+	 self_sealing_fuel_tanks_large = {
+		 abbreviation = "ssl"
+		 category = plane_special_module_large
+		 sfx = sfx_ui_sd_module_turret
 
-		# add_stats = {
-			# air_defence = 10
-			# build_cost_ic = 2
-			# weight = 1
-		# }
-		# build_cost_resources = {
-			# rubber = 2
-		# }
-		# dismantle_cost_ic = 1.5
-		# ##xp_cost = 1
-	# }
+		 add_stats = {
+			 build_cost_ic = 3
+			 weight = 3
+		 }
+		 multiply_stats = {
+			air_defence = 0.075
+			air_range = -0.1
+		 }
+		 build_cost_resources = {
+			 rubber = 6
+		 }
+		 dismantle_cost_ic = 1.5
+		 ##xp_cost = 1
+	 }
 
 	# non_strategic_materials_large = {
 		# abbreviation = "nsml"

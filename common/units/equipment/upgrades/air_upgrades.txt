@@ -4,10 +4,10 @@ upgrades = {
 
 		cost = air
 
-		air_defence = 0.10
+		air_defence = 0.075
 		air_range = -0.025
 		weight = 0.05
-		air_agility = -0.01
+		air_agility = -0.025
 		
 		linear_cost = {
 			cost_by_level = 5
@@ -15,13 +15,13 @@ upgrades = {
 		}
 		level_requirements = {
 			1 = {
-				has_tech = aircraft_construction
+				has_tech = self_sealing_fuel_tanks
 			}
 			2 = {
-				has_tech = survivability_studies
+				has_tech = aircraft_construction
 			}
 			4 = {
-				has_tech = self_sealing_fuel_tanks
+				has_tech = survivability_studies
 			}
 		}
 		resource_cost_thresholds = { # resource values defined here are TOTAL added cost, not cumulative
@@ -55,7 +55,8 @@ upgrades = {
 		cost = air
 		weight = 0.05
 		fuel_consumption = 0.1
-		air_range = 0.1
+		air_range = 0.05
+		air_agility = 0.05
 	}
 	plane_gun_upgrade = {
 		max_level = 5
