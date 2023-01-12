@@ -1172,6 +1172,7 @@ technologies = {
 			light_mg_4x
 			lmg_defense_turret
 			lmg_defense_turret_2x
+			ammunition_1
 		}
 		
 		research_cost = 1
@@ -1234,10 +1235,6 @@ technologies = {
 			leads_to_tech = tank_buster_1
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = ammunition_1
-			research_cost_coeff = 1
-		}
 		categories = {
 			air_equipment
 			plane_modules_tech
@@ -1271,6 +1268,7 @@ technologies = {
 		xp_research_bonus = 1.50
 		enable_equipment_modules = {
 			aircraft_cannon_1_2x
+			ammunition_2
 		}
 		
 		research_cost = 1
@@ -1282,10 +1280,6 @@ technologies = {
 		}
 		path = {
 			leads_to_tech = aa_cannon_2
-			research_cost_coeff = 1
-		}
-		path = {
-			leads_to_tech = ammunition_2
 			research_cost_coeff = 1
 		}
 		categories = {
@@ -1325,6 +1319,7 @@ technologies = {
 			aircraft_cannon_2_2x
 			cannon_defense_turret
 			cannon_defense_turret_2x
+			ammunition_3
 		}
 		allow={date>1941.1.1}
 		research_cost = 1
@@ -1334,10 +1329,6 @@ technologies = {
 			name = bba_air_techs_folder
 			position = { x = 4 y = 8 }
 		}
-		path = {
-			leads_to_tech = ammunition_3
-			research_cost_coeff = 1
-		}
 		categories = {
 			air_equipment
 			plane_modules_tech
@@ -1364,135 +1355,7 @@ technologies = {
 			}
 		}
 	}
-	ammunition_1 = {
-		xp_research_type = air
-		xp_unlock_cost = 0
-		xp_boost_cost = 50
-		xp_research_bonus = 1.50
-		enable_equipment_modules = {
-		ammunition_1
-		}
-		allow={}
-		research_cost = 0.25
-		start_year = 1936
-
-		folder = {
-			name = bba_air_techs_folder
-			position = { x = 6 y = 4 }
-		}
-
-		categories = {
-			air_equipment
-			plane_modules_tech
-			cat_air_guns
-		}
-		
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				OR = {
-					has_tech = improved_small_airframe
-					has_tech = improved_medium_airframe
-					has_tech = improved_large_airframe
-				}
-				factor = 5
-			}
-			modifier = {
-				OR = {
-					tag = GER
-					tag = SOV
-					tag = ENG
-				}
-				factor = 3
-			}
-		}
-	}
-	ammunition_2 = {
-		xp_research_type = air
-		xp_unlock_cost = 0
-		xp_boost_cost = 50
-		xp_research_bonus = 1.50
-		enable_equipment_modules = {
-		ammunition_2
-		}
-		allow={}
-		research_cost = 0.25
-		start_year = 1940
-
-		folder = {
-			name = bba_air_techs_folder
-			position = { x = 6 y = 6 }
-		}
-
-		categories = {
-			air_equipment
-			plane_modules_tech
-			cat_air_guns
-		}
-		
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				OR = {
-					has_tech = improved_small_airframe
-					has_tech = improved_medium_airframe
-					has_tech = improved_large_airframe
-				}
-				factor = 5
-			}
-			modifier = {
-				OR = {
-					tag = GER
-					tag = SOV
-					tag = ENG
-				}
-				factor = 3
-			}
-		}
-	}
-	ammunition_3 = {
-		xp_research_type = air
-		xp_unlock_cost = 0
-		xp_boost_cost = 50
-		xp_research_bonus = 1.50
-		enable_equipment_modules = {
-		ammunition_3
-		}
-		allow={}
-		research_cost = 0.25
-		start_year = 1944
-
-		folder = {
-			name = bba_air_techs_folder
-			position = { x = 6 y = 8 }
-		}
-
-		categories = {
-			air_equipment
-			plane_modules_tech
-			cat_air_guns
-		}
-		
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				OR = {
-					has_tech = improved_small_airframe
-					has_tech = improved_medium_airframe
-					has_tech = improved_large_airframe
-				}
-				factor = 5
-			}
-			modifier = {
-				OR = {
-					tag = GER
-					tag = SOV
-					tag = ENG
-				}
-				factor = 3
-			}
-		}
-	}
+	
     tank_buster_1 = {
 		xp_research_type = air
 		xp_unlock_cost = 0
@@ -1612,7 +1475,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 5 y = 2 }
+			position = { x = 3 y = 2 }
 		}
 		
 		path = {
@@ -1690,7 +1553,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 5 y = 4 }
+			position = { x = 3 y = 4 }
 		}
 
 		path = {
@@ -1739,7 +1602,10 @@ technologies = {
 			engine_3_2x
 			engine_3_3x
 			engine_3_4x
-			engine_3_6x	
+			engine_3_6x
+			self_sealing_fuel_tanks_small
+			self_sealing_fuel_tanks_medium
+			self_sealing_fuel_tanks_large			
 		}
 		
 		research_cost = 1
@@ -1747,7 +1613,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 5 y = 6 }
+			position = { x = 3 y = 6 }
 		}
 
 		path = {
@@ -1789,111 +1655,7 @@ technologies = {
 			}
 		}
 	}
-	fuel_injection = {
-		xp_research_type = air
-		xp_unlock_cost = 0
-		xp_boost_cost = 50
-		xp_research_bonus = 1.50
-		enable_equipment_modules = {
-			fuel_injection_s
-			fuel_injection_m	
-			fuel_injection_l			
-		}
-		
-		research_cost = 1
-		start_year = 1940
-
-		folder = {
-			name = bba_air_techs_folder
-			position = { x = 7 y = 6 }
-		}
-
-		path = {
-			leads_to_tech = fuel_injection2
-			research_cost_coeff = 1
-		}
-
-		categories = {
-			air_equipment
-			plane_modules_tech
-			cat_air_engine
-		}
-		
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				is_major = yes
-				factor = 2
-			}
-			modifier = {
-				num_of_military_factories < 10
-				factor = 0
-			}
-			modifier = {
-				date > "1941.1.1"
-				factor = 1.5
-			}
-			modifier = {
-				date > "1942.1.1"
-				factor = 1.5
-			}
-			modifier = {
-				date > "1943.1.1"
-				factor = 3
-			}
-		}
-	}
 	
-	fuel_injection2 = {
-		xp_research_type = air
-		xp_unlock_cost = 0
-		xp_boost_cost = 50
-		xp_research_bonus = 1.50
-		enable_equipment_modules = {
-			fuel_injection2_s
-			fuel_injection2_m	
-			fuel_injection2_l
-		}
-		allow={date>1941.1.1}
-		research_cost = 1
-		start_year = 1942
-
-		folder = {
-			name = bba_air_techs_folder
-			position = { x = 7 y = 8 }
-		}
-
-
-		categories = {
-			air_equipment
-			plane_modules_tech
-			cat_air_engine
-		}
-		
-		ai_will_do = {
-			factor = 5
-			modifier = {
-				is_major = yes
-				factor = 2
-			}
-			modifier = {
-				num_of_military_factories < 10
-				factor = 0
-			}
-			modifier = {
-				date > "1941.1.1"
-				factor = 1.5
-			}
-			modifier = {
-				date > "1942.1.1"
-				factor = 1.5
-			}
-			modifier = {
-				date > "1943.1.1"
-				factor = 3
-			}
-		}
-	}
 	engines_4 = {
 		xp_research_type = air
 		xp_unlock_cost = 0
@@ -1904,7 +1666,10 @@ technologies = {
 			engine_4_2x
 			engine_4_3x
 			engine_4_4x
-			engine_4_6x	
+			engine_4_6x
+			fuel_injection2_s
+			fuel_injection2_m	
+			fuel_injection2_l
 		}
 		allow={date>1941.1.1}
 		research_cost = 1
@@ -1912,7 +1677,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 5 y = 8 }
+			position = { x = 3 y = 8 }
 		}
 
 		categories = {
@@ -1960,7 +1725,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 7 y = 4 }
+			position = { x = 5 y = 4 }
 		}
 
 		categories = {
@@ -2021,7 +1786,7 @@ technologies = {
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 3 y = 4 }
+			position = { x = 1 y = 4 }
 		}
 
 		categories = {
@@ -2043,7 +1808,7 @@ technologies = {
 		xp_boost_cost = 50
 		xp_research_bonus = 1.50
 		research_cost = 1
-		start_year = 1938
+		start_year = 1941
 		enable_equipment_modules = {
 			armor_plate_small
 			armor_plate_medium
@@ -2051,7 +1816,7 @@ technologies = {
 		}
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 3 y = 6 }
+			position = { x = 1 y = 6 }
 		}
 		on_research_complete = {
 			custom_effect_tooltip = armor_tech_1_tt
@@ -2094,15 +1859,12 @@ technologies = {
 			custom_effect_tooltip = armor_tech_2_tt
 		}
 		
-		dependencies = {
-			synth_oil_experiments = 1
-		}
 		research_cost = 1
 		start_year = 1933
 
 		folder = {
 			name = bba_air_techs_folder
-			position = { x = 3 y = 2 }
+			position = { x = 1 y = 2 }
 		}
 
 		categories = {

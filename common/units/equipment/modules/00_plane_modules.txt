@@ -944,7 +944,7 @@ equipment_modules = {
 		add_equipment_type = {tactical_bomber }
 		
 		add_stats = {
-			build_cost_ic = 12
+			build_cost_ic = 14
 			air_agility = -20
 			weight = 10
 		}
@@ -968,7 +968,7 @@ equipment_modules = {
 				strategic_bomber
 			}
 			add_stats = {
-				air_bombing = 12
+				air_bombing = 9
 			}
 		}
         mission_type_stats = {
@@ -1365,12 +1365,12 @@ equipment_modules = {
 
 		 add_stats = {
 			build_cost_ic = 2
-			weight = 6
+			weight = 3
 		 }
 		 multiply_stats = {
-			air_defence = 0.1
-			air_range = -0.2
-			fuel_consumption = 0.5
+			air_defence = 0.15
+			air_range = -0.15
+			fuel_consumption = 0.25
 		 }
 		 build_cost_resources = {
 			 aluminium = 5
@@ -1408,7 +1408,7 @@ equipment_modules = {
 			 weight = 2
 		 }
 		 multiply_stats = {
-			air_defence = 0.05
+			air_defence = 0.1
 			air_range = -0.1
 		 }
 		 build_cost_resources = {
@@ -1453,7 +1453,7 @@ equipment_modules = {
 
 		add_stats = {
 			build_cost_ic = 2
-			air_range = 300
+			air_range = 350
 			weight = 1        
 		}
 		##xp_cost = 1
@@ -1522,11 +1522,11 @@ equipment_modules = {
 		 
 		 add_stats = {
 			build_cost_ic = 3
-			weight = 8
+			weight = 5
 		 }
 		 multiply_stats = {
-			air_defence = 0.1
-			air_range = -0.33
+			air_defence = 0.15
+			air_range = -0.2
 			fuel_consumption = 0.5
 		 }
 		 build_cost_resources = {
@@ -1564,7 +1564,7 @@ equipment_modules = {
 			 weight = 3
 		 }
 		 multiply_stats = {
-			air_defence = 0.05
+			air_defence = 0.1
 			air_range = -0.1
 		 }
 		 build_cost_resources = {
@@ -1672,11 +1672,11 @@ equipment_modules = {
 		 
 		 add_stats = {
 			build_cost_ic = 4
-			weight = 10
+			weight = 6
 		 }
 		 multiply_stats = {
-			air_defence = 0.1
-			air_range = -0.5
+			air_defence = 0.15
+			air_range = -0.25
 			fuel_consumption = 1
 		 }
 		 build_cost_resources = {
@@ -1714,7 +1714,7 @@ equipment_modules = {
 			 weight = 3
 		 }
 		 multiply_stats = {
-			air_defence = 0.075
+			air_defence = 0.1
 			air_range = -0.1
 		 }
 		 build_cost_resources = {
@@ -1902,7 +1902,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			#build_cost_ic = 1
+			build_cost_ic = 1
 			weight = 1
 			night_penalty = -0.1
 		}
@@ -1921,12 +1921,12 @@ equipment_modules = {
 
 		add_stats = {
 			#air_bombing = 6
-			build_cost_ic = 1.5
+			build_cost_ic = 1
 			weight = 1
 			night_penalty = -0.2
 		}
 		multiply_stats={
-			air_range = 0.15
+			air_range = 0.2
 		}
 		##xp_cost = 1
 	}
