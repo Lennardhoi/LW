@@ -6483,3 +6483,38 @@ news_event = {
 	}
 }
 
+news_event = {
+	id = news.502
+	title = news.502.t
+	desc = news.502.d
+	picture = GFX_german_stalingrad_siege
+	major = yes
+	trigger = {
+			NOT = {has_global_flag = "Stalingrad_Siege"}
+			GER = {
+				OR = {
+					controls_province = 463
+					controls_province = 11895
+					controls_province = 11896
+					controls_province = 3306
+					controls_province = 10402
+					controls_province = 11898
+					controls_province = 11897
+				}	
+			}
+	}	
+	immediate = {
+		hidden_effect = {
+			 	every_country = {limit = {check_variable= { speeches_enabled > 0} is_in_faction_with=GER }
+ 					scoped_sound_effect="sp_stalingrad"
+ 				}
+		}
+		set_global_flag = "Stalingrad_Siege"
+	}
+	
+	option = {
+		name = news.502.a
+	}
+
+}
+
