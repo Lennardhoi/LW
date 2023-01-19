@@ -111,6 +111,23 @@ set_technology = {
 	radio = 1
 }
 if = {
+	limit = { has_dlc = "By Blood Alone" }
+		#set_air_oob = "GER_1936_air_bba"
+		set_technology = {
+			aa_lmg = 1
+			
+			engines_1 = 1
+			engines_2 = 1
+			early_bombs = 1
+			aircraft_construction = 1
+			iw_small_airframe = 1
+			basic_small_airframe = 1
+			iw_medium_airframe = 1
+			basic_medium_airframe = 1
+			iw_large_airframe = 1
+		}
+	}
+if = {
 		limit = {
 			has_dlc = "By Blood Alone"
 		}
@@ -121,7 +138,7 @@ if = {
 				fixed_main_weapon_slot = light_mg_4x
 				fixed_auxiliary_weapon_slot_1 = ammunition_1
 				engine_type_slot = engine_2_1x
-				special_type_slot_1 = radio_navigation_1
+				fixed_auxiliary_weapon_slot_2 = radio_navigation_1
 			}
 			icon = "GFX_FRA_fighter1_medium"
 		}
@@ -132,8 +149,8 @@ if = {
 				fixed_main_weapon_slot = tank_buster_1
 				fixed_auxiliary_weapon_slot_1 = lmg_defense_turret
 				engine_type_slot = engine_2_1x
-				special_type_slot_1 = radio_navigation_1
-				special_type_slot_2 = dive_brakes_small
+				fixed_auxiliary_weapon_slot_2 = radio_navigation_1
+				special_type_slot_1 = dive_brakes_small
 				
 			}
 			icon = "GFX_FRA_CAS1_medium"
