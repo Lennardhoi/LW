@@ -50,7 +50,7 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
                     motor_cannon
-					fighter_weapon_main
+					fighter_weapon
 					cas_weapon
 					nav_bomber_weapon
 					kamikaze_bomber_weapon
@@ -62,10 +62,11 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					#recon_camera
-					fighter_weapon_main
+					fighter_weapon
 					#cas_weapon
 					#nav_bomber_weapon
 					#kamikaze_bomber_weapon
+					special_bombs
 				}
 			}
 
@@ -103,7 +104,7 @@ equipments = {
 			}
 		}
         module_count_limit = {
-			category = =plane_ammunition
+			category = plane_ammunition
 			count < 2
 		}
         module_count_limit = {
@@ -267,8 +268,7 @@ equipments = {
 			fixed_main_weapon_slot = {
 				required = yes
 				allowed_module_categories = {
-                    motor_cannon
-					fighter_weapon_main
+					fighter_weapon
 					cas_weapon
 					nav_bomber_weapon
 					kamikaze_bomber_weapon
@@ -282,10 +282,6 @@ equipments = {
 					recon_camera
 					fighter_weapon_secondary
                     plane_special_module_defense_turret
-					cas_weapon
-					nav_bomber_weapon
-					mine_warfare_offense
-					kamikaze_bomber_weapon
 				}
 			}
 			engine_type_slot = {
@@ -350,8 +346,7 @@ equipments = {
 			fixed_main_weapon_slot = {
 				required = yes
 				allowed_module_categories = {
-                    motor_cannon
-					fighter_weapon_main
+					fighter_weapon
 					cas_weapon
 					nav_bomber_weapon
 					kamikaze_bomber_weapon
@@ -365,10 +360,7 @@ equipments = {
 					recon_camera
                     plane_special_module_defense_turret
 					fighter_weapon_secondary
-					cas_weapon
-					nav_bomber_weapon
 					mine_warfare_offense
-					kamikaze_bomber_weapon
 				}
 			}
 			fixed_auxiliary_weapon_slot_2 = { 
@@ -431,15 +423,15 @@ equipments = {
 				}
 			}
 		}
-		default_modules = {
-			fixed_main_weapon_slot = aircraft_cannon_1_2x
-			fixed_auxiliary_weapon_slot_1 = heavy_mg_2x
-			fixed_auxiliary_weapon_slot_2 = heavy_mg_2x
-			engine_type_slot = engine_3_1x
-			special_type_slot_1 = fuel_injection_s
-			special_type_slot_2 = drop_tanks
-			special_type_slot_3 = radio_navigation_1
-		}
+		#default_modules = {
+			#fixed_main_weapon_slot = aircraft_cannon_1_2x
+			#fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_1x
+			#fixed_auxiliary_weapon_slot_2 = aircraft_cannon_1_1x
+			#engine_type_slot = engine_3_1x
+			#special_type_slot_1 = fuel_injection_s
+			#special_type_slot_2 = drop_tanks
+			#special_type_slot_3 = radio_navigation_1
+		#}
 	}
 
 	small_plane_airframe_3 = { #Advanced
@@ -471,7 +463,7 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
                     motor_cannon
-					fighter_weapon_main
+					fighter_weapon
 					cas_weapon
 					nav_bomber_weapon
 					kamikaze_bomber_weapon
@@ -559,16 +551,16 @@ equipments = {
 				}
 			}
 		}
-		default_modules = {
-			fixed_main_weapon_slot = aircraft_cannon_2_2x
-			fixed_auxiliary_weapon_slot_1 = aircraft_cannon_2_1x
-			fixed_auxiliary_weapon_slot_2 = aircraft_cannon_2_1x
-			fixed_auxiliary_weapon_slot_3 = aircraft_cannon_2_1x
-			engine_type_slot = engine_4_1x
-			special_type_slot_1 = fuel_injection2_s
-			special_type_slot_2 = drop_tanks
-			special_type_slot_3 = radio_navigation_2
-		}
+		#default_modules = {
+			#fixed_main_weapon_slot = aircraft_cannon_2_2x
+			#fixed_auxiliary_weapon_slot_1 = aircraft_cannon_2_1x
+			#fixed_auxiliary_weapon_slot_2 = aircraft_cannon_2_1x
+			#fixed_auxiliary_weapon_slot_3 = aircraft_cannon_2_1x
+			#engine_type_slot = engine_4_1x
+			#special_type_slot_1 = fuel_injection2_s
+			#special_type_slot_2 = drop_tanks
+			#special_type_slot_3 = radio_navigation_2
+		#}
 	}
 
 	small_plane_airframe_4 = { #modern
@@ -600,7 +592,7 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
                     motor_cannon
-					fighter_weapon_main
+					fighter_weapon
 					cas_weapon
 					nav_bomber_weapon
 					kamikaze_bomber_weapon
@@ -694,17 +686,17 @@ equipments = {
 				}
 			}
 		}
-		default_modules = {
-			fixed_main_weapon_slot = aircraft_cannon_2_2x
-			fixed_auxiliary_weapon_slot_1 = aircraft_cannon_2_1x
-			fixed_auxiliary_weapon_slot_2 = aircraft_cannon_2_1x
-			fixed_auxiliary_weapon_slot_3 = aircraft_cannon_2_1x
-			fixed_auxiliary_weapon_slot_4 = aircraft_cannon_2_1x
-			engine_type_slot = jet_engine_1x
-			special_type_slot_1 = fuel_injection2_s
-			special_type_slot_2 = drop_tanks
-			special_type_slot_3 = radio_navigation_2
-		}
+		#default_modules = {
+			#fixed_main_weapon_slot = aircraft_cannon_2_2x
+			#fixed_auxiliary_weapon_slot_1 = aircraft_cannon_2_1x
+			#fixed_auxiliary_weapon_slot_2 = aircraft_cannon_2_1x
+			#fixed_auxiliary_weapon_slot_3 = aircraft_cannon_2_1x
+			#fixed_auxiliary_weapon_slot_4 = aircraft_cannon_2_1x
+			#engine_type_slot = jet_engine_1x
+			#special_type_slot_1 = fuel_injection2_s
+			#special_type_slot_2 = drop_tanks
+			#special_type_slot_3 = radio_navigation_2
+		#}
 	}
 
 	medium_plane_airframe = {
@@ -757,7 +749,7 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					tac_weapon
-					fighter_weapon_main
+					fighter_weapon
 					recon_camera
 					cas_weapon
 					nav_bomber_weapon
@@ -770,7 +762,7 @@ equipments = {
 					mine_warfare_offense
 					recon_camera
 					tac_weapon
-					fighter_weapon_main
+					fighter_weapon
 					cas_weapon
 					nav_bomber_weapon
 				}
@@ -944,15 +936,15 @@ equipments = {
 			count < 2
 		}	
 
-		default_modules = {
-			fixed_main_weapon_slot = medium_bomb_bay
-			fixed_auxiliary_weapon_slot_1 = empty
-			fixed_auxiliary_weapon_slot_2 = lmg_defense_turret_2x
-			engine_type_slot = engine_1_2x
-			special_type_slot_1 = empty
-			special_type_slot_2 = empty
-			special_type_slot_3 = empty
-		}
+		#default_modules = {
+			#fixed_main_weapon_slot = medium_bomb_bay
+			#fixed_auxiliary_weapon_slot_1 = empty
+			#fixed_auxiliary_weapon_slot_2 = lmg_defense_turret_2x
+			#engine_type_slot = engine_1_2x
+			#special_type_slot_1 = empty
+			#special_type_slot_2 = empty
+			#special_type_slot_3 = empty
+		#}
 	}
 
 	medium_plane_airframe_0 = { #Inter-War
@@ -1005,7 +997,7 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					tac_weapon
-					fighter_weapon_main
+					fighter_weapon
 					recon_camera
 					cas_weapon
 					nav_bomber_weapon
@@ -1017,7 +1009,7 @@ equipments = {
 				allowed_module_categories = {
 					recon_camera
 					tac_weapon
-					fighter_weapon_main
+					fighter_weapon
 					cas_weapon
 					nav_bomber_weapon
 					mine_warfare_offense
@@ -1122,7 +1114,7 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					tac_weapon
-					fighter_weapon_main
+					fighter_weapon
 					recon_camera
 					cas_weapon
 					nav_bomber_weapon
@@ -1134,7 +1126,7 @@ equipments = {
 				allowed_module_categories = {
 					recon_camera
 					tac_weapon
-					fighter_weapon_main
+					fighter_weapon
 					cas_weapon
 					nav_bomber_weapon
 					mine_warfare_offense
@@ -1218,17 +1210,17 @@ equipments = {
 				}
 			}	
 		}
-		default_modules = {
-			fixed_main_weapon_slot = medium_bomb_bay
-			fixed_auxiliary_weapon_slot_1 = medium_bomb_bay
-			fixed_auxiliary_weapon_slot_2 = small_bomb_bay
-			fixed_auxiliary_weapon_slot_3 = hmg_defense_turret_2x
-			fixed_auxiliary_weapon_slot_4 = hmg_defense_turret_2x
-			engine_type_slot = engine_3_2x
-			special_type_slot_1 = radio_navigation_1
-			special_type_slot_2 = bomb_sights_1
-			special_type_slot_3 = air_ground_radar_1
-		}
+		#default_modules = {
+			#fixed_main_weapon_slot = medium_bomb_bay
+			#fixed_auxiliary_weapon_slot_1 = medium_bomb_bay
+			#fixed_auxiliary_weapon_slot_2 = small_bomb_bay
+			#fixed_auxiliary_weapon_slot_3 = hmg_defense_turret_2x
+			#fixed_auxiliary_weapon_slot_4 = hmg_defense_turret_2x
+			#engine_type_slot = engine_3_2x
+			#special_type_slot_1 = radio_navigation_1
+			#special_type_slot_2 = bomb_sights_1
+			#special_type_slot_3 = air_ground_radar_1
+		#}
 	}
 
 	medium_plane_airframe_3 = { #Advanced
@@ -1260,7 +1252,7 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					tac_weapon
-					fighter_weapon_main
+					fighter_weapon
 					recon_camera
 					cas_weapon
 					nav_bomber_weapon
@@ -1271,7 +1263,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					recon_camera
-					fighter_weapon_main
+					fighter_weapon
 					tac_weapon
 					cas_weapon
 					nav_bomber_weapon
@@ -1282,7 +1274,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					recon_camera
-					fighter_weapon_main
+					fighter_weapon
 					tac_weapon
 					cas_weapon
 					nav_bomber_weapon
@@ -1358,17 +1350,17 @@ equipments = {
 				}
 			}
 		}
-		default_modules = {
-			fixed_main_weapon_slot = medium_bomb_bay
-			fixed_auxiliary_weapon_slot_1 = medium_bomb_bay
-			fixed_auxiliary_weapon_slot_2 = medium_bomb_bay
-			fixed_auxiliary_weapon_slot_3 = cannon_defense_turret_2x
-			fixed_auxiliary_weapon_slot_4 = cannon_defense_turret_2x
-			engine_type_slot = engine_4_2x
-			special_type_slot_1 = radio_navigation_2
-			special_type_slot_2 = bomb_sights_2
-			special_type_slot_3 = air_ground_radar_2
-		}
+		#default_modules = {
+			#fixed_main_weapon_slot = medium_bomb_bay
+			#fixed_auxiliary_weapon_slot_1 = medium_bomb_bay
+			#fixed_auxiliary_weapon_slot_2 = medium_bomb_bay
+			#fixed_auxiliary_weapon_slot_3 = cannon_defense_turret_2x
+			#fixed_auxiliary_weapon_slot_4 = cannon_defense_turret_2x
+			#engine_type_slot = engine_4_2x
+			#special_type_slot_1 = radio_navigation_2
+			#special_type_slot_2 = bomb_sights_2
+			#special_type_slot_3 = air_ground_radar_2
+		#}
 	}
 
 	medium_plane_airframe_4 = { #Modern
@@ -1400,7 +1392,7 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					tac_weapon
-					fighter_weapon_main
+					fighter_weapon
 					recon_camera
 					cas_weapon
 					nav_bomber_weapon
@@ -1412,7 +1404,7 @@ equipments = {
 				allowed_module_categories = {
 					strat_weapon
 					recon_camera
-					fighter_weapon_main
+					fighter_weapon
 					cas_weapon
 					nav_bomber_weapon
 					tac_weapon
@@ -1424,7 +1416,7 @@ equipments = {
 				allowed_module_categories = {
 					cas_weapon
 					recon_camera
-					fighter_weapon_main
+					fighter_weapon
 					cas_weapon
 					nav_bomber_weapon
 					tac_weapon
@@ -1434,7 +1426,7 @@ equipments = {
 			fixed_auxiliary_weapon_slot_3 = { 
 				required = no
 				allowed_module_categories = {
-					fighter_weapon_main
+					fighter_weapon
 					recon_camera
 					plane_special_module_defense_turret
 				}
@@ -1445,7 +1437,7 @@ equipments = {
 				allowed_module_categories = {
 					plane_special_module_defense_turret
 					recon_camera
-					fighter_weapon_main 
+					fighter_weapon 
 				}
 			}
 
@@ -1500,17 +1492,17 @@ equipments = {
 				}
 			}
 		}
-		default_modules = {
-			fixed_main_weapon_slot = medium_bomb_bay
-			fixed_auxiliary_weapon_slot_1 = large_bomb_bay
-			fixed_auxiliary_weapon_slot_2 = medium_bomb_bay
-			fixed_auxiliary_weapon_slot_3 = cannon_defense_turret_2x
-			fixed_auxiliary_weapon_slot_4 = cannon_defense_turret_2x
-			engine_type_slot = jet_engine_2x
-			special_type_slot_1 = radio_navigation_2
-			special_type_slot_2 = bomb_sights_2
-			special_type_slot_3 = air_ground_radar_2
-		}
+		#default_modules = {
+			#fixed_main_weapon_slot = medium_bomb_bay
+			#fixed_auxiliary_weapon_slot_1 = large_bomb_bay
+			#fixed_auxiliary_weapon_slot_2 = medium_bomb_bay
+			#fixed_auxiliary_weapon_slot_3 = cannon_defense_turret_2x
+			#fixed_auxiliary_weapon_slot_4 = cannon_defense_turret_2x
+			#engine_type_slot = jet_engine_2x
+			#special_type_slot_1 = radio_navigation_2
+			#special_type_slot_2 = bomb_sights_2
+			#special_type_slot_3 = air_ground_radar_2
+		#}
 	}
 
 	large_plane_airframe = {

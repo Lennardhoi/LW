@@ -570,8 +570,7 @@ equipment_modules = {
 
 	light_mg_4x = {
 		abbreviation = "lmg4"
-		category = fighter_weapon_main
-        gui_category = fighter_weapon
+		category = fighter_weapon
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = fighter
 
@@ -620,8 +619,7 @@ equipment_modules = {
 
 	heavy_mg_4x = {
 		abbreviation = "hmg4"
-		category = fighter_weapon_main
-        gui_category = fighter_weapon
+		category = fighter_weapon
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = fighter
 
@@ -684,8 +682,7 @@ equipment_modules = {
 
 	aircraft_cannon_1_2x = {
 		abbreviation = "ac12"
-		category = fighter_weapon_main
-        gui_category = fighter_weapon
+		category = fighter_weapon
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = fighter
 
@@ -756,8 +753,7 @@ equipment_modules = {
 
 	aircraft_cannon_2_2x = {
 		abbreviation = "ac22"
-		category = fighter_weapon_main
-        gui_category = fighter_weapon
+		category = fighter_weapon
 		sfx = sfx_ui_sd_module_turret
 		parent = aircraft_cannon_1_2x
 		add_equipment_type = fighter
@@ -816,8 +812,6 @@ equipment_modules = {
 		mission_type_stats = {
 			limit = {
 				cas
-                naval_bomber
-                attack_logistics
 			}
 			add_stats = {
 				weight = 6
