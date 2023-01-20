@@ -162,9 +162,9 @@ capital = 270
 			name = "Ki-27"
 			type = small_plane_airframe_1
 			modules = {
-				fixed_main_weapon_slot = light_mg_2x
-				fixed_auxiliary_weapon_slot_1 = ammunition_1
-				fixed_auxiliary_weapon_slot_2 = radio_navigation_1
+				fixed_main_weapon_slot = light_mg_4x
+				fixed_auxiliary_weapon_slot_1 = light_mg_2x
+				special_type_slot_1 = radio_navigation_1
 				engine_type_slot = engine_2_1x
 			}
 			icon = "GFX_JAP_fighter1_medium"
@@ -176,8 +176,8 @@ capital = 270
 				fixed_main_weapon_slot = tank_buster_1
 				fixed_auxiliary_weapon_slot_1 = lmg_defense_turret
 				engine_type_slot = engine_2_1x
-				fixed_auxiliary_weapon_slot_2 = radio_navigation_1
-				special_type_slot_1 = dive_brakes_small
+				special_type_slot_1 = radio_navigation_1
+				special_type_slot_2 = dive_brakes_small
 				
 			}
 			icon = "GFX_JAP_CAS1_medium"
@@ -200,8 +200,8 @@ capital = 270
 			modules = {
 				fixed_main_weapon_slot = Medium_bomb_bay
 				fixed_auxiliary_weapon_slot_1 = Medium_bomb_bay
-				fixed_auxiliary_weapon_slot_2 = ammunition_1
-				fixed_auxiliary_weapon_slot_3 = lmg_defense_turret
+				fixed_auxiliary_weapon_slot_2 = lmg_defense_turret_2x
+				fixed_auxiliary_weapon_slot_3 = lmg_defense_turret_2x
 				engine_type_slot = engine_2_3x
 				special_type_slot_1 = radio_navigation_1
 				special_type_slot_2 = dive_brakes_medium

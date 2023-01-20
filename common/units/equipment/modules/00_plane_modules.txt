@@ -548,12 +548,13 @@ equipment_modules = {
 
 	light_mg_2x = {
 		abbreviation = "lmg2"
-		category = fighter_weapon
+		category = fighter_weapon_secondary
+        gui_category = fighter_weapon
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = fighter
 
 		add_stats = {
-			air_attack = 10
+			air_attack = 9
 			build_cost_ic = 1
 			weight = 1
 		}
@@ -569,17 +570,18 @@ equipment_modules = {
 
 	light_mg_4x = {
 		abbreviation = "lmg4"
-		category = fighter_weapon
+		category = fighter_weapon_main
+        gui_category = fighter_weapon
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = fighter
 
 		add_stats = {
-			air_attack = 16
-			build_cost_ic = 1.5
+			air_attack = 18
+			build_cost_ic = 2
 			weight = 2
 		}
         multiply_stats = {
-            air_agility = -0.05
+            air_agility = -0.04
         }
 		#xp_cost = 2
 		allow_mission_type = {
@@ -594,18 +596,19 @@ equipment_modules = {
 
 	heavy_mg_2x = {
 		abbreviation = "hmg2"
-		category = fighter_weapon
+		category = fighter_weapon_secondary
+        gui_category = fighter_weapon
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = fighter
 
 		add_stats = {
-			air_attack = 16
-			build_cost_ic = 2.5
+			air_attack = 11
+			build_cost_ic = 1.5
 			weight = 2
             
         }
         multiply_stats = {
-            air_agility = -0.04
+            air_agility = -0.03
         }
 		
 		#xp_cost = 1
@@ -617,17 +620,18 @@ equipment_modules = {
 
 	heavy_mg_4x = {
 		abbreviation = "hmg4"
-		category = fighter_weapon
+		category = fighter_weapon_main
+        gui_category = fighter_weapon
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = fighter
 
 		add_stats = {
-			air_attack = 21
+			air_attack = 22
 			build_cost_ic = 3
 			weight = 4
 		}
         multiply_stats = {
-            air_agility = -0.1
+            air_agility = -0.6
             }
 		#xp_cost = 2
 		allow_mission_type = {
@@ -650,14 +654,14 @@ equipment_modules = {
 
 	aircraft_cannon_1_1x = {
 		abbreviation = "ac11"
-		category = fighter_weapon
+		category = fighter_weapon_secondary
         gui_category = fighter_weapon
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = fighter
 
 		add_stats = {
-			air_attack = 20
-			build_cost_ic = 2.5
+			air_attack = 13
+			build_cost_ic = 2
 			weight = 3
 		}
         multiply_stats = {
@@ -680,17 +684,18 @@ equipment_modules = {
 
 	aircraft_cannon_1_2x = {
 		abbreviation = "ac12"
-		category = fighter_weapon
+		category = fighter_weapon_main
+        gui_category = fighter_weapon
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = fighter
 
 		add_stats = {
-			air_attack = 28
-			build_cost_ic = 3.5
+			air_attack = 26
+			build_cost_ic = 4
 			weight = 6
 		}
         multiply_stats = {
-            air_agility = -0.07
+            air_agility = -0.08
         }
 		#xp_cost = 2
 		allow_mission_type = {
@@ -721,13 +726,13 @@ equipment_modules = {
 
 	aircraft_cannon_2_1x = {
 		abbreviation = "ac21"
-		category = motor_cannon
+		category = fighter_weapon_secondary
         gui_category = fighter_weapon
 		sfx = sfx_ui_sd_module_turret
 		parent = aircraft_cannon_1_1x
 		add_equipment_type = fighter
 		add_stats = {
-			air_attack = 21.5
+			air_attack = 16
 			build_cost_ic = 2.5
 			weight = 4
 		}  
@@ -751,14 +756,14 @@ equipment_modules = {
 
 	aircraft_cannon_2_2x = {
 		abbreviation = "ac22"
-		category = motor_cannon
+		category = fighter_weapon_main
         gui_category = fighter_weapon
 		sfx = sfx_ui_sd_module_turret
 		parent = aircraft_cannon_1_2x
 		add_equipment_type = fighter
 		add_stats = {
 			air_attack = 32
-			build_cost_ic = 4
+			build_cost_ic = 5
 			weight = 8
 		}
         multiply_stats = {
@@ -1404,16 +1409,16 @@ equipment_modules = {
 		 sfx = sfx_ui_sd_module_turret
 
 		 add_stats = {
-			 build_cost_ic = 1
-			 weight = 2
+            air_defence = 3
+			build_cost_ic = 1
+			weight = 2
 		 }
-		 multiply_stats = {
-			air_defence = 0.1
-		 }
-		 build_cost_resources = {
-			 rubber = 2
-			 aluminium = 5
-		 }
+		multiply_stats = {
+            air_range = -0.15
+        }
+		build_cost_resources = {
+			 rubber = 3
+		}
 		 ##xp_cost = 1
 		 dismantle_cost_ic = 0.5
 	 }
@@ -1453,7 +1458,7 @@ equipment_modules = {
 
 		add_stats = {
 			build_cost_ic = 2
-			air_range = 350
+			air_range = 200
 			weight = 1        
 		}
 		##xp_cost = 1
@@ -1561,14 +1566,14 @@ equipment_modules = {
 
 		 add_stats = {
 			 build_cost_ic = 3
-			 weight = 3
+			 weight = 4
+             air_defence = 8
 		 }
 		 multiply_stats = {
-			air_defence = 0.1
+			air_range = -0.20
 		 }
 		 build_cost_resources = {
-			 rubber = 4
-			 aluminium = 7
+			 rubber = 6
 		 }
 		 dismantle_cost_ic = 1
 		 ##xp_cost = 1
@@ -1675,12 +1680,11 @@ equipment_modules = {
 			weight = 6
 		 }
 		 multiply_stats = {
-			air_defence = 0.15
+			air_defence = 0.2
 			air_range = -0.15
 			fuel_consumption = 1
 		 }
 		 build_cost_resources = {
-			 aluminium = 10
 			 steel = 10
 		 }
 		 ##xp_cost = 1
@@ -1710,15 +1714,15 @@ equipment_modules = {
 		 sfx = sfx_ui_sd_module_turret
 
 		 add_stats = {
-			 build_cost_ic = 3
-			 weight = 3
+			 build_cost_ic = 5
+			 weight = 6
+             air_defence = 12
 		 }
 		 multiply_stats = {
-			air_defence = 0.1
+			air_range = -0.25
 		 }
 		 build_cost_resources = {
-			 rubber = 6
-			 aluminium = 10
+			 rubber = 10
 		 }
 		 dismantle_cost_ic = 1.5
 		 ##xp_cost = 1
