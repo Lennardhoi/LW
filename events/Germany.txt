@@ -1162,4 +1162,20 @@ country_event = {
 		name = germany.121.a
 	}
 }
-
+country_event = {
+	id = germany.140
+	title = germany.140.t
+	desc = germany.140.d
+	picture = GFX_report_event_generic_sign_treaty
+	is_triggered_only = yes
+	option = {
+		name = germany.122.a
+		GER = {
+		remove_ideas = general_staff
+		add_ideas = general_staff_2
+		remove_unit_leader = 6
+		remove_unit_leader = 1
+		remove_unit_leader = 9
+		}
+	}
+}
