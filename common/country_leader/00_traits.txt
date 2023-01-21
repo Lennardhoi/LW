@@ -912,7 +912,11 @@ leader_traits = {
 	red_army_organizer = { # Trotsky's trait if invited to join the Mexican government. Combines effects of Genius Army Organizer and Communist Revolutionary
 		sprite = 12
 		breakthrough_factor = 0.10
-
+		equipment_bonus = {
+			small_plane_airframe = {
+				air_attack = 0.1 instant=yes
+			}
+		}
 		ai_will_do = {
 			factor = 2
 		}
@@ -2430,7 +2434,7 @@ leader_traits = {
 				naval_speed = 0.15
 			}
 			screen_ship = {
-				naval_speed = 0.15
+				lg_attack = 0.2 torpedo_attack = 0.2 naval_range = -0.5
 			}
 			submarine = {
 				naval_range = 0.20
@@ -2467,7 +2471,7 @@ leader_traits = {
 		random = no
 		equipment_bonus = {
 			carrier = {
-				surface_visibility = -0.07 naval_speed = 0.1 carrier_size = -0.1
+				surface_visibility = -0.07 naval_speed = 0.1
 			}
 			capital_ship = {
 				surface_visibility = -0.07 naval_speed = 0.1 hg_attack = -0.1

@@ -77,6 +77,17 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
+				consumer_goods_factor=-0.03
+				local_resources_factor=0.1
+			}
+		}
+		modernizations = {
+			picture = generic_production_bonus
+			allowed = {
+				original_tag = ITA
+			}
+			removal_cost = -1
+			modifier = {
 				production_factory_max_efficiency_factor = 0.05
 			}
 		}
@@ -254,10 +265,9 @@ ideas = {
 					reliability = 0.05
 					soft_attack = 0.15
 				}
-				medium_tank_chassis = {
+				medium_tank_destroyer_chassis = {
 					reliability = 0.05
-					soft_attack = 0.1
-					hard_attack = 0.1
+					hard_attack = 0.15
 				}
 			}
 		}
@@ -410,7 +420,7 @@ ideas = {
 				naval_equipment = 0.25
 			}
 			
-			traits = { convoy_escort_naval_manufacturer }
+			traits = { raiding_fleet_naval_manufacturer }
 		}
 	}
 }

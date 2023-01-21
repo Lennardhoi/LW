@@ -683,7 +683,7 @@ focus_tree = {
  		icon = GFX_focus_generic_strike_at_democracy1
  		prerequisite = { focus = ITA_iri }
  		relative_position_id = ITA_iri
- 		mutually_exclusive = { focus = ITA_corp}
+ 		mutually_exclusive = { focus = ITA_moder}
  		available = {
  		}
  		x = 1
@@ -725,8 +725,9 @@ focus_tree = {
  		}
  	}
  	focus = {
- 		id = ITA_moder
- 		icon = GFX_goal_generic_positive_trade_relations
+ 		id = ITA_corp
+		
+ 		icon = GFX_focus_SOV_worker_cluture
  		prerequisite = { focus = ITA_nat  }
  		#prerequisite = { focus = ITA_stab }
  		relative_position_id = ITA_nat
@@ -753,19 +754,31 @@ focus_tree = {
  					instant_build = yes
  				}
  			}
- 			add_tech_bonus = {
- 				name = ITA_four_year_plan
- 				bonus = 1
- 				uses = 2
- 				category = industry
+			random_owned_controlled_state = {
+ 				limit = {
+ 					is_core_of = ITA
+ 					free_building_slots = {
+ 						building = industrial_complex
+ 						size > 1
+ 						include_locked = yes
+ 					}
+ 				}
+ 				add_extra_state_shared_building_slots = 2
+ 				add_building_construction = {
+ 					type = industrial_complex
+ 					level = 2
+ 					instant_build = yes
+ 				}
  			}
+ 			add_ideas = corporations
+ 			
  		}
  	}
  	focus = {
  		id = ITA_research
  		icon = GFX_focus_research
- 		prerequisite = { focus = ITA_moder  }
- 		relative_position_id = ITA_moder
+ 		prerequisite = { focus = ITA_corp  }
+ 		relative_position_id = ITA_corp
  		available = {
  		}
  		x = -1
@@ -823,11 +836,11 @@ focus_tree = {
  		}
  	}
  	focus = {
- 		id = ITA_corp
+ 		id = ITA_moder
  		prerequisite = { focus = ITA_buro  }
  		relative_position_id = ITA_buro
  		mutually_exclusive = { focus = ITA_nat}
- 		icon = GFX_focus_SOV_worker_cluture
+		icon = GFX_goal_generic_positive_trade_relations
  		available = {
  		}
  		x = -1
@@ -835,7 +848,13 @@ focus_tree = {
  		cost = 10
  		search_filters = { FOCUS_FILTER_ANNEXATION }
  		completion_reward = {
- 			add_ideas = corporations
+ 			add_ideas = modernizations
+			add_tech_bonus = {
+ 				name = ITA_four_year_plan
+ 				bonus = 0.5
+ 				uses = 2
+ 				category = industry
+ 			}
  		}
  	}
  	focus = {
@@ -860,8 +879,8 @@ focus_tree = {
  	}
  	focus = {
  		id = ITA_synd
- 		prerequisite = { focus = ITA_corp  }
- 		relative_position_id = ITA_corp
+ 		prerequisite = { focus = ITA_moder  }
+ 		relative_position_id = ITA_moder
  		icon = GFX_focus_generic_self_management
  		available = {
  		}
@@ -875,8 +894,8 @@ focus_tree = {
  	}
  	focus = {
  		id = ITA_faire
- 		prerequisite = { focus = ITA_corp  }
- 		relative_position_id = ITA_corp
+ 		prerequisite = { focus = ITA_moder  }
+ 		relative_position_id = ITA_moder
  		icon = GFX_focus_generic_tank_production
  		available = {
  		}
@@ -936,7 +955,7 @@ focus_tree = {
  	}
  	focus = {
  		id = ITA_highway
- 		prerequisite = { focus = ITA_faire focus = ITA_moder }
+ 		prerequisite = { focus = ITA_faire focus = ITA_corp }
  		relative_position_id = ITA_faire
  		icon = GFX_goal_generic_construct_infrastructure
  		available = {
@@ -987,13 +1006,13 @@ focus_tree = {
  	}
  	focus = {
  		id = ITA_road_rome
- 		prerequisite = { focus = ITA_highway }
- 		relative_position_id = ITA_highway
+ 		prerequisite = { focus = ITA_eco }
+ 		relative_position_id = ITA_eco
  		icon = GFX_focus_GER_summon_fritz_todt
  		available = {
  			date > 1938.04.1
  		}
- 		x = 1
+ 		x = 0
  		y = 1
  		cost = 5
  		search_filters = { FOCUS_FILTER_ANNEXATION }
@@ -1035,6 +1054,7 @@ focus_tree = {
  	focus = {
  		id = ITA_refs
  		prerequisite = { focus = ITA_oil }
+		prerequisite = { focus = ITA_libya }
  		relative_position_id = ITA_oil
  		icon = GFX_goal_generic_oil_refinery
  		available = {
@@ -1042,7 +1062,7 @@ focus_tree = {
  				controls_state = 413
  			}
  		}
- 		x = 0
+ 		x = 1
  		y = 1
  		cost = 5
  		search_filters = { FOCUS_FILTER_ANNEXATION }
@@ -1075,12 +1095,12 @@ focus_tree = {
  	}
  	focus = {
  		id = ITA_libya
- 		prerequisite = { focus = ITA_oil }
- 		relative_position_id = ITA_oil
+ 		prerequisite = { focus = ITA_highway}
+ 		relative_position_id = ITA_highway
  		icon = GFX_goal_generic_construct_civilian
  		available = {
  		}
- 		x = 2
+ 		x = 1
  		y = 1
  		cost = 5
  		search_filters = { FOCUS_FILTER_ANNEXATION }
@@ -2172,6 +2192,9 @@ focus_tree = {
  			factor = 10
  		}
  		completion_reward = {
+ 		every_country = {limit = {check_variable= { speeches_enabled > 0} is_in_faction_with=GER }
+ 					scoped_sound_effect="unser_rommel"
+ 				}
  			add_timed_idea= {idea= ITA_production_boost days=30}
 			add_dynamic_modifier = {
  						modifier = imperium_romanum
@@ -2189,15 +2212,7 @@ focus_tree = {
  					defense_skill = 3
  					planning_skill = 3
  					logistics_skill = 6
- 					}
-				}
-			hidden_effect = {
-			 	every_country = {limit = {check_variable= { speeches_enabled > 0} is_in_faction_with=GER }
- 					scoped_sound_effect="unser_rommel"
- 				}
-			}
-		}
-	}
+ 					}}}}
  	focus = {
  		id = ITA_desert_fox
  		icon = GFX_focus_ger_osttruppen
