@@ -684,11 +684,10 @@ ideas = {
 			removal_cost = -1
 			picture = German_Engineering
 			equipment_bonus = {
-				medium_tank_chassis = {
-					soft_attack = 0.05 instant = yes
-					hard_attack = 0.05 instant = yes
-					reliability = -0.10 instant = yes
-					maximum_speed = -0.05
+				armor = {
+					soft_attack=0.05  instant = yes
+					hard_attack=0.05  instant = yes
+					build_cost_ic = -0.05  instant = yes
 				}
 			}
 			modifier = {
