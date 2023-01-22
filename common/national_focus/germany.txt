@@ -1591,45 +1591,43 @@ focus_tree = {
 		}
 	}
  	focus = {
- 		id = GER_panther_massproduction
- 		icon = GFX_focus_GER_king_tiger
- 		prerequisite = { focus = GER_panzer_4_ausfg }
+ 		id = GER_rush_panther
+ 		icon = GFX_focus_GER_Standardpanzer
+		prerequisite = { focus = GER_panzer_4_ausfg }
  		x = 0
  		y = 1
  		relative_position_id = GER_panzer_4_ausfg
- 		cost = 4
+ 		cost = 5
  		ai_will_do = {
  			factor = 1
  		}
- 		available = {
- 			date > 1942.5.1
+ 		available = { date > 1942.3.1}
+ 		available_if_capitulated = yes
+ 		search_filters = { FOCUS_FILTER_RESEARCH }
+ 		completion_reward = {
+			swap_ideas = {
+				remove_idea = GER_german_engineering
+				add_idea = GER_rushed_panther
+			}
+ 		}
+ 	}	
+ 	focus = {
+ 		id = GER_king_tiger
+ 		icon = GFX_focus_GER_king_tiger
+ 		prerequisite = { focus = GER_rush_panther }
+ 		prerequisite = { focus = GER_vampir } 		
+ 		x = -1
+ 		y = 1
+ 		relative_position_id = GER_rush_panther
+ 		cost = 5
+ 		ai_will_do = {
+ 			factor = 1
  		}
  		available_if_capitulated = yes
  		search_filters = { FOCUS_FILTER_RESEARCH }
  		completion_reward = {
  			set_technology = {
  				advanced_heavy_tank_chassis  = 1
- 			}
- 		}
- 	}
- 	focus = {
- 		id = GER_king_tiger
- 		icon = GFX_focus_GER_Standardpanzer
- 		prerequisite = { focus = GER_panther_massproduction }
- 		prerequisite = { focus = GER_vampir }
- 		x = -1
- 		y = 1
- 		relative_position_id = GER_panther_massproduction
- 		cost = 3
- 		ai_will_do = {
- 			factor = 1
- 		}
- 		available = { date > 1943.1.1}
- 		available_if_capitulated = yes
- 		search_filters = { FOCUS_FILTER_RESEARCH }
- 		completion_reward = {
- 			set_technology = {
- 				super_heavy_tank_chassis = 1
  			}
  		}
  	}
@@ -2614,7 +2612,7 @@ focus_tree = {
  			hidden_effect = {
  				news_event = { hours = 6 id = news.36 }
  				every_country = {limit = { check_variable= { speeches_enabled > 0}  is_in_faction_with = GER}
- 					#scoped_sound_effect = "sp_ger_anschluss"
+ 					scoped_sound_effect = "sp_ger_wien"
  				}
  			}
  		}
@@ -3555,8 +3553,30 @@ focus_tree = {
  		}
  	}
  	focus = {
- 		id = GER_blau
+ 		id = GER_solve_crisis
  		prerequisite = { focus = GER_winter_attack focus = GER_winter_defense }
+ 		icon = GFX_GER_solve_crisis
+ 		available = {
+ 			has_idea = general_staff_crisis
+ 		}
+ 		relative_position_id = GER_moscow
+ 		x = 0
+ 		y = 2
+ 		cost = 5
+ 		ai_will_do = {
+ 			factor = 1
+ 		}
+ 		available_if_capitulated = no
+ 		completion_reward = {
+			remove_ideas = general_staff_crisis
+			remove_unit_leader = 6
+			remove_unit_leader = 1
+			remove_unit_leader = 9
+ 		}
+ 	}
+ 	focus = {
+ 		id = GER_blau
+ 		prerequisite = { focus = GER_solve_crisis }
  		icon = GFX_focus_ger_reichskommisariats
  		available = {
  			Date > 1942.5.1
@@ -3564,9 +3584,9 @@ focus_tree = {
  			NOT={has_idea=GER_barbarossa_2}
  			NOT={has_idea=GER_barbarossa_3}
  		}
- 		relative_position_id = GER_moscow
+ 		relative_position_id = GER_solve_crisis
  		x = 0
- 		y = 2
+ 		y = 1
  		cost = 1
  		ai_will_do = {
  			factor = 1
@@ -3577,19 +3597,19 @@ focus_tree = {
  				add_timed_idea = { idea = GER_blau days = 100 }
  			}
  			hidden_effect={  ROM = {
- 					add_timed_idea = { idea = GER_blau days = 100 }
+ 					add_timed_idea = { idea = GER_blau_minor days = 100 }
  				}
  				HUN = {
- 					add_timed_idea = { idea = GER_blau days = 100 }
+ 					add_timed_idea = { idea = GER_blau_minor days = 100 }
  				}
  				BUL = {
- 					add_timed_idea = { idea = GER_blau days = 100 }
+ 					add_timed_idea = { idea = GER_blau_minor days = 100 }
  				}
  				ITA = {
- 					add_timed_idea = { idea = GER_blau days = 100 }
+ 					add_timed_idea = { idea = GER_blau_minor days = 100 }
  				}
  				SPR = {
- 					add_timed_idea = { idea = GER_blau days = 100 }
+ 					add_timed_idea = { idea = GER_blau_minor days = 100 }
  					}}
  			custom_effect_tooltip = GER_barbarossa_others_text
 			hidden_effect = {
@@ -3722,7 +3742,7 @@ focus_tree = {
  			add_war_support = 0.1
  			add_stability = 0.05
  			hidden_effect = {
-				every_country = {limit = {check_variable= { speeches_enabled > 0}}
+				every_country = {limit = {check_variable= { speeches_enabled > 0} is_in_faction_with=ENG }
  					scoped_sound_effect="peace_europe"
  				}
  				USA = {

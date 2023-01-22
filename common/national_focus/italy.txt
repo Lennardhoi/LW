@@ -2192,9 +2192,7 @@ focus_tree = {
  			factor = 10
  		}
  		completion_reward = {
- 		every_country = {limit = {check_variable= { speeches_enabled > 0} is_in_faction_with=GER }
- 					scoped_sound_effect="unser_rommel"
- 				}
+
  			add_timed_idea= {idea= ITA_production_boost days=30}
 			add_dynamic_modifier = {
  						modifier = imperium_romanum
@@ -2212,7 +2210,15 @@ focus_tree = {
  					defense_skill = 3
  					planning_skill = 3
  					logistics_skill = 6
- 					}}}}
+ 					}
+				}
+			hidden_effect = {
+				every_country = {limit = {check_variable= { speeches_enabled > 0} is_in_faction_with=GER }
+ 					scoped_sound_effect="unser_rommel"
+ 				}			
+				}
+			}
+		}
  	focus = {
  		id = ITA_desert_fox
  		icon = GFX_focus_ger_osttruppen
