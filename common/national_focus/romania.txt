@@ -19,6 +19,9 @@ focus_tree = {
  		ai_will_do = {
  			factor = 9
  		}
+		completion_reward = {
+		add_stability = 0.10
+		}
  		available = {
  		}
  		bypass = {
@@ -539,6 +542,7 @@ focus_tree = {
  		continue_if_invalid = no
  		available_if_capitulated = yes
  		completion_reward = {
+			add_political_power = 100
  			add_ideas = ROM_flexible_foreign_policy
  		}
  	}

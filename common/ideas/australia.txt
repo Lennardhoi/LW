@@ -360,5 +360,20 @@ ideas = {
 			}
 		}
 	}
+	Jebem_ti_micro = {
+			name = Jebem_ti_micro
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				special_forces_training_time_factor = -0.1
+				special_forces_min = 56
+			}
+			picture = eng_special_air_service
+			removal_cost = -1
+		}
 }
 
