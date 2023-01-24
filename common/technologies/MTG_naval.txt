@@ -1884,28 +1884,22 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		destroyer = {
-			lg_attack = 0.05
-			lg_armor_piercing = 0.05
+			lg_armor_piercing = 0.1
 		}
 		light_cruiser = {
-			lg_attack = 0.05
-			lg_armor_piercing = 0.05
+			lg_armor_piercing = 0.1
 		}
 		heavy_cruiser = {
-			lg_attack = 0.05
-			lg_armor_piercing = 0.05
+			lg_armor_piercing = 0.1
 		}
 		battleship = {
-			lg_attack = 0.05
-			lg_armor_piercing = 0.05
+			lg_armor_piercing = 0.1
 		}
 		battle_cruiser = {
-			lg_attack = 0.05
-			lg_armor_piercing = 0.05
+			lg_armor_piercing = 0.1
 		}
 		carrier = {
-			lg_attack = 0.05
-			lg_armor_piercing = 0.05
+			lg_armor_piercing = 0.1
 		}
 		folder = {
 			name = mtgnavalfolder
@@ -1933,28 +1927,22 @@ technologies = {
 			year_1941
 		}
 		destroyer = {
-			lg_attack = 0.05
-			lg_armor_piercing = 0.05
+			lg_armor_piercing = 0.1
 		}
 		light_cruiser = {
-			lg_attack = 0.05
-			lg_armor_piercing = 0.05
+			lg_armor_piercing = 0.1
 		}
 		heavy_cruiser = {
-			lg_attack = 0.05
-			lg_armor_piercing = 0.05
+			lg_armor_piercing = 0.1
 		}
 		battleship = {
-			lg_attack = 0.05
-			lg_armor_piercing = 0.05
+			lg_armor_piercing = 0.1
 		}
 		battle_cruiser = {
-			lg_attack = 0.05
-			lg_armor_piercing = 0.05
+			lg_armor_piercing = 0.1
 		}
 		carrier = {
-			lg_attack = 0.05
-			lg_armor_piercing = 0.05
+			lg_armor_piercing = 0.1
 		}
 		folder = {
 			name = mtgnavalfolder
@@ -2087,12 +2075,10 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		light_cruiser = {
-			lg_attack = 0.05
-			lg_armor_piercing = 0.05
+			lg_armor_piercing = 0.1
 		}
 		heavy_cruiser = {
-			hg_attack = 0.05
-			hg_armor_piercing = 0.05
+			hg_armor_piercing = 0.1
 		}
 		folder = {
 			name = mtgnavalfolder
@@ -2120,12 +2106,10 @@ technologies = {
 			year_1941
 		}
 		light_cruiser = {
-			lg_attack = 0.05
-			lg_armor_piercing = 0.05
+			lg_armor_piercing = 0.1
 		}
 		heavy_cruiser = {
-			hg_attack = 0.05
-			hg_armor_piercing = 0.05
+			hg_armor_piercing = 0.1
 		}
 		folder = {
 			name = mtgnavalfolder
@@ -2280,12 +2264,10 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		battleship = {
-			hg_attack = 0.05
-			hg_armor_piercing = 0.05
+			hg_armor_piercing = 0.1
 		}
 		battle_cruiser = {
-			hg_attack = 0.05
-			hg_armor_piercing = 0.05
+			hg_armor_piercing = 0.1
 		}
 		folder = {
 			name = mtgnavalfolder
@@ -2314,12 +2296,10 @@ technologies = {
 			year_1941
 		}
 		battleship = {
-			hg_attack = 0.05
-			hg_armor_piercing = 0.05
+			hg_armor_piercing = 0.1
 		}
 		battle_cruiser = {
-			hg_attack = 0.05
-			hg_armor_piercing = 0.05
+			hg_armor_piercing = 0.1
 		}
 		folder = {
 			name = mtgnavalfolder
@@ -2387,7 +2367,9 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		enable_equipment_modules = {
+			dp_ship_secondaries_1
 			ship_secondaries_2
+			dp_ship_secondaries_1
 		}
 		on_research_complete = {
 			custom_effect_tooltip = secondary_battery_advice_tt
@@ -2420,8 +2402,12 @@ technologies = {
 		categories = {
 			year_1939
 		}
+		path = {
+			leads_to_tech = dp_secondary_battery2
+			research_cost_coeff = 1
+		}
 		enable_equipment_modules = {
-			dp_ship_secondaries
+			dp_ship_secondaries_2
 			dp_light_battery
 		}
 		on_research_complete = {
@@ -2430,6 +2416,41 @@ technologies = {
 		folder = {
 			name = mtgnavalfolder
 			position = { x = 0 y = 12 }
+		}
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = USA
+					tag = JAP
+				}
+				factor = 20
+			}
+		}
+		categories = {
+			naval_equipment
+		}
+	}
+	dp_secondary_battery2 = {
+		xp_research_type = navy
+		xp_unlock_cost = 0
+		xp_boost_cost = 50
+		xp_research_bonus = 1.0
+		research_cost = 0.8
+		start_year = 1942
+		categories = {
+			year_1939
+		}
+		enable_equipment_modules = {
+			dp_ship_secondaries_3
+		}
+		on_research_complete = {
+			custom_effect_tooltip = secondary_battery_advice_tt
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 18 }
 		}
 		ai_will_do = {
 			factor = 2
@@ -2639,12 +2660,12 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		battleship = {
-			lg_attack = 0.1
-			hg_attack = 0.1
+			lg_attack = 0.05
+			hg_attack = 0.05
 		}
 		battle_cruiser = {
-			lg_attack = 0.1
-			hg_attack = 0.1
+			lg_attack = 0.05
+			hg_attack = 0.05
 		}
 		heavy_cruiser = {
 			lg_attack = 0.05
@@ -2672,20 +2693,20 @@ technologies = {
 	fire_control_methods_3 = {
 		research_cost = 2
 		battleship = {
-			lg_attack = 0.15
-			hg_attack = 0.15
+			lg_attack = 0.05
+			hg_attack = 0.05
 		}
 		battle_cruiser = {
-			lg_attack = 0.15
-			hg_attack = 0.15
+			lg_attack = 0.05
+			hg_attack = 0.05
 		}
 		heavy_cruiser = {
-			lg_attack = 0.1
-			hg_attack = 0.1
+			lg_attack = 0.05
+			hg_attack = 0.05
 		}
 		light_cruiser = {
-			lg_attack = 0.1
-			hg_attack = 0.1
+			lg_attack = 0.05
+			hg_attack = 0.05
 		}
 		destroyer = {
 			lg_attack = 0.05

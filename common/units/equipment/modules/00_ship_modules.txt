@@ -542,7 +542,6 @@ equipment_modules = {
  	}
  	ship_secondaries_2 = {
  		category = ship_secondaries
- 		parent = ship_secondaries_1
  		sfx = sfx_ui_sd_module_turret
  		add_stats = {
  			lg_attack = 6
@@ -560,14 +559,33 @@ equipment_modules = {
  		}
  		critical_parts = { damaged_secondaries }
  	}
- 	dp_ship_secondaries = {
+ 	dp_ship_secondaries_1 = {
  		category = ship_secondaries
- 		parent = ship_secondaries_2
- 		gfx = ship_secondaries_3
  		sfx = sfx_ui_sd_module_turret
  		add_stats = {
  			lg_attack = 4
  			anti_air_attack = 2
+ 			build_cost_ic = 250
+ 		}
+ 		multiply_stats = {
+ 			naval_speed = -0.02
+ 			build_cost_ic = 0.01
+ 		}
+ 		add_average_stats = {
+ 			lg_armor_piercing = 2
+ 		}
+ 		can_convert_from = {
+ 			module_category = ship_secondaries
+ 			convert_cost_ic = 100
+ 		}
+ 		critical_parts = { damaged_secondaries }
+ 	}
+	dp_ship_secondaries_2 = {
+ 		category = ship_secondaries
+ 		sfx = sfx_ui_sd_module_turret
+ 		add_stats = {
+ 			lg_attack = 6
+ 			anti_air_attack = 3
  			build_cost_ic = 300
  		}
  		multiply_stats = {
@@ -579,7 +597,28 @@ equipment_modules = {
  		}
  		can_convert_from = {
  			module_category = ship_secondaries
- 			convert_cost_ic = 250
+ 			convert_cost_ic = 150
+ 		}
+ 		critical_parts = { damaged_secondaries }
+ 	}
+	dp_ship_secondaries_3 = {
+ 		category = ship_secondaries
+ 		sfx = sfx_ui_sd_module_turret
+ 		add_stats = {
+ 			lg_attack = 8
+ 			anti_air_attack = 4
+ 			build_cost_ic = 350
+ 		}
+ 		multiply_stats = {
+ 			naval_speed = -0.03
+ 			build_cost_ic = 0.01
+ 		}
+ 		add_average_stats = {
+ 			lg_armor_piercing = 2
+ 		}
+ 		can_convert_from = {
+ 			module_category = ship_secondaries
+ 			convert_cost_ic = 200
  		}
  		critical_parts = { damaged_secondaries }
  	}

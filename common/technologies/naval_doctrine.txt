@@ -6,19 +6,25 @@ technologies = {
 		# EFFECT #############
 		battleship = {
 			max_organisation = 20
+			hg_attack = 0.05
 		}
 		battle_cruiser = {
 			max_organisation = 10
+			hg_attack = 0.05
 		}
 		heavy_cruiser = {
 			max_organisation = 10
+			lg_attack = 0.05
 		}
 		light_cruiser = {
 			max_organisation = 10
 			surface_detection = 0.10
+			lg_attack = 0.05
 		}
 		destroyer = {
+			max_strength = 0.2
 			surface_detection = 0.10
+			lg_attack = 0.05
 		}
 		mines_planting_by_fleets_factor = 0.1
 		#####
@@ -60,12 +66,15 @@ technologies = {
 		# EFFECT #############
 		battleship = {
 			max_organisation = 20
+			hg_attack = 0.05
 		}
 		battle_cruiser = {
 			max_organisation = 10
+			hg_attack = 0.05
 		}
 		heavy_cruiser = {
 			max_organisation = 10
+			lg_attack = 0.05
 		}
 		strike_force_movement_org_loss = -0.2
 		########
@@ -115,6 +124,9 @@ technologies = {
 		carrier = {
 			max_organisation = 10
 		}
+		modifier = {
+			naval_strike_targetting_factor = 0.1
+		}
 		sortie_efficiency = 0.1
 		########
 		path = {
@@ -162,10 +174,12 @@ technologies = {
 		#Groups of Destroyers (and CVEs should those ever be added) formed to hunt down enemy subs
 		# EFFECT #############
 		destroyer = {
+			surface_detection = 0.2
 			max_organisation = 20
 			sub_detection = 0.1
 		}
 		light_cruiser = {
+			surface_detection = 0.2
 			max_organisation = 20
 			sub_detection = 0.2
 		}
@@ -211,9 +225,11 @@ technologies = {
 		#Large, powerful gun armed ships are clearly the best ships
 		# EFFECT #############
 		battleship = {
+			hg_attack = 0.05
 			max_organisation = 20
 		}
 		battle_cruiser = {
+			hg_attack = 0.05
 			max_organisation = 20
 		}
 		navy_capital_ship_defence_factor = 0.15
@@ -252,6 +268,9 @@ technologies = {
 		carrier = {
 			max_organisation = 20
 		}
+		modifier = {
+			naval_strike_targetting_factor = 0.1
+		}
 		sortie_efficiency = 0.1
 		########
 		path = {
@@ -286,16 +305,20 @@ technologies = {
 		#Top tech for the Battlefleet tree.
 		# EFFECT #############
 		battleship = {
+			hg_armor_piercing = 0.1
+			hg_attack = 0.1
 			max_organisation = 20
 		}
 		battle_cruiser = {
+			hg_armor_piercing = 0.1
+			hg_attack = 0.1
 			max_organisation = 20
 		}
 		heavy_cruiser = {
+			lg_armor_piercing = 0.1
+			lg_attack = 0.1
 			max_organisation = 20
 		}
-		navy_capital_ship_attack_factor = 0.15
-		mines_planting_by_fleets_factor = 0.1
 		xp_research_type =navy
 		xp_unlock_cost = 0
 		xp_boost_cost = 100
@@ -331,6 +354,8 @@ technologies = {
 		#Convoy escort/ ASW branch
 		# EFFECT #############
 		destroyer = {
+			lg_attack = 0.1
+			torpedo_attack = 0.1
 			max_organisation = 10
 			sub_detection = 0.05
 		}
@@ -381,6 +406,8 @@ technologies = {
 		#Assigning dedicated convoy escorts to keep them safe
 		# EFFECT #############
 		destroyer = {
+			lg_attack = 0.1
+			torpedo_attack = 0.1
 			max_organisation = 10
 			sub_detection = 0.05
 		}
@@ -434,6 +461,9 @@ technologies = {
 			sub_detection = 0.25
 			max_organisation = 20
 		}
+		modifier = {
+			naval_strike_targetting_factor = 0.1
+		}
 		convoy_escort_efficiency = 0.15
 		####
 		path = {
@@ -481,15 +511,22 @@ technologies = {
 		#The top convoy tech, basically now all the earlier concepts are working well with each other for maximum effect
 		# EFFECT #############
 		destroyer = {
+			lg_attack = 0.1
+			torpedo_attack = 0.1
 			max_organisation = 20
 			sub_detection = 0.1
 		}
 		light_cruiser = {
+			lg_attack = 0.1
+			lg_armor_piercing = 0.1
 			max_organisation = 10
 			sub_detection = 0.15
 		}
 		carrier = {
 			sub_detection = 0.25
+		}
+		modifier = {
+			naval_strike_targetting_factor = 0.1
 		}
 		convoy_escort_efficiency = 0.10
 		#####
@@ -538,6 +575,7 @@ technologies = {
 		# Basic sub-boosting tree, not as good as Trade Interdiction's
 		# EFFECT ##############
 		submarine = {
+			torpedo_attack = 0.1
 			max_organisation = 10
 			surface_detection = 0.05
 		}
@@ -574,7 +612,8 @@ technologies = {
 	undersea_blockade = {
 		# Sub boost
 		# EFFECT ##############
-		submarine = {
+		submarine = {	
+			torpedo_attack = 0.1
 			max_organisation = 10
 			surface_detection = 0.1
 		}
@@ -678,6 +717,9 @@ technologies = {
 			submarine = 2.0
 		}
 	}
+	#######################################################################################
+	########################## Trade Interdiction##########################################
+	#######################################################################################
 	trade_interdiction = {
 		doctrine_name = "TITLE_TRADE_INTERDICTION"
 		# This tree is focused on sinking convoys, and boosting Subs and all types of Cruiser. It has some boosts for CVs and Battleships, but the CVs should be a bit worse and the BBs a lot worse than Fleet in being's.
@@ -685,16 +727,19 @@ technologies = {
 		xp_unlock_cost = 0
 		# EFFECT ##############
 		submarine = {
+			torpedo_attack = 0.1
 			max_organisation = 10
-			surface_detection = 0.05
+			surface_detection = 0.1
 		}
 		light_cruiser = {
+			lg_attack = 0.1
 			max_organisation = 10
-			surface_detection = 0.05
+			surface_detection = 0.1
 		}
 		heavy_cruiser = {
+			lg_attack = 0.1
 			max_organisation = 10
-			surface_detection = 0.05
+			surface_detection = 0.1
 		}
 		#######
 		xor = { fleet_in_being base_strike }
@@ -747,8 +792,9 @@ technologies = {
 		# same as convoy interdiction
 		# EFFECT ##############
 		submarine = {
+			torpedo_attack = 0.1
 			max_organisation = 10
-			surface_detection = 0.05
+			surface_detection = 0.1
 			convoy_raiding_coordination = 0.05
 		}
 		naval_torpedo_reveal_chance_factor = -0.10
@@ -797,6 +843,7 @@ technologies = {
 		#Nice bonus for subs vs convoys
 		# EFFECT ##############
 		submarine = {
+			torpedo_attack = 0.1
 			surface_detection = 0.1
 			convoy_raiding_coordination = 0.05
 		}
@@ -846,6 +893,7 @@ technologies = {
 		# More sub bonuses - subs operate in groups to sink convoys
 		# EFFECT ##############
 		submarine = {
+			torpedo_attack = 0.1
 			max_organisation = 10
 			convoy_raiding_coordination = 0.15
 			surface_detection = 0.10
@@ -901,10 +949,7 @@ technologies = {
 			surface_detection = 0.1
 			max_strength = 0.2
 		}
-		path = {
-			leads_to_tech = combined_operations_raiding
-			research_cost_coeff = 1
-		}
+		
 		xp_research_type =navy
 		xp_unlock_cost = 0
 		xp_boost_cost = 100
@@ -939,66 +984,6 @@ technologies = {
 		ai_research_weights = {
 			naval_doctrine = -1.0
 			submarine = 2.0
-		}
-	}
-	combined_operations_raiding = {
-		#top raiding idea - subs and surface raiders act in harmony to destroy convoys
-		# EFFECT ##############
-		submarine = {
-			max_organisation = 10
-			convoy_raiding_coordination = 0.05
-			surface_detection = 0.1
-		}
-		light_cruiser = {
-			max_organisation = 10
-			convoy_raiding_coordination = 0.35
-			surface_detection = 0.15
-		}
-		heavy_cruiser = {
-			max_organisation = 10
-			convoy_raiding_coordination = 0.35
-			surface_detection = 0.15
-		}
-		battle_cruiser = {
-			max_organisation = 10
-			convoy_raiding_coordination = 0.35
-			surface_detection = 0.15
-		}
-		xp_research_type =navy
-		xp_unlock_cost = 0
-		xp_boost_cost = 100
-		xp_research_bonus = 1.00
-		doctrine = no
-		research_cost = 2
-		categories = {
-			naval_doctrine
-			trade_interdiction_tree
-			submarine_doctrine
-			cat_trade_interdiction
-		}
-		folder = {
-			name = naval_doctrine_folder
-			position = { x = 2 y = 10 }
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				has_war = yes
-				factor = 5
-			}
-			modifier = {
-				tag = GER
-				factor = 2
-			}
-			modifier = {
-				has_navy_experience > 120
-				factor = 2
-			}
-		}
-		ai_research_weights = {
-			naval_doctrine = -1.0
-			cruiser = 1.5
-			submarine = 1.0
 		}
 	}
 	raider_patrols = {
@@ -1047,11 +1032,15 @@ technologies = {
 		#Battleships/Battlecrusiers are used as raiders rather than in the line of battle in a fleet
 		# EFFECT ##############
 		battle_cruiser = {
+			hg_attack = 0.05
+			lg_attack = 0.1
 			max_organisation = 10
 			convoy_raiding_coordination = 0.15
 			surface_detection = 0.15
 		}
 		battleship = {
+			hg_attack = 0.05
+			lg_attack = 0.1
 			max_organisation = 10
 			convoy_raiding_coordination = 0.5
 			surface_detection = 0.25
@@ -1089,12 +1078,20 @@ technologies = {
 		#same as battlefleet_concentration
 		# EFFECT #############
 		battleship = {
+			hg_attack = 0.05
 			max_organisation = 10
 		}
 		battle_cruiser = {
+			hg_attack = 0.05
+			lg_attack = 0.1
 			max_organisation = 10
 		}
 		heavy_cruiser = {
+			lg_attack = 0.1
+			max_organisation = 10
+		}
+		light_cruiser = {
+			lg_attack = 0.1
 			max_organisation = 10
 		}
 		strike_force_movement_org_loss = -0.2
@@ -1131,6 +1128,13 @@ technologies = {
 		#same as floating_fortress
 		# EFFECT #############
 		battleship = {
+			hg_attack = 0.05
+			lg_attack = 0.1
+			max_organisation = 10
+		}
+		battle_cruiser = {
+			hg_attack = 0.05
+			lg_attack = 0.1
 			max_organisation = 10
 		}
 		navy_capital_ship_defence_factor = 0.10
@@ -1182,6 +1186,10 @@ technologies = {
 			trade_interdiction_tree
 			cat_trade_interdiction
 		}
+		path = {
+			leads_to_tech = combined_operations_raiding
+			research_cost_coeff = 1
+		}
 		folder = {
 			name = naval_doctrine_folder
 			position = { x = -1 y = 10 }
@@ -1195,12 +1203,81 @@ technologies = {
 			naval_air = 0.75
 		}
 	}
+	combined_operations_raiding = {
+		#top raiding idea - subs and surface raiders act in harmony to destroy convoys
+		# EFFECT ##############
+		submarine = {
+			max_organisation = 10
+			convoy_raiding_coordination = 0.05
+			surface_detection = 0.1
+		}
+		destroyer = {
+			max_organisation = 10
+			convoy_raiding_coordination = 0.5
+			surface_detection = 0.15
+		}
+		light_cruiser = {
+			max_organisation = 10
+			convoy_raiding_coordination = 0.5
+			surface_detection = 0.15
+		}
+		heavy_cruiser = {
+			max_organisation = 10
+			convoy_raiding_coordination = 0.5
+			surface_detection = 0.15
+		}
+		battle_cruiser = {
+			max_organisation = 10
+			convoy_raiding_coordination = 0.5
+			surface_detection = 0.15
+		}
+		xp_research_type =navy
+		xp_unlock_cost = 0
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		doctrine = no
+		research_cost = 2
+		categories = {
+			naval_doctrine
+			trade_interdiction_tree
+			submarine_doctrine
+			cat_trade_interdiction
+		}
+		folder = {
+			name = naval_doctrine_folder
+			position = { x = -1 y = 12 }
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_war = yes
+				factor = 5
+			}
+			modifier = {
+				tag = GER
+				factor = 2
+			}
+			modifier = {
+				has_navy_experience > 120
+				factor = 2
+			}
+		}
+		ai_research_weights = {
+			naval_doctrine = -1.0
+			cruiser = 1.5
+			submarine = 1.0
+		}
+	}
 	carrier_operations = {
 		# Carrier/Convoy defense branch - not great at either of them, should have worse CVs than Fleet in Being
 		# EFFECT #############
 		carrier = {
 			max_organisation = 20
 		}
+		modifier = {
+			naval_strike_targetting_factor = 0.1
+		}
+		sortie_efficiency = 0.1
 		########
 		path = {
 			leads_to_tech = convoy_sailing_ti
@@ -1241,6 +1318,8 @@ technologies = {
 		#same as convoy_sailing
 		# EFFECT #############
 		destroyer = {
+			torpedo_attack = 0.1
+			lg_attack = 0.1
 			max_organisation = 20
 			sub_detection = 0.05
 		}
@@ -1281,6 +1360,9 @@ technologies = {
 		carrier = {
 			max_organisation = 10
 		}
+		modifier = {
+			naval_strike_targetting_factor = 0.1
+		}
 		sortie_efficiency = 0.1
 		########
 		path = {
@@ -1320,6 +1402,10 @@ technologies = {
 		modifier = {
 			naval_strike_targetting_factor = 0.1
 		}
+		modifier = {
+			naval_strike_targetting_factor = 0.1
+		}
+		sortie_efficiency = 0.1
 		########
 		path = {
 			leads_to_tech = floating_airfield_ti
@@ -1349,6 +1435,14 @@ technologies = {
 			naval_air = 0.75
 		}
 	}
+	
+	
+	#############################################################################################
+	
+	
+	
+	
+	
 	base_strike = {
 		doctrine_name = "TITLE_BASE_STRIKE"
 		#This tree is primarily focused on Carriers. It should have the best Carriers, Battleships that are better than Trade interdiction but worse than Fleet in being, and has the same Sub tree as FiB. Convoy defense is better than TI but worse than FiB
@@ -1356,17 +1450,21 @@ technologies = {
 		xp_unlock_cost = 0
 		# EFFECT ##############
 		heavy_cruiser = {
+			lg_attack = 0.05
 			max_organisation = 10
 		}
 		battle_cruiser = {
+			hg_attack = 0.05
 			max_organisation = 10
 		}
 		battleship = {
+			hg_attack = 0.1
 			max_organisation = 10
 		}
 		carrier = {
 			max_organisation = 20
 		}
+		sortie_efficiency = 0.1
 		port_strike = 0.5
 		#####
 		xor = { fleet_in_being trade_interdiction }
@@ -1424,7 +1522,7 @@ technologies = {
 		carrier = {
 			max_organisation = 20
 		}
-		sortie_efficiency = 0.1
+		sortie_efficiency = 0.2
 		modifier = {
 			naval_strike_targetting_factor = 0.1
 		}
@@ -1486,6 +1584,7 @@ technologies = {
 			max_organisation = 20
 		}
 		light_cruiser = {
+			lg_attack = 0.1
 			max_organisation = 20
 		}
 		modifier = {
@@ -1662,9 +1761,13 @@ technologies = {
 		#same as floating_fortress
 		# EFFECT #############
 		battle_cruiser = {
+			max_strength = 0.1
+			hg_attack = 0.05
 			max_organisation = 20
 		}
 		battleship = {
+			max_strength = 0.1
+			hg_attack = 0.05
 			max_organisation = 20
 		}
 		navy_capital_ship_defence_factor = 0.10
@@ -1714,9 +1817,13 @@ technologies = {
 		#Larger carrier-lead fleets
 		# EFFECT ##############
 		carrier = {
+			max_strength = 0.1
 			max_organisation = 20
 		}
 		light_cruiser = {
+			lg_armor_piercing = 0.1
+			lg_attack = 0.1
+			max_strength = 0.1
 			max_organisation = 20
 		}
 		
@@ -1773,6 +1880,7 @@ technologies = {
 		# same as submarine_operations
 		# EFFECT ##############
 		submarine = {
+			torpedo_attack = 0.1
 			max_organisation = 10
 			surface_detection = 0.05
 		}
@@ -1820,6 +1928,7 @@ technologies = {
 		# same as undersea_blockade
 		# EFFECT ##############
 		submarine = {
+			torpedo_attack = 0.1
 			max_organisation = 10
 			surface_detection = 0.1
 		}
@@ -1957,6 +2066,8 @@ technologies = {
 		#same as convoy_escorts
 		# EFFECT #############
 		destroyer = {
+			lg_attack = 0.1
+			torpedo_attack = 0.1
 			max_organisation = 10
 			sub_detection = 0.05
 		}
@@ -2006,10 +2117,14 @@ technologies = {
 		# Lesser version of hunter-killer groups
 		# EFFECT ##############
 		destroyer = {
+			lg_attack = 0.1
+			torpedo_attack = 0.1
 			max_organisation = 10
 			sub_detection = 0.05
 		}
 		light_cruiser = {
+			lg_attack = 0.1
+			torpedo_attack = 0.1
 			max_organisation = 10
 			sub_detection = 0.1
 		}
@@ -2107,14 +2222,20 @@ technologies = {
 		#same as integrated_convoy_defence
 		# EFFECT #############
 		destroyer = {
+			lg_attack = 0.1
+			torpedo_attack = 0.1
 			max_organisation = 20
 			sub_detection = 0.10
 		}
 		light_cruiser = {
+			lg_attack = 0.1
+			torpedo_attack = 0.1
 			max_organisation = 10
 			sub_detection = 0.15
 		}
 		heavy_cruiser = {
+			lg_attack = 0.1
+			lg_armor_piercing = 0.1
 			max_organisation = 20
 		}
 		carrier = {
