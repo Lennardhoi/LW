@@ -232,8 +232,8 @@ technologies = {
 			hg_attack = 0.05
 			max_organisation = 20
 		}
-		navy_capital_ship_defence_factor = 0.15
-		navy_anti_air_attack_factor = 0.10
+		navy_capital_ship_defence_factor = 0.2
+		navy_anti_air_attack_factor = 0.20
 		########
 		path = {
 			leads_to_tech = floating_airfield
@@ -727,16 +727,20 @@ technologies = {
 		xp_unlock_cost = 0
 		# EFFECT ##############
 		submarine = {
+			
+			max_strength = 0.2
 			torpedo_attack = 0.1
 			max_organisation = 10
 			surface_detection = 0.1
 		}
 		light_cruiser = {
+			max_strength = 0.1
 			lg_attack = 0.1
 			max_organisation = 10
 			surface_detection = 0.1
 		}
 		heavy_cruiser = {
+			max_strength = 0.1
 			lg_attack = 0.1
 			max_organisation = 10
 			surface_detection = 0.1
@@ -947,7 +951,6 @@ technologies = {
 			max_organisation = 10
 			convoy_raiding_coordination = 0.2
 			surface_detection = 0.1
-			max_strength = 0.2
 		}
 		
 		xp_research_type =navy
@@ -1454,14 +1457,18 @@ technologies = {
 			max_organisation = 10
 		}
 		battle_cruiser = {
+			max_strength = 0.1
 			hg_attack = 0.05
 			max_organisation = 10
 		}
 		battleship = {
+			
+			max_strength = 0.1
 			hg_attack = 0.1
 			max_organisation = 10
 		}
 		carrier = {
+			max_strength = 0.1
 			max_organisation = 20
 		}
 		sortie_efficiency = 0.1
@@ -1761,12 +1768,10 @@ technologies = {
 		#same as floating_fortress
 		# EFFECT #############
 		battle_cruiser = {
-			max_strength = 0.1
 			hg_attack = 0.05
 			max_organisation = 20
 		}
 		battleship = {
-			max_strength = 0.1
 			hg_attack = 0.05
 			max_organisation = 20
 		}
@@ -1816,18 +1821,17 @@ technologies = {
 	carrier_battlegroups = {
 		#Larger carrier-lead fleets
 		# EFFECT ##############
+		
 		carrier = {
-			max_strength = 0.1
 			max_organisation = 20
 		}
 		light_cruiser = {
 			lg_armor_piercing = 0.1
 			lg_attack = 0.1
-			max_strength = 0.1
 			max_organisation = 20
 		}
+		sortie_efficiency = 0.2
 		
-		navy_carrier_air_agility_factor = 0.10
 		###########
 		xp_research_type =navy
 		xp_unlock_cost = 0

@@ -198,6 +198,7 @@ NDefines.NCountry.PROVINCE_SCORE_MULTIPLIER = 0				-- Based on number of control
 NDefines.NCountry.POPULATION_YEARLY_GROWTH_BASE = 0
 NDefines.NCountry.STARTING_COMMAND_POWER = 100.0
 NDefines.NCountry.BASE_MAX_COMMAND_POWER = 200
+NDefines.NCountry.BASE_COMMAND_POWER_GAIN = 1					-- base value for daily command power gain
 ---------------------------------------------------------------
 NDefines.NNavy.SHORE_BOMBARDMENT_CAP=0.15
 NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0						-- down from 0.02 | Chances one ship get damage each hour while on training 		 0.0001	
