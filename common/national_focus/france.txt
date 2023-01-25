@@ -2024,7 +2024,11 @@ focus_tree = {
  				amount = 800
  				producer = FRA
  			}
- 		
+ 		hidden_effect = {
+				every_country = {limit = {check_variable= { speeches_enabled > 0} is_in_faction_with=FRA }
+ 					scoped_sound_effect="appel_de_gaulle"
+ 				}
+		}
  	}
  	}
  	focus = {
