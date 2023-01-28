@@ -27,6 +27,31 @@ ideas = {
 				industrial_capacity_dockyard = 0.05
 			}
 		}
+		JAP_salvo = {
+			picture = Salvo
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				industrial_capacity_dockyard = 0.01
+			}
+			equipment_bonus = {
+				medium_tank_flame_chassis = {
+					build_cost_ic = 10
+				}
+				light_tank_flame_chassis = {
+					build_cost_ic = 10
+				}
+				heavy_tank_flame_chassis = {
+					build_cost_ic = 10
+				}
+			}
+			
+		}
 		JAP_special_air_landing_force = {
 			picture = generic_infantry_bonus
 			allowed = {
