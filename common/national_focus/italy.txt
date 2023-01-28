@@ -1799,7 +1799,7 @@ focus_tree = {
 			special_type_slot_2=fuel_injection_s
 			fixed_main_weapon_slot=aircraft_cannon_1_1x
 			fixed_auxiliary_weapon_slot_1=aircraft_cannon_1_2x
-			fixed_auxiliary_weapon_slot_2=ammunition_1
+			fixed_auxiliary_weapon_slot_2=aircraft_cannon_1_2x
 			special_type_slot_3=radio_navigation_1
 			}
 			upgrades={
@@ -1827,10 +1827,9 @@ focus_tree = {
  		x = 0
  		y = 1
  		available = {
- 			
  				date >1941.1.1
- 			     has_tech = cas_2 
-			     has_tech = improved_small_airframe
+ 			    has_tech = cas_2 
+			    has_tech = improved_small_airframe
 			}
  		relative_position_id = ITA_air_innovation_2
  		cost = 5
