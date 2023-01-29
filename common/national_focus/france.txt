@@ -2380,6 +2380,14 @@ focus_tree = {
  				planning_skill = 1
  				logistics_skill = 1
  			}
+			every_unit_leader = {
+				limit={has_id=101}
+				demote_leader = yes
+				add_skill_level=2
+				add_attack=1
+				add_unit_leader_trait=organizer
+				promote_leader = yes
+			}
  		}
  	}
  	

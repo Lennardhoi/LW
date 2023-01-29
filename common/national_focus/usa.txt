@@ -2250,9 +2250,15 @@ focus_tree = {
  		completion_reward = {
  			add_tech_bonus = {
  				name = USA_us_army_airforce
- 				uses = 2
+ 				uses = 1
  				bonus = 3.0
- 				category = cat_strategic_bomber
+ 				technology = improved_large_airframe
+ 			}
+ 			add_tech_bonus = {
+ 				name = USA_us_army_airforce
+ 				uses = 1
+ 				bonus = 3.0
+ 				technology = advanced_large_airframe
  			}
  		}
  	}
@@ -2657,8 +2663,8 @@ focus_tree = {
  			add_tech_bonus = {
  				name = USA_escort_fighters
  				bonus = 3.0
- 				uses = 2
- 				technology = medium_air
+ 				uses = 1
+ 				technology = improved_medium_airframe
  			}
  		}
  	}

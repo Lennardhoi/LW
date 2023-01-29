@@ -623,6 +623,12 @@ focus_tree = {
 			slot = high_command
 			trait =army_commando_1
 			}
+			add_tech_bonus = {
+				name = air_bonus
+				bonus = 1.5
+				uses = 1
+				technology= advanced_small_airframe
+			}
 		}
 	}
 	focus = {
@@ -1466,12 +1472,6 @@ focus_tree = {
 				uses = 1
 				technology= improved_small_airframe
 			}
-			add_tech_bonus = {
-				name = air_bonus
-				bonus = 0.5
-				uses = 1
-				technology= advanced_small_airframe
-			}
 		}
 	}
 	focus = {
@@ -1522,13 +1522,13 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-			add_tech_bonus = {
-				name = coastal_command_focus
-				bonus = 1.0
-				uses = 2
-				category = cas_bomber
-			}
-		}
+ 			add_tech_bonus = {
+ 				name = bomber_bonus
+ 				bonus = 1
+ 				uses = 2
+ 				category = cas_bomber
+ 			}
+ 		}
 	}
 	focus = {
 		id = SOV_ocean_going_navy
@@ -1967,7 +1967,7 @@ focus_tree = {
 			modify_building_resources = {
 				building = synthetic_refinery
 				resource = rubber
-				amount = 2
+				amount = 20
 			}
 		}
 	}
