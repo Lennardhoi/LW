@@ -397,10 +397,7 @@ focus_tree = {
  		prerequisite = { focus = NDA_resource13371 }
  		relative_position_id = NDA_resource13371
  		available_if_capitulated = yes
- 		completion_reward = {
-			 GER = {
- 				country_event = { id = germany.140 }
- 			}		
+ 		completion_reward = {	
  			GER = {set_variable = {ostarbeiter_cg=-0.05}}
  			every_country={
  				limit={is_playable_country=yes}

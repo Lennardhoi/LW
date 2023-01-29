@@ -3535,30 +3535,8 @@ focus_tree = {
  		}
  	}
  	focus = {
- 		id = GER_solve_crisis
- 		prerequisite = { focus = GER_winter_attack focus = GER_winter_defense }
- 		icon = GFX_GER_solve_crisis
- 		available = {
- 			has_idea = general_staff_crisis
- 		}
- 		relative_position_id = GER_moscow
- 		x = 0
- 		y = 2
- 		cost = 3
- 		ai_will_do = {
- 			factor = 1
- 		}
- 		available_if_capitulated = no
- 		completion_reward = {
-			remove_ideas = general_staff_crisis
-			remove_unit_leader = 6
-			remove_unit_leader = 1
-			remove_unit_leader = 9
- 		}
- 	}
- 	focus = {
  		id = GER_blau
- 		prerequisite = { focus = GER_solve_crisis }
+ 		prerequisite = { focus = GER_winter_attack focus = GER_winter_defense }
  		icon = GFX_focus_ger_reichskommisariats
  		available = {
  			Date > 1942.5.1
@@ -3566,9 +3544,9 @@ focus_tree = {
  			NOT={has_idea=GER_barbarossa_2}
  			NOT={has_idea=GER_barbarossa_3}
  		}
- 		relative_position_id = GER_solve_crisis
+ 		relative_position_id = GER_moscow
  		x = 0
- 		y = 1
+ 		y = 2
  		cost = 1
  		ai_will_do = {
  			factor = 1
