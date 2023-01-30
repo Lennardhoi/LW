@@ -923,9 +923,9 @@ technologies = {
 		enable_equipment_modules = {
 			torpedo_mounting3
 		}
-		allow={date>1940.1.1}
+		allow={date>1941.1.1}
 		research_cost = 0.5
-		start_year = 1942
+		start_year = 1943
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1045,9 +1045,9 @@ technologies = {
 		enable_equipment_modules = {
 			guided_anti_ship_missile
 		}
-		allow={date>1940.1.1}
+		allow={date>1941.1.1}
 		research_cost = 0.5
-		start_year = 1942
+		start_year = 1943
 		categories = {
 			year_1943
 		}
@@ -1522,8 +1522,8 @@ technologies = {
 			fuel_injection2_l
 		}
 		allow={date>1941.6.1}
-		research_cost = 1.25
-		start_year = 1942
+		research_cost = 1.0
+		start_year = 1944
 
 		folder = {
 			name = bba_air_techs_folder
@@ -1569,7 +1569,10 @@ technologies = {
 		enable_equipment_modules = {
 			drop_tanks
 		}
-		
+		path = {
+			leads_to_tech = self_sealing_fuel_tanks
+			research_cost_coeff = 1
+		} 
 		research_cost = 0.5
 		start_year = 1936
 
@@ -1614,12 +1617,30 @@ technologies = {
 			}
 		}
 	}
+	self_sealing_fuel_tanks = {
+		xp_research_type = air
+		xp_unlock_cost = 0
+		xp_boost_cost = 50
+		xp_research_bonus = 1.50
+		research_cost = 1
+		start_year = 1940
 
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 5 y = 6 }
+		}	
+		enable_equipment_modules = {
+			self_sealing_fuel_tanks_small
+			self_sealing_fuel_tanks_medium
+			self_sealing_fuel_tanks_large
+		}
+	}
 	aircraft_construction = {
 		xp_research_type = air
 		xp_unlock_cost = 0
 		xp_boost_cost = 50
 		xp_research_bonus = 1.50
+		
 		enable_equipment_modules = {
 			dive_brakes_small
 			dive_brakes_medium 
@@ -1663,11 +1684,6 @@ technologies = {
 			name = bba_air_techs_folder
 			position = { x = 1 y = 6 }
 		}
-		enable_equipment_modules = {
-			self_sealing_fuel_tanks_small
-			self_sealing_fuel_tanks_medium
-			self_sealing_fuel_tanks_large
-		}
 		on_research_complete = {
 			custom_effect_tooltip = armor_tech_1_tt
 		}
@@ -1696,6 +1712,7 @@ technologies = {
 			}
 		}
 	}
+	
 	suicide_charge = {
 
 		enable_equipment_modules = {
