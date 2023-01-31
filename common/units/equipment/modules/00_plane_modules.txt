@@ -798,7 +798,11 @@ equipment_modules = {
 		gui_category = cas_weapon
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = cas
-		
+		allowed_module_categories = {
+ 			fixed_auxiliary_weapon_slot_1 = {
+ 				plane_special_module_defense_turret
+ 			}
+ 		}
 		add_stats = {
 			build_cost_ic = 1
 		}

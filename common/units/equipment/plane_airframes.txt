@@ -255,6 +255,7 @@ equipments = {
 		air_range = 750
 		maximum_speed = 0
 		air_agility = 50
+		air_ground_attack = 5
 		air_defence = 9
 		weight = 4
 		naval_strike_attack = 1
@@ -269,8 +270,9 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					fighter_weapon
-					cas_weapon
+					#cas_weapon
 					nav_bomber_weapon
+					special_bombs
 					kamikaze_bomber_weapon
 					tank_buster_weapon
 				}
