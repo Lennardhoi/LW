@@ -848,12 +848,19 @@ focus_tree = {
  		cost = 10
  		search_filters = { FOCUS_FILTER_ANNEXATION }
  		completion_reward = {
- 			add_ideas = modernizations
-			add_tech_bonus = {
+ 			add_ideas = Ita_modernizations
+ 			add_tech_bonus = {
  				name = ITA_four_year_plan
  				bonus = 0.5
  				uses = 2
- 				category = industry
+				technology = concentrated_industry3
+				technology = dispersed_industry3
+				technology = concentrated_industry4
+				technology = dispersed_industry4
+				technology = advanced_machine_tools
+ 				technology = assembly_line_production
+				technology = flexible_line
+				technology = streamlined_line
  			}
  		}
  	}
@@ -873,7 +880,12 @@ focus_tree = {
  				name = ITA_four_year_plan
  				bonus = 1.0
  				uses = 1
- 				category = industry
+				technology = concentrated_industry4
+				technology = dispersed_industry4
+				technology = advanced_machine_tools
+ 				technology = assembly_line_production
+				technology = flexible_line
+				technology = streamlined_line
  			}
  		}
  	}

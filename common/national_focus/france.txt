@@ -1146,9 +1146,14 @@ focus_tree = {
  		completion_reward = {
  			add_tech_bonus = {
  				name = FRA_laissez_faire
- 				category = industry
  				uses = 2
  				bonus = 1.5
+				technology = concentrated_industry4
+				technology = dispersed_industry4
+				technology = advanced_machine_tools
+ 				technology = assembly_line_production
+				technology = flexible_line
+				technology = streamlined_line
  			}
  			hidden_effect= {SWE = {country_event = { id = lar_fra_inefficient_economy.1 days = 730 }} }
  			custom_effect_tooltip = FRA_laissez_faire_tt
