@@ -1476,10 +1476,11 @@ focus_tree = {
  		cost = 5
  		available = {
  			OR = {
- 				date > 1941.8.1
+ 				date > 1942.1.1
  				AND = {
  				276 = {is_controlled_by_ROOT_OR_ALLY=yes}
  				589 = {is_controlled_by_ROOT_OR_ALLY=yes}
+ 				294 = {is_controlled_by_ROOT_OR_ALLY=yes}
  				}
  			}
  		}
@@ -1555,25 +1556,24 @@ focus_tree = {
  		relative_position_id = USA_war_plan_silver
  		cost = 3
  		completion_reward = {
- 			set_technology={ tech_mountaineers = 1}
- 			custom_effect_tooltip=USA_war_plan_black_tt
+		custom_effect_tooltip=USA_war_plan_black_tt
  			division_template = {
- 				name = "US-Mountaineers"
+ 				name = "US Army Rangers"
  				regiments = {
- 					mountaineers = { x = 0 y = 0 }
- 					mountaineers = { x = 0 y = 1 }
- 					mountaineers = { x = 0 y = 2 }
- 					mountaineers = { x = 0 y = 3 }
- 					mountaineers = { x = 1 y = 0 }
- 					mountaineers = { x = 1 y = 1 }
- 					mountaineers = { x = 1 y = 2 }
- 					mountaineers = { x = 1 y = 3 }
- 					mountaineers = { x = 2 y = 0 }
- 					mountaineers = { x = 2 y = 1 }
- 					mountaineers = { x = 2 y = 2 }
- 					mountaineers = { x = 2 y = 3 }
- 					mountaineers = { x = 3 y = 0 }
- 					mountaineers = { x = 3 y = 1 }
+ 					infantry = { x = 0 y = 0 }
+ 					infantry = { x = 0 y = 1 }
+ 					infantry = { x = 0 y = 2 }
+ 					infantry = { x = 0 y = 3 }
+ 					infantry = { x = 1 y = 0 }
+ 					infantry = { x = 1 y = 1 }
+ 					infantry = { x = 1 y = 2 }
+ 					infantry = { x = 1 y = 3 }
+ 					infantry = { x = 2 y = 0 }
+ 					infantry = { x = 2 y = 1 }
+ 					infantry = { x = 2 y = 2 }
+ 					infantry = { x = 2 y = 3 }
+ 					infantry = { x = 3 y = 0 }
+ 					infantry = { x = 3 y = 1 }
  					artillery_brigade = { x = 4 y = 0 }
  					artillery_brigade = { x = 4 y = 1 }
  					artillery_brigade = { x = 4 y = 2 }
@@ -1594,7 +1594,7 @@ focus_tree = {
  				for_loop_effect = {
  					end = 8
  					create_unit = {
- 						division = "name = \"US-Mountaineers\" division_template = \"US-Mountaineers\" start_experience_factor = 2.0 start_equipment_factor = 0.1"
+ 						division = "name = \"US Army Rangers\" division_template = \"US Army Rangers\" start_experience_factor = 2.0 start_equipment_factor = 0.01"
  						owner = USA
  					}
  					}}
@@ -1605,7 +1605,7 @@ focus_tree = {
  		icon = GFX_focus_USA_long_range_strat
  		prerequisite = { focus = USA_war_plan_black }
  		available = {
- 			date > 1941.06.15
+ 			date > 1941.6.15
  		}
  		continue_if_invalid = yes
  		available_if_capitulated = yes
@@ -1980,22 +1980,22 @@ focus_tree = {
  		completion_reward = {
  			custom_effect_tooltip=USA_war_plans_division_tt
  			division_template = {
- 				name = "US-Marines"
+ 				name = "US-Infantry"
  				regiments = {
- 					marine = { x = 0 y = 0 }
- 					marine = { x = 0 y = 1 }
- 					marine = { x = 0 y = 2 }
- 					marine = { x = 0 y = 3 }
- 					marine = { x = 1 y = 0 }
- 					marine = { x = 1 y = 1 }
- 					marine = { x = 1 y = 2 }
- 					marine = { x = 1 y = 3 }
- 					marine = { x = 2 y = 0 }
- 					marine = { x = 2 y = 1 }
- 					marine = { x = 2 y = 2 }
- 					marine = { x = 2 y = 3 }
- 					marine = { x = 3 y = 0 }
- 					marine = { x = 3 y = 1 }
+ 					infantry = { x = 0 y = 0 }
+ 					infantry = { x = 0 y = 1 }
+ 					infantry = { x = 0 y = 2 }
+ 					infantry = { x = 0 y = 3 }
+ 					infantry = { x = 1 y = 0 }
+ 					infantry = { x = 1 y = 1 }
+ 					infantry = { x = 1 y = 2 }
+ 					infantry = { x = 1 y = 3 }
+ 					infantry = { x = 2 y = 0 }
+ 					infantry = { x = 2 y = 1 }
+ 					infantry = { x = 2 y = 2 }
+ 					infantry = { x = 2 y = 3 }
+ 					infantry = { x = 3 y = 0 }
+ 					infantry = { x = 3 y = 1 }
  					artillery_brigade = { x = 4 y = 0 }
  					artillery_brigade = { x = 4 y = 1 }
  					artillery_brigade = { x = 4 y = 2 }
@@ -2016,7 +2016,7 @@ focus_tree = {
  				for_loop_effect = {
  					end = 8
  					create_unit = {
- 						division = "name = \"US-Marines\" division_template = \"US-Marines\" start_experience_factor = 2.0 start_equipment_factor = 0.25"
+ 						division = "name = \"US-Infantry\" division_template = \"US-Infantry\" start_experience_factor = 2.0 start_equipment_factor = 0.25"
  						owner = USA
  					}
  					}}
