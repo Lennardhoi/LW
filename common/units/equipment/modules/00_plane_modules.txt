@@ -945,7 +945,17 @@ equipment_modules = {
 		category = tac_weapon
 		sfx = sfx_ui_sd_module_turret
 		add_equipment_type = {tactical_bomber }
-		
+		allowed_module_categories = {
+ 			fixed_auxiliary_weapon_slot_2 = {
+ 				twin_plane_special_module_defense_turret
+ 			}
+			fixed_auxiliary_weapon_slot_3 = {
+ 				twin_plane_special_module_defense_turret
+ 			}
+			fixed_auxiliary_weapon_slot_4 = {
+ 				twin_plane_special_module_defense_turret
+ 			}
+ 		}
 		add_stats = {
 			build_cost_ic = 14
 			air_agility = -20
