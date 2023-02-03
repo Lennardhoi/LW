@@ -1007,7 +1007,7 @@ ideas = {
 			removal_cost = -1
 			picture = generic_wall_line
 			modifier = {
-				
+				production_speed_bunker_factor = 0.3
 				industrial_capacity_factory = 0.2
 				surrender_limit = 0.5
 				max_planning = 0.25
@@ -1096,6 +1096,21 @@ ideas = {
 			modifier = {
 				send_volunteer_divisions_required = -0.5
 				send_volunteers_tension = -0.5
+			}
+		}
+		FRA_battle_for_belgium = {
+			picture = FRA_scw_intervention_republicans_focus
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+			modifier = {
+				army_speed_factor = 0.1
+				dig_in_speed_factor = 1
 			}
 		}
 		FRA_national_mobilization_focus = {
