@@ -126,6 +126,14 @@ if = {
 	add_ideas = SAF_the_commonwealth
 	add_to_tech_sharing_group = commonwealth_research
 }
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	set_technology = {
+		armored_car1 = 1
+	}
+}
 set_convoys = 100
 add_equipment_to_stockpile = {
 	type = train_equipment
