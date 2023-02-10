@@ -2108,6 +2108,7 @@ focus_tree = {
  		continue_if_invalid = no
  		available_if_capitulated = no
  		completion_reward = {
+		add_political_power = 150
  		custom_effect_tooltip = available_political_advisor
  		show_ideas_tooltip = ernest_king
  		}
@@ -2933,6 +2934,12 @@ focus_tree = {
  				uses = 2
  				bonus = 1.0
  				category = radar_tech
+ 			}
+ 			add_tech_bonus = {
+ 				name = USA_naval_radar
+ 				uses = 1
+ 				bonus = 1.0
+ 				category = electronics
  			}
  		}
  	}

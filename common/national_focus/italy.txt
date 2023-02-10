@@ -1103,6 +1103,10 @@ focus_tree = {
  					instant_build = yes
  				}
  			}
+			if = {
+			limit = {has_idea = ITA_rubber_shortage}
+			remove_ideas = ITA_rubber_shortage
+			}
  		}
  	}
  	focus = {

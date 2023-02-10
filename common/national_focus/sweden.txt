@@ -304,6 +304,10 @@ focus_tree = {
  		relative_position_id = NDA_resource55
  		available_if_capitulated = yes
  		completion_reward = {
+		if = {
+		limit = {ITA = {NOT = {has_completed_focus = ITA_refs}}}
+		ITA = {add_ideas = ITA_rubber_shortage}
+		}
  			412 = {add_state_modifier = {
  					modifier = {
  						state_production_speed_buildings_factor = 0.30
