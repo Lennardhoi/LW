@@ -534,6 +534,28 @@ ideas = {
 				naval_strike_agility_factor = 0.12
 			}
 		}
+		JAP_war_prep_idea = {
+			picture = FRA_fortification_focus
+			allowed = {
+				original_tag = JAP
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_wall_line
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_speed_arms_factory_factor = -0.6
+				production_speed_dockyard_factor = -0.6
+				production_speed_anti_air_building_factor = 0.15
+				production_speed_airfield_factor = 0.15
+				production_speed_rail_way_factor = 0.15
+				production_speed_supply_node_factor = 0.15
+				production_speed_naval_base_factor = 0.15
+			}
+		}
 		JAP_german_rocketry = {
 			removal_cost = -1
 			allowed = {
