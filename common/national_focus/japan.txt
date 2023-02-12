@@ -35,7 +35,6 @@ focus_tree = {
  		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
  		completion_reward = {
  			add_stability = 0.1
-			add_political_power = 120
  		}
  	}
  	focus = {
@@ -467,17 +466,6 @@ focus_tree = {
  		available_if_capitulated = no
  		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WAR_SUPPORT }
  		completion_reward = {
- 			add_tech_bonus = {
- 				name = JAP_national_mobilization_law
- 				bonus = 1.0
- 				uses = 1
-				technology = concentrated_industry4
-				technology = dispersed_industry4
-				technology = advanced_machine_tools
- 				technology = assembly_line_production
-				technology = flexible_line
-				technology = streamlined_line
- 			}
  			if = {
  				limit = {
  					has_war_support < 0.5
@@ -805,7 +793,7 @@ focus_tree = {
  		x = 8
  		y = 0
  		relative_position_id = JAP_purge_the_kodoha_faction
- 		cost = 10
+ 		cost = 5
  		ai_will_do = {
  			factor = 1
  		}
@@ -817,31 +805,7 @@ focus_tree = {
  		continue_if_invalid = no
  		available_if_capitulated = no
  		completion_reward = {
-			army_experience = 250
- 			455 = {
- 				add_extra_state_shared_building_slots = 2
- 				add_building_construction = {
- 					type = arms_factory
- 					level = 2
- 					instant_build = yes
- 				}
- 			}
- 			455 = {
- 				add_extra_state_shared_building_slots = 2
- 				add_building_construction = {
- 					type = arms_factory
- 					level = 2
- 					instant_build = yes
- 				}
- 			}
- 			457 = {
- 				add_extra_state_shared_building_slots = 2
- 				add_building_construction = {
- 					type = arms_factory
- 					level = 2
- 					instant_build = yes
- 				}
- 			}
+ 			army_experience = 30
  		}
  	}
  	focus = {
@@ -864,6 +828,14 @@ focus_tree = {
  		available_if_capitulated = no
  		search_filters = { FOCUS_FILTER_RESEARCH }
  		completion_reward = {
+ 			457 = {
+ 				add_extra_state_shared_building_slots = 2
+ 				add_building_construction = {
+ 					type = arms_factory
+ 					level = 2
+ 					instant_build = yes
+ 				}
+ 			}
  			add_tech_bonus = {
  				name = JAP_small_arms_modernization
  				bonus = 1.0
@@ -892,6 +864,14 @@ focus_tree = {
  		available_if_capitulated = no
  		search_filters = { FOCUS_FILTER_RESEARCH }
  		completion_reward = {
+ 			455 = {
+ 				add_extra_state_shared_building_slots = 2
+ 				add_building_construction = {
+ 					type = arms_factory
+ 					level = 2
+ 					instant_build = yes
+ 				}
+ 			}
  			add_ideas = JAP_supremacy_of_technology
  		}
  	}
@@ -915,6 +895,14 @@ focus_tree = {
  		available_if_capitulated = no
  		search_filters = { FOCUS_FILTER_RESEARCH }
  		completion_reward = {
+ 			461 = {
+ 				add_extra_state_shared_building_slots = 2
+ 				add_building_construction = {
+ 					type = arms_factory
+ 					level = 2
+ 					instant_build = yes
+ 				}
+ 			}
  			add_tech_bonus = {
  				name = JAP_modern_artillery
  				bonus = 1.0
@@ -926,12 +914,6 @@ focus_tree = {
  				bonus = 1.0
  				uses = 1
  				category =cat_anti_air
- 			}
- 			add_tech_bonus = {
- 				name = JAP_modern_artillery
- 				bonus = 1.0
- 				uses = 1
- 				category = rocketry
  			}
  		}
  	}
@@ -1068,12 +1050,6 @@ focus_tree = {
  			}
  			custom_effect_tooltip = available_chief_of_army
  			show_ideas_tooltip = hajime_sugiyama
- 			add_tech_bonus = {
- 				name = land_doc_bonus
- 				bonus = 1.0
- 				uses = 2
- 				category = land_doctrine
- 			}			
  		}
  	}
  	focus = {
@@ -1333,13 +1309,20 @@ focus_tree = {
  			}
  		}
  		completion_reward = {
-		 		navy_experience = 200
+ 			if = {
+ 				limit = {
+ 					not = { has_dlc = "Man the Guns" }
+ 				}
  				add_tech_bonus = {
  					name = JAP_supremacy_of_the_battlefleet
  					bonus = 1.0
  					uses = 1
- 					technology = ship_hull_super_heavy
+ 					category = shbb_tech
  				}
+ 			}
+ 			else = {
+ 				navy_experience = 50
+ 			}
  			random_owned_controlled_state = {
  				limit = {
  					ROOT = { has_full_control_of_state = PREV }
@@ -1420,7 +1403,7 @@ focus_tree = {
  				name = JAP_carrier_warfare_experiments
  				bonus = 1.00
  				uses = 2
- 				category = naval_doctrine
+ 				category = cat_base_strike
  			}
  			add_tech_bonus = {
  				name = JAP_carrier_warfare_experiments
@@ -1456,8 +1439,6 @@ focus_tree = {
  		available_if_capitulated = no
  		search_filters = { FOCUS_FILTER_RESEARCH }
  		completion_reward = {
- 			custom_effect_tooltip = available_political_advisor
- 			show_ideas_tooltip = tateo_kato
  			add_ideas = JAP_expand_the_snlf
  			add_tech_bonus = {
  				name = tp_bonus
@@ -1692,7 +1673,7 @@ focus_tree = {
  	}
  	focus = {
  		id = JAP_cruiser_modernization
- 		icon = GFX_goal_generic_radar
+ 		icon = GFX_goal_generic_navy_cruiser
  		prerequisite = { focus = JAP_new_naval_estimates }
  		x = 3
  		y = 1
@@ -1711,17 +1692,12 @@ focus_tree = {
  		search_filters = { FOCUS_FILTER_RESEARCH }
  		completion_reward = {
  			add_tech_bonus = {
- 				name = JAP_naval_radar
- 				uses = 3
- 				bonus = 1.0
- 				category = radar_tech
- 			}
- 			add_tech_bonus = {
- 				name = JAP_naval_radar
+ 				name = JAP_cruiser_modernization
+ 				bonus = 3.0
  				uses = 1
- 				bonus = 1.0
- 				category = electronics
- 			}			
+ 				category = cl_tech
+ 				category = ca_tech
+ 			}
  		}
  	}
  	focus = {
@@ -1743,13 +1719,6 @@ focus_tree = {
  		continue_if_invalid = no
  		available_if_capitulated = no
  		completion_reward = {
- 			add_tech_bonus = {
- 				name = JAP_cruiser_modernization
- 				bonus = 3.0
- 				uses = 1
- 				category = cl_tech
- 				category = ca_tech
- 			}
  			add_ideas = the_long_lance
  		}
  	}

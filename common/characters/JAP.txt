@@ -75,7 +75,7 @@ characters={
 		}
 		field_marshal={
 			traits={ JAP_samurai_lineage organizer infantry_leader offensive_doctrine infantry_expert }
-			skill=5
+			skill=4
 			attack_skill=6
 			defense_skill=4
 			planning_skill=3
@@ -95,7 +95,7 @@ characters={
 		}
 		field_marshal={
 			traits={ JAP_samurai_lineage organizer infantry_leader offensive_doctrine infantry_expert }
-			skill=5
+			skill=4
 			attack_skill=6
 			defense_skill=4
 			planning_skill=3
@@ -1226,7 +1226,6 @@ characters={
 		advisor={
 			slot = political_advisor
 			idea_token = JAP_mitsumasa_yonai
-			cost = 50
 			allowed  = {
 					original_tag  = JAP 
 				}
@@ -1259,7 +1258,7 @@ characters={
 					}
 				}
 				traits  = {
-					backroom_backstabber 
+					fascist_demagogue propaganda_expert 
 				}
 				do_effect  = {
 					not  = {
@@ -1281,13 +1280,12 @@ characters={
 		advisor={
 			slot = high_command
 			idea_token = tateo_kato
-			ledger  = army 
-				available = {has_completed_focus = JAP_expand_the_snlf}
+			ledger  = air 
 				allowed  = {
 					original_tag  = JAP 
 				}
 				traits  = {
-					army_commando_1 
+					air_air_combat_training_3 
 				}
 				ai_will_do  = {
 					factor  = 0.800
@@ -1308,7 +1306,7 @@ characters={
 					original_tag  = JAP 
 				}
 				traits  = {
-					fortification_engineer quartermaster_general 
+					quartermaster_general 
 				}
 				ai_will_do  = {
 					factor  = 0.300
