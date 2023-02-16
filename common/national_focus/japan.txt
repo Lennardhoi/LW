@@ -805,7 +805,7 @@ focus_tree = {
  		continue_if_invalid = no
  		available_if_capitulated = no
  		completion_reward = {
- 			army_experience = 30
+ 			army_experience = 100
  		}
  	}
  	focus = {
@@ -914,6 +914,12 @@ focus_tree = {
  				bonus = 1.0
  				uses = 1
  				category =cat_anti_air
+ 			}
+			add_tech_bonus = {
+ 				name = JAP_modern_artillery
+ 				bonus = 1.0
+ 				uses = 1
+ 				category = rocketry
  			}
  		}
  	}
@@ -1048,6 +1054,12 @@ focus_tree = {
  					instant_build = yes
  				}
  			}
+			add_tech_bonus = {
+ 				name = land_doc_bonus
+ 				bonus = 1.0
+ 				uses = 1
+ 				category = land_doctrine
+ 			}	
  			custom_effect_tooltip = available_chief_of_army
  			show_ideas_tooltip = hajime_sugiyama
  		}
