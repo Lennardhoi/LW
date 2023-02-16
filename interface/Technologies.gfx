@@ -1437,6 +1437,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
+		name = "GFX_ITA_early_fighter_medium"
 		texturefile = "gfx/interface/technologies/ita_interwar_fighter.dds"
 	}
 
@@ -1451,7 +1452,6 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_ITA_early_fighter_medium"
 		name = "GFX_ITA_tactical_bomber1_medium"
 		texturefile = "gfx/interface/technologies/ITA_tactical_bomber1.dds"
 	}
@@ -2246,7 +2246,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/ship_hull_pre_dreadnought.dds"
 	}
 	SpriteType = {
-		name = "GFX_ship_hull_cruiser_submarine_medium"
+		name = "GFX_ship_hull_cruiser_submarine_medium" #Used for equipment
+		texturefile = "gfx/interface/technologies/ship_hull_cruiser_submarine.dds"
+	}
+	SpriteType = {
+		name = "GFX_cruiser_submarines_medium" #Used for tech (tech researched pop-up)
 		texturefile = "gfx/interface/technologies/ship_hull_cruiser_submarine.dds"
 	}
 	SpriteType = {
