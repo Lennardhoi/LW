@@ -967,12 +967,12 @@ focus_tree = {
  	}
  	focus = {
  		id = ITA_highway
- 		prerequisite = { focus = ITA_faire focus = ITA_corp }
- 		relative_position_id = ITA_faire
+ 		prerequisite = { focus = ITA_refs }
+ 		relative_position_id = ITA_refs
  		icon = GFX_goal_generic_construct_infrastructure
  		available = {
  		}
- 		x = -1
+ 		x = 0
  		y = 1
  		cost = 5
  		search_filters = { FOCUS_FILTER_ANNEXATION }
@@ -1065,16 +1065,16 @@ focus_tree = {
  	}
  	focus = {
  		id = ITA_refs
- 		prerequisite = { focus = ITA_oil }
-		prerequisite = { focus = ITA_libya }
- 		relative_position_id = ITA_oil
+ 		prerequisite = { focus = ITA_faire }
+		prerequisite = { focus = ITA_corp }
+ 		relative_position_id = ITA_faire
  		icon = GFX_goal_generic_oil_refinery
  		available = {
  			ITA = {
  				controls_state = 413
  			}
  		}
- 		x = 1
+ 		x = -1
  		y = 1
  		cost = 5
  		search_filters = { FOCUS_FILTER_ANNEXATION }
@@ -1888,7 +1888,7 @@ focus_tree = {
  		available_if_capitulated = yes
  		x = 37
  		y = 0
- 		cost = 10
+ 		cost = 5
  		ai_will_do = {
  			factor = 1
  		}

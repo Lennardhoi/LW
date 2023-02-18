@@ -3136,15 +3136,17 @@ focus_tree = {
  	focus = {
  		id = GER_russische_befreiungsarmee
  		icon = GFX_GER_SS_armed_branch
- 		prerequisite = { focus = GER_winter_defense focus = GER_winter_attack }
+ 		prerequisite = { focus = GER_moscow focus = GER_leningrad focus = GER_stalingrad}
  		available = {
- 			has_idea=heinrich_himmler
  		}
- 		x = -2
- 		y = 2
  		relative_position_id = GER_moscow
- 		cost = 2
+		x = -3
+ 		y = 1
+ 		cost = 5
  		completion_reward = {
+			add_political_power = 100
+ 			custom_effect_tooltip = available_political_advisor
+ 			show_ideas_tooltip = heinrich_himmler
  			add_ideas = GER_Waffen_SS
  			custom_effect_tooltip = "Ten fully equipped SS-Divisions will spawn in Duisburg."
  				51 = {
@@ -3160,7 +3162,7 @@ focus_tree = {
  	focus = {
  		id = GER_ostwall
  		icon = GFX_goal_generic_fortify_city
- 		prerequisite = { focus = GER_winter_defense focus = GER_winter_attack }
+ 		prerequisite = { focus = GER_moscow focus = GER_leningrad focus = GER_stalingrad }
  		available = {
  			any_country = {
  				OR = {
@@ -3182,8 +3184,8 @@ focus_tree = {
  				}
  			}
  		}
- 		x = 2
- 		y = 2
+ 		x = 3
+ 		y = 1
  		relative_position_id = GER_moscow
  		cost = 2
  		ai_will_do = {
