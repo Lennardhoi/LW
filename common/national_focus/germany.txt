@@ -256,12 +256,10 @@ focus_tree = {
  		}
  		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
  		completion_reward = {
- 			
- 			add_tech_bonus = {
- 				name = GER_coal_liquidization
- 				bonus = 3.0
- 				uses = 2
- 				category = synth_resources
+ 			modify_building_resources = {
+ 				building = synthetic_refinery
+ 				resource = rubber
+ 				amount = 20
  			}
  		}
  	}
@@ -277,6 +275,12 @@ focus_tree = {
  			factor = 4
  		}
  		completion_reward = {
+ 			add_tech_bonus = {
+ 				name = GER_coal_liquidization
+ 				bonus = 3.0
+ 				uses = 2
+ 				category = synth_resources
+ 			}
  			65 = {
  				add_building_construction = {
  					type = synthetic_refinery
