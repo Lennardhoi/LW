@@ -1508,7 +1508,13 @@ equipment_modules = {
 		add_stats = {
 			weight = 1
 		}
-		
+		allow_mission_type = {
+			cas
+                	attack_logistics
+			naval_bomber
+			port_strike
+			strategic_bomber
+		}
 		mission_type_stats = {
 			limit = {
 				cas
