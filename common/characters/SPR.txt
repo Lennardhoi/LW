@@ -62,7 +62,7 @@ characters={
 				large="gfx/leaders/SPR/Davila_Arrondo.tga"
 			}
 		}
-		field_marshal={
+		corps_commander={
 			traits={ infantry_leader panzer_leader ranger }
 			skill=5
 			attack_skill=5
@@ -190,29 +190,6 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_SPA_miguel_ponte"
-			}
-		}
-	}
-	SPR_SPA_jose_enrique_varela_vanilla={
-		advisor={
-			slot = theorist
-			idea_token = SPA_jose_enrique_varela_vanilla
-			ledger  = army 
-				name  = SPA_jose_enrique_varela 
-				allowed  = {
-					original_tag  = SPR 
-				}
-				research_bonus  = {
-					land_doctrine  = 0.100
-				}
-				traits  = {
-					military_theorist 
-				}
-		}
-		name="SPA_jose_enrique_varela_vanilla"
-		portraits={
-			army={
-				small="GFX_idea_generic_army_europe_3"
 			}
 		}
 	}

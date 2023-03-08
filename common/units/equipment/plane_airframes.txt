@@ -285,6 +285,15 @@ equipments = {
 					fighter_weapon_secondary
 				}
 			}
+			fixed_auxiliary_weapon_slot_2 = { 
+				required = no
+				allowed_module_categories = {
+					plane_special_module_radio_navigation
+					plane_special_module_air_ground_radar
+					plane_special_module_air_air_radar
+					plane_special_module_bomb_sights
+				}
+			}
 			engine_type_slot = {
 				required = yes
 				allowed_module_categories = {
@@ -298,10 +307,6 @@ equipments = {
 					plane_ammunition
 					plane_special_module_small
 					plane_special_module_fuel_injection_s
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_bomb_sights
 				}
 			}
 
@@ -311,10 +316,6 @@ equipments = {
 					plane_ammunition
 					plane_special_module_small
 					plane_special_module_fuel_injection_s
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_bomb_sights
 				}
 			}
 		}
@@ -376,6 +377,15 @@ equipments = {
 					kamikaze_bomber_weapon
 				}
 			}
+			fixed_auxiliary_weapon_slot_3 = { 
+				required = no
+				allowed_module_categories = {
+					plane_special_module_radio_navigation
+					plane_special_module_air_ground_radar
+					plane_special_module_air_air_radar
+					plane_special_module_bomb_sights
+				}
+			}
 			engine_type_slot = {
 				required = yes
 				allowed_module_categories = {
@@ -390,10 +400,6 @@ equipments = {
 					plane_ammunition
 					plane_special_module_small
 					plane_special_module_fuel_injection_s
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_bomb_sights
 				}
 			}
 
@@ -403,10 +409,6 @@ equipments = {
 					plane_ammunition
 					plane_special_module_small
 					plane_special_module_fuel_injection_s
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_bomb_sights
 				}
 			}
 
@@ -416,17 +418,13 @@ equipments = {
 					plane_ammunition
 					plane_special_module_small
 					plane_special_module_fuel_injection_s
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_bomb_sights
 				}
 			}
 		}
 		default_modules = {
 			engine_type_slot = engine_3_1x
 			special_type_slot_1 = fuel_injection_s
-			special_type_slot_2 = radio_navigation_1
+			fixed_auxiliary_weapon_slot_3 = radio_navigation_1
 		}
 	}
 
@@ -490,7 +488,6 @@ equipments = {
 					special_bombs
 				}
 			}
-
 			fixed_auxiliary_weapon_slot_3 = { 
 				required = no
 				allowed_module_categories = {
@@ -498,6 +495,15 @@ equipments = {
 					recon_camera
 					cas_weapon
 					special_bombs
+				}
+			}
+			fixed_auxiliary_weapon_slot_4 = { 
+				required = no
+				allowed_module_categories = {
+					plane_special_module_radio_navigation
+					plane_special_module_air_ground_radar
+					plane_special_module_air_air_radar
+					plane_special_module_bomb_sights
 				}
 			}
 			engine_type_slot = {
@@ -514,10 +520,6 @@ equipments = {
 					plane_ammunition
 					plane_special_module_small
 					plane_special_module_fuel_injection_s
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_bomb_sights
 				}
 			}
 
@@ -527,10 +529,6 @@ equipments = {
 					plane_ammunition
 					plane_special_module_small
 					plane_special_module_fuel_injection_s
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_bomb_sights
 				}
 			}
 			special_type_slot_3 = {
@@ -539,17 +537,13 @@ equipments = {
 					plane_ammunition
 					plane_special_module_small
 					plane_special_module_fuel_injection_s
-					plane_special_module_radio_navigation
-					plane_special_module_air_ground_radar
-					plane_special_module_air_air_radar
-					plane_special_module_bomb_sights
 				}
 			}
 		}
 		default_modules = {
 			engine_type_slot = engine_4_1x
 			special_type_slot_1 = fuel_injection2_s
-			special_type_slot_2 = radio_navigation_2
+			fixed_auxiliary_weapon_slot_4 = radio_navigation_2
 		}
 	}
 

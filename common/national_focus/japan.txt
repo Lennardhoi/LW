@@ -1325,15 +1325,13 @@ focus_tree = {
  				limit = {
  					not = { has_dlc = "Man the Guns" }
  				}
- 				add_tech_bonus = {
- 					name = JAP_supremacy_of_the_battlefleet
- 					bonus = 1.0
- 					uses = 1
- 					category = shbb_tech
- 				}
- 			}
- 			else = {
- 				navy_experience = 50
+					navy_experience = 50
+					add_tech_bonus = {
+						name = JAP_supremacy_of_the_battlefleet
+						bonus = 1.0
+						uses = 1
+						technology = ship_hull_super_heavy
+				}
  			}
  			random_owned_controlled_state = {
  				limit = {

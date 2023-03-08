@@ -375,8 +375,8 @@ if = {
 			modules = {
 				fixed_main_weapon_slot = light_mg_4x
 				fixed_auxiliary_weapon_slot_1 = light_mg_2x
+				fixed_auxiliary_weapon_slot_2 = radio_navigation_1
 				engine_type_slot = engine_2_1x
-				special_type_slot_1 = radio_navigation_1
 			}
 			icon = "GFX_GER_fighter1_medium"
 		}
@@ -386,9 +386,9 @@ if = {
 			modules = {
 				fixed_main_weapon_slot = bomb_locks
 				fixed_auxiliary_weapon_slot_1 = lmg_defense_turret
-				engine_type_slot = engine_2_1x				
-				special_type_slot_1 = radio_navigation_1
-				special_type_slot_2 = dive_brakes_small
+				fixed_auxiliary_weapon_slot_2 = radio_navigation_1					
+				engine_type_slot = engine_2_1x					
+				special_type_slot_1 = dive_brakes_small
 				
 			}
 			icon = "GFX_GER_CAS1_medium"
@@ -399,9 +399,9 @@ if = {
 			modules = {
 				fixed_main_weapon_slot = torpedo_mounting
 				fixed_auxiliary_weapon_slot_1 = lmg_defense_turret
+				fixed_auxiliary_weapon_slot_2 = radio_navigation_1	
 				engine_type_slot = engine_2_1x
-				special_type_slot_1 = radio_navigation_1
-				special_type_slot_2 = dive_brakes_small
+				special_type_slot_1 = dive_brakes_small
 				
 			}
 			icon = "GFX_GER_naval_bomber1_medium"
@@ -780,7 +780,7 @@ add_equipment_to_stockpile = {
 	variant_name = "He 111"
 }
 add_equipment_to_stockpile = {
-	type = small_plane_airframe_1
+	type = small_plane_naval_bomber_airframe_1
 	amount = 300
 	producer = GER
 	variant_name = "Do 22"
