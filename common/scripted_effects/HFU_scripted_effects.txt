@@ -240,7 +240,7 @@ update_pacific_war = {
 	if={limit={JAP={has_completed_focus=JAP_korean_guest_workers}} add_to_variable={JAP.pacific_status=0.1}}
 	
 	 if = {
-		limit = {date <1944.1.1}
+		limit = {AND={date <1944.1.1 date>1941.1.1}}
 		set_variable={Global.pacific_days=GLOBAL.num_days}
 		subtract_from_variable={Global.pacific_days=709560}
 		set_variable={Global.pacific_days2=Global.pacific_days}
@@ -265,7 +265,23 @@ update_pacific_war = {
 	}
 	set_variable={ITA.imperium_romanum=0.60}
 		subtract_from_variable={ITA.imperium_romanum=Global.pacific_days}
+	if= { 
+		limit = {date<1941.1.1}
+		add_to_variable={ITA.imperium_romanum=0.15}
+	}
+	if= { 
+		limit = {ITA={OR={413= {is_controlled_by_GER_or_ally=yes} 415= {is_controlled_by_GER_or_ally=yes} 422= {is_controlled_by_GER_or_ally=yes}  582= {is_controlled_by_GER_or_ally=yes}} NOT={ has_dynamic_modifier = {modifier=imperium_romanum}} date<1941.1.1}}
+		ITA={add_dynamic_modifier = {modifier=imperium_romanum}}
+	}
 	
+	if= { 
+		limit = {ITA={AND={has_completed_focus=ITA_stab OR={413= {is_controlled_by_GER_or_ally=yes} 415= {is_controlled_by_GER_or_ally=yes} 422= {is_controlled_by_GER_or_ally=yes}  582= {is_controlled_by_GER_or_ally=yes}} NOT={ has_idea = SPA_the_duty_to_work}}}}
+		ITA={add_ideas=SPA_the_duty_to_work}
+	}
+	if= { 
+		limit = {ITA={413= {is_controlled_by_GER_or_ally=no} 415= {is_controlled_by_GER_or_ally=no} 422= {is_controlled_by_GER_or_ally=no}  582= {is_controlled_by_GER_or_ally=no}  has_dynamic_modifier = {modifier=imperium_romanum} date<1941.1.1}}
+		ITA={remove_dynamic_modifier = {modifier=imperium_romanum}}
+	}
 	if= { 
 		limit = {415= {is_controlled_by_GER_or_ally=no}}
 		add_to_variable={ITA.imperium_romanum=-0.1}
