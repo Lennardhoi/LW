@@ -1397,7 +1397,7 @@ focus_tree = {
  		x = -1
  		y = 2
  		relative_position_id = JAP_fighter_modernization
- 		cost = 10
+ 		cost = 5
  		ai_will_do = {
  			factor = 1
  		}
@@ -1418,6 +1418,12 @@ focus_tree = {
  				category = cas_bomber
  				category = tactical_bomber
  				category = naval_bomber
+ 			}
+ 			add_tech_bonus = {
+ 				name = radar_tech_bonus
+ 				bonus = 1.0
+ 				uses = 2
+ 				category = radar_tech
  			}
  		}
  	}

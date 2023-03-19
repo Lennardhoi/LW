@@ -1301,12 +1301,6 @@ focus_tree = {
  		completion_reward = {
  			air_experience = 150
  			add_ideas = GER_air_innovations_2_idea
- 			add_tech_bonus = {
- 				name = radar_tech_bonus
- 				bonus = 1.0
- 				uses = 2
- 				category = radar_tech
- 			}
  			if = {
  				limit = {
  					NOT = { has_war_with = SOV }
@@ -4005,6 +3999,12 @@ focus_tree = {
  					instant_build = yes
  				}
  				set_state_flag = GER_naval_effort_2dockyards
+ 			}
+ 			add_tech_bonus = {
+ 				name = radar_tech_bonus
+ 				bonus = 1.0
+ 				uses = 3
+ 				category = radar_tech
  			}
  			add_tech_bonus = {
  				name = dd_bonus
