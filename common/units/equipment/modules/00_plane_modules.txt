@@ -27,7 +27,7 @@ equipment_modules = {
 		add_stats = {
 			maximum_speed = 300
 			thrust = 25
-			build_cost_ic = 30
+			build_cost_ic = 35
 			fuel_consumption = 0.32
 		}
 	}
@@ -99,7 +99,7 @@ equipment_modules = {
 		add_stats = {
 			maximum_speed = 480
 			thrust = 36
-			build_cost_ic = 32
+			build_cost_ic = 37
 			fuel_consumption = 0.32
 		}
 
@@ -193,7 +193,7 @@ equipment_modules = {
 		add_stats = {
 			maximum_speed = 500
 			thrust = 60
-			build_cost_ic =34
+			build_cost_ic = 40
 			fuel_consumption = 0.32
 		}
 
@@ -287,7 +287,7 @@ equipment_modules = {
 		add_stats = {
 			maximum_speed = 700
 			thrust = 80
-			build_cost_ic = 36
+			build_cost_ic = 45
 			fuel_consumption = 0.32
 		}
 		can_convert_from = {
@@ -554,7 +554,7 @@ equipment_modules = {
 		add_equipment_type = fighter
 
 		add_stats = {
-			air_attack = 9
+			air_attack = 11
 			build_cost_ic = 1
 			weight = 1
 		}
@@ -601,7 +601,7 @@ equipment_modules = {
 		add_equipment_type = fighter
 
 		add_stats = {
-			air_attack = 11
+			air_attack = 12
 			build_cost_ic = 1.5
 			weight = 3
             
@@ -687,7 +687,7 @@ equipment_modules = {
 		add_equipment_type = fighter
 
 		add_stats = {
-			air_attack = 26
+			air_attack = 25
 			build_cost_ic = 4
 			weight = 7
 		}
@@ -729,7 +729,7 @@ equipment_modules = {
 		parent = aircraft_cannon_1_1x
 		add_equipment_type = fighter
 		add_stats = {
-			air_attack = 16
+			air_attack = 14
 			build_cost_ic = 2.5
 			weight = 4.5
 		}  
@@ -758,7 +758,7 @@ equipment_modules = {
 		parent = aircraft_cannon_1_2x
 		add_equipment_type = fighter
 		add_stats = {
-			air_attack = 32
+			air_attack = 29
 			build_cost_ic = 5
 			weight = 9
 		}
@@ -1463,10 +1463,9 @@ equipment_modules = {
 
 		multiply_stats = {
 			air_defence = -0.15
-			build_cost_ic = -0.1
 		}
 		build_cost_resources = {
-			aluminium = -5
+			aluminium = -20
 		}
 		dismantle_cost_ic = 7
 		dismantle_cost_resources = {
@@ -1480,7 +1479,10 @@ equipment_modules = {
  		sfx = sfx_ui_sd_module_turret
 
 		multiply_stats = {
-			build_cost_ic = -0.02
+			build_cost_ic = -0.03
+		}
+		add_stats = {
+			reliability = 0.2      
 		}
 		dismantle_cost_ic = 2
  		xp_cost = 0
@@ -1657,10 +1659,9 @@ equipment_modules = {
 
 		 multiply_stats = {
 			 air_defence = -0.20
-			 build_cost_ic = -0.1
 		 }
 		 build_cost_resources = {
-			 aluminium = -10
+			 aluminium = -20
 		 }
 		 #xp_cost = 1
 		 dismantle_cost_ic = 12
@@ -1824,7 +1825,7 @@ equipment_modules = {
 		category = plane_special_module_fuel_injection_s
 		gui_category = plane_special_module_small
 		add_stats = {
-			build_cost_ic = 1
+			build_cost_ic = 1.5
 		}
         multiply_stats = {
             maximum_speed = 0.1
@@ -1844,7 +1845,7 @@ equipment_modules = {
             reliability = -0.1
         }
 	add_stats = {
-			build_cost_ic = 1.5
+			build_cost_ic = 2
 	}
         dismantle_cost_ic = 4
     }

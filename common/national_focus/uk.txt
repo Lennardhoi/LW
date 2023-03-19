@@ -247,11 +247,18 @@ focus_tree = {
  			factor = 1
  		}
  		completion_reward = {
- 			add_tech_bonus = {
- 				name = tizard_mission_focus
- 				bonus = 1.0
- 				category = light_fighter
- 			}
+			add_tech_bonus = {
+				name = GER_Fighter_Weapon
+				bonus = 1.5
+				uses = 1
+				technology = aa_cannon_2
+			}
+			add_tech_bonus = {
+				name = GER_Fighter_Weapon
+				bonus = 1.5
+				uses = 1
+				technology = engines_4
+			}
  			add_tech_bonus = {
  				name = tizard_mission_focus
  				bonus = 1.0
@@ -259,12 +266,18 @@ focus_tree = {
  				category = radar_tech
  			}
  			USA = {
- 				add_tech_bonus = {
- 					name = tizard_mission_focus
- 					uses = 1
- 					bonus = 1.0
- 					category = light_fighter
- 				}
+				add_tech_bonus = {
+					name = GER_Fighter_Weapon
+					bonus = 1.5
+					uses = 1
+					technology = aa_cannon_2
+				}
+				add_tech_bonus = {
+					name = GER_Fighter_Weapon
+					bonus = 1.5
+					uses = 1
+					technology = engines_4
+				}
  				add_tech_bonus = {
  					name = tizard_mission_focus
  					bonus = 1.0

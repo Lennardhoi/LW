@@ -131,15 +131,111 @@ focus_tree = {
  			hidden_effect = {
  				JAP = {
  					army_experience = 450
- 					air_experience = 600}
+ 					air_experience = 600
+					add_tech_bonus = {
+						name = JAP_air_research
+						bonus = 1.5
+						uses = 1
+						technology = survivability_studies
+					}
+					add_tech_bonus = {
+						name = JAP_air_research
+						bonus = 1.5
+						uses = 1
+						technology = self_sealing_fuel_tanks
+					}
+					add_tech_bonus = {
+						name = JAP_air_research
+						bonus = 1.5
+						uses = 1
+						technology = engines_3
+					}
+					add_tech_bonus = {
+						name = JAP_air_research
+						bonus = 1.5
+						uses = 1
+						technology = aa_cannon_1
+					}}
  				SOV = { army_experience = 50
- 					air_experience = 250}
+ 					air_experience = 250
+					add_tech_bonus = {
+						name = JAP_air_research
+						bonus = 1.5
+						uses = 1
+						technology = survivability_studies
+					}
+					add_tech_bonus = {
+						name = JAP_air_research
+						bonus = 1.5
+						uses = 1
+						technology = self_sealing_fuel_tanks
+					}
+					add_tech_bonus = {
+						name = JAP_air_research
+						bonus = 1.5
+						uses = 1
+						technology = engines_3
+					}
+					add_tech_bonus = {
+						name = JAP_air_research
+						bonus = 1.5
+						uses = 1
+						technology = aa_cannon_1
+					}}
  				USA = { add_war_support = 0.1
  					army_experience = 100
- 					air_experience = 250}
+ 					air_experience = 250
+					add_tech_bonus = {
+						name = JAP_air_research
+						bonus = 1.5
+						uses = 1
+						technology = survivability_studies
+					}
+					add_tech_bonus = {
+						name = JAP_air_research
+						bonus = 1.5
+						uses = 1
+						technology = self_sealing_fuel_tanks
+					}
+					add_tech_bonus = {
+						name = JAP_air_research
+						bonus = 1.5
+						uses = 1
+						technology = engines_3
+					}
+					add_tech_bonus = {
+						name = JAP_air_research
+						bonus = 1.5
+						uses = 1
+						technology = aa_cannon_1
+					}}
  				ENG = { add_war_support = 0.1
  					army_experience = 100
- 					air_experience = 250}
+ 					air_experience = 250
+					add_tech_bonus = {
+						name = JAP_air_research
+						bonus = 1.5
+						uses = 1
+						technology = survivability_studies
+					}
+					add_tech_bonus = {
+						name = JAP_air_research
+						bonus = 1.5
+						uses = 1
+						technology = self_sealing_fuel_tanks
+					}
+					add_tech_bonus = {
+						name = JAP_air_research
+						bonus = 1.5
+						uses = 1
+						technology = engines_3
+					}
+					add_tech_bonus = {
+						name = JAP_air_research
+						bonus = 1.5
+						uses = 1
+						technology = aa_cannon_1
+					}}
  				AST = { add_war_support = 0.1
  					army_experience = 100
  					air_experience = 200}
@@ -157,12 +253,85 @@ focus_tree = {
  					air_experience = 200}
  				FRA = { add_war_support = 0.1
  					army_experience = 100
- 					air_experience = 200}
+ 					air_experience = 200
+					add_tech_bonus = {
+						name = JAP_air_research
+						bonus = 1.5
+						uses = 1
+						technology = survivability_studies
+					}
+					add_tech_bonus = {
+						name = JAP_air_research
+						bonus = 1.5
+						uses = 1
+						technology = self_sealing_fuel_tanks
+					}
+					add_tech_bonus = {
+						name = JAP_air_research
+						bonus = 1.5
+						uses = 1
+						technology = engines_3
+					}
+					add_tech_bonus = {
+						name = JAP_air_research
+						bonus = 1.5
+						uses = 1
+						technology = aa_cannon_1
+					}}
  				GER = {
  					army_experience = 150
- 					air_experience = 450}
+ 					air_experience = 450
+					add_tech_bonus = {
+						name = JAP_air_research
+						bonus = 1.5
+						uses = 1
+						technology = survivability_studies
+					}
+					add_tech_bonus = {
+						name = JAP_air_research
+						bonus = 1.5
+						uses = 1
+						technology = self_sealing_fuel_tanks
+					}
+					add_tech_bonus = {
+						name = JAP_air_research
+						bonus = 1.5
+						uses = 1
+						technology = engines_3
+					}
+					add_tech_bonus = {
+						name = JAP_air_research
+						bonus = 1.5
+						uses = 1
+						technology = aa_cannon_1
+					}
+					}
  				ITA = {
  					army_experience = 150
+					add_tech_bonus = {
+						name = JAP_air_research
+						bonus = 1.5
+						uses = 1
+						technology = survivability_studies
+					}
+					add_tech_bonus = {
+						name = JAP_air_research
+						bonus = 1.5
+						uses = 1
+						technology = self_sealing_fuel_tanks
+					}
+					add_tech_bonus = {
+						name = JAP_air_research
+						bonus = 1.5
+						uses = 1
+						technology = engines_3
+					}
+					add_tech_bonus = {
+						name = JAP_air_research
+						bonus = 1.5
+						uses = 1
+						technology = aa_cannon_1
+					}
  				}
  				HUN = {
  					army_experience = 150
@@ -1274,6 +1443,18 @@ focus_tree = {
  		completion_reward = {
  			remove_ideas = JAP_duplicate_research_efforts
  			air_experience = 100
+			add_tech_bonus = {
+				name = GER_Fighter_Weapon
+				bonus = 1.5
+				uses = 1
+				technology = aa_cannon_2
+			}
+			add_tech_bonus = {
+				name = GER_Fighter_Weapon
+				bonus = 1.5
+				uses = 1
+				technology = engines_4
+			}
  		}
  	}
  	focus = {
@@ -1323,7 +1504,7 @@ focus_tree = {
  		completion_reward = {
  			if = {
  				limit = {
- 					not = { has_dlc = "Man the Guns" }
+ 					 has_dlc = "Man the Guns"
  				}
 					navy_experience = 50
 					add_tech_bonus = {
