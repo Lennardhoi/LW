@@ -53,3 +53,13 @@ Atlantikwall_visual = {
 		icon = "FRA_fortification_focus"
 	naval_mine_hit_chance=GER.pacific_status
 }
+
+academy_weekly_manpower = {
+weekly_manpower = scaled_weekly_manpower
+}
+academy_over_time = {
+training_time_factor=academy_weekly_training_speed_result
+special_forces_min=academy_special_forces_capacity
+experience_gain_army=academy_experience_gain
+political_power_factor=academy_weekly_pp
+}

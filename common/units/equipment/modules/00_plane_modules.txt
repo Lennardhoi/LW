@@ -1517,6 +1517,9 @@ equipment_modules = {
 			naval_bomber
 			port_strike
 			strategic_bomber
+			air_superiority
+			interception
+			
 		}
 		mission_type_stats = {
 			limit = {
@@ -1635,7 +1638,17 @@ equipment_modules = {
 			build_cost_ic = 3
 			weight = 2
 		}
-
+		
+		allow_mission_type = {
+			cas
+                	attack_logistics
+			naval_bomber
+			port_strike
+			strategic_bomber
+			air_superiority
+			interception
+			
+		}
 		mission_type_stats = {
 			limit = {
 				cas

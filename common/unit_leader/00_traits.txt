@@ -200,7 +200,7 @@ leader_traits = {
 			factor = 0
 		}
 	}
-
+	
 	infantry_officer = {
 		type = land
 		trait_type = personality_trait
@@ -1173,8 +1173,52 @@ leader_traits = {
 	}
 
 
+	
+	zbearer_of_fort_defense = {
+		type = corps_commander
 
+		trait_type = personality_trait
 
+		corps_commander_modifier= {
+			fort = {
+				defence = 0.05
+			}
+		
+		}
+
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+	zbearer_of_cas_reduction = {
+		type = corps_commander
+
+		trait_type = personality_trait
+
+		corps_commander_modifier = {
+			cas_damage_reduction = 0.15
+		
+		}
+
+		new_commander_weight = {
+			factor = 0
+		}
+	}
+
+	zbearer_of_terrain_penalty = {
+		type = corps_commander
+
+		trait_type = personality_trait
+
+		corps_commander_modifier = {
+			terrain_penalty_reduction = 0.1
+		
+		}
+
+		new_commander_weight = {
+			factor = 0
+		}
+	}
 	##################################
 	# Naval traits.
 	##################################

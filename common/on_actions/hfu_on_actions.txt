@@ -18,6 +18,9 @@ on_actions = {
 	}
 	on_weekly_SWE={
 		effect={
+			update_academy_weekly=yes
+			set_variable={scaled_weekly_manpower=max_manpower_k}
+			multiply_variable={scaled_weekly_manpower=0.001}
 			if = {
 				limit = {
 					date > 1941.1.1
@@ -179,6 +182,13 @@ on_actions = {
 	effect= {
 		every_country={
  			add_ideas = speed3
+			
+ 		}
+		every_country={ limit={is_playable_country =yes }
+ 			add_dynamic_modifier= {modifier =academy_over_time}
+			set_variable={scaled_weekly_manpower=max_manpower_k}
+			multiply_variable={scaled_weekly_manpower=0.1}
+			add_to_variable={scaled_weekly_manpower=2000}
  		}
 		ITA={
 		every_navy_leader={

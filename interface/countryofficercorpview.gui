@@ -637,11 +637,11 @@ guiTypes = {
 
 			containerWindowType = {
 				name = "army_doctrine_button"
-				position = { x=2740 y=-8 }
+				position = { x=274 y=-8 }
 				size = {width=20 height=20}
 				clipping = no
 
-				buttonType = {
+				iconType = {
 					name = "button"
 					quadTextureSprite = "GFX_technology_land_doctrine_folder_available_item_bg"
 					position = { x=34 y=47 }
@@ -773,7 +773,7 @@ guiTypes = {
 				size = {width=20 height=20}
 				clipping = no
 
-				buttonType = {
+				iconType = {
 					name = "button"
 					quadTextureSprite = "GFX_technology_land_doctrine_folder_available_item_bg"
 					position = { x=68 y=47 }
@@ -894,17 +894,17 @@ guiTypes = {
 				size = {width=20 height=20}
 				clipping = no
 
-				buttonType = {
+				iconType = {
 					name = "button"
 					quadTextureSprite = "GFX_technology_land_doctrine_folder_available_item_bg"
-					position = { x=34 y=47 }
+					position = { x=-3400 y=47 }
 					#buttonText = "Doctrines"
 					font = "hoi_24header"
 				}
 
 				iconType = {
 					name = "icon"
-					position = { x=59 y=71 }
+					position = { x=-5900 y=71 }
 					spriteType = "GFX_placeholder_bordered"
 					Orientation = CENTER
 					alwaystransparent = yes
@@ -914,14 +914,14 @@ guiTypes = {
 				iconType = {
 					name = "nb_doctrine_unlocked_bg"
 					spriteType = "GFX_topbar_alert_bg"
-					position = { x=36 y=97 }
+					position = { x=-3600 y=97 }
 					alwaystransparent = yes
 					frame = 1
 				}
 
 				instantTextBoxType = {
 					name ="nb_doctrine_unlocked"
-					position = { x=34 y=97 }
+					position = { x=-3400 y=97 }
 					font = "hoi_16mbs"
 					text = "0"
 					format = center

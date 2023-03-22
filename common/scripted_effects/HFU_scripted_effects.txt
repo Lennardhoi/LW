@@ -459,3 +459,46 @@ THIS_call_all_allies_against_ROOT = {
 	}
 }
 
+update_academy_weekly ={
+every_country = {
+					limit={is_playable_country =yes } 
+					
+set_variable={scaled_weekly_manpower=max_manpower_k}
+multiply_variable={scaled_weekly_manpower=0.1}
+add_to_variable={scaled_weekly_manpower=2000}
+if = {
+	limit={has_idea=academy_scholarships_spirit}
+	add_to_variable={academy_weekly_training_speed=-0.005}
+
+}
+if = {
+	limit={has_idea=political_loyalty_spirit}
+	add_to_variable={academy_weekly_pp=0.005}
+
+}
+
+if = {
+	limit={has_idea=relief_of_command_spirit}
+	add_to_variable={academy_experience_gain=0.005}
+
+}
+if = {
+	limit={has_idea=grand_battleplan_army_spirit}
+	add_to_variable={academy_special_forces_capacity=1}
+	if={limit={is_major=yes}
+	add_to_variable={academy_special_forces_capacity=1}
+	}
+
+
+}
+set_variable={academy_weekly_training_speed_total=modifier@training_time_army_factor}
+add_to_variable={academy_weekly_training_speed_total=academy_weekly_training_speed}
+if={limit={check_variable={academy_weekly_training_speed_total<-0.90}}
+set_variable={academy_weekly_training_speed_result=-0.90}
+subtract_from_variable={academy_weekly_training_speed_result=modifier@training_time_army_factor}
+}
+else = {
+set_variable={academy_weekly_training_speed_result=academy_weekly_training_speed}
+
+}
+}
