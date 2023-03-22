@@ -129,7 +129,7 @@ NDefines.NCountry.AIR_VOLUNTEER_PLANES_RATIO = 0
 NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 20
 NDefines.NAI.DIPLOMACY_SEND_EXPEDITIONARY_BASE = 0
 NDefines.NProduction.BASE_FACTORY_EFFICIENCY_ARCHETYPE_CHANGE_FACTOR = 30
-NDefines.NProduction.CONVERSION_SPEED_BONUS = 0
+NDefines.NProduction.CONVERSION_SPEED_BONUS = 3
 NDefines.NProduction.BASE_LAND_EQUIPMENT_CONVERSION_IC_COST_FACTOR=0.1
 ---------------------------------------------------------------
 NDefines.NTrade.ANTI_MONOPOLY_TRADE_FACTOR = -1			-- was -100 | This is added to the factor value when anti-monopoly threshold is exceeded; cucks Soviets/Japan often if the value is vanilla

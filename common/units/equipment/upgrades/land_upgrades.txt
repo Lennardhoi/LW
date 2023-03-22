@@ -1,5 +1,75 @@
 upgrades = {
- 
+ 	
+	at1_upgrade = {
+		max_level = 1
+		level_requirements = {
+			1 = {
+				has_tech = antitank1
+			}
+		}
+		cost = land
+		hard_attack = 0.2
+		ap_attack = 0.15
+		reliability = -0.10
+	}
+	at2_upgrade = {
+		max_level = 1
+		level_requirements = {
+			1 = {
+				has_tech = antitank5
+			}
+		}
+		cost = land
+		hard_attack = 0.2
+		ap_attack = 0.15
+		reliability = -0.10
+	}
+	arty1_upgrade = {
+		max_level = 1
+		level_requirements = {
+			1 = {
+				has_tech = artillery1
+			}
+		}
+		cost = land
+		soft_attack = 0.15
+		hard_attack = 0.25
+		reliability = -0.10
+	}
+	arty2_upgrade = {
+		max_level = 1
+		level_requirements = {
+			1 = {
+				has_tech = artillery4
+			}
+		}
+		cost = land
+		soft_attack = 0.14
+		hard_attack = 0.25
+		reliability = -0.10
+	}
+	aa1_upgrade = {
+		max_level = 1
+		level_requirements = {
+			1 = {
+				has_tech = antiair1
+			}
+		}
+		cost = land
+		air_attack = 0.2
+		reliability = -0.10
+	}
+	aa2_upgrade = {
+		max_level = 1
+		level_requirements = {
+			1 = {
+				has_tech = antiair5
+			}
+		}
+		cost = land
+		air_attack = 0.2
+		reliability = -0.10
+	}
 	tank_nsb_engine_upgrade = {
 		abbreviation = "eng"
 		max_level = 8 #each level represents ~50HP
