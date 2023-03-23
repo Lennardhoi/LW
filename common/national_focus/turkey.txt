@@ -1,0 +1,668 @@
+focus_tree = {
+ 	id = ai
+ 	country = {
+ 		factor = 0
+ 		modifier = {
+ 			add = 20
+ 			OR = {
+ 				tag = TUR
+ 			}
+ 		}
+ 	}
+ 	continuous_focus_position = { x = 50 y = 1680 }
+ 	default = no
+ 	focus = {
+ 		id = TUR_Germany_Macro
+ 		icon = GFX_goal_generic_production
+ 		x = 2
+ 		y = 0
+ 		cost = 1000
+		available = {
+		AND = {date > 1960.1.1
+ 			count_triggers={
+				amount=3		
+ 				ENG = {is_ai = yes}
+				SOV = {is_ai = yes}
+				FRA = {is_ai = yes}
+				USA = {is_ai = yes}
+				ITA = {is_ai = yes}
+				JAP = {is_ai = yes}
+ 			}		
+		}
+		}
+ 		completion_reward = {
+ 		}
+ 	}
+ 	focus = {
+ 		id = TUR_Germany_Macro_spanish_civil_war
+ 		icon = GFX_goal_generic_production
+ 		prerequisite = { focus = TUR_Germany_Macro }
+ 		x = 0
+ 		y = 1
+ 		relative_position_id = TUR_Germany_Macro
+ 		cost = 20
+ 		ai_will_do = {
+ 			factor = 9
+ 		}
+ 		completion_reward = {
+			add_threat = 3
+			GER = {
+				army_experience = 250
+				#air_experience = 250
+			}
+ 		}
+ 	}
+ 	focus = {
+ 		id = TUR_Germany_Macro_japan_marco_polo
+ 		icon = GFX_goal_generic_production
+ 		prerequisite = { focus = TUR_Germany_Macro_spanish_civil_war }
+ 		x = 0
+ 		y = 1
+ 		relative_position_id = TUR_Germany_Macro_spanish_civil_war
+ 		cost = 5
+ 		ai_will_do = {
+ 			factor = 9
+ 		}
+		available = {date > 1937.10.1}
+ 		completion_reward = {
+				add_threat = 7
+ 				GER = {
+ 					army_experience = 150
+ 					air_experience = 450
+					add_tech_bonus = {
+						name = JAP_air_research
+						bonus = 1.5
+						uses = 1
+						technology = survivability_studies
+					}
+					add_tech_bonus = {
+						name = JAP_air_research
+						bonus = 1.5
+						uses = 1
+						technology = self_sealing_fuel_tanks
+					}
+					add_tech_bonus = {
+						name = JAP_air_research
+						bonus = 1.5
+						uses = 1
+						technology = engines_3
+					}
+					add_tech_bonus = {
+						name = JAP_air_research
+						bonus = 1.5
+						uses = 1
+						technology = aa_cannon_1
+					}
+					}
+ 		}
+ 	}
+ 	focus = {
+ 		id = TUR_Germany_Macro_ita_civs
+ 		icon = GFX_goal_generic_production
+ 		prerequisite = { focus = TUR_Germany_Macro_japan_marco_polo }
+ 		x = 0
+ 		y = 1
+ 		relative_position_id = TUR_Germany_Macro_japan_marco_polo
+ 		cost = 5
+ 		ai_will_do = {
+ 			factor = 9
+ 		}
+		available = {date > 1938.4.1}
+ 		completion_reward = {
+ 			random_state = {
+ 				limit = {
+ 					is_core_of = GER
+ 					free_building_slots = {
+ 						building = industrial_complex
+ 						size > 4
+ 						include_locked = yes
+ 					}
+ 				}
+ 				add_extra_state_shared_building_slots = 5
+ 				add_building_construction = {
+ 					type = industrial_complex
+ 					level = 5
+ 					instant_build = yes
+ 				}
+ 			}
+ 		}
+ 	}
+ 	focus = {
+ 		id = TUR_Germany_Macro_ita_revs
+ 		icon = GFX_goal_generic_production
+ 		prerequisite = { focus = TUR_Germany_Macro_ita_civs }
+ 		x = 0
+ 		y = 1
+ 		relative_position_id = TUR_Germany_Macro_ita_civs
+ 		cost = 5
+ 		ai_will_do = {
+ 			factor = 9
+ 		}
+		available = {date > 1939.1.1}
+ 		completion_reward = {
+ 			2 = {
+ 				add_extra_state_shared_building_slots = 3
+ 				add_building_construction = {
+ 					type = synthetic_refinery
+ 					level = 3
+ 					instant_build = yes
+ 				}
+ 			}
+ 			157 = {
+ 				add_extra_state_shared_building_slots = 3
+ 				add_building_construction = {
+ 					type = synthetic_refinery
+ 					level = 3
+ 					instant_build = yes
+ 				}
+ 			}
+ 			154 = {
+ 				add_extra_state_shared_building_slots = 3
+ 				add_building_construction = {
+ 					type = synthetic_refinery
+ 					level = 3
+ 					instant_build = yes
+ 				}
+ 			}
+			ITA = {
+			 	modify_building_resources = {
+ 				building = synthetic_refinery
+ 				resource = rubber
+ 				amount = 20
+ 			}
+				set_technology = { 
+					rubber_processing = 1
+				}	
+				set_technology = { 
+					improved_rubber_processing = 1
+				}	
+			}
+ 			GER = {
+ 				add_opinion_modifier = { target = ITA modifier = pact_of_steel_opinion }
+ 				add_relation_modifier = { target = ITA modifier = Stahlpakt}
+ 			}
+ 			add_opinion_modifier = { target = GER modifier = pact_of_steel_opinion }
+ 			add_relation_modifier = { target = GER modifier = Stahlpakt}
+ 			hidden_effect = {
+ 				news_event = { hours = 6 id = news.184 }
+ 				GER = {
+ 					add_opinion_modifier = { target = ITA modifier = pact_of_steel_opinion_hidden }
+ 				}
+ 				add_opinion_modifier = { target = GER modifier = pact_of_steel_opinion_hidden }
+ 			}
+ 			GER={add_relation_modifier = { target = SPR modifier = Stahlpakt}
+ 			}			
+ 		}
+ 	}
+ 	focus = {
+ 		id = TUR_Germany_Macro_trade_1
+ 		icon = GFX_goal_generic_production
+ 		prerequisite = { focus = TUR_Germany_Macro_ita_revs }
+ 		x = 0
+ 		y = 1
+ 		relative_position_id = TUR_Germany_Macro_ita_revs
+ 		cost = 0.0001
+ 		ai_will_do = {
+ 			factor = 9
+ 		}
+		available = {date > 1940.1.1}
+ 		completion_reward = {
+ 			random_state = {
+ 				limit = {
+ 					is_core_of = GER
+ 				}
+ 				add_extra_state_shared_building_slots = 15
+ 				add_building_construction = {
+ 					type = industrial_complex
+ 					level = 15
+ 					instant_build = yes
+ 				}
+ 			}
+ 		}
+ 	}
+ 	focus = {
+ 		id = TUR_Germany_Macro_trade_2
+ 		icon = GFX_goal_generic_production
+ 		prerequisite = { focus = TUR_Germany_Macro_trade_1 }
+ 		x = 0
+ 		y = 1
+ 		relative_position_id = TUR_Germany_Macro_trade_1
+ 		cost = 0.0001
+ 		ai_will_do = {
+ 			factor = 9
+ 		}
+		available = {date > 1940.6.1}
+ 		completion_reward = {
+ 			random_state = {
+ 				limit = {
+ 					is_core_of = GER
+ 				}
+ 				add_extra_state_shared_building_slots = 10
+ 				add_building_construction = {
+ 					type = industrial_complex
+ 					level = 10
+ 					instant_build = yes
+ 				}
+ 			}
+ 		}
+ 	}
+ 	focus = {
+ 		id = TUR_Germany_Macro_trade_3
+ 		icon = GFX_goal_generic_production
+ 		prerequisite = { focus = TUR_Germany_Macro_trade_2 }
+ 		x = 0
+ 		y = 1
+ 		relative_position_id = TUR_Germany_Macro_trade_2
+ 		cost = 0.0001
+ 		ai_will_do = {
+ 			factor = 9
+ 		}
+		available = {date > 1941.1.1}
+ 		completion_reward = {
+ 			random_state = {
+ 				limit = {
+ 					is_core_of = GER
+ 				}
+ 				add_extra_state_shared_building_slots = 15
+ 				add_building_construction = {
+ 					type = industrial_complex
+ 					level = 15
+ 					instant_build = yes
+ 				}
+ 			}
+ 		}
+ 	}
+ 	focus = {
+ 		id = TUR_UK_Macro
+ 		icon = GFX_goal_generic_production
+ 		x = 4
+ 		y = 0
+ 		cost = 1000
+		available = {
+		AND = {date > 1960.1.1
+ 			count_triggers={
+				amount=3		
+ 				GER = {is_ai = yes}
+				SOV = {is_ai = yes}
+				FRA = {is_ai = yes}
+				USA = {is_ai = yes}
+				ITA = {is_ai = yes}
+				JAP = {is_ai = yes}
+ 			}		
+		}
+		}
+ 		completion_reward = {
+ 		}
+ 	}
+ 	focus = {
+ 		id = TUR_SOV_Macro
+ 		icon = GFX_goal_generic_production
+ 		x = 6
+ 		y = 0
+ 		cost = 1000
+		available = {
+		AND = {date > 1960.1.1
+ 			count_triggers={
+				amount=3		
+ 				GER = {is_ai = yes}
+				ENG = {is_ai = yes}
+				FRA = {is_ai = yes}
+				USA = {is_ai = yes}
+				ITA = {is_ai = yes}
+				JAP = {is_ai = yes}
+ 			}		
+		}
+		}
+ 		completion_reward = {
+ 		}
+ 	}
+ 	focus = {
+ 		id = TUR_SOV_Macro_spanish_civil_war
+ 		icon = GFX_goal_generic_production
+ 		prerequisite = { focus = TUR_SOV_Macro }
+ 		x = 0
+ 		y = 1
+ 		relative_position_id = TUR_SOV_Macro
+ 		cost = 20
+ 		ai_will_do = {
+ 			factor = 9
+ 		}
+ 		completion_reward = {
+			add_threat = 3
+			SOV = {
+				army_experience = 250
+				air_experience = 250
+			}
+ 		}
+ 	}
+ 	focus = {
+ 		id = TUR_SOV_Macro_tank_treaty
+ 		icon = GFX_goal_generic_production
+ 		prerequisite = { focus = TUR_SOV_Macro_spanish_civil_war }
+ 		x = 0
+ 		y = 1
+ 		relative_position_id = TUR_SOV_Macro_spanish_civil_war
+ 		cost = 5
+ 		ai_will_do = {
+ 			factor = 100
+ 		}
+		available = {date > 1937.1.1}
+ 		completion_reward = {
+ 			SOV = {
+ 				country_event = { id = germany.75 days = 1 }
+				add_tech_bonus = {
+ 				name = land_doc_bonus
+ 				bonus = 1.0
+ 				uses = 1
+ 				category = land_doctrine
+ 			}
+ 			}
+ 		}
+ 	}
+ 	focus = {
+ 		id = TUR_SOV_Macro_japan_marco_polo
+ 		icon = GFX_goal_generic_production
+ 		prerequisite = { focus = TUR_SOV_Macro_tank_treaty }
+ 		x = 0
+ 		y = 1
+ 		relative_position_id = TUR_SOV_Macro_tank_treaty
+ 		cost = 5
+ 		ai_will_do = {
+ 			factor = 9
+ 		}
+		available = {date > 1937.10.1}
+ 		completion_reward = {
+				add_threat = 7
+ 				SOV = {
+					army_experience = 50
+ 					air_experience = 250
+					add_tech_bonus = {
+						name = JAP_air_research
+						bonus = 1.5
+						uses = 1
+						technology = survivability_studies
+					}
+					add_tech_bonus = {
+						name = JAP_air_research
+						bonus = 1.5
+						uses = 1
+						technology = self_sealing_fuel_tanks
+					}
+					add_tech_bonus = {
+						name = JAP_air_research
+						bonus = 1.5
+						uses = 1
+						technology = engines_3
+					}
+					add_tech_bonus = {
+						name = JAP_air_research
+						bonus = 1.5
+						uses = 1
+						technology = aa_cannon_1
+					}
+					}
+ 		}
+ 	}
+ 	focus = {
+ 		id = TUR_SOV_Macro_war_1
+ 		icon = GFX_goal_generic_production
+ 		prerequisite = { focus = TUR_SOV_Macro_japan_marco_polo }
+ 		x = 0
+ 		y = 1
+ 		relative_position_id = TUR_SOV_Macro_japan_marco_polo
+ 		cost = 0.00001
+ 		ai_will_do = {
+ 			factor = 100
+ 		}
+		#available = {date > 1939.8.1}
+ 		completion_reward = {
+ 			SOV = {
+ 				country_event = { id = germany.11 days = 1 }
+ 				custom_effect_tooltip = GER_mol_rib_pact_tt
+ 				custom_effect_tooltip = needs_approval
+ 			}
+ 			EST = {set_equipment_fraction = 0}
+ 			LIT = {set_equipment_fraction = 0}
+ 			LAT = {set_equipment_fraction = 0}
+ 			SOV = {
+ 				transfer_state = 78
+ 				transfer_state = 80
+ 				transfer_state = 680
+ 				annex_country = {
+ 					target = LAT
+ 				}
+ 				annex_country = {
+ 					target = EST
+ 				}
+ 				annex_country = {
+ 					target = LIT
+ 				}
+ 				add_political_power = -150
+ 				country_event = soviet.141
+ 				
+ 				13 = { remove_core_of = EST }
+ 				184 = { remove_core_of = EST }
+ 				
+ 				12 = { remove_core_of = LAT }
+ 				183 = { remove_core_of = LAT }
+ 				
+ 				11 = { remove_core_of = LIT }
+ 				182 = { remove_core_of = LIT }
+ 				181 = { remove_core_of = LIT }
+ 				hidden_effect = {182 = {
+ 				set_temp_variable= {GER.a = building_level@arms_factory}
+ 				set_temp_variable= {GER.b = building_level@industrial_complex}
+ 				remove_building = {
+    					type = arms_factory
+     					level = GER.a
+ 				}
+ 				remove_building = {
+    					type = industrial_complex
+     					level = GER.b
+ 				}
+ 				}
+ 				698 = {
+ 					add_extra_state_shared_building_slots = GER.a
+ 					add_extra_state_shared_building_slots = GER.b
+ 					add_building_construction = {
+     						type = arms_factory
+     						level = GER.a
+ 					}
+ 					add_building_construction = {
+     						type = industrial_complex
+     						level = GER.b
+ 					}
+ 				}
+ 				183 = {
+ 				set_temp_variable= {GER.c = building_level@arms_factory}
+ 				set_temp_variable= {GER.d = building_level@industrial_complex}
+ 				remove_building = {
+    					type = arms_factory
+     					level = GER.a
+ 				}
+ 				remove_building = {
+    					type = industrial_complex
+     					level = GER.b
+ 				}
+ 				}
+ 				199 = {
+ 					add_extra_state_shared_building_slots = GER.c
+ 					add_extra_state_shared_building_slots = GER.d
+ 					add_building_construction = {
+     						type = arms_factory
+     						level = GER.c
+ 					}
+ 					add_building_construction = {
+     						type = industrial_complex
+     						level = GER.d
+ 					}
+ 				}
+ 				}
+ 			}
+ 				SOV = {
+ 					country_event = { id = germany.78 days = 1 }
+ 					add_tech_bonus = {
+ 						name = radar_tech_bonus
+ 						bonus = 2.0
+ 						uses = 3
+ 						category = radar_tech
+ 					}
+ 				}
+ 		}
+ 	}
+ 	focus = {
+ 		id = TUR_SOV_Macro_war_2
+ 		icon = GFX_goal_generic_production
+ 		prerequisite = { focus = TUR_SOV_Macro_war_1 }
+ 		x = 0
+ 		y = 1
+ 		relative_position_id = TUR_SOV_Macro_war_1
+ 		cost = 5
+ 		ai_will_do = {
+ 			factor = 100
+ 		}
+		#available = {date > 1939.9.1}
+ 		completion_reward = {
+ 			GER = {
+ 				
+ 			 every_country = {limit = {check_variable= { speeches_enabled > 0} is_in_faction_with=GER }
+ 					scoped_sound_effect="sp_ger_war"
+ 				}	
+ 			add_ideas = GER_africa_hp
+ 			set_technology = { africa_hp = 1 popup = no }
+ 				ENG = { add_to_faction = POL }
+ 				declare_war_on = {
+ 					target = POL
+ 					type = annex_everything
+ 				}
+ 				POL={declare_war_on_enemy_faction =yes}	
+				every_country = {
+ 				limit = {
+ 					original_tag = SOV
+ 				}
+				IF = {
+				limit = { has_global_flag = sov_yes_poland }
+ 				declare_war_on = {
+ 					target = POL
+ 					type = annex_everything
+ 				}
+				add_ideas = SOV_poland_campaign
+				}
+				}
+ 				POL={declare_war_on_enemy_faction =yes}					
+				67 = { 						
+					damage_building = {
+ 					type = radar_station
+ 					damage = 1
+ 					}
+				}
+ 			}
+ 		}
+ 	}
+ 	focus = {
+ 		id = TUR_JAP_Macro
+ 		icon = GFX_goal_generic_production
+ 		x = 8
+ 		y = 0
+ 		cost = 1000
+		available = {
+		AND = {date > 1960.1.1
+ 			count_triggers={
+				amount=3		
+ 				GER = {is_ai = yes}
+				SOV = {is_ai = yes}
+				FRA = {is_ai = yes}
+				USA = {is_ai = yes}
+				ITA = {is_ai = yes}
+				ENG = {is_ai = yes}
+ 			}		
+		}
+		}
+ 		completion_reward = {
+ 		}
+ 	}
+ 	focus = {
+ 		id = TUR_JAP_Macro_spanish_civil
+ 		icon = GFX_goal_generic_production
+ 		prerequisite = { focus = TUR_JAP_Macro }
+ 		x = 0
+ 		y = 1
+ 		relative_position_id = TUR_JAP_Macro
+ 		cost = 20
+ 		ai_will_do = {
+ 			factor = 9
+ 		}
+ 		completion_reward = {
+				JAP = {
+					army_experience = 100
+					air_experience = 300
+				}
+ 		}
+ 	}
+ 	focus = {
+ 		id = TUR_JAP_Macro_german_tank
+ 		icon = GFX_goal_generic_production
+ 		prerequisite = { focus = TUR_JAP_Macro_spanish_civil }
+ 		x = 0
+ 		y = 1
+ 		relative_position_id = TUR_JAP_Macro_spanish_civil
+ 		cost = 0
+ 		ai_will_do = {
+ 			factor = 9
+ 		}
+		available = {date > 1939.3.1}
+ 		completion_reward = {
+			GER = {
+				set_technology = {basic_medium_tank_chassis = 1}
+				set_technology = {improved_medium_tank_chassis = 1}
+				set_technology = {engine_tech_2 = 1}
+				set_technology = {tech_maintenance_company = 1}
+				set_technology = {tech_maintenance_company2 = 1}
+			}
+ 		}
+ 	}
+ 	focus = {
+ 		id = TUR_JAP_Macro_vichy
+ 		icon = GFX_goal_generic_production
+ 		prerequisite = { focus = TUR_JAP_Macro_german_tank }
+ 		x = 0
+ 		y = 1
+ 		relative_position_id = TUR_JAP_Macro_german_tank
+ 		cost = 5
+ 		ai_will_do = {
+ 			factor = 9
+ 		}
+		available = {date > 1939.10.1}
+ 		completion_reward = {
+		JAP = {
+			transfer_state = 274
+			transfer_state = 589
+			transfer_state = 590
+			transfer_state = 659
+			transfer_state = 646
+		}
+ 		}
+ 	}
+ 	focus = {
+ 		id = TUR_USA_Macro
+ 		icon = GFX_goal_generic_production
+ 		x = 10
+ 		y = 0
+ 		cost = 1000
+		available = {
+		AND = {date > 1960.1.1
+ 			count_triggers={
+				amount=3		
+ 				GER = {is_ai = yes}
+				SOV = {is_ai = yes}
+				FRA = {is_ai = yes}
+				JAP= {is_ai = yes}
+				ITA = {is_ai = yes}
+				ENG = {is_ai = yes}
+ 			}		
+		}
+		}
+ 		completion_reward = {
+ 		}
+ 	}
+ }
