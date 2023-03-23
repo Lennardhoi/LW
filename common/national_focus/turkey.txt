@@ -414,7 +414,7 @@ focus_tree = {
  		ai_will_do = {
  			factor = 100
  		}
-		#available = {date > 1939.8.1}
+		available = {date > 1939.8.1}
  		completion_reward = {
  			SOV = {
  				country_event = { id = germany.11 days = 1 }
@@ -517,11 +517,11 @@ focus_tree = {
  		x = 0
  		y = 1
  		relative_position_id = TUR_SOV_Macro_war_1
- 		cost = 5
+ 		cost = 0
  		ai_will_do = {
  			factor = 100
  		}
-		#available = {date > 1939.9.1}
+		available = {date > 1939.9.1}
  		completion_reward = {
  			GER = {
  				
