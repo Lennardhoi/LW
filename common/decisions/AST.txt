@@ -32,6 +32,21 @@ foreign_politics = {
  					instant_build = yes
  				}
 			}
+			hidden_effect={
+				if={ limit={NZL={has_completed_focus=NZL_long_range_patrol}}
+				272 = {
+					remove_building = {
+						type = industrial_complex
+						level = 2
+					}
+					remove_building = {
+						type = arms_factory
+						level = 2
+					}
+				}
+				}
+			}
+
  		}
  	}
  }

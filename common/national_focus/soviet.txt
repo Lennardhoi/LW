@@ -162,7 +162,27 @@ focus_tree = {
 		completion_reward = {
 		    add_ideas = SOV_five_year_plan 
 		}
+	}
+		
+	focus = {
+		id = SOV_extra_tech_slot_early
+		icon = GFX_focus_SOV_extra_tech_slot_early
+		text = extra_tech_slot
+		relative_position_id = SOV_start_five_year_plan
+		prerequisite = { 
+		focus = SOV_start_five_year_plan 
+		focus = SOV_capitals_of_socialism }
+		x = 4
+		y = 1
+		cost = 10
+		ai_will_do = {
+			factor = 5
 		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
 	focus = {
 		id = SOV_capitals_of_socialism
 		icon = GFX_focus_GER_leningrad
@@ -1068,25 +1088,6 @@ focus_tree = {
 		}
 	}
 	focus = {
-		id = SOV_extra_tech_slot_early
-		icon = GFX_focus_SOV_extra_tech_slot_early
-		text = extra_tech_slot
-		relative_position_id = SOV_start_five_year_plan
-		prerequisite = { 
-		focus = SOV_start_five_year_plan 
-		focus = SOV_capitals_of_socialism }
-		x = 4
-		y = 1
-		cost = 10
-		ai_will_do = {
-			factor = 5
-		}
-		available_if_capitulated = yes
-		completion_reward = {
-			add_research_slot = 1
-		}
-	}
-	focus = {
 		id = SOV_production_effort
 		text = production_effort
 		icon = GFX_focus_SOV_production_effort
@@ -1247,60 +1248,7 @@ focus_tree = {
 				}
 		}
 	}
-	focus = {
-		id = SOV_gulag
-		icon = GFX_SOV_nkvd_deportation_2
-		x = 0
-		y = 1
-		
-		available = {
-			date > 1938.01.1
-		}
-		relative_position_id = SOV_long
-		prerequisite = { 
-		focus = SOV_long}
-		cost = 5
-		ai_will_do = {
-			factor = 5
-		}
-		available_if_capitulated = yes
-		completion_reward = {
-			add_ideas = SOV_railway
-			370 = {
-					add_extra_state_shared_building_slots = 5
-					add_building_construction = {
-						type = industrial_complex
-						level = 5
-						instant_build = yes
-					}
-				}
-			495 = {
-					add_extra_state_shared_building_slots = 5
-					add_building_construction = {
-						type = industrial_complex
-						level = 5
-						instant_build = yes
-					}
-				}
-			494 = {
-					add_extra_state_shared_building_slots = 5
-					add_building_construction = {
-						type = industrial_complex
-						level = 5
-						instant_build = yes
-					}
-				}
-			490 = {
-					add_extra_state_shared_building_slots = 5
-					add_building_construction = {
-						type = industrial_complex
-						level = 5
-						instant_build = yes
-					}
-				}
-		}
-	}
-	focus = {
+		focus = {
 		id = SOV_long
 		icon = GFX_focus_SOV_improve_railway
 		x = -1
@@ -1375,6 +1323,60 @@ focus_tree = {
 		
 	}
 	focus = {
+		id = SOV_gulag
+		icon = GFX_SOV_nkvd_deportation_2
+		x = 0
+		y = 1
+		
+		available = {
+			date > 1938.01.1
+		}
+		relative_position_id = SOV_long
+		prerequisite = { 
+		focus = SOV_long}
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = SOV_railway
+			370 = {
+					add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+						type = industrial_complex
+						level = 5
+						instant_build = yes
+					}
+				}
+			495 = {
+					add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+						type = industrial_complex
+						level = 5
+						instant_build = yes
+					}
+				}
+			494 = {
+					add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+						type = industrial_complex
+						level = 5
+						instant_build = yes
+					}
+				}
+			490 = {
+					add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+						type = industrial_complex
+						level = 5
+						instant_build = yes
+					}
+				}
+		}
+	}
+
+	focus = {
 		id = SOV_infrastructure_effort
 		icon = GFX_focus_SOV_infrastructrure_effort
 		prerequisite = { 
@@ -1383,7 +1385,7 @@ focus_tree = {
 		relative_position_id = SOV_start_five_year_plan
 		x = -2
 		y = 1
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 5
 		}
@@ -1828,14 +1830,14 @@ focus_tree = {
 					fixed_ship_anti_air_slot=ship_anti_air_2
 					fixed_ship_fire_control_system_slot=ship_fire_control_system_2
 					fixed_ship_engine_slot=heavy_ship_engine_3
-					fixed_ship_secondaries_slot=dp_ship_secondaries
+					fixed_ship_secondaries_slot=ship_secondaries_2
 					fixed_ship_armor_slot=ship_armor_shbb
 					front_1_custom_slot=ship_super_heavy_battery_1
-					mid_1_custom_slot=dp_ship_secondaries
-					mid_2_custom_slot=dp_ship_secondaries
+					mid_1_custom_slot=ship_secondaries_2
+					mid_2_custom_slot=ship_secondaries_2
 					rear_1_custom_slot=ship_super_heavy_battery_1
 					front_2_custom_slot=ship_super_heavy_battery_1
-					mid_3_custom_slot=dp_ship_secondaries
+					mid_3_custom_slot=ship_secondaries_2
 					rear_2_custom_slot=ship_super_heavy_battery_1
 				}
 			}

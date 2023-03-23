@@ -6489,6 +6489,7 @@ news_event = {
 	desc = news.502.d
 	picture = GFX_german_stalingrad_siege
 	major = yes
+	fire_only_once = yes
 	trigger = {
 			NOT = {has_global_flag = "Stalingrad_Siege"}
 			GER = {
