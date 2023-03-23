@@ -11,7 +11,7 @@ focus_tree = {
 	focus = {
 		id = SOV_finish_five_year_plan
 		icon = GFX_focus_SOV_finish_five_year_plan
-		x = 4
+		x = 3
 		y = 1
 		prerequisite = { focus = SOV_great_purge }
 		cost = 5
@@ -33,10 +33,10 @@ focus_tree = {
 		}
 		completion_reward = {
 			375 = {
-				add_extra_state_shared_building_slots = 6
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 6
+					level = 4
 					instant_build = yes
 				}
 				set_state_flag = SOV_finish_five_year_plan_2IC
@@ -151,7 +151,7 @@ focus_tree = {
 	focus = {
 		id = SOV_start_five_year_plan
 		icon = GFX_sov_stalin_writing
-		x = 3
+		x = 2
 		y = 2
 		prerequisite = { focus = SOV_finish_five_year_plan }
 		cost = 5
@@ -166,10 +166,10 @@ focus_tree = {
 	focus = {
 		id = SOV_capitals_of_socialism
 		icon = GFX_focus_GER_leningrad
-		x = 5
+		x = 4
 		y = 2
 		prerequisite = { focus = SOV_finish_five_year_plan }
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 5
 		}
@@ -179,7 +179,12 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 12
 				add_building_construction = {
 					type = industrial_complex
-					level = 4
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = SOV_finish_five_year_plan_2IC
@@ -188,7 +193,12 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 12
 				add_building_construction = {
 					type = industrial_complex
-					level = 4
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = SOV_finish_five_year_plan_2IC
@@ -198,66 +208,26 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 12
 				add_building_construction = {
 					type = industrial_complex
-					level = 4
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = SOV_finish_five_year_plan_2IC
 			}
 		}
 	}
-	focus = {
-		id = SOV_gulag
-		icon = GFX_SOV_nkvd_deportation_2
-		x = 1
-		y = 1
-		relative_position_id = SOV_capitals_of_socialism
-		prerequisite = { 
-		focus = SOV_capitals_of_socialism 
-		focus = SOV_start_five_year_plan}
-		cost = 5
-		ai_will_do = {
-			factor = 5
-		}
-		available_if_capitulated = yes
-		completion_reward = {
-			add_ideas = SOV_railway
-					370 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			495 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			494 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-			490 = {
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
-				}
-		}
-	}
+	
 	focus = {
 		id = SOV_production_targets
 		icon = GFX_SOV_tractor_factories
 		x = 0
 		y = 1
-		relative_position_id = SOV_gulag
-		prerequisite = { focus = SOV_gulag }
+		relative_position_id = SOV_extra_tech_slot_early
+		prerequisite = { focus = SOV_extra_tech_slot_early }
 		cost = 10
 		ai_will_do = {
 			factor = 5
@@ -1105,7 +1075,7 @@ focus_tree = {
 		prerequisite = { 
 		focus = SOV_start_five_year_plan 
 		focus = SOV_capitals_of_socialism }
-		x = 1
+		x = 4
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -1155,19 +1125,254 @@ focus_tree = {
 		}
 	}	
 	focus = {
-		id = SOV_improve_railway
+		id = SOV_short
 		icon = GFX_focus_SOV_improve_railway
-		x = 0
-		y = 1
+		x = 1
+		y = 2
 		cost = 5
-		relative_position_id = SOV_extra_tech_slot_early
-		prerequisite = { focus = SOV_extra_tech_slot_early }
+		mutually_exclusive = { focus = SOV_long}
+		relative_position_id = SOV_finish_five_year_plan
+		prerequisite = { 
+		focus = SOV_capitals_of_socialism
+		focus = SOV_start_five_year_plan
+		}
 		ai_will_do = {
 			factor = 1
 		}
 		available_if_capitulated = yes
 		completion_reward = {
+			214 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+				}
+			220 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+				}
+			221 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+				}
+			211 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+				}
+			253 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 3
+						instant_build = yes
+					}
+				}
 		}
+	}
+	focus = {
+		id = SOV_improve_railway
+		icon = GFX_focus_SOV_improve_railway
+		x = 0
+		y = 1
+		cost = 5
+		
+		available = {
+			date > 1938.01.1
+		}
+		relative_position_id = SOV_short
+		prerequisite = { 
+		focus = SOV_short
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			193 = {
+					add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+						type = arms_factory
+						level = 5
+						instant_build = yes
+					}
+				}
+			214 = {
+					add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+						type = arms_factory
+						level = 5
+						instant_build = yes
+					}
+				}
+			220 = {
+					add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+						type = arms_factory
+						level = 5
+						instant_build = yes
+					}
+				}
+			221 = {
+					add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+						type = arms_factory
+						level = 5
+						instant_build = yes
+					}
+				}
+			211 = {
+					add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+						type = arms_factory
+						level = 5
+						instant_build = yes
+					}
+				}
+			253 = {
+					add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+						type = arms_factory
+						level = 5
+						instant_build = yes
+					}
+				}
+		}
+	}
+	focus = {
+		id = SOV_gulag
+		icon = GFX_SOV_nkvd_deportation_2
+		x = 0
+		y = 1
+		
+		available = {
+			date > 1938.01.1
+		}
+		relative_position_id = SOV_long
+		prerequisite = { 
+		focus = SOV_long}
+		cost = 5
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = SOV_railway
+			370 = {
+					add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+						type = industrial_complex
+						level = 5
+						instant_build = yes
+					}
+				}
+			495 = {
+					add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+						type = industrial_complex
+						level = 5
+						instant_build = yes
+					}
+				}
+			494 = {
+					add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+						type = industrial_complex
+						level = 5
+						instant_build = yes
+					}
+				}
+			490 = {
+					add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+						type = industrial_complex
+						level = 5
+						instant_build = yes
+					}
+				}
+		}
+	}
+	focus = {
+		id = SOV_long
+		icon = GFX_focus_SOV_improve_railway
+		x = -1
+		y = 2
+		cost = 5
+		
+		available = {
+			date > 1938.01.1
+		}
+		mutually_exclusive = { focus = SOV_short}
+		relative_position_id = SOV_finish_five_year_plan
+		prerequisite = { 
+		focus = SOV_capitals_of_socialism
+		focus = SOV_start_five_year_plan
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_ideas = SOV_railway
+			370 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			365 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			495 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			494 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			573 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			496 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			490 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+		}
+		
 	}
 	focus = {
 		id = SOV_infrastructure_effort
@@ -1176,7 +1381,7 @@ focus_tree = {
 		focus = SOV_start_five_year_plan 
 		focus = SOV_capitals_of_socialism }
 		relative_position_id = SOV_start_five_year_plan
-		x = -1
+		x = -2
 		y = 1
 		cost = 10
 		ai_will_do = {
@@ -1433,7 +1638,6 @@ focus_tree = {
 	focus = {
 		id = SOV_mobilization
 		icon = GFX_focus_SOV_mobilization
-		#text = extra_tech_slot
 		prerequisite = { focus = SOV_socialist_science }
 		x = 0
 		y = 1
