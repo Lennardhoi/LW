@@ -224,7 +224,7 @@ ideas = {
 			modifier = {
 				army_org_Factor = 0.1
 				army_morale_factor=0.1
-				army_attack_factor=0.05
+				#army_attack_factor=0.05
 				agency_upgrade_time = -0.30
 			}
 		}
@@ -695,7 +695,7 @@ ideas = {
 				armor = {
 					soft_attack=0.05  instant = yes
 					hard_attack=0.05  instant = yes
-					#build_cost_ic = -0.05  instant = yes
+					build_cost_ic = 0.05  instant = yes
 				}
 			}
 			modifier = {
@@ -788,11 +788,11 @@ ideas = {
 			picture = German_Engineering
 			modifier={research_speed_factor = 0.25
 			}
-			equipment_bonus = {			
-				armor = {
-					build_cost_ic = -0.05  instant = yes
-				}
-			}
+			#equipment_bonus = {			
+				#armor = {
+				#	build_cost_ic = -0.05  instant = yes
+				#}
+			#}
 		}
 		GER_trade_interdiction = {
 			allowed = {
