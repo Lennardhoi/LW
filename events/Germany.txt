@@ -35,7 +35,7 @@ country_event = {
 		# if = {
 				# limit= {CRO={OR={exists = no is_ai=yes}}}
 		ITA = {
-			#add_ideas = alpine_forts
+			add_ideas = alpine_forts
 			transfer_state = 103
 			transfer_state = 109
 			transfer_state = 104
@@ -55,7 +55,7 @@ country_event = {
 			# transfer_state = 104
 		# }
 		# ITA = {
-			# add_ideas = alpine_forts
+			 add_ideas = alpine_forts
 			
 			# transfer_state = 105
 			# transfer_state = 108
@@ -71,13 +71,7 @@ country_event = {
 			if={
 				limit={
 					175={
-						OR= {
-							is_controlled_by = GER
-							is_controlled_by = ITA
-							is_controlled_by = ROM
-							is_controlled_by = HUN
-							is_controlled_by = BUL
-						}
+						is_controlled_by_GER_or_ally
 					}
 				}
 				transfer_state =175
@@ -86,13 +80,7 @@ country_event = {
 			if={
 				limit={
 					180={
-						OR= {
-							is_controlled_by = GER
-							is_controlled_by = ITA
-							is_controlled_by = ROM
-							is_controlled_by = HUN
-							is_controlled_by = BUL
-						}
+						is_controlled_by_GER_or_ally
 					}
 				}
 				transfer_state =180
