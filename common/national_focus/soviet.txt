@@ -1253,9 +1253,6 @@ focus_tree = {
 		y = 2
 		cost = 5
 		
-		available = {
-			date > 1938.01.1
-		}
 		mutually_exclusive = { focus = SOV_short}
 		relative_position_id = SOV_finish_five_year_plan
 		prerequisite = { 
@@ -1386,6 +1383,8 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			factor = 5
+		}available = {
+			date > 1938.01.1
 		}
 		available_if_capitulated = yes
 		bypass = {
