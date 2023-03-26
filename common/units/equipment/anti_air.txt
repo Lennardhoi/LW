@@ -40,15 +40,15 @@ equipments = {
      	}
      	anti_air_equipment_2 = {
      		year = 1940
+     		#parent = anti_air_equipment_1
      		archetype = anti_air_equipment
-     		parent = anti_air_equipment_1
      		priority = 80
      		visual_level = 1
      		soft_attack = 5
      		hard_attack = 11
      		ap_attack = 60
      		air_attack = 20
-     		    build_cost_ic = 5.25 
+     		build_cost_ic = 5.25 
  	 	lend_lease_cost = 0.7   
      		resources = {
      			steel = 20
@@ -59,8 +59,8 @@ equipments = {
      	}
      	anti_air_equipment_3 = {
      		year = 1943
+     		#parent = anti_air_equipment_2
      		archetype = anti_air_equipment
-     		parent = anti_air_equipment_2
      		priority = 80
      		visual_level = 2
      		soft_attack = 6
@@ -68,10 +68,11 @@ equipments = {
      		ap_attack = 88
      		air_attack = 24
      		    build_cost_ic = 6
- 	 	lend_lease_cost = 0.8   
+ 	 	lend_lease_cost = 0.8   	 	
      		resources = {
      			steel = 30
      		}
+		
      	}
      }
 
