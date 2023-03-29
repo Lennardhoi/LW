@@ -144,44 +144,42 @@ upgrades = {
 		resource_cost_thresholds = { # resource values defined here are TOTAL added cost, not cumulative
 		
 			1 = {
-				steel = 1
-			}
-			2 = {
 				steel = 2
 			}
-			3 = {
-				steel = 3
-			}
-			4 = {
+			2 = {
 				steel = 4
 			}
-			5 = {
-				steel = 5
-			}
-			6 = {
+			3 = {
 				steel = 6
 			}
-			7 = {
-				steel = 7
-			}
-			8 = {
+			4 = {
 				steel = 8
 			}
+			5 = {
+				steel = 10
+			}
+			6 = {
+				steel = 12
+			}
+			7 = {
+				steel = 14
+			}
+			8 = {
+				steel = 16
+			}
 			9 = {
-				steel = 9
+				steel = 18
 			}
 			10 = {
-				steel = 10
+				steel = 20
 			}
 		}
 
-		maximum_speed = -0.05
-		reliability = -0.02
+		maximum_speed = -0.025
+		reliability = -0.01
 		hardness = 0.025
 		add_stats = {
-			build_cost_ic = 0.1
 			armor_value = 2.5
-
 		}
 	}
 

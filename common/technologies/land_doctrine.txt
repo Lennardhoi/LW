@@ -2400,16 +2400,17 @@ technologies = {
 		org_loss_when_moving = -0.1
 		land_reinforce_rate = 0.03
 		category_army = {
+			breakthrough = 0.05
 			default_morale = 0.05
 		}
 		motorized = {
 			need = {
-				motorized_rocket_equipment = 10
+				motorized_rocket_equipment = 5
 			}
 		}
 		mechanized = {
 			need = {
-				motorized_rocket_equipment = 10
+				motorized_rocket_equipment = 5
 			}
 		}
 		on_research_complete= {
