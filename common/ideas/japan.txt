@@ -794,6 +794,99 @@ ideas = {
 			research_bonus = {
 				armor = 0.15
 			}
+			modifier = { tank_manufacturer_cost_factor = -1 }
+			equipment_bonus = {
+				medium_tank_amphibious_chassis = {
+					reliability = 0.05
+					soft_attack = 0.1
+					hard_attack = 0.1
+					armor_value = 0.1
+					build_cost_ic = 0.05
+				}
+				medium_tank_chassis = {
+					reliability = 0.05
+					soft_attack = 0.1
+					hard_attack = 0.1
+					armor_value = 0.1
+					build_cost_ic = 0.05
+				}				
+				medium_tank_aa_chassis = {
+					reliability = 0.05
+					air_attack = 0.1
+					armor_value = 0.1
+					build_cost_ic = 0.05
+				}
+				medium_tank_artillery_chassis = {
+					reliability = 0.05
+					soft_attack = 0.15
+					armor_value = 0.1
+					build_cost_ic = 0.05
+				}
+				medium_tank_destroyer_chassis = {
+					reliability = 0.05
+					hard_attack = 0.15
+					armor_value = 0.1
+					build_cost_ic = 0.05
+				}
+			}
+			traits = {  }
+		}
+		toyota_tank = {
+			cost =100
+			allowed = {
+				OR = {
+					original_tag = JAP
+					original_tag = MAN
+				}
+			}
+			research_bonus = {
+				armor = 0.15
+			}
+			modifier = { tank_manufacturer_cost_factor = -1 }
+			equipment_bonus = {
+				light_tank_chassis = {
+					reliability = 0.05
+					soft_attack = 0.1
+					hard_attack = 0.1
+					build_cost_ic = 0.05
+				}
+				light_tank_aa_chassis = {
+					reliability = 0.05
+					air_attack = 0.1
+					build_cost_ic = 0.05
+				}
+				light_tank_artillery_chassis = {
+					reliability = 0.05
+					soft_attack = 0.15
+					build_cost_ic = 0.05
+				}
+				light_tank_destroyer_chassis = {
+					reliability = 0.05
+					hard_attack = 0.15
+					build_cost_ic = 0.05
+				}
+				light_tank_amphibious_chassis = {
+					hard_attack = 0.1 
+					soft_attack = 0.1 
+					reliability = 0.05 
+					armor_value = 0.1 
+					build_cost_ic = 0.05
+				}
+			}
+			traits = {  }
+		}
+		isuzu_tank = {
+			cost =100
+			allowed = {
+				OR = {
+					original_tag = JAP
+					original_tag = MAN
+				}
+			}
+			research_bonus = {
+				armor = 0.15
+			}
+			modifier = { tank_manufacturer_cost_factor = -1 }
 			equipment_bonus = {
 				heavy_tank_chassis = {
 					reliability = 0.05
@@ -816,77 +909,18 @@ ideas = {
 					armor_value = 0.05
 					build_cost_ic = 0.05
 				}
-				amphibious_tank_chassis = {
-					reliability = 0.05
-					soft_attack = 0.1
-					hard_attack = 0.1
-					reliability = 0.2
-					build_cost_ic = 0.1
-				}
-				medium_tank_amphibious_chassis = {
-					reliability = 0.05
-					soft_attack = 0.1
-					hard_attack = 0.1
-					reliability = 0.2
-					build_cost_ic = 0.1
-				}
-				medium_tank_chassis = {
-					reliability = 0.05
-					soft_attack = 0.1
-					hard_attack = 0.1
-					armor_value = 0.1
-					build_cost_ic = 0.05
-				}
-				medium_tank_amphibious_chassis = {
-					reliability = 0.05
-					soft_attack = 0.1
-					hard_attack = 0.1
-					armor_value = 0.1
-					build_cost_ic = 0.05
-				}
-				
-				medium_tank_aa_chassis = {
-					reliability = 0.05
-					air_attack = 0.1
-					armor_value = 0.1
-					build_cost_ic = 0.05
-				}
-				medium_tank_artillery_chassis = {
-					reliability = 0.05
-					soft_attack = 0.15
-					armor_value = 0.1
-					build_cost_ic = 0.05
-				}
-				medium_tank_destroyer_chassis = {
-					reliability = 0.05
-					hard_attack = 0.15
-					armor_value = 0.1
-					build_cost_ic = 0.05
-				}
-				light_tank_chassis = {
-					reliability = 0.05
-					soft_attack = 0.1
-					hard_attack = 0.1
-					build_cost_ic = 0.05
-				}
-				light_tank_aa_chassis = {
-					reliability = 0.05
-					air_attack = 0.1
-					build_cost_ic = 0.05
-				}
-				light_tank_artillery_chassis = {
-					reliability = 0.05
-					soft_attack = 0.15
-					build_cost_ic = 0.05
-				}
-				light_tank_amphibious_chassis = {
-					hard_attack = 0.1 soft_attack = 0.1 reliability = 0.05 armor_value = 0.1 build_cost_ic = 0.05
-				}
-				medium_tank_amphibious_chassis = {
-					hard_attack = 0.1 soft_attack = 0.1 reliability = 0.05 armor_value = 0.1 build_cost_ic = 0.05
-				}
 				heavy_tank_amphibious_chassis = {
-					hard_attack = 0.1 soft_attack = 0.1 reliability = 0.05 armor_value = 0.1 build_cost_ic = 0.05
+					hard_attack = 0.1 
+					soft_attack = 0.1 
+					reliability = 0.05 
+					armor_value = 0.1 
+					build_cost_ic = 0.05
+				}
+				heavy_tank_aa_chassis = {
+					air_attack = 0.05
+					reliability = 0.05 
+					armor_value = 0.1 
+					build_cost_ic = 0.05
 				}
 			}
 			traits = {  }
