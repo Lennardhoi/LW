@@ -2134,6 +2134,9 @@ technologies = {
 		xp_boost_cost = 100
 		xp_research_bonus = 1.00
 		supply_consumption_factor = -0.10
+		category_army = {
+			breakthrough = 0.05
+			}
 		enable_tactic = tactic_relentless_assault
 		enable_tactic = tactic_human_wave_tactics
 		path = {
@@ -2400,7 +2403,6 @@ technologies = {
 		org_loss_when_moving = -0.1
 		land_reinforce_rate = 0.03
 		category_army = {
-			breakthrough = 0.05
 			default_morale = 0.05
 		}
 		motorized = {
