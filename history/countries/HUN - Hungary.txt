@@ -23,9 +23,6 @@ recruit_character = HUN_ferenc_szombathelyi
 recruit_character = HUN_gusztav_jany
 recruit_character = HUN_shvoy_kalman
 recruit_character = HUN_gyula_gombos_de_jakfa
-
-recruit_character = HUN_kalman_kanya
-recruit_character = HUN_kalman_daranyi
 capital = 43
  oob = "HUN_1936"
  set_research_slots = 3
@@ -35,14 +32,7 @@ capital = 43
      var = min_fuel
      value = 0.800
  }
-add_ideas = {
-	HUN_treaty_of_triannon
-	HUN_economic_disaster
-	HUN_disorganized_officers
-	HUN_indecisive
-	HUN_corrupt_bureaucracy
-	peace_training
-}
+ add_ideas = peace_training
  add_relation_modifier = { target = GER modifier =  Axis_trade }
  set_rule = {can_be_spymaster = no}
  set_technology = {
@@ -83,9 +73,14 @@ add_ideas = {
           amount = 4732
           producer = HUN
  }
-
- 	
- 
+ if = {
+ 	limit = {
+ 		has_dlc = "Death or Dishonor"
+ 	}
+ 	add_ideas = {
+ 		HUN_treaty_of_triannon
+ 	}
+ }
  set_politics = {
  	ruling_party = neutrality
  	last_election = "1935.3.31"
