@@ -1997,7 +1997,7 @@ equipment_modules = {
  		multiply_stats = {
  			armor_value = 0.25
  			breakthrough = 0.1
- 			build_cost_ic = 0.1
+ 			build_cost_ic = 0.075
  		}
  	}
  	stabilizer = {
@@ -2070,13 +2070,12 @@ equipment_modules = {
  		sfx = sfx_ui_sd_module_turret
  		add_stats = {
  			breakthrough = 4
- 			reliability = -0.1
- 			build_cost_ic = 1.5
+			defense = 2
  			hardness = 0.05
  		}
  		xp_cost = 0
  		multiply_stats = {
- 			
+		build_cost_ic = 0.075 			
  		}
  	}
  	dozer_blade = {
@@ -2088,7 +2087,7 @@ equipment_modules = {
  		forbid_equipment_type_exact_match = armor
  		add_stats = {
  			entrenchment = 2
- 			build_cost_ic = 4
+ 			build_cost_ic = 2
  		}
  		xp_cost = 0
  		multiply_stats = {
