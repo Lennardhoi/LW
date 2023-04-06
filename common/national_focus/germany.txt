@@ -2531,6 +2531,39 @@ focus_tree = {
 			 	every_country = {limit = {check_variable= { speeches_enabled > 0} is_in_faction_with=GER }
  					scoped_sound_effect="untergang"
 				}
+				division_template = {
+ 					name = "Panzerjagd-Division"
+ 					regiments = {
+ 						medium_armor = { x = 0 y = 0 }
+ 						medium_armor = { x = 0 y = 1 }
+ 						medium_armor = { x = 0 y = 2 }
+ 						medium_armor = { x = 0 y = 3 }
+ 						medium_armor = { x = 1 y = 0 }
+ 						medium_armor = { x = 1 y = 1 }
+ 						medium_armor = { x = 1 y = 2 }
+ 						medium_armor = { x = 1 y = 3 }
+ 						medium_armor = { x = 2 y = 0 }
+ 						medium_armor = { x = 2 y = 1 }
+ 						medium_armor = { x = 2 y = 2 }
+ 						motorized = { x = 3 y = 0 }
+ 						motorized = { x = 3 y = 1 }
+ 						motorized = { x = 3 y = 2 }
+ 						motorized = { x = 3 y = 3 }
+ 						motorized = { x = 4 y = 0 }
+ 						motorized = { x = 4 y = 1 }
+ 						motorized = { x = 4 y = 2 }
+ 						motorized = { x = 4 y = 3 }
+ 						mot_anti_air_brigade = { x = 4 y = 4 }
+ 						mot_anti_air_brigade = { x = 4 y = 5 }
+ 					}
+ 					support = {
+ 						light_tank_recon = { x = 0 y = 0 }
+ 						engineer = { x = 0 y = 1 }
+ 						artillery = { x = 0 y = 2 }
+ 						anti_air = {x = 0 y = 3}
+ 						anti_tank = {x = 0 y = 4}
+ 					}
+ 				}
  				64 = {
  					for_loop_effect = {
  						end = 2

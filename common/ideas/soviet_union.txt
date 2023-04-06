@@ -183,6 +183,20 @@ ideas = {
 				winter_attrition_factor = -1
 			}
 		}
+		SOV_counterattack = {
+			picture=GFX_idea_georgy_zhukov
+			modifier = {
+				army_armor_attack_factor = 0.10
+				army_infantry_attack_factor = 0.10
+				winter_attrition_factor = -1
+				army_morale_factor = 0.1
+				land_reinforce_rate = 0.02
+				supply_node_range = 0.1
+				consumer_goods_factor=-0.1
+				air_range_factor=0.1
+			}
+		}
+		
 		SOV_bagration = {
 			modifier = {
 				army_armor_attack_factor = 0.25

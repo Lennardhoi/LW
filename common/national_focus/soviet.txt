@@ -1491,6 +1491,91 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = SOV_counterattack
+		icon = GFX_georgy_zhukov_hero
+		prerequisite = { focus = SOV_great_purge }
+		x = 6
+		y = 1
+		cost = 0
+		ai_will_do = {
+			factor = 1
+		}
+		available={
+		always=no
+		surrender_progress > 0.75
+					
+					212={NOT={CONTROLLER = {original_tag=SOV}}}
+					188={NOT={CONTROLLER = {original_tag=SOV}}}
+					210={NOT={CONTROLLER = {original_tag=SOV}}}
+					242={NOT={CONTROLLER = {original_tag=SOV}}}
+					
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+		
+		custom_effect_tooltip = SOV_counterattack_tt
+		division_template = {
+			name = "Mekhanizirovaniy Korpus"
+			regiments = {
+				medium_armor = { x = 0 y = 0 }
+				medium_armor = { x = 0 y = 1 }
+				medium_armor = { x = 0 y = 2 }
+				medium_armor = { x = 0 y = 3 }
+				medium_armor = { x = 1 y = 0 }
+				medium_armor = { x = 1 y = 1 }
+				medium_armor = { x = 1 y = 2 }
+				medium_armor = { x = 1 y = 3 }
+				medium_armor = { x = 2 y = 0 }
+				medium_armor = { x = 2 y = 1 }
+				medium_armor = { x = 2 y = 2 }
+				mechanized = { x = 3 y = 0 }
+				mechanized = { x = 3 y = 1 }
+				mechanized = { x = 3 y = 2 }
+				mechanized = { x = 3 y = 3 }
+				mechanized = { x = 4 y = 0 }
+				mechanized = { x = 4 y = 1 }
+				mechanized = { x = 4 y = 2 }
+				mechanized = { x = 4 y = 3 }
+				mot_anti_air_brigade= { x = 3 y = 4 }
+				mot_anti_air_brigade = { x = 4 y = 4 }
+			}
+			support = {
+				mot_recon = { x = 0 y = 0 }
+				engineer = { x = 0 y = 1 }
+				artillery = { x = 0 y = 2 }
+				logistics_company = { x = 0 y = 3 }
+				signal_company = { x = 0 y = 4 }
+			}
+		}
+		496 = {
+			for_loop_effect = {
+				end = 8
+				create_unit = {
+					prioritize_location =8528
+					division = "name = \"Mekhanizirovaniy Korpus\" division_template = \"Mekhanizirovaniy Korpus\" start_experience_factor = 2.0"
+					owner = SOV
+				}
+				}}
+		add_equipment_to_stockpile = {
+    			type = infantry_equipment
+    			amount = 15000
+    			producer = SOV
+		}
+		add_equipment_to_stockpile = {
+    			type = support_equipment
+    			amount = 3000
+    			producer = SOV
+		}
+		add_equipment_to_stockpile = {
+    			type = motorized_equipment
+    			amount = 1000
+    			producer = SOV
+		}
+		add_timed_idea= {idea=SOV_counterattack days=100}
+		set_global_flag=SOV_counterattack	
+		}
+	}
+	focus = {
 		id = SOV_stalin_constitution
 		icon = GFX_focus_SOV_stalin
 		prerequisite = { focus = SOV_great_purge }
@@ -2246,6 +2331,7 @@ focus_tree = {
 		    add_timed_idea={idea=SOV_heavy_tonk days=120}
 		}
 	}
+
 	focus = {
 		id = SOV_prepare_japan
 		icon = GFX_goal_generic_build_airforce

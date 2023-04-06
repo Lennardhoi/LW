@@ -141,7 +141,14 @@ on_actions = {
 					}
 					not = { has_global_flag = SOV_peacedeal }
 				}
-				SWE = {country_event = {id = peace.1 } }
+				if={ limit={SOV={Not={has_completed_focus=SOV_counterattack}}}
+				SOV={complete_national_focus=SOV_counterattack}
+				}
+				if={ limit={SOV={NOT={has_idea=SOV_counterattack} has_global_flag=SOV_counterattack}}
+				SWE = { 
+				country_event = {id = peace.1 }
+				 }
+				}
 			}
 			if = {
 				limit = {
