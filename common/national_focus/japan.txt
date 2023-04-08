@@ -1380,7 +1380,7 @@ focus_tree = {
  		completion_reward = {
  			custom_effect_tooltip = JAP_the_zero_tt
  			#hidden_effect = { 
-			set_technology = { improved_small_airframe = 1 engines_3 = 1 } 
+			set_technology = { improved_small_airframe = 1 improved_medium_airframe = 1 engines_3 = 1 }
 			#}
  			
  			
@@ -1435,6 +1435,7 @@ focus_tree = {
  			factor = 2
  		}
  		available = {
+		has_completed_focus = JAP_the_zero
  		}
  		bypass = {
  		}
@@ -1596,7 +1597,7 @@ focus_tree = {
  				name = JAP_carrier_warfare_experiments
  				bonus = 1.00
  				uses = 2
- 				category = cat_base_strike
+ 				category = naval_doctrine
  			}
  			add_tech_bonus = {
  				name = JAP_carrier_warfare_experiments
