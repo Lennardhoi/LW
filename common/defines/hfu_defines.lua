@@ -134,6 +134,10 @@ NDefines.NProduction.BASE_LAND_EQUIPMENT_CONVERSION_IC_COST_FACTOR=0.1
 ---------------------------------------------------------------
 NDefines.NTrade.ANTI_MONOPOLY_TRADE_FACTOR = -1			-- was -100 | This is added to the factor value when anti-monopoly threshold is exceeded; cucks Soviets/Japan often if the value is vanilla
 NDefines.NTrade.BASE_LAND_TRADE_RANGE = 350	
+NDefines.NAir.ACCIDENT_CHANCE_BASE =0.05 
+NDefines.NAir.ACCIDENT_CHANCE_CARRIER_MULT =2 
+NDefines.ACCIDENT_CHANCE_BALANCE_MULT =0.5
+NDefines.NAir.ACCIDENT_EFFECT_MULT=0.005 
 ---------------------------------------------------------------
 --NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_NO_TRUCK_DISRUPTION_FACTOR     0.0     CAS damaged get multiplied by this in land combats at night
 --NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_TRUCK_DAMAGE_FACTOR     0.0
