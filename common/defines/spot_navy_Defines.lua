@@ -37,7 +37,7 @@ NDefines.NNavy.NAVAL_COMBAT_AIR_CARRIER_TARGET_SCORE = 30
 NDefines.NNavy.NAVAL_COMBAT_AIR_CAPITAL_TARGET_SCORE = 200
 NDefines.NNavy.GUN_HIT_PROFILES = { -- hit profiles for guns, if target ih profile is lower the gun will have lower accuracy
 		75.0,	-- big guns
-		150.0,	-- torpedos
+		160.0,	-- torpedos
 		40,	-- small guns
 	}
 NDefines.NNavy.CONVOY_HIT_PROFILE = 207 -- vanilla 120
