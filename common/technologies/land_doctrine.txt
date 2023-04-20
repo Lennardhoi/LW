@@ -2405,14 +2405,19 @@ technologies = {
 		category_army = {
 			default_morale = 0.05
 		}
+		enable_equipments = {
+			motorized_rocket_equipment_1
+		}
 		motorized = {
 			need = {
-				motorized_rocket_equipment = 5
+				motorized_rocket_equipment = 10
+				motorized_equipment = -10
 			}
 		}
 		mechanized = {
 			need = {
-				motorized_rocket_equipment = 5
+				motorized_rocket_equipment = 10
+				mechanized_equipment = -10
 			}
 		}
 		on_research_complete= {
