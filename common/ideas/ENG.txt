@@ -19,6 +19,9 @@ ideas = {
 				}
 			}
 			removal_cost = -1
+			modifier = {
+				surrender_limit = 0.15
+			}
 			traits = { popular_figurehead }
 		}
 		britannia_rules_the_waves = {
@@ -228,8 +231,8 @@ ideas = {
 			}
 			modifier = {
 				agency_upgrade_time = -0.30
-				army_core_attack_factor = 1.5
-				army_core_defence_factor = 1.5
+				#army_core_attack_factor = 1.5
+				#army_core_defence_factor = 1.5
 				surrender_limit = 0.15
 			}
 			rule = {

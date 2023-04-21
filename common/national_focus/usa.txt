@@ -1117,7 +1117,10 @@ focus_tree = {
  			}
 			
  			add_political_power = 100
+			if ={limit={NOT={has_idea=tot_economic_mobilisation}}
+
  			add_ideas = war_economy
+			}
  			#remove_ideas=USA_second_deal
  			set_country_flag = USA_the_giant_wakes_added_civ_eco
  		}

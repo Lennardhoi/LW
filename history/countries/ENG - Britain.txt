@@ -91,6 +91,10 @@ if = {
 		set_naval_oob = "ENG_1936_Naval_Legacy"
 	}
 }
+add_dynamic_modifier = {
+    modifier = stiff_upper_lip
+    scope = ENG
+}
 set_variable = {
 	var = min_fuel
 	value = 0.800
@@ -351,7 +355,7 @@ if = {
 }
 set_country_flag=fuel_system_enabled
 add_ideas = {
-	stiff_upper_lip
+	#stiff_upper_lip
 	ENG_the_war_to_end_all_wars
 	george_v
 }

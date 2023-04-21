@@ -1,3 +1,106 @@
+sealion_core_defense = {
+ENG={
+			set_temp_variable= {battalions_ukt = 0 }
+						while_loop_effect = {
+							limit = {
+
+								meta_trigger={
+								text={
+								num_battalions_in_states = {
+									count > [EQ_LEVEL]
+									states = { 116 117 118 119 120 121 123 124 125 126 127 128 129 130 131 132 305 }								
+								}
+								}
+								EQ_LEVEL = "[?battalions_ukt]"
+								}
+							}
+							add_to_temp_variable = { battalions_ukt = 100 }
+						}
+						if= {
+							limit = {
+
+
+								meta_trigger={
+								text={
+								num_battalions_in_states = {
+									count < [EQ_LEVEL]
+									states = { 116 117 118 119 120 121 123 124 125 126 127 128 129 130 131 132 305 }								
+								}
+								}
+								EQ_LEVEL = "[?battalions_ukt]"
+								}
+							}
+							add_to_temp_variable = { battalions_ukt = -100 }
+						}
+						while_loop_effect = {
+							limit = {
+
+
+								meta_trigger={
+								text={
+								num_battalions_in_states = {
+									count > [EQ_LEVEL]
+									states = { 116 117 118 119 120 121 123 124 125 126 127 128 129 130 131 132 305 }								
+								}
+								}
+								EQ_LEVEL = "[?battalions_ukt]"
+								}
+							}
+							add_to_temp_variable = { battalions_ukt = 10 }
+						}
+						if= {
+							limit = {
+
+
+								meta_trigger={
+								text={
+								num_battalions_in_states = {
+									count < [EQ_LEVEL]
+									states = { 116 117 118 119 120 121 123 124 125 126 127 128 129 130 131 132 305 }								
+								}
+								}
+								EQ_LEVEL = "[?battalions_ukt]"
+								}
+							}
+							add_to_temp_variable = { battalions_ukt = -10 }
+						}
+						while_loop_effect = {
+							limit = {
+
+
+								meta_trigger={
+								text={
+								num_battalions_in_states = {
+									count > [EQ_LEVEL]
+									states = { 116 117 118 119 120 121 123 124 125 126 127 128 129 130 131 132 305 }								
+								}
+								}
+								EQ_LEVEL = "[?battalions_ukt]"
+								}
+							}
+							add_to_temp_variable = { battalions_ukt = 1 }
+						}
+						if= {
+							limit = {
+
+
+								meta_trigger={
+								text={
+								num_battalions_in_states = {
+									count < [EQ_LEVEL]
+									states = { 116 117 118 119 120 121 123 124 125 126 127 128 129 130 131 132 305 }								
+								}
+								}
+								EQ_LEVEL = "[?battalions_ukt]"
+								}
+							}
+							add_to_temp_variable = { battalions_ukt = -1 }
+						}
+						divide_temp_variable={battalions_ukt=200}
+						set_variable={ENG.battalions_uk=battalions_ukt}
+						
+}
+}
 pow_before_annex= {
 hidden_effect = {set_variable ={getting_annexed=1}
 every_enemy_country = {
@@ -502,3 +605,6 @@ set_variable={academy_weekly_training_speed_result=academy_weekly_training_speed
 
 }
 }
+
+
+
