@@ -2020,13 +2020,16 @@ technologies = {
 		xp_unlock_cost = 0
 		xp_unlock_cost = 0
 		xp_research_bonus = 1.00
+		category_army = {
+			breakthrough = 0.10
+		}
 		xor = { mobile_warfare superior_firepower trench_warfare }
 		path = {
 			leads_to_tech = pocket_defence
 			research_cost_coeff = 1
 		}
-		land_reinforce_rate = 0.02
-		minimum_training_level = -0.15
+		minimum_training_level = -0.15,
+		
 		doctrine = no
 		research_cost = 0.00001
 		categories = {
@@ -2054,6 +2057,8 @@ technologies = {
 		xp_unlock_cost = 0
 		xp_boost_cost = 100
 		xp_research_bonus = 1.00
+		
+		land_reinforce_rate = 0.02
 		#reduced pocketed combat penalty and/or reduces the out of supply penalty or increases time before moving to worse penalty
 		no_supply_grace = 48 # more hours before supply penalty changes
 		path = {
