@@ -101,9 +101,54 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				industrial_capacity_factory = -0.25
-				industrial_capacity_dockyard = 0.15
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = 0.1
 				production_speed_dockyard_factor = 0.2
+			}
+		}
+		USA_navy_recovery2 = {
+			picture = generic_infantry_bonus
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				industrial_capacity_factory = -0.25
+				industrial_capacity_dockyard = 0.25
+				production_speed_dockyard_factor = 0.2
+			}
+		}
+		USA_navy_recovery3 = {
+			picture = generic_infantry_bonus
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				industrial_capacity_factory = -0.35
+				industrial_capacity_dockyard = 0.35
+				production_speed_dockyard_factor = 0.3
+			}
+		}
+		USA_navy_recovery4 = {
+			picture = generic_infantry_bonus
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				industrial_capacity_factory = -0.5
+				industrial_capacity_dockyard = 0.5
+				production_speed_dockyard_factor = 0.4
 			}
 		}
 		USA_labour = {
