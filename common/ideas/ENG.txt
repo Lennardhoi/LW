@@ -993,6 +993,10 @@ ideas = {
 					hard_attack = 0.1
 					maximum_speed = 0.1
 				}
+				light_tank_flame_chassis = {
+					maximum_speed = 0.1
+					soft_attack = 0.1
+				}
 			}
 			modifier = { tank_manufacturer_cost_factor = -1 }
 		}
@@ -1028,6 +1032,11 @@ ideas = {
 				}
 				heavy_tank_artillery_chassis = {
 					soft_attack = 0.15
+					armor_value = 0.05
+				}
+				heavy_tank_flame_chassis = {
+					hard_attack = 0.1
+					soft_attack = 0.05
 					armor_value = 0.05
 				}
 			}
@@ -1072,6 +1081,11 @@ ideas = {
 					hard_attack = 0.15
 					ap_attack = 0.15
 				}
+				medium_tank_flame_chassis = {
+					maximum_speed = 0.05
+					soft_attack = 0.1
+					hard_attack = 0.05
+				}
 			}
 		}
 		churchillgrad = {
@@ -1114,6 +1128,11 @@ ideas = {
 					hard_attack = 0.1
 					ap_attack = 0.15
 				}
+				medium_tank_flame_chassis = {
+					build_cost_ic = -0.05
+					soft_attack = 0.05
+					hard_attack = 0.05
+				}
 			}
 		}
 		massachusetts_design_bureau = {
@@ -1146,6 +1165,9 @@ ideas = {
 					build_cost_ic = -0.1
 				}
 				medium_tank_destroyer_chassis = {
+					build_cost_ic = -0.1
+				}
+				medium_tank_flame_chassis = {
 					build_cost_ic = -0.1
 				}
 			}
@@ -1194,6 +1216,12 @@ ideas = {
 					hardness = 0.1
 					hard_attack = 0.2
 					ap_attack = 0.2
+				}
+				medium_tank_flame_chassis = {
+					build_cost_ic = 0.05
+					hardness = 0.1
+					soft_attack = 0.1
+					hard_attack = 0.1
 				}
 			}
 		}

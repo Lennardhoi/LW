@@ -178,8 +178,8 @@ ideas = {
 			}
 			equipment_bonus = {
 			small_plane_cas_airframe = {
-					build_cost_ic = -0.075 instant=yes
-					air_defence = 0.07 instant=yes
+					build_cost_ic = -0.1 instant=yes
+					air_defence = 0.1 instant=yes
 				}
 			}
 		}
@@ -786,7 +786,9 @@ ideas = {
 			}
 			removal_cost = -1
 			picture = German_Engineering
-			modifier={research_speed_factor = 0.25
+			modifier={
+				research_speed_factor = 0.25
+				industrial_capacity_factory = 0.1
 			}
 			#equipment_bonus = {			
 				#armor = {
@@ -1000,6 +1002,13 @@ ideas = {
 					air_attack = 0.3
 					build_cost_ic = 0.15
 				}
+				medium_tank_flame_chassis = {
+					reliability = 0.1
+					defense = 0.25
+					hard_attack = 0.2
+					soft_attack = 0.2
+					build_cost_ic = 0.15
+				}				
 			}
 			ai_will_do = {
 				factor = 1
@@ -1057,6 +1066,12 @@ ideas = {
 					maximum_speed = 0.1
 					build_cost_ic = 0.1
 				}
+				medium_tank_flame_chassis = {
+					reliability = 0.1
+					maximum_speed = 0.1
+					hard_attack = 0.25
+					build_cost_ic = 0.05
+				}
 			}
 			ai_will_do = {
 				factor = 1
@@ -1093,6 +1108,9 @@ ideas = {
 				medium_tank_destroyer_chassis = {
 					hard_attack = 0.1 ap_attack = 0.05 reliability = 0.05 hardness = -0.05 build_cost_ic = -0.025
 				}
+				medium_tank_flame_chassis = {
+					hard_attack = 0.1 soft_attack = 0.1  reliability = 0.05 hardness = -0.05 build_cost_ic = -0.025
+				}
 			}
 			ai_will_do = {
 				factor = 1
@@ -1127,6 +1145,9 @@ ideas = {
 					build_cost_ic = -0.075 reliability = 0.10 soft_attack =0.05 hard_attack= 0.05 armor_value = 0.05
 				}
 				super_heavy_tank_chassis = {
+					build_cost_ic = -0.075 reliability = 0.1 soft_attack =0.05 hard_attack= 0.05 armor_value = 0.05
+				}
+				heavy_tank_flame_chassis = {
 					build_cost_ic = -0.075 reliability = 0.1 soft_attack =0.05 hard_attack= 0.05 armor_value = 0.05
 				}
 			}
@@ -1176,6 +1197,14 @@ ideas = {
 				reliability = 0.1
 				build_cost_ic = 0.2
 				}
+				heavy_tank_flame_chassis = {
+					armor_value = 0.05
+					hard_attack = 0.2
+					soft_attack = 0.2
+					reliability = -0.05
+					build_cost_ic = 0.20
+					hardness= 0.05
+				}
 			}
 		}
 		Alkett = {
@@ -1202,7 +1231,6 @@ ideas = {
 				light_tank_chassis = {
 					build_cost_ic = -0.05
 					soft_attack = 0.1
-
 				}
 				light_tank_destroyer_chassis = {
 					build_cost_ic = -0.05
@@ -1218,6 +1246,10 @@ ideas = {
 				light_tank_aa_chassis = {
 					air_attack = 0.1
 					maximum_speed = 0.05
+				}
+				light_tank_flame_chassis = {
+					build_cost_ic = -0.05
+					soft_attack = 0.1
 				}
 			}
 		}	
@@ -1250,6 +1282,9 @@ ideas = {
 					build_cost_ic = -0.12 reliability = 0.05
 				}
 				light_tank_artillery_chassis = {
+					build_cost_ic = -0.12 reliability = 0.05
+				}
+				light_tank_flame_chassis = {
 					build_cost_ic = -0.12 reliability = 0.05
 				}
 			}
