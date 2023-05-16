@@ -2346,12 +2346,12 @@ focus_tree = {
  		cost = 5
  		available = {
  			Date > 1942.1.1
- 			has_full_control_of_state = 180
- 			has_full_control_of_state = 178
- 			has_full_control_of_state = 47
- 			has_full_control_of_state = 179
- 			GER={has_full_control_of_state = 715}
- 			GER={has_full_control_of_state = 175}
+			180 = { is_controlled_by_ROOT_or_ally = yes}
+			178 = { is_controlled_by_ROOT_or_ally = yes}
+			47 = { is_controlled_by_ROOT_or_ally = yes}
+			179 = { is_controlled_by_ROOT_or_ally = yes}
+			715 = { is_controlled_by_ROOT_or_ally = yes}
+			175 = { is_controlled_by_ROOT_or_ally = yes}
  		}
  		x = 1
  		y = 1
@@ -2366,8 +2366,12 @@ focus_tree = {
  			add_state_core = 179
  			add_state_core = 715
  			add_state_core = 175
-			transfer_state = 175
-			transfer_state = 715
+ 			transfer_state = 180
+ 			transfer_state = 178
+ 			transfer_state = 47
+ 			transfer_state = 179
+ 			transfer_state = 715
+ 			transfer_state = 175
 			
  		}
  	}

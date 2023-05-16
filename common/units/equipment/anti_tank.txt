@@ -35,14 +35,14 @@ equipments = {
      		archetype = anti_tank_equipment
      		priority = 90
      		visual_level = 0
-		upgrades = {
-     			at1_upgrade
-		}
+		#upgrades = {
+     		#	at1_upgrade
+		#}
      	}
      	anti_tank_equipment_2 = {
      		year = 1940
      		archetype = anti_tank_equipment
-     		#parent = anti_tank_equipment_1
+     		parent = anti_tank_equipment_1
      		priority = 90
      		visual_level = 1
      		soft_attack = 8
@@ -54,14 +54,14 @@ equipments = {
      			tungsten = 10
      			steel = 20
      		}
-		upgrades = {
-     			at2_upgrade
-		}
+		#upgrades = {
+     		#	at2_upgrade
+		#}
      	}
      	anti_tank_equipment_3 = {
      		year = 1943
      		archetype = anti_tank_equipment
-     		#parent = anti_tank_equipment_2
+     		parent = anti_tank_equipment_2
      		priority = 90
      		visual_level = 2
      		soft_attack = 10

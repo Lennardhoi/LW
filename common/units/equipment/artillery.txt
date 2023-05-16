@@ -36,14 +36,14 @@ equipments = {
      		archetype = artillery_equipment
      		priority = 50
      		visual_level = 0
-		upgrades = {
-     			arty1_upgrade
-		}
+		#upgrades = {
+     		#	arty1_upgrade
+		#}
      	}
      	artillery_equipment_2 = {
      		year = 1939
      		archetype = artillery_equipment
-     		#parent = artillery_equipment_1
+     		parent = artillery_equipment_1
      		priority = 50
      		visual_level = 1
      		defense = 12
@@ -57,14 +57,14 @@ equipments = {
      			tungsten = 10
      			steel = 20
      		}
-		upgrades = {
-     			arty2_upgrade
-		}
+		#upgrades = {
+     		#	arty2_upgrade
+		#}
      	}
      	artillery_equipment_3 = {
      		year = 1942
      		archetype = artillery_equipment
-     		#parent = artillery_equipment_2
+     		parent = artillery_equipment_2
      		priority = 50
      		visual_level = 2
      		ap_attack = 16

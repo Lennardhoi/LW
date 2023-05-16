@@ -34,13 +34,13 @@ equipments = {
      		archetype = anti_air_equipment
      		priority = 80
      		visual_level = 0
-		upgrades = {
-     			aa1_upgrade
-		}
+		#upgrades = {
+     		#	aa1_upgrade
+		#}
      	}
      	anti_air_equipment_2 = {
      		year = 1940
-     		#parent = anti_air_equipment_1
+     		parent = anti_air_equipment_1
      		archetype = anti_air_equipment
      		priority = 80
      		visual_level = 1
@@ -53,13 +53,13 @@ equipments = {
      		resources = {
      			steel = 20
      		}
-		upgrades = {
-     			aa2_upgrade
-		}
+		#upgrades = {
+     		#	aa2_upgrade
+		#}
      	}
      	anti_air_equipment_3 = {
      		year = 1943
-     		#parent = anti_air_equipment_2
+     		parent = anti_air_equipment_2
      		archetype = anti_air_equipment
      		priority = 80
      		visual_level = 2

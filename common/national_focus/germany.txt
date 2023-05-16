@@ -1605,10 +1605,9 @@ focus_tree = {
  		available_if_capitulated = yes
  		search_filters = { FOCUS_FILTER_RESEARCH }
  		completion_reward = {
-			swap_ideas = {
-				remove_idea = GER_german_engineering
-				add_idea = GER_rushed_panther
-			}
+			
+				add_ideas = GER_rushed_panther
+			
  		}
  	}	
  	focus = {
@@ -1812,7 +1811,7 @@ focus_tree = {
  		x = 0
  		y = 1
  		relative_position_id = GER_german_war_economy
- 		cost = 5
+ 		cost = 10
  		ai_will_do = {
  			factor = 12
  		}
@@ -1833,7 +1832,7 @@ focus_tree = {
  		x = -2
  		y = 1
  		relative_position_id = GER_summon_fritz_todt
- 		cost = 5
+ 		cost = 10
  		ai_will_do = {
  			factor = 1
  		}
@@ -3805,7 +3804,7 @@ focus_tree = {
  		id = GER_alta
  		icon = GFX_goal_generic_SS_focus
  		prerequisite = { focus = GER_around_maginot }
- 		available = {date > 1939.12.01}
+ 		available = {date > 1940.1.01}
  		bypass = {
  			NOT = {FRA = {has_full_control_of_state =16}}
  		}
@@ -3820,7 +3819,7 @@ focus_tree = {
  		completion_reward = {
  			add_timed_idea = {
  				idea = GER_fall_rot
- 				days = 10
+ 				days = 30
  			}
  		}
  	}
