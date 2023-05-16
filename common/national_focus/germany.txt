@@ -1812,7 +1812,7 @@ focus_tree = {
  		x = 0
  		y = 1
  		relative_position_id = GER_german_war_economy
- 		cost = 10
+ 		cost = 5
  		ai_will_do = {
  			factor = 12
  		}
@@ -2583,7 +2583,7 @@ focus_tree = {
  		relative_position_id = GER_summon_fritz_todt
  		x = 2
  		y = 1
- 		cost = 5
+ 		cost = 10
  		ai_will_do = {
  			factor = 1
  		}
@@ -3805,7 +3805,7 @@ focus_tree = {
  		id = GER_alta
  		icon = GFX_goal_generic_SS_focus
  		prerequisite = { focus = GER_around_maginot }
- 		available = {date > 1940.01.01}
+ 		available = {date > 1939.12.01}
  		bypass = {
  			NOT = {FRA = {has_full_control_of_state =16}}
  		}
@@ -3820,7 +3820,7 @@ focus_tree = {
  		completion_reward = {
  			add_timed_idea = {
  				idea = GER_fall_rot
- 				days = 30
+ 				days = 10
  			}
  		}
  	}
