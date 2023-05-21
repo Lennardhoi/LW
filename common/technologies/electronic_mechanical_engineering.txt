@@ -987,7 +987,7 @@ technologies = {
 		categories = {
 			year_1943
 		}
-		research_cost = 4
+		research_cost = 5
 		folder = {
 			name = electronics_folder
 			position = { x = 0 y = 2 }
@@ -1013,10 +1013,13 @@ technologies = {
 	}
 	nukes = {
 		start_year = 1945
-		research_cost = 5
+		research_cost = 6
 		folder = {
 			name = electronics_folder
 			position = { x = 0 y = 6 }
+		}
+		categories = {
+			year_1943
 		}
 		ai_will_do = {
 			factor = 10
