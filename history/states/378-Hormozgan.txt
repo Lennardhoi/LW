@@ -1,23 +1,29 @@
-state={
- 	id=378
- 	name="STATE_411"
- 	manpower = 885272
- 	resources={
- 		oil = 00
- 	}
- 	state_category = rural
- 	history={
- 		owner = PER
- 		buildings = {
- 			infrastructure = 2
- 		}
- 		victory_points = {
- 			1907 1
- 		}
- 		add_core_of = PER
- 	}
- 	provinces={
- 		1857 1907 4589 4621 4632 4696 7404 7434 9909 11544 11563
- 	}
- }
 
+state={
+	id=378
+	name="STATE_411"
+	resources={
+		oil=0.000
+	}
+
+	history={
+		owner = PER
+		buildings = {
+			infrastructure = 2
+
+		}
+		victory_points = {
+			1907 1 
+		}
+		add_core_of = PER
+
+	}
+
+	provinces={
+		1857 4621 4632 7404 7434 9909 11563 
+	}
+	manpower=885272
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

@@ -1,20 +1,26 @@
-state={
- 	id=383
- 	name="STATE_417"
- 	manpower = 3446250
- 	state_category = town
- 	history={
- 		owner = PER
- 		buildings = {
- 			infrastructure = 4
- 			arms_factory = 1
- 			industrial_complex = 2
- 			air_base = 3
- 		}
- 		add_core_of = PER
- 	}
- 	provinces={
- 		1873 1940 4603 7357 7410 7472 9024 9671 9915 9967
- 	}
- }
 
+state={
+	id=383
+	name="STATE_417"
+
+	history={
+		owner = PER
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 2
+			air_base = 3
+
+		}
+		add_core_of = PER
+
+	}
+
+	provinces={
+		1873 1940 4298 4603 4696 7357 7410 7472 9024 9671 9915 9967 
+	}
+	manpower=3446250
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

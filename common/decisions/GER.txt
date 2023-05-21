@@ -476,6 +476,11 @@ operations = {
  				}	
  			add_ideas = GER_africa_hp
  			set_technology = { africa_hp = 1 popup = no }
+				every_state = {
+					limit= {OR = {state =581 state =413 }}
+			
+					add_dynamic_modifier = { modifier = ITA_noob days = 180 }
+				}
  				ENG = { add_to_faction = POL }
  				declare_war_on = {
  					target = POL

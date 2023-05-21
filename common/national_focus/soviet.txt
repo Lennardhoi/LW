@@ -451,6 +451,12 @@ focus_tree = {
 			
 					add_dynamic_modifier = { modifier = SOV_noob days=SOV.buff_days  }
 				}
+
+				every_owned_state = {
+					limit= {OR = {state = 373 state = 374 state =244 state =572 state =242 state =367 state =364}}
+			
+					add_dynamic_modifier = { modifier = SOV_kazan_line}
+				}
 				188 = {add_dynamic_modifier = { modifier = SOV_noob days=SOV.buff_days2  }}	
 			}
 		}

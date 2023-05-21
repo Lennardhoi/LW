@@ -561,7 +561,13 @@ THIS_call_all_allies_against_ROOT = {
 		}
 	}
 }
-
+update_sov_major_city_status = {
+SOV={
+set_variable={major_city_status=0}
+if = {limit={controls_state=212} add_to_variable={major_city_status=5}  }
+if = {limit={controls_state=188} add_to_variable={major_city_status=5}  }
+if = {limit={controls_state=210} add_to_variable={major_city_status=5}  }
+}}
 update_academy_weekly ={
 every_country = {
 					limit={is_playable_country =yes } 

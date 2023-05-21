@@ -30,6 +30,16 @@ SOV_noob = {
 	max_dig_in = 7.5
 	dig_in_speed_factor = 1
 }
+SOV_kazan_line = {
+	max_dig_in = SOV.major_city_status
+
+}
+ITA_noob = {
+	max_dig_in = 7.5
+	dig_in_speed_factor = 1
+	local_supplies_for_controller= 10		
+
+}
 pacific_war = {
 	icon = "GFX_idea_SPR_disbanded_army"
 	industrial_capacity_factory = pacific_status
