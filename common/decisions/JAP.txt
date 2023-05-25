@@ -1,4 +1,43 @@
 foreign_politics = {
+	support_man_cancel = {
+ 		icon = generic_industry
+ 		allowed = {
+ 			is_playable_country =yes
+ 		}
+ 		available = {
+			
+ 		}
+ 		visible = {
+ 			has_decision = support_man
+ 		}
+ 		fire_only_once = no
+ 		cost = 0
+ 		complete_effect = {
+			remove_decision = support_canada	
+ 			MAN={remove_ideas =JAP_support_man_idea}
+ 		}
+ 	}
+ 	support_man = {
+ 		icon = generic_industry
+ 		allowed = {
+ 			is_playable_country =yes
+ 		}
+ 		visible = {
+ 			always = yes
+ 		}
+		available = {
+		date>1938.1.1	
+ 		}
+ 		fire_only_once = no
+ 		modifier = {
+ 			military_factory_donations = -10
+ 		}
+ 		days_remove = -1
+ 		cost = 0
+ 		complete_effect = {
+			MAN={add_ideas =JAP_support_man_idea}
+ 		}
+ 	}
  	JAP_permit_man = {
  		icon = generic_operation
  		allowed = {

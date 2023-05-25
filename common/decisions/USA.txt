@@ -439,6 +439,149 @@ war_measures = {
  		}
  	}
  }
+USA_support_allies = {
+ 	support_canada_cancel = {
+ 		icon = generic_industry
+ 		allowed = {
+ 			is_playable_country =yes
+ 		}
+ 		available = {
+ 		}
+ 		visible = {
+ 			has_decision = support_canada
+ 		}
+ 		fire_only_once = no
+ 		cost = 0
+ 		complete_effect = {
+			remove_decision = support_canada	
+ 			CAN={remove_ideas =USA_support_canada_idea}
+ 		}
+ 	}
+ 	support_canada = {
+ 		icon = generic_industry
+ 		allowed = {
+ 			is_playable_country =yes
+ 		}
+ 		visible = {
+ 			always = yes
+ 		}
+ 		fire_only_once = no
+ 		modifier = {
+ 			military_factory_donations = -10
+ 		}
+ 		days_remove = -1
+ 		cost = 0
+ 		complete_effect = {
+			CAN={add_ideas =USA_support_canada_idea}
+ 		}
+ 	}
+ 	support_eng_cancel = {
+ 		icon = generic_industry
+ 		allowed = {
+ 			is_playable_country =yes
+ 		}
+ 		available = {
+ 		}
+ 		visible = {
+ 			has_decision = support_eng
+ 		}
+ 		fire_only_once = no
+ 		cost = 0
+ 		complete_effect = {
+			remove_decision = support_eng	
+ 			ENG={remove_ideas =USA_support_eng_idea}
+ 		}
+ 	}
+ 	support_eng = {
+ 		icon = generic_industry
+ 		allowed = {
+ 			is_playable_country =yes
+ 		}
+ 		visible = {
+ 			always = yes
+ 		}
+ 		fire_only_once = no
+ 		modifier = {
+ 			industrial_factory_donations = -10
+ 		}
+ 		days_remove = -1
+ 		cost = 0
+ 		complete_effect = {
+			ENG={add_ideas =USA_support_eng_idea}
+ 		}
+ 	}
+	support_saf_cancel = {
+ 		icon = generic_industry
+ 		allowed = {
+ 			is_playable_country =yes
+ 		}
+ 		available = {
+ 		}
+ 		visible = {
+ 			has_decision = support_saf
+ 		}
+ 		fire_only_once = no
+ 		cost = 0
+ 		complete_effect = {
+			remove_decision = support_saf	
+ 			SAF={remove_ideas =USA_support_saf_idea}
+ 		}
+ 	}
+ 	support_saf = {
+ 		icon = generic_industry
+ 		allowed = {
+ 			is_playable_country =yes
+ 		}
+ 		visible = {
+ 			always = yes
+ 		}
+ 		fire_only_once = no
+ 		modifier = {
+ 			military_factory_donations = -5
+ 		}
+ 		days_remove = -1
+ 		cost = 0
+ 		complete_effect = {
+			SAF={add_ideas =USA_support_saf_idea}
+ 		}
+ 	}
+	support_raj_cancel = {
+ 		icon = generic_industry
+ 		allowed = {
+ 			is_playable_country =yes
+ 		}
+ 		available = {
+ 		}
+ 		visible = {
+ 			has_decision = support_raj
+ 		}
+ 		fire_only_once = no
+ 		cost = 0
+ 		complete_effect = {
+			remove_decision = support_raj	
+ 			RAJ={remove_ideas =USA_support_raj_idea}
+ 		}
+ 	}
+ 	support_raj = {
+ 		icon = generic_industry
+ 		allowed = {
+ 			is_playable_country =yes
+ 		}
+ 		visible = {
+ 			always = yes
+ 		}
+ 		fire_only_once = no
+ 		modifier = {
+ 			military_factory_donations = -10
+ 		}
+ 		days_remove = -1
+ 		cost = 0
+ 		complete_effect = {
+			RAJ={add_ideas =USA_support_raj_idea}
+ 		}
+ 	}
+}
+
  USA_war_plans = {
  	USA_execute_war_plan_silver = {
  		icon = generic_operation

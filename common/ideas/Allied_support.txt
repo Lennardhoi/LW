@@ -1,0 +1,79 @@
+ideas = {
+	country = {
+			JAP_support_man_idea = {
+			picture = HUN_treaty_of_triannon
+			removal_cost = -1
+			allowed = {
+				original_tag = MAN
+			}
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			modifier = {
+				military_factory_donations = 10
+			}
+		}
+			USA_support_canada_idea = {
+			picture = HUN_treaty_of_triannon
+			removal_cost = -1
+			allowed = {
+				original_tag = CAN
+			}
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			modifier = {
+				military_factory_donations = 8
+			}
+		}
+			USA_support_saf_idea = {
+			picture = HUN_treaty_of_triannon
+			removal_cost = -1
+			allowed = {
+				original_tag = SAF
+			}
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			modifier = {
+				military_factory_donations = 4
+			}
+		}
+			USA_support_raj_idea = {
+			picture = HUN_treaty_of_triannon
+			removal_cost = -1
+			allowed = {
+				original_tag =RAJ
+			}
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			modifier = {
+				military_factory_donations = 8
+			}
+		}
+			USA_support_eng_idea = {
+			picture = HUN_treaty_of_triannon
+			removal_cost = -1
+			allowed = {
+				original_tag =ENG
+			}
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			modifier = {
+				industrial_factory_donations =10
+			}
+		}
+	}
+}
