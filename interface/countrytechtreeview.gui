@@ -1746,7 +1746,20 @@ guiTypes = {
 				spriteType = "GFX_naval_techtree_bg"
 				position = { x=0 y=0 }
 			}
-
+				
+				instantTextBoxType = {
+					name = "navy_subtitle_medium_research_lock"
+					position = { x = 1130 y = 50 }
+					textureFile = ""
+					font = "hoi_36header"
+					borderSize = {x = 0 y = 4}
+					text = "Locked behind 1940"
+					maxWidth = 800
+					maxHeight = 62
+					format = center
+					Orientation = "UPPER_LEFT"
+					horizontal=yes
+				}
 				instantTextBoxType = {
 					name = "naval_year1"
 					position = { x = 224 y = 20 }
@@ -1792,7 +1805,7 @@ guiTypes = {
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
-					text = "1944"
+					text = "1942"
 					maxWidth = 170
 					maxHeight = 32
 					format = left
@@ -2450,6 +2463,30 @@ guiTypes = {
 					format = center
 					Orientation = "UPPER_LEFT"
 				}	
+				instantTextBoxType = {
+					name = "plane_subtitle_medium2_research_lock"
+					position = { x = 1335 y = 530 }
+					textureFile = ""
+					font = "hoi_36header"
+					borderSize = {x = 0 y = 4}
+					text = "------June 1941 ------"
+					maxWidth = 800
+					maxHeight = 62
+					format = center
+					Orientation = "UPPER_LEFT"
+				}	
+				instantTextBoxType = {
+					name = "plane_subtitle_medium3_research_lock"
+					position = { x = 835 y = 530 }
+					textureFile = ""
+					font = "hoi_36header"
+					borderSize = {x = 0 y = 4}
+					text = "January------------1941      "
+					maxWidth = 800
+					maxHeight = 62
+					format = center
+					Orientation = "UPPER_LEFT"
+				}
 			instantTextBoxType = {
 				name = "airtech_year2"
 				position = { x = 30 y = 180 }
