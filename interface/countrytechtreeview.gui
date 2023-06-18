@@ -1107,7 +1107,28 @@ guiTypes = {
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
-
+			
+			gridboxtype = {
+				name = "Joker_tree"
+				
+				position = { x = 35% y = 172 }
+				size = { width =72 height = 650 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+			
+				instantTextBoxType = {
+					name = "armor_subtitle_construction2"
+					position = { x = 1202 y = 135  }
+					textureFile = ""
+					font = "hoi_22tech"
+					borderSize = {x = 0 y = 4}
+					text = "MR JUGGLE"
+					maxWidth = 250
+					maxHeight = 62
+					format = center
+					Orientation = "UPPER_LEFT"
+				}
 			gridboxtype = {
 				name = "armor_tech_1_tree"
 				position = { x = 35% y = 137 }
@@ -3048,7 +3069,7 @@ guiTypes = {
 				}
 				instantTextBoxType = {
 					name = "industry_subtitle_construction2"
-					position = { x = 871 y = 135  }
+					position = { x = 876 y = 135  }
 					textureFile = ""
 					font = "hoi_22tech"
 					borderSize = {x = 0 y = 4}
@@ -3096,6 +3117,13 @@ guiTypes = {
 				format = "UP"
 			}
 
+			gridboxtype = {
+				name = "Lucifer_tree"
+				position = { x = 1245 y = 172 }
+				size = { width =72 height = 650 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
 			gridboxtype = {
 				name = "construction1_tree"
 				position = { x = 894 y = 312 }
@@ -4138,7 +4166,7 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "mtgnavalfolder_tab"
-				position = { x = 497 y = 0 }
+				position = { x = 517 y = 0 }
 				quadTextureSprite = "GFX_naval_folder_tab"
 				frame = 1
 				clicksound = ui_research_tab_naval
@@ -4146,7 +4174,7 @@ guiTypes = {
 
 			buttonType = {
 				name = "naval_doctrine_folder_tab"
-				position = { x = 586 y = 0 }
+				position = { x = 606 y = 0 }
 				quadTextureSprite = "GFX_naval_doctrine_folder_tab"
 				frame = 1
 				clicksound = ui_research_tab_naval
@@ -4160,7 +4188,7 @@ guiTypes = {
 			}
 			buttonType = {
 				name = "bba_air_techs_folder_tab"
-				position = { x = 745 y = 0 }
+				position = { x = 735 y = 0 }
 				quadTextureSprite = "GFX_air_techs_folder_tab"
 				frame = 1
 				clicksound = ui_research_tab_air

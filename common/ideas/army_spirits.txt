@@ -48,7 +48,7 @@ ideas = {
 		bold_attack_spirit = {
 			ledger = army
 			modifier = {
-				attrition=-0.2
+				attrition=-0.25
 			}
 			ai_will_do = {
 				factor = 1
@@ -139,7 +139,7 @@ ideas = {
 		victory_or_death_spirit = {
 			ledger = army
 			modifier = {
-				pocket_penalty=-0.1
+				pocket_penalty=-0.15
 			}
 			ai_will_do = {
 				factor = 0
@@ -349,8 +349,8 @@ ideas = {
 		state_serves_the_military_spirit = {
 			ledger = army
 			modifier = {
-				stability_weekly = 0.001
-				war_support_weekly = 0.001
+				stability_weekly = 0.002
+				war_support_weekly = 0.002
 			}
 			ai_will_do = {
 				base = 0
@@ -558,7 +558,7 @@ ideas = {
 		maneuver_warfare_spirit = {
 			modifier = {
 				planning_speed = 0.5
-				army_speed_factor = 0.05
+				army_speed_factor = 0.075
 			}	
 			ai_will_do = {
 				
@@ -571,7 +571,7 @@ ideas = {
 		smoke_and_fire_spirit = {
 			ledger = army
 			modifier = {
-				army_attack_factor=0.03
+				army_attack_factor=0.04
 			}
 			ai_will_do = {
 				base = 0
