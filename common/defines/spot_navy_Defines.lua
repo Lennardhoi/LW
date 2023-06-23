@@ -128,8 +128,9 @@ NDefines.NNavy.MISSION_SUPREMACY_RATIOS = { -- supremacy multipliers for differe
 	}
 NDefines.NNavy.CONVOY_DEFENSE_MAX_CONVOY_TO_SHIP_RATIO = 20.0		-- each ship in convoy defense mission can at most cover this many convoys without losing efficiency
 NDefines.NNavy.CONVOY_ROUTE_SIZE_CONVOY_SCALE = 0.4     -- scales impact of convoy route size (0 to turn off)
-NDefines.NNavy.SUPREMACY_PER_SHIP_PER_MANPOWER = 0.07						-- supremacy of a ship is calculated using its IC, manpower and a base define
-NDefines.NNavy.SUPREMACY_PER_SHIP_BASE = 15.0
+NDefines.NNavy.SUPREMACY_PER_SHIP_PER_MANPOWER = 0.15						-- supremacy of a ship is calculated using its IC, manpower and a base define
+NDefines.NNavy.SUPREMACY_PER_SHIP_BASE = 0
+NDefines.NNavy.SUPREMACY_PER_SHIP_PER_IC = 0
 NDefines.NNavy.SUPPLY_NEED_FACTOR = 0.01
 NDefines.NMilitary.SHIP_MORALE_TO_ORG_REGAIN_BASE = 0.3 --vanilla 0.2
 ---Air
