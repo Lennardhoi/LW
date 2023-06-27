@@ -165,6 +165,20 @@ on_actions = {
 						target = JAP
 						transfer_troops = no
 					}
+					if = { limit={MAN={exists=yes}}
+					annex_country = {
+						target = MAN
+						transfer_troops = no
+					}
+					
+					}
+					if = { limit={SIA={exists=yes}}
+					annex_country = {
+						target = SIA
+						transfer_troops = no
+					}
+					
+					}
 					
 				}
 			}
