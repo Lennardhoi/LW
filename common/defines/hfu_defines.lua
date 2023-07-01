@@ -305,6 +305,7 @@ NDefines.NTechnology.DEFAULT_XP_BOOST_RESEARCH_COST = 0				-- default xp cost of
 NDefines.NTechnology.DEFAULT_XP_BOOST_RESEARCH_BONUS = 0			-- default boost research bonus gained when xp is used to research an item
 --generals
 NDefines.NMilitary.UNIT_LEADER_ASSIGN_TRAIT_COST = 0.1
+NDefines.NMilitary.EQUIPMENT_COMBAT_LOSS_FACTOR = 0.8
 NDefines.NMilitary.COMMANDER_LEVEL_UP_STAT_COUNT = 0
 NDefines.NMilitary.FIELD_MARSHAL_XP_RATIO = 0
 NDefines.NMilitary.UNIT_LEADER_INITIAL_TRAIT_SLOT={1, 1, 1, 0}

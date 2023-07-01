@@ -1,0 +1,89 @@
+﻿capital = 276
+set_stability = 0.4
+set_war_support = 0.4
+
+set_research_slots = 3
+oob = "SIA_1936"
+if = {
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "SIA_1936_naval_mtg"
+	else = {
+		set_naval_oob = "SIA_1936_naval_legacy"
+	}
+}
+recruit_character = SIA_phraya_phahon
+recruit_character = SIA_prawat_chumsai
+recruit_character = SIA_greg
+recruit_character = SIA_chulalongkorn_phonphayuhasena
+recruit_character = SIA_plaek_chichalerm
+recruit_character = SIA_nangklao_saovabha
+recruit_character = SIA_army_commando
+recruit_character = SIA_army_logistics
+recruit_character = SIA_songsuradet
+recruit_character = SIA_commerce_raiding
+recruit_character = SIA_air_superiority
+recruit_character = SIA_chief_drill
+recruit_character = SIA_vajiravudh_chichalerm
+recruit_character = SIA_seni_pramoja
+recruit_character = SIA_vaino_valve
+recruit_character = SIA_akseli_anttila
+recruit_character = SIA_chief_defensive
+recruit_character = SIA_ground_support
+recruit_character = SIA_decisive_battle
+recruit_character = SIA_all_weather
+recruit_character = SIA_wichit_wichitwathakarn
+recruit_character = SIA_army_regrouping
+set_technology = {
+	airfield_allowed = 1
+	naval_base_allowed = 1
+	#desertinfantry_at = 1
+	#shocktroops = 1
+	#jungletroops = 1
+	basic_train = 1
+	armor_tech_1 = 1
+	engine_tech_1 = 1
+	jaegers = 1
+	tech_mountaineers = 1
+	marines = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	tech_support = 1
+	tech_engineers = 1
+	motorised_infantry = 1
+	fuel_silos = 1
+	#early_fighter = 1
+	gw_artillery = 1
+	gwtank_chassis = 1
+	mtg_transport = 1
+	interwar_antitank = 1
+	interwar_antiair = 1
+	tech_recon = 1
+}
+add_ideas = peace_training
+set_rule = {can_be_spymaster = no}
+set_variable = {
+	var = min_fuel
+	value = 0.800
+}
+add_ideas = MAN_faction_trade
+set_convoys = 100
+add_equipment_to_stockpile = {
+	type = train_equipment
+	amount = 20
+	producer = MAN
+}
+add_equipment_to_stockpile = {
+	type = infantry_equipment_0
+	amount = 6000
+	producer = MAN
+}
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	fascism = 20
+	neutrality = 80
+}

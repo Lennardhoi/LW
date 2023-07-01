@@ -2575,14 +2575,14 @@ focus_tree = {
  		search_filters = { FOCUS_FILTER_INDUSTRY }
  		completion_reward = {
  			275 = {
- 				add_manpower = -1000000
+ 				#add_manpower = -1000000
  				add_state_modifier = {
  					modifier = {
  						state_production_speed_buildings_factor = 0.75
  					}
  				}
  			}
- 			561 = { add_manpower = -1000000
+ 			561 = { #add_manpower = -1000000
  				add_state_modifier = {
  					modifier = {
  						state_production_speed_buildings_factor = 0.75
@@ -2613,8 +2613,8 @@ focus_tree = {
  		search_filters = { FOCUS_FILTER_INDUSTRY }
  		completion_reward = {
  			update_pacific_war = yes
- 			452 = { add_manpower = -100000}
- 			454 = { add_manpower = -100000}
+ 			#452 = { add_manpower = -100000}
+ 			#454 = { add_manpower = -100000}
  			custom_effect_tooltip = JAP_korean_guest_workers_tt
  		}
  	}

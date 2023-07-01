@@ -21,6 +21,27 @@ technologies = {
 			}
 		}
 	}
+		mountain_warfare = {
+
+		research_cost = 1
+
+		# only from focus!
+		allow = {
+			always = no
+		}
+
+
+		#If you change these
+		#Change the custom tooltip too: GRE_mountain_training_effect
+		category_light_infantry = {
+			mountain = {
+				defence = 0.05
+				movement = 0.05
+			}
+		}
+		
+
+	}
 	static_warfare_tech={
 		research_cost = 1
 		allow = {

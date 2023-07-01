@@ -349,6 +349,21 @@ capital = 270
  		}
  	}
  }
+ if = {
+ 	limit = {
+ 		has_dlc = "Together for Victory"
+ 	}
+ 	set_autonomy = {
+ 		target = SIA
+ 		autonomous_state = autonomy_puppet
+ 	}
+ 	else = {
+ 	set_autonomy = {
+ 			target = SIA
+ 			autonomous_state = autonomy_puppet
+ 		}
+ 	}
+ }
  set_politics = {
  	ruling_party = fascism
  	last_election = "1936.1.1"

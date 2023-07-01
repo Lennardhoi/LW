@@ -1,0 +1,218 @@
+ideas = {
+
+	country = {
+
+        SIA_golden_era = {
+
+			picture = SPR_seize_the_gold_reserves
+
+			removal_cost = -1
+
+			allowed = {
+				original_tag = SIA
+                always = yes
+			}
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+                local_resources_factor = 0.1
+			}
+		}
+
+        SIA_king_loyalty = {
+
+			picture = generic_manpower_bonus
+
+			removal_cost = -1
+
+			allowed = {
+				original_tag = SIA
+                always = yes
+			}
+			
+			modifier = {
+				conscription = 0.02
+			}
+		}
+
+        SIA_monarchy_funds = {
+
+            picture = generic_goods_red_bonus
+            
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = SIA
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+
+
+        SIA_administrative_reform = {
+
+			picture = generic_flexible_foreign_policy
+
+			removal_cost = -1
+
+			allowed = {
+				original_tag = SIA
+                always = yes
+			}
+			
+			modifier = {
+				political_advisor_cost_factor = -0.25
+                trade_laws_cost_factor = -0.25
+                mobilization_laws_cost_factor = -0.25
+                economy_cost_factor = -0.25
+                high_command_cost_factor = -0.25
+                air_chief_cost_factor = -0.25
+                army_chief_cost_factor = -0.25
+                navy_chief_cost_factor = -0.25
+			}
+		}
+
+        SIA_kingdom_restored = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = YUG_federal_defense_council
+			
+			modifier = {
+				army_core_defence_factor = 0.1		
+                army_core_attack_factor = 0.1			
+			}
+		}
+
+        SIA_new_era = {
+
+			picture = generic_production_bonus
+
+			removal_cost = -1
+
+			allowed = {
+				original_tag = SIA
+                always = yes
+			}
+			
+			modifier = {
+				industrial_capacity_factory = 0.1
+			}
+		}
+
+        SIA_absolute_loyalty = {
+
+			picture = generic_manpower_bonus
+
+			removal_cost = -1
+
+			allowed = {
+				original_tag = SIA
+                always = yes
+			}
+			
+			modifier = {
+				conscription = 0.01
+			}
+		}
+
+        SIA_culture_mandate = {
+            
+            picture = jap_supremacy_of_technology
+
+			removal_cost = -1
+
+			allowed = {
+				original_tag = SIA
+                always = yes
+			}
+			
+			modifier = {
+				research_speed_factor = 0.05
+			}
+        }
+
+        SIA_curb_civilians = {
+            picture = generic_goods_red_bonus
+
+			removal_cost = -1
+
+			allowed = {
+				original_tag = SIA
+                always = yes
+			}
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+        }
+
+        SAI_military_domimanant = {
+            picture = generic_army_war_college
+
+			removal_cost = -1
+
+			allowed = {
+				original_tag = SIA
+                always = yes
+			}
+			
+			modifier = {
+				political_power_gain = 0.25
+			}
+
+        }
+
+        SIA_thai_empire = {
+            picture = man_five_year_plan_industry
+
+			removal_cost = -1
+
+			allowed = {
+				original_tag = SIA
+                always = yes
+			}
+			
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+        }
+
+        SIA_militarism = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = man_militarism
+			
+			modifier = {
+				training_time_army_factor = 0.10
+				attrition = -0.1
+				supply_consumption_factor = -0.05
+				no_supply_grace = 10
+				experience_loss_factor = -0.05
+			}
+		}
+    }
+
+}
