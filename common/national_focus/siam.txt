@@ -495,8 +495,9 @@ focus_tree = {
 					instant_build = yes
 				}
 				add_building_construction = {
-					type = air_base
-					level = 4
+					type = coastal_bunker
+					level = 3
+					province = 6870
 					instant_build = yes
 				}
 			}
@@ -507,11 +508,12 @@ focus_tree = {
 					province = 9336
 					instant_build = yes
 				}
+				if={limit={air_base<9}
 				add_building_construction = {
 					type = air_base
 					level = 2
 					instant_build = yes
-				}
+				}}
 			}
 		}
 	}
@@ -891,6 +893,17 @@ focus_tree = {
 				uses = 2
 				category = industry
 			}
+			hidden_effect = {
+			RAJ={	
+			407={
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			}}
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -925,6 +938,17 @@ focus_tree = {
 
         search_filters = { FOCUS_FILTER_INDUSTRY }
         completion_reward = {
+			hidden_effect = {
+			RAJ={	
+			407={
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			}}
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
