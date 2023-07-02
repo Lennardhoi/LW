@@ -16,24 +16,62 @@ characters={
 		name="Prawat Chumsai"
 		portraits={
 			army={
-				small="gfx/interface/ideas/idea_asia_generic_land_4.dds"
+				small="gfx/interface/ideas/idea_asia_generic_land_1.dds"
 			}
 			army={
-				large="gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
+				large="gfx/leaders/Asia/Portrait_Asia_Generic_land_1.dds"
 			}
 		}
-		corps_commander={
-			traits={ infantry_leader }
-			skill=3
-			attack_skill=3
-			defense_skill=3
+		field_marshal={
+			traits={ JAP_samurai_lineage organizer trait_engineer panzer_leader }
+			skill=5
+			attack_skill=6
+			defense_skill=4
 			planning_skill=2
 			logistics_skill=4
 			legacy_id=-1
 		}
 	}
-	SIA_greg={
-		name="Greg"
+	SIA_luang_wichitwathakan={
+		#name="Luang Wichitwathakan"
+		portraits={
+			army={
+				large=GFX_portrait_SIK_chiang_yufen
+				small=GFX_portrait_SIK_chiang_yufen_small
+			}
+		}
+		field_marshal={
+			traits={ JAP_samurai_lineage organizer infantry_leader offensive_doctrine infantry_expert }
+			skill=4
+			attack_skill=6
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	SIA_phra_silpasakrakorn={
+		name="Phra Silpasakrakorn"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_asia_generic_land_3.dds"
+			}
+			army={
+				large="gfx/leaders/Asia/Portrait_Asia_Generic_land_3.dds"
+			}
+		}
+		corps_commander={
+			traits={ brilliant_strategist JAP_samurai_lineage infantry_leader trickster trait_engineer jungle_rat infantry_expert }
+			skill=6
+			attack_skill=5
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	SIA_luang_sinthusongkhramchai={
+		name="Luang Sinthusongkhramchai"
 		portraits={
 			army={
 				small="gfx/interface/ideas/idea_asia_generic_land_5.dds"
@@ -43,15 +81,56 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ cavalry_leader }
-			skill=2
-			attack_skill=2
-			defense_skill=2
-			planning_skill=1
-			logistics_skill=3
+			traits={ infantry_leader trait_engineer commando naval_invader jungle_rat }
+			skill=5
+			attack_skill=6
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=4
 			legacy_id=-1
 		}
 	}
+	SIA_thawon_thamrongnawasawat={
+		name="Thawon Thamrongnawasawat"
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_asia_generic_land_4.dds"
+			}
+			army={
+				large="gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
+			}
+		}
+		corps_commander={
+			traits={ brilliant_strategist infantry_leader trait_engineer trait_mountaineer hill_fighter }
+			skill=4
+			attack_skill=5
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	SIA_mom_rajawongse_seni_pramoj={
+		name="Mom Rajawongse Seni Pramoj"
+		portraits={
+			army={
+				small="GFX_portrait_chi_hu_zongnan_small"
+			}
+			army={
+				large="GFX_portrait_chi_hu_zongnan"
+			}
+		}
+		corps_commander={
+			traits={ trickster trait_engineer panzer_leader jungle_rat ranger }
+			skill=5
+			attack_skill=6
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	
 	SIA_chulalongkorn_phonphayuhasena={
 		name="Chulalongkorn Phonphayuhasena"
 		portraits={
@@ -102,11 +181,8 @@ characters={
 			allowed  = {
 				original_tag  = SIA
 			}
-			available  = {
-				has_completed_focus  = SIA_embrace_bushido 
-			}
 			traits  = {
-				army_commando_2 
+				army_commando_1 
 			}
 			cost = 100
 			ai_will_do  = {
@@ -120,6 +196,33 @@ characters={
 			}
 		}
 	}
+		SIA_tianliang_huntrakool={
+		advisor={
+			
+			
+			slot = high_command
+			idea_token = SIA_tianliang_huntrakool
+			ledger = army
+				allowed = {
+					original_tag = SIA
+				}
+				traits = {
+					army_armored_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1.000
+				}
+		}
+# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
+		name="Tianliang Huntrakool"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_3"
+			}
+		}
+	}
+
 	SIA_army_logistics={
 		advisor={
 			slot = high_command
@@ -151,10 +254,9 @@ characters={
 				original_tag  = SIA
 			}
 			available  = {
-				has_completed_focus  = SIA_promote_songsuradet 
 			}
 			traits  = {
-				army_chief_offensive_2 
+				army_chief_offensive_3 
 			}
 			cost = 100
 			ai_will_do  = {
@@ -199,7 +301,6 @@ characters={
 				original_tag  = SIA
 			}
 			available  = {
-				has_completed_focus  = SIA_western_military 
 			}
 			traits  = {
 				army_infantry_3 

@@ -11,6 +11,10 @@ if = {
 		set_naval_oob = "SIA_1936_naval_legacy"
 	}
 }
+if = {
+	limit = { has_dlc = "Together for Victory" }
+	add_to_tech_sharing_group = japanese_research
+}
 recruit_character = SIA_phraya_phahon
 recruit_character = SIA_prawat_chumsai
 recruit_character = SIA_greg
@@ -33,6 +37,12 @@ recruit_character = SIA_decisive_battle
 recruit_character = SIA_all_weather
 recruit_character = SIA_wichit_wichitwathakarn
 recruit_character = SIA_army_regrouping
+recruit_character = SIA_tianliang_huntrakool
+recruit_character = SIA_luang_sinthusongkhramchai
+recruit_character = SIA_mom_rajawongse_seni_pramoj
+recruit_character = SIA_thawon_thamrongnawasawat
+recruit_character = SIA_phra_silpasakrakorn
+recruit_character = SIA_luang_wichitwathakan
 set_technology = {
 	airfield_allowed = 1
 	naval_base_allowed = 1

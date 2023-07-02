@@ -56,6 +56,10 @@ set_variable = {
 	var = min_fuel
 	value = 0.800
 }
+if = {
+	limit = { has_dlc = "Together for Victory" }
+	add_to_tech_sharing_group = japanese_research
+}
 add_ideas = MAN_faction_trade
 if = {
 	limit = { has_dlc = "Waking the Tiger" }

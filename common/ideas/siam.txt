@@ -1,7 +1,40 @@
 ideas = {
 
 	country = {
+	
+		SIA_foreign_investors= {
+			allowed = {
+				original_tag = SIA
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_build_infrastructure
+			modifier = {
+				production_speed_infrastructure_factor = 0.3
 
+			}
+		}
+	
+		SIA_long_term_investment= {
+			allowed = {
+				original_tag = SIA
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_build_infrastructure
+			modifier = {
+				production_speed_buildings_factor = 0.15
+				production_speed_arms_factory_factor = -0.15
+				consumer_goods_factor=-0.1
+
+			}
+		}
         SIA_golden_era = {
 
 			picture = SPR_seize_the_gold_reserves
@@ -67,14 +100,9 @@ ideas = {
 			}
 			
 			modifier = {
-				political_advisor_cost_factor = -0.25
                 trade_laws_cost_factor = -0.25
                 mobilization_laws_cost_factor = -0.25
                 economy_cost_factor = -0.25
-                high_command_cost_factor = -0.25
-                air_chief_cost_factor = -0.25
-                army_chief_cost_factor = -0.25
-                navy_chief_cost_factor = -0.25
 			}
 		}
 
@@ -110,7 +138,8 @@ ideas = {
 			}
 			
 			modifier = {
-				industrial_capacity_factory = 0.1
+			
+				production_speed_buildings_factor = 0.1
 			}
 		}
 
@@ -142,7 +171,7 @@ ideas = {
 			}
 			
 			modifier = {
-				research_speed_factor = 0.05
+				research_speed_factor = 0.075
 			}
         }
 
@@ -184,11 +213,11 @@ ideas = {
 
 			allowed = {
 				original_tag = SIA
-                always = yes
+                		always = yes
 			}
 			
 			modifier = {
-				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.1
 			}
         }
 
@@ -206,11 +235,11 @@ ideas = {
 			picture = man_militarism
 			
 			modifier = {
-				training_time_army_factor = 0.10
-				attrition = -0.1
-				supply_consumption_factor = -0.05
-				no_supply_grace = 10
-				experience_loss_factor = -0.05
+				training_time_army_factor = -0.10
+				attrition = -0.2
+				supply_consumption_factor = -0.1
+				no_supply_grace = 24
+				experience_loss_factor = -0.1
 			}
 		}
     }

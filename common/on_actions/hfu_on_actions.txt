@@ -160,12 +160,14 @@ on_actions = {
 				}
 				USA = {	
 					#change_tag_from = ITA
-					JAP = {set_equipment_fraction = 0.0}
+					JAP = {set_equipment_fraction = 0.0 pow_before_annex=yes}
 					annex_country = {
 						target = JAP
 						transfer_troops = no
 					}
+					
 					if = { limit={MAN={exists=yes}}
+					MAN = {set_equipment_fraction = 0.0 pow_before_annex=yes}
 					annex_country = {
 						target = MAN
 						transfer_troops = no
@@ -173,6 +175,8 @@ on_actions = {
 					
 					}
 					if = { limit={SIA={exists=yes}}
+					SIA = {set_equipment_fraction = 0.0 pow_before_annex=yes}
+					
 					annex_country = {
 						target = SIA
 						transfer_troops = no

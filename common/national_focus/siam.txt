@@ -18,7 +18,7 @@ focus_tree = {
 		id = SIA_return_of_the_king
 		icon = GFX_focus_rom_royal_dictatorship
         mutually_exclusive = { focus = SIA_khana_ratsadon }
-		x = 3
+		x = 4
 		y = 0
 
 		cost = 10
@@ -53,10 +53,10 @@ focus_tree = {
 	focus = {
 		id = SIA_persecute_revolutionaries
 		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
-		prerequisite = { focus = SIA_return_of_the_king }
+		prerequisite = { focus = SIA_promote_songsuradet }
 		x = 1
 		y = 1
-		relative_position_id = SIA_return_of_the_king
+		relative_position_id = SIA_promote_songsuradet
 
 		cost = 10
 
@@ -70,10 +70,10 @@ focus_tree = {
 	focus = {
 		id = SIA_return_to_absolutism
 		icon = GFX_focus_hol_the_foundations_of_defense
-		prerequisite = { focus = SIA_return_of_the_king }
+		prerequisite = { focus = SIA_promote_songsuradet }
 		x = -1
 		y = 1
-		relative_position_id = SIA_return_of_the_king
+		relative_position_id = SIA_promote_songsuradet
 
 		cost = 10
 
@@ -87,11 +87,10 @@ focus_tree = {
 	focus = {
 		id = SIA_promote_songsuradet
 		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus = SIA_persecute_revolutionaries}
-        prerequisite = { focus = SIA_return_to_absolutism }
-		x = -1
+		prerequisite = { focus = SIA_return_of_the_king}
+		x = 0
 		y = 1
-		relative_position_id = SIA_persecute_revolutionaries
+		relative_position_id = SIA_return_of_the_king
 
 		cost = 10
 
@@ -99,28 +98,18 @@ focus_tree = {
 			factor = 2
 		}
 		completion_reward = {
-            create_field_marshal = {
-                name = "Phraya Songsuradet"
-                portrait_path = "gfx/leaders/SIA/Phraya_Sonsuradet.dds"
-                traits = { trickster jungle_rat }
-                skill = 3
-                attack_skill = 4
-                defense_skill = 2
-                planning_skill = 2
-                logistics_skill = 3
-            }
-			custom_effect_tooltip = available_chief_of_army
-			show_ideas_tooltip = SIA_songsuradet
+            add_timed_idea = {idea=SIA_long_term_investment days=730}
 		}
 	}
 
 	focus = {
 		id = SIA_guarantee_army_loyalty
 		icon = GFX_focus_generic_little_entente
-		prerequisite = { focus = SIA_promote_songsuradet }
-		x = -2
+		prerequisite = { focus = SIA_return_to_absolutism }
+		prerequisite = { focus = SIA_persecute_revolutionaries }
+		x = -1
 		y = 1
-		relative_position_id = SIA_promote_songsuradet
+		relative_position_id = SIA_return_to_absolutism
 
 		cost = 10
 
@@ -156,10 +145,11 @@ focus_tree = {
 	focus = {
 		id = SIA_curtail_noble_power
 		icon = GFX_goal_generic_forceful_treaty
-		prerequisite = { focus = SIA_promote_songsuradet }
-		x = 0
+		prerequisite = { focus = SIA_return_to_absolutism }
+		prerequisite = { focus = SIA_persecute_revolutionaries }
+		x = 1
 		y = 1
-		relative_position_id = SIA_promote_songsuradet
+		relative_position_id = SIA_return_to_absolutism
 
 		cost = 10
 
@@ -194,16 +184,17 @@ focus_tree = {
 	
 	focus = {
 		id = SIA_thai_legacy
-        icon = GFX_focus_TUR_ratify_the_six_arrows
-		prerequisite = { focus = SIA_promote_songsuradet }
-        search_filters = { FOCUS_FILTER_ANNEXATION } 
-		x = 2
+        icon = GFX_focus_hol_the_foundations_of_defense
+		 search_filters = { FOCUS_FILTER_ANNEXATION } 
+		prerequisite = { focus = SIA_return_to_absolutism }
+		prerequisite = { focus = SIA_persecute_revolutionaries }
+		x = 3
 		y = 1
-		relative_position_id = SIA_promote_songsuradet
+		relative_position_id = SIA_return_to_absolutism
 
 		cost = 10
         available = {
-            274 = {		
+            590 = {		
                 CONTROLLER = { 					
                         OR = {
                             tag = JAP 
@@ -211,9 +202,30 @@ focus_tree = {
                             }
                         }
                 }
-                
+                274 = {		
+                CONTROLLER = { 					
+                        OR = {
+                            tag = JAP 
+                            is_subject_of = JAP
+                            }
+                        }
+                }   659 = {		
+                CONTROLLER = { 					
+                        OR = {
+                            tag = JAP 
+                            is_subject_of = JAP
+                            }
+                        }
+                }   589 = {		
+                CONTROLLER = { 					
+                        OR = {
+                            tag = JAP 
+                            is_subject_of = JAP
+                            }
+                        }
+                }   
             
-            590 = {		
+            718 = {		
                 CONTROLLER = { 					
                             OR = {
                                 tag = JAP 
@@ -285,7 +297,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-           add_ideas = SIA_new_era
+           add_ideas=SIA_new_era
 		}
 	}
 
@@ -313,10 +325,10 @@ focus_tree = {
 	focus = {
 		id = SIA_monarchy_question
 		icon = GFX_focus_rom_abdicate
-		prerequisite = { focus = SIA_khana_ratsadon }
+		prerequisite = { focus = SIA_songsuradet_rebellion}
 		x = 1
 		y = 1
-		relative_position_id = SIA_khana_ratsadon
+		relative_position_id = SIA_songsuradet_rebellion
         search_filters = { FOCUS_FILTER_POLITICAL }
 		cost = 10
 		
@@ -333,10 +345,10 @@ focus_tree = {
 	focus = {
 		id = SIA_rise_of_phibun
         icon = GFX_focus_rom_parties_end
-		prerequisite = { focus = SIA_khana_ratsadon }
+		prerequisite = { focus = SIA_songsuradet_rebellion }
 		x = -1
 		y = 1
-		relative_position_id = SIA_khana_ratsadon
+		relative_position_id = SIA_songsuradet_rebellion
 
 		cost = 10
 
@@ -357,7 +369,7 @@ focus_tree = {
                 ruling_party = fascism
                 elections_allowed = no
             }
-            add_popularity = { ideology = fascism popularity = 1.00 }
+            add_popularity = { ideology = fascism popularity = 0.40 }
 
 		}
 	}
@@ -366,11 +378,10 @@ focus_tree = {
 	focus = {
 		id = SIA_songsuradet_rebellion
 		icon = GFX_focus_generic_support_the_left_right
-		prerequisite = { focus = SIA_monarchy_question }
-        prerequisite = { focus = SIA_rise_of_phibun }
-		x = -1
+		prerequisite = { focus = SIA_khana_ratsadon }
+        x = 0
 		y = 1
-		relative_position_id = SIA_monarchy_question
+		relative_position_id = SIA_khana_ratsadon
         search_filters = { FOCUS_FILTER_STABILITY }
 		cost = 10
 
@@ -386,10 +397,10 @@ focus_tree = {
 	focus = {
 		id = SIA_solidify_the_dictatorship
 		icon = GFX_focus_generic_strike_at_democracy2
-		prerequisite = { focus = SIA_songsuradet_rebellion }
-		x = -2
+		prerequisite = { focus = SIA_rise_of_phibun }
+		x = -1
 		y = 1
-		relative_position_id = SIA_songsuradet_rebellion
+		relative_position_id = SIA_rise_of_phibun
 
 		cost = 10
 
@@ -422,33 +433,15 @@ focus_tree = {
 		}
 	}
 
-    focus = {
-		id = SIA_cultural_mandates
-		icon = GFX_focus_research2
-		prerequisite = { focus = SIA_solidify_the_dictatorship }
-		x = -2
-		y = 1
-		relative_position_id = SIA_solidify_the_dictatorship
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 4
-		}
-
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		completion_reward = {
-            add_ideas = SIA_culture_mandate
-		}
-	}
+    
 
     focus = {
 		id = SIA_alter_national_anthem
 		icon = GFX_focus_hol_the_foundations_of_defense
-		prerequisite = { focus = SIA_cultural_mandates }
+		prerequisite = { focus = SIA_prepare_for_expansion }
 		x = 0
 		y = 1
-		relative_position_id = SIA_cultural_mandates
+		relative_position_id = SIA_prepare_for_expansion
 
 		ai_will_do = {
 			factor = 1
@@ -459,16 +452,32 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
 			add_political_power = 150
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 3
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
 	focus = {
 		id = SIA_prepare_for_expansion
         icon = GFX_goal_generic_position_armies
-		prerequisite = { focus = SIA_songsuradet_rebellion }
-		x = 0
+		prerequisite = { focus = SIA_rise_of_phibun }
+		prerequisite = { focus = SIA_monarchy_question }
+		x = 1
 		y = 1
-		relative_position_id = SIA_songsuradet_rebellion
+		relative_position_id = SIA_rise_of_phibun
 
 		cost = 10
 
@@ -512,10 +521,11 @@ focus_tree = {
 	focus = {
 		id = SIA_curb_civilian_wing
 		icon = GFX_goal_generic_consumer_goods
-		prerequisite = { focus = SIA_songsuradet_rebellion }
-		x = 2
+		prerequisite = { focus = SIA_rise_of_phibun }
+		prerequisite = { focus = SIA_monarchy_question }
+		x = 3
 		y = 1
-		relative_position_id = SIA_songsuradet_rebellion
+		relative_position_id = SIA_rise_of_phibun
 
 		cost = 10
 
@@ -565,7 +575,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-            add_ideas = SIA_thai_empire
+            add_timed_idea = {idea=SIA_thai_empire days= 730}
 		}
 	}
 
@@ -584,12 +594,33 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-            add_tech_bonus = {
-				name = SIA_industrialization_development
-				bonus = 0.75
-				uses = 2
-				category = industry
+            
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 2
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
 			}
+			hidden_effect = {
+			RAJ={	
+			407={
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			}}
 		}
 	}
 
@@ -609,6 +640,17 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
         completion_reward = {
+			hidden_effect = {
+			RAJ={	
+			406={
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			}}
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -676,7 +718,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SIA_industrialization_development
 
-		cost = 6
+		cost = 5
 
 		ai_will_do = {
 			factor = 7
@@ -684,6 +726,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			add_ideas=SIA_foreign_investors
             276  = {
 				add_building_construction = {
 					type = infrastructure
@@ -709,7 +752,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = SIA_roads_to_bangkok
 
-		cost = 6
+		cost = 5
 
 		ai_will_do = {
 			factor = 7
@@ -768,6 +811,17 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			hidden_effect = {
+			RAJ={	
+			406={
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			}}
 		}
 	}
 	
@@ -787,6 +841,17 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
         completion_reward = {
+			hidden_effect = {
+			RAJ={	
+			407={
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			}}
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -820,6 +885,12 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_INDUSTRY }
         completion_reward = {
+			add_tech_bonus = {
+				name = SIA_industrialization_development
+				bonus = 1
+				uses = 2
+				category = industry
+			}
 			random_owned_controlled_state = {
 				limit = {
 					free_building_slots = {
@@ -888,7 +959,7 @@ focus_tree = {
         ai_will_do = {
             factor = 20
         }
-	available={arms_factory > 9}
+	available={}
         completion_reward = {
             add_research_slot = 1
         }
@@ -909,6 +980,7 @@ focus_tree = {
 		}
         search_filters = { FOCUS_FILTER_ANNEXATION }
         available = {
+			has_war=yes
             controls_state = 275
 			controls_state  = 561
             controls_state  = 398
@@ -941,12 +1013,51 @@ focus_tree = {
         
         cost = 10
         available = {
-            owns_state = 659
-            owns_state = 274
-            owns_state = 589
-            owns_state = 590
+			has_war=yes
+           590 = {		
+                CONTROLLER = { 					
+                        OR = {
+                            tag = JAP 
+                            is_subject_of = JAP
+                            }
+                        }
+                }
+                274 = {		
+                CONTROLLER = { 					
+                        OR = {
+                            tag = JAP 
+                            is_subject_of = JAP
+                            }
+                        }
+                }   659 = {		
+                CONTROLLER = { 					
+                        OR = {
+                            tag = JAP 
+                            is_subject_of = JAP
+                            }
+                        }
+                }   589 = {		
+                CONTROLLER = { 					
+                        OR = {
+                            tag = JAP 
+                            is_subject_of = JAP
+                            }
+                        }
+                }   
+            
         }
         completion_reward = {
+			if={
+			limit={
+				NOT={owns_state=590}
+			}
+			
+			transfer_state = 590
+            transfer_state = 274
+            transfer_state = 659
+            transfer_state = 589
+			transfer_state = 718
+			}
             659 = {
 				add_building_construction = {
 					type = infrastructure
@@ -1081,6 +1192,7 @@ focus_tree = {
         
         cost = 10
         available = {
+			has_war=yes
             controls_state = 275
             controls_state = 561
             controls_state = 398
@@ -1242,7 +1354,7 @@ focus_tree = {
         completion_reward = {
             add_doctrine_cost_reduction = {
 				name = doc_bonus
-				cost_reduction = 0.50
+				cost_reduction = 1
 				uses = 2
 				category = land_doctrine
 			}
@@ -1397,8 +1509,7 @@ focus_tree = {
 
         completion_reward = {
             army_experience = 50
-			custom_effect_tooltip = available_military_high_command
-			show_ideas_tooltip = SIA_air_superiority
+			add_ideas = SIA_culture_mandate
         }
 
     }
@@ -1463,6 +1574,12 @@ focus_tree = {
         
         completion_reward = {
             army_experience = 50
+	   	SIA= {
+ 				modify_tech_sharing_bonus = {
+ 					id = japanese_research
+ 					bonus = 0.15
+ 				}
+ 			}
         }
 
     }
@@ -1480,9 +1597,7 @@ focus_tree = {
 
         completion_reward = {
             add_ideas = SIA_militarism
-			custom_effect_tooltip = available_military_high_command
-			show_ideas_tooltip = SIA_army_commando
-        }
+			}
 
     }
 # Start Navy
@@ -1492,7 +1607,7 @@ focus_tree = {
 		x = 33
 		y = 0
 
-		cost = 5
+		cost = 1
 
 		ai_will_do = {
 			factor = 1
@@ -1503,6 +1618,14 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
+			276 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
 			navy_experience = 25
 			add_doctrine_cost_reduction = {
 				name = NZL_form_the_rnzn
@@ -1527,7 +1650,7 @@ focus_tree = {
 		y = 1
         relative_position_id = SIA_form_the_rtn
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
