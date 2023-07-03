@@ -50,7 +50,7 @@ equipments = {
 			fixed_main_weapon_slot = {
 				required = yes
 				allowed_module_categories = {
-					recon_camera
+					#recon_camera
                     motor_cannon
 					fighter_weapon
 					cas_weapon
@@ -167,10 +167,6 @@ equipments = {
 			count < 2
 		}
 
-		module_count_limit = {
-			module = recon_camera
-			count < 2
-		}
 
 		module_count_limit = {
 			module = plane_easy_maintenance
@@ -271,7 +267,7 @@ equipments = {
 			fixed_main_weapon_slot = {
 				required = yes
 				allowed_module_categories = {
-					recon_camera
+					#recon_camera
 					fighter_weapon
 					cas_weapon
 					nav_bomber_weapon
@@ -361,7 +357,7 @@ equipments = {
 			fixed_main_weapon_slot = {
 				required = yes
 				allowed_module_categories = {
-					recon_camera
+					#recon_camera
 					fighter_weapon
 					cas_weapon
 					nav_bomber_weapon
@@ -471,7 +467,7 @@ equipments = {
 			fixed_main_weapon_slot = {
 				required = yes
 				allowed_module_categories = {
-					recon_camera
+					#recon_camera
                     motor_cannon
 					fighter_weapon
 					cas_weapon
@@ -591,7 +587,7 @@ equipments = {
 			fixed_main_weapon_slot = {
 				required = yes
 				allowed_module_categories = {
-					recon_camera
+					#recon_camera
                     motor_cannon
 					fighter_weapon
 					cas_weapon
@@ -1543,7 +1539,6 @@ equipments = {
 			fixed_auxiliary_weapon_slot_1 = { 
 				required = no
 				allowed_module_categories = {
-					recon_camera
 					strat_weapon
 				}
 			}
@@ -1755,7 +1750,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
                     strat_weapon
-					recon_camera					
+										
 				}
 			}
 			fixed_auxiliary_weapon_slot_2 = { 
@@ -1857,7 +1852,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					strat_weapon
-					recon_camera					
+										
 				}
 			}
 			fixed_auxiliary_weapon_slot_2 = { 
@@ -1965,7 +1960,7 @@ equipments = {
 			fixed_auxiliary_weapon_slot_1 = { 
 				required = no
 				allowed_module_categories = {
-					recon_camera
+					
 					strat_weapon					
 				}
 			}
@@ -2075,7 +2070,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					strat_weapon
-					recon_camera					
+										
 				}
 			}
 			fixed_auxiliary_weapon_slot_2 = { 

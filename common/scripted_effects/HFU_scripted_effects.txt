@@ -537,7 +537,7 @@ ROOT_call_allies_both_sides = {
 	THIS_call_all_allies_against_ROOT = yes
 }
 ROOT_call_all_allies_against_THIS = {
-	set_variable={GER.test2=THIS} set_variable={GER.test3=PREV} set_variable={GER.test4=ROOT}
+	
 	for_each_scope_loop = {
 		array = ROOT.faction_members
 		if = {

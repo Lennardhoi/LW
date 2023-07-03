@@ -2090,13 +2090,14 @@ focus_tree = {
  			}
  			add_dynamic_modifier={modifier=pacific_war}
  			USA={add_dynamic_modifier={modifier=pacific_war}}
- 			JAP = {
+ 			JAP={
  				add_timed_idea = { idea = JAP_banzai days = 180 }
- 			}
- 			MAN = {
+ 			}MAN={
  				add_timed_idea = { idea = JAP_banzai days = 180 }
- 				add_ideas = closed_economy
+ 			}SIA={
+ 				add_timed_idea = { idea = JAP_banzai_no_core days = 180 }
  			}
+ 			
  			custom_effect_tooltip = tooltip_jap_war
  			add_timed_idea = { idea = JAP_tora_tora_tora_idea days = 90 }
  			hidden_effect={
@@ -2109,7 +2110,18 @@ focus_tree = {
  				USA= {add_to_war = {
  						targeted_alliance = ENG
  						enemy = ROOT
- 						}}
+ 						}		
+						
+						
+						}
+				SIA={add_to_war = {
+ 						targeted_alliance = JAP
+ 						enemy = ENG
+ 						}}	
+				MAN={add_to_war = {
+ 						targeted_alliance = JAP
+ 						enemy = ENG
+ 						}}						
  				every_country={
  					limit={is_in_faction_with=ENG NOT={original_tag=USA}}
  					add_dynamic_modifier={modifier=pacific_war_minor}

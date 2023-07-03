@@ -51,6 +51,23 @@ focus_tree = {
 	}
 	
 	focus = {
+		id = SIA_promote_songsuradet
+		icon = GFX_goal_generic_propaganda
+		prerequisite = { focus = SIA_return_of_the_king}
+		x = 0
+		y = 1
+		relative_position_id = SIA_return_of_the_king
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 2
+		}
+		completion_reward = {
+            add_timed_idea = {idea=SIA_long_term_investment days=730}
+		}
+	}
+	focus = {
 		id = SIA_persecute_revolutionaries
 		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
 		prerequisite = { focus = SIA_promote_songsuradet }
@@ -84,23 +101,6 @@ focus_tree = {
 	}
 	
 
-	focus = {
-		id = SIA_promote_songsuradet
-		icon = GFX_goal_generic_propaganda
-		prerequisite = { focus = SIA_return_of_the_king}
-		x = 0
-		y = 1
-		relative_position_id = SIA_return_of_the_king
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 2
-		}
-		completion_reward = {
-            add_timed_idea = {idea=SIA_long_term_investment days=730}
-		}
-	}
 
 	focus = {
 		id = SIA_guarantee_army_loyalty
@@ -179,6 +179,21 @@ focus_tree = {
 
 		completion_reward = {
             add_ideas = SIA_administrative_reform
+		random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
 		}
 	}
 	
@@ -295,9 +310,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 2
 		}
-
+		available={NOT={has_idea=SIA_long_term_investment}}
 		completion_reward = {
-           add_ideas=SIA_new_era
+           		add_ideas=SIA_new_era
+			add_ideas=war_economy
+			
 		}
 	}
 
@@ -321,7 +338,24 @@ focus_tree = {
             add_political_power = 150
 		}
 	}
-	
+	focus = {
+		id = SIA_songsuradet_rebellion
+		icon = GFX_focus_generic_support_the_left_right
+		prerequisite = { focus = SIA_khana_ratsadon }
+        x = 0
+		y = 1
+		relative_position_id = SIA_khana_ratsadon
+        search_filters = { FOCUS_FILTER_STABILITY }
+		cost = 10
+
+		ai_will_do = {
+			factor = 6
+		}
+
+		completion_reward = {
+            add_stability = .1
+		}
+	}
 	focus = {
 		id = SIA_monarchy_question
 		icon = GFX_focus_rom_abdicate
@@ -375,24 +409,7 @@ focus_tree = {
 	}
 	
 
-	focus = {
-		id = SIA_songsuradet_rebellion
-		icon = GFX_focus_generic_support_the_left_right
-		prerequisite = { focus = SIA_khana_ratsadon }
-        x = 0
-		y = 1
-		relative_position_id = SIA_khana_ratsadon
-        search_filters = { FOCUS_FILTER_STABILITY }
-		cost = 10
-
-		ai_will_do = {
-			factor = 6
-		}
-
-		completion_reward = {
-            add_stability = .1
-		}
-	}
+	
 
 	focus = {
 		id = SIA_solidify_the_dictatorship
@@ -1670,7 +1687,7 @@ focus_tree = {
 		id = SIA_expand_bangkok_naval_base
 		icon = GFX_goal_generic_construct_naval_dockyard
 		prerequisite = { focus = SIA_form_the_rtn }
-		x = -1
+		x = 0
 		y = 1
         relative_position_id = SIA_form_the_rtn
 
@@ -1690,37 +1707,6 @@ focus_tree = {
 				add_building_construction = {
 					type = dockyard
 					level = 4
-					instant_build = yes
-				}
-			}
-		}
-	}
-
-	focus = {
-		id = SIA_coastal_defense
-		icon = GFX_goal_generic_fortify_city
-		prerequisite = { focus = SIA_form_the_rtn }
-		relative_position_id = SIA_form_the_rtn
-
-		x = 1
-		y = 1
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			276 = {
-				add_building_construction = {
-					type = coastal_bunker
-					province = 7408
-					level = 3
 					instant_build = yes
 				}
 			}

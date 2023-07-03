@@ -350,12 +350,13 @@ NDefines.NNavy.RESOURCE_LENDLEASE_PRIORITY = 3
 NDefines.NNavy.RESOURCE_ORIGIN_PRIORITY = 3
 -------------------------------------
 --Combat 
-NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.027   -- global damage modifier... but some equipment is returned at end of battles see : EQUIPMENT_COMBAT_LOSS_FACTOR
+NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.034   -- global damage modifier... but some equipment is returned at end of battles see : EQUIPMENT_COMBAT_LOSS_FACTOR
 NDefines.NMilitary.LAND_COMBAT_ORG_DAMAGE_MODIFIER = 0.027
 NDefines.NMilitary.LAND_COMBAT_COLLATERAL_FORT_FACTOR = 0.003		-- Factor to scale collateral damage to forts with.
 NDefines.NMilitary.LAND_COMBAT_COLLATERAL_INFRA_FACTOR = 0.002	-- Factor to scale collateral damage to infra with.
-NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.027    -- air global damage modifier
+NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.034    -- air global damage modifier
 NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.018    -- global damage modifier
+NDefines.NMilitary.EQUIPMENT_COMBAT_LOSS_FACTOR=0.56
 NDefines.NNavy.AMPHIBIOUS_LANDING_PENALTY = -0.65 --vanilla 
 --NDefines.NMilitary.PEN_VS_AVERAGE = 0.4 --vanilla 0.4
 NDefines.NMilitary.ARMOR_VS_AVERAGE = 0.3

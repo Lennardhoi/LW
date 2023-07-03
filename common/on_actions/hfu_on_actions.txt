@@ -401,6 +401,9 @@ on_actions = {
 				MAN={if={limit={country_exists=MAN}
 						share_intel_with_allies=yes
 						}}
+				SIA={if={limit={country_exists=SIA}
+						share_intel_with_allies=yes
+						}}
 			}
 			if={limit = {is_in_faction_with = ENG}
 				SOV={
@@ -453,6 +456,7 @@ on_actions = {
 						tag = FIN
 						tag = USA
 						tag = CAN
+						tag = SIA
 						}}
 				set_temp_variable={core_pop = 0}
 				for_each_scope_loop ={
@@ -638,6 +642,7 @@ on_actions = {
 						OR = {
 							tag = JAP
 							tag = MAN
+							tag = SIA
 						}
 					}
 					FROM.FROM = {
@@ -869,6 +874,33 @@ on_actions = {
 				set_variable={send_fuel_enabled=2}
 				for_each_scope_loop={
 					array=GER.faction_members_array
+					set_variable={send_fuel_enabled=2}
+				}
+			}
+			
+			JAP = {
+				every_country = {
+					limit = {
+						NOT={tag=JAP}
+						OR={is_in_faction_with = JAP is_subject_of=JAP
+							}
+						NOT = { is_in_array = { JAP.faction_members_array = THIS.id } }
+					}
+					add_to_array = { JAP.faction_members_array = THIS.id }
+				}
+				if = {
+					limit = {
+						any_of_scopes={array=JAP.faction_members_array NOT={is_in_array={GLOBAL.fuel_countries=THIS.id}}}
+					}
+					for_each_scope_loop={
+						array=JAP.faction_members_array
+						if={limit={NOT={is_in_array={GLOBAL.fuel_countries=THIS.id}}}
+							add_to_array={GLOBAL.fuel_countries=THIS.id}}
+					}
+				}
+				set_variable={send_fuel_enabled=2}
+				for_each_scope_loop={
+					array=JAP.faction_members_array
 					set_variable={send_fuel_enabled=2}
 				}
 			}

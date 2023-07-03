@@ -62,6 +62,27 @@ ideas = {
 				army_attack_factor = 0.1
 			}
 		}
+		JAP_banzai_no_core = {
+			picture = generic_infantry_bonus
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				amphibious_invasion = 0.5
+				invasion_preparation = -0.5
+				land_reinforce_rate = 0.1
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				#special_forces_attack_factor = 0.05
+				army_defence_factor = 0.1
+				army_attack_factor = 0.1
+				surrender_limit = 0.1
+			}
+		}
 		JAP_navy_recover = {
 			picture = generic_infantry_bonus
 			allowed = {
@@ -600,9 +621,9 @@ ideas = {
 		designer = yes
 		kure_naval_arsenal = {
 			allowed = {
-				original_tag = JAP
+				OR={original_tag = JAP
 				original_TAG = SIA
-				original_TAG = MAN
+				original_TAG = MAN}
 			}
 			modifier = { naval_manufacturer_cost_factor = -1 }
 			cost = 100
@@ -616,9 +637,9 @@ ideas = {
 		}
 		yokosuka_naval_arsenal = {
 			allowed = {
-				original_tag = JAP
+				OR={original_tag = JAP
 				original_TAG = SIA
-				original_TAG = MAN
+				original_TAG = MAN}
 			}
 			modifier = { naval_manufacturer_cost_factor = -1 }
 			cost = 100
@@ -632,9 +653,9 @@ ideas = {
 		}
 		maizuru_naval_arsenal = {
 			allowed = {
-				original_tag = JAP
+				OR={original_tag = JAP
 				original_TAG = SIA
-				original_TAG = MAN
+				original_TAG = MAN}
 			}
 			modifier = { naval_manufacturer_cost_factor = -1 }
 			cost = 100
@@ -648,9 +669,9 @@ ideas = {
 		}
 		sasebo_naval_arsenal = {
 			allowed = {
-				original_tag = JAP
+				OR={original_tag = JAP
 				original_TAG = SIA
-				original_TAG = MAN
+				original_TAG = MAN}
 			}
 			modifier = { naval_manufacturer_cost_factor = -1 }
 			cost = 100
@@ -664,9 +685,9 @@ ideas = {
 		kawasaki_dockyards = {
 			picture = generic_naval_manufacturer_3
 			allowed = {
-				original_tag = JAP
+				OR={original_tag = JAP
 				original_TAG = SIA
-				original_TAG = MAN
+				original_TAG = MAN}
 			}
 			modifier = { naval_manufacturer_cost_factor = -1 }
 			cost = 100
