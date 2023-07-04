@@ -2523,7 +2523,7 @@ spriteTypes = {
 	}
 
 	SpriteType = {
-		name = "GFX_focus_GER_north_shine"
+		name = "GFX_focus_GER_south_shine"
 		texturefile = "gfx/interface/goals/GER_south.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
@@ -2553,38 +2553,7 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
-	
-	SpriteType = {
-		name = "GFX_focus_GER_south_shine"
-		texturefile = "gfx/interface/goals/GER_goal_Operation_Schwarzes_Gold.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/GER_goal_Operation_Schwarzes_Gold.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
 
-		animation = {
-			animationmaskfile = "gfx/interface/goals/GER_goal_Operation_Schwarzes_Gold.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = 90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 }
-		}
-		legacy_lazy_load = no
-	}
 	SpriteType = {
 		name = "GFX_focus_GER_soviet_treaty_shine"
 		texturefile = "gfx/interface/goals/GER_soviet_treaty.dds"
