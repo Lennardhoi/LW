@@ -3572,7 +3572,7 @@ focus_tree = {
  	focus = {
  		id = GER_blau
  		prerequisite = { focus = GER_winter_attack focus = GER_winter_defense }
- 		#icon = GFX_focus_ger_reichskommisariats
+ 		icon = GFX_focus_ger_reichskommisariats
  		available = {
  			Date > 1942.5.1
  			NOT={has_idea=GER_barbarossa}
@@ -3618,7 +3618,7 @@ focus_tree = {
  		id = GER_north
  		mutually_exclusive = { focus = GER_south }
  		prerequisite = { focus = GER_blau}
- 		icon = GFX_focus_GER_north
+ 		icon = GFX_focus_ger_reichskommisariats
  		available = {
  		}
  		relative_position_id = GER_blau
@@ -3641,7 +3641,7 @@ focus_tree = {
  		icon = GFX_focus_GER_south
  		mutually_exclusive = { focus = GER_north }
  		prerequisite = { focus = GER_blau}
- 		#icon = GFX_focus_ger_reichskommisariats
+ 		icon = GFX_focus_ger_reichskommisariats
  		available = {
  		}
  		relative_position_id = GER_blau
