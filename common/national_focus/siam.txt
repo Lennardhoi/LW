@@ -1385,12 +1385,12 @@ focus_tree = {
 		}
         
         completion_reward = {
-            add_doctrine_cost_reduction = {
-				name = doc_bonus
-				cost_reduction = 1
-				uses = 2
-				category = land_doctrine
-			}
+ 			add_tech_bonus = {
+ 				name = land_doc_bonus
+ 				bonus = 1.0
+ 				uses = 2
+ 				category = land_doctrine
+ 			}
         }
     }
 
@@ -1660,12 +1660,12 @@ focus_tree = {
 				}
 			}
 			navy_experience = 25
-			add_doctrine_cost_reduction = {
-				name = NZL_form_the_rnzn
-				cost_reduction = 0.25
-				uses = 2
-				category = naval_doctrine
-			}
+ 			add_tech_bonus = {
+ 				name = land_doc_bonus
+ 				bonus = 1.0
+ 				uses = 2
+ 				category = naval_doctrine
+ 			}
 			add_tech_bonus = {
 				name = ships_bonus
 				bonus = 0.5
