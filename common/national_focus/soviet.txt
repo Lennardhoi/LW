@@ -8,6 +8,7 @@ focus_tree = {
 		}
 	}
 	default = no
+	
 	focus = {
 		id = SOV_finish_five_year_plan
 		icon = GFX_focus_SOV_finish_five_year_plan
@@ -43,6 +44,7 @@ focus_tree = {
 			}
 		}
 	}
+	
 	focus = {
 		id = SOV_lessons_of_poland
 		icon = GFX_SOV_lessons_of_poland
@@ -294,24 +296,30 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas=SOV_improve_stalin_line
-			202 = {
+			219 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
 						type = bunker
-						level = 1
-						province =380
+						level = 5
+						province =10489
 						instant_build = yes
 					}
 				}
 			}
-			203 = {
+			235 = {
 				if = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
 						type = bunker
-						level = 1
-						province =3117
+						level = 5
+						province =275
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province =11917
 						instant_build = yes
 					}
 				}
@@ -321,20 +329,14 @@ focus_tree = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
 						type = bunker
-						level = 1
-						province =3005
+						level = 3
+						province =11918
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = bunker
-						level = 1
-						province =5880
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 1
-						province =5734
+						level = 5
+						province = 10813
 						instant_build = yes
 					}
 				}
@@ -344,8 +346,14 @@ focus_tree = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
 						type = bunker
-						level = 1
+						level = 5
 						province =10301
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province =11916
 						instant_build = yes
 					}
 				}
@@ -355,25 +363,32 @@ focus_tree = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
 						type = bunker
-						level = 1
+						level = 5
 						province =490
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = bunker
-						level = 1
-						province =3271
+						level = 3
+						province =11903
 						instant_build = yes
 					}
-				}
-			}
-			196 = {
-				if = {
-					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
 						type = bunker
-						level = 1
-						province =10337
+						level = 3
+						province =11905
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province =11904
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 3
+						province =11906
 						instant_build = yes
 					}
 				}
@@ -383,19 +398,19 @@ focus_tree = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
 						type = bunker
-						level = 1
-						province =717
+						level = 3
+						province =11910
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = bunker
-						level = 1
-						province =704
+						level = 3
+						province =11909
 						instant_build = yes
 					}
 					add_building_construction = {
 						type = bunker
-						level = 1
+						level = 5
 						province =10593
 						instant_build = yes
 					}
@@ -809,9 +824,6 @@ focus_tree = {
 					instant_build = yes
 					}}
 			188 = {
-				
-				custom_effect_tooltip = SOV_defense_of_moscow_forts
-				hidden_effect = {
 					add_building_construction = {
 						type = bunker
 						level = 5
@@ -865,11 +877,69 @@ focus_tree = {
 						level = 3
 						province =10043
 						instant_build = yes
-					}
 				}
 			}
 		}
 	}
+	focus = {
+		id = SOV_defense_of_Baku
+		icon = GFX_focus_SOV_defense_of_leningrad
+		prerequisite = { focus = SOV_great_purge }
+		relative_position_id = SOV_great_purge
+		available = { controls_state = 383
+		}
+		x = 4
+		y = 1
+		cost = 2
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			222={
+				set_building_level = {
+					type = air_base
+					level = 20
+					instant_build = yes
+					}
+				}
+			222 = {
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province =4199
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province =11294
+						instant_build = yes
+					}
+				}
+			383 = {
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province =9915
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province =4298
+						instant_build = yes
+					}
+				}
+			259 = {
+					add_building_construction = {
+						type = bunker
+						level = 5
+						province =9868
+						instant_build = yes
+					}
+				}
+			}
+		}			
 	focus = {
 		id = SOV_defense_of_stalingrad
 		icon = GFX_focus_SOV_defense_of_stalingrad
@@ -901,8 +971,6 @@ focus_tree = {
 					instant_build = yes
 					}}
 			210 = {
-				custom_effect_tooltip = SOV_defense_of_moscow_forts
-				hidden_effect = {
 					add_building_construction = {
 						type = bunker
 						level = 5
@@ -968,7 +1036,6 @@ focus_tree = {
 						level = 2
 						province =6032
 						instant_build = yes
-					}
 				}
 			}
 		}
@@ -1009,8 +1076,6 @@ focus_tree = {
 					instant_build = yes
 					}}
 			212 = {
-				custom_effect_tooltip = SOV_defense_of_moscow_forts
-				hidden_effect = {
 					add_building_construction = {
 						type = bunker
 						level = 5
@@ -1088,7 +1153,6 @@ focus_tree = {
 						level = 5
 						province =5889
 						instant_build = yes
-					}
 				}
 			}
 		}
@@ -1994,6 +2058,7 @@ focus_tree = {
 			add_ideas = officers_purged
 		}
 	}
+	
 	focus = {
 		id = SOV_rehabilitated_military
 		icon = GFX_goal_generic_small_arms
