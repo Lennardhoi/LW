@@ -17,21 +17,6 @@ country_event = {
 			259 = { add_core_of = SOV }
 			386 = { add_core_of = SOV }
 		}
-	}
-}
-country_event = {
-	id = iran.3
-	title = iran.3.t
-	desc = iran.3.d
-	picture = GFX_report_event_soviet_tanks_snow
-	is_triggered_only = yes
-	option = {
-		name = iran.3.b
-		trigger={NOT={tag=ENG}}
-	}
-	option = {
-		name = iran.3.a
-		trigger={tag=ENG}
 		ENG = {
 			transfer_state = 380
 			transfer_state = 387
@@ -62,6 +47,22 @@ country_event = {
 				add_compliance = 100
 			}
 		}
+	}
+}
+country_event = {
+	id = iran.3
+	title = iran.3.t
+	desc = iran.3.d
+	picture = GFX_report_event_soviet_tanks_snow
+	is_triggered_only = yes
+	option = {
+		name = iran.3.b
+		trigger={NOT={tag=ENG}}
+	}
+	option = {
+		name = iran.3.a
+		trigger={tag=ENG}
+		
 	}
 }
 country_event = {
