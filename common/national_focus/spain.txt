@@ -1024,30 +1024,10 @@ focus_tree = {
  		search_filters = {FOCUS_FILTER_STABILITY}
  		completion_reward = {
  			add_stability = 0.05
- 			create_country_leader = {
- 				name = "Francisco Franco"
- 				desc = "POLITICS_FRANCISCO_FRANCO_DESC"
- 				picture = "Portrait_Spain_Francisco_Franco.dds"
- 				expire = "1965.1.1"
- 				ideology = despotism
- 				traits = {
- 					caudillo_1
- 					propaganda_expert
- 					popular_figurehead
- 				}
- 			}
- 			create_country_leader = {
- 				name = "Francisco Franco"
- 				desc = "POLITICS_FRANCISCO_FRANCO_DESC"
- 				picture = "Portrait_Spain_Francisco_Franco.dds"
- 				expire = "1965.1.1"
- 				ideology = fascism_ideology
- 				traits = {
- 					caudillo_1
- 					propaganda_expert
- 					popular_figurehead
- 				}
- 			}
+			add_country_leader_trait=caudillo_1
+			add_country_leader_trait=propaganda_expert
+			add_country_leader_trait=popular_figurehead
+			
  		}
  	}
  	focus = {
@@ -1218,44 +1198,7 @@ focus_tree = {
  			add_stability = 0.05
  			remove_country_leader_trait = caudillo_1
  			add_country_leader_trait = caudillo_2
- 			hidden_effect = {
- 				if = {
- 					limit = {
- 						has_government = neutrality
- 					}
- 					retire_ideology_leader = fascism
- 					create_country_leader = {
- 						name = "Francisco Franco"
- 						desc = "POLITICS_FRANCISCO_FRANCO_DESC"
- 						picture = "Portrait_Spain_Francisco_Franco.dds"
- 						expire = "1965.1.1"
- 						ideology = fascism_ideology
- 						traits = {
- 							caudillo_2
- 							propaganda_expert
- 							popular_figurehead
- 						}
- 					}
- 				}
- 				if = {
- 					limit = {
- 						has_government = fascism
- 					}
- 					retire_ideology_leader = neutrality
- 					create_country_leader = {
- 						name = "Francisco Franco"
- 						desc = "POLITICS_FRANCISCO_FRANCO_DESC"
- 						picture = "Portrait_Spain_Francisco_Franco.dds"
- 						expire = "1965.1.1"
- 						ideology = despotism
- 						traits = {
- 							caudillo_2
- 							propaganda_expert
- 							popular_figurehead
- 						}
- 					}
- 				}
- 			}
+ 			
  		}
  	}
  }

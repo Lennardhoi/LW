@@ -15,6 +15,10 @@ on_actions = {
 				set_variable={GLOBAL.host = ROM.id}
 			}
 			else_if = {
+				limit = {has_game_rule = {rule = horst_host_country option = SWI}}
+				set_variable={GLOBAL.host = SWI.id}
+			}
+			else_if = {
 				limit = {has_game_rule = {rule = horst_host_country option = HUN}}
 				set_variable={GLOBAL.host = HUN.id}
 			}
