@@ -70,7 +70,7 @@ POW = {
  		fire_only_once = no
  		fixed_random_seed = no
  		is_good = yes
-		days_remove=30
+		days_remove=10
  		available={
  			if={
  				limit={check_variable={POW_recruit_workers_for_army_production_cost>0}}
@@ -124,7 +124,7 @@ POW = {
  		fire_only_once = no
  		fixed_random_seed = no
  		is_good = yes
-		days_remove=30
+		days_remove=10
  		available={
  			if={
  				limit={check_variable={POW_recruit_workers_for_navy_production_cost>0}}
@@ -178,7 +178,7 @@ POW = {
  		fire_only_once = no
  		fixed_random_seed = no
  		is_good = yes
-		days_remove=30
+		days_remove=10
  		available={
  			if={
  				limit={check_variable={POW_recruit_workers_for_resource_extraction_cost>0}}
@@ -232,7 +232,7 @@ POW = {
  		fire_only_once = no
  		fixed_random_seed = no
  		is_good = yes
-		days_remove=30
+		days_remove=10
  		available={
  			if={
  				limit={check_variable={POW_recruit_workers_for_construction_projects_cost>0}}

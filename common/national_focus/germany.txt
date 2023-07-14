@@ -3825,7 +3825,9 @@ focus_tree = {
  	}
  	focus = {
  		id = GER_Greater_Germany
- 		icon = GFX_focus_GER_germania
+ 		#icon = GFX_focus_GER_germania
+
+ 		icon = GFX_focus_ger_reichskommisariats
  		prerequisite = { focus = GER_pressure_sweden focus = GER_alta }
  		available = {
  			has_full_control_of_state = 8
@@ -4737,7 +4739,6 @@ focus_tree = {
  		id = GER_ardennenoffensive
  		icon = GFX_focus_GER_ardennenoffensive
  		prerequisite = { focus = GER_albert_speer }
- 		icon = GFX_focus_ger_reichskommisariats
  		available = {
  			Date > 1941.10.1
  			NOT={has_idea=GER_barbarossa}
