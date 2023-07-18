@@ -128,15 +128,21 @@ country_event = {
 				transfer_state = 32
 				transfer_state = 21
 				transfer_state = 1
+			if = {
+				limit = {controls_state=413}
 				transfer_state = 422
 				transfer_state = 584
+				}
 			}
 		}
 		else = {
 			ITA = {
 				transfer_state = 653
-				transfer_state = 422
-				transfer_state = 584
+				if = {
+					limit = {controls_state=413}
+					transfer_state = 422
+					transfer_state = 584
+				}
 			}
 		}
 		JAP = {

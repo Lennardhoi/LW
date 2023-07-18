@@ -61,9 +61,9 @@ operations = {
  		cost = 0
  		complete_effect = {
 		hidden_effect = {every_state = {
-					limit= {OR = {state =581 state =413 }}
+					limit= {OR = {state =413 }}
 			
-					remove_dynamic_modifier = { modifier = ITA_noob days=180  }
+					remove_dynamic_modifier = { modifier = ITA_noob}
 				}
 		}
 		set_global_flag=desert_supply_flag

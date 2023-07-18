@@ -801,6 +801,7 @@ equipment_modules = {
  		sfx = sfx_ui_sd_module_turret
  		allow_equipment_type = anti_air
  		forbid_equipment_type_exact_match = armor
+ 		forbid_equipment_type = {anti_tank artillery}
  		parent = tank_anti_air_cannon
  	
  		add_stats = {
