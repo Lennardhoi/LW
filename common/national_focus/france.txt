@@ -329,7 +329,6 @@ focus_tree = {
  			any_state = {
  				OR = {
  					state = 466
- 					state = 687
  					state = 580
  				}
  				OWNER = {
@@ -361,8 +360,6 @@ focus_tree = {
  			random_state = {
  				limit = {
  					OR = {
- 						state = 466
- 						state = 687
  						state = 580
  					}
  					NOT  = {
@@ -379,8 +376,6 @@ focus_tree = {
  				limit = {
  					OR = {
  						state = 466
- 						state = 687
- 						state = 580
  					}
  					is_owned_or_subject_trigger = yes
  					NOT  = {

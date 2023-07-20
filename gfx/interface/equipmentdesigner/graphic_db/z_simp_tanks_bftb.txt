@@ -1,0 +1,1503 @@
+#######
+#TANKS#
+#######
+
+###Equipment tags###
+
+#light_tank_chassis_0 - gwtank light
+#medium_tank_chassis_0 - gwtank medium
+#heavy_tank_chassis_0 - gwtank heavy
+
+###Light tanks###
+#light_tank_chassis_1
+#light_tank_chassis_2
+#light_tank_chassis_3
+
+#light_tank_destroyer_chassis_1
+#light_tank_destroyer_chassis_2
+#light_tank_destroyer_chassis_3
+#light_tank_artillery_chassis_1
+#light_tank_artillery_chassis_2
+#light_tank_artillery_chassis_3
+#light_tank_aa_chassis_1
+#light_tank_aa_chassis_2
+#light_tank_aa_chassis_3
+
+###Medium tanks###
+#medium_tank_chassis_1
+#medium_tank_chassis_2
+#medium_tank_chassis_3
+
+#medium_tank_destroyer_chassis_1
+#medium_tank_destroyer_chassis_2
+#medium_tank_destroyer_chassis_3
+#medium_tank_artillery_chassis_1
+#medium_tank_artillery_chassis_2
+#medium_tank_artillery_chassis_3
+#medium_tank_aa_chassis_1
+#medium_tank_aa_chassis_2
+#medium_tank_aa_chassis_3
+
+###Heavy tanks###
+#heavy_tank_chassis_1
+#heavy_tank_chassis_2
+#heavy_tank_chassis_3
+
+#heavy_tank_destroyer_chassis_1
+#heavy_tank_destroyer_chassis_2
+#heavy_tank_destroyer_chassis_3
+#heavy_tank_artillery_chassis_1
+#heavy_tank_artillery_chassis_2
+#heavy_tank_artillery_chassis_3
+#heavy_tank_aa_chassis_1
+#heavy_tank_aa_chassis_2
+#heavy_tank_aa_chassis_3
+
+###Modern tank###
+#modern_tank_chassis_1
+
+#modern_tank_destroyer_chassis_1
+#modern_tank_artillery_chassis_1
+#modern_tank_aa_chassis_1
+
+###Super heavy tank###
+#super_heavy_tank_chassis_1
+
+#super_heavy_tank_destroyer_chassis_1
+#super_heavy_tank_artillery_chassis_1
+#super_heavy_tank_aa_chassis_1
+
+
+###Anf tanks###
+#I couldn't find it bro, it's not in the man the guns folder, I'm tired of searching, Fuck Paradox. I bet they didn't even bother adding them
+
+###
+#I just discovered you can just leave the aa,artillery,tankdestroyer chassis empty and they will use the default icon and model (if there's one)
+#Would've saved me hours of my time :)
+
+#####
+#BUL#
+#####
+
+#Empty aa,artillery,tankdestroyer chassis, they'll use default icon since they don't have other icons
+BUL = {
+	###gwtanks###
+	light_tank_chassis_0 = {
+		pool = {
+			weight = 1
+			icons = {
+				GFX_BUL_basic_light_tank_medium
+			}
+			models = {
+
+			}
+		}
+	}
+	medium_tank_chassis_0 = {
+		pool = {
+			weight = 1
+			icons = {
+				GFX_BUL_basic_medium_tank_medium
+			}
+			models = {
+
+			}
+		}
+	}
+	heavy_tank_chassis_0 = {
+		pool = {
+			weight = 1
+			icons = {
+				GFX_BUL_basic_heavy_tank_medium
+			}
+			models = {
+
+			}
+		}
+	}
+	
+	###light tanks###
+	light_tank_chassis_1 = { 
+		pool = {
+			weight = 1
+			icons = {
+				GFX_BUL_basic_light_tank_medium
+			}
+			models = {
+
+			}
+		}
+	}
+	light_tank_chassis_2 = { 
+		pool = {
+			weight = 1
+			icons = {
+				GFX_BUL_improved_light_tank_medium
+			}
+			models = {
+
+			}
+		}
+	}
+	light_tank_chassis_3 = { 
+		pool = {
+			weight = 1
+			icons = {
+				GFX_BUL_advanced_light_tank_medium
+			}
+			models = {
+
+			}
+		}
+	}
+	light_tank_destroyer_chassis_1 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	light_tank_destroyer_chassis_2 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	light_tank_destroyer_chassis_3 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	light_tank_artillery_chassis_1 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	light_tank_artillery_chassis_2 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	light_tank_artillery_chassis_3 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	light_tank_aa_chassis_1 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	light_tank_aa_chassis_2 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	light_tank_aa_chassis_3 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+
+	###medium tanks###
+	medium_tank_chassis_1 = { 
+		pool = {
+			weight = 1
+			icons = {
+				GFX_BUL_basic_medium_tank_medium
+			}
+			models = {
+
+			}
+		}
+	}
+	medium_tank_chassis_2 = { 
+		pool = {
+			weight = 1
+			icons = {
+				GFX_BUL_improved_medium_tank_medium
+			}
+			models = {
+
+			}
+		}
+	}
+	medium_tank_chassis_3 = { 
+		pool = {
+			weight = 1
+			icons = {
+				GFX_BUL_advanced_medium_tank_medium
+			}
+			models = {
+
+			}
+		}
+	}
+	medium_tank_destroyer_chassis_1 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	medium_tank_destroyer_chassis_2 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	medium_tank_destroyer_chassis_3 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	medium_tank_artillery_chassis_1 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	medium_tank_artillery_chassis_2 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	medium_tank_artillery_chassis_3 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	medium_tank_aa_chassis_1 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	medium_tank_aa_chassis_2 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	medium_tank_aa_chassis_3 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+
+	###heavy tanks###
+	heavy_tank_chassis_1 = { 
+		pool = {
+			weight = 1
+			icons = {
+				GFX_BUL_basic_heavy_tank_medium
+			}
+			models = {
+
+			}
+		}
+	}
+	heavy_tank_chassis_2 = { 
+		pool = {
+			weight = 1
+			icons = {
+				GFX_BUL_improved_heavy_tank_medium
+			}
+			models = {
+
+			}
+		}
+	}
+	heavy_tank_chassis_3 = { 
+		pool = {
+			weight = 1
+			icons = {
+				GFX_BUL_advanced_heavy_tank_medium
+			}
+			models = {
+
+			}
+		}
+	}
+	heavy_tank_destroyer_chassis_1 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	heavy_tank_destroyer_chassis_2 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	heavy_tank_destroyer_chassis_3 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	heavy_tank_artillery_chassis_1 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	heavy_tank_artillery_chassis_2 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	heavy_tank_artillery_chassis_3 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	heavy_tank_aa_chassis_1 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	heavy_tank_aa_chassis_2 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	heavy_tank_aa_chassis_3 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+
+	###modern tanks###
+	modern_tank_chassis_1 = { 
+		pool = {
+			weight = 1
+			icons = {
+				GFX_BUL_main_battle_tank_medium
+			}
+			models = {
+
+			}
+		}
+	}
+	modern_tank_destroyer_chassis_1 = { 
+		pool = {
+			weight = 1
+			icons = {
+				GFX_BUL_main_battle_tank_medium
+			}
+			models = {
+			}
+		}
+	}
+	modern_tank_artillery_chassis_1 = { 
+		pool = {
+			weight = 1
+			icons = {
+				GFX_BUL_main_battle_tank_medium
+			}
+			models = {
+			}
+		}
+	}
+	modern_tank_aa_chassis_1 = { 
+		pool = {
+			weight = 1
+			icons = {
+				GFX_BUL_main_battle_tank_medium
+			}
+			models = {
+			}
+		}
+	}
+
+	###Super heavy tank###
+	super_heavy_tank_chassis_1 = { 
+		pool = {
+			weight = 1
+			icons = {
+				GFX_BUL_super_heavy_tank_medium
+			}
+			models = {
+
+			}
+		}
+	}
+	super_heavy_tank_destroyer_chassis_1 = { 
+		pool = {
+			weight = 1
+			icons = {
+				GFX_BUL_super_heavy_tank_medium
+			}
+			models = {
+			}
+		}
+	}
+	super_heavy_tank_artillery_chassis_1 = { 
+		pool = {
+			weight = 1
+			icons = {
+				GFX_BUL_super_heavy_tank_medium
+			}
+			models = {
+			}
+		}
+	}
+	super_heavy_tank_aa_chassis_1 = { 
+		pool = {
+			weight = 1
+			icons = {
+				GFX_BUL_super_heavy_tank_medium
+			}
+			models = {
+			}
+		}
+	}
+}
+
+#####
+#GRE#
+#####
+
+#Empty aa,artillery,tankdestroyer chassis, they'll use default icon since they don't have other icons
+GRE = {
+	###gwtanks###
+	light_tank_chassis_0 = {
+		pool = {
+			weight = 1
+			icons = {
+				GFX_GRE_basic_light_tank_medium
+			}
+			models = {
+
+			}
+		}
+	}
+	medium_tank_chassis_0 = {
+		pool = {
+			weight = 1
+			icons = {
+				GFX_GRE_basic_medium_tank_medium
+			}
+			models = {
+
+			}
+		}
+	}
+	heavy_tank_chassis_0 = {
+		pool = {
+			weight = 1
+			icons = {
+				GFX_GRE_basic_heavy_tank_medium
+			}
+			models = {	
+
+			}
+		}
+	}
+	
+	###light tanks###
+	light_tank_chassis_1 = { 
+		pool = {
+			weight = 1
+			icons = {
+				GFX_GRE_basic_light_tank_medium
+			}
+			models = {
+
+			}
+		}
+	}
+	light_tank_chassis_2 = { 
+		pool = {
+			weight = 1
+			icons = {
+				GFX_GRE_improved_light_tank_medium
+			}
+			models = {
+
+			}
+		}
+	}
+	light_tank_chassis_3 = { 
+		pool = {
+			weight = 1
+			icons = {
+				GFX_GRE_advanced_light_tank_medium
+			}
+			models = {
+
+			}
+		}
+	}
+	light_tank_destroyer_chassis_1 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	light_tank_destroyer_chassis_2 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	light_tank_destroyer_chassis_3 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	light_tank_artillery_chassis_1 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	light_tank_artillery_chassis_2 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	light_tank_artillery_chassis_3 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	light_tank_aa_chassis_1 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	light_tank_aa_chassis_2 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	light_tank_aa_chassis_3 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+
+	###medium tanks###
+	medium_tank_chassis_1 = { 
+		pool = {
+			weight = 1
+			icons = {
+				GFX_GRE_basic_medium_tank_medium
+			}
+			models = {
+
+			}
+		}
+	}
+	medium_tank_chassis_2 = { 
+		pool = {
+			weight = 1
+			icons = {
+				GFX_GRE_improved_medium_tank_medium
+			}
+			models = {
+
+			}
+		}
+	}
+	medium_tank_chassis_3 = { 
+		pool = {
+			weight = 1
+			icons = {
+				GFX_GRE_advanced_medium_tank_medium
+			}
+			models = {
+
+			}
+		}
+	}
+	medium_tank_destroyer_chassis_1 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	medium_tank_destroyer_chassis_2 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	medium_tank_destroyer_chassis_3 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	medium_tank_artillery_chassis_1 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	medium_tank_artillery_chassis_2 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	medium_tank_artillery_chassis_3 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	medium_tank_aa_chassis_1 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	medium_tank_aa_chassis_2 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	medium_tank_aa_chassis_3 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+
+	###heavy tanks###
+	heavy_tank_chassis_1 = { 
+		pool = {
+			weight = 1
+			icons = {
+				GFX_GRE_basic_heavy_tank_medium
+			}
+			models = {
+
+			}
+		}
+	}
+	heavy_tank_chassis_2 = { 
+		pool = {
+			weight = 1
+			icons = {
+				GFX_GRE_improved_heavy_tank_medium
+			}
+			models = {
+
+			}
+		}
+	}
+	heavy_tank_chassis_3 = { 
+		pool = {
+			weight = 1
+			icons = {
+				GFX_GRE_advanced_heavy_tank_medium
+			}
+			models = {
+
+			}
+		}
+	}
+	heavy_tank_destroyer_chassis_1 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	heavy_tank_destroyer_chassis_2 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	heavy_tank_destroyer_chassis_3 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	heavy_tank_artillery_chassis_1 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	heavy_tank_artillery_chassis_2 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	heavy_tank_artillery_chassis_3 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	heavy_tank_aa_chassis_1 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	heavy_tank_aa_chassis_2 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	heavy_tank_aa_chassis_3 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+
+	###modern tanks###
+	modern_tank_chassis_1 = { 
+		pool = {
+			weight = 1
+			icons = {
+				GFX_GRE_main_battle_tank_medium
+			}
+			models = {
+
+			}
+		}
+	}
+	modern_tank_destroyer_chassis_1 = { 
+		pool = {
+			weight = 1
+			icons = {
+				GFX_GRE_main_battle_tank_medium
+			}
+			models = {
+			}
+		}
+	}
+	modern_tank_artillery_chassis_1 = { 
+		pool = {
+			weight = 1
+			icons = {
+				GFX_GRE_main_battle_tank_medium
+			}
+			models = {
+			}
+		}
+	}
+	modern_tank_aa_chassis_1 = { 
+		pool = {
+			weight = 1
+			icons = {
+				GFX_GRE_main_battle_tank_medium
+			}
+			models = {
+			}
+		}
+	}
+
+	###Super heavy tank###
+	super_heavy_tank_chassis_1 = { 
+		pool = {
+			weight = 1
+			icons = {
+				GFX_GRE_super_heavy_tank_medium
+			}
+			models = {
+
+			}
+		}
+	}
+	super_heavy_tank_destroyer_chassis_1 = { 
+		pool = {
+			weight = 1
+			icons = {
+				GFX_GRE_super_heavy_tank_medium
+			}
+			models = {
+			}
+		}
+	}
+	super_heavy_tank_artillery_chassis_1 = { 
+		pool = {
+			weight = 1
+			icons = {
+				GFX_GRE_super_heavy_tank_medium
+			}
+			models = {
+			}
+		}
+	}
+	super_heavy_tank_aa_chassis_1 = { 
+		pool = {
+			weight = 1
+			icons = {
+				GFX_GRE_super_heavy_tank_medium
+			}
+			models = {
+			}
+		}
+	}
+}
+
+#####
+#TUR#
+#####
+
+#Empty aa,artillery,tankdestroyer chassis, they'll use default icon since they don't have other icons
+TUR = {
+	###gwtanks###
+	light_tank_chassis_0 = {
+		pool = {
+			weight = 1
+			icons = {
+				GFX_TUR_basic_light_tank_medium
+			}
+			models = {
+
+			}
+		}
+	}
+	medium_tank_chassis_0 = {
+		pool = {
+			weight = 1
+			icons = {
+				GFX_TUR_basic_medium_tank_medium
+			}
+			models = {
+
+			}
+		}
+	}
+	heavy_tank_chassis_0 = {
+		pool = {
+			weight = 1
+			icons = {
+				GFX_TUR_basic_heavy_tank_medium
+			}
+			models = {
+
+			}
+		}
+	}
+	
+	###light tanks###
+	light_tank_chassis_1 = { 
+		pool = {
+			weight = 1
+			icons = {
+				GFX_TUR_basic_light_tank_medium
+			}
+			models = {
+
+			}
+		}
+	}
+	light_tank_chassis_2 = { 
+		pool = {
+			weight = 1
+			icons = {
+				GFX_TUR_improved_light_tank_medium
+			}
+			models = {
+
+			}
+		}
+	}
+	light_tank_chassis_3 = { 
+		pool = {
+			weight = 1
+			icons = {
+				GFX_TUR_advanced_light_tank_medium
+			}
+			models = {
+
+			}
+		}
+	}
+	light_tank_destroyer_chassis_1 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	light_tank_destroyer_chassis_2 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	light_tank_destroyer_chassis_3 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	light_tank_artillery_chassis_1 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	light_tank_artillery_chassis_2 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	light_tank_artillery_chassis_3 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	light_tank_aa_chassis_1 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	light_tank_aa_chassis_2 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	light_tank_aa_chassis_3 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+
+	###medium tanks###
+	medium_tank_chassis_1 = { 
+		pool = {
+			weight = 1
+			icons = {
+				GFX_TUR_basic_medium_tank_medium
+			}
+			models = {
+
+			}
+		}
+	}
+	medium_tank_chassis_2 = { 
+		pool = {
+			weight = 1
+			icons = {
+				GFX_TUR_improved_medium_tank_medium
+			}
+			models = {
+
+			}
+		}
+	}
+	medium_tank_chassis_3 = { 
+		pool = {
+			weight = 1
+			icons = {
+				GFX_TUR_advanced_medium_tank_medium
+			}
+			models = {
+
+			}
+		}
+	}
+	medium_tank_destroyer_chassis_1 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	medium_tank_destroyer_chassis_2 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	medium_tank_destroyer_chassis_3 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	medium_tank_artillery_chassis_1 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	medium_tank_artillery_chassis_2 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	medium_tank_artillery_chassis_3 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	medium_tank_aa_chassis_1 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	medium_tank_aa_chassis_2 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	medium_tank_aa_chassis_3 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+
+	###heavy tanks###
+	heavy_tank_chassis_1 = { 
+		pool = {
+			weight = 1
+			icons = {
+				GFX_TUR_basic_heavy_tank_medium
+			}
+			models = {
+
+			}
+		}
+	}
+	heavy_tank_chassis_2 = { 
+		pool = {
+			weight = 1
+			icons = {
+				GFX_TUR_improved_heavy_tank_medium
+			}
+			models = {
+
+			}
+		}
+	}
+	heavy_tank_chassis_3 = { 
+		pool = {
+			weight = 1
+			icons = {
+				GFX_TUR_advanced_heavy_tank_medium
+			}
+			models = {
+
+			}
+		}
+	}
+	heavy_tank_destroyer_chassis_1 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	heavy_tank_destroyer_chassis_2 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	heavy_tank_destroyer_chassis_3 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	heavy_tank_artillery_chassis_1 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	heavy_tank_artillery_chassis_2 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	heavy_tank_artillery_chassis_3 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	heavy_tank_aa_chassis_1 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	heavy_tank_aa_chassis_2 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+	heavy_tank_aa_chassis_3 = {
+		pool = {
+			weight = 1
+			icons = {
+			}
+			models = {
+			}
+		}
+	}
+
+	###modern tanks###
+	modern_tank_chassis_1 = { 
+		pool = {
+			weight = 1
+			icons = {
+				GFX_TUR_main_battle_tank_medium
+			}
+			models = {
+
+			}
+		}
+	}
+	modern_tank_destroyer_chassis_1 = { 
+		pool = {
+			weight = 1
+			icons = {
+				GFX_TUR_main_battle_tank_medium
+			}
+			models = {
+			}
+		}
+	}
+	modern_tank_artillery_chassis_1 = { 
+		pool = {
+			weight = 1
+			icons = {
+				GFX_TUR_main_battle_tank_medium
+			}
+			models = {
+			}
+		}
+	}
+	modern_tank_aa_chassis_1 = { 
+		pool = {
+			weight = 1
+			icons = {
+				GFX_TUR_main_battle_tank_medium
+			}
+			models = {
+			}
+		}
+	}
+
+	###Super heavy tank###
+	super_heavy_tank_chassis_1 = { 
+		pool = {
+			weight = 1
+			icons = {
+				GFX_TUR_super_heavy_tank_medium
+			}
+			models = {
+			}
+		}
+	}
+	super_heavy_tank_destroyer_chassis_1 = { 
+		pool = {
+			weight = 1
+			icons = {
+				GFX_TUR_super_heavy_tank_medium
+			}
+			models = {
+			}
+		}
+	}
+	super_heavy_tank_artillery_chassis_1 = { 
+		pool = {
+			weight = 1
+			icons = {
+				GFX_TUR_super_heavy_tank_medium
+			}
+			models = {
+			}
+		}
+	}
+	super_heavy_tank_aa_chassis_1 = { 
+		pool = {
+			weight = 1
+			icons = {
+				GFX_TUR_super_heavy_tank_medium
+			}
+			models = {
+			}
+		}
+	}
+}
