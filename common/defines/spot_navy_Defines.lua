@@ -28,7 +28,7 @@ NDefines.NNavy.SCREENING_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING = 0.5   -- sc
 NDefines.NNavy.AA_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING	= 0.1  -- AA penalty at 0% positioning
 
 NDefines.NNavy.COMBAT_ARMOR_PIERCING_CRITICAL_BONUS = 2 -- Bonus to critical chance when shooter armor piercing is higher then target armor.
-NDefines.NNavy.COMBAT_TORPEDO_CRITICAL_CHANCE = 0.1 -- chance for critical hit from torpedo.
+NDefines.NNavy.COMBAT_TORPEDO_CRITICAL_CHANCE = 0.2 -- chance for critical hit from torpedo.
 NDefines.NNavy.PRIDE_OF_THE_FLEET_UNASSIGN_COST = 0 -- cost to unassign/replace pride of the fleet
 
 NDefines.NNavy.CARRIER_STACK_PENALTY = 8 -- The most efficient is 8 carriers in combat. 8+ brings the penalty to the amount of wings in battle.
