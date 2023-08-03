@@ -118,6 +118,12 @@ ideas = {
 					}
 					NOT = { has_idea = HUN_treaty_of_triannon }
 				}
+				if = {
+					limit = {
+						original_tag = FRA
+					}
+					has_country_leader = { ruling_only = yes name = "Charles de Gaulle"}
+				}
 			}
 			ai_will_do = {
 				factor = 1
@@ -195,6 +201,12 @@ ideas = {
 						has_dlc = "Death or Dishonor"
 					}
 					NOT = { has_idea = HUN_treaty_of_triannon }
+				}
+				if = {
+					limit = {
+						original_tag = FRA
+					}
+					has_country_leader = { ruling_only = yes name = "Charles de Gaulle"}
 				}
 			}
 			ai_will_do = {
@@ -288,6 +300,12 @@ ideas = {
 					}
 					NOT = { has_idea = HUN_treaty_of_triannon }
 				}
+				if = {
+					limit = {
+						original_tag = FRA
+					}
+					has_country_leader = { ruling_only = yes name = "Charles de Gaulle"}
+				}
 			}
 			ai_will_do = {
 				factor = 1
@@ -375,6 +393,12 @@ ideas = {
 						has_dlc = "Death or Dishonor"
 					}
 					NOT = { has_idea = HUN_treaty_of_triannon }
+				}
+				if = {
+					limit = {
+						original_tag = FRA
+					}
+					has_country_leader = { ruling_only = yes name = "Charles de Gaulle"}
 				}
 			}
 			ai_will_do = {
