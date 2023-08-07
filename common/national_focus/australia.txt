@@ -2275,17 +2275,9 @@ focus_tree = {
  		search_filters = {  }
  		completion_reward = {
  			591 = {
- 				add_building_construction = {
- 					type = air_base
- 					level = 2
- 					instant_build = yes
- 				}
  				set_building_level = {
  					type = coastal_bunker
- 					province = {
- 						all_provinces = yes
- 						limit_to_coastal = yes
- 					}
+ 					province = 11147
  					level = 2
  					instant_build = yes
  				}
@@ -2296,6 +2288,47 @@ focus_tree = {
  						limit_to_naval_base = yes
  					}
  					level = 3
+ 					instant_build = yes
+ 				}
+ 			}
+ 			591 = {
+ 				set_building_level = {
+ 					type = coastal_bunker
+ 					province = 1346
+ 					level = 2
+ 					instant_build = yes
+ 				}
+ 				set_building_level = {
+ 					type = coastal_bunker
+ 					province = {
+ 						all_provinces = yes
+ 						limit_to_naval_base = yes
+ 					}
+ 					level = 3
+ 					instant_build = yes
+ 				}
+ 			}
+ 			591 = {
+ 				set_building_level = {
+ 					type = coastal_bunker
+ 					province = 4093
+ 					level = 2
+ 					instant_build = yes
+ 				}
+ 				set_building_level = {
+ 					type = coastal_bunker
+ 					province = {
+ 						all_provinces = yes
+ 						limit_to_naval_base = yes
+ 					}
+ 					level = 3
+ 					instant_build = yes
+ 				}
+ 			}
+ 			591 = {
+ 				add_building_construction = {
+ 					type = air_base
+ 					level = 2
  					instant_build = yes
  				}
  			}
@@ -2305,41 +2338,19 @@ focus_tree = {
  					level = 2
  					instant_build = yes
  				}
+ 			}
+ 			713 = {
  				set_building_level = {
  					type = coastal_bunker
- 					province = {
- 						all_provinces = yes
- 						limit_to_coastal = yes
- 					}
- 					level = 2
- 					instant_build = yes
- 				}
- 				set_building_level = {
- 					type = coastal_bunker
- 					province = {
- 						all_provinces = yes
- 						limit_to_naval_base = yes
- 					}
+ 					province = 4360
  					level = 3
  					instant_build = yes
  				}
  			}
- 			300 = {
+ 			713 = {
  				set_building_level = {
  					type = coastal_bunker
- 					province = {
- 						all_provinces = yes
- 						limit_to_coastal = yes
- 					}
- 					level = 2
- 					instant_build = yes
- 				}
- 				set_building_level = {
- 					type = coastal_bunker
- 					province = {
- 						all_provinces = yes
- 						limit_to_naval_base = yes
- 					}
+ 					province = 1580
  					level = 3
  					instant_build = yes
  				}

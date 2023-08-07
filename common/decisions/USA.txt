@@ -305,7 +305,37 @@ war_measures = {
  				}}	
  		}
  	}
- }
+	USA_rubber_reserve = {
+		activation = {
+			always=no
+		}
+		icon = generic_operation
+		available = {
+			always=no
+		}
+		allowed = {
+			tag = USA
+		}
+		days_mission_timeout=30
+		visible = {has_war=yes}
+		is_good=no
+		fire_only_once = no
+		timeout_effect  = {
+			IF = {
+			limit = {date > 1942.4.1}
+			}
+			else = {
+			activate_mission=USA_rubber_reserve
+			345 = {
+				add_resource = {
+				type = rubber
+				amount = -100
+				}
+				}
+			}
+			}
+		}
+	}
  USA_aid_britain = {
  	USA_establish_personal_communication_with_former_naval_person = {
  		icon = generic_political_discourse
@@ -655,6 +685,7 @@ USA_support_allies = {
  			RAJ = { add_timed_idea = { idea = USA_war_plans_2 days = 182 }  }
  			USA = { add_timed_idea = { idea = USA_war_plans_2 days = 182 }  }
  		}
- 	}
+ 	}	
  }
+
 

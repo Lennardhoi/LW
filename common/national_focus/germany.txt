@@ -2588,6 +2588,123 @@ focus_tree = {
  		}
  		completion_reward = {
  			activate_mission = GER_exploit_occupied_territories
+			99 = {
+			if = {
+ 			limit = { is_controlled_by = ROOT }
+ 				remove_building = { type = infrastructure  level = 3 }
+			}
+			}
+			10 = {
+			if = {
+ 			limit = { is_controlled_by = ROOT }
+ 				remove_building = { type = infrastructure  level = 3 }
+			}
+			}
+			7 = {
+			if = {
+ 			limit = { is_controlled_by = ROOT }
+				remove_building = { type = infrastructure  level = 3 }
+			}
+			}
+			36 = {
+			if = {
+ 			limit = { is_controlled_by = ROOT }
+				remove_building = { type = infrastructure  level = 3 }
+			}
+			}
+			6 = {
+			if = {
+ 			limit = { is_controlled_by = ROOT }
+				remove_building = { type = infrastructure  level = 3 }
+			}
+			}
+			37 = {	
+			if = {
+ 			limit = { is_controlled_by = ROOT }
+				remove_building = { type = infrastructure  level = 3 }
+			}
+			}
+			29 = {	
+			if = {
+ 			limit = { is_controlled_by = ROOT }
+				remove_building = { type = infrastructure  level = 2 }
+			}
+			}
+			35 = {	
+			if = {
+ 			limit = { is_controlled_by = ROOT }
+				remove_building = { type = infrastructure  level = 3 }
+			}
+			}
+			699 = {	
+			if = {
+ 			limit = { is_controlled_by = ROOT }
+				remove_building = { type = infrastructure  level = 3 }
+			}
+			}
+			61 = {
+ 				set_building_level = {
+ 					type = infrastructure
+ 					level = 10
+ 					instant_build = yes
+ 				}
+			}
+			58 = {
+ 				set_building_level = {
+ 					type = infrastructure
+ 					level = 10
+ 					instant_build = yes
+ 				}
+			}
+			52 = {
+ 				set_building_level = {
+ 					type = infrastructure
+ 					level = 9
+ 					instant_build = yes
+ 				}
+			}
+			66 = {
+ 				set_building_level = {
+ 					type = infrastructure
+ 					level = 10
+ 					instant_build = yes
+ 				}
+			}
+			67 = {
+ 				set_building_level = {
+ 					type = infrastructure
+ 					level = 10
+ 					instant_build = yes
+ 				}
+			}
+			56 = {
+ 				set_building_level = {
+ 					type = infrastructure
+ 					level = 8
+ 					instant_build = yes
+ 				}
+			}
+			62 = {
+ 				set_building_level = {
+ 					type = infrastructure
+ 					level = 9
+ 					instant_build = yes
+ 				}
+			}
+			68 = {
+ 				set_building_level = {
+ 					type = infrastructure
+ 					level = 8
+ 					instant_build = yes
+ 				}
+			}
+			55 = {
+ 				set_building_level = {
+ 					type = infrastructure
+ 					level = 8
+ 					instant_build = yes
+ 				}
+			}
  		}
  	}
  	focus = {
