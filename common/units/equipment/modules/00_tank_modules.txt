@@ -1994,10 +1994,12 @@ equipment_modules = {
  		abbreviation = "stab"
  		category = tank_special_module
  		sfx = sfx_ui_sd_module_turret
- 		add_stats = {
- 			build_cost_ic = 1.5
- 			breakthrough = 6
- 	
+		add_stats = {
+			build_cost_ic = 1.5
+			reliability = -0.075
+		}
+ 		multiply_stats = {
+ 			breakthrough = 0.20
  		}
  		xp_cost = 0
  	}
