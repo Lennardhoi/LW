@@ -1142,6 +1142,10 @@ focus_tree = {
  		available_if_capitulated = yes
  		completion_reward = {		
  			add_ideas = wartime_industry_focus
+ 			swap_ideas = {
+ 				remove_idea = USA_labour
+ 				add_idea = USA_labour2
+ 			}
  		}
  	}
  	focus = {
