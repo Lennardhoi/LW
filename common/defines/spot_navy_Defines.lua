@@ -32,7 +32,7 @@ NDefines.NNavy.COMBAT_TORPEDO_CRITICAL_CHANCE = 0.2 -- chance for critical hit f
 NDefines.NNavy.PRIDE_OF_THE_FLEET_UNASSIGN_COST = 0 -- cost to unassign/replace pride of the fleet
 
 NDefines.NNavy.CARRIER_STACK_PENALTY = 8 -- The most efficient is 8 carriers in combat. 8+ brings the penalty to the amount of wings in battle.
-NDefines.NNavy.CARRIER_STACK_PENALTY_EFFECT = 0.5 -- Each carrier above the optimal amount decreases the amount of airplanes being able to takeoff by such %.
+NDefines.NNavy.CARRIER_STACK_PENALTY_EFFECT = 0.20  -- Each carrier above the optimal amount decreases the amount of airplanes being able to takeoff by such %.
 NDefines.NNavy.NAVAL_COMBAT_AIR_CARRIER_TARGET_SCORE = 30
 NDefines.NNavy.NAVAL_COMBAT_AIR_CAPITAL_TARGET_SCORE = 200
 NDefines.NNavy.GUN_HIT_PROFILES = { -- hit profiles for guns, if target ih profile is lower the gun will have lower accuracy
