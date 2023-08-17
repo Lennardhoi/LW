@@ -373,16 +373,8 @@ technologies = {
 			medium_tank_aa_chassis_2
 			tank_small_cannon_3
 		}
-		on_research_complete = {
-				add_tech_bonus = { 
- 				bonus = 0.5
- 				uses = 1
- 				name = tank_bonus
- 				technology = improved_heavy_tank_chassis 
- 			}
-		}
 		path = {
-			leads_to_tech = improved_heavy_tank_chassis
+			leads_to_tech = advanced_medium_tank_chassis
 			research_cost_coeff = 1
 		}
 		path = {
