@@ -79,7 +79,22 @@ spriteTypes = {
 
 
 
-
+	
+	spriteType = {
+		name = "GFX_EMI_tank_heavyopen_turret"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/large_open_top.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_light_fixed_superstructure_turret"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/light_casemate.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_mediumopen_turret"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/mediumopen.dds"
+		legacy_lazy_load = no
+	}
 	spriteType = {
 		name = "GFX_EMI_tank_medium_cannon_2_improved"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_medium_cannon_2.dds"
@@ -126,7 +141,7 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_high_velocity_cannon.dds"
 		legacy_lazy_load = no
 	}
-spriteType = {
+	spriteType = {
 		name = "GFX_EMI_tank_close_support_gun2"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_close_support_gun_2.dds"
 		legacy_lazy_load = no
@@ -336,7 +351,7 @@ spriteType = {
 	}
 
 	spriteType = {
-		name = "GFX_EMI_tank_light_fixed_superstructure_turret"
+		name = "GFX_EMI_tank_lightopen_turret"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_light_fixed_superstructure.dds"
 		legacy_lazy_load = no
 	}
@@ -646,8 +661,11 @@ spriteType = {
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_flamethrower.dds"
 		legacy_lazy_load = no
 	}
-
-
+	spriteType = {
+		name = "GFX_EMI_commanders_cupola"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/cat_cupola.dds"
+		legacy_lazy_load = no
+	}
 
 ##### Tank Categry Icons #####
 

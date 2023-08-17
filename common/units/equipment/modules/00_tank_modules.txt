@@ -524,6 +524,69 @@ equipment_modules = {
  			hard_attack = 0.1 
  		}
  	}
+	tank_lightopen_turret = {
+ 		abbreviation = "lfs"
+ 		category = tank_light_turret_type
+ 		sfx = sfx_ui_sd_module_turret
+ 		forbid_equipment_type = anti_air
+ 		allow_equipment_type = { artillery anti_tank}
+ 		forbid_equipment_type_exact_match = armor
+ 		forbid_equipment_type = {amphibious flame}
+ 		allowed_module_categories = {
+ 			main_armament_slot = {
+ 				tank_medium_main_armament
+ 			}
+ 		}
+ 		forbid_equipment_type_exact_match_for_category = {
+ 			tank_medium_main_armament = armor
+ 			tank_heavy_main_armament = armor
+ 			tank_super_heavy_main_armament = armor
+ 		}
+ 		xp_cost = 0
+ 		add_stats = {
+ 			reliability = 0.2
+ 		}
+ 		multiply_stats = {
+ 			breakthrough = -0.9
+ 			soft_attack = 0.2
+ 			hard_attack = 0.2
+			air_attack = 0.2
+			hardness = -0.5
+			armor = -0.5
+ 		}
+ 	}
+	tank_mediumopen_turret = {
+ 		abbreviation = "mo"
+ 		category = tank_medium_turret_type
+ 		sfx = sfx_ui_sd_module_turret
+ 		forbid_equipment_type = anti_air
+ 		allow_equipment_type = { artillery anti_tank}
+ 		forbid_equipment_type_exact_match = armor
+ 		forbid_equipment_type = {amphibious flame}
+ 		allowed_module_categories = {
+ 			main_armament_slot = {
+ 				tank_heavy_main_armament
+ 			}
+ 		}
+ 		forbid_equipment_type_exact_match_for_category = {
+ 			tank_medium_main_armament = armor
+ 			tank_heavy_main_armament = armor
+ 			tank_super_heavy_main_armament = armor
+ 		}
+ 		xp_cost = 0
+ 		add_stats = {
+ 			build_cost_ic = 0.5
+ 			reliability = 0.2
+ 		}
+ 		multiply_stats = {
+ 			breakthrough = -0.9
+ 			soft_attack = 0.2
+ 			hard_attack = 0.2
+			air_attack = 0.2
+			hardness = -0.5
+			armor = -0.5
+ 		}
+ 	}
  	tank_medium_one_man_tank_turret = {
  		abbreviation = "m1m"
  		category = tank_medium_turret_type
@@ -680,6 +743,34 @@ equipment_modules = {
  		}
  		multiply_stats = {
  			
+ 		}
+ 	}
+	tank_heavyopen_turret = {
+ 		abbreviation = "hfs"
+ 		category = tank_heavy_turret_type
+ 		sfx = sfx_ui_sd_module_turret
+ 		forbid_equipment_type = {anti_air amphibious flame}
+ 		allow_equipment_type = {artillery anti_tank}
+ 		allowed_module_categories = {
+ 			main_armament_slot = {
+ 				tank_super_heavy_main_armament
+ 			}
+ 		}
+ 		forbid_equipment_type_exact_match_for_category = {
+ 			tank_super_heavy_main_armament = armor
+ 		}
+ 		xp_cost = 0
+ 		add_stats = {
+ 			build_cost_ic = 1.5
+ 			reliability = 0.2
+ 		}
+ 		multiply_stats = {
+ 			breakthrough = -0.9
+ 			soft_attack = 0.2
+ 			hard_attack = 0.2
+			air_attack = 0.2
+			hardness = -0.5
+			armor = -0.5
  		}
  	}
  	tank_heavy_fixed_superstructure_turret = {
@@ -2145,6 +2236,7 @@ equipment_modules = {
  		}
  		multiply_stats = {
  			fuel_capacity = 1
+			maximum_speed = 0.1
  		}
  		xp_cost = 0
  	}
@@ -2162,6 +2254,18 @@ equipment_modules = {
  		build_cost_resources = {
  			tungsten = 20
  		}
+ 	}
+	commanders_cupola = {
+ 		category = tank_special_module
+ 		sfx = sfx_ui_sd_module_turret
+ 		add_stats = {
+ 			hardness = 0.05
+ 		}
+		multiply_stats = {
+			breakthrough = 0.15
+			build_cost_ic = 0.1
+		}
+ 		xp_cost = 0
  	}
  	
  }
