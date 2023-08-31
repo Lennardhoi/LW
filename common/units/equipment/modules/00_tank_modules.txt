@@ -430,7 +430,11 @@ equipment_modules = {
  				tank_small_main_armament
  			}
  		}
- 				forbid_equipment_type_exact_match_for_category = {
+			forbid_equipment_type = {
+				artillery 
+				anti_tank
+			}
+ 		forbid_equipment_type_exact_match_for_category = {
  			tank_medium_main_armament = armor
  			tank_heavy_main_armament = armor
  			tank_super_heavy_main_armament = armor
@@ -454,7 +458,11 @@ equipment_modules = {
  				tank_small_main_armament
  			}
  		}
- 				forbid_equipment_type_exact_match_for_category = {
+		forbid_equipment_type = {
+				artillery 
+				anti_tank
+			}
+ 		forbid_equipment_type_exact_match_for_category = {
  			tank_medium_main_armament = armor
  			tank_heavy_main_armament = armor
  			tank_super_heavy_main_armament = armor
@@ -472,6 +480,10 @@ equipment_modules = {
  		abbreviation = "l3m"
  		category = tank_light_turret_type
  		sfx = sfx_ui_sd_module_turret
+		forbid_equipment_type = {
+				artillery 
+				anti_tank
+			}
  		forbid_equipment_type_exact_match_for_category = {
  			tank_medium_main_armament = armor
  			tank_heavy_main_armament = armor
@@ -518,10 +530,9 @@ equipment_modules = {
  			defense = 3
  		}
  		multiply_stats = {
- 			breakthrough = -0.25
  			ap_attack = 0.1
- 			soft_attack = 0.1
- 			hard_attack = 0.1 
+ 			soft_attack = 0.05
+ 			hard_attack = 0.05 
  		}
  	}
 	tank_lightopen_turret = {
@@ -547,12 +558,12 @@ equipment_modules = {
  			reliability = 0.2
  		}
  		multiply_stats = {
- 			breakthrough = -0.9
+ 			breakthrough = -0.7
  			soft_attack = 0.2
  			hard_attack = 0.2
 			air_attack = 0.2
-			hardness = -0.5
-			armor = -0.5
+			hardness = -0.3
+			armor_value = -0.3
  		}
  	}
 	tank_mediumopen_turret = {
@@ -579,12 +590,12 @@ equipment_modules = {
  			reliability = 0.2
  		}
  		multiply_stats = {
- 			breakthrough = -0.9
+ 			breakthrough = -0.7
  			soft_attack = 0.2
  			hard_attack = 0.2
 			air_attack = 0.2
-			hardness = -0.5
-			armor = -0.5
+			hardness = -0.3
+			armor_value = -0.3
  		}
  	}
  	tank_medium_one_man_tank_turret = {
@@ -606,6 +617,10 @@ equipment_modules = {
  		}
  		multiply_stats = {
  		}
+		forbid_equipment_type = {
+				artillery 
+				anti_tank
+			}
  		forbid_equipment_type_exact_match_for_category = {
  			tank_heavy_main_armament = armor
  			tank_super_heavy_main_armament = armor
@@ -628,6 +643,10 @@ equipment_modules = {
  				tank_medium_main_armament
  			}
  		}
+		forbid_equipment_type = {
+				artillery 
+				anti_tank
+			}
  		forbid_equipment_type_exact_match_for_category = {
  			tank_heavy_main_armament = armor
  			tank_super_heavy_main_armament = armor
@@ -653,6 +672,10 @@ equipment_modules = {
  				tank_medium_main_armament
  			}
  		}
+		forbid_equipment_type = {
+				artillery 
+				anti_tank
+			}
  		forbid_equipment_type_exact_match_for_category = {
  			tank_heavy_main_armament = armor
  			tank_super_heavy_main_armament = armor
@@ -680,10 +703,9 @@ equipment_modules = {
  			defense = 3
  		}
  		multiply_stats = {
- 			breakthrough = -0.25
  			ap_attack = 0.1
- 			soft_attack = 0.1
- 			hard_attack = 0.1 
+ 			soft_attack = 0.05
+ 			hard_attack = 0.05
  		}
  	}
  	tank_heavy_two_man_tank_turret = {
@@ -701,13 +723,17 @@ equipment_modules = {
  			maximum_speed = 0.2
  			breakthrough = 16
  		}
- allowed_module_categories = {
+		allowed_module_categories = {
  			main_armament_slot = {
  				tank_small_main_armament
  				tank_medium_main_armament
  				tank_heavy_main_armament
  			}
  		}
+		forbid_equipment_type = {
+				artillery 
+				anti_tank
+			}
  		forbid_equipment_type_exact_match_for_category = {
  			tank_super_heavy_main_armament = armor
  		}
@@ -738,6 +764,10 @@ equipment_modules = {
  				tank_heavy_main_armament
  			}
  		}
+		forbid_equipment_type = {
+				artillery 
+				anti_tank
+			}
  		forbid_equipment_type_exact_match_for_category = {
  			tank_super_heavy_main_armament = armor
  		}
@@ -765,12 +795,12 @@ equipment_modules = {
  			reliability = 0.2
  		}
  		multiply_stats = {
- 			breakthrough = -0.9
+ 			breakthrough = -0.7
  			soft_attack = 0.2
  			hard_attack = 0.2
 			air_attack = 0.2
-			hardness = -0.5
-			armor = -0.5
+			hardness = -0.7
+			armor_value = -0.7
  		}
  	}
  	tank_heavy_fixed_superstructure_turret = {
@@ -794,10 +824,9 @@ equipment_modules = {
  			defense = 3
  		}
  		multiply_stats = {
- 			breakthrough = -0.25
  			ap_attack = 0.1
- 			soft_attack = 0.1
- 			hard_attack = 0.1 
+ 			soft_attack = 0.05
+ 			hard_attack = 0.05 
  		}
  	}
  	tank_super_heavy_three_man_tank_turret = {
