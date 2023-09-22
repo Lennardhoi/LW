@@ -7,18 +7,19 @@ bookmarks = {
 		default_country = "GER"
 		default = yes
 
-		"FRA"={
-			history = "FRA_GATHERING_STORM_DESC"
-			ideology = democratic
+		
+		"SOV"={
+			history = "SOV_GATHERING_STORM_DESC"
+			ideology = communism
 			ideas = {
-				FRA_victors_of_wwi
-				FRA_disjointed_government
-				FRA_protected_by_the_maginot_line
+				trotskyite_plot
+				home_of_revolution
 			}
 			focuses = {
-				#FRA_initiate_government_reform
-				#FRA_support_status_quo
-				#FRA_evacuation_to_morocco
+				SOV_great_purge
+				SOV_collectivist_propaganda
+				SOV_positive_heroism
+
 			}
 		}
 		"USA"={
@@ -118,20 +119,6 @@ bookmarks = {
 				JAP_strike_on_the_southern_resource_area
 			}
 		}
-		"SOV"={
-			history = "SOV_GATHERING_STORM_DESC"
-			ideology = communism
-			ideas = {
-				trotskyite_plot
-				home_of_revolution
-			}
-			focuses = {
-				SOV_great_purge
-				SOV_collectivist_propaganda
-				SOV_positive_heroism
-
-			}
-		}
 
 		"---"={
 			history = "OTHER_GATHERING_STORM_DESC"
@@ -139,65 +126,19 @@ bookmarks = {
 
 
 		# minors from DLC ####
-
-		"CAN"={
+		"FRA"={
 			minor = yes
-			history = "CAN_GATHERING_STORM_DESC"
+			history = "FRA_GATHERING_STORM_DESC"
 			ideology = democratic
 			ideas = {
-				CAN_great_depression_1
-				CAN_conscription_crisis
+				FRA_victors_of_wwi
+				FRA_disjointed_government
+				FRA_protected_by_the_maginot_line
 			}
 			focuses = {
-				CAN_if_day
-				CAN_national_steel_car
-				CAN_canada_wheat_board
-
-
-			}
-		}
-		"AST"={
-			minor = yes
-			history = "AST_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-				AST_great_depression_1
-			}
-			focuses = {
-				AST_cac_boomerang
-				AST_squash_the_squanderbugs
-				AST_rats_of_tobruk
-
-
-			}
-		}
-		"NZL"={
-			minor = yes
-			history = "NZL_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-
-			}
-			focuses = {
-				NZL_form_the_rnzn
-				NZL_expand_devonport_naval_base
-				NZL_coastal_defense
-			}
-		}
-		"SAF"={
-			minor = yes
-			history = "SAF_GATHERING_STORM_DESC"
-			ideology = democratic
-			ideas = {
-				SAF_ossewabrandwag
-				SAF_history_of_segregation
-			}
-			focuses = {
-				SAF_secure_interests_in_africa
-				SAF_armor_effort
-				SAF_desert_equipment
-
-
+				#FRA_initiate_government_reform
+				#FRA_support_status_quo
+				#FRA_evacuation_to_morocco
 			}
 		}
 		"RAJ"={
@@ -244,50 +185,61 @@ bookmarks = {
 			}
 		}
 
-		"CHI"={
-			minor = yes
-			history = "CHI_GATHERING_STORM_DESC"
-			ideology = neutrality
-			ideas = {
-				CHI_army_corruption_1
-				CHI_hyper_inflation_1
-				CHI_nine_power_treaty
-			}
-			focuses = {
-				CHI_foreign_threats
-				CHI_army_reform
-				CHI_war_of_resistance
-
-			}
-		}
-		"MAN"={
-			minor = yes
-			history = "MAN_GATHERING_STORM_DESC"
-			ideology = fascism
-			ideas = {
-				MAN_banditry
-				MAN_kwantung_veto
-				MAN_low_legitimacy_5
-			}
-			focuses = {
-				MAN_obedience
-				MAN_develop_aluminum_sources
-			}
-		}
 
 
 
 
 		effect = {
-			randomize_weather = 22345 # <- Obligatory in every bookmark !
-			TUR={
-				
-				annex_country = {
-    					target = BUL
-    					transfer_troops = yes
+			randomize_weather = 22345 # <- Obligatory in every bookmark !123 = { rain_light = yes }
+		
+		SPR = {
+ 				give_resource_rights = { receiver = GER state = 166 state = 170 state = 705 state = 702}
+				}	
+		NZL = {
+                 every_owned_state={
+                    ENG = {transfer_state=PREV}
+					}
+				}
+		SAF = {
+                 every_owned_state={
+                    ENG = {transfer_state=PREV}
+					}
+				}
+		AST = {
+                 every_owned_state={
+                    ENG = {transfer_state=PREV}
+					}
+				}
+		CAN = {
+                 every_owned_state={
+                    ENG = {transfer_state=PREV}
+					}
+				}
+		MAN= {
+                 every_owned_state={
+                    JAP = {transfer_state=PREV}
+					}
+				}
+		SIA = {
+                 every_owned_state={
+                    JAP = {transfer_state=PREV}
+					}
+				}
+		634 = {
+			add_building_construction = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+					}
+		195 = {
+			remove_building = {
+					type = industrial_complex
+					level = 5
+					instant_build = yes
+						}
+					}
 				}
 			}
-			#123 = { rain_light = yes }
 		}
 	}
 }

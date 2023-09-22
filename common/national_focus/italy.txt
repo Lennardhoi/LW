@@ -2188,12 +2188,22 @@ focus_tree = {
  		ai_will_do = {
  			factor = 10
  		}
+		
  		completion_reward = {
  			unlock_decision_tooltip=ITA_join_war
  			hidden_effect = {
  				news_event = { hours = 6 id = news.186 }
  				102 = {	add_claim_by  = GER}
  			}
+			if = {
+				limit = {
+					BUL = { is_ai = yes }
+				}
+			BUL = {
+                 every_owned_state={
+                    ITA = {transfer_state=PREV}
+					}
+				}
  		}
  	}
  	focus = {

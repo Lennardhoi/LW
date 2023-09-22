@@ -1764,6 +1764,20 @@ focus_tree = {
  					instant_build = yes
  				}
  			}
+			if = {
+				limit = {
+					controls_state = 273
+				}
+				add_tech_bonus = {
+					name = UK_royal_artillery_focus
+					bonus = 1.0
+					uses = 1
+					category = artillery
+					}
+				add_ideas = Jebem_ti_micro
+				add_manpower = 400000
+				}
+			
  			}}
  	focus = {
  		id = uk_canada_focus
@@ -1819,7 +1833,26 @@ focus_tree = {
  					instant_build = yes
  				}
  			}
- 			}}
+			if = {
+				limit = {
+					controls_state = 268
+				}
+				add_tech_bonus = {
+ 				name = land_doc_bonus
+ 				bonus = 1.0
+ 				uses = 2				
+ 				category = tank_land_doctrine
+					}
+				add_manpower = 600000
+				268 = {
+				add_resource = {
+ 					type = aluminium
+ 					amount = 300
+						}
+					}
+				}
+ 			}
+		}
  					
  	focus = {
  		id = uk_south_africa_focus
@@ -1841,33 +1874,6 @@ focus_tree = {
 				}
 			}
 		}
- 		bypass = {
- 			OR = {
- 				SAF = { exists = no }
- 				SAF = {
- 					custom_trigger_tooltip = {
- 						tooltip = construction_effort_tt
- 						all_owned_state = {
- 							free_building_slots = {
- 								building = industrial_complex
- 								size < 1
- 								include_locked = yes
- 							}
- 						}
- 					}
- 					custom_trigger_tooltip = {
- 						tooltip = naval_effort_tt
- 						all_owned_state = {
- 							free_building_slots = {
- 								building = dockyard
- 								size < 1
- 								include_locked = yes
- 							}
- 						}
- 					}
- 				}
- 			}
- 		}
  		icon = GFX_goal_generic_construct_civ_factory
  		x = -1
  		y = 2
@@ -1968,6 +1974,18 @@ focus_tree = {
  					instant_build = yes
  				}
  			}
+			if = {
+				limit = {
+					controls_state = 267
+				}
+				add_tech_bonus = {
+ 				name = land_doc_bonus
+ 				bonus = 1.0
+ 				uses = 1				
+ 				category = tank_land_doctrine
+					}
+				add_manpower = 400000
+				}
  			}}
  
  	focus = {
