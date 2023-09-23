@@ -2199,11 +2199,11 @@ focus_tree = {
 				limit = {
 					BUL = { is_ai = yes }
 				}
-			BUL = {
-                 every_owned_state={
-                    ITA = {transfer_state=PREV}
-					}
-				}
+			ITA={
+				
+				annex_country = {
+    					target = BUL
+    					transfer_troops = yes
  		}
  	}
  	focus = {
