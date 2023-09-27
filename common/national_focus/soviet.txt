@@ -858,56 +858,7 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
-		id = SOV_defense_of_Baku
-		icon = GFX_focus_SOV_defense_of_leningrad
-		prerequisite = { focus = SOV_great_purge }
-		relative_position_id = SOV_great_purge
-		available = { controls_state = 259
-		}
-		x = 4
-		y = 1
-		cost = 2
-		ai_will_do = {
-			factor = 100
-		}
-		completion_reward = {
-			222={
-				set_building_level = {
-					type = air_base
-					level = 20
-					instant_build = yes
-					}
-				}
-			222 = {
-					set_building_level = {
-						type = bunker
-						level = 5
-						province =4199
-						instant_build = yes
-					}
-					set_building_level = {
-						type = bunker
-						level = 5
-						province =11294
-					}
-				}
-			259 = {
-					set_building_level = {
-						type = bunker
-						level = 5
-						province =9868
-					}
-				}
-			259 = {
-					set_building_level = {
-						type = bunker
-						level = 5
-						province =9553
-					}
-				}
-			}
-		}			
+	
 	focus = {
 		id = SOV_defense_of_stalingrad
 		icon = GFX_focus_SOV_defense_of_stalingrad
@@ -2002,7 +1953,56 @@ focus_tree = {
 			add_ideas = officers_purged
 		}
 	}
-	
+	focus = {
+		id = SOV_defense_of_Baku
+		icon = GFX_focus_SOV_defense_of_leningrad
+		prerequisite = { focus = SOV_great_purge }
+		relative_position_id = SOV_great_purge
+		available = { controls_state = 259
+		}
+		x = 4
+		y = 1
+		cost = 2
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			222={
+				set_building_level = {
+					type = air_base
+					level = 20
+					instant_build = yes
+					}
+				}
+			222 = {
+					set_building_level = {
+						type = bunker
+						level = 5
+						province =4199
+						instant_build = yes
+					}
+					set_building_level = {
+						type = bunker
+						level = 5
+						province =11294
+					}
+				}
+			259 = {
+					set_building_level = {
+						type = bunker
+						level = 5
+						province =9868
+					}
+				}
+			259 = {
+					set_building_level = {
+						type = bunker
+						level = 5
+						province =9553
+					}
+				}
+			}
+		}			
 	focus = {
 		id = SOV_rehabilitated_military
 		icon = GFX_goal_generic_small_arms

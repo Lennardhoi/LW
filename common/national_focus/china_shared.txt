@@ -205,34 +205,7 @@ shared_focus = {
  	completion_reward = {
 		custom_effect_tooltip = CHI_purchase_tanks_tt
 		hidden_effect = { 
-			if = {
-				limit = {
-					NOT = {
-						has_dlc = "No Step Back"
-					}
-				}
-				if = {
-					limit = {
-						not = {
-							has_tech = gwtank
-						}
-					}
-					set_technology = { gwtank = 1 }
-				}
-				if = {
-					limit = {
-						has_completed_focus = CHI_closer_ties_with_germany
-					}
-					add_equipment_to_stockpile = { type = light_tank_equipment_1 amount = 100 producer = GER }
-				}
-				if = {
-					limit = {
-						has_completed_focus = CHI_rapprochement_with_soviet_union
-					}
-					add_equipment_to_stockpile = { type = light_tank_equipment_1 amount = 100 producer = SOV }
-				}
-			}
-			else = {
+			
 				if = {
 					limit = {
 						not = {
@@ -253,7 +226,7 @@ shared_focus = {
 					}
 					add_equipment_to_stockpile = { type = light_tank_chassis_1 amount = 100 producer = SOV variant_name = "T-26TU mod. 1933" }
 				}
-			}
+			
 		}
 	}
  }

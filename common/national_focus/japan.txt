@@ -2346,15 +2346,30 @@ focus_tree = {
  					improved_heavy_tank_chassis  = 1
  				}
  				create_equipment_variant = {
- 					name = "Iwakuro A"
- 					type = heavy_tank_equipment_2
+					name = "Iwakuro A"
+					type = heavy_tank_chassis_2
+ 					parent_version = 0
+ 					modules = {
+ 						main_armament_slot = tank_heavy_cannon_2
+ 						turret_type_slot = tank_heavy_three_man_tank_turret
+ 						special_type_slot_1 = extra_ammo_storage
+ 						special_type_slot_2 = secondary_turret_hmg
+ 						special_type_slot_3 = extra_ammo_storage
+ 						special_type_slot_4 = easy_maintenance
+ 			
+ 						suspension_type_slot = tank_torsion_bar_suspension
+ 						armor_type_slot = tank_welded_armor
+ 						engine_type_slot = tank_diesel_engine_H
+ 					}
  					upgrades = {
- 						tank_gun_upgrade = 5
- 						tank_reliability_upgrade = 5
- 						}}
+ 						tank_nsb_engine_upgrade = 2
+ 						tank_nsb_armor_upgrade = 0
+ 					}
+				icon = "gfx/interface/equipmentdesigner/tanks/designer/jap/JAP_heavy_ACA_camo.dds"
+				}
  				add_equipment_production = {
  					equipment = {
- 						type = heavy_tank_equipment_2
+ 						type = heavy_tank_chassis_2
  						creator = "JAP"
  						version_name = "Iwakuro A"		}
  					requested_factories = 10
@@ -2461,13 +2476,14 @@ focus_tree = {
  		available_if_capitulated = no
  		search_filters = { FOCUS_FILTER_INDUSTRY }
  		completion_reward = {
-			IF {
+			if = {
 				limit = {has_idea = JAP_guide_the_zaibatsus}
 				swap_ideas = {
 					remove_idea = JAP_guide_the_zaibatsus
 					add_idea = JAP_guide_the_zaibatsus2
 				}
-			} else = {
+			} 
+			else = {
 				swap_ideas = {
 					remove_idea = JAP_zaibatsus_challenged
 					add_idea = JAP_zaibatsus_challenged2

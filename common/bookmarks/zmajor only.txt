@@ -191,7 +191,9 @@ bookmarks = {
 
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !123 = { rain_light = yes }
-		
+		ENG = {
+		set_cosmetic_tag = ENG_democratic2
+		}
 		SPR = {
  				give_resource_rights = { receiver = GER state = 166 state = 170 state = 705 state = 702}
 				}	
@@ -235,11 +237,11 @@ bookmarks = {
 			remove_building = {
 					type = industrial_complex
 					level = 5
-					instant_build = yes
-						}
-					}
-				}
+					#instant_build = yes
 			}
+		}
+				
+		}
 		}
 	}
 }
