@@ -273,6 +273,10 @@ ideas = {
 				civilian_intel_to_others = 40.0
 				navy_intel_to_others = 20.0
 			}
+			rule = {
+				can_access_market = no
+				desc = can_not_access_market_closed_economy
+			}
 			cancel_if_invalid = no
 			ai_will_do = {
 				factor = 1
@@ -317,6 +321,10 @@ ideas = {
 				research_speed_factor = 0.05
 				civilian_intel_to_others = 20.0
 				navy_intel_to_others = 10.0
+			}
+			rule = {
+				can_access_market = no
+				desc = can_not_access_market_closed_economy
 			}
 			default = yes
 			cancel_if_invalid = no
@@ -385,6 +393,10 @@ ideas = {
 				civilian_intel_to_others = 20.0
 				navy_intel_to_others = 10.0
 			}
+			rule = {
+				can_access_market = no
+				desc = can_not_access_market_closed_economy
+			}
 			cancel_if_invalid = no
 		}
 		limited_exports = {
@@ -435,6 +447,10 @@ ideas = {
 				civilian_intel_to_others = 10.0
 				navy_intel_to_others = 5
 			}
+			rule = {
+				can_access_market = no
+				desc = can_not_access_market_closed_economy
+			}
 			cancel_if_invalid = no
 			ai_will_do = {
 				factor = 1
@@ -480,6 +496,10 @@ ideas = {
 			modifier = {
 				min_export = 0
 				#civilian_intel_to_others = 0.0
+			}
+			rule = {
+				can_access_market = no
+				desc = can_not_access_market_closed_economy
 			}
 			on_add = {
 				custom_effect_tooltip = closed_economy_TT
