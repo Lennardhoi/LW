@@ -238,7 +238,7 @@ leader_traits = {
 		political_power_factor = -0.2
 		stability_factor = 0.05
 		neutrality_drift = 0.05
-		consumer_goods_factor = -0.05
+		consumer_goods_factor = -0.2
 
 		ai_will_do = {
 			factor = 1
@@ -269,7 +269,7 @@ leader_traits = {
 	humble = {
 		random = no
 		neutrality_drift = 0.05
-		consumer_goods_factor = -0.05
+		consumer_goods_factor = -0.2
 
 		ai_will_do = {
 			factor = 1
@@ -317,7 +317,7 @@ leader_traits = {
 	famous_aviator = {
 		random = no
 		equipment_bonus = {
-			tac_bomber_equipment = {
+			medium_plane_airframe = {
 				air_range = 0.01
 			}
 			small_plane_airframe = {
@@ -663,7 +663,7 @@ leader_traits = {
 
 	the_silver_president = { #Juan Andreu
 		random = no
-		consumer_goods_factor = -0.05
+		consumer_goods_factor = -0.2
 		fascism_acceptance = 50
 		ai_will_do = {
 			factor = 1
@@ -951,14 +951,14 @@ leader_traits = {
 		random = no
 		trade_laws_cost_factor = -0.33
 		economy_cost_factor = -0.33
-		consumer_goods_factor = -0.05
+		consumer_goods_factor = -0.2
 	}
 
 	strict_austerity_adherent = {
 		random = no
 		stability_factor = -0.15
 		economy_cost_factor = 0.5
-		consumer_goods_factor = -0.1
+		consumer_goods_factor = -0.4
 	}
 
 	defeatist = {
@@ -1086,7 +1086,7 @@ leader_traits = {
 
 	disgraced_monarch = {
 		random = no
-		consumer_goods_factor = -0.05
+		consumer_goods_factor = -0.2
 		stability_factor = -0.1
 	}
 
@@ -1235,7 +1235,7 @@ leader_traits = {
 		sprite = 13
 
 		communism_drift = 0.1
-		consumer_goods_factor = -0.05
+		consumer_goods_factor = -0.2
 
 		ai_will_do = {
 			factor = 1
@@ -1407,7 +1407,7 @@ leader_traits = {
 	financial_expert = {
 		sprite = 10
 		random = yes
-		consumer_goods_factor = -0.05
+		consumer_goods_factor = -0.2
 
 		ai_will_do = {
 			factor = 2
@@ -1596,7 +1596,7 @@ leader_traits = {
 	finance_graduate = {
 		sprite = 10
 		random = no
-		consumer_goods_factor = -0.02
+		consumer_goods_factor = -0.08
 
 		ai_will_do = {
 			factor = 2
@@ -1718,7 +1718,7 @@ leader_traits = {
 		sprite = 10
 
 		stability_factor = 0.05
-		consumer_goods_factor = -0.05
+		consumer_goods_factor = -0.2
 
 		ai_will_do = {
 			factor = 1
@@ -1753,7 +1753,7 @@ leader_traits = {
 		random = no
 		sprite = 10
 
-		consumer_goods_factor = -0.1
+		consumer_goods_factor = -0.4
 		resistance_growth_on_our_occupied_states = 0.1
 
 		ai_will_do = {
@@ -1856,7 +1856,7 @@ leader_traits = {
 		random = no
 		sprite = 13
 
-		consumer_goods_factor = -0.02
+		consumer_goods_factor = -0.08
 		stability_factor = 0.05
 		conscription = 0.005
 
@@ -1923,7 +1923,7 @@ leader_traits = {
 		random = no
 		sprite = 13
 		fascism_drift = 0.1
-		consumer_goods_factor = -0.05
+		consumer_goods_factor = -0.2
 	}
 
 	leftist_freemason = {

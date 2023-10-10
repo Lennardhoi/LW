@@ -77,7 +77,19 @@ idea_categories = {
 
 		slot = academy_spirit
 	}
+	
+	special_forces_academy_spirit = {
+		type = army_spirit
 
+		cost = 20
+		removal_cost = -1
+		
+		politics_tab = no
+		
+		ledger = hidden
+
+		slot = special_forces_academy_spirit
+	}
 	army_spirit = {
 		type = army_spirit
 
@@ -139,7 +151,7 @@ idea_categories = {
 	}
 
 	air_force_academy_spirit = {
-		type = air_spirit
+		type = army_spirit
 
 		cost = 50
 		removal_cost = -1

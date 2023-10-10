@@ -726,7 +726,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = nav_1
+			leads_to_tech = air_torpedoe_1
 			research_cost_coeff = 1
 		}
 		path = {
@@ -824,7 +824,7 @@ technologies = {
 		}
 	}
 
-	nav_1 = {
+	air_torpedoe_1 = {
 		enable_equipment_modules = {
 			torpedo_mounting
 		}
@@ -838,7 +838,7 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = nav_2
+			leads_to_tech = air_torpedoe_2
 			research_cost_coeff = 1
 		}
 		
@@ -861,9 +861,9 @@ technologies = {
 			}
 		}
 	}
-	nav_2 = {
+	air_torpedoe_2 = {
 		enable_equipment_modules = {
-			torpedo_mounting2
+			torpedo_mounting_2
 		}
 		
 		research_cost = 0.5
@@ -875,7 +875,7 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = nav_3
+			leads_to_tech = air_torpedoe_3
 			research_cost_coeff = 1
 		}
 		
@@ -898,9 +898,9 @@ technologies = {
 			}
 		}
 	}
-	nav_3 = {
+	air_torpedoe_3 = {
 		enable_equipment_modules = {
-			torpedo_mounting3
+			torpedo_mounting_3
 		}
 		allow={date>1941.1.1}
 		research_cost = 0.5

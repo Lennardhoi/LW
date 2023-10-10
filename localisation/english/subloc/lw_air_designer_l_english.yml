@@ -1,0 +1,53 @@
+﻿l_english:
+##technologies
+air_torpedoe_1:0 "Basic Torpedo Mountings"
+air_torpedoe_2:0 "Improved Torpedo Mountings"
+air_torpedoe_3:0 "Advanced Torpedo Mountings"
+cas_1:0 "Integrated Bomb Bay"
+cas_2:0 "Cluster Bombs"
+cas_3:0 "Rocket Rails"
+tac_1:0 "Large Bomb Bay"
+tac_2:0 "Large Bomb"
+tac_3:0 "Guided Anti Ship Missile"
+GER_tac_3:0 "Fritz X"
+fuel_injection:0 "Fuel Injection"
+fuel_injection2:0 "Isooctane Fuels"
+GER_fuel_injection2:0 "Methanol Injection"
+ITA_fuel_injection2:0 "Methanol Injection"
+
+
+
+
+#technologies end
+ ### EQUIPMENT MODULE ROLE PERMISSIONS ###
+ #MODULE_ALLOW_ROLE:1 "§GAllows§! the $ROLE|H$ role"
+ #MODULE_ALLOW_ROLE_BUT_OTHER_FORBID:0 "§GAllows§! the $ROLE|H$ role, but $FORBIDDING_MODULE|H$ §Rforbids§! it"
+ #MODULE_FORBID_ROLE:1 "§RForbids§! the $ROLE|H$ role"
+
+ MODULE_ALLOWED_ROLE_IS_FORBIDDEN_BY_ANOTHER_MODULE:0 "The role $ROLE|H$ is £trigger_yes£ by module $ALLOWING_MODULE|H$ but is £trigger_no£ by module $FORBIDDING_MODULE|H$.\n\n"
+
+ ### EQUIPMENT MODULE CATEGORIES ###
+ EQ_MOD_CAT_tank_engine_type_TITLE:0 "Engine Type"
+ 
+ ### EQUIPMENT MODULE SLOTS ###
+ EQ_MOD_SLOT_main_armament_slot_TITLE:0 "Main Armament"
+ ### EQUIPMENT MODULES ###
+ torpedo_mounting:0 "Basic Torpedo Mountings"
+ torpedo_mounting2:0 "Improved Torpedo Mountings"
+ torpedo_mounting3:0 "Advanced Torpedo Mountings"
+ cluster_bombs:0 "Cluster Bombs"
+ large_bomb:0 "Large Bomb"
+ 
+fuel_injection_s:0 "Fuel Injection"
+fuel_injection2_s:0 "Isooctane Fuels"
+GER_fuel_injection2_s:0 "Methanol Injection"
+ITA_fuel_injection2_s:0 "Methanol Injection"
+fuel_injection_m:0 "Fuel Injection"
+fuel_injection2_m:0 "Isooctane Fuels"
+GER_fuel_injection2_m:0 "Methanol Injection"
+ITA_fuel_injection2_m:0 "Methanol Injection"
+fuel_injection_l:0 "Fuel Injection"
+fuel_injection2_l:0 "Isooctane Fuels"
+GER_fuel_injection2_l:0 "Methanol Injection"
+ITA_fuel_injection2_l:0 "Methanol Injection"
+ 

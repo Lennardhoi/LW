@@ -1,3 +1,37 @@
+update_axis_designers =
+{
+every_country= {
+	limit={
+		or = {
+		original_TAG = GER
+		original_TAG = ITA
+		original_TAG = SPR
+		original_TAG = BUL
+		original_TAG = ROM
+		original_TAG = MAN
+		original_TAG = HUN
+		original_TAG = SIA
+		}
+	}
+	set_variable={factory_count=num_of_military_factories}
+	if = {limit={check_variable={factory_count<26}} set_variable={gainfactor=75}}
+	else_if={limit={check_variable={factory_count<100}} set_variable={gainfactor=75} add_to_variable={factory_count=-25} divide_variable={factory_count=500} add_to_variable={factory_count=1} divide_variable={factory_count=num_of_military_factories}  multiply_variable={gainfactor=factory_count}}
+	else={ set_variable={gainfactor=75} add_to_variable={factory_count=-100} divide_variable={factory_count=200} add_to_variable={factory_count=1.15} divide_variable={factory_count=num_of_military_factories} multiply_variable={gainfactor=factory_count}}
+	#add_to_variable={gainfactor=-1}
+	every_military_industrial_organization = {
+	limit={NOT={OR={
+	has_mio_equipment_type = mio_cat_eq_all_carrier
+	has_mio_equipment_type = mio_cat_eq_all_cruiser
+	has_mio_equipment_type = mio_cat_eq_all_destroyer
+	has_mio_equipment_type = mio_cat_eq_all_battleship
+	}}
+	}
+	set_mio_funds_gain_factor = PREV.gainfactor
+	}
+
+}
+}
+
 sealion_core_defense = {
 ENG={
 			set_temp_variable= {battalions_ukt = 0 }

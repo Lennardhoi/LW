@@ -1,4 +1,6 @@
---Horst defines:
+
+NDefines.NIndustrialOrganisation.DESIGN_TEAM_RESEARCH_BONUS = 0.15	
+
 --BBA DLC changes
 NDefines.NCountry.BASE_STABILITY_WAR_FACTOR = -0.3
 NDefines.NCountry.WAR_SUPPORT_DEFENSIVE_WAR = 0.3
@@ -181,7 +183,9 @@ NDefines.NProduction.EQUIPMENT_MODULE_ADD_XP_COST = 0.0					-- XP cost for addin
 NDefines.NProduction.EQUIPMENT_MODULE_REPLACE_XP_COST = 0.0				-- XP cost for replacing one equipment module with an unrelated module when creating an equipment variant.
 NDefines.NProduction.EQUIPMENT_MODULE_CONVERT_XP_COST = 0.0				-- XP cost for converting one equipment module to a related module when creating an equipment variant.
 NDefines.NProduction.EQUIPMENT_MODULE_REMOVE_XP_COST = 0.0				-- XP cost for removing an equipment module and leaving the slot empty when creating an equipment variant.
-	
+NDefines.NProduction.MINIMUM_NUMBER_OF_FACTORIES_TAKEN_BY_CONSUMER_GOODS_VALUE = 0 --1		-- The minimum number of factories we have to put on consumer goods, by value.
+NDefines.NProduction.MINIMUM_NUMBER_OF_FACTORIES_TAKEN_BY_CONSUMER_GOODS_PERCENT = 0.0	--0.1 The minimum number of factories we have to put on consumer goods, in percent.
+
 NDefines.NProduction.BASE_LICENSE_IC_COST = 0.4			-- Base IC cost for lended license
 NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0	-- IC cost equipment for every year of equipment after 1936
 NDefines.NProduction.RAILWAY_GUN_MAX_MIL_FACTORIES_PER_LINE = 10
@@ -321,6 +325,8 @@ NDefines.NMilitary.XP_GAIN_PER_OVERRUN_UNIT = 0
 NDefines.NMilitary.XP_GAIN_FOR_SHATTERING = 0
 NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 6 -- WAS 5 | We added one more support company as it feels necessary for quality tank or infantry divisions -Thrasymachus
 NDefines.NMilitary.MAX_DIVISION_BRIGADE_HEIGHT = 6		-- Max height of regiments in division designer
+		-- Max height of regiments in division designer.
+NDefines.NMilitary.MIN_DIVISION_BRIGADE_HEIGHT = 6
 NDefines.NMilitary.BATALION_CHANGED_EXPERIENCE_DROP = 0.0
 NDefines.NMilitary.BATALION_NOT_CHANGED_EXPERIENCE_DROP = 0.0
 
@@ -337,7 +343,6 @@ NDefines.NMilitary.AIR_EQUIPMENT_RAMP_COST = 5
 NDefines.NBuildings.MAX_SHARED_SLOTS = 99 --max building slots in a state
 NDefines.NBuildings.OWNER_CHANGE_EXTRA_SHARED_SLOTS_FACTOR = 1
 NDefines.NBuildings.MAX_BUILDING_LEVELS = 99
-NDefines.NBuildings.BASE_FACTORY_REPAIR = 0.3 --doesnt work
 --NDefines.NResistance.COMPLIANCE_FACTOR_ON_STATE_CONTROLLER_CHANGE = -0.1
 NDefines.NProduction.MAX_MIL_FACTORIES_PER_LINE = 300
 NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.13
