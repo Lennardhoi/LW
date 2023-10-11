@@ -40,7 +40,7 @@ ITA_crda_organization = {
 }
 
 ITA_cantiere_oto_organization = {
-	include = generic_escort_ship_organization
+	include = generic_task_force_ship_organization
 	icon = GFX_idea_ITA_oto
 	allowed = {	
 		tag = ITA 
@@ -49,7 +49,7 @@ ITA_cantiere_oto_organization = {
 	}
 }
 ITA_navalmeccanica_organization = {
-	include = generic_escort_ship_organization
+	include = generic_battle_line_ship_organization
 	icon = GFX_idea_ITA_navalmeccanica
 	allowed = {	
 		tag = ITA 
@@ -58,7 +58,7 @@ ITA_navalmeccanica_organization = {
 	} 
 } 
 ITA_cantiere_navale_di_ancona_organization = {
-	include = generic_raider_ship_organization
+	include = generic_escort_ship_organization
 	icon = GFX_idea_ITA_cantera_navale_di_ancona
 	allowed = {	
 		tag = ITA 
@@ -66,15 +66,15 @@ ITA_cantiere_navale_di_ancona_organization = {
 	available = {
 	}
 }
-ITA_cantieri_navali_tosi_organization = {
-	include = generic_submarine_organization
-	icon = GFX_idea_ITA_cantieri_navali_tosi
-	allowed = {	
-		tag = ITA 
-	}
-	available = {
-	}
-}
+#ITA_cantieri_navali_tosi_organization = {
+#	include = generic_submarine_organization
+#	icon = GFX_idea_ITA_cantieri_navali_tosi
+#	allowed = {	
+##		tag = ITA 
+#	}
+#	available = {
+#	}
+#}
 
 
 
