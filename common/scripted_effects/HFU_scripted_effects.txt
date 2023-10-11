@@ -2,16 +2,7 @@ update_axis_designers =
 {
 every_country= {
 	limit={
-		or = {
-		original_TAG = GER
-		original_TAG = ITA
-		original_TAG = SPR
-		original_TAG = BUL
-		original_TAG = ROM
-		original_TAG = MAN
-		original_TAG = HUN
-		original_TAG = SIA
-		}
+		is_playable_country=yes
 	}
 	set_variable={factory_count=num_of_military_factories}
 	if = {limit={check_variable={factory_count<26}} set_variable={gainfactor=75}}
