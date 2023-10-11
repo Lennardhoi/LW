@@ -1,6 +1,6 @@
 
 NDefines.NIndustrialOrganisation.DESIGN_TEAM_RESEARCH_BONUS = 0.15	
-
+NDefines.NIndustrialOrganisation.FUNDS_FROM_MANUFACTURER_PER_IC_PER_DAY = 0.05
 --BBA DLC changes
 NDefines.NCountry.BASE_STABILITY_WAR_FACTOR = -0.3
 NDefines.NCountry.WAR_SUPPORT_DEFENSIVE_WAR = 0.3
