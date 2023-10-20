@@ -74,13 +74,10 @@ GER_daimler_benz_organization = {
 	allowed = {	
 		or = {
 					original_TAG = GER
-					original_TAG = ITA
 					original_TAG = SPR
 					original_TAG = BUL
 					original_TAG = ROM
-					original_TAG = MAN
 					original_TAG = HUN
-					original_TAG = SIA
 				}
 	}
 
@@ -144,29 +141,17 @@ GER_messerschmitt_organization = {
 	icon = GFX_idea_messerschmitt
 	
 	allowed = {	
-		or = {
-					original_TAG = GER
-					original_TAG = ITA
-					original_TAG = JAP
-				}
+			TAG = GER
+		}
 	}
-
-
-	
-}
 
 GER_junkers_organization = {
 	include = generic_cas_aircraft_organization
 	icon = GFX_idea_junkers
 	
 	allowed = {	
-		
-		or = {
-					original_TAG = GER
-					original_TAG = ITA
-					original_TAG = JAP
-				}
-	}
+			TAG = GER
+		}
 }
 
 GER_focke_wulf_organization = {
@@ -174,13 +159,8 @@ GER_focke_wulf_organization = {
 	icon = GFX_idea_focke_wulf
 	
 	allowed = {	
-		
-		or = {
-					original_TAG = GER
-					original_TAG = ITA
-					original_TAG = JAP
-				}
-	}
+			TAG = GER
+		}
 }
 
 #GER_heinkel_organization = {
@@ -188,12 +168,8 @@ GER_focke_wulf_organization = {
 #	icon = GFX_idea_heinkel
 #	
 #	allowed = {	
-#		
-#		or = {
-#					original_TAG = GER
-#					original_TAG = ITA
-#					original_TAG = JAP
-#				}
+#			TAG = GER
+#		}
 #	}
 #}
 
@@ -201,16 +177,10 @@ GER_dornier_organization = {
 	include = generic_naval_aircraft_organization
 	icon = GFX_idea_dornier
 	
-	allowed = {	
-		
-		or = {
-					original_TAG = GER
-					original_TAG = ITA
-					original_TAG = JAP
-				} 
-	}
+		allowed = {	
+			TAG = GER
+		}
 }
-
 
 ################################### 
 
@@ -230,7 +200,6 @@ GER_rheinmetall_organization = {
 	allowed = {	
 		or = {
 					original_TAG = GER
-					original_TAG = ITA
 					original_TAG = SPR
 					original_TAG = BUL
 					original_TAG = ROM
@@ -246,7 +215,6 @@ GER_mauser_organization = {
 	allowed = {	
 		or = {
 					original_TAG = GER
-					original_TAG = ITA
 					original_TAG = SPR
 					original_TAG = BUL
 					original_TAG = ROM
@@ -262,7 +230,6 @@ GER_opel_organization = {
 	allowed = {	
 		or = {
 					original_TAG = GER
-					original_TAG = ITA
 					original_TAG = SPR
 					original_TAG = BUL
 					original_TAG = ROM
