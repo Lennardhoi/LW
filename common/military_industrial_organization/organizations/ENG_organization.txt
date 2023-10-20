@@ -130,6 +130,26 @@ ENG_harland_wolff_organization = {
 				}
 		has_dlc = "Arms Against Tyranny"
 	}
+	override_trait = {
+		token = generic_mio_trait_transom_stern
+
+		equipment_bonus = {
+			fuel_consumption = 0.1
+		}
+		production_bonus = {
+			production_capacity_factor = 0.02
+		}
+	}
+	override_trait = {
+		token = generic_mio_trait_high_speed_cruising
+
+		equipment_bonus = {
+			fuel_consumption = 0.1
+		}
+		production_bonus = {
+			production_capacity_factor = 0.02
+		}
+	}
 }
 
 
@@ -150,8 +170,13 @@ ENG_cammell_laird_organization = {
 				}
 		has_dlc = "Arms Against Tyranny"
 	}
+	override_trait = {
+		token = generic_mio_trait_internal_armor_belt
 
-	
+		production_bonus = {
+			production_cost_factor = 0.05
+		}
+	}
 }
 
 ENG_yarrow_shipbuilders_organization = {

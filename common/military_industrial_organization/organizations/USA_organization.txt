@@ -91,6 +91,14 @@ USA_brooklyn_naval_yard_organization = {
 		tag = USA 
 
 	}
+
+	override_trait = {
+		token = generic_mio_trait_internal_armor_belt
+
+		production_bonus = {
+			production_cost_factor = 0.05		}
+	}
+
 }
 
 USA_newport_news_shipbuilding_organization = {
@@ -99,6 +107,26 @@ USA_newport_news_shipbuilding_organization = {
 	allowed = {	
 		tag = USA 
 
+	}
+	override_trait = {
+		token = generic_mio_trait_transom_stern
+
+		equipment_bonus = {
+			fuel_consumption = 0.1
+		}
+		production_bonus = {
+			production_capacity_factor = 0.02
+		}
+	}
+	override_trait = {
+		token = generic_mio_trait_high_speed_cruising
+
+		equipment_bonus = {
+			fuel_consumption = 0.1
+		}
+		production_bonus = {
+			production_capacity_factor = 0.02
+		}
 	}
 }
 

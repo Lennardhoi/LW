@@ -155,8 +155,8 @@ generic_tank_organization = {
 		all_parents = { generic_mio_trait_simplified_suspension generic_mio_trait_crew_ergonomics }
 
 		production_bonus = {
-			production_efficiency_gain_factor = 0.15
-			production_resource_need_factor = -0.15
+			production_efficiency_gain_factor = 0.20
+			production_resource_need_factor = -0.10
 		}
 	}
 
@@ -187,9 +187,12 @@ generic_tank_organization = {
 		
 		mutually_exclusive = { generic_mio_trait_quality_improvements }
 		
+		equipment_bonus = {
+			reliability = -0.05
+		}
+
 		production_bonus = {
 			production_cost_factor = -0.1
-			production_efficiency_gain_factor = 0.1
 		}
 	}
 
@@ -236,15 +239,15 @@ generic_tank_organization = {
 		all_parents = { generic_mio_trait_crew_ergonomics generic_mio_trait_defensive_equipment }
 
 		equipment_bonus = {
-			ap_attack = 0.05
-			hard_attack = 0.05
+			hard_attack = 0.02
+			soft_attack = 0.02
 		}
 	}
 
 	trait = {
 		token = generic_mio_trait_anti_tank_specialization
 		name = generic_mio_trait_anti_tank_specialization
-		icon = GFX_generic_mio_trait_icon_soft_attack
+		icon = GFX_generic_mio_trait_icon_ap_attack
 		
 		position = { x=-1 y=2 }
 		relative_position_id = generic_mio_trait_long_barreled_guns
@@ -254,7 +257,7 @@ generic_tank_organization = {
 		mutually_exclusive = { generic_mio_trait_infantry_support_tanks }
 		
 		equipment_bonus = {
-			armor_value = 0.05
+			ap_attack = 0.10
 			hard_attack = 0.05
 		}
 	}
@@ -272,7 +275,8 @@ generic_tank_organization = {
 		mutually_exclusive = { generic_mio_trait_anti_tank_specialization }
 		
 		equipment_bonus = {
-			soft_attack = 0.05
+			soft_attack = 0.07
+			hardness = -0.02
 		}
 
 		production_bonus = {
@@ -283,7 +287,7 @@ generic_tank_organization = {
 	trait = {  
 		token = GER_mio_trait_hotrolled_armor
 		name = GER_mio_trait_hotrolled_armor
-		#icon = GFX_industrial_org_trait_placeholder
+		icon = GFX_generic_mio_department_icon_tank_general_armor
 		limit_to_equipment_type = { light_tank_chassis medium_tank_chassis }
 		production_bonus = {
 			production_efficiency_cap_factor = 0.05
@@ -303,7 +307,7 @@ generic_tank_organization = {
 	trait = {
 		token = GER_mio_trait_multilayer_armour
 		name = GER_mio_trait_multilayer_armour
-		#icon = GFX_industrial_org_trait_placeholder
+		icon = GFX_generic_mio_department_icon_tank_general_armor
 		any_parent = { GER_mio_trait_hotrolled_armor }
 		limit_to_equipment_type = { light_tank_chassis medium_tank_chassis }
 		equipment_bonus = {
@@ -649,6 +653,7 @@ generic_mobile_tank_organization = {
 		mutually_exclusive = { generic_mio_reduced_fuel_usage }
 		
 		equipment_bonus = {
+			fuel_consumption = 0.05
 			maximum_speed = 0.05
 		}
 	}
@@ -666,7 +671,8 @@ generic_mobile_tank_organization = {
 		mutually_exclusive = { generic_mio_engine_optimization }
 		
 		equipment_bonus = {
-			fuel_consumption = 0.05
+			fuel_consumption = -0.05
+			maximum_speed = -0.05
 		}
 	}
 
@@ -728,6 +734,7 @@ generic_mobile_tank_organization = {
 		
 		production_bonus = {
 			production_resource_penalty_factor = -0.1
+			production_efficiency_cap_factor = -0.03
 		}
 	}
 
@@ -742,9 +749,9 @@ generic_mobile_tank_organization = {
 		all_parents = { generic_mio_sloping_armor }
 
 		mutually_exclusive = { generic_mio_lighter_materials }
-		
+
 		equipment_bonus = {
-			armor_value = 0.05
+			armor_value = 0.1
 		}
 	}
 
@@ -794,7 +801,7 @@ generic_mobile_tank_organization = {
 		}
 
 		production_bonus = {
-			production_efficiency_cap_factor = 0.05
+			production_capacity_factor = 0.10
 		}
 	}
 
@@ -923,7 +930,7 @@ generic_medium_tank_organization = {
 		all_parents = { generic_mio_trait_simplified_turret_design }
 		
 		equipment_bonus = {
-			ap_attack = 0.05
+			soft_attack = 0.03
 		}
 	}
 
@@ -939,6 +946,8 @@ generic_medium_tank_organization = {
 		
 		equipment_bonus = {
 			ap_attack = 0.05
+			air_attack = 0.1
+			defense = 0.03
 		}
 	}
 
@@ -968,7 +977,7 @@ generic_medium_tank_organization = {
 		mutually_exclusive = { generic_mio_trait_crew_survival_layout generic_mio_trait_sloped_side_armor }
 		
 		equipment_bonus = {
-			armor_value = 0.05
+			armor_value = 0.12
 		}
 	}
 
@@ -985,7 +994,7 @@ generic_medium_tank_organization = {
 		mutually_exclusive = { generic_mio_trait_spaced_armor generic_mio_trait_sloped_side_armor }
 		
 		equipment_bonus = {
-			defense = 0.05
+			defense = 0.07
 		}
 	}
 
@@ -1002,7 +1011,7 @@ generic_medium_tank_organization = {
 		mutually_exclusive = { generic_mio_trait_spaced_armor generic_mio_trait_crew_survival_layout }
 		
 		equipment_bonus = {
-			breakthrough = 0.05
+			breakthrough = 0.07
 		}
 	}
 
@@ -1096,17 +1105,20 @@ generic_heavy_tank_organization = {
 	trait = {
 		token = generic_mio_trait_wide_tracks
 		name = generic_mio_trait_wide_tracks
+		icon = GFX_generic_mio_trait_icon_maximum_speed
 
 		position = { x=1 y=0 }
 		
 		equipment_bonus = {
 			reliability = 0.05
+			maximum_speed = 0.02
 		}
 	}
 
 	trait = {
 		token = generic_mio_trait_fire_extinguishers
 		name = generic_mio_trait_fire_extinguishers
+		icon = GFX_generic_mio_trait_icon_reliability
 
 		position = { x=0 y=4 }
 		relative_position_id = generic_mio_trait_wide_tracks
@@ -1122,6 +1134,7 @@ generic_heavy_tank_organization = {
 	trait = {
 		token = generic_mio_trait_one_piece_hull_side_coverings
 		name = generic_mio_trait_one_piece_hull_side_coverings
+		icon = GFX_generic_mio_trait_icon_max_strength
 
 		position = { x=4 y=0 }
 		relative_position_id = generic_mio_trait_wide_tracks
@@ -1134,6 +1147,7 @@ generic_heavy_tank_organization = {
 	trait = {
 		token = generic_mio_trait_simplified_transmission_system
 		name = generic_mio_trait_simplified_transmission_system
+		icon = GFX_generic_mio_trait_icon_production_capacity
 
 		position = { x=2 y=2 }
 		relative_position_id = generic_mio_trait_wide_tracks
@@ -1149,6 +1163,7 @@ generic_heavy_tank_organization = {
 	trait = {
 		token = generic_mio_trait_improved_engine_output
 		name = generic_mio_trait_improved_engine_output
+		icon = GFX_generic_mio_trait_icon_maximum_speed
 
 		position = { x=0 y=2 }
 		relative_position_id = generic_mio_trait_simplified_transmission_system
@@ -1157,13 +1172,14 @@ generic_heavy_tank_organization = {
 		
 		equipment_bonus = {
 			maximum_speed = 0.05
-			fuel_consumption = -0.05
+			fuel_consumption = 0.05
 		}
 	}
 
 	trait = {
 		token = generic_mio_trait_sloping_armor
 		name = generic_mio_trait_sloping_armor
+		icon = GFX_generic_mio_trait_icon_armor_value
 
 		position = { x=0 y=2 }
 		relative_position_id = generic_mio_trait_one_piece_hull_side_coverings
@@ -1179,6 +1195,7 @@ generic_heavy_tank_organization = {
 	trait = {
 		token = generic_mio_trait_improved_crew_ergonomics
 		name = generic_mio_trait_improved_crew_ergonomics
+		icon = GFX_generic_mio_trait_icon_air_agility
 
 		position = { x=-1 y=2 }
 		relative_position_id = generic_mio_trait_sloping_armor
@@ -1195,6 +1212,7 @@ generic_heavy_tank_organization = {
 	trait = {
 		token = generic_mio_trait_reinforced_construction
 		name = generic_mio_trait_reinforced_construction
+		icon = GFX_generic_mio_trait_icon_armor_value
 
 		position = { x=1 y=2 }
 		relative_position_id = generic_mio_trait_sloping_armor
@@ -1211,6 +1229,7 @@ generic_heavy_tank_organization = {
 	trait = {
 		token = generic_mio_trait_fully_cast_turret
 		name = generic_mio_trait_fully_cast_turret
+		icon = GFX_generic_mio_trait_icon_defense
 
 		position = { x=3 y=0 }
 		relative_position_id = generic_mio_trait_one_piece_hull_side_coverings
@@ -1224,6 +1243,7 @@ generic_heavy_tank_organization = {
 	trait = {
 		token = generic_mio_trait_commander_cupola
 		name = generic_mio_trait_commander_cupola
+		icon = GFX_generic_mio_trait_icon_defense
 
 		position = { x=-1 y=2 }
 		relative_position_id = generic_mio_trait_fully_cast_turret
@@ -1241,6 +1261,7 @@ generic_heavy_tank_organization = {
 	trait = {
 		token = generic_mio_trait_simplified_layout
 		name = generic_mio_trait_simplified_layout
+		icon = GFX_generic_mio_trait_icon_production_capacity
 
 		position = { x=1 y=2 }
 		relative_position_id = generic_mio_trait_fully_cast_turret
@@ -1258,6 +1279,7 @@ generic_heavy_tank_organization = {
 	trait = {
 		token = generic_mio_trait_high_explosive_shells
 		name = generic_mio_trait_high_explosive_shells
+		icon = GFX_generic_mio_trait_icon_unique
 
 		position = { x=0 y=2 }
 		relative_position_id = generic_mio_trait_commander_cupola
@@ -1275,6 +1297,7 @@ generic_heavy_tank_organization = {
 	trait = {
 		token = generic_mio_trait_apcr_hvap_shells
 		name = generic_mio_trait_apcr_hvap_shells
+		icon = GFX_generic_mio_trait_icon_hard_attack
 
 		position = { x=0 y=2 }
 		relative_position_id = generic_mio_trait_simplified_layout
@@ -1623,7 +1646,7 @@ generic_task_force_ship_organization = {
 		mutually_exclusive = { generic_mio_trait_high_speed_cruising }
 
 		equipment_bonus = {
-			naval_range = 0.05
+			naval_range = 0.1
 			fuel_consumption = 0.05
 		}
 	}
@@ -1640,7 +1663,7 @@ generic_task_force_ship_organization = {
 		
 		equipment_bonus = {
 			naval_speed = 0.05
-			fuel_consumption = 0.05
+			fuel_consumption = 0.10
 		}
 	}
 
@@ -1675,7 +1698,7 @@ generic_task_force_ship_organization = {
 
 		equipment_bonus = {
 			naval_speed = 0.05
-			fuel_consumption = -0.05
+			fuel_consumption = 0.1
 		}
 	}
 
@@ -1788,9 +1811,11 @@ generic_task_force_ship_organization = {
 		relative_position_id = generic_mio_trait_gyro_stabilized_mounts
 		
 		all_parents = { generic_mio_trait_gyro_stabilized_mounts generic_mio_trait_advanced_fitting_works generic_mio_trait_splinter_protection }
+
+		limit_to_equipment_type = { mio_cat_eq_all_carrier }
 		
 		equipment_bonus = {
-			max_strength = 0.1
+			carrier_size = 1
 		}
 	}
 
@@ -1863,9 +1888,6 @@ generic_battle_line_ship_organization = {
 		organization_modifier = {
 			military_industrial_organization_research_bonus = 0.05
 		}
-		production_bonus = {
-			production_capacity_factor = 0.05
-		}
 	}
 
 	trait = {
@@ -1894,9 +1916,6 @@ generic_battle_line_ship_organization = {
 
 		equipment_bonus = {
 			armor_value = 0.15
-		}
-		production_bonus = {
-			production_cost_factor = 0.05
 		}
 	}
 
@@ -1945,7 +1964,7 @@ generic_battle_line_ship_organization = {
 		mutually_exclusive = { generic_mio_trait_advanced_hydrodynamic_design }
 
 		equipment_bonus = {
-			armor_value = 0.05
+			armor_value = 0.10
 		}
 	}
 
@@ -2090,9 +2109,6 @@ generic_battle_line_ship_organization = {
 			lg_armor_piercing = 0.1
 			hg_armor_piercing = 0.1
 		}
-		production_bonus = {
-			production_cost_factor = 0.05
-		}
 	}
 }
 
@@ -2207,7 +2223,6 @@ generic_escort_ship_organization = {
 
 		equipment_bonus = {
 			sub_detection = 0.05
-			mines_sweeping = 0.05
 		}
 	}
 
@@ -2223,6 +2238,9 @@ generic_escort_ship_organization = {
 
 		equipment_bonus = {
 			naval_speed = 0.05
+		}
+		production_bonus = {
+			production_cost_factor = 0.05
 		}
 	}
 
@@ -2436,14 +2454,14 @@ generic_raider_ship_organization = {
 		any_parent = { generic_mio_trait_long_range_raiding }
 
 		equipment_bonus = {
-			fuel_consumption = -0.05
+			fuel_consumption = -0.15
 		}
 	}
 
 	trait = {
 		token = generic_mio_trait_high_speed_operation_stores
 		name = generic_mio_trait_high_speed_operation_stores
-		icon = GFX_generic_mio_trait_icon_mines
+		icon = GFX_generic_mio_trait_icon_fuel_consumption
 
 		position = { x=1 y=1 }
 		relative_position_id = generic_mio_trait_high_speed_raiding
@@ -2451,8 +2469,7 @@ generic_raider_ship_organization = {
 		any_parent = { generic_mio_trait_high_speed_raiding }
 
 		equipment_bonus = {
-			fuel_consumption = -0.05
-			mines_planting = 0.05
+			fuel_consumption = -0.15
 		}
 	}
 
@@ -3842,7 +3859,7 @@ generic_light_aircraft_organization = {
 	trait = {
 		token = generic_mio_trait_expanded_production_facilities
 		name = generic_mio_trait_expanded_production_facilities
-
+		icon = GFX_generic_mio_trait_icon_efficiency_cap
 		position = { x=2 y=0 }
 
 		production_bonus = {
@@ -3853,7 +3870,7 @@ generic_light_aircraft_organization = {
 	trait = {
 		token = generic_mio_trait_fixed_tailwheels
 		name = generic_mio_trait_fixed_tailwheels
-
+		icon = GFX_generic_mio_trait_icon_reliability
 		position = { x=-1 y=1 }
 		relative_position_id = generic_mio_trait_expanded_production_facilities
 
@@ -3867,7 +3884,7 @@ generic_light_aircraft_organization = {
 	trait = {
 		token = generic_mio_trait_removable_wings
 		name = generic_mio_trait_removable_wings
-
+		icon = GFX_generic_mio_trait_icon_efficiency_gain
 		position = { x=0 y=2 }
 		relative_position_id = generic_mio_trait_fixed_tailwheels
 
@@ -3885,7 +3902,7 @@ generic_light_aircraft_organization = {
 	trait = {
 		token = generic_mio_trait_liquid_cooled_engines
 		name = generic_mio_trait_liquid_cooled_engines
-
+		icon = GFX_generic_mio_department_icon_plane_fighter_quality
 		position = { x=2 y=0 }
 		relative_position_id = generic_mio_trait_expanded_production_facilities
 
@@ -3898,7 +3915,7 @@ generic_light_aircraft_organization = {
 	trait = {
 		token = generic_mio_trait_maritime_duties
 		name = generic_mio_trait_maritime_duties
-
+		icon = GFX_generic_mio_trait_icon_naval_strike_targetting
 		position = { x=-1 y=1 }
 		relative_position_id = generic_mio_trait_liquid_cooled_engines
 
@@ -3913,7 +3930,7 @@ generic_light_aircraft_organization = {
 	trait = {
 		token = generic_mio_trait_advanced_aerodynamics
 		name = generic_mio_trait_advanced_aerodynamics
-
+		icon = GFX_generic_mio_department_icon_plane_fighter_quality
 		position = { x=2 y=0 }
 		relative_position_id = generic_mio_trait_liquid_cooled_engines
 
@@ -3926,7 +3943,7 @@ generic_light_aircraft_organization = {
 	trait = {
 		token = generic_mio_trait_fuselage_ordinance_rack
 		name = generic_mio_trait_fuselage_ordinance_rack
-
+		icon = GFX_generic_mio_department_icon_plane_fighter_quality
 		position = { x=1 y=1 }
 		relative_position_id = generic_mio_trait_advanced_aerodynamics
 
@@ -3941,7 +3958,7 @@ generic_light_aircraft_organization = {
 	trait = {
 		token = generic_mio_trait_ongoing_developmental_upgrades
 		name = generic_mio_trait_ongoing_developmental_upgrades
-
+		icon = GFX_generic_mio_department_icon_plane_fighter_line_efficiency
 		position = { x=1 y=1 }
 		relative_position_id = generic_mio_trait_liquid_cooled_engines
 
@@ -3959,7 +3976,7 @@ generic_light_aircraft_organization = {
 	trait = {
 		token = generic_mio_trait_heavier_airframe
 		name = generic_mio_trait_heavier_airframe
-
+		icon = GFX_generic_mio_trait_icon_air_superiority
 		position = { x=-2 y=1 }
 		relative_position_id = generic_mio_trait_ongoing_developmental_upgrades
 
@@ -3977,7 +3994,7 @@ generic_light_aircraft_organization = {
 	trait = {
 		token = generic_mio_trait_maximum_wing_loads
 		name = generic_mio_trait_maximum_wing_loads
-
+		icon = GFX_generic_mio_department_icon_plane_fighter_quality
 		position = { x=0 y=1 }
 		relative_position_id = generic_mio_trait_ongoing_developmental_upgrades
 
@@ -3994,7 +4011,7 @@ generic_light_aircraft_organization = {
 	trait = {
 		token = generic_mio_trait_gun_pods
 		name = generic_mio_trait_gun_pods
-
+		icon = GFX_generic_mio_trait_icon_air_ground_attack
 		position = { x=2 y=1 }
 		relative_position_id = generic_mio_trait_ongoing_developmental_upgrades
 
@@ -4011,7 +4028,7 @@ generic_light_aircraft_organization = {
 	trait = {
 		token = generic_mio_trait_multi_purpose_aircraft
 		name = generic_mio_trait_multi_purpose_aircraft
-
+		icon = GFX_generic_mio_trait_icon_air_superiority
 		position = { x=0 y=1 }
 		relative_position_id = generic_mio_trait_heavier_airframe
 
@@ -4029,7 +4046,7 @@ generic_light_aircraft_organization = {
 	trait = {
 		token = generic_mio_trait_fighter_specialization
 		name = generic_mio_trait_fighter_specialization
-
+		icon = GFX_generic_mio_trait_icon_air_superiority
 		position = { x=0 y=1 }
 		relative_position_id = generic_mio_trait_maximum_wing_loads
 
@@ -4047,7 +4064,7 @@ generic_light_aircraft_organization = {
 	trait = {
 		token = generic_mio_trait_close_air_support_specialization
 		name = generic_mio_trait_close_air_support_specialization
-
+		icon = GFX_generic_mio_trait_icon_air_ground_attack
 		position = { x=0 y=1 }
 		relative_position_id = generic_mio_trait_gun_pods
 
@@ -4064,7 +4081,7 @@ generic_light_aircraft_organization = {
 	trait = {
 		token = generic_mio_trait_flexible_design
 		name = generic_mio_trait_flexible_design
-
+		icon = GFX_generic_mio_department_icon_plane_general
 		position = { x=0 y=1 }
 		relative_position_id = generic_mio_trait_multi_purpose_aircraft
 
@@ -4079,7 +4096,7 @@ generic_light_aircraft_organization = {
 	trait = {
 		token = generic_mio_trait_fighter_expertise
 		name = generic_mio_trait_fighter_expertise
-
+		icon = GFX_generic_mio_department_icon_plane_light
 		position = { x=0 y=1 }
 		relative_position_id = generic_mio_trait_fighter_specialization
 
@@ -4094,7 +4111,7 @@ generic_light_aircraft_organization = {
 	trait = {
 		token = generic_mio_trait_close_air_support_expertise
 		name = generic_mio_trait_close_air_support_expertise
-
+		icon = GFX_generic_mio_department_icon_plane_cas_quality
 		position = { x=0 y=1 }
 		relative_position_id = generic_mio_trait_close_air_support_specialization
 
@@ -4157,7 +4174,7 @@ generic_medium_aircraft_organization = {
 	trait = {
 		token = generic_mio_trait_narrow_build
 		name = generic_mio_trait_narrow_build
-
+		icon = GFX_generic_mio_trait_icon_defense
 		position = { x=1 y=0 }
 
 		limit_to_equipment_type = { mio_cat_eq_all_medium_plane }
@@ -4174,7 +4191,7 @@ generic_medium_aircraft_organization = {
 	trait = {
 		token = generic_mio_trait_mixed_material_construction
 		name = generic_mio_trait_mixed_material_construction
-
+		icon = GFX_generic_mio_department_icon_plane_medium_line_efficiency
 		position = { x=1 y=0 }
 		relative_position_id = generic_mio_trait_narrow_build
 
@@ -4188,7 +4205,7 @@ generic_medium_aircraft_organization = {
 	trait = {
 		token = generic_mio_trait_multi_role_transport
 		name = generic_mio_trait_multi_role_transport
-
+		icon = GFX_generic_mio_department_icon_plane_maritime_patrol_line_efficiency
 		position = { x=0 y=1 }
 		relative_position_id = generic_mio_trait_mixed_material_construction
 
@@ -4205,7 +4222,7 @@ generic_medium_aircraft_organization = {
 	trait = {
 		token = generic_mio_trait_refined_engines
 		name = generic_mio_trait_refined_engines
-
+		icon = GFX_generic_mio_department_icon_plane_medium_engine
 		position = { x=1 y=2 }
 		relative_position_id = generic_mio_trait_mixed_material_construction
 
@@ -4221,7 +4238,7 @@ generic_medium_aircraft_organization = {
 	trait = {
 		token = generic_mio_trait_twin_tail
 		name = generic_mio_trait_twin_tail
-
+		icon = GFX_generic_mio_department_icon_plane_medium_conversion
 		position = { x=2 y=0 }
 		relative_position_id = generic_mio_trait_mixed_material_construction
 
@@ -4237,7 +4254,7 @@ generic_medium_aircraft_organization = {
 	trait = {
 		token = generic_mio_trait_reinforced_wing_braces
 		name = generic_mio_trait_reinforced_wing_braces
-
+		icon = GFX_generic_mio_trait_icon_air_ground_attack
 		position = { x=2 y=0 }
 		relative_position_id = generic_mio_trait_twin_tail
 
@@ -4253,7 +4270,7 @@ generic_medium_aircraft_organization = {
 	trait = {
 		token = generic_mio_trait_expanded_cockpit
 		name = generic_mio_trait_expanded_cockpit
-
+		icon = GFX_generic_mio_trait_icon_air_ground_attack
 		position = { x=0 y=1 }
 		relative_position_id = generic_mio_trait_twin_tail
 
@@ -4272,7 +4289,7 @@ generic_medium_aircraft_organization = {
 	trait = {
 		token = generic_mio_trait_metal_nose_replacement
 		name = generic_mio_trait_metal_nose_replacement
-
+		icon = GFX_generic_mio_trait_icon_defense
 		position = { x=0 y=1 }
 		relative_position_id = generic_mio_trait_reinforced_wing_braces
 
@@ -4290,7 +4307,7 @@ generic_medium_aircraft_organization = {
 	trait = {
 		token = generic_mio_trait_extra_machine_guns
 		name = generic_mio_trait_extra_machine_guns
-
+		icon = GFX_generic_mio_department_icon_plane_naval_bomber_combat
 		position = { x=1 y=2 }
 		relative_position_id = generic_mio_trait_reinforced_wing_braces
 
@@ -4308,7 +4325,7 @@ generic_medium_aircraft_organization = {
 	trait = {
 		token = generic_mio_trait_streamlined_fuselage
 		name = generic_mio_trait_streamlined_fuselage
-
+		icon = GFX_generic_mio_department_icon_plane_medium_quality
 		position = { x=1 y=2 }
 		relative_position_id = generic_mio_trait_expanded_cockpit
 
@@ -4327,7 +4344,7 @@ generic_medium_aircraft_organization = {
 	trait = {
 		token = generic_mio_trait_adaptable_build
 		name = generic_mio_trait_adaptable_build
-
+		icon = GFX_generic_mio_trait_icon_efficiency_gain
 		position = { x=-2 y=1 }
 		relative_position_id = generic_mio_trait_streamlined_fuselage
 
@@ -4349,7 +4366,7 @@ generic_medium_aircraft_organization = {
 	trait = {
 		token = generic_mio_trait_heavy_fighter_specialization
 		name = generic_mio_trait_heavy_fighter_specialization
-
+		icon = GFX_generic_mio_department_icon_plane_heavy_fighter_quality
 		position = { x=0 y=1 }
 		relative_position_id = generic_mio_trait_streamlined_fuselage
 
@@ -4369,7 +4386,7 @@ generic_medium_aircraft_organization = {
 	trait = {
 		token = generic_mio_trait_tactical_bomber_specialization
 		name = generic_mio_trait_tactical_bomber_specialization
-
+		icon = GFX_generic_mio_department_icon_plane_tactical_bomber
 		position = { x=2 y=1 }
 		relative_position_id = generic_mio_trait_streamlined_fuselage
 
@@ -4389,7 +4406,7 @@ generic_medium_aircraft_organization = {
 	trait = {
 		token = generic_mio_trait_skip_bombing
 		name = generic_mio_trait_skip_bombing
-
+		icon = GFX_generic_mio_trait_icon_naval_strike_targetting
 		position = { x=2 y=0 }
 		relative_position_id = generic_mio_trait_reinforced_wing_braces
 
@@ -4403,7 +4420,7 @@ generic_medium_aircraft_organization = {
 	trait = {
 		token = generic_mio_trait_high_frequency_direction_finding
 		name = generic_mio_trait_high_frequency_direction_finding
-
+		icon = GFX_generic_mio_trait_icon_naval_strike_targetting
 		position = { x=0 y=2 }
 		relative_position_id = generic_mio_trait_skip_bombing
 
@@ -4747,7 +4764,7 @@ generic_cas_aircraft_organization = {
 	trait = {
 		token = generic_mio_trait_selectional_construction
 		name = generic_mio_trait_selectional_construction
-
+		icon = GFX_generic_mio_department_icon_plane_cv_cas_line_efficiency
 		position = { x=0 y=0 }
 
 		production_bonus = {
@@ -4758,7 +4775,7 @@ generic_cas_aircraft_organization = {
 	trait = {
 		token = generic_mio_trait_low_altitude_attacks
 		name = generic_mio_trait_low_altitude_attacks
-
+		icon = GFX_generic_mio_trait_icon_defense
 		position = { x=2 y=0 }
 		relative_position_id = generic_mio_trait_selectional_construction
 
@@ -4770,7 +4787,7 @@ generic_cas_aircraft_organization = {
 	trait = {
 		token = generic_mio_trait_canopies_and_firewalls
 		name = generic_mio_trait_canopies_and_firewalls
-
+		icon = GFX_generic_mio_department_icon_plane_cv_cas_production
 		position = { x=1 y=1 }
 		relative_position_id = generic_mio_trait_selectional_construction
 
@@ -4783,7 +4800,7 @@ generic_cas_aircraft_organization = {
 	trait = {
 		token = generic_mio_trait_automatic_pull_out
 		name = generic_mio_trait_automatic_pull_out
-
+		icon = GFX_generic_mio_department_icon_plane_cv_cas_offense
 		position = { x=1 y=1 }
 		relative_position_id = generic_mio_trait_canopies_and_firewalls
 
@@ -4798,7 +4815,7 @@ generic_cas_aircraft_organization = {
 	trait = {
 		token = generic_mio_trait_integrated_armor_designs
 		name = generic_mio_trait_integrated_armor_designs
-
+		icon = GFX_generic_mio_trait_icon_defense
 		position = { x=0 y=2 }
 		relative_position_id = generic_mio_trait_canopies_and_firewalls
 
@@ -4812,7 +4829,7 @@ generic_cas_aircraft_organization = {
 	trait = {
 		token = generic_mio_trait_gull_wings
 		name = generic_mio_trait_gull_wings
-
+		icon = GFX_generic_mio_department_icon_plane_cv_cas_quality
 		position = { x=2 y=0 }
 		relative_position_id = generic_mio_trait_low_altitude_attacks
 
@@ -4826,7 +4843,7 @@ generic_cas_aircraft_organization = {
 	trait = {
 		token = generic_mio_trait_reinforced_wings
 		name = generic_mio_trait_reinforced_wings
-
+		icon = GFX_generic_mio_department_icon_plane_cv_cas
 		position = { x=2 y=0 }
 		relative_position_id = generic_mio_trait_gull_wings
 
@@ -4842,7 +4859,7 @@ generic_cas_aircraft_organization = {
 	trait = {
 		token = generic_mio_trait_heavily_armed_aircraft
 		name = generic_mio_trait_heavily_armed_aircraft
-
+		icon = GFX_generic_mio_department_icon_plane_cv_cas_offense
 		position = { x=1 y=1 }
 		relative_position_id = generic_mio_trait_gull_wings
 
@@ -4857,7 +4874,7 @@ generic_cas_aircraft_organization = {
 	trait = {
 		token = generic_mio_trait_air_brakes
 		name = generic_mio_trait_air_brakes
-
+		icon = GFX_generic_mio_department_icon_plane_cv_cas_offense
 		position = { x=0 y=2 }
 		relative_position_id = generic_mio_trait_gull_wings
 
@@ -4871,7 +4888,7 @@ generic_cas_aircraft_organization = {
 	trait = {
 		token = generic_mio_trait_wingborne_fuel_tanks
 		name = generic_mio_trait_wingborne_fuel_tanks
-
+		icon = GFX_generic_mio_department_icon_plane_cv_cas_conversion
 		position = { x=0 y=2 }
 		relative_position_id = generic_mio_trait_reinforced_wings
 
@@ -4885,7 +4902,7 @@ generic_cas_aircraft_organization = {
 	trait = {
 		token = generic_mio_trait_bombs
 		name = generic_mio_trait_bombs
-
+		icon = GFX_generic_mio_department_icon_plane_cv_cas_quality
 		position = { x=0 y=2 }
 		relative_position_id = generic_mio_trait_air_brakes
 
@@ -4901,7 +4918,7 @@ generic_cas_aircraft_organization = {
 	trait = {
 		token = generic_mio_trait_rockets
 		name = generic_mio_trait_rockets
-
+		icon = GFX_generic_mio_department_icon_plane_cv_cas_offense
 		position = { x=0 y=2 }
 		relative_position_id = generic_mio_trait_wingborne_fuel_tanks
 
@@ -4918,7 +4935,7 @@ generic_cas_aircraft_organization = {
 	trait = {
 		token = generic_mio_heat_bombs
 		name = generic_mio_heat_bombs
-
+		icon = GFX_generic_mio_department_icon_plane_cv_cas_offense
 		position = { x=1 y=1 }
 		relative_position_id = generic_mio_trait_reinforced_wings
 
@@ -4930,7 +4947,7 @@ generic_cas_aircraft_organization = {
 	trait = {
 		token = generic_mio_cluster_bombs
 		name = generic_mio_cluster_bombs
-
+		icon = GFX_generic_mio_department_icon_plane_cv_cas_offense
 		position = { x=0 y=2 }
 		relative_position_id = generic_mio_heat_bombs
 
@@ -4953,6 +4970,9 @@ generic_naval_aircraft_organization = {
 
 	equipment_type = {
 		small_plane_naval_bomber_airframe
+		cv_small_plane_airframe
+		cv_small_plane_cas_airframe
+		cv_small_plane_naval_bomber_airframe
 	}
 
 	research_categories = { mio_cat_all_naval_bomber_and_modules }
@@ -4987,7 +5007,7 @@ generic_naval_aircraft_organization = {
 	trait = {
 		token = generic_mio_trait_navigation_equipment
 		name = generic_mio_trait_navigation_equipment
-
+		icon = GFX_generic_mio_department_icon_plane_cv_naval_bomber_production
 		position = { x=4 y=0 }
 
 		equipment_bonus = {
@@ -4998,7 +5018,7 @@ generic_naval_aircraft_organization = {
 	trait = {
 		token = generic_mio_trait_patrol_fuel_tanks
 		name = generic_mio_trait_patrol_fuel_tanks
-
+		icon = GFX_generic_mio_department_icon_plane_cv_naval_bomber
 		position = { x=-4 y=1 }
 		relative_position_id = generic_mio_trait_navigation_equipment
 
@@ -5006,7 +5026,7 @@ generic_naval_aircraft_organization = {
 
 		mutually_exclusive = { generic_mio_trait_internal_torpedo_mountings }
 
-		limit_to_equipment_type = { small_plane_naval_bomber_airframe large_plane_maritime_patrol_plane_airframe }
+		limit_to_equipment_type = { small_plane_naval_bomber_airframe cv_small_plane_naval_bomber_airframe large_plane_maritime_patrol_plane_airframe }
 
 		equipment_bonus = {
 			air_range = 0.05
@@ -5016,7 +5036,7 @@ generic_naval_aircraft_organization = {
 	trait = {
 		token = generic_mio_trait_internal_torpedo_mountings
 		name = generic_mio_trait_internal_torpedo_mountings
-
+		icon = GFX_generic_mio_department_icon_plane_cv_naval_bomber_conversion
 		position = { x=2 y=0 }
 		relative_position_id = generic_mio_trait_patrol_fuel_tanks
 
@@ -5024,7 +5044,7 @@ generic_naval_aircraft_organization = {
 
 		mutually_exclusive = { generic_mio_trait_patrol_fuel_tanks }
 
-		limit_to_equipment_type = { small_plane_naval_bomber_airframe large_plane_maritime_patrol_plane_airframe }
+		limit_to_equipment_type = { small_plane_naval_bomber_airframe cv_small_plane_naval_bomber_airframe large_plane_maritime_patrol_plane_airframe }
 
 		equipment_bonus = {
 			maximum_speed = 0.05
@@ -5034,13 +5054,13 @@ generic_naval_aircraft_organization = {
 	trait = {
 		token = generic_mio_trait_high_speed_torpedo_release
 		name = generic_mio_trait_high_speed_torpedo_release
-
+		icon = GFX_generic_mio_trait_icon_surface_detection
 		position = { x=1 y=1 }
 		relative_position_id = generic_mio_trait_patrol_fuel_tanks
 
 		any_parent = { generic_mio_trait_patrol_fuel_tanks generic_mio_trait_internal_torpedo_mountings }
 
-		limit_to_equipment_type = { small_plane_naval_bomber_airframe large_plane_maritime_patrol_plane_airframe }
+		limit_to_equipment_type = { small_plane_naval_bomber_airframe cv_small_plane_naval_bomber_airframe large_plane_maritime_patrol_plane_airframe }
 
 		equipment_bonus = {
 			surface_detection = 0.05
@@ -5050,7 +5070,7 @@ generic_naval_aircraft_organization = {
 	trait = {
 		token = generic_mio_trait_reinforced_fuselage
 		name = generic_mio_trait_reinforced_fuselage
-
+		icon = GFX_generic_mio_department_icon_plane_cv_naval_bomber_production
 		position = { x=0 y=1 }
 		relative_position_id = generic_mio_trait_navigation_equipment
 
@@ -5065,7 +5085,7 @@ generic_naval_aircraft_organization = {
 	trait = {
 		token = generic_mio_agility_wing_design
 		name = generic_mio_agility_wing_design
-
+		icon = GFX_generic_mio_trait_icon_air_agility
 		position = { x=-1 y=1 }
 		relative_position_id = generic_mio_trait_reinforced_fuselage
 
@@ -5082,7 +5102,7 @@ generic_naval_aircraft_organization = {
 	trait = {
 		token = generic_mio_strength_wing_design
 		name = generic_mio_strength_wing_design
-
+		icon = GFX_generic_mio_trait_icon_defense
 		position = { x=1 y=1 }
 		relative_position_id = generic_mio_trait_reinforced_fuselage
 
@@ -5099,7 +5119,7 @@ generic_naval_aircraft_organization = {
 	trait = {
 		token = generic_mio_high_capacity_ammunition_stores
 		name = generic_mio_high_capacity_ammunition_stores
-
+		icon = GFX_generic_mio_department_icon_plane_cv_naval_bomber_offense
 		position = { x=0 y=2 }
 		relative_position_id = generic_mio_agility_wing_design
 
@@ -5113,7 +5133,7 @@ generic_naval_aircraft_organization = {
 	trait = {
 		token = generic_mio_larger_bomb_loads
 		name = generic_mio_larger_bomb_loads
-
+		icon = GFX_generic_mio_trait_icon_air_ground_attack
 		position = { x=0 y=2 }
 		relative_position_id = generic_mio_strength_wing_design
 
@@ -5127,7 +5147,7 @@ generic_naval_aircraft_organization = {
 	trait = {
 		token = generic_mio_air_cooled_engines
 		name = generic_mio_air_cooled_engines
-
+		icon = GFX_generic_mio_department_icon_plane_cv_naval_bomber_production
 		position = { x=3 y=1 }
 		relative_position_id = generic_mio_trait_navigation_equipment
 
@@ -5148,7 +5168,7 @@ generic_naval_aircraft_organization = {
 	trait = {
 		token = generic_mio_multi_stage_super_charger
 		name = generic_mio_multi_stage_super_charger
-
+		icon = GFX_generic_mio_trait_icon_air_agility
 		position = { x=0 y=1 }
 		relative_position_id = generic_mio_air_cooled_engines
 
@@ -5167,7 +5187,7 @@ generic_naval_aircraft_organization = {
 	trait = {
 		token = generic_mio_water_injection
 		name = generic_mio_water_injection
-
+		icon = GFX_generic_mio_trait_icon_maximum_speed
 		position = { x=0 y=1 }
 		relative_position_id = generic_mio_multi_stage_super_charger
 
@@ -5186,7 +5206,7 @@ generic_naval_aircraft_organization = {
 	trait = {
 		token = generic_mio_advanced_materials
 		name = generic_mio_advanced_materials
-
+		icon = GFX_generic_mio_department_icon_plane_cv_naval_bomber_materials
 		position = { x=0 y=1 }
 		relative_position_id = generic_mio_water_injection
 
