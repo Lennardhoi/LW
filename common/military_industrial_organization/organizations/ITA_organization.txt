@@ -170,24 +170,24 @@ ITA_caproni_organization = {
 	available = {
 	}
 }
-ITA_piaggio_organization = {
-	include = generic_heavy_aircraft_organization
-	icon = GFX_idea_piaggio
-	allowed = {	 
-		tag = ITA 
-	}
-	available = {
-	}
-}
-ITA_imam_organization = {
-	include = generic_medium_aircraft_organization
-	icon = GFX_idea_ITA_imam
-	allowed = {	 
-		tag = ITA 
-	}
-	available = {
-	}
-}
+# ITA_piaggio_organization = {
+	# include = generic_heavy_aircraft_organization
+	# icon = GFX_idea_piaggio
+	# allowed = {	 
+		# tag = ITA 
+	# }
+	# available = {
+	# }
+# }
+# ITA_imam_organization = {
+	# include = generic_medium_aircraft_organization
+	# icon = GFX_idea_ITA_imam
+	# allowed = {	 
+		# tag = ITA 
+	# }
+	# available = {
+	# }
+# }
 ITA_crda_cant_organization = {
 	include = generic_naval_aircraft_organization
 	icon = GFX_idea_ITA_crda_cant
@@ -197,38 +197,38 @@ ITA_crda_cant_organization = {
 	available = {
 	}
 }
-ITA_fiat_aviazione_organization = {
-	include = generic_range_focused_aircraft_organization
-	icon = GFX_idea_ITA_fiat_aviazione
-	allowed = {	 
-		tag = ITA 
-	}
-	available = {
-	}
-	initial_trait = {
-		equipment_bonus = {
-			naval_strike_attack = -0.1
-			maximum_speed = 0.1
-		}
-	}
+# ITA_fiat_aviazione_organization = {
+	# include = generic_range_focused_aircraft_organization
+	# icon = GFX_idea_ITA_fiat_aviazione
+	# allowed = {	 
+		# tag = ITA 
+	# }
+	# available = {
+	# }
+	# initial_trait = {
+		# equipment_bonus = {
+			# naval_strike_attack = -0.1
+			# maximum_speed = 0.1
+		# }
+	# }
 
-	add_trait = {
-		token = ITA_mio_trait_high_altitude_fighter_development
-		name = ITA_mio_trait_high_altitude_fighter_development
-		#icon = GFX_industrial_org_trait_placeholder
+	# add_trait = {
+		# token = ITA_mio_trait_high_altitude_fighter_development
+		# name = ITA_mio_trait_high_altitude_fighter_development
+		# #icon = GFX_industrial_org_trait_placeholder
 		
-		position = { x=0 y=1 }  
-		relative_position_id = generic_mio_trait_low_drag_wings
+		# position = { x=0 y=1 }  
+		# relative_position_id = generic_mio_trait_low_drag_wings
 		
-		any_parent = { generic_mio_trait_low_drag_wings }
+		# any_parent = { generic_mio_trait_low_drag_wings }
 		
-		limit_to_equipment_type = { mio_cat_eq_all_small_plane }
-		equipment_bonus = {
-			air_agility = 0.05
-			air_attack = 0.03
-		}
-	}
-}
+		# limit_to_equipment_type = { mio_cat_eq_all_small_plane }
+		# equipment_bonus = {
+			# air_agility = 0.05
+			# air_attack = 0.03
+		# }
+	# }
+# }
 
 
 
