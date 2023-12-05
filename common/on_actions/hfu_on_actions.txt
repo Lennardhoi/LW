@@ -16,6 +16,13 @@ on_actions = {
 			
 		}
 	}
+	on_daily = {
+	effect = {
+		if= {limit={is_ai=no}
+		calculate_resource_stockpile=yes
+		}	
+	}
+	}
 	on_weekly_SWE={
 		effect={
 			update_axis_designers=yes
@@ -210,6 +217,8 @@ on_actions = {
 	effect= {
 		every_country={
  			add_ideas = speed3
+			initialize_resource_stockpiles=yes
+			add_dynamic_modifier = {modifier=Stockpile}
 			
  		}
 		every_country={ limit={is_playable_country =yes }

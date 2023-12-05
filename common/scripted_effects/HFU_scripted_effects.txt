@@ -636,6 +636,86 @@ set_variable={academy_weekly_training_speed_result=academy_weekly_training_speed
 
 }
 }
+}
+initialize_resource_stockpiles={
+
+add_to_array={resource_balance=resource@aluminium}
+add_to_array={resource_balance=resource@rubber}
+add_to_array={resource_balance=resource@tungsten}
+add_to_array={resource_balance=resource@steel}
+add_to_array={resource_balance=resource@chromium}
+
+for_each_loop ={
+					array=resource_balance
+					add_to_array ={resource_stockpile=0}
+				}
+				for_each_loop ={
+					array=resource_balance
+					add_to_array ={resource_stockpile_capacity=10000}
+				}
+				for_each_loop ={
+					array=resource_balance
+					add_to_array ={resource_stockpile_output=0}
+				}
+				for_each_loop ={
+					array=resource_balance
+					add_to_array ={resource_stockpile_output_unmod=0}
+				}
+}
+calculate_resource_stockpile={
+set_variable={resource_balance^0=resource@aluminium}
+set_variable={resource_balance^1=resource@rubber}
+set_variable={resource_balance^2=resource@tungsten}
+set_variable={resource_balance^3=resource@steel}
+set_variable={resource_balance^4=resource@chromium}
+
+for_each_loop ={
+					array=resource_balance
+					value=v
+					index=i
+					set_temp_variable={x=1}
+					set_temp_variable={xr=1}
+					add_to_temp_variable={xr=modifier@local_resources_factor}
+					set_temp_variable={xb=1}
+					subtract_from_temp_variable={xb=modifier@min_export}
+					multiply_temp_variable={x=xr}
+					multiply_temp_variable={x=xb}
+					set_temp_variable={y=x}
+					multiply_temp_variable={y=resource_stockpile_output^i}#derzeitiger stockpile output
+					subtract_from_temp_variable={y=v}
+					if={ limit={check_variable={y<0}}
+					set_variable={resource_stockpile_output^i=0}
+					}
+					else_if={
+					limit={check_variable={y>0} NOT={check_variable={v>-1} check_variable={resource_stockpile^i=0}}}
+					
+					#multiply_temp_variable={y=-1}
+					divide_temp_variable={y=x}
+					add_to_variable={resource_stockpile_output^i=y}
+					}
+					
+					clamp_variable ={
+					var=resource_stockpile_output^i
+						min=0
+						max=resource_stockpile^i
+						}
+					set_variable={resource_stockpile_output_unmod^i=resource_stockpile_output^i}
+					set_variable={test123=x}
+					multiply_variable={resource_stockpile_output_unmod^i=xr}
+					
+					
+					subtract_from_variable={resource_stockpile^i=resource_stockpile_output_unmod^i}
+					if={ limit={check_variable={resource_stockpile_output^i=0}}
+						
+						add_to_variable={resource_stockpile^i=v}
+					}
+					clamp_variable={
+						var=resource_stockpile^i
+						min=0
+						max=resource_stockpile_capacity^i
+					}
+				}
+}
 
 
 

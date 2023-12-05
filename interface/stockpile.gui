@@ -1,0 +1,275 @@
+guiTypes = {
+	containerWindowType = {
+			name = "topbar_resource_toogle_window"
+		buttonType ={
+			name ="toogle_button"
+			#spriteType = "GFX_generic_text_bg_203"
+			spriteType = "GFX_division_designer_button"
+			#spriteType = "GFX_button_transparent"
+			buttonFont = "hoi_18mbs"
+			buttonText = "Topbar Resources"
+			#frame=0
+			#quadTextureSprite = "GFX_military_deployment_add_line_btn"
+			position = { x=322 y=12}
+			Orientation = "UPPER_LEFT"
+			#alwaystransparent = yes
+		}
+	}
+	
+	containerWindowType = {
+			name = "stockpile_toggle_window"
+		buttonType ={
+			name ="toggle_button"
+			#spriteType = "GFX_generic_text_bg_203"
+			spriteType = "GFX_division_designer_button"
+			#spriteType = "GFX_button_transparent"
+			buttonFont = "hoi_18mbs"
+			buttonText = "Stockpile"
+			#frame=0
+			#quadTextureSprite = "GFX_military_deployment_add_line_btn"
+			position = { x=150 y=12}
+			Orientation = "UPPER_LEFT"
+			#alwaystransparent = yes
+		}
+	}
+	containerWindowType = {
+		name = "topbar_resource_container2"
+		position = { x = 0 y = 4 }
+		Orientation = UPPER_LEFT
+		containerWindowType = {
+			name = "aluminium_container"
+			position = { x = 966 y = 0 }#3 abstand
+			Orientation = UPPER_LEFT
+			size = { width = 100 height = 30}
+			background = {
+				name = "Background2"
+				quadTextureSprite ="GFX_mini_tooltip"
+			}
+		iconType = {
+			name = "aluminium_icon"
+			position = { x=1 y=3 }
+			spriteType = "GFX_resources_strip"
+			frame = 2
+			scale=0.8
+			#pdx_tooltip = "disable_resources"
+		}
+		
+		instantTextboxType = {
+			name = "aluminium_value"
+			position = { x = 50 y = 6 }#x = 995
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0}
+			text= [aluminium_balance_text]
+			maxWidth = 57
+			maxHeight = 24
+			fixedsize = yes
+			format = center
+			#pdx_tooltip = "PRODUCTION_MATERIALS_tungsten"
+					}
+		
+		instantTextboxType = {
+			name = "stockpile_aluminium_value"
+			position = { x = 10 y = 6 }#x = 995
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0}
+			text= [aluminium_stockpile_text]
+			maxWidth = 57
+			maxHeight = 24
+			fixedsize = yes
+			format = center
+			#pdx_tooltip = "PRODUCTION_MATERIALS_tungsten"
+					}			
+	
+		}
+		containerWindowType = {
+			name = "rubber_container"
+			position = { x = 1068 y = 0 }
+			Orientation = UPPER_LEFT
+			size = { width = 100 height = 30}
+			background = {
+				name = "Background2"
+				quadTextureSprite ="GFX_mini_tooltip"
+			}
+		
+		iconType = {
+			name = "rubber_icon"
+			position = { x=0 y=5 }
+			spriteType = "GFX_resources_strip"
+			frame = 3
+			scale=0.75
+			pdx_tooltip = "PRODUCTION_MATERIALS_tungsten"
+		}
+		instantTextboxType = {
+			name = "rubber_value"
+			position = { x = 50 y = 6 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0}
+			text= [rubber_balance_text]
+			maxWidth = 57
+			maxHeight = 24
+			fixedsize = yes
+			format = center
+			#pdx_tooltip = "PRODUCTION_MATERIALS_tungsten"
+					}
+		
+		instantTextboxType = {
+			name = "stockpile_rubber_value"
+			position = { x = 10 y = 6 }#x = 995
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0}
+			text= [rubber_stockpile_text]
+			maxWidth = 57
+			maxHeight = 24
+			fixedsize = yes
+			format = center
+			#pdx_tooltip = "PRODUCTION_MATERIALS_tungsten"
+					}				
+		}
+		
+		containerWindowType = {
+			name = "tungsten_container"
+			position = { x = 1170 y = 0 }
+			Orientation = UPPER_LEFT
+			size = { width = 100 height = 30}
+			background = {
+				name = "Background2"
+				quadTextureSprite ="GFX_mini_tooltip"
+			}
+		
+		
+		iconType = {
+			name = "tungsten_icon"
+			position = { x=1 y=6 }
+			spriteType = "GFX_resources_strip"
+			frame = 4
+			scale=0.7
+			pdx_tooltip = "PRODUCTION_MATERIALS_tungsten"
+		}
+		instantTextboxType = {
+			name = "tungsten_value"
+			position = { x = 50 y = 6 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0}
+			text= [tungsten_balance_text]
+			maxWidth = 57
+			maxHeight = 24
+			fixedsize = yes
+			format = center
+			#pdx_tooltip = "PRODUCTION_MATERIALS_tungsten"
+					}
+		instantTextboxType = {
+			name = "stockpile_tungsten_value"
+			position = { x = 10 y = 6 }#x = 995
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0}
+			text= [tungsten_stockpile_text]
+			maxWidth = 57
+			maxHeight = 24
+			fixedsize = yes
+			format = center
+			#pdx_tooltip = "PRODUCTION_MATERIALS_tungsten"
+					}	
+					}
+		containerWindowType = {
+			name = "steel_container"
+			position = { x = 1272 y = 0 }
+			Orientation = UPPER_LEFT
+			size = { width = 100 height = 30}
+			background = {
+				name = "Background2"
+				quadTextureSprite ="GFX_mini_tooltip"
+			}	
+		
+		iconType = {
+			name = "steel_icon"
+			position = { x=1 y=5 }
+			spriteType = "GFX_resources_strip"
+			frame = 5
+			scale=0.75
+			pdx_tooltip = "PRODUCTION_MATERIALS_tungsten"
+		}
+		instantTextboxType = {
+			name = "steel_value"
+			position = { x = 50 y = 6 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0}
+			text= [steel_balance_text]
+			maxWidth = 57
+			maxHeight = 24
+			fixedsize = yes
+			format = center
+			#pdx_tooltip = "PRODUCTION_MATERIALS_tungsten"
+		}
+		instantTextboxType = {
+			name = "stockpile_steel_value"
+			position = { x = 10 y = 6 }#x = 995
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0}
+			text= [steel_stockpile_text]
+			maxWidth = 57
+			maxHeight = 24
+			fixedsize = yes
+			format = center
+			#pdx_tooltip = "PRODUCTION_MATERIALS_tungsten"
+					}	
+		}
+		containerWindowType = {
+			name = "chromium_container"
+			position = { x = 1374 y = 0 }
+			Orientation = UPPER_LEFT
+			size = { width = 100 height = 30}
+			background = {
+				name = "Background2"
+				quadTextureSprite ="GFX_mini_tooltip"
+			}
+		iconType = {
+			name = "chromium_icon"
+			position = { x=2 y=6 }
+			spriteType = "GFX_resources_strip"
+			frame = 6
+			scale=0.7
+			pdx_tooltip = "PRODUCTION_MATERIALS_tungsten"
+		}
+		instantTextboxType = {
+			name = "chromium_value"
+			position = { x = 50 y = 6 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0}
+			text= [chromium_balance_text]
+			maxWidth = 57
+			maxHeight = 24
+			fixedsize = yes
+			format = center
+			#pdx_tooltip = "PRODUCTION_MATERIALS_tungsten"
+					}
+		instantTextboxType = {
+			name = "stockpile_chromium_value"
+			position = { x = 10 y = 6 }#x = 995
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0}
+			text= [chromium_stockpile_text]
+			maxWidth = 57
+			maxHeight = 24
+			fixedsize = yes
+			format = center
+			#pdx_tooltip = "PRODUCTION_MATERIALS_tungsten"
+					}	
+						
+		}
+		}
+		}
+
+	
+	
+	
+

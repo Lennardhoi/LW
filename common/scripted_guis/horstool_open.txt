@@ -4,6 +4,8 @@ scripted_gui = {
 		context_type = player_context
 
 		window_name = "horsttool_open_container"
+		
+		parent_window_name  = "countryofficercorpview"
 		visible = {
 			has_country_flag = host
 			NOT = { has_country_flag = hidden_switch }

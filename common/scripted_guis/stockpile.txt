@@ -1,0 +1,33 @@
+scripted_gui = {
+	stockpile_toggle_window = {
+		context_type = player_context
+
+		window_name = "stockpile_toggle_window"
+		parent_window_token = trade_tab
+		
+
+		effects = {
+			toggle_button_click={
+				if={limit={check_variable={stockpile_disabled=0}}
+					set_variable={stockpile_disabled=1}}
+				else={clear_variable=stockpile_disabled}
+			}
+		}
+
+
+	}
+
+	topbar_resource2= {
+		context_type = player_context
+		window_name = "topbar_resource_container2"
+		visible = {
+			check_variable={resources_disabled=0}
+			check_variable={stockpile_disabled=0}
+		}
+
+
+		triggers = {
+
+		}
+	}	
+}

@@ -1,0 +1,329 @@
+
+
+defined_text = { # global
+	name = aluminium_stockpile_text
+	text = {
+		trigger = {
+			check_variable = {resource_stockpile^0>1000}	
+		}
+		localization_key = "[?resource_stockpile^0|*]"
+	}
+		
+	text = {
+		trigger = {
+			always=yes
+		}
+		localization_key = "[?resource_stockpile^0|0]"
+	}
+}
+
+defined_text = { # global
+	name = rubber_stockpile_text
+	text = {
+		trigger = {
+			check_variable = {resource_stockpile^1>1000}	
+		}
+		localization_key = "[?resource_stockpile^1|*]"
+	}
+		
+	text = {
+		trigger = {
+			always=yes
+		}
+		localization_key = "[?resource_stockpile^1|0]"
+	}
+}
+defined_text = { # global
+	name = tungsten_stockpile_text
+	text = {
+		trigger = {
+			check_variable = {resource_stockpile^2>1000}	
+		}
+		localization_key = "[?resource_stockpile^2|*]"
+	}
+		
+	text = {
+		trigger = {
+			always=yes
+		}
+		localization_key = "[?resource_stockpile^2|0]"
+	}
+}
+defined_text = { # global
+	name = steel_stockpile_text
+	text = {
+		trigger = {
+			check_variable = {resource_stockpile^3>1000}	
+		}
+		localization_key = "[?resource_stockpile^3|*]"
+	}
+		
+	text = {
+		trigger = {
+			always=yes
+		}
+		localization_key = "[?resource_stockpile^3|0]"
+	}
+}
+defined_text = { # global
+	name = chromium_stockpile_text
+	text = {
+		trigger = {
+			check_variable = {resource_stockpile^4>1000}	
+		}
+		localization_key = "[?resource_stockpile^4|*]"
+	}
+		
+	text = {
+		trigger = {
+			always=yes
+		}
+		localization_key = "[?resource_stockpile^4|0]"
+	}
+}
+defined_text = { # global
+	name = aluminium_balance_text
+	text = {
+		trigger = {
+			check_variable = {resource_imported@aluminium>0}
+			check_variable = {resource_stockpile_capacity^0=resource_stockpile^0}
+			check_variable = {resource_balance^0<1000}	
+		}
+		localization_key = "[?resource_balance^0|0Y]"
+	}
+	text = {
+		trigger = {
+			check_variable = {resource_imported@aluminium>0}
+			check_variable = {resource_stockpile_capacity^0=resource_stockpile^0}
+		}
+		localization_key = "[?resource_balance^0|*Y]"
+	}
+	text = {
+		trigger = {
+			check_variable = {resource_stockpile_output_unmod^0>1000}	
+		}
+		localization_key = "[?resource_stockpile_output_unmod^0|*R]"
+	}
+	
+	text = {
+		trigger = {
+			check_variable = {resource_stockpile_output_unmod^0>0}	
+		}
+		localization_key = "[?resource_stockpile_output_unmod^0|0R]"
+	}
+	text = {
+		trigger = {
+			OR={check_variable = {resource@aluminium<1000}
+			check_variable = {resource@aluminium>-1000}
+			}
+		}
+		localization_key = "[?resource@aluminium|0+]"
+	}	
+	text = {
+		trigger = {
+			always=yes
+		}
+		localization_key = "[?resource@aluminium|+*]"
+	}
+
+
+}
+
+
+defined_text = { # global
+	name = rubber_balance_text
+	text = {
+		trigger = {
+			check_variable = {resource_imported@rubber>0}
+			check_variable = {resource_stockpile_capacity^1=resource_stockpile^1}
+			check_variable = {resource_balance^1<1000}	
+		}
+		localization_key = "[?resource_balance^1|0Y]"
+	}
+	text = {
+		trigger = {
+			check_variable = {resource_imported@rubber>0}
+			check_variable = {resource_stockpile_capacity^1=resource_stockpile^1}
+		}
+		localization_key = "[?resource_balance^1|*Y]"
+	}
+	text = {
+		trigger = {
+			check_variable = {resource_stockpile_output_unmod^1>1000}	
+		}
+		localization_key = "[?resource_stockpile_output_unmod^1|*R]"
+	}
+	
+	text = {
+		trigger = {
+			check_variable = {resource_stockpile_output_unmod^1>0}	
+		}
+		localization_key = "[?resource_stockpile_output_unmod^1|0R]"
+	}
+	text = {
+		trigger = {
+			OR={check_variable = {resource@rubber<1000}
+			check_variable = {resource@rubber>-1000}
+			}
+		}
+		localization_key = "[?resource@rubber|0+]"
+	}	
+	text = {
+		trigger = {
+			always=yes
+		}
+		localization_key = "[?resource@rubber|+*]"
+	}
+
+
+}
+
+
+defined_text = { # global
+	name = tungsten_balance_text
+	text = {
+		trigger = {
+			check_variable = {resource_imported@tungsten>0}
+			check_variable = {resource_stockpile_capacity^2=resource_stockpile^2}
+			check_variable = {resource_balance^2<1000}
+		}
+		localization_key = "[?resource_balance^2|0Y]"
+	}
+	text = {
+		trigger = {
+			check_variable = {resource_imported@tungsten>0}
+			check_variable = {resource_stockpile_capacity^2=resource_stockpile^2}
+		}
+		localization_key = "[?resource_balance^2|*Y]"
+	}
+	text = {
+		trigger = {
+			check_variable = {resource_stockpile_output_unmod^2>1000}	
+		}
+		localization_key = "[?resource_stockpile_output_unmod^2|*R]"
+	}
+	
+	text = {
+		trigger = {
+			check_variable = {resource_stockpile_output_unmod^2>0}	
+		}
+		localization_key = "[?resource_stockpile_output_unmod^2|0R]"
+	}
+	text = {
+		trigger = {
+			OR={check_variable = {resource@tungsten<1000}
+			check_variable = {resource@tungsten>-1000}
+			}
+		}
+		localization_key = "[?resource@tungsten|0+]"
+	}	
+	text = {
+		trigger = {
+			always=yes
+		}
+		localization_key = "[?resource@tungsten|+*]"
+	}
+
+
+}
+
+
+defined_text = { # global
+	name = steel_balance_text
+	text = {
+		trigger = {
+			check_variable = {resource_imported@steel>0}
+			check_variable = {resource_stockpile_capacity^3=resource_stockpile^3}
+			check_variable = {resource_balance^3<1000}	
+		}
+		localization_key = "[?resource_balance^3|0Y]"
+	}
+	text = {
+		trigger = {
+			check_variable = {resource_imported@steel>0}
+			check_variable = {resource_stockpile_capacity^3=resource_stockpile^3}
+		}
+		localization_key = "[?resource_balance^3|*Y]"
+	}
+	text = {
+		trigger = {
+			check_variable = {resource_stockpile_output_unmod^3>1000}	
+		}
+		localization_key = "[?resource_stockpile_output_unmod^3|*R]"
+	}
+	
+	text = {
+		trigger = {
+			check_variable = {resource_stockpile_output_unmod^3>0}	
+		}
+		localization_key = "[?resource_stockpile_output_unmod^3|0R]"
+	}
+	text = {
+		trigger = {
+			OR={check_variable = {resource@steel<1000}
+			check_variable = {resource@steel>-1000}
+			}
+		}
+		localization_key = "[?resource@steel|0+]"
+	}	
+	text = {
+		trigger = {
+			always=yes
+		}
+		localization_key = "[?resource@steel|+*]"
+	}
+
+
+}
+
+
+defined_text = { # global
+	name = chromium_balance_text
+	text = {
+		trigger = {
+			check_variable = {resource_imported@chromium>0}
+			check_variable = {resource_stockpile_capacity^4=resource_stockpile^4}
+			check_variable = {resource_balance^4<1000}	
+		}
+		localization_key = "[?resource_balance^4|0Y]"
+	}
+	text = {
+		trigger = {
+			check_variable = {resource_imported@chromium>0}
+			check_variable = {resource_stockpile_capacity^4=resource_stockpile^4}
+		}
+		localization_key = "[?resource_balance^4|*Y]"
+	}
+	text = {
+		trigger = {
+			check_variable = {resource_stockpile_output_unmod^4>1000}	
+		}
+		localization_key = "[?resource_stockpile_output_unmod^4|*R]"
+	}
+	
+	text = {
+		trigger = {
+			check_variable = {resource_stockpile_output_unmod^4>0}	
+		}
+		localization_key = "[?resource_stockpile_output_unmod^4|0R]"
+	}
+	text = {
+		trigger = {
+			OR={check_variable = {resource@chromium<1000}
+			check_variable = {resource@chromium>-1000}
+			}
+		}
+		localization_key = "[?resource@chromium|0+]"
+	}	
+	text = {
+		trigger = {
+			always=yes
+		}
+		localization_key = "[?resource@chromium|+*]"
+	}
+
+
+}
+
+
+
