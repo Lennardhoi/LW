@@ -7,7 +7,7 @@ GRE_defend_athens = {
 		type = garrison
 		value = 100
 	}
-	
+	abort = { always = no }
 }
 GRE_build_stuff= {
 	enable = {
@@ -17,7 +17,7 @@ GRE_build_stuff= {
 	allowed = {
 		OR = {original_tag = GRE original_tag = POL original_tag = HOL original_tag = BEL original_tag = NOR original_tag = YUG}
 	}
-	
+	abort = { always = no }
 	ai_strategy = {
         type = force_build_armies
         value = 100

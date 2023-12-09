@@ -1707,13 +1707,11 @@ focus_tree = {
  		available_if_capitulated = yes
  		search_filters = { FOCUS_FILTER_RESEARCH }
  		completion_reward = {
- 			add_tech_bonus = {
- 				name = ITA_marines_and_landing_craft
- 				bonus = 1.0
- 				uses = 1
- 				technology = marines
- 				technology = marines2
- 			}
+ 			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 1
+				category = cat_marines_doctrine
+			}
  			add_tech_bonus = {
  				name = ITA_marines_and_landing_craft
  				bonus = 1.0
@@ -2113,11 +2111,11 @@ focus_tree = {
  		completion_reward = {
  			add_stability = 0.075
  			GER = {
- 				add_tech_bonus = {
- 					bonus = 1.0
- 					uses = 1
- 					technology = tech_mountaineers2
- 				}
+ 				add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 1
+				category = cat_mountaineers_doctrine
+			}
  				add_tech_bonus = {
  					bonus = 1.0
  					uses = 2

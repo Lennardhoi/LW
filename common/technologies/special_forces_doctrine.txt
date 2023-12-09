@@ -31,9 +31,6 @@ technologies = {
 		research_cost = 2.25
 		
 		
-		on_research_complete = {
-			remove_potential_special_forces_tree = yes
-		}
 		
 		categories = {
 			special_forces_doctrine
@@ -420,14 +417,11 @@ technologies = {
 		
 		force_use_small_tech_layout = yes
 		transport_capacity = -0.5
-		naval_invasion_capacity = 10
+		naval_invasion_capacity = 5
 		enable_subunits = {
 			marine
 		}
 		
-		on_research_complete = {
-			remove_potential_special_forces_tree = yes
-		}
 		
 		path = {
 			leads_to_tech = marines_jungle_troops 
@@ -440,7 +434,6 @@ technologies = {
 		}
 		
 		marines_special_forces_contribution_factor = -0.25
-		naval_invasion_capacity = 5
 				
 		enable_subunits = {
 			pioneer_support
@@ -889,9 +882,6 @@ technologies = {
 			paratrooper
 		}
 		
-		on_research_complete = {
-			remove_potential_special_forces_tree = yes
-		}
 		
 		path = {
 			leads_to_tech = paras_dispersed_drop

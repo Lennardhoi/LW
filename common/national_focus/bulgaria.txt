@@ -1280,15 +1280,11 @@ focus_tree = {
  		}
  		available_if_capitulated = yes
  		completion_reward = {
- 			add_tech_bonus = {
- 				name = special_forces_bonus
- 				bonus = 1
- 				uses = 1
- 				technology = marines
- 				technology = marines2
- 				technology = tech_mountaineers
- 				technology = tech_mountaineers2
- 			}
+ 			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 1
+				category = special_forces_doctrine
+			}
  		}
  	}
  	focus = {
@@ -1303,13 +1299,12 @@ focus_tree = {
  		cost = 10
  		available_if_capitulated = yes
  		completion_reward = {
- 			add_tech_bonus = {
- 				name = special_forces_bonus
- 				bonus = 1
- 				uses = 1
- 				technology = marines
- 				technology = marines2
- 			}
+ 			
+ 			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 1
+				category = marine_tech
+			}
  		}
  	}
  	focus = {
@@ -1324,6 +1319,12 @@ focus_tree = {
  		cost = 10
  		available_if_capitulated = yes
  		completion_reward = {
+			
+ 			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 1
+				category = cat_paratroopers_doctrine
+			}
  		}
  	}
  	focus = {
@@ -1338,13 +1339,12 @@ focus_tree = {
  		cost = 10
  		available_if_capitulated = yes
  		completion_reward = {
- 			add_tech_bonus = {
- 				name = special_forces_bonus
- 				bonus = 1
- 				uses = 1
- 				technology = tech_mountaineers
- 				technology = tech_mountaineers2
- 			}
+ 			
+ 			add_doctrine_cost_reduction = {
+				cost_reduction = 0.5
+				uses = 1
+				category = cat_mountaineers_doctrine
+			}
  		}
  	}
  	focus = {

@@ -19,7 +19,8 @@ default_unit_production = {
 	enable = {
 	always=yes
 	}
-
+	
+		abort = { always = no }
 
 	ai_strategy = {
 		type = role_ratio
@@ -161,7 +162,8 @@ default_area_priority = {
 	enable = {
 	always=yes
 	}
-
+	
+		abort = { always = no }
 	ai_strategy = {
 		type = area_priority
 		id = europe
@@ -222,7 +224,8 @@ default_area_priority_non_africa = {
 	enable = {
 		NOT = { capital_scope = { is_on_continent = africa } }
 	}
-
+	
+		abort = { always = no }
 	ai_strategy = {
 		type = area_priority
 		id = africa
@@ -285,7 +288,8 @@ DEFAULT_template_design = {
 	enable = {
 		date > 1940.1.1
 	}
-
+	
+	abort = { always = no }
 	ai_strategy = {
 		type = template_prio
 		id = mechanized
@@ -346,11 +350,13 @@ do_not_waste_pp_if_saving_for_manpower_laws = {
 		type = pp_spend_priority
 		id = relation
 		value = -9999
+		abort = { always = no }
 	}
 
 	ai_strategy = {
 		type = pp_spend_priority
 		id = guarantee
 		value = -9999
+		abort = { always = no }
 	}
 }
