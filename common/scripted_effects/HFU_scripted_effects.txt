@@ -662,7 +662,22 @@ for_each_loop ={
 					add_to_array ={resource_stockpile_output_unmod=0}
 				}
 }
+stop_resource_stockpile={
+
+set_variable={resource_stockpile_output^0=0}
+set_variable={resource_stockpile_output^1=0}
+set_variable={resource_stockpile_output^2=0}
+set_variable={resource_stockpile_output^3=0}
+set_variable={resource_stockpile_output^4=0}
+set_variable={resource_stockpile_output_unmod^0=0}
+set_variable={resource_stockpile_output_unmod^1=0}
+set_variable={resource_stockpile_output_unmod^2=0}
+set_variable={resource_stockpile_output_unmod^3=0}
+set_variable={resource_stockpile_output_unmod^4=0}
+
+}
 calculate_resource_stockpile={
+clear_variable=stockpile_stopped
 set_variable={resource_balance^0=resource@aluminium}
 set_variable={resource_balance^1=resource@rubber}
 set_variable={resource_balance^2=resource@tungsten}
