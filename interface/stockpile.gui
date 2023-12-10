@@ -10,7 +10,7 @@ guiTypes = {
 			buttonText = "Topbar Resources"
 			#frame=0
 			#quadTextureSprite = "GFX_military_deployment_add_line_btn"
-			position = { x=322 y=12}
+			position = { x=342 y=12}
 			Orientation = "UPPER_LEFT"
 			#alwaystransparent = yes
 		}
@@ -31,6 +31,76 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 			#alwaystransparent = yes
 		}
+		instantTextboxType = {
+				name = "stockpile_title"
+				position = { x=22 y=146 }
+				font = "hoi_16mbs"
+				text = "Stockpile:"
+				maxWidth = 78
+				maxHeight = 18
+				format = left
+				#alwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "stockpile_oil"
+				position = { x=93 y=145  }
+				font = "hoi_16mbs"
+				text = "0"
+				maxWidth = 78
+				maxHeight = 18
+				format = right
+				#alwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "stockpile_aluminium"
+				position = { x=162 y=145  }
+				font = "hoi_16mbs"				
+				text= [aluminium_stockpile_text]
+				maxWidth = 78
+				maxHeight = 18
+				format = right
+				#alwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "stockpile_rubber"
+				position = { x=229 y=145  }
+				font = "hoi_16mbs"				
+				text= [rubber_stockpile_text]
+				maxWidth = 78
+				maxHeight = 18
+				format = right
+				#alwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "stockpile_tungsten"
+				position = { x=296 y=145  }
+				font = "hoi_16mbs"				
+				text= [tungsten_stockpile_text]
+				maxWidth = 78
+				maxHeight = 18
+				format = right
+				#alwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "stockpile_steel"
+				position = { x=365 y=145  }
+				font = "hoi_16mbs"				
+				text= [steel_stockpile_text]
+				maxWidth = 78
+				maxHeight = 18
+				format = right
+				#alwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "stockpile_chromium"
+				position = { x=432 y=145  }
+				font = "hoi_16mbs"				
+				text= [chromium_stockpile_text]
+				maxWidth = 78
+				maxHeight = 18
+				format = right
+				#alwaystransparent = yes
+			}
 	}
 	containerWindowType = {
 		name = "topbar_resource_container2"
@@ -273,3 +343,4 @@ guiTypes = {
 	
 	
 
+			

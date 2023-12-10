@@ -16,7 +16,6 @@ guiTypes = {
 			name = "Background"
 			quadTextureSprite ="GFX_tiled_window_1b_border"
 		}
-
 		iconType ={
 			name ="production_header_bg"
 			spriteType = "GFX_header_bg"
@@ -38,7 +37,7 @@ guiTypes = {
 
 		iconType = {
 			name = "trade_header"
-			position = { x = 12 y = 43 }
+			position = { x = -1200 y = 43 }
 			quadTextureSprite = "GFX_trade_header"
 		}
 
@@ -50,14 +49,14 @@ guiTypes = {
 
 		iconType = {
 			name = "civilian_factory_icon"
-			position = { x = 185 y = 47 }
+			position = { x = -1850 y = 47 }
 			spriteType = "GFX_non_available_factory_icon"
 			alwaystransparent = yes
 		}
 		
 		instantTextboxType = {
 			name = "civ_factories"
-			position = { x = 28 y = 50 }
+			position = { x = -1028 y = 50 }
 			font = "hoi_18mbs"
 			text = "TRADE_CIV_FACTORIES"
 			maxWidth = 150
@@ -69,7 +68,7 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "factories_total"
-			position = { x = 216 y = 50 }
+			position = { x = -22216 y = 50 }
 			font = "hoi_18mbs"
 			maxWidth = 45
 			maxHeight = 18
@@ -79,7 +78,7 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "factories_used"
-			position = { x = 268 y = 50 }
+			position = { x = -2268 y = 50 }
 			font = "hoi_18mbs"
 			maxWidth = 120
 			maxHeight = 18
@@ -89,7 +88,7 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "factories_available"
-			position = { x = 388 y = 50 }
+			position = { x = -2388 y = 50 }
 			font = "hoi_18mbs"
 			maxWidth = 120
 			maxHeight = 18
@@ -99,8 +98,8 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "resources"
-			position = { x = 11 y = 75 }	
-			size = { width = 518 height = 156 }
+			position = { x = 11 y = 50 }	
+			size = { width = 518 height = 174 }
 			verticalScrollbar = "right_vertical_slider"
 
 			iconType = {
@@ -141,10 +140,10 @@ guiTypes = {
 				format = left
 				#alwaystransparent = yes
 			}
-
+			
 			instantTextboxType = {
 				name = "needed_title"
-				position = { x=12 y=98 }
+				position = { x=12 y=118 }
 				font = "hoi_16mbs"
 				text = "TRADEVIEW_RES_PRODUCTION"
 				maxWidth = 78
@@ -152,7 +151,6 @@ guiTypes = {
 				format = left
 				#alwaystransparent = yes
 			}
-
 			gridBoxType = {
 				name = "resources_grid"
 				position = { x = 90 y = 0 }
@@ -162,7 +160,7 @@ guiTypes = {
 				format = "UPPER_LEFT"
 			}
 		}
-
+		
 		iconType ={
 			name ="trade_divider"
 			spriteType = "GFX_divider"
@@ -611,7 +609,7 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "needed"
-			position = { x=20 y=94 }
+			position = { x=20 y=112 }
 			font = "hoi_16mbs"
 			maxWidth = 50
 			maxHeight = 28
@@ -620,7 +618,7 @@ guiTypes = {
 		
 		instantTextboxType = {
 			name = "neededType"
-			position = { x=10 y=94 }
+			position = { x=10 y=112 }
 			font = "hoi_16mbs"
 			maxWidth = 50
 			maxHeight = 28
@@ -629,7 +627,7 @@ guiTypes = {
 		
 		buttonType = {
 			name = "cancel_imports"
-			position = { x= 46 y= 125 }
+			position = { x= 46 y= 143 }
 			pdx_tooltip = "CANCEL_RESOURCE_IMPORT"
 			quadTextureSprite ="GFX_cancel_import_button"
 			clicksound = click_default
