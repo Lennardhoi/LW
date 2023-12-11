@@ -41,6 +41,16 @@ guiTypes = {
 				format = left
 				#alwaystransparent = yes
 			}
+		instantTextboxType = {
+				name = "stockpile_title2"
+				position = { x=22 y=195 }
+				font = "hoi_16mbs"
+				text = "Max Stockpile: [?resource_stockpile_capacity^4|*1]"
+				maxWidth = 120
+				maxHeight = 18
+				format = left
+				#alwaystransparent = yes
+			}
 			instantTextboxType = {
 				name = "stockpile_oil"
 				position = { x=93 y=145  }

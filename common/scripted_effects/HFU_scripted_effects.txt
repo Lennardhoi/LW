@@ -651,6 +651,14 @@ for_each_loop ={
 				}
 				for_each_loop ={
 					array=resource_balance
+					add_to_array ={resource_stockpile_capacity_base=10000}
+				}
+				for_each_loop ={
+					array=resource_balance
+					add_to_array ={resource_stockpile_capacity_silos=0}
+				}
+				for_each_loop ={
+					array=resource_balance
 					add_to_array ={resource_stockpile_capacity=10000}
 				}
 				for_each_loop ={
@@ -678,6 +686,50 @@ set_variable={resource_stockpile_output_unmod^4=0}
 }
 calculate_resource_stockpile={
 clear_variable=stockpile_stopped
+
+						if = {limit={OR={fuel_silo>silos fuel_silo<silos}}
+						set_temp_variable={silos=0}
+						while_loop_effect = {
+							limit = {
+
+								fuel_silo>silos
+							}
+							add_to_temp_variable = { silos = 10 }
+						}
+						if= {
+							limit = {
+
+								fuel_silo<silos
+							}
+							add_to_temp_variable = { silos = -10 }
+						}
+						while_loop_effect = {
+							limit = {
+
+								fuel_silo>silos
+							}
+							add_to_temp_variable = { silos = 1 }
+						}
+						if= {
+							limit = {
+
+								fuel_silo<silos
+							}
+							add_to_temp_variable = { silos = -1 }
+							#add_to_temp_variable = { casualties_against = -1}
+						}
+			}
+			for_each_loop ={
+					array=resource_stockpile_capacity_base
+					value=v
+					index=i
+					set_temp_variable={x=silos}
+					multiply_temp_variable={x=5000}
+					add_to_temp_variable={x=v}
+					set_variable={resource_stockpile_capacity^i=x}
+				}
+
+
 set_variable={resource_balance^0=resource@aluminium}
 set_variable={resource_balance^1=resource@rubber}
 set_variable={resource_balance^2=resource@tungsten}
@@ -698,17 +750,26 @@ for_each_loop ={
 					set_temp_variable={y=x}
 					multiply_temp_variable={y=resource_stockpile_output^i}#derzeitiger stockpile output
 					subtract_from_temp_variable={y=v}
+					log= "Calc need y [?y]"#v=104
+					log= "v [?v]"#y=11.8
 					if={ limit={check_variable={y<0}}
 					set_variable={resource_stockpile_output^i=0}
-					}
+					}#
 					else_if={
-					limit={check_variable={y>0} NOT={check_variable={v>-1} check_variable={resource_stockpile^i=0}}}
+					limit={check_variable={y>0} NOT={ check_variable={v>-1} check_variable={resource_stockpile^i=0}}}
 					
 					#multiply_temp_variable={y=-1}
 					divide_temp_variable={y=x}
 					add_to_variable={resource_stockpile_output^i=y}
 					}
+					else_if={
+					limit={check_variable={y>0} NOT={ check_variable={v<-1} check_variable={resource_stockpile^i=0}}}
 					
+					#multiply_temp_variable={y=-1}
+					set_temp_variable={y=v}
+					divide_temp_variable={y=x}
+					subtract_from_variable={resource_stockpile_output^i=y}
+					}
 					clamp_variable ={
 					var=resource_stockpile_output^i
 						min=0
@@ -731,6 +792,3 @@ for_each_loop ={
 					}
 				}
 }
-
-
-

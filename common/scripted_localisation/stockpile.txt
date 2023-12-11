@@ -1,4 +1,84 @@
+defined_text = { # global
+	name = aluminium_stockpile_with_max_text
+	text = {
+		trigger = {
+			check_variable = {resource_stockpile^0>1000}	
+		}
+		localization_key = "[?resource_stockpile^0|*1]/[?resource_stockpile_capacity^0|*1]"
+	}
+		
+	text = {
+		trigger = {
+			always=yes
+		}
+		localization_key = "[?resource_stockpile^0|0]/[?resource_stockpile_capacity^0|*]"
+	}
+}
 
+defined_text = { # global
+	name = rubber_stockpile_with_max_text
+	text = {
+		trigger = {
+			check_variable = {resource_stockpile^1>1000}	
+		}
+		localization_key = "[?resource_stockpile^1|*1]/[?resource_stockpile_capacity^1|*1]"
+	}
+		
+	text = {
+		trigger = {
+			always=yes
+		}
+		localization_key = "[?resource_stockpile^1|0]/[?resource_stockpile_capacity^1|*1]"
+	}
+}
+defined_text = { # global
+	name = tungsten_stockpile_with_max_text
+	text = {
+		trigger = {
+			check_variable = {resource_stockpile^2>1000}	
+		}
+		localization_key = "[?resource_stockpile^2|*1]/[?resource_stockpile_capacity^2|*1]"
+	}
+		
+	text = {
+		trigger = {
+			always=yes
+		}
+		localization_key = "[?resource_stockpile^2|0]/[?resource_stockpile_capacity^2|*1]]"
+	}
+}
+defined_text = { # global
+	name = steel_stockpile_with_max_text
+	text = {
+		trigger = {
+			check_variable = {resource_stockpile^3>1000}	
+		}
+		localization_key = "[?resource_stockpile^3|*1]/[?resource_stockpile_capacity^3|*1]"
+	}
+		
+	text = {
+		trigger = {
+			always=yes
+		}
+		localization_key = "[?resource_stockpile^3|0]/[?resource_stockpile_capacity^3|*1]"
+	}
+}
+defined_text = { # global
+	name = chromium_stockpile_with_max_text
+	text = {
+		trigger = {
+			check_variable = {resource_stockpile^4>1000}	
+		}
+		localization_key = "[?resource_stockpile^4|*1]/[?resource_stockpile_capacity^4|*1]"
+	}
+		
+	text = {
+		trigger = {
+			always=yes
+		}
+		localization_key = "[?resource_stockpile^4|0]/[?resource_stockpile_capacity^4|*1]"
+	}
+}
 
 defined_text = { # global
 	name = aluminium_stockpile_text
