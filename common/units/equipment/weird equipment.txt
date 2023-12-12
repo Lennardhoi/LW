@@ -1,0 +1,77 @@
+equipments = {
+     	barrels = {
+     		year = 1918
+     		is_archetype = yes
+     		picture = archetype_support_equipment
+     		is_buildable = no
+     		type = {
+			infantry
+     		}
+     		group_by = archetype
+     		interface_category = interface_category_land
+     		reliability = 0.8
+     		#Space taken in convoy
+     		build_cost_ic = 4 
+ 	 	lend_lease_cost = 0.8   
+     		resources = {
+     			chromium = 10
+     			steel = 20
+     		}
+     	}
+     	barrels_1 = {
+     		year = 1918
+     		archetype = barrels
+     		priority = 20
+     	}
+     	engines = {
+     		year = 1918
+     		is_archetype = yes
+     		picture = archetype_support_equipment
+     		is_buildable = no
+     		type = {
+			infantry
+     		}
+     		group_by = archetype
+     		interface_category = interface_category_land
+     		reliability = 0.8
+     		#Space taken in convoy
+     		build_cost_ic = 4 
+ 	 	lend_lease_cost = 0.8   
+     		resources = {
+     			steel = 30
+     			chromium = 10
+     			aluminium = 10
+     		}
+     	}
+     	engines_1 = {
+     		year = 1918
+     		archetype = engines
+     		priority = 20
+     	}
+     	electronics = {
+     		year = 1918
+     		is_archetype = yes
+     		picture = archetype_support_equipment
+     		is_buildable = no
+     		type = {
+			infantry
+     		}
+     		group_by = archetype
+     		interface_category = interface_category_land
+     		reliability = 0.8
+     		#Space taken in convoy
+     		build_cost_ic = 4 
+ 	 	lend_lease_cost = 0.8   
+     		resources = {
+     			steel = 30
+     			chromium = 10
+     			aluminium = 10
+     		}
+     	}
+     	electronics_1 = {
+     		year = 1918
+     		archetype = electronics
+     		priority = 20
+     	}
+     }
+

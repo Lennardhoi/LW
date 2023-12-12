@@ -65,9 +65,11 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		
+		on_research_complete = {
+			custom_effect_tooltip=special_forces_2_support_eq_tt
+		}
 		mountaineers = {
-			need = {support_equipment = +2}
+			need = {support_equipment = 2}
 			acclimatization_cold_climate_gain_factor = 0.25
 			snow = {
 				attack = 0.10
@@ -113,9 +115,11 @@ technologies = {
 		
 		doctrine = yes	
 		research_cost = 4.5
-		
+		on_research_complete = {
+			custom_effect_tooltip=special_forces_2_support_eq_tt
+		}
 		mountaineers = {
-			need = {support_equipment = +2}
+			need = {support_equipment = 2}
 			acclimatization_hot_climate_gain_factor = 0.25
 			desert = {
 				attack = 0.10
@@ -198,9 +202,11 @@ technologies = {
 		xp_unlock_cost = 60
 		
 		force_use_small_tech_layout = yes
-		
+		on_research_complete = {
+			custom_effect_tooltip=special_forces_2_support_eq_tt
+		}
 		mountaineers = {
-			need = {support_equipment = +2}
+			need = {support_equipment = 2}
 			Urban = {
 				attack = 0.10
 				defence = 0.05
@@ -247,9 +253,11 @@ technologies = {
 			leads_to_tech = mountaineers_combat_3
 			research_cost_coeff = 1
 		}
-		
+		on_research_complete = {
+			custom_effect_tooltip=special_forces_2_support_eq_tt
+		}
 		mountaineers = {
-			need = {support_equipment = +2}
+			need = {support_equipment = 2}
 			Mountain = {
 				attack = 0.05
 				defence = 0.05
@@ -470,9 +478,11 @@ technologies = {
 		
 		
 		force_use_small_tech_layout = yes
-		
+		on_research_complete = {
+			custom_effect_tooltip=special_forces_2_support_eq_tt
+		}
 		marine = {
-		need = {support_equipment = +2}
+		need = {support_equipment = 2}
 			jungle = {
 				attack = 0.10
 				defence = 0.05
@@ -480,7 +490,7 @@ technologies = {
 			}
 		}
 		marine_commando = {
-		need = {support_equipment = +4}
+		need = {support_equipment = 2}
 			jungle = {
 				attack = 0.1
 				defence = 0.05
@@ -528,9 +538,11 @@ technologies = {
 			leads_to_tech = marines_recon 
 			research_cost_coeff = 1
 		}
-		
+		on_research_complete = {
+			custom_effect_tooltip=special_forces_2_support_eq_tt
+		}
 		marine = {
-		need = {support_equipment = +2}
+		need = {support_equipment = 2}
 			marsh = {
 				attack = 0.15
 				defence = 0.10
@@ -538,7 +550,7 @@ technologies = {
 			}
 		}
 		marine_commando = {
-		need = {support_equipment = +4}
+		need = {support_equipment = 2}
 			marsh = {
 				attack = 0.15
 				defence = 0.10
@@ -638,16 +650,17 @@ technologies = {
 		
 		on_research_complete = {
 			custom_effect_tooltip = SF_MARINES_exfiltration_effect_tt
+			custom_effect_tooltip=special_forces_2_support_eq_tt
 		}
 		shore_bombardment_bonus = 0.25
 		extra_marine_supply_grace = 240
 		marine = {
-		need = {support_equipment = +2}
+		need = {support_equipment = 2}
 		acclimatization_cold_climate_gain_factor = 0.25
 		acclimatization_hot_climate_gain_factor = 0.25
 		}
 		marine_commando = {
-		need = {support_equipment = +4}
+		need = {support_equipment = 2}
 		acclimatization_cold_climate_gain_factor = 0.25
 		acclimatization_hot_climate_gain_factor = 0.25
 		}
@@ -690,8 +703,11 @@ technologies = {
 				
 		doctrine = yes	
 		research_cost = 2.25
+		on_research_complete = {
+			custom_effect_tooltip=special_forces_2_support_eq_tt
+		}
 		marine = { 
-		need = {support_equipment = +2}
+		need = {support_equipment = 2}
 		amphibious = {
 			attack = 0.1
 			defence = 0.1
@@ -704,7 +720,7 @@ technologies = {
 			}
 		}
 		marine_commando= { 
-		need = {support_equipment = +4}
+		need = {support_equipment = 2}
 		amphibious = {
 			attack = 0.1
 			defence = 0.1
@@ -934,9 +950,11 @@ technologies = {
 		doctrine = yes	
 		research_cost = 4.5
 		
-		
+		on_research_complete = {
+			custom_effect_tooltip=special_forces_2_support_eq_tt
+		}
 		paratrooper = {
-			need = {support_equipment = +2}
+			need = {support_equipment = 2}
 			acclimatization_cold_climate_gain_factor = 0.25
 			snow = {
 				attack = 0.10
@@ -981,9 +999,11 @@ technologies = {
 		
 		doctrine = yes	
 		research_cost = 4.5
-		
+		on_research_complete = {
+			custom_effect_tooltip=special_forces_2_support_eq_tt
+		}
 		paratrooper = {
-			need = {support_equipment = +2}
+			need = {support_equipment = 2}
 			acclimatization_hot_climate_gain_factor = 0.25
 			marsh = {
 				attack = 0.10
@@ -1077,9 +1097,11 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		
+		on_research_complete = {
+			custom_effect_tooltip=special_forces_2_support_eq_tt
+		}
 		paratrooper = {
-			need = {support_equipment = +2}
+			need = {support_equipment = 2}
 			Urban = {
 				attack = 0.10
 				defence = 0.05
@@ -1122,9 +1144,11 @@ technologies = {
 			leads_to_tech = paras_bonus_1 
 			research_cost_coeff = 1
 		}
-		
+		on_research_complete = {
+			custom_effect_tooltip=special_forces_2_support_eq_tt
+		}
 		paratrooper = {
-			need = {support_equipment = +2}
+			need = {support_equipment = 2}
 			Forest = {
 				attack = 0.05
 				defence = 0.05
