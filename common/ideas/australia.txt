@@ -10,38 +10,6 @@ ideas = {
 			}
 			removal_cost = -1
 		}
-		AST_great_depression_1 = {
-			allowed = {
-				always = no
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			removal_cost = -1
-			picture = great_depression
-			modifier = {
-				consumer_goods_factor = 0.4
-				industrial_capacity_factory = -0.10
-				industrial_capacity_dockyard = -0.10
-				stability_factor = -0.10
-			}
-		}
-		AST_great_depression_2 = {
-			allowed = {
-				always = no
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			removal_cost = -1
-			picture = great_depression
-			modifier = {
-				consumer_goods_factor = 0.3
-				industrial_capacity_factory = -0.075
-				industrial_capacity_dockyard = -0.075
-			}
-		}
-		
 		Jebem_ti_micro = {
 			name = Jebem_ti_micro
 			allowed = {
@@ -57,6 +25,38 @@ ideas = {
 			picture = eng_special_air_service
 			removal_cost = -1
 		}
+		AST_great_depression_1 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = great_depression
+			modifier = {
+				#consumer_goods_factor = 0.4
+				industrial_capacity_factory = -0.125
+				industrial_capacity_dockyard = -0.125
+				stability_factor = -0.10
+			}
+		}
+		AST_great_depression_2 = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = great_depression
+			modifier = {
+				#consumer_goods_factor = 0.3
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+			}
+		}
+		
 		AST_great_depression_3 = {
 			allowed = {
 				always = no
@@ -67,9 +67,9 @@ ideas = {
 			removal_cost = -1
 			picture = great_depression
 			modifier = {
-				consumer_goods_factor = 0.2
-				industrial_capacity_factory = -0.05
-				industrial_capacity_dockyard = -0.05
+				#consumer_goods_factor = 0.2
+				industrial_capacity_factory = -0.075
+				industrial_capacity_dockyard = -0.75
 			}
 		}
 		AST_all_in = {
