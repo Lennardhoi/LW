@@ -52,6 +52,7 @@ sub_units = {
 		sprite = infantry
 		map_icon_category = infantry
 		special_forces = yes
+		mountaineers = yes
 
 		ai_priority = 2
 		priority = 400
@@ -443,7 +444,7 @@ sub_units = {
 
 		#Size Definitions
 		max_strength = 25
-		max_organisation = 75
+		max_organisation = 70
 		default_morale = 0.4
 		manpower = 1000
 
@@ -470,7 +471,7 @@ sub_units = {
 			attack = 0.4
 		}
 	}
-		marine_commando  = {
+	marine_commando  = {
 		abbreviation = "MRC"
 		sprite = infantry
 		map_icon_category = infantry
@@ -548,13 +549,13 @@ sub_units = {
 		group = infantry
 
 		categories = {
-			category_front_line
-			category_light_infantry
-			category_all_infantry
-			category_army
-			category_special_forces
-			category_mountaineers
-		}
+            category_front_line
+            category_light_infantry
+            category_all_infantry
+            category_army
+            category_special_forces
+            category_mountaineers
+        }
 
 		combat_width = 2
 
