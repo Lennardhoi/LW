@@ -1913,44 +1913,20 @@ focus_tree = {
  			factor = 1
  		}
  		bypass = {
- 			NOT = { country_exists = YUG }
  		}
  		completion_reward = {
- 			add_state_claim = 102
- 			add_state_claim = 103
- 			add_named_threat = { threat = 4 name = ITA_slovenia_dalmatia_claims_threat }
- 			USA = {
- 				set_country_flag = { flag = USA_yugoslavia_window days = 60 value = 1 }
+ 			GER = {
+ 				add_opinion_modifier = { target = ITA modifier = pact_of_steel_opinion }
+ 				add_relation_modifier = { target = ITA modifier = Stahlpakt}
  			}
- 			YUG = {
- 				add_opinion_modifier = { target = ITA modifier = claimed_western_yugoslavia }
- 				if = {
- 					limit = {
- 						ROOT = { has_government = fascism }
- 						NOT = { has_government = fascism }
- 						NOT = { has_idea_with_trait = fascist_demagogue }
- 						fascism < 0.3
- 					}
- 					add_popularity = {
- 						ideology = fascism
- 						popularity = -0.07
- 					}
- 				}
- 				if = {
- 					limit = {
- 						ROOT = { has_government = democratic }
- 						NOT = { has_government = democratic }
- 						NOT = { has_idea_with_trait = democratic_reformer }
- 						democratic < 0.3
- 					}
- 					add_popularity = {
- 						ideology = democratic
- 						popularity = -0.07
- 					}
- 				}
- 			}
+ 			add_opinion_modifier = { target = GER modifier = pact_of_steel_opinion }
+ 			add_relation_modifier = { target = GER modifier = Stahlpakt}
  			hidden_effect = {
- 				news_event = { hours = 6 id = news.192 }
+ 				news_event = { hours = 6 id = news.184 }
+ 				GER = {
+ 					add_opinion_modifier = { target = ITA modifier = pact_of_steel_opinion_hidden }
+ 				}
+ 				add_opinion_modifier = { target = GER modifier = pact_of_steel_opinion_hidden }
  			}
  		}
  	}
@@ -1971,19 +1947,23 @@ focus_tree = {
  			NOT = { country_exists = BUL }
  		}
  		completion_reward = {
- 			GER = {
- 				add_opinion_modifier = { target = ITA modifier = pact_of_steel_opinion }
- 				add_relation_modifier = { target = ITA modifier = Stahlpakt}
- 			}
- 			add_opinion_modifier = { target = GER modifier = pact_of_steel_opinion }
- 			add_relation_modifier = { target = GER modifier = Stahlpakt}
- 			hidden_effect = {
- 				news_event = { hours = 6 id = news.184 }
- 				GER = {
- 					add_opinion_modifier = { target = ITA modifier = pact_of_steel_opinion_hidden }
+ 			
+ 			BUL={random_owned_controlled_state = {
+ 				limit = {
+ 					is_core_of = BUL
+ 					free_building_slots = {
+ 						building = arms_factory
+ 						size > 1
+ 						include_locked = yes
+ 					}
  				}
- 				add_opinion_modifier = { target = GER modifier = pact_of_steel_opinion_hidden }
- 			}
+ 				add_extra_state_shared_building_slots = 2
+ 				add_building_construction = {
+ 					type = arms_factory
+ 					level = 2
+ 					instant_build = yes
+ 				}
+ 			}}
  		}
  	}
  	focus = {
@@ -2163,11 +2143,16 @@ focus_tree = {
  		search_filters = { FOCUS_FILTER_RESEARCH }
  		completion_reward = {
  			add_tech_bonus = {
+ 				name = secret_bonus2
+ 				bonus = 1.0
+ 				uses = 2
+ 				category = rocketry
+ 			}
+ 			add_tech_bonus = {
  				name = secret_bonus
  				bonus = 1.0
  				uses = 2
  				category = electronics
- 				category = rocketry
  				category = nuclear
  			}
  		}

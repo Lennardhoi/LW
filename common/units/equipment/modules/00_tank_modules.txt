@@ -23,6 +23,7 @@ equipment_modules = {
  			reliability = 0.2
  			maximum_speed = 1
  		}
+		
  	}
  	tank_petrol_electric_engine_L = {
  		abbreviation = "pel"
@@ -30,13 +31,18 @@ equipment_modules = {
  		sfx = sfx_ui_sd_module_engine
  		add_stats = {
  			fuel_consumption = 2
- 			build_cost_ic = 4
+ 			build_cost_ic = 5
  			reliability = -0.25
  			hardness = 0.025
  		}
  		multiply_stats = {
  			breakthrough = 0.15
  			defense = 0.15
+ 		}
+		
+ 		can_convert_from = {
+ 			module_category = tank_engine_type_L
+ 			convert_cost_ic = 6
  		}
  	}
  	# tank_gas_turbine_engine_L = {
@@ -84,7 +90,7 @@ equipment_modules = {
  		sfx = sfx_ui_sd_module_engine
  		add_stats = {
  			fuel_consumption = 2
- 			build_cost_ic = 4
+ 			build_cost_ic = 5
  			reliability = -0.2
  			hardness = 0.025
  			maximum_speed = 1
@@ -92,6 +98,10 @@ equipment_modules = {
  		multiply_stats = {
  			breakthrough = 0.15
  			defense = 0.15
+ 		}
+ 		can_convert_from = {
+ 			module_category = tank_engine_type
+ 			convert_cost_ic = 6
  		}
  	}
  	# tank_gas_turbine_engine = {
@@ -141,7 +151,7 @@ equipment_modules = {
  		sfx = sfx_ui_sd_module_engine
  		add_stats = {
  			fuel_consumption = 2
- 			build_cost_ic = 4
+ 			build_cost_ic = 5
  			reliability = -0.2
  			hardness = 0.025
  			maximum_speed = 1
@@ -150,6 +160,10 @@ equipment_modules = {
  		fuel_consumption = 1
  			breakthrough = 0.15
  			defense = 0.15
+ 		}
+ 		can_convert_from = {
+ 			module_category = tank_engine_type_H
+ 			convert_cost_ic = 5
  		}
  	}
  	# tank_gas_turbine_engine_H = {
