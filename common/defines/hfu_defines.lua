@@ -141,6 +141,7 @@ NDefines.NAir.ACCIDENT_CHANCE_BASE =0.05
 NDefines.NAir.ACCIDENT_CHANCE_CARRIER_MULT =2 
 NDefines.ACCIDENT_CHANCE_BALANCE_MULT =0.5
 NDefines.NAir.ACCIDENT_EFFECT_MULT=0.005 
+NDefines.NAir.MIN_PLANE_COUNT_PARADROP = 50000
 ---------------------------------------------------------------
 --NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_NO_TRUCK_DISRUPTION_FACTOR     0.0     CAS damaged get multiplied by this in land combats at night
 --NDefines.NAir.AIR_WING_ATTACK_LOGISTICS_TRUCK_DAMAGE_FACTOR     0.0
