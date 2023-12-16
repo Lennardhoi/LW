@@ -1,0 +1,16 @@
+add_namespace = stockpile
+country_event = {
+	id = stockpile.1
+	title = stockpile.1.t
+	desc = stockpile.1.d
+	picture = GFX_report_event_axisminor_startup
+	is_triggered_only = yes
+	hidden = yes
+	immediate={
+		every_country={
+			limit={is_ai=no check_variable={stockpile_disabled=0}}
+			calculate_resource_stockpile=yes
+		}
+	}
+}
+

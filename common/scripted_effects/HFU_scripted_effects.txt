@@ -686,7 +686,7 @@ set_variable={resource_stockpile_output_unmod^4=0}
 }
 calculate_resource_stockpile={
 clear_variable=stockpile_stopped
-
+						#log = "date [?Global.date.GetDateString]"
 						if = {limit={OR={fuel_silo>silos fuel_silo<silos}}
 						set_temp_variable={silos=0}
 						while_loop_effect = {
@@ -750,8 +750,8 @@ for_each_loop ={
 					set_temp_variable={y=x}
 					multiply_temp_variable={y=resource_stockpile_output^i}#derzeitiger stockpile output
 					subtract_from_temp_variable={y=v}
-					log= "Calc need y [?y]"#v=104
-					log= "v [?v]"#y=11.8
+					#log= "Calc need y [?y]"#v=104
+					#log= "v [?v]"#y=11.8
 					if={ limit={check_variable={y<0}}
 					set_variable={resource_stockpile_output^i=0}
 					}#
@@ -780,6 +780,14 @@ for_each_loop ={
 					multiply_variable={resource_stockpile_output_unmod^i=xr}
 					
 					
+					
+				}
+}
+update_stockpile={
+	for_each_loop ={
+					array=resource_balance
+					value=v
+					index=i
 					subtract_from_variable={resource_stockpile^i=resource_stockpile_output_unmod^i}
 					if={ limit={check_variable={resource_stockpile_output^i=0}}
 						
@@ -790,5 +798,5 @@ for_each_loop ={
 						min=0
 						max=resource_stockpile_capacity^i
 					}
-				}
+	}
 }

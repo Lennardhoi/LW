@@ -528,14 +528,22 @@ political_actions = {
  			is_playable_country =yes
  		}
         days_remove = 10
-        cost = 1
+        cost = 0
         complete_effect = {
             add_manpower = 1
             add_equipment_to_stockpile = {
-                type = convoy
+                type = convoy_1
                 amount = 1
             }
         }
+		
+ 		remove_effect = {
+            add_manpower = -1
+            add_equipment_to_stockpile = {
+                type = convoy_1
+                amount = -1
+            }
+ 		}
         ai_will_do = {
             factor = 0
         }
