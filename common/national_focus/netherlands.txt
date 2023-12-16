@@ -975,11 +975,11 @@ focus_tree = {
  				}
  			}
  			add_ideas = HOL_prepare_for_our_return
- 			add_tech_bonus = {
- 				name = HOL_prepare_for_our_return
- 				bonus = 1.0
- 				uses = 1
- 				category = marine_tech
+ 			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.25
+				uses = 1
+				category = cat_marines_doctrine
  			}
  		}
  	}

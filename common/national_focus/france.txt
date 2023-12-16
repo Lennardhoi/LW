@@ -839,9 +839,12 @@ focus_tree = {
  			add_tech_bonus = {
  				name = FRA_fusiliers_marine
  				category = tp_tech
- 				category = marine_tech
- 				uses = 2
- 				bonus = 1
+ 			}
+            add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.25
+				uses = 1
+				category = cat_marines_doctrine
  			}
  		}
  	}

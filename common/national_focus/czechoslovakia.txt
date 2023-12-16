@@ -2409,12 +2409,11 @@ focus_tree = {
  		complete_tooltip = {
  		}
  		completion_reward = {
- 			add_tech_bonus = {
- 				name = cze_mountain_bonus
- 				bonus = 1.0
- 				ahead_reduction = 2
- 				uses = 1
- 				category = mountaineers_tech
+ 			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.25
+				uses = 1
+				category = cat_mountaineers_doctrine
  			}
  		}
  	}

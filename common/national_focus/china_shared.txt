@@ -686,12 +686,12 @@ shared_focus = {
  	available_if_capitulated = yes
  	completion_reward = {
  		add_ideas = CHI_elite_mountaineers
- 		add_tech_bonus = {
- 			name = CHI_elite_mountaineers
- 			bonus = 1.0
- 			uses = 1
- 			category = mountaineers_tech
- 		}
+ 		add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.25
+				uses = 1
+				category = cat_mountaineers_doctrine
+ 			}
  		if = {
  			limit = {
  				has_tech = special_forces_mountaineers
@@ -1461,12 +1461,11 @@ shared_focus = {
  	continue_if_invalid = no
  	available_if_capitulated = yes
  	completion_reward = {
- 		add_tech_bonus = {
- 			name = CHI_sino_american_cooperative_organization
- 			bonus = 1.0
- 			uses = 2
- 			category = recon_tech
- 			category = para_tech
+ 		aadd_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.25
+				uses = 2
+				category = cat_paratroopers_doctrine
  		}
  	}
  }
@@ -1678,12 +1677,12 @@ shared_focus = {
  	available_if_capitulated = yes
  	completion_reward = {
  		add_ideas = CHI_train_marines
- 		add_tech_bonus = {
- 			name = CHI_train_marines
- 			bonus = 1.0
- 			uses = 1
- 			category = marine_tech
- 		}
+ 		add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.25
+				uses = 1
+				category = cat_marines_doctrine
+ 			}
  	}
  }
  shared_focus = {

@@ -960,13 +960,13 @@ focus_tree = {
  		continue_if_invalid = no
  		available_if_capitulated = yes
  		completion_reward = {
- 			add_tech_bonus = {
- 				name = SAF_south_african_special_forces
- 				bonus = 1.0
- 				uses = 1
- 				category = para_tech
- 				category = marine_tech
- 				category = mountaineers_tech
+ 			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.25
+				uses = 1
+				category = cat_marines_doctrine
+                category = cat_paratroopers_doctrine
+                category = cat_mountaineers_doctrine
  			}
  		}
  	}
@@ -1509,8 +1509,13 @@ focus_tree = {
  				name = SAF_prepare_overseas_offensive
  				bonus = 1.0
  				uses = 1
- 				category = marine_tech
  				category = tp_tech
+ 			}
+            add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.25
+				uses = 1
+				category = cat_marines_doctrine
  			}
  		}
  	}

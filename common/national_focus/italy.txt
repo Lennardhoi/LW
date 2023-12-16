@@ -1736,10 +1736,11 @@ focus_tree = {
  		available_if_capitulated = yes
  		search_filters = { FOCUS_FILTER_RESEARCH }
  		completion_reward = {
- 			add_tech_bonus = {
- 				bonus = 1.0
- 				uses = 2
- 				category = para_tech
+ 			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.25
+				uses = 2
+				category = cat_paratroopers_doctrine
  			}
  		}
  	}
@@ -2408,11 +2409,11 @@ focus_tree = {
  			factor = 10
  		}
  		completion_reward = {
- 			add_tech_bonus = {
- 				name = CAN_the_rocky_mountain_rangers
- 				bonus = 1.00
- 				uses = 1
- 				category = mountaineers_tech
+ 			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.25
+				uses = 1
+				category = cat_mountaineers_doctrine
  			}
  			add_tech_bonus = {
  				name = RAJ_the_bangalore_torpedo
@@ -2436,11 +2437,11 @@ focus_tree = {
  			factor = 10
  		}
  		completion_reward = {
- 			add_tech_bonus = {
- 				name = CAN_the_rocky_mountain_rangers
- 				bonus = 1.00
- 				uses = 1
- 				category = mountaineers_tech
+ 			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.25
+				uses = 1
+				category = cat_mountaineers_doctrine
  			}
  		}
  	}

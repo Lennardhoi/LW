@@ -556,12 +556,12 @@ focus_tree = {
  					logistics_skill = 5
  				}
  			}
- 			add_tech_bonus = {
- 				name = RAJ_chindits
- 				bonus = 3.0
- 				uses = 2
- 				category = para_tech
- 				category = mountaineers_tech
+ 			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.25
+				uses = 2
+				category = cat_mountaineers_doctrine
+                category = cat_paratroopers_doctrine
  			}
  		}
  	}

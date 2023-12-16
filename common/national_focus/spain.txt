@@ -338,17 +338,17 @@ focus_tree = {
  		available_if_capitulated = yes
  		search_filters = {FOCUS_FILTER_RESEARCH}
  		completion_reward = {
- 			add_tech_bonus = {
- 				name = SPA_expand_the_special_forces
- 				bonus = 1.0
- 				uses = 1
- 				category = marine_tech
+ 			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.25
+				uses = 1
+				category = cat_marines_doctrine
  			}
- 			add_tech_bonus = {
- 				name = SPA_expand_the_special_forces
- 				bonus = 1.0
- 				uses = 1
- 				category = mountaineers_tech
+ 			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.25
+				uses = 1
+				category = cat_mountaineers_doctrine
  			}
  		}
  	}

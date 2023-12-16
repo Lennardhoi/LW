@@ -1650,11 +1650,12 @@ focus_tree = {
  				uses = 3
  				category = tp_tech
  			}
- 			add_tech_bonus = {
- 				name = JAP_expand_the_snlf
- 				bonus = 2.0
- 				uses = 2
- 				category = marine_tech
+ 			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.25
+				uses = 2
+				category = cat_marines_doctrine
+ 			}
  			}
  			hidden_effect={
  				MAN = {

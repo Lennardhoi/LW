@@ -161,11 +161,11 @@ focus_tree = {
  				uses = 1
  				category = land_doctrine
  			}
- 			add_tech_bonus = {
- 				name = AST_hmas_assault
- 				bonus = 1.0
- 				uses = 1
- 				category = marine_tech
+ 				add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.25
+				uses = 1
+				category = cat_marines_doctrine
  			}
  		}
  	}
@@ -334,11 +334,11 @@ focus_tree = {
  		available_if_capitulated = yes
  		search_filters = { FOCUS_FILTER_RESEARCH  }
  		completion_reward = {
- 			add_tech_bonus = {
- 				name = AST_airborne_defence
- 				bonus = 3.0
- 				uses = 1
- 				category = para_tech
+ 			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.25
+				uses = 1
+				category = cat_paratroopers_doctrine
  			}
  		}
  	}
@@ -390,13 +390,12 @@ focus_tree = {
  		continue_if_invalid = no
  		available_if_capitulated = yes
  		search_filters = { FOCUS_FILTER_RESEARCH  }
- 		completion_reward = {
- 			add_tech_bonus = {
- 				name = AST_z_special_unit
- 				bonus = 3.0
- 				uses = 1
- 				category = marine_tech
- 				category = para_tech
+ 		add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = cat_marines_doctrine
+                category = cat_paratroopers_doctrine
  			}
  		}
  	}
