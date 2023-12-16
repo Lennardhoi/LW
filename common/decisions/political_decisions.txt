@@ -522,5 +522,23 @@ political_actions = {
  			factor = 0
  		}
  	}
+    add_convoy = {
+        icon = SWE_set_navy_budget
+        allowed = {
+ 			is_playable_country =yes
+ 		}
+        days_remove = 10
+        cost = 1
+        complete_effect = {
+            add_manpower = 1
+            add_equipment_to_stockpile = {
+                type = convoy
+                amount = 1
+            }
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
  }
 
