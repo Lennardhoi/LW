@@ -728,11 +728,10 @@ clear_variable=stockpile_stopped
 					add_to_temp_variable={x=v}
 					set_variable={resource_stockpile_capacity^i=x}
 				}
-
-
 set_variable={resource_balance^0=resource@aluminium}
 set_variable={resource_balance^1=resource@rubber}
 set_variable={resource_balance^2=resource@tungsten}
+#log = "resource balance tungsten [?resource_balance^2] [?Global.date.GetDateString]"
 set_variable={resource_balance^3=resource@steel}
 set_variable={resource_balance^4=resource@chromium}
 
@@ -749,7 +748,12 @@ for_each_loop ={
 					multiply_temp_variable={x=xb}
 					set_temp_variable={y=x}
 					multiply_temp_variable={y=resource_stockpile_output^i}#derzeitiger stockpile output
+					#if= {limit={check_variable={i=2}}
+					#log = " [?i] y ist kleiner als 0  [?y] und v [?v][?Global.date.GetDateString]"
+					#}
 					subtract_from_temp_variable={y=v}
+					
+					#multiply_temp_variable={y=-1}
 					#log= "Calc need y [?y]"#v=104
 					#log= "v [?v]"#y=11.8
 					if={ limit={check_variable={y<0}}
@@ -757,9 +761,13 @@ for_each_loop ={
 					}#
 					else_if={
 					limit={check_variable={y>0} NOT={ check_variable={v>-1} check_variable={resource_stockpile^i=0}}}
-					
-					#multiply_temp_variable={y=-1}
+					set_temp_variable={y=v}
+					multiply_temp_variable={y=-1}
 					divide_temp_variable={y=x}
+					
+					#if= {limit={check_variable={i=2}}
+					#log = "[?i]Bedarf erhöhen um y [?y] und x [?x][?Global.date.GetDateString]"
+					#}
 					add_to_variable={resource_stockpile_output^i=y}
 					}
 					else_if={
@@ -768,6 +776,9 @@ for_each_loop ={
 					#multiply_temp_variable={y=-1}
 					set_temp_variable={y=v}
 					divide_temp_variable={y=x}
+					if= {limit={check_variable={i=2}}
+					log = "[?i]Bedarf senken um y [?y] und x [?x][?Global.date.GetDateString]"
+					}
 					subtract_from_variable={resource_stockpile_output^i=y}
 					}
 					clamp_variable ={
@@ -780,7 +791,9 @@ for_each_loop ={
 					multiply_variable={resource_stockpile_output_unmod^i=xr}
 					
 					
-					
+				
+remove_dynamic_modifier = {modifier=Stockpile}
+add_dynamic_modifier = {modifier=Stockpile}	
 				}
 }
 update_stockpile={
