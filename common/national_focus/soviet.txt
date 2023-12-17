@@ -1512,6 +1512,41 @@ focus_tree = {
 				signal_company = { x = 0 y = 4 }
 			}
 		}
+		division_template = {
+				name = "Infantry Division"
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 1 y = 3 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+					infantry = { x = 2 y = 3 }
+					anti_tank_brigade = { x = 3 y = 0 }
+					anti_tank_brigade = { x = 3 y = 1 }
+					anti_air_brigade = { x = 3 y = 2 }
+					anti_air_brigade = { x = 3 y = 3 }
+					artillery_brigade = { x = 4 y = 0 }
+					artillery_brigade = { x = 4 y = 1 }
+					artillery_brigade = { x = 4 y = 2 }
+					artillery_brigade = { x = 4 y = 3 }
+					artillery_brigade = { x = 4 y = 4 }
+					artillery_brigade = { x = 4 y = 5 }
+				}
+				support = {
+					recon = { x = 0 y = 0 }
+					engineer = { x = 0 y = 1 }
+					artillery = { x = 0 y = 2 }
+					logistics_company = { x = 0 y = 3 }
+					signal_company = { x = 0 y = 4 }
+					anti_tank = {x = 0 y = 5}
+				}
+			}
 		496 = {
 			for_loop_effect = {
 				end = 8
@@ -1520,7 +1555,15 @@ focus_tree = {
 					division = "name = \"Mekhanizirovaniy Korpus\" division_template = \"Mekhanizirovaniy Korpus\" start_experience_factor = 2.0"
 					owner = SOV
 				}
-				}}
+				}
+			for_loop_effect = {
+					end = 30
+					create_unit = {
+						division = "name = \"Infantry Division\" division_template = \"Infantry Division\" start_experience_factor = 0.3"
+						owner = SOV
+					}
+					}
+		}
 		add_equipment_to_stockpile = {
     			type = infantry_equipment
     			amount = 15000
