@@ -262,5 +262,39 @@ ideas = {
 			}
 		}
 	}
+	tank_manufacturer =  { 
+		use_list_view = yes
+		designer = yes
+		big_bobs_tanks = {
+			cost = 100
+			picture = volgograd_tractor_plantnzl
+			allowed = {
+				ORIGINAL_TAG = NZL
+			}
+			research_bonus = {
+				armor = 0.15
+			}
+			equipment_bonus = {
+				super_heavy_tank_chassis = {
+					maximum_speed = 0.1
+					soft_attack = 0.1
+					hard_attack = 0.1
+				}
+				super_heavy_tank_artillery_chassis = {
+					soft_attack = 0.1
+					maximum_speed = 0.1
+				}
+				super_heavy_tank_aa_chassis = {
+					air_attack = 0.1
+					maximum_speed = 0.1
+				}
+				super_heavy_tank_destroyer_chassis = {
+					hard_attack = 0.1
+					maximum_speed = 0.1
+				}
+			}
+			modifier = { tank_manufacturer_cost_factor = -1 }
+		}
+	}
 }
 
