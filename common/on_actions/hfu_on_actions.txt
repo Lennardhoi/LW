@@ -18,9 +18,15 @@ on_actions = {
 	}
 	on_daily = {
 	effect = {
-		if= {limit={is_ai=no check_variable={stockpile_disabled=0}}
+		if= {limit={is_ai=no 
+		check_variable={stockpile_disabled=0}}
 		calculate_resource_stockpile=yes
 		update_stockpile=yes
+		country_event = {
+			id = stockpile.2
+			hours = 10
+			random_hours = 3
+			}
 		}
 		else={stop_resource_stockpile=yes}
 	}
@@ -503,10 +509,6 @@ on_actions = {
 	}
 	on_daily_SWE={
 		effect={
-			country_event = {
-			id = stockpile.1
-			hours = 12
-			}
 			for_each_scope_loop={
 				array=GLOBAL.fuel_system_manager
 				set_variable={GLOBAL.controllerscope=THIS.id}

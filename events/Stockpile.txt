@@ -8,9 +8,25 @@ country_event = {
 	hidden = yes
 	immediate={
 		every_country={
-			limit={is_ai=no check_variable={stockpile_disabled=0}}
+			limit={#is_ai=no
+			 check_variable={stockpile_disabled=0}}
 			calculate_resource_stockpile=yes
 		}
+	}
+}
+country_event = {
+	id = stockpile.2
+	title = stockpile.2.t
+	desc = stockpile.2.d
+	picture = GFX_report_event_axisminor_startup
+	is_triggered_only = yes
+	hidden = yes
+	immediate={
+		#every_country={
+			#limit={#is_ai=no
+			# check_variable={stockpile_disabled=0}}
+			calculate_resource_stockpile=yes
+		#}
 	}
 }
 

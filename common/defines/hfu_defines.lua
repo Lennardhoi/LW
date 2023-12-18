@@ -63,7 +63,7 @@ NDefines.NMilitary.PIERCING_THRESHOLD_DAMAGE_VALUES = {	-- 0 armor will always r
 		0.50,
 	}
 
-NDefines.NMilitary.DIVISIONAL_COMMANDER_TRAIT_XP_REQUIREMENT = 600.0	--Get a trait if any valid options & xp gained >= this
+NDefines.NMilitary.DIVISIONAL_COMMANDER_TRAIT_XP_REQUIREMENT = 599.0	--Get a trait if any valid options & xp gained >= this
 NDefines.NMilitary.NUM_DAYS_FOR_OPERATION_ENTRY = 60					--Number of days that a unit must have been on a particular active order instance to receive a history entry.
 NDefines.NMilitary.MAX_LEADERS_TO_SHOW = 20							--Max officers to show in field officers list, sorted by field EXP. Divisions with awardable entries will potentially supercede this limit
 NDefines.NMilitary.BASE_FEMALE_DIVISIONAL_COMMANDER_CHANCE = 0		--Chance to receive a female divisonal commander. This is set to zero in the base game, as we do not have generic female portraits for many graphical culture groups.

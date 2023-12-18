@@ -777,7 +777,7 @@ for_each_loop ={
 					set_temp_variable={y=v}
 					divide_temp_variable={y=x}
 					if= {limit={check_variable={i=2}}
-					log = "[?i]Bedarf senken um y [?y] und x [?x][?Global.date.GetDateString]"
+					#log = "[?i]Bedarf senken um y [?y] und x [?x][?Global.date.GetDateString]"
 					}
 					subtract_from_variable={resource_stockpile_output^i=y}
 					}
@@ -792,9 +792,10 @@ for_each_loop ={
 					
 					
 				
-remove_dynamic_modifier = {modifier=Stockpile}
-add_dynamic_modifier = {modifier=Stockpile}	
 				}
+#remove_dynamic_modifier = {modifier=Stockpile}
+add_dynamic_modifier = {modifier=Stockpile}
+#force_update_dynamic_modifier = yes	
 }
 update_stockpile={
 	for_each_loop ={
