@@ -36,7 +36,7 @@ NDefines.NNavy.CARRIER_STACK_PENALTY_EFFECT = 0.20  -- Each carrier above the op
 NDefines.NNavy.NAVAL_COMBAT_AIR_CARRIER_TARGET_SCORE = 30
 NDefines.NNavy.NAVAL_COMBAT_AIR_CAPITAL_TARGET_SCORE = 200
 NDefines.NNavy.GUN_HIT_PROFILES = { -- hit profiles for guns, if target ih profile is lower the gun will have lower accuracy
-		75.0,	-- big guns
+		80.0,	-- big guns
 		160.0,	-- torpedos
 		40,	-- small guns
 	}
@@ -97,8 +97,8 @@ NDefines.NNavy.ESCAPE_SPEED_HIDDEN_SUB = 0.5									-- hidden subs get faster e
 NDefines.NNavy.ESCAPE_SPEED_SUB_BASE = -0.60
 NDefines.NNavy.NAVAL_COMBAT_AIR_SUB_DETECTION_FACTOR = 0.1
 NDefines.NNavy.DETECTION_CHANCE_MULT_AIR_SUPERIORITY_BONUS = 0.3
-NDefines.NNavy.COMBAT_DAMAGE_TO_STR_FACTOR = 0.15 -- casting damage value to ship strength multiplier. Use it ot balance the game difficulty.
-NDefines.NNavy.COMBAT_DAMAGE_TO_ORG_FACTOR = 0.5	--- casting damage value to ship organisation multiplier. Use it to balance the game difficulty.
+NDefines.NNavy.COMBAT_DAMAGE_TO_STR_FACTOR = 0.12 -- casting damage value to ship strength multiplier. Use it ot balance the game difficulty.
+NDefines.NNavy.COMBAT_DAMAGE_TO_ORG_FACTOR = 0.4	--- casting damage value to ship organisation multiplier. Use it to balance the game difficulty.
 NDefines.NNavy.MAX_ORG_ON_MANUAL_MOVE = 1.0	-- org will clamped to this ratio on manual move
 NDefines.NNavy.TRAINING_EXPERIENCE_FACTOR = 0.6
 NDefines.NNavy.COMBAT_DETECTED_CONVOYS_FROM_SURFACE_DETECTION_STAT = 0.07 --0.1 vanilla
