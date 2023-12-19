@@ -1952,15 +1952,15 @@ focus_tree = {
  				random_owned_controlled_state = {
  					limit = {
  						free_building_slots = {
- 							building = industrial_complex
- 							size > 0
+ 							building = arms_factory
+ 							size > 1
  							include_locked = yes
  						}
  					}
- 					add_extra_state_shared_building_slots = 1
+ 					add_extra_state_shared_building_slots = 2
  					add_building_construction = {
- 						type = industrial_complex
- 						level = 1
+ 						type = arms_factory
+ 						level = 2
  						instant_build = yes
  					}
  					set_state_flag = ENG_uk_south_africa_focus_1IC
