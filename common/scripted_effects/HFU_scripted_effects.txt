@@ -801,7 +801,7 @@ navy_fix={
 		every_country={ 
 			limit={OR={TAG=ITA TAG=ENG TAG=JAP TAG=USA}}
 			every_navy_leader={	
-				add_dynamic_modifier={modifier=navy_fix scope = ROOT}
+				add_dynamic_modifier={modifier=navy_fix scope = PREV}
 			}	
 			}
 }
@@ -809,7 +809,7 @@ navy_fix_off={
 		every_country={ 
 			limit={OR={TAG=ITA TAG=ENG TAG=JAP TAG=USA}}
 			every_navy_leader={	
-				remove_dynamic_modifier={modifier=navy_fix scope = ROOT}
+				remove_dynamic_modifier={modifier=navy_fix scope = PREV}
 			}	
 			}
 }
