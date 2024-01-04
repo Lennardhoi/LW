@@ -673,8 +673,13 @@ technologies = {
 		xp_unlock_cost = 0
 		xp_boost_cost = 100
 		xp_research_bonus = 1.00
-		resistance_damage_to_garrison_on_our_occupied_states = 0.1
-		conscription = 0.005
+		category_special_forces = {
+			max_organisation = 10
+			default_morale = 0.05
+			breakthrough = 0.05
+			}
+		modifier_army_sub_unit_category_special_forces_speed_factor = 0.25
+		
 		#enable_tactic = tactic_guerrilla_tactics
 		doctrine = no
 		research_cost = 4.00
@@ -2669,7 +2674,10 @@ technologies = {
 		category_army = {
 			default_morale = 0.2
 		}
-		
+		path = {
+		leads_to_tech = Shock_formations
+		research_cost_coeff = 1
+		}
 		category_line_artillery = {
 			soft_attack = 0.1
 			hard_attack = 0.1
@@ -2685,6 +2693,45 @@ technologies = {
 		folder = {
 			name = land_doctrine_folder
 			position = { x = 2 y = 14 }
+		}
+		ai_will_do = {
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			factor = 20
+		}
+		ai_research_weights = {
+			industry = 2.0
+		}
+	}
+	Shock_formations = {
+		xp_research_type = army
+		xp_unlock_cost = 0
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		
+		category_special_forces = {
+		breakthrough = -0.2
+		defense = -0.3
+		need = {support_equipment = -10 
+				motorized_rocket_equipment = 5}
+		}
+		on_research_complete = {
+			custom_effect_tooltip=shock_formation_tt
+		}
+		#enable_tactic = tactic_guerrilla_tactics
+		doctrine = no
+		research_cost = 4.00
+		categories = {
+			land_doctrine
+			cat_mass_assault
+		}
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 2 y = 16 }
 		}
 		ai_will_do = {
 			modifier = {
