@@ -2714,12 +2714,14 @@ technologies = {
 		xp_research_bonus = 1.00
 		
 		category_special_forces = {
-		breakthrough = -0.5
-		soft_attack =-0.2
-		defense = -0.4
-		default_morale = -0.3
-		need = {support_equipment = -10 
-				motorized_rocket_equipment = 5}
+		breakthrough = 0.05
+		need = {support_equipment = -5}
+		}
+		enable_subunits = {
+			motorized_rocket_artillery
+		}
+		enable_equipments = {
+			motorized_rocket_equipment_1
 		}
 		on_research_complete = {
 			custom_effect_tooltip=shock_formation_tt
