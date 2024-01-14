@@ -1,0 +1,196 @@
+characters={
+	
+	SPR_manuel_azana={
+		name="Manuel Azana"
+		portraits={
+			civilian={
+				large="gfx/leaders/SPR/Portrait_Spain_Manuel_Azana.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_MANUEL_AZANA_DESC"
+			ideology=conservatism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	SPR_SPA_tomas_garciano_goni_vanilla={
+		advisor={
+			slot = political_advisor
+			idea_token = SPA_tomas_garciano_goni_vanilla
+			name  = SPA_tomas_garciano_goni
+				allowed  = {
+					original_tag  = SPN 
+				}
+				traits  = {
+					backroom_backstabber 
+				}
+		}
+		name="SPA_tomas_garciano_goni_vanilla"
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_europe_1"
+			}
+		}
+	}
+	SPR_SPA_emilio_mola_vidal_vanilla={
+		advisor={
+			slot = army_chief
+			idea_token = SPA_emilio_mola_vidal_vanilla
+			name  = SPA_emilio_mola_vidal
+				allowed  = {
+					original_tag  = SPN
+				}
+				traits  = {
+					army_chief_offensive_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="SPA_emilio_mola_vidal_vanilla"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_5"
+			}
+		}
+	}
+	SPR_SPA_miguel_cabanellas_ferrer_vanilla={
+		advisor={
+			slot = army_chief
+			idea_token = SPA_miguel_cabanellas_ferrer_vanilla
+			name  = SPA_miguel_cabanellas_ferrer
+				allowed  = {
+					original_tag  = SPN 
+				}
+				traits  = {
+					army_chief_old_guard 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="SPA_miguel_cabanellas_ferrer_vanilla"
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_3"
+			}
+		}
+	}
+	SPR_SPA_fransisco_moreno_fernandez_vanilla={
+		advisor={
+			slot = navy_chief
+			idea_token = SPA_fransisco_moreno_fernandez_vanilla
+			name  = SPA_fransisco_moreno_fernandez
+				allowed  = {
+					original_tag  = SPN
+				}
+				traits  = {
+					navy_chief_reform_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="SPA_fransisco_moreno_fernandez_vanilla"
+		portraits={
+			army={
+				small="GFX_idea_generic_navy_europe_2"
+			}
+		}
+	}
+	SPR_SPA_luis_carrero_blanco={
+		advisor={
+			slot = navy_chief
+			idea_token = SPA_luis_carrero_blanco
+			allowed  = {
+					has_dlc = "La Resistance"
+					original_tag  = SPN 
+				}
+				visible  = {
+				}
+				available  = {
+				}
+				traits  = {
+					navy_chief_decisive_battle_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="SPA_luis_carrero_blanco"
+		portraits={
+			army={
+				small="GFX_idea_SPA_luis_carrero_blanco"
+			}
+		}
+	}
+	SPR_SPA_juan_yague_blanco_vanilla={
+		advisor={
+			slot = air_chief
+			idea_token = SPA_juan_yague_blanco_vanilla
+			name  = SPA_juan_yague_blanco
+				allowed  = {
+					original_tag  = SPN
+				}
+				traits  = {
+					air_chief_reform_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="SPA_juan_yague_blanco_vanilla"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_3"
+			}
+		}
+	}
+	SPR_SPA_joaquin_garcia_morato_vanilla={
+		advisor={
+			slot = high_command
+			idea_token = SPA_joaquin_garcia_morato_vanilla
+			ledger  = air 
+				name  = SPA_joaquin_garcia_morato 
+				allowed  = {
+					original_tag  = SPN 
+				}
+				traits  = {
+					air_air_combat_training_3 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="SPA_joaquin_garcia_morato_vanilla"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_2"
+			}
+		}
+	}
+	SPR_SPA_angel_salas_larrazabal_vanilla={
+		advisor={
+			slot = high_command
+			idea_token = SPA_angel_salas_larrazabal_vanilla
+			ledger  = air 
+				name  = SPA_angel_salas_larrazabal
+				allowed  = {
+					original_tag  = SPN 
+				}
+				traits  = {
+					air_strategic_bombing_2 
+				}
+				ai_will_do  = {
+					factor  = 1.000
+				}
+		}
+		name="SPA_angel_salas_larrazabal_vanilla"
+		portraits={
+			army={
+				small="GFX_idea_generic_air_europe_1"
+			}
+		}
+	}
+}
