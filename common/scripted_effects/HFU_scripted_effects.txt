@@ -797,22 +797,6 @@ for_each_loop ={
 add_dynamic_modifier = {modifier=Stockpile}
 #force_update_dynamic_modifier = yes	
 }
-navy_fix={
-		every_country={ 
-			limit={OR={TAG=ITA TAG=ENG TAG=JAP TAG=USA}}
-			every_navy_leader={	
-				add_dynamic_modifier={modifier=navy_fix scope = PREV}
-			}	
-			}
-}
-navy_fix_off={
-		every_country={ 
-			limit={OR={TAG=ITA TAG=ENG TAG=JAP TAG=USA}}
-			every_navy_leader={	
-				remove_dynamic_modifier={modifier=navy_fix scope = PREV}
-			}	
-			}
-}
 
 update_stockpile={
 	for_each_loop ={
