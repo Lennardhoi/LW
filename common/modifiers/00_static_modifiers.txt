@@ -76,7 +76,7 @@ weather_mud = { # on Province
 }
 weather_extreme_cold = { # on Province
 	winter_attrition = 0.5
-	dig_in_speed_factor = -0.6
+	dig_in_speed_factor = -0.5
 	local_org_regain = -0.05
 
 }
@@ -100,13 +100,13 @@ weather_extreme_hot = { # on Province
 	army_attack_factor = -0.1
 }
 weather_ground_snow_medium = { # on Province
-	army_attack_factor = -0.35
+	army_attack_factor = -0.45
 	army_speed_factor = -0.2
 	winter_attrition = 0.4
 }
 weather_ground_snow_high = { # on Province
 	army_speed_factor = -0.45
-	army_attack_factor = -0.5
+	army_attack_factor = -0.6
 	winter_attrition = 0.6
 }
 

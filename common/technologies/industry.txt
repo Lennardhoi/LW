@@ -13,6 +13,10 @@ technologies = {
 			leads_to_tech = dispersed_industry
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = essential_equipment_conversion
+			research_cost_coeff = 1
+		}		
 		on_research_complete = {
 			meta_effect = {
 				text = {
@@ -213,6 +217,32 @@ technologies = {
 		}
 	}
 	#Conversion branch - Enabled in DoD
+	essential_equipment_conversion = {
+		line_change_production_efficiency_factor = 0.05
+		allow_branch = {
+			has_dlc = "Death or Dishonor"
+		}
+		research_cost = 1
+		start_year = 1936
+		categories = {
+			year_1936
+		}
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 2 }
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 2
+				date > "1937.1.1"
+			}
+			modifier = {
+				factor = 0
+				NOT = { has_government = fascism }
+			}
+		}
+	}
 	basic_equipment_conversion = {
 		line_change_production_efficiency_factor = 0.05
 		allow_branch = {
