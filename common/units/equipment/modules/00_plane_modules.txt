@@ -1442,15 +1442,14 @@ equipment_modules = {
 
 		 add_stats = {
             air_defence = 3
-			build_cost_ic = 2
+			build_cost_ic = 2.5
 			weight = 2
 		 }
 		multiply_stats = {
             air_range = -0.15
         }
 		build_cost_resources = {
-			 rubber = 2
-			 aluminium = 5
+			 rubber = 4
 		}
 		 ##xp_cost = 1
 		 dismantle_cost_ic = 0.5
@@ -1627,7 +1626,7 @@ equipment_modules = {
 		 sfx = sfx_ui_sd_module_turret
 
 		 add_stats = {
-			 build_cost_ic = 3
+			 build_cost_ic = 3.5
 			 weight = 4
              air_defence = 4
 		 }
@@ -1635,8 +1634,7 @@ equipment_modules = {
 			air_range = -0.15
 		 }
 		 build_cost_resources = {
-			 rubber = 5
-			 aluminium = 7
+			 rubber = 6
 		 }
 		 dismantle_cost_ic = 1
 		 ##xp_cost = 1
@@ -1787,14 +1785,13 @@ equipment_modules = {
 		 add_stats = {
 			 build_cost_ic = 5
 			 weight = 6
-             air_defence = 5
+             air_defence = 6
 		 }
 		 multiply_stats = {
 			air_range = -0.3
 		 }
 		 build_cost_resources = {
-			rubber = 8
-			aluminium = 15
+			rubber = 10
 		 }
 		 dismantle_cost_ic = 1.5
 		 ##xp_cost = 1
@@ -1855,7 +1852,7 @@ equipment_modules = {
 			build_cost_ic = 2
 		}
         multiply_stats = {
-            maximum_speed = 0.1
+            thrust = 0.1
             air_agility = 0.1
         }
         dismantle_cost_ic = 2
@@ -1866,7 +1863,7 @@ equipment_modules = {
 		category = plane_special_module_fuel_injection_s
 		gui_category = plane_special_module_small
         multiply_stats = {
-            maximum_speed = 0.2
+            thrust = 0.2
             air_agility = 0.2
             fuel_consumption = 0.25
             reliability = -0.1
@@ -1882,7 +1879,7 @@ equipment_modules = {
 		category = plane_special_module_fuel_injection_m
 		gui_category = plane_special_module_medium
         multiply_stats = {
-				thrust = 0.075
+				thrust = 0.1
 				maximum_speed = 0.1
 			}
 	add_stats = {
@@ -1896,8 +1893,8 @@ equipment_modules = {
 		category = plane_special_module_fuel_injection_m
 		gui_category = plane_special_module_medium
         multiply_stats = {
-            maximum_speed = 0.15
-            thrust = 0.15
+            maximum_speed = 0.2
+            thrust = 0.2
             fuel_consumption = 0.2
             reliability = -0.1
         }
@@ -1913,6 +1910,7 @@ equipment_modules = {
 		gui_category = plane_special_module_large
         multiply_stats = {
 				thrust = 0.1
+				maximum_speed = 0.1
 				
         }
 	add_stats = {
