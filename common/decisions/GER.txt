@@ -26,7 +26,7 @@ operations = {
  	#	visible={}
  	#	cost = 10
  	#	complete_effect = {
- 	#		GER = {scoped_sound_effect = "sp_ger_doctor_2"}
+ 	#		GER = {scoped_sound_effect = "placeholdera_2"}
  	#	}
  	#}
  	GER_atlantikwall = {
@@ -472,7 +472,7 @@ operations = {
  			hidden_effect = {
 
  			 every_country = {limit = {check_variable= { speeches_enabled > 0} is_in_faction_with=GER }
- 					scoped_sound_effect="sp_ger_war"
+ 					scoped_sound_effect="speech2"
  				}	
  			add_ideas = GER_africa_hp
  			set_technology = { africa_hp = 1 popup = no }
