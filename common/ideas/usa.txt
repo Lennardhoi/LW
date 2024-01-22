@@ -1229,6 +1229,20 @@ ideas = {
 				conscription_factor = 0.25
 			}
 		}
+		USA_free_thai = { 
+		allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+			picture = USA_free_thai_movement
+			targeted_modifier = {
+				tag = SIA
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+		}
 	}
 	tank_manufacturer =  { 
 		use_list_view = yes
