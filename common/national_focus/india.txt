@@ -181,7 +181,14 @@ focus_tree = {
  		icon = GFX_RAJ_swaraj
  		available = {
 		OR={
-		num_of_factories > 175
+		AND = {
+             NOT = { country_exists = SIA }
+               num_of_owned_factories > 150
+            }
+        AND = {
+                country_exists = SIA
+                num_of_owned_factories > 175
+        }
 		AND = {date > 1941.03.01
  		RAJ = {
  		276= {is_controlled_by_ROOT_or_ally=yes}
@@ -189,9 +196,9 @@ focus_tree = {
  		303= {is_controlled_by_ROOT_or_ally=yes}
  		561= {is_controlled_by_ROOT_or_ally=yes}
  		275= {is_controlled_by_ROOT_or_ally=yes}
-		}
- 		}
- 		}
+		            }
+ 		        }
+ 		    }
  		}
  	
  		prerequisite = { focus =RAJ_cripps_mission}
