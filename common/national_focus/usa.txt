@@ -252,10 +252,10 @@ focus_tree = {
  	focus = {
  		id = USA_manhattan_project
  		icon = GFX_focus_wonderweapons
- 		x = -1
+ 		x = -2
  		y = 1
- 		prerequisite = { focus = USA_continue_the_new_deal }
- 		relative_position_id = USA_continue_the_new_deal
+ 		prerequisite = { focus = USA_scientist_haven }
+ 		relative_position_id = USA_scientist_haven
  		cost = 5
  		ai_will_do = {
  			factor = 1
@@ -280,13 +280,13 @@ focus_tree = {
  	focus = {
  		id = USA_rubber_reserve_company
  		icon = GFX_focus_generic_rubber
- 		prerequisite = { focus = USA_manhattan_project }
+ 		prerequisite = { focus = USA_continue_the_new_deal }
  		available = {
  			date > 1941.6.1
  		}
- 		x = 0
+ 		x = -1
  		y = 1
- 		relative_position_id = USA_manhattan_project
+ 		relative_position_id = USA_continue_the_new_deal
  		cost = 5
  		search_filters = {FOCUS_FILTER_RESEARCH}
  		completion_reward = {
@@ -535,12 +535,12 @@ focus_tree = {
  		prerequisite = { focus = USA_natural  }
  		prerequisite = { focus = USA_labour }
  		relative_position_id = USA_second_new_deal
- 		cost = 4
+ 		cost = 2
  		ai_will_do = {
  			factor = 1
  		}
  		available = {
- 			date>1938.6.1
+ 			date>1939.1.1
  		}
  		bypass = {
  		}
@@ -645,140 +645,14 @@ focus_tree = {
  			}
  		}
  	}
- 	focus = {
- 		id = USA_arsenal_of_democracy
- 		icon = GFX_goal_support_democracy
- 		prerequisite = { focus = USA_neutrality_act }
- 		x = 0
- 		y = 2
- 		relative_position_id = USA_neutrality_act
- 		cost = 10
- 		ai_will_do = {
- 			factor = 1
- 		}
- 		available = {
- 		}
- 		bypass = {
- 			AND = {
- 				custom_trigger_tooltip =  {
- 					tooltip = production_effort_tt
- 					all_owned_state = {
- 						free_building_slots = {
- 							building = industrial_complex
- 							size < 3
- 							include_locked = yes
- 						}
- 					}
- 				}
- 				custom_trigger_tooltip =  {
- 					tooltip = naval_effort_tt
- 					all_owned_state = {
- 						free_building_slots = {
- 							building = dockyard
- 							size < 3
- 							include_locked = yes
- 						}
- 					}
- 				}
- 			}
- 		}
- 		complete_tooltip = {
- 			navy_experience = 50
- 			army_experience = 50
- 			air_experience = 10
- 			every_state = {
- 				limit = { has_state_flag = USA_arsenal_of_democracy_3AF }
- 				add_extra_state_shared_building_slots = 3
- 				add_building_construction = {
- 					type = arms_factory
- 					level = 3
- 					instant_build = yes
- 				}
- 			}
- 		}
- 		completion_reward = {
- 			navy_experience = 50
- 			army_experience = 50
- 			air_experience = 10
- 			random_owned_controlled_state = {
- 				limit = {
- 					is_core_of = ROOT
- 					free_building_slots = {
- 						building = arms_factory
- 						size > 2
- 						include_locked = yes
- 					}
- 				}
- 				add_extra_state_shared_building_slots = 3
- 				add_building_construction = {
- 					type = arms_factory
- 					level = 3
- 					instant_build = yes
- 				}
- 				set_state_flag = USA_arsenal_of_democracy_3AF
- 			}
- 			random_owned_controlled_state = {
- 				limit = {
- 					is_core_of = ROOT
- 					free_building_slots = {
- 						building = arms_factory
- 						size > 2
- 						include_locked = yes
- 					}
- 				}
- 				add_extra_state_shared_building_slots = 3
- 				add_building_construction = {
- 					type = arms_factory
- 					level = 3
- 					instant_build = yes
- 				}
- 				set_state_flag = USA_arsenal_of_democracy_3AF
- 			}
- 			random_owned_controlled_state = {
- 				limit = {
- 					is_core_of = ROOT
- 					dockyard > 0
- 					free_building_slots = {
- 						building = dockyard
- 						size > 2
- 						include_locked = yes
- 					}
- 				}
- 				add_extra_state_shared_building_slots = 3
- 				add_building_construction = {
- 					type = dockyard
- 					level = 3
- 					instant_build = yes
- 				}
- 				set_state_flag = USA_arsenal_of_democracy_3AF
- 			}
- 			random_owned_controlled_state = {
- 				limit = {
- 					is_core_of = ROOT
- 					dockyard > 0
- 					free_building_slots = {
- 						building = dockyard
- 						size > 2
- 						include_locked = yes
- 					}
- 				}
- 				add_extra_state_shared_building_slots = 3
- 				add_building_construction = {
- 					type = dockyard
- 					level = 3
- 					instant_build = yes
- 				}
- 				set_state_flag = USA_arsenal_of_democracy_3AF
- 			}
- 		}
- 	}
+	
  	focus = {
  		id = USA_scientist_haven
  		icon = GFX_focus_research
- 		prerequisite = { focus = USA_arsenal_of_democracy }
- 		x = -2
- 		y = 1
- 		relative_position_id = USA_arsenal_of_democracy
+ 		prerequisite = { focus = USA_neutrality_act}
+ 		x = 0
+ 		y = 2
+ 		relative_position_id = USA_neutrality_act
  		cost = 5
  		available_if_capitulated = yes
  		available = {
@@ -789,10 +663,113 @@ focus_tree = {
  		}
  	}
  	focus = {
+ 		id = USA_arsenal_of_democracy
+ 		icon = GFX_goal_support_democracy
+ 		prerequisite = { focus = USA_scientist_haven }
+ 		x = 0
+ 		y = 1
+ 		relative_position_id = USA_scientist_haven
+ 		cost = 10
+ 		ai_will_do = {
+ 			factor = 1
+ 		}
+ 		available = { date > 1938.1.1 
+ 		}
+ 		complete_tooltip = {
+ 			navy_experience = 50
+ 			army_experience = 50
+ 			air_experience = 10
+ 			every_state = {
+ 				limit = { has_state_flag = USA_arsenal_of_democracy_3AF }
+ 				add_extra_state_shared_building_slots = 5
+ 				add_building_construction = {
+ 					type = arms_factory
+ 					level = 5
+ 					instant_build = yes
+ 				}
+ 			}
+ 		}
+ 		completion_reward = {
+ 			navy_experience = 50
+ 			army_experience = 50
+ 			air_experience = 10
+ 			random_owned_controlled_state = {
+ 				limit = {
+ 					is_core_of = ROOT
+ 					free_building_slots = {
+ 						building = arms_factory
+ 						size > 2
+ 						include_locked = yes
+ 					}
+ 				}
+ 				add_extra_state_shared_building_slots = 5
+ 				add_building_construction = {
+ 					type = arms_factory
+ 					level = 5
+ 					instant_build = yes
+ 				}
+ 				set_state_flag = USA_arsenal_of_democracy_3AF
+ 			}
+ 			random_owned_controlled_state = {
+ 				limit = {
+ 					is_core_of = ROOT
+ 					free_building_slots = {
+ 						building = arms_factory
+ 						size > 2
+ 						include_locked = yes
+ 					}
+ 				}
+ 				add_extra_state_shared_building_slots = 5
+ 				add_building_construction = {
+ 					type = arms_factory
+ 					level = 5
+ 					instant_build = yes
+ 				}
+ 				set_state_flag = USA_arsenal_of_democracy_3AF
+ 			}
+ 			random_owned_controlled_state = {
+ 				limit = {
+ 					is_core_of = ROOT
+ 					arms_factory > 0
+ 					free_building_slots = {
+ 						building = arms_factory
+ 						size > 2
+ 						include_locked = yes
+ 					}
+ 				}
+ 				add_extra_state_shared_building_slots = 5
+ 				add_building_construction = {
+ 					type = arms_factory
+ 					level = 5
+ 					instant_build = yes
+ 				}
+ 				set_state_flag = USA_arsenal_of_democracy_3AF
+ 			}
+ 			random_owned_controlled_state = {
+ 				limit = {
+ 					is_core_of = ROOT
+ 					arms_factory > 0
+ 					free_building_slots = {
+ 						building = arms_factory
+ 						size > 2
+ 						include_locked = yes
+ 					}
+ 				}
+ 				add_extra_state_shared_building_slots = 5
+ 				add_building_construction = {
+ 					type = arms_factory
+ 					level = 5
+ 					instant_build = yes
+ 				}
+ 				set_state_flag = USA_arsenal_of_democracy_3AF
+ 			}
+ 		}
+ 	}
+ 	focus = {
  		id = USA_manhattan_project2
  		icon = GFX_focus_wonderweapons
- 	prerequisite = { focus = USA_scientist_haven }
- 	relative_position_id = USA_scientist_haven
+ 	prerequisite = { focus = USA_manhattan_project }
+ 	relative_position_id = USA_manhattan_project
  		x = 0
  		y = 1
  		cost = 5
@@ -838,8 +815,8 @@ focus_tree = {
  		relative_position_id = USA_arsenal_of_democracy
  		continue_if_invalid = yes
  		x = 0
- 		y = 2
- 		cost = 5
+ 		y = 1
+ 		cost = 3
  		ai_will_do = {
  			factor = 1
  		}
@@ -847,6 +824,7 @@ focus_tree = {
  		bypass = {
  		}
  		completion_reward = {
+		add_stability = 0.3
  			add_ideas=partial_economic_mobilisation
  			remove_ideas= USA_neutrality_act
  		}
@@ -1058,7 +1036,7 @@ focus_tree = {
  	focus = {
  		id = USA_military_construction
  		icon = GFX_goal_generic_build_tank
- 		prerequisite = { focus = USA_arsenal_of_democracy }
+ 		prerequisite = { focus = USA_scientist_haven }
  		available = {
  			OR = {
  				has_war = yes
@@ -1069,7 +1047,7 @@ focus_tree = {
  		available_if_capitulated = yes
  		x = 2
  		y = 1
- 		relative_position_id = USA_arsenal_of_democracy
+ 		relative_position_id = USA_scientist_haven
  		cost = 5
  		complete_tooltip = {
  			army_experience = 10
