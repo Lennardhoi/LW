@@ -2940,10 +2940,17 @@ focus_tree = {
  					NOT={has_idea=JAP_non_aggression_pact_with_sov}
  					count_triggers = {
  						amount = 2
- 						Or={AST={has_capitulated=yes} AST={exists=no}}
- 						Or={RAJ={has_capitulated=yes} RAJ={exists=no}}
- 						Or={SAF={has_capitulated=yes} SAF={exists=no}}
- 						}}
+ 						OR={AST={has_capitulated=yes} 273 = 
+                            {is_controlled_by_ROOT_or_ally=yes}
+                                }
+ 						OR={RAJ={has_capitulated=yes} 
+                            405 = {is_controlled_by_ROOT_or_ally=yes}
+                                }
+ 						OR={SAF={has_capitulated=yes} 
+                            267 = {is_controlled_by_ROOT_or_ally=yes}
+                                }
+ 						    }
+                    }
  			}
  		}
  		relative_position_id = JAP_develop_the_bejing_area
