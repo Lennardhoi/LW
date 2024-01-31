@@ -441,18 +441,7 @@ on_actions = {
 						}}
 			}
 			SOV={every_state = {
-					limit= {OR= {is_core_of=SOV 
-					state = 680 
-					state = 79 
-					state = 78 
-					state = 80 
-					state = 302
-					state = 712
-					state = 713
-					state = 591
-					state = 301
-					state = 586
-					state = 592}}
+					limit= {OR= {is_core_of=SOV state = 680 state = 79 state = 78 state = 80}}
 					add_state_modifier={modifier={local_supplies = 1}}
 				}
 			}
@@ -647,14 +636,9 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
-					is_core_of=INS
+					original_tag=INS
 					FROM.FROM = {
-						OR = {
-							{is_owned_by = USA}
-							{is_owned_by = ENG}
-							{is_owned_by = AST}
-
-							}
+						is_owned_by = INS
 						has_resources_amount = {
 								resource = rubber
 								amount > 0
