@@ -18,33 +18,24 @@ country_event = {
     fire_only_once = no
     is_triggered_only = yes
     immediate = {
-        USA = {
-            every_owned_state = {
-                if = {
-                    limit = {
-                        AND = {
-                            is_core_of = INS
-                            is_owned_by = USA
-                        }
-                    }
-					add_compliance = 100
-                }
-            }
+        ENG = {
             every_owned_state = {
                 if = {
                     limit = {
                         is_core_of = INS
-                        is_owned_by = USA
                     }
-				 USA = {
-                    give_resource_rights = {
-                        receiver = ENG state = PREV
-                    }
-                }
-               
+					add_compliance = 100
                 }
             }
         }
+		RAJ = {
+			give_resource_rights = {
+				receiver = ENG state = 303
+			}
+			give_resource_rights = {
+				receiver = ENG state = 300
+			}
+		}
     }
 }
 country_event = {

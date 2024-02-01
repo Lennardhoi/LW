@@ -119,7 +119,6 @@ focus_tree = {
  		completion_reward = {
 			set_country_flag = USA_recently_developed
  			USA_great_depression_level_down = yes
- 			USA_congress_medium_opposition = yes
  			custom_effect_tooltip = USA_great_depression_cooldown_tt
  			unlock_decision_tooltip = { decision = USA_pay_farm_subsidies show_effect_tooltip = yes }
  			
@@ -174,7 +173,6 @@ focus_tree = {
 			set_country_flag = USA_recently_developed
  			USA_great_depression_level_down = yes
  			custom_effect_tooltip = USA_great_depression_cooldown_tt
- 			USA_congress_medium_opposition = yes
  			
  			random_owned_controlled_state = {
  				limit = {
@@ -229,7 +227,6 @@ focus_tree = {
  		completion_reward = {
 			set_country_flag = USA_recently_developed
  			USA_great_depression_level_down = yes
- 			USA_congress_medium_opposition = yes
  			
  			random_owned_controlled_state = {
  				limit = {
@@ -571,7 +568,6 @@ focus_tree = {
  		available_if_capitulated = no
  		completion_reward = {
  			add_political_power = 200
- 			USA_congress_small_support = yes
  			add_ideas = USA_neutrality_act
  		}
  	}
@@ -1572,73 +1568,6 @@ focus_tree = {
  		}
  	}
  	focus = {
- 		id = USA_war_plan_orange
- 		icon = GFX_focus_attack_japan
- 		prerequisite = { focus = USA_war_plans_division }
- 		available = {
- 			date>1942.1.1
- 		}
- 		continue_if_invalid = yes
- 		available_if_capitulated = yes
- 		x = 0
- 		y = 4
- 		relative_position_id = USA_prepare_for_japan
- 		cost = 1
- 		completion_reward = {
-            add_ideas = {USA_free_thai}
- 			add_timed_idea = {idea = USA_guadalcanal days = 90}
- 			hidden_effect = {
- 				FRA = {add_timed_idea = {idea = USA_guadalcanal days = 90}}
- 				SAF = {add_timed_idea = {idea = USA_guadalcanal days = 90}}
- 				CAN = {add_timed_idea = {idea = USA_guadalcanal days = 90}}
- 				NZL = {add_timed_idea = {idea = USA_guadalcanal days = 90}}
- 				AST = {add_timed_idea = {idea = USA_guadalcanal days = 90}}
- 				RAJ = {add_timed_idea = {idea = USA_guadalcanal days = 90}}
- 			}
- 		}
- 	}
- 	focus = {
- 		id = USA_iwo_jima
- 		icon = GFX_focus_attack_japan
- 		prerequisite = { focus = USA_war_plan_orange }
- 		available = {
- 		}
- 		continue_if_invalid = yes
- 		available_if_capitulated = yes
- 		x = 0
- 		y = 1
- 		relative_position_id = USA_war_plan_orange
- 		cost = 2
- 		completion_reward = {
- 			every_state = {
- 				limit={OR={state=566 state=453}}
- 				add_dynamic_modifier = {modifier = JAP_attack days=120}
- 		    }
- 		}
- 	}
- 	focus = {
- 		id = USA_downfall
- 		icon = GFX_focus_attack_japan
- 		prerequisite = { focus = USA_iwo_jima }
- 		available = {
- 		 date > 1942.5.1
- 	     NOT={JAP={controls_state = 566 controls_state = 453}}
- 		}
- 		continue_if_invalid = yes
- 		available_if_capitulated = yes
- 		x = 0
- 		y = 1
- 		relative_position_id = USA_iwo_jima
- 		cost = 2
- 		completion_reward = {
- 		 JAP={remove_ideas = JAP_defense_of_homeland}
- 		 every_state = {
- 				limit={OR={state=455 state=457}}
- 				add_dynamic_modifier = {modifier = JAP_attack days=120}
- 		    }
- 		}
- 	}
- 	focus = {
  		id = USA_war_plans_division
  		icon = GFX_USA_semper_fi
  		prerequisite = { focus = USA_prepare_for_japan }
@@ -1827,60 +1756,6 @@ focus_tree = {
  		}
  	}
  	focus = {
- 		id = USA_retake_the_philippines
- 		icon = GFX_USA_fight_fascist_with_fire
- 		x = 2
- 		y = 2
- 		prerequisite = { focus = USA_war_plans_division }
- 		relative_position_id = USA_war_plans_division
- 		cost = 5
- 		ai_will_do = {
- 			factor = 1
- 		}
- 		available = {
- 			568={is_controlled_by_ROOT_or_ally=yes}
- 			603={is_controlled_by_ROOT_or_ally=yes}
- 			559={is_controlled_by_ROOT_or_ally=yes}
- 			567 ={is_controlled_by_ROOT_or_ally=yes}
- 			603={is_controlled_by_ROOT_or_ally=yes}
- 		}
- 		bypass = {
- 		}
- 		cancel_if_invalid = yes
- 		continue_if_invalid = no
- 		available_if_capitulated = no
- 		completion_reward = {
- 			every_state = {
- 				limit={OR={state=544 state=545 state=546 state=549 state=547 state=548 state=294 }}
- 				add_dynamic_modifier = { modifier = JAP_attack days=90  }}
- 		}
- 	}
- 	focus = {
- 		id = USA_retake_the_east_indies
- 		icon = GFX_USA_destroy_their_supply_chains
- 		x = -2
- 		y = 2
- 		prerequisite = { focus = USA_war_plans_division }
- 		relative_position_id = USA_war_plans_division
- 		cost = 5
- 		ai_will_do = {
- 			factor = 1
- 		}
- 		available = {
- 			date>1942.1.1
- 		}
- 		bypass = {
- 		}
- 		cancel_if_invalid = yes
- 		continue_if_invalid = no
- 		available_if_capitulated = no
- 		completion_reward = {
- 			every_state = {
- 				limit={OR={state=591 state = 712 state = 713 state=302 state=592 state=588 state=450 state=300 state=692 state=301 state=587 }}
- 				add_dynamic_modifier = { modifier = JAP_attack days=90  }}
- 		}
- 	}
- 	focus = {
  		id = USA_island_hopping
  		icon = GFX_USA_the_island_hopping_campaign
  		x = 1
@@ -2023,7 +1898,6 @@ focus_tree = {
  				limit = {
  					has_war_support < 0.4
  				}
- 				USA_congress_medium_opposition = yes
  			}
  		}
  	}
@@ -2137,7 +2011,6 @@ focus_tree = {
  			factor = 1
  		}
  		available = {
- 			congress_medium_support_trigger = yes
  		}
  		bypass = {
  		}
@@ -2447,7 +2320,6 @@ focus_tree = {
  				limit = {
  					has_war_support < 0.4
  				}
- 				USA_congress_medium_opposition = yes
  			}
  			352 = {
  				add_extra_state_shared_building_slots = 5
