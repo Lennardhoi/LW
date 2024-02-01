@@ -993,4 +993,184 @@ foreign_politics = {
  		}
  	}
  }
+ JAP_pacific_war = {
+	JAP_australia = {
+		available = {
+			NOT={has_idea=main_focus_set_idea}
+			450= {is_controlled_by_ROOT_or_ally=yes}
+			588= {is_controlled_by_ROOT_or_ally=yes}
+		}
+		priority = 75
+		targets = {
+			AST
+		}
+		icon = generic_operation
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect={	add_timed_idea={idea=main_focus_set_idea days=35}}
+			every_state = {
+				limit={is_core_of=AST}
+				add_dynamic_modifier = { modifier = JAP_attack days=90  }}
+		}
+	}
+	JAP_hawaii = {
+		available = {
+			NOT={has_idea=main_focus_set_idea}
+		}
+		priority = 0
+		targets = {
+			USA
+		}
+		icon = generic_operation
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect={	add_timed_idea={idea=main_focus_set_idea days=35}}
+			every_state = {
+				limit={OR={state=550 state=552 state=592 state=588 state=553 state=645 }}
+				add_dynamic_modifier = { modifier = JAP_attack days=90  }}
+		}
+	}
+	JAP_reconquest_of_dei = {
+		available = {
+			count_triggers = {
+				amount=5
+				300= {is_controlled_by_ROOT_or_ally=no}
+				294= {is_controlled_by_ROOT_or_ally=no}
+				547= {is_controlled_by_ROOT_or_ally=no}
+				545= {is_controlled_by_ROOT_or_ally=no}
+				546= {is_controlled_by_ROOT_or_ally=no}
+				549= {is_controlled_by_ROOT_or_ally=no}
+				548= {is_controlled_by_ROOT_or_ally=no}
+				591= {is_controlled_by_ROOT_or_ally=no}
+				302= {is_controlled_by_ROOT_or_ally=no}
+				301= {is_controlled_by_ROOT_or_ally=no}
+				711= {is_controlled_by_ROOT_or_ally=no}
+				300= {is_controlled_by_ROOT_or_ally=no}
+				592= {is_controlled_by_ROOT_or_ally=no}
+				586= {is_controlled_by_ROOT_or_ally=no}
+				592= {is_controlled_by_ROOT_or_ally=no}
+				587= {is_controlled_by_ROOT_or_ally=no}
+				588= {is_controlled_by_ROOT_or_ally=no}
+			}
+			has_completed_focus = JAP_fortify_dei
+			NOT={has_idea=main_focus_set_idea}
+		}
+		priority = 100
+		targets = {
+			INS
+		}
+		icon = generic_operation
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect={	add_timed_idea={idea=main_focus_set_idea days=35}}
+			every_state = {
+				limit={OR={state=591 state = 712 state = 713 state=302 state=592 state=588 state=450 state=300 state=692 state=301 state=587 }}
+				add_dynamic_modifier = { modifier = JAP_attack days=90  }}
+		}
+	}
+	JAP_southern_expansion = {
+		available = {
+			NOT={has_idea=main_focus_set_idea}
+		}
+		priority = 100
+		targets = {
+			INS
+		}
+		icon = generic_operation
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect={	add_timed_idea={idea=main_focus_set_idea days=35}}
+			every_state = {
+				limit={OR={state=591 state=713 state=712 state=302 state=592 state=588 state=450 state=300 state=692 state=301 state=587 state=294 state=548 state=544}}
+				add_dynamic_modifier = { modifier = JAP_attack days=90  }}
+		}
+	}
+	JAP_eastern_expansion = {
+		available = {
+			NOT={has_idea=main_focus_set_idea}
+		}
+		priority = 75
+		targets = {
+			AST
+		}
+		icon = generic_operation
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect={add_timed_idea={idea=main_focus_set_idea days=35}}
+			every_state = {
+				limit={OR={state=559 state=655 state=555 state=556 state=560 state=643 state=564 state=563 state=557 state=644 state=450}}
+				add_dynamic_modifier = { modifier = JAP_attack days=90  }
+			}
+		}
+	}
+	JAP_its_time_for_africa = {
+		available = {
+			NOT={has_idea=main_focus_set_idea}
+		}
+		priority = 25
+		targets = {
+			ENG
+		}
+		icon = generic_operation
+		fire_only_once = yes
+		complete_effect = {
+ 			hidden_effect={	add_timed_idea={idea=main_focus_set_idea days=35}}
+ 			every_state = {
+ 				limit={OR={state=579 state=261 state = 483 state=628 state=630 state=630 state=472 state=469 state=637 state = 600}}
+ 				add_dynamic_modifier = { modifier = JAP_attack days=90  }}
+		}
+	}
+	JAP_dacca_offensive = {
+		available = {
+			NOT={has_idea=main_focus_set_idea}
+			398= {is_controlled_by_ROOT_or_ally=yes}
+		}
+		priority = 50
+		targets = {
+			RAJ
+		}
+		icon = generic_operation
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect={	add_timed_idea={idea=main_focus_set_idea days=35}}
+			every_state = {
+				limit={OR={state=396 state=397 state = 401 state=392}}
+				add_dynamic_modifier = { modifier = JAP_attack days=90  }}
+		}
+	}
+	JAP_go_westward = {
+		available = {
+			NOT={has_idea=main_focus_set_idea}
+		}
+		priority = 25
+		targets = {
+			ENG
+		}
+		icon = generic_operation
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect={	add_timed_idea={idea=main_focus_set_idea days=35}}
+			every_state = {
+				limit={OR={state=388 state=269 state = 561 state=628 state=630}}
+				add_dynamic_modifier = { modifier = JAP_attack days=90  }}
+		}
+	}
+	JAP_burma_attack = {
+		available = {
+			NOT={has_idea=main_focus_set_idea}
+		}
+		priority = 50
+		targets = {
+			RAJ
+		}
+		icon = generic_operation
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect={	add_timed_idea={idea=main_focus_set_idea days=35}}
+			every_state = {
+				limit={OR={state=303 state=275 state = 561 state=392 state=400 state=398}}
+				add_dynamic_modifier = { modifier = JAP_attack days=90  }}
+		}
+	}
+ }
 

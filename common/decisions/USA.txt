@@ -687,5 +687,115 @@ USA_support_allies = {
  		}
  	}	
  }
+ USA_pacific_war = {
+	USA_retake_the_east_indies = {
+		available = {
+			date > 1942.1.1
+		}
+		targets = {
+			JAP
+		}
+		icon = generic_operation
+		fire_only_once = yes
+		complete_effect = {
+			every_state = {
+				limit={OR={state=591 state = 712 state = 713 state=302 state=592 state=588 state=450 state=300 state=692 state=301 state=587 }}
+				add_dynamic_modifier = { modifier = JAP_attack days=90  }}
+		}
+	}
+	USA_retake_the_philippines = {
+		available = {
+			568={is_controlled_by_ROOT_or_ally=yes}
+			603={is_controlled_by_ROOT_or_ally=yes}
+			559={is_controlled_by_ROOT_or_ally=yes}
+			567 ={is_controlled_by_ROOT_or_ally=yes}
+			603={is_controlled_by_ROOT_or_ally=yes}
+		}
+		targets = {
+			JAP
+		}
+		icon = generic_operation
+		fire_only_once = yes
+		complete_effect = {
+			every_state = {
+				limit={OR={state=544 state=545 state=546 state=549 state=547 state=548 state=294 }}
+				add_dynamic_modifier = { modifier = JAP_attack days=90  }}
+		}
+	}
+	USA_downfall = {
+		available = {
+			date > 1942.5.1
+			NOT={JAP={controls_state = 566 controls_state = 453}}
+		}
+		priority = 100
+		targets = {
+			JAP
+		}
+		icon = generic_operation
+		fire_only_once = yes
+		complete_effect = {
+			JAP={remove_ideas = JAP_defense_of_homeland}
+			every_state = {
+				   limit={OR={state=455 state=457}}
+				   add_dynamic_modifier = {modifier = JAP_attack days=120}
+			   }
+		}
+	}
+	USA_iwo_jima = {
+		available = {
+			568={is_controlled_by_ROOT_or_ally=yes}
+		}
+		targets = {
+			JAP
+		}
+		icon = generic_operation
+		fire_only_once = yes
+		complete_effect = {
+			every_state = {
+				limit={OR={state=566}}
+				add_dynamic_modifier = {modifier = JAP_attack days=120}
+			}
+		}
+	}
+	USA_okinawa = {
+		available = {
+			566={is_controlled_by_ROOT_or_ally=yes}
+		}
+		targets = {
+			JAP
+		}
+		icon = generic_operation
+		fire_only_once = yes
+		complete_effect = {
+			every_state = {
+				   limit={OR={state=453}}
+				   add_dynamic_modifier = {modifier = JAP_attack days=120}
+			   }
+		}
+	}
+	USA_war_plan_orange = {
+		available = {
+			date>1942.1.1
+		}
+		priority = 90
+		targets = {
+			JAP
+		}
+		icon = generic_operation
+		fire_only_once = yes
+		complete_effect = {
+            add_ideas = {USA_free_thai}
+ 			add_timed_idea = {idea = USA_guadalcanal days = 90}
+ 			hidden_effect = {
+ 				FRA = {add_timed_idea = {idea = USA_guadalcanal days = 90}}
+ 				SAF = {add_timed_idea = {idea = USA_guadalcanal days = 90}}
+ 				CAN = {add_timed_idea = {idea = USA_guadalcanal days = 90}}
+ 				NZL = {add_timed_idea = {idea = USA_guadalcanal days = 90}}
+ 				AST = {add_timed_idea = {idea = USA_guadalcanal days = 90}}
+ 				RAJ = {add_timed_idea = {idea = USA_guadalcanal days = 90}}
+ 			}
+		}
+	}
+ }
 
 

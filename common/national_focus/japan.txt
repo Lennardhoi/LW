@@ -2429,34 +2429,6 @@ focus_tree = {
  		}
  	}
  	focus = {
- 		id = JAP_eastern_expansion
- 		icon = GFX_goal_JAP_tides
- 		prerequisite = { focus = JAP_strike_on_the_southern_resource_area }
- 		x = -6
- 		y = 1
- 		relative_position_id = JAP_strike_on_the_southern_resource_area
- 		cost = 2
- 		ai_will_do = {
- 			factor = 2
- 		}
- 		available = {
- 			NOT={has_idea=main_focus_set_idea}
- 		}
- 		bypass = {
- 		}
- 		cancel_if_invalid = yes
- 		continue_if_invalid = no
- 		available_if_capitulated = no
- 		search_filters = { FOCUS_FILTER_INDUSTRY }
- 		completion_reward = {
- 			hidden_effect={add_timed_idea={idea=main_focus_set_idea days=35}}
- 			every_state = {
- 				limit={OR={state=559 state=655 state=555 state=556 state=560 state=643 state=564 state=563 state=557 state=644 state=450}}
- 				add_dynamic_modifier = { modifier = JAP_attack days=90  }
- 			}
- 		}
- 	}
- 	focus = {
  		id = JAP_japanese_settlement
  		icon = GFX_goal_generic_construct_civ_factory
  		prerequisite = { focus = JAP_strike_on_the_southern_resource_area }
@@ -2498,121 +2470,12 @@ focus_tree = {
  		}
  	}
  	focus = {
- 		id = JAP_burma_attack
- 		icon = GFX_focus_JAP_burma_attack
+ 		id = JAP_volunteer_workers_in_burma
+ 		icon = GFX_focus_JAP_industry
  		prerequisite = { focus = JAP_strike_on_the_southern_resource_area }
  		x = 4
  		y = 1
  		relative_position_id = JAP_strike_on_the_southern_resource_area
- 		cost = 2
- 		ai_will_do = {
- 			factor = 2
- 		}
- 		available = {
- 			NOT={has_idea=main_focus_set_idea}
- 		}
- 		bypass = {
- 		}
- 		cancel_if_invalid = yes
- 		continue_if_invalid = no
- 		available_if_capitulated = no
- 		search_filters = { FOCUS_FILTER_INDUSTRY }
- 		completion_reward = {
- 			hidden_effect={	add_timed_idea={idea=main_focus_set_idea days=35}}
- 			every_state = {
- 				limit={OR={state=303 state=275 state = 561 state=392 state=400 state=398}}
- 				add_dynamic_modifier = { modifier = JAP_attack days=90  }}
- 		}
- 	}
- 	focus = {
- 		id = JAP_go_westward
- 		icon = GFX_goal_JAP_army_expansion
- 		prerequisite = { focus = JAP_strike_on_the_southern_resource_area }
- 		x = 6
- 		y = 1
- 		relative_position_id = JAP_strike_on_the_southern_resource_area
- 		cost = 2
- 		ai_will_do = {
- 			factor = 2
- 		}
- 		available = {
- 			NOT={has_idea=main_focus_set_idea}
- 		}
- 		bypass = {
- 		}
- 		cancel_if_invalid = yes
- 		continue_if_invalid = no
- 		available_if_capitulated = no
- 		search_filters = { FOCUS_FILTER_INDUSTRY }
- 		completion_reward = {
- 			hidden_effect={	add_timed_idea={idea=main_focus_set_idea days=35}}
- 			every_state = {
- 				limit={OR={state=388 state=269 state = 561 state=628 state=630}}
- 				add_dynamic_modifier = { modifier = JAP_attack days=90  }}
- 		}
- 	}
- 	focus = {
- 		id = JAP_its_time_for_africa
- 		icon = GFX_focus_JAP_its_time_for_africa
- 		prerequisite = { focus = JAP_go_westward }
- 		x = 0
- 		y = 2
- 		relative_position_id = JAP_go_westward
- 		cost = 5
- 		ai_will_do = {
- 			factor = 2
- 		}
- 		available = {
- 			NOT={has_idea=main_focus_set_idea}
- 		}
- 		bypass = {
- 		}
- 		cancel_if_invalid = yes
- 		continue_if_invalid = no
- 		available_if_capitulated = no
- 		search_filters = { FOCUS_FILTER_INDUSTRY }
- 		completion_reward = {
- 			hidden_effect={	add_timed_idea={idea=main_focus_set_idea days=35}}
- 			every_state = {
- 				limit={OR={state=579 state=261 state = 483 state=628 state=630 state=630 state=472 state=469 state=637 state = 600}}
- 				add_dynamic_modifier = { modifier = JAP_attack days=90  }}
- 		}
- 	}
- 	focus = {
- 		id = JAP_dacca_offensive
- 		icon = GFX_focus_JAP_small_arms
- 		prerequisite = { focus = JAP_burma_attack }
- 		x = 0
- 		y = 2
- 		relative_position_id = JAP_burma_attack
- 		cost = 5
- 		ai_will_do = {
- 			factor = 2
- 		}
- 		available = {
- 			NOT={has_idea=main_focus_set_idea}
- 			398= {is_controlled_by_ROOT_or_ally=yes}
- 		}
- 		bypass = {
- 		}
- 		cancel_if_invalid = yes
- 		continue_if_invalid = no
- 		available_if_capitulated = no
- 		search_filters = { FOCUS_FILTER_INDUSTRY }
- 		completion_reward = {
- 			hidden_effect={	add_timed_idea={idea=main_focus_set_idea days=35}}
- 			every_state = {
- 				limit={OR={state=396 state=397 state = 401 state=392}}
- 				add_dynamic_modifier = { modifier = JAP_attack days=90  }}
- 		}
- 	}
- 	focus = {
- 		id = JAP_volunteer_workers_in_burma
- 		icon = GFX_focus_JAP_industry
- 		prerequisite = { focus = JAP_burma_attack focus = JAP_go_westward }
- 		x = 1
- 		y = 1
- 		relative_position_id = JAP_burma_attack
  		cost = 5
  		ai_will_do = {
  			factor = 2
@@ -2709,95 +2572,12 @@ focus_tree = {
  		}
  	}
  	focus = {
- 		id = JAP_southern_expansion
- 		icon = GFX_goal_JAP_co_prosperity_sphere
+ 		id = JAP_fortify_dei
+ 		icon = GFX_focus_JAP_fortify_dei
  		prerequisite = { focus = JAP_strike_on_the_southern_resource_area }
  		x = -4
  		y = 1
  		relative_position_id = JAP_strike_on_the_southern_resource_area
- 		cost = 2
- 		ai_will_do = {
- 			factor = 2
- 		}
- 		available = {
- 			NOT={has_idea=main_focus_set_idea}
- 		}
- 		bypass = {
- 		}
- 		cancel_if_invalid = yes
- 		continue_if_invalid = no
- 		available_if_capitulated = no
- 		search_filters = { FOCUS_FILTER_INDUSTRY }
- 		completion_reward = {
- 			hidden_effect={	add_timed_idea={idea=main_focus_set_idea days=35}}
- 			every_state = {
- 				limit={OR={state=591 state=713 state=712 state=302 state=592 state=588 state=450 state=300 state=692 state=301 state=587 state=294 state=548 state=544}}
- 				add_dynamic_modifier = { modifier = JAP_attack days=90  }}
- 		}
- 	}
- 	focus = {
- 		id = JAP_hawaii
- 		icon = GFX_focus_JAP_hawaii
- 		prerequisite = { focus = JAP_eastern_expansion }
- 		x = 0
- 		y = 2
- 		relative_position_id = JAP_eastern_expansion
- 		cost = 5
- 		ai_will_do = {
- 			factor = 2
- 		}
- 		available = {
- 			NOT={has_idea=main_focus_set_idea}
- 		}
- 		bypass = {
- 		}
- 		cancel_if_invalid = yes
- 		continue_if_invalid = no
- 		available_if_capitulated = no
- 		search_filters = { FOCUS_FILTER_INDUSTRY }
- 		completion_reward = {
- 			hidden_effect={	add_timed_idea={idea=main_focus_set_idea days=35}}
- 			every_state = {
- 				limit={OR={state=550 state=552 state=592 state=588 state=553 state=645 }}
- 				add_dynamic_modifier = { modifier = JAP_attack days=90  }}
- 		}
- 	}
- 	focus = {
- 		id = JAP_australia
- 		icon = GFX_focus_JAP_australia
- 		prerequisite = { focus = JAP_southern_expansion }
- 		x = 0
- 		y = 2
- 		relative_position_id = JAP_southern_expansion
- 		cost = 5
- 		ai_will_do = {
- 			factor = 2
- 		}
- 		available = {
- 			NOT={has_idea=main_focus_set_idea}
- 			450= {is_controlled_by_ROOT_or_ally=yes}
- 			588= {is_controlled_by_ROOT_or_ally=yes}
- 		}
- 		bypass = {
- 		}
- 		cancel_if_invalid = yes
- 		continue_if_invalid = no
- 		available_if_capitulated = no
- 		search_filters = { FOCUS_FILTER_INDUSTRY }
- 		completion_reward = {
- 			hidden_effect={	add_timed_idea={idea=main_focus_set_idea days=35}}
- 			every_state = {
- 				limit={is_core_of=AST}
- 				add_dynamic_modifier = { modifier = JAP_attack days=90  }}
- 		}
- 	}
- 	focus = {
- 		id = JAP_fortify_dei
- 		icon = GFX_focus_JAP_fortify_dei
- 		prerequisite = { focus = JAP_eastern_expansion focus = JAP_southern_expansion}
- 		x = 1
- 		y = 1
- 		relative_position_id = JAP_eastern_expansion
  		cost = 5
  		ai_will_do = {
  			factor = 2
@@ -2839,53 +2619,6 @@ focus_tree = {
  						state_production_speed_buildings_factor = 0.50
  					}
  					}}
- 		}
- 	}
- 	focus = {
- 		id = JAP_reconquest_of_dei
- 		icon = GFX_focus_JAP_samurai
- 		prerequisite = { focus = JAP_fortify_dei }
- 		x = 0
- 		y = 2
- 		relative_position_id = JAP_fortify_dei
- 		cost = 5
- 		ai_will_do = {
- 			factor = 2
- 		}
- 		available = {
- 			count_triggers = {
- 				amount=5
- 				300= {is_controlled_by_ROOT_or_ally=no}
- 				294= {is_controlled_by_ROOT_or_ally=no}
- 				547= {is_controlled_by_ROOT_or_ally=no}
- 				545= {is_controlled_by_ROOT_or_ally=no}
- 				546= {is_controlled_by_ROOT_or_ally=no}
- 				549= {is_controlled_by_ROOT_or_ally=no}
- 				548= {is_controlled_by_ROOT_or_ally=no}
- 				591= {is_controlled_by_ROOT_or_ally=no}
- 				302= {is_controlled_by_ROOT_or_ally=no}
- 				301= {is_controlled_by_ROOT_or_ally=no}
- 				711= {is_controlled_by_ROOT_or_ally=no}
- 				300= {is_controlled_by_ROOT_or_ally=no}
- 				592= {is_controlled_by_ROOT_or_ally=no}
- 				586= {is_controlled_by_ROOT_or_ally=no}
- 				592= {is_controlled_by_ROOT_or_ally=no}
- 				587= {is_controlled_by_ROOT_or_ally=no}
- 				588= {is_controlled_by_ROOT_or_ally=no}
- 			}
- 			NOT={has_idea=main_focus_set_idea}
- 		}
- 		bypass = {
- 		}
- 		cancel_if_invalid = yes
- 		continue_if_invalid = no
- 		available_if_capitulated = no
- 		search_filters = { FOCUS_FILTER_INDUSTRY }
- 		completion_reward = {
- 			hidden_effect={	add_timed_idea={idea=main_focus_set_idea days=35}}
- 			every_state = {
- 				limit={OR={state=591 state = 712 state = 713 state=302 state=592 state=588 state=450 state=300 state=692 state=301 state=587 }}
- 				add_dynamic_modifier = { modifier = JAP_attack days=90  }}
  		}
  	}
  	focus = {
