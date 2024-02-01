@@ -673,7 +673,7 @@ focus_tree = {
  		ai_will_do = {
  			factor = 1
  		}
- 		available = { date > 1938.1.1 
+ 		available = { date > 1939.9.1 
  		}
  		complete_tooltip = {
  			navy_experience = 50
@@ -1037,11 +1037,7 @@ focus_tree = {
  		id = USA_military_construction
  		icon = GFX_goal_generic_build_tank
  		prerequisite = { focus = USA_scientist_haven }
- 		available = {
- 			OR = {
- 				has_war = yes
- 				has_war_support > 0.3
- 			}
+ 		available = {date > 1938.6.1
  		}
  		continue_if_invalid = yes
  		available_if_capitulated = yes
@@ -1049,211 +1045,44 @@ focus_tree = {
  		y = 1
  		relative_position_id = USA_scientist_haven
  		cost = 5
- 		complete_tooltip = {
- 			army_experience = 10
- 			every_state = {
- 				limit = { has_state_flag = USA_military_construction_5MF }
- 				add_extra_state_shared_building_slots = 5
- 				add_building_construction = {
- 					type = arms_factory
- 					level = 5
- 					instant_build = yes
- 				}
- 			}
- 			every_state = {
- 				limit = { has_state_flag = USA_military_construction_3Inf }
- 				add_building_construction = {
- 					type = infrastructure
- 					level = 3
- 					instant_build = yes
- 				}
- 			}
- 		}
  		completion_reward = {
- 			army_experience = 10
- 			random_owned_controlled_state = {
- 				limit = {
- 					arms_factory > 0
- 					free_building_slots = {
- 						building = arms_factory
- 						size > 4
- 						include_locked = yes
- 					}
- 					OR = {
- 						region = 117
- 						region = 118
- 						region = 119
- 						region = 120
- 					}
- 				}
- 				add_extra_state_shared_building_slots = 5
- 				add_building_construction = {
- 					type = arms_factory
- 					level = 5
- 					instant_build = yes
- 				}
- 				set_state_flag = USA_military_construction_5MF
- 			}
- 			if = {
- 				limit = {
- 					338 = {
- 						OR = {
- 							NOT = { is_owned_and_controlled_by = USA }
- 							AND = {
- 								is_owned_and_controlled_by = USA
- 								free_building_slots = {
- 									building = infrastructure
- 									size < 3
- 								}
- 							}
- 						}
- 					}
- 				}
- 				random_owned_controlled_state = {
- 					limit = {
- 						free_building_slots = {
- 							building = infrastructure
- 							size > 2
- 						}
- 						OR = {
- 							region = 117
- 							region = 118
- 							region = 119
- 							region = 120
- 						}
- 					}
+		338 = {		add_extra_state_shared_building_slots = 3
  					add_building_construction = {
  						type = infrastructure
  						level = 3
  						instant_build = yes
- 					}
- 					set_state_flag = USA_military_construction_3Inf
- 				}
+					}
+					add_building_construction = {
+ 						type = arms_factory
+ 						level = 3
+ 						instant_build = yes
+					}
  			}
- 			338 = {
- 				if = {
- 					limit = {
- 						is_owned_and_controlled_by = USA
- 						free_building_slots = {
- 							building = infrastructure
- 							size > 2
- 						}
- 					}
+		342 = {		add_extra_state_shared_building_slots = 3
  					add_building_construction = {
  						type = infrastructure
  						level = 3
  						instant_build = yes
- 					}
- 					set_state_flag = USA_military_construction_3Inf
- 				}
+					}
+					add_building_construction = {
+ 						type = arms_factory
+ 						level = 3
+ 						instant_build = yes
+					}
  			}
- 			if = {
- 				limit = {
- 					342 = {
- 						OR = {
- 							NOT = { is_owned_and_controlled_by = USA }
- 							AND = {
- 								is_owned_and_controlled_by = USA
- 								free_building_slots = {
- 									building = infrastructure
- 									size < 3
- 								}
- 							}
- 						}
- 					}
- 				}
- 				random_owned_controlled_state = {
- 					limit = {
- 						free_building_slots = {
- 							building = infrastructure
- 							size > 2
- 						}
- 						OR = {
- 							region = 117
- 							region = 118
- 							region = 119
- 							region = 120
- 						}
- 					}
+		345 = {		add_extra_state_shared_building_slots = 3
  					add_building_construction = {
  						type = infrastructure
  						level = 3
  						instant_build = yes
- 					}
- 					set_state_flag = USA_military_construction_3Inf
- 				}
- 			}
- 			342 = {
- 				if = {
- 					limit = {
- 						is_owned_and_controlled_by = USA
- 						free_building_slots = {
- 							building = infrastructure
- 							size > 2
- 						}
- 					}
- 					add_building_construction = {
- 						type = infrastructure
+					}
+					add_building_construction = {
+ 						type = arms_factory
  						level = 3
  						instant_build = yes
- 					}
- 					set_state_flag = USA_military_construction_3Inf
- 				}
+					}
  			}
- 			if = {
- 				limit = {
- 					345 = {
- 						OR = {
- 							NOT = { is_owned_and_controlled_by = USA }
- 							AND = {
- 								is_owned_and_controlled_by = USA
- 								free_building_slots = {
- 									building = infrastructure
- 									size < 3
- 								}
- 							}
- 						}
- 					}
- 				}
- 				random_owned_controlled_state = {
- 					limit = {
- 						free_building_slots = {
- 							building = infrastructure
- 							size > 2
- 						}
- 						OR = {
- 							region = 117
- 							region = 118
- 							region = 119
- 							region = 120
- 						}
- 					}
- 					add_building_construction = {
- 						type = infrastructure
- 						level = 3
- 						instant_build = yes
- 					}
- 					set_state_flag = USA_military_construction_3Inf
- 				}
- 			}
- 			345 = {
- 				if = {
- 					limit = {
- 						is_owned_and_controlled_by = USA
- 						free_building_slots = {
- 							building = infrastructure
- 							size > 2
- 						}
- 					}
- 					add_building_construction = {
- 						type = infrastructure
- 						level = 3
- 						instant_build = yes
- 					}
- 					set_state_flag = USA_military_construction_3Inf
- 				}
- 			}
- 		}
+ 		}	
  	}
  	focus = {
  		id = USA_USACE_projects
@@ -1317,29 +1146,6 @@ focus_tree = {
 					}
  			}
 			add_ideas = extensive_conscription
- 			random_owned_controlled_state = {
- 				limit = {
- 					arms_factory > 0
- 					free_building_slots = {
- 						building = arms_factory
- 						size > 2
- 						include_locked = yes
- 					}
- 					OR = {
- 						region = 117
- 						region = 118
- 						region = 119
- 						region = 120
- 					}
- 				}
- 				add_extra_state_shared_building_slots = 3
- 				add_building_construction = {
- 					type = arms_factory
- 					level = 3
- 					instant_build = yes
- 				}
- 				set_state_flag = USA_USACE_projects_3AF
- 			}
  			air_experience = 50
  			navy_experience = 50
  			army_experience = 10
@@ -2594,7 +2400,7 @@ focus_tree = {
  			factor = 1
  		}
  		available = {
- 			date>1940.10.1
+ 			date>1942.1.1
  		}
  		bypass = {
  		}
@@ -2602,11 +2408,9 @@ focus_tree = {
  		continue_if_invalid = no
  		available_if_capitulated = no
  		completion_reward = {
- 			add_tech_bonus = {
- 				name = fighter_command_focus
- 				bonus = 1.0
- 				uses = 1
- 				technology= advanced_small_airframe
+ 			set_technology = {
+ 				 advanced_small_airframe = 1
+				 
  			}
  		}
  	}
