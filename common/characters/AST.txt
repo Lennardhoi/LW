@@ -84,12 +84,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ infantry_leader naval_invader hill_fighter }
+			traits={ infantry_leader naval_invader }
 			skill=4
 			attack_skill=4
 			defense_skill=4
 			planning_skill=3
-			logistics_skill=1
+			logistics_skill=2
 			legacy_id=-1
 		}
 	}
@@ -104,10 +104,10 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ infantry_leader desert_fox trait_mountaineer }
+			traits={ infantry_leader  hill_fighter desert_fox trait_mountaineer }
 			skill=4
 			attack_skill=5
-			defense_skill=1
+			defense_skill=2
 			planning_skill=3
 			logistics_skill=3
 			legacy_id = 2414

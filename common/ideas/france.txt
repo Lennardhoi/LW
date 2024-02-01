@@ -396,6 +396,22 @@ ideas = {
 				training_time_army_factor = -0.2
 			}
 		}
+		special_forces = {
+			picture = generic_artillery_regiments
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			
+			modifier = {
+				special_forces_attack_factor = 0.025
+				special_forces_cap = 0.02
+			}
+		}
 		FRA_firepower = {
 			picture = generic_artillery_regiments
 			allowed = {
