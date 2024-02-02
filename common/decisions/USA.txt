@@ -641,7 +641,7 @@ USA_support_allies = {
  			has_war_with = JAP
  		}
  		visible = {
- 			has_completed_focus = USA_war_plan_orange
+ 			always = no
  		}
  		ai_will_do = {
  			factor = 1
@@ -797,5 +797,94 @@ USA_support_allies = {
 		}
 	}
  }
+ USA_europe = {
+	USA_final_crusade = {
+		available = {
+			date>1942.6.1
+		}
+		priority = 100
+		targets = {
+			GER
+		}
+		icon = generic_operation
+		fire_only_once = yes
+		complete_effect = {
+			add_timed_idea={idea= USA_overlord days=60}
+			hidden_effect ={
+				ENG = {add_timed_idea={idea= USA_overlord days=60}}
+				FRA = {add_timed_idea={idea= USA_overlord days=60}}
+				SAF = {add_timed_idea={idea= USA_overlord days=60}}
+				CAN = {add_timed_idea={idea= USA_overlord days=60}}
+				NZL = {add_timed_idea={idea= USA_overlord days=60}}
+				AST = {add_timed_idea={idea= USA_overlord days=60}}
+			}
+		}
+	}
+	USA_ger6 = {
+		available = {
+			date>1942.1.1
+		}
+		priority = 90
+		targets = {
+			GER
+		}
+		icon = generic_operation
+		fire_only_once = yes
+		complete_effect = {
+			every_state = {
+				limit={OR={state=21 state=653 state=1 state=22 }}
+				add_dynamic_modifier = { modifier = JAP_attack days=120  }}
+		}
+	}
+	USA_ger5 = {
+		available = {
+			date>1942.1.1
+		}
+		priority = 80
+		targets = {
+			ITA
+		}
+		icon = generic_operation
+		fire_only_once = yes
+		complete_effect = {
+			every_state = {
+				limit={OR={state=1 state=112 state=113}}
+				add_dynamic_modifier = { modifier = JAP_attack days=120  }}
+		}
+	}
+	USA_ger7 = {
+		available = {
+			112={is_controlled_by_ROOT_or_ally=yes}
+			113={is_controlled_by_ROOT_or_ally=yes}
+		}
+		priority = 80
+		targets = {
+			ITA
+		}
+		icon = generic_operation
+		fire_only_once = yes
+		complete_effect = {
+			every_state = {
+				limit={OR={state=152 state=115 state=2 state=158}}
+				add_dynamic_modifier = { modifier = JAP_attack days=120  }}
+		}
+	}
+	USA_ger4 = {
+		available = {
+			date>1942.1.1
+		}
+		priority = 90
+		targets = {
+			GER
+		}
+		icon = generic_operation
+		fire_only_once = yes
+		complete_effect = {
+			every_state = {
+				limit={OR={state=138 state=139}}
+				add_dynamic_modifier = { modifier = JAP_attack days=60  }}
+		}
+	}
+}
 
 
