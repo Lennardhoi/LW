@@ -902,6 +902,30 @@ focus_tree = {
                                 }
  							}
  						}
+						302 = {
+							add_extra_state_shared_building_slots = 5
+							add_building_construction = {
+								type = arms_factory
+								level = 5
+								instant_build = yes
+							}
+						}
+						713 = {
+							add_extra_state_shared_building_slots = 5
+							add_building_construction = {
+								type = arms_factory
+								level = 5
+								instant_build = yes
+							}
+						}
+						712 = {
+							add_extra_state_shared_building_slots = 5
+							add_building_construction = {
+								type = arms_factory
+								level = 5
+								instant_build = yes
+							}
+						}
  				    }
  				else= {
  						USA={
@@ -930,6 +954,30 @@ focus_tree = {
  						}
                         }
  					}
+					 302 = {
+						add_extra_state_shared_building_slots = 5
+						add_building_construction = {
+							type = arms_factory
+							level = 5
+							instant_build = yes
+						}
+					}
+					713 = {
+						add_extra_state_shared_building_slots = 5
+						add_building_construction = {
+							type = arms_factory
+							level = 5
+							instant_build = yes
+						}
+					}
+					712 = {
+						add_extra_state_shared_building_slots = 5
+						add_building_construction = {
+							type = arms_factory
+							level = 5
+							instant_build = yes
+						}
+					}
  				}
  			}
  	}
@@ -1282,7 +1330,7 @@ focus_tree = {
  		}
  		continue_if_invalid = yes
  		available_if_capitulated = yes
- 		x = -3
+ 		x = -2
  		y = 1
  		relative_position_id = USA_war_plan_black
  		cost = 4
@@ -1300,7 +1348,7 @@ focus_tree = {
  		}
  		continue_if_invalid = yes
  		available_if_capitulated = yes
- 		x = -1
+ 		x = 0
  		y = 1
  		relative_position_id = USA_war_plan_black
  		cost = 4
@@ -1353,7 +1401,7 @@ focus_tree = {
  		}
  		continue_if_invalid = yes
  		available_if_capitulated = yes
- 		x = 1
+ 		x = 2
  		y = 1
  		relative_position_id = USA_war_plan_black
  		cost = 4
@@ -1369,85 +1417,6 @@ focus_tree = {
  			trait =army_armored_3
  			}
  			
- 		}
- 	}
- 	focus = {
- 		id = USA_ger4
- 		icon = GFX_focus_attack_germany
- 		prerequisite = { focus = USA_war_plan_black }
- 		available = {
- 		}
- 		continue_if_invalid = yes
- 		available_if_capitulated = yes
- 		x = 3
- 		y = 1
- 		relative_position_id = USA_war_plan_black
- 		cost = 4
- 		completion_reward = {
- 			every_state = {
- 				limit={OR={state=138 state=139}}
- 				add_dynamic_modifier = { modifier = JAP_attack days=60  }}
- 		}
- 	}
- 	focus = {
- 		id = USA_ger5
- 		icon = GFX_focus_attack_germany
- 		prerequisite = { focus = USA_war_plan_black }
- 		available = {
- 			date> 1941.10.1
- 		}
- 		continue_if_invalid = yes
- 		available_if_capitulated = yes
- 		x = -2
- 		y = 2
- 		relative_position_id = USA_war_plan_black
- 		cost = 2
- 		completion_reward = {
- 			every_state = {
- 				limit={OR={state=1 state=112 state=113 state=152 state=115 }}
- 				add_dynamic_modifier = { modifier = JAP_attack days=120  }}
- 		}
- 	}
- 	focus = {
- 		id = USA_ger6
- 		icon = GFX_focus_attack_germany
- 		prerequisite = { focus = USA_war_plan_black }
- 		available = {
- 			date> 1942.01.1
- 		}
- 		continue_if_invalid = yes
- 		available_if_capitulated = yes
- 		x = 2
- 		y = 2
- 		relative_position_id = USA_war_plan_black
- 		cost = 2
- 		completion_reward = {
- 			every_state = {
- 				limit={OR={state=21 state=653 state=1 state=22 }}
- 				add_dynamic_modifier = { modifier = JAP_attack days=120  }}
- 		}
- 	}
- 	focus = {
- 		id = USA_final_crusade
- 		icon = GFX_focus_attack_germany
- 		prerequisite = { focus = USA_war_plan_black }
- 		available = {date>1942.06.01}
- 		continue_if_invalid = yes
- 		available_if_capitulated = yes
- 		x = 0
- 		y = 3
- 		relative_position_id = USA_war_plan_black
- 		cost = 1
- 		completion_reward = {
- 			add_timed_idea={idea= USA_overlord days=60}
- 			hidden_effect ={
- 				ENG = {add_timed_idea={idea= USA_overlord days=60}}
- 				FRA = {add_timed_idea={idea= USA_overlord days=60}}
- 				SAF = {add_timed_idea={idea= USA_overlord days=60}}
- 				CAN = {add_timed_idea={idea= USA_overlord days=60}}
- 				NZL = {add_timed_idea={idea= USA_overlord days=60}}
- 				AST = {add_timed_idea={idea= USA_overlord days=60}}
- 			}
  		}
  	}
  	focus = {
