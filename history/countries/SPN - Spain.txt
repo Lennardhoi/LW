@@ -13,6 +13,7 @@ oob = "SPN_1936"
 add_ideas = {
 	SPR_no_armada
 	SPA_carlism_1
+	SPA_civil_war
 }
 set_rule = {can_be_spymaster = no}
 set_variable = {
@@ -70,6 +71,16 @@ add_equipment_to_stockpile = {
 	amount = 50
 	producer = SPN
 }
+add_equipment_to_stockpile = {
+	type = artillery_equipment_1
+	amount = 1000
+	producer = SPN
+}
+add_equipment_to_stockpile = {
+	type = infantry_equipment_1
+	amount = 7500
+	producer = SPN
+}
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1933.2.16"
@@ -83,7 +94,7 @@ set_popularities = {
 	neutrality = 60
 }
 set_convoys = 200
-set_stability = 0.35
-set_war_support = 0.5
+set_stability = 1
+set_war_support = 1
 
 
