@@ -152,6 +152,7 @@ country_event = {
 	is_triggered_only = yes
 	hidden=yes
 	immediate = {
+		set_global_flag = end_of_spanish_civil_war
 		SPR= {
 			annex_country = { target = SPN }
 			add_ideas = peace_training
