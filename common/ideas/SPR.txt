@@ -17,6 +17,21 @@ ideas = {
 		}
 	}
 	country = {
+		SPA_civil_war = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = FRA_matignon_agreements
+			modifier = {
+				stability_factor = 0.4
+				war_support_factor = 0.6
+				conscription = 0.04
+			}
+		}
 		SPR_no_armada = {
 			allowed = {
 				always = no
@@ -134,17 +149,6 @@ ideas = {
 				tag = SPB
 				attack_bonus_against = 0.15
 				defense_bonus_against = 0.05
-			}
-		}
-		SPA_civil_war = {
-			name = SPA_civil_war
-			picture = FRA_matignon_agreements
-			allowed = {
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			modifier = {
 			}
 		}
 		SPA_recovering_from_civil_war = {

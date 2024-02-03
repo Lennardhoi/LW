@@ -26,10 +26,11 @@ recruit_character = SPR_gonzalo_queipo_de_llano
 recruit_character = SPR_mohamed_meziane
 capital = 172
 oob = "SPR_1936"
-add_ideas = peace_training
 add_ideas = {
 	SPR_no_armada
 	SPA_carlism_1
+	limited_conscription
+	SPA_civil_war
 }
 set_rule = {can_be_spymaster = no}
 set_variable = {
@@ -85,6 +86,16 @@ if = {
 add_equipment_to_stockpile = {
 	type = train_equipment
 	amount = 50
+	producer = SPR
+}
+add_equipment_to_stockpile = {
+	type = artillery_equipment_1
+	amount = 1000
+	producer = SPR
+}
+add_equipment_to_stockpile = {
+	type = infantry_equipment_1
+	amount = 7500
 	producer = SPR
 }
 set_politics = {

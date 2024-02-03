@@ -48,6 +48,7 @@ set_variable = {
 	value = 0.800
 }
 set_rule = {can_be_spymaster = no}
+set_rule = {can_send_volunteers  = yes}
 set_research_slots = 4
 set_country_flag = monroe_doctrine
 set_stability = 0.55
@@ -56,6 +57,7 @@ add_relation_modifier = { target = ENG modifier = DOM_trade_1 }
 add_relation_modifier = { target = ENG modifier = DOM_trade_2 }
 add_ideas = reliance_on_natural_rubber
 add_ideas = peace_training
+add_ideas = ENG_allied_exped_corp2
 # Starting tech
 set_technology = {
 	special_forces_mountaineers = 1

@@ -392,7 +392,7 @@ focus_tree = {
  					has_dlc = "Man the Guns"
  				}
  				OR = {
- 					threat > 0.1
+ 					GER={has_completed_focus=GER_anschluss}
  					has_war = yes
  					date > 1938.1.1
  				}
@@ -402,7 +402,7 @@ focus_tree = {
  					NOT = { has_dlc = "Man the Guns" }
  				}
  				OR = {
- 					threat > 0.1
+ 					GER={has_completed_focus=GER_anschluss}
  					has_war = yes
  					date > 1938.1.1
  				}

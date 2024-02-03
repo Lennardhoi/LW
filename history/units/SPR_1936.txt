@@ -1,6 +1,7 @@
 ﻿division_template = {
 	name = "District Force"
 	division_names_group = SPA_INF_01
+	is_locked = yes
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -20,6 +21,7 @@
 division_template = {
 	name = "Infantry Division"
 	division_names_group = SPA_INF_01
+	is_locked = yes
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -35,17 +37,16 @@ division_template = {
 		infantry = { x = 2 y = 1 }
 		infantry = { x = 2 y = 2 }
 		infantry = { x = 2 y = 3 }
-		artillery_brigade = { x = 3 y = 0 }
-		artillery_brigade = { x = 3 y = 1 }
-		artillery_brigade = { x = 3 y = 2 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
 		artillery_brigade = { x = 3 y = 3 }
 		artillery_brigade = { x = 2 y = 4 }
 		artillery_brigade = { x = 3 y = 4 }
 	}
 	support = {
 		engineer = { x = 0 y = 0 }
-		artillery = { x = 0 y = 1 }
-		recon = { x = 0 y = 2 }
+		recon = { x = 0 y = 1 }
 	}
 }
 division_template = {
@@ -81,11 +82,340 @@ division_template = {
 }
 units = {
 	division= {
-		name = "This is here so you can look at your generals"
-		location =3685
+		name = "District Force"
+		location = 845
 		division_template = "District Force"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "District Force"
+		location = 845
+		division_template = "District Force"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "District Force"
+		location = 845
+		division_template = "District Force"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "District Force"
+		location = 845
+		division_template = "District Force"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "District Force"
+		location = 845
+		division_template = "District Force"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "District Force"
+		location = 845
+		division_template = "District Force"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "District Force"
+		location = 845
+		division_template = "District Force"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "District Force"
+		location = 845
+		division_template = "District Force"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "District Force"
+		location = 845
+		division_template = "District Force"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "District Force"
+		location = 845
+		division_template = "District Force"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "District Force"
+		location = 845
+		division_template = "District Force"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "District Force"
+		location = 845
+		division_template = "District Force"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "District Force"
+		location = 845
+		division_template = "District Force"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "District Force"
+		location = 845
+		division_template = "District Force"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "District Force"
+		location = 845
+		division_template = "District Force"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "District Force"
+		location = 845
+		division_template = "District Force"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "District Force"
+		location = 845
+		division_template = "District Force"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "District Force"
+		location = 845
+		division_template = "District Force"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "District Force"
+		location = 845
+		division_template = "District Force"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "District Force"
+		location = 845
+		division_template = "District Force"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "District Force"
+		location = 845
+		division_template = "District Force"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "District Force"
+		location = 845
+		division_template = "District Force"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "District Force"
+		location = 845
+		division_template = "District Force"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "District Force"
+		location = 845
+		division_template = "District Force"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "District Force"
+		location = 845
+		division_template = "District Force"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "District Force"
+		location = 845
+		division_template = "District Force"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "District Force"
+		location = 845
+		division_template = "District Force"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "District Force"
+		location = 845
+		division_template = "District Force"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "District Force"
+		location = 845
+		division_template = "District Force"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "District Force"
+		location = 845
+		division_template = "District Force"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "District Force"
+		location = 845
+		division_template = "District Force"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "District Force"
+		location = 845
+		division_template = "District Force"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "District Force"
+		location = 845
+		division_template = "District Force"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "District Force"
+		location = 845
+		division_template = "District Force"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "District Force"
+		location = 845
+		division_template = "District Force"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "District Force"
+		location = 845
+		division_template = "District Force"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "District Force"
+		location = 845
+		division_template = "District Force"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "District Force"
+		location = 845
+		division_template = "District Force"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "District Force"
+		location = 845
+		division_template = "District Force"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "District Force"
+		location = 845
+		division_template = "District Force"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "Infantry Division"
+		location = 845
+		division_template = "Infantry Division"
 		start_experience_factor = 0.3
-		start_equipment_factor = 0.01
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "Infantry Division"
+		location = 845
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "Infantry Division"
+		location = 845
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "Infantry Division"
+		location = 845
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "Infantry Division"
+		location = 845
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "Infantry Division"
+		location = 845
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "Infantry Division"
+		location = 845
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division= {
+		name = "Infantry Division"
+		location = 845
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
 	}
 }
 instant_effect = {

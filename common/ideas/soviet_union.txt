@@ -290,6 +290,18 @@ ideas = {
 			modifier = {
 			}
 		}
+		SOV_lessons_of_spain = {
+			removal_cost = -1
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			picture = SOV_red_army_reborn
+			modifier = {
+			}
+		}
 		partisan_suppression_focus = {
 			removal_cost = -1
 			allowed = {
@@ -468,6 +480,8 @@ ideas = {
 				agency_upgrade_time = -0.30
 				operative_slot = 1
 				special_forces_min= 224
+				send_volunteer_size	= 5
+				send_volunteer_divisions_required = -1
 			}
 		}
 		trotskyite_plot = {

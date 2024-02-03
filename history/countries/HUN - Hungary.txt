@@ -33,8 +33,10 @@ capital = 43
      value = 0.800
  }
  add_ideas = peace_training
+ add_ideas = ENG_allied_exped_corp2
  add_relation_modifier = { target = GER modifier =  Axis_trade }
  set_rule = {can_be_spymaster = no}
+ set_rule = {can_send_volunteers  = yes}
  set_technology = {
 	special_forces_mountaineers = 1
 	special_forces_marines = 1
