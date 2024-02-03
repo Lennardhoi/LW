@@ -50,21 +50,21 @@ country_event = {
 				}
 				set_global_flag = spanish_civil_war
 				army_experience = 30
-				SPR = {remove_ideas = peace_training}
-				GER = {remove_ideas = peace_training}
-				ITA = {remove_ideas = peace_training}
-				JAP = {remove_ideas = peace_training}
-				HUN = {remove_ideas = peace_training}
-				ROM = {remove_ideas = peace_training}
-				BUL = {remove_ideas = peace_training}
-				ENG = {remove_ideas = peace_training}
-				FRA = {remove_ideas = peace_training}
-				CAN = {remove_ideas = peace_training}
-				SAF = {remove_ideas = peace_training}
-				RAJ = {remove_ideas = peace_training}
-				AST = {remove_ideas = peace_training}
-				NZL = {remove_ideas = peace_training}
-				SOV = {remove_ideas = peace_training}
+				SPR = {remove_ideas = peace_training add_ideas = speed3_scw}
+				GER = {remove_ideas = peace_training add_ideas = speed3_scw}
+				ITA = {remove_ideas = peace_training add_ideas = speed3_scw}
+				JAP = {remove_ideas = peace_training add_ideas = speed3_scw}
+				HUN = {remove_ideas = peace_training add_ideas = speed3_scw}
+				ROM = {remove_ideas = peace_training add_ideas = speed3_scw}
+				BUL = {remove_ideas = peace_training add_ideas = speed3_scw}
+				ENG = {remove_ideas = peace_training add_ideas = speed3_scw}
+				FRA = {remove_ideas = peace_training add_ideas = speed3_scw}
+				CAN = {remove_ideas = peace_training add_ideas = speed3_scw}
+				SAF = {remove_ideas = peace_training add_ideas = speed3_scw}
+				RAJ = {remove_ideas = peace_training add_ideas = speed3_scw}
+				AST = {remove_ideas = peace_training add_ideas = speed3_scw}
+				NZL = {remove_ideas = peace_training add_ideas = speed3_scw}
+				SOV = {remove_ideas = peace_training add_ideas = speed3_scw}
 			}
 			custom_effect_tooltip = nationalists_chosen
 		}
@@ -159,50 +159,65 @@ country_event = {
 			set_capital = { state = 41 }
 			delete_unit_template_and_units = { division_template = "District Force" }
 			delete_unit_template_and_units = { division_template = "Infantry Division" }
+			remove_ideas = speed3_scw
 		}
 		GER = {
 			add_to_faction = SPR
 			add_ideas = peace_training
+			remove_ideas = speed3_scw
 		}
 		ITA = {
 			add_ideas = peace_training
+			remove_ideas = speed3_scw
 		}
 		JAP = {
 			add_ideas = peace_training
+			remove_ideas = speed3_scw
 		}
 		HUN = {
 			add_ideas = peace_training
+			remove_ideas = speed3_scw
 		}
 		ROM = {
 			add_ideas = peace_training
+			remove_ideas = speed3_scw
 		}
 		BUL = {
 			add_ideas = peace_training
+			remove_ideas = speed3_scw
 		}
 		ENG = {
 			add_ideas = peace_training
+			remove_ideas = speed3_scw
 		}
 		FRA = {
 			add_ideas = peace_training
+			remove_ideas = speed3_scw
 		}
 		CAN = {
 			add_ideas = peace_training
+			remove_ideas = speed3_scw
 		}
 		SAF = {
 			add_ideas = peace_training
+			remove_ideas = speed3_scw
 		}
 		RAJ = {
 			add_ideas = peace_training
+			remove_ideas = speed3_scw
 		}
 		AST = {
 			add_ideas = peace_training
+			remove_ideas = speed3_scw
 		}
 		NZL = {
 			add_ideas = peace_training
+			remove_ideas = speed3_scw
 		}
 		SOV = {
 			add_ideas = peace_training
-		}		
+			remove_ideas = speed3_scw
+		}	
 	}
 }
 country_event = {
