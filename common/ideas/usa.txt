@@ -475,6 +475,22 @@ ideas = {
 			removal_cost = -1
 			modifier= {
 				special_forces_min = 112
+				land_reinforce_rate = 0.1
+			}
+		}
+		USA_airborne_divisions2 = {
+			picture = usa_airborne_divisions
+			name = USA_airborne_divisions
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier= {
+				special_forces_min = 224
+				land_reinforce_rate = 0.1
 			}
 		}
 		USA_womens_armed_service_integration_act = {

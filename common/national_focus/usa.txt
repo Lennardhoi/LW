@@ -848,7 +848,12 @@ focus_tree = {
  				type = medium_plane_airframe_2
  				amount = 800
  				producer = USA
- 			}}
+ 				}
+			 add_equipment_to_stockpile = {
+				type = small_plane_airframe_2
+				amount = 800
+				producer = USA
+			}}
  			else = {add_equipment_to_stockpile = {
  				type = small_plane_airframe_2
  				amount = 1500
@@ -1072,6 +1077,69 @@ focus_tree = {
  			}
  		}
  	}
+	 focus = {
+		id = USA_resources
+		icon = GFX_USA_arsenal_of_democracy
+		prerequisite = { focus = USA_wartime_industry }
+		x = 0
+		y = 1
+		relative_position_id = USA_wartime_industry
+		cost = 5
+		available = {
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		completion_reward = {	
+			custom_effect_tooltip = "Unlocks decisions to expand resource centers of our allies."	
+			add_resource = {
+				type = aluminium
+			   	amount = 200
+				state = 344
+			}
+			add_resource = {
+				type = aluminium
+			   	amount = 200
+				state = 345
+			}
+			add_resource = {
+				type = aluminium
+			   	amount = 200
+				state = 343
+			}
+			add_resource = {
+				type = steel
+			   	amount = 200
+				state = 358
+			}
+			add_resource = {
+				type = steel
+			   	amount = 200
+				state = 361
+			}
+			add_resource = {
+				type = steel
+			   	amount = 200
+				state = 360
+			}
+			add_resource = {
+				type = tungsten
+			   	amount = 200
+				state = 352
+			}
+			add_resource = {
+				type = tungsten
+			   	amount = 200
+				state = 346
+			}
+			add_resource = {
+				type = tungsten
+			   	amount = 200
+				state = 347
+			}
+		}
+	}
  	focus = {
  		id = USA_military_construction
  		icon = GFX_goal_generic_build_tank
@@ -1322,6 +1390,10 @@ focus_tree = {
  						owner = USA
  					}
  					}}
+			swap_ideas = {
+				remove_idea = USA_airborne_divisions
+				add_idea = USA_airborne_divisions2
+			}
  		}
  	}
  	focus = {
@@ -1429,7 +1501,7 @@ focus_tree = {
  		available = {
  		}
  		bypass = {has_war = yes}
- 		x = 8
+ 		x = 6
  		y = 1
  		relative_position_id = USA_american_dream
  		cost = 5
@@ -1518,7 +1590,10 @@ focus_tree = {
  			factor = 1
  		}
  		available = {
- 			has_war_with = JAP
+ 			OR = {
+				has_war_with = JAP
+				date > 1941.2.1
+			}
  		}
  		bypass = {
  		}
