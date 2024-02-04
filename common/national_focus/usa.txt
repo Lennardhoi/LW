@@ -120,7 +120,6 @@ focus_tree = {
 			set_country_flag = USA_recently_developed
  			USA_great_depression_level_down = yes
  			custom_effect_tooltip = USA_great_depression_cooldown_tt
- 			unlock_decision_tooltip = { decision = USA_pay_farm_subsidies show_effect_tooltip = yes }
  			
  			random_owned_controlled_state = {
  				limit = {
@@ -249,10 +248,10 @@ focus_tree = {
  	focus = {
  		id = USA_manhattan_project
  		icon = GFX_focus_wonderweapons
- 		x = -2
- 		y = 1
+ 		x = 3
+ 		y = 0
  		prerequisite = { focus = USA_scientist_haven }
- 		relative_position_id = USA_scientist_haven
+ 		relative_position_id = USA_federal_housing_act
  		cost = 5
  		ai_will_do = {
  			factor = 1
@@ -821,8 +820,12 @@ focus_tree = {
  		}
  		completion_reward = {
 		add_stability = 0.3
- 			add_ideas=partial_economic_mobilisation
- 			remove_ideas= USA_neutrality_act
+ 		add_ideas=partial_economic_mobilisation
+ 		remove_ideas= USA_neutrality_act
+		swap_ideas = {
+			remove_idea = USA_second_deal
+			add_idea = USA_second_deal2
+		}
  		}
  	}
  	focus = {
@@ -1042,7 +1045,7 @@ focus_tree = {
 
  			add_ideas = war_economy
 			}
- 			remove_ideas=USA_second_deal
+ 			remove_ideas=USA_second_deal2
  			set_country_flag = USA_the_giant_wakes_added_civ_eco
  		}
  	}
@@ -1697,6 +1700,9 @@ focus_tree = {
  						owner = USA
  					}
  				}}
+			NZL = {
+				add_manpower = 100000
+			}
  		}
  	}
  	focus = {

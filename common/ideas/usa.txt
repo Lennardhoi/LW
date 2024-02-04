@@ -161,7 +161,6 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				production_factory_max_efficiency_factor = -0.05
 				production_factory_efficiency_gain_factor = 0.12
 				production_factory_start_efficiency_factor = 0.12
 			}
@@ -209,6 +208,24 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.5
 				production_speed_infrastructure_factor = 0.2
 				stability_factor = 0.10
+			}
+		}
+		USA_second_deal2 = {
+			name = USA_second_deal
+			picture = home_of_the_free_2
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.4
+				production_speed_industrial_complex_factor = 0.5
+				production_speed_infrastructure_factor = 0.2
+				stability_factor = 0.10
+				production_factory_max_efficiency_factor = -0.25
 			}
 		}
 		USA_war_plans_1 = {
