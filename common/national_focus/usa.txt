@@ -119,7 +119,6 @@ focus_tree = {
  		completion_reward = {
 			set_country_flag = USA_recently_developed
  			USA_great_depression_level_down = yes
- 			USA_congress_medium_opposition = yes
  			custom_effect_tooltip = USA_great_depression_cooldown_tt
  			unlock_decision_tooltip = { decision = USA_pay_farm_subsidies show_effect_tooltip = yes }
  			
@@ -174,7 +173,6 @@ focus_tree = {
 			set_country_flag = USA_recently_developed
  			USA_great_depression_level_down = yes
  			custom_effect_tooltip = USA_great_depression_cooldown_tt
- 			USA_congress_medium_opposition = yes
  			
  			random_owned_controlled_state = {
  				limit = {
@@ -229,7 +227,6 @@ focus_tree = {
  		completion_reward = {
 			set_country_flag = USA_recently_developed
  			USA_great_depression_level_down = yes
- 			USA_congress_medium_opposition = yes
  			
  			random_owned_controlled_state = {
  				limit = {
@@ -252,10 +249,10 @@ focus_tree = {
  	focus = {
  		id = USA_manhattan_project
  		icon = GFX_focus_wonderweapons
- 		x = -1
+ 		x = -2
  		y = 1
- 		prerequisite = { focus = USA_continue_the_new_deal }
- 		relative_position_id = USA_continue_the_new_deal
+ 		prerequisite = { focus = USA_scientist_haven }
+ 		relative_position_id = USA_scientist_haven
  		cost = 5
  		ai_will_do = {
  			factor = 1
@@ -280,13 +277,13 @@ focus_tree = {
  	focus = {
  		id = USA_rubber_reserve_company
  		icon = GFX_focus_generic_rubber
- 		prerequisite = { focus = USA_manhattan_project }
+ 		prerequisite = { focus = USA_continue_the_new_deal }
  		available = {
  			date > 1941.6.1
  		}
- 		x = 0
+ 		x = -1
  		y = 1
- 		relative_position_id = USA_manhattan_project
+ 		relative_position_id = USA_continue_the_new_deal
  		cost = 5
  		search_filters = {FOCUS_FILTER_RESEARCH}
  		completion_reward = {
@@ -535,12 +532,12 @@ focus_tree = {
  		prerequisite = { focus = USA_natural  }
  		prerequisite = { focus = USA_labour }
  		relative_position_id = USA_second_new_deal
- 		cost = 4
+ 		cost = 2
  		ai_will_do = {
  			factor = 1
  		}
  		available = {
- 			date>1938.6.1
+ 			date>1939.1.1
  		}
  		bypass = {
  		}
@@ -571,7 +568,6 @@ focus_tree = {
  		available_if_capitulated = no
  		completion_reward = {
  			add_political_power = 200
- 			USA_congress_small_support = yes
  			add_ideas = USA_neutrality_act
  		}
  	}
@@ -645,140 +641,14 @@ focus_tree = {
  			}
  		}
  	}
- 	focus = {
- 		id = USA_arsenal_of_democracy
- 		icon = GFX_goal_support_democracy
- 		prerequisite = { focus = USA_neutrality_act }
- 		x = 0
- 		y = 2
- 		relative_position_id = USA_neutrality_act
- 		cost = 10
- 		ai_will_do = {
- 			factor = 1
- 		}
- 		available = {
- 		}
- 		bypass = {
- 			AND = {
- 				custom_trigger_tooltip =  {
- 					tooltip = production_effort_tt
- 					all_owned_state = {
- 						free_building_slots = {
- 							building = industrial_complex
- 							size < 3
- 							include_locked = yes
- 						}
- 					}
- 				}
- 				custom_trigger_tooltip =  {
- 					tooltip = naval_effort_tt
- 					all_owned_state = {
- 						free_building_slots = {
- 							building = dockyard
- 							size < 3
- 							include_locked = yes
- 						}
- 					}
- 				}
- 			}
- 		}
- 		complete_tooltip = {
- 			navy_experience = 50
- 			army_experience = 50
- 			air_experience = 10
- 			every_state = {
- 				limit = { has_state_flag = USA_arsenal_of_democracy_3AF }
- 				add_extra_state_shared_building_slots = 3
- 				add_building_construction = {
- 					type = arms_factory
- 					level = 3
- 					instant_build = yes
- 				}
- 			}
- 		}
- 		completion_reward = {
- 			navy_experience = 50
- 			army_experience = 50
- 			air_experience = 10
- 			random_owned_controlled_state = {
- 				limit = {
- 					is_core_of = ROOT
- 					free_building_slots = {
- 						building = arms_factory
- 						size > 2
- 						include_locked = yes
- 					}
- 				}
- 				add_extra_state_shared_building_slots = 3
- 				add_building_construction = {
- 					type = arms_factory
- 					level = 3
- 					instant_build = yes
- 				}
- 				set_state_flag = USA_arsenal_of_democracy_3AF
- 			}
- 			random_owned_controlled_state = {
- 				limit = {
- 					is_core_of = ROOT
- 					free_building_slots = {
- 						building = arms_factory
- 						size > 2
- 						include_locked = yes
- 					}
- 				}
- 				add_extra_state_shared_building_slots = 3
- 				add_building_construction = {
- 					type = arms_factory
- 					level = 3
- 					instant_build = yes
- 				}
- 				set_state_flag = USA_arsenal_of_democracy_3AF
- 			}
- 			random_owned_controlled_state = {
- 				limit = {
- 					is_core_of = ROOT
- 					dockyard > 0
- 					free_building_slots = {
- 						building = dockyard
- 						size > 2
- 						include_locked = yes
- 					}
- 				}
- 				add_extra_state_shared_building_slots = 3
- 				add_building_construction = {
- 					type = dockyard
- 					level = 3
- 					instant_build = yes
- 				}
- 				set_state_flag = USA_arsenal_of_democracy_3AF
- 			}
- 			random_owned_controlled_state = {
- 				limit = {
- 					is_core_of = ROOT
- 					dockyard > 0
- 					free_building_slots = {
- 						building = dockyard
- 						size > 2
- 						include_locked = yes
- 					}
- 				}
- 				add_extra_state_shared_building_slots = 3
- 				add_building_construction = {
- 					type = dockyard
- 					level = 3
- 					instant_build = yes
- 				}
- 				set_state_flag = USA_arsenal_of_democracy_3AF
- 			}
- 		}
- 	}
+	
  	focus = {
  		id = USA_scientist_haven
  		icon = GFX_focus_research
- 		prerequisite = { focus = USA_arsenal_of_democracy }
- 		x = -2
- 		y = 1
- 		relative_position_id = USA_arsenal_of_democracy
+ 		prerequisite = { focus = USA_neutrality_act}
+ 		x = 0
+ 		y = 2
+ 		relative_position_id = USA_neutrality_act
  		cost = 5
  		available_if_capitulated = yes
  		available = {
@@ -789,10 +659,113 @@ focus_tree = {
  		}
  	}
  	focus = {
+ 		id = USA_arsenal_of_democracy
+ 		icon = GFX_goal_support_democracy
+ 		prerequisite = { focus = USA_scientist_haven }
+ 		x = 0
+ 		y = 1
+ 		relative_position_id = USA_scientist_haven
+ 		cost = 10
+ 		ai_will_do = {
+ 			factor = 1
+ 		}
+ 		available = { date > 1939.9.1 
+ 		}
+ 		complete_tooltip = {
+ 			navy_experience = 50
+ 			army_experience = 50
+ 			air_experience = 10
+ 			every_state = {
+ 				limit = { has_state_flag = USA_arsenal_of_democracy_3AF }
+ 				add_extra_state_shared_building_slots = 5
+ 				add_building_construction = {
+ 					type = arms_factory
+ 					level = 5
+ 					instant_build = yes
+ 				}
+ 			}
+ 		}
+ 		completion_reward = {
+ 			navy_experience = 50
+ 			army_experience = 50
+ 			air_experience = 10
+ 			random_owned_controlled_state = {
+ 				limit = {
+ 					is_core_of = ROOT
+ 					free_building_slots = {
+ 						building = arms_factory
+ 						size > 2
+ 						include_locked = yes
+ 					}
+ 				}
+ 				add_extra_state_shared_building_slots = 5
+ 				add_building_construction = {
+ 					type = arms_factory
+ 					level = 5
+ 					instant_build = yes
+ 				}
+ 				set_state_flag = USA_arsenal_of_democracy_3AF
+ 			}
+ 			random_owned_controlled_state = {
+ 				limit = {
+ 					is_core_of = ROOT
+ 					free_building_slots = {
+ 						building = arms_factory
+ 						size > 2
+ 						include_locked = yes
+ 					}
+ 				}
+ 				add_extra_state_shared_building_slots = 5
+ 				add_building_construction = {
+ 					type = arms_factory
+ 					level = 5
+ 					instant_build = yes
+ 				}
+ 				set_state_flag = USA_arsenal_of_democracy_3AF
+ 			}
+ 			random_owned_controlled_state = {
+ 				limit = {
+ 					is_core_of = ROOT
+ 					arms_factory > 0
+ 					free_building_slots = {
+ 						building = arms_factory
+ 						size > 2
+ 						include_locked = yes
+ 					}
+ 				}
+ 				add_extra_state_shared_building_slots = 5
+ 				add_building_construction = {
+ 					type = arms_factory
+ 					level = 5
+ 					instant_build = yes
+ 				}
+ 				set_state_flag = USA_arsenal_of_democracy_3AF
+ 			}
+ 			random_owned_controlled_state = {
+ 				limit = {
+ 					is_core_of = ROOT
+ 					arms_factory > 0
+ 					free_building_slots = {
+ 						building = arms_factory
+ 						size > 2
+ 						include_locked = yes
+ 					}
+ 				}
+ 				add_extra_state_shared_building_slots = 5
+ 				add_building_construction = {
+ 					type = arms_factory
+ 					level = 5
+ 					instant_build = yes
+ 				}
+ 				set_state_flag = USA_arsenal_of_democracy_3AF
+ 			}
+ 		}
+ 	}
+ 	focus = {
  		id = USA_manhattan_project2
  		icon = GFX_focus_wonderweapons
- 	prerequisite = { focus = USA_scientist_haven }
- 	relative_position_id = USA_scientist_haven
+ 	prerequisite = { focus = USA_manhattan_project }
+ 	relative_position_id = USA_manhattan_project
  		x = 0
  		y = 1
  		cost = 5
@@ -838,8 +811,8 @@ focus_tree = {
  		relative_position_id = USA_arsenal_of_democracy
  		continue_if_invalid = yes
  		x = 0
- 		y = 2
- 		cost = 5
+ 		y = 1
+ 		cost = 3
  		ai_will_do = {
  			factor = 1
  		}
@@ -847,6 +820,7 @@ focus_tree = {
  		bypass = {
  		}
  		completion_reward = {
+		add_stability = 0.3
  			add_ideas=partial_economic_mobilisation
  			remove_ideas= USA_neutrality_act
  		}
@@ -904,13 +878,7 @@ focus_tree = {
  		completion_reward = {
  			#custom_effect_tooltip= USA_swpa_tt
  			if= {limit={RAJ={has_completed_focus=RAJ_the_smiling_buddha}}
- 					USA = {
- 						set_autonomy = {
- 							target = INS
- 							autonomy_state = autonomy_dominion
- 						}
- 						INS={
- 							set_cosmetic_tag=MAL_UK
+ 						USA={
  							transfer_state=643
  							transfer_state=560
  							transfer_state=564
@@ -920,27 +888,47 @@ focus_tree = {
  							transfer_state=269
  							transfer_state=628
  							transfer_state=262
- 							transfer_state=293
- 							transfer_state=388
+                            ENG = {  INS = {set_equipment_fraction = 0}
+ 			                annex_country = {
+ 				                target = INS
+ 				                transfer_troops = no
+ 			                        }
  							hidden_effect = {
- 								
- 							add_ideas = ins_idea
  							set_technology={infantry_weapons=1 popup=no}
  								country_event = {
  								id = japan.444
  								days=1
- 							}
+ 							        }
+                                }
  							}
  						}
- 					}
- 				}
- 				else={USA = {
- 						set_autonomy = {
- 							target = INS
- 							autonomy_state = autonomy_dominion
- 						}
- 						INS={
- 							set_cosmetic_tag=MAL_UK
+						302 = {
+							add_extra_state_shared_building_slots = 5
+							add_building_construction = {
+								type = arms_factory
+								level = 5
+								instant_build = yes
+							}
+						}
+						713 = {
+							add_extra_state_shared_building_slots = 5
+							add_building_construction = {
+								type = arms_factory
+								level = 5
+								instant_build = yes
+							}
+						}
+						712 = {
+							add_extra_state_shared_building_slots = 5
+							add_building_construction = {
+								type = arms_factory
+								level = 5
+								instant_build = yes
+							}
+						}
+ 				    }
+ 				else= {
+ 						USA={
  							transfer_state=643
  							transfer_state=560
  							transfer_state=564
@@ -950,22 +938,48 @@ focus_tree = {
  							transfer_state=269
  							transfer_state=628
  							transfer_state=262
- 							transfer_state=293
  							transfer_state=300
  						    transfer_state=303
- 							transfer_state=388
+                         ENG = {   INS = {set_equipment_fraction = 0}
+ 			                 annex_country = {
+ 				                target = INS
+ 				                transfer_troops = no
+ 			                        }
  							hidden_effect = {
- 							add_ideas = ins_idea
  							set_technology={infantry_weapons=1 popup=no}
  								country_event = {
  									id = japan.444
  									days=1
- 								}
  							}
  						}
+                        }
  					}
+					 302 = {
+						add_extra_state_shared_building_slots = 5
+						add_building_construction = {
+							type = arms_factory
+							level = 5
+							instant_build = yes
+						}
+					}
+					713 = {
+						add_extra_state_shared_building_slots = 5
+						add_building_construction = {
+							type = arms_factory
+							level = 5
+							instant_build = yes
+						}
+					}
+					712 = {
+						add_extra_state_shared_building_slots = 5
+						add_building_construction = {
+							type = arms_factory
+							level = 5
+							instant_build = yes
+						}
+					}
  				}
- 		}
+ 			}
  	}
  	focus = {
  		id = USA_magic
@@ -1058,224 +1072,53 @@ focus_tree = {
  	focus = {
  		id = USA_military_construction
  		icon = GFX_goal_generic_build_tank
- 		prerequisite = { focus = USA_arsenal_of_democracy }
- 		available = {
- 			OR = {
- 				has_war = yes
- 				has_war_support > 0.3
- 			}
+ 		prerequisite = { focus = USA_scientist_haven }
+ 		available = {date > 1938.6.1
  		}
  		continue_if_invalid = yes
  		available_if_capitulated = yes
  		x = 2
  		y = 1
- 		relative_position_id = USA_arsenal_of_democracy
+ 		relative_position_id = USA_scientist_haven
  		cost = 5
- 		complete_tooltip = {
- 			army_experience = 10
- 			every_state = {
- 				limit = { has_state_flag = USA_military_construction_5MF }
- 				add_extra_state_shared_building_slots = 5
- 				add_building_construction = {
- 					type = arms_factory
- 					level = 5
- 					instant_build = yes
- 				}
- 			}
- 			every_state = {
- 				limit = { has_state_flag = USA_military_construction_3Inf }
- 				add_building_construction = {
- 					type = infrastructure
- 					level = 3
- 					instant_build = yes
- 				}
- 			}
- 		}
  		completion_reward = {
- 			army_experience = 10
- 			random_owned_controlled_state = {
- 				limit = {
- 					arms_factory > 0
- 					free_building_slots = {
- 						building = arms_factory
- 						size > 4
- 						include_locked = yes
- 					}
- 					OR = {
- 						region = 117
- 						region = 118
- 						region = 119
- 						region = 120
- 					}
- 				}
- 				add_extra_state_shared_building_slots = 5
- 				add_building_construction = {
- 					type = arms_factory
- 					level = 5
- 					instant_build = yes
- 				}
- 				set_state_flag = USA_military_construction_5MF
- 			}
- 			if = {
- 				limit = {
- 					338 = {
- 						OR = {
- 							NOT = { is_owned_and_controlled_by = USA }
- 							AND = {
- 								is_owned_and_controlled_by = USA
- 								free_building_slots = {
- 									building = infrastructure
- 									size < 3
- 								}
- 							}
- 						}
- 					}
- 				}
- 				random_owned_controlled_state = {
- 					limit = {
- 						free_building_slots = {
- 							building = infrastructure
- 							size > 2
- 						}
- 						OR = {
- 							region = 117
- 							region = 118
- 							region = 119
- 							region = 120
- 						}
- 					}
+		338 = {		add_extra_state_shared_building_slots = 3
  					add_building_construction = {
  						type = infrastructure
  						level = 3
  						instant_build = yes
- 					}
- 					set_state_flag = USA_military_construction_3Inf
- 				}
+					}
+					add_building_construction = {
+ 						type = arms_factory
+ 						level = 3
+ 						instant_build = yes
+					}
  			}
- 			338 = {
- 				if = {
- 					limit = {
- 						is_owned_and_controlled_by = USA
- 						free_building_slots = {
- 							building = infrastructure
- 							size > 2
- 						}
- 					}
+		342 = {		add_extra_state_shared_building_slots = 3
  					add_building_construction = {
  						type = infrastructure
  						level = 3
  						instant_build = yes
- 					}
- 					set_state_flag = USA_military_construction_3Inf
- 				}
+					}
+					add_building_construction = {
+ 						type = arms_factory
+ 						level = 3
+ 						instant_build = yes
+					}
  			}
- 			if = {
- 				limit = {
- 					342 = {
- 						OR = {
- 							NOT = { is_owned_and_controlled_by = USA }
- 							AND = {
- 								is_owned_and_controlled_by = USA
- 								free_building_slots = {
- 									building = infrastructure
- 									size < 3
- 								}
- 							}
- 						}
- 					}
- 				}
- 				random_owned_controlled_state = {
- 					limit = {
- 						free_building_slots = {
- 							building = infrastructure
- 							size > 2
- 						}
- 						OR = {
- 							region = 117
- 							region = 118
- 							region = 119
- 							region = 120
- 						}
- 					}
+		345 = {		add_extra_state_shared_building_slots = 3
  					add_building_construction = {
  						type = infrastructure
  						level = 3
  						instant_build = yes
- 					}
- 					set_state_flag = USA_military_construction_3Inf
- 				}
- 			}
- 			342 = {
- 				if = {
- 					limit = {
- 						is_owned_and_controlled_by = USA
- 						free_building_slots = {
- 							building = infrastructure
- 							size > 2
- 						}
- 					}
- 					add_building_construction = {
- 						type = infrastructure
+					}
+					add_building_construction = {
+ 						type = arms_factory
  						level = 3
  						instant_build = yes
- 					}
- 					set_state_flag = USA_military_construction_3Inf
- 				}
+					}
  			}
- 			if = {
- 				limit = {
- 					345 = {
- 						OR = {
- 							NOT = { is_owned_and_controlled_by = USA }
- 							AND = {
- 								is_owned_and_controlled_by = USA
- 								free_building_slots = {
- 									building = infrastructure
- 									size < 3
- 								}
- 							}
- 						}
- 					}
- 				}
- 				random_owned_controlled_state = {
- 					limit = {
- 						free_building_slots = {
- 							building = infrastructure
- 							size > 2
- 						}
- 						OR = {
- 							region = 117
- 							region = 118
- 							region = 119
- 							region = 120
- 						}
- 					}
- 					add_building_construction = {
- 						type = infrastructure
- 						level = 3
- 						instant_build = yes
- 					}
- 					set_state_flag = USA_military_construction_3Inf
- 				}
- 			}
- 			345 = {
- 				if = {
- 					limit = {
- 						is_owned_and_controlled_by = USA
- 						free_building_slots = {
- 							building = infrastructure
- 							size > 2
- 						}
- 					}
- 					add_building_construction = {
- 						type = infrastructure
- 						level = 3
- 						instant_build = yes
- 					}
- 					set_state_flag = USA_military_construction_3Inf
- 				}
- 			}
- 		}
+ 		}	
  	}
  	focus = {
  		id = USA_USACE_projects
@@ -1339,29 +1182,6 @@ focus_tree = {
 					}
  			}
 			add_ideas = extensive_conscription
- 			random_owned_controlled_state = {
- 				limit = {
- 					arms_factory > 0
- 					free_building_slots = {
- 						building = arms_factory
- 						size > 2
- 						include_locked = yes
- 					}
- 					OR = {
- 						region = 117
- 						region = 118
- 						region = 119
- 						region = 120
- 					}
- 				}
- 				add_extra_state_shared_building_slots = 3
- 				add_building_construction = {
- 					type = arms_factory
- 					level = 3
- 					instant_build = yes
- 				}
- 				set_state_flag = USA_USACE_projects_3AF
- 			}
  			air_experience = 50
  			navy_experience = 50
  			army_experience = 10
@@ -1510,7 +1330,7 @@ focus_tree = {
  		}
  		continue_if_invalid = yes
  		available_if_capitulated = yes
- 		x = -3
+ 		x = -2
  		y = 1
  		relative_position_id = USA_war_plan_black
  		cost = 4
@@ -1528,7 +1348,7 @@ focus_tree = {
  		}
  		continue_if_invalid = yes
  		available_if_capitulated = yes
- 		x = -1
+ 		x = 0
  		y = 1
  		relative_position_id = USA_war_plan_black
  		cost = 4
@@ -1581,7 +1401,7 @@ focus_tree = {
  		}
  		continue_if_invalid = yes
  		available_if_capitulated = yes
- 		x = 1
+ 		x = 2
  		y = 1
  		relative_position_id = USA_war_plan_black
  		cost = 4
@@ -1597,85 +1417,6 @@ focus_tree = {
  			trait =army_armored_3
  			}
  			
- 		}
- 	}
- 	focus = {
- 		id = USA_ger4
- 		icon = GFX_focus_attack_germany
- 		prerequisite = { focus = USA_war_plan_black }
- 		available = {
- 		}
- 		continue_if_invalid = yes
- 		available_if_capitulated = yes
- 		x = 3
- 		y = 1
- 		relative_position_id = USA_war_plan_black
- 		cost = 4
- 		completion_reward = {
- 			every_state = {
- 				limit={OR={state=138 state=139}}
- 				add_dynamic_modifier = { modifier = JAP_attack days=60  }}
- 		}
- 	}
- 	focus = {
- 		id = USA_ger5
- 		icon = GFX_focus_attack_germany
- 		prerequisite = { focus = USA_war_plan_black }
- 		available = {
- 			date> 1941.10.1
- 		}
- 		continue_if_invalid = yes
- 		available_if_capitulated = yes
- 		x = -2
- 		y = 2
- 		relative_position_id = USA_war_plan_black
- 		cost = 2
- 		completion_reward = {
- 			every_state = {
- 				limit={OR={state=1 state=112 state=113 state=152 state=115 }}
- 				add_dynamic_modifier = { modifier = JAP_attack days=120  }}
- 		}
- 	}
- 	focus = {
- 		id = USA_ger6
- 		icon = GFX_focus_attack_germany
- 		prerequisite = { focus = USA_war_plan_black }
- 		available = {
- 			date> 1942.01.1
- 		}
- 		continue_if_invalid = yes
- 		available_if_capitulated = yes
- 		x = 2
- 		y = 2
- 		relative_position_id = USA_war_plan_black
- 		cost = 2
- 		completion_reward = {
- 			every_state = {
- 				limit={OR={state=21 state=653 state=1 state=22 }}
- 				add_dynamic_modifier = { modifier = JAP_attack days=120  }}
- 		}
- 	}
- 	focus = {
- 		id = USA_final_crusade
- 		icon = GFX_focus_attack_germany
- 		prerequisite = { focus = USA_war_plan_black }
- 		available = {date>1942.06.01}
- 		continue_if_invalid = yes
- 		available_if_capitulated = yes
- 		x = 0
- 		y = 3
- 		relative_position_id = USA_war_plan_black
- 		cost = 1
- 		completion_reward = {
- 			add_timed_idea={idea= USA_overlord days=60}
- 			hidden_effect ={
- 				ENG = {add_timed_idea={idea= USA_overlord days=60}}
- 				FRA = {add_timed_idea={idea= USA_overlord days=60}}
- 				SAF = {add_timed_idea={idea= USA_overlord days=60}}
- 				CAN = {add_timed_idea={idea= USA_overlord days=60}}
- 				NZL = {add_timed_idea={idea= USA_overlord days=60}}
- 				AST = {add_timed_idea={idea= USA_overlord days=60}}
- 			}
  		}
  	}
  	focus = {
@@ -1796,73 +1537,6 @@ focus_tree = {
  		}
  	}
  	focus = {
- 		id = USA_war_plan_orange
- 		icon = GFX_focus_attack_japan
- 		prerequisite = { focus = USA_war_plans_division }
- 		available = {
- 			date>1942.1.1
- 		}
- 		continue_if_invalid = yes
- 		available_if_capitulated = yes
- 		x = 0
- 		y = 4
- 		relative_position_id = USA_prepare_for_japan
- 		cost = 1
- 		completion_reward = {
-            add_ideas = {USA_free_thai}
- 			add_timed_idea = {idea = USA_guadalcanal days = 90}
- 			hidden_effect = {
- 				FRA = {add_timed_idea = {idea = USA_guadalcanal days = 90}}
- 				SAF = {add_timed_idea = {idea = USA_guadalcanal days = 90}}
- 				CAN = {add_timed_idea = {idea = USA_guadalcanal days = 90}}
- 				NZL = {add_timed_idea = {idea = USA_guadalcanal days = 90}}
- 				AST = {add_timed_idea = {idea = USA_guadalcanal days = 90}}
- 				RAJ = {add_timed_idea = {idea = USA_guadalcanal days = 90}}
- 			}
- 		}
- 	}
- 	focus = {
- 		id = USA_iwo_jima
- 		icon = GFX_focus_attack_japan
- 		prerequisite = { focus = USA_war_plan_orange }
- 		available = {
- 		}
- 		continue_if_invalid = yes
- 		available_if_capitulated = yes
- 		x = 0
- 		y = 1
- 		relative_position_id = USA_war_plan_orange
- 		cost = 2
- 		completion_reward = {
- 			every_state = {
- 				limit={OR={state=566 state=453}}
- 				add_dynamic_modifier = {modifier = JAP_attack days=120}
- 		    }
- 		}
- 	}
- 	focus = {
- 		id = USA_downfall
- 		icon = GFX_focus_attack_japan
- 		prerequisite = { focus = USA_iwo_jima }
- 		available = {
- 		 date > 1942.5.1
- 	     NOT={JAP={controls_state = 566 controls_state = 453}}
- 		}
- 		continue_if_invalid = yes
- 		available_if_capitulated = yes
- 		x = 0
- 		y = 1
- 		relative_position_id = USA_iwo_jima
- 		cost = 2
- 		completion_reward = {
- 		 JAP={remove_ideas = JAP_defense_of_homeland}
- 		 every_state = {
- 				limit={OR={state=455 state=457}}
- 				add_dynamic_modifier = {modifier = JAP_attack days=120}
- 		    }
- 		}
- 	}
- 	focus = {
  		id = USA_war_plans_division
  		icon = GFX_USA_semper_fi
  		prerequisite = { focus = USA_prepare_for_japan }
@@ -1921,6 +1595,43 @@ focus_tree = {
  						owner = USA
  					}
  					}}
+			CAN = {
+ 			every_unit_leader = {
+ 				limit={has_id=666}
+ 				add_skill_level=1
+ 				add_attack=1
+ 			}
+ 			every_unit_leader = {
+ 				limit={has_id=667}
+ 				add_skill_level=1
+ 				add_attack=1
+ 				add_logistics = 1
+ 			}			
+			}
+			SAF = {
+ 			every_unit_leader = {
+ 				limit={has_id=633}
+ 				add_skill_level=1
+ 				add_attack=1
+ 			}
+ 			every_unit_leader = {
+ 				limit={has_id=634}
+ 				add_skill_level=1
+ 				add_attack=1
+ 				add_logistics = 1
+ 			}			
+			}
+			AST = {
+ 			every_unit_leader = {
+ 				add_attack=1
+				add_planning = 1
+ 			}			
+			}
+			ENG = {
+ 			every_unit_leader = {
+ 				add_attack=1
+ 			}			
+			}
  		}
  	}
  	focus = {
@@ -2014,60 +1725,6 @@ focus_tree = {
  		}
  	}
  	focus = {
- 		id = USA_retake_the_philippines
- 		icon = GFX_USA_fight_fascist_with_fire
- 		x = 2
- 		y = 2
- 		prerequisite = { focus = USA_war_plans_division }
- 		relative_position_id = USA_war_plans_division
- 		cost = 5
- 		ai_will_do = {
- 			factor = 1
- 		}
- 		available = {
- 			568={is_controlled_by_ROOT_or_ally=yes}
- 			603={is_controlled_by_ROOT_or_ally=yes}
- 			559={is_controlled_by_ROOT_or_ally=yes}
- 			567 ={is_controlled_by_ROOT_or_ally=yes}
- 			603={is_controlled_by_ROOT_or_ally=yes}
- 		}
- 		bypass = {
- 		}
- 		cancel_if_invalid = yes
- 		continue_if_invalid = no
- 		available_if_capitulated = no
- 		completion_reward = {
- 			every_state = {
- 				limit={OR={state=544 state=545 state=546 state=549 state=547 state=548 state=294 }}
- 				add_dynamic_modifier = { modifier = JAP_attack days=90  }}
- 		}
- 	}
- 	focus = {
- 		id = USA_retake_the_east_indies
- 		icon = GFX_USA_destroy_their_supply_chains
- 		x = -2
- 		y = 2
- 		prerequisite = { focus = USA_war_plans_division }
- 		relative_position_id = USA_war_plans_division
- 		cost = 5
- 		ai_will_do = {
- 			factor = 1
- 		}
- 		available = {
- 			date>1942.1.1
- 		}
- 		bypass = {
- 		}
- 		cancel_if_invalid = yes
- 		continue_if_invalid = no
- 		available_if_capitulated = no
- 		completion_reward = {
- 			every_state = {
- 				limit={OR={state=591 state = 712 state = 713 state=302 state=592 state=588 state=450 state=300 state=692 state=301 state=587 }}
- 				add_dynamic_modifier = { modifier = JAP_attack days=90  }}
- 		}
- 	}
- 	focus = {
  		id = USA_island_hopping
  		icon = GFX_USA_the_island_hopping_campaign
  		x = 1
@@ -2079,7 +1736,7 @@ focus_tree = {
  			factor = 1
  		}
  		available = {
- 			date>1941.6.1
+ 			date>1941.10.1
  		}
  		bypass = {
  		}
@@ -2088,6 +1745,12 @@ focus_tree = {
  		available_if_capitulated = no
  		completion_reward = {
  			add_ideas=USA_island_hopping
+			JAP = {
+				swap_ideas = {
+					remove_idea = state_shintoism
+					add_idea = state_shintoism2
+				}
+			}
  		}
  	}
  	focus = {
@@ -2204,7 +1867,6 @@ focus_tree = {
  				limit = {
  					has_war_support < 0.4
  				}
- 				USA_congress_medium_opposition = yes
  			}
  		}
  	}
@@ -2318,7 +1980,6 @@ focus_tree = {
  			factor = 1
  		}
  		available = {
- 			congress_medium_support_trigger = yes
  		}
  		bypass = {
  		}
@@ -2573,7 +2234,7 @@ focus_tree = {
  			factor = 1
  		}
  		available = {
- 			date>1940.10.1
+ 			date>1942.1.1
  		}
  		bypass = {
  		}
@@ -2581,11 +2242,9 @@ focus_tree = {
  		continue_if_invalid = no
  		available_if_capitulated = no
  		completion_reward = {
- 			add_tech_bonus = {
- 				name = fighter_command_focus
- 				bonus = 1.0
- 				uses = 1
- 				technology= advanced_small_airframe
+ 			set_technology = {
+ 				 advanced_small_airframe = 1
+				 
  			}
  		}
  	}
@@ -2630,7 +2289,6 @@ focus_tree = {
  				limit = {
  					has_war_support < 0.4
  				}
- 				USA_congress_medium_opposition = yes
  			}
  			352 = {
  				add_extra_state_shared_building_slots = 5

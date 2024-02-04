@@ -10,25 +10,33 @@ country_event = {
 	}
 }
 country_event = {
-	id = japan.444
-	title = china.1.t
-	desc = japan.1.d
-	picture = GFX_report_event_chinese_soldiers_01
-	hidden=yes
-	fire_only_once = no
-	is_triggered_only = yes
-	immediate={
-		INS={every_owned_state={
-			if = { 
-				limit = { NOT={ is_core_of=INS } 
-				}
-				add_compliance = 100 
+    id = japan.444
+    title = china.1.t
+    desc = japan.1.d
+    picture = GFX_report_event_chinese_soldiers_01
+    hidden = yes
+    fire_only_once = no
+    is_triggered_only = yes
+    immediate = {
+        ENG = {
+            every_owned_state = {
+                if = {
+                    limit = {
+                        is_core_of = INS
+                    }
+					add_compliance = 100
+                }
+            }
+        }
+		RAJ = {
+			give_resource_rights = {
+				receiver = ENG state = 303
 			}
-			INS={	ENG={remove_resource_rights = PREV.PREV} 
-				give_resource_rights = { receiver = ENG state = PREV }
-		}	}
+			give_resource_rights = {
+				receiver = ENG state = 300
+			}
 		}
-	}
+    }
 }
 country_event = {
 	id = japan.3

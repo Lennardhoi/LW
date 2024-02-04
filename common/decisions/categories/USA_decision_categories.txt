@@ -30,6 +30,9 @@ USA_congress = {
 	allowed = {
 		original_tag = USA
 	}
+	visible = {
+		always = no
+	}
 	scripted_gui = usa_congress_decision_ui
 	priority = 85
 }
@@ -47,4 +50,21 @@ USA_puppet_minor = {
 		original_tag = USA
 	}
 }
-
+USA_pacific_war = {
+	allowed = {
+		original_tag = USA
+	}
+	priority = 100
+	visible = {
+		has_completed_focus = USA_prepare_for_japan
+	}
+}
+USA_europe = {
+	allowed = {
+		original_tag = USA
+	}
+	visible = {
+		has_completed_focus = USA_intervention_in_europe
+	}
+	priority = 100
+}
