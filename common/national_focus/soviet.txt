@@ -164,7 +164,12 @@ focus_tree = {
 			has_global_flag = Allies_lost_civil_war
 		}
 		available_if_capitulated = no
-		available = {has_idea=SOV_lessons_of_spain_idea}
+		available = {
+			AND = {
+				date > 1939.6.1
+				has_idea=SOV_lessons_of_spain_idea
+			}
+		}
 		completion_reward = {
 		custom_effect_tooltip = "Deploys another 2 Veterans, that can be convertet into tanks"
 		 	division_template = {
