@@ -650,9 +650,9 @@ on_actions = {
 					is_core_of=INS
 					FROM.FROM = {
 						OR = {
-							{is_owned_by = USA}
-							{is_owned_by = ENG}
-							{is_owned_by = AST}
+							is_owned_by = USA
+							is_owned_by = ENG
+							is_owned_by = AST
 
 							}
 						has_resources_amount = {
