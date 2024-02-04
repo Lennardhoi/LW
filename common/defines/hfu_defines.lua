@@ -752,7 +752,7 @@ NDefines.NCharacter.DEFAULT_PP_COST_FOR_POLITICAL_ADVISOR = 150
 NDefines.NCharacter.DEFAULT_CP_COST_FOR_ADVISOR = 0	-- For Starting Advisors
 NDefines.NCharacter.DEFAULT_CP_COST_FOR_DYNAMIC_ADVISORS = 0	-- For Advisors created during gameplay
 
-
+NDefines.NAI.CONSTRUCTION_PRIO_FACTOR_REPAIRING = 10
 
 
 
