@@ -77,3 +77,14 @@ USA_resources = {
 	}
 	priority = 100
 }
+USA_europe_debuff = {
+	allowed = {
+		original_tag = USA
+	}
+	visible = {
+		NOT = {
+			has_completed_focus = USA_intervention_in_europe
+		}
+	}
+	priority = 100
+}

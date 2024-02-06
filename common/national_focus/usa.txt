@@ -1274,19 +1274,46 @@ focus_tree = {
  		relative_position_id = USA_american_dream
  		cost = 5
  		available = {
- 			OR = {
- 				date > 1942.1.1
- 				AND = {
- 				276 = {is_controlled_by_ROOT_OR_ALLY=yes}
- 				589 = {is_controlled_by_ROOT_OR_ALLY=yes}
- 				294 = {is_controlled_by_ROOT_OR_ALLY=yes}
- 				}
- 			}
+			custom_trigger_tooltip = {
+				tooltip = USA_intervention_in_europe_tt
+				OR = {
+					date > 1942.9.1
+					AND = {
+				   date > 1941.9.1
+					453 = {is_controlled_by_ROOT_OR_ALLY=yes}
+					566 = {is_controlled_by_ROOT_OR_ALLY=yes}
+					294 = {is_controlled_by_ROOT_OR_ALLY=yes}
+				    302 = {is_controlled_by_ROOT_OR_ALLY=yes}
+				    713 = {is_controlled_by_ROOT_OR_ALLY=yes}
+				    568 = {is_controlled_by_ROOT_OR_ALLY=yes}
+					}
+				   AND = {
+				   date > 1942.1.1
+					   450 = {is_controlled_by_ROOT_OR_ALLY=yes}
+					   566 = {is_controlled_by_ROOT_OR_ALLY=yes}
+					   586 = {is_controlled_by_ROOT_OR_ALLY=yes}
+					   568 = {is_controlled_by_ROOT_OR_ALLY=yes}
+					   302 = {is_controlled_by_ROOT_OR_ALLY=yes}
+				   }
+				   AND = {
+				   date > 1942.3.1
+					   450 = {is_controlled_by_ROOT_OR_ALLY=yes}
+					   588 = {is_controlled_by_ROOT_OR_ALLY=yes}
+					   388 = {is_controlled_by_ROOT_OR_ALLY=yes}
+					   586 = {is_controlled_by_ROOT_OR_ALLY=yes}
+					   568 = {is_controlled_by_ROOT_OR_ALLY=yes}
+				   }
+				   AND = {
+				   date > 1942.6.1
+					   450 = {is_controlled_by_ROOT_OR_ALLY=yes}
+					   588 = {is_controlled_by_ROOT_OR_ALLY=yes}
+					   388 = {is_controlled_by_ROOT_OR_ALLY=yes}
+				   }
+				}
+			}
  		}
  		ai_will_do = {
  			factor = 1
- 		}
- 		available = {
  		}
  		bypass = {
  		}
