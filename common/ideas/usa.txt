@@ -16,6 +16,16 @@ ideas = {
 		}
 	}
 	country = {
+		USA_blockade = {
+			allowed = {
+				original_tag = VEN
+			}
+			picture = generic_infantry_bonus
+			removal_cost = -1
+			modifier = {
+				min_export = -1
+			}
+		}
 		USA_Tank_upgrade_cost={
 			allowed = {
 				original_tag = ENG
@@ -208,9 +218,28 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.5
 				production_speed_infrastructure_factor = 0.2
 				stability_factor = 0.10
+				production_factory_max_efficiency_factor = -0.05
 			}
 		}
 		USA_second_deal2 = {
+			name = USA_second_deal
+			picture = home_of_the_free_2
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.4
+				production_speed_industrial_complex_factor = 0.5
+				production_speed_infrastructure_factor = 0.2
+				stability_factor = 0.10
+				production_factory_max_efficiency_factor = -0.15
+			}
+		}
+		USA_second_deal3 = {
 			name = USA_second_deal
 			picture = home_of_the_free_2
 			allowed = {

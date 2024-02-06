@@ -545,6 +545,10 @@ focus_tree = {
  		available_if_capitulated = no
  		completion_reward = {
  			add_ideas = isolation
+			swap_ideas = {
+				remove_idea = USA_second_deal
+				add_idea = USA_second_deal2
+			}
  		}
  	}
  	focus = {
@@ -823,8 +827,8 @@ focus_tree = {
  		add_ideas=partial_economic_mobilisation
  		remove_ideas= USA_neutrality_act
 		swap_ideas = {
-			remove_idea = USA_second_deal
-			add_idea = USA_second_deal2
+			remove_idea = USA_second_deal2
+			add_idea = USA_second_deal3
 		}
  		}
  	}
@@ -1050,8 +1054,11 @@ focus_tree = {
 
  			add_ideas = war_economy
 			}
- 			remove_ideas=USA_second_deal2
+ 			remove_ideas=USA_second_deal3
  			set_country_flag = USA_the_giant_wakes_added_civ_eco
+			VEN = {
+				add_ideas = USA_blockade
+			}
  		}
  	}
  	focus = {
