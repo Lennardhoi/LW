@@ -287,6 +287,24 @@ on_actions = {
 				}
 				country_event = france.10
 			}
+			if = {
+				limit = {
+					original_tag = SPN
+				}
+				set_global_flag = Allies_lost_civil_war
+				country_event = spain.11
+				SPR = {add_timed_idea = {idea= SPA_recovering_from_civil_war days = 700}}
+				SPR = {remove_ideas = SPA_civil_war}
+			}
+			if = {
+				limit = {
+					original_tag = SPR
+				}
+				country_event = spain.11
+				SPR = {add_timed_idea = {idea= SPA_recovering_from_civil_war days = 700}}
+				SPR = {remove_ideas = SPA_civil_war}
+				SOV = {add_ideas = SOV_lessons_of_spain_idea}
+			}
 		}
 	}
 	on_uncapitulation = {

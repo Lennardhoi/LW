@@ -126,6 +126,27 @@ focus_tree = {
 			}
  		}
  	}
-	
+ 	focus = {
+ 		id = VEN_end_of_civil_war
+ 		icon = GFX_goal_generic_consumer_goods
+		continue_if_invalid = yes
+ 		x = 18
+ 		y = 0
+ 		cost = 5
+ 		continue_if_invalid = no
+ 		ai_will_do = {
+ 			factor = 1
+ 		}
+ 		available_if_capitulated = yes
+ 		available = {
+			AND = {
+				date > 1939.7.1
+				SPN = {exists = yes}
+			}
+		}
+ 		completion_reward = {
+			country_event = { id = spain.11 }
+ 		}
+ 	}	
 	
 

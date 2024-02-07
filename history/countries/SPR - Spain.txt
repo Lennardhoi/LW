@@ -8,20 +8,12 @@ recruit_character = SPR_augusto_barcia_trelles
 recruit_character = SPR_diego_hidalgo_duran_vanilla
 recruit_character = SPR_SPA_luis_carrero_blanco_vanilla
 recruit_character = SPR_SPA_miguel_ponte
-recruit_character = SPR_SPA_fransisco_moreno_fernandez_vanilla
-recruit_character = SPR_SPA_luis_carrero_blanco
 recruit_character = SPR_fransisco_franco_vanilla
-recruit_character = SPR_SPA_emilio_mola
-recruit_character = SPR_SPA_angel_salas_larrazabal_vanilla
 recruit_character = SPR_SPA_rafael_garcia_valino
 recruit_character = SPR_toribio_martinez_cabrera
 recruit_character = SPR_SPA_jose_antonio_primo_de_rivera
 recruit_character = SPR_SPA_jose_enrique_varela
-recruit_character = SPR_SPA_tomas_garciano_goni_vanilla
-recruit_character = SPR_SPA_joaquin_garcia_morato_vanilla
-recruit_character = SPR_SPA_miguel_cabanellas_ferrer_vanilla
 recruit_character = SPR_SPA_luis_valdes_cavanillas_vanilla
-recruit_character = SPR_SPA_juan_yague_blanco_vanilla
 recruit_character = SPR_SPA_fidel_davila_arrondo_vanilla
 recruit_character = SPR_SPA_enrique_canovas_lacruz
 recruit_character = SPR_SPA_wilhelm_ritter_von_thoma
@@ -32,12 +24,13 @@ recruit_character = SPR_SPA_heli_rolando_de_tella
 recruit_character = SPR_SPA_emilio_mola_vidal_vanilla
 recruit_character = SPR_gonzalo_queipo_de_llano
 recruit_character = SPR_mohamed_meziane
-capital = 41
+capital = 172
 oob = "SPR_1936"
-add_ideas = peace_training
 add_ideas = {
 	SPR_no_armada
 	SPA_carlism_1
+	limited_conscription
+	SPA_civil_war
 }
 set_rule = {can_be_spymaster = no}
 set_variable = {
@@ -95,6 +88,16 @@ add_equipment_to_stockpile = {
 	amount = 50
 	producer = SPR
 }
+add_equipment_to_stockpile = {
+	type = artillery_equipment_1
+	amount = 1000
+	producer = SPR
+}
+add_equipment_to_stockpile = {
+	type = infantry_equipment_1
+	amount = 7500
+	producer = SPR
+}
 set_politics = {
 	ruling_party = fascism
 	last_election = "1933.2.16"
@@ -109,6 +112,6 @@ set_popularities = {
 }
 set_convoys = 200
 set_stability = 0.35
-set_war_support = 0.15
+set_war_support = 0.4
 
 

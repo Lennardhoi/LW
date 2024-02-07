@@ -171,7 +171,7 @@ ideas = {
 		}
 		SOV_winter_offensive = {
 			modifier = {
-				army_armor_attack_factor = 0.1
+				army_armor_attack_factor = 0.1			
 				army_infantry_attack_factor = 0.1
 				winter_attrition_factor = -0.66
 			}
@@ -279,6 +279,18 @@ ideas = {
 			}
 		}
 		SOV_lessons_of_poland_idea = {
+			removal_cost = -1
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			picture = SOV_red_army_reborn
+			modifier = {
+			}
+		}
+		SOV_lessons_of_spain_idea = {
 			removal_cost = -1
 			allowed = {
 				always = no # Added via focus
@@ -410,7 +422,7 @@ ideas = {
 			equipment_bonus = {
 				medium_tank_chassis = {
 					build_cost_ic = -0.075  instant = yes
-				}
+                                }
 			}
 		}
 		SOV_heavy_tonk = {
@@ -456,6 +468,8 @@ ideas = {
 				agency_upgrade_time = -0.30
 				operative_slot = 1
 				special_forces_min= 224
+				send_volunteer_size	= 5
+				send_volunteer_divisions_required = -1
 			}
 		}
 		trotskyite_plot = {

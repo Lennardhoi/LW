@@ -60,6 +60,22 @@ ideas = {
 				}
 			}
 		}
+	speed3_scw={
+			picture = generic_infantry_bonus
+			allowed = {
+			}
+			removal_cost = -1
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				air_attack_factor =-0.5
+				army_attack_factor = -0.33
+				army_defence_factor	= -0.1
+				breakthrough_factor	= 0.1
+				army_speed_factor = -0.25
+			}
+		}
 	railwaygun_1 = {
 		removal_cost = -1
 			picture = generic_build_infrastructure

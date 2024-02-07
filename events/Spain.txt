@@ -12,8 +12,6 @@ country_event = {
 		if = {
 			limit = { original_tag = SPR }
 			hidden_effect = {
-				add_timed_idea = { idea = SPA_civil_war days = 365}
-				add_ideas = SPA_recovering_from_civil_war
 				create_corps_commander = {
 					name = "Francisco Franco"
 					id =1434
@@ -25,7 +23,10 @@ country_event = {
 					planning_skill = 3
 					logistics_skill = 4
 				}
-				add_threat = 3
+				declare_war_on = {
+ 					target = SPN
+ 					type = annex_everything
+ 				}
 				GER = {
 					army_experience = 250
 					air_experience = 150
@@ -48,16 +49,22 @@ country_event = {
 					army_experience = 100
 				}
 				set_global_flag = spanish_civil_war
-				set_stability = 1
-				set_war_support = 1
 				army_experience = 30
-				random_other_country = {
-					limit = {
-						original_tag = SPR
-						has_government = communism
-					}
-					set_cosmetic_tag = SPR_civil_war
-				}
+				SPR = {remove_ideas = peace_training add_ideas = speed3_scw}
+				GER = {remove_ideas = peace_training add_ideas = speed3_scw}
+				ITA = {remove_ideas = peace_training add_ideas = speed3_scw}
+				JAP = {remove_ideas = peace_training add_ideas = speed3_scw}
+				HUN = {remove_ideas = peace_training add_ideas = speed3_scw}
+				ROM = {remove_ideas = peace_training add_ideas = speed3_scw}
+				BUL = {remove_ideas = peace_training add_ideas = speed3_scw}
+				ENG = {remove_ideas = peace_training add_ideas = speed3_scw}
+				FRA = {remove_ideas = peace_training add_ideas = speed3_scw}
+				CAN = {remove_ideas = peace_training add_ideas = speed3_scw}
+				SAF = {remove_ideas = peace_training add_ideas = speed3_scw}
+				RAJ = {remove_ideas = peace_training add_ideas = speed3_scw}
+				AST = {remove_ideas = peace_training add_ideas = speed3_scw}
+				NZL = {remove_ideas = peace_training add_ideas = speed3_scw}
+				SOV = {remove_ideas = peace_training add_ideas = speed3_scw}
 			}
 			custom_effect_tooltip = nationalists_chosen
 		}
@@ -135,6 +142,82 @@ country_event = {
 				set_demilitarized_zone = yes
 			}
 		}
+	}
+}
+country_event = {
+	id = spain.11
+	title = spain.11.t
+	desc = spain.11.d
+	picture = GFX_franco
+	is_triggered_only = yes
+	hidden=yes
+	immediate = {
+		set_global_flag = end_of_spanish_civil_war
+		SPR= {
+			annex_country = { target = SPN }
+			add_ideas = peace_training
+			set_capital = { state = 41 }
+			delete_unit_template_and_units = { division_template = "District Force" }
+			delete_unit_template_and_units = { division_template = "Infantry Division" }
+			remove_ideas = speed3_scw
+		}
+		GER = {
+			add_to_faction = SPR
+			add_ideas = peace_training
+			remove_ideas = speed3_scw
+		}
+		ITA = {
+			add_ideas = peace_training
+			remove_ideas = speed3_scw
+		}
+		JAP = {
+			add_ideas = peace_training
+			remove_ideas = speed3_scw
+		}
+		HUN = {
+			add_ideas = peace_training
+			remove_ideas = speed3_scw
+		}
+		ROM = {
+			add_ideas = peace_training
+			remove_ideas = speed3_scw
+		}
+		BUL = {
+			add_ideas = peace_training
+			remove_ideas = speed3_scw
+		}
+		ENG = {
+			add_ideas = peace_training
+			remove_ideas = speed3_scw
+		}
+		FRA = {
+			add_ideas = peace_training
+			remove_ideas = speed3_scw
+		}
+		CAN = {
+			add_ideas = peace_training
+			remove_ideas = speed3_scw
+		}
+		SAF = {
+			add_ideas = peace_training
+			remove_ideas = speed3_scw
+		}
+		RAJ = {
+			add_ideas = peace_training
+			remove_ideas = speed3_scw
+		}
+		AST = {
+			add_ideas = peace_training
+			remove_ideas = speed3_scw
+		}
+		NZL = {
+			add_ideas = peace_training
+			remove_ideas = speed3_scw
+		}
+		SOV = {
+			add_ideas = peace_training
+			remove_ideas = speed3_scw
+		}	
 	}
 }
 country_event = {

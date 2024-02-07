@@ -30,8 +30,10 @@ if = {
 	}
 }
 add_ideas = peace_training
- add_relation_modifier = { target = GER modifier =  Axis_trade }
+add_ideas = ENG_allied_exped_corp2
+add_relation_modifier = { target = GER modifier =  Axis_trade }
 set_rule = {can_be_spymaster = no}
+set_rule = {can_send_volunteers  = yes}
 set_research_slots = 3
 set_stability = 0.45
 set_war_support = 0.6
