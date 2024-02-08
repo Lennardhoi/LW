@@ -17,7 +17,7 @@ equipments = {
  			}
  			fixed_ship_deck_slot_2 = {
  				required = no
- 				allowed_module_categories = { ship_deck_space }
+ 				allowed_module_categories = { ship_deck_space ship_carrier_armor }
  				gfx = ship_deck_space_slot
  			}
  			fixed_ship_anti_air_slot = {
@@ -35,10 +35,6 @@ equipments = {
  			fixed_ship_secondaries_slot = {
  				required = no
  				allowed_module_categories = { ship_secondaries }
- 			}
-			fixed_ship_armor_slot = {
- 				required = no
- 				allowed_module_categories = { ship_carrier_armor }
  			}
  			front_1_custom_slot = {
  				required = no
@@ -76,14 +72,14 @@ equipments = {
  		naval_speed = 26
  		reliability = 0.70
  		naval_range = 3000
- 		max_strength = 200
+ 		max_strength = 300
  		fuel_consumption = 87
  		# (Describes combat behaviour - hidden stat)
  		offensive_weapons = no
- 		build_cost_ic = 1800
+ 		build_cost_ic = 2450
  		resources = {
- 			steel = 20
- 			chromium = 20
+ 			steel = 10
+ 			chromium = 5
  		}
  		manpower = 4500
  	}
@@ -105,7 +101,7 @@ equipments = {
  			}
  			fixed_ship_deck_slot_2 = {
  				required = no
- 				allowed_module_categories = { ship_deck_space }
+ 				allowed_module_categories = { ship_deck_space ship_carrier_armor }
  				gfx = ship_deck_space_slot
  			}
  			fixed_ship_anti_air_slot = {
@@ -124,14 +120,11 @@ equipments = {
  				required = no
  				allowed_module_categories = { ship_secondaries }
  			}
-			fixed_ship_armor_slot = {
- 				required = no
- 				allowed_module_categories = { ship_carrier_armor }
- 			}
  			front_1_custom_slot = {
  				required = no
  				allowed_module_categories = {
  					ship_deck_space
+ 					ship_carrier_armor
  					ship_secondaries
  				}
  			}
@@ -169,8 +162,8 @@ equipments = {
  		offensive_weapons = no
  		build_cost_ic = 2450
  		resources = {
- 			steel = 20
- 			chromium = 20
+ 			steel = 10
+ 			chromium = 5
  		}
  		manpower = 4500
  	}
@@ -211,11 +204,8 @@ equipments = {
  				allowed_module_categories = {
  					ship_secondaries
  					ship_deck_space
+ 					ship_carrier_armor
  				}
- 			}
-			fixed_ship_armor_slot = {
- 				required = no
- 				allowed_module_categories = { ship_carrier_armor }
  			}
  		}
  		default_modules = {
@@ -225,11 +215,11 @@ equipments = {
  		}
  		naval_range = 4000
  		reliability = 0.75
- 		max_strength = 250
- 		build_cost_ic = 2000
+ 		max_strength = 375
+ 		build_cost_ic = 2600
  		resources = {
- 			steel = 20
- 			chromium = 20
+ 			steel = 10
+ 			chromium = 10
  		}
  		manpower = 5000
  	}
@@ -258,6 +248,7 @@ equipments = {
  				required = no
  				allowed_module_categories = {
  					ship_secondaries
+ 					ship_deck_space
  					ship_carrier_armor
  				}
  			}
@@ -265,6 +256,7 @@ equipments = {
  				required = no
  				allowed_module_categories = {
  					ship_secondaries
+ 					ship_deck_space
  					ship_carrier_armor
  				}
  			}
@@ -277,10 +269,10 @@ equipments = {
  		}
  		naval_range = 5000
  		reliability = 0.8
- 		max_strength = 300
- 		build_cost_ic = 2400
+ 		max_strength = 400
+ 		build_cost_ic = 3250
  		resources = {
- 			steel = 30
+ 			steel = 10
  			chromium = 20
  		}
  		manpower = 5500
@@ -309,16 +301,13 @@ equipments = {
  				allowed_module_categories = { heavy_ship_engine carrier_ship_engine }
  			}
  			fixed_ship_secondaries_slot = inherit
-			fixed_ship_armor_slot = {
- 				required = no
- 				allowed_module_categories = { ship_carrier_armor }
- 			}
  			mid_1_custom_slot = {
  				required = no
  				allowed_module_categories = {
  					ship_secondaries
  					ship_anti_air
  					ship_airplane_launcher
+					ship_deck_space
  				}
  			}
  		}
@@ -331,11 +320,11 @@ equipments = {
  		}
  		naval_range = 4000
  		reliability = 0.65
- 		max_strength = 200
+ 		max_strength = 325
  		naval_speed = 23
- 		build_cost_ic = 1600
+ 		build_cost_ic = 3200
  		resources = {
- 			steel = 30
+ 			steel = 40
  			chromium = 10
  		}
  		manpower = 5000
@@ -373,13 +362,12 @@ equipments = {
  			fixed_ship_secondaries_slot = empty
  		}
  		naval_range = 4000
- 		max_strength = 100
+ 		max_strength = 125
  		reliability = 0.65
  		naval_speed = 20
- 		build_cost_ic = 100
+ 		build_cost_ic = 3000
  		resources = {
- 			steel = 20
-			chromium = 20
+ 			steel = 30
  		}
  		manpower = 1000
  	}
@@ -397,7 +385,7 @@ equipments = {
  			}
  			fixed_ship_deck_slot_2 = {
  				required = no
- 				allowed_module_categories = { ship_deck_space }
+ 				allowed_module_categories = { ship_deck_space ship_carrier_armor }
  				gfx = ship_deck_space_slot
  			}
  			fixed_ship_anti_air_slot = {
@@ -420,6 +408,7 @@ equipments = {
  				required = no
  				allowed_module_categories = {
  					ship_deck_space
+ 					ship_carrier_armor
  					ship_secondaries
  					ship_anti_air
  				}
@@ -472,7 +461,7 @@ equipments = {
  			}
  			fixed_ship_deck_slot_2 = {
  				required = no
- 				allowed_module_categories = { ship_deck_space }
+ 				allowed_module_categories = { ship_deck_space ship_carrier_armor }
  				gfx = ship_deck_space_slot
  			}
  			fixed_ship_anti_air_slot = {
