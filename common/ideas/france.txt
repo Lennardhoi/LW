@@ -1031,6 +1031,43 @@ ideas = {
 				conversion_cost_civ_to_mil_factor=2
 			}
 		}
+		FRA_protected_by_the_maginot_line_pre_spain = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				NOT = {
+					OR = {
+						AND = {
+							has_government = democratic
+							GER = {
+								has_government = democratic
+							}
+						}
+						AND = {
+							has_government = communism
+							GER = {
+								has_government = communism
+							}
+						}
+						AND = {
+							has_government = fascism
+							GER = {
+								has_government = fascism
+							}
+						}
+					}
+				}
+			}
+			removal_cost = -1
+			picture = generic_wall_line
+			modifier = {
+				production_speed_bunker_factor = 0.3
+				industrial_capacity_factory = 0.2
+				surrender_limit = 0.5
+				conversion_cost_civ_to_mil_factor=2
+			}
+		}
 		FRA_infantry_focus = {
 			allowed = {
 				original_tag = FRA
