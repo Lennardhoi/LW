@@ -675,9 +675,6 @@ focus_tree = {
  		available = { date > 1939.9.1 
  		}
  		complete_tooltip = {
- 			navy_experience = 50
- 			army_experience = 50
- 			air_experience = 10
  			every_state = {
  				limit = { has_state_flag = USA_arsenal_of_democracy_3AF }
  				add_extra_state_shared_building_slots = 5
@@ -689,9 +686,6 @@ focus_tree = {
  			}
  		}
  		completion_reward = {
- 			navy_experience = 50
- 			army_experience = 50
- 			air_experience = 10
  			random_owned_controlled_state = {
  				limit = {
  					is_core_of = ROOT
@@ -914,30 +908,6 @@ focus_tree = {
                                 }
  							}
  						}
-						302 = {
-							add_extra_state_shared_building_slots = 5
-							add_building_construction = {
-								type = arms_factory
-								level = 5
-								instant_build = yes
-							}
-						}
-						713 = {
-							add_extra_state_shared_building_slots = 5
-							add_building_construction = {
-								type = arms_factory
-								level = 5
-								instant_build = yes
-							}
-						}
-						712 = {
-							add_extra_state_shared_building_slots = 5
-							add_building_construction = {
-								type = arms_factory
-								level = 5
-								instant_build = yes
-							}
-						}
  				    }
  				else= {
  						USA={
@@ -966,30 +936,6 @@ focus_tree = {
  						}
                         }
  					}
-					 302 = {
-						add_extra_state_shared_building_slots = 5
-						add_building_construction = {
-							type = arms_factory
-							level = 5
-							instant_build = yes
-						}
-					}
-					713 = {
-						add_extra_state_shared_building_slots = 5
-						add_building_construction = {
-							type = arms_factory
-							level = 5
-							instant_build = yes
-						}
-					}
-					712 = {
-						add_extra_state_shared_building_slots = 5
-						add_building_construction = {
-							type = arms_factory
-							level = 5
-							instant_build = yes
-						}
-					}
  				}
  			}
  	}
@@ -1260,9 +1206,6 @@ focus_tree = {
 					}
  			}
 			add_ideas = extensive_conscription
- 			air_experience = 50
- 			navy_experience = 50
- 			army_experience = 10
  		}
  	}
  	focus = {
@@ -1431,23 +1374,6 @@ focus_tree = {
  		}
  	}
  	focus = {
- 		id = USA_ger1
- 		icon = GFX_focus_USA_long_range_strat
- 		prerequisite = { focus = USA_war_plan_black }
- 		available = {
- 			date > 1941.6.15
- 		}
- 		continue_if_invalid = yes
- 		available_if_capitulated = yes
- 		x = -2
- 		y = 1
- 		relative_position_id = USA_war_plan_black
- 		cost = 4
- 		completion_reward = {
- 			add_ideas = USA_flying_fortress
- 		}
- 	}
- 	focus = {
  		id = USA_ger2
  		icon = GFX_focus_attack_germany
  		prerequisite = { focus = USA_war_plan_black }
@@ -1457,7 +1383,7 @@ focus_tree = {
  		}
  		continue_if_invalid = yes
  		available_if_capitulated = yes
- 		x = 0
+ 		x = -1
  		y = 1
  		relative_position_id = USA_war_plan_black
  		cost = 4
@@ -1510,7 +1436,7 @@ focus_tree = {
  		}
  		continue_if_invalid = yes
  		available_if_capitulated = yes
- 		x = 2
+ 		x = 1
  		y = 1
  		relative_position_id = USA_war_plan_black
  		cost = 4
@@ -1540,76 +1466,109 @@ focus_tree = {
  		relative_position_id = USA_american_dream
  		cost = 5
  		completion_reward = {
- 			570 = {
- 				set_building_level = {
- 					type = coastal_bunker
- 					province =11745
- 					level = 4
- 					instant_build = yes
- 				}
- 				add_building_construction = {
- 					type = naval_base
- 					province =11745
- 					level = 2
- 					instant_build = yes
- 				}
- 			}
- 			552 = {
- 				set_building_level = {
- 					type = coastal_bunker
- 					province =11736
- 					level = 4
- 					instant_build = yes
- 				}
- 				add_building_construction = {
- 					type = naval_base
- 					province =11736
- 					level = 2
- 					instant_build = yes
- 				}
- 			}
- 			553 = {
- 				set_building_level = {
- 					type = coastal_bunker
- 					province =11731
- 					level = 4
- 					instant_build = yes
- 				}
- 				add_building_construction = {
- 					type = naval_base
- 					province =11731
- 					level = 2
- 					instant_build = yes
- 				}
- 			}
- 			559 = {
- 				set_building_level = {
- 					type = coastal_bunker
- 					province =11024
- 					level = 4
- 					instant_build = yes
- 				}
- 				add_building_construction = {
- 					type = naval_base
- 					province =11024
- 					level = 2
- 					instant_build = yes
- 				}
- 			}
- 			563 = {
- 				set_building_level = {
- 					type = coastal_bunker
- 					province =11734
- 					level = 3
- 					instant_build = yes
- 				}
- 				add_building_construction = {
- 					type = naval_base
- 					province =11734
- 					level = 2
- 					instant_build = yes
- 				}
- 			}
+			544 = {
+				add_building_construction = {
+					type = naval_base
+					province =1360
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					province =11095
+					level = 2
+					instant_build = yes
+				}
+				set_building_level = {
+					type = coastal_bunker
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+					level = 3
+					instant_build = yes
+				}
+			}
+			294 = {
+				add_building_construction = {
+					type = naval_base
+					province =9441
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					province =9412
+					level = 2
+					instant_build = yes
+				}
+				set_building_level = {
+					type = coastal_bunker
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+					level = 3
+					instant_build = yes
+				}
+			}
+			548 = {
+				add_building_construction = {
+					type = naval_base
+					province =3972
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					province =9390
+					level = 2
+					instant_build = yes
+				}
+				set_building_level = {
+					type = coastal_bunker
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+					level = 3
+					instant_build = yes
+				}
+			}
+			549 = {
+				add_building_construction = {
+					type = naval_base
+					province =11003
+					level = 2
+					instant_build = yes
+				}
+				set_building_level = {
+					type = coastal_bunker
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+					level = 3
+					instant_build = yes
+				}
+			}
+			547 = {
+				add_building_construction = {
+					type = naval_base
+					province =4158
+					level = 2
+					instant_build = yes
+				}
+				set_building_level = {
+					type = coastal_bunker
+					province = {
+						all_provinces = yes
+						limit_to_naval_base = yes
+					}
+					level = 3
+					instant_build = yes
+				}
+			}
  		}
  	}
  	focus = {
@@ -1646,6 +1605,12 @@ focus_tree = {
  				planning_skill = 2
  				logistics_skill = 4
  			}
+			303 = {
+				add_dynamic_modifier = {
+					modifier = ENG_singapore
+					days = 120
+				}
+			}
  		}
  	}
  	focus = {
@@ -1809,7 +1774,7 @@ focus_tree = {
  						owner = USA
  					}
  				}}
-			NZL = {
+			AST = {
 				add_manpower = 100000
 			}
  		}
@@ -1912,33 +1877,7 @@ focus_tree = {
  		continue_if_invalid = no
  		available_if_capitulated = no
  		completion_reward = {
- 			army_experience = 50
- 			air_experience = 50
- 		}
- 	}
- 	focus = {
- 		id = USA_strategic_bombing
- 		icon = GFX_goal_generic_occupy_start_war
- 		prerequisite = { focus = USA_war_department }
- 		x = 5
- 		y = 1
- 		relative_position_id = USA_war_department
- 		cost = 4
- 		available = {date > 1941.5.1}
- 		available_if_capitulated = yes
- 		completion_reward = {
- 			add_tech_bonus = {
- 				name = USA_us_army_airforce
- 				uses = 1
- 				bonus = 3.0
- 				technology = improved_large_airframe
- 			}
- 			add_tech_bonus = {
- 				name = USA_us_army_airforce
- 				uses = 1
- 				bonus = 3.0
- 				technology = advanced_large_airframe
- 			}
+ 			army_experience = 135
  		}
  	}
  	focus = {
@@ -1998,7 +1937,6 @@ focus_tree = {
  		}
  		available_if_capitulated = yes
  		completion_reward = {
- 			army_experience = 5
  			add_doctrine_cost_reduction = {
 				cost_reduction = 0.5
 				uses = 2
@@ -2025,7 +1963,6 @@ focus_tree = {
  		continue_if_invalid = no
  		available_if_capitulated = no
  		completion_reward = {
- 			army_experience = 20
  			add_tech_bonus = {
  				name = USA_louisiana_maneuvers
  				bonus = 1.0
@@ -2262,7 +2199,7 @@ focus_tree = {
  		available_if_capitulated = yes
  		available ={date > 1939.08.1}
  		completion_reward = {
- 			air_experience = 150
+ 			air_experience = 360
  			add_tech_bonus = {
  				name = fighter_command_focus
  				bonus = 3.0
@@ -2281,7 +2218,6 @@ focus_tree = {
  		cost = 5
  		available_if_capitulated = yes
  		completion_reward = {
- 			air_experience = 50
  			add_tech_bonus = {
  				name = USA_TAC
  				uses = 2
@@ -2301,7 +2237,6 @@ focus_tree = {
  		cost = 5
  		available_if_capitulated = yes
  		completion_reward = {
- 			air_experience = 100
  			add_tech_bonus = {
  				name = CAS_effort
  				uses = 2
@@ -2310,6 +2245,23 @@ focus_tree = {
  			}
  		}
  	}
+	 focus = {
+		id = USA_ger1
+		icon = GFX_focus_USA_long_range_strat
+		prerequisite = { focus = USA_CAS }
+		available = {
+			date > 1941.6.15
+		}
+		continue_if_invalid = yes
+		available_if_capitulated = yes
+		x = -1
+		y = 1
+		relative_position_id = USA_CAS
+		cost = 4
+		completion_reward = {
+			add_ideas = USA_flying_fortress
+		}
+	}
  	focus = {
  		id = USA_escort_fighters
  		icon = GFX_focus_usa_escort_fighters
@@ -2337,6 +2289,31 @@ focus_tree = {
  			}
  		}
  	}
+	 focus = {
+		id = USA_strategic_bombing
+		icon = GFX_goal_generic_occupy_start_war
+		prerequisite = { focus = USA_escort_fighters }
+		x = 1
+		y = 1
+		relative_position_id = USA_escort_fighters
+		cost = 4
+		available = {date > 1941.5.1}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_tech_bonus = {
+				name = USA_us_army_airforce
+				uses = 1
+				bonus = 3.0
+				technology = improved_large_airframe
+			}
+			add_tech_bonus = {
+				name = USA_us_army_airforce
+				uses = 1
+				bonus = 3.0
+				technology = advanced_large_airframe
+			}
+		}
+	}
  	focus = {
  		id = USA_us_army_airforce
  		icon = GFX_focus_generic_strike_at_democracy1
@@ -2366,7 +2343,7 @@ focus_tree = {
  	focus = {
  		id = USA_two_ocean_navy_act
  		icon = GFX_USA_two_ocean_navy_act
- 		x = 8
+ 		x = 9
  		y = 1
  		prerequisite = { focus = USA_war_department }
  		relative_position_id = USA_war_department
@@ -2400,11 +2377,6 @@ focus_tree = {
  			}
  		}
  		completion_reward = {
- 			if = {
- 				limit = {
- 					has_war_support < 0.4
- 				}
- 			}
  			352 = {
  				add_extra_state_shared_building_slots = 5
  				add_building_construction = {
@@ -2468,7 +2440,7 @@ focus_tree = {
  		relative_position_id = USA_two_ocean_navy_act
  		available_if_capitulated = yes
  		completion_reward = {
- 			navy_experience = 50
+ 			navy_experience = 175
  			add_ideas = bureau_of_ships_focus
  		}
  	}
@@ -2487,54 +2459,6 @@ focus_tree = {
  				bonus = 1.0
  				uses = 1
  				category = bb_tech
- 			}
- 		}
- 	}
- 	focus = {
- 		id = USA_advanced_mahanian_doctrine
- 		icon = GFX_goal_generic_navy_doctrines_tactics
- 		prerequisite = { focus = USA_battleship_primacy }
- 		x = 0
- 		y = 1
- 		relative_position_id = USA_battleship_primacy
- 		cost = 2
- 		available_if_capitulated = yes
- 		completion_reward = {
- 			add_tech_bonus = {
- 				name = USA_advanced_mahanian_doctrine
- 				uses = 2
- 				bonus = 1.0
- 				category = naval_doctrine
- 			}
- 		}
- 	}
- 	focus = {
- 		id = USA_advanced_basing
- 		icon = GFX_goal_generic_occupy_states_coastal
- 		x = 0
- 		y = 2
- 		prerequisite = { focus = USA_advanced_mahanian_doctrine }
- 		relative_position_id = USA_battleship_primacy
- 		cost = 2
- 		ai_will_do = {
- 			factor = 1
- 		}
- 		available = {
- 		}
- 		bypass = {
- 		}
- 		cancel_if_invalid = yes
- 		continue_if_invalid = no
- 		available_if_capitulated = no
- 		completion_reward = {
- 		    transfer_state = 639
- 			639 = {
- 				add_building_construction = {
- 					type = naval_base
- 					province =11074
- 					level = 20
- 					instant_build = yes
- 				}
  			}
  		}
  	}
@@ -2580,8 +2504,8 @@ focus_tree = {
  		icon = GFX_goal_generic_radar
  		x = 0
  		y = 1
- 		prerequisite = { focus = USA_bureau_of_aeronautics }
- 		relative_position_id = USA_bureau_of_aeronautics
+ 		prerequisite = { focus = USA_battleship_primacy }
+ 		relative_position_id = USA_battleship_primacy
  		cost = 5
  		ai_will_do = {
  			factor = 1
@@ -2625,7 +2549,6 @@ focus_tree = {
  		cost = 5
  		available_if_capitulated = yes
  		completion_reward = {
- 			navy_experience = 25
  			add_tech_bonus = {
  				name = USA_convoy_tactics
  				bonus = 1.0
@@ -2701,7 +2624,7 @@ focus_tree = {
  		completion_reward = {
  			add_tech_bonus = {
  				name = USA_fund_the_navy
- 				uses = 3
+ 				uses = 5
  				bonus = 1.0
  				category = naval_doctrine
  			}

@@ -410,18 +410,6 @@ if = {
  ### VARIANTS ###
  	# 1936 Start #
  		### Carrier Variants
- 		create_equipment_variant = {
- 			name = "Akagi Class"
- 			type = carrier_1
- 			parent_version = 0
- 			upgrades = {
- 				ship_deckspace_upgrade = 5
- 				carrier_armor_upgrade = 2
- 				ship_engine_upgrade = 2
- 				ship_reliability_upgrade = 3
- 			}
- 			obsolete = yes
- 		}
  		### Battleship Variants	
  		create_equipment_variant = {
  			name = "Ise Class"
@@ -516,32 +504,6 @@ if = {
  	### VARIANTS ###
  	# 1936 Start #
  		### Carrier Variants
- 		create_equipment_variant = {
- 			name = "Akagi Class"
- 			type = ship_hull_carrier_conversion_bb
- 			name_group = JAP_CV_HISTORICAL
- 			parent_version = 0
- 			modules = {
- 				fixed_ship_anti_air_slot = ship_anti_air_1
- 				fixed_ship_radar_slot = empty
- 				fixed_ship_engine_slot = heavy_ship_engine_1
- 				fixed_ship_secondaries_slot = empty
- 			}
- 			obsolete = yes
- 		}
- 		create_equipment_variant = {
- 			name = "Kaga Class"
- 			type = ship_hull_carrier_conversion_bb
- 			name_group = JAP_CV_HISTORICAL
- 			parent_version = 0
- 			modules = {
- 				fixed_ship_anti_air_slot = ship_anti_air_1
- 				fixed_ship_radar_slot = empty
- 				fixed_ship_engine_slot = heavy_ship_engine_1
- 				fixed_ship_secondaries_slot = ship_secondaries_1
- 			}
- 			obsolete = yes
- 		}
  		create_equipment_variant = {
  			name = "Soryu Class"
  			type = ship_hull_carrier_1
@@ -821,13 +783,13 @@ if = {
  			parent_version = 0
  			modules = {
  				fixed_ship_battery_slot = ship_light_battery_2
- 				fixed_ship_anti_air_slot = empty
- 				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
- 				fixed_ship_radar_slot = empty
- 				fixed_ship_engine_slot = light_ship_engine_1
+ 				fixed_ship_anti_air_slot = ship_anti_air_2
+ 				fixed_ship_fire_control_system_slot = ship_sonar_2
+ 				fixed_ship_radar_slot = ship_radar_2
+ 				fixed_ship_engine_slot = light_ship_engine_2
  				fixed_ship_torpedo_slot = ship_torpedo_2
- 				mid_1_custom_slot = ship_torpedo_2
- 				rear_1_custom_slot = ship_depth_charge_1
+ 				mid_1_custom_slot = ship_depth_charge_2
+ 				rear_1_custom_slot = ship_depth_charge_2
  			}
  		}
  		create_equipment_variant = {
