@@ -189,13 +189,6 @@ units = {
 		task_force = {
 			name = "3 Kantai"
 			location =1016
-			ship = { name = "Akagi" definition = carrier equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = JAP version_name = "Akagi Class" } }
-				air_wings = {
-					cv_fighter_equipment_1 =  { owner = "JAP" amount = 24 }
-					cv_CAS_equipment_1 = { owner = "JAP" amount = 18 }
-					cv_nav_bomber_equipment_1 =  { owner = "JAP" amount = 18 }
-				}
-			}
 			ship = { name = "Sendai" definition = light_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "Sendai Class" } } }
 			ship = { name = "Kinu" definition = light_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "Kuma/Nagara Class" } } }
 			ship = { name = "Yura" definition = light_cruiser equipment = { ship_hull_cruiser_1 = {amount = 1 owner = JAP version_name = "Kuma/Nagara Class" } } }
@@ -231,13 +224,6 @@ units = {
 		task_force = {
 			name = "5 Kantai"
 			location =6482
-			ship = { name = "Kaga" definition = carrier start_experience_factor = 0.5 equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = JAP version_name = "Kaga Class" } }
-				air_wings = {
-					cv_fighter_equipment_1 =  { owner = "JAP" amount = 24 }
-					cv_CAS_equipment_1 = { owner = "JAP" amount = 18 }
-					cv_nav_bomber_equipment_1 =  { owner = "JAP" amount = 18 }
-				}
-			}
 			ship = { name = "Soryu" definition = carrier equipment = { ship_hull_carrier_1 = {amount = 1 owner = JAP version_name = "Soryu Class"} }
 				air_wings = {
 					cv_fighter_equipment_1 =  { owner = "JAP" amount = 24 }

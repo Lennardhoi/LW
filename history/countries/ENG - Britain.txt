@@ -918,33 +918,6 @@ if = {
 		}
 	}
 	create_equipment_variant = {
-		name = "Eagle Class"
-		type = ship_hull_carrier_conversion_bb
-		name_group = ENG_CV_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_anti_air_slot = ship_anti_air_1
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = heavy_ship_engine_1
-			fixed_ship_secondaries_slot = empty
-			mid_1_custom_slot = empty
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = {
-		name = "Courageous Class"
-		type = ship_hull_carrier_conversion_bb
-		name_group = ENG_CV_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_anti_air_slot = ship_anti_air_1
-			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = heavy_ship_engine_1
-			fixed_ship_secondaries_slot = empty
-		}
-		obsolete = yes
-	}
-	create_equipment_variant = {
 		name = "Ark Royal Class"
 		type = ship_hull_carrier_1
 		name_group = ENG_CV_HISTORICAL

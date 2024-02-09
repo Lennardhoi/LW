@@ -2429,8 +2429,7 @@ focus_tree = {
 			}
 			for_loop_effect = {
 				end = ENG.shadow_civs2
-				ENG={random_owned_controlled_state= {
-					limit= {is_core_of=ENG}
+				ENG={130= {
 					add_extra_state_shared_building_slots=1
 					add_building_construction = {
 						type = arms_factory
@@ -2950,6 +2949,51 @@ focus_tree = {
  			}
  		}
  	}
+	 focus = {
+		id = ENG_east_indies
+		available = {
+			date>1940.1.1
+		}
+		prerequisite = { focus = ENG_pressure_axis }
+		icon = GFX_goal_generic_construct_military
+		x = 0
+		y = 1
+		offset = {
+			x = 0
+			y = 1
+		}
+		relative_position_id = ENG_pressure_axis
+		cost = 1
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			117 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
+			}
+			131 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
+			}
+			119 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+	}
  	focus = {
  		id = ENG_southern_thrust
  		icon = GFX_focus_ENG_attack_iran

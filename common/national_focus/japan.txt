@@ -107,6 +107,7 @@ focus_tree = {
  		}
  		search_filters = { FOCUS_FILTER_ANNEXATION }
  		completion_reward = {
+			add_political_power = 100
  			custom_effect_tooltip = available_political_advisor
  			show_ideas_tooltip = takuo_godo
  			transfer_state = 532
@@ -182,7 +183,8 @@ focus_tree = {
 						uses = 1
 						technology = aa_cannon_1
 					}}
- 				USA = { add_war_support = 0.1
+ 				USA = { add_war_support = 0.15
+					add_stability = 0.05
  					army_experience = 100
  					air_experience = 250
 					add_tech_bonus = {
@@ -354,9 +356,6 @@ focus_tree = {
  				SIA = {
  					army_experience = 300
  					air_experience = 200}
- 				USA = {
- 					country_event = { id = panay_incident.2 days = 20 }
- 				}
  				news_event = { id = news.1 days = 5 }
  				add_war_support = 0.05
  				USA = { set_country_flag = { flag = USA_china_window days = 60 value = 1 } }
@@ -2086,6 +2085,12 @@ focus_tree = {
 		}
 		USA = {
 			activate_mission=USA_rubber_reserve
+		}
+		303 = {
+			add_dynamic_modifier = {
+				modifier = ENG_singapore
+				days = 120
+			}
 		}
 		}
  		RAJ = {

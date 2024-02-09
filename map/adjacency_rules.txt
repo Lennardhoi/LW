@@ -689,3 +689,38 @@ adjacency_rule={
 	icon =4781
 	offset = { 0 0 -1 }
 }
+
+adjacency_rule={
+	name = "AUSTRALIA-PAPUA_STRAIT"
+	contested =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	required_provinces = {1576 1255}
+	icon =1576
+	offset = { 0 0 -1 }
+}
