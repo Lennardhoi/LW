@@ -160,65 +160,103 @@ country_event = {
 			delete_unit_template_and_units = { division_template = "District Force" }
 			delete_unit_template_and_units = { division_template = "Infantry Division" }
 			remove_ideas = speed3_scw
+			set_rule = {can_send_volunteers  = no}
+
 		}
 		GER = {
 			add_to_faction = SPR
 			add_ideas = peace_training
 			remove_ideas = speed3_scw
+			set_rule = {can_send_volunteers  = no}
+			remove_ideas = Donated_Vol
+			remove_ideas = Donated_Vol2
+			remove_ideas = Donated_Vol3
+			remove_ideas = Donated_Vol4
+			remove_ideas = Donated_Vol5
+			remove_ideas = Donated_Vol6
 		}
 		ITA = {
 			add_ideas = peace_training
 			remove_ideas = speed3_scw
+			set_rule = {can_send_volunteers  = no}
 		}
 		JAP = {
 			add_ideas = peace_training
 			remove_ideas = speed3_scw
+			set_rule = {can_send_volunteers  = no}
 		}
 		HUN = {
 			add_ideas = peace_training
 			remove_ideas = speed3_scw
+			set_rule = {can_send_volunteers  = no}
+			remove_ideas = ENG_allied_exped_corp2
 		}
 		ROM = {
 			add_ideas = peace_training
 			remove_ideas = speed3_scw
+			set_rule = {can_send_volunteers  = no}
+			remove_ideas = ENG_allied_exped_corp2
 		}
 		BUL = {
 			add_ideas = peace_training
 			remove_ideas = speed3_scw
+			set_rule = {can_send_volunteers  = no}
+			remove_ideas = ENG_allied_exped_corp2
 		}
 		ENG = {
 			add_ideas = peace_training
 			remove_ideas = speed3_scw
+			set_rule = {can_send_volunteers  = no}
+			remove_ideas = Donated_Vol
+			remove_ideas = Donated_Vol2
+			remove_ideas = Donated_Vol3
+			remove_ideas = Donated_Vol4
+			remove_ideas = Donated_Vol5
+			remove_ideas = Donated_Vol6
+			remove_ideas = ENG_allied_exped_corp
 		}
 		FRA = {
 			add_ideas = peace_training
 			remove_ideas = speed3_scw
 			add_ideas = FRA_protected_by_the_maginot_line			
 			remove_ideas = FRA_protected_by_the_maginot_line_pre_spain
+			set_rule = {can_send_volunteers  = no}
+			remove_ideas = ENG_allied_exped_corp
 		}
 		CAN = {
 			add_ideas = peace_training
 			remove_ideas = speed3_scw
+			set_rule = {can_send_volunteers  = no}
+			remove_ideas = ENG_allied_exped_corp2
 		}
 		SAF = {
 			add_ideas = peace_training
 			remove_ideas = speed3_scw
+			set_rule = {can_send_volunteers  = no}
+			remove_ideas = ENG_allied_exped_corp2
 		}
 		RAJ = {
 			add_ideas = peace_training
 			remove_ideas = speed3_scw
+			set_rule = {can_send_volunteers  = no}
+			remove_ideas = ENG_allied_exped_corp2
 		}
 		AST = {
 			add_ideas = peace_training
 			remove_ideas = speed3_scw
+			set_rule = {can_send_volunteers  = no}
+			remove_ideas = ENG_allied_exped_corp2
 		}
 		NZL = {
 			add_ideas = peace_training
 			remove_ideas = speed3_scw
+			set_rule = {can_send_volunteers  = no}
+			remove_ideas = ENG_allied_exped_corp2
 		}
 		SOV = {
 			add_ideas = peace_training
 			remove_ideas = speed3_scw
+			set_rule = {can_send_volunteers  = no}
 		}	
 	}
 }
