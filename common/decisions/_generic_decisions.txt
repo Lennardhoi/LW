@@ -523,6 +523,7 @@ political_actions = {
 				tag = HUN
 				tag = BUL
 				tag = NZL
+				tag = MEX
 			}
 			date<1936.5.1
  		}
@@ -536,6 +537,15 @@ political_actions = {
 			set_rule = {can_send_volunteers  = no}
 			IF = {
 				limit={is_in_faction_with=ENG}
+				IF = {
+					limit = {ENG={has_idea = Donated_Vol6}}
+					ENG = {
+						swap_ideas = { 
+							remove_idea = Donated_Vol6
+							add_idea = Donated_Vol7
+						}
+					}
+				}
 				IF = {
 					limit = {ENG={has_idea = Donated_Vol5}}
 					ENG = {
@@ -591,6 +601,7 @@ political_actions = {
 								NOT ={has_idea = Donated_Vol4}
 								NOT ={has_idea = Donated_Vol5}
 								NOT ={has_idea = Donated_Vol6}
+								NOT ={has_idea = Donated_Vol7}
 							}
 						}
 					}

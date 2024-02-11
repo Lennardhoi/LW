@@ -35,6 +35,76 @@ focus_tree = {
  			show_ideas_tooltip = hjalmar_schacht
  		}
  	}
+	focus = {
+		id = GER_lessons_of_spain
+		icon = GFX_GER_spanish_civil_war
+		x = 16
+		y = 4
+		prerequisite = { focus = GER_end_of_czechoslovakia }
+		cost = 2
+		ai_will_do = {
+			factor = 5
+		}
+		available_if_capitulated = no
+		available = {
+			AND = {
+				date > 1939.9.1
+				has_idea=GER_lessons_of_spain_idea
+			}
+		}
+		completion_reward = {
+		custom_effect_tooltip = "Deploys another 2 Veterans, that can be convertet into tanks"
+		 	division_template = {
+ 					name = "Blaue Division"
+ 					regiments = {
+ 						infantry = { x = 0 y = 0 }
+ 						infantry = { x = 0 y = 1 }
+ 						infantry = { x = 0 y = 2 }
+ 						infantry = { x = 0 y = 3 }
+ 						infantry = { x = 1 y = 0 }
+ 						infantry = { x = 1 y = 1 }
+ 						infantry = { x = 1 y = 2 }
+ 						infantry = { x = 1 y = 3 }
+ 						infantry = { x = 2 y = 0 }
+ 						infantry = { x = 2 y = 1 }
+ 						infantry = { x = 2 y = 2 }
+ 						infantry = { x = 3 y = 0 }
+ 						infantry = { x = 3 y = 1 }
+ 						infantry = { x = 3 y = 2 }
+ 						infantry = { x = 3 y = 3 }
+						infantry = { x = 3 y = 4 }
+ 						infantry = { x = 4 y = 0 }
+ 						infantry = { x = 4 y = 1 }
+ 						infantry = { x = 4 y = 2 }
+ 						infantry = { x = 4 y = 3 }
+ 						infantry = { x = 4 y = 4 }
+ 					}
+				}	
+			61 = {
+				for_loop_effect = {
+ 					end = 2
+ 					create_unit = {
+ 						division = "name = \"Blaue Division\" division_template = \"Blaue Division\" start_experience_factor = 1"
+ 						owner = GER
+ 					}
+ 				}
+			}
+ 			add_tech_bonus = {
+ 				name = land_doctrine
+ 				bonus = 1.0
+ 				uses = 1
+ 				category = land_doctrine
+ 			}			
+			61 = {
+					add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+						type = arms_factory
+						level = 5
+						instant_build = yes
+					}
+				}
+		}
+	}
  	focus = {
  		id = GER_rhineland
  		icon = GFX_focus_GER_rhineland

@@ -41,7 +41,20 @@ ideas = {
 			picture = HUN_treaty_of_triannon
 			modifier = {
 				stability_factor = 0.1
-				}}
+				}
+		}
+		GER_lessons_of_spain_idea = {
+			removal_cost = -1
+			allowed = {
+				always = no # Added via focus
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			picture = spanish_civil_war
+			modifier = {
+			}
+		}
 		GER_mineraloelsicherungsplan = {
 			allowed = {
 				always = yes

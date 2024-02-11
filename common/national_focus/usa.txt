@@ -1883,6 +1883,29 @@ focus_tree = {
  				add_logistics = 1
  			}			
 			}
+			MEX = {
+ 			every_unit_leader = {
+ 				limit={has_id=702}
+ 				add_skill_level=1
+ 				add_attack=1
+ 			}
+ 			every_unit_leader = {
+ 				limit={has_id=700}
+ 				add_skill_level=1
+ 				add_attack=1
+ 				add_logistics = 1
+ 			}
+ 			every_unit_leader = {
+ 				limit={has_id=703}
+ 				add_skill_level=1
+ 				add_attack=1
+ 			}
+			add_trait = {
+				character = MEX_manuel_perez_trevino
+				slot = corps_commander
+				trait = hill_fighter
+			}			
+			}
  		}
  	}
  	focus = {

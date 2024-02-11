@@ -28,25 +28,25 @@ country_event = {
  					type = annex_everything
  				}
 				GER = {
-					army_experience = 250
+					army_experience = 200
 					air_experience = 150
 				}
 				JAP = {
-					army_experience = 100
+					army_experience = 50
 					air_experience = 300
 					}
 				SOV = {
-					army_experience = 250
+					army_experience = 200
 					air_experience = 250}
 				ITA = {
-					army_experience = 100
+					army_experience = 50
 					air_experience = 150
 				}
 				HUN = {
-					army_experience = 100
+					army_experience = 50
 				}
 				MAN = {
-					army_experience = 100
+					army_experience = 50
 				}
 				set_global_flag = spanish_civil_war
 				army_experience = 30
@@ -65,6 +65,7 @@ country_event = {
 				AST = {remove_ideas = peace_training add_ideas = speed3_scw}
 				NZL = {remove_ideas = peace_training add_ideas = speed3_scw}
 				SOV = {remove_ideas = peace_training add_ideas = speed3_scw}
+				MEX = {remove_ideas = peace_training add_ideas = speed3_scw}
 			}
 			custom_effect_tooltip = nationalists_chosen
 		}
@@ -248,6 +249,12 @@ country_event = {
 			remove_ideas = ENG_allied_exped_corp2
 		}
 		NZL = {
+			add_ideas = peace_training
+			remove_ideas = speed3_scw
+			set_rule = {can_send_volunteers  = no}
+			remove_ideas = ENG_allied_exped_corp2
+		}
+		MEX = {
 			add_ideas = peace_training
 			remove_ideas = speed3_scw
 			set_rule = {can_send_volunteers  = no}
