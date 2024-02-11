@@ -80,7 +80,20 @@ capital = 270
  	JAP_duplicate_research_efforts
  	JAP_militarism
 	never_surrender
- }
+	JAP_island_hopping8
+}
+# ASIA GUI - VARIABLES
+# ALLIES
+set_variable = { global.RUBBER_ALLIES_LOCATIONS = 22 }
+set_variable = { global.PACIFICCAPITAL_ALLIES_LOCATIONS = 5 }
+set_variable = { global.ISLHOP_ALLIES_LOCATIONS = 4 }
+set_variable = { global.MALAY_BARRIER_ALLIES_LOCATIONS = 4 }
+# GEACPS
+set_variable = { global.RUBBER_GEACPS_LOCATIONS = 0 }
+set_variable = { global.PACIFICCAPITAL_GEACPS_LOCATIONS = 0 }
+set_variable = { global.ISLHOP_GEACPS_LOCATIONS = 4 }
+set_variable = { global.MALAY_BARRIER_GEACPS_LOCATIONS = 0 }
+
 if = {
 	limit = { has_dlc = "Together for Victory" }
 	add_to_tech_sharing_group = japanese_research

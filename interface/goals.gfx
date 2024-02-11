@@ -2950,62 +2950,134 @@ spriteTypes = {
 		name = "CAN_maple_leaf"
 		texturefile = "gfx/interface/goals/CAN_maple_leaf.dds"
 	}
-	spriteType = {
-		name = "GFX_USA_pacific_bg"
-		texturefile = "gfx/interface/pacific/USA_pacific.dds"
-	}
-	spriteType = {
-		name = "GFX_USA_pacific_borneo"
-		texturefile = "gfx/interface/pacific/USA_pacific_borneo.dds"
-		legacy_lazy_load = no
-		noOfFrames = 2
-	}
-	spriteType = {
-		name = "GFX_USA_pacific_east_papua"
-		texturefile = "gfx/interface/pacific/USA_pacific_east_papua.dds"
-		legacy_lazy_load = no
-		noOfFrames = 2
-	}
-	spriteType = {
-		name = "GFX_USA_pacific_java"
-		texturefile = "gfx/interface/pacific/USA_pacific_java.dds"
-		legacy_lazy_load = no
-		noOfFrames = 2
-	}
-	spriteType = {
-		name = "GFX_USA_pacific_phillippines"
-		texturefile = "gfx/interface/pacific/USA_pacific_phillippines.dds"
-		legacy_lazy_load = no
-		noOfFrames = 2
-	}
-	spriteType = {
-		name = "GFX_USA_pacific_singapore"
-		texturefile = "gfx/interface/pacific/USA_pacific_singapore.dds"
-		legacy_lazy_load = no
-		noOfFrames = 2
-	}
-	spriteType = {
-		name = "GFX_USA_pacific_sulawesi"
-		texturefile = "gfx/interface/pacific/USA_pacific_sulawesi.dds"
-		legacy_lazy_load = no
-		noOfFrames = 2
-	}
-	spriteType = {
-		name = "GFX_USA_pacific_sumatra"
-		texturefile = "gfx/interface/pacific/USA_pacific_sumatra.dds"
-		legacy_lazy_load = no
-		noOfFrames = 2
-	}
-	spriteType = {
-		name = "GFX_USA_pacific_sunda"
-		texturefile = "gfx/interface/pacific/USA_pacific_sunda.dds"
-		legacy_lazy_load = no
-		noOfFrames = 2
-	}
-	spriteType = {
-		name = "GFX_USA_pacific_west_papua"
-		texturefile = "gfx/interface/pacific/USA_pacific_west_papua.dds"
-		legacy_lazy_load = no
-		noOfFrames = 2
-	}
+		####### ASIA MAP
+		spriteType = {
+			name = "GFX_PACIFIC_BASE"
+			texturefile = "gfx/interface/ASIA_GUI/PACIFIC_BASE.dds"
+		}
+		spriteType = {
+			name = "GFX_PACIFIC_AST"
+			texturefile = "gfx/interface/ASIA_GUI/PACIFIC_AST.dds"
+		}
+		spriteType = {
+			name = "GFX_PACIFIC_CEYLON"
+			texturefile = "gfx/interface/ASIA_GUI/PACIFIC_CEYLON.dds"
+		}
+		spriteType = {
+			name = "GFX_PACIFIC_CHI"
+			texturefile = "gfx/interface/ASIA_GUI/PACIFIC_CHI.dds"
+		}
+		spriteType = {
+			name = "GFX_PACIFIC_GUAM"
+			texturefile = "gfx/interface/ASIA_GUI/PACIFIC_GUAM.dds"
+		}
+		spriteType = {
+			name = "GFX_PACIFIC_HAINAN"
+			texturefile = "gfx/interface/ASIA_GUI/PACIFIC_HAINAN.dds"
+		}
+		spriteType = {
+			name = "GFX_PACIFIC_HAWAII"
+			texturefile = "gfx/interface/ASIA_GUI/PACIFIC_HAWAII.dds"
+		}
+		spriteType = {
+			name = "GFX_PACIFIC_INDOCHINA"
+			texturefile = "gfx/interface/ASIA_GUI/PACIFIC_INDOCHINA.dds"
+		}
+		spriteType = {
+			name = "GFX_PACIFIC_IWO_JIMA"
+			texturefile = "gfx/interface/ASIA_GUI/PACIFIC_IWO_JIMA.dds"
+		}
+		spriteType = {
+			name = "GFX_PACIFIC_JAP"
+			texturefile = "gfx/interface/ASIA_GUI/PACIFIC_JAP.dds"
+		}
+		spriteType = {
+			name = "GFX_PACIFIC_JAVA"
+			texturefile = "gfx/interface/ASIA_GUI/PACIFIC_JAVA.dds"
+		}
+		spriteType = {
+			name = "GFX_PACIFIC_KALIMANTAN"
+			texturefile = "gfx/interface/ASIA_GUI/PACIFIC_KALIMANTAN.dds"
+		}
+		spriteType = {
+			name = "GFX_PACIFIC_KOR"
+			texturefile = "gfx/interface/ASIA_GUI/PACIFIC_KOR.dds"
+		}
+		spriteType = {
+			name = "GFX_PACIFIC_MAN"
+			texturefile = "gfx/interface/ASIA_GUI/PACIFIC_MAN.dds"
+		}
+		spriteType = {
+			name = "GFX_PACIFIC_MIDWAY"
+			texturefile = "gfx/interface/ASIA_GUI/PACIFIC_MIDWAY.dds"
+		}
+		spriteType = {
+			name = "GFX_PACIFIC_NORTH_BORNEO"
+			texturefile = "gfx/interface/ASIA_GUI/PACIFIC_NORTH_BORNEO.dds"
+		}
+		spriteType = {
+			name = "GFX_PACIFIC_NORTH_ISLAND"
+			texturefile = "gfx/interface/ASIA_GUI/PACIFIC_NORTH_ISLAND.dds"
+		}
+		spriteType = {
+			name = "GFX_PACIFIC_OKINAWA"
+			texturefile = "gfx/interface/ASIA_GUI/PACIFIC_OKINAWA.dds"
+		}
+		spriteType = {
+			name = "GFX_PACIFIC_PALAU"
+			texturefile = "gfx/interface/ASIA_GUI/PACIFIC_PALAU.dds"
+		}
+		spriteType = {
+			name = "GFX_PACIFIC_PAPUA"
+			texturefile = "gfx/interface/ASIA_GUI/PACIFIC_PAPUA.dds"
+		}
+		spriteType = {
+			name = "GFX_PACIFIC_PHI"
+			texturefile = "gfx/interface/ASIA_GUI/PACIFIC_PHI.dds"
+		}
+		spriteType = {
+			name = "GFX_PACIFIC_RAJ"
+			texturefile = "gfx/interface/ASIA_GUI/PACIFIC_RAJ.dds"
+		}
+		spriteType = {
+			name = "GFX_PACIFIC_SAIPAN"
+			texturefile = "gfx/interface/ASIA_GUI/PACIFIC_SAIPAN.dds"
+		}
+		spriteType = {
+			name = "GFX_PACIFIC_SIAM"
+			texturefile = "gfx/interface/ASIA_GUI/PACIFIC_SIAM.dds"
+		}
+		spriteType = {
+			name = "GFX_PACIFIC_SINGAPORE"
+			texturefile = "gfx/interface/ASIA_GUI/PACIFIC_SINGAPORE.dds"
+		}
+		spriteType = {
+			name = "GFX_PACIFIC_SOUTH_ISLAND"
+			texturefile = "gfx/interface/ASIA_GUI/PACIFIC_SOUTH_ISLAND.dds"
+		}
+		spriteType = {
+			name = "GFX_PACIFIC_SULAWESI"
+			texturefile = "gfx/interface/ASIA_GUI/PACIFIC_SULAWESI.dds"
+		}
+		spriteType = {
+			name = "GFX_PACIFIC_SUMATRA"
+			texturefile = "gfx/interface/ASIA_GUI/PACIFIC_SUMATRA.dds"
+		}
+		spriteType = {
+			name = "GFX_PACIFIC_TAIWAN"
+			texturefile = "gfx/interface/ASIA_GUI/PACIFIC_TAIWAN.dds"
+		}
+		spriteType = {
+			name = "GFX_PACIFIC_TASMANIA"
+			texturefile = "gfx/interface/ASIA_GUI/PACIFIC_TASMANIA.dds"
+		}
+		spriteType = {
+			name = "GFX_PACIFIC_WAKE_ISLAND"
+			texturefile = "gfx/interface/ASIA_GUI/PACIFIC_WAKE_ISLAND.dds"
+		}
+		spriteType = {
+			name = "GFX_PACIFIC_WEST_PAPUA"
+			texturefile = "gfx/interface/ASIA_GUI/PACIFIC_WEST_PAPUA.dds"
+		}
+		#######
 }

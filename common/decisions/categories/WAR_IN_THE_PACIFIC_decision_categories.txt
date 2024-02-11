@@ -1,0 +1,77 @@
+WAR_IN_PACIFIC = {
+	priority = 99
+
+	icon = GFX_decision_category_military_operation
+	scripted_gui = WAR_IN_PACIFIC_UI
+	allowed = {
+		always = yes
+	}
+
+	visible = {
+		JAP = {
+			OR = {
+				has_war_with = ENG
+				has_capitulated = yes
+			}
+		}
+	}
+
+	on_map_area = {
+		name = "Island Hopping"
+		state = 559 #Guam
+		state = 552 #Midway
+		state = 553 #Wake Island
+		state = 550 #Hawaii
+		state = 568 #Palau
+		state = 566 #Iwo Jima
+		state = 567 #Saipan
+		state = 453 #Okinawa
+		zoom = 800
+	}
+
+	on_map_area = {
+		name = "Rubber Locations"
+		state = 586 #Sunda Islands
+		state = 300 #North Borneo
+		state = 303 #Singapore
+		state = 713 #Southern Sumatra
+		state = 591 #Northern Sumatra
+		state = 302 #West Java
+		state = 712 #East Java
+		state = 301 #Kalimantan
+		state = 592 #Sulawesi
+		state = 587 #The Moluccas
+		state = 588 #West Papua
+		state = 639 #Timor
+		state = 548 #Mindanao
+		state = 546 #Samar
+		state = 549 #Cebu
+		state = 547 #Palawan
+		state = 545 #Central Islands
+		state = 294 #Manila
+		state = 544 #Luzon
+		state = 388 #Ceylon
+		state = 450 #Papua
+		state = 656 #Aru Islands
+		zoom = 800
+	}
+
+	on_map_area = {
+		name = "Pacific Capitals"
+		state = 405 #Delhi
+		state = 294 #Manila
+		state = 302 #Batavia
+		state = 273 #Canberra
+		state = 272 #Wellington
+		zoom = 800
+	}
+
+	on_map_area = {
+		name = "The Papua Barrier"
+		state = 450 #Papua
+		state = 655 #Bismarck
+		state = 555 #Solomon Islands
+		state = 588 #West Papua
+		zoom = 800
+	}
+}

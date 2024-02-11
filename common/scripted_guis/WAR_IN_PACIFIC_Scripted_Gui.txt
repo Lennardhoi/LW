@@ -1,0 +1,1237 @@
+
+scripted_gui = {
+
+	WAR_IN_PACIFIC_UI = {
+		context_type = decision_category
+		window_name = "WAR_IN_PACIFIC_Ui_Window"
+		
+		visible = {
+			JAP = {
+				has_war_with = ENG
+			}
+		}
+		
+		triggers = {
+			PACIFIC_AST_visible = {
+				count_triggers = {
+					amount > 3
+					273 = {
+						CONTROLLER = {
+							OR = {
+								tag = JAP
+								is_subject_of = JAP
+								is_in_faction_with = JAP
+							}
+						}
+					}
+					448 = {
+						CONTROLLER = {
+							OR = {
+								tag = JAP
+								is_subject_of = JAP
+								is_in_faction_with = JAP
+							}
+						}
+					}
+					444 = {
+						CONTROLLER = {
+							OR = {
+								tag = JAP
+								is_subject_of = JAP
+								is_in_faction_with = JAP
+							}
+						}
+					}
+					446 = {
+						CONTROLLER = {
+							OR = {
+								tag = JAP
+								is_subject_of = JAP
+								is_in_faction_with = JAP
+							}
+						}
+					}
+					449 = {
+						CONTROLLER = {
+							OR = {
+								tag = JAP
+								is_subject_of = JAP
+								is_in_faction_with = JAP
+							}
+						}
+					}
+					714 = {
+						CONTROLLER = {
+							OR = {
+								tag = JAP
+								is_subject_of = JAP
+								is_in_faction_with = JAP
+							}
+						}
+					}
+					447 = {
+						CONTROLLER = {
+							OR = {
+								tag = JAP
+								is_subject_of = JAP
+								is_in_faction_with = JAP
+							}
+						}
+					}
+				}
+			}
+
+			PACIFIC_CEYLON_visible = {
+				388 = {
+					CONTROLLER = {
+						OR = {
+							tag = JAP
+							is_subject_of = JAP
+							is_in_faction_with = JAP
+						}
+					}
+				}
+			}
+
+			PACIFIC_CHI_visible = {
+				count_triggers = {
+					amount > 20
+					532 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+					538 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+					521 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+					522 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+					537 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+					520 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+					519 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+					517 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+					516 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+					518 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+					515 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+					523 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+					292 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+					665 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+					527 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+					526 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+					524 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+					526 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+					666 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+					669 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+					529 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+					668 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+					541 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+					530 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+					531 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+					662 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+					543 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+					539 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+					664 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+				}
+			}
+
+			PACIFIC_GUAM_visible = {
+				559 = {
+					CONTROLLER = {
+						OR = {
+							tag = JAP
+							is_subject_of = JAP
+							is_in_faction_with = JAP
+						}
+					}
+				}
+			}
+
+			PACIFIC_HAINAN_visible = {
+				515 = {
+					CONTROLLER = {
+						OR = {
+							tag = USA
+							is_subject_of = USA
+							is_in_faction_with = USA
+						}
+					}
+				}
+			}
+
+			PACIFIC_HAWAII_visible = {
+				550 = {
+					CONTROLLER = {
+						OR = {
+							tag = JAP
+							is_subject_of = JAP
+							is_in_faction_with = JAP
+						}
+					}
+				}
+			}
+
+			PACIFIC_INDOCHINA_visible = {
+				count_triggers = {
+					amount > 2
+					659 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+					274 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+					590 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+					589 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+				}
+			}
+
+			PACIFIC_IWO_JIMA_visible = {
+				566 = {
+					CONTROLLER = {
+						OR = {
+							tag = USA
+							is_subject_of = USA
+							is_in_faction_with = USA
+						}
+					}
+				}
+			}
+
+			PACIFIC_JAP_visible = {
+				count_triggers = {
+					amount > 6
+					455 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+					457 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+					456 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+					458 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+					459 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+					462 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+					270 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+					460 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+					463 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+					479 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+					464 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+				}
+			}
+
+			PACIFIC_JAVA_visible = {
+				302 = {
+					CONTROLLER = {
+						OR = {
+							tag = JAP
+							is_subject_of = JAP
+							is_in_faction_with = JAP
+						}
+					}
+				}
+				712 = {
+					CONTROLLER = {
+						OR = {
+							tag = JAP
+							is_subject_of = JAP
+							is_in_faction_with = JAP
+						}
+					}
+				}
+			}
+
+			PACIFIC_KALIMANTAN_visible = {
+				301 = {
+					CONTROLLER = {
+						OR = {
+							tag = JAP
+							is_subject_of = JAP
+							is_in_faction_with = JAP
+						}
+					}
+				}
+			}
+
+			PACIFIC_KOR_visible = {
+				count_triggers = {
+					amount > 1
+					452 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+					454 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+				}
+			}
+
+			PACIFIC_MAN_visible = {
+				count_triggers = {
+					amount > 5
+					634 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+					295 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+					635 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+					632 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+					675 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+					633 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+					536 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+					535 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+					533 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+					663 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+				}
+			}
+
+			PACIFIC_MIDWAY_visible = {
+				552 = {
+					CONTROLLER = {
+						OR = {
+							tag = JAP
+							is_subject_of = JAP
+							is_in_faction_with = JAP
+						}
+					}
+				}
+			}
+
+			PACIFIC_NORTH_BORNEO_visible = {
+				300 = {
+					CONTROLLER = {
+						OR = {
+							tag = JAP
+							is_subject_of = JAP
+							is_in_faction_with = JAP
+						}
+					}
+				}
+			}
+
+			PACIFIC_NORTH_ISLAND_visible = {
+				272 = {
+					CONTROLLER = {
+						OR = {
+							tag = JAP
+							is_subject_of = JAP
+							is_in_faction_with = JAP
+						}
+					}
+				}
+			}
+
+			PACIFIC_OKINAWA_visible = {
+				453 = {
+					CONTROLLER = {
+						OR = {
+							tag = USA
+							is_subject_of = USA
+							is_in_faction_with = USA
+						}
+					}
+				}
+			}
+
+			PACIFIC_PALAU_visible = {
+				568 = {
+					CONTROLLER = {
+						OR = {
+							tag = USA
+							is_subject_of = USA
+							is_in_faction_with = USA
+						}
+					}
+				}
+			}
+
+			PACIFIC_PAPUA_visible = {
+				count_triggers = {
+					amount > 1
+					450 = {
+						CONTROLLER = {
+							OR = {
+								tag = JAP
+								is_subject_of = JAP
+								is_in_faction_with = JAP
+							}
+						}
+					}
+				}
+			}
+
+			PACIFIC_PHI_visible = {
+				count_triggers = {
+					amount > 3
+					544 = {
+						CONTROLLER = {
+							OR = {
+								tag = JAP
+								is_subject_of = JAP
+								is_in_faction_with = JAP
+							}
+						}
+					}
+					294 = {
+						CONTROLLER = {
+							OR = {
+								tag = JAP
+								is_subject_of = JAP
+								is_in_faction_with = JAP
+							}
+						}
+					}
+					548 = {
+						CONTROLLER = {
+							OR = {
+								tag = JAP
+								is_subject_of = JAP
+								is_in_faction_with = JAP
+							}
+						}
+					}
+					546 = {
+						CONTROLLER = {
+							OR = {
+								tag = JAP
+								is_subject_of = JAP
+								is_in_faction_with = JAP
+							}
+						}
+					}
+					545 = {
+						CONTROLLER = {
+							OR = {
+								tag = JAP
+								is_subject_of = JAP
+								is_in_faction_with = JAP
+							}
+						}
+					}
+					549 = {
+						CONTROLLER = {
+							OR = {
+								tag = JAP
+								is_subject_of = JAP
+								is_in_faction_with = JAP
+							}
+						}
+					}
+					547 = {
+						CONTROLLER = {
+							OR = {
+								tag = JAP
+								is_subject_of = JAP
+								is_in_faction_with = JAP
+							}
+						}
+					}
+				}
+			}
+
+			PACIFIC_RAJ_visible = {
+				count_triggers = {
+					amount > 15
+					275 = {
+						CONTROLLER = {
+							OR = {
+								tag = JAP
+								is_subject_of = JAP
+								is_in_faction_with = JAP
+							}
+						}
+					}
+					561 = {
+						CONTROLLER = {
+							OR = {
+								tag = JAP
+								is_subject_of = JAP
+								is_in_faction_with = JAP
+							}
+						}
+					}
+					398 = {
+						CONTROLLER = {
+							OR = {
+								tag = JAP
+								is_subject_of = JAP
+								is_in_faction_with = JAP
+							}
+						}
+					}
+					400 = {
+						CONTROLLER = {
+							OR = {
+								tag = JAP
+								is_subject_of = JAP
+								is_in_faction_with = JAP
+							}
+						}
+					}
+					396 = {
+						CONTROLLER = {
+							OR = {
+								tag = JAP
+								is_subject_of = JAP
+								is_in_faction_with = JAP
+							}
+						}
+					}
+					397 = {
+						CONTROLLER = {
+							OR = {
+								tag = JAP
+								is_subject_of = JAP
+								is_in_faction_with = JAP
+							}
+						}
+					}
+					401 = {
+						CONTROLLER = {
+							OR = {
+								tag = JAP
+								is_subject_of = JAP
+								is_in_faction_with = JAP
+							}
+						}
+					}
+					392 = {
+						CONTROLLER = {
+							OR = {
+								tag = JAP
+								is_subject_of = JAP
+								is_in_faction_with = JAP
+							}
+						}
+					}
+					402 = {
+						CONTROLLER = {
+							OR = {
+								tag = JAP
+								is_subject_of = JAP
+								is_in_faction_with = JAP
+							}
+						}
+					}
+					404 = {
+						CONTROLLER = {
+							OR = {
+								tag = JAP
+								is_subject_of = JAP
+								is_in_faction_with = JAP
+							}
+						}
+					}
+					405 = {
+						CONTROLLER = {
+							OR = {
+								tag = JAP
+								is_subject_of = JAP
+								is_in_faction_with = JAP
+							}
+						}
+					}
+					406 = {
+						CONTROLLER = {
+							OR = {
+								tag = JAP
+								is_subject_of = JAP
+								is_in_faction_with = JAP
+							}
+						}
+					}
+					407 = {
+						CONTROLLER = {
+							OR = {
+								tag = JAP
+								is_subject_of = JAP
+								is_in_faction_with = JAP
+							}
+						}
+					}
+					701 = {
+						CONTROLLER = {
+							OR = {
+								tag = JAP
+								is_subject_of = JAP
+								is_in_faction_with = JAP
+							}
+						}
+					}
+					408 = {
+						CONTROLLER = {
+							OR = {
+								tag = JAP
+								is_subject_of = JAP
+								is_in_faction_with = JAP
+							}
+						}
+					}
+					411 = {
+						CONTROLLER = {
+							OR = {
+								tag = JAP
+								is_subject_of = JAP
+								is_in_faction_with = JAP
+							}
+						}
+					}
+					410 = {
+						CONTROLLER = {
+							OR = {
+								tag = JAP
+								is_subject_of = JAP
+								is_in_faction_with = JAP
+							}
+						}
+					}
+					409 = {
+						CONTROLLER = {
+							OR = {
+								tag = JAP
+								is_subject_of = JAP
+								is_in_faction_with = JAP
+							}
+						}
+					}
+					399 = {
+						CONTROLLER = {
+							OR = {
+								tag = JAP
+								is_subject_of = JAP
+								is_in_faction_with = JAP
+							}
+						}
+					}
+					403 = {
+						CONTROLLER = {
+							OR = {
+								tag = JAP
+								is_subject_of = JAP
+								is_in_faction_with = JAP
+							}
+						}
+					}
+					394 = {
+						CONTROLLER = {
+							OR = {
+								tag = JAP
+								is_subject_of = JAP
+								is_in_faction_with = JAP
+							}
+						}
+					}
+					395 = {
+						CONTROLLER = {
+							OR = {
+								tag = JAP
+								is_subject_of = JAP
+								is_in_faction_with = JAP
+							}
+						}
+					}
+					393 = {
+						CONTROLLER = {
+							OR = {
+								tag = JAP
+								is_subject_of = JAP
+								is_in_faction_with = JAP
+							}
+						}
+					}
+					390 = {
+						CONTROLLER = {
+							OR = {
+								tag = JAP
+								is_subject_of = JAP
+								is_in_faction_with = JAP
+							}
+						}
+					}
+					391 = {
+						CONTROLLER = {
+							OR = {
+								tag = JAP
+								is_subject_of = JAP
+								is_in_faction_with = JAP
+							}
+						}
+					}
+					389 = {
+						CONTROLLER = {
+							OR = {
+								tag = JAP
+								is_subject_of = JAP
+								is_in_faction_with = JAP
+							}
+						}
+					}
+				}
+			}
+
+			PACIFIC_SAIPAN_visible = {
+				567 = {
+					CONTROLLER = {
+						OR = {
+							tag = USA
+							is_subject_of = USA
+							is_in_faction_with = USA
+						}
+					}
+				}
+			}
+
+			PACIFIC_SIAM_visible = {
+				count_triggers = {
+					amount > 1
+					276 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+					642 = {
+						CONTROLLER = {
+							OR = {
+								tag = USA
+								is_subject_of = USA
+								is_in_faction_with = USA
+							}
+						}
+					}
+				}
+			}
+
+			PACIFIC_SINGAPORE_visible = {
+				303 = {
+					CONTROLLER = {
+						OR = {
+							tag = JAP
+							is_subject_of = JAP
+							is_in_faction_with = JAP
+						}
+					}
+				}
+			}
+
+			PACIFIC_SOUTH_ISLAND_visible = {
+				641 = {
+					CONTROLLER = {
+						OR = {
+							tag = JAP
+							is_subject_of = JAP
+							is_in_faction_with = JAP
+						}
+					}
+				}
+			}
+
+			PACIFIC_SULAWESI_visible = {
+				592 = {
+					CONTROLLER = {
+						OR = {
+							tag = JAP
+							is_subject_of = JAP
+							is_in_faction_with = JAP
+						}
+					}
+				}
+			}
+
+			PACIFIC_SUMATRA_visible = {
+				713 = {
+					CONTROLLER = {
+						OR = {
+							tag = JAP
+							is_subject_of = JAP
+							is_in_faction_with = JAP
+						}
+					}
+				}
+				591 = {
+					CONTROLLER = {
+						OR = {
+							tag = JAP
+							is_subject_of = JAP
+							is_in_faction_with = JAP
+						}
+					}
+				}
+			}
+
+			PACIFIC_TAIWAN_visible = {
+				451 = {
+					CONTROLLER = {
+						OR = {
+							tag = USA
+							is_subject_of = USA
+							is_in_faction_with = USA
+						}
+					}
+				}
+			}
+
+			PACIFIC_TASMANIA_visible = {
+				445 = {
+					CONTROLLER = {
+						OR = {
+							tag = JAP
+							is_subject_of = JAP
+							is_in_faction_with = JAP
+						}
+					}
+				}
+			}
+
+			PACIFIC_WAKE_ISLAND_visible = {
+				553 = {
+					CONTROLLER = {
+						OR = {
+							tag = JAP
+							is_subject_of = JAP
+							is_in_faction_with = JAP
+						}
+					}
+				}
+			}
+
+			PACIFIC_WEST_PAPUA_visible = {
+				588 = {
+					CONTROLLER = {
+						OR = {
+							tag = JAP
+							is_subject_of = JAP
+							is_in_faction_with = JAP
+						}
+					}
+				}
+			}
+		}
+	}
+}

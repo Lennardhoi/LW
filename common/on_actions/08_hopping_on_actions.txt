@@ -1,0 +1,458 @@
+on_actions = {
+		
+
+	#ROOT is new controller #FROM is old controller #FROM.FROM is state ID
+
+	##Island Hopping
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { tag = JAP }
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = USA 
+							tag = USA
+						} 
+					}
+					FROM.FROM = {
+						has_state_flag = JAP_controls
+					}
+				}
+				FROM.FROM = {  
+				 	set_state_flag = USA_controls
+				 	clr_state_flag = JAP_controls
+				}
+			 	USA = { 
+			 		USA_island_hopping_level_up = yes
+			 	}
+		 		JAP = {
+		 			JAP_island_hopping_level_down = yes 
+		 		}
+			}
+		}
+	}
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { 
+					    OR = { 
+							is_in_faction_with = USA 
+							tag = USA
+						}
+					}
+					ROOT = {
+						OR = {
+						 tag = JAP
+						 is_in_faction_with = JAP
+						} 
+					}
+					FROM.FROM = {
+						has_state_flag = USA_controls
+					}
+				}
+				FROM.FROM = { 
+				 	set_state_flag = JAP_controls 
+				 	clr_state_flag = USA_controls 
+				}
+		 		if = { 
+				   limit = {
+					   FROM = {
+				   		OR = {
+				  			original_tag = JAP
+					  		original_tag = MAN
+							original_tag = SIA
+				   		} 
+					   }	
+		 			 
+					} 
+		 		}
+				JAP = {
+				 JAP_island_hopping_level_up = yes
+				}  
+		 		USA = {
+					USA_island_hopping_level_down = yes
+		 		} 
+			}
+		}
+	}
+
+	#Sun Never Sets Pacific
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { 
+						OR = {
+							is_in_faction_with = ENG 
+							is_in_faction_with = USA 
+							tag = ENG
+							tag = USA
+							# tag = PHI
+							tag = INS
+						}
+					}
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = GER 
+							is_in_faction_with = JAP 
+							tag = GER
+							tag = JAP
+							tag = ITA
+						} 
+					}
+					FROM.FROM = {
+						has_state_flag = ASN_ALLIES_controls
+					}
+				}
+				FROM.FROM = {  
+				 	set_state_flag = NOT_ASN_ALLIES_controls
+				 	clr_state_flag = ASN_ALLIES_controls
+				}
+				NZL = { 
+					ASN_ALLIES_bases_level_down = yes
+			 	}
+				AST = { 
+					ASN_ALLIES_bases_level_down = yes
+			 	}
+			}
+		}
+	}
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { 
+						OR = { 
+							is_in_faction_with = GER 
+							is_in_faction_with = JAP 
+							tag = GER
+							tag = JAP
+							tag = ITA
+						} 
+					}
+					ROOT = {
+						OR = {
+							is_in_faction_with = ENG 
+							is_in_faction_with = USA 
+							tag = ENG
+							tag = USA
+							# tag = PHI
+							tag = INS
+						}
+					}
+					FROM.FROM = {
+						has_state_flag = NOT_ASN_ALLIES_controls
+					}
+				}
+				FROM.FROM = { 
+				 	set_state_flag = ASN_ALLIES_controls 
+				 	clr_state_flag = NOT_ASN_ALLIES_controls 
+				}
+				NZL = {
+					ASN_ALLIES_bases_level_up = yes
+		 		} 
+				AST = {
+					ASN_ALLIES_bases_level_up = yes
+		 		} 
+			}
+		}
+	}
+
+	#Commonwealth Debuff for the Pacific
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { 
+						OR = {
+							is_in_faction_with = ENG 
+							is_in_faction_with = USA 
+							tag = ENG
+							tag = USA
+							# tag = PHI
+							tag = INS
+						}
+					}
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = GER 
+							is_in_faction_with = JAP 
+							tag = GER
+							tag = JAP
+							tag = ITA
+						} 
+					}
+					FROM.FROM = {
+						has_state_flag = PACIFIC_COMMONWEALTH_controls
+					}
+				}
+				FROM.FROM = {  
+					set_state_flag = NOT_PACIFIC_COMMONWEALTH_controls
+					clr_state_flag = PACIFIC_COMMONWEALTH_controls
+				}
+				if = {
+					limit = {
+						OR = {
+							GER = { has_war_with = SOV }
+							SOV = {has_capitulated = yes}
+						}
+					}
+					every_country = {
+						limit = {
+							OR = {
+								
+								tag = AST
+								tag = SAF
+								tag = RAJ
+								tag = ENG
+								
+								tag = CAN
+								
+								tag = MEX
+								tag = FRA
+							}
+						}
+						PACIFIC_COMMONWEALTH_bases_level_down = yes
+					}
+					# every_country = {
+					# 	limit = {
+					# 		OR = {
+					# 			tag = FIN
+					# 			tag = GER
+					# 			tag = HUN
+					# 			tag = ITA
+					# 			tag = ROM
+					# 			tag = SPR
+					# 			tag = YUG
+					# 		}
+					# 	}
+					# 	PACIFIC_COMMONWEALTH_AXIS_bases_level_down = yes
+					# }
+				}
+				else = {
+					add_to_variable = {
+						var = JAP.PACIFIC_COMMONWEALTH_BASES_LEVEL
+						value = 1
+					}
+				}
+
+			}
+		}
+	}
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { 
+						OR = { 
+							is_in_faction_with = GER 
+							is_in_faction_with = JAP 
+							tag = GER
+							tag = JAP
+							tag = ITA
+						} 
+					}
+					ROOT = {
+						OR = {
+							is_in_faction_with = ENG 
+							is_in_faction_with = USA 
+							tag = ENG
+							tag = USA
+							# tag = PHI
+							tag = INS
+						}
+					}
+					FROM.FROM = {
+						has_state_flag = NOT_PACIFIC_COMMONWEALTH_controls
+					}
+				}
+				FROM.FROM = { 
+					set_state_flag = PACIFIC_COMMONWEALTH_controls
+					clr_state_flag = NOT_PACIFIC_COMMONWEALTH_controls
+				}
+				if = {
+					limit = {
+						OR = {
+							GER = { has_war_with = SOV }
+							SOV = {has_capitulated = yes}
+						}
+					}
+					every_country = {
+						limit = {
+							OR = {
+								
+								tag = AST
+								tag = SAF
+								tag = RAJ
+								tag = ENG
+								
+								tag = CAN
+								
+								tag = MEX
+								tag = FRA
+							}
+						}
+						PACIFIC_COMMONWEALTH_bases_level_up = yes
+					}
+					# every_country = {
+					# 	limit = {
+					# 		OR = {
+					# 			tag = FIN
+					# 			tag = GER
+					# 			tag = HUN
+					# 			tag = ITA
+					# 			tag = ROM
+					# 			tag = SPR
+					# 			tag = YUG
+					# 		}
+					# 	}
+					# 	PACIFIC_COMMONWEALTH_AXIS_bases_level_up = yes
+					# }
+				}
+				else = {
+					subtract_from_variable = {
+						var = JAP.PACIFIC_COMMONWEALTH_BASES_LEVEL
+						value = 1
+					}
+				}
+			}
+		}
+	}
+
+	#Commonwealth Debuff for the Pacific - Pacific Capitals
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { 
+						OR = {
+							is_in_faction_with = ENG 
+							is_in_faction_with = USA 
+							tag = ENG
+							tag = USA
+							tag = INS
+						}
+					}
+					ROOT = { 
+						OR = { 
+							is_in_faction_with = GER 
+							is_in_faction_with = JAP 
+							tag = GER
+							tag = JAP
+							tag = ITA
+						} 
+					}
+					FROM.FROM = {
+						has_state_flag = PACIFIC_COMMONWEALTH_CAPITALS_controls
+					}
+				}
+				FROM.FROM = {  
+					set_state_flag = NOT_PACIFIC_COMMONWEALTH_CAPITALS_controls
+					clr_state_flag = PACIFIC_COMMONWEALTH_CAPITALS_controls
+				}
+				if = {
+					limit = {
+						always = yes
+					}
+					every_country = {
+						limit = {
+							OR = {
+								tag = USA
+								
+								tag = AST
+								tag = SAF
+								tag = RAJ
+								tag = ENG
+								
+								tag = CAN
+								
+								tag = MEX
+								tag = FRA
+								
+								
+								tag = INS
+								tag = HOL
+							}
+						}
+						PACIFIC_COMMONWEALTH_capital_level_down = yes
+					}
+				}
+				else = {
+					add_to_variable = {
+						var = ENG.PACIFIC_COMMONWEALTH_BASES_CAPITAL_LEVEL
+						value = 1
+					}
+				}
+
+			}
+		}
+	}
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					FROM = { 
+						OR = { 
+							is_in_faction_with = GER 
+							is_in_faction_with = JAP 
+							tag = GER
+							tag = JAP
+							tag = ITA
+						} 
+					}
+					ROOT = {
+						OR = {
+							is_in_faction_with = ENG 
+							is_in_faction_with = USA 
+							tag = ENG
+							tag = USA
+							tag = INS
+						}
+					}
+					FROM.FROM = {
+						has_state_flag = NOT_PACIFIC_COMMONWEALTH_CAPITALS_controls
+					}
+				}
+				FROM.FROM = { 
+					set_state_flag = PACIFIC_COMMONWEALTH_CAPITALS_controls
+					clr_state_flag = NOT_PACIFIC_COMMONWEALTH_CAPITALS_controls
+				}
+				if = {
+					limit = {
+						always = yes
+					}
+					every_country = {
+						limit = {
+							OR = {
+								tag = USA
+								
+								tag = AST
+								tag = SAF
+								tag = RAJ
+								tag = ENG
+								
+								tag = CAN
+								
+								tag = MEX
+								tag = FRA
+								
+								
+								tag = INS
+								tag = HOL
+							}
+						}
+						PACIFIC_COMMONWEALTH_capital_level_up = yes
+					}
+				}
+				else = {
+					subtract_from_variable = {
+						var = ENG.PACIFIC_COMMONWEALTH_BASES_CAPITAL_LEVEL
+						value = 1
+					}
+				}
+			}
+		}
+	}
+}

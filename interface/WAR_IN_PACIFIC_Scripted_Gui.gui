@@ -1,0 +1,425 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "WAR_IN_PACIFIC_Ui_Window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 1000 }
+		
+		#BACKGROUND
+		iconType = {
+			name ="PACIFIC_BASE"
+			spriteType = "GFX_PACIFIC_BASE"
+			position = { x=0 y=-17 } #-279
+		}
+
+		instantTextBoxType = {
+			name = "Allies"
+			font = "hoi_18mbs"
+			text = "The Allies"
+			position = { x = 7 y = 320 }
+			maxHeight = 36
+			format = left
+		}
+
+		instantTextBoxType = {
+			name = "allied_malbar_locations"
+			font = "hoi_18mbs"
+			text = "Papua Barrier Locations: [?global.MALAY_BARRIER_ALLIES_LOCATIONS]/4"
+			position = { x = 7 y = 337 }
+			maxHeight = 36
+			format = left
+		}
+
+		instantTextBoxType = {
+			name = "allied_rubber_locations"
+			font = "hoi_18mbs"
+			text = "Rubber War Locations: [?global.RUBBER_ALLIES_LOCATIONS]/22"
+			position = { x = 7 y = 357 }
+			maxHeight = 36
+			format = left
+		}
+
+		instantTextBoxType = {
+			name = "allied_capital_locations"
+			font = "hoi_18mbs"
+			text = "Pacific Capital Locations: [?global.PACIFICCAPITAL_ALLIES_LOCATIONS]/5"
+			position = { x = 7 y = 377 }
+			maxHeight = 36
+			format = left
+		}
+
+		instantTextBoxType = {
+			name = "allied_islhop_locations"
+			font = "hoi_18mbs"
+			text = "Island Hopping Locations: [?global.ISLHOP_ALLIES_LOCATIONS]/8"
+			position = { x = 7 y = 397 }
+			maxHeight = 36
+			format = left
+		}
+		
+		instantTextBoxType = {
+			name = "GEACPS"
+			font = "hoi_18mbs"
+			text = "The Sphere"
+			position = { x = 295 y = 320 } # x 440
+			maxHeight = 36
+			format = left
+		}
+
+		instantTextBoxType = {
+			name = "geacps_malbar_locations"
+			font = "hoi_18mbs"
+			text = "Papua Barrier Locations: [?global.MALAY_BARRIER_GEACPS_LOCATIONS]/4"
+			position = { x = 295 y = 337 } #{ x = 295 y = 327 }
+			maxHeight = 36
+			format = left
+		}
+
+		instantTextBoxType = {
+			name = "geacps_rubber_locations"
+			font = "hoi_18mbs"
+			text = "Rubber War Locations: [?global.RUBBER_GEACPS_LOCATIONS]/22"
+			position = { x = 295 y = 357 }
+			maxHeight = 36
+			format = left
+		}
+
+		instantTextBoxType = {
+			name = "geacps_capital_locations"
+			font = "hoi_18mbs"
+			text = "Pacific Capital Locations: [?global.PACIFICCAPITAL_GEACPS_LOCATIONS]/5"
+			position = { x = 295 y = 377 }
+			maxHeight = 36
+			format = left
+		}
+
+		instantTextBoxType = {
+			name = "geacps_islhop_locations"
+			font = "hoi_18mbs"
+			text = "Island Hopping Locations: [?global.ISLHOP_GEACPS_LOCATIONS]/8"
+			position = { x = 295 y = 397 }
+			maxHeight = 36
+			format = left
+		}
+
+		instantTextBoxType = {
+			name = "allies_islhop_spirit"
+			font = "cg_16b"
+			text = "[allied_islhop_spirit_sl]"
+			position = { x = 7 y = 480 }
+			maxHeight = 36
+			format = left
+		}
+
+		instantTextBoxType = {
+			name = "geacps_islhop_spirit"
+			font = "cg_16b"
+			text = "[geacps_islhop_spirit_sl]"
+			position = { x = 295 y = 480 }
+			maxHeight = 36
+			format = left
+		}
+
+		instantTextBoxType = {
+			name = "sotf_capitals_spirit"
+			font = "cg_16b"
+			text = "[sotf_capitals_spirit_sl]"
+			position = { x = 295 y = 710 }
+			maxHeight = 36
+			format = left
+		}
+
+		instantTextBoxType = {
+			name = "drsl_spirit"
+			font = "cg_16b"
+			text = "[drsl_spirit_sl]"
+			position = { x = 7 y = 760 }
+			maxHeight = 36
+			format = left
+		}
+
+		instantTextBoxType = {
+			name = "cnr_spirit"
+			font = "cg_16b"
+			text = "[cnr_spirit_sl]"
+			position = { x = 7 y = 825 }
+			maxHeight = 36
+			format = left
+		}
+
+		instantTextBoxType = {
+			name = "sotf_spirit"
+			font = "cg_16b"
+			text = "[sotf_spirit_sl]"
+			position = { x = 295 y = 760 }
+			maxHeight = 36
+			format = left
+		}
+
+		instantTextBoxType = {
+			name = "east_buffer_spirit"
+			font = "cg_16b"
+			text = "[east_buffer_spirit_sl]"
+			position = { x = 7 y = 885 }
+			maxHeight = 36
+			format = left
+		}
+
+		instantTextBoxType = {
+			name = "malay_spirit"
+			font = "cg_16b"
+			text = "[malay_barrier_spirit_sl]"
+			position = { x = 295 y = 885 }
+			maxHeight = 36
+			format = left
+		}
+				
+		##Australia
+		iconType = {
+			name = "PACIFIC_AST"
+			spriteType = "GFX_PACIFIC_AST"
+			position = { x=0 y=-17 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		##Ceylon
+		iconType = {
+			name = "PACIFIC_CEYLON"
+			spriteType = "GFX_PACIFIC_CEYLON"
+			position = { x=0 y=-17 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		##China
+		iconType = {
+			name = "PACIFIC_CHI"
+			spriteType = "GFX_PACIFIC_CHI"
+			position = { x=0 y=-17 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		##Guam
+		iconType = {
+			name = "PACIFIC_GUAM"
+			spriteType = "GFX_PACIFIC_GUAM"
+			position = { x=0 y=-17 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		##Hainan
+		iconType = {
+			name = "PACIFIC_HAINAN"
+			spriteType = "GFX_PACIFIC_HAINAN"
+			position = { x=0 y=-17 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		##Hawaii
+		iconType = {
+			name = "PACIFIC_HAWAII"
+			spriteType = "GFX_PACIFIC_HAWAII"
+			position = { x=0 y=-17 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		##Indochina
+		iconType = {
+			name = "PACIFIC_INDOCHINA"
+			spriteType = "GFX_PACIFIC_INDOCHINA"
+			position = { x=0 y=-17 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		##Iwo Jima
+		iconType = {
+			name = "PACIFIC_IWO_JIMA"
+			spriteType = "GFX_PACIFIC_IWO_JIMA"
+			position = { x=0 y=-17 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		##Japan
+		iconType = {
+			name = "PACIFIC_JAP"
+			spriteType = "GFX_PACIFIC_JAP"
+			position = { x=0 y=-17 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		##Java
+		iconType = {
+			name = "PACIFIC_JAVA"
+			spriteType = "GFX_PACIFIC_JAVA"
+			position = { x=0 y=-17 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		##Kalimantan
+		iconType = {
+			name = "PACIFIC_KALIMANTAN"
+			spriteType = "GFX_PACIFIC_KALIMANTAN"
+			position = { x=0 y=-17 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		##Korea
+		iconType = {
+			name = "PACIFIC_KOR"
+			spriteType = "GFX_PACIFIC_KOR"
+			position = { x=0 y=-17 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		##Manchukuo
+		iconType = {
+			name = "PACIFIC_MAN"
+			spriteType = "GFX_PACIFIC_MAN"
+			position = { x=0 y=-17 }
+			Orientation = "UPPER_LEFT"
+		}
+
+		##Midway
+		iconType = {
+			name = "PACIFIC_MIDWAY"
+			spriteType = "GFX_PACIFIC_MIDWAY"
+			position = { x=0 y=-17 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		##North Borneo
+		iconType = {
+			name = "PACIFIC_NORTH_BORNEO"
+			spriteType = "GFX_PACIFIC_NORTH_BORNEO"
+			position = { x=0 y=-17 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		##North Island
+		iconType = {
+			name = "PACIFIC_NORTH_ISLAND"
+			spriteType = "GFX_PACIFIC_NORTH_ISLAND"
+			position = { x=0 y=-17 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		##Okinawa
+		iconType = {
+			name = "PACIFIC_OKINAWA"
+			spriteType = "GFX_PACIFIC_OKINAWA"
+			position = { x=0 y=-17 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		##Palau
+		iconType = {
+			name = "PACIFIC_PALAU"
+			spriteType = "GFX_PACIFIC_PALAU"
+			position = { x=0 y=-17 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		##Papua
+		iconType = {
+			name = "PACIFIC_PAPUA"
+			spriteType = "GFX_PACIFIC_PAPUA"
+			position = { x=0 y=-17 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		##Phillippines	
+		iconType = {
+			name = "PACIFIC_PHI"
+			spriteType = "GFX_PACIFIC_PHI"
+			position = { x=0 y=-17 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		##British Raj
+		iconType = {
+			name = "PACIFIC_RAJ"
+			spriteType = "GFX_PACIFIC_RAJ"
+			position = { x=0 y=-17 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		##Saipan
+		iconType = {
+			name = "PACIFIC_SAIPAN"
+			spriteType = "GFX_PACIFIC_SAIPAN"
+			position = { x=0 y=-17 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		##Siam
+		iconType = {
+			name = "PACIFIC_SIAM"
+			spriteType = "GFX_PACIFIC_SIAM"
+			position = { x=0 y=-17 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		##Singapore
+		iconType = {
+			name = "PACIFIC_SINGAPORE"
+			spriteType = "GFX_PACIFIC_SINGAPORE"
+			position = { x=0 y=-17 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		##South Island
+		iconType = {
+			name = "PACIFIC_SOUTH_ISLAND"
+			spriteType = "GFX_PACIFIC_SOUTH_ISLAND"
+			position = { x=0 y=-17 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		##Sulawesi
+		iconType = {
+			name = "PACIFIC_SULAWESI"
+			spriteType = "GFX_PACIFIC_SULAWESI"
+			position = { x=0 y=-17 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		##Sumatra
+		iconType = {
+			name = "PACIFIC_SUMATRA"
+			spriteType = "GFX_PACIFIC_SUMATRA"
+			position = { x=0 y=-17 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		##Taiwan
+		iconType = {
+			name = "PACIFIC_TAIWAN"
+			spriteType = "GFX_PACIFIC_TAIWAN"
+			position = { x=0 y=-17 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		##Tasmania
+		iconType = {
+			name = "PACIFIC_TASMANIA"
+			spriteType = "GFX_PACIFIC_TASMANIA"
+			position = { x=0 y=-17 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		##Wake Island
+		iconType = {
+			name = "PACIFIC_WAKE_ISLAND"
+			spriteType = "GFX_PACIFIC_WAKE_ISLAND"
+			position = { x=0 y=-17 }
+			Orientation = "UPPER_LEFT"
+		}
+		
+		##West Papua
+		iconType = {
+			name = "PACIFIC_WEST_PAPUA"
+			spriteType = "GFX_PACIFIC_WEST_PAPUA"
+			position = { x=0 y=-17 }
+			Orientation = "UPPER_LEFT"
+		}
+	}
+}

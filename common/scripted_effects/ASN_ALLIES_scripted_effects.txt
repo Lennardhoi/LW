@@ -1,0 +1,786 @@
+ASN_ALLIES_bases_level_down = {
+	if = {
+		limit = { has_idea = ASN_ALLIES_the_sun_never_sets_idea_4 }
+		swap_ideas = {
+			remove_idea = ASN_ALLIES_the_sun_never_sets_idea_4
+			add_idea = ASN_ALLIES_the_sun_never_sets_idea_5
+		}
+		set_variable = { global.MALAY_BARRIER_GEACPS_LOCATIONS = 4 }
+		set_variable = { global.MALAY_BARRIER_ALLIES_LOCATIONS = 0 }
+	}
+	else_if = {
+		limit = { has_idea = ASN_ALLIES_the_sun_never_sets_idea_3 }
+		swap_ideas = {
+			remove_idea = ASN_ALLIES_the_sun_never_sets_idea_3
+			add_idea = ASN_ALLIES_the_sun_never_sets_idea_4
+		}
+		set_variable = { global.MALAY_BARRIER_GEACPS_LOCATIONS = 3 }
+		set_variable = { global.MALAY_BARRIER_ALLIES_LOCATIONS = 1 }
+	}
+	else_if = {
+		limit = { has_idea = ASN_ALLIES_the_sun_never_sets_idea_2 }
+		swap_ideas = {
+			remove_idea = ASN_ALLIES_the_sun_never_sets_idea_2
+			add_idea = ASN_ALLIES_the_sun_never_sets_idea_3
+		}
+		set_variable = { global.MALAY_BARRIER_GEACPS_LOCATIONS = 2 }
+		set_variable = { global.MALAY_BARRIER_ALLIES_LOCATIONS = 2 }
+	}
+	else_if = {
+		limit = { has_idea = ASN_ALLIES_the_sun_never_sets_idea_1 }
+		swap_ideas = {
+			remove_idea = ASN_ALLIES_the_sun_never_sets_idea_1
+			add_idea = ASN_ALLIES_the_sun_never_sets_idea_2
+		}
+		set_variable = { global.MALAY_BARRIER_GEACPS_LOCATIONS = 1 }
+		set_variable = { global.MALAY_BARRIER_ALLIES_LOCATIONS = 3 }
+	}
+}
+ASN_ALLIES_bases_level_up = {
+	if = {
+		limit = { has_idea = ASN_ALLIES_the_sun_never_sets_idea_2 }
+		swap_ideas = {
+			remove_idea = ASN_ALLIES_the_sun_never_sets_idea_2
+			add_idea = ASN_ALLIES_the_sun_never_sets_idea_1
+		}
+		set_variable = { global.MALAY_BARRIER_GEACPS_LOCATIONS = 0 }
+		set_variable = { global.MALAY_BARRIER_ALLIES_LOCATIONS = 4 }
+	}
+	else_if = {
+		limit = { has_idea = ASN_ALLIES_the_sun_never_sets_idea_3 }
+		swap_ideas = {
+			remove_idea = ASN_ALLIES_the_sun_never_sets_idea_3
+			add_idea = ASN_ALLIES_the_sun_never_sets_idea_2
+		}
+		set_variable = { global.MALAY_BARRIER_GEACPS_LOCATIONS = 1 }
+		set_variable = { global.MALAY_BARRIER_ALLIES_LOCATIONS = 3 }
+	}
+	else_if = {
+		limit = { has_idea = ASN_ALLIES_the_sun_never_sets_idea_4 }
+		swap_ideas = {
+			remove_idea = ASN_ALLIES_the_sun_never_sets_idea_4
+			add_idea = ASN_ALLIES_the_sun_never_sets_idea_3
+		}
+		set_variable = { global.MALAY_BARRIER_GEACPS_LOCATIONS = 2 }
+		set_variable = { global.MALAY_BARRIER_ALLIES_LOCATIONS = 2 }
+	}
+	else_if = {
+		limit = { has_idea = ASN_ALLIES_the_sun_never_sets_idea_5 }
+		swap_ideas = {
+			remove_idea = ASN_ALLIES_the_sun_never_sets_idea_5
+			add_idea = ASN_ALLIES_the_sun_never_sets_idea_4
+		}
+		set_variable = { global.MALAY_BARRIER_GEACPS_LOCATIONS = 2 }
+		set_variable = { global.MALAY_BARRIER_ALLIES_LOCATIONS = 1 }
+	}
+}
+
+PACIFIC_COMMONWEALTH_bases_level_down = {
+if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_idea_16 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_controls_idea_16
+			add_idea = PACIFIC_COMMONWEALTH_controls_idea_17
+		}
+		set_variable = { global.DDAY_WALL_ENTRENCHMENT_MOD = 6.0 }
+		set_variable = { global.SOTF_GEACPS_LOCATIONS = 16 }
+		set_variable = { global.SOTF_ALLIES_LOCATIONS = 0 }
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_idea_15 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_controls_idea_15
+			add_idea = PACIFIC_COMMONWEALTH_controls_idea_16
+		}
+		set_variable = { global.DDAY_WALL_ENTRENCHMENT_MOD = 5.5 }
+		set_variable = { global.SOTF_GEACPS_LOCATIONS = 15 }
+		set_variable = { global.SOTF_ALLIES_LOCATIONS = 1 }
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_idea_14 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_controls_idea_14
+			add_idea = PACIFIC_COMMONWEALTH_controls_idea_15
+		}
+		set_variable = { global.DDAY_WALL_ENTRENCHMENT_MOD = 5.0 }
+		set_variable = { global.SOTF_GEACPS_LOCATIONS = 14 }
+		set_variable = { global.SOTF_ALLIES_LOCATIONS = 2 }
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_idea_13 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_controls_idea_13
+			add_idea = PACIFIC_COMMONWEALTH_controls_idea_14
+		}
+		set_variable = { global.DDAY_WALL_ENTRENCHMENT_MOD = 4.5 }
+		set_variable = { global.SOTF_GEACPS_LOCATIONS = 13 }
+		set_variable = { global.SOTF_ALLIES_LOCATIONS = 3 }
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_idea_12 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_controls_idea_12
+			add_idea = PACIFIC_COMMONWEALTH_controls_idea_13
+		}
+		set_variable = { global.DDAY_WALL_ENTRENCHMENT_MOD = 4.0 }
+		set_variable = { global.SOTF_GEACPS_LOCATIONS = 12 }
+		set_variable = { global.SOTF_ALLIES_LOCATIONS = 4 }
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_idea_11 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_controls_idea_11
+			add_idea = PACIFIC_COMMONWEALTH_controls_idea_12
+		}
+		set_variable = { global.DDAY_WALL_ENTRENCHMENT_MOD = 3.5 }
+		set_variable = { global.SOTF_GEACPS_LOCATIONS = 11 }
+		set_variable = { global.SOTF_ALLIES_LOCATIONS = 5 }
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_idea_10 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_controls_idea_10
+			add_idea = PACIFIC_COMMONWEALTH_controls_idea_11
+		}
+		set_variable = { global.DDAY_WALL_ENTRENCHMENT_MOD = 3.0 }
+		set_variable = { global.SOTF_GEACPS_LOCATIONS = 10 }
+		set_variable = { global.SOTF_ALLIES_LOCATIONS = 6 }
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_idea_9 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_controls_idea_9
+			add_idea = PACIFIC_COMMONWEALTH_controls_idea_10
+		}
+		set_variable = { global.DDAY_WALL_ENTRENCHMENT_MOD = 2.5 }
+		set_variable = { global.SOTF_GEACPS_LOCATIONS = 9 }
+		set_variable = { global.SOTF_ALLIES_LOCATIONS = 7 }
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_idea_8 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_controls_idea_8
+			add_idea = PACIFIC_COMMONWEALTH_controls_idea_9
+		}
+		set_variable = { global.DDAY_WALL_ENTRENCHMENT_MOD = 2.0 }
+		set_variable = { global.SOTF_GEACPS_LOCATIONS = 8 }
+		set_variable = { global.SOTF_ALLIES_LOCATIONS = 8 }
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_idea_7 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_controls_idea_7
+			add_idea = PACIFIC_COMMONWEALTH_controls_idea_8
+		}
+		set_variable = { global.DDAY_WALL_ENTRENCHMENT_MOD = 1.5 }
+		set_variable = { global.SOTF_GEACPS_LOCATIONS = 7 }
+		set_variable = { global.SOTF_ALLIES_LOCATIONS = 9 }
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_idea_6 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_controls_idea_6
+			add_idea = PACIFIC_COMMONWEALTH_controls_idea_7
+		}
+		set_variable = { global.DDAY_WALL_ENTRENCHMENT_MOD = 1.0 }
+		set_variable = { global.SOTF_GEACPS_LOCATIONS = 6 }
+		set_variable = { global.SOTF_ALLIES_LOCATIONS = 10 }
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_idea_5 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_controls_idea_5
+			add_idea = PACIFIC_COMMONWEALTH_controls_idea_6
+		}
+		set_variable = { global.DDAY_WALL_ENTRENCHMENT_MOD = 0.5 }
+		set_variable = { global.SOTF_GEACPS_LOCATIONS = 5 }
+		set_variable = { global.SOTF_ALLIES_LOCATIONS = 11 }
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_idea_4 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_controls_idea_4
+			add_idea = PACIFIC_COMMONWEALTH_controls_idea_5
+		}
+		set_variable = { global.DDAY_WALL_ENTRENCHMENT_MOD = 0 }
+		set_variable = { global.SOTF_GEACPS_LOCATIONS = 4 }
+		set_variable = { global.SOTF_ALLIES_LOCATIONS = 12 }
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_idea_3 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_controls_idea_3
+			add_idea = PACIFIC_COMMONWEALTH_controls_idea_4
+		}
+		set_variable = { global.DDAY_WALL_ENTRENCHMENT_MOD = 0 }
+		set_variable = { global.SOTF_GEACPS_LOCATIONS = 3 }
+		set_variable = { global.SOTF_ALLIES_LOCATIONS = 13 }
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_idea_2 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_controls_idea_2
+			add_idea = PACIFIC_COMMONWEALTH_controls_idea_3
+		}
+		set_variable = { global.DDAY_WALL_ENTRENCHMENT_MOD = 0 }
+		set_variable = { global.SOTF_GEACPS_LOCATIONS = 2 }
+		set_variable = { global.SOTF_ALLIES_LOCATIONS = 14 }
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_idea_1 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_controls_idea_1
+			add_idea = PACIFIC_COMMONWEALTH_controls_idea_2
+		}
+		set_variable = { global.DDAY_WALL_ENTRENCHMENT_MOD = 0 }
+		set_variable = { global.SOTF_GEACPS_LOCATIONS = 1 }
+		set_variable = { global.SOTF_ALLIES_LOCATIONS = 15 }
+	}
+}
+PACIFIC_COMMONWEALTH_bases_level_up = {
+	if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_idea_2 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_controls_idea_2
+			add_idea = PACIFIC_COMMONWEALTH_controls_idea_1
+		}
+		set_variable = { global.DDAY_WALL_ENTRENCHMENT_MOD = 0 }
+		set_variable = { global.SOTF_GEACPS_LOCATIONS = 0 }
+		set_variable = { global.SOTF_ALLIES_LOCATIONS = 16 }
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_idea_3 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_controls_idea_3
+			add_idea = PACIFIC_COMMONWEALTH_controls_idea_2
+		}
+		set_variable = { global.DDAY_WALL_ENTRENCHMENT_MOD = 0 }
+		set_variable = { global.SOTF_GEACPS_LOCATIONS = 1 }
+		set_variable = { global.SOTF_ALLIES_LOCATIONS = 15 }
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_idea_4 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_controls_idea_4
+			add_idea = PACIFIC_COMMONWEALTH_controls_idea_3
+		}
+		set_variable = { global.DDAY_WALL_ENTRENCHMENT_MOD = 0 }
+		set_variable = { global.SOTF_GEACPS_LOCATIONS = 2 }
+		set_variable = { global.SOTF_ALLIES_LOCATIONS = 14 }
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_idea_5 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_controls_idea_5
+			add_idea = PACIFIC_COMMONWEALTH_controls_idea_4
+		}
+		set_variable = { global.DDAY_WALL_ENTRENCHMENT_MOD = 0 }
+		set_variable = { global.SOTF_GEACPS_LOCATIONS = 3 }
+		set_variable = { global.SOTF_ALLIES_LOCATIONS = 13 }
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_idea_6 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_controls_idea_6
+			add_idea = PACIFIC_COMMONWEALTH_controls_idea_5
+		}
+		set_variable = { global.DDAY_WALL_ENTRENCHMENT_MOD = 0 }
+		set_variable = { global.SOTF_GEACPS_LOCATIONS = 4 }
+		set_variable = { global.SOTF_ALLIES_LOCATIONS = 12 }
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_idea_7 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_controls_idea_7
+			add_idea = PACIFIC_COMMONWEALTH_controls_idea_6
+		}
+		set_variable = { global.DDAY_WALL_ENTRENCHMENT_MOD = 0.5 }
+		set_variable = { global.SOTF_GEACPS_LOCATIONS = 5 }
+		set_variable = { global.SOTF_ALLIES_LOCATIONS = 11 }
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_idea_8 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_controls_idea_8
+			add_idea = PACIFIC_COMMONWEALTH_controls_idea_7
+		}
+		set_variable = { global.DDAY_WALL_ENTRENCHMENT_MOD = 1.0 }
+		set_variable = { global.SOTF_GEACPS_LOCATIONS = 6 }
+		set_variable = { global.SOTF_ALLIES_LOCATIONS = 10 }
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_idea_9 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_controls_idea_9
+			add_idea = PACIFIC_COMMONWEALTH_controls_idea_8
+		}
+		set_variable = { global.DDAY_WALL_ENTRENCHMENT_MOD = 1.5 }
+		set_variable = { global.SOTF_GEACPS_LOCATIONS = 7 }
+		set_variable = { global.SOTF_ALLIES_LOCATIONS = 9 }
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_idea_10 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_controls_idea_10
+			add_idea = PACIFIC_COMMONWEALTH_controls_idea_9
+		}
+		set_variable = { global.DDAY_WALL_ENTRENCHMENT_MOD = 2.0 }
+		set_variable = { global.SOTF_GEACPS_LOCATIONS = 8 }
+		set_variable = { global.SOTF_ALLIES_LOCATIONS = 8 }
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_idea_11 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_controls_idea_11
+			add_idea = PACIFIC_COMMONWEALTH_controls_idea_10
+		}
+		set_variable = { global.DDAY_WALL_ENTRENCHMENT_MOD = 2.5 }
+		set_variable = { global.SOTF_GEACPS_LOCATIONS = 9 }
+		set_variable = { global.SOTF_ALLIES_LOCATIONS = 7 }
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_idea_12 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_controls_idea_12
+			add_idea = PACIFIC_COMMONWEALTH_controls_idea_11
+		}
+		set_variable = { global.DDAY_WALL_ENTRENCHMENT_MOD = 3.0 }
+		set_variable = { global.SOTF_GEACPS_LOCATIONS = 10 }
+		set_variable = { global.SOTF_ALLIES_LOCATIONS = 6 }
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_idea_13 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_controls_idea_13
+			add_idea = PACIFIC_COMMONWEALTH_controls_idea_12
+		}
+		set_variable = { global.DDAY_WALL_ENTRENCHMENT_MOD = 3.5 }
+		set_variable = { global.SOTF_GEACPS_LOCATIONS = 11 }
+		set_variable = { global.SOTF_ALLIES_LOCATIONS = 5 }
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_idea_14 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_controls_idea_14
+			add_idea = PACIFIC_COMMONWEALTH_controls_idea_13
+		}
+		set_variable = { global.DDAY_WALL_ENTRENCHMENT_MOD = 4.0 }
+		set_variable = { global.SOTF_GEACPS_LOCATIONS = 12 }
+		set_variable = { global.SOTF_ALLIES_LOCATIONS = 4 }
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_idea_15 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_controls_idea_15
+			add_idea = PACIFIC_COMMONWEALTH_controls_idea_14
+		}
+		set_variable = { global.DDAY_WALL_ENTRENCHMENT_MOD = 4.5 }
+		set_variable = { global.SOTF_GEACPS_LOCATIONS = 13 }
+		set_variable = { global.SOTF_ALLIES_LOCATIONS = 3 }
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_idea_16 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_controls_idea_16
+			add_idea = PACIFIC_COMMONWEALTH_controls_idea_15
+		}
+		set_variable = { global.DDAY_WALL_ENTRENCHMENT_MOD = 5.0 }
+		set_variable = { global.SOTF_GEACPS_LOCATIONS = 14 }
+		set_variable = { global.SOTF_ALLIES_LOCATIONS = 2 }
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_idea_17 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_controls_idea_17
+			add_idea = PACIFIC_COMMONWEALTH_controls_idea_16
+		}
+		set_variable = { global.DDAY_WALL_ENTRENCHMENT_MOD = 5.5 }
+		set_variable = { global.SOTF_GEACPS_LOCATIONS = 15 }
+		set_variable = { global.SOTF_ALLIES_LOCATIONS = 1 }
+	}
+}
+
+PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_level_down = {
+	if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_4 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_4
+			add_idea = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_3 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_3
+			add_idea = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_4
+		}
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_2 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_2
+			add_idea = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_1 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_1
+			add_idea = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_2
+		}
+	}
+}
+PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_level_up = {
+	if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_2 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_2
+			add_idea = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_1
+		}
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_3 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_3
+			add_idea = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_2
+		}
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_4 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_4
+			add_idea = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_5 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_5
+			add_idea = PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_4
+		}
+	}
+}
+
+PACIFIC_COMMONWEALTH_capital_level_down = {
+	if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_capitals_5 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_controls_capitals_5
+			add_idea = PACIFIC_COMMONWEALTH_controls_capitals_6
+		}
+		set_variable = { global.PACIFICCAPITAL_GEACPS_LOCATIONS = 5 }
+		set_variable = { global.PACIFICCAPITAL_ALLIES_LOCATIONS = 0 }
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_capitals_4 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_controls_capitals_4
+			add_idea = PACIFIC_COMMONWEALTH_controls_capitals_5
+		}
+		set_variable = { global.PACIFICCAPITAL_GEACPS_LOCATIONS = 4 }
+		set_variable = { global.PACIFICCAPITAL_ALLIES_LOCATIONS = 1 }
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_capitals_3 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_controls_capitals_3
+			add_idea = PACIFIC_COMMONWEALTH_controls_capitals_4
+		}
+		set_variable = { global.PACIFICCAPITAL_GEACPS_LOCATIONS = 3 }
+		set_variable = { global.PACIFICCAPITAL_ALLIES_LOCATIONS = 2 }
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_capitals_2 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_controls_capitals_2
+			add_idea = PACIFIC_COMMONWEALTH_controls_capitals_3
+		}
+		set_variable = { global.PACIFICCAPITAL_GEACPS_LOCATIONS = 2 }
+		set_variable = { global.PACIFICCAPITAL_ALLIES_LOCATIONS = 3 }
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_capitals_1 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_controls_capitals_1
+			add_idea = PACIFIC_COMMONWEALTH_controls_capitals_2
+		}
+		set_variable = { global.PACIFICCAPITAL_GEACPS_LOCATIONS = 1 }
+		set_variable = { global.PACIFICCAPITAL_ALLIES_LOCATIONS = 4 }
+	}
+}
+PACIFIC_COMMONWEALTH_capital_level_up = {
+	if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_capitals_2 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_controls_capitals_2
+			add_idea = PACIFIC_COMMONWEALTH_controls_capitals_1
+		}
+		set_variable = { global.PACIFICCAPITAL_GEACPS_LOCATIONS = 0 }
+		set_variable = { global.PACIFICCAPITAL_ALLIES_LOCATIONS = 5 }
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_capitals_3 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_controls_capitals_3
+			add_idea = PACIFIC_COMMONWEALTH_controls_capitals_2
+		}
+		set_variable = { global.PACIFICCAPITAL_GEACPS_LOCATIONS = 1 }
+		set_variable = { global.PACIFICCAPITAL_ALLIES_LOCATIONS = 4 }
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_capitals_4 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_controls_capitals_4
+			add_idea = PACIFIC_COMMONWEALTH_controls_capitals_3
+		}
+		set_variable = { global.PACIFICCAPITAL_GEACPS_LOCATIONS = 2 }
+		set_variable = { global.PACIFICCAPITAL_ALLIES_LOCATIONS = 3 }
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_capitals_5 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_controls_capitals_5
+			add_idea = PACIFIC_COMMONWEALTH_controls_capitals_4
+		}
+		set_variable = { global.PACIFICCAPITAL_GEACPS_LOCATIONS = 3 }
+		set_variable = { global.PACIFICCAPITAL_ALLIES_LOCATIONS = 2 }
+	}
+	else_if = {
+		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_capitals_6 }
+		swap_ideas = {
+			remove_idea = PACIFIC_COMMONWEALTH_controls_capitals_6
+			add_idea = PACIFIC_COMMONWEALTH_controls_capitals_5
+		}
+		set_variable = { global.PACIFICCAPITAL_GEACPS_LOCATIONS = 4 }
+		set_variable = { global.PACIFICCAPITAL_ALLIES_LOCATIONS = 1 }
+	}
+}
+
+# PACIFIC_COMMONWEALTH_AXIS_bases_level_down = {
+# 	if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_16 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_16
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_17
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_15 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_15
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_16
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_14 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_14
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_15
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_13 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_13
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_14
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_12 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_12
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_13
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_11 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_11
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_12
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_10 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_10
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_11
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_9 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_9
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_10
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_8 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_8
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_9
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_7 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_7
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_8
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_6 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_6
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_7
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_5 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_5
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_6
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_4 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_4
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_5
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_3 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_3
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_4
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_2 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_2
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_3
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_1 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_1
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_2
+# 		}
+# 	}
+# }
+# PACIFIC_COMMONWEALTH_AXIS_bases_level_up = {
+# 	if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_2 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_2
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_1
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_3 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_3
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_2
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_4 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_4
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_3
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_5 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_5
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_4
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_6 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_6
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_5
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_7 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_7
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_6
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_8 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_8
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_7
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_9 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_9
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_8
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_10 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_10
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_9
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_11 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_11
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_10
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_12 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_12
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_11
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_13 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_13
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_12
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_14 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_14
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_13
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_15 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_15
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_14
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_16 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_16
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_15
+# 		}
+# 	}
+# 	else_if = {
+# 		limit = { has_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_17 }
+# 		swap_ideas = {
+# 			remove_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_17
+# 			add_idea = PACIFIC_COMMONWEALTH_controls_axis_idea_16
+# 		}
+# 	}
+# }

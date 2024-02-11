@@ -6,6 +6,8 @@ state=
  	state_category = town
  	history=
  	{
+		set_state_flag = PACIFIC_COMMONWEALTH_NATURAL_RUBBER_controls
+		set_state_flag = PACIFIC_COMMONWEALTH_CAPITALS_controls
  		owner = USA
  		add_core_of=SWE
 		add_core_of = INS
@@ -31,6 +33,9 @@ state=
 			6816 5
 		}
  	}
+	resources = {
+		rubber = 250
+	}
  	provinces={
  		1166 1233 6740 6788 6816 9343 9412 9441 11118
  	}

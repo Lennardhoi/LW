@@ -65,17 +65,9 @@
  USA_downfall:0 "Operation Downfall"
 
  USA_iwo_jima:0 "Operation Detachment"
-<<<<<<< Updated upstream
-
- USA_iwo_jima_desc:0 "We need to secure these two Islands for our planned invasion of Japan"
-
- USA_okinawa:0 "Operation Iceberg"
-
-=======
  USA_iwo_jima_desc:0 "Iwo Jima"
  USA_okinawa:0 "Operation Iceberg"
  USA_okinawa_desc:0 "Okinawa"
->>>>>>> Stashed changes
  USA_second_new_deal:0 "Second New Deal"
 
  USA_administration:0 "Natural Resource Development"
@@ -98,7 +90,7 @@
 
  JAP_at:0 "Anti-Tank Gun Modernization"
 
- JAP_eastern_expansion:0 "Eastern Expansion"
+ JAP_eastern_expansion:0 "Strike New Guinea"
 
  JAP_hawaii:0 "Reach for Hawaii"
 
@@ -106,7 +98,7 @@
 
  JAP_burma_attack:0 "Conquest of Burma and Singapore"
 
- JAP_go_westward:0 "Go Westward"
+ JAP_go_westward:0 "Strike Ceylon"
 
  JAP_fighter3:0 "Air Innovations"
 
@@ -114,9 +106,9 @@
 
  JAP_volunteer_workers_in_burma:0"Volunteer Workers of Burma"
 
- JAP_dacca_offensive:0 "Dacca Offensive"
+ JAP_dacca_offensive:0 "Offensive into India"
 
- JAP_its_time_for_africa:0 "Its time for Africa"
+ JAP_its_time_for_africa:0 "It's time for Africa"
 
  JAP_iwakuro:0 "Iwakuro"
 
@@ -125,6 +117,8 @@
  JAP_develop_the_bejing_area:0 "Develop the Bejing Area"
 
  JAP_australia:0 "Strike on the Southern Hemisphere"
+
+ JAP_philippines:0 "Capture the Philippines"
 
  JAP_korean_guest_workers:0 "Korean Guest Workers"
 
@@ -1674,7 +1668,7 @@
 
  northern_expansion_focus_desc:0 "The Northern Expansion Doctrine, which has the support of the Imperial Army, recognizes that the Soviet Union poses the greatest threat to Japanese ambitions. With tensions rising in Europe, a favorable moment to attack the Russian Far East is bound to present itself. We must strike quickly."
 
- southern_expansion_focus:0 "Southern Expansion"
+ southern_expansion_focus:0 "Southen Expansion"
 
  southern_expansion_focus_tt:0 "Add §Ynon-aggression pact§! with §YSoviet Union§! when selected\n"
 
@@ -4657,13 +4651,7 @@
  USA_escort_fighters:1 "Escort Fighters"
 
  USA_escort_fighters_desc:1 "While the bomber might always get through, his wingman might not - unless they are both protected by friendly fighters."
-<<<<<<< Updated upstream
-
- USA_us_army_airforce:1 "US Army Airforce"
-
-=======
  USA_us_army_airforce:1 "Develop the P-51 Mustang"
->>>>>>> Stashed changes
  USA_us_army_airforce_desc:1 "The fundamental objective of military airpower is to allow the ground forces to take and hold ground. Everything else is ancillary."
 
  USA_us_air_force:1 "US Air Force"
@@ -5521,15 +5509,103 @@
  SOV_lessons_of_poland:0 "Lessons of Poland" 
 
  SOV_lessons_of_spain:0 "Lessons of Spain" 
+
  USA_intervention_in_europe_tt:0 "The Japanese threat has been dealt with."
-
- USA_europe_debuff:0 "Intervene in Europe"
-
- USA_debuff_explained:0 "Battle for Europe will be unlocked once you meet these requirements"
-<<<<<<< Updated upstream
-
- USA_resources:0 "Feed the Beast"
-=======
+ USA_sep_1941_europe_tt:0 "Requires all Pacific Locations to be under our control."
+ USA_jan_1942_europe_tt:0 "Requires 6/8 Island Hopping Locations, 4/5 Capitals, 17/22 Rubber and all Papua Locations."
+ USA_march_1942_europe_tt:0 "Requires 4/8 Island Hopping Locations, 3/5 Capitals, 11/22 Rubber and all Papua Locations."
+ USA_june_1942_europe_tt:0 "Requires 2/8 Island Hopping Locations, 3/5 Capitals, 6/22 Rubber and 2/4 Papua Locations."
  USA_resources:0 "Feed the Beast"
  USA_palau:0 "Operation Forager"
->>>>>>> Stashed changes
+ WAR_IN_PACIFIC:0 "The Pacific War"
+ WAR_IN_PACIFIC_DECISION:0 "The Pacific War"
+ HELP_PACIFIC:0 "September 1941 Battle for Europe - Requirements"
+ HELP_PACIFIC2:0 "January 1942 Battle for Europe - Requirements"
+ HELP_PACIFIC3:0 "March 1942 Battle for Europe - Requirements"
+ HELP_PACIFIC4:0 "June 1942 Battle for Europe - Requirements"
+
+
+  JAP_island_hopping1_mod_tt:0 "Island Hopping:\n§YAll Hope is Lost§!\n£political_power_texticon  Daily Political Power Gain §R-0.35§!\n£consumer_goods_texticon  Consumer Goods Factories §Y15%§!\n£stability_texticon  Stability §R-20.00%§!\n£war_support_modifiericons_texticon  War Support §R-20.00%§!"
+  JAP_island_hopping2_mod_tt:0 "Island Hopping:\n§YThere Was Never Much Hope§!\n£political_power_texticon  Daily Political Power Gain §R-0.35§!\n£consumer_goods_texticon  Consumer Goods Factories §Y10%§!\n£stability_texticon  Stability §R-20.00%§!\n£war_support_modifiericons_texticon  War Support §R-20.00%§!"
+  JAP_island_hopping3_mod_tt:0 "Island Hopping:\n§YThe End Is Nigh§!\n£political_power_texticon  Daily Political Power Gain §R-0.25§!\n£consumer_goods_texticon  Consumer Goods Factories §Y20%§!\n£stability_texticon  Stability §R-25.00%§!\n£war_support_modifiericons_texticon  War Support §R-25.00%§!"
+  JAP_island_hopping4_mod_tt:0 "Island Hopping:\n§YWe Have Lost The Pacific War§!\n£political_power_texticon  Daily Political Power Gain §R-0.20§!\n£stability_texticon  Stability §R-20.00%§!\n£war_support_modifiericons_texticon  War Support §R-20.00%§!\n£attack_core_texticon  Division Attack on core territory §R-20.0%§!\n£defence_core_texticon  Division Defense on core territory §R-20.0%§!"
+  JAP_island_hopping5_mod_tt:0 "Island Hopping:\n§YWe Are Losing The Pacific War§!\n£political_power_texticon  Daily Political Power Gain §R-0.15§!\n£stability_texticon  Stability §R-15.00%§!\n£war_support_modifiericons_texticon  War Support §R-15.00%§!\n£attack_core_texticon  Division Attack on core territory §R-10.0%§!\n£defence_core_texticon  Division Defense on core territory §R-10.0%§"
+  JAP_island_hopping6_mod_tt:0 "Island Hopping:\n§YDefend The Remaining Islands§!\n£political_power_texticon  Daily Political Power Gain §R-0.10§!\n£stability_texticon  Stability §R-10.00%§!\n£war_support_modifiericons_texticon  War Support §R-10.00%§!"
+  JAP_island_hopping7_mod_tt:0 "Island Hopping:\n§YWe Are Losing The Upperhand§!\n£political_power_texticon  Daily Political Power Gain §R-0.05§!\n£stability_texticon  Stability §R-5.00%§!\n£war_support_modifiericons_texticon  War Support §R-5.00%§!\n£attack_core_texticon  Division Attack on core territory §G+25.0%§!\n£defence_core_texticon  Division Defense on core territory §G+25.0%§!"
+  JAP_island_hopping8_mod_tt:0 "Island Hopping:\n§YThe Situation Is Stable§!\n£attack_core_texticon  Division Attack on core territory §G+50.0%§!\n£defence_core_texticon  Division Defense on core territory §G+50.0%§!"
+  JAP_island_hopping9_mod_tt:0 "Island Hopping:\n§YWe Are Gaining The Upperhand§!\n£political_power_texticon  Daily Political Power Gain §G+0.05§!\n£stability_texticon  Stability §G+5.00%§!\n£war_support_modifiericons_texticon  War Support §G+5.00%§!\n£attack_core_texticon  Division Attack on core territory §G+60.0%§!\n£defence_core_texticon  Division Defense on core territory §G+60.0%§!"
+  JAP_island_hopping10_mod_tt:0 "Island Hopping:\n§YThe Pacific Will Be Ours§!\n£political_power_texticon  Daily Political Power Gain §G+0.10§!\n£stability_texticon  Stability §G+10.00%§!\n£war_support_modifiericons_texticon  War Support §G+10.00%§!\n£attack_core_texticon  Division Attack on core territory §G+70.0%§!\n£defence_core_texticon  Division Defense on core territory §G+70.0%§!"
+  JAP_island_hopping11_mod_tt:0 "Island Hopping:\n§YDrive The Enemy Back§!\n£political_power_texticon  Daily Political Power Gain §G+0.15§!\n£stability_texticon  Stability §G+15.00%§!\n£war_support_modifiericons_texticon  War Support §G+15.00%§!\n£attack_core_texticon  Division Attack on core territory §G+80.0%§!\n£defence_core_texticon  Division Defense on core territory §G+80.0%§!"
+  JAP_island_hopping12_mod_tt:0 "Island Hopping:\n§YThe Pacific Is Under Our Control§!\n£political_power_texticon  Daily Political Power Gain §G+0.20§!\n£stability_texticon  Stability §G+20.00%§!\n£war_support_modifiericons_texticon  War Support §G+20.00%§!\n£attack_core_texticon  Division Attack on core territory §G+80.0%§!\n£defence_core_texticon  Division Defense on core territory §G+80.0%§!"
+  JAP_island_hopping13_mod_tt:0 "Island Hopping:\n§YV-Day In The Pacific§!\n£political_power_texticon  Daily Political Power Gain §G+0.25§!\n£consumer_goods_texticon  Consumer Goods Factories §Y-5.0%§!\n£stability_texticon  Stability §G+25.00%§!\n£war_support_modifiericons_texticon  War Support §G+25.00%§!\n£attack_core_texticon  Division Attack on core territory §G+80.0%§!\n£defence_core_texticon  Division Defense on core territory §G+80.0%§!"
+  JAP_island_hopping14_mod_tt:0 "Island Hopping:\n§YSoon We Will Dance On The Graves Of Our Enemies§!\n£political_power_texticon  Daily Political Power Gain §G+0.30§!\n£consumer_goods_texticon  Consumer Goods Factories §Y-6.0%§!\n£stability_texticon  Stability §G+18.00%§!\n£war_support_modifiericons_texticon  War Support §G+18.00%§!\n£attack_core_texticon  Division Attack on core territory §G+80.0%§!\n££defence_core_texticon  Division Defense on core territory §G+80.0%§!"
+  JAP_island_hopping15_mod_tt:0 "Island Hopping:\n§YWhat Could Possibly Go Wrong§!\n£political_power_texticon  Daily Political Power Gain §G+0.35§!\n£consumer_goods_texticon  Consumer Goods Factories §Y-7.0%§!\n£stability_texticon  Stability §G+20.00%§!\n£war_support_modifiericons_texticon  War Support §G+20.00%§!"
+  
+  USA_island_hopping1_mod_tt:0 "Island Hopping:\n§YAll Hope is Lost§!\n£political_power_texticon  Daily Political Power Gain §R-0.35§!\n£stability_texticon  Stability §R-35.00%§!\n£war_support_modifiericons_texticon  War Support §R-35.00%§!"
+  USA_island_hopping2_mod_tt:0 "Island Hopping:\n§YThere Was Never Much Hope§!\n£political_power_texticon  Daily Political Power Gain §R-0.35§!\n£stability_texticon  Stability §R-30.00%§!\n£war_support_modifiericons_texticon  War Support §R-30.00%§!"
+  USA_island_hopping3_mod_tt:0 "Island Hopping:\n§YThe End Is Nigh§!\n£political_power_texticon  Daily Political Power Gain §R-0.25§!\n£stability_texticon  Stability §R-25.00%§!\n£war_support_modifiericons_texticon  War Support §R-25.00%§!"
+  USA_island_hopping4_mod_tt:0 "Island Hopping:\n§YWe Have Lost The Pacific War§!\n£political_power_texticon  Daily Political Power Gain §R-0.20§!\n£war_support_modifiericons_texticon  War Support §R-20.00%§!\n£stability_texticon  Stability §R-20.00%§!"
+  USA_island_hopping5_mod_tt:0 "Island Hopping:\n§YWe Are Losing The Pacific War§!\n£political_power_texticon  Daily Political Power Gain §R-0.15§!\n£war_support_modifiericons_texticon  War Support §R-15.00%§!\n£stability_texticon  Stability §R-15.00%§!"
+  USA_island_hopping6_mod_tt:0 "Island Hopping:\n§YDefend The Remaining Islands§!\n£political_power_texticon  Daily Political Power Gain §R-0.10§!\n£war_support_modifiericons_texticon  War Support §R-10.00%§!\n£stability_texticon  Stability §R-10.00%§!"
+  USA_island_hopping7_mod_tt:0 "Island Hopping:\n§YWe Are Losing The Upperhand§!\n£political_power_texticon  Daily Political Power Gain §R-0.05§!\n£war_support_modifiericons_texticon  War Support §R-5.00%§!\n£attack_core_texticon  Division Attack on core territory §G+25.0%§!\n£defence_core_texticon  Division Defense on core territory §G+25.0%§!\n£war_support_modifiericons_texticon  War Support §R-5.00%§!\n£stability_texticon  Stability §R-5.00%§!"
+  USA_island_hopping8_mod_tt:0 "Island Hopping:\n§YThe Situation Is Stable§!\n£attack_core_texticon  Division Attack on core territory §G+50.0%§!\n£defence_core_texticon  Division Defense on core territory §G+50.0%§!"
+  USA_island_hopping9_mod_tt:0 "Island Hopping:\n§YWe Are Gaining The Upperhand§!\n£political_power_texticon  Daily Political Power Gain §G+0.05§!\n£stability_texticon  Stability §G+5.00%§!\n£war_support_modifiericons_texticon  War Support §G+5.00%§!\n£attack_core_texticon  Division Attack on core territory §G+60.0%§!\n£defence_core_texticon  Division Defense on core territory §G+60.0%§!"
+  USA_island_hopping10_mod_tt:0 "Island Hopping:\n§YThe Pacific Will Be Ours§!\n£political_power_texticon  Daily Political Power Gain §G+0.10§!\n£stability_texticon  Stability §G+10.00%§!\n£war_support_modifiericons_texticon  War Support §G+10.00%§!\n£attack_core_texticon  Division Attack on core territory §G+70.0%§!\n£defence_core_texticon  Division Defense on core territory §G+70.0%§!"
+  USA_island_hopping11_mod_tt:0 "Island Hopping:\n§YDrive The Enemy Back§!\n£political_power_texticon  Daily Political Power Gain §G+0.15§!\n£stability_texticon  Stability §G+15.00%§!\n£war_support_modifiericons_texticon  War Support §G+15.00%§!\n£attack_core_texticon  Division Attack on core territory §G+80.0%§!\n£defence_core_texticon  Division Defense on core territory §G+80.0%§!"
+  USA_island_hopping12_mod_tt:0 "Island Hopping:\n§YThe Pacific Is Under Our Control§!\n£political_power_texticon  Daily Political Power Gain §G+0.20§!\n£stability_texticon  Stability §G+20.00%§!\n£war_support_modifiericons_texticon  War Support §G+20.00%§!\n£attack_core_texticon  Division Attack on core territory §G+80.0%§!\n£defence_core_texticon  Division Defense on core territory §G+80.0%§!"
+  USA_island_hopping13_mod_tt:0 "Island Hopping:\n§YV-Day In The Pacific§!\n£political_power_texticon  Daily Political Power Gain §G+0.25§!\n£stability_texticon  Stability §G+25.00%§!\n£war_support_modifiericons_texticon  War Support §G+25.00%§!\n£attack_core_texticon  Division Attack on core territory §G+80.0%§!\n£defence_core_texticon  Division Defense on core territory §G+80.0%§!"
+  USA_island_hopping14_mod_tt:0 "Island Hopping:\n§YSoon We Will Dance On The Graves Of Our Enemies§!\n£political_power_texticon  Daily Political Power Gain §G+0.30§!\n£consumer_goods_texticon  Consumer Goods Factories §Y-6.0%§!\n£stability_texticon  Stability §G+18.00%§!\n£war_support_modifiericons_texticon  War Support §G+18.00%§!\n£attack_core_texticon  Division Attack on core territory §G+80.0%§!\n£defence_core_texticon  Division Defense on core territory §G+80.0%§!"
+  USA_island_hopping15_mod_tt:0 "Island Hopping:\n§YWhat Could Possibly Go Wrong§!\n£political_power_texticon  Daily Political Power Gain §G+0.35§!\n£consumer_goods_texticon  Consumer Goods Factories §Y-7.0%§!\n£stability_texticon  Stability §G+20.00%§!\n£war_support_modifiericons_texticon  War Support §G+20.00%§!\n£attack_core_texticon  Division Attack on core territory §G+80.0%§!\n£defence_core_texticon  Division Defense on core territory §G+80.0%§!"
+  
+  PACIFIC_COMMONWEALTH_controls_capitals_1_mod_tt:0 "§State of the Pacific - Capitals§!:\nNo Effect"
+  PACIFIC_COMMONWEALTH_controls_capitals_2_mod_tt:0 "§YState of the Pacific - Capitals:§!\n£factory_output_texticon  Factory Output §R-4.00%§!"
+  PACIFIC_COMMONWEALTH_controls_capitals_3_mod_tt:0 "§YState of the Pacific - Capitals:§!\n£factory_output_texticon  Factory Output §R-8.00%§!"
+  PACIFIC_COMMONWEALTH_controls_capitals_4_mod_tt:0 "§YState of the Pacific - Capitals:§!\n£factory_output_texticon  Factory Output §R-12.00%§!"
+  PACIFIC_COMMONWEALTH_controls_capitals_5_mod_tt:0 "§YState of the Pacific - Capitals:§!\n£factory_output_texticon  Factory Output §R-16.00%§!"
+  PACIFIC_COMMONWEALTH_controls_capitals_6_mod_tt:0 "§YState of the Pacific - Capitals:§!\n£factory_output_texticon  Factory Output §R-20.00%§!"
+
+  PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_1_mod_tt:0 "§YDifficult Rubber Supply Lines§!:\nNo Effect"
+  PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_2_mod_tt:0 "§YDifficult Rubber Supply Lines§!:\nNo Effect"
+  PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_3_mod_tt:0 "§YDifficult Rubber Supply Lines§!:\nNo Effect"
+  PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_4_mod_tt:0 "§YDifficult Rubber Supply Lines:§!\n§YRubber Produced Goods§! £production_cost  Production Cost: §R+4.00%§!"
+  PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_5_mod_tt:0 "§YDifficult Rubber Supply Lines:§!\n§YRubber Produced Goods§! £production_cost  Production Cost: §R+8.00%§!"
+  PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_6_mod_tt:0 "§YDifficult Rubber Supply Lines:§!\n§YRubber Produced Goods§! £production_cost  Production Cost: §R+12.00%§!"
+  PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_7_mod_tt:0 "§YDifficult Rubber Supply Lines:§!\n§YRubber Produced Goods§! £production_cost  Production Cost: §R+16.00%§!"
+  PACIFIC_COMMONWEALTH_difficulty_with_rubber_supply_8_mod_tt:0 "§YDifficult Rubber Supply Lines:§!\n§YRubber Produced Goods§! £production_cost  Production Cost: §R+20.00%§!"
+
+  PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_1_mod_tt:0 "§YCheap Natural Rubber:§!\n£construction_speed_refinery_texticon  §YRefinery§! construction speed §R-99.00%§!"
+  PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_2_mod_tt:0 "§YCheap Natural Rubber:§!\n£construction_speed_refinery_texticon  §YRefinery§! construction speed §R-60.00%§!"
+  PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_3_mod_tt:0 "§YCheap Natural Rubber:§!\n£construction_speed_refinery_texticon  §YRefinery§! construction speed §R-30.00%§!"
+  PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_4_mod_tt:0 "§YCheap Natural Rubber Lost§!:\nNo Effect"
+  PACIFIC_COMMONWEALTH_reliance_on_natural_rubber_5_mod_tt:0 "§YCheap Natural Rubber Lost§!:\nNo Effect"
+
+  RAJ_the_sun_never_sets_idea_1_mod_tt:0 "(§Y[RAJ.GetFlag] [RAJ.GetName]§!) §YThe Eastern Buffer:§!\n£attack_core_texticon  Division Attack on core territory §G+30.0%§!\n£defence_core_texticon  Division Defense on core territory  §G+30.0%§!"
+  RAJ_the_sun_never_sets_idea_2_mod_tt:0 "(§Y[RAJ.GetFlag] [RAJ.GetName]§!) §YThe Eastern Buffer:§!\n£attack_core_texticon  Division Attack on core territory §G+20.0%§!\n£defence_core_texticon  Division Defense on core territory  §G+20.0%§!"
+  RAJ_the_sun_never_sets_idea_3_mod_tt:0 "(§Y[RAJ.GetFlag] [RAJ.GetName]§!) §YThe Eastern Buffer:§!\n£attack_core_texticon  Division Attack on core territory §G+10.0%§!\n£defence_core_texticon  Division Defense on core territory  §G+10.0%§!"
+  RAJ_the_sun_never_sets_idea_4_mod_tt:0 "(§Y[RAJ.GetFlag] [RAJ.GetName]§!) §YThe Eastern Buffer:§!\n£attack_core_texticon  Division Attack on core territory §G+5.0%§!\n£defence_core_texticon  Division Defense on core territory  §G+5.0%§!"
+  RAJ_the_sun_never_sets_idea_5_mod_tt:0 "(§Y[RAJ.GetFlag] [RAJ.GetName]§!) §YThe Eastern Buffer§!:\nNo Effect"
+
+  ASN_ALLIES_the_sun_never_sets_idea_1_mod_tt:0 "(§Y[AST.GetFlag] [AST.GetName]§! §YThe Papua Barrier:§!\n£attack_core_texticon  Division Attack on core territory §G+25.0%§!\n£defence_core_texticon  Division Defense on core territory  §G+25.0%§!"
+  ASN_ALLIES_the_sun_never_sets_idea_2_mod_tt:0 "(§Y[AST.GetFlag] [AST.GetName]§! §YThe Papua Barrier:§!\n£attack_core_texticon  Division Attack on core territory §G+20.0%§!\n£defence_core_texticon  Division Defense on core territory  §G+20.0%§!"
+  ASN_ALLIES_the_sun_never_sets_idea_3_mod_tt:0 "(§Y[AST.GetFlag] [AST.GetName]§! §YThe Papua Barrier:§!\n£attack_core_texticon  Division Attack on core territory §G+10.0%§!\n£defence_core_texticon  Division Defense on core territory  §G+10.0%§!"
+  ASN_ALLIES_the_sun_never_sets_idea_4_mod_tt:0 "(§Y[AST.GetFlag] [AST.GetName]§! §YThe Papua Barrier:§!\n£attack_core_texticon  Division Attack on core territory §G+5.0%§!\n£defence_core_texticon  Division Defense on core territory  §G+5.0%§!"
+  ASN_ALLIES_the_sun_never_sets_idea_5_mod_tt:0 "(§Y[AST.GetFlag] [AST.GetName]§! §YThe Papua Barrier§!:\nNo Effect"
+  
+  PACIFIC_COMMONWEALTH_controls_original_mod_tt:0 "§YThe State of the Pacific (Inactive)§!"
+  PACIFIC_COMMONWEALTH_controls_idea_1_mod_tt:0 "§YThe State of the Pacific:§!\n£defence_texticon  Invasion Defense: §G+6%§!\n£naval_invasion_time_texticon  Invasion Preparation Speed: §G+15.0%§!\n£dig_in_max_texticon  Atlantikwall Max Entrehchment: §G+[?global.DDAY_WALL_ENTRENCHMENT_MOD]§!"
+  PACIFIC_COMMONWEALTH_controls_idea_2_mod_tt:0 "§YThe State of the Pacific:§!\n£defence_texticon  Invasion Defense: §G+4%§!\n£naval_invasion_time_texticon  Invasion Preparation Speed: §G+10.0%§!\n£dig_in_max_texticon  Atlantikwall Max Entrehchment: §G+[?global.DDAY_WALL_ENTRENCHMENT_MOD]§!"
+  PACIFIC_COMMONWEALTH_controls_idea_3_mod_tt:0 "§YThe State of the Pacific:§!\n£defence_texticon  Invasion Defense: §G+2%§!\n£naval_invasion_time_texticon  Invasion Preparation Speed: §G+5.0%§!\n£dig_in_max_texticon  Atlantikwall Max Entrehchment: §G+[?global.DDAY_WALL_ENTRENCHMENT_MOD]§!"
+  PACIFIC_COMMONWEALTH_controls_idea_4_mod_tt:0 "§YThe State of the Pacific§!:\nNo Effect"
+  PACIFIC_COMMONWEALTH_controls_idea_5_mod_tt:0 "§YThe State of the Pacific§!:\nNo Effect"
+  PACIFIC_COMMONWEALTH_controls_idea_6_mod_tt:0 "§YThe State of the Pacific:§!\n£defence_texticon  Invasion Defense: §R-2%§!\n£naval_invasion_time_texticon  Invasion Preparation Speed: §R-5.0%§!\n£dig_in_max_texticon  Atlantikwall Max Entrehchment: §G+[?global.DDAY_WALL_ENTRENCHMENT_MOD]§!"
+  PACIFIC_COMMONWEALTH_controls_idea_7_mod_tt:0 "§YThe State of the Pacific:§!\n£defence_texticon  Invasion Defense: §R-4%§!\n£naval_invasion_time_texticon  Invasion Preparation Speed: §R-10.0%§!\n£dig_in_max_texticon  Atlantikwall Max Entrehchment: §G+[?global.DDAY_WALL_ENTRENCHMENT_MOD]§!"
+  PACIFIC_COMMONWEALTH_controls_idea_8_mod_tt:0 "§YThe State of the Pacific:§!\n£defence_texticon  Invasion Defense: §R-6%§!\n£naval_invasion_time_texticon  Invasion Preparation Speed: §R-15.0%§!\n£dig_in_max_texticon  Atlantikwall Max Entrehchment: §G+[?global.DDAY_WALL_ENTRENCHMENT_MOD]§!"
+  PACIFIC_COMMONWEALTH_controls_idea_9_mod_tt:0 "§YThe State of the Pacific:§!\n£defence_texticon  Invasion Defense: §R-8%§!\n£dockyard_output_texticon  Dockyard Output §G+2.50%§!\n£naval_invasion_time_texticon  Invasion Preparation Speed: §R-20.0%§!\n£dig_in_max_texticon  Atlantikwall Max Entrehchment: §G+[?global.DDAY_WALL_ENTRENCHMENT_MOD]§!"
+  PACIFIC_COMMONWEALTH_controls_idea_10_mod_tt:0 "§YThe State of the Pacific:§!\n£defence_texticon  Invasion Defense: §R-10%§!\n£dockyard_output_texticon  Dockyard Output §G+2.50%§!\n£naval_invasion_time_texticon  Invasion Preparation Speed: §R-25.0%§!\n£dig_in_max_texticon  Atlantikwall Max Entrehchment: §G+[?global.DDAY_WALL_ENTRENCHMENT_MOD]§!"
+  PACIFIC_COMMONWEALTH_controls_idea_11_mod_tt:0 "§YThe State of the Pacific:§!\n£defence_texticon  Invasion Defense: §R-12%§!\n£dockyard_output_texticon  Dockyard Output §G+2.50%§!\n£naval_invasion_time_texticon  Invasion Preparation Speed: §R-30.0%§!\n£dig_in_max_texticon  Atlantikwall Max Entrehchment: §G+[?global.DDAY_WALL_ENTRENCHMENT_MOD]§!"
+  PACIFIC_COMMONWEALTH_controls_idea_12_mod_tt:0 "§YThe State of the Pacific:§!\n£defence_texticon  Invasion Defense: §R-14%§!\n£dockyard_output_texticon  Dockyard Output §G+2.50%§!\n£naval_invasion_time_texticon  Invasion Preparation Speed: §R-35.0%§!\n£dig_in_max_texticon  Atlantikwall Max Entrehchment: §G+[?global.DDAY_WALL_ENTRENCHMENT_MOD]§!"
+  PACIFIC_COMMONWEALTH_controls_idea_13_mod_tt:0 "§YThe State of the Pacific:§!\n£defence_texticon  Invasion Defense: §R-16%§!\n£dockyard_output_texticon  Dockyard Output §G+5.00%§!\n£naval_invasion_time_texticon  Invasion Preparation Speed: §R-40.0%§!\n£dig_in_max_texticon  Atlantikwall Max Entrehchment: §G+[?global.DDAY_WALL_ENTRENCHMENT_MOD]§!"
+  PACIFIC_COMMONWEALTH_controls_idea_14_mod_tt:0 "§YThe State of the Pacific:§!\n£defence_texticon  Invasion Defense: §R-18%§!\n£dockyard_output_texticon  Dockyard Output §G+5.00%§!\n£naval_invasion_time_texticon  Invasion Preparation Speed: §R-45.0%§!\n£dig_in_max_texticon  Atlantikwall Max Entrehchment: §G+[?global.DDAY_WALL_ENTRENCHMENT_MOD]§!"
+  PACIFIC_COMMONWEALTH_controls_idea_15_mod_tt:0 "§YThe State of the Pacific:§!\n£defence_texticon  Invasion Defense: §R-20%§!\n£dockyard_output_texticon  Dockyard Output §G+5.00%§!\n£naval_invasion_time_texticon  Invasion Preparation Speed: §R-50.0%§!\n£dig_in_max_texticon  Atlantikwall Max Entrehchment: §G+[?global.DDAY_WALL_ENTRENCHMENT_MOD]§!"
+  PACIFIC_COMMONWEALTH_controls_idea_16_mod_tt:0 "§YThe State of the Pacific:§!\n£defence_texticon  Invasion Defense: §R-22%§!\n£dockyard_output_texticon  Dockyard Output §G+5.00%§!\n£naval_invasion_time_texticon  Invasion Preparation Speed: §R-55.0%§!\n£dig_in_max_texticon  Atlantikwall Max Entrehchment: §G+[?global.DDAY_WALL_ENTRENCHMENT_MOD]§!"
+  PACIFIC_COMMONWEALTH_controls_idea_17_mod_tt:0 "§YThe State of the Pacific:§!\n£defence_texticon  Invasion Defense: §R-24%§!\n£dockyard_output_texticon  Dockyard Output §G+5.00%§!\n£naval_invasion_time_texticon  Invasion Preparation Speed: §R-60.0%§!\n£dig_in_max_texticon  Atlantikwall Max Entrehchment: §G+[?global.DDAY_WALL_ENTRENCHMENT_MOD]§!"
