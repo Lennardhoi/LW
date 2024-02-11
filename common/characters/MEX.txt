@@ -679,7 +679,9 @@ characters={
 				has_dlc = "Man the Guns"
 			}
 			available = {
-				has_completed_focus = MEX_focus_purge_the_bureaucracy
+			}
+			visible = {
+				always = no
 			}
 			traits = {
 				army_cavalry_3
@@ -738,20 +740,9 @@ characters={
 				original_tag = MEX
 			}
 			available = {
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					has_completed_focus = MEX_focus_confederation_of_mexican_workers 
-				}
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state = autonomy_supervised_state
-					}
-				}
+			}
+			visible = {
+				always = no
 			}
 			traits = {
 				ambitious_union_boss 
@@ -773,23 +764,12 @@ characters={
 				original_tag = MEX
 			}
 			available = {
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					has_completed_focus = MEX_focus_the_gold_shirts 
-				}
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state = autonomy_supervised_state
-					}
-				}
 			}
 			traits = {
 				syncretic_revanchist 
+			}
+			visible = {
+				always = no
 			}
 		}
 	}
@@ -808,20 +788,9 @@ characters={
 				original_tag = MEX
 			}
 			available = {
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					has_completed_focus = MEX_focus_exile_calles 
-				}
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state = autonomy_supervised_state
-					}
-				}
+			}
+			visible = {
+				always = no
 			}
 			traits = {
 				social_reformer 
@@ -955,12 +924,9 @@ characters={
 				original_tag = MEX
 			}
 			available = {
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					has_completed_focus = MEX_focus_triumph_over_the_cristeros 
-				}
+			}
+			visible = {
+				always = no
 			}
 			traits = {
 				prince_of_terror 
