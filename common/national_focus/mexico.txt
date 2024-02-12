@@ -103,7 +103,7 @@ focus_tree = {
 	focus = {
 		id = MEX_focus_national_bank
 		icon = GFX_focus_usa_reestablish_the_gold_standard
-		x = 9
+		x = 10
 		y = 0
 
 		cost = 5
@@ -130,7 +130,7 @@ focus_tree = {
 		id = MEX_focus_agricultural_credit_bank
 		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = MEX_focus_national_bank }
-		x = 2
+		x = 0
 		y = 1
 		relative_position_id = MEX_focus_national_bank
 
@@ -245,7 +245,7 @@ focus_tree = {
 		icon = GFX_focus_mex_support_general_cedillo
 		prerequisite = { focus = MEX_focus_national_bank}
 		
-		x = 5
+		x = 3
 		y = 1
 		relative_position_id = MEX_focus_national_bank
 
@@ -281,6 +281,76 @@ focus_tree = {
 			MEX_remove_cedillo_tension = yes
 		}
 	}
+	focus = {
+		id = MEX_focus_engineering_school
+		icon = GFX_focus_research2
+		prerequisite = { focus = MEX_focus_support_general_cedillo }
+		x = 0
+		y = 1
+		relative_position_id = MEX_focus_support_general_cedillo
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			show_ideas_tooltip = MEX_escuela_de_ingeneria_electrica
+			add_tech_bonus = {
+				name = rocketry
+				bonus = 1.0
+				uses = 1
+				category = rocketry
+			}
+		}
+	}
+	focus = {
+		id = MEX_focus_professional_army
+		icon = GFX_focus_secret_rearmament
+		prerequisite = { focus = MEX_focus_engineering_school }
+
+		x = 0
+		y = 1
+		relative_position_id = MEX_focus_engineering_school
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_STABILITY}
+		completion_reward = {
+			every_army_leader = {
+				add_planning = 1
+				add_logistics = 1
+			}
+		}
+	}
 	
 	focus = {
 		id = MEX_focus_oil_field_expansion
@@ -312,15 +382,15 @@ focus_tree = {
 			every_state = {
 				limit = {
 					OR = {
-						state = 719
-						state = 721
-						state = 722
-						state = 720
+						state = 730
+						state = 728
+						state = 726
+						state = 724
 					}
 				}
 				add_resource = {
 					type = oil
-					amount = 30
+					amount = 100
 				}
 			}
 		}
@@ -578,46 +648,27 @@ focus_tree = {
  					amount = 100
  				}
  			}
-			719 = {
- 				add_resource = {
- 					type = oil
- 					amount = 100
- 				}
- 			}
- 			721 = {
+ 			727 = {
  				add_resource = {
  					type = steel
  					amount = 100
  				}
  			}
-			721 = {
- 				add_resource = {
- 					type = oil
- 					amount = 100
- 				}
- 			}
- 			722 = {
+ 			725 = {
  				add_resource = {
  					type = steel
  					amount = 100
  				}
  			}
-			722 = {
- 				add_resource = {
- 					type = oil
- 					amount = 100
- 				}
- 			}
-
 		}
 	}
 	focus = {
 		id = MEX_focus_northern_steel_plants
 		icon = GFX_focus_generic_steel
-		prerequisite = { focus =  MEX_focus_state_education }
+		prerequisite = { focus =  MEX_focus_control_the_army }
 		x = 2
 		y = 1
-		relative_position_id = MEX_focus_state_education
+		relative_position_id = MEX_focus_control_the_army
 
 		cost = 10
 
@@ -841,10 +892,10 @@ focus_tree = {
 	focus = {
 		id = MEX_focus_xefo
 		icon = GFX_goal_generic_radar
-		prerequisite = { focus = MEX_focus_state_education }
+		prerequisite = { focus = MEX_focus_professional_army }
 		x = 0
 		y = 1
-		relative_position_id = MEX_focus_state_education
+		relative_position_id = MEX_focus_professional_army
 
 		cost = 10
 
@@ -877,10 +928,10 @@ focus_tree = {
 	focus = {
 		id = MEX_focus_law_on_industrial_promotion
 		icon = GFX_goal_generic_construct_civ_factory
-		prerequisite = { focus = MEX_focus_xefo }
+		prerequisite = { focus = MEX_focus_northern_steel_plants }
 		x = 0
 		y = 1
-		relative_position_id = MEX_focus_xefo
+		relative_position_id = MEX_focus_northern_steel_plants
 
 		cost = 10
 
@@ -962,85 +1013,6 @@ focus_tree = {
 				}
 	}
 
-	focus = {
-		id = MEX_focus_engineering_school
-		icon = GFX_focus_research2
-		prerequisite = { focus = MEX_focus_northern_steel_plants focus = MEX_focus_xefo }
-		x = 1
-		y = 1
-		relative_position_id = MEX_focus_northern_steel_plants
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 100
-		}
-
-		available = {
-			
-		}
-
-		bypass = {
-			
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_RESEARCH}
-		completion_reward = {
-			show_ideas_tooltip = MEX_escuela_de_ingeneria_electrica
-			add_tech_bonus = {
-				name = electronics
-				bonus = 1.0
-				uses = 1
-				category = electronics
-			}
-		}
-	}
-
-	
-	
-	
-	
-
-	
-	
-	focus = {
-		id = MEX_focus_professional_army
-		icon = GFX_focus_secret_rearmament
-		prerequisite = { focus = MEX_focus_control_the_army }
-
-		x = 3
-		y = 1
-		relative_position_id = MEX_focus_control_the_army
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 100
-		}
-
-		available = {
-			
-		}
-
-		bypass = {
-			
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_STABILITY}
-		completion_reward = {
-			army_experience = 15
-			every_army_leader = {
-				add_planning = 1
-				add_logistics = 1
-			}
-		}
-	}
 	focus = {
 		id = MEX_focus_spanish_civil_war_refugees
 		icon = GFX_goal_generic_intelligence_exchange
@@ -1139,6 +1111,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
+			army_experience = 50
 			add_tech_bonus = {
 				name = tooltip_military_budget_review
 				bonus = 1.0
@@ -1184,7 +1157,6 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			army_experience = 30
 			add_tech_bonus = {
  				name = SPA_the_army_of_africa_model
  				bonus = 1.0
@@ -1297,4 +1269,258 @@ focus_tree = {
 			}
 		}
 	}	
+	focus = {
+		id = MEX_the_first_labor_government
+		icon = GFX_goal_generic_improve_relations
+		x = 3
+		y = 0
+		cost = 10
+		ai_will_do = {
+			factor = 2
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		complete_tooltip = {
+		}
+		completion_reward = {
+			add_ideas = NZL_first_labor_government
+		}
+	}
+	focus = {
+		id = MEX_ratana_alliance
+		icon = GFX_goal_anschluss
+		prerequisite = { focus = MEX_the_first_labor_government }
+		x = -2
+		y = 1
+		relative_position_id = MEX_the_first_labor_government
+		cost = 10
+		ai_will_do = {
+			factor = 25
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		complete_tooltip = {
+		}
+		completion_reward = {
+			add_ideas = NZL_ratana_alliance
+		}
+	}
+	focus = {
+		id = MEX_maori_affairs_act
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = MEX_ratana_alliance }
+		x = -1
+		y = 1
+		relative_position_id = MEX_ratana_alliance
+		cost = 5
+		ai_will_do = {
+			factor = 25
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		complete_tooltip = {
+		}
+		completion_reward = {
+			272 = {
+				add_extra_state_shared_building_slots = 1
+			}
+			641 = {
+				add_extra_state_shared_building_slots = 1
+			}
+			add_stability = -0.025
+		}
+	}
+	focus = {
+		id = MEX_social_security_act
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = MEX_ratana_alliance }
+		x = 1
+		y = 1
+		relative_position_id = MEX_ratana_alliance
+		cost = 10
+		ai_will_do = {
+			factor = 25
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		complete_tooltip = {
+		}
+		completion_reward = {
+			add_ideas = MEX_social_security_act
+		}
+	}
+	focus = {
+		id = MEX_the_manpower_act
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = MEX_social_security_act focus = MEX_maori_affairs_act }
+		x = 0
+		y = 2
+		relative_position_id = MEX_ratana_alliance
+		cost = 5
+		ai_will_do = {
+			factor = 25
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		complete_tooltip = {
+		}
+		completion_reward = {
+			add_ideas = NZL_the_manpower_act
+		}
+	}
+	focus = {
+		id = MEX_amend_the_maori_affairs_act
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = MEX_the_manpower_act }
+		x = 0
+		y = 3
+		relative_position_id = MEX_ratana_alliance
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		complete_tooltip = {
+		}
+		completion_reward = {
+			272 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			641 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			add_stability = -0.05
+		}
+	}
+	focus = {
+		id = MEX_maori_conscription
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = MEX_amend_the_maori_affairs_act }
+		x = 0
+		y = 4
+		relative_position_id = MEX_ratana_alliance
+		cost = 10
+		ai_will_do = {
+			factor = 25
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		complete_tooltip = {
+		}
+		completion_reward = {
+			add_ideas = NZL_maori_conscription
+		}
+	}
+	focus = {
+		id = MEX_strengthen_the_commonwealth
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		prerequisite = { focus = MEX_the_first_labor_government }
+		x = 1
+		y = 1
+		relative_position_id = MEX_the_first_labor_government
+		cost = 10
+		ai_will_do = {
+			factor = 30
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		complete_tooltip = {
+		}
+		completion_reward = {
+			add_to_tech_sharing_group = commonwealth_research
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = MEX_arrest_pacifist_leaders
+		icon = GFX_goal_generic_attack_allies
+		prerequisite = { focus = MEX_strengthen_the_commonwealth }
+		x = 0
+		y = 1
+		relative_position_id = MEX_strengthen_the_commonwealth
+		cost = 5
+		ai_will_do = {
+			factor = 25
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		complete_tooltip = {
+		}
+		completion_reward = {
+			add_ideas = NZL_stomp_out_pacifism
+		}
+	}
+	focus = {
+		id = MEX_technology_sharing_with_britain
+		icon = GFX_goal_tfv_generic_tech_sharing
+		prerequisite = { focus = MEX_arrest_pacifist_leaders }
+		x = 0
+		y = 2
+		relative_position_id = MEX_strengthen_the_commonwealth
+		cost = 10
+		ai_will_do = {
+			factor = 30
+		}
+		available = {
+		}
+		bypass = {
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		complete_tooltip = {
+		}
+		completion_reward = {
+			modify_tech_sharing_bonus = {
+				id = commonwealth_research
+				bonus = 0.1
+			}
+		}
+	}
 }
