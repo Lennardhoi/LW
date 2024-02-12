@@ -171,7 +171,17 @@ add_equipment_to_stockpile = {
 }
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
-	amount = 2700
+	amount = 4000
+	producer = CAN
+}
+add_equipment_to_stockpile = {
+	type = support_equipment_1
+	amount = 400
+	producer = CAN
+}
+add_equipment_to_stockpile = {
+	type = artillery_equipment_1
+	amount = 400
 	producer = CAN
 }
 set_stability = 0.75

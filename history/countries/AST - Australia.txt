@@ -153,10 +153,19 @@ add_equipment_to_stockpile = {
 }
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
-	amount = 2088
+	amount = 3750
 	producer = AST
 }
-
+add_equipment_to_stockpile = {
+	type = support_equipment_1
+	amount = 400
+	producer = AST
+}
+add_equipment_to_stockpile = {
+	type = artillery_equipment_1
+	amount = 400
+	producer = AST
+}
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	### Ship Variants ###

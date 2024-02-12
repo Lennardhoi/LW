@@ -64,7 +64,17 @@ set_stability = 0.7
 set_war_support = 0.60
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
-	amount = 3143
+	amount = 5000
+	producer = BUL
+}
+add_equipment_to_stockpile = {
+	type = support_equipment_1
+	amount = 400
+	producer = BUL
+}
+add_equipment_to_stockpile = {
+	type = artillery_equipment_1
+	amount = 400
 	producer = BUL
 }
 set_convoys = 100

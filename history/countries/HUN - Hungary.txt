@@ -73,9 +73,19 @@ capital = 43
 }
  add_equipment_to_stockpile = {
           type = infantry_equipment_1
-          amount = 4732
+          amount = 6000
           producer = HUN
- }
+}
+add_equipment_to_stockpile = {
+	type = artillery_equipment_1
+	amount = 400
+	producer = HUN
+}
+add_equipment_to_stockpile = {
+	type = support_equipment_1
+	amount = 450
+	producer = HUN
+}
  if = {
  	limit = {
  		has_dlc = "Death or Dishonor"
