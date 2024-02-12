@@ -776,18 +776,12 @@ characters={
 			slot = army_chief
 			idea_token = douglas_macarthur
 			allowed  = {
-					original_tag  = USA 
+					original_tag  = USP
 				}
 				available  = {
-					not  = {
-						has_country_leader  = {
-							ruling_only  = yes 
-							name  = "Douglas MacArthur"
-						}
-					}
 				}
 				traits  = {
-					army_chief_morale_2 
+					army_chief_offensive_2 
 				}
 				ai_will_do  = {
 					factor  = 1.000
@@ -802,6 +796,26 @@ characters={
 			army={
 				large=GFX_portrait_USA_douglas_macarthur
 			}
+		}
+		portraits = {
+			civilian={
+				large=GFX_portrait_USA_douglas_macarthur
+			}
+		}
+		country_leader={
+			desc=""
+			ideology=liberalism
+			expire="1947.1.1.1"
+			id=-1
+		}
+		field_marshal = {
+			id =56
+			traits = {  offensive_doctrine brilliant_strategist media_personality politically_connected infantry_leader naval_invader jungle_rat skilled_staffer}
+			skill = 7
+			attack_skill = 7
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 4
 		}
 	}
 	USA_raymond_spruance={
@@ -883,10 +897,10 @@ characters={
 			idea_token = thomas_kinkaid
 			ledger  = army 
 				allowed  = {
-					original_tag  = USA 
+					original_tag  = USP 
 				}
 				traits  = {
-					navy_amphibious_assault_2 
+					army_commando_1
 				}
 				ai_will_do  = {
 					factor  = 1.000
@@ -901,13 +915,13 @@ characters={
 	}
 	USA_henry_arnold={
 		advisor={
-			slot = air_chief
+			slot = high_command
 			idea_token = henry_arnold
 			allowed  = {
-					original_tag  = USA 
+					original_tag  = USP 
 				}
 				traits  = {
-					air_chief_reform_3 
+					air_tactical_bombing_2 
 				}
 				ai_will_do  = {
 					factor  = 1.000
@@ -1049,18 +1063,17 @@ characters={
 			slot = political_advisor
 			idea_token = whittaker_chambers
 			allowed  = {
-					original_tag  = USA
+					original_tag  = USP
 				}
 				available  = {
-					has_completed_focus  = USA_reach_out_to_the_ware_group 
 				}
 				visible  = {
 					has_dlc = "Man the Guns"
 				}
 				traits  = {
-					editor 
+					captain_of_industry 
 				}
-				cost  = 50.000
+				cost  = 150.000
 				do_effect  = {
 				}
 				ai_will_do  = {
@@ -1079,13 +1092,12 @@ characters={
 			slot = political_advisor
 			idea_token = USA_donald_nelson
 			available  = {
-					has_completed_focus  = USA_reach_out_to_the_ware_group 
 				}
 				allowed  = {
-					original_tag  = USA 
+					original_tag  = USP 
 				}
 				traits  = {
-					armaments_organizer 
+					war_industrialist 
 				}
 		}
 		name="USA_donald_nelson"
@@ -1139,13 +1151,13 @@ characters={
 	}
 	USA_george_marshall={
 		advisor={
-			slot = army_chief
+			slot = high_command
 			idea_token = george_marshall
 			allowed  = {
-					original_tag  = USA 
+					original_tag  = USP 
 				}
 				traits  = {
-					army_chief_drill_2 
+					army_infantry_3 
 				}
 				ai_will_do  = {
 					factor  = 1.000
@@ -1185,14 +1197,14 @@ characters={
 			idea_token = marc_mitscher
 			ledger  = navy 
 				allowed  = {
-					original_tag  = USA 
+					original_tag  = USP
 				}
 				cost  = 150.000
 				research_bonus  = {
-					cat_base_strike  = 0.150
+					land_doctrine = 0.1
 				}
 				traits  = {
-					naval_aviation_pioneer 
+					military_theorist 
 				}
 		}
 		name="marc_mitscher"
