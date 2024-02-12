@@ -534,10 +534,10 @@ focus_tree = {
  		search_filters = { FOCUS_FILTER_INDUSTRY }
  		completion_reward = {
  			459 = {
- 				add_extra_state_shared_building_slots = 6
+ 				add_extra_state_shared_building_slots = 4
  				add_building_construction = {
  					type = industrial_complex
- 					level = 6
+ 					level = 4
  					instant_build = yes
  				}
  				set_state_flag = JAP_zaibatsus_factories
@@ -571,15 +571,15 @@ focus_tree = {
  		completion_reward = {
  			457 = {
  				
- 				add_extra_state_shared_building_slots = 8
+ 				add_extra_state_shared_building_slots = 7
  				add_building_construction = {
  					type = industrial_complex
- 					level = 4
+ 					level = 2
  					instant_build = yes
  				}
  				add_building_construction = {
  					type = dockyard
- 					level = 4
+ 					level = 5
  					instant_build = yes
  				}
  				set_state_flag = JAP_zaibatsus_factories
@@ -2454,19 +2454,6 @@ focus_tree = {
  		available_if_capitulated = no
  		search_filters = { FOCUS_FILTER_INDUSTRY }
  		completion_reward = {
-			if = {
-				limit = {has_idea = JAP_guide_the_zaibatsus}
-				swap_ideas = {
-					remove_idea = JAP_guide_the_zaibatsus
-					add_idea = JAP_guide_the_zaibatsus2
-				}
-			} 
-			else = {
-				swap_ideas = {
-					remove_idea = JAP_zaibatsus_challenged
-					add_idea = JAP_zaibatsus_challenged2
-				}
-			}
  			add_political_power = 35
  			633 = { add_extra_state_shared_building_slots = 2 }
  			534 = { add_extra_state_shared_building_slots = 2 }
@@ -2552,7 +2539,6 @@ focus_tree = {
  			factor = 2
  		}
  		available = {
- 			date>1941.6.1
  		}
  		bypass = {
  		}
@@ -2562,7 +2548,7 @@ focus_tree = {
  		search_filters = { FOCUS_FILTER_INDUSTRY }
  		completion_reward = {
  			634 = {
- 				add_extra_state_shared_building_slots = 6
+ 				add_extra_state_shared_building_slots = 3
  				add_building_construction = {
  					type = arms_factory
  					level = 3
@@ -2647,19 +2633,9 @@ focus_tree = {
  		search_filters = { FOCUS_FILTER_INDUSTRY }
  		completion_reward = {
  			634 = {
- 				add_extra_state_shared_building_slots = 6
+ 				add_extra_state_shared_building_slots = 2
  				add_building_construction = {
  					type = arms_factory
- 					level = 2
- 					instant_build = yes
- 				}
- 				add_building_construction = {
- 					type = dockyard
- 					level = 2
- 					instant_build = yes
- 				}
- 				add_building_construction = {
- 					type = industrial_complex
  					level = 2
  					instant_build = yes
  				}
