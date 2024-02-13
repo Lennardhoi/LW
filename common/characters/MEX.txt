@@ -185,26 +185,6 @@ characters={
 				small=GFX_portrait_MEX_manuel_perez_trevino_small
 			}
 		}
-		advisor={
-			cost = 150
-			slot = theorist
-			idea_token = MEX_manuel_perez_trevino
-			ledger = army
-			allowed = {
-				original_tag = MEX
-			}
-			available = {
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					has_completed_focus = MEX_focus_heroic_military_college
-				}
-			}
-			traits = {
-				superior_firepower_expert
-			}
-		}
 
 		corps_commander={
 			traits={ panzer_leader desert_fox trait_engineer }
@@ -838,16 +818,6 @@ characters={
 		portraits={
 			army={
 				small="GFX_idea_MEX_eduardo_hay"
-			}
-		}
-		advisor={
-			slot = political_advisor
-			idea_token = MEX_eduardo_hay
-			allowed = {
-				original_tag = MEX
-			}
-			traits = {
-				smooth_talking_charmer 
 			}
 		}
 	}

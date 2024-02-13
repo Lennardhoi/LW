@@ -30,7 +30,7 @@ focus_tree = {
 	focus = {
 		id = MEX_focus_plan_of_agua_prieta
 		icon = GFX_focus_hol_the_foundations_of_defense
-		x = 18
+		x = 23
 		y = 0
 
 		cost = 5
@@ -98,12 +98,14 @@ focus_tree = {
 					planning_skill = 3
 					logistics_skill = 4
 				}
+				custom_effect_tooltip = available_political_advisor
+				show_ideas_tooltip = MEX_aaron_saenz
 			}			
 		}
 	focus = {
 		id = MEX_focus_national_bank
 		icon = GFX_focus_usa_reestablish_the_gold_standard
-		x = 10
+		x = 15
 		y = 0
 
 		cost = 5
@@ -122,6 +124,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = MEX_luis_montes_de_oca		
 		}
 	}
@@ -158,6 +161,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = MEX_alberto_pani
 		}
 	}
@@ -277,6 +281,7 @@ focus_tree = {
 					planning_skill = 3
 					logistics_skill = 3
 				}
+			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = MEX_saturnino_cedillo
 			MEX_remove_cedillo_tension = yes
 		}
@@ -399,11 +404,10 @@ focus_tree = {
 	focus = {
 		id = MEX_focus_royal_dutch_shell
 		icon = GFX_focus_generic_the_giant_wakes
-		prerequisite = { focus = MEX_focus_oil_field_expansion }
-		mutually_exclusive = { focus = MEX_focus_nationalize_the_oil_fields }
-		x = -2
+		prerequisite = { focus = MEX_go_with_britain }
+		x = -1
 		y = 1
-		relative_position_id = MEX_focus_oil_field_expansion
+		relative_position_id = MEX_go_with_britain
 
 		cost = 10
 
@@ -446,26 +450,26 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			719 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
  					type = industrial_complex
- 					level = 2
+ 					level = 1
  					instant_build = yes
  				}
 			}
 			721 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
  					type = industrial_complex
- 					level = 2
+ 					level = 1
  					instant_build = yes
  				}
 			}
 			722 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
  					type = industrial_complex
- 					level = 2
+ 					level = 1
  					instant_build = yes
  				}
 			}
@@ -477,7 +481,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civilian
 		prerequisite = { focus = MEX_focus_royal_dutch_shell focus = MEX_focus_nationalize_the_oil_fields }
 		x = 0
-		y = 2
+		y = 3
 		relative_position_id = MEX_focus_oil_field_expansion
 
 		cost = 10
@@ -574,54 +578,16 @@ focus_tree = {
 		}
 	}
 	
-	focus = {
-		id = MEX_focus_community_of_nations
-		icon = GFX_focus_chi_british_cooperation
-		prerequisite = { focus = MEX_focus_royal_dutch_shell }
-		x = 0
-		y = 2
-		relative_position_id = MEX_focus_royal_dutch_shell
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 100
-		}
-
-		available = {
-		}
-
-		bypass = {
-			
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
-		completion_reward = {
-			289 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-			
-		}
-	}
 
 	
 
 	focus = {
 		id = MEX_focus_nationalize_the_oil_fields
 		icon = GFX_focus_eng_concessions_to_the_trade_unions
-		prerequisite = { focus = MEX_focus_oil_field_expansion }
-		mutually_exclusive = { focus = MEX_focus_royal_dutch_shell }
-		x = 2
+		prerequisite = { focus = MEX_american_west_indies_protectorate }
+		x = 1
 		y = 1
-		relative_position_id = MEX_focus_oil_field_expansion
+		relative_position_id = MEX_american_west_indies_protectorate
 
 		cost = 10
 
@@ -660,6 +626,22 @@ focus_tree = {
  					amount = 100
  				}
  			}
+			719 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+ 					type = arms_factory
+ 					level = 1
+ 					instant_build = yes
+ 				}
+			}
+			721 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+ 					type = arms_factory
+ 					level = 1
+ 					instant_build = yes
+ 				}
+			}
 		}
 	}
 	focus = {
@@ -708,55 +690,6 @@ focus_tree = {
 		}
 	}
 	
-
-	
-
-	
-
-	focus = {
-		id = MEX_focus_liberty_and_justice_for_all
-		icon = GFX_focus_chi_mission_to_the_us
-		prerequisite = { focus = MEX_focus_nationalize_the_oil_fields }
-		x = 0
-		y = 2
-		relative_position_id = MEX_focus_nationalize_the_oil_fields
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 100
-			
-			modifier = {
-				factor = 0.1
-				NOT = {
-					country_exists = USA
-				}
-			}
-		}
-
-		available = {
-		
-		}
-
-		bypass = {
-			
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_POLITICAL}
-		completion_reward = {
-			343 = {
-			add_extra_state_shared_building_slots = 2
-			add_building_construction = {
-					type = industrial_complex
-					level = 2
-					instant_build = yes
-				}
-			}
-		}
-	}
 
 	focus = {
 		id = MEX_focus_control_the_army
@@ -1119,6 +1052,7 @@ focus_tree = {
 				category = infantry_weapons
 				category = artillery
 			}
+			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = MEX_manuel_avila
 		}
 	}
@@ -1272,7 +1206,7 @@ focus_tree = {
 	focus = {
 		id = MEX_the_first_labor_government
 		icon = GFX_goal_generic_improve_relations
-		x = 3
+		x = 8
 		y = 0
 		cost = 10
 		ai_will_do = {
@@ -1336,10 +1270,10 @@ focus_tree = {
 		complete_tooltip = {
 		}
 		completion_reward = {
-			272 = {
+			724 = {
 				add_extra_state_shared_building_slots = 1
 			}
-			641 = {
+			723 = {
 				add_extra_state_shared_building_slots = 1
 			}
 			add_stability = -0.025
@@ -1414,10 +1348,10 @@ focus_tree = {
 		complete_tooltip = {
 		}
 		completion_reward = {
-			272 = {
+			724 = {
 				add_extra_state_shared_building_slots = 2
 			}
-			641 = {
+			723 = {
 				add_extra_state_shared_building_slots = 2
 			}
 			add_stability = -0.05
@@ -1523,4 +1457,200 @@ focus_tree = {
 			}
 		}
 	}
+ 	focus = {
+ 		id = MEX_go_with_britain
+ 		available = {
+ 			GER = {controls_state = 9}
+ 		}
+ 		bypass = {
+ 		}
+ 		prerequisite = { focus = MEX_focus_oil_field_expansion }
+ 		mutually_exclusive = { focus = MEX_american_west_indies_protectorate }
+ 		icon = GFX_focus_chi_british_cooperation
+ 		x = -1
+ 		y = 1
+ 		relative_position_id = MEX_focus_oil_field_expansion
+ 		cost = 10
+ 		available_if_capitulated = yes
+ 		completion_reward = {
+ 			289 = {
+ 					add_extra_state_shared_building_slots = 2
+ 					add_building_construction = {
+ 						type = arms_factory
+ 						level = 2
+ 						instant_build = yes
+ 				}
+ 			}
+ 		}
+ 	}
+ 	focus = {
+ 		id = MEX_make_use_of_our_riches
+ 		prerequisite = { focus = MEX_replace_the_defeatist_government }
+ 		prerequisite = { focus = MEX_go_with_britain }
+ 		icon = GFX_goal_generic_propaganda
+ 		x = -1
+ 		y = 1
+ 		relative_position_id = MEX_focus_royal_dutch_shell
+ 		cost = 10
+ 		available_if_capitulated = yes
+ 		completion_reward = {
+ 			add_ideas = HOL_make_use_of_our_riches
+ 		}
+ 	}
+ 	focus = {
+ 		id = MEX_request_allied_favors
+ 		available = {
+ 		
+	
+ 		}
+ 		prerequisite = { focus = MEX_make_use_of_our_riches }
+ 		icon = GFX_goal_generic_major_alliance
+ 		x = 0
+ 		y = 1
+ 		relative_position_id = MEX_make_use_of_our_riches
+ 		cost = 10
+ 		available_if_capitulated = yes
+ 		completion_reward = {
+ 			add_ideas = YUG_idea_foreign_capital
+ 		}
+ 	}
+ 	focus = {
+ 		id = MEX_american_west_indies_protectorate
+ 		available = {
+			GER = {controls_state = 9}
+ 		}
+ 		prerequisite = { focus = MEX_focus_oil_field_expansion }
+ 		mutually_exclusive = { focus = MEX_go_with_britain }
+ 		icon = GFX_focus_chi_mission_to_the_us
+ 		x = 1
+ 		y = 1
+ 		relative_position_id = MEX_focus_oil_field_expansion
+ 		cost = 10
+ 		available_if_capitulated = yes
+ 		completion_reward = {
+ 				division_template = {
+ 					name = "American Garrison"
+ 					priority = 1
+ 					division_names_group = USA_INF_01
+ 					is_locked = no
+ 					regiments = {
+ 						infantry = { x = 0 y = 0 }
+ 						infantry = { x = 0 y = 1 }
+ 						infantry = { x = 0 y = 2 }
+ 						infantry = { x = 1 y = 0 }
+ 						infantry = { x = 1 y = 1 }
+ 						infantry = { x = 1 y = 2 }
+ 						infantry = { x = 2 y = 0 }
+ 						infantry = { x = 2 y = 1 }
+ 						infantry = { x = 2 y = 2 }
+ 						infantry = { x = 3 y = 0 }
+ 						infantry = { x = 3 y = 1 }
+ 						infantry = { x = 3 y = 2 }
+						infantry = { x = 3 y = 3 }
+						infantry = { x = 3 y = 4 }
+						infantry ={ x = 0 y = 3 }
+						infantry ={ x = 0 y = 4 }
+						infantry ={ x = 1 y = 3 }
+						infantry ={ x = 1 y = 4 }
+						infantry = {x = 2 y = 3 }
+						infantry = {x = 2 y = 4}
+ 					}
+ 					support = {
+ 						artillery = { x = 0 y = 0 }
+ 						engineer = { x = 0 y = 1 }
+ 					}
+ 				}
+ 				730 = {
+ 					create_unit = {
+ 						division = "name = \"1. American Garrison\" division_template = \"American Garrison\" start_experience_factor = 0.5"
+ 						owner = MEX
+ 					}
+ 				}
+ 				731 = {
+ 					create_unit = {
+ 						division = "name = \"2. American Garrison\" division_template = \"American Garrison\" start_experience_factor = 0.5"
+ 						owner = MEX
+ 					}
+ 				}
+				722 = {
+ 					create_unit = {
+ 						division = "name = \"3. American Garrison\" division_template = \"American Garrison\" start_experience_factor = 0.5"
+ 						owner = MEX
+ 					}
+ 				}
+				720 = {
+ 					create_unit = {
+ 						division = "name = \"4. American Garrison\" division_template = \"American Garrison\" start_experience_factor = 0.5"
+ 						owner = MEX
+ 					}
+ 				}
+ 			}
+ 		}
+ 	focus = {
+ 		id = MEX_combined_chiefs_of_staff_representation
+ 		available = {
+ 			date > 1941.1.1
+ 		}
+
+ 		icon = GFX_focus_generic_military_academy
+ 		x = 3
+ 		y = 1
+ 		relative_position_id = MEX_request_allied_favors
+ 		cost = 10
+ 		available_if_capitulated = yes
+ 		completion_reward = {
+ 			add_ideas = HOL_combined_chiefs_of_staff_representation
+ 		}
+ 	}
+ 	focus = {
+ 		id = MEX_the_fourth_ally
+ 		available = {
+ 		}
+ 		prerequisite = { focus = MEX_combined_chiefs_of_staff_representation }
+ 		icon = GFX_focus_hol_the_fourth_ally
+ 		x = 0
+ 		y = 1
+ 		relative_position_id = MEX_combined_chiefs_of_staff_representation
+ 		cost = 10
+ 		available_if_capitulated = yes
+ 		completion_reward = {
+ 			719 = {
+ 					add_extra_state_shared_building_slots = 4
+ 					add_building_construction = {
+ 						type = arms_factory
+ 						level = 4
+ 						instant_build = yes
+ 					}
+ 				}
+ 			}
+ 		}
+ 	focus = {
+ 		id = MEX_zandery_military_airport
+ 		available = {
+ 		}
+ 		prerequisite = { focus = MEX_american_west_indies_protectorate }
+ 		icon = GFX_goal_generic_construct_military
+ 		x = 2
+ 		y = 2
+ 		relative_position_id = MEX_american_west_indies_protectorate
+ 		cost = 10
+ 		available_if_capitulated = yes
+ 		completion_reward = {
+			add_ideas = CHI_military_affairs_commission
+ 		}
+ 	}
+		focus = {
+ 		id = MEX_responsibility_for_our_own_defense
+ 		prerequisite = { focus = MEX_zandery_military_airport }
+ 		icon = GFX_goal_generic_build_tank
+ 		x = 0
+ 		y = 1
+ 		relative_position_id = MEX_zandery_military_airport
+ 		cost = 10
+ 		available_if_capitulated = yes
+ 		completion_reward = {
+ 			add_war_support = 0.05
+ 			add_ideas = HOL_responsibility_for_our_own_defense
+ 		}
+ 	}
 }
