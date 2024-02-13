@@ -77,16 +77,11 @@ USA_resources = {
 	}
 	priority = 100
 }
-USA_europe_debuff = {
+USP_help = {
 	allowed = {
-		original_tag = USA
+		original_tag = USP
 	}
-	icon = USA_pacific
-	scripted_gui = usa_pacific_ui
 	visible = {
-		NOT = {
-			has_completed_focus = USA_intervention_in_europe
-		}
 	}
 	priority = 100
 }

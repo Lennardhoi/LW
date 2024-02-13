@@ -828,3 +828,145 @@ USA_resources = {
 		}
 	}
 }
+USP_help = {
+	USP_guns = {
+		icon = generic_industry
+		available = {
+			USA = {
+				has_equipment = {
+					infantry_equipment > 4999
+				}
+			}
+			USP = {
+				has_equipment = {
+					infantry_equipment < 5001
+				}
+			}
+		}
+		visible = {
+		}
+		fire_only_once = no
+		cost = 0
+		complete_effect = {
+			USP = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 5000
+					producer = USA
+				}
+			}
+		}
+	}
+	USP_arty = {
+		icon = generic_industry
+		available = {
+			USA = {
+				has_equipment = {
+					artillery_equipment > 499
+				}
+			}
+			USP = {
+				has_equipment = {
+					artillery_equipment < 501
+				}
+			}
+		}
+		visible = {
+		}
+		fire_only_once = no
+		cost = 0
+		complete_effect = {
+			USP = {
+				add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = 500
+					producer = USA
+				}
+			}
+		}
+	}
+	USP_support = {
+		icon = generic_industry
+		available = {
+			USA = {
+				has_equipment = {
+					support_equipment > 499
+				}
+			}
+			USP = {
+				has_equipment = {
+					support_equipment < 501
+				}
+			}
+		}
+		visible = {
+		}
+		fire_only_once = no
+		cost = 0
+		complete_effect = {
+			USP = {
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = 500
+					producer = USA
+				}
+			}
+		}
+	}
+	USP_rarty = {
+		icon = generic_industry
+		available = {
+			USA = {
+				has_equipment = {
+					rocket_artillery_equipment > 499
+				}
+			}
+			USP = {
+				has_equipment = {
+					rocket_artillery_equipment < 501
+				}
+			}
+		}
+		visible = {
+		}
+		fire_only_once = no
+		cost = 0
+		complete_effect = {
+			USP = {
+				add_equipment_to_stockpile = {
+					type = rocket_artillery_equipment
+					amount = 500
+					producer = USA
+				}
+			}
+		}
+	}
+	USP_trucks = {
+		icon = generic_industry
+		available = {
+			USA = {
+				has_equipment = {
+					motorized_equipment > 499
+				}
+			}
+			USP = {
+				has_equipment = {
+					motorized_equipment < 501
+				}
+			}
+		}
+		visible = {
+		}
+		fire_only_once = no
+		cost = 0
+		complete_effect = {
+			USP = {
+				add_equipment_to_stockpile = {
+					type = motorized_equipment
+					amount = 500
+					producer = USA
+				}
+			}
+		}
+	}
+}

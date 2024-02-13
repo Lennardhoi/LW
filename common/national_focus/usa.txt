@@ -1763,7 +1763,7 @@ focus_tree = {
  		y = 1
  		prerequisite = { focus = USA_a_date_which_will_live_in_infamy }
  		relative_position_id = USA_a_date_which_will_live_in_infamy
- 		cost = 2
+ 		cost = 0.2
  		ai_will_do = {
  			factor = 1
  		}
@@ -1785,6 +1785,9 @@ focus_tree = {
 					days = 120
 				}
 			}
+			USA = {
+				end_puppet = USP
+			}
  		}
  	}
  	focus = {
@@ -1801,7 +1804,6 @@ focus_tree = {
  		available = {
  		}
  		bypass = {
- 			NOT ={ 550 = {is_fully_controlled_by = USA} }
  		}
  		completion_reward = {
  			custom_effect_tooltip=USA_war_plans_division_tt

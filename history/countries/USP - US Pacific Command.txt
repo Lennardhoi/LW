@@ -8,6 +8,7 @@ recruit_character = USA_marc_mitscher
 recruit_character = USA_leonard_gerow
 recruit_character = USA_clarence_huebner
 recruit_character = USA_lucian_truscott
+recruit_character = NZL_w_a_veitch_milne
 capital = 550
 if = {
 	limit = { has_dlc = "By Blood Alone" }
@@ -34,6 +35,11 @@ set_rule = {can_be_spymaster = no}
 add_ideas = reliance_on_natural_rubber
 add_ideas = peace_training
 add_ideas = Pacific_focus
+add_ideas = {
+	UAC_depression
+	UAC_arab_revolt
+	UAC_no_military_training
+}
 set_variable = {
 	var = min_fuel
 	value = 0.800
@@ -41,7 +47,7 @@ set_variable = {
 create_intelligence_agency = yes
 set_research_slots = 3
 set_stability = 0.65
-set_war_support = 0.02
+set_war_support = 0.2
 # Starting tech
 set_technology = {
 	airfield_allowed = 1
@@ -145,6 +151,16 @@ add_equipment_to_stockpile = {
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
 	amount = 5000
+	producer = USA
+}
+add_equipment_to_stockpile = {
+	type = artillery_equipment_1
+	amount = 1500
+	producer = USA
+}
+add_equipment_to_stockpile = {
+	type = support_equipment_1
+	amount = 1244
 	producer = USA
 }
 set_politics = {
