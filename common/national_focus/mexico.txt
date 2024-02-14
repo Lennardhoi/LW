@@ -402,296 +402,6 @@ focus_tree = {
 	}
 	
 	focus = {
-		id = MEX_focus_royal_dutch_shell
-		icon = GFX_focus_generic_the_giant_wakes
-		prerequisite = { focus = MEX_go_with_britain }
-		x = -1
-		y = 1
-		relative_position_id = MEX_go_with_britain
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 100
-			
-			modifier = {
-				factor = 0.1
-				is_historical_focus_on = yes
-			}
-			
-			modifier = {
-				factor = 0
-				OR = {
-					NOT = {
-						country_exists = ENG
-					}
-					ENG = {
-						NOT = {
-							has_government = democratic
-						}
-					}
-				}	
-			}
-		}
-
-		available = {
-			NOT = {
-				has_war_with = ENG
-			}
-		}
-
-		bypass = {
-			
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
-		completion_reward = {
-			719 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
- 					type = industrial_complex
- 					level = 1
- 					instant_build = yes
- 				}
-			}
-			721 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
- 					type = industrial_complex
- 					level = 1
- 					instant_build = yes
- 				}
-			}
-			722 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
- 					type = industrial_complex
- 					level = 1
- 					instant_build = yes
- 				}
-			}
-		}
-	}
-	
-	focus = {
-		id = MEX_focus_oil_revenue_reinvestment
-		icon = GFX_goal_generic_construct_civilian
-		prerequisite = { focus = MEX_focus_royal_dutch_shell focus = MEX_focus_nationalize_the_oil_fields }
-		x = 0
-		y = 3
-		relative_position_id = MEX_focus_oil_field_expansion
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 100
-		}
-
-		available = {
-		}
-
-		bypass = {
-			
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = {FOCUS_FILTER_INDUSTRY}
-		completion_reward = {
- 			every_owned_state = {
- 				limit = {
- 					is_controlled_by = ROOT
- 					is_core_of = ROOT
- 				}
- 				add_building_construction = {
- 					type = infrastructure
- 					level = 2
- 					instant_build = yes
- 				}
- 			}
- 		}
-	}
-
-	focus = {
-		id = MEX_focus_capital_reserves
-		icon = GFX_focus_generic_license_production
-		prerequisite = { focus = MEX_focus_oil_revenue_reinvestment }
-		x = 0
-		y = 1
-		relative_position_id = MEX_focus_oil_revenue_reinvestment
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1 # Don't think the AI bothers with licences
-		}
-
-		available = {
-			
-		}
-
-		bypass = {
-			
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			random_owned_controlled_state = {
- 				limit = {
- 					free_building_slots = {
- 						building = fuel_silo
- 						size > 2
- 						include_locked = yes
- 					}
- 					is_core_of = ROOT
- 				}
- 				add_extra_state_shared_building_slots = 3
- 				add_building_construction = {
- 					type = fuel_silo
- 					level = 3
- 					instant_build = yes
- 				}
- 			}
-			random_owned_controlled_state = {
- 				limit = {
- 					free_building_slots = {
- 						building = fuel_silo
- 						size > 2
- 						include_locked = yes
- 					}
- 					is_core_of = ROOT
- 				}
- 				add_extra_state_shared_building_slots = 3
- 				add_building_construction = {
- 					type = fuel_silo
- 					level = 3
- 					instant_build = yes
- 				}
- 			}
-		}
-	}
-	
-
-	
-
-	focus = {
-		id = MEX_focus_nationalize_the_oil_fields
-		icon = GFX_focus_eng_concessions_to_the_trade_unions
-		prerequisite = { focus = MEX_american_west_indies_protectorate }
-		x = 1
-		y = 1
-		relative_position_id = MEX_american_west_indies_protectorate
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 100
-		}
-
-		available = {
-			
-		}
-
-		bypass = {
-			
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			719 = {
- 				add_resource = {
- 					type = steel
- 					amount = 100
- 				}
- 			}
- 			727 = {
- 				add_resource = {
- 					type = steel
- 					amount = 100
- 				}
- 			}
- 			725 = {
- 				add_resource = {
- 					type = steel
- 					amount = 100
- 				}
- 			}
-			719 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
- 					type = arms_factory
- 					level = 1
- 					instant_build = yes
- 				}
-			}
-			721 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
- 					type = arms_factory
- 					level = 1
- 					instant_build = yes
- 				}
-			}
-		}
-	}
-	focus = {
-		id = MEX_focus_northern_steel_plants
-		icon = GFX_focus_generic_steel
-		prerequisite = { focus =  MEX_focus_control_the_army }
-		x = 2
-		y = 1
-		relative_position_id = MEX_focus_control_the_army
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 100
-		}
-
-		available = {
-			
-		}
-
-		bypass = {
-			
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = {FOCUS_FILTER_INDUSTRY}
-		completion_reward = {
-			720 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = recycling_center
-					level = 2
-					instant_build = yes
-				}
-			}
-			722 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = recycling_center
-					level = 2
-					instant_build = yes
-			}
-			}
-		}
-	}
-	
-
-	focus = {
 		id = MEX_focus_control_the_army
 		icon = GFX_focus_generic_military_mission
 		prerequisite = { focus = MEX_focus_jefe_maximo }
@@ -751,6 +461,51 @@ focus_tree = {
 		completion_reward = {
 			add_stability = 0.05
 			MEX_increase_church_power = yes
+		}
+	}
+	focus = {
+		id = MEX_focus_northern_steel_plants
+		icon = GFX_focus_generic_steel
+		prerequisite = { focus =  MEX_focus_control_the_army }
+		x = 2
+		y = 1
+		relative_position_id = MEX_focus_control_the_army
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		completion_reward = {
+			720 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = recycling_center
+					level = 2
+					instant_build = yes
+				}
+			}
+			722 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = recycling_center
+					level = 2
+					instant_build = yes
+			}
+			}
 		}
 	}
 
@@ -1483,6 +1238,181 @@ focus_tree = {
  			}
  		}
  	}
+	 focus = {
+		id = MEX_focus_royal_dutch_shell
+		icon = GFX_focus_generic_the_giant_wakes
+		prerequisite = { focus = MEX_go_with_britain }
+		x = -1
+		y = 1
+		relative_position_id = MEX_go_with_britain
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+			
+			modifier = {
+				factor = 0.1
+				is_historical_focus_on = yes
+			}
+			
+			modifier = {
+				factor = 0
+				OR = {
+					NOT = {
+						country_exists = ENG
+					}
+					ENG = {
+						NOT = {
+							has_government = democratic
+						}
+					}
+				}	
+			}
+		}
+
+		available = {
+			NOT = {
+				has_war_with = ENG
+			}
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
+		completion_reward = {
+			719 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+ 					type = industrial_complex
+ 					level = 1
+ 					instant_build = yes
+ 				}
+			}
+			721 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+ 					type = industrial_complex
+ 					level = 1
+ 					instant_build = yes
+ 				}
+			}
+			722 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+ 					type = industrial_complex
+ 					level = 1
+ 					instant_build = yes
+ 				}
+			}
+		}
+	}
+	focus = {
+		id = MEX_focus_oil_revenue_reinvestment
+		icon = GFX_goal_generic_construct_civilian
+		prerequisite = { focus = MEX_focus_royal_dutch_shell focus = MEX_focus_nationalize_the_oil_fields }
+		x = 0
+		y = 3
+		relative_position_id = MEX_focus_oil_field_expansion
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		completion_reward = {
+ 			every_owned_state = {
+ 				limit = {
+ 					is_controlled_by = ROOT
+ 					is_core_of = ROOT
+ 				}
+ 				add_building_construction = {
+ 					type = infrastructure
+ 					level = 2
+ 					instant_build = yes
+ 				}
+ 			}
+ 		}
+	}
+
+	focus = {
+		id = MEX_focus_capital_reserves
+		icon = GFX_focus_generic_license_production
+		prerequisite = { focus = MEX_focus_oil_revenue_reinvestment }
+		x = 0
+		y = 1
+		relative_position_id = MEX_focus_oil_revenue_reinvestment
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 1 # Don't think the AI bothers with licences
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			random_owned_controlled_state = {
+ 				limit = {
+ 					free_building_slots = {
+ 						building = fuel_silo
+ 						size > 2
+ 						include_locked = yes
+ 					}
+ 					is_core_of = ROOT
+ 				}
+ 				add_extra_state_shared_building_slots = 3
+ 				add_building_construction = {
+ 					type = fuel_silo
+ 					level = 3
+ 					instant_build = yes
+ 				}
+ 			}
+			random_owned_controlled_state = {
+ 				limit = {
+ 					free_building_slots = {
+ 						building = fuel_silo
+ 						size > 2
+ 						include_locked = yes
+ 					}
+ 					is_core_of = ROOT
+ 				}
+ 				add_extra_state_shared_building_slots = 3
+ 				add_building_construction = {
+ 					type = fuel_silo
+ 					level = 3
+ 					instant_build = yes
+ 				}
+ 			}
+		}
+	}
  	focus = {
  		id = MEX_make_use_of_our_riches
  		prerequisite = { focus = MEX_go_with_britain }
@@ -1585,6 +1515,69 @@ focus_tree = {
  				}
  			}
  		}
+	focus = {
+		id = MEX_focus_nationalize_the_oil_fields
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		prerequisite = { focus = MEX_american_west_indies_protectorate }
+		x = 1
+		y = 1
+		relative_position_id = MEX_american_west_indies_protectorate
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			719 = {
+ 				add_resource = {
+ 					type = steel
+ 					amount = 100
+ 				}
+ 			}
+ 			727 = {
+ 				add_resource = {
+ 					type = steel
+ 					amount = 100
+ 				}
+ 			}
+ 			725 = {
+ 				add_resource = {
+ 					type = steel
+ 					amount = 100
+ 				}
+ 			}
+			719 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+ 					type = arms_factory
+ 					level = 1
+ 					instant_build = yes
+ 				}
+			}
+			721 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+ 					type = arms_factory
+ 					level = 1
+ 					instant_build = yes
+ 				}
+			}
+		}
+	}
  	focus = {
  		id = MEX_combined_chiefs_of_staff_representation
  		available = {
