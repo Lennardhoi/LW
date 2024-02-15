@@ -402,7 +402,11 @@ focus_tree = {
  		id = SPA_national_recovery
  		available = {
  			date>1937.1.1
- 		}
+			OR = {
+				has_global_flag=Allies_lost_civil_war
+				has_global_flag=Axis_lost_civil_war
+			}
+		}
  		bypass = {
  		}
  		prerequisite = { focus = SPA_fuse_the_parties }
