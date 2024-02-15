@@ -1,0 +1,482 @@
+ focus_tree = {
+ 	id = spn_focus
+ 	country = {
+ 		factor = 0
+ 		modifier = {
+ 			add = 10
+ 			tag = SPN
+ 		}
+ 	}
+ 	default = no
+ 	reset_on_civilwar = no
+ 	initial_show_position = {
+ 		focus = industrial_effort
+ 	}
+ 	focus = {
+ 		id = army_effort
+ 		icon = GFX_goal_generic_allies_build_infantry
+ 		x = 9
+ 		y = 0
+ 		cost = 5
+ 		search_filters = {  FOCUS_FILTER_RESEARCH }
+ 		available_if_capitulated = yes
+ 		completion_reward = {
+ 			army_experience = 5
+ 			add_tech_bonus = {
+ 				name = land_doc_bonus
+ 				bonus = 1.0
+ 				uses = 1
+ 				category = land_doctrine
+ 			}
+ 		}
+ 	}
+ 	focus = {
+ 		id = equipment_effort
+ 		icon = GFX_goal_generic_small_arms
+ 		prerequisite = { focus = army_effort }
+ 		x = -1
+ 		y = 1
+ 		relative_position_id = army_effort
+ 		cost = 5
+ 		search_filters = {  FOCUS_FILTER_RESEARCH }
+ 		available_if_capitulated = yes
+ 		completion_reward = {
+ 			add_tech_bonus = {
+ 				name = infantry_artillery_bonus
+ 				bonus = 1.0
+ 				uses = 1
+ 				category = infantry_weapons
+ 				category = artillery
+ 			}
+ 		}
+ 	}
+ 	focus = {
+ 		id = motorization_effort
+ 		icon = GFX_goal_generic_army_motorized
+ 		prerequisite = { focus = army_effort }
+ 		bypass = { has_tech = motorised_infantry }
+ 		x = 1
+ 		y = 1
+ 		relative_position_id = army_effort
+ 		cost = 5
+ 		search_filters = {  FOCUS_FILTER_RESEARCH }
+ 		available_if_capitulated = yes
+ 		completion_reward = {
+ 			add_tech_bonus = {
+ 				name = motorized_bonus
+ 				bonus = 3.0
+ 				technology = motorised_infantry
+ 			}
+ 		}
+ 	}
+ 	focus = {
+ 		id = doctrine_effort
+ 		icon = GFX_goal_generic_army_doctrines
+ 		prerequisite = { focus = army_effort }
+ 		x = 0
+ 		y = 2
+ 		relative_position_id = army_effort
+ 		cost = 5
+ 		search_filters = {  FOCUS_FILTER_RESEARCH }
+ 		available_if_capitulated = yes
+ 		completion_reward = {
+ 			army_experience = 5
+ 			add_tech_bonus = {
+ 				name = land_doc_bonus
+ 				bonus = 1.0
+ 				uses = 1
+ 				category = land_doctrine
+ 			}
+ 		}
+ 	}
+ 	focus = {
+ 		id = equipment_effort_2
+ 		icon = GFX_goal_generic_army_artillery
+ 		prerequisite = { focus = equipment_effort }
+ 		x = 0
+ 		y = 2
+ 		relative_position_id = equipment_effort
+ 		cost = 5
+ 		search_filters = {  FOCUS_FILTER_RESEARCH }
+ 		available_if_capitulated = yes
+ 		completion_reward = {
+ 			add_tech_bonus = {
+ 				name = infantry_artillery_bonus
+ 				bonus = 1.0
+ 				uses = 1
+ 				category = infantry_weapons
+ 				category = artillery
+ 			}
+ 		}
+ 	}
+ 	focus = {
+ 		id = mechanization_effort
+ 		icon = GFX_goal_generic_build_tank
+ 		prerequisite = { focus = motorization_effort }
+ 		x = 0
+ 		y = 2
+ 		relative_position_id = motorization_effort
+ 		cost = 5
+ 		search_filters = {  FOCUS_FILTER_RESEARCH }
+ 		available_if_capitulated = yes
+ 		completion_reward = {
+ 			add_tech_bonus = {
+ 				name = motorized_bonus
+ 				ahead_reduction = 2
+ 				uses = 1
+ 				category = motorized_equipment
+ 			}
+ 		}
+ 	}
+ 	focus = {
+ 		id = doctrine_effort_2
+ 		icon = GFX_goal_generic_army_doctrines
+ 		prerequisite = { focus = doctrine_effort }
+ 		x = 0
+ 		y = 2
+ 		relative_position_id = doctrine_effort
+ 		cost = 5
+ 		search_filters = {  FOCUS_FILTER_RESEARCH }
+ 		available_if_capitulated = yes
+ 		completion_reward = {
+ 			army_experience = 5
+ 			add_tech_bonus = {
+ 				name = land_doc_bonus
+ 				bonus = 1.0
+ 				uses = 1
+ 				category = land_doctrine
+ 			}
+ 		}
+ 	}
+ 	focus = {
+ 		id = equipment_effort_3
+ 		icon = GFX_goal_generic_army_artillery2
+ 		prerequisite = { focus = equipment_effort_2 }
+ 		x = 0
+ 		y = 2
+ 		relative_position_id = equipment_effort_2
+ 		cost = 5
+ 		search_filters = {  FOCUS_FILTER_RESEARCH }
+ 		available_if_capitulated = yes
+ 		completion_reward = {
+ 			add_tech_bonus = {
+ 				name = infantry_artillery_bonus
+ 				ahead_reduction = 2
+ 				uses = 1
+ 				category = infantry_weapons
+ 				category = artillery
+ 			}
+ 		}
+ 	}
+ 	focus = {
+ 		id = armor_effort
+ 		icon = GFX_goal_generic_army_tanks
+ 		prerequisite = { focus = mechanization_effort }
+ 		x = 0
+ 		y = 2
+ 		relative_position_id = mechanization_effort
+ 		cost = 5
+ 		search_filters = {  FOCUS_FILTER_RESEARCH }
+ 		available_if_capitulated = yes
+ 		completion_reward = {
+ 			add_tech_bonus = {
+ 				name = armor_bonus
+ 				bonus = 1.0
+ 				uses = 2
+ 				category = armor
+ 			}
+ 		}
+ 	}
+ 	focus = {
+ 		id = special_forces
+ 		icon = GFX_goal_generic_special_forces
+ 		prerequisite = { focus = equipment_effort_3 }
+ 		prerequisite = { focus = doctrine_effort_2 }
+ 		prerequisite = { focus = armor_effort }
+ 		x = 1
+ 		y = 1
+ 		relative_position_id = equipment_effort_3
+ 		cost = 5
+ 		search_filters = { FOCUS_FILTER_RESEARCH }
+ 		available_if_capitulated = yes
+ 		completion_reward = {
+ 			add_ideas = special_forces
+ 		}
+ 	}
+ 	focus = {
+ 		id = industrial_effort
+ 		icon = GFX_goal_generic_production
+ 		x = 13
+ 		y = 0
+ 		cost = 5
+ 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
+ 		available_if_capitulated = yes
+ 		ai_will_do = {
+ 			factor = 10
+ 		}
+ 		completion_reward = {
+ 			add_tech_bonus = {
+ 				name = industrial_bonus
+ 				bonus = 1.0
+ 				uses = 1
+ 				category = industry
+ 			}
+ 		}
+ 		ai_will_do = {
+ 			factor = 3
+ 			modifier = {
+ 				factor = 0
+ 				date < 1939.1.1
+ 				OR = {
+ 					tag = BEL
+ 					tag = LUX
+ 					tag = HOL
+ 				}
+ 			}
+ 		}
+ 	}
+ 	focus = {
+ 		id = construction_effort
+ 		icon = GFX_goal_generic_construct_civ_factory
+ 		prerequisite = { focus = industrial_effort }
+ 		x = -1
+ 		y = 1
+ 		relative_position_id = industrial_effort
+ 		cost = 5
+ 		search_filters = { FOCUS_FILTER_INDUSTRY  }
+ 		available_if_capitulated = yes
+ 		ai_will_do = {
+ 			factor = 10
+ 		}
+ 		completion_reward = {
+ 			add_offsite_building = {
+ 				type = industrial_complex
+ 				level = 1
+ 			        }
+ 		        }
+            }
+
+ 	focus = {
+ 		id = production_effort
+ 		icon = GFX_goal_generic_construct_mil_factory
+ 		prerequisite = { focus = industrial_effort }
+ 		x = 1
+ 		y = 1
+ 		relative_position_id = industrial_effort
+ 		cost = 5
+ 		search_filters = { FOCUS_FILTER_INDUSTRY  }
+ 		available_if_capitulated = yes
+ 		ai_will_do = {
+ 			factor = 10
+ 		}
+ 		completion_reward = {
+ 			add_offsite_building = {
+ 				type = arms_factory
+ 				level = 1
+ 			        }
+ 		        }
+            }
+ 	focus = {
+ 		id = construction_effort_2
+ 		icon = GFX_goal_generic_construct_civ_factory
+ 		prerequisite = { focus = construction_effort }
+ 		x = 0
+ 		y = 1
+ 		relative_position_id = construction_effort
+ 		cost = 5
+ 		search_filters = { FOCUS_FILTER_INDUSTRY  }
+ 		available_if_capitulated = yes
+ 		ai_will_do = {
+ 			factor = 10
+ 		}
+ 		completion_reward = {
+ 			add_offsite_building = {
+ 				type = industrial_complex
+ 				level = 2
+ 			        }
+ 		        }
+            }
+ 	focus = {
+ 		id = production_effort_2
+ 		icon = GFX_goal_generic_construct_mil_factory
+ 		prerequisite = { focus = production_effort }
+ 		x = 0
+ 		y = 1
+ 		relative_position_id = production_effort
+ 		cost = 5
+ 		search_filters = { FOCUS_FILTER_INDUSTRY  }
+ 		available_if_capitulated = yes
+ 		ai_will_do = {
+ 			factor = 10
+ 		}
+ 		completion_reward = {
+ 			add_offsite_building = {
+ 				type = arms_factory
+ 				level = 2
+ 			        }
+ 		        }
+ 		}
+ 	focus = {
+ 		id = production_effort_3
+ 		icon = GFX_goal_generic_construct_mil_factory
+ 		prerequisite = { focus = production_effort_2 }
+ 		x = 0
+ 		y = 1
+ 		relative_position_id = production_effort_2
+ 		cost = 5
+ 		search_filters = { FOCUS_FILTER_INDUSTRY  }
+ 		available_if_capitulated = yes
+ 		ai_will_do = {
+ 			factor = 10
+ 		}
+ 		completion_reward = {
+ 			add_offsite_building = {
+ 				type = arms_factory
+ 				level = 3
+ 			     }
+ 		    }
+ 		}
+ 	focus = {
+ 		id = construction_effort_3
+ 		icon = GFX_goal_generic_construct_civ_factory
+ 		prerequisite = { focus = construction_effort_2 }
+ 		x = 0
+ 		y = 1
+ 		relative_position_id = construction_effort_2
+ 		cost = 5R
+ 		search_filters = { FOCUS_FILTER_INDUSTRY  }
+ 		available_if_capitulated = yes
+ 		ai_will_do = {
+ 			factor = 2
+ 		}
+ 		completion_reward = {
+ 			add_offsite_building = {
+ 				type = industrial_complex
+ 				level = 3
+ 			     }
+ 		    }
+ 	    }
+ 	focus = {
+ 		id = extra_tech_slot
+ 		icon = GFX_focus_research
+ 		prerequisite = { focus = construction_effort_3 }
+ 		x = 0
+ 		y = 1
+ 		relative_position_id = construction_effort_3
+ 		cost = 5
+ 		search_filters = { FOCUS_FILTER_RESEARCH }
+ 		available_if_capitulated = yes
+ 		completion_reward = {
+ 			add_research_slot = 1
+ 		}
+ 	}
+ 	focus = {
+ 		id = extra_tech_slot_2
+ 		icon = GFX_focus_research
+ 		prerequisite = { focus = extra_tech_slot }
+ 		available = {
+ 			num_of_factories > 50
+ 		}
+ 		cancel_if_invalid = no
+ 		continue_if_invalid = yes
+ 		x = 0
+ 		y = 1
+ 		relative_position_id = extra_tech_slot
+ 		cost = 5
+ 		search_filters = { FOCUS_FILTER_RESEARCH }
+ 		available_if_capitulated = yes
+ 		completion_reward = {
+ 			add_research_slot = 1
+ 		}
+ 	}
+ 	focus = {
+ 		id = secret_weapons
+ 		icon = GFX_goal_generic_secret_weapon
+ 		prerequisite = { focus = construction_effort_3 }
+ 		x = 2
+ 		y = 1
+ 		relative_position_id = construction_effort_3
+ 		cost = 5
+ 		search_filters = { FOCUS_FILTER_RESEARCH }
+ 		available_if_capitulated = yes
+ 		completion_reward = {
+ 			add_tech_bonus = {
+ 				name = secret_bonus
+ 				bonus = 1.0
+ 				uses = 4
+ 				category = electronics
+ 				category = nuclear
+ 				category = rocketry
+ 			}
+ 		}
+ 		ai_will_do = {
+ 			factor = 1
+ 			modifier = {
+ 				factor = 0.25
+ 				always = yes
+ 			}
+ 		}
+ 	}
+ 	focus = {
+ 		id = political_effort
+ 		icon = GFX_goal_generic_demand_territory
+ 		x = 17
+ 		y = 0
+ 		cost = 5
+ 		search_filters = { FOCUS_FILTER_POLITICAL }
+ 		available_if_capitulated = yes
+ 		completion_reward = {
+ 			add_political_power = 120
+ 		}
+ 	}
+ 	
+ 	focus = {
+ 		id = political_correctness
+ 		icon = GFX_goal_generic_dangerous_deal
+ 		prerequisite = { focus = political_effort }
+ 		x = 0
+ 		y = 1
+ 		relative_position_id = political_effort
+ 		cost = 5
+ 		search_filters = { FOCUS_FILTER_POLITICAL  }
+ 		available_if_capitulated = yes
+ 		completion_reward = {
+ 			if = {
+ 				limit = { has_idea = neutrality_idea }
+ 				remove_ideas = neutrality_idea
+ 			}
+ 			add_political_power = 200
+ 			add_ideas = idea_political_correctness
+ 		}
+ 	}
+ 	focus = {
+ 		id = indoctrination_focus
+ 		icon = GFX_goal_generic_propaganda
+ 		prerequisite = { focus = political_correctness }
+ 		x = 0
+ 		y = 1
+ 		relative_position_id = political_correctness
+ 		cost = 5
+ 		search_filters = { FOCUS_FILTER_POLITICAL  }
+ 		available_if_capitulated = yes
+ 		completion_reward = {
+ 			add_ideas = political_commissars_focus
+ 			add_political_power = 150
+ 		}
+ 	}
+ 	focus = {
+ 		id = ideological_fanaticism
+ 		icon = GFX_goal_generic_demand_territory
+ 		prerequisite = { focus = indoctrination_focus }
+ 		x = 0
+ 		y = 1
+ 		relative_position_id = indoctrination_focus
+ 		cost = 10
+ 		search_filters = { FOCUS_FILTER_POLITICAL }
+ 		available_if_capitulated = yes
+ 		completion_reward = {
+ 			add_ideas = ideological_fanaticism_focus
+ 		}
+ 	}
+}
+
