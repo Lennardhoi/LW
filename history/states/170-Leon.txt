@@ -1,26 +1,35 @@
-state={
- 	id=170
- 	name="STATE_174"
- 	manpower = 1566041
- 	resources={
- 		tungsten = 100.000
- 	}
- 	state_category = large_town
- 	history={
- 		owner = SPR
- 		victory_points = {
- 			689 1
- 		}
- 		buildings = {
- 			infrastructure = 6
- 			industrial_complex = 1
- 			anti_air_building = 10
- 		}
- 		add_core_of = SPR
- 		add_core_of = SPN
- 	}
- 	provinces={
- 		689 874 875 3496 3498 3670 3671 6248 6398 8916 11867 11880
- 	}
- }
 
+state={
+	id=170
+	name="STATE_174"
+	resources={
+		tungsten=100.000
+	}
+
+	history={
+		owner = SPR
+		victory_points = {
+			689 10 
+		}
+		victory_points = {
+			12047 3
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			anti_air_building = 10
+
+		}
+		add_core_of = SPR
+		add_core_of = SPN
+
+	}
+
+	provinces={
+		689 874 875 3496 3498 3670 3671 6248 6398 8916 11867 11880 12041 12043 
+	}
+	manpower=1566041
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

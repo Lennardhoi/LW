@@ -1,22 +1,34 @@
-state={
- 	id=704
- 	name="STATE_790"
- 	history={
- 		owner = SPN
- 		buildings = {
- 			infrastructure = 6
- 			industrial_complex = 1
- 			arms_factory = 1
- 			anti_air_building = 10
- 		}
- 		add_core_of = SPR
- 		add_core_of = SPN
- 	}
- 	provinces={
- 		701 3500 6251 8920 8936 10610
- 	}
- 	manpower=1197252
- 	buildings_max_level_factor=1.000
- 	state_category=large_town
- }
 
+state={
+	id=704
+	name="STATE_790"
+
+	history={
+		owner = SPN
+		victory_points = {
+			12047 3
+		}
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+			arms_factory = 1
+			anti_air_building = 10
+			12047 = {
+				naval_base = 3
+
+			}
+
+		}
+		add_core_of = SPR
+		add_core_of = SPN
+
+	}
+
+	provinces={
+		701 3500 6251 8920 8936 10610 12045 12046 12047 
+	}
+	manpower=1197252
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}
