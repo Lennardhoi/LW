@@ -2616,6 +2616,18 @@ focus_tree = {
  		available_if_capitulated = no
  		search_filters = { FOCUS_FILTER_INDUSTRY }
  		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 25000
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment_1
+				amount = 1500
+			}
+			add_equipment_to_stockpile = {
+				type = anti_air_equipment_1
+				amount = 500
+			}
  			every_state = {
  				limit={OR={is_core_of=INS state=300 state=294 state=544 state=547 state=545 state=546 state=549 state=548}}
  				add_state_modifier={

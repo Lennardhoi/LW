@@ -1715,45 +1715,13 @@ focus_tree = {
  							include_locked = yes
  						}
  					}
- 					add_extra_state_shared_building_slots = 1
+ 					add_extra_state_shared_building_slots = 4
  					add_building_construction = {
  						type = industrial_complex
- 						level = 1
+ 						level = 4
  						instant_build = yes
  					}
  					set_state_flag = ENG_uk_australia_focus_1IC
- 				}
- 				random_owned_controlled_state = {
- 					limit = {
- 						free_building_slots = {
- 							building = industrial_complex
- 							size > 0
- 							include_locked = yes
- 						}
- 					}
- 					add_extra_state_shared_building_slots = 1
- 					add_building_construction = {
- 						type = industrial_complex
- 						level = 1
- 						instant_build = yes
- 					}
- 					set_state_flag = ENG_uk_australia_focus_2dockyards
- 				}
- 				random_owned_controlled_state = {
- 					limit = {
- 						free_building_slots = {
- 							building = industrial_complex
- 							size > 0
- 							include_locked = yes
- 						}
- 					}
- 					add_extra_state_shared_building_slots = 1
- 					add_building_construction = {
- 						type = industrial_complex
- 						level = 1
- 						instant_build = yes
- 					}
- 					set_state_flag = ENG_uk_australia_focus_2dockyards
  				}
  			}
  			118 = {
@@ -2011,21 +1979,16 @@ focus_tree = {
  			factor = 1
  		}
  		completion_reward = {
+			AST = {
+				annex_country = {
+					target = NZL
+				}
+			}
 			641 = {
-			add_extra_state_shared_building_slots = 1
- 					add_building_construction = {
- 						type = industrial_complex
- 						level = 1
- 						instant_build = yes
- 					}
+				add_core_of = AST
 			}
 			272 = {
-			add_extra_state_shared_building_slots = 2
- 					add_building_construction = {
- 						type = arms_factory
- 						level = 2
- 						instant_build = yes
- 					}
+				add_core_of = AST
 			}
  			hidden_effect = { news_event = { id = mtg_news.13 days = 1 } }
  			ENG = {
@@ -2949,51 +2912,6 @@ focus_tree = {
  			}
  		}
  	}
-	 focus = {
-		id = ENG_east_indies
-		available = {
-			date>1940.1.1
-		}
-		prerequisite = { focus = ENG_pressure_axis }
-		icon = GFX_goal_generic_construct_military
-		x = 0
-		y = 1
-		offset = {
-			x = 0
-			y = 1
-		}
-		relative_position_id = ENG_pressure_axis
-		cost = 1
-		ai_will_do = {
-			factor = 1
-		}
-		completion_reward = {
-			117 = {
-				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
-					type = arms_factory
-					level = 5
-					instant_build = yes
-				}
-			}
-			131 = {
-				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
-					type = arms_factory
-					level = 5
-					instant_build = yes
-				}
-			}
-			119 = {
-				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
-					type = arms_factory
-					level = 5
-					instant_build = yes
-				}
-			}
-		}
-	}
  	focus = {
  		id = ENG_southern_thrust
  		icon = GFX_focus_ENG_attack_iran

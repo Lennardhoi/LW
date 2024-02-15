@@ -90,7 +90,7 @@ characters={
 			defense_skill=3
 			planning_skill=2
 			logistics_skill=3
-			legacy_id=-1
+			legacy_id=802
 		}
 	}
 	
@@ -105,12 +105,12 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ brilliant_strategist armor_officer infantry_leader }
-			skill=3
+			traits={ brilliant_strategist armor_officer infantry_leader organizer }
+			skill=4
 			attack_skill=1
 			defense_skill=7
 			planning_skill=1
-			logistics_skill=1
+			logistics_skill=3
 			legacy_id=-1
 		}
 	}
@@ -164,12 +164,12 @@ characters={
 				large="gfx/leaders/USA/Portrait_USA_Jonathan_Wainwright.dds"
 			}
 		}
-		corps_commander={
-			traits={ infantry_leader skilled_staffer }
-			skill=2
-			attack_skill=2
+		field_marshal={
+			traits={ infantry_leader skilled_staffer inflexible_strategist }
+			skill=3
+			attack_skill=3
 			defense_skill=2
-			planning_skill=2
+			planning_skill=3
 			logistics_skill=2
 			legacy_id=-1
 		}
@@ -211,7 +211,7 @@ characters={
 			defense_skill=3
 			planning_skill=2
 			logistics_skill=3
-			legacy_id=-1
+			legacy_id=803
 		}
 	}
 	USA_edward_brooks={
@@ -225,7 +225,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ armor_officer commando naval_invader }
+			traits={ infantry_leader commando naval_invader }
 			skill=4
 			attack_skill=5
 			defense_skill=2
@@ -251,7 +251,7 @@ characters={
 			defense_skill=3
 			planning_skill=2
 			logistics_skill=3
-			legacy_id=-1
+			legacy_id=801
 		}
 	}
 	USA_alexander_patch={
@@ -802,14 +802,8 @@ characters={
 				large=GFX_portrait_USA_douglas_macarthur
 			}
 		}
-		country_leader={
-			desc=""
-			ideology=liberalism
-			expire="1947.1.1.1"
-			id=-1
-		}
 		corps_commander = {
-			id=56
+			legacy_id=56
 			traits = {  offensive_doctrine brilliant_strategist media_personality politically_connected infantry_leader naval_invader jungle_rat skilled_staffer}
 			skill = 7
 			attack_skill = 7

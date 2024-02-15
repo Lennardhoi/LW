@@ -920,7 +920,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier= {
-				special_forces_min = 112
+				special_forces_min = 56
 				land_reinforce_rate = 0.1
 			}
 		}
@@ -935,7 +935,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier= {
-				special_forces_min = 224
+				special_forces_min = 168
 				land_reinforce_rate = 0.1
 			}
 		}
@@ -1724,7 +1724,10 @@ ideas = {
 		designer = yes
 		marmon_herrington = {
 			allowed = {
-				original_tag = USA
+				or = {
+					original_tag = USA
+					original_tag = USP
+				}
 			}
 			research_bonus = {
 				armor = 0.15
@@ -1745,7 +1748,10 @@ ideas = {
 		}
 		chrysler = {
 			allowed = {
-				original_tag = USA
+				or = {
+					original_tag = USA
+					original_tag = USP
+				}
 			}
 			research_bonus = {
 				armor = 0.15
@@ -1769,10 +1775,16 @@ ideas = {
 		detroit_arsenal = {
 			picture = generic_industrial_concern_1
 			allowed = {
-				original_tag = USA
+				or = {
+					original_tag = USA
+					original_tag = USP
+				}
 			}
 			available = {
-				has_completed_focus = USA_main_battle_tanks
+				or = {
+					has_completed_focus = USA_main_battle_tanks
+					has_completed_focus = UAC_focus_invite_british_military_concerns
+				}
 			}
 			research_bonus = {
 				armor = 0.15
@@ -1790,10 +1802,16 @@ ideas = {
 		tank_destroyer_board = {
 			picture = usa_tank_destroyer_board
 			allowed = {
-				original_tag = USA
+				or = {
+					original_tag = USA
+					original_tag = USP
+				}
 			}
 			available = {
-				has_completed_focus = USA_tank_destroyer_doctrine
+				or = {
+					has_completed_focus = USA_tank_destroyer_doctrine
+					has_completed_focus = UAC_focus_invite_british_military_concerns
+				}
 			}
 			research_bonus = {
 				armor = 0.15
@@ -1820,7 +1838,10 @@ ideas = {
 		}
 		army_ordnance_department = {
 			allowed = {
-				original_tag = USA
+				or = {
+					original_tag = USA
+					original_tag = USP
+				}
 			}
 			research_bonus = {
 				armor = 0.15
