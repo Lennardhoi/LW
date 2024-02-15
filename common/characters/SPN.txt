@@ -64,7 +64,7 @@ characters={
 					original_tag  = SPN 
 				}
 				traits  = {
-					army_chief_old_guard 
+					army_chief_offensive_1 
 				}
 				ai_will_do  = {
 					factor  = 1.000
@@ -180,7 +180,7 @@ characters={
 					original_tag  = SPN 
 				}
 				traits  = {
-					air_strategic_bombing_2 
+					army_infantry_1 
 				}
 				ai_will_do  = {
 					factor  = 1.000
@@ -191,6 +191,92 @@ characters={
 			army={
 				small="GFX_idea_generic_air_europe_1"
 			}
+		}
+	}
+	SPR_SPA_gonzalo_queipo_de_llano={
+		name=SPR_gonzalo_queipo_de_llano
+		portraits={
+			army={
+				large="GFX_portrait_SPA_gonzalo_queipo_de_llano"
+				small=GFX_portrait_SPR_gonzalo_queipo_de_llano_small
+			}
+		}
+		corps_commander={
+			traits={ infantry_leader trickster naval_invader }
+			skill=5
+			attack_skill=5
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=4
+			legacy_id=1110
+		}
+	}
+	SPR_SPA_mohamed_safi={
+		name=SPR_SPA_mohamed_meziane
+		portraits={
+			army={
+				large="GFX_portrait_SPA_mohamed_meziane"
+				small=GFX_portrait_SPR_mohamed_meziane_small
+			}
+		}
+		corps_commander={
+			traits={ infantry_leader trait_mountaineer desert_fox uebergewicht }
+			skill=5
+			attack_skill=5
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=1109
+		}
+	}
+	SPA_agustin_munoz_grandes={
+		instance = {
+			allowed = {
+				has_dlc = "La Resistance"
+			}
+			name=SPA_agustin_munoz_grandes
+			portraits={
+				army={
+					small="GFX_idea_SPA_agustin_munoz_grandes"
+					large="GFX_portrait_SPA_augustin_muynoz_grandes"
+				}
+			}
+			advisor={
+				cost = 100
+				slot = theorist
+				idea_token = SPA_agustin_munoz_grandes
+				ledger = army
+				allowed = {
+					has_dlc = "La Resistance"
+					original_tag = SPR
+				}
+				visible = {
+					NOT = {
+						tag = SPD
+						tag = SPC
+					}
+				}
+				available = {
+					NOT = { has_completed_focus = SPA_supremacy_of_the_communion }
+					custom_trigger_tooltip = {
+						tooltip = SPA_not_republican_spain_tt
+						NOT = { tag = SPD }
+					}
+				}
+				traits = {
+					mobile_warfare_expert
+				}
+			}
+			
+		corps_commander={
+			traits = {  panzer_leader panzer_expert trickster expert_improviser trait_engineer organizer}
+			skill = 6
+			attack_skill = 6
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 4
+			legacy_id=1110
+		}
 		}
 	}
 }
