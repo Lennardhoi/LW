@@ -156,9 +156,13 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL  }
 		completion_reward = {
-			add_offsite_building = {
-				type = industrial_complex
-				level = 2
+			550 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes 
+				}
 			}
 			add_tech_bonus = {
 				name = "Construction Bonus"
@@ -201,9 +205,13 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL  }
 		completion_reward = {
-			add_offsite_building = {
-				type = industrial_complex
-				level = 2
+			550 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes 
+				}
 			}
 		}
 	}
@@ -237,7 +245,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL  }
 		completion_reward = {
-			294 = {
+			645 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = infrastructure
@@ -245,9 +253,13 @@ focus_tree = {
 					instant_build = yes 
 				}
 			}
-			add_offsite_building = {
-				type = industrial_complex
-				level = 2
+			550 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes 
+				}
 			}
 		}
 	}
@@ -290,6 +302,7 @@ focus_tree = {
 					instant_build = yes 
 				}
 			}
+			remove_ideas = UAC_depression3
 		}
 	}
 	
@@ -326,6 +339,10 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL  }
 		completion_reward = {
+			USA = {
+				add_relation_modifier = { target = USP modifier = FreeTrade}
+			}
+			add_relation_modifier = { target = USA modifier = FreeTrade}
 			swap_ideas = {
 				remove_idea = UAC_depression2
 				add_idea = UAC_depression3
@@ -718,6 +735,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL  }
 		completion_reward = {
+			add_war_support = 0.1
 			add_ideas = partial_economic_mobilisation
 		}
 	}
@@ -809,7 +827,7 @@ focus_tree = {
 		text = "Military Factories"
 		prerequisite = { focus = UAC_focus_military_independence focus = UAC_focus_invite_british_military_concerns }
 		relative_position_id = UAC_focus_expand_the_military_sector
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -893,7 +911,7 @@ focus_tree = {
 		text = "Military Factories II"
 		prerequisite = { focus = UAC_focus_military_factories focus = UAC_focus_tools}
 		relative_position_id = UAC_focus_expand_the_military_sector
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -993,7 +1011,6 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL  }
 		completion_reward = {
-			add_war_support = 0.075
 			add_manpower = 20000
 			add_ideas = UAC_cheap_workers 
 		}
@@ -1030,8 +1047,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL  }
 		completion_reward = {
-			add_stability = 0.05
-			add_war_support = 0.075
+			add_stability = 0.1
 		}
 	}
 
@@ -1399,6 +1415,11 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL  }
 		completion_reward = {
+			550 = {
+				add_dynamic_modifier = {
+					modifier = USP_no_meme
+				}
+			}
 			add_war_support = 1
 			add_ideas = war_economy
 		}
@@ -1517,6 +1538,42 @@ focus_tree = {
 	}
 
 	focus = {
+		id = "Repair Pearl Harbor"
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 0
+		y = 4
+		relative_position_id = "Open Great War Stockpiles"
+		prerequisite = { focus = "UAC_focus_recovery" }
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+		 
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL  }
+		completion_reward = {
+			550 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = dockyard
+					level = 5
+				}
+			}
+		}
+	}
+
+	focus = {
 		id = UAC_focus_lessons_learned
 		icon = GFX_focus_generic_manpower
 		x = -2
@@ -1598,6 +1655,14 @@ focus_tree = {
 				add_skill_level = 3
 				promote_leader = yes
 			} 
+			every_unit_leader = {
+				limit={has_id=801}
+				add_attack=1
+				add_defense=1
+				add_planning=1
+				add_logistics=1
+				add_unit_leader_trait = trait_mountaineer
+			} 
 		}
 	}
 
@@ -1650,7 +1715,6 @@ focus_tree = {
 		}
 
 		available = {
-			date > 1941.4.1
 		}
 		
 		bypass = {
@@ -1839,7 +1903,7 @@ focus_tree = {
 		icon = GFX_focus_secret_rearmament
 		x = -4
 		y = 1
-		text = "Gun Modernization"
+		text = "Replace the Garand"
 		relative_position_id = UAC_focus_african_war_perspective
 		prerequisite = { focus = UAC_focus_african_war_perspective }
 		cost = 5
@@ -1917,7 +1981,7 @@ focus_tree = {
 		icon = GFX_focus_eng_special_air_service
 		x = 0
 		y = 1
-		text = "Al-Aqsa Brigades"
+		text = "Form the Marine Raiders"
 		relative_position_id = UAC_focus_african_war_perspective
 		prerequisite = { focus = UAC_focus_african_war_perspective }
 		cost = 5
@@ -1946,6 +2010,40 @@ focus_tree = {
 				category = special_forces_doctrine
 			}
 			add_ideas = USP_spec_ops
+		}
+	}
+	focus = {
+		id = "The Sherman Crocodile"
+		icon = GFX_goal_continuous_armor_production
+		x = 0
+		y = 2
+		relative_position_id = UAC_focus_special_forces
+		prerequisite = { focus = UAC_focus_special_forces }
+		cost = 5
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_POLITICAL  }
+		completion_reward = {
+			add_tech_bonus = {
+				name = sherman_crocodile
+				technology = advanced_light_tank_chassis
+				bonus = 1
+			}
 		}
 	}
 
@@ -1995,7 +2093,7 @@ focus_tree = {
 		icon = GFX_goal_poland_goal
 		x = 4
 		y = 1
-		text = "Contact Al-Qassam Engineers"
+		text = "Develop the M8 Rocket Launcher"
 		relative_position_id = UAC_focus_african_war_perspective
 		prerequisite = { focus = UAC_focus_african_war_perspective }
 		cost = 5
@@ -2032,7 +2130,7 @@ focus_tree = {
 		icon = GFX_goal_generic_occupy_start_war
 		x = 3
 		y = 2
-		text = "Al-Qassam Rockets"
+		text = "Develop the M16 Rocket Launcher"
 		relative_position_id = UAC_focus_african_war_perspective
 		prerequisite = { focus = UAC_focus_rocketry_focus }
 		cost = 5
@@ -2069,7 +2167,7 @@ focus_tree = {
 		icon = GFX_focus_generic_army_tanks2
 		x = 1
 		y = 2
-		text = "Yasin Anti-Tank Missiles"
+		text = "Produce the Bazooka"
 		relative_position_id = UAC_focus_african_war_perspective
 		prerequisite = { focus = UAC_focus_anti_tank_focus }
 		cost = 5
@@ -2101,7 +2199,7 @@ focus_tree = {
 		icon = GFX_goal_continuous_repairments
 		x = -1
 		y = 2
-		text = "Al-Bana Launchers"
+		text = "Produce the Long Tom"
 		relative_position_id = UAC_focus_african_war_perspective
 		prerequisite = { focus = UAC_focus_artillery_focus }
 		cost = 5
@@ -2133,7 +2231,7 @@ focus_tree = {
 		icon = GFX_goal_generic_small_arms
 		x = -3
 		y = 2
-		text = "Advanced Infantry Equipment"
+		text = "Develop a Selective-Fire Carbine"
 		relative_position_id = UAC_focus_african_war_perspective
 		prerequisite = { focus = UAC_focus_gun_focus }
 		cost = 5

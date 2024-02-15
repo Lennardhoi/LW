@@ -324,6 +324,15 @@ Stahlpakt = {
 	}
 
 	trade_cost_for_target_factor=-0.5}
+FreeTrade = {
+	valid_relation_trigger = {
+		FROM = {
+			NOT = { has_war_with = ROOT }
+		}
+	}
+
+	trade_cost_for_target_factor=-0.66
+}
 tradeback_is_cancer = {
 	valid_relation_trigger = {
 		has_idea=tradeback_is_cancer

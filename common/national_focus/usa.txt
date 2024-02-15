@@ -1920,6 +1920,14 @@ focus_tree = {
  		continue_if_invalid = no
  		available_if_capitulated = no
  		completion_reward = {
+			every_unit_leader = {
+				limit={has_id=802}
+				add_unit_leader_trait = urban_assault_specialist
+			} 
+			every_unit_leader = {
+				limit={has_id=803}
+				add_unit_leader_trait = trait_mountaineer
+			} 
  			custom_effect_tooltip=USA_reinforce_oceania_tt
  			division_template = {
  				name = "US-Marines"

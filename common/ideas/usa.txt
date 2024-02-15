@@ -635,7 +635,7 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.5
 				production_speed_infrastructure_factor = 0.2
 				stability_factor = 0.10
-				production_factory_max_efficiency_factor = -0.05
+				production_factory_max_efficiency_factor = -0.15
 			}
 		}
 		USA_second_deal2 = {
@@ -653,7 +653,7 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.5
 				production_speed_infrastructure_factor = 0.2
 				stability_factor = 0.10
-				production_factory_max_efficiency_factor = -0.15
+				production_factory_max_efficiency_factor = -0.25
 			}
 		}
 		USA_second_deal3 = {
@@ -671,7 +671,7 @@ ideas = {
 				production_speed_industrial_complex_factor = 0.5
 				production_speed_infrastructure_factor = 0.2
 				stability_factor = 0.10
-				production_factory_max_efficiency_factor = -0.3
+				production_factory_max_efficiency_factor = -0.4
 			}
 		}
 		USA_war_plans_1 = {
@@ -920,7 +920,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier= {
-				special_forces_min = 112
+				special_forces_min = 56
 				land_reinforce_rate = 0.1
 			}
 		}
@@ -935,7 +935,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier= {
-				special_forces_min = 224
+				special_forces_min = 168
 				land_reinforce_rate = 0.1
 			}
 		}
@@ -1531,10 +1531,6 @@ ideas = {
 			}
 			removal_cost = -1
 			picture = USA_america_free_of_fascism
-			modifier = {
-				army_core_attack_factor = 0.25
-				army_core_defence_factor = 0.25
-			}
 			targeted_modifier = {
 				tag = ITA
 				attack_bonus_against = -0.25
@@ -1728,7 +1724,10 @@ ideas = {
 		designer = yes
 		marmon_herrington = {
 			allowed = {
-				original_tag = USA
+				or = {
+					original_tag = USA
+					original_tag = USP
+				}
 			}
 			research_bonus = {
 				armor = 0.15
@@ -1749,7 +1748,10 @@ ideas = {
 		}
 		chrysler = {
 			allowed = {
-				original_tag = USA
+				or = {
+					original_tag = USA
+					original_tag = USP
+				}
 			}
 			research_bonus = {
 				armor = 0.15
@@ -1773,10 +1775,16 @@ ideas = {
 		detroit_arsenal = {
 			picture = generic_industrial_concern_1
 			allowed = {
-				original_tag = USA
+				or = {
+					original_tag = USA
+					original_tag = USP
+				}
 			}
 			available = {
-				has_completed_focus = USA_main_battle_tanks
+				or = {
+					has_completed_focus = USA_main_battle_tanks
+					has_completed_focus = UAC_focus_invite_british_military_concerns
+				}
 			}
 			research_bonus = {
 				armor = 0.15
@@ -1794,10 +1802,16 @@ ideas = {
 		tank_destroyer_board = {
 			picture = usa_tank_destroyer_board
 			allowed = {
-				original_tag = USA
+				or = {
+					original_tag = USA
+					original_tag = USP
+				}
 			}
 			available = {
-				has_completed_focus = USA_tank_destroyer_doctrine
+				or = {
+					has_completed_focus = USA_tank_destroyer_doctrine
+					has_completed_focus = UAC_focus_invite_british_military_concerns
+				}
 			}
 			research_bonus = {
 				armor = 0.15
@@ -1824,7 +1838,10 @@ ideas = {
 		}
 		army_ordnance_department = {
 			allowed = {
-				original_tag = USA
+				or = {
+					original_tag = USA
+					original_tag = USP
+				}
 			}
 			research_bonus = {
 				armor = 0.15
