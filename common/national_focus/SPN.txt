@@ -462,6 +462,24 @@
  		completion_reward = {
  			add_ideas = political_commissars_focus
  			add_political_power = 150
+			if = {
+ 				limit = {
+ 					has_idea = SPA_carlism_1
+ 				}
+ 				swap_ideas = {
+ 					remove_idea = SPA_carlism_1
+ 					add_idea = SPA_carlism_2
+ 				}
+ 			}
+ 			if = {
+ 				limit = {
+ 					has_idea = SPA_carlism_2
+ 				}
+ 				swap_ideas = {
+ 					remove_idea = SPA_carlism_2
+ 					add_idea = SPA_carlism_3
+ 				}
+ 			}
  		}
  	}
  	focus = {
@@ -475,6 +493,24 @@
  		search_filters = { FOCUS_FILTER_POLITICAL }
  		available_if_capitulated = yes
  		completion_reward = {
+			if = {
+ 				limit = {
+ 					has_idea = SPA_carlism_1
+ 				}
+ 				swap_ideas = {
+ 					remove_idea = SPA_carlism_1
+ 					add_idea = SPA_carlism_2
+ 				}
+ 			}
+ 			if = {
+ 				limit = {
+ 					has_idea = SPA_carlism_2
+ 				}
+ 				swap_ideas = {
+ 					remove_idea = SPA_carlism_2
+ 					add_idea = SPA_carlism_3
+ 				}
+ 			}
  			add_ideas = ideological_fanaticism_focus
  		}
  	}
