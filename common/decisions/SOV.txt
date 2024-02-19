@@ -274,7 +274,19 @@ debug_decisions = {
  			set_capital={state =212}
  		}
  	}
- 	SOV_hero_city_brzesc_litewski = {
+ 		SOV_move_capital_ufa={
+ 		icon = generic_civil_support
+ 		allowed = {
+ 			original_tag = SOV
+ 		}
+ 		visible={has_war_with=GER}
+ 		available={
+ 			571={is_capital=no}}
+ 		complete_effect={
+ 			set_capital={state = 571}
+ 		}
+ 	}
+	SOV_hero_city_brzesc_litewski = {
  		icon = generic_scorched_earth
  		allowed = { original_tag = SOV }
  		available = {
