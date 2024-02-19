@@ -2006,6 +2006,7 @@ focus_tree = {
  			factor = 1
  		}
  		available = {
+			date > 1941.12.1
  		}
  		bypass = {
  		}
@@ -2014,6 +2015,18 @@ focus_tree = {
  		available_if_capitulated = no
  		completion_reward = {
  			add_ideas=USA_island_hopping
+			JAP = {
+			remove_trait = {
+				character = JAP_isoroku_yamamoto
+				slot = navy_leader
+				trait = inshore_fighter
+			}
+			remove_trait = {
+				character = JAP_soemu_toyoda
+				slot = navy_leader
+				trait = inshore_fighter
+			}				
+			}
  		}
  	}
  	focus = {
@@ -2641,7 +2654,7 @@ focus_tree = {
  				name = USA_battleship_primacy
  				bonus = 1.0
  				uses = 1
- 				category = bb_tech
+ 				technology = improved_ship_hull_heavy
  			}
  		}
  	}
@@ -2659,7 +2672,7 @@ focus_tree = {
  				name = USA_carrier_primacy
  				bonus = 1.5
  				uses = 1
- 				category = cv_tech
+ 				technology = improved_ship_hull_carrier
  			}
  		}
  	}

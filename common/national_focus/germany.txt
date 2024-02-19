@@ -3105,6 +3105,10 @@ focus_tree = {
  				give_resource_rights = { receiver = GER state = 585 }
  			}
  			set_global_flag=GER_resource_rights_swe
+			IF = {
+				limit = {FIN = {has_full_control_of_state = 140}}
+				140 = { transfer_state_to = GER }	
+			}
  		}
  	}
  	focus = {

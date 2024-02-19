@@ -1,0 +1,36 @@
+SPR_civil_war = {
+ 	SPR_surrender = {
+ 		icon = spr_the_inevitable_civil_war
+ 		fire_only_once = no
+ 		allowed = { tag = SPR }
+ 		available = {date < 1939.6.1}
+ 		visible={has_war=yes}
+ 		cost = 0
+		days_remove = 14
+ 		remove_effect = {
+			set_global_flag = Axis_lost_civil_war
+			SPR = {add_timed_idea = {idea= SPA_recovering_from_civil_war days = 700}}
+			SPR = {remove_ideas = SPA_civil_war}
+			SOV = {add_ideas = SOV_lessons_of_spain_idea}
+ 			country_event = spain.11
+ 		}
+ 	}
+}
+SPN_civil_war = {	
+ 	SPN_surrender = {
+ 		icon = spr_the_inevitable_civil_war
+ 		fire_only_once = no
+ 		allowed = { tag = SPN }
+ 		available = {date < 1939.6.1}
+ 		visible={has_war=yes}
+ 		cost = 0
+		days_remove = 14
+ 		remove_effect = {
+			set_global_flag = Allies_lost_civil_war
+			SPR = {add_timed_idea = {idea= SPA_recovering_from_civil_war days = 700}}
+			SPR = {remove_ideas = SPA_civil_war}
+			GER = {add_ideas = GER_lessons_of_spain_idea}
+			country_event = spain.11
+ 		}
+ 	}
+}

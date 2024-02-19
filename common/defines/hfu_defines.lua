@@ -127,6 +127,8 @@ NDefines.NMilitary.LAND_COMBAT_ORG_ARMOR_ON_SOFT_DICE_SIZE = 4   --kein bonus da
 NDefines.NDiplomacy.VOLUNTEERS_PER_TARGET_PROVINCE = 0
 NDefines.NDiplomacy.VOLUNTEERS_PER_COUNTRY_ARMY = 0
 NDefines.NCountry.EVENT_PROCESS_OFFSET = 30
+NDefines.NCountry.MAX_HEROES_BEING_KILLED_WAR_SUPPORT_IMPACT = -0.15
+NDefines.NCountry.WAR_SUPPORT_FROM_CASUALTIES = 0.015
 NDefines.NCountry.AIR_VOLUNTEER_PLANES_RATIO = 0
 NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 20
 NDefines.NAI.DIPLOMACY_SEND_EXPEDITIONARY_BASE = 0
@@ -209,6 +211,7 @@ NDefines.NCountry.POPULATION_YEARLY_GROWTH_BASE = 0
 NDefines.NCountry.STARTING_COMMAND_POWER = 100.0
 NDefines.NCountry.BASE_MAX_COMMAND_POWER = 200
 NDefines.NCountry.BASE_COMMAND_POWER_GAIN = 1					-- base value for daily command power gain
+NDefines.NCountry.ATTACHE_XP_SHARE = 0
 ---------------------------------------------------------------
 NDefines.NNavy.SHORE_BOMBARDMENT_CAP=0.15
 NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0						-- down from 0.02 | Chances one ship get damage each hour while on training 		 0.0001	

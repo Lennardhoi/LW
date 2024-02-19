@@ -50,22 +50,22 @@ country_event = {
 				}
 				set_global_flag = spanish_civil_war
 				army_experience = 30
-				SPR = {remove_ideas = peace_training add_ideas = speed3_scw}
-				GER = {remove_ideas = peace_training add_ideas = speed3_scw}
-				ITA = {remove_ideas = peace_training add_ideas = speed3_scw}
-				JAP = {remove_ideas = peace_training add_ideas = speed3_scw}
-				HUN = {remove_ideas = peace_training add_ideas = speed3_scw}
-				ROM = {remove_ideas = peace_training add_ideas = speed3_scw}
-				BUL = {remove_ideas = peace_training add_ideas = speed3_scw}
-				ENG = {remove_ideas = peace_training add_ideas = speed3_scw}
-				FRA = {remove_ideas = peace_training add_ideas = speed3_scw}
-				CAN = {remove_ideas = peace_training add_ideas = speed3_scw}
-				SAF = {remove_ideas = peace_training add_ideas = speed3_scw}
-				RAJ = {remove_ideas = peace_training add_ideas = speed3_scw}
-				AST = {remove_ideas = peace_training add_ideas = speed3_scw}
-				NZL = {remove_ideas = peace_training add_ideas = speed3_scw}
-				SOV = {remove_ideas = peace_training add_ideas = speed3_scw}
-				MEX = {remove_ideas = peace_training add_ideas = speed3_scw}
+				SPR = {remove_ideas = peace_training add_ideas = speed3_scw add_ideas = SPR_kindergarten }
+				GER = {remove_ideas = peace_training add_ideas = speed3_scw add_ideas = SPR_kindergarten }
+				ITA = {remove_ideas = peace_training add_ideas = speed3_scw add_ideas = SPR_kindergarten }
+				JAP = {remove_ideas = peace_training add_ideas = speed3_scw add_ideas = SPR_kindergarten }
+				HUN = {remove_ideas = peace_training add_ideas = speed3_scw add_ideas = SPR_kindergarten }
+				ROM = {remove_ideas = peace_training add_ideas = speed3_scw add_ideas = SPR_kindergarten }
+				BUL = {remove_ideas = peace_training add_ideas = speed3_scw add_ideas = SPR_kindergarten }
+				ENG = {remove_ideas = peace_training add_ideas = speed3_scw add_ideas = SPR_kindergarten }
+				FRA = {remove_ideas = peace_training add_ideas = speed3_scw add_ideas = SPR_kindergarten }
+				CAN = {remove_ideas = peace_training add_ideas = speed3_scw add_ideas = SPR_kindergarten }
+				SAF = {remove_ideas = peace_training add_ideas = speed3_scw add_ideas = SPR_kindergarten }
+				RAJ = {remove_ideas = peace_training add_ideas = speed3_scw add_ideas = SPR_kindergarten }
+				AST = {remove_ideas = peace_training add_ideas = speed3_scw add_ideas = SPR_kindergarten }
+				NZL = {remove_ideas = peace_training add_ideas = speed3_scw add_ideas = SPR_kindergarten }
+				SOV = {remove_ideas = peace_training add_ideas = speed3_scw add_ideas = SPR_kindergarten }
+				MEX = {remove_ideas = peace_training add_ideas = speed3_scw add_ideas = SPR_kindergarten }
 			}
 			custom_effect_tooltip = nationalists_chosen
 		}
@@ -155,20 +155,51 @@ country_event = {
 	immediate = {
 		set_global_flag = end_of_spanish_civil_war
 		SPR= {
-			annex_country = { target = SPN }
+			annex_country = { target = SPN transfer_troops = no }
 			add_ideas = peace_training
 			set_capital = { state = 41 }
-			delete_unit_template_and_units = { division_template = "District Force" }
-			delete_unit_template_and_units = { division_template = "Infantry Division" }
+			delete_units = { 
+				division_template = "District Force"  
+				disband = no 
+			}
+			delete_units = { 
+			division_template = "Infantry Division"  
+			disband = no 
+			}
+			set_equipment_fraction = 0
 			remove_ideas = speed3_scw
+			remove_ideas = SPR_kindergarten
 			set_rule = {can_send_volunteers  = no}
-
+			remove_decision = war_bonds
+			add_stability = 0.1
+			add_war_support = 0.2
+			add_equipment_to_stockpile = {
+				type = train_equipment
+				amount = 50
+				producer = SPR
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment_1
+				amount = 1000
+				producer = SPR
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 7500
+				producer = SPR
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 500
+				producer = SPR
+			}
 		}
 		GER = {
 			add_to_faction = SPR
 			add_ideas = peace_training
 			remove_ideas = speed3_scw
 			set_rule = {can_send_volunteers  = no}
+			remove_ideas = SPR_kindergarten
 			remove_ideas = Donated_Vol
 			remove_ideas = Donated_Vol2
 			remove_ideas = Donated_Vol3
@@ -180,29 +211,34 @@ country_event = {
 			add_ideas = peace_training
 			remove_ideas = speed3_scw
 			set_rule = {can_send_volunteers  = no}
+			remove_ideas = SPR_kindergarten
 		}
 		JAP = {
 			add_ideas = peace_training
 			remove_ideas = speed3_scw
 			set_rule = {can_send_volunteers  = no}
+			remove_ideas = SPR_kindergarten
 		}
 		HUN = {
 			add_ideas = peace_training
 			remove_ideas = speed3_scw
 			set_rule = {can_send_volunteers  = no}
 			remove_ideas = ENG_allied_exped_corp2
+			remove_ideas = SPR_kindergarten
 		}
 		ROM = {
 			add_ideas = peace_training
 			remove_ideas = speed3_scw
 			set_rule = {can_send_volunteers  = no}
 			remove_ideas = ENG_allied_exped_corp2
+			remove_ideas = SPR_kindergarten
 		}
 		BUL = {
 			add_ideas = peace_training
 			remove_ideas = speed3_scw
 			set_rule = {can_send_volunteers  = no}
 			remove_ideas = ENG_allied_exped_corp2
+			remove_ideas = SPR_kindergarten
 		}
 		ENG = {
 			add_ideas = peace_training
@@ -215,6 +251,7 @@ country_event = {
 			remove_ideas = Donated_Vol5
 			remove_ideas = Donated_Vol6
 			remove_ideas = ENG_allied_exped_corp
+			remove_ideas = SPR_kindergarten
 		}
 		FRA = {
 			add_ideas = peace_training
@@ -223,47 +260,55 @@ country_event = {
 			remove_ideas = FRA_protected_by_the_maginot_line_pre_spain
 			set_rule = {can_send_volunteers  = no}
 			remove_ideas = ENG_allied_exped_corp
+			remove_ideas = SPR_kindergarten
 		}
 		CAN = {
 			add_ideas = peace_training
 			remove_ideas = speed3_scw
 			set_rule = {can_send_volunteers  = no}
 			remove_ideas = ENG_allied_exped_corp2
+			remove_ideas = SPR_kindergarten
 		}
 		SAF = {
 			add_ideas = peace_training
 			remove_ideas = speed3_scw
 			set_rule = {can_send_volunteers  = no}
 			remove_ideas = ENG_allied_exped_corp2
+			remove_ideas = SPR_kindergarten
 		}
 		RAJ = {
 			add_ideas = peace_training
 			remove_ideas = speed3_scw
 			set_rule = {can_send_volunteers  = no}
 			remove_ideas = ENG_allied_exped_corp2
+			remove_ideas = SPR_kindergarten
 		}
 		AST = {
 			add_ideas = peace_training
 			remove_ideas = speed3_scw
 			set_rule = {can_send_volunteers  = no}
 			remove_ideas = ENG_allied_exped_corp2
+			remove_ideas = SPR_kindergarten
 		}
 		NZL = {
 			add_ideas = peace_training
 			remove_ideas = speed3_scw
 			set_rule = {can_send_volunteers  = no}
 			remove_ideas = ENG_allied_exped_corp2
+			remove_ideas = SPR_kindergarten
 		}
 		MEX = {
 			add_ideas = peace_training
 			remove_ideas = speed3_scw
 			set_rule = {can_send_volunteers  = no}
 			remove_ideas = ENG_allied_exped_corp2
+			remove_ideas = SPR_kindergarten
 		}
 		SOV = {
 			add_ideas = peace_training
 			remove_ideas = speed3_scw
 			set_rule = {can_send_volunteers  = no}
+			remove_ideas = SPR_kindergarten
 		}	
 	}
 }

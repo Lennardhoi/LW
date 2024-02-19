@@ -183,12 +183,8 @@ ideas = {
 			}
 			removal_cost = -1
 			picture = generic_volunteer_expedition_bonus
-			rule = {
-				can_send_volunteers = yes
-			}
 			modifier = {
-				send_volunteer_divisions_required = -1
-				send_volunteer_size = 1
+				conscription = 0.01
 				mobilization_speed = 1
 			}
 		}

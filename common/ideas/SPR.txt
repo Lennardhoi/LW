@@ -32,6 +32,29 @@ ideas = {
 				conscription = 0.04
 				production_factory_efficiency_gain_factor = 100
 			}
+			equipment_bonus = {
+				small_plane_airframe = {
+					build_cost_ic = 500
+				}
+				medium_plane_airframe = {
+					build_cost_ic = 500
+				}
+				large_plane_airframe = {
+					build_cost_ic = 500
+				}
+				large_plane_airframe = {
+					build_cost_ic = 500
+				}
+				light_tank_chassis = {
+					build_cost_ic = 500
+				}
+				medium_tank_chassis = {
+					build_cost_ic = 500
+				}
+				heavy_tank_chassis = {
+					build_cost_ic = 500
+				}
+			}
 		}
 		SPR_no_armada = {
 			allowed = {
@@ -757,6 +780,16 @@ ideas = {
 				army_org_factor = 0.05
 				army_morale_factor = 0.15
 				political_power_factor = 0.1
+			}
+		}
+		SPR_kindergarten = {
+			picture = generic_production_bonus
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				lend_lease_tension = 10
 			}
 		}
 		SPA_crusade_against_democracy_6 = {
