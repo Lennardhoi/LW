@@ -24,7 +24,7 @@ NDefines.NNavy.HIGHER_SHIP_RATIO_POSITIONING_PENALTY_FACTOR	= 0.5 -- if one side
 NDefines.NNavy.MAX_POSITIONING_PENALTY_FROM_HIGHER_SHIP_RATIO = 0.66  -- maximum penalty to get from larger fleets
 NDefines.NNavy.MAX_POSITIONING_PENALTY_FOR_NEWLY_JOINED_SHIPS = 0.0  -- the accumulated penalty from new ships will be clamped to this value
 NDefines.NNavy.DAMAGE_PENALTY_ON_MINIMUM_POSITIONING = 0.75	-- damage penalty at 0% positioning
-NDefines.NNavy.SCREENING_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING = 0.5   -- screening efficiency (screen to capital ratio) at 0% positioning
+NDefines.NNavy.SCREENING_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING = 0.0   -- screening efficiency (screen to capital ratio) at 0% positioning
 NDefines.NNavy.AA_EFFICIENCY_PENALTY_ON_MINIMUM_POSITIONING	= 0.1  -- AA penalty at 0% positioning
 
 NDefines.NNavy.COMBAT_ARMOR_PIERCING_CRITICAL_BONUS = 2 -- Bonus to critical chance when shooter armor piercing is higher then target armor.

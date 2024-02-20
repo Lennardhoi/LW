@@ -384,6 +384,7 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = 0.6
 				production_speed_infrastructure_factor = 0.2
+				own_exiled_divisions_attack_factor=-0.4
 				stability_factor = 0.10
 			}
 		}
@@ -400,8 +401,8 @@ ideas = {
 				consumer_goods_factor = 0.4
 				production_speed_industrial_complex_factor = 0.5
 				production_speed_infrastructure_factor = 0.2
+				own_exiled_divisions_attack_factor=-0.4
 				stability_factor = 0.10
-				production_factory_max_efficiency_factor = -0.15
 			}
 		}
 		USA_second_deal2 = {
@@ -418,8 +419,8 @@ ideas = {
 				consumer_goods_factor = 0.4
 				production_speed_industrial_complex_factor = 0.5
 				production_speed_infrastructure_factor = 0.2
+				own_exiled_divisions_attack_factor=-0.35
 				stability_factor = 0.10
-				production_factory_max_efficiency_factor = -0.25
 			}
 		}
 		USA_second_deal3 = {
@@ -436,8 +437,8 @@ ideas = {
 				consumer_goods_factor = 0.4
 				production_speed_industrial_complex_factor = 0.5
 				production_speed_infrastructure_factor = 0.2
+				own_exiled_divisions_attack_factor=-0.3
 				stability_factor = 0.10
-				production_factory_max_efficiency_factor = -0.4
 			}
 		}
 		USA_war_plans_1 = {
@@ -529,7 +530,7 @@ ideas = {
 			modifier = {
 				political_power_cost = 1.1
 				consumer_goods_expected_value = 0.25
-				industrial_capacity_factory = -0.2
+				own_exiled_divisions_attack_factor=-0.3
 				industrial_capacity_dockyard = -0.2
 			}
 		}
@@ -545,7 +546,7 @@ ideas = {
 			modifier = {
 				political_power_cost = 0.75
 				consumer_goods_expected_value = 0.2
-				industrial_capacity_factory = -0.15
+				own_exiled_divisions_attack_factor=-0.2
 				industrial_capacity_dockyard = -0.15
 			}
 		}
@@ -560,8 +561,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				political_power_cost = 0.35
-				consumer_goods_expected_value = 0.15
-				industrial_capacity_factory = -0.1
+				own_exiled_divisions_attack_factor=-0.1
 				industrial_capacity_dockyard = -0.1
 			}
 		}

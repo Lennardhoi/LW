@@ -24,6 +24,7 @@ scripted_gui = {
 			remove_dockyard_click_enabled = {
 				is_owned_and_controlled_by = ROOT
 				dockyard > 0
+				NOT={AND={original_tag=FRA has_global_flag=fall_of_france}}
 			}
 
 
