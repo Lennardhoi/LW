@@ -815,3 +815,23 @@ update_stockpile={
 					}
 	}
 }
+update_relative_production_efficiency_factor = {
+					set_temp_variable={xr=0.5}
+					add_to_temp_variable={xr=modifier@production_factory_max_efficiency_factor}
+					subtract_from_temp_variable={xr=relative_production_efficiency_factor_actual}
+					set_variable={relative_production_efficiency_factor_actual=relative_production_efficiency_factor}
+					multiply_variable={relative_production_efficiency_factor_actual=xr}
+					if={
+						limit= {check_variable={relative_production_efficiency_factor_actual=0}}
+						remove_dynamic_modifier = {
+    							modifier = relative_production_efficiency
+						}
+					}
+					else={
+						add_dynamic_modifier = {
+    							modifier = relative_production_efficiency
+						}
+					}
+
+
+}
