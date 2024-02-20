@@ -523,6 +523,8 @@ on_actions = {
 	}
 	on_daily_SWE={
 		effect={
+			
+			USA={update_relative_industrial_capacity_factory=yes}
 			for_each_scope_loop={
 				array=GLOBAL.fuel_system_manager
 				set_variable={GLOBAL.controllerscope=THIS.id}

@@ -862,3 +862,26 @@ update_relative_production_efficiency_factor = {
 
 
 }
+update_relative_industrial_capacity_factory = {
+					set_temp_variable={xr=1}
+					add_to_temp_variable={xr=modifier@industrial_capacity_factory}
+					subtract_from_temp_variable={xr=relative_industrial_capacity_factory_actual}
+
+					set_variable={relative_industrial_capacity_factory=modifier@own_exiled_divisions_attack_factor}
+					set_variable={relative_industrial_capacity_factory_actual=relative_industrial_capacity_factory}
+					set_variable={relative_industrial_capacity_factory_actual=modifier@own_exiled_divisions_attack_factor}
+					multiply_variable={relative_industrial_capacity_factory_actual=xr}
+					if={
+						limit= {check_variable={relative_industrial_capacity_factory_actual=0}}
+						remove_dynamic_modifier = {
+    							modifier = relative_industrial_capacity_factory
+						}
+					}
+					else={
+						add_dynamic_modifier = {
+    							modifier = relative_industrial_capacity_factory
+						}
+					}
+
+
+}
