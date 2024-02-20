@@ -2063,6 +2063,8 @@ focus_tree = {
  		available_if_capitulated = no
  		search_filters = { FOCUS_FILTER_ANNEXATION }
  		completion_reward = {
+		add_stability = 0.1
+		add_war_support = 0.1
 		hidden_effect = {
  			JAP={clear_variable = getting_annexed}
 			every_country={
@@ -2097,6 +2099,19 @@ focus_tree = {
 					modifier = USP_no_meme
 				}
 			}
+			AST = {
+				every_owned_state= {
+					limit={
+						OR = {is_coastal=yes is_core_of=AST}
+					}
+					 add_dynamic_modifier = {
+ 						modifier = Papua_defense
+					}
+				}
+				add_dynamic_modifier = {
+ 					modifier = Papua_visual
+				}
+ 			}
 		}
  		RAJ = {
  		       add_ideas= RAJ_asia_focus
