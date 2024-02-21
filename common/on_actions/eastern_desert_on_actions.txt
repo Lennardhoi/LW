@@ -1,0 +1,21 @@
+on_actions = {
+	on_weekly_ENG = {
+		effect = {
+			if={
+				limit ={ OR={date>1941.6.1 OR = {ENG = {controls_province = 10893} ENG = {NOT={controls_province = 10888}} }} 421={is_demilitarized_zone = no}}
+				421 = {
+					
+					set_demilitarized_zone = yes
+				}
+			}
+			if={
+				limit ={  date<1941.6.1 AND = {ENG = {controls_province = 10888} ENG = {NOT={controls_province = 10893}} } 421={is_demilitarized_zone = yes}}
+				421 = {
+					
+					set_demilitarized_zone = no
+				}
+			}
+		}
+	}
+}
+
