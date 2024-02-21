@@ -631,6 +631,7 @@ NDefines.NMapMode.SUPPLY_MAP_MODE_REACH_COLOR = {
 	-- NOTE: New supply mode uses map-mode-terrain camera override.... HACK: -1 used to toggle some supply-mode only stuff as well.
 	-- Terrain map mixing is weird but this is cleanest varient.
 --NDefines.NGraphics.GRADIENT_BORDERS_CAMERA_DISTANCE_OVERRIDE_TERRAIN = -1 -- -1 now ignores camera-distance changes entirely.
+NDefines.NGraphics.BORDER_COLOR_DEMILITARIZED_A = 0
 NDefines.NSupply.NAVAL_BASE_INITIAL_SUPPLY_FLOW = 2.8
 NDefines.NSupply.NAVAL_BASE_STARTING_PENALTY_PER_PROVINCE = 0.3
 NDefines.NSupply.NAVAL_BASE_ADDED_PENALTY_PER_PROVINCE = 0.8

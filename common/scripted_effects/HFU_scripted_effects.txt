@@ -389,7 +389,16 @@ update_pacific_war = {
 	multiply_variable={ENG.pacific_status_negative=0.75}
 	set_variable={GER.pacific_status=JAP.pacific_status}
 	set_variable={AST.papua_status=0.35}
+	
 	subtract_from_variable={AST.papua_status=AST.papua_status_help}
+	if = {
+		limit = {AND={date <1942.1.1 date>1941.1.1}}
+		set_variable={Global.papua_days=GLOBAL.num_days}
+		subtract_from_variable={Global.papua_days=708830}
+		divide_variable={Global.papua_days=3650}
+		multiply_variable={Global.papua_days=3}
+		subtract_from_variable={AST.papua_status=Global.papua_days}
+	}
 	set_variable={AST.pacific_status=AST.papua_status}
 	
 	if={limit={JAP={has_completed_focus=JAP_korean_guest_workers}} add_to_variable={JAP.pacific_status=0.1}}
