@@ -441,6 +441,23 @@ ideas = {
 				stability_factor = 0.10
 			}
 		}
+		USA_second_deal4 = {
+			name = USA_second_deal
+			picture = home_of_the_free_2
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				production_speed_industrial_complex_factor = 0.5
+				production_speed_infrastructure_factor = 0.2
+				own_exiled_divisions_attack_factor=0.05
+				stability_factor = 0.2
+			}
+		}
 		USA_war_plans_1 = {
 			picture = generic_war_preparation
 			allowed = {

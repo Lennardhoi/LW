@@ -817,7 +817,6 @@ focus_tree = {
  		bypass = {
  		}
  		completion_reward = {
-		stability_factor = 0.3
  		add_ideas=partial_economic_mobilisation
  		remove_ideas= USA_neutrality_act
 		swap_ideas = {
@@ -994,7 +993,10 @@ focus_tree = {
 
  			add_ideas = war_economy
 			}
- 			remove_ideas=USA_second_deal3
+ 			swap_ideas = {
+			remove_idea = USA_second_deal3
+			add_idea = USA_second_deal4
+		}
  			set_country_flag = USA_the_giant_wakes_added_civ_eco
 			VEN = {
 				add_ideas = USA_blockade
