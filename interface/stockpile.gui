@@ -344,8 +344,22 @@ guiTypes = {
 			format = center
 			#pdx_tooltip = "PRODUCTION_MATERIALS_tungsten"
 					}	
+		
 						
 		}
+		instantTextboxType = {
+			name = "hotjoincounter"
+			position = { x = 1470 y = 5 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0}
+			text= [?Global.hotjoin_rehost_count]
+			maxWidth = 57
+			maxHeight = 24
+			fixedsize = yes
+			format = center
+			#pdx_tooltip = "PRODUCTION_MATERIALS_tungsten"
+					}
 		}
 		}
 

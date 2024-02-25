@@ -29,6 +29,25 @@ guiTypes = {
 		}
 
 	}
+	containerWindowType = {
+		name = "horsttool_open_container2"
+		position = { x = 0 y = 0 }
+		Orientation = UPPER_LEFT
+		moveable = yes
+		buttonType = {
+			name = "tool_open2"
+			#quadTextureSprite = "GFX_generic_bg"
+				quadTextureSprite ="GFX_button_transparent"
+			size={x=3000 y = 3000}
+			position = { x = 0 y = 0 }
+			scale=100
+			pdx_tooltip = "[ST_TOOLTIP]"
+			clicksound = click_okafasf
+			oversound = ui_menu_overasf
+		}
+		
+
+	}
 		
 	containerWindowType = {
 		name = "horsttool_container"

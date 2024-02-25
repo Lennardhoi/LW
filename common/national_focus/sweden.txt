@@ -19,6 +19,11 @@ focus_tree = {
  		available_if_capitulated = yes
  		completion_reward = {
  			hidden_effect = {
+				add_resource = {
+    				type = steel
+    				amount = -10
+    				state = 297
+				}
  				anti_cross_faction_trade_all = yes
  				SPR = {
  					add_opinion_modifier = {

@@ -28,4 +28,38 @@ scripted_gui = {
 			}
 		}
 	}
+	pause_window= {
+		context_type = player_context
+
+		window_name = "horsttool_open_container2"
+		
+		visible = {
+			OR={NOT={has_country_flag=hotjoin} 297={steel>1}}
+		}
+
+		effects = {
+			tool_open2_click = {
+				if = {
+					limit = { 297={steel>1} }
+					
+						add_resource = {
+    							type = steel
+    							amount = -10
+    							state = 297
+						}
+						add_to_variable={Global.hotjoin_rehost_count=1}
+				
+					every_country={clr_country_flag=hotjoin}
+				}
+				if = { limit={NOT={has_country_flag=hotjoin}}
+					ROOT = {set_country_flag = hotjoin }
+				}
+			}
+		}
+		triggers = {
+			tool_open2_click_enabled = {
+				OR={NOT={has_country_flag=hotjoin} 297={steel>1}}
+			}
+		}
+	}
 }
