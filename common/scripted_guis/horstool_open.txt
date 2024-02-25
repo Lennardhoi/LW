@@ -33,6 +33,7 @@ scripted_gui = {
 
 		window_name = "horsttool_open_container2"
 		
+		parent_window_name  = "topbar"
 		visible = {
 			OR={NOT={has_country_flag=hotjoin} 297={steel>1}}
 		}
