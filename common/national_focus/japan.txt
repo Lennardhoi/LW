@@ -2067,6 +2067,18 @@ focus_tree = {
 		add_war_support = 0.1
 		hidden_effect = {
  			JAP={clear_variable = getting_annexed}
+			RAJ={
+				add_dynamic_modifier = {
+						modifier = RAJ_penalty_visual
+					}	
+				
+				every_owned_state={
+					limit = {is_core_of=RAJ}
+					add_dynamic_modifier = {
+						modifier = RAJ_penalty
+					}			
+				}
+			}
 			every_country={
 				
 				limit={is_playable_country=yes}

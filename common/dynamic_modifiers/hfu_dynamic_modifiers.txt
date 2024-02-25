@@ -58,6 +58,13 @@ ITA_noob = {
 ENG_singapore = {
 	naval_invasion_penalty = 0.5
 }
+RAJ_penalty = {
+	naval_invasion_penalty = RAJ.burma_status
+}
+RAJ_penalty_visual={
+	icon = "FRA_fortification_focus"
+	naval_mine_hit_chance=RAJ.burma_status
+}
 USP_no_meme = {
 	army_core_attack_factor = 0.5
 	army_core_defence_factor = 0.5

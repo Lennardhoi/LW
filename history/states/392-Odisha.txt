@@ -1,23 +1,29 @@
-state={
- 	id=392
- 	name="STATE_426"
- 	manpower = 14520100
- 	state_category = rural
- 	resources={
- 		steel = 250
- 		chromium = 200
- 		aluminium = 10
- 	}
- 	history={
- 		owner = RAJ
- 		add_core_of=RAJ
- 		buildings = {
- 			infrastructure = 4
- 			arms_factory = 1
- 		}
- 	}
- 	provinces={
- 		1005 1047 1480 1519 1559 3840 3968 4238 6557 6837 6890 6924 9131 9184 9239 9267 9295 9349 9431 9588 9627 10813 10867 10950 11123 11317 11340
- 	}
- }
 
+state={
+	id=392
+	name="STATE_426"
+	resources={
+		steel=250.000
+	}
+
+	history={
+		owner = RAJ
+		add_core_of = RAJ
+		buildings = {
+			infrastructure = 4
+
+		}
+		victory_points = {
+			9239 3 
+		}
+
+	}
+
+	provinces={
+		1005 1047 1480 3840 4238 9131 9239 9267 9295 9588 10813 10950 11317 
+	}
+	manpower=5808040
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}
