@@ -1187,7 +1187,7 @@ focus_tree = {
 				for_loop_effect = {
 					end = 4
 					create_unit = {
-						division = "name = \"Chinese Veterans\" division_template = \"US-Infantry\" start_experience_factor = 2.0 start_equipment_factor = 0.25"
+						division = "name = \"Chinese Veterans\" division_template = \"Chinese Veterans\" start_experience_factor = 2.0 start_equipment_factor = 0.25"
 						owner = USP
 					}
 					}}
@@ -1507,12 +1507,6 @@ focus_tree = {
 		}
 
 		available = {
-			OR = {
-				any_country = {
-						is_in_faction_with = JAP
-						controls_state = 294
-					}
-			}
 		}
 		 
 		bypass = {

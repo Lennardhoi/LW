@@ -457,6 +457,7 @@ focus_tree = {
  	focus = {
  		id = USA_labour
  		icon = GFX_focus_generic_industry_3
+		text = "Combat the Recession"
  		x = 0
  		y = 1
  		prerequisite = { focus = USA_administration  }
@@ -882,7 +883,7 @@ focus_tree = {
  		available_if_capitulated = yes
  		completion_reward = {
  			#custom_effect_tooltip= USA_swpa_tt
- 			if= {limit={USP={has_completed_focus=UAC_preparation_for_war}}
+ 			if= {limit={USP={has_completed_focus="Preparation For War"}}
  						USA={
  							transfer_state=629
  							transfer_state=630
@@ -2054,7 +2055,7 @@ focus_tree = {
  	focus = {
  		id = USA_war_department
  		icon = USA_new_chief_of_staff
- 		x = 22
+ 		x = 24
  		y = 0
  		offset = {
  			x = -26
@@ -2081,7 +2082,7 @@ focus_tree = {
  	focus = {
  		id = USA_selective_training_act
  		icon = USA_selective_service_act
- 		x = -5
+ 		x = -7
  		y = 1
  		prerequisite = { focus = USA_war_department }
  		relative_position_id = USA_war_department
@@ -2123,29 +2124,9 @@ focus_tree = {
  		}
  	}
  	focus = {
- 		id = USA_first_special_service_force
- 		icon = GFX_goal_generic_special_forces
- 		prerequisite = { focus = USA_selective_training_act }
- 		x = -3
- 		y = 1
- 		relative_position_id = USA_selective_training_act
- 		cost = 5
- 		ai_will_do = {
- 			factor = 1
- 		}
- 		available_if_capitulated = yes
- 		completion_reward = {
- 			add_doctrine_cost_reduction = {
-				cost_reduction = 0.5
-				uses = 2
-				category = special_forces_doctrine
-			}
- 		}
- 	}
- 	focus = {
  		id = USA_louisiana_maneuvers
  		icon = USA_louisiana_maneauvers
- 		x = -1
+ 		x = -2
  		y = 1
  		prerequisite = { focus = USA_selective_training_act }
  		relative_position_id = USA_selective_training_act
@@ -2172,7 +2153,7 @@ focus_tree = {
  	focus = {
  		id = USA_airborne_divisions
  		icon = USA_airborne
- 		x = 0
+ 		x = -2
  		y = 2
  		prerequisite = { focus = USA_louisiana_maneuvers }
  		relative_position_id = USA_selective_training_act
@@ -2191,12 +2172,32 @@ focus_tree = {
  			add_ideas = USA_airborne_divisions
  		}
  	}
+	 focus = {
+		id = USA_first_special_service_force
+		icon = GFX_goal_generic_special_forces
+		prerequisite = { focus = USA_airborne_divisions }
+		x = -1
+		y = 1
+		relative_position_id = USA_airborne_divisions
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+			   cost_reduction = 0.5
+			   uses = 3
+			   category = special_forces_doctrine
+		   }
+		}
+	}
  	focus = {
  		id = USA_army_of_the_united_states
  		icon = GFX_focus_generic_little_entente
- 		x = -2
- 		y = 2
- 		prerequisite = { focus = USA_louisiana_maneuvers }
+ 		x = -1
+ 		y = 3
+ 		prerequisite = { focus = USA_airborne_divisions }
  		relative_position_id = USA_selective_training_act
  		cost = 5
  		ai_will_do = {
@@ -2222,8 +2223,8 @@ focus_tree = {
  		id = USA_womens_armed_service_integration_act
  		icon = GFX_focus_generic_treaty
  		x = -2
- 		y = 3
- 		prerequisite = { focus = USA_army_of_the_united_states }
+ 		y = 4
+ 		prerequisite = { focus = USA_army_of_the_united_states focus = USA_first_special_service_force }
  		relative_position_id = USA_selective_training_act
  		cost = 5
  		ai_will_do = {
@@ -2243,7 +2244,7 @@ focus_tree = {
  	focus = {
  		id = USA_support_rock_island
  		icon = USA_m1_garand
- 		x = 1
+ 		x = 2
  		y = 1
  		relative_position_id = USA_selective_training_act
  		cost = 5
@@ -2267,7 +2268,7 @@ focus_tree = {
  		icon = GFX_focus_USA_tank_experiments
  		x = 2
  		y = 2
- 		prerequisite = { focus = USA_selective_training_act }
+ 		prerequisite = { focus = USA_support_rock_island }
  		relative_position_id = USA_selective_training_act
  		cost = 5
  		ai_will_do = {
@@ -2367,10 +2368,10 @@ focus_tree = {
  	focus = {
  		id = USA_build_the_pentagon
  		icon = GFX_focus_usa_build_the_pentagon
- 		x = -1
+ 		x = 0
  		y = 1
- 		prerequisite = { focus = USA_war_department }
- 		relative_position_id = USA_war_department
+ 		prerequisite = { focus = USA_selective_training_act }
+ 		relative_position_id = USA_selective_training_act
  		cost = 5
  		ai_will_do = {
  			factor = 1
@@ -2389,7 +2390,7 @@ focus_tree = {
  	focus = {
  		id = USA_air_war_plans_division
  		icon = USA_expand_airforce
- 		x = 2
+ 		x = 0
  		y = 1
  		cost = 5
  		prerequisite = { focus = USA_war_department }
@@ -2541,7 +2542,7 @@ focus_tree = {
  	focus = {
  		id = USA_two_ocean_navy_act
  		icon = GFX_USA_two_ocean_navy_act
- 		x = 9
+ 		x = 10
  		y = 1
  		prerequisite = { focus = USA_war_department }
  		relative_position_id = USA_war_department
@@ -2596,7 +2597,7 @@ focus_tree = {
  	focus = {
  		id = USA_maritime_commission
  		icon = USA_quality_saves_lives
- 		x = -3
+ 		x = -5
  		y = 1
  		prerequisite = { focus = USA_two_ocean_navy_act }
  		relative_position_id = USA_two_ocean_navy_act
@@ -2619,7 +2620,7 @@ focus_tree = {
  		id = USA_liberty_ships
  		icon = GFX_focus_USA_liberty_ships
  		prerequisite = { focus = USA_maritime_commission }
- 		x = -3
+ 		x = -5
  		y = 2
  		relative_position_id = USA_two_ocean_navy_act
  		cost = 5
@@ -2631,7 +2632,7 @@ focus_tree = {
  	focus = {
  		id = USA_bureau_of_ships
  		icon = USA_supporting_carrier
- 		x = 2
+ 		x = 0
  		y = 1
  		cost = 5
  		prerequisite = { focus = USA_two_ocean_navy_act }
@@ -2810,7 +2811,7 @@ focus_tree = {
  	focus = {
  		id = USA_fund_the_navy
  		icon = GFX_goal_generic_construct_naval_dockyard
- 		x = 7
+ 		x = 5
  		y = 1
  		relative_position_id = USA_two_ocean_navy_act
  		cost = 5
@@ -2829,29 +2830,12 @@ focus_tree = {
  		}
  	}
  	focus = {
- 		id = USA_expand_the_USMC
- 		icon = GFX_goal_generic_special_forces
+ 		id = USA_amphibious_operations
+ 		icon = GFX_goal_generic_amphibious_assault
  		prerequisite = { focus = USA_fund_the_navy }
  		x = 0
  		y = 1
  		relative_position_id = USA_fund_the_navy
- 		cost = 5
- 		available_if_capitulated = yes
- 		completion_reward = {
- 			add_doctrine_cost_reduction = {
-				cost_reduction = 0.5
-				uses = 1
-				category = cat_marines_doctrine
-			}
- 		}
- 	}
- 	focus = {
- 		id = USA_amphibious_operations
- 		icon = GFX_goal_generic_amphibious_assault
- 		prerequisite = { focus = USA_expand_the_USMC }
- 		x = 0
- 		y = 1
- 		relative_position_id = USA_expand_the_USMC
  		cost = 5
  		available_if_capitulated = yes
  		completion_reward = {
