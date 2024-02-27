@@ -23,10 +23,12 @@ country_event = {
 					planning_skill = 3
 					logistics_skill = 4
 				}
-				declare_war_on = {
- 					target = SPN
- 					type = annex_everything
- 				}
+				SPN = {
+					declare_war_on = {
+						target = SPR
+						type = annex_everything
+					}
+				}
 				GER = {
 					army_experience = 200
 					air_experience = 150
