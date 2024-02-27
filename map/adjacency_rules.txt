@@ -277,8 +277,8 @@ adjacency_rule=
 	neutral =
 	{
 		army = yes
-		navy = yes
-		submarine = yes
+		navy = no
+		submarine = no
 		trade = yes
 	}
 	required_provinces = {3867 11883}
@@ -286,10 +286,10 @@ adjacency_rule=
 	offset = { 2.0 0.0 -4.0 }
 	is_disabled = {
 		OR= {
-			AND = {
-				OR={tag=ITA tag=GER}
-				has_war=no
-			}
+			#AND = {
+			#	OR={tag=ITA tag=GER}
+			##	has_war=no
+			#}
 			AND = {
 				tag = USA
 				date<1942.6.1
@@ -444,6 +444,14 @@ adjacency_rule=
 	required_provinces = {9037 848}
 	icon =9037
 	offset = { -2 0 -9 }
+	
+	is_disabled = {
+		OR= {
+			tag = ITA
+			tag = SOV
+			has_war=yes
+		}
+	}
 }
 adjacency_rule=
 {
