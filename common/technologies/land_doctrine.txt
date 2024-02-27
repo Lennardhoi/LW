@@ -11,12 +11,12 @@ technologies = {
 			leads_to_tech = delay
 			research_cost_coeff = 1
 		}
-		category_all_armor = {
-			breakthrough = 0.20
-		}
 		category_line_artillery = {
-			soft_attack = 0.05
-			hard_attack = 0.05
+			soft_attack = 0.10
+			hard_attack = 0.10
+		}
+		category_special_forces = {
+			breakthrough = 0.05
 		}
 		planning_speed = 0.5
 		army_speed_factor = 0.10
@@ -95,6 +95,9 @@ technologies = {
 		}
 		armored_car = {
 			max_organisation = 2
+		}
+		category_all_armor = {
+			breakthrough = 0.20
 		}
 		category_all_armor = {
 			maximum_speed = 0.1
@@ -647,10 +650,6 @@ technologies = {
 			leads_to_tech = werwolf_guerillas
 			research_cost_coeff = 1
 		}
-		category_line_artillery = {
-			soft_attack = 0.05
-			hard_attack = 0.05
-		}
 		category_light_infantry = {
 			max_organisation = 5
 			defense = 0.1
@@ -680,8 +679,7 @@ technologies = {
 		category_special_forces = {
 			max_organisation = 10
 			default_morale = 0.05
-			breakthrough = 0.05
-			}
+		}
 		modifier_army_sub_unit_category_special_forces_speed_factor = 0.25
 		
 		#enable_tactic = tactic_guerrilla_tactics
@@ -714,8 +712,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		category_army = {
-			soft_attack = 0.15
-			breakthrough = 0.1
+			soft_attack = 0.1
+			breakthrough = 0.05
 		}
 		enable_tactic = tactic_barrage
 		doctrine = no
@@ -783,6 +781,10 @@ technologies = {
 		xp_research_bonus = 1.00
 		category_all_infantry = {
 			defense = 0.10
+		}
+		category_army = {
+			soft_attack = 0.05
+			breakthrough = 0.05
 		}
 		enable_tactic = tactic_elastic_defense
 		path = {
