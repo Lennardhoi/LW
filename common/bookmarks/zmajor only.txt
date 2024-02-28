@@ -194,40 +194,67 @@ bookmarks = {
 		ENG = {
 		set_cosmetic_tag = ENG_democratic2
 		}
+		 
+		
 		SPR = {
- 				give_resource_rights = { receiver = GER state = 166 state = 170 state = 705 state = 702}
-				}	
+				every_owned_state={
+                    TUR = {transfer_state=PREV}
+					}
+				}
+		SPN = {
+				every_owned_state={
+                    TUR = {transfer_state=PREV}
+					}
+				}
+		TUR = {
+ 				give_resource_rights = { receiver = GER state = 166 }
+				give_resource_rights = { receiver = GER state = 170 }
+				give_resource_rights = { receiver = GER state = 705 }
+				give_resource_rights = { receiver = GER state = 702 }
+				}
+		
 		NZL = {
-                 every_owned_state={
+                every_owned_state={
                     ENG = {transfer_state=PREV}
 					}
 				}
 		SAF = {
-                 every_owned_state={
+                every_owned_state={
                     ENG = {transfer_state=PREV}
 					}
 				}
 		AST = {
-                 every_owned_state={
+                every_owned_state={
                     ENG = {transfer_state=PREV}
 					}
 				}
 		CAN = {
-                 every_owned_state={
+                every_owned_state={
                     ENG = {transfer_state=PREV}
 					}
 				}
+		USP = {
+                every_owned_state={
+                    USA = {transfer_state=PREV}
+					}
+				}
+		MEX= {
+                every_owned_state={
+                    TUR = {transfer_state=PREV}
+					}
+				}		
 		MAN= {
-                 every_owned_state={
+                every_owned_state={
                     JAP = {transfer_state=PREV}
 					}
 				}
 		SIA = {
-                 every_owned_state={
+                every_owned_state={
                     JAP = {transfer_state=PREV}
 					}
 				}
 		634 = {
+			add_extra_state_shared_building_slots = 5
 			add_building_construction = {
 					type = industrial_complex
 					level = 5
@@ -240,8 +267,19 @@ bookmarks = {
 					#instant_build = yes
 			}
 		}
-				
-		}
+		702 = {
+ 				add_core_of = TUR
+ 			}
+ 		705 = {
+ 				add_core_of = TUR
+ 			}
+		166 = {
+ 				add_core_of = TUR
+ 			}
+ 		170 = {
+ 				add_core_of = TUR
+ 			}		
+			}
 		}
 	}
 }
