@@ -793,6 +793,16 @@ ideas = {
 				lend_lease_tension = 10
 			}
 		}
+		SPR_prep_scw = {
+			picture = generic_production_bonus
+			allowed = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				army_attack_factor = -1.5
+			}
+		}
 		SPA_crusade_against_democracy_6 = {
 			name = SPA_crusade_against_democracy
 			picture = SPA_crusade_against_democracy

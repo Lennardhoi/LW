@@ -52,22 +52,23 @@ country_event = {
 				}
 				set_global_flag = spanish_civil_war
 				army_experience = 30
-				SPR = {remove_ideas = peace_training add_ideas = speed3_scw add_ideas = SPR_kindergarten }
-				GER = {remove_ideas = peace_training add_ideas = speed3_scw add_ideas = SPR_kindergarten }
-				ITA = {remove_ideas = peace_training add_ideas = speed3_scw add_ideas = SPR_kindergarten }
-				JAP = {remove_ideas = peace_training add_ideas = speed3_scw add_ideas = SPR_kindergarten }
-				HUN = {remove_ideas = peace_training add_ideas = speed3_scw add_ideas = SPR_kindergarten }
-				ROM = {remove_ideas = peace_training add_ideas = speed3_scw add_ideas = SPR_kindergarten }
-				BUL = {remove_ideas = peace_training add_ideas = speed3_scw add_ideas = SPR_kindergarten }
-				ENG = {remove_ideas = peace_training add_ideas = speed3_scw add_ideas = SPR_kindergarten }
-				FRA = {remove_ideas = peace_training add_ideas = speed3_scw add_ideas = SPR_kindergarten }
-				CAN = {remove_ideas = peace_training add_ideas = speed3_scw add_ideas = SPR_kindergarten }
-				SAF = {remove_ideas = peace_training add_ideas = speed3_scw add_ideas = SPR_kindergarten }
-				RAJ = {remove_ideas = peace_training add_ideas = speed3_scw add_ideas = SPR_kindergarten }
-				AST = {remove_ideas = peace_training add_ideas = speed3_scw add_ideas = SPR_kindergarten }
-				NZL = {remove_ideas = peace_training add_ideas = speed3_scw add_ideas = SPR_kindergarten }
-				SOV = {remove_ideas = peace_training add_ideas = speed3_scw add_ideas = SPR_kindergarten }
-				MEX = {remove_ideas = peace_training add_ideas = speed3_scw add_ideas = SPR_kindergarten }
+				SPR = {remove_ideas = peace_training add_ideas = speed3_scw add_ideas = SPR_kindergarten add_timed_idea={ idea = SPR_prep_scw days = 30} }
+				SPN = {remove_ideas = peace_training add_ideas = speed3_scw add_ideas = SPR_kindergarten add_timed_idea={ idea = SPR_prep_scw days = 30} }
+				GER = {remove_ideas = peace_training add_ideas = speed3_scw add_ideas = SPR_kindergarten add_timed_idea={ idea = SPR_prep_scw days = 30} }
+				ITA = {remove_ideas = peace_training add_ideas = speed3_scw add_ideas = SPR_kindergarten add_timed_idea={ idea = SPR_prep_scw days = 30} }
+				JAP = {remove_ideas = peace_training add_ideas = speed3_scw add_ideas = SPR_kindergarten add_timed_idea={ idea = SPR_prep_scw days = 30} }
+				HUN = {remove_ideas = peace_training add_ideas = speed3_scw add_ideas = SPR_kindergarten add_timed_idea={ idea = SPR_prep_scw days = 30} }
+				ROM = {remove_ideas = peace_training add_ideas = speed3_scw add_ideas = SPR_kindergarten add_timed_idea={ idea = SPR_prep_scw days = 30} }
+				BUL = {remove_ideas = peace_training add_ideas = speed3_scw add_ideas = SPR_kindergarten add_timed_idea={ idea = SPR_prep_scw days = 30} }
+				ENG = {remove_ideas = peace_training add_ideas = speed3_scw add_ideas = SPR_kindergarten add_timed_idea={ idea = SPR_prep_scw days = 30} }
+				FRA = {remove_ideas = peace_training add_ideas = speed3_scw add_ideas = SPR_kindergarten add_timed_idea={ idea = SPR_prep_scw days = 30} }
+				CAN = {remove_ideas = peace_training add_ideas = speed3_scw add_ideas = SPR_kindergarten add_timed_idea={ idea = SPR_prep_scw days = 30} }
+				SAF = {remove_ideas = peace_training add_ideas = speed3_scw add_ideas = SPR_kindergarten add_timed_idea={ idea = SPR_prep_scw days = 30} }
+				RAJ = {remove_ideas = peace_training add_ideas = speed3_scw add_ideas = SPR_kindergarten add_timed_idea={ idea = SPR_prep_scw days = 30} }
+				AST = {remove_ideas = peace_training add_ideas = speed3_scw add_ideas = SPR_kindergarten add_timed_idea={ idea = SPR_prep_scw days = 30} }
+				NZL = {remove_ideas = peace_training add_ideas = speed3_scw add_ideas = SPR_kindergarten add_timed_idea={ idea = SPR_prep_scw days = 30} }
+				SOV = {remove_ideas = peace_training add_ideas = speed3_scw add_ideas = SPR_kindergarten add_timed_idea={ idea = SPR_prep_scw days = 30} }
+				MEX = {remove_ideas = peace_training add_ideas = speed3_scw add_ideas = SPR_kindergarten add_timed_idea={ idea = SPR_prep_scw days = 30} }
 			}
 			custom_effect_tooltip = nationalists_chosen
 		}
