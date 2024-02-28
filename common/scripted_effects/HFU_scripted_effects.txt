@@ -400,7 +400,7 @@ update_pacific_war = {
 		subtract_from_variable={AST.papua_status=Global.papua_days}
 	}
 	set_variable={RAJ.burma_status=Global.papua_days}
-	#divide_variable={RAJ.burma_status=1.5}
+	divide_variable={RAJ.burma_status=-1}
 	every_state={
 	limit= {OR={state=275 state = 561 state = 398 state = 396} is_controlled_by_ENG_or_ally=yes}
 		subtract_from_variable={RAJ.burma_status=0.05}
