@@ -1999,6 +1999,15 @@ focus_tree = {
  			factor = 1
  		}
  		completion_reward = {
+		if = {
+			limit = { 
+				AND ={
+					controls_state = 273
+					controls_state = 268
+					}
+				}
+				add_research_slot = 1
+			}
 			AST = {
 				annex_country = {
 					target = NZL
