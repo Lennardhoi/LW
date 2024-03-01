@@ -120,7 +120,6 @@ focus_tree = {
  			51 = { set_demilitarized_zone = no }
  			add_political_power = 150
  			add_war_support = 0.1
- 			army_experience = 100
  			add_named_threat = { threat = 5 name = GER_rhineland
  				hidden_effect = {
  					news_event = { hours = 6 id = news.25 }
@@ -1004,7 +1003,7 @@ focus_tree = {
  		available_if_capitulated = yes
  		search_filters = { FOCUS_FILTER_RESEARCH }
  		completion_reward = {
- 			army_experience = 40
+ 			army_experience = 150
  			add_tech_bonus = {
  				name = at
  				bonus = 1

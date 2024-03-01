@@ -206,13 +206,7 @@ focus_tree = {
  						owner = SOV
  					}
  				}
-			}
- 			add_tech_bonus = {
- 				name = land_doctrine
- 				bonus = 1.0
- 				uses = 1
- 				category = land_doctrine
- 			}			
+			}			
 			253 = {
 					add_extra_state_shared_building_slots = 5
 					add_building_construction = {
@@ -1502,10 +1496,15 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 120
 			add_resource = {
-				type = rubber
+				type = tungsten
 				amount = 160
 				state = 510
 			}
+			add_resource = {
+				type = tungsten
+				amount = 100
+				state = 371
+			}			
 			add_resource = {
 				type = rubber
 				amount = 160
@@ -1513,12 +1512,7 @@ focus_tree = {
 			}
 			add_resource = {
 				type = rubber
-				amount = 100
-				state = 371
-			}
-			add_resource = {
-				type = rubber
-				amount = 100
+				amount = 200
 				state = 509
 			}
 			add_resource = {
@@ -2571,6 +2565,31 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			add_ideas = militarism_focus
+			add_resource = {
+				type = tungsten
+				amount = 160
+				state = 660
+			}
+			add_resource = {
+				type = tungsten
+				amount = 160
+				state = 372
+			}
+			add_resource = {
+				type = tungsten
+				amount = 160
+				state = 650
+			}
+			add_resource = {
+				type = tungsten
+				amount = 100
+				state = 371
+			}
+			add_resource = {
+				type = tungsten
+				amount = 100
+				state = 509
+			}
 		}
 	}
 	focus = {
