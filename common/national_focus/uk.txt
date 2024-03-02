@@ -1094,7 +1094,9 @@ focus_tree = {
  		cost = 5
  		available_if_capitulated = yes
  		completion_reward = {
+ 			if={limit={has_global_flag= major_only_scenario}
  			army_experience = 35
+			}
  			navy_experience = 25
 			air_experience = 100
  			add_ideas = ENG_service_overseas_idea

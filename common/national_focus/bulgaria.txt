@@ -1043,7 +1043,9 @@ focus_tree = {
  		}
  		available_if_capitulated = yes
  		completion_reward = {
- 			army_experience = 50
+ 			if={limit={has_global_flag= major_only_scenario}
+ 			army_experience = 35
+			}
  			add_tech_bonus = {
  				name = SAF_special_service_battalion
  				bonus = 1

@@ -702,7 +702,9 @@ focus_tree = {
  			factor = 1
  		}
  		completion_reward = {
-			army_experience=35
+			if={limit={has_global_flag= major_only_scenario}
+ 			army_experience = 35
+			}
  			custom_effect_tooltip = available_chief_of_army
  			show_ideas_tooltip = maxime_weygand
  		}

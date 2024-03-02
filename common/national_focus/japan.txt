@@ -131,7 +131,7 @@ focus_tree = {
  			add_threat = 7
  			hidden_effect = {
  				JAP = {
- 					army_experience = 450
+ 					army_experience = 300
  					air_experience = 600
 					add_tech_bonus = {
 						name = JAP_air_research
@@ -212,7 +212,7 @@ focus_tree = {
 						technology = aa_cannon_1
 					}}
  				ENG = { add_war_support = 0.1
- 					army_experience = 100
+ 					army_experience = 50
  					air_experience = 200
 					add_tech_bonus = {
 						name = JAP_air_research
@@ -239,22 +239,22 @@ focus_tree = {
 						technology = aa_cannon_1
 					}}
  				AST = { add_war_support = 0.1
- 					army_experience = 100
+ 					army_experience = 50
  					air_experience = 200}
  				SAF = { add_war_support = 0.1
- 					army_experience = 100
+ 					army_experience = 50
  					air_experience = 200}
  				CAN = { add_war_support = 0.1
- 					army_experience = 100
+ 					army_experience = 50
  					air_experience = 200}
  				NZL = { add_war_support = 0.1
- 					army_experience = 100
+ 					army_experience = 50
  					air_experience = 200}
  				RAJ = { add_war_support = 0.1
- 					army_experience = 100
+ 					army_experience = 50
  					air_experience = 200}
  				FRA = { add_war_support = 0.1
- 					army_experience = 100
+ 					army_experience = 50
  					air_experience = 200
 					add_tech_bonus = {
 						name = JAP_air_research
@@ -281,7 +281,7 @@ focus_tree = {
 						technology = aa_cannon_1
 					}}
  				GER = {
- 					army_experience = 150
+ 					army_experience = 100
  					air_experience = 450
 					add_tech_bonus = {
 						name = JAP_air_research
@@ -309,7 +309,7 @@ focus_tree = {
 					}
 					}
  				ITA = {
- 					army_experience = 150
+ 					army_experience = 100
 					add_tech_bonus = {
 						name = JAP_air_research
 						bonus = 1.5
@@ -336,25 +336,25 @@ focus_tree = {
 					}
  				}
  				HUN = {
- 					army_experience = 150
+ 					army_experience = 100
  					air_experience = 200}
  				SPR = {
- 					army_experience = 150
+ 					army_experience = 100
  					air_experience = 200}
  				BUL = {
- 					army_experience = 150
+ 					army_experience = 100
  					air_experience = 200}
  				FIN = {
- 					army_experience = 150
+ 					army_experience = 100
  					air_experience = 200}
  				ROM = {
- 					army_experience = 150
+ 					army_experience = 100
  					air_experience = 200}
  				MAN = {
- 					army_experience = 300
+ 					army_experience = 250
  					air_experience = 200}
  				SIA = {
- 					army_experience = 300
+ 					army_experience = 250
  					air_experience = 200}
  				news_event = { id = news.1 days = 5 }
  				add_war_support = 0.05
@@ -973,7 +973,11 @@ focus_tree = {
  		continue_if_invalid = no
  		available_if_capitulated = no
  		completion_reward = {
- 			army_experience = 100
+ 			add_tech_bonus = {
+ 				bonus = 1.0
+ 				uses = 1
+ 				category = land_doctrine
+ 			}
  		}
  	}
  	focus = {
