@@ -234,6 +234,10 @@ bookmarks = {
 					}
 				}
 		USP = {
+				every_character={					
+					limit= { is_army_leader = yes }
+					set_nationality = USA
+				}
                 every_owned_state={
                     USA = {transfer_state=PREV}
 					}
