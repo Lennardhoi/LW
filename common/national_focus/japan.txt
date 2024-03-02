@@ -131,7 +131,7 @@ focus_tree = {
  			add_threat = 7
  			hidden_effect = {
  				JAP = {
- 					army_experience = 300
+ 					army_experience = 450
  					air_experience = 600
 					add_tech_bonus = {
 						name = JAP_air_research
@@ -212,7 +212,7 @@ focus_tree = {
 						technology = aa_cannon_1
 					}}
  				ENG = { add_war_support = 0.1
- 					army_experience = 50
+ 					army_experience = 100
  					air_experience = 200
 					add_tech_bonus = {
 						name = JAP_air_research
@@ -239,22 +239,22 @@ focus_tree = {
 						technology = aa_cannon_1
 					}}
  				AST = { add_war_support = 0.1
- 					army_experience = 50
+ 					army_experience = 100
  					air_experience = 200}
  				SAF = { add_war_support = 0.1
- 					army_experience = 50
+ 					army_experience = 100
  					air_experience = 200}
  				CAN = { add_war_support = 0.1
- 					army_experience = 50
+ 					army_experience = 100
  					air_experience = 200}
  				NZL = { add_war_support = 0.1
- 					army_experience = 50
+ 					army_experience = 100
  					air_experience = 200}
  				RAJ = { add_war_support = 0.1
- 					army_experience = 50
+ 					army_experience = 100
  					air_experience = 200}
  				FRA = { add_war_support = 0.1
- 					army_experience = 50
+ 					army_experience = 100
  					air_experience = 200
 					add_tech_bonus = {
 						name = JAP_air_research
@@ -973,11 +973,7 @@ focus_tree = {
  		continue_if_invalid = no
  		available_if_capitulated = no
  		completion_reward = {
- 			add_tech_bonus = {
- 				bonus = 1.0
- 				uses = 1
- 				category = land_doctrine
- 			}
+ 			army_experience = 100
  		}
  	}
  	focus = {
