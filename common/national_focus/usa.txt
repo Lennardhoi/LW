@@ -278,11 +278,30 @@ focus_tree = {
  		icon = GFX_focus_generic_rubber
  		prerequisite = { focus = USA_continue_the_new_deal }
  		available = {
- 			date > 1941.6.1
+ 			#date > 1941.6.1
  		}
  		x = -1
  		y = 1
  		relative_position_id = USA_continue_the_new_deal
+ 		cost = 5
+ 		search_filters = {FOCUS_FILTER_RESEARCH}
+ 		completion_reward = {
+		custom_effect_tooltip = USA_rubber_reserve_company_tt
+		add_to_variable ={resource_stockpile_capacity_silos^1=5000}
+		add_to_variable ={resource_stockpile_capacity_base^1=100000}
+
+ 		}
+ 	}
+ 	focus = {
+ 		id = USA_rubber_technology
+ 		icon = GFX_focus_generic_rubber
+ 		prerequisite = { focus = USA_rubber_reserve_company }
+ 		available = {
+ 			date > 1941.6.1
+ 		}
+ 		x = 0
+ 		y = 1
+ 		relative_position_id = USA_rubber_reserve_company
  		cost = 5
  		search_filters = {FOCUS_FILTER_RESEARCH}
  		completion_reward = {
@@ -301,10 +320,10 @@ focus_tree = {
  	focus = {
  		id = USA_synthetic_rubber
  		icon = USA_rubber_program
- 		prerequisite = { focus = USA_rubber_reserve_company }
+ 		prerequisite = { focus = USA_rubber_technology }
  		x = 0
  		y = 1
- 		relative_position_id = USA_rubber_reserve_company
+ 		relative_position_id = USA_rubber_technology
  		cost = 5
  		ai_will_do = {
  			factor = 4

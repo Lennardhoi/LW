@@ -697,7 +697,7 @@ for_each_loop ={
 				}
 				for_each_loop ={
 					array=resource_balance
-					add_to_array ={resource_stockpile_capacity_silos=0}
+					add_to_array ={resource_stockpile_capacity_silos=5000}
 				}
 				for_each_loop ={
 					array=resource_balance
@@ -766,7 +766,7 @@ clear_variable=stockpile_stopped
 					value=v
 					index=i
 					set_temp_variable={x=silos}
-					multiply_temp_variable={x=5000}
+					multiply_temp_variable={x=resource_stockpile_capacity_silos^i}
 					add_to_temp_variable={x=v}
 					set_variable={resource_stockpile_capacity^i=x}
 				}
