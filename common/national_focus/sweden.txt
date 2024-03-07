@@ -53,7 +53,32 @@ focus_tree = {
  		relative_position_id = NDA_anti_meme
  		available_if_capitulated = yes
  		completion_reward = {
- 			
+ 			if={limit={
+			SPR={exists=no}}
+			set_global_flag=end_of_spanish_civil_war
+				GER = {
+					army_experience = 200
+					air_experience = 150
+				}
+				JAP = {
+					army_experience = 50
+					air_experience = 300
+					}
+				SOV = {
+					army_experience = 200
+					air_experience = 250}
+				ITA = {
+					army_experience = 50
+					air_experience = 150
+				}
+				HUN = {
+					army_experience = 50
+				}
+				MAN = {
+					army_experience = 50
+				}
+			
+			}
  			every_country={
  				limit={is_playable_country=yes}
  				swap_ideas={
