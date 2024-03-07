@@ -46,7 +46,7 @@ country_event = {
 				}
 				army_experience = 30
 				if={limit = {has_global_flag= major_only_scenario}
-				set_global_flag=end_of_spanish_civil_war
+					country_event = spain.11
 				}
 				if={limit = {NOT={has_global_flag= major_only_scenario}}
 				set_global_flag = spanish_civil_war
@@ -167,13 +167,17 @@ country_event = {
 			annex_country = { target = SPN transfer_troops = no }
 			add_ideas = peace_training
 			set_capital = { state = 41 }
-			delete_units = { 
+			delete_unit_template_and_units = { 
 				division_template = "District Force"  
 				disband = no 
 			}
 			delete_units = { 
 			division_template = "Infantry Division"  
 			disband = no 
+			}
+			set_division_template_lock = {
+    				division_template = "Infantry Division"
+    				is_locked = no
 			}
 			set_equipment_fraction = 0
 			remove_ideas = speed3_scw
