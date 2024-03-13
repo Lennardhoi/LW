@@ -274,6 +274,13 @@ bookmarks = {
 				MAN_develop_aluminum_sources
 			}
 		}
+
+
+
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+			
 		USP = {
 				every_character={					
 					limit= { is_army_leader = yes }
@@ -283,12 +290,6 @@ bookmarks = {
                     USA = {transfer_state=PREV}
 					}
 				}
-
-
-
-		effect = {
-			randomize_weather = 22345 # <- Obligatory in every bookmark !
-			#123 = { rain_light = yes }
 		}
 	}
 }
