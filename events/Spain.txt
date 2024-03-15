@@ -12,6 +12,9 @@ country_event = {
 		if = {
 			limit = { original_tag = SPR }
 			hidden_effect = {
+				SPR = {
+					activate_mission=SPR_send_troops
+				}
 				create_corps_commander = {
 					name = "Francisco Franco"
 					id =1434
@@ -74,6 +77,7 @@ country_event = {
 				NZL = {remove_ideas = peace_training add_ideas = speed3_scw add_ideas = SPR_kindergarten add_timed_idea={ idea = SPR_prep_scw days = 30} }
 				SOV = {remove_ideas = peace_training add_ideas = speed3_scw add_ideas = SPR_kindergarten add_timed_idea={ idea = SPR_prep_scw days = 30} }
 				MEX = {remove_ideas = peace_training add_ideas = speed3_scw add_ideas = SPR_kindergarten add_timed_idea={ idea = SPR_prep_scw days = 30} }
+				MAN = {remove_ideas = peace_training add_ideas = speed3_scw add_ideas = SPR_kindergarten add_timed_idea={ idea = SPR_prep_scw days = 30} }
 			}
 			}
 			custom_effect_tooltip = nationalists_chosen
@@ -247,6 +251,13 @@ country_event = {
 			remove_ideas = SPR_kindergarten
 		}
 		BUL = {
+			add_ideas = peace_training
+			remove_ideas = speed3_scw
+			set_rule = {can_send_volunteers  = no}
+			remove_ideas = ENG_allied_exped_corp2
+			remove_ideas = SPR_kindergarten
+		}
+		MAN = {
 			add_ideas = peace_training
 			remove_ideas = speed3_scw
 			set_rule = {can_send_volunteers  = no}

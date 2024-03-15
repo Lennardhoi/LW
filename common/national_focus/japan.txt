@@ -2128,6 +2128,19 @@ focus_tree = {
  					modifier = Papua_visual
 				}
  			}
+			if = {
+				limit = {has_idea = JAP_guide_the_zaibatsus}
+				swap_ideas = {
+					remove_idea = JAP_guide_the_zaibatsus
+					add_idea = JAP_guide_the_zaibatsus2
+				}
+			} 
+			else = {
+				swap_ideas = {
+					remove_idea = JAP_zaibatsus_challenged
+					add_idea = JAP_zaibatsus_challenged2
+				}
+			}
 		}
  		RAJ = {
  		       add_ideas= RAJ_asia_focus
@@ -2490,19 +2503,6 @@ focus_tree = {
  		available_if_capitulated = no
  		search_filters = { FOCUS_FILTER_INDUSTRY }
  		completion_reward = {
-			if = {
-				limit = {has_idea = JAP_guide_the_zaibatsus}
-				swap_ideas = {
-					remove_idea = JAP_guide_the_zaibatsus
-					add_idea = JAP_guide_the_zaibatsus2
-				}
-			} 
-			else = {
-				swap_ideas = {
-					remove_idea = JAP_zaibatsus_challenged
-					add_idea = JAP_zaibatsus_challenged2
-				}
-			}
  			add_political_power = 35
  			633 = { add_extra_state_shared_building_slots = 2 }
  			534 = { add_extra_state_shared_building_slots = 2 }

@@ -15,7 +15,39 @@ SPR_civil_war = {
  			country_event = spain.11
  		}
  	}
+	SPR_send_troops = {
+		activation = {
+			always=no
+		}
+		icon = generic_operation
+		available = {
+			always=no
+		}
+		allowed = {tag = SPR}
+		days_mission_timeout=60
+		visible = {has_war=yes}
+		is_good=no
+		fire_only_once = yes
+		timeout_effect  = {
+			GER = {set_rule = {can_send_volunteers  = no}}
+			ITA = {set_rule = {can_send_volunteers  = no}}
+			HUN = {set_rule = {can_send_volunteers  = no}}
+			ROM = {set_rule = {can_send_volunteers  = no}}
+			BUL = {set_rule = {can_send_volunteers  = no}}
+			JAP = {set_rule = {can_send_volunteers  = no}}
+			MAN = {set_rule = {can_send_volunteers  = no}}
+			ENG = {set_rule = {can_send_volunteers  = no}}
+			FRA = {set_rule = {can_send_volunteers  = no}}
+			CAN = {set_rule = {can_send_volunteers  = no}}
+			SAF = {set_rule = {can_send_volunteers  = no}}
+			RAJ = {set_rule = {can_send_volunteers  = no}}
+			AST = {set_rule = {can_send_volunteers  = no}}
+			NZL = {set_rule = {can_send_volunteers  = no}}
+			SOV = {set_rule = {can_send_volunteers  = no}}
+		}
+	}	
 }
+
 SPN_civil_war = {	
  	SPN_surrender = {
  		icon = spr_the_inevitable_civil_war
