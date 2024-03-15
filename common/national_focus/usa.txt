@@ -697,10 +697,10 @@ focus_tree = {
  		complete_tooltip = {
  			every_state = {
  				limit = { has_state_flag = USA_arsenal_of_democracy_3AF }
- 				add_extra_state_shared_building_slots = 5
+ 				add_extra_state_shared_building_slots = 10
  				add_building_construction = {
  					type = arms_factory
- 					level = 5
+ 					level = 10
  					instant_build = yes
  				}
  			}
@@ -715,10 +715,10 @@ focus_tree = {
  						include_locked = yes
  					}
  				}
- 				add_extra_state_shared_building_slots = 5
+ 				add_extra_state_shared_building_slots = 10
  				add_building_construction = {
  					type = arms_factory
- 					level = 5
+ 					level = 10
  					instant_build = yes
  				}
  				set_state_flag = USA_arsenal_of_democracy_3AF
@@ -732,28 +732,10 @@ focus_tree = {
  						include_locked = yes
  					}
  				}
- 				add_extra_state_shared_building_slots = 5
+ 				add_extra_state_shared_building_slots = 10
  				add_building_construction = {
  					type = arms_factory
- 					level = 5
- 					instant_build = yes
- 				}
- 				set_state_flag = USA_arsenal_of_democracy_3AF
- 			}
- 			random_owned_controlled_state = {
- 				limit = {
- 					is_core_of = ROOT
- 					arms_factory > 0
- 					free_building_slots = {
- 						building = arms_factory
- 						size > 2
- 						include_locked = yes
- 					}
- 				}
- 				add_extra_state_shared_building_slots = 5
- 				add_building_construction = {
- 					type = arms_factory
- 					level = 5
+ 					level = 10
  					instant_build = yes
  				}
  				set_state_flag = USA_arsenal_of_democracy_3AF
@@ -768,10 +750,28 @@ focus_tree = {
  						include_locked = yes
  					}
  				}
- 				add_extra_state_shared_building_slots = 5
+ 				add_extra_state_shared_building_slots = 10
  				add_building_construction = {
  					type = arms_factory
- 					level = 5
+ 					level = 10
+ 					instant_build = yes
+ 				}
+ 				set_state_flag = USA_arsenal_of_democracy_3AF
+ 			}
+ 			random_owned_controlled_state = {
+ 				limit = {
+ 					is_core_of = ROOT
+ 					arms_factory > 0
+ 					free_building_slots = {
+ 						building = arms_factory
+ 						size > 2
+ 						include_locked = yes
+ 					}
+ 				}
+ 				add_extra_state_shared_building_slots = 10
+ 				add_building_construction = {
+ 					type = arms_factory
+ 					level = 10
  					instant_build = yes
  				}
  				set_state_flag = USA_arsenal_of_democracy_3AF
