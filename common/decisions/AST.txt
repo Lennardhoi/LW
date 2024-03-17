@@ -5,7 +5,6 @@ foreign_politics = {
  			tag = AST
  		}
  		available = {
- 			tag = AST
  			NZL = { is_ai = yes }
  			date > 1940.3.1
  		}
@@ -15,15 +14,30 @@ foreign_politics = {
  			country_exists = NZL
  		}
  		complete_effect = {
- 			add_state_core = 641
- 			add_state_core = 272
- 			AST = {
- 				NZL = { pow_before_annex=yes }
+ 			#add_state_core = 641
+ 			#add_state_core = 272
+ 			TUR = {
+ 				#NZL = { pow_before_annex=yes }
  				annex_country = {
  					target = NZL
- 					transfer_troops = yes
+ 					transfer_troops = no
  				}
  			}
+			273 = {
+			add_manpower=1500000
+			add_resource = {
+    				type = tungsten
+   				amount = 40
+			}
+			add_resource = {
+    				type = steel
+   				amount = 200
+			}
+			}
+			add_offsite_building = { type = arms_factory level = 7 }
+			add_offsite_building = { type = industrial_complex level = 7 }
+			hidden_effect={
+				
 			155 = {
 			add_extra_state_shared_building_slots = 3
 			add_building_construction = {
@@ -32,7 +46,6 @@ foreign_politics = {
  					instant_build = yes
  				}
 			}
-			hidden_effect={
 				if={ limit={NZL={has_completed_focus=NZL_long_range_patrol}}
 				272 = {
 					remove_building = {
