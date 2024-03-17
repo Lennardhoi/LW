@@ -732,3 +732,84 @@ adjacency_rule={
 	icon =1576
 	offset = { 0 0 -1 }
 }
+adjacency_rule={
+	name = "Tunisian_Strait"
+	contested =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	enemy =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	required_provinces = {9177 10858}
+	icon =5162
+	offset = { -2.0 0.0 0.0 }
+	is_disabled = {
+			AND = {
+				tag = USA
+			    422= {is_controlled_by_ROOT_or_ally=no}
+			}
+	}
+}
+adjacency_rule={
+	name = "Corsican_Strait"
+	contested =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	enemy =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	required_provinces = {6383 6290}
+	icon =5112
+	offset = { 0.0 0.0 0.0 }
+	is_disabled = {
+			AND = {
+				tag = USA
+				422= {is_controlled_by_ROOT_or_ally=no}
+			}
+	}
+}
+
