@@ -224,15 +224,10 @@ focus_tree = {
  		#ENG = {end_puppet = RAJ}
  		RAJ = {set_cosmetic_tag = RAJ_LW}
  		add_research_slot =1
-				
-        swap_ideas = {
-            remove_idea = RAJ_asia_focus
-            add_idea = RAJ_europe_focus
-        }
-    } 
-    
+ 		remove_ideas = RAJ_asia_focus
  		add_ideas = wartime_industry_focus
          }
+ 	}
  	focus = {
  		id = RAJ_two_nation_theory
  		icon = GFX_focus_RAJ_two_nation_theory

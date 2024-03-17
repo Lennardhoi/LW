@@ -49,36 +49,5 @@ foreign_politics = {
 
  		}
  	}
- 	AST_relocation= {
- 		allowed = {
- 			original_tag=AST
- 		}
- 		icon = generic_naval
- 		available = {
- 			tag=MIO
- 		}
- 		days_mission_timeout = 30	
- 		fire_only_once = no
- 		is_good = yes
- 		activation = {
-			JAP = { has_completed_focus=JAP_strike_on_the_southern_resource_area
-			}
- 			has_war_with = JAP
- 			#always=no
- 		}
- 		timeout_effect = {
- 			AST_relocate_mil=yes
- 			AST_relocate_civ=yes
- 			if={
- 				limit={check_variable = {relocation<100}}
- 				activate_mission=AST_relocation
- 				add_to_variable= {relocation = 1}
- 				#else={clear_variable=relocation}
- 				}}
- 		complete_effect = {
- 		}
- 	}
-}
-
- 
+ }
 
