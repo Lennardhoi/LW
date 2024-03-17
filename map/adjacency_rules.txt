@@ -292,7 +292,11 @@ adjacency_rule=
 			#}
 			AND = {
 				tag = USA
-				date<1942.6.1
+				USA = {
+						not  = {
+						has_global_flag  = torch_launched
+					}
+				}
 			}
 		}
 	}
