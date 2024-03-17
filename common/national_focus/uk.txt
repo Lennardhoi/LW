@@ -1423,6 +1423,10 @@ focus_tree = {
  		relative_position_id = uk_protect_suez
  		cost = 2
  		completion_reward = {
+			custom_effect_tooltip = ENG_rubber_reserve_company_tt
+			add_to_variable ={resource_stockpile_capacity_silos^1=5000}
+			add_to_variable ={resource_stockpile_capacity_base^1=250000}
+			
  			388 = {
  				set_building_level = {
  					type = naval_base
@@ -2924,7 +2928,10 @@ focus_tree = {
  		y = 1
  		cost = 0.1
  		available = {
+			OR={
  			date > 1940.6.1
+			582 = { is_controlled_by_ROOT_or_ally = yes }
+			}
  			country_exists = PER
  		}
  		ai_will_do = {
