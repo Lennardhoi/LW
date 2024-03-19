@@ -730,9 +730,10 @@ focus_tree = {
  		available_if_capitulated = no
  		search_filters = { FOCUS_FILTER_MANPOWER }
  		completion_reward = {
- 			custom_effect_tooltip = available_political_advisor
- 		    show_ideas_tooltip = RAJ_arjan_singh_vibhusan
- 			
+ 			swap_ideas = {
+     remove_idea = RAJ_agrarian_society
+     add_idea = RAJ_agrarian_society_2
+			}
  		}
  	}
  	focus = {
@@ -813,6 +814,17 @@ focus_tree = {
  				uses = 1
  				category = infantry_weapons
  			}
+			if = {
+				limit = {
+					controls_state = 273
+				}
+				add_tech_bonus = {
+					name = UK_royal_artillery_focus
+					bonus = 1.0
+					uses = 1
+					category = infantry_weapons
+					}
+				}
  		}
  	}
  	focus = {
@@ -841,6 +853,19 @@ focus_tree = {
  				bonus = 1.0
  				uses = 1
  				category = artillery
+				if = {
+				limit = {
+					controls_state = 273
+				}
+				add_tech_bonus = {
+					name = UK_royal_artillery_focus
+					bonus = 1.0
+					uses = 1
+					category = artillery
+					}
+				add_ideas = Jebem_ti_micro
+				add_manpower = 400000
+				}
  			}
  		}
  	}
@@ -953,16 +978,14 @@ focus_tree = {
  		available_if_capitulated = no
  		search_filters = { FOCUS_FILTER_RESEARCH }
  		completion_reward = {
- 			add_tech_bonus = {
+			custom_effect_tooltip = available_political_advisor
+ 		    show_ideas_tooltip = RAJ_arjan_singh_vibhusan
+ 			 			add_tech_bonus = {
  				name = RAJ_modernizing_army
  				bonus = 1.0
  				uses = 2
  				category = land_doctrine
  			}
- 			swap_ideas = {
-     remove_idea = RAJ_agrarian_society
-     add_idea = RAJ_agrarian_society_2
- }
  		}
  	}
  	focus = {

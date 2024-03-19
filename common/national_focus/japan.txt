@@ -383,6 +383,15 @@ focus_tree = {
  		available_if_capitulated = no
  		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
  		completion_reward = {
+			if = {
+			limit = { 
+				AND ={
+					controls_state = 634
+					controls_state = 276
+					}
+				}
+				add_research_slot = 1
+			}
  			if={limit={country_exists = MAN}
  				MAN={add_ideas=wartime_economy_man
  					add_ideas=closed_economy}

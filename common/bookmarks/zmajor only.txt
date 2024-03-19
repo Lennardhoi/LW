@@ -214,7 +214,11 @@ bookmarks = {
 				give_resource_rights = { receiver = GER state = 705 }
 				give_resource_rights = { receiver = GER state = 702 }
 				}
-		
+		BUL = {
+                every_owned_state={
+                    ITA = {transfer_state=PREV}
+					}
+				}
 		NZL = {
                 every_owned_state={
                     RAJ = {transfer_state=PREV}
