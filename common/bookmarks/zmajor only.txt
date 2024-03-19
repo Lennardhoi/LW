@@ -229,7 +229,11 @@ bookmarks = {
                     ENG = {transfer_state=PREV}
 					}
 				}
-		AST = {
+		AST = {	
+				every_character={					
+					limit= { is_army_leader = yes }
+					set_nationality = RAJ
+				}
                 every_owned_state={
                     RAJ = {transfer_state=PREV}
 					}
