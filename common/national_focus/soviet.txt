@@ -161,7 +161,10 @@ focus_tree = {
 			factor = 5
 		}
 		bypass = {
+			OR = {
 			has_global_flag = Allies_lost_civil_war
+			has_global_flag = major_only_scenario
+			}		
 		}
 		available_if_capitulated = no
 		available = {
