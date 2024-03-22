@@ -1739,6 +1739,7 @@ technologies = {
 		xp_research_bonus = 1.00
 		infantry= {
 			need = {infantry_equipment = -10}
+			max_strength = -2
 		}
 		category_light_infantry = {
 			max_organisation = 5
@@ -2117,9 +2118,6 @@ technologies = {
 		xp_unlock_cost = 0
 		xp_boost_cost = 100
 		xp_research_bonus = 1.00
-		category_all_infantry = {
-			soft_attack = -0.15
-		}
 		#engineer = {
 			#	entrenchment  = 5
 			#}
@@ -2486,22 +2484,26 @@ technologies = {
 		enable_tactic = tactic_human_wave_tactics
 		infantry = {
 			need = {infantry_equipment= -20}
+			max_strength = -4
 		}
 		military_police = {
 			max_organisation = 20
 			max_strength = -25
 		}
 		artillery_brigade={
+		max_strength = -1.5
 			need = {
 				artillery_equipment = -5
 			}
 		}
 		anti_tank_brigade={
+		max_strength = -1.2
 			need = {
 				anti_tank_equipment  = -3
 			}
 		}
 		anti_air_brigade={
+		max_strength = -0.45
 			need = {
 				anti_air_equipment = -2
 			}
