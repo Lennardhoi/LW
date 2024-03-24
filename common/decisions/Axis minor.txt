@@ -44,9 +44,32 @@ operations = {
  		cost = 0
  		complete_effect = {
  			custom_effect_tooltip="You will get the following armor Barbarossa buff ONCE Germany declares war on the Soviet Union."
- 			effect_tooltip= {add_ideas = GER_barbarossa}
+ 			effect_tooltip= {add_ideas = GER_barbarossa_spr}
  			clr_country_flag = inf_barb_buff
  			set_country_flag = armor_barb_buff
+ 		}
+ 	}
+ 	remove_barb_buff = {
+ 		icon = ger_reichskommissariats
+ 		fire_only_once = no
+ 		allowed = {
+ 			OR={
+ 				tag = HUN
+ 				tag = SPR
+ 				tag = BUL
+ 				tag = ROM
+ 			}
+ 		}
+ 		available = {
+ 			OR={has_idea=GER_barbarossa_inf
+			has_idea=GER_barbarossa}
+ 		visible = {  has_war=yes	}
+ 		cost = 0
+ 		complete_effect = {
+			
+			remove_ideas=GER_barbarossa_inf
+			remove_ideas=GER_barbarossa_spr
+			
  		}
  	}
  }
