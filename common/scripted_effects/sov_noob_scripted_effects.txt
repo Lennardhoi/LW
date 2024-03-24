@@ -3,10 +3,10 @@ set_temp_variable={new_losses=casualties}
 set_temp_variable={old_losses=1000000}
 multiply_temp_variable={old_losses=spawned_waves}
 subtract_from_temp_variable={new_losses=old_losses}
-if={limit={check_variable{new_losses>1000000}}}
+if={limit={check_variable{new_losses>1000000}}
 add_to_variable={spawned_waves=1}
 spawn_reserves=yes
-}
+}}
 spawn_reserves = {
 
 division_template = {
