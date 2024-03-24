@@ -1082,6 +1082,17 @@ focus_tree = {
  		y = 2
  		relative_position_id = RAJ_great_indian_peninsula_railway
  		cost = 5
+		allow_branch = {
+			IF = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = { has_completed_focus = RAJ_east_india_railways }
+			}
+		}
  		ai_will_do = {
  			factor = 25
  		}
@@ -1123,6 +1134,15 @@ focus_tree = {
  				}
  				set_state_flag = RAJ_industrial_expansion_IC
  			}
+			if = {
+					limit = {
+						has_game_rule = {
+							rule = obsolete_focus_branches_visibility
+							option = HIDE
+						}
+					}
+					mark_focus_tree_layout_dirty = yes
+				}
  		}
  	}
 	
@@ -1624,9 +1644,9 @@ focus_tree = {
  		id = RAJ_found_scindia_shipyard
  		icon = GFX_goal_generic_construct_naval_dockyard
  		prerequisite = { focus = RAJ_east_india_railways }
- 		x = 2
- 		y = 0
- 		relative_position_id = RAJ_expand_mazagon_dock
+ 		x = -3
+ 		y = 1
+ 		relative_position_id = RAJ_east_india_railways
  		cost = 5
  		ai_will_do = {
  			factor = 20
@@ -1730,12 +1750,34 @@ focus_tree = {
  		prerequisite = { focus = RAJ_great_indian_peninsula_railway }
  		x = 4
  		y = 2
+		offset = {
+			x = -8
+ 			y = 0
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+				has_completed_focus = RAJ_east_india_railways
+			}
+		}
  		mutually_exclusive={focus = RAJ_industrial_expansion}
  		relative_position_id = RAJ_great_indian_peninsula_railway
  		cost = 5
  		ai_will_do = {
  			factor = 25
  		}
+		allow_branch = {
+			IF = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = { has_completed_focus = RAJ_industrial_expansion }
+			}
+		}
  		available = {
  		}
  		bypass = {
@@ -1759,6 +1801,15 @@ focus_tree = {
  				}
  				set_state_flag = RAJ_east_india_railways_Inf2
  			}
+			if = {
+					limit = {
+						has_game_rule = {
+							rule = obsolete_focus_branches_visibility
+							option = HIDE
+						}
+					}
+					mark_focus_tree_layout_dirty = yes
+				}
  		}
  	}
  	focus = {
@@ -2005,6 +2056,17 @@ focus_tree = {
  		y = 1
  		relative_position_id = RAJ_great_indian_peninsula_railway
  		mutually_exclusive = {focus = RAJ_broad_schooling}
+		allow_branch = {
+			IF = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = { has_completed_focus = RAJ_broad_schooling }
+			}
+		}
  		cost = 5
  		ai_will_do = {
  			factor = 30
@@ -2020,6 +2082,15 @@ focus_tree = {
  		search_filters = { FOCUS_FILTER_INDUSTRY }
  		completion_reward = {
  			add_ideas = RAJ_school_2
+			if = {
+					limit = {
+						has_game_rule = {
+							rule = obsolete_focus_branches_visibility
+							option = HIDE
+						}
+					}
+					mark_focus_tree_layout_dirty = yes
+				}
  		}
  	}
  	focus = {
@@ -2088,6 +2159,17 @@ focus_tree = {
  		ai_will_do = {
  			factor = 30
  		}
+		allow_branch = {
+			IF = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				NOT = { has_completed_focus = RAJ_foreign_profs }
+			}
+		}
  		available = {
  			
  		}
@@ -2099,6 +2181,15 @@ focus_tree = {
  		search_filters = { FOCUS_FILTER_INDUSTRY }
  		completion_reward = {
  		add_ideas = RAJ_school 
+		if = {
+					limit = {
+						has_game_rule = {
+							rule = obsolete_focus_branches_visibility
+							option = HIDE
+						}
+					}
+					mark_focus_tree_layout_dirty = yes
+				}
  		}
  	}
  	focus = {
