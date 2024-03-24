@@ -452,6 +452,19 @@ ideas = {
 				}
 			}
 		}
+		SOVmilitarism_focus = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			removal_cost = -1
+			picture = generic_manpower_bonus
+			modifier = {
+				conscription = 0.03
+			}
+		}
 		home_of_revolution = {
 			removal_cost = -1
 			allowed = {
