@@ -2557,6 +2557,7 @@ focus_tree = {
 		icon = GFX_SOV_soviet_women
 		prerequisite = { focus = SOV_move_industry_to_urals }
 		available = {
+		casualties>10000000
 		}
 		x = -2
 		y = 1
@@ -2567,7 +2568,7 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-			add_ideas = SOVmilitarism_focus
+			add_ideas = SOV_militarism_focus
 		}
 	}
 	focus = {

@@ -334,6 +334,7 @@ NDefines.NMilitary.MIN_DIVISION_BRIGADE_HEIGHT = 6
 NDefines.NMilitary.BATALION_CHANGED_EXPERIENCE_DROP = 0.0
 NDefines.NMilitary.BATALION_NOT_CHANGED_EXPERIENCE_DROP = 0.0
 
+
 --Eq upgrade cost
 
 NDefines.NMilitary.LAND_EQUIPMENT_BASE_COST = 10					-- Cost in XP to upgrade a piece of equipment one level is base + ( total levels * ramp )
@@ -392,7 +393,7 @@ NDefines.NCountry.VP_TO_SUPPLY_BONUS_CONVERSION = 1
 NDefines.NProduction.PRODUCTION_RESOURCE_LACK_PENALTY = -0.005			-- Penalty decrease while lack of resource per factory
 NDefines.NCountry.SUPPLY_FROM_DAMAGED_INFRA = 0.4
 NDefines.NCountry.SUPPLY_PATH_MAX_DISTANCE = 8
-NDefines.NCountry.BASE_MOBILIZATION_SPEED = 0.02
+NDefines.NCountry.BASE_MOBILIZATION_SPEED = 0.12
 NDefines.NMilitary.ARMY_FUEL_COST_MULT = 0.11 --0.5
 NDefines.NAir.FUEL_COST_MULT = 0.085 --0.35
 NDefines.NNavy.FUEL_COST_MULT = 0.02 --0.1
@@ -417,6 +418,8 @@ NDefines.NMilitary.ENCIRCLED_DISBAND_MANPOWER_FACTOR = 0.0
 NDefines.NMilitary.RIVER_CROSSING_PENALTY_LARGE = -0.4
 NDefines.NMilitary.RIVER_CROSSING_SPEED_PENALTY_LARGE = -0.4     -- large river crossing
 NDefines.NMilitary.RIVER_CROSSING_PENALTY = -0.3
+NDefines.NMilitary.PLAN_EXECUTE_RUSH = 0
+NDefines.NMilitary.PLAN_EXECUTE_BALANCED_LIMIT = 10
 NDefines.NNavy.NAVAL_MINES_IN_REGION_MAX = 1	
 NDefines.NNavy.PRIDE_OF_THE_FLEET_UNASSIGN_COST = 0	
 NDefines.NNavy.CONVOY_DEFENSE_MAX_CONVOY_TO_SHIP_RATIO = 20			

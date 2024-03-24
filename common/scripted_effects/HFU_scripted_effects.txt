@@ -641,6 +641,12 @@ every_country = {
 					
 set_variable={scaled_weekly_manpower=max_manpower_k}
 multiply_variable={scaled_weekly_manpower=0.1}
+if={limit={check_variable={scaled_weekly_manpower>5000}}
+	subtract_from_variable={scaled_weekly_manpower=5000}
+	divide_variable={scaled_weekly_manpower=3}
+	add_to_variable={scaled_weekly_manpower=5000}
+	
+}
 add_to_variable={scaled_weekly_manpower=2000}
 if = {
 	limit={has_idea=academy_scholarships_spirit}

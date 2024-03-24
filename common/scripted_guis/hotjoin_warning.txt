@@ -1,0 +1,29 @@
+scripted_gui = {
+	hotjoin_warning = {
+
+		context_type = player_context
+
+		window_name = "hotjoin_warning"
+		parent_window_name = "confirm_window"
+
+		visible = {
+
+		}
+
+		effects = {
+		hotjoin_warning_button_click = {
+			every_country={
+			set_variable={super_event=8}
+			}
+		}
+		}
+
+		triggers = {
+
+
+
+		}
+
+
+	}
+}
