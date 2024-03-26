@@ -311,7 +311,7 @@ equipment_modules = {
  			lg_armor_piercing = 16
  			surface_visibility = 5
  			naval_speed = -5
- 			build_cost_ic =1200
+ 			build_cost_ic =1000
 			naval_torpedo_damage_reduction_factor = -0.5
  		}
  		can_convert_from = {
@@ -342,7 +342,7 @@ equipment_modules = {
  			lg_armor_piercing = 18
  			surface_visibility = 5
  			naval_speed = -5
- 			build_cost_ic = 1400
+ 			build_cost_ic = 1200
 			naval_torpedo_damage_reduction_factor = -0.5
  		}
  		can_convert_from = {
@@ -373,7 +373,7 @@ equipment_modules = {
  			lg_armor_piercing = 20
  			surface_visibility = 5
  			naval_speed = -5
- 			build_cost_ic = 1600
+ 			build_cost_ic = 1400
 			naval_torpedo_damage_reduction_factor = -0.5
  		}
  		can_convert_from = {
@@ -404,7 +404,7 @@ equipment_modules = {
  			lg_armor_piercing = 22
  			surface_visibility = 5
  			naval_speed = -5
- 			build_cost_ic = 1800
+ 			build_cost_ic = 1600
 			naval_torpedo_damage_reduction_factor = -0.5
  		}
  		can_convert_from = {
@@ -419,7 +419,7 @@ equipment_modules = {
  	}
  	ship_light_medium_battery_1 = {
  		category = ship_medium_battery
- 		gui_category = ship_light_battery
+ 		gui_category = ship_medium_battery
  		sfx = sfx_ui_sd_module_turret
  		add_stats = {
  			lg_attack = 4
@@ -444,7 +444,7 @@ equipment_modules = {
  	}
  	ship_light_medium_battery_2 = {
  		category = ship_medium_battery
- 		gui_category = ship_light_battery
+ 		gui_category = ship_medium_battery
  		parent = ship_light_medium_battery_1
  		sfx = sfx_ui_sd_module_turret
  		add_stats = {
@@ -470,7 +470,7 @@ equipment_modules = {
  	}
  	ship_light_medium_battery_3 = {
  		category = ship_medium_battery
- 		gui_category = ship_light_battery
+ 		gui_category = ship_medium_battery
  		parent = ship_light_medium_battery_2
  		sfx = sfx_ui_sd_module_turret
  		add_stats = {
@@ -497,7 +497,7 @@ equipment_modules = {
  	ship_light_medium_battery_4 = {
  		category = ship_medium_battery
  		sfx = sfx_ui_sd_module_turret
- 		gui_category = ship_light_battery
+ 		gui_category = ship_medium_battery
  		parent = ship_light_medium_battery_3
  		add_stats = {
  			lg_attack = 7
@@ -888,7 +888,7 @@ equipment_modules = {
  		}
  		can_convert_from = {
  			module_category = light_ship_engine
- 			convert_cost_ic = 250
+ 			convert_cost_ic = 135
  		}
  	}
  	light_ship_engine_2 = {
@@ -906,13 +906,9 @@ equipment_modules = {
  		}
  		can_convert_from = {
  			module_category = light_ship_engine
- 			convert_cost_ic = 250
+ 			convert_cost_ic = 90
  		}
- 		can_convert_from = {
- 			module = light_ship_engine_1
- 			convert_cost_ic = 230
- 		}
- 	}
+  	}
  	light_ship_engine_3 = {
  		category = light_ship_engine
  		parent = light_ship_engine_2
@@ -928,11 +924,7 @@ equipment_modules = {
  		}
  		can_convert_from = {
  			module_category = light_ship_engine
- 			convert_cost_ic = 250
- 		}
- 		can_convert_from = {
- 			module = light_ship_engine_2
- 			convert_cost_ic = 230
+ 			convert_cost_ic = 225
  		}
  	}
  	light_ship_engine_4 = {
@@ -950,11 +942,7 @@ equipment_modules = {
  		}
  		can_convert_from = {
  			module_category = light_ship_engine
- 			convert_cost_ic = 250
- 		}
- 		can_convert_from = {
- 			module = light_ship_engine_3
- 			convert_cost_ic = 230
+ 			convert_cost_ic = 255
  		}
  	}
  	sub_ship_engine_1 = {
@@ -971,7 +959,7 @@ equipment_modules = {
  		}
  		can_convert_from = {
  			module_category = sub_ship_engine
- 			convert_cost_ic = 250
+ 			convert_cost_ic = 135
  		}
  	}
  	sub_ship_engine_2 = {
@@ -990,11 +978,7 @@ equipment_modules = {
  		}
  		can_convert_from = {
  			module_category = sub_ship_engine
- 			convert_cost_ic = 250
- 		}
- 		can_convert_from = {
- 			module = sub_ship_engine_1
- 			convert_cost_ic = 230
+ 			convert_cost_ic = 150
  		}
  	}
  	sub_ship_engine_3 = {
@@ -1013,11 +997,7 @@ equipment_modules = {
  		}
  		can_convert_from = {
  			module_category = sub_ship_engine
- 			convert_cost_ic = 250
- 		}
- 		can_convert_from = {
- 			module = sub_ship_engine_2
- 			convert_cost_ic = 230
+ 			convert_cost_ic = 225
  		}
  	}
  	sub_ship_engine_4 = {
@@ -1036,11 +1016,7 @@ equipment_modules = {
  		}
  		can_convert_from = {
  			module_category = sub_ship_engine
- 			convert_cost_ic = 250
- 		}
- 		can_convert_from = {
- 			module = sub_ship_engine_3
- 			convert_cost_ic = 230
+ 			convert_cost_ic = 255
  		}
  	}
  	cruiser_ship_engine_1 = {
@@ -1057,7 +1033,7 @@ equipment_modules = {
  		}
  		can_convert_from = {
  			module_category = cruiser_ship_engine
- 			convert_cost_ic = 2500
+ 			convert_cost_ic = 600
  		}
  	}
  	cruiser_ship_engine_2 = {
@@ -1075,11 +1051,7 @@ equipment_modules = {
  		}
  		can_convert_from = {
  			module_category = cruiser_ship_engine
- 			convert_cost_ic = 2500
- 		}
- 		can_convert_from = {
- 			module = cruiser_ship_engine_1
- 			convert_cost_ic = 2300
+ 			convert_cost_ic = 720
  		}
  	}
  	cruiser_ship_engine_3 = {
@@ -1097,11 +1069,7 @@ equipment_modules = {
  		}
  		can_convert_from = {
  			module_category = cruiser_ship_engine
- 			convert_cost_ic = 2500
- 		}
- 		can_convert_from = {
- 			module = cruiser_ship_engine_2
- 			convert_cost_ic = 2300
+ 			convert_cost_ic = 825
  		}
  	}
  	cruiser_ship_engine_4 = {
@@ -1120,11 +1088,7 @@ equipment_modules = {
  		}
  		can_convert_from = {
  			module_category = cruiser_ship_engine
- 			convert_cost_ic = 2500
- 		}
- 		can_convert_from = {
- 			module = cruiser_ship_engine_3
- 			convert_cost_ic = 2300
+ 			convert_cost_ic = 1005
  		}
  	}
  	heavy_ship_engine_1 = {
@@ -1141,7 +1105,7 @@ equipment_modules = {
  		}
  		can_convert_from = {
  			module_category = heavy_ship_engine
- 			convert_cost_ic = 4800
+ 			convert_cost_ic = 2700
  		}
  	}
  	heavy_ship_engine_2 = {
@@ -1159,11 +1123,7 @@ equipment_modules = {
  		}
  		can_convert_from = {
  			module_category = heavy_ship_engine
- 			convert_cost_ic = 5000
- 		}
- 		can_convert_from = {
- 			module = heavy_ship_engine_1
- 			convert_cost_ic = 4800
+ 			convert_cost_ic = 3300
  		}
  	}
  	heavy_ship_engine_3 = {
@@ -1181,11 +1141,7 @@ equipment_modules = {
  		}
  		can_convert_from = {
  			module_category = heavy_ship_engine
- 			convert_cost_ic = 5000
- 		}
- 		can_convert_from = {
- 			module = heavy_ship_engine_2
- 			convert_cost_ic = 4800
+ 			convert_cost_ic = 3900
  		}
  	}
  	heavy_ship_engine_4 = {
@@ -1203,11 +1159,7 @@ equipment_modules = {
  		}
  		can_convert_from = {
  			module_category = heavy_ship_engine
- 			convert_cost_ic = 5000
- 		}
- 		can_convert_from = {
- 			module = heavy_ship_engine_3
- 			convert_cost_ic = 4800
+ 			convert_cost_ic = 4500
  		}
  	}
  	carrier_ship_engine_1 = {
@@ -1228,7 +1180,7 @@ equipment_modules = {
  		}
  		can_convert_from = {
  			module_category = carrier_ship_engine
- 			convert_cost_ic = 2500
+ 			convert_cost_ic = 400
  		}
  	}
  	carrier_ship_engine_2 = {
@@ -1250,15 +1202,11 @@ equipment_modules = {
  		}
  		can_convert_from = {
  			module = cruiser_ship_engine_1
- 			convert_cost_ic = 1250
+ 			convert_cost_ic = 500
  		}
  		can_convert_from = {
  			module_category = carrier_ship_engine
- 			convert_cost_ic = 2500
- 		}
- 		can_convert_from = {
- 			module = carrier_ship_engine_1
- 			convert_cost_ic = 2300
+ 			convert_cost_ic = 720
  		}
  	}
  	carrier_ship_engine_3 = {
@@ -1276,11 +1224,7 @@ equipment_modules = {
  		}
  		can_convert_from = {
  			module_category = carrier_ship_engine
- 			convert_cost_ic = 2500
- 		}
- 		can_convert_from = {
- 			module = carrier_ship_engine_2
- 			convert_cost_ic = 2300
+ 			convert_cost_ic = 825
  		}
  	}
  	carrier_ship_engine_4 = {
@@ -1298,11 +1242,7 @@ equipment_modules = {
  		}
  		can_convert_from = {
  			module_category = carrier_ship_engine
- 			convert_cost_ic = 2500
- 		}
- 		can_convert_from = {
- 			module = carrier_ship_engine_3
- 			convert_cost_ic = 2300
+ 			convert_cost_ic = 1005
  		}
  	}
  	###  ##  ###  ###  ### ###   ##
@@ -1743,6 +1683,10 @@ equipment_modules = {
  			surface_visibility = 10
 			naval_torpedo_damage_reduction_factor = -1
  		}
+		can_convert_from = {
+ 			module_category = ship_heavy_armor
+ 			convert_cost_ic = 1500
+ 		}
  		dismantle_cost_ic = 5500
  	}
  	ship_armor_bc_1 = {
@@ -1762,6 +1706,10 @@ equipment_modules = {
  			surface_visibility = 8
 			naval_torpedo_damage_reduction_factor = -0.75
  		}
+		can_convert_from = {
+ 			module_category = ship_heavy_armor
+ 			convert_cost_ic = 1200
+ 		}
  		dismantle_cost_ic = 4500
  	}
  	ship_armor_bb_2 = {
@@ -1780,6 +1728,10 @@ equipment_modules = {
  			armor_value = 50
  			surface_visibility = 10
 			naval_torpedo_damage_reduction_factor = -1
+ 		}
+		can_convert_from = {
+ 			module_category = ship_heavy_armor
+ 			convert_cost_ic = 2250
  		}
  		dismantle_cost_ic = 6000
  	}
@@ -1801,6 +1753,10 @@ equipment_modules = {
  			surface_visibility = 8
 			naval_torpedo_damage_reduction_factor = -0.75
  		}
+		can_convert_from = {
+ 			module_category = ship_heavy_armor
+ 			convert_cost_ic = 1800
+ 		}
  		dismantle_cost_ic = 5500
  	}
  	ship_armor_bb_3 = {
@@ -1819,6 +1775,10 @@ equipment_modules = {
  			armor_value = 55
  			surface_visibility = 10
 			naval_torpedo_damage_reduction_factor = -1
+ 		}
+		can_convert_from = {
+ 			module_category = ship_heavy_armor
+ 			convert_cost_ic = 3000
  		}
  		dismantle_cost_ic = 7500
  	}
@@ -1840,6 +1800,10 @@ equipment_modules = {
  			surface_visibility = 8
 			naval_torpedo_damage_reduction_factor = -0.75
  		}
+		can_convert_from = {
+ 			module_category = ship_heavy_armor
+ 			convert_cost_ic = 2400
+ 		}
  		dismantle_cost_ic = 6200
  	}
  	ship_armor_shbb = {
@@ -1858,6 +1822,10 @@ equipment_modules = {
  			armor_value = 80
  			surface_visibility = 15
 			naval_torpedo_damage_reduction_factor = -1
+ 		}
+		can_convert_from = {
+ 			module_category = ship_heavy_armor
+ 			convert_cost_ic = 4500
  		}
  		dismantle_cost_ic = 8200
  	}
@@ -1878,6 +1846,10 @@ equipment_modules = {
  			surface_visibility = 15
 			naval_torpedo_damage_reduction_factor = -1
  		}
+		can_convert_from = {
+ 			module_category = ship_heavy_armor
+ 			convert_cost_ic = 7500
+ 		}
  		dismantle_cost_ic = 8200
  	}
  	ship_armor_cruiser_1 = {
@@ -1885,6 +1857,11 @@ equipment_modules = {
  		gfx = ship_armor_thin_1
  		multiply_stats = {
  			naval_speed = -0.05
+ 			torpedo_attack = 0.5
+ 		}
+		can_convert_from = {
+ 			module_category = ship_cruiser_armor
+ 			convert_cost_ic = 200
  		}
  		dismantle_cost_ic = 2500
  		add_stats = {
@@ -1898,6 +1875,11 @@ equipment_modules = {
  			build_cost_ic = 0.05
  			naval_speed = -0.075
  			max_strength = 0.05
+			torpedo_attack = 0.5
+ 		}
+		can_convert_from = {
+ 			module_category = ship_cruiser_armor
+ 			convert_cost_ic = 300
  		}
  		dismantle_cost_ic = 3000
  		add_stats = {
@@ -1911,6 +1893,11 @@ equipment_modules = {
  			build_cost_ic = 0.05
  			naval_speed = -0.1
  			max_strength = 0.1
+			torpedo_attack = 0.5
+ 		}
+		can_convert_from = {
+ 			module_category = ship_cruiser_armor
+ 			convert_cost_ic = 450
  		}
  		dismantle_cost_ic = 3500
  		add_stats = {
@@ -1924,6 +1911,11 @@ equipment_modules = {
  			build_cost_ic = 0.05
  			naval_speed = -0.125
  			max_strength = 0.15
+			torpedo_attack = 0.5
+ 		}
+		can_convert_from = {
+ 			module_category = ship_cruiser_armor
+ 			convert_cost_ic = 600
  		}
  		dismantle_cost_ic = 4000
  		add_stats = {

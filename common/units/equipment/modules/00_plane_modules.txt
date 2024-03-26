@@ -1557,7 +1557,9 @@ equipment_modules = {
 		abbreviation = "flo"
 		category = plane_special_module_small
 		sfx = sfx_ui_sd_module_turret
-
+		allow_mission_type = {
+			naval_patrol
+		}
 		add_stats = {
 			build_cost_ic = 1
 			weight = 1
@@ -1699,7 +1701,9 @@ equipment_modules = {
 		abbreviation = "flbm"
 		category = plane_special_module_medium
 		sfx = sfx_ui_sd_module_turret
-
+		allow_mission_type = {
+			naval_patrol
+		}
 		add_stats = {
 			build_cost_ic = 4
 			surface_detection = 8
@@ -1820,7 +1824,9 @@ equipment_modules = {
 		abbreviation = "flbl"
 		category = plane_special_module_large
 		sfx = sfx_ui_sd_module_turret
-
+		allow_mission_type = {
+			naval_patrol
+		}
 		add_stats = {
 			build_cost_ic = 4
 			surface_detection = 12
