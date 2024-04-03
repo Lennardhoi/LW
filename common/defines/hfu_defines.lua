@@ -603,7 +603,7 @@ NDefines.NAI.PLAN_FRONTUNIT_DISTANCE_FACTOR	= 30 --- closer units move first but
 NDefines.NMilitary.FRONT_MIN_PATH_TO_REDEPLOY = 3				--should really help--	-- If a units path is at least this long to reach its front location it will strategically redeploy.
 NDefines.NMilitary.ARMY_INITIATIVE_REINFORCE_FACTOR = 0.5		-- scales initiative for reinforce chance
 NDefines.NMilitary.REINFORCE_CHANCE = 0.10
-
+NDefines.NMilitary.RELIABILTY_RECOVERY = 0
 
 
     -- defines that are used for supply reach for capital
