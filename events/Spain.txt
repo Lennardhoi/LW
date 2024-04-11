@@ -31,7 +31,7 @@ country_event = {
 					air_experience = 150
 				}
 				JAP = {
-					army_experience = 50
+					army_experience = 300
 					air_experience = 300
 					}
 				SOV = {
@@ -211,6 +211,19 @@ country_event = {
 				producer = SPR
 			}
 		}
+		
+				GER = {
+					army_experience = 100
+				}
+				JAP = {
+					army_experience = 200
+					}
+				SOV = {
+					army_experience = 100}
+				ITA = {
+					army_experience = 100
+				}
+				every_country={army_experience = 50}
 		GER = {
 			add_to_faction = SPR
 			add_ideas = peace_training
