@@ -521,8 +521,18 @@ on_actions = {
 	}
 	on_daily_SWE={
 		effect={
-			
+			if={
+				limit={
+					has_global_flag= reduced_industry
+				}
+			every_country={
+				limit={is_playable_country=yes}
+				update_relative_industrial_capacity_factory=yes
+			}
+			}
+			else = {
 			USA={update_relative_industrial_capacity_factory=yes}
+			}
 			for_each_scope_loop={
 				array=GLOBAL.fuel_system_manager
 				set_variable={GLOBAL.controllerscope=THIS.id}

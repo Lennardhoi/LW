@@ -889,9 +889,20 @@ update_relative_industrial_capacity_factory = {
 					subtract_from_temp_variable={xr=relative_industrial_capacity_factory_actual}
 
 					set_variable={relative_industrial_capacity_factory=modifier@own_exiled_divisions_attack_factor}
+					
 					set_variable={relative_industrial_capacity_factory_actual=relative_industrial_capacity_factory}
-					set_variable={relative_industrial_capacity_factory_actual=modifier@own_exiled_divisions_attack_factor}
+					#set_variable={relative_industrial_capacity_factory_actual=modifier@own_exiled_divisions_attack_factor}
 					multiply_variable={relative_industrial_capacity_factory_actual=xr}
+					if={limit={has_global_flag=reduced_industry}
+					set_temp_variable={xb=relative_industrial_capacity_factory_actual}
+					add_to_temp_variable={xr=xb}	
+					multiply_temp_variable={xr=reduced_country_ic}	
+					subtract_from_variable={relative_industrial_capacity_factory_actual=xr}
+					set_temp_variable={xr=1}
+					add_to_temp_variable={xr=relative_industrial_capacity_factory}
+					multiply_temp_variable={xr=reduced_country_ic}
+					subtract_from_variable={relative_industrial_capacity_factory=xr}
+					}
 					if={
 						limit= {check_variable={relative_industrial_capacity_factory_actual=0}}
 						remove_dynamic_modifier = {

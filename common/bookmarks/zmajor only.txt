@@ -198,6 +198,19 @@ bookmarks = {
 		set_cosmetic_tag = RAJ_LW_2
 		}
 		set_global_flag= major_only_scenario
+		set_global_flag= reduced_industry
+		every_country={
+			limit={OR={tag=GER tag=ITA tag=ENG tag=USA}}
+			set_variable={reduced_country_ic=0.2}
+		}
+		every_country={
+			limit={OR={tag = SOV tag=JAP}}
+			set_variable={reduced_country_ic=0.15}
+		}
+		every_country={
+			limit={NOT={OR={tag=GER tag = SOV tag=ITA tag=ENG tag=USA tag=JAP}}}
+			set_variable={reduced_country_ic=0.1}
+		}
 		SPR = {
 				every_owned_state={
                     TUR = {transfer_state=PREV}
