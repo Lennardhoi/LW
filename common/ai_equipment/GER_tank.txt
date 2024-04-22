@@ -1,0 +1,208 @@
+GER_medium_tanks = {
+	category = land
+
+	blocked_for = {}
+
+	available_for = {GER}
+
+	roles = {
+		land_medium_tank
+	}
+
+	priority = {
+		factor = 2000
+	}
+
+	florian_tank = { #Panzer III
+		priority = {
+			factor = 100
+			modifier = { 
+				has_tech = improved_medium_tank_chassis
+				factor = 0 #let's not waste XP here
+			}
+		}
+		
+		name = "Florian Tank"
+		target_variant = {
+			match_value = 2000
+			type = medium_tank_chassis_1
+			modules = {
+				main_armament_slot = tank_high_velocity_cannon
+				turret_type_slot = tank_medium_three_man_tank_turret
+				suspension_type_slot = tank_bogie_suspension
+				armor_type_slot = tank_welded_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_module
+				special_type_slot_2 = smoke_launchers
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 5
+				tank_nsb_armor_upgrade = {
+					base = 3
+					modifier = {
+						add = 2
+						has_war = yes
+					}
+					modifier = {
+						any_enemy_country = {
+							is_major = yes
+						}
+						add = 3
+					}
+				}
+			}
+		}
+
+		allowed_modules = {
+			tank_high_velocity_cannon
+			tank_medium_two_man_tank_turret
+			tank_bogie_suspension
+			tank_riveted_armor
+			tank_gasoline_engine
+			tank_radio_3
+			tank_radio_2
+			tank_radio_1
+		}
+	}
+	
+	mohamed_tank = { #Panzer III
+		priority = {
+			factor = 100
+			modifier = { 
+				has_tech = improved_medium_tank_chassis
+				factor = 0 #let's not waste XP here
+			}
+		}
+
+		name = "Mosi Tank"
+		target_variant = {
+			match_value = 2000
+			type = medium_tank_chassis_1
+			modules = {
+				main_armament_slot = tank_high_velocity_cannon
+				turret_type_slot = tank_medium_three_man_tank_turret
+				suspension_type_slot = tank_bogie_suspension
+				armor_type_slot = tank_riveted_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_module
+				special_type_slot_2 = smoke_launchers
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 5
+				tank_nsb_armor_upgrade = {
+					base = 3
+					modifier = {
+						add = 2
+						has_war = yes
+					}
+					modifier = {
+						any_enemy_country = {
+							is_major = yes
+						}
+						add = 3
+					}
+				}
+			}
+		}
+
+		allowed_modules = {
+			tank_high_velocity_cannon
+			tank_medium_two_man_tank_turret
+			tank_bogie_suspension
+			tank_riveted_armor
+			tank_gasoline_engine
+			tank_radio_3
+			tank_radio_2
+			tank_radio_1
+		}
+	}
+}
+GER_medium_tank_destroyer = {
+	category = land
+
+	blocked_for = {}
+
+	available_for = {GER}
+
+	roles = {
+		land_medium_tank_destroyer
+	}
+
+	priority = {
+		factor = 50
+		modifier = {
+			NOT = { has_tech = basic_heavy_tank_chassis } 
+			any_enemy_country = {
+				has_tech = basic_heavy_tank_chassis
+			}
+			factor = 3
+		}
+		modifier = {
+			has_template_containing_unit = medium_tank_destroyer_brigade
+			factor = 10
+		}
+	}
+	medium_tank_destroyer_1 = { #StuG
+		priority = {
+			factor = 70
+			modifier = {
+				has_war_with = SOV
+				factor = 3
+			}
+			modifier = {
+				has_template_containing_unit = medium_tank_destroyer_brigade
+				factor = 10
+			}
+		}
+		enable = {
+			has_tech = interwar_antitank
+		}
+
+		target_variant = {
+			match_value = 1000
+			type = medium_tank_destroyer_chassis_1
+			modules = {
+				main_armament_slot = { 
+					any_of = { 
+						tank_medium_cannon_2 
+						tank_medium_cannon 
+					} 
+				}
+				turret_type_slot = tank_medium_fixed_superstructure_turret
+				suspension_type_slot = tank_bogie_suspension
+				armor_type_slot = tank_welded_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_module
+				special_type_slot_2 = empty
+				special_type_slot_3 = empty
+				special_type_slot_4 = empty
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 4
+				tank_nsb_armor_upgrade = {
+					base = 3
+					modifier = {
+						add = 3
+						has_war = yes
+					}
+				}
+			}
+		}
+
+		allowed_modules = {
+			tank_medium_cannon_2
+			tank_medium_cannon 
+			tank_medium_fixed_superstructure_turret
+			tank_bogie_suspension
+			tank_welded_armor
+			tank_gasoline_engine
+			tank_radio_3
+			tank_radio_2
+			tank_radio_1
+		}
+	}
+}
