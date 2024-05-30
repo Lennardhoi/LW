@@ -218,29 +218,10 @@ DAVIF_Mechanized = {
 
 	priority = {
 		factor = 50
-		modifier = {
-			NOT = { has_tech = basic_heavy_tank_chassis } 
-			any_enemy_country = {
-				has_tech = basic_heavy_tank_chassis
-			}
-			factor = 3
-		}
-		modifier = {
-			has_template_containing_unit = medium_tank_destroyer_brigade
-			factor = 10
-		}
 	}
 	davif_mech = { #StuG
 		priority = {
 			factor = 70
-			modifier = {
-				has_war_with = SOV
-				factor = 3
-			}
-			modifier = {
-				has_template_containing_unit = medium_tank_destroyer_brigade
-				factor = 10
-			}
 		}
 		enable = {
 			always=yes
