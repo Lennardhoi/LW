@@ -1518,7 +1518,7 @@ technologies = {
 			}
 		}
 	}
-		motorised_infantry = {
+	motorised_infantry = {
 
 		enable_subunits = {
 			mechanized
@@ -1533,6 +1533,10 @@ technologies = {
 		enable_equipment_modules = {
 			tank_wheeled_suspension
 			tank_regular_track_suspension
+			tank_gasoline_engine
+			tank_riveted_armor
+			tank_module_troop_carrier
+			secondary_turret_hmg
 		}
 
 		on_research_complete_limit = {

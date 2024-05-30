@@ -3,7 +3,7 @@ GER_medium_tanks = {
 
 	blocked_for = {}
 
-	available_for = {GER}
+	available_for = {GER SOV}
 
 	roles = {
 		land_medium_tank
@@ -27,7 +27,7 @@ GER_medium_tanks = {
 			match_value = 2000
 			type = medium_tank_chassis_1
 			modules = {
-				main_armament_slot = tank_high_velocity_cannon
+				main_armament_slot = tank_high_velocity_cannon_m1
 				turret_type_slot = tank_medium_three_man_tank_turret
 				suspension_type_slot = tank_bogie_suspension
 				armor_type_slot = tank_welded_armor
@@ -35,7 +35,6 @@ GER_medium_tanks = {
 				special_type_slot_1 = tank_radio_module
 				special_type_slot_2 = smoke_launchers
 				special_type_slot_3 = empty
-				special_type_slot_4 = empty
 			}
 			upgrades = {
 				tank_nsb_engine_upgrade = 5
@@ -56,7 +55,7 @@ GER_medium_tanks = {
 		}
 
 		allowed_modules = {
-			tank_high_velocity_cannon
+			tank_high_velocity_cannon_m1
 			tank_medium_two_man_tank_turret
 			tank_bogie_suspension
 			tank_riveted_armor
@@ -81,7 +80,7 @@ GER_medium_tanks = {
 			match_value = 2000
 			type = medium_tank_chassis_1
 			modules = {
-				main_armament_slot = tank_high_velocity_cannon
+				main_armament_slot = tank_high_velocity_cannon_m1
 				turret_type_slot = tank_medium_three_man_tank_turret
 				suspension_type_slot = tank_bogie_suspension
 				armor_type_slot = tank_riveted_armor
@@ -89,7 +88,6 @@ GER_medium_tanks = {
 				special_type_slot_1 = tank_radio_module
 				special_type_slot_2 = smoke_launchers
 				special_type_slot_3 = empty
-				special_type_slot_4 = empty
 			}
 			upgrades = {
 				tank_nsb_engine_upgrade = 5
@@ -110,7 +108,7 @@ GER_medium_tanks = {
 		}
 
 		allowed_modules = {
-			tank_high_velocity_cannon
+			tank_high_velocity_cannon_m1
 			tank_medium_two_man_tank_turret
 			tank_bogie_suspension
 			tank_riveted_armor
@@ -126,7 +124,7 @@ GER_medium_tank_destroyer = {
 
 	blocked_for = {}
 
-	available_for = {GER}
+	available_for = {GER SOV}
 
 	roles = {
 		land_medium_tank_destroyer
@@ -179,7 +177,6 @@ GER_medium_tank_destroyer = {
 				special_type_slot_1 = tank_radio_module
 				special_type_slot_2 = empty
 				special_type_slot_3 = empty
-				special_type_slot_4 = empty
 			}
 			upgrades = {
 				tank_nsb_engine_upgrade = 4
@@ -206,3 +203,74 @@ GER_medium_tank_destroyer = {
 		}
 	}
 }
+
+
+DAVIF_Mechanized = {
+	category = land
+
+	blocked_for = {}
+
+	available_for = {GER SOV}
+
+	roles = {
+		land_mechanized_equipment
+	}
+
+	priority = {
+		factor = 50
+		modifier = {
+			NOT = { has_tech = basic_heavy_tank_chassis } 
+			any_enemy_country = {
+				has_tech = basic_heavy_tank_chassis
+			}
+			factor = 3
+		}
+		modifier = {
+			has_template_containing_unit = medium_tank_destroyer_brigade
+			factor = 10
+		}
+	}
+	davif_mech = { #StuG
+		priority = {
+			factor = 70
+			modifier = {
+				has_war_with = SOV
+				factor = 3
+			}
+			modifier = {
+				has_template_containing_unit = medium_tank_destroyer_brigade
+				factor = 10
+			}
+		}
+		enable = {
+			always=yes
+		}
+
+		target_variant = {
+			match_value = 1000
+			type = mechanized_equipment_1
+			modules={
+				main_armament_slot=secondary_turret_hmg
+				turret_type_slot=tank_module_troop_carrier
+				suspension_type_slot=tank_bogie_suspension_mech
+				armor_type_slot=tank_cast_armor
+				engine_type_slot=tank_gasoline_engine
+				special_type_slot_1=armor_skirts
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 4
+				
+			}
+		}
+
+		allowed_modules = {
+			secondary_turret_hmg
+			tank_module_troop_carrier
+			tank_bogie_suspension_mech
+			tank_cast_armor
+			tank_gasoline_engine
+			armor_skirts
+		}
+	}
+}
+
