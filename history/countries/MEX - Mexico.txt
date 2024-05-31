@@ -80,6 +80,8 @@ recruit_character = MEX_francisco_mugica
 recruit_character = MEX_jesus_degollado_guizar
 recruit_character = MEX_valentin_campa
 recruit_character = MEX_luis_maria_martinez
+set_rule = {can_be_spymaster = no}
+set_rule = {can_send_volunteers  = yes}
 set_politics = {
 	ruling_party = neutrality
 	last_election = "1935.11.14"
@@ -100,12 +102,12 @@ add_equipment_to_stockpile = {
 }
 add_equipment_to_stockpile = {
 	type = infantry_equipment_1
-	amount = 4000
+	amount = 15000
 	producer = MEX
 }
 add_equipment_to_stockpile = {
 	type = artillery_equipment_1
-	amount = 500
+	amount = 750
 	producer = MEX
 }
 add_equipment_to_stockpile = {
@@ -115,6 +117,11 @@ add_equipment_to_stockpile = {
 }
 add_equipment_to_stockpile = {
 	type = support_equipment_1
-	amount = 400
+	amount = 700
+	producer = MEX
+}
+add_equipment_to_stockpile = {
+	type = motorized_equipment_1
+	amount = 1500
 	producer = MEX
 }
