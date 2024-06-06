@@ -724,8 +724,6 @@ foreign_politics = {
  		is_good = no
  		timeout_effect = {
  			remove_targeted_decision = { target = SOV decision = JAP_escalate_incident_to_border_conflict_SOV }
- 			add_political_power = -100
- 			add_war_support = -0.1
  			hidden_effect = {
  				SOV = { remove_targeted_decision = { target = JAP decision = JAP_border_conflict_escalation_warning_SOV } }
  				SOV = {
