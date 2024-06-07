@@ -2807,5 +2807,35 @@ focus_tree = {
  			add_timed_idea = { idea = FRA_national_uprising days = 90 }
  		}
  	}
+	focus = {
+ 		id = HOL_liberation
+ 		available = {
+ 			has_country_leader = { ruling_only = yes name = "Charles de Gaulle"}
+ 			has_full_control_of_state = 15
+ 			has_full_control_of_state = 16
+ 		}
+ 		icon = GFX_focus_hol_liberation
+ 		x = -2
+ 		y = -1
+ 		relative_position_id = FRA_appeal_to_overseas_territories
+ 		cost = 5
+ 		available_if_capitulated = yes
+ 		completion_reward = {
+ 			add_stability = 0.1
+ 			add_war_support = 0.05
+ 			add_manpower = 150000
+ 			add_equipment_to_stockpile = {
+ 				type = infantry_equipment
+ 				amount = 10000
+ 				producer = FRA
+ 			}
+ 			add_equipment_to_stockpile = {
+ 				type = support_equipment
+ 				amount = 500
+ 				producer = FRA
+ 			}
+ 			add_ideas = HOL_liberation
+ 		}
+ 	}
  }
 
