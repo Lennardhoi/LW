@@ -693,7 +693,7 @@ add_to_array={resource_balance=resource@tungsten}
 add_to_array={resource_balance=resource@steel}
 add_to_array={resource_balance=resource@chromium}
 
-for_each_loop ={
+				for_each_loop ={
 					array=resource_balance
 					add_to_array ={resource_stockpile=0}
 				}
@@ -702,8 +702,13 @@ for_each_loop ={
 					add_to_array ={resource_stockpile_capacity_base=10000}
 				}
 				for_each_loop ={
-					array=resource_balance
-					add_to_array ={resource_stockpile_capacity_silos=10000}
+    				array=resource_balance
+    				if = { limit = { check_variable = { i = 1 } }
+     			   add_to_array ={resource_stockpile_capacity_silos=7500}
+    			}
+   					 else = {
+      					  add_to_array ={resource_stockpile_capacity_silos=10000}
+  					  }
 				}
 				for_each_loop ={
 					array=resource_balance

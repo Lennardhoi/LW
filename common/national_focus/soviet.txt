@@ -2412,6 +2412,8 @@ focus_tree = {
 			factor = 4
 		}
 		completion_reward = {
+			custom_effect_tooltip = SOV_rubber_reserve_company_tt
+			add_to_variable ={resource_stockpile_capacity_silos^1=4500}
 			add_tech_bonus = {
 				name = SOV_coal_liquidization
 				bonus = 3.0
