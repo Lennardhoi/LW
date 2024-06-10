@@ -1416,7 +1416,6 @@ focus_tree = {
  		prerequisite = { focus = uk_protect_suez }
  		available = {
  			388 = { is_controlled_by_ROOT_or_ally = yes }
-			date > 1940.9.1
  		}
  		icon = GFX_goal_generic_construct_military
  		x = 2
@@ -1425,8 +1424,8 @@ focus_tree = {
  		cost = 2
  		completion_reward = {
 			custom_effect_tooltip = ENG_rubber_reserve_company_tt
-			add_to_variable ={resource_stockpile_capacity_silos^1=8750}
-			add_to_variable ={resource_stockpile_capacity_base^1=100000}
+			add_to_variable ={resource_stockpile_capacity_silos^1=5000}
+			add_to_variable ={resource_stockpile_capacity_base^1=250000}
 			
  			388 = {
  				set_building_level = {
