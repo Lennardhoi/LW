@@ -1,5 +1,6 @@
+
 ideas = {
-	hidden_ideas = {
+hidden_ideas = {
 		speed3={
 			picture = generic_infantry_bonus
 			allowed = {
@@ -35,7 +36,20 @@ ideas = {
 					build_cost_ic = 0.4
 				}
 			}
+	}
+	VEN_lategametanks={
+		picture = generic_infantry_bonus
+		allowed = {
 		}
+		removal_cost = -1
+		allowed_civil_war = {
+			always = yes
+		}
+		modifier = {
+			army_armor_attack_factor = -0.15
+			special_forces_attack_factor = -0.1
+		}
+	}
 	speed3_africa={
 			picture = generic_infantry_bonus
 			allowed = {
@@ -78,6 +92,7 @@ ideas = {
 				max_dig_in_factor = -0.33
 			}
 		}
+
 	railwaygun_1 = {
 		removal_cost = -1
 			picture = generic_build_infrastructure
