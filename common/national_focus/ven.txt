@@ -147,25 +147,5 @@ focus_tree = {
  		completion_reward = {
 			country_event = { id = spain.11 }
  		}
- 	}	
- 	focus = {
- 		id = VEN_weaker_tanks
- 		icon = GFX_goal_generic_consumer_goods
- 		x = 20
- 		y = 0
- 		cost = 1
- 		ai_will_do = {
- 			factor = 1
- 		}
- 		available_if_capitulated = yes
- 		available = {
- 			date>1942.8.1
- 		}
- 		completion_reward = {
-			 every_country={
- 				limit={is_playable_country=yes}
- 				add_ideas=VEN_lategametanks
- 			}
- 		}
- 	}	
+ 	}		
 

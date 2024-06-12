@@ -175,5 +175,98 @@ hidden_ideas = {
 			}
 		}	
 	}
-
+	country={
+	all_quite_on_the_eastern_front_axis={
+		picture = generic_infantry_bonus
+		allowed = {
+		}
+		removal_cost = -1
+		allowed_civil_war = {
+			always = yes
+		}
+		targeted_modifier = {
+			tag = SOV
+			attack_bonus_against = -0.05
+	}
+	}
+	all_quite_on_the_eastern_front_sov={
+		picture = generic_infantry_bonus
+		allowed = {
+		}
+		removal_cost = -1
+		allowed_civil_war = {
+			always = yes
+		}
+		targeted_modifier = {
+			tag = GER
+			attack_bonus_against = -0.05
+		}
+		targeted_modifier = {
+			tag = ITA
+			attack_bonus_against = -0.05
+		}
+		targeted_modifier = {
+			tag = SPR
+			attack_bonus_against = -0.05
+		}
+		targeted_modifier = {
+			tag = ROM
+			attack_bonus_against = -0.05
+		}
+		targeted_modifier = {
+			tag = HUN
+			attack_bonus_against = -0.05
+		}
+		targeted_modifier = {
+			tag = BUL
+			attack_bonus_against = -0.05
+		}
+	}
+	all_quite_on_the_eastern_front_axis2={
+		picture = generic_infantry_bonus
+		allowed = {
+		}
+		removal_cost = -1
+		allowed_civil_war = {
+			always = yes
+		}
+		targeted_modifier = {
+			tag = SOV
+			attack_bonus_against = -0.15
+		}
+	}
+	all_quite_on_the_eastern_front_sov2={
+		picture = generic_infantry_bonus
+		allowed = {
+		}
+		removal_cost = -1
+		allowed_civil_war = {
+			always = yes
+		}
+		targeted_modifier = {
+			tag = GER
+			attack_bonus_against = -0.15
+		}
+		targeted_modifier = {
+			tag = ITA
+			attack_bonus_against = -0.15
+		}
+		targeted_modifier = {
+			tag = SPR
+			attack_bonus_against = -0.15
+		}
+		targeted_modifier = {
+			tag = ROM
+			attack_bonus_against = -0.15
+		}
+		targeted_modifier = {
+			tag = HUN
+			attack_bonus_against = -0.15
+		}
+		targeted_modifier = {
+			tag = BUL
+			attack_bonus_against = -0.15
+		}
+	}
+	}
 }
