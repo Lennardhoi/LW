@@ -427,14 +427,7 @@ focus_tree = {
  		prerequisite = { focus = NDA_resource13371 }
  		relative_position_id = NDA_resource13371
  		available_if_capitulated = yes
- 		completion_reward = {
-			GER = {add_timed_idea = { idea = all_quite_on_the_eastern_front_axis days = 60 }}
-			ITA = {add_timed_idea = { idea = all_quite_on_the_eastern_front_axis days = 60 }}
-			SPR = {add_timed_idea = { idea = all_quite_on_the_eastern_front_axis days = 60 }}
-			HUN = {add_timed_idea = { idea = all_quite_on_the_eastern_front_axis days = 60 }}
-			ROM = {add_timed_idea = { idea = all_quite_on_the_eastern_front_axis days = 60 }}
-			BUL = {add_timed_idea = { idea = all_quite_on_the_eastern_front_axis days = 60 }}
-			SOV = {add_timed_idea = { idea = all_quite_on_the_eastern_front_sov days = 60 }}
+ 		completion_reward = {	
  			GER = {set_variable = {ostarbeiter_cg=-0.05}}
  			every_country={
  				limit={is_playable_country=yes}
@@ -465,10 +458,6 @@ focus_tree = {
  					remove_idea = research_42
  					add_idea = research_42_mid
  				}
-			every_country={
-				limit={is_playable_country=yes}
- 				add_ideas=VEN_lategametanks
- 			}			
  			}
  		}
  	}
@@ -482,13 +471,6 @@ focus_tree = {
  		relative_position_id = NDA_resource13381
  		available_if_capitulated = yes
  		completion_reward = {
-			GER = {add_timed_idea = { idea = all_quite_on_the_eastern_front_axis2 days = 60 }}
-			ITA = {add_timed_idea = { idea = all_quite_on_the_eastern_front_axis2 days = 60 }}
-			SPR = {add_timed_idea = { idea = all_quite_on_the_eastern_front_axis2 days = 60 }}
-			HUN = {add_timed_idea = { idea = all_quite_on_the_eastern_front_axis2 days = 60 }}
-			ROM = {add_timed_idea = { idea = all_quite_on_the_eastern_front_axis2 days = 60 }}
-			BUL = {add_timed_idea = { idea = all_quite_on_the_eastern_front_axis2 days = 60 }}
-			SOV = {add_timed_idea = { idea = all_quite_on_the_eastern_front_sov2 days = 60 }}
  			every_country={
  				limit={is_playable_country=yes}
  				set_technology = {
@@ -526,13 +508,6 @@ focus_tree = {
  		relative_position_id = NDA_resource2
  		available_if_capitulated = yes
  		completion_reward = {
-			GER = {add_timed_idea = { idea = all_quite_on_the_eastern_front_axis2 days = 60 }}
-			ITA = {add_timed_idea = { idea = all_quite_on_the_eastern_front_axis2 days = 60 }}
-			SPR = {add_timed_idea = { idea = all_quite_on_the_eastern_front_axis2 days = 60 }}
-			HUN = {add_timed_idea = { idea = all_quite_on_the_eastern_front_axis2 days = 60 }}
-			ROM = {add_timed_idea = { idea = all_quite_on_the_eastern_front_axis2 days = 60 }}
-			BUL = {add_timed_idea = { idea = all_quite_on_the_eastern_front_axis2 days = 60 }}
-			SOV = {add_timed_idea = { idea = all_quite_on_the_eastern_front_sov2 days = 60 }}
  		}
  	}
  	focus = {
