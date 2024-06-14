@@ -2781,47 +2781,17 @@ focus_tree = {
  		}
  	}
  	focus = {
- 		id = ENG_compass
- 		prerequisite = { focus = ENG_motion_of_no_confidence }
- 		available = {
- 			has_full_control_of_state = 416
- 		}
- 		bypass = {
- 			date > 1941.1.1
- 		}
- 		continue_if_invalid = yes
- 		icon = GFX_focus_chi_british_cooperation
- 		x = 0
- 		y = 1
- 		relative_position_id = ENG_motion_of_no_confidence
- 		cost = 0
- 		ai_will_do = {
- 			factor = 10
- 		}
- 		search_filters = {FOCUS_FILTER_RESEARCH}
- 		completion_reward = {
- 			add_timed_idea = {idea = ENG_compass days = 60}
- 			hidden_effect = {
- 				FRA = {add_timed_idea = {idea = ENG_compass days = 60}}
- 				SAF = {add_timed_idea = {idea = ENG_compass days = 60}}
- 				RAJ = {add_timed_idea = {idea = ENG_compass days = 60}}
- 				CAN = {add_timed_idea = {idea = ENG_compass days = 60}}
- 				AST = {add_timed_idea = {idea = ENG_compass days = 60}}
- 			}
- 		}
- 	}
- 	focus = {
  		id = ENG_crusader
- 		prerequisite = { focus = ENG_compass }
+ 		prerequisite = { focus = ENG_motion_of_no_confidence }
  		available = {
  			date > 1941.06.1
  		}
- 		bypass ={NOT ={ITA ={controls_state = 415 controls_state = 413}}}
+ 		bypass ={NOT ={ITA ={ controls_state = 413}}}
  		continue_if_invalid = yes
  		icon = GFX_goal_generic_major_war
  		x = 0
  		y = 1
- 		relative_position_id = ENG_compass
+ 		relative_position_id = ENG_motion_of_no_confidence
  		cost = 0
  		ai_will_do = {
  			factor = 1

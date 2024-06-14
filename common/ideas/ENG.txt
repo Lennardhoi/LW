@@ -69,8 +69,9 @@ ideas = {
 			removal_cost = -1
 			picture =  eng_the_sun_never_sets
 			modifier = {
-				army_org_factor = 0.1
-				army_morale_factor = 0.1
+				army_armor_attack_factor = 0.1
+				army_infantry_attack_factor = 0.05
+				army_infantry_defence_factor = 0.05
 			}
 		}
 		ENG_crusader = {
@@ -84,6 +85,8 @@ ideas = {
 				army_armor_attack_factor = 0.1
 				army_infantry_attack_factor = 0.05
 				army_infantry_defence_factor = 0.05
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
 			}
 		}
 		ENG_market_garden = {
