@@ -835,5 +835,38 @@ debug_decisions = {
  			factor = 1
  		}
  	}
+	SOV_siberian_reinforcements2 = {
+ 		icon = generic_operation
+ 		available = {
+			OR = {
+			has_war_with =JAP 
+			NOT = {controls_state = 242}
+			}
+ 		}
+ 		days_mission_timeout = 30
+ 		fire_only_once = no
+ 		activation = {
+			has_completed_focus = SOV_winter_offensive_2
+ 		}
+ 		visible = {
+			has_completed_focus = SOV_winter_offensive_2
+ 		}
+ 		cancel_if_not_visible = no
+ 		is_good = yes
+ 		complete_effect = {
+ 		}
+ 		timeout_effect = {
+			custom_effect_tooltip = "2 Eastern Reinforcements will Arrive!"
+			242 = {
+				for_loop_effect = {
+					end = 2
+					create_unit = {
+						division = "name = \"Red Guards\" division_template = \"Red Guards\" start_experience_factor = 0.5"
+						owner = SOV
+					}
+				}
+			}
+ 		}
+ 	}
  }
 
