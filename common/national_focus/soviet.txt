@@ -598,8 +598,7 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			custom_effect_tooltip = "This focus will spawn 2 Eastern Reinforcements every month unless Kazan is captured or another front breaks out in the east..."
-			custom_effect_tooltip = " (Dont delete the Template) "
+			custom_effect_tooltip = "This focus will spawn 20 Elite Divisions in Gorki"
 			set_technology={SOV_winter_offensive_2=1 popup=no}
 			division_template = {
 				name = "Red Guards"
@@ -636,15 +635,14 @@ focus_tree = {
 					anti_tank = {x = 0 y = 5}
 				}
 			}
-			242 = {
+			245 = {
 				for_loop_effect = {
-					end = 2
+					end = 20
 					create_unit = {
 						division = "name = \"Red Guards\" division_template = \"Red Guards\" start_experience_factor = 0.5"
 						owner = SOV
 					}
-				}
-			}
+					}}
 		}
 	}
 	focus = {
